@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-26T22:04:57+02:00",
+  "sources": [
+    {"name":"Profesia","family":"profesia","status":"ok","hits":"široký baseline + live","note":"Aktívne používaný zdroj, ale už nie jediný."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"ok","hits":1,"note":"Pridané Allegro priamo z careers.allegro.eu; existujú aj Websupport/O2/VNET."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":2,"note":"Pridané/overené Black Dragon Distribution a TZS; slabé jazykové fit penalizované."},
+    {"name":"Brigada.sk","family":"other","status":"ok","hits":4,"note":"AI/Chatbot integrátor + konkrétne BA/Rovinka/Senec brigády."},
+    {"name":"Worki.sk","family":"other","status":"ok","hits":1,"note":"Pridaný AI implementačný špecialista; staršie e-shop admin ponuky boli neaktívne."},
+    {"name":"Pretlak","family":"other","status":"checked","hits":0,"note":"Skontrolované; aktuálne nájdené role boli skôr senior marketing/development, nie silný fit."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"ok","hits":1,"note":"Čerstvý WooCommerce dopyt; AJ znižuje Match."},
+    {"name":"Facebook – WordPress Slovensko","family":"facebook","status":"blocked","hits":0,"note":"Verejný web vracia login / temporary block; konkrétne posty neboli spoľahlivo dostupné."},
+    {"name":"Facebook – WooCommerce SK + CZ","family":"facebook","status":"blocked","hits":0,"note":"Verejný web vracia login / temporary block; žiadne vymyslené ponuky nepridávame."},
+    {"name":"Facebook – Práca/brigády Bratislava","family":"facebook","status":"limited","hits":0,"note":"Verejné indexovanie je neúplné; zatiaľ bez konkrétne overiteľného aktuálneho postu."}
+  ]
+}
