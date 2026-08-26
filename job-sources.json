@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-26T19:15:00+02:00",
+  "policy": {
+    "publicOnly": true,
+    "doNotPretendPrivateFacebookCoverage": true,
+    "dedupeByCanonicalUrl": true,
+    "verifyBeforeActive": true
+  },
+  "sources": [
+    {"id":"profesia","name":"Profesia","type":"jobboard","priority":100,"trust":98,"url":"https://www.profesia.sk/","coverage":"direct"},
+    {"id":"company-careers","name":"Firemné kariérne stránky","type":"company","priority":100,"trust":100,"coverage":"direct"},
+    {"id":"linkedin","name":"LinkedIn Jobs","type":"jobboard","priority":92,"trust":92,"url":"https://www.linkedin.com/jobs/","coverage":"public-index"},
+    {"id":"brigada-sk","name":"Brigada.sk","type":"jobboard","priority":88,"trust":90,"url":"https://www.brigada.sk/","coverage":"direct"},
+    {"id":"pracazarohom","name":"Práca za rohom","type":"jobboard","priority":85,"trust":88,"url":"https://www.pracazarohom.sk/","coverage":"direct"},
+    {"id":"worki","name":"Worki.sk","type":"jobboard","priority":82,"trust":88,"url":"https://www.worki.sk/","coverage":"direct"},
+    {"id":"sluzby-zamestnanosti","name":"Služby zamestnanosti","type":"government","priority":82,"trust":96,"url":"https://sluzbyzamestnanosti.gov.sk/","coverage":"direct"},
+    {"id":"kariera","name":"Kariera.sk / Zoznam","type":"jobboard","priority":80,"trust":88,"coverage":"public-index"},
+    {"id":"indeed","name":"Indeed","type":"jobboard","priority":78,"trust":85,"url":"https://sk.indeed.com/","coverage":"public-index"},
+    {"id":"jooble","name":"Jooble","type":"aggregator","priority":65,"trust":70,"url":"https://sk.jooble.org/","coverage":"public-index"},
+    {"id":"pretlak","name":"Pretlak","type":"jobboard","priority":82,"trust":88,"url":"https://pretlak.com/","coverage":"public-index"},
+    {"id":"startupjobs","name":"StartupJobs","type":"jobboard","priority":80,"trust":86,"url":"https://www.startupjobs.cz/","coverage":"public-index"},
+    {"id":"jobs-cz","name":"Jobs.cz","type":"jobboard","priority":75,"trust":90,"url":"https://www.jobs.cz/","coverage":"public-index"},
+    {"id":"prace-cz","name":"Prace.cz","type":"jobboard","priority":72,"trust":88,"url":"https://www.prace.cz/","coverage":"public-index"},
+    {"id":"upwork","name":"Upwork","type":"freelance","priority":86,"trust":82,"url":"https://www.upwork.com/","coverage":"public-index"},
+    {"id":"freelancer","name":"Freelancer","type":"freelance","priority":72,"trust":72,"url":"https://www.freelancer.com/","coverage":"public-index"},
+    {"id":"twine","name":"Twine","type":"freelance","priority":72,"trust":76,"url":"https://www.twine.net/jobs/in/slovakia/bratislava","coverage":"public-index"},
+    {"id":"freelancermap","name":"Freelancermap","type":"freelance","priority":74,"trust":80,"url":"https://www.freelancermap.com/","coverage":"public-index"},
+    {"id":"useme","name":"Useme","type":"freelance","priority":68,"trust":78,"url":"https://useme.com/","coverage":"public-index"},
+    {"id":"peopleperhour","name":"PeoplePerHour","type":"freelance","priority":62,"trust":72,"url":"https://www.peopleperhour.com/","coverage":"public-index"},
+    {"id":"contra","name":"Contra","type":"freelance","priority":68,"trust":78,"url":"https://contra.com/","coverage":"public-index"},
+    {"id":"reddit-wordpressjobs","name":"Reddit r/wordpressjobs","type":"community","priority":72,"trust":62,"url":"https://www.reddit.com/r/wordpressjobs/","coverage":"public"},
+    {"id":"fb-ba-jobs","name":"Práca, brigády Bratislava a okolie / BratislavaDen.sk","type":"facebook","priority":88,"trust":58,"url":"https://www.facebook.com/groups/464113493609559/","coverage":"partial-public-index"},
+    {"id":"fb-wordpress-sk","name":"WordPress Slovensko","type":"facebook","priority":92,"trust":62,"url":"https://www.facebook.com/groups/174080056127650","coverage":"partial-public-index"},
+    {"id":"fb-woocommerce-skcz","name":"WooCommerce Komunita SK + CZ","type":"facebook","priority":94,"trust":64,"url":"https://www.facebook.com/groups/Woocommerce.SK.CZ/","coverage":"partial-public-index"},
+    {"id":"fb-copywriteri","name":"Copywriteri SK","type":"facebook","priority":60,"trust":55,"coverage":"partial-public-index"},
+    {"id":"fb-marketing","name":"Marketeri, copywriteri, SEO optimalizátori","type":"facebook","priority":66,"trust":55,"coverage":"partial-public-index"}
+  ]
+}
