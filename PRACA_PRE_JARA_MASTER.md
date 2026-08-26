@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 26. 8. 2026 14:32 CEST
+Aktualizované: 26. 8. 2026 15:26 CEST
 
 ## Ranking profil
 - #1 WordPress/WooCommerce správca, web/e-shop administrátor, CMS/content support, správa produktov a dát, maintenance webov/e-shopov.
@@ -8,7 +8,7 @@ Aktualizované: 26. 8. 2026 14:32 CEST
 - #3 Administratíva/back-office/zákaznícky servis/operations.
 - Rýchla alternatíva: vodič B/kuriér bez tachografu.
 - Nižšie: sklad/logistika.
-- Angličtina A2: B2/C1/komunikatívna AJ ako tvrdá podmienka výrazne znižuje skóre.
+- Angličtina A2: B2/C1/komunikatívna AJ ako tvrdá podmienka výrazne znižuje skóre. B1 je mierny až stredný mínus, nie automatické vyradenie.
 - Hard PHP/fullstack/Laravel/React/Vue sa penalizujú veľmi výrazne.
 - Bratislava/okolie = bonus; mimo BA preferovať remote/hybrid.
 
@@ -22,18 +22,25 @@ Aktualizované: 26. 8. 2026 14:32 CEST
 
 ## Aktuálne top aktívne ponuky
 1. LUNYS — E-commerce špecialista — Match 94–96 — LinkedIn — aktívna. Priama zhoda: denná správa e-shopu, Shoptet/WooCommerce/Magento, testovanie a AI.
-2. Websupport — Customer Success Advisor — Match 91 — Bratislava / čiastočný home office — 1 260 €/mes. + variabilná zložka — aktívna. Veľmi silná zhoda: weby, hosting, SSL, analýza chýb, troubleshooting, zákaznícka komunikácia a explicitná možnosť rastu smerom k WordPressu/technickému supportu. Angličtina je vyžadovaná prakticky, úroveň však nie je explicitne uvedená.
+2. Websupport — Customer Success Advisor — Match 91 — Bratislava / čiastočný home office — 1 260 €/mes. + variabilná zložka — aktívna na kariérnej stránke. Veľmi silná zhoda: weby, hosting, SSL, analýza chýb, troubleshooting a zákaznícka komunikácia. Starší detail Profesia uvádzal AJ B1, preto jazyk nie je úplne bez rizika.
 3. Ryvenia — Shoptet Specialist — Match 91 — LinkedIn — aktívna. Remote/hybrid, produkty, kategórie, CSV, import/export, testovanie a migrácie bez hard programovania.
-4. Allit — IT Administrator / End-User Support — Match 84 — Karlova Ves / home office — 1 300–1 700 €/mes. + bonusy — aktívna. Silná zhoda: Windows PC, Microsoft 365, Google Workspace, účty/prístupy, tlačiarne, siete, troubleshooting, komunikácia a vodičák B. Mínus: mierne pokročilá AJ; výhodou je firemné IT/AD/Windows Server.
-5. TRIGON Consulting — Marketplace manager — Match ~79 — Profesia — od 2 500 €/mes. — aktívna; detail seniority/AJ ešte overovať.
-6. MediaTech Central Europe — zákaznícka podpora/dodávky — Match ~78 — 1 500–1 700 €/mes. — aktívna.
-7. KLARSTEIN — Junior Marketplace Admin — Match ~75 — od 1 200 €/mes. — aktívna.
-8. Pandora Jewelry Slovakia — ECommerce Operations Assistant — Match ~84 po detailnom overení ponuky: 30 h/týždeň, 938 €/mes., AJ A2, nástup 1. 9. 2026. Dôležitý mínus: veľká časť práce je fulfillment/sklad, nie administrácia webu.
+4. Allit — IT Administrator / End-User Support — Match 84 — Karlova Ves / home office — 1 300–1 700 €/mes. + bonusy — aktívna. Silná zhoda: Windows PC, Microsoft 365, Google Workspace, účty/prístupy, tlačiarne, siete, troubleshooting, komunikácia a vodičák B. Mínus: mierne pokročilá AJ.
+5. 3MON — IT & Operations Support — Match 84 — Kopčianska 94B, Petržalka / občasný home office — 2 000 €/mes. — nástup 1. 10. 2026 — aktívna. Silná zhoda: firemné systémy, podpora kolegov/zákazníkov, administratívne procesy, digitálne nástroje, automatizácia a vlastný systém RESQ. Mínus: zdroje uvádzajú AJ približne B1/stredne pokročilú, treba overiť reálnu intenzitu používania.
+6. VNET — IT customer support specialist — Match 82 — Černyševského 48, Petržalka / občasný home office — od 1 300 €/mes. — nástup Dohodou/ASAP — aktívna priamo na kariérnej stránke VNET. Silná zhoda: IKT, technický troubleshooting a zákaznícka komunikácia. Jazykové požiadavky ešte treba overiť v detaile.
+7. TRIGON Consulting — Marketplace manager — Match ~79 — Profesia — od 2 500 €/mes. — aktívna; detail seniority/AJ ešte overovať.
+8. MediaTech Central Europe — zákaznícka podpora/dodávky — Match ~78 — 1 500–1 700 €/mes. — aktívna.
+9. KLARSTEIN — Junior Marketplace Admin — Match ~75 — od 1 200 €/mes. — aktívna.
+10. Pandora Jewelry Slovakia — ECommerce Operations Assistant — Match ~84 po detailnom overení ponuky: 30 h/týždeň, 938 €/mes., AJ A2, nástup 1. 9. 2026. Dôležitý mínus: veľká časť práce je fulfillment/sklad, nie administrácia webu.
 
-## Aktuálne nové/overené technické možnosti
-- FixIS — IT HelpDesk / L1 technická podpora — Bratislava / občasný home office — 1 100–1 500 €/mes. — aktívna v Profesia výpisoch. Pred zaradením do TOP treba otvoriť detail a overiť AJ/hard požiadavky.
-- Orange — Brigáda: Technická podpora pre úsek IT a sieťovej bezpečnosti — Bratislava / občasný home office — od 6 €/hod. — aktuálna. Je vedená v študentskej sekcii Orange, preto ju neuprednostňovať bez overenia oprávnenosti na dohodu o brigádnickej práci študentov.
-- Orange — Brigáda: Administratívna podpora v B2B tíme — Bratislava — 6 €/hod. — aktuálna; rovnaká poznámka o študentskom režime.
+## Nová relevantná brigáda / part-time
+- Trenujeme — Predajca na predajni a e-commerce asistent — Match ~76 — Račianska 31, Bratislava — skrátený úväzok / dohoda / živnosť / stáž — 6,60 €/h + provízie; živnosť 8 €/h + provízie — AJ A2, vodičák B. Priama zhoda: e-shop objednávky, produktové popisy, kontrola skladu, Midasto administrácia, zákazníci, reklamácie a marketingová výpomoc. Mínus: očakávajú cyklistický sortiment, predaj bicyklov a základné servisné úkony. Firma výslovne žiada autentické vlastné odpovede a nechce generický AI text; Application Builder je pri tejto ponuke iba podklad na vlastné preformulovanie.
+
+## Aktuálne technické možnosti na sledovanie
+- VNET — IT customer support specialist — aktívna na firemnej kariérnej stránke; zaradiť vysoko pri technickej podpore.
+- 3MON — IT & Operations Support — aktívna; dobrý pomer technológie + operations + procesy + mzda.
+- PAAS — IT technik / HW a SW — Bratislava — 1 300 €/mes. — aktívna; relevantná ako technický fallback, nie TOP.
+- NEEDLE Recruitment — technik/technička pre priemyselné systémy — 1 300 €/mes. — Modbus/SNMP, siete, slaboprúd, automatizácia; kvôli špecifickej priemyselnej/elektro požiadavke držať nižšie.
+- Štátna pokladnica — IT technický špecialista podpory — 1 700 €/mes. — hard požiadavky SIEM, AD/GPO/DNS/DHCP a oprávnenie na utajované skutočnosti; nízka zhoda.
 
 ## Dôležité korekcie a expirácie
 - TZS FIRST E Commerce — Content Manager Slovakia: odborne zaujímavá e-commerce/content rola a mzda od 2 000 €/mes., ale aktuálny popis vyžaduje veľmi dobrú nemčinu a dobrú angličtinu. Preto nesmie byť v TOP podľa pôvodného skóre 79; približne Match 52.
@@ -55,7 +62,10 @@ Pracovná ponuka aj brigáda používajú rovnaký funkčný model: KomArena bra
 - originál URL zdroja sa editáciou nemení
 
 ## Application Builder
-Na každej pracovnej ponuke aj brigáde vytvára personalizovanú reakciu a cielené CV iba z MASTER profilu a faktických údajov ponuky. Nevymýšľa hard skills ani kvalifikácie.
+Na každej pracovnej ponuke aj brigáde vytvára personalizovanú reakciu a cielené CV iba z MASTER profilu a faktických údajov ponuky. Nevymýšľa hard skills ani kvalifikácie. Pri ponukách, ktoré výslovne odmietajú AI-generované odpovede, musí byť výstup označený iba ako podklad na autentické vlastné preformulovanie.
 
 ## Zdrojový radar
 Profesia, Brigada.sk, LinkedIn Jobs, Indeed, Jooble, Kariera, Pracuj, Pretlak, StartupJobs, Jobs.cz, Prace.cz, Upwork, Freelancer, firemné kariérne stránky a verejne indexované pracovné Facebook stránky/skupiny. Súkromné/neindexované FB zdroje sa nesmú predstierať ako pokryté.
+
+## Live repository
+Aktuálny repozitár: `Jarekkom86/komarena-job-radar` (pôvodný názov `dochadzka-pro-sk` bol presunutý/premenovaný). Autoritatívny live súbor: `komarena-job-radar-v4.html`.
