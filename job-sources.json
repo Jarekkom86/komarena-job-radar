@@ -1,17 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-26T20:23:00+02:00",
-  "policy": {
-    "publicOnly": true,
-    "doNotPretendPrivateFacebookCoverage": true,
-    "dedupeByCanonicalUrl": true,
-    "verifyBeforeActive": true
-  },
+  "updatedAt": "2026-08-26T22:23:08+02:00",
+  "policy": {"publicOnly":true,"doNotPretendPrivateFacebookCoverage":true,"dedupeByCanonicalUrl":true,"verifyBeforeActive":true},
   "sources": [
     {"id":"profesia","name":"Profesia","type":"jobboard","priority":100,"trust":98,"url":"https://www.profesia.sk/","coverage":"direct"},
     {"id":"company-careers","name":"Firemné kariérne stránky","type":"company","priority":100,"trust":100,"coverage":"direct"},
     {"id":"linkedin","name":"LinkedIn Jobs","type":"jobboard","priority":92,"trust":92,"url":"https://www.linkedin.com/jobs/","coverage":"public-index"},
     {"id":"brigada-sk","name":"Brigada.sk","type":"jobboard","priority":88,"trust":90,"url":"https://www.brigada.sk/","coverage":"direct"},
+    {"id":"growni","name":"GROWNi","type":"jobboard","priority":88,"trust":94,"url":"https://growni.sk/praca","coverage":"direct"},
     {"id":"pracazarohom","name":"Práca za rohom","type":"jobboard","priority":85,"trust":88,"url":"https://www.pracazarohom.sk/","coverage":"direct"},
     {"id":"worki","name":"Worki.sk","type":"jobboard","priority":82,"trust":88,"url":"https://www.worki.sk/","coverage":"direct"},
     {"id":"sluzby-zamestnanosti","name":"Služby zamestnanosti","type":"government","priority":82,"trust":96,"url":"https://sluzbyzamestnanosti.gov.sk/","coverage":"direct"},
