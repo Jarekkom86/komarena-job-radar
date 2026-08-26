@@ -1,5 +1,7 @@
 # KomArena Job Radar
 
+[**Otvoriť živé demo**](https://jarekkom86.github.io/komarena-job-radar/)
+
 Osobný dashboard na prehľad pracovných ponúk, rýchle hodnotenie zhody a prípravu
 reakcie na inzerát. Projekt ukazuje návrh používateľského rozhrania, prácu so
 stavom v prehliadači a praktickú automatizáciu job-search workflow.
