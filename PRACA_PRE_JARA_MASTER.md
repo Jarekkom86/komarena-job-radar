@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 27. 8. 2026 00:23 CEST
+Aktualizované: 27. 8. 2026 01:26 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -43,16 +43,14 @@ Aktualizované: 27. 8. 2026 00:23 CEST
 15. **VNET — IT customer support — Match 82**.
 16. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 27. 8. 2026 00:23 CEST
+## SOURCE AUDIT — 27. 8. 2026 01:26 CEST
 Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak/StartupJobs/WordPress Jobs; Upwork a ďalšie freelance indexy; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
-- **Nové položky do `jobs-data.json`: 0.** Nenašiel sa nový kandidát, ktorý by kvalitou, jazykom a technickou náročnosťou prebil existujúci feed. Fail-closed pravidlo zachované.
-- **LUNYS:** originálny LinkedIn inzerát je stále aktívny. Je to potvrdenie, že pri ďalšej dátovej konsolidácii má byť LinkedIn preferovaný pred Profesia mirrorom.
-- **LinkedIn:** Foxelli E-commerce Technical Assistant by bol tematicky zaujímavý (Shopify + AI + automations, nie developer), ale LinkedIn už uvádza `No longer accepting applications`; nepridané. Wolt Support vyžaduje min. B2 AJ. iRefurb E-Commerce Executive už tiež neprijíma.
-- **Upwork:** existujúci WooCommerce Assistant ostáva najsilnejší ne-development fit a klient ho nedávno aktívne prezeral. Čerstvý WordPress/WooCommerce build 20–40 USD/h bol vyradený ako hard-dev, >30 h/týždeň a 20–50 proposals.
-- **Brigada.sk / Worki / Práca za rohom / Služby zamestnanosti/Kariera / Pretlak / StartupJobs / WordPress Jobs / ďalšie freelance indexy:** skontrolované; bez nového kvalitnejšieho prírastku.
-- **Reddit:** bez nového konkrétneho dopytu, ktorý by prebil existujúce freelance položky.
+- **Nové položky do `jobs-data.json`: 0.** Fail-closed pravidlo zachované; žiadna slabá ponuka nebola pridaná iba kvôli diverzite.
+- **LinkedIn:** nájdené dve aktuálne Wolt Support Associate pozície v Bratislave (part-time aj full-time). Obe vyžadujú minimálne B2 AJ a zmeny vrátane večerov/víkendov, preto nepridané do prioritného feedu.
+- **Reddit:** nájdený čerstvý urgentný dopyt `Looking for a Wordpress dev / designer` z 26. 8. 2026. Scope je veľmi stručný, rozpočet chýba a už je tam viacero reakcií, preto neprebil existujúce kvalitnejšie freelance položky.
+- **Profesia / firemné kariéry / Brigada.sk / Worki / Práca za rohom / Služby zamestnanosti/Kariera / Pretlak / StartupJobs / WordPress Jobs / Upwork / ďalšie freelance indexy:** reálne prehľadané; bez nového kvalitnejšieho prírastku.
 - **Facebook:** stále 0 verified hits. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny priamy post; stav zostáva `limited`.
 
 ### LIVE mix hlavného `jobs-data.json`
@@ -87,8 +85,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 11. **Competition signal** — proposals/applicants/interviewing.
 12. **Timezone compatibility score** — prepočet požadovaného pracovného okna na Europe/Bratislava.
 13. **Client quality/risk signal** — história freelance klienta oddelene od Match skóre.
-14. **Source canonical migration queue — NOVÉ** — pri overení kvalitnejšieho primárneho zdroja vytvoriť bezpečný dátový migračný krok (napr. LUNYS Profesia → LinkedIn) s kontrolou stabilného ID, CRM väzby a canonical dedupe pred zápisom.
-15. **Closed-listing negative cache — NOVÉ** — ukladať `no longer accepting`/zrušené výsledky s časom overenia, aby sa Foxelli, iRefurb a podobné uzavreté inzeráty zbytočne nevyhodnocovali v každom hodinovom behu; opätovne ich overiť až po rozumnom TTL.
+14. **Source canonical migration queue** — pri overení kvalitnejšieho primárneho zdroja vytvoriť bezpečný dátový migračný krok (napr. LUNYS Profesia → LinkedIn) s kontrolou stabilného ID, CRM väzby a canonical dedupe pred zápisom.
+15. **Closed-listing negative cache** — ukladať `no longer accepting`/zrušené výsledky s časom overenia a TTL, aby sa uzavreté inzeráty zbytočne nevyhodnocovali v každom hodinovom behu.
+16. **Evidence snapshot fingerprint — NOVÉ** — pri každom úspešnom overení uložiť minimálny fingerprint kľúčových faktov (title/company/pay/status/source + verifiedAt), aby sa zachytili tiché zmeny inzerátu bez zmeny URL a Radar vedel upozorniť na zmenu mzdy, formy alebo stavu.
+17. **Adaptive recheck SLA — NOVÉ** — frekvenciu opätovného overenia riadiť podľa priority a volatility: `today`/čerstvé freelance položky kontrolovať častejšie, stabilné firemné kariéry redšie a `limited`/blocked zdroje s backoffom. Zníži zbytočné dotazy a presunie kapacitu na ponuky, kde rozhoduje čas.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
