@@ -1,16 +1,22 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-26T22:04:57+02:00",
+  "updatedAt": "2026-08-26T22:23:08+02:00",
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":"široký baseline + live","note":"Aktívne používaný zdroj, ale už nie jediný."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"ok","hits":1,"note":"Pridané Allegro priamo z careers.allegro.eu; existujú aj Websupport/O2/VNET."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":2,"note":"Pridané/overené Black Dragon Distribution a TZS; slabé jazykové fit penalizované."},
-    {"name":"Brigada.sk","family":"other","status":"ok","hits":4,"note":"AI/Chatbot integrátor + konkrétne BA/Rovinka/Senec brigády."},
-    {"name":"Worki.sk","family":"other","status":"ok","hits":1,"note":"Pridaný AI implementačný špecialista; staršie e-shop admin ponuky boli neaktívne."},
-    {"name":"Pretlak","family":"other","status":"checked","hits":0,"note":"Skontrolované; aktuálne nájdené role boli skôr senior marketing/development, nie silný fit."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"ok","hits":1,"note":"Čerstvý WooCommerce dopyt; AJ znižuje Match."},
-    {"name":"Facebook – WordPress Slovensko","family":"facebook","status":"blocked","hits":0,"note":"Verejný web vracia login / temporary block; konkrétne posty neboli spoľahlivo dostupné."},
-    {"name":"Facebook – WooCommerce SK + CZ","family":"facebook","status":"blocked","hits":0,"note":"Verejný web vracia login / temporary block; žiadne vymyslené ponuky nepridávame."},
-    {"name":"Facebook – Práca/brigády Bratislava","family":"facebook","status":"limited","hits":0,"note":"Verejné indexovanie je neúplné; zatiaľ bez konkrétne overiteľného aktuálneho postu."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":"široký aktívny trh; 99 ponúk za 24 h v Bratislave v kontrolovanom výpise","note":"Skontrolované. Nové relevantné výsledky boli prevažne slabšie než existujúce TOP; Plutvy zostáva aktívna."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"ok","hits":2,"note":"Pandora Careers priamo potvrdila aktívnu eCommerce Operations pozíciu z 24. 8.; Wolt Careers overený, ale B2 AJ je blocker. Pandora prepnutá z Profesia na primárny firemný link."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Skontrolované verejne indexované BA e-commerce/support výsledky. Nenašiel sa nový kandidát s lepším fitom; Foxelli má jazykové/špecializované požiadavky."},
+    {"name":"GROWNi","family":"other","status":"ok","hits":2,"note":"Nový silný LEAF Implementation Support Specialist pridaný; Enco Junior Marketing & E-commerce overený, ale B2 AJ + Shopify/FB Ads znižujú fit."},
+    {"name":"Brigada.sk","family":"other","status":"checked","hits":0,"note":"Prehľadané BA/e-shop/IT/AI výsledky; v tomto behu bez nového kvalitnejšieho kandidáta nad existujúci bootstrap."},
+    {"name":"Worki.sk","family":"other","status":"checked","hits":0,"note":"Prehľadané BA e-shop/IT/support výsledky; bez nového overiteľného hitu vhodného na pridanie."},
+    {"name":"Práca za rohom","family":"other","status":"checked","hits":0,"note":"Prehľadané; zrkadlá Profesia sa nepočítajú ako nezávislé nové ponuky."},
+    {"name":"Kariera.sk / Služby zamestnanosti","family":"other","status":"checked","hits":0,"note":"Prehľadaná verejná indexácia; bez nového silného kandidáta vhodného do LIVE feedu."},
+    {"name":"Pretlak / StartupJobs","family":"other","status":"checked","hits":0,"note":"Prehľadané tech/creative výsledky; aktuálne skôr senior marketing/development alebo slabý profilový fit."},
+    {"name":"WordPress Jobs","family":"other","status":"checked","hits":0,"note":"Oficiálny WordPress job board skontrolovaný; v tomto behu bez nového kandidáta s lepším pomerom fit/jazyk/technická náročnosť."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"note":"Nájdené čerstvé WordPress projekty z 26. 8.; pridaná jedna maintenance/revamp zákazka s rozumným fitom, ostatné boli hard-dev, veľmi nízkorozpočtové alebo s 50+ proposals."},
+    {"name":"Freelancermap","family":"freelance","status":"ok","hits":3,"note":"Nájdené čerstvé remote WordPress/WooCommerce projekty; neboli pridané pre nemčinu alebo vyššiu technickú náročnosť oproti lepším kandidátom."},
+    {"name":"Reddit r/wordpressjobs","family":"community","status":"ok","hits":2,"note":"Dnešné verejné posty overené; urgentný WordPress dev dopyt je bez rozpočtu a má vysokú konkurenciu, ostatné sú prevažne FOR HIRE. Bez nového prírastku."},
+    {"name":"Facebook – WordPress Slovensko","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia neposkytla konkrétny aktuálny post s priamym overiteľným linkom. 0 verified hits."},
+    {"name":"Facebook – WooCommerce SK + CZ","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia neposkytla konkrétny aktuálny post s priamym overiteľným linkom. 0 verified hits."},
+    {"name":"Facebook – Práca/brigády Bratislava","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia je neúplná; bez konkrétneho overiteľného aktuálneho postu. 0 verified hits."}
   ]
 }
