@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-26T19:15:00+02:00",
+  "updatedAt": "2026-08-26T20:23:00+02:00",
   "policy": {
     "publicOnly": true,
     "doNotPretendPrivateFacebookCoverage": true,
@@ -22,6 +22,7 @@
     {"id":"startupjobs","name":"StartupJobs","type":"jobboard","priority":80,"trust":86,"url":"https://www.startupjobs.cz/","coverage":"public-index"},
     {"id":"jobs-cz","name":"Jobs.cz","type":"jobboard","priority":75,"trust":90,"url":"https://www.jobs.cz/","coverage":"public-index"},
     {"id":"prace-cz","name":"Prace.cz","type":"jobboard","priority":72,"trust":88,"url":"https://www.prace.cz/","coverage":"public-index"},
+    {"id":"wordpress-jobs","name":"WordPress Jobs","type":"jobboard","priority":86,"trust":92,"url":"https://jobs.wordpress.net/","coverage":"direct"},
     {"id":"upwork","name":"Upwork","type":"freelance","priority":86,"trust":82,"url":"https://www.upwork.com/","coverage":"public-index"},
     {"id":"freelancer","name":"Freelancer","type":"freelance","priority":72,"trust":72,"url":"https://www.freelancer.com/","coverage":"public-index"},
     {"id":"twine","name":"Twine","type":"freelance","priority":72,"trust":76,"url":"https://www.twine.net/jobs/in/slovakia/bratislava","coverage":"public-index"},
