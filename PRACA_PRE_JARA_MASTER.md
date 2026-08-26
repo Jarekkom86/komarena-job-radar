@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 26. 8. 2026 15:26 CEST
+Aktualizované: 26. 8. 2026 16:32 CEST
 
 ## Ranking profil
 - #1 WordPress/WooCommerce správca, web/e-shop administrátor, CMS/content support, správa produktov a dát, maintenance webov/e-shopov.
@@ -22,50 +22,49 @@ Aktualizované: 26. 8. 2026 15:26 CEST
 
 ## Aktuálne top aktívne ponuky
 1. LUNYS — E-commerce špecialista — Match 94–96 — LinkedIn — aktívna. Priama zhoda: denná správa e-shopu, Shoptet/WooCommerce/Magento, testovanie a AI.
-2. Websupport — Customer Success Advisor — Match 91 — Bratislava / čiastočný home office — 1 260 €/mes. + variabilná zložka — aktívna na kariérnej stránke. Veľmi silná zhoda: weby, hosting, SSL, analýza chýb, troubleshooting a zákaznícka komunikácia. Starší detail Profesia uvádzal AJ B1, preto jazyk nie je úplne bez rizika.
+2. Websupport — Customer Success Advisor — Match 91 — Bratislava / čiastočný home office — 1 260 €/mes. + variabilná zložka — aktívna. Veľmi silná zhoda: weby, hosting, SSL, troubleshooting a zákaznícka komunikácia. Starší detail uvádzal AJ B1.
 3. Ryvenia — Shoptet Specialist — Match 91 — LinkedIn — aktívna. Remote/hybrid, produkty, kategórie, CSV, import/export, testovanie a migrácie bez hard programovania.
 4. Allit — IT Administrator / End-User Support — Match 84 — Karlova Ves / home office — 1 300–1 700 €/mes. + bonusy — aktívna. Silná zhoda: Windows PC, Microsoft 365, Google Workspace, účty/prístupy, tlačiarne, siete, troubleshooting, komunikácia a vodičák B. Mínus: mierne pokročilá AJ.
-5. 3MON — IT & Operations Support — Match 84 — Kopčianska 94B, Petržalka / občasný home office — 2 000 €/mes. — nástup 1. 10. 2026 — aktívna. Silná zhoda: firemné systémy, podpora kolegov/zákazníkov, administratívne procesy, digitálne nástroje, automatizácia a vlastný systém RESQ. Mínus: zdroje uvádzajú AJ približne B1/stredne pokročilú, treba overiť reálnu intenzitu používania.
-6. VNET — IT customer support specialist — Match 82 — Černyševského 48, Petržalka / občasný home office — od 1 300 €/mes. — nástup Dohodou/ASAP — aktívna priamo na kariérnej stránke VNET. Silná zhoda: IKT, technický troubleshooting a zákaznícka komunikácia. Jazykové požiadavky ešte treba overiť v detaile.
+5. 3MON — IT & Operations Support — Match 84 — Kopčianska 94B, Petržalka / občasný home office — 2 000 €/mes. — nástup 1. 10. 2026 — aktívna. Silná zhoda: firemné systémy, podpora kolegov/zákazníkov, administratívne procesy, digitálne nástroje a automatizácia. Mínus: AJ približne B1.
+6. VNET — IT customer support specialist — Match 82 — Černyševského 48, Petržalka / občasný home office — od 1 300 €/mes. — Dohodou/ASAP — aktívna.
 7. TRIGON Consulting — Marketplace manager — Match ~79 — Profesia — od 2 500 €/mes. — aktívna; detail seniority/AJ ešte overovať.
 8. MediaTech Central Europe — zákaznícka podpora/dodávky — Match ~78 — 1 500–1 700 €/mes. — aktívna.
-9. KLARSTEIN — Junior Marketplace Admin — Match ~75 — od 1 200 €/mes. — aktívna.
-10. Pandora Jewelry Slovakia — ECommerce Operations Assistant — Match ~84 po detailnom overení ponuky: 30 h/týždeň, 938 €/mes., AJ A2, nástup 1. 9. 2026. Dôležitý mínus: veľká časť práce je fulfillment/sklad, nie administrácia webu.
+9. Trenujeme — e-commerce asistent / brigáda — Match 76 — Račianska 31, Bratislava — dohoda/part-time/živnosť — 6,60 €/h + provízie; živnosť 8 €/h + provízie — AJ A2, vodičák B.
+10. KLARSTEIN — Junior Marketplace Admin — Match ~75 — od 1 200 €/mes. — aktívna.
+11. Pandora Jewelry Slovakia — ECommerce Operations Assistant — Match ~84 po detailnom overení: 30 h/týždeň, 938 €/mes., AJ A2, nástup 1. 9. 2026. Mínus: fulfillment/sklad, nie čistá administrácia webu.
 
-## Nová relevantná brigáda / part-time
-- Trenujeme — Predajca na predajni a e-commerce asistent — Match ~76 — Račianska 31, Bratislava — skrátený úväzok / dohoda / živnosť / stáž — 6,60 €/h + provízie; živnosť 8 €/h + provízie — AJ A2, vodičák B. Priama zhoda: e-shop objednávky, produktové popisy, kontrola skladu, Midasto administrácia, zákazníci, reklamácie a marketingová výpomoc. Mínus: očakávajú cyklistický sortiment, predaj bicyklov a základné servisné úkony. Firma výslovne žiada autentické vlastné odpovede a nechce generický AI text; Application Builder je pri tejto ponuke iba podklad na vlastné preformulovanie.
+## Nový overený technický kandidát
+- Brightpick — Remote technik/technička robotizovaného skladu — Match 68 — Profesia — od 1 500 €/mes. + diéty — aktívna. L1 technická podpora produkčných problémov, vzdialené monitorovanie robotov, incidenty a troubleshooting. Technický fit je silný, ale skóre výrazne znižujú dve veci: požadovaná AJ B2 a cestovanie na projekty v EÚ/USA až približne 50 % pracovného času ročne. Vodičák B je výhoda. Pozícia je vhodná aj pre absolventov.
 
-## Aktuálne technické možnosti na sledovanie
-- VNET — IT customer support specialist — aktívna na firemnej kariérnej stránke; zaradiť vysoko pri technickej podpore.
-- 3MON — IT & Operations Support — aktívna; dobrý pomer technológie + operations + procesy + mzda.
-- PAAS — IT technik / HW a SW — Bratislava — 1 300 €/mes. — aktívna; relevantná ako technický fallback, nie TOP.
-- NEEDLE Recruitment — technik/technička pre priemyselné systémy — 1 300 €/mes. — Modbus/SNMP, siete, slaboprúd, automatizácia; kvôli špecifickej priemyselnej/elektro požiadavke držať nižšie.
-- Štátna pokladnica — IT technický špecialista podpory — 1 700 €/mes. — hard požiadavky SIEM, AD/GPO/DNS/DHCP a oprávnenie na utajované skutočnosti; nízka zhoda.
+## Technické možnosti na sledovanie
+- Erste Digital — Service Desk Agent / 1st Line Technical Support — Bratislava / občasný home office — od 1 700 €/mes. — aktívna, ale 24/7 zmeny a angličtina ju držia pod TOP vrstvou.
+- Brightpick — Servisný technik/technička — Ružinov — od 1 700 €/mes. — relevantný fallback; preverovať jazyk a elektro požiadavky.
+- PAAS — IT technik / HW a SW — Bratislava — 1 300 €/mes. — technický fallback, nie TOP.
+- NEEDLE Recruitment — technik/technička pre priemyselné systémy — Modbus/SNMP, siete, automatizácia; kvôli priemyselnej/elektro špecializácii držať nižšie.
 
 ## Dôležité korekcie a expirácie
-- TZS FIRST E Commerce — Content Manager Slovakia: odborne zaujímavá e-commerce/content rola a mzda od 2 000 €/mes., ale aktuálny popis vyžaduje veľmi dobrú nemčinu a dobrú angličtinu. Preto nesmie byť v TOP podľa pôvodného skóre 79; približne Match 52.
-- SecTec — Marketing asistent: LinkedIn uvádza `No longer accepting applications`; nezobrazovať ako aktívnu novú ponuku.
-- Rhythm&Ridge — WordPress Developer brigáda 10 h/týždenne: LinkedIn uvádza `No longer accepting applications`; navyše išlo o dohodu pre študentov. Nezobrazovať ako aktívnu.
-- Top4Mobile — Administrátor e-shopu / zákaznícka podpora: No longer accepting applications.
-- Zenea — E-Commerce Specialist: No longer accepting applications.
-- iRefurb Solutions — Ecommerce Specialist: No longer accepting applications.
-- Ryvenia — Junior Fullstack PHP/WordPress: No longer accepting applications + hard-dev mismatch.
+- TZS FIRST E Commerce — Content Manager Slovakia: odborne zaujímavá e-commerce/content rola a mzda od 2 000 €/mes., ale vyžaduje veľmi dobrú nemčinu a dobrú angličtinu. Preto približne Match 52.
+- SecTec — Marketing asistent: `No longer accepting applications`; nezobrazovať ako aktívnu.
+- Rhythm&Ridge — WordPress Developer brigáda: `No longer accepting applications`; nezobrazovať ako aktívnu.
+- Top4Mobile — Administrátor e-shopu / zákaznícka podpora: neaktívna.
+- Zenea — E-Commerce Specialist: neaktívna.
+- iRefurb Solutions — Ecommerce Specialist: neaktívna.
+- Ryvenia — Junior Fullstack PHP/WordPress: neaktívna + hard-dev mismatch.
 
 ## V5 jednotný card model
-Pracovná ponuka aj brigáda používajú rovnaký funkčný model: KomArena branding, NOVÁ/POZERANÁ, hviezdička, workflow, poznámka, čas prvého/posledného otvorenia, počet otvorení, `Upraviť ponuku` a `Vytvoriť reakciu`.
+Pracovná ponuka aj brigáda používajú rovnaký model: KomArena branding, NOVÁ/POZERANÁ, hviezdička, workflow, poznámka, čas prvého/posledného otvorenia, počet otvorení, `Upraviť ponuku` a `Vytvoriť reakciu`.
 
 ## Editácie
 - CRM localStorage: `pracaPreJaraCRM-v3`
-- používateľské edit override: `pracaPreJaraEdits-v1`
-- editácia musí zachovať minimálne: názov, firmu, lokalitu, odmenu, formu, nástup, AJ, kategóriu a popis
+- edit override: `pracaPreJaraEdits-v1`
 - používateľský override sa nesmie prepísať automatickým refreshom
 - originál URL zdroja sa editáciou nemení
 
 ## Application Builder
-Na každej pracovnej ponuke aj brigáde vytvára personalizovanú reakciu a cielené CV iba z MASTER profilu a faktických údajov ponuky. Nevymýšľa hard skills ani kvalifikácie. Pri ponukách, ktoré výslovne odmietajú AI-generované odpovede, musí byť výstup označený iba ako podklad na autentické vlastné preformulovanie.
+Na každej pracovnej ponuke aj brigáde vytvára personalizovanú reakciu a cielené CV iba z MASTER profilu a faktických údajov ponuky. Nevymýšľa hard skills ani kvalifikácie. Pri ponukách odmietajúcich AI-generované odpovede je výstup iba podklad na vlastné preformulovanie.
 
 ## Zdrojový radar
 Profesia, Brigada.sk, LinkedIn Jobs, Indeed, Jooble, Kariera, Pracuj, Pretlak, StartupJobs, Jobs.cz, Prace.cz, Upwork, Freelancer, firemné kariérne stránky a verejne indexované pracovné Facebook stránky/skupiny. Súkromné/neindexované FB zdroje sa nesmú predstierať ako pokryté.
 
 ## Live repository
-Aktuálny repozitár: `Jarekkom86/komarena-job-radar` (pôvodný názov `dochadzka-pro-sk` bol presunutý/premenovaný). Autoritatívny live súbor: `komarena-job-radar-v4.html`.
+Repozitár: `Jarekkom86/komarena-job-radar`. Autoritatívny live súbor: `komarena-job-radar-v4.html` (aktuálne UI v5.2).
