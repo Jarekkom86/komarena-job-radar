@@ -1,16 +1,29 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 26. 8. 2026 19:29 CEST
+Aktualizované: 26. 8. 2026 19:35 CEST
 
 ## Architektúra a ochrana UI
-- MASTER UI: `komarena-job-radar-v6.html` + `job-radar-v6.css` + `job-radar-v6.js`.
-- Používateľský vstup: `index.html` / `komarena-job-radar-v4.html` smeruje na v6.
-- **UI je zamknuté:** automat nesmie meniť v6 HTML/CSS/JS, `index.html` ani `komarena-job-radar-v4.html`.
-- Dočasný dátový feed: `komarena-job-radar-v5.3.html`.
-- Široký legacy feed brigád: pôvodný snapshot `brigady-ba-2026-08-26.html` z historického repozitára.
+- MASTER UI: `komarena-job-radar-v6.html` + `job-radar-v6.css` + `job-radar-v6.1.js`.
+- Autoritatívny živý feed: `jobs-data.json` (`schemaVersion: 1`).
+- Register hľadaných zdrojov: `job-sources.json` (`schemaVersion: 1`).
+- Používateľský vstup: `index.html` / `komarena-job-radar-v4.html` smeruje na MASTER v6.
+- **UI je zamknuté:** hodinový automat nesmie meniť v6 HTML/CSS/JS, `index.html` ani `komarena-job-radar-v4.html`.
+- Legacy snapshot zostáva iba ako historický fallback; nové ponuky už majú ísť do JSON feedu, nie cez HTML patchovanie.
+- Otvorená stránka kontroluje `jobs-data.json` každých 5 minút.
 - CRM localStorage: `pracaPreJaraCRM-v3`.
-- používateľské editácie: `pracaPreJaraEdits-v1`.
-- Používateľské CRM/editácie sa pri automatickom refreshe nesmú resetovať.
+- Používateľské editácie: `pracaPreJaraEdits-v1`.
+- CRM/editácie sa pri automatickom refreshe nesmú resetovať.
+
+## Implementované v6.1
+- JSON-first feed s HTML fallbackom.
+- canonical URL deduplikácia.
+- `sourceType`, `sourceTrust`, `verifiedAt`, `expiresAt`, `scoreConfidence`.
+- normalizácia odmeny cez `payHour` / `payMonth`, keď je spoľahlivo dostupná.
+- `priority: today` + filter **🔥 Reagovať dnes**.
+- nový typ `origin: zakazka` pre verejne overené freelance/FB/community dopyty.
+- pri workflow `Reagované` sa lokálne uloží `appliedAt` a automatický follow-up +3 dni.
+- export CRM v schéme v2 vrátane používateľských editácií.
+- source precedence: priamy firemný zdroj > kvalitný job board > agregátor > komunitný repost.
 
 ## Ranking profil
 1. WordPress/WooCommerce správca, web/e-shop administrátor, CMS/content/product admin, Shoptet/Shopify/Upgates administrácia, maintenance webov/e-shopov.
@@ -26,91 +39,85 @@ Aktualizované: 26. 8. 2026 19:29 CEST
 - Bratislava/okolie = bonus; mimo BA preferovať remote/hybrid.
 
 ## KomArena Match 0–100
-- zhoda roly: 40
-- dôkazy v CV: 25
-- praktickosť/lokalita/remote: 15
-- angličtina: 10
-- odmena/rast: 10
-- následné penalizácie za hard blockers a špeciálne oprávnenia
+- zhoda roly: max 40
+- dôkazy v CV: max 25
+- praktickosť/lokalita/remote: max 15
+- angličtina: max 10
+- odmena/rast: max 10
+- penalizácie za hard blockers a špeciálne oprávnenia
 
-## Aktuálne top aktívne ponuky
-1. **LUNYS — E-commerce špecialista – správa a rozvoj e-shopu — Match 96** — Most pri Bratislave — 1 600 €/mes. — WooCommerce/Shoptet/Magento, denná správa e-shopu, kategórie, testovanie, promo mechaniky a AI. https://www.profesia.sk/praca/lunys/O5277221
-2. **Ryvenia — Shoptet Specialist — Match 93** — Bratislava / full remote / hybrid — freelance/full-time/part-time. Produkty, kategórie, ceny, CSV, migrácie a testovanie bez hard developmentu. https://sk.linkedin.com/jobs/view/shoptet-specialist-freelance-fulltime-part-time-hybrid-at-ryvenia-4254309724
-3. **Websupport — Customer Success Advisor — Match 91** — Bratislava / čiastočný home office — 1 260 €/mes. + variabilná zložka — weby, hosting, SSL, troubleshooting, zákaznícka komunikácia a rast k WordPress/tech support. https://www.websupport.sk/kariera/customer-success-advisor/
-4. **O2 Slovakia — Digital Content Admin (brigáda) — Match 90** — Bratislava / občasný home office — 8 €/h brutto — správa webu/e-shopu, produkty, atribúty, ceny, parametre, popisy a landing pages. https://kariera.o2.sk/jobs/88971
-5. **ALL SPORTS SLOVAKIA — Špecialista e-shop predaj Bauer Hockey — Match 88** — Petržalka — 1 600 €/mes. — WordPress je výhoda. https://www.profesia.sk/praca/all-sports-slovakia/O5305006
-6. **Pandora Jewelry Slovakia — ECommerce Operations Assistant — Match 84** — 30 h/týždeň — 938 €/mes. — AJ A2 — nástup 1. 9. 2026. Mínus: väčší podiel fulfillment/sklad. https://www.profesia.sk/praca/pandora-jewelry-slovakia/O5345914
-7. **Allit — IT Administrator / End-User Support — Match 84** — Karlova Ves / home office — 1 300–1 700 €/mes. + bonusy — Windows, Microsoft 365, Google Workspace, siete, troubleshooting. https://www.profesia.sk/praca/allit/O5339937
-8. **3MON — IT & Operations Support — Match 84** — Petržalka / občasný home office — 2 000 €/mes. — mínus AJ približne B1. https://www.profesia.sk/praca/3mon/O5338490
-9. **STU — Web špecialista – CMS/web — Match 83** — Bratislava — 1 200–1 400 €/mes. https://www.profesia.sk/praca/strojnicka-fakulta-stu-v-bratislave/O5299104
-10. **VNET — IT customer support specialist — Match 82** — Petržalka / občasný home office — od 1 300 €/mes. https://www.vnet.sk/sk/spolocne/kariera/
-11. **Trenujeme — e-commerce asistent / brigáda — Match 76** — Bratislava — 6,60 €/h + provízie; živnosť 8 €/h — AJ A2. Mínus: cyklistický sortiment a základný servis. https://www.profesia.sk/praca/trenujeme/O5335564
-12. **Brightpick — Remote technik/technička robotizovaného skladu — Match 68** — od 1 500 €/mes. + diéty. Technicky dobrý fit, ale AJ B2 a výrazné cestovanie sú silné mínusy. https://www.profesia.sk/praca/brightpick/O5336479
+## Aktuálne TOP / čerstvo overené
+1. **LUNYS — E-commerce špecialista — Match 96** — WooCommerce/Shoptet/Magento, denná správa e-shopu, kategórie, testovanie, promo mechaniky a AI. https://www.profesia.sk/praca/lunys/O5277221
+2. **Ryvenia — Shoptet Specialist — Match 93** — Bratislava / full remote / hybrid — freelance/full-time/part-time; produkty, kategórie, ceny, CSV, migrácie a testovanie bez hard developmentu. Kontakt: kariera@ryvenia.sk. https://sk.linkedin.com/jobs/view/shoptet-specialist-freelance-fulltime-part-time-hybrid-at-ryvenia-4254309724
+3. **Websupport — Customer Success Advisor — Match 91** — weby, hosting, SSL, troubleshooting, zákaznícka komunikácia a rast k WordPress/tech support. https://www.websupport.sk/kariera/customer-success-advisor/
+4. **O2 Slovakia — Digital Content Admin (brigáda) — Match 90** — 8 €/h — správa webu/e-shopu, produkty, atribúty, ceny, parametre, popisy a landing pages. https://kariera.o2.sk/jobs/88971
+5. **ALL SPORTS SLOVAKIA — Špecialista e-shop predaj Bauer Hockey — Match 88** — 1 600 €/mes. — WordPress je výhoda. https://www.profesia.sk/praca/all-sports-slovakia/O5305006
+6. **SuperFaktura — Supportový parťák/parťáčka — Match 87** — Bratislava, 7-hodinový pracovný deň, 5× home office/mesiac, od 1 200 €/mes. Online chat, FB komentáre, e-mail, telefón, e-shop napojenia, exporty a troubleshooting. Firma nehľadá programátora a zaškoľuje. Mínus: občasná AJ / mierne pokročilá. https://www.profesia.sk/praca/superfaktura/O5346896
+7. **Bookio — Online zákaznícka podpora B2B/SaaS — Match 85** — Petržalka / občasný home office, živnosť, od 1 500 €/mes. + provízie. Onboarding klientov a nastavovanie webového rezervačného systému. https://www.profesia.sk/praca/bookio/O5340612
+8. **Pandora — ECommerce Operations Assistant — Match 84** — 30 h/týždeň, 938 €/mes., AJ A2. Mínus: väčší podiel fulfillment/sklad. https://www.profesia.sk/praca/pandora-jewelry-slovakia/O5345914
+9. **Allit — IT Administrator / End-User Support — Match 84** — Karlova Ves / home office, 1 300–1 700 €/mes. + bonusy. https://www.profesia.sk/praca/allit/O5339937
+10. **3MON — IT & Operations Support — Match 84** — Petržalka / občasný home office, 2 000 €/mes., mínus AJ približne B1. https://www.profesia.sk/praca/3mon/O5338490
+11. **STU — Web špecialista CMS/web — Match 83** — Bratislava, 1 200–1 400 €/mes. https://www.profesia.sk/praca/strojnicka-fakulta-stu-v-bratislave/O5299104
+12. **VNET — IT customer support specialist — Match 82** — Petržalka / občasný home office, od 1 300 €/mes. https://www.vnet.sk/sk/spolocne/kariera/
+13. **MH Teplárenský holding — IT Technik/Helpdesk — Match 80** — Nové Mesto, 1 800 €/mes. + 5 %, incidenty a end-user support. Mínus: B1 AJ a požadovaná skúsenosť s podporou PC. https://www.profesia.sk/praca/mh-teplarensky-holding/O5346861
+14. **Trenujeme — e-commerce asistent / brigáda — Match 76** — 6,60 €/h + provízie; živnosť 8 €/h; AJ A2. Mínus: cyklistický sortiment a základný servis. https://www.profesia.sk/praca/trenujeme/O5335564
+15. **Brightpick — Remote technik robotizovaného skladu — Match 68** — od 1 500 €/mes. + diéty. Technicky dobré, ale AJ B2 a výrazné cestovanie sú silné mínusy.
 
-## Nové overené výsledky — 26. 8. 2026 19:29
-### Madviso — Sales and Marketing Intern Inhouse Bratislava — Match 54
-- aktívna, zverejnená približne pred týždňom
-- 80 h/mesiac, in-house Bratislava
-- obsahovo: administrácia e-shopov a webov na Midasto/CMS, produktové texty, články, newslettery, SEO, databázy a sociálne siete
-- **blocker:** prvé 3 mesiace sú neplatené; až potom 6–7 €/h podľa zvládnutých úloh
-- preto nezaraďovať medzi priority napriek dobrej obsahovej zhode
-- https://sk.linkedin.com/jobs/view/sales-and-marketing-intern-inhouse-bratislava-at-madviso-online-marketingov%C3%A1-agent%C3%BAra-4449848474
+## Zdrojový radar — `job-sources.json`
+### Najvyššia dôvera / priorita
+- priame firemné kariérne stránky
+- Profesia
+- LinkedIn Jobs
+- Brigada.sk
+- Práca za rohom
+- Worki
+- Služby zamestnanosti
+- Pretlak / StartupJobs podľa typu roly
 
-### Concentrix — Poradce zákaznické podpory s češtinou – Home office — Match 50
-- aktívna, full remote Slovensko
-- 1 100 €/mes. + bonus až 20 %
-- inbound podpora pre online shop cez telefón, e-mail a chat
-- **blockery:** čeština na úrovni rodeného hovoriaceho + komunikatívna angličtina
-- https://jobs.concentrix.com/job/?id=SK-584
+### Freelance / zákazky
+- Upwork
+- Freelancer
+- Twine
+- Freelancermap
+- Useme
+- PeoplePerHour
+- Contra
+- Reddit `r/wordpressjobs`
+- ďalšie verejne indexované WordPress/WooCommerce dopyty
 
-## Dátová kvalita — implementované v tomto behu
-Do dočasného feedu boli pridané bezpečné metadata, ktoré nemenia UI:
-- `data-verified-at`
-- `data-source-type` (`job-board`, `company-career`, neskôr `facebook`, `freelance`, `community`)
-- `data-source-trust` (`high`, `medium`, `low`)
-- `data-confidence` (`high`, `medium`, `low`)
+### Facebook / komunity — iba verejne dostupná alebo indexovaná vrstva
+- Práca, brigády Bratislava a okolie / BratislavaDen.sk — https://www.facebook.com/groups/464113493609559/
+- WordPress Slovensko — https://www.facebook.com/groups/174080056127650
+- WooCommerce Komunita SK + CZ — https://www.facebook.com/groups/Woocommerce.SK.CZ/
+- Copywriteri SK
+- Marketeri, copywriteri, SEO optimalizátori
 
-Tieto polia zatiaľ v6 renderer nezobrazuje; slúžia ako základ budúceho JSON modelu a automatickej kontroly kvality.
-
-## Zdrojový radar — rozšírený
-### Job boardy / portály
-Profesia, Brigada.sk, Brigadovo.sk, 8h.sk, Kariera.sk/Kariera.zoznam.sk, Pracuj.sk, Worki.sk, JobAngels, Služby zamestnanosti, LinkedIn Jobs, Indeed, Jooble, Pretlak, StartupJobs, Jobs.cz, Prace.cz, personálne agentúry a menšie lokálne job boardy.
-
-### Firemné kariérne stránky
-Pri relevantných firmách preferovať priamy career page ako dôveryhodnejší zdroj než agregátor.
-
-### Freelance / remote / zákazky
-Upwork, Freelancer, Twine, Freelancermap, Useme, PeoplePerHour, Contra (ak verejne indexované), Reddit vrátane r/wordpressjobs a WordPress/WooCommerce komunít.
-
-### Facebook / komunity
-Kontrolovať iba verejne dostupné/indexované výsledky. Prioritné názvy/skupiny:
-- Práca, brigády Bratislava a okolie / BratislavaDen.sk
-- Práca v Bratislave
-- Hľadám prácu – Ponúkam prácu
-- Práca, brigáda Slovensko
-- Brigády Bratislava
-- Práca z domu Slovensko
-- WordPress Slovensko
-- ďalšie verejné skupiny pre e-shopy, malé firmy a živnostníkov
-
-Súkromné alebo neprístupné FB skupiny sa nesmú predstierať ako pokryté.
+**Pravidlo:** FB má len čiastočné verejné pokrytie. Súkromné/prihlásením chránené príspevky sa nesmú označovať ako prejdené. Konkrétny FB/community dopyt sa do `jobs-data.json` pridá iba s overiteľným verejným linkom a nižším `sourceTrust`.
 
 ## Neaktívne / nezaradené
-- Top4Mobile — Administrátor e-shopu / zákaznícka podpora: LinkedIn uvádza `No longer accepting applications`.
-- SecTec — Marketing asistent: predchádzajúca kontrola označila neaktívne; do aktívneho feedu nevracať bez nového jasného dôkazu aktívnosti.
+- Top4Mobile — Administrátor e-shopu / zákaznícka podpora: no longer accepting.
+- SecTec — Marketing asistent: neaktívne.
 - Zenea — E-Commerce Specialist: neaktívna.
 - iRefurb Solutions — Ecommerce Specialist: neaktívna.
 - Global Blue — 2nd level Application Support: neaktívna.
-- TZS FIRST E Commerce — Content Manager: obsahovo silné, ale veľmi dobrá nemčina + dobrá angličtina sú zásadný blocker.
-- Allegro — Junior špecialista podpory partnerov: vyžaduje plynulú maďarčinu a slovenčinu; nezaraďovať medzi TOP bez splnenia jazyka.
+- TZS FIRST E Commerce — Content Manager: veľmi dobrá nemčina + dobrá angličtina = zásadný blocker.
+- Allegro — Junior podpora partnerov: plynulá maďarčina + slovenčina = blocker.
+- Madviso intern: obsahovo relevantné, ale prvé 3 mesiace neplatené = nízka priorita.
+- Concentrix remote: čeština native + komunikatívna AJ = blocker.
 
 ## Application Builder
-Na každej pracovnej ponuke aj brigáde pripravuje personalizovanú reakciu a cielené CV iba z MASTER profilu a faktických údajov ponuky. Nevymýšľa hard skills ani kvalifikácie.
+Na každej ponuke, brigáde aj zákazke pripravuje personalizovanú reakciu a cielené CV iba z MASTER profilu a faktických údajov položky. Nevymýšľa kvalifikácie ani hard skills.
 
-## BACKLOG — nové nápady bez zásahu do zamknutého UI
-1. **Prechod na `jobs-data.json`** — odstrániť parsing starého HTML feedu, mať jeden canonical dátový model pre ponuky, brigády a zákazky. Toto je najvyššia technická priorita ďalšej kontrolovanej UI verzie.
-2. **Canonical URL + source precedence** — pri rovnakom inzeráte z viacerých zdrojov preferovať firemnú kariérnu stránku > Profesia/job board > agregátor > komunitný repost a evidovať všetky alternatívne zdroje bez duplicity.
+## BACKLOG — ďalšie zmysluplné rozšírenia
+1. **Import CRM backupu** — obnova exportovaného JSON po vyčistení prehliadača alebo na inom zariadení.
+2. **Source dashboard** — koľko ponúk prišlo z job boardov / priamych career pages / FB / freelance a akú majú úspešnosť.
+3. **Commute/distance** — odhad dojazdu z Miloslavova/BA pri lokálnych ponukách.
+4. **Deadline alert** — zvýrazniť ponuky s blížiacim sa koncom alebo nástupom.
+5. **Cross-device sync** — presun CRM z čistého localStorage na server/cloud.
+6. **Nexus ingestion** — neskôr presun hourly ingestion/normalizácie do KomArena Nexus.
+7. **GitHub Actions / lokálny agent 5-min polling** — až po stabilizácii zdrojového ingestu; ChatGPT automat zostáva hourly.
+8. **Company/contact enrichment** — verejný kontakt, career e-mail, možnosť priameho oslovenia, ak je overiteľný.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
-Používateľský link: `komarena-job-radar-v4.html` → MASTER v6.
+Používateľský link: `komarena-job-radar-v4.html` → MASTER v6.1.
