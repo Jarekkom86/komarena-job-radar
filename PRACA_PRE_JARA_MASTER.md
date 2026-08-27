@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 27. 8. 2026 18:25 CEST
+Aktualizované: 27. 8. 2026 19:29 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -56,23 +56,31 @@ Aktualizované: 27. 8. 2026 18:25 CEST
 22. **VNET — IT customer support — Match 82**.
 23. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 27. 8. 2026 18:25 CEST
+## SOURCE AUDIT — 27. 8. 2026 19:29 CEST
 Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak; StartupJobs/WordPress Jobs; Upwork; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
 - **Nové položky do `jobs-data.json`: 0.** Kvalita mala prednosť pred kvótou; LIVE feed ostal fail-closed nezmenený.
-- **Profesia:** bez nového kandidáta, ktorý by prebil aktuálne LIVE možnosti a prešiel BA/remote + jazykovým/hard-skill gateom.
-- **Priame firemné kariéry:** bez nového samostatného high-fit kandidáta nad existujúce Hilti/Penta/O2/Websupport výsledky.
-- **LinkedIn:** Foxelli Crochet Customer Support je 100 % remote a Slovakia-eligible, ale vyžaduje špecializovanú crochet expertízu a fluent/near-native English. 0 pridaných.
-- **Brigada.sk:** bez nového relevantného web/admin/tech hitu.
-- **Worki:** zachytené aktualizované výsledky v Novom Meste nad Váhom a Nitre/Trnave; sú mimo BA hard gate bez vhodného remote režimu a tematicky slabé. 0 pridaných.
+- **Profesia:** čerstvá INDEX NOSLUŠ administratívna výpomoc v BA za 1 650 € má relevantnú archiváciu/skenovanie/faktúry, ale ekonomické vzdelanie, účtovníctvo a AJ B1–B2 znižujú praktickú zhodu; nepridaná. MicroStep aplikačný inžinier je mimo profilu.
+- **Priame firemné kariéry:** bez nového samostatného high-fit kandidáta nad existujúce Hilti/Penta/O2/Pandora/VNET/Websupport výsledky.
+- **LinkedIn:** iSklad Account Executive v Senci je geograficky vhodný a e-commerce/tech-logistics, ale jadro je akvizícia a sales; nepridaný.
+- **Brigada.sk:** aktuálny BA PHP programátor je hard development; ostatné viditeľné výsledky sú mimo BA alebo tematicky slabé.
+- **Worki:** Administrátor e-shopu / zákaznícka podpora Shield-Sk je už obsadený alebo zrušený; nepridaný.
 - **Práca za rohom:** bez nového samostatného vhodného kandidáta; Profesia mirrory sa stále nepočítajú ako nezávislý source hit.
-- **Služby zamestnanosti/Kariera:** bez nového kandidáta s vhodnou lokalitou, jazykmi a požiadavkami.
-- **Pretlak:** bez nového kandidáta nad aktuálny LIVE; OVB AI ostáva high-fit výsledok.
-- **StartupJobs/WordPress Jobs:** bez nového Slovakia-remote kandidáta s primeranou AJ a bez hard-development požiadaviek.
-- **Upwork:** reálne skontrolované čerstvé worldwide výsledky. **Part-Time Web Developer / Virtual Assistant / Data Specialist** je geograficky vhodný a flexibilný, ale má iba 3–8 USD/h, 20–50 proposals a príliš všeobecný web-development scope. **WordPress Small Fix** má 15 USD fixed a 20–50 proposals. **WordPress Developer for WooCommerce** má 5 USD fixed a 20–50 proposals. **WordPress / Elementor Web Designer & Support Specialist** je síce na karte Worldwide, ale detail explicitne obmedzuje rolu na Philippines/UK, vyžaduje fluent English, expert úroveň a 8:30–17:00 UK; preto neprešiel location/language gate. 0 pridaných.
-- **Reddit:** recent verejné výsledky neobsahovali nový aktuálny Slovakia-eligible hiring lead s lepšou kvalitou; starší WordPress/WooCommerce content-assistant ostáva iba discovery stopa. 0 pridaných.
-- **Facebook:** **0 verified hits**. Priame verejné vyhľadanie WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín vracia login/temporary block namiesto konkrétnych overiteľných group postov. Audit bol sprísnený zo `limited` na `blocked` pre tento konkrétny beh. Autentizovaný Nexus/local ingestion ostáva backlog potreba.
+- **Služby zamestnanosti/Kariera:** Naturzon e-shop support je v Poprade bez overeného remote režimu = `reject-distance`. Starší BA administratívny výsledok je nízko platený a neprebíja LIVE feed.
+- **Pretlak:** CloseRocket Customer Success & UX Partner je čerstvý BA hit, ale fluent English je tvrdý problém. Poll60 CEO je príliš sales/leadership. PUELLAvone CRM je Košice remote/on-site a vyžaduje mid CRM/Bloomreach špecializáciu; 0 pridaných.
+- **StartupJobs/WordPress Jobs:** Medevio BDR SK je 100 % remote a geograficky vhodný, 34–56 tis. Kč, ale primárne outbound sales; neprebíja preferované web/tech/admin možnosti. WordPress Jobs bez nového vhodného non-hard-dev Slovakia-remote hitu.
+- **Upwork:** reálne skontrolované čerstvé worldwide výsledky. WooCommerce developer 5 USD fixed, Elementor build 20 USD fixed, WP text edit 30 USD fixed a ďalšie malé úlohy majú 20–50 proposals alebo hard-dev/low-value profil. Part-time assistant s povinným screen-sharing/camera režimom je nevhodný. 0 pridaných.
+- **Reddit:** dnešné výsledky dominujú `[FOR HIRE]` ponuky freelancerov, nie hiring dopyty pre Jara. 0 eligible hiring hitov.
+- **Facebook:** **0 verified hits**. Verejná indexácia neposkytla konkrétny aktuálny WordPress/WooCommerce/BA hiring post s priamym overiteľným linkom. Audit ostáva `blocked`; autentizovaný Nexus/local ingestion je naďalej potrebný pre spoľahlivé pokrytie.
+
+### Run summary
+- Source families reálne skontrolované: **12**.
+- Nové aktívne položky: **0**.
+- Vyradené lokalitou: **1**.
+- Vyradené jazykovým/hard-skill gateom: **5**.
+- Vyradené ako slabé/nízka hodnota: **7**.
+- Duplikát / `[FOR HIRE]` / nevhodný typ leadu: **4**.
 
 ### LIVE mix hlavného `jobs-data.json`
 - **26 aktívnych položiek**.
@@ -143,8 +151,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 47. Industry compatibility flag.
 48. Work-schedule compatibility profile.
 49. Employment-condition contradiction detector.
-50. **Fuzzy cross-source role identity resolver — NOVÉ** — deduplikovať rovnakú pozíciu aj vtedy, keď má na firemnom career webe, LinkedIne a jobboarde odlišný názov alebo URL. Kombinovať normalizovaný názov firmy, význam názvu pozície, lokalitu a kľúčové požiadavky; pri zhode zachovať stabilné interné ID, vybrať najlepší canonical zdroj a zlúčiť dôkazy namiesto vytvorenia dvoch kariet. Prínos: menej duplikátov, presnejší source mix a bohatšie overenie jednej príležitosti.
-51. **Remote-country eligibility memory — NOVÉ** — evidovať časovo obmedzenú, dôkazom podloženú pamäť, z ktorých krajín konkrétny zamestnávateľ/platformová rola reálne prijíma remote ľudí. Ukladať `eligibleCountries`, zdroj dôkazu a expiry; nikdy neodvodzovať Slovakia-eligibility iba zo slova `Worldwide`, ak detail uvádza užší country list. Prínos: rýchlejší hard location gate, menej opakovaného overovania a menej falošných remote hitov typu „Worldwide karta, Philippines/UK detail“.
+50. Fuzzy cross-source role identity resolver.
+51. Remote-country eligibility memory.
+52. **Discovery-to-active quarantine lane — NOVÉ** — každý nový kandidát, ktorý ešte nemá potvrdenú lokalitu/remote politiku, jazyk, apply path alebo mandatory requirements, najprv dostať do krátkej `candidate` vrstvy mimo aktívneho Radaru. Aktivovať až po splnení minimálneho evidence setu. Prínos: menej falošných TOP hitov, menej neskorších opráv a žiadne miešanie neoverených search snippetov s reálne overenými ponukami.
+53. **Cross-source corroboration score — NOVÉ** — ak sa tá istá rola objaví na firemnej kariére, LinkedIne alebo jobboarde, nezakladať ďalšiu kartu, ale zvýšiť `scoreConfidence`/`activeProof` iba vtedy, keď druhý nezávislý zdroj potvrdzuje firmu, názov, lokalitu a aktívnosť. Mirrory jedného zdroja sa nerátajú. Prínos: vyššia dôvera v TOP ponuky bez skresľovania source mixu alebo vytvárania duplicít.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
