@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 27. 8. 2026 01:26 CEST
+Aktualizované: 27. 8. 2026 02:21 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -26,41 +26,47 @@ Aktualizované: 27. 8. 2026 01:26 CEST
 - Agregátor/repost nesmie prebiť priamy firemný zdroj.
 
 ## Aktuálne TOP / čerstvo overené
-1. **LUNYS — E-commerce špecialista — Match 96** — WooCommerce/Shoptet/Magento, denná správa e-shopu, kategórie, testovanie, promo a AI. Originálny LinkedIn inzerát bol znovu potvrdený ako aktívny 27. 8. 2026 00:23 CEST: https://sk.linkedin.com/jobs/view/e-commerce-%C5%A1pecialista-%E2%80%93-spr%C3%A1va-a-rozvoj-e-shopu-at-lunys-4427140866
+1. **LUNYS — E-commerce špecialista — Match 96** — WooCommerce/Shoptet/Magento, denná správa e-shopu, kategórie, testovanie, promo a AI. Canonical zdroj bol bezpečne migrovaný z Profesia na originálny LinkedIn inzerát: https://sk.linkedin.com/jobs/view/e-commerce-%C5%A1pecialista-%E2%80%93-spr%C3%A1va-a-rozvoj-e-shopu-at-lunys-4427140866
 2. **LEAF — Implementation Support Specialist — Match 94** — prevažne remote, flexibilný skrátený úväzok; customer support + back-office + reporty + fakturačné podklady + obsahové úpravy webov + praktické AI automatizácie. https://growni.sk/praca/leaf-hladame-motor-nie-volant-implementation-support-specialist
 3. **Ryvenia — Shoptet Specialist — Match 93** — Bratislava/full remote/hybrid; produkty, kategórie, ceny, CSV, migrácie, QA. https://sk.linkedin.com/jobs/view/shoptet-specialist-freelance-fulltime-part-time-hybrid-at-ryvenia-4254309724
-4. **Websupport — Customer Success Advisor — Match 91** — weby, hosting, SSL, troubleshooting a zákaznícka komunikácia. https://www.websupport.sk/kariera/customer-success-advisor/
-5. **O2 — Digital Content Admin — Match 90** — 8 €/h, web/e-shop, produkty, atribúty, ceny a landing pages. https://kariera.o2.sk/jobs/88971
-6. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia, 1 520 €/mes. + bonus. https://www.profesia.sk/praca/plutvy/O5346653
-7. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote, <30 h/týždeň, 3–6 mesiacov, 5–10 USD/h; <5 proposals pri poslednom overení. Mínus: US Mountain Time okno. https://www.upwork.com/freelance-jobs/apply/WooCommerce-Assistant_~022091929951949047161/
-8. **ALL SPORTS — e-shop Bauer Hockey — Match 88** — 1 600 €/mes., WordPress výhoda.
-9. **SuperFaktura — Supportový parťák — Match 87** — online support, e-shop napojenia, exporty, troubleshooting.
-10. **Bookio — B2B/SaaS online support — Match 85** — Petržalka/hybrid, živnosť, od 1 500 €/mes.
-11. **Pandora — Associate Assistant, eCommerce Operations — Match 84** — priamy firemný zdroj, part-time.
-12. **Allit — End-User Support — Match 84**.
-13. **3MON — IT & Operations Support — Match 84** — B1 AJ mínus.
-14. **STU — Web špecialista CMS/web — Match 83**.
-15. **VNET — IT customer support — Match 82**.
-16. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
+4. **Hilti — Implementation & Service Specialist — Match 92 — NOVÉ / REAGOVAŤ DNES** — Bratislava, TPP, od 1 800 €/mes. + ročné bonusy + služobné auto. Implementácia ON!Track/Fleet Management, zákaznícke dáta, školenia, reklamácie, CRM Salesforce a MS Office. Minimálne SŠ s maturitou; predaj/Hilti skúsenosť a angličtina sú iba výhodou. Priamy firemný zdroj: https://careers.hilti.group/de-de/jobs/18369-sk/implementation-service-specialist/
+5. **Websupport — Customer Success Advisor — Match 91** — weby, hosting, SSL, troubleshooting a zákaznícka komunikácia. https://www.websupport.sk/kariera/customer-success-advisor/
+6. **O2 — Digital Content Admin — Match 90** — 8 €/h, web/e-shop, produkty, atribúty, ceny a landing pages. https://kariera.o2.sk/jobs/88971
+7. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia, 1 520 €/mes. + bonus. https://www.profesia.sk/praca/plutvy/O5346653
+8. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote, <30 h/týždeň, 3–6 mesiacov, 5–10 USD/h; <5 proposals pri poslednom overení. Mínus: US Mountain Time okno. https://www.upwork.com/freelance-jobs/apply/WooCommerce-Assistant_~022091929951949047161/
+9. **ALL SPORTS — e-shop Bauer Hockey — Match 88** — 1 600 €/mes., WordPress výhoda.
+10. **SuperFaktura — Supportový parťák — Match 87** — online support, e-shop napojenia, exporty, troubleshooting.
+11. **Bookio — B2B/SaaS online support — Match 85** — Petržalka/hybrid, živnosť, od 1 500 €/mes.
+12. **Pandora — Associate Assistant, eCommerce Operations — Match 84** — priamy firemný zdroj, part-time.
+13. **Allit — End-User Support — Match 84**.
+14. **3MON — IT & Operations Support — Match 84** — B1 AJ mínus.
+15. **STU — Web špecialista CMS/web — Match 83**.
+16. **VNET — IT customer support — Match 82**.
+17. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 27. 8. 2026 01:26 CEST
+## SOURCE AUDIT — 27. 8. 2026 02:21 CEST
 Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak/StartupJobs/WordPress Jobs; Upwork a ďalšie freelance indexy; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
-- **Nové položky do `jobs-data.json`: 0.** Fail-closed pravidlo zachované; žiadna slabá ponuka nebola pridaná iba kvôli diverzite.
-- **LinkedIn:** nájdené dve aktuálne Wolt Support Associate pozície v Bratislave (part-time aj full-time). Obe vyžadujú minimálne B2 AJ a zmeny vrátane večerov/víkendov, preto nepridané do prioritného feedu.
-- **Reddit:** nájdený čerstvý urgentný dopyt `Looking for a Wordpress dev / designer` z 26. 8. 2026. Scope je veľmi stručný, rozpočet chýba a už je tam viacero reakcií, preto neprebil existujúce kvalitnejšie freelance položky.
-- **Profesia / firemné kariéry / Brigada.sk / Worki / Práca za rohom / Služby zamestnanosti/Kariera / Pretlak / StartupJobs / WordPress Jobs / Upwork / ďalšie freelance indexy:** reálne prehľadané; bez nového kvalitnejšieho prírastku.
-- **Facebook:** stále 0 verified hits. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny priamy post; stav zostáva `limited`.
+- **Nové položky do `jobs-data.json`: 1 — Hilti Implementation & Service Specialist (Match 92).**
+- **Source migrácie: 1 — LUNYS Profesia → originálny LinkedIn**, stabilné ID zachované.
+- **Priame firemné kariéry:** Hilti Careers priamo potvrdilo aktívnu Bratislava rolu; preferované pred LinkedIn duplikátom.
+- **LinkedIn:** Hilti, Wolt a Marlink boli aktuálne indexované. Wolt/Marlink vyžadujú B2 AJ; METRO Customer Success Manager bol síce veľmi zaujímavý obsahovo, ale LinkedIn ho explicitne označuje `No longer accepting applications`, preto nebol pridaný.
+- **Profesia:** čerstvé BA support/helpdesk/customer-service výsledky skontrolované; bez nového kandidáta, ktorý by prebil Hilti alebo TOP feed.
+- **Brigada.sk:** čerstvé BA brigády skontrolované; aktuálny retail/pokladňa hit na 27.–28. 8. má nízky profilový fit, preto nepridaný.
+- **Worki / Práca za rohom / Služby zamestnanosti/Kariera / Pretlak / StartupJobs / WordPress Jobs:** reálne prehľadané; bez nového kvalitnejšieho prírastku.
+- **Upwork:** nájdených viacero čerstvých WordPress/WooCommerce zákaziek z 26. 8. 2026. Väčšina mala hard PHP/development, 20–50 alebo 50+ proposals, U.S.-only obmedzenie alebo veľmi nízky budget; nepridané iba kvôli diverzite.
+- **Reddit:** čerstvé výsledky boli prevažne `FOR HIRE` ponuky freelancerov, nie nové hiring dopyty.
+- **Facebook:** stále **0 verified hits**. WordPress Slovensko, WooCommerce SK+CZ a BA pracovné skupiny nemajú cez verejnú indexáciu konkrétny aktuálny hiring post s priamym overiteľným linkom; stav zostáva `limited`.
 
 ### LIVE mix hlavného `jobs-data.json`
-- Posledný zapísaný stav zostáva **19 aktívnych položiek**.
-- Profesia/Profesia-linked: **11 z 19 = 57,9 %** podľa aktuálne uložených source polí.
-- Priame firemné kariéry: **4 z 19 = 21,1 %**.
-- LinkedIn: **1 z 19 = 5,3 %**.
-- GROWNi/iný job board mimo Profesia: **1 z 19 = 5,3 %**.
-- Freelance: **2 z 19 = 10,5 %**.
-- Poznámka: LUNYS má už overený originálny LinkedIn zdroj; po bezpečnej source migrácii klesne reálny Profesia podiel bez mazania ponúk.
+- **20 aktívnych položiek.**
+- Profesia: **10 z 20 = 50 %**.
+- LinkedIn: **2 z 20 = 10 %**.
+- Priame firemné kariéry: **5 z 20 = 25 %**.
+- GROWNi/iný job board mimo Profesia: **1 z 20 = 5 %**.
+- Freelance: **2 z 20 = 10 %**.
+- **Mimo Profesia spolu: 10 z 20 = 50 %.** Cieľ diverzity dosiahnutý bez mazania kvalitných Profesia položiek.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -85,10 +91,12 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 11. **Competition signal** — proposals/applicants/interviewing.
 12. **Timezone compatibility score** — prepočet požadovaného pracovného okna na Europe/Bratislava.
 13. **Client quality/risk signal** — história freelance klienta oddelene od Match skóre.
-14. **Source canonical migration queue** — pri overení kvalitnejšieho primárneho zdroja vytvoriť bezpečný dátový migračný krok (napr. LUNYS Profesia → LinkedIn) s kontrolou stabilného ID, CRM väzby a canonical dedupe pred zápisom.
-15. **Closed-listing negative cache** — ukladať `no longer accepting`/zrušené výsledky s časom overenia a TTL, aby sa uzavreté inzeráty zbytočne nevyhodnocovali v každom hodinovom behu.
-16. **Evidence snapshot fingerprint — NOVÉ** — pri každom úspešnom overení uložiť minimálny fingerprint kľúčových faktov (title/company/pay/status/source + verifiedAt), aby sa zachytili tiché zmeny inzerátu bez zmeny URL a Radar vedel upozorniť na zmenu mzdy, formy alebo stavu.
-17. **Adaptive recheck SLA — NOVÉ** — frekvenciu opätovného overenia riadiť podľa priority a volatility: `today`/čerstvé freelance položky kontrolovať častejšie, stabilné firemné kariéry redšie a `limited`/blocked zdroje s backoffom. Zníži zbytočné dotazy a presunie kapacitu na ponuky, kde rozhoduje čas.
+14. **Source canonical migration queue** — bezpečný presun na kvalitnejší primárny zdroj pri zachovaní stabilného ID/CRM väzby; prvý reálny prípad LUNYS bol vykonaný 27. 8. 2026.
+15. **Closed-listing negative cache** — ukladať `no longer accepting`/zrušené výsledky s časom overenia a TTL.
+16. **Evidence snapshot fingerprint** — uložiť fingerprint title/company/pay/status/source + verifiedAt a zachytiť tiché zmeny inzerátu.
+17. **Adaptive recheck SLA** — `today`/čerstvé freelance kontrolovať častejšie, stabilné firemné kariéry redšie, blocked zdroje s backoffom.
+18. **Apply-path integrity check — NOVÉ** — pred označením `priority: today` overiť, že klik vedie na reálne aktívny apply path a nie iba starý index, login wall, geo-restriction alebo `no longer accepting`. Zníži stratený čas pri reakcii a falošné TOP výsledky.
+19. **Source-yield allocator s exploration floor — NOVÉ** — merať počet kvalitných verified hitov na jednotku search úsilia podľa zdroja a dynamicky presúvať viac kapacity na zdroje, ktoré prinášajú reálne vhodné ponuky, ale vždy zachovať povinné minimum 8 source families a pravidelnú exploráciu slabších zdrojov. Cieľ: vyšší počet relevantných hitov bez návratu k mono-zdroju Profesia.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
