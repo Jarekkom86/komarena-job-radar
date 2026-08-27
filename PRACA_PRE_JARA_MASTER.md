@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 27. 8. 2026 05:37 CEST
+Aktualizované: 27. 8. 2026 06:34 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -29,43 +29,44 @@ Aktualizované: 27. 8. 2026 05:37 CEST
 1. **LUNYS — E-commerce špecialista — Match 96** — WooCommerce/Shoptet/Magento, denná správa e-shopu, kategórie, testovanie, promo a AI. Canonical zdroj: LinkedIn.
 2. **LEAF — Implementation Support Specialist — Match 94** — prevažne remote, flexibilný skrátený úväzok; customer support + back-office + reporty + fakturačné podklady + obsahové úpravy webov + praktické AI automatizácie.
 3. **Ryvenia — Shoptet Specialist — Match 93** — Bratislava/full remote/hybrid; produkty, kategórie, ceny, CSV, migrácie, QA.
-4. **Hilti — Implementation & Service Specialist — Match 92** — Bratislava, TPP, od 1 800 €/mes. + bonusy + služobné auto; implementácia ON!Track/Fleet Management, školenia, reklamácie, CRM.
-5. **Websupport — Customer Success Advisor — Match 91** — weby, hosting, SSL, troubleshooting a zákaznícka komunikácia; 27. 8. ráno znovu potvrdený aktívny priamy apply formulár.
-6. **O2 — Digital Content Admin — Match 90** — 8 €/h, web/e-shop, produkty, atribúty, ceny a landing pages.
-7. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia, 1 520 €/mes. + bonus.
-8. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote, <30 h/týždeň, 3–6 mesiacov, 5–10 USD/h; stále aktívny; mínus US Mountain Time.
-9. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
-10. **SuperFaktura — Supportový parťák — Match 87**.
-11. **Bookio — B2B/SaaS online support — Match 85**.
-12. **Pandora — Associate Assistant, eCommerce Operations — Match 84**.
-13. **Allit — End-User Support — Match 84**.
-14. **3MON — IT & Operations Support — Match 84**.
-15. **STU — Web špecialista CMS/web — Match 83**.
-16. **VNET — IT customer support — Match 82**.
-17. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
+4. **Penta Real Estate — Sales Administrator — Match 92** — NOVÉ; Bratislava, TPP, 1 800 €/mes. + ročný bonus + home office; CRM, klientský portál, dáta, reporty, dokumenty, koordinácia dodávateľov systémov a klientská podpora. Priamy firemný career link, bez tvrdej vyššej AJ v overenom detaile.
+5. **Hilti — Implementation & Service Specialist — Match 92** — Bratislava, TPP, od 1 800 €/mes. + bonusy + služobné auto; implementácia ON!Track/Fleet Management, školenia, reklamácie, CRM.
+6. **Websupport — Customer Success Advisor — Match 91** — weby, hosting, SSL, troubleshooting a zákaznícka komunikácia.
+7. **O2 — Digital Content Admin — Match 90** — 8 €/h, web/e-shop, produkty, atribúty, ceny a landing pages.
+8. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia, 1 520 €/mes. + bonus.
+9. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote, <30 h/týždeň, 3–6 mesiacov, 5–10 USD/h; stále aktívny; mínus US Mountain Time.
+10. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
+11. **SuperFaktura — Supportový parťák — Match 87**.
+12. **Bookio — B2B/SaaS online support — Match 85**.
+13. **Pandora — Associate Assistant, eCommerce Operations — Match 84**.
+14. **Allit — End-User Support — Match 84**.
+15. **3MON — IT & Operations Support — Match 84**.
+16. **STU — Web špecialista CMS/web — Match 83**.
+17. **VNET — IT customer support — Match 82**.
+18. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 27. 8. 2026 05:37 CEST
+## SOURCE AUDIT — 27. 8. 2026 06:34 CEST
 Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak/StartupJobs/WordPress Jobs; Upwork; ďalšie freelance indexy; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
-- **Nové položky do `jobs-data.json`: 0.** Feed sa nemenil iba kvôli kvóte; fail-closed a kvalita ostávajú nadradené počtu.
-- **Profesia:** prehľadané aktuálne BA e-shop/support/IT-support výsledky; bez nového kandidáta, ktorý by prebil existujúci TOP bez jazykového/hard-skill mínusu.
-- **Priame firemné kariéry:** Websupport Customer Success má stále aktívny apply formulár; O2 a Hilti boli znovu nájdené cez priame kariérne stránky. Bez nového lepšieho direct-source kandidáta.
-- **LinkedIn:** čerstvý **Wolt Support Associate Part Time** je aktívny, ale je explicitne iba pre študentov, vyžaduje min. **B2 AJ** a večerné/víkendové zmeny; preto nepridaný. **Top4Mobile Administrátor e-shopu** je `No longer accepting applications`, preto uložený ako negatívny dôkaz, nie ako aktívna ponuka. **Wolt Merchant KYB Services Associate** je 20 h/týždeň za 650 €/mes. a vyžaduje fluency v AJ; neprebil aktuálny feed.
-- **Worki:** reálne prehľadané e-shop/IT/admin/vodič/sklad výsledky. Top4Mobile je aj na Worki explicitne obsadený/zrušený. Aktuálne viditeľné výsledky ako Asistent manažéra Vrakuňa/home office alebo sklad/vodič pozície nemajú lepšiu kvalitu/transparentnosť než existujúci feed.
-- **Brigada.sk / Práca za rohom / Služby zamestnanosti/Kariera / Pretlak / StartupJobs / WordPress Jobs:** reálne prehľadané; bez nového vhodného verified kandidáta. Mirror Profesia sa neráta ako nezávislý hit.
-- **Upwork:** nové WordPress zákazky sú prevažne nevhodné: Expert WordPress Developer za 30 USD vyžaduje PHP; AI WooCommerce plugin za 1 000 USD vyžaduje hotový plugin/codebase + PHP/AI Bot; WordPress completion je hard PHP/JS; WordPress changes 200 USD má 50+ proposals; small fix 15 USD má 20–50 proposals; U.S.-only e-commerce maintenance nie je dostupná. Existujúci WooCommerce Assistant ostáva lepší profilový hit.
-- **Reddit:** dnešné čerstvé výsledky sú `FOR HIRE`, nie hiring dopyty. **0 verified hiring hits.**
+- **Nové položky do `jobs-data.json`: 1 — Penta Real Estate Sales Administrator (Match 92).** Canonical zdroj je priamy Penta career detail, nie Profesia mirror.
+- **Profesia:** reálne prehľadané najnovšie BA výsledky. Penta Sales Administrator bol nájdený aj cez index, ale canonical bol presunutý na priamu kariéru. SportZoo IT Administrátor (3 000 €/mes.) je kompletná správa IT menšej firmy; Jens&Litwak Power Automate & IT Support (2 600 €/mes.) kombinuje Power Automate s IT systems administration v európskom scope. Obe majú vyšší hard-skill/jazykový risk a neboli pridané iba pre atraktívny plat.
+- **Priame firemné kariéry:** Penta Sales Administrator bol detailne overený: 1 800 €/mes., home office, CRM/klientský portál/VR, dáta, reporty, dokumenty, koordinácia externých dodávateľov systémov a klientská podpora; Excel a skúsenosť zo sales support/back-office/operations sú očakávané, CRM/real estate sú iba výhodou. Websupport, O2 a Hilti ostávajú relevantné priame zdroje.
+- **LinkedIn:** reálne prehľadané BA support/e-commerce/part-time výsledky. Wolt Support Associate Part Time je čerstvý, ale študentský režim + B2 AJ a večery/víkendy. Foxelli remote e-commerce support vyžaduje fluent/near-native English a špecializovanú sewing/crochet prax. SecTec Marketing Assistant má WordPress/CMS a flexibilnú formu, ale nemá dosť čerstvý/transparentný pay signál na prebitie súčasného TOP feedu.
+- **Brigada.sk / Worki / Práca za rohom / Služby zamestnanosti/Kariera / Pretlak / StartupJobs / WordPress Jobs:** reálne prehľadané; bez nového verified kandidáta s lepšou kombináciou fitu, transparentnosti a aktuálnosti. Mirror Profesia sa neráta ako nezávislý hit.
+- **Upwork:** reálne prehľadané nové WordPress/WooCommerce zákazky. Checkout/500-error job vyžaduje PHP/server troubleshooting a mal 15–20 proposals. Elementor Support Specialist je >30 h/týždeň, má emergency-ticket SLA a výraznú technickú záťaž. Nový e-commerce build vyžaduje PHP/HTML/CSS/JS a mal 20–50 proposals. Existujúci WooCommerce Assistant bol znovu potvrdený a ostáva lepší profilový hit (<5 proposals, 2 interviewing, 3 hires v čase kontroly).
+- **Freelancer/ďalšie freelance indexy:** reálne prehľadané; indexované relevantné projekty boli staré alebo s vysokou konkurenciou, bez nového verified prírastku.
+- **Reddit:** dnešné výsledky sú `FOR HIRE`, nie hiring dopyty. **0 verified hiring hits.**
 - **Facebook:** stále **0 verified hits**. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; stav zostáva `limited`.
 
 ### LIVE mix hlavného `jobs-data.json`
-- **20 aktívnych položiek.**
-- Profesia: **10 z 20 = 50 %**.
-- LinkedIn: **2 z 20 = 10 %**.
-- Priame firemné kariéry: **5 z 20 = 25 %**.
-- GROWNi/iný job board mimo Profesia: **1 z 20 = 5 %**.
-- Freelance: **2 z 20 = 10 %**.
-- **Mimo Profesia spolu: 10 z 20 = 50 %.** Diverzita ostáva na cieľovej úrovni bez umelého mazania kvalitných Profesia položiek.
+- **21 aktívnych položiek.**
+- Profesia: **10 z 21 = 47,6 %**.
+- LinkedIn: **2 z 21 = 9,5 %**.
+- Priame firemné kariéry: **6 z 21 = 28,6 %**.
+- GROWNi/iný job board mimo Profesia: **1 z 21 = 4,8 %**.
+- Freelance: **2 z 21 = 9,5 %**.
+- **Mimo Profesia spolu: 11 z 21 = 52,4 %.** Diverzita je nad cieľovou hranicou bez umelého mazania kvalitných Profesia položiek.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -100,8 +101,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 21. **Employer relationship memory** — prepájať ponuky rovnakej firmy s CRM históriou: predchádzajúce reakcie, odpovede, kontakty a pohovory.
 22. **Applicant-velocity signal** — pri zdrojoch s počtom applicants/proposals ukladať tempo rastu medzi recheckmi.
 23. **Evidence coverage score** — merať, koľko kritických polí je priamo overených z detailu; nízke coverage nesmie automaticky dostať `priority: today`.
-24. **Source latency / crawl-delay score — NOVÉ** — merať rozdiel medzi časom zverejnenia a časom, keď sa výsledok prvýkrát objaví vo vyhľadávaní. Zdroje s veľkým oneskorením nepoužívať na „čerstvé <24 h“ alerty bez priameho rechecku.
-25. **Effective hourly value — NOVÉ** — normalizovať mesačnú/hodinovú/fixed odmenu na porovnateľnú hodinovú hodnotu a odpočítať odhadovaný neplatený čas (commute, proposals, nočné časové okná). Pomôže odfiltrovať zákazky, ktoré vyzerajú dobre iba nominálnou cenou.
+24. **Source latency / crawl-delay score** — merať rozdiel medzi časom zverejnenia a časom, keď sa výsledok prvýkrát objaví vo vyhľadávaní. Zdroje s veľkým oneskorením nepoužívať na „čerstvé <24 h“ alerty bez priameho rechecku.
+25. **Effective hourly value** — normalizovať mesačnú/hodinovú/fixed odmenu na porovnateľnú hodinovú hodnotu a odpočítať odhadovaný neplatený čas (commute, proposals, nočné časové okná).
+26. **Requirement provenance map — NOVÉ** — ku každému kritickému filtru (jazyk, študent, vodičák, certifikácia, hard skill, zmeny) ukladať presný zdroj a čas dôkazu. Ak požiadavka nie je priamo doložená, systém ju nesmie prezentovať ako fakt; zníži sa tým počet chybných vyradení aj falošne vysokých Match skóre.
+27. **Opportunity aging state machine — NOVÉ** — rozlišovať `new/fresh/aging/stale/reverify` podľa publishedAt, verifiedAt a dostupnosti apply path. Namiesto automatického mazania sa staršie hodnotné ponuky presunú na recheck prioritu a používateľ uvidí, či je karta čerstvá alebo iba stále nevyvrátená.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
