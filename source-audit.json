@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T00:18:00+02:00",
+  "updatedAt": "2026-08-28T01:37:41+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "newActiveJobs": 0,
-    "rejectedByLocation": 0,
-    "rejectedByLanguageOrHardSkill": 7,
-    "rejectedAsWeakOrLowValue": 9,
-    "duplicateOrForHire": 6,
-    "note": "Bez novej ponuky, ktorá by po BA/remote, jazykovom, hard-skill a value gate prekonala aktuálny LIVE feed. jobs-data.json ostáva fail-closed nezmenený. Nové discovery signály: REGIONPRESS Senec je BA-area, ale ide o intenzívny cold-sales za 1 000–1 300 EUR; CCI Slovakia má relevantnú customer-care náplň, ale tvrdé C1/C2 jazykové požiadavky a VŠ III. stupňa; SPP admin rola vyžaduje VŠ II. stupňa. Upwork priniesol viacero čerstvých worldwide WordPress/WooCommerce zákaziek, ale prevažne nízky budget, 20–50+ proposals alebo hard PHP/backend požiadavky."
+    "rejectedByLocation": 1,
+    "rejectedByLanguageOrHardSkill": 6,
+    "rejectedAsWeakOrLowValue": 8,
+    "duplicateOrForHire": 5,
+    "note": "Bez novej ponuky, ktorá by po BA/remote, jazykovom, hard-skill a value gate prekonala aktuálny LIVE feed. jobs-data.json ostáva fail-closed nezmenený. Naturzon e-shop support je obsahovo veľmi vhodný a vyžaduje iba A1–A2 AJ, ale pracovisko je Poprad bez potvrdeného remote, preto reject-distance. Cerkam Facility Services Bratislava je čerstvý administratívno-terénny kandidát od 1 500 EUR, no verejný detail zatiaľ neumožnil dostatočne overiť obchodnú intenzitu a všetky povinné podmienky; neaktivovaný. Upwork priniesol čerstvé worldwide WordPress/WooCommerce zákazky, ale najlepšie nové výsledky mali vysokú konkurenciu, nízky budget alebo hard PHP/development požiadavky."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":6,"note":"Reálne prehľadané Bratislava/remote výsledky z posledných dní. REGIONPRESS Senec je aktívny a lokalitou vhodný, ale náplň je intenzívna telefonická akvizícia/cold-sales za 1 000–1 300 EUR, preto neprešiel value/profile gateom. Ďalšie čerstvé výsledky boli hard IT/Linux, B2+ alebo mimo profil. 0 pridaných."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":4,"note":"Kontrolované Hilti, O2, Websupport, Allegro/Thermo Fisher discovery a ďalšie direct career indexy. Bez nového BA/Slovakia-remote kandidáta, ktorý by prebil existujúce Hilti/Websupport/O2/Penta direct-source roly."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"note":"Wolt Support Associate Bratislava je aktívny, ale vyžaduje minimálne B2 English a študentský/part-time shift režim; hard language gate. 0 pridaných."},
-    {"name":"Brigada.sk","family":"other","status":"checked","hits":0,"note":"Reálne prehľadané BA admin/e-shop/IT/AI brigády; bez nového high-fit kandidáta nad aktuálny LIVE feed."},
-    {"name":"Worki.sk","family":"other","status":"checked","hits":1,"note":"REGIONPRESS/LepsiaPraca telefonická podpora sa objavuje aj cez Worki/regionálny mirror, ale canonical detail potvrdzuje cold-sales/akvizíciu a nízky garantovaný základ; neaktivované."},
-    {"name":"Práca za rohom","family":"other","status":"checked","hits":1,"note":"REGIONPRESS Senec mirror potvrdený; ide o rovnakú rolu ako Profesia/LepsiaPraca, preto sa nepočíta ako nezávislý source hit a neaktivoval sa."},
-    {"name":"Služby zamestnanosti / Kariera.sk","family":"government","status":"checked","hits":5,"note":"SPP Špecialista správy dcérskych spoločností je BA, 2 125 EUR priemer a HO 48 dní/rok, ale vyžaduje VŠ II. stupňa. CCI Slovakia customer care má vhodnú náplň, ale vyžaduje VŠ III. stupňa, 6+ rokov praxe a C1/C2 angličtinu+ukrajinčinu+ruštinu. ADMIN ANALYST index je staršia/recyklovaná agentúrna položka. 0 pridaných."},
-    {"name":"Pretlak","family":"other","status":"checked","hits":0,"note":"Reálne prehľadané BA/remote AI/e-commerce/support výsledky. Bez nového kandidáta lepšieho než existujúci OVB AI/automation a LIVE TOP."},
-    {"name":"WordPress Jobs / tech-creative boards","family":"other","status":"checked","hits":0,"note":"WordPress Jobs a tech/creative discovery prehľadané; bez vhodného non-hard-dev Slovakia-remote výsledku, ktorý by prešiel language/value gateom."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":10,"note":"Reálne prehľadané čerstvé worldwide WordPress/WooCommerce zákazky z 27.–28. 8. Najlepšie nové výsledky boli Elementor dokončenie webu 100 USD a WooCommerce build/maintenance, ale mali 20–50 proposals alebo nízky 5–50 USD fixed budget; viaceré expert roly vyžadovali PHP/backend/API. 0 pridaných."},
-    {"name":"Reddit r/wordpressjobs","family":"community","status":"checked","hits":2,"note":"Aktuálne výsledky sú prevažne [FOR HIRE] ponuky freelancerov, nie hiring leady. 0 eligible hiring hitov."},
-    {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"blocked","hits":0,"note":"Priamy pokus o WooCommerce SK+CZ vracia Facebook login + Temporarily Blocked; ďalšie skupiny nie sú verejne čitateľné cez spoľahlivý index. 0 verified hits; nič sa nepredstiera. Autorizovaný Nexus/local ingestion zostáva potrebný."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":7,"note":"Reálne prehľadané Bratislava/BA kraj a relevantné smery. Čerstvý Cerkam Facility Services — Terénny administratívny pracovník, Bratislava, od 1 500 EUR — je profilovo zaujímavý, ale dostupné indexy ho zároveň radia do obchodu, terénu a vodičských činností; plné mandatory podmienky neboli spoľahlivo načítané, preto neaktivovaný. STU asistent vyžaduje pokročilú AJ a ďalší jazyk; ďalšie nové výsledky boli sales/hard IT alebo slabší fit. 0 pridaných."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":4,"note":"Kontrolované relevantné direct-career indexy a existujúce Hilti/O2/Websupport/Penta línie. Bez nového BA alebo Slovakia-remote kandidáta, ktorý by prebil aktuálny direct-source TOP."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"note":"Wolt Support Associate Bratislava zostáva aktívny, ale vyžaduje minimum B2 English a študentský/part-time shift režim. 0 pridaných."},
+    {"name":"Brigada.sk","family":"other","status":"checked","hits":0,"note":"Reálne prehľadané BA admin/e-shop/IT/AI brigády; bez nového high-fit výsledku."},
+    {"name":"Worki.sk","family":"other","status":"checked","hits":0,"note":"Reálne prehľadané BA/online administratíva, e-shop a support; bez nového kandidáta nad aktuálny LIVE threshold."},
+    {"name":"Práca za rohom","family":"other","status":"checked","hits":7,"note":"Discovery prinieslo Cerkam Facility Services, STU asistenta, VÚB tester/brigády a ďalšie BA výsledky. Cerkam je čerstvý a lokalitou vhodný, ale mirror je Profesia-derived a mandatory detail nebol kompletne overený. STU má pokročilú AJ; VÚB/Orange technické brigády majú B2 alebo študentský/hard-IT gate. Mirrory sa nepočítajú ako nezávislý source hit."},
+    {"name":"Služby zamestnanosti / Kariera.sk","family":"government","status":"checked","hits":4,"note":"Naturzon — Administratíva a zákaznícka podpora pre e-shop — má veľmi dobrú náplň, bez praxe a A1–A2 AJ, ale pracovisko je Poprad a detail neuvádza remote/home office: reject-distance. StartSeason Bratislava-Rača vyžaduje VŠ I. stupňa, 6 mesiacov praxe a ruštinu B1/B2. Ďalšie BA admin výsledky boli slabšie alebo jazykovo nevhodné. 0 pridaných."},
+    {"name":"Pretlak / StartupJobs","family":"other","status":"checked","hits":0,"note":"Reálne prehľadané BA/Slovakia-remote AI, e-commerce, support a startup výsledky; bez nového vhodného kandidáta nad existujúci OVB/LEAF/Ryvenia TOP."},
+    {"name":"WordPress Jobs / tech-creative boards","family":"other","status":"checked","hits":0,"note":"WordPress Jobs a súvisiace tech/creative discovery prehľadané; bez vhodného non-hard-dev Slovakia-remote výsledku."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":9,"note":"Čerstvé worldwide remote WordPress/WooCommerce výsledky: WooCommerce checkout/server maintenance, WordPress setup/deployment za 300 USD, Elementor a ďalšie fixy. Najlepšie nové výsledky mali typicky 15–50 proposals, hard PHP/development požiadavky alebo nízky fixed budget; žiadny neprekonal aktuálne LIVE freelance položky. 0 pridaných."},
+    {"name":"Reddit r/wordpressjobs","family":"community","status":"checked","hits":4,"note":"Najnovšie výsledky sú prevažne [FOR HIRE] ponuky freelancerov; aktuálny hiring lead vhodný pre Slovensko nebol overený. 0 eligible hiring hitov."},
+    {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"blocked","hits":0,"note":"Verejná indexácia neposkytla konkrétny overiteľný aktuálny hiring post; priamy obsah skupín ostáva login/temporary-block obmedzený. 0 verified hits; nič sa nepredstiera. Autorizovaný Nexus/local ingestion zostáva potrebný."}
   ]
 }
