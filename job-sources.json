@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-27T21:33:00+02:00",
-  "lastAuditAt": "2026-08-27T21:33:00+02:00",
+  "updatedAt": "2026-08-27T22:21:21+02:00",
+  "lastAuditAt": "2026-08-27T22:21:21+02:00",
   "policy": {"publicOnly":true,"doNotPretendPrivateFacebookCoverage":true,"dedupeByCanonicalUrl":true,"verifyBeforeActive":true},
   "sources": [
     {"id":"profesia","name":"Profesia","type":"jobboard","priority":100,"trust":98,"url":"https://www.profesia.sk/","coverage":"direct","note":"Jeden z hlavných zdrojov, nie default. Pri mirroroch preferovať canonical direct/company zdroj."},
