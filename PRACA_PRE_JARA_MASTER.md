@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 27. 8. 2026 02:21 CEST
+Aktualizované: 27. 8. 2026 03:37 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -21,43 +21,42 @@ Aktualizované: 27. 8. 2026 02:21 CEST
 
 ### Negatívne filtre
 - AJ A2 je preferovaná. B1 = mierny/stredný mínus; B2/C1 = výrazný mínus.
-- Hard PHP/fullstack/Laravel/React/Vue, pokročilé Linux/Docker/API bez preukázanej praxe = silná penalizácia.
+- Povinný ďalší cudzí jazyk, hard PHP/fullstack/Laravel/React/Vue, pokročilé Linux/Docker/API bez preukázanej praxe = silná penalizácia alebo hard gate.
 - Bratislava/okolie = bonus; mimo BA preferovať remote/hybrid.
 - Agregátor/repost nesmie prebiť priamy firemný zdroj.
 
 ## Aktuálne TOP / čerstvo overené
-1. **LUNYS — E-commerce špecialista — Match 96** — WooCommerce/Shoptet/Magento, denná správa e-shopu, kategórie, testovanie, promo a AI. Canonical zdroj bol bezpečne migrovaný z Profesia na originálny LinkedIn inzerát: https://sk.linkedin.com/jobs/view/e-commerce-%C5%A1pecialista-%E2%80%93-spr%C3%A1va-a-rozvoj-e-shopu-at-lunys-4427140866
-2. **LEAF — Implementation Support Specialist — Match 94** — prevažne remote, flexibilný skrátený úväzok; customer support + back-office + reporty + fakturačné podklady + obsahové úpravy webov + praktické AI automatizácie. https://growni.sk/praca/leaf-hladame-motor-nie-volant-implementation-support-specialist
-3. **Ryvenia — Shoptet Specialist — Match 93** — Bratislava/full remote/hybrid; produkty, kategórie, ceny, CSV, migrácie, QA. https://sk.linkedin.com/jobs/view/shoptet-specialist-freelance-fulltime-part-time-hybrid-at-ryvenia-4254309724
-4. **Hilti — Implementation & Service Specialist — Match 92 — NOVÉ / REAGOVAŤ DNES** — Bratislava, TPP, od 1 800 €/mes. + ročné bonusy + služobné auto. Implementácia ON!Track/Fleet Management, zákaznícke dáta, školenia, reklamácie, CRM Salesforce a MS Office. Minimálne SŠ s maturitou; predaj/Hilti skúsenosť a angličtina sú iba výhodou. Priamy firemný zdroj: https://careers.hilti.group/de-de/jobs/18369-sk/implementation-service-specialist/
-5. **Websupport — Customer Success Advisor — Match 91** — weby, hosting, SSL, troubleshooting a zákaznícka komunikácia. https://www.websupport.sk/kariera/customer-success-advisor/
-6. **O2 — Digital Content Admin — Match 90** — 8 €/h, web/e-shop, produkty, atribúty, ceny a landing pages. https://kariera.o2.sk/jobs/88971
-7. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia, 1 520 €/mes. + bonus. https://www.profesia.sk/praca/plutvy/O5346653
-8. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote, <30 h/týždeň, 3–6 mesiacov, 5–10 USD/h; <5 proposals pri poslednom overení. Mínus: US Mountain Time okno. https://www.upwork.com/freelance-jobs/apply/WooCommerce-Assistant_~022091929951949047161/
-9. **ALL SPORTS — e-shop Bauer Hockey — Match 88** — 1 600 €/mes., WordPress výhoda.
-10. **SuperFaktura — Supportový parťák — Match 87** — online support, e-shop napojenia, exporty, troubleshooting.
-11. **Bookio — B2B/SaaS online support — Match 85** — Petržalka/hybrid, živnosť, od 1 500 €/mes.
-12. **Pandora — Associate Assistant, eCommerce Operations — Match 84** — priamy firemný zdroj, part-time.
+1. **LUNYS — E-commerce špecialista — Match 96** — WooCommerce/Shoptet/Magento, denná správa e-shopu, kategórie, testovanie, promo a AI. Canonical zdroj: LinkedIn.
+2. **LEAF — Implementation Support Specialist — Match 94** — prevažne remote, flexibilný skrátený úväzok; customer support + back-office + reporty + fakturačné podklady + obsahové úpravy webov + praktické AI automatizácie.
+3. **Ryvenia — Shoptet Specialist — Match 93** — Bratislava/full remote/hybrid; produkty, kategórie, ceny, CSV, migrácie, QA.
+4. **Hilti — Implementation & Service Specialist — Match 92** — Bratislava, TPP, od 1 800 €/mes. + bonusy + služobné auto; implementácia ON!Track/Fleet Management, školenia, reklamácie, CRM.
+5. **Websupport — Customer Success Advisor — Match 91** — weby, hosting, SSL, troubleshooting a zákaznícka komunikácia.
+6. **O2 — Digital Content Admin — Match 90** — 8 €/h, web/e-shop, produkty, atribúty, ceny a landing pages.
+7. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia, 1 520 €/mes. + bonus.
+8. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote, <30 h/týždeň, 3–6 mesiacov, 5–10 USD/h; pri dnešnej kontrole stále <5 proposals, klient naposledy aktívny približne pred hodinou; mínus US Mountain Time.
+9. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
+10. **SuperFaktura — Supportový parťák — Match 87**.
+11. **Bookio — B2B/SaaS online support — Match 85**.
+12. **Pandora — Associate Assistant, eCommerce Operations — Match 84**.
 13. **Allit — End-User Support — Match 84**.
-14. **3MON — IT & Operations Support — Match 84** — B1 AJ mínus.
+14. **3MON — IT & Operations Support — Match 84**.
 15. **STU — Web špecialista CMS/web — Match 83**.
 16. **VNET — IT customer support — Match 82**.
 17. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 27. 8. 2026 02:21 CEST
-Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak/StartupJobs/WordPress Jobs; Upwork a ďalšie freelance indexy; Reddit; Facebook verejná indexácia.
+## SOURCE AUDIT — 27. 8. 2026 03:37 CEST
+Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak/StartupJobs/WordPress Jobs; Upwork; Freelancer a ďalšie freelance indexy; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
-- **Nové položky do `jobs-data.json`: 1 — Hilti Implementation & Service Specialist (Match 92).**
-- **Source migrácie: 1 — LUNYS Profesia → originálny LinkedIn**, stabilné ID zachované.
-- **Priame firemné kariéry:** Hilti Careers priamo potvrdilo aktívnu Bratislava rolu; preferované pred LinkedIn duplikátom.
-- **LinkedIn:** Hilti, Wolt a Marlink boli aktuálne indexované. Wolt/Marlink vyžadujú B2 AJ; METRO Customer Success Manager bol síce veľmi zaujímavý obsahovo, ale LinkedIn ho explicitne označuje `No longer accepting applications`, preto nebol pridaný.
-- **Profesia:** čerstvé BA support/helpdesk/customer-service výsledky skontrolované; bez nového kandidáta, ktorý by prebil Hilti alebo TOP feed.
-- **Brigada.sk:** čerstvé BA brigády skontrolované; aktuálny retail/pokladňa hit na 27.–28. 8. má nízky profilový fit, preto nepridaný.
-- **Worki / Práca za rohom / Služby zamestnanosti/Kariera / Pretlak / StartupJobs / WordPress Jobs:** reálne prehľadané; bez nového kvalitnejšieho prírastku.
-- **Upwork:** nájdených viacero čerstvých WordPress/WooCommerce zákaziek z 26. 8. 2026. Väčšina mala hard PHP/development, 20–50 alebo 50+ proposals, U.S.-only obmedzenie alebo veľmi nízky budget; nepridané iba kvôli diverzite.
-- **Reddit:** čerstvé výsledky boli prevažne `FOR HIRE` ponuky freelancerov, nie nové hiring dopyty.
-- **Facebook:** stále **0 verified hits**. WordPress Slovensko, WooCommerce SK+CZ a BA pracovné skupiny nemajú cez verejnú indexáciu konkrétny aktuálny hiring post s priamym overiteľným linkom; stav zostáva `limited`.
+- **Nové položky do `jobs-data.json`: 0.** Kvalitu som neobchádzal kvótou.
+- **Profesia:** nájdené nové BA support výsledky vrátane Würth Customer Service Specialist a Decathlon customer service. Würth obsahovo vyzerá dobre, ale detail potvrdil povinnú B1 angličtinu aj B1 nemčinu; preto nie je vhodný kandidát do TOP feedu. Decathlon je profilovo slabší.
+- **LinkedIn:** NATEK IT Sourcer / Talent Researcher je part-time a entry-level, ale vyžaduje dobrú AJ na dennú komunikáciu a už mal 107 uchádzačov. Dalux CSM je technicky zaujímavý, no špecifickejší na BIM/construction customer success. Bez nového prírastku.
+- **Priame firemné kariéry:** reálne kontrolované BA support/e-commerce/implementation dotazy; bez nového kvalitnejšieho direct-source hitu. Existujúce Hilti/Websupport ostávajú v TOP podľa posledného overenia.
+- **Brigada.sk / Worki / Práca za rohom / Služby zamestnanosti/Kariera / Pretlak / StartupJobs / WordPress Jobs:** reálne prehľadané. Práca za rohom zrkadlila Würth z Profesia, preto sa neráta ako nezávislý hit. Ostatné bez nového vhodného kandidáta.
+- **Upwork:** existujúci WooCommerce Assistant bol znovu potvrdený ako stále aktívny a atraktívny: <5 proposals, 2 interviewing, 3 hires, klient ho videl približne pred hodinou. Nový AI Customer Service Plugin pre WooCommerce vyžaduje hotový plugin/codebase, PHP/AI Bot a má 20–50 proposals, preto nepridaný.
+- **Freelancer:** viacero aktívnych WordPress/WooCommerce repair/maintenance projektov, ale väčšina má vysokú konkurenciu (desiatky až stovky bidov) alebo hard PHP/development. Bez prírastku.
+- **Reddit:** dnešné výsledky sú prevažne `FOR HIRE`, nie hiring dopyty. Starší hiring post je development-heavy a s nízkym rozpočtom.
+- **Facebook:** stále **0 verified hits**. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; stav zostáva `limited`.
 
 ### LIVE mix hlavného `jobs-data.json`
 - **20 aktívnych položiek.**
@@ -66,7 +65,7 @@ Reálne prehľadané source families: Profesia; priame firemné kariéry; Linked
 - Priame firemné kariéry: **5 z 20 = 25 %**.
 - GROWNi/iný job board mimo Profesia: **1 z 20 = 5 %**.
 - Freelance: **2 z 20 = 10 %**.
-- **Mimo Profesia spolu: 10 z 20 = 50 %.** Cieľ diverzity dosiahnutý bez mazania kvalitných Profesia položiek.
+- **Mimo Profesia spolu: 10 z 20 = 50 %.** Diverzita ostáva na cieľovej úrovni bez umelého mazania kvalitných Profesia položiek.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -91,12 +90,14 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 11. **Competition signal** — proposals/applicants/interviewing.
 12. **Timezone compatibility score** — prepočet požadovaného pracovného okna na Europe/Bratislava.
 13. **Client quality/risk signal** — história freelance klienta oddelene od Match skóre.
-14. **Source canonical migration queue** — bezpečný presun na kvalitnejší primárny zdroj pri zachovaní stabilného ID/CRM väzby; prvý reálny prípad LUNYS bol vykonaný 27. 8. 2026.
+14. **Source canonical migration queue** — bezpečný presun na kvalitnejší primárny zdroj pri zachovaní stabilného ID/CRM väzby.
 15. **Closed-listing negative cache** — ukladať `no longer accepting`/zrušené výsledky s časom overenia a TTL.
 16. **Evidence snapshot fingerprint** — uložiť fingerprint title/company/pay/status/source + verifiedAt a zachytiť tiché zmeny inzerátu.
 17. **Adaptive recheck SLA** — `today`/čerstvé freelance kontrolovať častejšie, stabilné firemné kariéry redšie, blocked zdroje s backoffom.
-18. **Apply-path integrity check — NOVÉ** — pred označením `priority: today` overiť, že klik vedie na reálne aktívny apply path a nie iba starý index, login wall, geo-restriction alebo `no longer accepting`. Zníži stratený čas pri reakcii a falošné TOP výsledky.
-19. **Source-yield allocator s exploration floor — NOVÉ** — merať počet kvalitných verified hitov na jednotku search úsilia podľa zdroja a dynamicky presúvať viac kapacity na zdroje, ktoré prinášajú reálne vhodné ponuky, ale vždy zachovať povinné minimum 8 source families a pravidelnú exploráciu slabších zdrojov. Cieľ: vyšší počet relevantných hitov bez návratu k mono-zdroju Profesia.
+18. **Apply-path integrity check** — pred `priority: today` overiť reálny aktívny apply path.
+19. **Source-yield allocator s exploration floor** — dynamicky presúvať search kapacitu podľa verified hit yield, ale zachovať minimálne 8 source families.
+20. **Mandatory-requirement gate — NOVÉ** — z detailu inzerátu explicitne extrahovať povinné jazyky, certifikácie, status študenta, nočné zmeny, cestovanie a špecifické hard skills do `hardBlockReasons`. Match potom nesmie maskovať zásadnú nesplnenú podmienku. Praktický príklad z tohto behu: Würth by bol obsahovo zaujímavý, ale B1 AJ + B1 NJ ho majú automaticky zraziť mimo TOP.
+21. **Employer relationship memory — NOVÉ** — prepájať všetky ponuky rovnakej firmy s CRM históriou: predchádzajúce reakcie, odpovede, kontakty a pohovory. Pri novej pozícii tak Radar upozorní, že firma už bola oslovená, a navrhne nadviazať na existujúci kontakt namiesto posielania studeného duplicitného CV.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
