@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 27. 8. 2026 11:28 CEST
+Aktualizované: 27. 8. 2026 12:19 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -45,17 +45,21 @@ Aktualizované: 27. 8. 2026 11:28 CEST
 17. **VNET — IT customer support — Match 82**.
 18. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 27. 8. 2026 11:28 CEST
+## SOURCE AUDIT — 27. 8. 2026 12:19 CEST
 Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak/StartupJobs/WordPress Jobs; Upwork; ďalšie freelance indexy; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
-- **Nové položky do `jobs-data.json`: 0.** Fail-closed feed zostal nezmenený; nič nové neprebilo aktuálny LIVE kombináciou fitu, odmeny, dôveryhodnosti, jazyka, konkurencie a praktickej šance na úspech.
-- **Profesia:** reálne prehľadané čerstvé BA e-shop/support/WordPress/customer-support výsledky; bez nového kandidáta nad LIVE.
+- **Nové položky do `jobs-data.json`: 0.** Fail-closed feed zostal nezmenený. Dnešné nové kandidáty neprešli kombináciou fitu, jazyka, odmeny, eligibility, technických požiadaviek a praktickej šance na úspech.
+- **Profesia:** reálne prehľadané čerstvé BA e-shop/WordPress/support/customer-support výsledky; bez nového kandidáta nad LIVE.
 - **Priame firemné kariéry:** bez nového detailu nad Penta/Hilti/Websupport/O2/VNET/Pandora.
-- **LinkedIn:** reálne prehľadané BA ecommerce/support/implementation/customer-success; bez nového čerstvého verified kandidáta.
-- **Brigada.sk, Worki, Práca za rohom, Služby zamestnanosti/Kariera:** reálne prehľadané; v tomto okne bez nového nezávislého výsledku, ktorý by prešiel rankingom. Profesia mirrory sa nepočítajú ako nový zdroj.
-- **Pretlak/StartupJobs/WordPress Jobs:** bez nového vhodného non-development výsledku; hard-development/performance/security scope nepridávame iba kvôli diverzite.
-- **Upwork:** verified nové výsledky zahŕňajú WordPress Elementor text/content edit za **30 USD** (20–50 proposals), WordPress Small Fix za **15 USD** (20–50 proposals), WooCommerce checkout/500-error/store management za **20 USD** (15–20 proposals), expert WordPress maintenance za 30 USD a AI WooCommerce plugin za 1 000 USD. Prvé dve majú slabý budget a vysokú konkurenciu; ostatné vyžadujú PHP/server alebo existujúci AI plugin/codebase. **0 pridaných.**
+- **LinkedIn:** verified Wolt part-time/full-time Support Associate, Crypto Voucher Customer Support & Risk Analyst a NATEK Customer Success Manager. Wolt a Crypto Voucher majú **B2 AJ hard gate**; NATEK je US-market customer-success/sales s vyšším jazykovým a obchodným rizikom. **0 pridaných.**
+- **Brigada.sk:** verified dlhodobá administratívna pomoc Toyota Financial Services za **7 €/h**, ale vyžaduje platný **študentský status**; dnešné retail/sklad zmeny sú nižší fit. **0 pridaných.**
+- **Worki:** relevantný Administrátor e-shopu / zákaznícka podpora Shield-Sk je už obsadený alebo zrušený.
+- **Práca za rohom:** Crypto Voucher je mirror/alternatívny index tej istej ponuky; mirror sa nepočíta ako nový nezávislý zdroj.
+- **Služby zamestnanosti/Kariera:** reálne prehľadané; časť detailov je neaktívna alebo má cudzí jazyk/nižší fit.
+- **Pretlak/StartupJobs/WordPress Jobs:** WordPress Jobs má čerstvé projekty **Enfold CSS/plugin fixes** a **WordPress/Elementor maintenance**, ale prvý má nejasný budget a pravdepodobný custom-code/plugin zásah, druhý vyžaduje silné HTML/CSS a skúsené WordPress portfolio. StartupJobs priniesol automation/WP-adjacent roly mimo SR s vyšším skill/location rizikom. **0 pridaných.**
+- **Upwork:** WordPress/Elementor Web Designer & Support Specialist má 10–15 proposals, no je full-time 30+ h, Expert, vyžaduje fluent English, povoľuje iba Philippines/UK a ponúka **4.50–5.46 USD/h**; WordPress Small Fix je **15 USD** pri 20–50 proposals; existujúca Website Updates & Maintenance už je v LIVE. **0 nových pridaných.**
+- **Ďalšie freelance indexy:** objavil sa WordPress maintenance/support scope, ale vyžaduje 3+ roky WP, PHP debugging, hooks/actions, SEO/indexing a security/performance troubleshooting; neprebil existujúce LIVE zákazky.
 - **Reddit:** dnešné výsledky sú prevažne `[FOR HIRE]`, nie hiring dopyty; 0 verified hiring hits.
 - **Facebook:** stále **0 verified hits**. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s priamym linkom; stav zostáva `limited`. Autentizovaný Nexus/local ingestion ostáva backlog potreba.
 
@@ -113,8 +117,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 33. Near-fit rescue checklist.
 34. Rejection-reason query feedback loop — agregovať dôvody vyradenia a používať ich na spresnenie query/source allocation.
 35. Critical-evidence expiry — samostatný evidenceVerifiedAt + TTL pre active/apply path, mzdu, jazyk, režim, termín, hard requirements a competition.
-36. **Compensation-form normalizer — NOVÉ** — normalizovať TPP/živnosť/dohodu/freelance na porovnateľnú odhadovanú čistú hodinovú hodnotu vrátane neplateného času a fixných nákladov. Cieľ: nepreceňovať nominálne vysoké freelance/živnostenské ponuky oproti stabilnejšiemu TPP.
-37. **Discovery-query diversity ledger — NOVÉ** — ukladať, ktoré query/synonymá boli použité na ktorom zdroji a rotovať ich v ďalších behoch (`e-shop admin`, `content admin`, `implementation support`, `customer success`, `web coordinator`, `WordPress maintenance`, `operations support`). Cieľ: znížiť index bias a opakované vracanie tej istej malej množiny výsledkov bez zníženia minimálneho coverage flooru.
+36. Compensation-form normalizer — normalizovať TPP/živnosť/dohodu/freelance na porovnateľnú odhadovanú čistú hodinovú hodnotu vrátane neplateného času a fixných nákladov.
+37. Discovery-query diversity ledger — ukladať, ktoré query/synonymá boli použité na ktorom zdroji a rotovať ich v ďalších behoch.
+38. **Direct-contact advantage score — NOVÉ** — samostatne bodovať kvalitu cesty k reálnemu človeku: priamy recruiter e-mail/telefón alebo firemný formulár > platformový login > anonymný agregátor. Cieľ: pri rovnakom Match uprednostniť príležitosti, kde sa dá reagovať priamo a je vyššia šanca na odpoveď.
+39. **Search saturation detector — NOVÉ** — ukladať fingerprint top výsledkov pre kombináciu source+query a po N behoch bez nového canonical hitu automaticky vynútiť synonymá, inú kategóriu alebo source allocation. Cieľ: neplytvať behmi na opakované vracanie rovnakých SERP výsledkov a zvyšovať discovery recall bez znižovania coverage flooru.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
