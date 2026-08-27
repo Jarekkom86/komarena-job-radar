@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 27. 8. 2026 16:36 CEST
+Aktualizované: 27. 8. 2026 17:20 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -47,7 +47,7 @@ Aktualizované: 27. 8. 2026 16:36 CEST
 13. **SuperFaktura — Supportový parťák — Match 87**.
 14. **RM Biznis servis / Worki — Manažér servisu klientov — Match 86** — väčšina práce online, občas Bratislava, 10–15 €/h.
 15. **Bookio — B2B/SaaS online support — Match 85**.
-16. **AI & Tech Assistant / Upwork — Match 84** — čerstvý worldwide remote, web updates, low/no-code, QA, tracking a AI workflows; mínus mandatory English bez úrovne a 20–50 proposals.
+16. **AI & Tech Assistant / Upwork — Match 84** — worldwide remote, web updates, low/no-code, QA, tracking a AI workflows; mínus mandatory English bez úrovne a 20–50 proposals.
 17. **Dotypos SK — Technický support — Match 84** — Bratislava; Android/pokladne, výjazdy, klientsky support; AJ konflikt treba potvrdiť.
 18. **Pandora — Associate Assistant, eCommerce Operations — Match 84**.
 19. **Allit — End-User Support — Match 84**.
@@ -56,22 +56,22 @@ Aktualizované: 27. 8. 2026 16:36 CEST
 22. **VNET — IT customer support — Match 82**.
 23. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 27. 8. 2026 16:36 CEST
+## SOURCE AUDIT — 27. 8. 2026 17:20 CEST
 Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak; StartupJobs/WordPress Jobs; Upwork; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
-- **Nové položky do `jobs-data.json`: 2 — IZY VAPE Back Office & Operations Coordinator a Upwork AI & Tech Assistant.**
-- **Profesia:** pridaný čerstvý IZY VAPE Back Office & Operations Coordinator – e-commerce | Remote, zverejnený 27. 8. 2026. Overených 1 600–2 000 €/mes., Bratislava/prevažne HO, e-shop operatíva, objednávky, reklamácie, logistika a AI. AJ je uvedená ako stredne pokročilá, preto `unknown`/B1 risk; nástup je plánovaný až november–december 2026.
-- **Priame firemné kariéry:** reálne kontrolované; bez nového samostatného kandidáta v tomto behu.
-- **LinkedIn:** Wolt part-time je študentská zmenová rola; Foxelli je remote a Slovakia-eligible, ale jazykovo/specializačne príliš náročný. 0 pridaných.
-- **Brigada.sk:** bez nového výsledku, ktorý by prebil aktuálne web/admin/tech možnosti.
-- **Worki:** RM Biznis servis už je v LIVE; staré/uzavreté IZY VAPE výsledky boli správne potlačené. 0 pridaných.
-- **Práca za rohom:** našiel IZY VAPE ako mirror Profesia a pomohol overiť detail: prevažne práca z domu, občasné plánované stretnutia v Bratislave, 1 600–2 000 €. Mirror sa nepočíta ako nezávislý zdroj; canonical ostal Profesia.
-- **Služby zamestnanosti/Kariera:** viaceré BA admin/support výsledky boli vyradené pre povinné ďalšie jazyky (ukrajinčina/kirgizština C1/C2, srbčina B1/B2) alebo slabší fit.
-- **Pretlak:** CloseRocket Customer Success & UX Partner je čerstvý a BA, ale predchádzajúce detailné overenie potvrdilo fluent English hard gate; OVB ostáva v LIVE.
-- **StartupJobs/WordPress Jobs:** bez nového aktuálneho kandidáta spĺňajúceho Slovakia-remote, jazyk a hard-skill gate.
-- **Upwork:** pridaný **AI & Tech Assistant**, zverejnený približne 4 hodiny pred kontrolou: worldwide remote, part-time ~5 h/deň, web updates, low/no-code, tracking, QA a AI-assisted workflows, bez senior-dev požiadavky. Povinná je English bez uvedenej úrovne a už bolo 20–50 proposals, preto iba Match 84. Ďalšie WordPress/Elementor výsledky mali vyššiu náročnosť, vysokú konkurenciu alebo slabšie podmienky.
-- **Reddit:** recent hiring výsledky boli US-only alebo hard WordPress developer; väčšina nových príspevkov je `[FOR HIRE]`. 0 eligible verified hits.
+- **Nové položky do `jobs-data.json`: 0.** Kvalita mala prednosť pred kvótou; LIVE feed ostal fail-closed nezmenený.
+- **Profesia:** bez nového kandidáta, ktorý by prebil aktuálne LIVE možnosti a prešiel hard gate.
+- **Priame firemné kariéry:** Foxelli direct career potvrdzuje aktívny Slovakia-eligible 100% remote e-commerce Customer Support & Sales Agent, ale detail treba ešte jazykovo/sales overiť; 0 pridaných.
+- **LinkedIn:** Foxelli Crochet Support je Slovakia-eligible remote, ale vyžaduje fluent/near-native English, špecializovanú crochet expertízu a nevhodné večerné/nočné okno. Top4Mobile už neprijíma prihlášky. 0 pridaných.
+- **Brigada.sk:** bez nového relevantného web/admin/tech hitu.
+- **Worki:** Top4Mobile e-shop admin je už obsadený/zrušený; RM Biznis servis už je v LIVE. 0 nových.
+- **Práca za rohom:** bez nového samostatného vhodného kandidáta; Profesia mirrory sa stále nepočítajú ako nezávislý source hit.
+- **Služby zamestnanosti/Kariera:** nájdené customer-support roly boli neaktívne a/alebo jazykovo mimo profil (nemčina C1 + AJ B2). 0 pridaných.
+- **Pretlak:** bez nového kandidáta nad aktuálny LIVE; OVB AI ostáva high-fit výsledok.
+- **StartupJobs/WordPress Jobs:** bez nového Slovakia-remote kandidáta s primeranou AJ a bez hard-development požiadaviek.
+- **Upwork:** najlepší nový kandidát bol **VA Needed — Follow Instructions & Execute Daily Tasks**, posted približne 16 h pred kontrolou, worldwide remote, WordPress content uploady + tracking sheets + admin/support, klient 34k USD spend / 41 hires. **Nepridaný**, pretože mal 20–50 proposals, vyžaduje jasnú English a zdroj si odporuje v rozsahu práce: metadáta `>30 h/week`, text `20–40 h/month`. Do overenia by mal nízku scoreConfidence.
+- **Reddit:** jeden starší WordPress/WooCommerce content-assistant hiring post; recent výsledky boli US-only, [FOR HIRE] alebo hard developer. 0 nových eligible hitov.
 - **Facebook:** stále **0 verified hits**. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s priamym linkom; stav zostáva `limited`. Autentizovaný Nexus/local ingestion ostáva backlog potreba.
 
 ### LIVE mix hlavného `jobs-data.json`
@@ -139,8 +139,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 43. Worksite-obligation classifier.
 44. Eligibility schema completeness gate.
 45. Hard-gate negative evidence cache.
-46. **Application-window vs start-date decoupler — NOVÉ** — Radar má oddeliť `applyUrgency` od `startUrgency`. Čerstvá ponuka môže vyžadovať reakciu dnes, aj keď nástup je až o 2–4 mesiace; naopak stará ponuka s nástupom „ihneď“ nemá automaticky dostať vysokú prioritu. Praktický prínos: presnejšie `Reagovať dnes` a menej falošného pocitu naliehavosti.
-47. **Industry compatibility flag — NOVÉ** — evidovať odvetvie firmy a voliteľný `industryPreference`/`industryRisk` bez automatického vyradenia. Praktický prínos: pri ponukách z regulovaných alebo osobne menej želaných segmentov (napr. vaping, gambling, adult, agresívny predaj) vie Radar oddeliť pracovnú zhodu od sektorovej vhodnosti a pred reakciou upozorniť na kontext.
+46. Application-window vs start-date decoupler.
+47. Industry compatibility flag.
+48. **Work-schedule compatibility profile — NOVÉ** — oddeliť bežný denný režim Po–Pia od zmien, víkendov, nočných hodín a povinných prekrývajúcich okien. `timezoneCompatibility` nestačí: lokálna BA pozícia môže mať nevhodné zmeny a remote rola môže byť geograficky OK, ale prakticky vyžadovať večer/noc. Prínos: menej falošne vysokých Match skóre a presnejšie `Reagovať dnes`.
+49. **Employment-condition contradiction detector — NOVÉ** — pri ingestovaní porovnať štruktúrované polia s textom ponuky a označiť konflikty v hodinách, odmene, remote režime, type kontraktu alebo dátume nástupu. Pri konflikte automaticky znížiť `scoreConfidence` a vyžiadať ďalší dôkaz pred TOP prioritou. Dnešný konkrétny príklad: Upwork VA uvádza v metadátach `>30 h/week`, ale v texte `20–40 h/month`. Prínos: menej chybných odporúčaní z nekonzistentných jobboard dát.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
