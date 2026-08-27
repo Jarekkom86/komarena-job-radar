@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-27T14:23:19+02:00",
-  "lastAuditAt": "2026-08-27T14:23:19+02:00",
+  "updatedAt": "2026-08-27T15:28:37+02:00",
+  "lastAuditAt": "2026-08-27T15:28:37+02:00",
   "policy": {"publicOnly":true,"doNotPretendPrivateFacebookCoverage":true,"dedupeByCanonicalUrl":true,"verifyBeforeActive":true},
   "sources": [
     {"id":"profesia","name":"Profesia","type":"jobboard","priority":100,"trust":98,"url":"https://www.profesia.sk/","coverage":"direct"},
@@ -12,7 +12,7 @@
     {"id":"brigada-sk","name":"Brigada.sk","type":"jobboard","priority":88,"trust":90,"url":"https://www.brigada.sk/","coverage":"direct"},
     {"id":"growni","name":"GROWNi","type":"jobboard","priority":88,"trust":94,"url":"https://growni.sk/praca","coverage":"direct"},
     {"id":"pracazarohom","name":"Práca za rohom","type":"jobboard","priority":85,"trust":88,"url":"https://www.pracazarohom.sk/","coverage":"direct"},
-    {"id":"worki","name":"Worki.sk","type":"jobboard","priority":82,"trust":88,"url":"https://www.worki.sk/","coverage":"direct"},
+    {"id":"worki","name":"Worki.sk","type":"jobboard","priority":86,"trust":88,"url":"https://www.worki.sk/","coverage":"direct","note":"Zvýšená discovery priorita po náleze BA/online administratívnej dohody bez cudzieho jazyka; pri výkonovej odmene vždy označiť compensation risk."},
     {"id":"sluzby-zamestnanosti","name":"Služby zamestnanosti","type":"government","priority":86,"trust":96,"url":"https://sluzbyzamestnanosti.gov.sk/","coverage":"direct","note":"Zvýšená discovery priorita: často poskytuje presné jazykové, vzdelanostné, vodičské a termínové podmienky. Preferovať originálny ÚPSVR detail pred Kariera/Jooble mirrorom, ak sa dá dohľadať."},
     {"id":"kariera","name":"Kariera.sk / Zoznam","type":"jobboard","priority":82,"trust":88,"url":"https://kariera.zoznam.sk/","coverage":"public-index","note":"Užitočný verejný mirror ÚPSVR pre BA support/IT roly; ak stránka označuje zdroj Úrady práce, pokúsiť sa canonical migrovať na originálny government detail."},
     {"id":"indeed","name":"Indeed","type":"jobboard","priority":78,"trust":85,"url":"https://sk.indeed.com/","coverage":"public-index"},
