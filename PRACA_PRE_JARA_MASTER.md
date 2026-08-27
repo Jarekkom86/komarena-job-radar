@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 28. 8. 2026 00:18 CEST
+Aktualizované: 28. 8. 2026 01:37 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -56,29 +56,28 @@ Aktualizované: 28. 8. 2026 00:18 CEST
 22. **VNET — IT customer support — Match 82**.
 23. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 28. 8. 2026 00:18 CEST
-Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak; WordPress Jobs/tech-creative boards; Upwork; Reddit; Facebook verejná indexácia.
+## SOURCE AUDIT — 28. 8. 2026 01:37 CEST
+Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak/StartupJobs; WordPress Jobs/tech-creative boards; Upwork; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
 - **Nové položky do `jobs-data.json`: 0.** Kvalita mala prednosť pred kvótou; LIVE feed ostal fail-closed nezmenený.
-- **Profesia:** čerstvá **REGIONPRESS — Buď telefonickou podporou pre náš tím** v Senci je lokalitou vhodná, ale ide o intenzívnu akvizíciu/cold-sales za 1 000–1 300 €/mes.; neprešla profilovým/value gateom. Ďalšie čerstvé výsledky boli hard Linux/IT, B2+ alebo mimo cieľového profilu.
-- **Priame firemné kariéry:** kontrolované Hilti/O2/Websupport a ďalšie direct career indexy; bez nového BA/Slovakia-remote kandidáta lepšieho než existujúce direct-source TOP roly.
-- **LinkedIn:** Wolt Support Associate Bratislava je aktívny, ale vyžaduje minimálne **B2 English** a študentský/part-time shift režim; jazykový hard gate.
-- **Brigada.sk:** bez nového high-fit BA admin/e-shop/IT/AI výsledku.
-- **Worki / Práca za rohom:** REGIONPRESS rola sa objavuje aj cez tieto zdroje, ale ide o ten istý inzerát; mirror sa nepočíta ako nezávislý source hit a náplň ostáva cold-sales.
-- **Služby zamestnanosti/Kariera:** **SPP — Špecialista správy dcérskych spoločností** je BA, 2 125 € priemer a HO 48 dní/rok, ale vyžaduje VŠ II. stupňa. **CCI Slovakia — Pracovník zákazníckeho centra** má relevantnú customer-care náplň, ale vyžaduje VŠ III. stupňa, 6+ rokov praxe a C1/C2 angličtinu, ukrajinčinu aj ruštinu. **ADMIN ANALYST** pôsobí ako staršia/recyklovaná agentúrna položka. 0 pridaných.
-- **Pretlak / WordPress Jobs:** bez nového non-hard-dev BA/Slovakia-remote kandidáta lepšieho než aktuálny LIVE TOP.
-- **Upwork:** prehľadané čerstvé worldwide WordPress/WooCommerce zákazky z 27.–28. 8. Objavili sa Elementor dokončenie webu za 100 USD, WooCommerce build/maintenance a ďalšie WordPress fixy, ale typicky s 20–50+ proposals, 5–50 USD fixed budgetom alebo hard PHP/backend požiadavkami. 0 nových pridaných.
-- **Reddit:** aktuálne výsledky boli prevažne `[FOR HIRE]` ponuky freelancerov, nie hiring leady.
-- **Facebook:** **0 verified hits**. Priamy pokus o WooCommerce SK+CZ vracia login a **Temporarily Blocked**; ďalšie skupiny nie sú spoľahlivo verejne čitateľné. Autentizovaný Nexus/local ingestion zostáva potrebný pre reálne pokrytie.
+- **Profesia / Práca za rohom:** čerstvý **Cerkam Facility Services — Terénny administratívny pracovník**, Bratislava, od 1 500 €/mes., je profilovo zaujímavý, ale dostupný verejný detail ho súčasne radí do administratívy, obchodu, terénu a vodičských činností. Povinné podmienky sa nepodarilo overiť v kvalite potrebnej na LIVE aktiváciu, preto zostáva mimo feedu do detailného rechecku. STU asistent vyžaduje pokročilú AJ a ďalší jazyk; Orange IT/security brigáda vyžaduje B2, pokročilý Linux a študentský status.
+- **Priame firemné kariéry:** bez nového BA/Slovakia-remote kandidáta, ktorý by prebil existujúce Hilti/Websupport/O2/Penta direct-source roly.
+- **LinkedIn:** Wolt Support Associate Bratislava je aktívny, ale vyžaduje minimálne **B2 English** a študentský/part-time shift režim; hard language gate.
+- **Brigada.sk / Worki:** bez nového high-fit BA admin/e-shop/IT/AI výsledku nad aktuálny LIVE threshold.
+- **Služby zamestnanosti/Kariera:** **Naturzon — Administratíva a zákaznícka podpora pre e-shop** má veľmi dobrú obsahovú zhodu, bez praxe a iba **A1–A2 AJ**, ale pracovisko je **Poprad** a detail neuvádza remote/home office, preto `reject-distance`. **StartSeason** je Bratislava-Rača, ale vyžaduje VŠ I. stupňa, 6 mesiacov praxe a ruštinu B1/B2.
+- **Pretlak / StartupJobs / WordPress Jobs:** bez nového non-hard-dev BA/Slovakia-remote kandidáta lepšieho než aktuálny LIVE TOP.
+- **Upwork:** čerstvé worldwide WordPress/WooCommerce zákazky zahŕňajú WooCommerce checkout/server maintenance, WordPress setup/deployment za 300 USD a Elementor/WordPress fixy. Najlepšie nové výsledky mali typicky 15–50 proposals, hard PHP/development požiadavky alebo nízky fixed budget; žiadny neprekonal aktuálne LIVE freelance položky.
+- **Reddit:** najnovšie výsledky sú prevažne `[FOR HIRE]` ponuky freelancerov, nie hiring leady vhodné pre Jara.
+- **Facebook:** **0 verified hits**. Verejná indexácia neposkytla konkrétny overiteľný aktuálny hiring post; obsah skupín ostáva login/temporary-block obmedzený. Autentizovaný Nexus/local ingestion zostáva potrebný.
 
 ### Run summary
 - Source families reálne skontrolované: **12**.
 - Nové aktívne položky: **0**.
-- Vyradené lokalitou: **0**.
-- Vyradené jazykovým/hard-skill/vzdelanostným gateom: **7**.
-- Vyradené ako slabé/nízka hodnota: **9**.
-- Duplikát / `[FOR HIRE]` / nevhodný typ leadu: **6**.
+- Vyradené lokalitou: **1**.
+- Vyradené jazykovým/hard-skill/vzdelanostným gateom: **6**.
+- Vyradené ako slabé/nízka hodnota: **8**.
+- Duplikát / `[FOR HIRE]` / nevhodný typ leadu: **5**.
 
 ### LIVE mix hlavného `jobs-data.json`
 - **26 aktívnych položiek**.
@@ -161,8 +160,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 59. Minimum viable opportunity threshold.
 60. Cross-source location conflict quarantine.
 61. Search-index/detail contradiction gate.
-62. **Sales-intensity classifier — NOVÉ** — rozlíši customer support/back-office od rolí, ktoré sú v skutočnosti cold-calling, akvizícia alebo provízny predaj. Signály: „intenzívne oslovovanie“, „akvizícia“, „studené hovory“, „uzatváranie objednávok“, dominantná provízia. Takéto roly dostanú samostatný risk a nižšiu prioritu, ak nie sú technickým/support smerom. Prínos: menej času strateného na ponuky, ktoré názvom vyzerajú administratívne, ale reálne sú agresívny predaj; dnešný príklad REGIONPRESS.
-63. **Guaranteed-pay floor gate — NOVÉ** — oddelí garantovanú základnú mzdu od maximálnej/províznej/výkonovej odmeny a pred TOP rankingom overí minimálny garantovaný príjem. Pri nejasnom „od X do Y podľa výkonu“ sa uloží `guaranteedBase` a `variablePayRisk`; slabý garantovaný základ nemôže byť maskovaný vysokým horným číslom. Prínos: ranking lepšie odráža skutočný finančný výsledok, nie marketingové maximum.
+62. **Sales-intensity classifier** — rozlíši customer support/back-office od cold-calling, akvizície alebo provízneho predaja a znižuje prioritu takých rolí.
+63. **Guaranteed-pay floor gate** — oddelí garantovanú základnú mzdu od maximálnej/províznej odmeny a zabráni marketingovému hornému číslu deformovať ranking.
+64. **Repost freshness laundering detector — NOVÉ** — mirror alebo agregátor nesmie zmeniť starú ponuku na „dnešnú“ iba tým, že ju znovu načítal alebo publikoval. `publishedAt` sa pri cross-source zhodách viaže na najstarší dôveryhodný canonical publication timestamp a zvlášť sa eviduje `lastSeenAt`. Prínos: čerstvé TOP výsledky nebudú zaplavené starými recyklovanými inzerátmi, ktoré mirror označil ako „pred pár hodinami“.
+65. **Source-specific evidence contract — NOVÉ** — pred aktiváciou sa podľa typu zdroja vyžaduje minimum kľúčových dôkazov: Služby zamestnanosti = lokalita + vzdelanie + jazyk + pracovný čas; Upwork = worldwide/country restriction + mandatory skills + proposals + budget; LinkedIn/company = workplace/remote + language + employment type; Profesia/mirror = canonical source + mandatory requirements. Ak kritické pole chýba, kandidát ide do quarantine/recheck namiesto LIVE. Prínos: menej falošne vhodných výsledkov a menej ručných recheckov.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
