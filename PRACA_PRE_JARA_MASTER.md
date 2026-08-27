@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 27. 8. 2026 08:33 CEST
+Aktualizované: 27. 8. 2026 09:21 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -45,21 +45,25 @@ Aktualizované: 27. 8. 2026 08:33 CEST
 17. **VNET — IT customer support — Match 82**.
 18. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 27. 8. 2026 08:33 CEST
+## SOURCE AUDIT — 27. 8. 2026 09:21 CEST
 Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak/StartupJobs/WordPress Jobs; Upwork; ďalšie freelance indexy; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
-- **Nové položky do `jobs-data.json`: 0.** Žiadny nový nález neprebil aktuálny LIVE feed kombináciou fitu, podmienok, aktuálnosti a dôveryhodnosti. Fail-closed feed zostáva nezmenený.
-- **Profesia:** reálne prehľadané BA WordPress/WooCommerce/e-shop/admin/IT support/vodič výsledky; bez nového kandidáta, ktorý by prebil existujúce TOP položky.
-- **Priame firemné kariéry:** prehľadané všeobecné BA career výsledky; bez nového priameho detailu vhodnejšieho než aktuálne Penta/Hilti/Websupport/O2.
-- **LinkedIn:** LUNYS zostáva silný aktívny canonical hit. Top4Mobile Administrátor e-shopu/zákaznícka podpora bol nájdený, ale LinkedIn uvádza `No longer accepting applications`, takže nebol pridaný.
-- **Brigada.sk / Worki / Práca za rohom / Služby zamestnanosti / Kariera / Pretlak / StartupJobs / WordPress Jobs:** reálne vyhľadané; bez nového verified kandidáta s lepším profilovým fitom. Profesia mirrory sa nerátajú ako druhý zdroj.
-- **Upwork:** čerstvé WooCommerce/WordPress zákazky boli reálne prehľadané. Existujúci WooCommerce Assistant ostáva lepší hit: <5 proposals a non-development scope. WordPress/Elementor Support Specialist má >30 h/týždeň, emergency ticket reakciu do 15 min a náročnú zákaznícku komunikáciu; WooCommerce checkout/500-error vyžaduje PHP/server troubleshooting a má $20 fixed; Expert WordPress Developer vyžaduje PHP. Nepridané.
-- **Reddit:** potvrdené dva reálne hiring posty. Urgentný `Looking for a Wordpress dev / designer` je čerstvý, ale bez rozpočtu a dostatočného scope a už s viacerými reakciami. `I'm looking for a website creator` je reálny WooCommerce-capable dopyt, ale bez transparentného rozpočtu a so širším build/migration scope. Zostávajú community lead kandidáti, nie LIVE top joby.
+- **Nové položky do `jobs-data.json`: 0.** Objavili sa nové relevantné kandidáty, ale žiadny neprebil súčasný LIVE feed kombináciou fitu, podmienok, dôveryhodnosti a praktickej šance na úspech. Fail-closed feed zostáva nezmenený.
+- **LinkedIn — nový kandidát:** Sharp Brains `Information Technology Support Engineer`, Bratislava, on-site B2B/freelance. Reálny L1 desktop support: Windows 10/11, MS Office/Outlook, Active Directory, VPN, IP/DNS/DHCP, tlačiarne/periférie a ticketing. Plus je technická zhoda; mínus 1–3 roky desktop support praxe, neuvedená mzda, on-site režim a už **153 applicants** približne 12 hodín po zverejnení. Zatiaľ nepridaný do LIVE, aby konkurenciou a neistou odmenou neprebil lepšie možnosti.
+- **LinkedIn — vyradené:** Wolt part-time Support Associate je explicitne určený pre študentov a zahŕňa večery/víkendy; Crypto Voucher Customer Support/Risk/ICT trainee má zaujímavý rastový smer, ale **B2 angličtina je must-have** a prevádzka funguje 7 dní v týždni do 02:00.
+- **Profesia:** nový verified hit Liberum — technická podpora geodetických a meracích zariadení, 2 000–2 500 €/mes.; všeobecný support fit je dobrý, ale špecializovaná geodézia/meracia technika znižuje praktickú zhodu, preto nepridaný.
+- **Worki:** Shield-Sk Administrátor e-shopu / zákaznícka podpora je explicitne označený ako `obsadené alebo zrušené`; nepridaný. Aktualizovaná platená stáž v ekonomickej sfére je skôr všeobecný obchodno-konzultačný smer.
+- **Práca za rohom:** Fusakle Office asistent/e-shop podpora a asistent mobilnej aplikácie sú Profesia mirrory. Nepočítajú sa ako nezávislé zdroje ani sa neduplikujú.
+- **Služby zamestnanosti:** Naturzon — administratíva a zákaznícka podpora e-shopu je reálny aktívny hit, ale miesto výkonu je Poprad bez potvrdeného remote režimu; vyradený pre lokalitu.
+- **Pretlak/StartupJobs:** Datacop je senior technical marketing; Pixtra/Medevio sú primárne outbound sales. Reálne výsledky, ale slabší profilový fit.
+- **Brigada.sk:** čerstvé výsledky boli prehľadané; dostupné manuálne/home-work a gastro ponuky sú mimo prioritného smeru alebo majú slabší risk/fit profil.
+- **Upwork a ďalšie freelance indexy:** bez nového klientského dopytu, ktorý by bol lepší než existujúce WooCommerce Assistant/WP Maintenance položky. Contra výsledky boli prevažne profily dodávateľov, nie hiring ponuky.
+- **Reddit:** čerstvé výsledky z 26.–27. 8. sú prevažne `[FOR HIRE]` ponuky iných WordPress/WooCommerce developerov, nie hiring dopyty pre Jara.
 - **Facebook:** stále **0 verified hits**. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; stav zostáva `limited`. Autentizovaný Nexus/local ingestion zostáva backlog potreba, nie predstierané pokrytie.
 
 ### LIVE mix hlavného `jobs-data.json`
-- Posledný potvrdený stav: **21 aktívnych položiek**.
+- Stav zostáva **21 aktívnych položiek**.
 - Profesia: **10 z 21 = 47,6 %**.
 - LinkedIn: **2 z 21 = 9,5 %**.
 - Priame firemné kariéry: **6 z 21 = 28,6 %**.
@@ -106,8 +110,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 27. **Opportunity aging state machine** — `new/fresh/aging/stale/reverify` podľa publishedAt, verifiedAt a apply path.
 28. **Coverage-debt counter** — počítať po sebe idúce behy s `limited/blocked/0 verified hits` a eskalovať zdroj do technického backlogu.
 29. **Community lead lane** — oddeliť necenové community dopyty od klasických jobov pomocou `budgetUnknown`, `scopeClarity`, `replyFriction`, `visibleCompetition`.
-30. **Closed-result suppression fingerprint — NOVÉ** — uložiť title+company+canonical source pre výsledky explicitne označené `No longer accepting applications`; ďalšie discovery ich nebude opakovane spracúvať až do TTL alebo zmeny canonical detailu. Šetrí search kapacitu a bráni opakovanému návratu Top4Mobile-typu uzavretých ponúk.
-31. **Support-intensity gate — NOVÉ** — pri support/remote rolách extrahovať SLA typu `odpoveď do 15 min`, on-call/emergency režim, večery/víkendy a minimálny týždenný rozsah. Vysoká support intenzita bude samostatná penalizácia ešte pred Match skóre, aby technicky vhodná rola nevyzerala lepšie, než je prakticky zvládnuteľná.
+30. **Closed-result suppression fingerprint** — uložiť title+company+canonical source pre výsledky explicitne označené `No longer accepting applications`; ďalšie discovery ich nebude opakovane spracúvať až do TTL alebo zmeny canonical detailu.
+31. **Support-intensity gate** — pri support/remote rolách extrahovať SLA typu `odpoveď do 15 min`, on-call/emergency režim, večery/víkendy a minimálny týždenný rozsah. Vysoká support intenzita bude samostatná penalizácia ešte pred Match skóre.
+32. **Apply-now decision score — NOVÉ** — oddeliť profilový Match od okamžitej akčnej priority. Nový pomocný score bude kombinovať `publishedAt`, applicant/proposal velocity, source trust, application friction, dostupnosť odmeny, commute/timezone a apply-path integrity. Výsledok: veľmi dobrá ponuka s 150+ uchádzačmi a nejasnou mzdou neprebije čerstvú 88/100 ponuku s nízkou konkurenciou, kde má reakcia práve teraz vyššiu šancu priniesť výsledok.
+33. **Near-fit rescue checklist — NOVÉ** — pri ponukách tesne pod hranicou TOP oddeliť tvrdé blokery od 1–3 rýchlo riešiteľných medzier. Radar vytvorí krátky evidence-based checklist typu `overiť AD prax`, `pripraviť konkrétny troubleshooting príklad`, `potvrdiť pracovnú AJ`; hard B2/certifikácia/nočné zmeny sa nikdy nezjemnia. Cieľ: nezahodiť použiteľnú ponuku len kvôli neoverenej drobnej medzere a zároveň nevymýšľať kvalifikácie.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
