@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 27. 8. 2026 17:20 CEST
+Aktualizované: 27. 8. 2026 18:25 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -56,23 +56,23 @@ Aktualizované: 27. 8. 2026 17:20 CEST
 22. **VNET — IT customer support — Match 82**.
 23. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 27. 8. 2026 17:20 CEST
+## SOURCE AUDIT — 27. 8. 2026 18:25 CEST
 Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak; StartupJobs/WordPress Jobs; Upwork; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
 - **Nové položky do `jobs-data.json`: 0.** Kvalita mala prednosť pred kvótou; LIVE feed ostal fail-closed nezmenený.
-- **Profesia:** bez nového kandidáta, ktorý by prebil aktuálne LIVE možnosti a prešiel hard gate.
-- **Priame firemné kariéry:** Foxelli direct career potvrdzuje aktívny Slovakia-eligible 100% remote e-commerce Customer Support & Sales Agent, ale detail treba ešte jazykovo/sales overiť; 0 pridaných.
-- **LinkedIn:** Foxelli Crochet Support je Slovakia-eligible remote, ale vyžaduje fluent/near-native English, špecializovanú crochet expertízu a nevhodné večerné/nočné okno. Top4Mobile už neprijíma prihlášky. 0 pridaných.
+- **Profesia:** bez nového kandidáta, ktorý by prebil aktuálne LIVE možnosti a prešiel BA/remote + jazykovým/hard-skill gateom.
+- **Priame firemné kariéry:** bez nového samostatného high-fit kandidáta nad existujúce Hilti/Penta/O2/Websupport výsledky.
+- **LinkedIn:** Foxelli Crochet Customer Support je 100 % remote a Slovakia-eligible, ale vyžaduje špecializovanú crochet expertízu a fluent/near-native English. 0 pridaných.
 - **Brigada.sk:** bez nového relevantného web/admin/tech hitu.
-- **Worki:** Top4Mobile e-shop admin je už obsadený/zrušený; RM Biznis servis už je v LIVE. 0 nových.
+- **Worki:** zachytené aktualizované výsledky v Novom Meste nad Váhom a Nitre/Trnave; sú mimo BA hard gate bez vhodného remote režimu a tematicky slabé. 0 pridaných.
 - **Práca za rohom:** bez nového samostatného vhodného kandidáta; Profesia mirrory sa stále nepočítajú ako nezávislý source hit.
-- **Služby zamestnanosti/Kariera:** nájdené customer-support roly boli neaktívne a/alebo jazykovo mimo profil (nemčina C1 + AJ B2). 0 pridaných.
+- **Služby zamestnanosti/Kariera:** bez nového kandidáta s vhodnou lokalitou, jazykmi a požiadavkami.
 - **Pretlak:** bez nového kandidáta nad aktuálny LIVE; OVB AI ostáva high-fit výsledok.
 - **StartupJobs/WordPress Jobs:** bez nového Slovakia-remote kandidáta s primeranou AJ a bez hard-development požiadaviek.
-- **Upwork:** najlepší nový kandidát bol **VA Needed — Follow Instructions & Execute Daily Tasks**, posted približne 16 h pred kontrolou, worldwide remote, WordPress content uploady + tracking sheets + admin/support, klient 34k USD spend / 41 hires. **Nepridaný**, pretože mal 20–50 proposals, vyžaduje jasnú English a zdroj si odporuje v rozsahu práce: metadáta `>30 h/week`, text `20–40 h/month`. Do overenia by mal nízku scoreConfidence.
-- **Reddit:** jeden starší WordPress/WooCommerce content-assistant hiring post; recent výsledky boli US-only, [FOR HIRE] alebo hard developer. 0 nových eligible hitov.
-- **Facebook:** stále **0 verified hits**. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s priamym linkom; stav zostáva `limited`. Autentizovaný Nexus/local ingestion ostáva backlog potreba.
+- **Upwork:** reálne skontrolované čerstvé worldwide výsledky. **Part-Time Web Developer / Virtual Assistant / Data Specialist** je geograficky vhodný a flexibilný, ale má iba 3–8 USD/h, 20–50 proposals a príliš všeobecný web-development scope. **WordPress Small Fix** má 15 USD fixed a 20–50 proposals. **WordPress Developer for WooCommerce** má 5 USD fixed a 20–50 proposals. **WordPress / Elementor Web Designer & Support Specialist** je síce na karte Worldwide, ale detail explicitne obmedzuje rolu na Philippines/UK, vyžaduje fluent English, expert úroveň a 8:30–17:00 UK; preto neprešiel location/language gate. 0 pridaných.
+- **Reddit:** recent verejné výsledky neobsahovali nový aktuálny Slovakia-eligible hiring lead s lepšou kvalitou; starší WordPress/WooCommerce content-assistant ostáva iba discovery stopa. 0 pridaných.
+- **Facebook:** **0 verified hits**. Priame verejné vyhľadanie WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín vracia login/temporary block namiesto konkrétnych overiteľných group postov. Audit bol sprísnený zo `limited` na `blocked` pre tento konkrétny beh. Autentizovaný Nexus/local ingestion ostáva backlog potreba.
 
 ### LIVE mix hlavného `jobs-data.json`
 - **26 aktívnych položiek**.
@@ -141,8 +141,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 45. Hard-gate negative evidence cache.
 46. Application-window vs start-date decoupler.
 47. Industry compatibility flag.
-48. **Work-schedule compatibility profile — NOVÉ** — oddeliť bežný denný režim Po–Pia od zmien, víkendov, nočných hodín a povinných prekrývajúcich okien. `timezoneCompatibility` nestačí: lokálna BA pozícia môže mať nevhodné zmeny a remote rola môže byť geograficky OK, ale prakticky vyžadovať večer/noc. Prínos: menej falošne vysokých Match skóre a presnejšie `Reagovať dnes`.
-49. **Employment-condition contradiction detector — NOVÉ** — pri ingestovaní porovnať štruktúrované polia s textom ponuky a označiť konflikty v hodinách, odmene, remote režime, type kontraktu alebo dátume nástupu. Pri konflikte automaticky znížiť `scoreConfidence` a vyžiadať ďalší dôkaz pred TOP prioritou. Dnešný konkrétny príklad: Upwork VA uvádza v metadátach `>30 h/week`, ale v texte `20–40 h/month`. Prínos: menej chybných odporúčaní z nekonzistentných jobboard dát.
+48. Work-schedule compatibility profile.
+49. Employment-condition contradiction detector.
+50. **Fuzzy cross-source role identity resolver — NOVÉ** — deduplikovať rovnakú pozíciu aj vtedy, keď má na firemnom career webe, LinkedIne a jobboarde odlišný názov alebo URL. Kombinovať normalizovaný názov firmy, význam názvu pozície, lokalitu a kľúčové požiadavky; pri zhode zachovať stabilné interné ID, vybrať najlepší canonical zdroj a zlúčiť dôkazy namiesto vytvorenia dvoch kariet. Prínos: menej duplikátov, presnejší source mix a bohatšie overenie jednej príležitosti.
+51. **Remote-country eligibility memory — NOVÉ** — evidovať časovo obmedzenú, dôkazom podloženú pamäť, z ktorých krajín konkrétny zamestnávateľ/platformová rola reálne prijíma remote ľudí. Ukladať `eligibleCountries`, zdroj dôkazu a expiry; nikdy neodvodzovať Slovakia-eligibility iba zo slova `Worldwide`, ak detail uvádza užší country list. Prínos: rýchlejší hard location gate, menej opakovaného overovania a menej falošných remote hitov typu „Worldwide karta, Philippines/UK detail“.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
