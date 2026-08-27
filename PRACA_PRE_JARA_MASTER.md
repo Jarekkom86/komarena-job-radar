@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 27. 8. 2026 20:21 CEST
+Aktualizované: 27. 8. 2026 21:33 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -39,7 +39,7 @@ Aktualizované: 27. 8. 2026 20:21 CEST
 5. **Penta Real Estate — Sales Administrator — Match 92** — Bratislava, 1 800 €/mes. + ročný bonus + home office; CRM, klientský portál, dáta, reporty, dokumenty, systémy a klientská podpora.
 6. **Hilti — Implementation & Service Specialist — Match 92** — Bratislava, od 1 800 €/mes. + bonusy + služobné auto; implementácia ON!Track/Fleet Management, školenia, reklamácie, CRM.
 7. **Websupport — Customer Success Advisor — Match 91** — weby, hosting, SSL, troubleshooting a zákaznícka komunikácia.
-8. **IZY VAPE — Back Office & Operations Coordinator – e-commerce | Remote — Match 90** — Bratislava/prevažne HO, 1 600–2 000 €/mes.; objednávky, e-shop, reklamácie, logistika, fulfillment, dokumenty, procesy a AI. Riziko: AJ stredne pokročilá treba potvrdiť; plánovaný nástup november–december 2026.
+8. **IZY VAPE — Back Office & Operations Coordinator – e-commerce | Remote — Match 90** — Bratislava/prevažne HO, 1 600–2 000 €/mes.; e-shop, objednávky, reklamácie, logistika, fulfillment, dokumenty, procesy a AI. Riziko: stredne pokročilá AJ treba potvrdiť; nástup november–december 2026.
 9. **O2 — Digital Content Admin — Match 90** — 8 €/h, web/e-shop, produkty, atribúty, ceny a landing pages.
 10. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia, 1 520 €/mes. + bonus.
 11. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote, <30 h/týždeň, 3–6 mesiacov, 5–10 USD/h; mínus US Mountain Time.
@@ -47,7 +47,7 @@ Aktualizované: 27. 8. 2026 20:21 CEST
 13. **SuperFaktura — Supportový parťák — Match 87**.
 14. **RM Biznis servis / Worki — Manažér servisu klientov — Match 86** — väčšina práce online, občas Bratislava, 10–15 €/h.
 15. **Bookio — B2B/SaaS online support — Match 85**.
-16. **AI & Tech Assistant / Upwork — Match 84** — worldwide remote, web updates, low/no-code, QA, tracking a AI workflows; mínus mandatory English bez úrovne a 20–50 proposals.
+16. **AI & Tech Assistant / Upwork — Match 84** — worldwide remote; web updates, low/no-code, QA, tracking a AI workflows; mandatory English bez úrovne a 20–50 proposals.
 17. **Dotypos SK — Technický support — Match 84** — Bratislava; Android/pokladne, výjazdy, klientsky support; AJ konflikt treba potvrdiť.
 18. **Pandora — Associate Assistant, eCommerce Operations — Match 84**.
 19. **Allit — End-User Support — Match 84**.
@@ -56,32 +56,28 @@ Aktualizované: 27. 8. 2026 20:21 CEST
 22. **VNET — IT customer support — Match 82**.
 23. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 27. 8. 2026 20:21 CEST
+## SOURCE AUDIT — 27. 8. 2026 21:33 CEST
 Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak; StartupJobs/WordPress Jobs; Upwork; Freelancer/Twine/Contra; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
 - **Nové položky do `jobs-data.json`: 0.** Kvalita mala prednosť pred kvótou; LIVE feed ostal fail-closed nezmenený.
 - **Profesia:** bez nového samostatného BA/remote kandidáta, ktorý by prebil aktuálne silné web/tech/admin možnosti.
-- **Priame firemné kariéry:** Voxwise System Integration Expert je Bratislava/hybrid a 3 500 €/mes., ale vyžaduje hands-on Bloomreach/similar platform, API/webhooks/data integrations a C1 English; hard-skill/language reject.
-- **LinkedIn:** Foxelli Crochet Support je 100 % remote a Slovakia-eligible, ale vyžaduje špecializovanú crochet podporu; KLARSTEIN Italy/Germany vyžadujú vysokú taliančinu/nemčinu; Tesco digital campaign rola je marketingovo seniornejšia. 0 pridaných.
-- **Brigada.sk:** bez nového vhodného WordPress/e-shop/admin/support hitu; hard-dev a tematicky slabé výsledky nepridané.
-- **Worki:** bez novej aktívnej BA/remote ponuky, ktorá by prešla quality gate a nebola už pokrytá alebo neaktívna.
-- **Práca za rohom:** čerstvý SZRB metodik v Bratislave je procesne zaujímavý, ale vyžaduje VŠ II. stupňa a bankové/metodické zameranie. Penta Sales Administrator je už canonical pokrytý priamou Penta career stránkou.
-- **Služby zamestnanosti/Kariera:** Vean administratívny pracovník v BA je iba 20 h/týždeň za 400 €/mes.; staršie jazykové supporty sú neaktívne alebo vyžadujú B2/C1. 0 pridaných.
-- **Pretlak:** bez nového kandidáta lepšieho než existujúci OVB AI/automation; vyššia AJ a špecializovaný MarTech ostávajú gate.
-- **StartupJobs/WordPress Jobs:** KLARSTEIN Germany je remote-from-Slovakia, ale vyžaduje C1 nemčinu. WordPress Jobs bez nového vhodného non-hard-dev Slovakia-remote hitu.
-- **Upwork:** WordPress/Elementor Web Designer & Support Specialist je tematicky silný, ale >30 h/týždeň, helpdesk s urgentnými ticketmi do 15 minút a výrazná priama zákaznícka komunikácia bez potvrdenej jazykovej kompatibility. Dnešné malé WP/WooCommerce fixy sú 5–15 USD fixed s 10–50 proposals alebo hard-dev/low-value. 0 pridaných.
-- **Freelancer/Twine/Contra:** Freelancer verejne indexuje najmä staré/uzavreté projekty; Twine momentálne nemá vhodný WordPress remote job; Contra bez overiteľného čerstvého high-fit hitu.
-- **Reddit:** dominujú `[FOR HIRE]` ponuky freelancerov alebo U.S.-only/hard-dev hiring. 0 eligible hiring hitov.
+- **Priame firemné kariéry:** do registra bol doplnený `SupportYourApp Careers` ako relevantný direct source pre remote customer/technical/e-commerce support. Aktuálne nájdené support roly však smerujú na fluent/strong English alebo ďalší jazyk, preto 0 eligible hitov pre A2 profil.
+- **LinkedIn:** Foxelli Crochet Customer Support je 100 % remote a Slovakia-eligible, ale vyžaduje špecializovanú crochet podporu a predajno-podporný profil; nepridané.
+- **Brigada.sk / Worki / Práca za rohom / Služby zamestnanosti/Kariera:** bez nového nezávislého kandidáta, ktorý by prešiel BA/remote, jazykovým a quality gateom.
+- **Pretlak / StartupJobs / WordPress Jobs:** bez nového non-hard-dev kandidáta lepšieho než aktuálny LIVE TOP.
+- **Upwork:** WordPress/Elementor Web Designer & Support Specialist je tematicky silný, ale >30 h/týždeň, emergency tickets do 15 minút a výrazná customer communication; WordPress Small Fix je 15 USD s 20–50 proposals; WordPress/Shopify VA je 100 USD za 8 h denne, 6 dní v týždni a vyžaduje dobrú verbálnu aj písomnú AJ. 0 pridaných.
+- **Freelancer/Twine/Contra:** bez overiteľného čerstvého high-fit BA/Slovakia-remote kandidáta.
+- **Reddit:** dominujú `[FOR HIRE]`, U.S.-only alebo hard-dev roly. Konkrétny U.S.-only WordPress Developer za 70–80 USD/h vyžaduje pobyt v USA, hard development a strong English; nepridané.
 - **Facebook:** **0 verified hits**. Verejná indexácia neposkytla konkrétny aktuálny WordPress/WooCommerce/BA hiring post s priamym overiteľným linkom. Audit ostáva `blocked`; autentizovaný Nexus/local ingestion je naďalej potrebný pre spoľahlivé pokrytie.
 
 ### Run summary
-- Source families reálne skontrolované: **12+**.
+- Source families reálne skontrolované: **13**.
 - Nové aktívne položky: **0**.
 - Vyradené lokalitou: **0**.
-- Vyradené jazykovým/hard-skill gateom: **6**.
-- Vyradené ako slabé/nízka hodnota: **8**.
-- Duplikát / `[FOR HIRE]` / nevhodný typ leadu: **5**.
+- Vyradené jazykovým/hard-skill gateom: **7**.
+- Vyradené ako slabé/nízka hodnota: **6**.
+- Duplikát / `[FOR HIRE]` / nevhodný typ leadu: **4**.
 
 ### LIVE mix hlavného `jobs-data.json`
 - **26 aktívnych položiek**.
@@ -154,10 +150,12 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 49. Employment-condition contradiction detector.
 50. Fuzzy cross-source role identity resolver.
 51. Remote-country eligibility memory.
-52. **Discovery-to-active quarantine lane** — každý nový kandidát, ktorý ešte nemá potvrdenú lokalitu/remote politiku, jazyk, apply path alebo mandatory requirements, najprv dostať do krátkej `candidate` vrstvy mimo aktívneho Radaru. Aktivovať až po splnení minimálneho evidence setu.
-53. **Cross-source corroboration score** — ak sa tá istá rola objaví na firemnej kariére, LinkedIne alebo jobboarde, nezakladať ďalšiu kartu, ale zvýšiť `scoreConfidence`/`activeProof` iba vtedy, keď druhý nezávislý zdroj potvrdzuje firmu, názov, lokalitu a aktívnosť.
-54. **Requirement-delta detector — NOVÉ** — pri opakovanej kontrole tej istej canonical ponuky porovnať mandatory požiadavky so starším evidence snapshotom. Ak pribudne vyššia AJ, nový onsite/hybrid záväzok, certifikácia, pracovný čas alebo hard skill, automaticky znížiť confidence/priority a poslať položku na revalidáciu namiesto tichého ponechania starého skóre. Prínos: TOP ponuky zostanú pravdivé aj keď zamestnávateľ po publikovaní zmení podmienky.
-55. **Application follow-up timing engine — NOVÉ** — po stave `reagovane` vypočítať odporúčaný follow-up podľa typu kanála (career form, email, recruiter, freelance), dátumu reakcie a deadline; typicky 2–5 pracovných dní, bez automatického posielania. Prínos: menej zabudnutých reakcií a vyššia šanca dostať odpoveď bez spamovania firiem.
+52. Discovery-to-active quarantine lane.
+53. Cross-source corroboration score.
+54. Requirement-delta detector.
+55. Application follow-up timing engine.
+56. **Opportunity scarcity score — NOVÉ** — pri rovnako kvalitných ponukách zohľadniť, koľko porovnateľných vhodných alternatív je práve aktívnych. Vzácna vysokofitová rola (napr. WordPress/Woo admin bez B2) dostane vyššiu urgency než ľahko nahraditeľná generická administratíva. Prínos: reagovať skôr tam, kde sa dobrá náhrada objavuje zriedka.
+57. **Canonical source failover chain — NOVÉ** — pri jednej karte uchovávať overené alternatívne zdrojové linky v poradí company career → LinkedIn/company post → job board. Ak hlavný canonical link zlyhá alebo zmizne, alternatívny zdroj slúži na potvrdenie aktívnosti bez vytvorenia duplicity. Prínos: menej falošných „closed“ stavov a menej stratených príležitostí pri zlyhaní jedného portálu.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
