@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 27. 8. 2026 13:30 CEST
+Aktualizované: 27. 8. 2026 14:23 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -19,10 +19,16 @@ Aktualizované: 27. 8. 2026 13:30 CEST
 4. Vodič B/kuriér bez tachografu.
 5. Sklad/logistika.
 
+### Tvrdý lokalitný gate
+- Aktívny feed povoľuje iba **Bratislavu + rozumné okolie/denný dojazd**, alebo **skutočný remote/home-office vykonateľný zo Slovenska bez pravidelného dochádzania do vzdialeného mesta**.
+- Mimo BA onsite alebo pravidelný hybrid do vzdialeného mesta = `reject-distance`.
+- Nejasná lokalita/remote politika = `locationEligibility: unknown` a najprv overiť, nie odporúčať.
+- Nové položky evidujú `locationEligibility` a `locationReason`; staršie položky sa kontrolujú postupne fail-closed bez hromadného mazania.
+
 ### Negatívne filtre
 - AJ A2 preferovaná; B1 mierny/stredný mínus; B2/C1 výrazný mínus.
 - Povinný ďalší cudzí jazyk, hard PHP/fullstack/Laravel/React/Vue, pokročilé Linux/Docker/API bez preukázanej praxe = silná penalizácia alebo hard gate.
-- Bratislava/okolie bonus; mimo BA preferovať remote/hybrid.
+- Lokalita BA/okolie alebo overený remote/HO je hard gate, nie bonus.
 - Agregátor/repost nesmie prebiť priamy firemný zdroj.
 
 ## Aktuálne TOP / čerstvo overené
@@ -39,44 +45,47 @@ Aktualizované: 27. 8. 2026 13:30 CEST
 11. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
 12. **SuperFaktura — Supportový parťák — Match 87**.
 13. **Bookio — B2B/SaaS online support — Match 85**.
-14. **Pandora — Associate Assistant, eCommerce Operations — Match 84**.
-15. **Allit — End-User Support — Match 84**.
-16. **3MON — IT & Operations Support — Match 84**.
-17. **STU — Web špecialista CMS/web — Match 83**.
-18. **VNET — IT customer support — Match 82**.
-19. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
+14. **Dotypos SK — Technický support — Match 84** — Bratislava, 1 200 €/mes.; klientsky technický support, Android/pokladne, výjazdy, pred-/popredajný servis, vodič B; vhodné aj pre absolventa. Riziko: štruktúra uvádza AJ B1–B2, text iba mierne pokročilú AJ — treba potvrdiť.
+15. **Pandora — Associate Assistant, eCommerce Operations — Match 84**.
+16. **Allit — End-User Support — Match 84**.
+17. **3MON — IT & Operations Support — Match 84**.
+18. **STU — Web špecialista CMS/web — Match 83**.
+19. **VNET — IT customer support — Match 82**.
+20. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 27. 8. 2026 13:30 CEST
-Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Pretlak; StartupJobs/WordPress Jobs; Upwork; Reddit; Facebook verejná indexácia.
+## SOURCE AUDIT — 27. 8. 2026 14:23 CEST
+Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak; StartupJobs/WordPress Jobs; Upwork; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
-- **Nové položky do `jobs-data.json`: 1 — OVB Špecialista/ka pre AI a automatizáciu.**
-- **Profesia:** čerstvé BA WordPress/e-shop/support/admin výsledky; bez nového kandidáta nad LIVE.
-- **Priame firemné kariéry:** bez nového detailu nad existujúce Penta/Hilti/Websupport/O2/VNET/Pandora.
-- **LinkedIn:** SupportYourApp CX Operations Consultant je AI/automation relevantný, ale má **fluent English hard gate**, preto 0 pridaných.
-- **Brigada.sk:** reálne prehľadané IT/admin/e-shop brigády; bez nového konkrétneho výsledku nad existujúci LIVE.
-- **Worki:** Administrátor e-shopu / zákaznícka podpora Shield-Sk ostáva explicitne obsadený/zrušený.
-- **Práca za rohom:** bez nového originálneho hitu; mirror Profesia sa nepočíta ako nezávislý zdroj.
-- **Pretlak:** **OVB AI/automatizácia pridaná**. CloseRocket Customer Success & UX Partner je nový, ale vyžaduje Fluent EN; RIEŠENIA Digital Account Manager vyžaduje C1 AJ a 2 roky agentúrnej praxe; ui42 office rola vyžaduje študentský status.
-- **StartupJobs/WordPress Jobs:** bez nového kandidáta, ktorý by fitom/jazykom/odmenou prebil LIVE.
-- **Upwork:** WooCommerce checkout/500-error má hard PHP a 15–20 proposals za 20 USD fixed; WordPress Small Fix má 20–50 proposals za 15 USD; Expert WordPress job je PHP-heavy. **0 pridaných.**
-- **Reddit:** dnešné výsledky sú prevažne `[FOR HIRE]`, nie hiring dopyty; 0 verified hiring hits.
+- **Nové položky do `jobs-data.json`: 1 — Dotypos SK, Technický support, Bratislava.**
+- **Profesia:** bez nového kandidáta, ktorý by kvalitou a podmienkami prebil LIVE.
+- **Priame firemné kariéry:** GA Drilling IT Operations Specialist je Bratislava a funkčne relevantný, ale vyžaduje **fluent English**, 2–4 roky IT operations a M365/Entra, preto nepridaný.
+- **LinkedIn:** Foxelli Crochet Customer Support je 100 % remote zo Slovenska, ale vyžaduje špecifické crochet know-how a ponúka do 800 € netto/freelance; SupportYourApp má fluent English hard gate. 0 pridaných.
+- **Brigada.sk:** reálne prehľadané BA IT/admin/e-shop brigády; bez nového konkrétneho vhodného hitu.
+- **Worki:** reálne prehľadané BA/HO IT/e-shop/admin; bez nového aktívneho kandidáta pre LIVE.
+- **Práca za rohom:** bez nového originálneho hitu; Profesia mirrory sa nepočítajú ako nezávislý zdroj.
+- **Služby zamestnanosti / Kariera:** **Dotypos Technický support pridaný**. Metrohm IT Support Specialist má explicitnú AJ B1–B2 a VŠ I. stupňa. CLOSER Administrátor webových stránok vyžaduje vysoké JavaScript/XML/Access/DB2 a pokročilý Windows Server, preto nepridaný.
+- **Pretlak:** CloseRocket Customer Success & UX Partner je BA a zaujímavý, ale Fluent EN je hard gate; ui42 office rola vyžaduje študentský status; OVB už je v LIVE.
+- **StartupJobs/WordPress Jobs:** Dreamup Customer Care je 100 % remote, ale vyžaduje poľštinu; Neuschl2 WordPress/project rola má Praha/občasné onsite stretnutia a agentúrnu prax; WordPress Jobs bez nového vhodného indexovaného hitu.
+- **Upwork:** WordPress/Elementor Support Specialist je explicitne remote iba Philippines/UK + fluent English + expert level + 4.50–5.46 USD/h, takže neprešiel lokalitným ani jazykovým gate. Ďalší e-commerce build je expert PHP/JS a má 20–50 proposals. 0 pridaných.
+- **Reddit:** recent hiring výsledok bol US-only hard WordPress development; ostatné dominantne `[FOR HIRE]`. 0 eligible verified hits.
 - **Facebook:** stále **0 verified hits**. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s priamym linkom; stav zostáva `limited`. Autentizovaný Nexus/local ingestion ostáva backlog potreba.
 
 ### LIVE mix hlavného `jobs-data.json`
-- **22 aktívnych položiek**.
-- Profesia: **10/22 = 45,5 %**.
-- LinkedIn: **2/22 = 9,1 %**.
-- Priame firemné kariéry: **6/22 = 27,3 %**.
-- GROWNi/Pretlak/iný job board mimo Profesia: **2/22 = 9,1 %**.
-- Freelance: **2/22 = 9,1 %**.
-- **Mimo Profesia spolu: 12/22 = 54,5 %.**
+- **23 aktívnych položiek**.
+- Profesia: **10/23 = 43,5 %**.
+- LinkedIn: **2/23 = 8,7 %**.
+- Priame firemné kariéry: **6/23 = 26,1 %**.
+- GROWNi/Pretlak/Kariera/iný job board mimo Profesia: **3/23 = 13,0 %**.
+- Freelance: **2/23 = 8,7 %**.
+- **Mimo Profesia spolu: 13/23 = 56,5 %.**
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
 - Pokles feedu >20 % alebo strata celej kategórie = zápis sa nevykoná.
 - Duplikát: firemný career link > originálny LinkedIn/company post > Profesia > iný job board > agregátor/repost.
 - Facebook/community položka vyžaduje konkrétny verejne overiteľný post a priamy link.
+- Mimo BA/okolia sa nová aktívna položka povoľuje iba pri jednoznačne overenom remote/HO vykonateľnom zo Slovenska.
 
 ## Application Builder
 Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MASTER profilu a konkrétnej položky. Nevymýšľajú sa kvalifikácie ani hard skills.
@@ -121,8 +130,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 37. Discovery-query diversity ledger.
 38. Direct-contact advantage score.
 39. Search saturation detector.
-40. **Selection-task readiness pack — NOVÉ** — pri ponukách s praktickou úlohou automaticky identifikovať očakávaný typ zadania a pripraviť krátky dôkazový balík z existujúcich projektov/skúseností bez vymýšľania skillov. Cieľ: zvýšiť úspešnosť v rolách ako OVB, kde rozhoduje spôsob uvažovania a konkrétny výstup, nie iba CV.
-41. **Role-age vs active-proof split — NOVÉ** — oddeliť vek pôvodného zverejnenia od dnešného dôkazu, že apply cesta je stále aktívna. Cieľ: nepenalizovať kvalitnú staršiu ponuku iba kvôli dátumu, ak je formulár stále otvorený, ale súčasne ju neoznačiť ako „čerstvú“.
+40. Selection-task readiness pack.
+41. Role-age vs active-proof split.
+42. **Language-evidence conflict resolver — NOVÉ** — keď štruktúrované pole a text inzerátu uvádzajú inú úroveň jazyka (napr. Dotypos B1–B2 vs. „mierne pokročilý študent“), Radar má konflikt explicitne označiť, znížiť confidence a nevytvárať falošne presný language gate. Praktický prínos: menej zbytočne vyradených near-fit rolí aj menej prehnane optimistických odporúčaní.
+43. **Worksite-obligation classifier — NOVÉ** — oddeliť `officeDays`, `fieldTravel`, `serviceArea`, `remoteCountryEligibility` a `mandatoryOnsiteCity`. Praktický prínos: tvrdý BA/remote gate nebude oklamaný slovom „remote“, keď ponuka v skutočnosti vyžaduje pravidelné onsite dni alebo terénne cestovanie mimo rozumného regiónu.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
