@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 27. 8. 2026 21:33 CEST
+Aktualizované: 27. 8. 2026 22:21 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -56,28 +56,30 @@ Aktualizované: 27. 8. 2026 21:33 CEST
 22. **VNET — IT customer support — Match 82**.
 23. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 27. 8. 2026 21:33 CEST
+## SOURCE AUDIT — 27. 8. 2026 22:21 CEST
 Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak; StartupJobs/WordPress Jobs; Upwork; Freelancer/Twine/Contra; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
 - **Nové položky do `jobs-data.json`: 0.** Kvalita mala prednosť pred kvótou; LIVE feed ostal fail-closed nezmenený.
 - **Profesia:** bez nového samostatného BA/remote kandidáta, ktorý by prebil aktuálne silné web/tech/admin možnosti.
-- **Priame firemné kariéry:** do registra bol doplnený `SupportYourApp Careers` ako relevantný direct source pre remote customer/technical/e-commerce support. Aktuálne nájdené support roly však smerujú na fluent/strong English alebo ďalší jazyk, preto 0 eligible hitov pre A2 profil.
-- **LinkedIn:** Foxelli Crochet Customer Support je 100 % remote a Slovakia-eligible, ale vyžaduje špecializovanú crochet podporu a predajno-podporný profil; nepridané.
-- **Brigada.sk / Worki / Práca za rohom / Služby zamestnanosti/Kariera:** bez nového nezávislého kandidáta, ktorý by prešiel BA/remote, jazykovým a quality gateom.
+- **Priame firemné kariéry / LinkedIn:** Wolt Support Associate je čerstvý BA výsledok, ale vyžaduje minimálne B2 English; SupportYourApp vyžaduje fluent/strong English a Foxelli remote support fluent/near-native English + špecializované crochet skills. 0 eligible hitov.
+- **Brigada.sk:** bez nového high-fit BA výsledku.
+- **Worki:** Shield-Sk Administrátor e-shopu / zákaznícka podpora je tematicky vhodný, ale detail je označený ako obsadený/zrušený; správne potlačené closed-result cache pravidlom.
+- **Práca za rohom:** bez nového nezávislého výsledku; Profesia mirrory sa nepočítajú ako nový source hit.
+- **Služby zamestnanosti/Kariera:** StartSeason administratíva v Rači má vhodnú náplň, ale vyžaduje ruštinu B1/B2 a VŠ I. stupňa. Cleaning 24 má nízku mzdu a cudzojazyčnú komunikáciu. Vean je starší low-value výsledok. 0 pridaných.
 - **Pretlak / StartupJobs / WordPress Jobs:** bez nového non-hard-dev kandidáta lepšieho než aktuálny LIVE TOP.
-- **Upwork:** WordPress/Elementor Web Designer & Support Specialist je tematicky silný, ale >30 h/týždeň, emergency tickets do 15 minút a výrazná customer communication; WordPress Small Fix je 15 USD s 20–50 proposals; WordPress/Shopify VA je 100 USD za 8 h denne, 6 dní v týždni a vyžaduje dobrú verbálnu aj písomnú AJ. 0 pridaných.
-- **Freelancer/Twine/Contra:** bez overiteľného čerstvého high-fit BA/Slovakia-remote kandidáta.
-- **Reddit:** dominujú `[FOR HIRE]`, U.S.-only alebo hard-dev roly. Konkrétny U.S.-only WordPress Developer za 70–80 USD/h vyžaduje pobyt v USA, hard development a strong English; nepridané.
-- **Facebook:** **0 verified hits**. Verejná indexácia neposkytla konkrétny aktuálny WordPress/WooCommerce/BA hiring post s priamym overiteľným linkom. Audit ostáva `blocked`; autentizovaný Nexus/local ingestion je naďalej potrebný pre spoľahlivé pokrytie.
+- **Upwork:** AI & Tech Assistant je už v LIVE. Elementor Support Specialist má >30 h/týždeň a emergency SLA do 15 minút. Dnešné WordPress/Elementor a WooCommerce projekty za 5 USD sú pri 10–50 proposals príliš slabé. 0 nových pridaných.
+- **Freelancer/Twine/Contra:** bez overiteľného čerstvého high-fit BA/Slovakia-remote kandidáta; nájdený Freelancer výsledok bol starý/closed.
+- **Reddit:** dnešné výsledky sú prevažne `[FOR HIRE]` ponuky freelancerov, nie hiring dopyty. 0 eligible leadov.
+- **Facebook:** **0 verified hits**. Priame verejné otvorenie skupín vracia login/join wall a neposkytuje konkrétny aktuálny hiring post s priamym overiteľným linkom. Audit ostáva `blocked`; autentizovaný Nexus/local ingestion je naďalej potrebný pre spoľahlivé pokrytie.
 
 ### Run summary
 - Source families reálne skontrolované: **13**.
 - Nové aktívne položky: **0**.
 - Vyradené lokalitou: **0**.
-- Vyradené jazykovým/hard-skill gateom: **7**.
-- Vyradené ako slabé/nízka hodnota: **6**.
-- Duplikát / `[FOR HIRE]` / nevhodný typ leadu: **4**.
+- Vyradené jazykovým/hard-skill gateom: **6**.
+- Vyradené ako slabé/nízka hodnota: **5**.
+- Duplikát / `[FOR HIRE]` / nevhodný typ leadu: **8**.
 
 ### LIVE mix hlavného `jobs-data.json`
 - **26 aktívnych položiek**.
@@ -154,8 +156,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 53. Cross-source corroboration score.
 54. Requirement-delta detector.
 55. Application follow-up timing engine.
-56. **Opportunity scarcity score — NOVÉ** — pri rovnako kvalitných ponukách zohľadniť, koľko porovnateľných vhodných alternatív je práve aktívnych. Vzácna vysokofitová rola (napr. WordPress/Woo admin bez B2) dostane vyššiu urgency než ľahko nahraditeľná generická administratíva. Prínos: reagovať skôr tam, kde sa dobrá náhrada objavuje zriedka.
-57. **Canonical source failover chain — NOVÉ** — pri jednej karte uchovávať overené alternatívne zdrojové linky v poradí company career → LinkedIn/company post → job board. Ak hlavný canonical link zlyhá alebo zmizne, alternatívny zdroj slúži na potvrdenie aktívnosti bez vytvorenia duplicity. Prínos: menej falošných „closed“ stavov a menej stratených príležitostí pri zlyhaní jedného portálu.
+56. Opportunity scarcity score.
+57. Canonical source failover chain.
+58. **Top-result actionability diversity guard — NOVÉ** — pri TOP poradí penalizovať nadmernú koncentráciu rovnakého typu príležitosti (napr. päť veľmi podobných support rolí) a zachovať aspoň niekoľko reálne odlišných ciest: web/e-shop, tech/support, admin a flexibilná remote zákazka. Neznižovať kvalitu ani obchádzať hard gate; iba pri podobnom Match skóre uprednostniť rozmanitejší akčný výber. Prínos: používateľ dostane viac rôznych reálne použiteľných možností namiesto desiatich variácií tej istej práce.
+59. **Minimum viable opportunity threshold — NOVÉ** — pred zaradením slabšej zákazky spojiť odmenu, časový rozsah, konkurenciu, application friction, pracovný režim a povinné skills do jedného minimálneho value gateu. Extrémne nízky budget (napr. 5 USD), vysoká konkurencia a neprimerané SLA automaticky skončia v rejected cache aj vtedy, keď tematická zhoda WordPress/WooCommerce vyzerá dobre. Prínos: menej času stráveného na ponukách, ktoré sú síce obsahovo relevantné, ale ekonomicky alebo prakticky nedávajú zmysel.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
