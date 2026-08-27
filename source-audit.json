@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-27T21:33:00+02:00",
+  "updatedAt": "2026-08-27T22:21:21+02:00",
   "runSummary": {
     "familiesChecked": 13,
     "newActiveJobs": 0,
     "rejectedByLocation": 0,
-    "rejectedByLanguageOrHardSkill": 7,
-    "rejectedAsWeakOrLowValue": 6,
-    "duplicateOrForHire": 4,
+    "rejectedByLanguageOrHardSkill": 6,
+    "rejectedAsWeakOrLowValue": 5,
+    "duplicateOrForHire": 8,
     "note": "Bez nového kandidáta, ktorý by po BA/remote, jazykovom, hard-skill a quality gate prebil aktuálny LIVE feed. jobs-data.json ostal fail-closed nezmenený."
   },
   "sources": [
     {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"Reálne prehľadané najnovšie Bratislava WordPress/e-shop/admin/IT support výsledky. Bez nového samostatného high-fit kandidáta nad existujúci LIVE feed; 0 pridaných."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":1,"note":"Reálne kontrolované priame career stránky. SupportYourApp Careers je dostupný a relevantný pre remote customer/technical support, ale aktuálne role cielia na veľmi silnú angličtinu alebo ďalší jazyk; 0 eligible hitov pre A2 profil. Existujúce Hilti/Penta/O2/Websupport/VNET canonical roly ostávajú preferované."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"note":"Foxelli Crochet Customer Support je 100 % remote a Slovakia-eligible, ale vyžaduje špecializovanú crochet podporu a predajno-podporný profil; neprešiel fit gateom. 0 pridaných."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":1,"note":"Kontrolované priame career zdroje a dostupné direct roly. SupportYourApp má remote CX/automation/support možnosti, ale vyžadujú fluent/strong English alebo ďalší jazyk. 0 eligible hitov pre A2 profil."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":4,"note":"Wolt Support Associate v Bratislave je aktuálny, ale vyžaduje min. B2 English a zmeny vrátane večerov/víkendov. Foxelli remote support vyžaduje fluent/near-native English a špecializované crochet skills; SupportYourApp vyžaduje fluent English. 0 pridaných."},
     {"name":"Brigada.sk","family":"other","status":"checked","hits":0,"note":"Reálne prehľadané aktuálne Bratislava admin/e-shop/IT support výsledky. Bez nového high-fit hitu."},
-    {"name":"Worki.sk","family":"other","status":"checked","hits":0,"note":"Reálne prehľadané BA/remote e-shop/admin/support výsledky. Bez novej aktívnej položky, ktorá by prešla quality gate a nebola už pokrytá."},
+    {"name":"Worki.sk","family":"other","status":"checked","hits":1,"note":"E-shop administrátor Shield-Sk je tematicky relevantný, ale detail ho označuje ako obsadený/zrušený. Closed-result suppression správne zabránil aktivácii."},
     {"name":"Práca za rohom","family":"other","status":"checked","hits":0,"note":"Reálne prehľadané BA admin/support výsledky. Bez nového nezávislého kandidáta; Profesia mirrory sa nepočítajú ako source diversity."},
-    {"name":"Služby zamestnanosti / Kariera.sk","family":"government","status":"checked","hits":0,"note":"Reálne prehľadané BA administratíva/IT/support výsledky. Bez nového kandidáta spĺňajúceho lokalitu, hodnotu a jazykový gate."},
+    {"name":"Služby zamestnanosti / Kariera.sk","family":"government","status":"checked","hits":3,"note":"Nájdené BA administratívne roly. StartSeason vyžaduje ruský B1/B2 a VŠ I. stupňa; Cleaning 24 uvádza cudzojazyčnú komunikáciu a nízku mzdu; Vean je starší low-value výsledok. 0 pridaných."},
     {"name":"Pretlak","family":"other","status":"checked","hits":0,"note":"Reálne prehľadané BA/remote AI/e-commerce/support výsledky. Bez nového kandidáta lepšieho než existujúci OVB AI/automation a ďalšie LIVE TOP roly."},
-    {"name":"StartupJobs / WordPress Jobs","family":"other","status":"checked","hits":0,"note":"Reálne prehľadané remote WordPress/e-commerce/support výsledky. Bez vhodného non-hard-dev Slovakia-remote hitu; jazykové supporty a developer roly neprešli gateom."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":3,"note":"Reálne prehľadané čerstvé worldwide WordPress/WooCommerce/assistant výsledky. WordPress/Elementor Web Designer & Support Specialist je tematicky silný, ale >30 h/týždeň, emergency tickets do 15 minút a výrazná priama customer communication; WordPress Small Fix je 15 USD s 20–50 proposals; WordPress/Shopify VA je 100 USD za 8 h denne, 6 dní v týždni a vyžaduje dobrú verbálnu aj písomnú AJ. 0 pridaných."},
-    {"name":"Freelancer / Twine / Contra","family":"freelance","status":"checked","hits":0,"note":"Verejná indexácia skontrolovaná; bez overiteľného čerstvého high-fit BA/Slovakia-remote kandidáta."},
-    {"name":"Reddit r/wordpressjobs / related hiring","family":"community","status":"checked","hits":1,"note":"Aktuálne výsledky dominujú [FOR HIRE] ponuky freelancerov alebo U.S.-only/hard-dev hiring. U.S.-only WordPress Developer za 70–80 USD/h vyžaduje pobyt v USA, hard WP development a strong English; 0 eligible hiring hitov."},
-    {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"blocked","hits":0,"note":"Verejná indexácia a priame vyhľadanie boli vykonané, ale bez konkrétneho verejne overiteľného hiring postu s priamym linkom. 0 verified hits; nič sa nepredstiera. Spoľahlivé pokrytie stále vyžaduje autorizovaný Nexus/local ingestion."}
+    {"name":"StartupJobs / WordPress Jobs","family":"other","status":"checked","hits":0,"note":"Reálne prehľadané remote WordPress/e-commerce/support výsledky. Bez vhodného non-hard-dev Slovakia-remote hitu, ktorý by prešiel language/value gateom."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"note":"Reálne prehľadané čerstvé worldwide WordPress/WooCommerce/assistant výsledky. AI & Tech Assistant je už v LIVE. Elementor Support Specialist má >30 h/týždeň a emergency tickets do 15 minút; dva dnešné WordPress/WooCommerce fix/build projekty majú iba 5 USD budget a 10–50 proposals; ďalšie VA role majú nevýhodný rozsah/English. 0 nových pridaných."},
+    {"name":"Freelancer / Twine / Contra","family":"freelance","status":"checked","hits":0,"note":"Verejná indexácia skontrolovaná; bez overiteľného čerstvého high-fit BA/Slovakia-remote kandidáta. Freelancer výsledok bol starý/closed."},
+    {"name":"Reddit r/wordpressjobs / related hiring","family":"community","status":"checked","hits":8,"note":"Dnešné výsledky sú prevažne [FOR HIRE] ponuky freelancerov, nie dopyty zamestnávateľov. Nezaradené; 0 eligible hiring hitov."},
+    {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"blocked","hits":0,"note":"Priame verejné otvorenie a indexácia vracajú login/join wall bez konkrétneho overiteľného hiring postu. 0 verified hits; nič sa nepredstiera. Spoľahlivé pokrytie stále vyžaduje autorizovaný Nexus/local ingestion."}
   ]
 }
