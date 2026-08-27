@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 27. 8. 2026 22:21 CEST
+Aktualizované: 27. 8. 2026 23:34 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -56,27 +56,28 @@ Aktualizované: 27. 8. 2026 22:21 CEST
 22. **VNET — IT customer support — Match 82**.
 23. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 27. 8. 2026 22:21 CEST
+## SOURCE AUDIT — 27. 8. 2026 23:34 CEST
 Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak; StartupJobs/WordPress Jobs; Upwork; Freelancer/Twine/Contra; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
 - **Nové položky do `jobs-data.json`: 0.** Kvalita mala prednosť pred kvótou; LIVE feed ostal fail-closed nezmenený.
-- **Profesia:** bez nového samostatného BA/remote kandidáta, ktorý by prebil aktuálne silné web/tech/admin možnosti.
-- **Priame firemné kariéry / LinkedIn:** Wolt Support Associate je čerstvý BA výsledok, ale vyžaduje minimálne B2 English; SupportYourApp vyžaduje fluent/strong English a Foxelli remote support fluent/near-native English + špecializované crochet skills. 0 eligible hitov.
+- **Profesia:** objavila sa čerstvá indexová položka **VÚB Digitálny agent**, ale detail `O5233895` explicitne uvádza, že zverejnenie bolo ukončené. Aktivácia bola správne zablokovaná. Tesco **Analytik/čka párovania produktov a produktových dát** je čerstvý BA výsledok, ale vyžaduje AJ B2. Asseco **Junior AI analytik** vyžaduje VŠ I. stupňa a výraznejší AI/data profil. Slovexperta **Technik/Technička pre obhliadky motorových vozidiel** je BA a bez AJ, ale požaduje technické vzdelanie a znalosť konštrukcie vozidiel/poistných udalostí; neprebil silnejšie LIVE možnosti.
+- **Priame firemné kariéry:** bez nového BA/Slovakia-remote kandidáta lepšieho než existujúce Hilti/Websupport/O2/Penta direct-source roly.
+- **LinkedIn:** Foxelli remote customer support je geograficky OK aj pre Slovensko, ale vyžaduje fluent/near-native English a špecializované crochet skills. 0 pridaných.
 - **Brigada.sk:** bez nového high-fit BA výsledku.
-- **Worki:** Shield-Sk Administrátor e-shopu / zákaznícka podpora je tematicky vhodný, ale detail je označený ako obsadený/zrušený; správne potlačené closed-result cache pravidlom.
-- **Práca za rohom:** bez nového nezávislého výsledku; Profesia mirrory sa nepočítajú ako nový source hit.
-- **Služby zamestnanosti/Kariera:** StartSeason administratíva v Rači má vhodnú náplň, ale vyžaduje ruštinu B1/B2 a VŠ I. stupňa. Cleaning 24 má nízku mzdu a cudzojazyčnú komunikáciu. Vean je starší low-value výsledok. 0 pridaných.
+- **Worki:** bez nového aktívneho high-fit výsledku; staršie closed/obsadené výsledky zostávajú potlačené.
+- **Práca za rohom:** našiel sa **Cerkam Facility Services — Terénny administratívny pracovník** s vhodnou admin/customer-care náplňou a zobrazenou lokalitou Bratislava. Profesia index však rovnakú firmu/rolu vedie ako **Poprad**. Kým sa konflikt nevyrieši, `locationEligibility = unknown` a položka sa neaktivuje. Tesco mirror zároveň potvrdzuje AJ B2. Profesia mirrory sa nepočítajú ako source-diversity hit.
+- **Služby zamestnanosti/Kariera:** bez nového kandidáta, ktorý by prešiel BA/remote, jazykovým a value gateom.
 - **Pretlak / StartupJobs / WordPress Jobs:** bez nového non-hard-dev kandidáta lepšieho než aktuálny LIVE TOP.
-- **Upwork:** AI & Tech Assistant je už v LIVE. Elementor Support Specialist má >30 h/týždeň a emergency SLA do 15 minút. Dnešné WordPress/Elementor a WooCommerce projekty za 5 USD sú pri 10–50 proposals príliš slabé. 0 nových pridaných.
-- **Freelancer/Twine/Contra:** bez overiteľného čerstvého high-fit BA/Slovakia-remote kandidáta; nájdený Freelancer výsledok bol starý/closed.
-- **Reddit:** dnešné výsledky sú prevažne `[FOR HIRE]` ponuky freelancerov, nie hiring dopyty. 0 eligible leadov.
-- **Facebook:** **0 verified hits**. Priame verejné otvorenie skupín vracia login/join wall a neposkytuje konkrétny aktuálny hiring post s priamym overiteľným linkom. Audit ostáva `blocked`; autentizovaný Nexus/local ingestion je naďalej potrebný pre spoľahlivé pokrytie.
+- **Upwork:** čerstvý **WordPress / Elementor Web Designer & Support Specialist** je worldwide remote, ale vyžaduje >30 h/týždeň, customer-facing helpdesk a reakciu na emergency tickety do 15 minút; neprešiel support-intensity/value gateom. 0 nových pridaných.
+- **Freelancer/Twine/Contra:** bez overiteľného čerstvého high-fit BA/Slovakia-remote kandidáta.
+- **Reddit:** čerstvé výsledky sú prevažne `[FOR HIRE]` ponuky freelancerov alebo US-only/hard-development hiring; 0 eligible leadov.
+- **Facebook:** **0 verified hits**. Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; audit ostáva `blocked`. Autentizovaný Nexus/local ingestion zostáva potrebný pre spoľahlivé pokrytie.
 
 ### Run summary
 - Source families reálne skontrolované: **13**.
 - Nové aktívne položky: **0**.
-- Vyradené lokalitou: **0**.
+- Vyradené lokalitou / lokalitným konfliktom: **1**.
 - Vyradené jazykovým/hard-skill gateom: **6**.
 - Vyradené ako slabé/nízka hodnota: **5**.
 - Duplikát / `[FOR HIRE]` / nevhodný typ leadu: **8**.
@@ -158,8 +159,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 55. Application follow-up timing engine.
 56. Opportunity scarcity score.
 57. Canonical source failover chain.
-58. **Top-result actionability diversity guard — NOVÉ** — pri TOP poradí penalizovať nadmernú koncentráciu rovnakého typu príležitosti (napr. päť veľmi podobných support rolí) a zachovať aspoň niekoľko reálne odlišných ciest: web/e-shop, tech/support, admin a flexibilná remote zákazka. Neznižovať kvalitu ani obchádzať hard gate; iba pri podobnom Match skóre uprednostniť rozmanitejší akčný výber. Prínos: používateľ dostane viac rôznych reálne použiteľných možností namiesto desiatich variácií tej istej práce.
-59. **Minimum viable opportunity threshold — NOVÉ** — pred zaradením slabšej zákazky spojiť odmenu, časový rozsah, konkurenciu, application friction, pracovný režim a povinné skills do jedného minimálneho value gateu. Extrémne nízky budget (napr. 5 USD), vysoká konkurencia a neprimerané SLA automaticky skončia v rejected cache aj vtedy, keď tematická zhoda WordPress/WooCommerce vyzerá dobre. Prínos: menej času stráveného na ponukách, ktoré sú síce obsahovo relevantné, ale ekonomicky alebo prakticky nedávajú zmysel.
+58. **Top-result actionability diversity guard** — pri TOP poradí penalizovať nadmernú koncentráciu rovnakého typu príležitosti a pri podobnom Match skóre zachovať rozmanitejší akčný výber.
+59. **Minimum viable opportunity threshold** — pred zaradením slabšej zákazky spojiť odmenu, časový rozsah, konkurenciu, application friction, pracovný režim a povinné skills do jedného minimálneho value gateu.
+60. **Cross-source location conflict quarantine — NOVÉ** — ak rovnaká firma/rola na dvoch zdrojoch uvádza rozdielne pracovisko alebo rozdielny remote režim, položku automaticky neposlať do LIVE ani keď jeden mirror tvrdí Bratislavu. Nastaviť `locationEligibility: unknown`, uložiť oba dôkazy a vyžadovať zhodu primárneho/detailného zdroja. Prínos: eliminuje falošné BA ponuky spôsobené chybným mirrorom alebo recyklovaným inzerátom; dnešný príklad Cerkam Bratislava vs Poprad.
+61. **Search-index/detail contradiction gate — NOVÉ** — pred aktiváciou čerstvého výsledku vždy overiť detail stránky a porovnať stav `active/closed`, publication timestamp a apply path so search/index snippetom. Ak index tvrdí „pred 2 hodinami“, ale detail hovorí „ukončila zverejnenie“, výsledok automaticky zaradiť do negative cache a nezvyšovať freshness ani priority score. Prínos: zabráni plytvaniu času na falošne čerstvé, ale už zatvorené ponuky; dnešný príklad VÚB Digitálny agent.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
