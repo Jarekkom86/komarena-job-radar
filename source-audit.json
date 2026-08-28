@@ -1,25 +1,23 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T23:28:48+02:00",
+  "updatedAt": "2026-08-29T00:14:53+02:00",
   "runSummary": {
-    "familiesChecked": 10,
+    "familiesChecked": 8,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 5,
-    "rejectedAsWeakOrLowValue": 4,
-    "duplicateOrExisting": 4,
+    "rejectedByLanguageOrHardSkill": 2,
+    "rejectedAsWeakOrLowValue": 3,
+    "duplicateOrExisting": 5,
     "rejectedByFreshnessOrEvidence": 1,
-    "note": "Beh 28. 8. 2026 o 23:28 reálne prešiel Profesia, direct-company discovery, LinkedIn, Worki, Brigada.sk, Kariera/Služby zamestnanosti, Pretlak/WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexovaný Facebook. Nenašiel sa nový kandidát, ktorý by súčasne prešiel BA/remote, jazykovým/hard-skill, freshness/evidence, value a duplicate gateom. SecTec Marketing asistent je obsahovo silný WordPress/admin fit, ale verejný LinkedIn výsledok neposkytol spoľahlivý dátum zverejnenia ani mzdu; zostáva na cielené overenie a nie v LIVE. jobs-data.json zostáva fail-closed a updatedAt sa neposúva umelo."
+    "note": "Beh 29. 8. 2026 o 00:14 reálne preveril čerstvé BA/remote výsledky pre AI/automatizáciu, e-commerce/admin, IT support/WordPress a vodič/kuriér. Lanža, IZY VAPE, Cerkam a ďalšie existujúce LIVE položky zostávajú viditeľné v čerstvých výsledkoch. Nový Akfos kuriér je čerstvý a bez jazykového gate, ale ide o kusové zásielky za od 1 500 € a hodnotou neprekonáva existujúcu Lanža prioritu. Košík.sk ponúka 2 500–3 000 € / až 180 € denne a nástup ihneď, ale explicitne vyžaduje fyzickú zdatnosť a vynášanie nákupov na poschodia; vzhľadom na existujúci fit gate pre ľahšie zásielky nebol povýšený na prioritu. 68travel e-shop je obsahovo zaujímavý, ale vyžaduje B2 AJ a manipuláciu s ťažšími balíkmi. AI Data Engineer je senior Python/SQL/big-data hard-skill reject. jobs-data.json zostáva fail-closed bez umelého posunu updatedAt, keďže nebola pridaná ani významne zmenená LIVE položka."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"BA/remote e-commerce, admin, IT support a vodič discovery bez nového kvalitného winnera nad existujúci LIVE feed; existujúce čerstvé položky zostávajú aktívne."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Direct-company lane bol preverený; pri SecTec sa podarilo potvrdiť firmu a BA adresu, ale nie samostatný aktuálny career detail konkrétnej Marketing Assistant roly."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"note":"SecTec Marketing asistent v Bratislave: WordPress/CMS, newslettery, sociálne siete, administratíva a reporting; bez tvrdého jazykového gate v dostupnom detaile. Nezaradené do LIVE pre chýbajúci spoľahlivý publishedAt a mzdu. Wolt support zostáva B2 English reject; FHB Product Owner vyžaduje plynulú AJ."},
-    {"name":"Worki.sk + Brigada.sk","family":"slovak-jobboards","status":"checked","hits":0,"note":"BA administratíva/e-shop/support discovery bez nového leadu, ktorý by prebil existujúce fit/value priority. Brigada.sk homepage bola dostupná; bez konkrétneho nového vhodného hitu."},
-    {"name":"Kariera.sk / Práca za rohom","family":"aggregator-jobboards","status":"checked","hits":0,"note":"Práca za rohom priniesla krátkodobú výpomoc pre mobilnú aplikáciu za 7 €/h v BA; value/fit pod aktuálnym LIVE prahom. Profesia mirrory sa nepočítajú ako nezávislý zdroj."},
-    {"name":"Služby zamestnanosti","family":"government","status":"checked","hits":0,"note":"Portál bol dostupný a aktuálny. Technical Support Engineer v BA vyžaduje Linux/server troubleshooting a cudzie jazyky; hard-skill/language reject."},
-    {"name":"Pretlak + WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"Pretlak CloseRocket Customer Success & UX Partner je BA a 1 500–2 100 €, ale z predchádzajúceho overenia má fluent English hard gate; bez nového vhodného WordPress Jobs leadu vykonateľného zo Slovenska bez hard developmentu."},
-    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":0,"note":"Aktuálne WordPress/WooCommerce výsledky sú prevažne PHP/dev-heavy, 20–50 alebo 50+ proposals, US-hours/fluent-English, prípadne low-value. WordPress/Elementor Support Specialist má vysokú support intenzitu a technický rozsah; bez bezpečného nového LIVE winnera."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Aktuálne indexované r/wordpressjobs výsledky sú prevažne [FOR HIRE]. Starší HIRING lead je low-budget developer-heavy; nič sa nepridáva ako falošný hiring dopyt."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny aktuálny overiteľný hiring post z WordPress Slovensko, WooCommerce SK+CZ ani BA jobs skupín. Autentizovaný Nexus/local ingestion ostáva backlog; pokrytie sa nepredstiera."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":3,"note":"Čerstvé vodič/kuriér výsledky: Akfos od 1 500 €, Lanža existujúca LIVE priorita a Košík.sk 2 500–3 000 €. Akfos je nižšia value než Lanža; Košík má explicitný fyzický gate. Existujúce BA admin/e-commerce položky zostávajú aktívne."},
+    {"name":"Práca za rohom","family":"aggregator-jobboards","status":"checked","hits":4,"note":"Overené detaily Akfos, Košík.sk, 68travel a čerstvý BA office-manager výpis. Košík: živnosť, vodičák B min. 2 roky, až 180 €/deň, ale fyzické vynášanie nákupov. 68travel: 1 400–1 800 €, e-shop, ale B2 AJ a ťažšie balíky."},
+    {"name":"Služby zamestnanosti","family":"government","status":"checked","hits":1,"note":"AI Trainer & Workflow Engineer v BA je stále dohľadateľný, ale vyžaduje VŠ I. stupňa; nie je nový winner oproti existujúcim AI/process prioritám."},
+    {"name":"CoolJobs","family":"tech-jobboard","status":"checked","hits":1,"note":"AI Data Engineer Bratislava 6 200 €, 40 % home office; senior Python, SQL, big-data/cloud dátové pipeline – hard-skill reject pre cieľový profil."},
+    {"name":"LinkedIn / firemné discovery","family":"linkedin-company","status":"checked","hits":0,"note":"V tomto behu sa neobjavil nový spoľahlivo datovaný BA/remote lead, ktorý by prešiel fit/value gate nad existujúce LUNYS, OVB, Hilti, Penta alebo LEAF priority."},
+    {"name":"E-commerce discovery","family":"ecommerce","status":"checked","hits":2,"note":"IZY VAPE zostáva čerstvo indexované. 68travel Správca e-shopu a sortimentu bol detailne overený, ale B2 AJ a fyzická manipulácia s ťažšími balíkmi sú proti cieľovým obmedzeniam."},
+    {"name":"Driver / courier discovery","family":"driver","status":"checked","hits":3,"note":"Lanža zostáva najlepší čerstvý fit. Akfos: Po–Pia cca 6:00–15/16, B, dohoda/živnosť, kusové zásielky, od 1 500 €. Košík: vysoká odmena a flexibilita, ale explicitne fyzicky náročné vynášanie nákupov."},
+    {"name":"Remote / support discovery","family":"remote-support","status":"checked","hits":1,"note":"Bookio/ďalšie existujúce support položky ostávajú relevantné; bez nového overeného remote winnera v tomto behu."}
   ]
 }
