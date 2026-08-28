@@ -1,28 +1,26 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T08:25:40+02:00",
+  "updatedAt": "2026-08-28T09:28:13+02:00",
   "runSummary": {
-    "familiesChecked": 13,
+    "familiesChecked": 11,
     "newActiveJobs": 0,
-    "rejectedByLocation": 4,
-    "rejectedByLanguageOrHardSkill": 7,
+    "rejectedByLocation": 0,
+    "rejectedByLanguageOrHardSkill": 6,
     "rejectedAsWeakOrLowValue": 7,
     "duplicateOrForHire": 5,
-    "note": "Bez nového LIVE prírastku; fail-closed zachovaný. Foxelli má 100 % remote eligibility pre Slovensko, ale Crochet Customer Support vyžaduje fluent/near-native English, hands-on crochet, phone support/upsell a večerné/nočné smeny. Wolt Support Associate vyžaduje min. B2 AJ. Allegro Junior špecialista podpory partnerov je 100 % HO, ale vyžaduje fluent Hungarian + Slovak. Upwork WordPress leady sú prevažne 15–50 USD fixed, hard PHP alebo už s 15–50 proposals; Freelancer WordPress/WooCommerce má stovky bids. Twine WordPress filter aktuálne vracia 0 WordPress jobs; BA Twine lead je social-media mimo hlavného profilu. Facebook naďalej 0 verified hits kvôli verejnej indexácii/login obmedzeniu."
+    "note": "Bez nového LIVE prírastku; fail-closed zachovaný. Fresh search prešiel Profesia, direct company careers, LinkedIn, Brigada.sk, Worki.sk, Kariera/ÚPSVR, Pretlak, WordPress Jobs, Upwork, Reddit a verejne indexovaný Facebook. Websupport, O2 Digital Content Admin a Hilti boli znovu potvrdené na priamych firemných zdrojoch. LinkedIn priniesol prevažne fluent cudzie jazyky/nočné smeny alebo closed výsledky. Upwork priniesol čerstvý worldwide Remote Business Administrator + Executive Assistant za 500 USD s <5 proposals, ale mandatory bookkeeping, business-development scope a nejasná jazyková náročnosť znižujú fit; ďalšie WP/Woo leady sú 5–50 USD fixed, hard PHP alebo s vyššou konkurenciou. Facebook 0 verified hits."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":2,"note":"Reálne prehľadané čerstvé BA/okolie e-shop/support/admin/IT výsledky. Delta Electronics admin support je Dubnica nad Váhom s iba občasným HO, teda reject-distance. Ďalšie čerstvé výsledky boli mimo profilu alebo lokality; bez nového LIVE kandidáta."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"ok","hits":2,"note":"Websupport Customer Success Advisor bol priamo znovu potvrdený ako aktívny v Bratislave. Allegro Junior špecialista podpory partnerov je 100 % HO, ale vyžaduje plynulú maďarčinu a slovenčinu, preto neprešiel language gateom."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":4,"note":"Wolt part-time/full-time Support Associate v Bratislave vyžaduje English min. B2. Foxelli remote e-commerce support je country-eligible pre Slovensko, ale vyžaduje fluent/near-native spoken English; crochet variant navyše hands-on crochet, phone support/upsell a večerné/nočné smeny. Bez aktivácie."},
-    {"name":"Brigada.sk","family":"other","status":"checked","hits":1,"note":"Aktuálna BA brigáda Pomocné manipulačné práce 28. 8. za 6 €/h je lokalitne OK, ale fyzická/manipulačná a nízko hodnotná voči prioritnému profilu; neaktivovaná."},
-    {"name":"Worki.sk","family":"other","status":"checked","hits":0,"note":"BA admin/e-shop/support discovery vykonané; bez nového vhodného kandidáta nad už evidovaný RM Biznis servis."},
-    {"name":"Práca za rohom","family":"other","status":"checked","hits":0,"note":"BA e-shop/admin/support discovery vykonané; bez nového canonical výsledku. Profesia mirrory sa nezapočítavajú ako nezávislé source hits."},
-    {"name":"Služby zamestnanosti / Kariera.sk","family":"government","status":"checked","hits":0,"note":"BA admin/support/IT discovery vykonané. Bez nového high-fit kandidáta po lokalitnom, jazykovom a hard-skill filtri."},
-    {"name":"Pretlak / StartupJobs","family":"other","status":"checked","hits":0,"note":"Discovery pre BA/remote e-commerce, support a AI vykonané; v tomto behu bez nového výsledku nad existujúce OVB/known leads."},
-    {"name":"WordPress Jobs / tech-creative boards","family":"other","status":"checked","hits":0,"note":"WordPress Jobs discovery opätovne vykonané; bez nového BA alebo jednoznačne Slovakia-eligible remote leadu. Neaktivované staršie/mimo-lokalitné hard-development výsledky."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":4,"note":"WordPress Small Fix je worldwide, ale 15 USD fixed a 20–50 proposals; WooCommerce checkout/500 error je 20 USD fixed, mandatory PHP a 15–20 proposals; WordPress Website Builder with SEO je 50 USD za cca 15 podstrán a klient je nový; ďalšie VA/web leady majú slabú efektívnu hodnotu alebo vysokú AJ/hard-skill latku. Bez nového LIVE prírastku."},
-    {"name":"Freelancer / Twine / Contra / Freelancermap","family":"freelance","status":"checked","hits":3,"note":"Freelancer WordPress/WooCommerce projekty majú typicky stovky bids a silný dev scope; Twine WordPress filter aktuálne uvádza 0 WordPress jobs, BA Twine výsledok je social-media mimo hlavného profilu; Contra/Freelancermap discovery neposkytlo konkrétny overiteľný high-fit lead."},
-    {"name":"Reddit r/wordpressjobs + verejné WP hiring komunity","family":"community","status":"checked","hits":2,"note":"Dnešné výsledky sú [FOR HIRE] ponuky freelancerov, nie klientské hiring leady. Starší hiring WordPress post má extrémne nízky budget a komunitné scam/low-value varovania; neaktivované."},
-    {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"blocked","hits":0,"note":"Prioritné skupiny boli reálne vyhľadané cez verejnú indexáciu. Bez konkrétneho aktuálneho hiring postu s verejne overiteľným priamym linkom; Facebook obsah zostáva login/indexing-limited. 0 verified hits, nič sa nepredstiera."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"Reálne prehľadané čerstvé BA/okolie e-shop/support/admin/IT výsledky; v tomto behu bez nového kandidáta, ktorý by prekonal existujúce aktívne ponuky po jazykovom, hard-skill a value filtri."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"ok","hits":3,"note":"Websupport Customer Success Advisor, O2 Digital Content Admin a Hilti Implementation & Service Specialist boli znovu overené priamo na oficiálnych career detailoch. Ide o existujúce aktívne položky, nie nové leady."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":6,"note":"Foxelli remote e-commerce/support výsledky sú Slovakia-eligible, ale vyžadujú fluent/near-native English, phone upsell a pri časti rolí nočné/večerné smeny; starší Crochet detail je closed. TalentPop vyžaduje fluent German + English. Netzon support vyžaduje fluent Dutch + English. Bez aktivácie."},
+    {"name":"Brigada.sk","family":"other","status":"checked","hits":0,"note":"BA administratíva/e-shop/IT-support discovery vykonané; bez nového high-fit výsledku nad existujúce brigády a support roly."},
+    {"name":"Worki.sk","family":"other","status":"checked","hits":0,"note":"BA/online administratíva, e-shop a support discovery vykonané; bez nového vhodného kandidáta nad už evidovaný RM Biznis servis."},
+    {"name":"Služby zamestnanosti / Kariera.sk","family":"government","status":"checked","hits":2,"note":"BILLA IT asistent/EDI koordinátor je explicitne neaktívny. Caspian pomocný administratívny pracovník je BA a lokalitne OK, ale 950 EUR/mes. a generická administratíva sú pod minimálnou praktickou hodnotou oproti existujúcim možnostiam; neaktivované."},
+    {"name":"Pretlak / tech-creative boards","family":"other","status":"checked","hits":0,"note":"BA/remote AI, support, e-commerce a web discovery vykonané; bez nového kandidáta nad už evidovaný OVB/known leads."},
+    {"name":"WordPress Jobs","family":"other","status":"checked","hits":0,"note":"WordPress/WooCommerce remote discovery vykonané; bez nového jednoznačne Slovakia-eligible, non-hard-development leadu s dostatočnou hodnotou."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":7,"note":"Fresh worldwide remote výsledky: Business Administrator + Executive Assistant 500 USD, <5 proposals, ale mandatory bookkeeping/business-development scope a nejasná AJ; eCommerce VA 50 USD fixed; WordPress/WooCommerce leady typicky 5–50 USD fixed, hard PHP alebo 10–50 proposals. Bez nového LIVE prírastku, aby sa neobetovala kvalita kvôli počtu."},
+    {"name":"Reddit r/wordpressjobs + verejné WP komunity","family":"community","status":"checked","hits":2,"note":"Dnešné výsledky sú prevažne [FOR HIRE] ponuky freelancerov, nie hiring leady; neaktivované."},
+    {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"blocked","hits":0,"note":"Prioritné skupiny boli opäť vyhľadané cez verejnú indexáciu. Bez konkrétneho aktuálneho hiring postu s verejne overiteľným priamym linkom; login/indexing limit zostáva. 0 verified hits, nič sa nepredstiera."}
   ]
 }
