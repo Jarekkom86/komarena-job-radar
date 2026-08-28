@@ -1,26 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T01:15:11+02:00",
+  "updatedAt": "2026-08-29T01:35:34+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 5,
-    "rejectedAsWeakOrLowValue": 3,
-    "duplicateOrExisting": 5,
-    "rejectedByFreshnessOrEvidence": 1,
-    "note": "Beh 29. 8. 2026 o 01:15 reálne preveril Profesia, LinkedIn/direct-company discovery, Worki, Brigada.sk, Služby zamestnanosti, Pretlak, WordPress Jobs, Upwork, Reddit a verejne indexovaný Facebook. Neobjavil sa nový kandidát, ktorý by súčasne prešiel BA/remote hard gateom, jazykovým/hard-skill gateom a prekonal existujúce LIVE priority. Nový Profesia sweep našiel Fintegence Customer Support & Risk Analyst (B2 AJ must, 7-dňová prevádzka do 02:00) a KOOPERATIVA Špecialista/ka online predaja (3 roky relevantnej Product Manager/Product Owner/Digital Sales praxe), preto boli odmietnuté hard-skill/language gateom. COMPUTER GENERATED SOLUTIONS Technical Customer Support je remote 1 600 €, ale vyžaduje fluent Czech/Slovak & English, preto jazykový reject. Foxelli ostáva fluent/near-native English + nočný režim reject. Existujúce Lanža, VÚB a Confilogi sú stále verejne dohľadateľné. jobs-data.json nebol umelo prepisovaný bez obsahovej zmeny; feed-level updatedAt preto ostáva na poslednom dátovom commite a je starší než 60 minút."
+    "rejectedByLanguageOrHardSkill": 4,
+    "rejectedAsWeakOrLowValue": 5,
+    "duplicateOrExisting": 4,
+    "rejectedByFreshnessOrEvidence": 2,
+    "liveFeedCount": 29,
+    "liveProfesiaEstimatePct": 44.8,
+    "liveNonProfesiaEstimatePct": 55.2,
+    "note": "Beh 29. 8. 2026 o 01:35 reálne preveril Profesia, LinkedIn/direct-company discovery, Worki, Brigada.sk, Služby zamestnanosti, Pretlak, WordPress Jobs, Upwork, Reddit a verejne indexovaný Facebook. Nový vhodný BA/remote kandidát neprešiel všetkými gate-mi. Wolt Support Associate je BA a čerstvý, ale vyžaduje minimum B2 English. Kanadevia Assistant je Petržalka, ale vyžaduje fluent business English a min. 3 roky relevantnej admin/project support praxe. Insignia customer/operations roly vyžadujú advanced/fluent English a zmenovosť. Na Profesia sa objavil AYURCOS odborný predajca v BA za 1 000 EUR, ale ide o retail s nízkou hodnotou voči aktuálnym prioritám. Upwork priniesol čerstvé WordPress drobné zákazky, ale 30–35 USD fixed, expert/intermediate scope a 10–50 proposals nedávajú lepšiu hodnotu než existujúce LIVE WP/Woo leady. jobs-data.json sa preto fail-closed nemenil a updatedAt sa neposunul umelo."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":6,"note":"Čerstvý BA/remote sweep vykonaný. Existujúce Lanža, VÚB, Confilogi a ďalšie LIVE položky sú stále dohľadateľné. Fintegence (B2 AJ must, 7 dní/týždeň do 02:00) a KOOPERATIVA online predaj (3 roky relevantnej produktovej/digital-sales praxe) neprešli hard gateom. Bez nového LIVE winnera."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":3,"note":"Foxelli Customer Support & Sales Agent je Slovakia-eligible a 100 % remote, ale vyžaduje fluent/near-native English a nočný/veľmi skorý režim. SupportYourApp remote roly vyžadujú fluent English alebo seniornejšiu AI solution prax. Bez nového vhodného LIVE leadu."},
-    {"name":"Firemné kariérne stránky / direct-company","family":"company","status":"checked","hits":1,"note":"KOOPERATIVA kariéra potvrdzuje aktívnu pozíciu Špecialista/ka online predaja v Bratislave, ale detail Profesia vyžaduje 3 roky relevantnej Product Manager/Product Owner/Digital Sales praxe; nezaradené."},
-    {"name":"Worki.sk","family":"slovak-jobboard","status":"checked","hits":0,"note":"BA/online admin, e-shop, support a AI discovery bez nového vhodného leadu nad aktuálny fit/value prah."},
-    {"name":"Brigada.sk","family":"slovak-jobboard","status":"checked","hits":0,"note":"Bez nového overeného BA/remote e-shop/admin/tech/vodič leadu s vyššou hodnotou než existujúce LIVE priority."},
-    {"name":"Služby zamestnanosti","family":"government","status":"checked","hits":0,"note":"Bez nového vhodného leadu; dostupné technické výsledky ostávajú prevažne mimo profilu alebo s hard-skill požiadavkami."},
-    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":1,"note":"CloseRocket Customer Success & UX Partner ostáva BA 1 500–2 100 €, ale fluent English je hard gate. Bez nového vhodného výsledku."},
-    {"name":"WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"Remote WooCommerce/WordPress discovery bez nového Slovakia-eligible non-hard-dev leadu s primeranou hodnotou."},
-    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":2,"note":"WooCommerce Assistant 5–10 USD/h je stále aktívny a už je v LIVE feed-e; AI Virtual Assistant & Automation Specialist je starší a má vyššiu konkurenciu. Bez nového winnera."},
-    {"name":"Reddit r/wordpressjobs / WP komunity","family":"community","status":"checked","hits":0,"note":"Bez nového čerstvého HIRING leadu s vhodnou lokalitou, odmenou a overiteľným zadávateľom."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":2,"note":"Čerstvý BA/remote sweep vykonaný. AYURCOS odborný predajca (29.8.) je BA, ale 1 000 EUR a retail scope sú pod minimum value/role-fit prahom. Bez nového LIVE winnera."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":6,"note":"Wolt Support Associate FT/PT je čerstvý BA lead, ale minimum B2 English je hard language reject. Kanadevia Assistant vyžaduje fluent business English + 3 roky admin/project support. Insignia Customer Service/Operations vyžaduje advanced/fluent English; bez nového vhodného LIVE leadu."},
+    {"name":"Firemné kariérne stránky / direct-company","family":"company","status":"checked","hits":2,"note":"Direct-company lane preverovaný popri LinkedIn výsledkoch; pri kandidátoch s dostupným prvotným detailom sa tvrdé jazykové/experience gate-y potvrdili. Bez nového canonical winnera."},
+    {"name":"Worki.sk","family":"slovak-jobboard","status":"checked","hits":2,"note":"Existujúci RM Biznis servis je stále aktívny a aktualizovaný 21.8. Shield-Sk e-shop admin je už obsadený/zrušený. Bez nového vhodného BA/remote leadu."},
+    {"name":"Brigada.sk","family":"slovak-jobboard","status":"checked","hits":3,"note":"Aktuálne BA výsledky boli prevažne gastro/retail alebo všeobecné low-value brigády; mimo prioritného profilu. Levice/Piešťany onsite výsledky odmietnuté lokalitným gateom."},
+    {"name":"Služby zamestnanosti","family":"government","status":"checked","hits":0,"note":"BA/IT/admin discovery bez nového overeného leadu, ktorý by prešiel profilovým a lokalitným gateom."},
+    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":0,"note":"Čerstvý BA/remote customer-success/e-commerce/AI sweep bez nového kandidáta s A2-compatible language profile a primeraným scope."},
+    {"name":"WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"Remote WordPress/WooCommerce support discovery bez nového Slovakia-eligible non-hard-dev leadu s primeranou hodnotou."},
+    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":6,"note":"Čerstvé worldwide WordPress zákazky: Wordpress expert 35 USD fixed (20–50 proposals), WooCommerce cleanup 30 USD fixed (10–15 proposals), ďalšie 5–50 USD tasky. Hodnota/konkurencia/scope neprekonáva existujúce LIVE remote leady; nový VA lead vyžaduje silnú angličtinu."},
+    {"name":"Reddit r/wordpressjobs / WP komunity","family":"community","status":"checked","hits":1,"note":"Čerstvé výsledky sú prevažne FOR HIRE. Posledný relevantný HIRING lead je starší a nízko rozpočtový; bez nového overeného hiring winnera."},
     {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hiring hits. Verejná indexácia neposkytla konkrétny aktuálny WordPress/WooCommerce/BA pracovný post s priamym overiteľným linkom; nič sa nepredstiera."}
   ]
 }
