@@ -1,26 +1,26 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T21:35:41+02:00",
+  "updatedAt": "2026-08-28T22:14:07+02:00",
   "runSummary": {
     "familiesChecked": 10,
-    "newActiveJobs": 0,
-    "rejectedByLocation": 0,
+    "newActiveJobs": 1,
+    "rejectedByLocation": 2,
     "quarantinedUnknownLocation": 0,
-    "rejectedByLanguageOrHardSkill": 7,
-    "rejectedAsWeakOrLowValue": 5,
+    "rejectedByLanguageOrHardSkill": 8,
+    "rejectedAsWeakOrLowValue": 6,
     "duplicateOrForHire": 3,
-    "note": "Refresh 28. 8. 2026 o 21:35 reálne skontroloval Profesia, priame firemné kariéry, LinkedIn, Worki, Brigada.sk, Kariera/Služby zamestnanosti, Pretlak/WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejnú Facebook indexáciu. Žiadny nový lead neprešiel súčasne BA/remote, language/hard-skill a value gateom, preto jobs-data.json zostal fail-closed bez nového aktívneho zápisu. Priamy Websupport career detail potvrdzuje, že Customer Success Advisor je stále otvorený; zároveň odhaľuje širšie smeny 7:00–22:00 a požiadavku nestratiť sa v angličtine, preto zostáva existujúcim leadom bez zvýšenia skóre. LinkedIn priniesol Foxelli/TalentPop/Klarstein support roly, ale požadujú fluent/near-native English alebo ďalší cudzí jazyk. Upwork priniesol čerstvý worldwide remote Virtual Assistant lead a viac WordPress/WooCommerce projektov; VA vyžaduje silnú hovorenú/písanú AJ, WooCommerce/WordPress projekty sú hard-dev, nízkorozpočtové, vysoko konkurenčné alebo už majú hire. Reddit je prevažne FOR HIRE alebo starší low-budget hiring. Facebook public index zostáva limited s 0 verified hits. LIVE hlavného feedu ostáva 31 položiek: 15 Profesia (48,4 %) a 16 mimo Profesia (51,6 %)."
+    "note": "Refresh 28. 8. 2026 o 22:14 reálne skontroloval Profesia, LinkedIn, priame/partnerské job zdroje, Worki, Kariera, Pretlak a aktuálne Upwork výsledky plus existujúce community/FB coverage. Nový lead Lanža – vodič/ka na doručovanie online nákupov v Bratislave – prešiel BA, vodič B, bez tachografu, immediate-start a value gateom a bol pridaný do jobs-data.json s Match 91. ČSOB Release Coordinator bol čerstvý a tematicky zaujímavý, ale zamietnutý pre plynulú AJ, min. 2 roky IT, ServiceNow/Jira a nočné/víkendové release aktivity. Sociálna poisťovňa – odborný poradca bola zamietnutá pre B2 AJ. KInIT Financial Administrator bol zamietnutý pre B2 AJ, advanced Excel a relevantnú finančnú prax. Upwork dnešné VA/WordPress leady boli prevažne fluent-English, nízkorozpočtové, hard-dev alebo už s hire. Feed bol aktualizovaný až po tejto reálnej kontrole; žiadne umelé posunutie updatedAt."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"BA/remote e-commerce, admin a support discovery bol vykonaný; bez nového kandidáta, ktorý by prebil existujúci LIVE fit pri dodržaní jazykového, hard-skill a value gateu."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"ok","hits":1,"note":"Priamy Websupport career detail potvrdil Customer Success Advisor ako stále otvorenú BA pozíciu. Detail zároveň spresňuje smeny 7:00–22:00 a potrebu zvládnuť angličtinu; existujúci lead sa zachováva bez nového duplicitného zápisu."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Aktuálne Foxelli/TalentPop/Klarstein support výsledky sú remote/BA, ale vyžadujú fluent/near-native English alebo nemčinu/taliančinu/gréčtinu/poľštinu. Bez vhodného nového LIVE winnera."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"note":"BA/online administratíva, e-shop a support boli prehľadané; bez nového výsledku nad existujúce LIVE možnosti."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"note":"BA/okolie administratíva, e-shop, support a brigády boli prehľadané; bez nového fit/value winnera."},
-    {"name":"Kariera / Služby zamestnanosti","family":"government-other","status":"checked","hits":0,"note":"Aktuálny BA admin/IT/support discovery bez nového kandidáta, ktorý by prešiel hard-skill/language/value gateom."},
-    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"AI/e-commerce/WordPress discovery bol vykonaný; bez nového Slovakia-eligible non-hard-dev leadu s primeranou hodnotou."},
-    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":0,"note":"Čerstvý worldwide remote Virtual Assistant vyžaduje strong written/spoken English. Dnešné WordPress/WooCommerce leady majú hard-dev scope, nízky budget, 10–50 proposals alebo už hire; bez nového vhodného aktívneho zápisu."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Aktuálne indexované výsledky sú prevažne FOR HIRE. Jeden starší HIRING WordPress lead má veľmi nízky budget a developerský scope; neaktivovaný."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia neposkytla stabilný konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage zostáva limited a nič sa nepredstiera."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":1,"note":"Reálne prehľadané dnešné BA/remote admin, e-commerce, IT support a vodič/kuriér výsledky. Aktivovaný Lanža O5349252; ČSOB O5349165, Sociálna poisťovňa O5349249 a KInIT O5349125 zamietnuté podľa language/hard-skill gateu."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Priame firemné/partnerské výsledky porovnané s LIVE feedom; bez nového kandidáta, ktorý by prešiel všetkými gate-mi a nebol duplicitou."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Čerstvý ČSOB Release Coordinator potvrdený aj na LinkedIn, ale vyžaduje fluent English, 2 roky IT, ticketing a flexibilitu na nočné/víkendové releasy. Foxelli/Klarstein/SupportYourApp naďalej narážajú na fluent/ďalšie jazyky."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"note":"BA/online administratíva, e-shop a support refresh bez nového winnera nad existujúce LIVE možnosti."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"note":"Aktuálny BA brigáda/admin/support kontext bez nového overeného fit/value leadu."},
+    {"name":"Kariera / Služby zamestnanosti","family":"government-other","status":"checked","hits":0,"note":"Aktuálny BA admin/IT/support discovery bez nového kandidáta nad existujúci feed."},
+    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"AI/e-commerce/WordPress discovery bez nového Slovakia-eligible non-hard-dev leadu s lepším pomerom fit/hard-skill/value."},
+    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":0,"note":"Dnešné worldwide VA a WordPress/WooCommerce výsledky boli strong/fluent-English, hard-dev, veľmi nízky budget, vysoko konkurenčné alebo už mali hire; bez aktivácie."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Coverage zachované z poslednej čerstvej kontroly v rámci hodinového okna; bez nového verified hiring leadu."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia zostáva limited; bez stabilného konkrétneho aktuálneho hiring postu s priamym overiteľným linkom."}
   ]
 }
