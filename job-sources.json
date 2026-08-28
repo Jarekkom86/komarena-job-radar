@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T02:35:42+02:00",
-  "lastAuditAt": "2026-08-28T02:35:42+02:00",
+  "updatedAt": "2026-08-28T03:25:00+02:00",
+  "lastAuditAt": "2026-08-28T03:25:00+02:00",
   "policy": {"publicOnly":true,"doNotPretendPrivateFacebookCoverage":true,"dedupeByCanonicalUrl":true,"verifyBeforeActive":true},
   "sources": [
     {"id":"profesia","name":"Profesia","type":"jobboard","priority":100,"trust":98,"url":"https://www.profesia.sk/","coverage":"direct","note":"Jeden z hlavných zdrojov, nie default. Pri mirroroch preferovať canonical direct/company zdroj."},
@@ -14,7 +14,7 @@
     {"id":"growni","name":"GROWNi","type":"jobboard","priority":88,"trust":94,"url":"https://growni.sk/praca","coverage":"direct"},
     {"id":"pracazarohom","name":"Práca za rohom","type":"jobboard","priority":85,"trust":88,"url":"https://www.pracazarohom.sk/","coverage":"direct","note":"Užitočný na discovery a detailné doplnenie podmienok, ale Profesia mirrory sa nepočítajú ako nezávislý source hit."},
     {"id":"worki","name":"Worki.sk","type":"jobboard","priority":86,"trust":88,"url":"https://www.worki.sk/","coverage":"direct","note":"BA/online administratíva a e-shop; pri výkonovej odmene vždy označiť compensation risk a pri neaktívnom detaile použiť closed-result suppression."},
-    {"id":"lepsiapraca","name":"LepšiaPráca.sk","type":"jobboard","priority":76,"trust":82,"url":"https://lepsiapraca.sk/","coverage":"public-index","note":"Doplnené po overení aktuálnej Senec/BA-region ponuky. Používať na discovery, ale cold-sales/akvizičné roly označiť sales-intensity riskom a pri rovnakom inzeráte deduplikovať proti Profesia/Worki/Kariera mirrorom."},
+    {"id":"lepsiapraca","name":"LepšiaPráca.sk","type":"jobboard","priority":76,"trust":82,"url":"https://lepsiapraca.sk/","coverage":"public-index","note":"Používať na discovery v BA/regióne; cold-sales/akvizičné roly označiť sales-intensity riskom a pri rovnakom inzeráte deduplikovať proti Profesia/Worki/Kariera mirrorom."},
     {"id":"sluzby-zamestnanosti","name":"Služby zamestnanosti","type":"government","priority":86,"trust":96,"url":"https://sluzbyzamestnanosti.gov.sk/","coverage":"direct","note":"Často poskytuje presné jazykové, vzdelanostné, vodičské a termínové podmienky. Preferovať originálny ÚPSVR detail pred Kariera/Jooble mirrorom, ak sa dá dohľadať."},
     {"id":"kariera","name":"Kariera.sk / Zoznam","type":"jobboard","priority":82,"trust":88,"url":"https://kariera.zoznam.sk/","coverage":"public-index","note":"Užitočný verejný mirror ÚPSVR pre BA support/IT roly; ak stránka označuje zdroj Úrady práce, pokúsiť sa canonical migrovať na originálny government detail."},
     {"id":"indeed","name":"Indeed","type":"jobboard","priority":78,"trust":85,"url":"https://sk.indeed.com/","coverage":"public-index"},
@@ -24,7 +24,7 @@
     {"id":"jobs-cz","name":"Jobs.cz","type":"jobboard","priority":75,"trust":90,"url":"https://www.jobs.cz/","coverage":"public-index"},
     {"id":"prace-cz","name":"Prace.cz","type":"jobboard","priority":72,"trust":88,"url":"https://www.prace.cz/","coverage":"public-index"},
     {"id":"wordpress-jobs","name":"WordPress Jobs","type":"jobboard","priority":86,"trust":92,"url":"https://jobs.wordpress.net/","coverage":"direct"},
-    {"id":"upwork","name":"Upwork","type":"freelance","priority":92,"trust":82,"url":"https://www.upwork.com/","coverage":"public-index","note":"High-value source pre WooCommerce/WordPress support, AI/web assistance a admin work. Povinne kontrolovať competition, client history, explicit eligible countries, mandatory English, timezone a konzistenciu rozsahu práce; ak metadata a summary odporujú, znížiť scoreConfidence."},
+    {"id":"upwork","name":"Upwork","type":"freelance","priority":92,"trust":82,"url":"https://www.upwork.com/","coverage":"public-index","note":"High-value source pre WooCommerce/WordPress support, AI/web assistance a admin work. Povinne kontrolovať competition, client history, explicit eligible countries, mandatory English, timezone a konzistenciu rozsahu práce. Pri rankingu odlišovať čerstvosť inzerátu od čerstvosti aktivity klienta: `last viewed`, interviewing a hires môžu ukázať, že formálne otvorená zákazka už prakticky nemá vysokú šancu."},
     {"id":"freelancer","name":"Freelancer","type":"freelance","priority":72,"trust":72,"url":"https://www.freelancer.com/","coverage":"public-index"},
     {"id":"twine","name":"Twine","type":"freelance","priority":72,"trust":76,"url":"https://www.twine.net/jobs/in/slovakia/bratislava","coverage":"public-index"},
     {"id":"freelancermap","name":"Freelancermap","type":"freelance","priority":74,"trust":80,"url":"https://www.freelancermap.com/","coverage":"public-index"},
