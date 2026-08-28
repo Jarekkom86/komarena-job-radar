@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 28. 8. 2026 15:24 CEST
+Aktualizované: 28. 8. 2026 16:30 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -59,32 +59,33 @@ Aktualizované: 28. 8. 2026 15:24 CEST
 25. **LAST MILE — Operátor NOC / Hotline podpora — Match 82** — Ružinov; first-line support; mínus 6–8 €/h a B1 AJ.
 26. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 28. 8. 2026 15:24 CEST
-Reálne prehľadané zdrojové skupiny: **Profesia; direct company careers; LinkedIn Jobs; Brigada.sk; Worki.sk; Práca za rohom; Kariera/Služby zamestnanosti; Pretlak/tech-creative; StartupJobs/WordPress Jobs; Upwork; Freelancermap/Freelancer a ďalšie freelance indexy; Reddit/WP komunity; Facebook verejná indexácia.**
+## SOURCE AUDIT — 28. 8. 2026 16:30 CEST
+Reálne prehľadané skupiny: **Profesia/Práca za rohom; direct company careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera/Služby zamestnanosti; Pretlak/StartupJobs; WordPress Jobs; Upwork; Reddit/WP komunity; Facebook verejná indexácia.**
 
 ### Výsledky tohto behu
-- **Nové položky do `jobs-data.json`: 1 — Energohub, Office manager / koordinátor firemných procesov, Match 92.** Dúbravka, od 1 800 €/mes., SŠ s maturitou; firma hľadá reálnu administratívnu/koordinačnú prax, Microsoft 365, CRM/digitálne nástroje a aktívne využívanie AI. Pracovná AJ a energetika sú výhodou, nie podmienkou. Výber zahŕňa dve krátke otázky, telefonát, osobný pohovor a krátke praktické zadanie. citeturn588865search0turn790925search1
-- **TRIGON — Špecialista zákazníckeho servisu M/Ž:** BA kraj a 1 600 €/mes., ale detail vyžaduje pokročilú angličtinu aj nemčinu; hard-language reject. citeturn790925search0
-- **LinkedIn / Foxelli:** 100 % remote e-commerce support je Slovakia-eligible, ale jedna rola je crochet-specific a druhá má nočný support/sales režim; bez nového LIVE winnera. citeturn461648search1turn461648search6
-- **Upwork — WordPress Webmaster:** worldwide remote, ale fluent English, US business hours a PHP; 20–50 proposals. Hard-language/timezone/hard-skill reject. citeturn461648search0
-- **Upwork — WordPress Site Speed Optimization:** 18–30 USD/h, ale mandatory PHP a 20–50 proposals. Hard-skill/competition reject. citeturn461648search4
-- **Upwork — WordPress Expert:** 50+ proposals a PHP mandatory. Reject pre competition + hard-dev. citeturn461648search7
-- **Upwork — AI Virtual Assistant & Automation Specialist:** worldwide remote, ale 5–10 USD/h, 20–50 proposals a WordPress/digital marketing scope; neprebil existujúce silnejšie leady. citeturn461648search2
-- **Upwork — Elementor quick fixes:** iba 5 USD fixed, 10–15 proposals; value reject. citeturn461648search3
-- **Reddit:** aktuálne WP/Woo výsledky sú prevažne `[FOR HIRE]` alebo staršie US-only hiring posty; bez nového vhodného dopytu. citeturn461648reddit120turn461648reddit123
-- **Facebook:** **0 verified hits**. Prioritné WP/Woo/BA skupiny boli znovu kontrolované verejnou indexáciou; login/indexing limit zostáva, preto sa nič nepredstiera.
-- **Ostatné slovenské a tech/creative zdroje:** search bol vykonaný, ale ďalší plne overiteľný výsledok neprešiel lokalitou, jazykom, hard-skill alebo value gateom.
+- **Nové aktívne položky do `jobs-data.json`: 0.** Žiadny nový kandidát neprešiel súčasne BA/remote, jazykovým, hard-skill a value gateom tak, aby bezpečne prebil existujúce LIVE priority.
+- **Websupport — Marketing Operations & AI Specialist:** Bratislava/hybrid, od 1 850 €/mes. a obsahovo silná AI/operations rola, ale explicitne vyžaduje fluent Slovak + fluent English, 2+ roky marketing operations/martech a hands-on CRM/marketing automation. Hard-profile reject pre aktuálny profil.
+- **Wolt — Support Associate full-time / part-time:** Bratislava, ale minimum B2 English; hard-language reject.
+- **SupportYourApp — Customer Support Consultant Slovakia remotely:** remote je vhodný lokalitne, ale B2 English je explicitná podmienka; hard-language reject.
+- **TalentPop — 100% remote customer service:** vyžaduje fluent German + English; hard-language reject.
+- **StartupJobs — BeiT Administrativně-ekonomický specialista:** 26–44 tis. Kč, 100% remote a dobrý admin/customer-support fit. Verejný detail však nepotvrdzuje, že českú IČO spoluprácu možno vykonávať zo Slovenska; preto `locationEligibility: unknown`, quarantine, nie LIVE.
+- **StartupJobs — Digitoo Junior Customer Support Specialist:** Praha remote/on-site/hybrid; bez jasnej Slovakia remote eligibility, preto nie LIVE.
+- **Upwork — WooCommerce Expert Needed for Checkout, 500 Error & Store Management:** worldwide remote, ale mandatory PHP + technický server/error scope; hard-dev reject.
+- **Upwork — čerstvé WordPress quick-fix / Elementor leady:** viacero bolo iba 5–20 USD fixed alebo malo 10–50 proposals; value/competition reject.
+- **Reddit:** aktuálne výsledky sú prevažne `[FOR HIRE]` ponuky freelancerov, nie hiring dopyty; bez nového vhodného verified leada.
+- **Facebook:** **0 verified hits**. WooCommerce SK+CZ pri priamom verejnom načítaní vracia login + `Temporarily Blocked`; ostatné prioritné skupiny nemali stabilne verejne čitateľný aktuálny detail. Nič sa nepredstiera.
 
 ### Run summary
-- Reálne skontrolované zdrojové skupiny: **13**.
-- Nové aktívne položky: **1**.
-- Vyradené lokalitou/country eligibility: **2**.
+- Reálne skontrolované zdrojové skupiny: **11**.
+- Nové aktívne položky: **0**.
+- Vyradené lokalitou: **1**.
+- Quarantine pre nejasnú remote-country eligibility: **1**.
 - Vyradené jazykovým/hard-skill gateom: **8**.
-- Vyradené ako slabé/nízka hodnota: **7**.
-- Duplikát / `[FOR HIRE]` / nevhodný typ leadu: **5**.
+- Vyradené ako slabé/nízka hodnota: **4**.
+- `[FOR HIRE]` / nevhodný typ leadu / duplicita: **4**.
 
 ### LIVE mix hlavného feedu
-- Potvrdený stav: **29 aktívnych položiek**.
+Posledný potvrdený stav ostáva **29 aktívnych položiek**. Keďže sa v tomto behu nepridával ani nemažal žiadny job, mix sa nemení:
 - Profesia: **13/29 = 44,8 %**.
 - LinkedIn: **2/29 = 6,9 %**.
 - Priame firemné kariéry: **7/29 = 24,1 %**.
@@ -188,14 +189,16 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 83. Daily application capacity scheduler.
 84. **Commute-adjusted opportunity value** — spojí odmenu, pracovný čas, počet onsite dní, reálny čas dochádzky, palivo/parkovanie a HO do porovnateľnej efektívnej hodinovej hodnoty.
 85. **Application-channel conversion tracker** — sleduje odpovede a pohovory podľa kanála podania a pri rovnakom leade preferuje historicky úspešnejší kanál.
-86. **Employer legitimacy & reputation gate** — oddelene od `sourceTrust` overí samotného zamestnávateľa/klienta: konzistentnosť identity firmy, históriu kariérnych ponúk, verejnú stopu, podozrivé platobné alebo náborové signály a pri freelance aj vek/históriu klienta.
-87. **Duplicate application guard** — CRM pred otvorením reakcie skontroluje canonical role identity, firmu, názov pozície a už použité application channels, aby sa tá istá pozícia neposlala druhýkrát cez Profesia/LinkedIn/company form/mirror.
-88. **Income-start latency score** — odhadne, kedy po reakcii môže reálne prísť prvý príjem: zohľadní plánovaný nástup, dĺžku výberu, neplatené školenie/skúšku, fakturačnú splatnosť pri živnosti/freelance a výplatný cyklus.
-89. **Phone-load compatibility flag** — z dôkazov v inzeráte klasifikuje podiel telefonovania (`low / mixed / high / 90%+`) oddelene od všeobecného customer-support labelu.
-90. **Scope-to-pay mismatch detector** — porovná šírku zodpovedností, požadovanú senioritu, pracovný čas a technický rozsah proti reálnej odmene. Praktický prínos: odfiltruje ponuky typu „WordPress + Shopify + webdev + leadgen + 6 dní týždenne“ za symbolický fixed budget ešte pred tým, než zaberú miesto v TOP alebo čas na reakciu.
-91. **Verification escalation queue** — high-fit lead, ktorý je blokovaný iba jedným kritickým neznámym údajom (napr. AJ, remote-country eligibility, mzda alebo funkčný apply path), dostane cielené overenie canonical zdroja pred ďalším širokým discovery kolom. Praktický prínos: menej kvalitných ponúk zostane zbytočne v quarantine a čas sa nespotrebuje na opakované všeobecné vyhľadávanie.
-92. **Employer response-latency memory — NOVÉ** — z CRM histórie bude ukladať medián času od reakcie po prvú odpoveď podľa firmy a application channelu. Praktický prínos: realistickejšie follow-up termíny, skoršie odhalenie ghost-prone kanálov a lepšie rozhodnutie, kde investovať ďalšiu reakciu.
-93. **Selection-process ROI score — NOVÉ** — porovná počet kôl, video/AI interview, praktické zadanie, nutné onsite návštevy a odhadovaný čas výberu proti mzde, Match skóre a pravdepodobnosti odpovede. Praktický prínos: dlhý výberový proces pri slabej ponuke nebude zbytočne spotrebúvať čas, zatiaľ čo kvalitná ponuka s primeraným procesom zostane vysoko.
+86. **Employer legitimacy & reputation gate** — oddelene od `sourceTrust` overí samotného zamestnávateľa/klienta.
+87. **Duplicate application guard** — pred reakciou kontroluje canonical role identity a už použité application channels.
+88. **Income-start latency score** — odhaduje čas od reakcie po prvý reálny príjem.
+89. **Phone-load compatibility flag** — klasifikuje podiel telefonovania oddelene od všeobecného support labelu.
+90. **Scope-to-pay mismatch detector** — porovná rozsah povinností a senioritu proti odmene.
+91. **Verification escalation queue** — high-fit lead s jedným kritickým unknown dostane cielené overenie pred ďalším broad searchom.
+92. **Employer response-latency memory** — medián času od reakcie po prvú odpoveď podľa firmy a kanála.
+93. **Selection-process ROI score** — porovná náročnosť výberového procesu proti mzde, Match skóre a pravdepodobnosti odpovede.
+94. **Source parser/schema drift sentinel — NOVÉ** — pri každom zdroji uloží minimálny očakávaný dôkazový kontrakt (napr. title, company, location, apply URL, status). Ak sa štruktúra/indexácia zmení a discovery začne vracať neúplné alebo nulové výsledky bez vysvetlenia, zdroj sa označí ako degraded namiesto falošného `checked`. Praktický prínos: Radar prestane potichu strácať celý zdroj po zmene webu alebo parsera.
+95. **Mandatory source-family SLA watchdog — NOVÉ** — vedie `lastSuccessfulCheckAt` pre povinné source families a upozorní interný audit, keď niektorá rodina nebola úspešne skontrolovaná v stanovenom okne (napr. 2–3 h), aj keď ostatné searchy prešli. Praktický prínos: požiadavka „minimálne 8 zdrojov“ sa nebude plniť iba počtom query, ale reálnou čerstvosťou pokrytia každého kľúčového kanála.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
