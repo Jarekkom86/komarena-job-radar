@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 28. 8. 2026 06:38 CEST
+Aktualizované: 28. 8. 2026 07:20 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,14 +38,14 @@ Aktualizované: 28. 8. 2026 06:38 CEST
 4. **Ryvenia — Shoptet Specialist — Match 93** — Bratislava/full remote/hybrid; produkty, kategórie, ceny, CSV, migrácie, QA.
 5. **Penta Real Estate — Sales Administrator — Match 92** — Bratislava, 1 800 €/mes. + ročný bonus + home office; CRM, klientský portál, dáta, reporty, dokumenty, systémy a klientská podpora.
 6. **Hilti — Implementation & Service Specialist — Match 92** — Bratislava, od 1 800 €/mes. + bonusy + služobné auto; implementácia ON!Track/Fleet Management, školenia, reklamácie, CRM.
-7. **Websupport — Customer Success Advisor — Match 91** — weby, hosting, SSL, troubleshooting a zákaznícka komunikácia; 28. 8. 2026 06:38 znovu potvrdené priamo na firemnej kariére ako aktívne.
+7. **Websupport — Customer Success Advisor — Match 91** — weby, hosting, SSL, troubleshooting a zákaznícka komunikácia; 28. 8. 2026 ráno znovu potvrdené priamo na firemnej kariére ako aktívne.
 8. **IZY VAPE — Back Office & Operations Coordinator – e-commerce | Remote — Match 90** — Bratislava/prevažne HO, 1 600–2 000 €/mes.; e-shop, objednávky, reklamácie, logistika, fulfillment, dokumenty, procesy a AI. Riziko: stredne pokročilá AJ treba potvrdiť; nástup november–december 2026.
 9. **O2 — Digital Content Admin — Match 90** — 8 €/h, web/e-shop, produkty, atribúty, ceny a landing pages.
 10. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia, 1 520 €/mes. + bonus.
 11. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote, <30 h/týždeň, 3–6 mesiacov, 5–10 USD/h; mínus US Mountain Time.
 12. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
 13. **SuperFaktura — Supportový parťák — Match 87**.
-14. **Cerkam Facility Services — Terénny administratívny pracovník — Match 86** — Bratislava, od 1 500 €/mes. + bonusy, evidencia zákazníckych požiadaviek, objednávky, interný systém, klientská komunikácia a terén. Čerstvé 27. 8. 2026; riziko je vyšší podiel terénu a možné obchodné presahy.
+14. **Cerkam Facility Services — Terénny administratívny pracovník — Match 86** — Bratislava, od 1 500 €/mes. + bonusy, evidencia zákazníckych požiadaviek, objednávky, interný systém, klientská komunikácia a terén.
 15. **RM Biznis servis / Worki — Manažér servisu klientov — Match 86** — väčšina práce online, občas Bratislava, 10–15 €/h.
 16. **Bookio — B2B/SaaS online support — Match 85**.
 17. **AI & Tech Assistant / Upwork — Match 84** — worldwide remote; web updates, low/no-code, QA, tracking a AI workflows; mandatory English bez úrovne a 20–50 proposals.
@@ -58,30 +58,28 @@ Aktualizované: 28. 8. 2026 06:38 CEST
 24. **LAST MILE — Operátor NOC / Hotline podpora — Match 82** — Ružinov, Bratislava; first-line service desk, tickety, základný troubleshooting, skrátený úväzok/dohoda/živnosť/stáž, firma zaučí; mínus 6–8 €/h a B1 AJ.
 25. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 28. 8. 2026 06:38 CEST
+## SOURCE AUDIT — 28. 8. 2026 07:20 CEST
 Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak/StartupJobs; WordPress Jobs/tech-creative boards; Upwork/freelance; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
-- **Nové položky do `jobs-data.json`: 0.** Feed ostal fail-closed; žiadny nový lead nebol pridaný iba kvôli počtu.
-- **Najlepší nový remote discovery lead:** Upwork **eCommerce Virtual Assistant for Multi-Platform Store**, worldwide remote, zverejnený 27. 8. 2026, 10–15 proposals. Náplň — objednávky, zákaznícke otázky, každodenná e-commerce operatíva — sedí, ale budget je iba **50 USD fixed** pri komplexnom projekte, preto bol vyradený ako neprimerane nízka hodnota.
-- **Ďalší Upwork lead:** Remote Business Administrator + Executive Assistant, worldwide remote, 500 USD fixed, <5 proposals. Mandatory skills obsahujú bookkeeping a draft correspondence a rozsah je nejasný; neaktivovaný.
-- **WordPress Upwork:** čerstvý WooCommerce developer za 5 USD fixed má 20–50 proposals; WordPress quick fixes za 5 USD fixed má 10–15 proposals a už interview; WordPress setup za 300 USD má vývojový scope a 20–50 proposals. Bez nového vhodného LIVE prírastku.
-- **Priame firemné kariéry:** Websupport Customer Success Advisor bol znovu priamo potvrdený ako aktívny: Bratislava, TPP, 1 260 €/mes. + variabilná zložka; weby, online produkty, troubleshooting a zákaznícka podpora. O2 Careers bolo skontrolované; čerstvejšie výsledky sú senior/international mimo profilu. Soitron BA discovery vracia DevOps/Kubernetes — hard-skill nevhodné.
-- **Worki:** RM Biznis servis ostáva aktívny a znovu potvrdený; Shield-Sk e-shop administrátor a F.M. Servis registratúra sú explicitne obsadené/zrušené.
-- **Brigada.sk:** aktuálne BA výsledky boli prevažne gastro/obsluha alebo mimo cieľového smeru; nič nové neprebilo admin/e-shop/IT threshold.
-- **Služby zamestnanosti/Kariera:** TIPOS Koordinátor obchodných vzťahov je BA-eligible, ale ide o obchodno-motivačnú rolu v lottery/gambling sektore a neprebíja vhodnejšie existujúce smery. Neaktívne a vzdialené výsledky boli vyradené.
-- **Pretlak/StartupJobs:** bez nového vhodného high-fit hiring leadu; OVB ostáva existujúci silný kandidát.
-- **WordPress Jobs/remote WP boards:** Automattic/WordPress VIP Customer Success Engineer je worldwide remote, ale senior enterprise engineering/support scope a technická/jazyková latka sú mimo aktuálneho profilu.
-- **Reddit:** dnešné výsledky sú prevažne `[FOR HIRE]`; staršie hiring posty sú hard-dev, US-only alebo veľmi nízky budget. Bez nového LIVE prírastku.
-- **Facebook:** **0 verified hits**. Prioritné WordPress Slovensko, WooCommerce SK+CZ a Práca/brigády BA boli vyhľadávané cez verejnú indexáciu, ale bez konkrétneho aktuálneho hiring postu s verejne overiteľným priamym linkom. Nič sa nepredstiera.
+- **Nové položky do `jobs-data.json`: 0.** Feed zostal fail-closed; žiadny kandidát nebol pridaný iba preto, aby sa zvýšil počet.
+- **Powerlogy — Marketing Specialist:** aktualizované 27. 8. 2026, Bratislava/hybrid, od 1 600 € na faktúru. Náplň má silný prienik s e-shopom, obsahom, AI search a WordPress/WooCommerce sú bonus. Explicitná požiadavka je však **slovenčina aj angličtina na veľmi dobrej úrovni**, preto neprešiel A2-centric language gateom.
+- **Wolt — Support Associate (Part Time):** Bratislava, customer/courier/venue support, ale explicitne vyžaduje professional working proficiency English minimálne B2; vyradené jazykovým gateom.
+- **Upwork — Remote I.T Professional for Small Design Firm:** worldwide remote, Windows/AI/helpdesk, 10–20 h/týždeň, ale 200 USD fixed + 3+ roky IT supportu. Skillovo zaujímavé, ekonomicky slabé a experience threshold je vyšší; neaktivované.
+- **Upwork — eCommerce VA / Business Administrator / WordPress:** eCommerce VA má iba 50 USD fixed; Business Administrator 500 USD fixed má mandatory bookkeeping; WordPress/WooCommerce leady sú prevažne 5–50 USD fixed, hard-development alebo už 20–50 proposals. U.S.-only Digital Operations Assistant bol vyradený country eligibility gateom.
+- **WordPress Jobs:** aktuálne 7 open positions, ale portál uvádza **0 % remote-friendly**. Nové 27. 8. sú Houston/Slippery Rock USA; ďalšie sú development/hard-skill alebo mimo BA/remote gate.
+- **Priame firemné kariéry:** Websupport znovu potvrdený ako aktívny; VNET career stránka skontrolovaná. Bez nového silného direct-company leadu.
+- **Pretlak/StartupJobs:** CloseRocket Customer Success & UX Partner je BA onsite, ale fluent English je nutnosť. Luigi's Box výsledky sú hard-dev/English nevhodné. XDENT StartupJobs je primárne sales rola.
+- **Reddit:** dnešný r/wordpressjobs výsledok je `[FOR HIRE]`, nie hiring lead.
+- **Facebook:** **0 verified hits**. Verejný výsledok naďalej vracia Join/Log Into Facebook; prioritné WP/Woo/BA skupiny nemajú konkrétny aktuálny hiring post s verejne overiteľným priamym linkom.
 
 ### Run summary
 - Source families reálne skontrolované: **12**.
 - Nové aktívne položky: **0**.
-- Vyradené lokalitou/country eligibility: **2**.
-- Vyradené jazykovým/hard-skill gateom: **6**.
-- Vyradené ako slabé/nízka hodnota alebo nízka šanca: **7**.
-- Duplikát / `[FOR HIRE]` / closed alebo nevhodný typ leadu: **6**.
+- Vyradené lokalitou/country eligibility: **3**.
+- Vyradené jazykovým/hard-skill gateom: **5**.
+- Vyradené ako slabé/nízka hodnota alebo nízka šanca: **6**.
+- Duplikát / `[FOR HIRE]` / closed alebo nevhodný typ leadu: **4**.
 
 ### LIVE mix hlavného `jobs-data.json`
 - **28 aktívnych položiek**.
@@ -169,15 +167,17 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 64. **Repost freshness laundering detector** — mirror alebo agregátor nesmie zmeniť starú ponuku na „dnešnú“ iba tým, že ju znovu načítal alebo publikoval; `publishedAt` sa viaže na najstarší dôveryhodný canonical timestamp a zvlášť sa eviduje `lastSeenAt`.
 65. **Source-specific evidence contract** — podľa typu zdroja sa pred LIVE aktiváciou vyžaduje minimálna sada dôkazov; pri chýbajúcom kritickom poli ide kandidát do quarantine/recheck.
 66. **Employer-template reuse detector** — rozpozná, keď firma opakovane používa takmer rovnaký text náplne pre rozdielne názvy, mzdy alebo role. Prínos: menej chybných fuzzy dedupe a presnejší ranking konkrétnej aktuálnej role.
-67. **Vehicle-obligation classifier** — samostatne rozlíši `vodičák B výhoda`, `vodičák B povinný`, `vlastné auto povinné`, `služobné auto poskytnuté` a `terén bez jasného vozidla`. Prínos: terénne/support/vodičské ponuky sa nebudú javiť vhodne len preto, že lokalita sedí.
-68. **Client-engagement freshness signal** — pri freelance zdrojoch oddelene sleduje `postedAt`, `lastViewedByClient`, `interviewing`, `hires` a aktívne kontrakty. Ak je inzerát formálne otvorený, ale klient ho dlho nepozrel alebo už intenzívne interviewuje/hireuje, zníži `apply-now` prioritu bez vyradenia. Prínos: menej času na ponuky, kde je reálna šanca na odpoveď už nízka.
-69. **Emergency-response SLA compatibility gate** — identifikuje roly, ktoré vyžadujú pevné online hodiny, okamžité reakcie, permanentnú dostupnosť alebo videohovory, a porovná ich s reálnou dostupnosťou kandidáta. Prínos: support rola nebude vyzerať vysoko len podľa skill matchu, ak je praktický režim práce neudržateľný.
-70. **Multi-role employer collision guard** — ak má jedna firma súčasne viac vhodných otvorených rolí, zoskupí ich, vyberie jeden primárny smer reakcie a upozorní pred paralelným poslaním viacerých nesúrodých žiadostí. Prínos: konzistentnejší príbeh kandidáta voči firme a menšie riziko, že viac žiadostí bude pôsobiť náhodne alebo duplicitne.
-71. **Rejected-role resurrection trigger** — pri už vyradenej/negatívne cachovanej ponuke sleduje zmenu kritického dôkazu: odstránené B2, zmena na full remote zo Slovenska, otvorenie country eligibility, vyšší garantovaný základ alebo hard skill zmenený na nice-to-have. Pri takej zmene automaticky vráti lead do quarantine/review. Prínos: už raz nevhodná ponuka sa môže stať reálne vhodnou bez zbytočného opakovaného čítania nezmenených inzerátov.
-72. **Unpaid assessment workload/risk flag** — pri výberovom procese odhalí test task, case study, AI/video screening alebo neplatený trial, odhadne požadovaný čas a označí neprimerane veľké zadanie pred reakciou. Prínos: menej hodín stratených na firmy, ktoré presúvajú reálnu prácu do neplateného výberového procesu.
-73. **Portfolio evidence auto-selector** — pre každú TOP ponuku vyberie z už preukázaných projektov a skúseností 2–3 najrelevantnejšie dôkazy, ktoré sa majú použiť v reakcii/CV, bez vymýšľania nových skillov. Prínos: rýchlejšie a presvedčivejšie reakcie namiesto generického cover letteru.
-74. **Audit-feed reconciliation invariant — NOVÉ** — po každom behu prepočíta zdrojový mix, active count, locationEligibility a stav zdrojov priamo z `jobs-data.json` a porovná ich so `source-audit.json` a MASTER. Ak sa čísla alebo stavy rozchádzajú, dátový zápis sa označí ako nekonzistentný a nepublikuje sa ako úspešný. Prínos: Source Radar a MASTER nebudú ukazovať staré alebo vzájomne rozporné čísla.
-75. **Remote engagement-model verifier — NOVÉ** — pri remote rolách odlíši `employee payroll`, `B2B/contractor`, `freelance marketplace` a nejasný model; overí, či firma skutočne vie zamestnať alebo kontrahovať človeka zo Slovenska, nie iba či text obsahuje slovo worldwide/remote. Prínos: menej času na remote ponuky, ktoré sú technicky „remote“, ale právne/operatívne nie sú dostupné zo Slovenska.
+67. **Vehicle-obligation classifier** — samostatne rozlíši `vodičák B výhoda`, `vodičák B povinný`, `vlastné auto povinné`, `služobné auto poskytnuté` a `terén bez jasného vozidla`.
+68. **Client-engagement freshness signal** — pri freelance zdrojoch oddelene sleduje `postedAt`, `lastViewedByClient`, `interviewing`, `hires` a aktívne kontrakty.
+69. **Emergency-response SLA compatibility gate** — identifikuje roly, ktoré vyžadujú pevné online hodiny, okamžité reakcie, permanentnú dostupnosť alebo videohovory, a porovná ich s reálnou dostupnosťou.
+70. **Multi-role employer collision guard** — ak má jedna firma súčasne viac vhodných otvorených rolí, zoskupí ich, vyberie jeden primárny smer reakcie a upozorní pred paralelným poslaním viacerých nesúrodých žiadostí.
+71. **Rejected-role resurrection trigger** — pri už vyradenej ponuke sleduje zmenu kritického dôkazu a pri relevantnej zmene ju vráti do quarantine/review.
+72. **Unpaid assessment workload/risk flag** — odhalí test task/case study/trial a označí neprimerane veľké neplatené zadanie pred reakciou.
+73. **Portfolio evidence auto-selector** — pre každú TOP ponuku vyberie 2–3 najrelevantnejšie už preukázané dôkazy do reakcie/CV bez vymýšľania skillov.
+74. **Audit-feed reconciliation invariant** — prepočíta source mix/active count/eligibility priamo z feedu a porovná s auditom a MASTER.
+75. **Remote engagement-model verifier** — pri remote rolách overí, či firma reálne vie zamestnať/kontrahovať človeka zo Slovenska, nie iba či text obsahuje remote/worldwide.
+76. **Onboarding/trainability signal — NOVÉ** — samostatne vyhodnotí, či firma výslovne zaškolí, prijíma absolventa/človeka bez praxe, alebo naopak očakáva okamžitú samostatnosť a viacročnú skúsenosť. Prínos: adjacent technické/support roly dostanú realistickejšie skóre; „firma zaučí“ môže zvýšiť šancu aj pri miernom skill gape, kým „3+ years required“ zníži prioritu.
+77. **Physical/field-work burden classifier — NOVÉ** — z textu rozlíši kancelársku prácu, občasný terén, pravidelné výjazdy, dlhé státie, sklad/manipuláciu a fyzickú záťaž. Prínos: e-shop/support/admin rola nebude hodnotená len podľa názvu, ak jej reálna náplň obsahuje významný sklad, nosenie alebo častý terén; ranking bude viac odrážať praktický pracovný deň.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
