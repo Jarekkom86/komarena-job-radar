@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 28. 8. 2026 16:30 CEST
+Aktualizované: 28. 8. 2026 17:29 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -40,58 +40,52 @@ Aktualizované: 28. 8. 2026 16:30 CEST
 6. **Penta Real Estate — Sales Administrator — Match 92** — Bratislava, 1 800 €/mes. + bonus + HO; CRM, dáta, reporty, dokumenty a podpora.
 7. **Hilti — Implementation & Service Specialist — Match 92** — Bratislava, od 1 800 €/mes. + bonusy + auto; implementation/service/CRM.
 8. **Websupport — Customer Success Advisor — Match 91** — hosting, SSL, troubleshooting, weby a customer support.
-9. **IZY VAPE — Back Office & Operations Coordinator – e-commerce | Remote — Match 90** — BA/prevažne HO, 1 600–2 000 €/mes.; e-shop/objednávky/reklamácie/logistika/AI. Riziko: AJ a neskorší nástup.
-10. **O2 — Digital Content Admin — Match 90** — 8 €/h, web/e-shop, produkty, ceny a landing pages.
-11. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia, 1 520 €/mes. + bonus.
-12. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote, 5–10 USD/h; mínus US Mountain Time.
-13. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
-14. **SuperFaktura — Supportový parťák — Match 87**.
-15. **Cerkam Facility Services — Terénny administratívny pracovník — Match 86** — Bratislava, od 1 500 €/mes. + bonusy.
-16. **RM Biznis servis / Worki — Manažér servisu klientov — Match 86** — väčšina práce online, občas BA, 10–15 €/h.
-17. **Bookio — B2B/SaaS online support — Match 85**.
-18. **AI & Tech Assistant / Upwork — Match 84** — worldwide remote; web/low-no-code/QA/AI workflows; language + competition risk.
-19. **Dotypos SK — Technický support — Match 84**.
-20. **Pandora — Associate Assistant, eCommerce Operations — Match 84**.
-21. **Allit — End-User Support — Match 84**.
-22. **3MON — IT & Operations Support — Match 84**.
-23. **STU — Web špecialista CMS/web — Match 83**.
-24. **VNET — IT customer support — Match 82**.
-25. **LAST MILE — Operátor NOC / Hotline podpora — Match 82** — Ružinov; first-line support; mínus 6–8 €/h a B1 AJ.
-26. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
+9. **VÚB — Digitálny agent/agentka — Match 90** — 100 % home office / Slovensko, 1 480 €/mes.; SŠ s maturitou, firma zaškoľuje; mínus bankový predaj a zmeny.
+10. **IZY VAPE — Back Office & Operations Coordinator – e-commerce | Remote — Match 90** — BA/prevažne HO, 1 600–2 000 €/mes.; e-shop/objednávky/reklamácie/logistika/AI. Riziko: AJ a neskorší nástup.
+11. **O2 — Digital Content Admin — Match 90** — 8 €/h, web/e-shop, produkty, ceny a landing pages.
+12. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia, 1 520 €/mes. + bonus.
+13. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote, 5–10 USD/h; mínus US Mountain Time.
+14. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
+15. **SuperFaktura — Supportový parťák — Match 87**.
+16. **Cerkam Facility Services — Terénny administratívny pracovník — Match 86** — Bratislava, od 1 500 €/mes. + bonusy.
+17. **RM Biznis servis / Worki — Manažér servisu klientov — Match 86** — väčšina práce online, občas BA, 10–15 €/h.
+18. **Bookio — B2B/SaaS online support — Match 85**.
+19. **AI & Tech Assistant / Upwork — Match 84** — worldwide remote; web/low-no-code/QA/AI workflows; language + competition risk.
+20. **Dotypos SK — Technický support — Match 84**.
+21. **Pandora — Associate Assistant, eCommerce Operations — Match 84**.
+22. **Allit — End-User Support — Match 84**.
+23. **3MON — IT & Operations Support — Match 84**.
+24. **STU — Web špecialista CMS/web — Match 83**.
+25. **VNET — IT customer support — Match 82**.
+26. **LAST MILE — Operátor NOC / Hotline podpora — Match 82** — Ružinov; first-line support; mínus 6–8 €/h a B1 AJ.
+27. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 28. 8. 2026 16:30 CEST
-Reálne prehľadané skupiny: **Profesia/Práca za rohom; direct company careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera/Služby zamestnanosti; Pretlak/StartupJobs; WordPress Jobs; Upwork; Reddit/WP komunity; Facebook verejná indexácia.**
+## SOURCE AUDIT — 28. 8. 2026 17:29 CEST
+Reálne prehľadané skupiny: **Profesia/Práca za rohom; direct company careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Pretlak/WordPress Jobs; Upwork; Reddit/WP komunity; Facebook verejná indexácia; doplnkové direct/public web discovery.**
 
 ### Výsledky tohto behu
 - **Nové aktívne položky do `jobs-data.json`: 0.** Žiadny nový kandidát neprešiel súčasne BA/remote, jazykovým, hard-skill a value gateom tak, aby bezpečne prebil existujúce LIVE priority.
-- **Websupport — Marketing Operations & AI Specialist:** Bratislava/hybrid, od 1 850 €/mes. a obsahovo silná AI/operations rola, ale explicitne vyžaduje fluent Slovak + fluent English, 2+ roky marketing operations/martech a hands-on CRM/marketing automation. Hard-profile reject pre aktuálny profil.
-- **Wolt — Support Associate full-time / part-time:** Bratislava, ale minimum B2 English; hard-language reject.
-- **SupportYourApp — Customer Support Consultant Slovakia remotely:** remote je vhodný lokalitne, ale B2 English je explicitná podmienka; hard-language reject.
-- **TalentPop — 100% remote customer service:** vyžaduje fluent German + English; hard-language reject.
-- **StartupJobs — BeiT Administrativně-ekonomický specialista:** 26–44 tis. Kč, 100% remote a dobrý admin/customer-support fit. Verejný detail však nepotvrdzuje, že českú IČO spoluprácu možno vykonávať zo Slovenska; preto `locationEligibility: unknown`, quarantine, nie LIVE.
-- **StartupJobs — Digitoo Junior Customer Support Specialist:** Praha remote/on-site/hybrid; bez jasnej Slovakia remote eligibility, preto nie LIVE.
-- **Upwork — WooCommerce Expert Needed for Checkout, 500 Error & Store Management:** worldwide remote, ale mandatory PHP + technický server/error scope; hard-dev reject.
-- **Upwork — čerstvé WordPress quick-fix / Elementor leady:** viacero bolo iba 5–20 USD fixed alebo malo 10–50 proposals; value/competition reject.
+- **Upwork — Designer needed to clean Wordpress site:** worldwide remote, WooCommerce product/checkout + performance, ale iba **30 USD fixed** a už **10–15 proposals**; value/competition reject.
+- **Upwork — Wordpress expert:** worldwide remote, jednoduchá mobile/desktop oprava, ale iba **35 USD fixed** a **20–50 proposals**; value/competition reject.
+- **Upwork — WooCommerce checkout/500 error/store management:** worldwide remote, ale mandatory PHP + server/error troubleshooting; hard-dev reject.
+- **Wolt — Support Associate, Bratislava:** lokalita sedí, ale minimum **B2 English**; hard-language reject.
+- **Worki — Shield-Sk e-shop admin/support:** Bratislava a obsahovo vhodné, ale detail už výslovne uvádza, že miesto bolo obsadené alebo zrušené; closed-result suppression.
+- **Worki — administratívna podpora predaja, Bánovce nad Bebravou:** mimo BA a aktívny EN/DE; location + language reject.
+- **Brigada.sk:** čerstvé BA výsledky sú najmä gastro/obsluha; vzdialené onsite brigády typu Levice sú location reject. Bez vhodného admin/web/tech winnera.
 - **Reddit:** aktuálne výsledky sú prevažne `[FOR HIRE]` ponuky freelancerov, nie hiring dopyty; bez nového vhodného verified leada.
-- **Facebook:** **0 verified hits**. WooCommerce SK+CZ pri priamom verejnom načítaní vracia login + `Temporarily Blocked`; ostatné prioritné skupiny nemali stabilne verejne čitateľný aktuálny detail. Nič sa nepredstiera.
+- **Facebook:** **0 verified hits**. Verejná indexácia neposkytla stabilný konkrétny aktuálny hiring post s priamym overiteľným linkom; nič sa nepredstiera.
 
 ### Run summary
-- Reálne skontrolované zdrojové skupiny: **11**.
+- Reálne skontrolované zdrojové skupiny: **10**.
 - Nové aktívne položky: **0**.
-- Vyradené lokalitou: **1**.
-- Quarantine pre nejasnú remote-country eligibility: **1**.
-- Vyradené jazykovým/hard-skill gateom: **8**.
-- Vyradené ako slabé/nízka hodnota: **4**.
-- `[FOR HIRE]` / nevhodný typ leadu / duplicita: **4**.
+- Vyradené lokalitou: **3**.
+- Quarantine pre nejasnú remote-country eligibility: **0**.
+- Vyradené jazykovým/hard-skill gateom: **4**.
+- Vyradené ako slabé/nízka hodnota: **5**.
+- `[FOR HIRE]` / nevhodný typ leadu / duplicita: **2**.
 
 ### LIVE mix hlavného feedu
-Posledný potvrdený stav ostáva **29 aktívnych položiek**. Keďže sa v tomto behu nepridával ani nemažal žiadny job, mix sa nemení:
-- Profesia: **13/29 = 44,8 %**.
-- LinkedIn: **2/29 = 6,9 %**.
-- Priame firemné kariéry: **7/29 = 24,1 %**.
-- Ostatné jobboardy mimo Profesia: **4/29 = 13,8 %**.
-- Freelance: **3/29 = 10,3 %**.
-- **Mimo Profesia spolu: 16/29 = 55,2 %.**
+Feed sa v tomto behu nemenil. Posledný potvrdený stav ostáva **30 aktívnych položiek** po pridaní VÚB v predchádzajúcom refreshe; zdrojový mix ostáva pod 60 % Profesia a non‑Profesia discovery zostáva povinná priorita.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -197,8 +191,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 91. **Verification escalation queue** — high-fit lead s jedným kritickým unknown dostane cielené overenie pred ďalším broad searchom.
 92. **Employer response-latency memory** — medián času od reakcie po prvú odpoveď podľa firmy a kanála.
 93. **Selection-process ROI score** — porovná náročnosť výberového procesu proti mzde, Match skóre a pravdepodobnosti odpovede.
-94. **Source parser/schema drift sentinel — NOVÉ** — pri každom zdroji uloží minimálny očakávaný dôkazový kontrakt (napr. title, company, location, apply URL, status). Ak sa štruktúra/indexácia zmení a discovery začne vracať neúplné alebo nulové výsledky bez vysvetlenia, zdroj sa označí ako degraded namiesto falošného `checked`. Praktický prínos: Radar prestane potichu strácať celý zdroj po zmene webu alebo parsera.
-95. **Mandatory source-family SLA watchdog — NOVÉ** — vedie `lastSuccessfulCheckAt` pre povinné source families a upozorní interný audit, keď niektorá rodina nebola úspešne skontrolovaná v stanovenom okne (napr. 2–3 h), aj keď ostatné searchy prešli. Praktický prínos: požiadavka „minimálne 8 zdrojov“ sa nebude plniť iba počtom query, ale reálnou čerstvosťou pokrytia každého kľúčového kanála.
+94. **Source parser/schema drift sentinel** — pri každom zdroji uloží minimálny očakávaný dôkazový kontrakt a pri zmene štruktúry zdroj označí ako degraded namiesto falošného `checked`.
+95. **Mandatory source-family SLA watchdog** — vedie `lastSuccessfulCheckAt` pre povinné source families a odhalí rodinu, ktorá nebola úspešne skontrolovaná v stanovenom okne.
+96. **Recruiter/company hiring-activity signal — NOVÉ** — pri high-fit firmách bude sledovať čerstvosť ďalších otvorených pozícií a verejnej náborovej aktivity firmy/recruitera. Praktický prínos: vyššiu prioritu dostane firma, ktorá reálne aktívne naberá práve teraz, nie iba starý stále indexovaný inzerát.
+97. **Application reuse cluster — NOVÉ** — zoskupí podobné roly (napr. e-shop admin/support, AI operations, IT support) a pripraví spoločný claim-safe základ CV/argumentov, ktorý sa následne len cielene upraví pre konkrétnu firmu. Praktický prínos: viac kvalitných personalizovaných reakcií za rovnaký čas bez skĺznutia ku generickému spamu.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
