@@ -1,7 +1,7 @@
 (()=>{
 'use strict';
 const $=id=>document.getElementById(id);
-const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[c]));
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const label={ok:'✓ OK',checked:'○ SKONTROLOVANÉ',blocked:'⚠ BLOKOVANÉ',limited:'◐ OBMEDZENÉ'};
 async function loadAudit(){const box=$('sourceAuditRows'),stamp=$('sourceAuditStamp');if(!box)return;try{const r=await fetch('source-audit.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error(r.status);const d=await r.json();box.innerHTML=(d.sources||[]).map(x=>`<div class="sourceAuditRow ${esc(x.status)}"><div><b>${esc(x.name)}</b><small>${esc(x.note||'')}</small></div><span>${esc(label[x.status]||x.status)}${x.hits!==undefined?' • '+esc(x.hits)+' hit':''}</span></div>`).join('');if(stamp)stamp.textContent='Kontrola zdrojov: '+new Intl.DateTimeFormat('sk-SK',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}).format(new Date(d.updatedAt));const S=window.__KA_SOURCE_STATE||(window.__KA_SOURCE_STATE={live:[],baseline:[],updatedAt:null,baselineUpdatedAt:null});S.auditUpdatedAt=d.updatedAt||null;window.dispatchEvent(new CustomEvent('ka-source-audit-updated',{detail:{updatedAt:S.auditUpdatedAt}}));}catch(e){box.innerHTML='<div class="sourceAuditRow blocked"><div><b>Audit zdrojov sa nenačítal</b><small>Feed ponúk zostáva funkčný.</small></div><span>⚠ CHYBA</span></div>'}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',loadAudit);else loadAudit();setInterval(loadAudit,300000);
