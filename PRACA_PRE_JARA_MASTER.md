@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 28. 8. 2026 18:36 CEST
+Aktualizované: 28. 8. 2026 19:19 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -60,33 +60,35 @@ Aktualizované: 28. 8. 2026 18:36 CEST
 26. **LAST MILE — Operátor NOC / Hotline podpora — Match 82** — Ružinov; first-line support; mínus 6–8 €/h a B1 AJ.
 27. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 28. 8. 2026 18:36 CEST
-Reálne prehľadané skupiny: **Profesia; direct company careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Pretlak/WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia; doplnkové cross-source public discovery.**
+## SOURCE AUDIT — 28. 8. 2026 19:19 CEST
+Reálne prehľadané skupiny: **Profesia; direct company careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk/Služby zamestnanosti; Pretlak/WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.**
 
 ### Výsledky tohto behu
-- **Nové aktívne položky do `jobs-data.json`: 0.** Feed sa nemení iba kvôli času auditu; `updatedAt` zostáva čas poslednej reálnej dátovej zmeny/overenia.
-- **Upwork — Wordpress expert:** worldwide remote, jednoduchá mobile/desktop oprava, ale iba **35 USD fixed** a **20–50 proposals**; value/competition reject.
-- **Upwork — Designer needed to clean Wordpress site:** WooCommerce product/checkout + performance, ale iba **30 USD fixed**, **10–15 proposals** a už 1 hire; value/competition reject.
-- **Upwork — WooCommerce checkout/500 error/store management:** worldwide remote, ale mandatory PHP + server/error troubleshooting; hard-dev reject.
-- **Upwork — ďalšie WordPress leady:** 5–15 USD fixed alebo mandatory PHP/JS/full-stack; minimum-value alebo hard-dev reject.
-- **LinkedIn — Wolt Support Associate, Bratislava:** lokalita sedí, ale minimum **B2 English**; hard-language reject.
-- **Worki.sk:** BA/admin/e-shop/IT discovery skontrolované; bez nového aktívneho kandidáta nad existujúcimi prioritami.
-- **Brigada.sk:** BA discovery skontrolované; bez vhodného admin/web/tech winnera nad value thresholdom.
-- **Pretlak/WordPress Jobs:** bez nového Slovakia-eligible non-hard-dev leadu s primeranou hodnotou.
-- **Reddit:** aktuálne výsledky sú prevažne `[FOR HIRE]` ponuky freelancerov, nie hiring dopyty; bez nového vhodného verified leada.
-- **Facebook:** **0 verified hits**. Verejná indexácia neposkytla stabilný konkrétny aktuálny hiring post s priamym overiteľným linkom; nič sa nepredstiera.
+- **Nové aktívne položky do `jobs-data.json`: 0.** Žiadny nový kandidát neprešiel súčasne fit, hard-skill/language, BA/remote a value gateom. Existujúci feed sa kvôli tomu bezpečne nemenil.
+- **Websupport Customer Success Advisor:** znovu priamo potvrdený na firemnej kariére — Bratislava, TPP, 1 260 €/mes. + variabilná zložka; už je v LIVE feede, nejde o nový prírastok. citeturn310469search2
+- **LinkedIn — Wolt Support Associate:** Bratislava, ale minimum **B2 English**; hard-language reject. citeturn375201search12
+- **LinkedIn — Foxelli Crochet Customer Support:** 100 % remote a Slovakia-eligible, ale špecializovaný crochet/customer-support profil s vyšším komunikačným a doménovým rizikom; neprebil existujúce priority. citeturn375201search13
+- **Upwork — Virtual Assistant Full time:** worldwide remote a UK hours, ale vyžaduje strong spoken/written English a pravidelnú klientsku komunikáciu; jazykový risk. citeturn375201search1
+- **Upwork — WooCommerce leady:** čerstvé výsledky majú mandatory PHP/hard development, 20–50 alebo 50+ proposals, prípadne 30–35 USD fixed budget; hard-dev alebo value/competition reject. citeturn375201search0turn375201search2turn375201search3turn375201search4
+- **Kariera/Služby zamestnanosti — CCI Slovakia:** BA customer center, ale 6+ rokov praxe a neprimerane vysoký education gate; reject. citeturn523513search0
+- **Kariera/Služby zamestnanosti — Dotypos customer service:** BA, 1 500 €/mes., ale B1–B2 English; neprebil už evidovaný Dotypos tech support ani aktuálne priority. citeturn541100search0
+- **Služby zamestnanosti — Naturzon e-shop support:** obsahovo zaujímavé, ale onsite Poprad bez overeného remote; `reject-distance`. citeturn320332search0
+- **Worki.sk / Brigada.sk:** BA/admin/e-shop/IT discovery skontrolované; bez nového winnera nad fit/value thresholdom.
+- **Pretlak/WordPress Jobs:** bez nového Slovakia-eligible non-hard-dev leadu s primeranou hodnotou nad existujúcimi prioritami.
+- **Reddit:** aktuálne výsledky sú prevažne `[FOR HIRE]` ponuky freelancerov, nie hiring dopyty; bez nového vhodného verified leada. citeturn375201reddit108
+- **Facebook:** **0 verified hits**. Verejná indexácia neposkytla stabilný konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited`, nič sa nepredstiera. citeturn320332search1
 
 ### Run summary
 - Reálne skontrolované zdrojové skupiny: **10**.
 - Nové aktívne položky: **0**.
-- Vyradené lokalitou: **0**.
+- Vyradené lokalitou: **1**.
 - Quarantine pre nejasnú remote-country eligibility: **0**.
-- Vyradené jazykovým/hard-skill gateom: **3**.
-- Vyradené ako slabé/nízka hodnota: **4**.
-- `[FOR HIRE]` / nevhodný typ leadu / duplicita: **4**.
+- Vyradené jazykovým/hard-skill gateom: **5**.
+- Vyradené ako slabé/nízka hodnota: **5**.
+- `[FOR HIRE]` / nevhodný typ leadu / duplicita: **3**.
 
 ### LIVE mix hlavného feedu
-Feed sa v tomto behu nemenil. Posledný potvrdený stav ostáva pod 60 % Profesia a non‑Profesia discovery zostáva povinná priorita.
+Feed sa v tomto behu nemenil. Posledný potvrdený mix ostáva pod 60 % Profesia a non‑Profesia discovery zostáva povinná priorita.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -196,8 +198,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 95. **Mandatory source-family SLA watchdog** — vedie `lastSuccessfulCheckAt` pre povinné source families a odhalí rodinu, ktorá nebola úspešne skontrolovaná v stanovenom okne.
 96. **Recruiter/company hiring-activity signal** — pri high-fit firmách sleduje čerstvosť ďalších otvorených pozícií a verejnej náborovej aktivity firmy/recruitera.
 97. **Application reuse cluster** — zoskupí podobné roly a pripraví spoločný claim-safe základ CV/argumentov, ktorý sa následne cielene upraví pre konkrétnu firmu.
-98. **Compensation evidence confidence band — NOVÉ** — oddelí garantovaný základ, variabilnú zložku, odhadovanú/marketingovú sumu a neistotu; porovnávanie ponúk tak nebude nadhodnocovať role s nejasnými bonusmi alebo placeholder budgetom.
-99. **Application prerequisite completeness check — NOVÉ** — pred `Reagovať dnes` skontroluje povinné CV, portfolio, odpovede na screening otázky, praktickú úlohu, platform credits a ďalšie vstupy; výsledkom bude reálny čas do odoslania a blokátor namiesto falošnej okamžitej priority.
+98. **Compensation evidence confidence band** — oddelí garantovaný základ, variabilnú zložku, odhadovanú/marketingovú sumu a neistotu; porovnávanie ponúk tak nebude nadhodnocovať role s nejasnými bonusmi alebo placeholder budgetom.
+99. **Application prerequisite completeness check** — pred `Reagovať dnes` skontroluje povinné CV, portfolio, odpovede na screening otázky, praktickú úlohu, platform credits a ďalšie vstupy; výsledkom bude reálny čas do odoslania a blokátor namiesto falošnej okamžitej priority.
+100. **Contract-form net-value normalizer — NOVÉ** — prevedie TPP, dohodu, živnosť a freelance na porovnateľnú odhadovanú čistú hodnotu po zohľadnení odvodov, daní, neplatenej dovolenky, plateného voľna a základných benefitov; výsledok bude interval s neistotou, nie falošne presné číslo.
+101. **Trainable-gap cost estimator — NOVÉ** — pri near-fit ponuke oddelí malú doučiteľnú medzeru (napr. konkrétny CRM/nástroj alebo proces) od hard blockeru a odhadne čas prípravy potrebný pred reakciou; cieľom je investovať pár hodín iba tam, kde to reálne zvýši šancu, bez predstierania už nadobudnutej zručnosti.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
