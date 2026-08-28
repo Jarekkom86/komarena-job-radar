@@ -1,26 +1,28 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T10:18:31+02:00",
+  "updatedAt": "2026-08-28T11:18:51+02:00",
   "runSummary": {
-    "familiesChecked": 11,
+    "familiesChecked": 13,
     "newActiveJobs": 0,
-    "rejectedByLocation": 2,
-    "rejectedByLanguageOrHardSkill": 5,
-    "rejectedAsWeakOrLowValue": 8,
-    "duplicateOrForHire": 6,
-    "note": "Bez nového LIVE prírastku; fail-closed zachovaný. Fresh discovery prešiel Profesia, direct company/career discovery, LinkedIn, Brigada.sk, Worki.sk, Kariera/ÚPSVR, Pretlak, WordPress Jobs, Upwork, Reddit a verejne indexovaný Facebook. LinkedIn priniesol čerstvé BA support/admin výsledky, ale väčšina vyžaduje vyššiu AJ alebo ďalší jazyk; KONE Business Support Agent with English bol zverejnený len pred pár minútami, no detail nebol verejne dostupný na overenie požadovanej úrovne AJ, preto neaktivovaný. Digi Talents/Synpulse L1 Support je BA/full-remote eligible, ale vyžaduje good English, 1–2 roky IT praxe, Windows+Unix+network a je naviazaný na Digi Talents program, preto neprešiel hard-skill/eligibility fitom. Upwork priniesol čerstvé worldwide WP/Woo leady, ale 5–50 USD fixed, 20–50 proposals alebo hard PHP; nič neaktivované. Reddit výsledky prevažne FOR HIRE/US-only. Facebook 0 verified hits."
+    "rejectedByLocation": 1,
+    "rejectedByLanguageOrHardSkill": 6,
+    "rejectedAsWeakOrLowValue": 7,
+    "duplicateOrForHire": 5,
+    "note": "Bez nového LIVE prírastku; fail-closed zachovaný. Reálne prehľadané Profesia, direct company/careers, LinkedIn Jobs, Brigada.sk, Worki.sk, Práca za rohom, Služby zamestnanosti, Pretlak, WordPress Jobs, Upwork, Freelancermap/public freelance discovery, Reddit a verejne indexovaný Facebook. SupportYourApp remote e-commerce support prešiel remote gateom, ale vyžaduje C1 English a e-commerce support prax, preto hard-language reject. Wolt BA support vyžaduje min. B2 English. CloseRocket je BA onsite, ale jazykovo/role náročnejší než aktuálny profil. Upwork priniesol čerstvé worldwide WP/Woo a VA leady, no hlavné výsledky boli 5 USD fixed, 20–50 proposals, hard development alebo U.S.-only. Worki Shield-Sk je explicitne closed. Práca za rohom zrkadlí už evidovaný IZY VAPE a nepočíta sa ako nový nezávislý hit. Facebook 0 verified hits."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"Reálne prehľadané čerstvé BA/okolie e-shop/support/admin/IT výsledky; bez nového kandidáta, ktorý by po location, language, hard-skill a value gate prekonal existujúci feed."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":1,"note":"Direct/company discovery vykonané. Digi Talents/Synpulse L1 Support je BA a umožňuje full remote zo Slovenska, ale vyžaduje good English, 1–2 roky IT praxe, Windows/Unix/network a programové podmienky; neaktivované."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":8,"note":"Čerstvé BA výsledky zahŕňajú KONE Business Support Agent with English (zverejnené pred pár minútami), Kanadevia Assistant, Insignia support/back-office a ďalšie. KONE detail nebol verejne dostupný na bezpečné overenie úrovne AJ; ďalšie roly majú vyššiu AJ/druhý jazyk alebo slabší fit. Bez aktivácie."},
-    {"name":"Brigada.sk","family":"other","status":"checked","hits":0,"note":"BA administratíva/e-shop/IT-support discovery vykonané; bez nového high-fit výsledku nad existujúce brigády a support roly."},
-    {"name":"Worki.sk","family":"other","status":"checked","hits":2,"note":"Aktuálny RM Biznis servis bol znovu potvrdený ako Bratislava/online 10–15 €/h. Shield-Sk e-shop administrátor je explicitne obsadený/zrušený. Bez nového LIVE prírastku."},
-    {"name":"Služby zamestnanosti / Kariera.sk","family":"government","status":"checked","hits":1,"note":"Discovery vykonané; bez nového BA/remote kandidáta s lepším fitom a hodnotou než existujúce aktívne možnosti."},
-    {"name":"Pretlak / tech-creative boards","family":"other","status":"checked","hits":0,"note":"BA/remote AI, support, e-commerce a web discovery vykonané; bez nového kandidáta nad už evidovaný OVB/known leads."},
-    {"name":"WordPress Jobs","family":"other","status":"checked","hits":0,"note":"WordPress/WooCommerce remote discovery vykonané; bez nového jednoznačne Slovakia-eligible, non-hard-development leadu s dostatočnou hodnotou."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":8,"note":"Čerstvé worldwide remote WP/Woo výsledky: $5 Elementor fixes, $5 WooCommerce build/maintenance, $50 Elementor/PHP a $300 WP setup. Hlavné mínusy sú extrémne nízky fixed budget, 20–50 proposals alebo mandatory PHP; U.S.-only assistant bol location gate reject. Bez nového LIVE prírastku."},
-    {"name":"Reddit r/wordpressjobs + verejné WP komunity","family":"community","status":"checked","hits":3,"note":"Aktuálne výsledky sú prevažne FOR HIRE alebo U.S.-only hiring; nič Slovakia-eligible a vhodné na aktiváciu."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"Reálne prehľadané BA/okolie e-shop, support, admin a IT výsledky; bez nového kandidáta, ktorý by po location/language/hard-skill/value gate prekonal existujúci feed."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"ok","hits":2,"note":"Websupport Customer Success zostáva aktívny priamy BA zdroj. SupportYourApp career/discovery priniesol remote e-commerce support, ale konkrétny detail vyžaduje C1 English a predchádzajúcu e-commerce support prax; neaktivované."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"note":"BA support discovery vykonané. Wolt Support Associate je Bratislava a umožňuje HO po zaučení, ale vyžaduje minimálne B2 English; neaktivované. Ďalšie výsledky neprešli fitom alebo boli už evidované."},
+    {"name":"Brigada.sk","family":"other","status":"checked","hits":1,"note":"Administratívne a IT brigády v BA boli prehľadané; verejný výpis priniesol najmä všeobecný PHP/web-programming lead a nízko-relevantné ponuky. Bez nového high-fit kandidáta."},
+    {"name":"Worki.sk","family":"other","status":"checked","hits":1,"note":"Shield-Sk Administrátor e-shopu / zákaznícka podpora je explicitne označený ako obsadený alebo zrušený; closed-result suppression zachovaný. Bez nového vhodného LIVE prírastku."},
+    {"name":"Práca za rohom","family":"other","status":"checked","hits":1,"note":"Aktuálny nález IZY VAPE je mirror už evidovaného Profesia inzerátu, preto sa nepočíta ako nový nezávislý hit ani duplikát do feedu."},
+    {"name":"Služby zamestnanosti","family":"government","status":"checked","hits":1,"note":"Administratívny pracovník v Bratislave bol dohľadaný, ale ide o starší/nízko-hodnotový inzerát s 400 €/mes.; nepridané pre hodnotu a neistotu aktuálnosti."},
+    {"name":"Pretlak / tech-creative boards","family":"other","status":"checked","hits":1,"note":"CloseRocket Customer Success & UX Partner je BA onsite a platovo 1 500–2 100 €, ale oproti profilu má vyššiu customer-success/UX a jazykovú náročnosť; bez aktivácie."},
+    {"name":"WordPress Jobs","family":"other","status":"checked","hits":0,"note":"Remote WordPress/WooCommerce discovery vykonané; bez nového jednoznačne Slovakia-eligible, non-hard-development leadu s dostatočnou hodnotou."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":7,"note":"Čerstvé worldwide remote leady zahŕňajú WooCommerce build/maintenance za 5 USD, e-commerce VA za 50 USD, WP setup za 300 USD a remote admin/VA. Vyradené pre extrémne nízky budget, 20–50 proposals, mandatory hard-dev alebo slabý risk/value profil; U.S.-only assistant location/country reject."},
+    {"name":"Freelancermap / ďalšie freelance indexy","family":"freelance","status":"checked","hits":0,"note":"Remote WP/Woo discovery vykonané; bez konkrétneho nového overiteľného Slovakia-eligible leadu, ktorý by prešiel quality gate."},
+    {"name":"Reddit r/wordpressjobs + verejné WP komunity","family":"community","status":"checked","hits":2,"note":"Aktuálne výsledky sú prevažne [FOR HIRE] ponuky dodávateľov, nie hiring dopyty vhodné pre Jara; nič neaktivované."},
     {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"blocked","hits":0,"note":"Prioritné skupiny boli znovu vyhľadané cez verejnú indexáciu. Bez konkrétneho aktuálneho hiring postu s verejne overiteľným priamym linkom; login/indexing limit zostáva. 0 verified hits, nič sa nepredstiera."}
   ]
 }
