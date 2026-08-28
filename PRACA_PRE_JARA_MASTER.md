@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 28. 8. 2026 02:35 CEST
+Aktualizované: 28. 8. 2026 03:25 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -57,27 +57,25 @@ Aktualizované: 28. 8. 2026 02:35 CEST
 23. **VNET — IT customer support — Match 82**.
 24. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 28. 8. 2026 02:35 CEST
+## SOURCE AUDIT — 28. 8. 2026 03:25 CEST
 Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak/StartupJobs; WordPress Jobs/tech-creative boards; Upwork; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
-- **Nové položky do `jobs-data.json`: 1.** Aktivovaný **Cerkam Facility Services — Terénny administratívny pracovník**, Bratislava, od 1 500 €/mes. + odmeny/bonusy, `Match 86`, `priority: today`, `locationEligibility: ba-area`.
-- **Cerkam recheck:** aktuálny Profesia detail `O5348670` potvrdzuje dátum zverejnenia 27. 8. 2026, Bratislavu, administratívne/klientske zaradenie a mzdu od 1 500 €. Práca za rohom dopĺňa evidenciu zákazníckych požiadaviek, telefón/e-mail/osobnú komunikáciu, objednávky, interný systém a terén. Verejný detail nezobrazuje povinnú elektrotechnickú vyhlášku ani vyššiu AJ; skóre ostáva konzervatívne kvôli terénu a obchodno-vodičským kategóriám.
-- **LinkedIn:** Wolt Support Associate Bratislava zostáva nevhodný pre minimum B2 English. Foxelli remote support/sales roly sú síce Slovakia-eligible, ale vyžadujú fluent/near-native English; sewing variant navyše špecializovanú praktickú skúsenosť.
-- **Priame firemné kariéry:** Penta/Hilti/O2/Websupport línie skontrolované; bez novej direct-source BA/Slovakia-remote roly lepšej než aktuálny TOP.
-- **Brigada.sk / Worki:** bez nového high-fit BA admin/e-shop/IT výsledku nad aktuálny LIVE threshold.
-- **Pretlak / StartupJobs:** CloseRocket Customer Success & UX Partner je čerstvý BA kandidát, ale jazykový a customer-success/sales profil je výrazne náročnejší; neaktivované.
-- **WordPress Jobs:** bez nového non-hard-dev Slovakia-remote výsledku.
-- **Upwork:** čerstvé worldwide WordPress/WooCommerce zákazky zahŕňali WooCommerce build/maintenance za 5 USD, Elementor fixy za 5–50 USD a checkout/server maintenance. Väčšina mala 15–50 proposals, nízky budget alebo mandatory PHP/development; 0 pridaných.
-- **Reddit:** najnovšie výsledky prevažne `[FOR HIRE]`, nie nový vhodný hiring lead.
+- **Nové položky do `jobs-data.json`: 0.** Autoritatívny LIVE feed zostal zámerne nezmenený, pretože žiadny nový kandidát neprešiel kvalitou nad existujúci threshold bez výrazného language/hard-skill/country/value rizika.
+- **Priame firemné kariéry:** Websupport Customer Success Advisor bol znovu potvrdený ako aktívny priamo na Websupport Careers; Penta Sales Administrator je stále aktívny na Penta Careers. Ďalšie viditeľné direct-career roly boli sales alebo senior infra/dev, nie lepší fit.
+- **LinkedIn:** verejná indexácia nepriniesla nový konkrétny BA/Slovakia-remote high-fit detail lepší než existujúce LUNYS/Ryvenia.
+- **Brigada.sk / Worki / Práca za rohom / Služby zamestnanosti/Kariera:** bez nového kandidáta, ktorý by prešiel locality + language + hard-skill gateom a mal vyššiu praktickú hodnotu než aktuálny LIVE feed.
+- **Pretlak / StartupJobs / WordPress Jobs:** bez nového non-hard-dev Slovakia-remote výsledku s jasnou eligibility a lepším fitom.
+- **Upwork:** WordPress / Elementor Web Designer & Support Specialist je Remote, ale detail uvádza iba Philippines alebo United Kingdom a vyžaduje fluent spoken/written English; vyradené locality/language gateom. WordPress Webmaster vyžaduje fluent English + US business hours. WordPress Developer for WooCommerce má iba 5 USD fixed a 20–50 proposals. Worldwide **Wordpress Developer for Small Agency** je tematicky relevantný maintenance/troubleshooting kontrakt za 5–9 USD/h s 5–10 proposals a silným klientom, ale je už 3 týždne starý, klient má 1 hire + 5 interviewing a požaduje working knowledge PHP; ponechané ako near-fit mimo LIVE, nie ako nový silný lead.
+- **Reddit:** verejne indexované výsledky boli prevažne `[FOR HIRE]` alebo US-only hard-dev hiring.
 - **Facebook:** **0 verified hits**. Verejná indexácia neposkytla konkrétny overiteľný aktuálny hiring post; obsah skupín ostáva login/temporary-block obmedzený. Autentizovaný Nexus/local ingestion zostáva potrebný.
 
 ### Run summary
 - Source families reálne skontrolované: **12**.
-- Nové aktívne položky: **1**.
-- Vyradené lokalitou: **0**.
-- Vyradené jazykovým/hard-skill gateom: **5**.
-- Vyradené ako slabé/nízka hodnota: **8**.
+- Nové aktívne položky: **0**.
+- Vyradené lokalitou/country eligibility: **1**.
+- Vyradené jazykovým/hard-skill gateom: **4**.
+- Vyradené ako slabé/nízka hodnota alebo nízka šanca: **6**.
 - Duplikát / `[FOR HIRE]` / nevhodný typ leadu: **4**.
 
 ### LIVE mix hlavného `jobs-data.json`
@@ -165,8 +163,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 63. **Guaranteed-pay floor gate** — oddelí garantovanú základnú mzdu od maximálnej/províznej odmeny a zabráni marketingovému hornému číslu deformovať ranking.
 64. **Repost freshness laundering detector** — mirror alebo agregátor nesmie zmeniť starú ponuku na „dnešnú“ iba tým, že ju znovu načítal alebo publikoval; `publishedAt` sa viaže na najstarší dôveryhodný canonical timestamp a zvlášť sa eviduje `lastSeenAt`.
 65. **Source-specific evidence contract** — podľa typu zdroja sa pred LIVE aktiváciou vyžaduje minimálna sada dôkazov; pri chýbajúcom kritickom poli ide kandidát do quarantine/recheck.
-66. **Employer-template reuse detector — NOVÉ** — rozpozná, keď firma opakovane používa takmer rovnaký text náplne pre rozdielne názvy, mzdy alebo role. Cerkam má starší podobný text pri „Zapisovanie revízií elektriny“ a nový pri „Terénny administratívny pracovník“. Systém nesmie také ponuky zlúčiť iba podľa podobnosti popisu. Prínos: menej chybných fuzzy dedupe a presnejší ranking konkrétnej aktuálnej role.
-67. **Vehicle-obligation classifier — NOVÉ** — samostatne rozlíši `vodičák B výhoda`, `vodičák B povinný`, `vlastné auto povinné`, `služobné auto poskytnuté` a `terén bez jasného vozidla`. Prínos: terénne/support/vodičské ponuky sa nebudú javiť vhodne len preto, že lokalita sedí; Radar vopred ukáže reálny logistický náklad a potenciálny blocker.
+66. **Employer-template reuse detector** — rozpozná, keď firma opakovane používa takmer rovnaký text náplne pre rozdielne názvy, mzdy alebo role. Prínos: menej chybných fuzzy dedupe a presnejší ranking konkrétnej aktuálnej role.
+67. **Vehicle-obligation classifier** — samostatne rozlíši `vodičák B výhoda`, `vodičák B povinný`, `vlastné auto povinné`, `služobné auto poskytnuté` a `terén bez jasného vozidla`. Prínos: terénne/support/vodičské ponuky sa nebudú javiť vhodne len preto, že lokalita sedí.
+68. **Client-engagement freshness signal — NOVÉ** — pri freelance zdrojoch oddelene sleduje `postedAt`, `lastViewedByClient`, `interviewing`, `hires` a aktívne kontrakty. Ak je inzerát formálne otvorený, ale klient ho dlho nepozrel alebo už intenzívne interviewuje/hireuje, zníži `apply-now` prioritu bez vyradenia. Prínos: menej času na ponuky, kde je reálna šanca na odpoveď už nízka.
+69. **Emergency-response SLA compatibility gate — NOVÉ** — identifikuje roly, ktoré vyžadujú pevné online hodiny, okamžité reakcie (napr. ticket do 15 minút), permanentnú dostupnosť alebo videohovory, a porovná ich s reálnou dostupnosťou kandidáta. Prínos: WordPress/support rola nebude vyzerať vysoko len podľa skill matchu, ak je praktický režim práce neudržateľný.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
