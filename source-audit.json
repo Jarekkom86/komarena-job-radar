@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T02:35:42+02:00",
+  "updatedAt": "2026-08-28T03:25:00+02:00",
   "runSummary": {
     "familiesChecked": 12,
-    "newActiveJobs": 1,
-    "rejectedByLocation": 0,
-    "rejectedByLanguageOrHardSkill": 5,
-    "rejectedAsWeakOrLowValue": 8,
+    "newActiveJobs": 0,
+    "rejectedByLocation": 1,
+    "rejectedByLanguageOrHardSkill": 4,
+    "rejectedAsWeakOrLowValue": 6,
     "duplicateOrForHire": 4,
-    "note": "Aktivovaný Cerkam Facility Services – Terénny administratívny pracovník, Bratislava, od 1 500 EUR + bonusy. Predchádzajúci quarantine kandidát bol znovu overený cez aktuálny Profesia detail O5348670 a Práca za rohom mirror: administratíva, zákaznícke požiadavky, objednávky, interný systém a terén; verejný detail nezobrazuje povinnú elektrotechnickú vyhlášku ani vyššiu AJ. Upwork priniesol veľmi čerstvé worldwide WordPress/WooCommerce zákazky, ale nové výsledky mali nízky budget, 15–50 proposals alebo hard PHP/development požiadavky. LinkedIn remote customer-support výsledky Foxelli boli vyradené pre fluent/near-native English a špecializované sewing skúsenosti; Wolt pre B2 English."
+    "note": "Bez nového LIVE prírastku: žiadny čerstvý kandidát neprešiel kvalitou nad existujúci feed bez výrazného jazykového, hard-skill, country alebo value rizika. Upwork priniesol WordPress/Elementor Support Specialist, ale detail ho obmedzuje na Philippines/United Kingdom a vyžaduje fluent English, takže padol na remote-country aj language gate. WordPress Webmaster vyžaduje fluent English a US business hours. Small Agency WordPress maintenance je worldwide a tematicky relevantná, ale bola publikovaná pred 3 týždňami, klient už má 1 hire a 5 interviewing a rola vyžaduje working PHP; ponechané mimo LIVE ako near-fit, nie nový silný lead. Existujúce Websupport a Penta direct-career role boli znovu potvrdené ako aktívne."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":10,"note":"Reálne prehľadané Bratislava/BA kraj, remote a relevantné smery. Cerkam Facility Services – Terénny administratívny pracovník (O5348670), zverejnené 27.8.2026, Bratislava, od 1 500 EUR + odmeny/bonusy, bolo po detailnom rechecku aktivované. Nový dm omni-channel retailing je internship/stáž a ďalšie najnovšie BA výsledky boli sales, cudzojazyčné alebo slabší fit. 1 pridaný."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":4,"note":"Kontrolované direct-career línie a existujúce Penta/Hilti/O2/Websupport. Penta Sales Administrator zostáva overený priamo; bez novej direct-career BA/Slovakia-remote roly, ktorá by prekonala aktuálny TOP."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":5,"note":"Reálne prehľadané customer support/e-commerce/tech BA a remote. Wolt Support Associate vyžaduje minimum B2 English. Foxelli remote support/sales roly sú Slovakia-eligible, ale vyžadujú fluent/near-native English; sewing variant navyše praktickú sewing expertízu. 0 pridaných."},
-    {"name":"Brigada.sk","family":"other","status":"checked","hits":0,"note":"Reálne prehľadané BA admin/e-shop/IT brigády. Verejná indexácia v tomto behu nepriniesla nový high-fit konkrétny detail."},
-    {"name":"Worki.sk","family":"other","status":"checked","hits":1,"note":"Reálne prehľadaná aktuálna administratíva. Najnovší verejný výpis nepriniesol novú BA/remote ponuku lepšiu než existujúci RM Biznis servis; staršie alebo vzdialené roly neaktivované."},
-    {"name":"Práca za rohom","family":"other","status":"ok","hits":8,"note":"Použité ako doplnkový detail/discovery pre najnovšie BA administratívne výsledky. Cerkam mirror potvrdil Bratislavu, živnosť/full-time, od 1 500 EUR a obsah práce; canonical zostáva Profesia O5348670, mirror sa nepočíta ako nezávislý zdroj."},
-    {"name":"Služby zamestnanosti / Kariera.sk","family":"government","status":"checked","hits":0,"note":"Reálne kontrolované BA admin/IT/support indexy; bez nového kandidáta s dostatočným evidence contractom a lepším fitom."},
-    {"name":"Pretlak / StartupJobs","family":"other","status":"checked","hits":1,"note":"CloseRocket Customer Success & UX Partner je Bratislava a čerstvý, ale vyžaduje výrazný globálny customer-success/UX/sales presah a predchádzajúce overenie ukázalo fluent English; neaktivované. 0 pridaných."},
-    {"name":"WordPress Jobs / tech-creative boards","family":"other","status":"checked","hits":0,"note":"WordPress Jobs a tech/creative discovery prehľadané; bez nového non-hard-dev Slovakia-remote výsledku."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":8,"note":"Čerstvé worldwide WordPress/WooCommerce výsledky zahŕňali WooCommerce build/maintenance za 5 USD, Elementor fixy za 5–50 USD a checkout/server maintenance. Väčšina mala 15–50 proposals, nízky fixed budget alebo mandatory PHP/development; 0 pridaných."},
-    {"name":"Reddit r/wordpressjobs","family":"community","status":"checked","hits":3,"note":"Najnovšie indexované výsledky boli prevažne [FOR HIRE] ponuky freelancerov; vhodný nový hiring lead nebol overený."},
-    {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"blocked","hits":0,"note":"Verejná indexácia neposkytla konkrétny overiteľný aktuálny hiring post. Priamy obsah skupín ostáva login/temporary-block obmedzený; 0 verified hits a nič sa nepredstiera. Autentizovaný Nexus/local ingestion zostáva backlog."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":4,"note":"Reálne prehľadané nové BA/okolie a relevantné e-shop/support/admin smery. Bez novej ponuky, ktorá by po locality/language/hard-skill gate prekonala aktuálny LIVE threshold; existujúce čerstvé Cerkam a IZY VAPE ostávajú v LIVE."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"ok","hits":3,"note":"Priamo znovu potvrdené Websupport Careers a Penta Real Estate Careers. Websupport Customer Success Advisor je stále aktívny; Penta Sales Administrator je stále aktívny. Ďalšie zobrazené direct-career roly boli sales alebo senior infra/dev, nie lepší fit."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":3,"note":"Reálne prehľadané BA/Slovakia e-commerce/support/tech výsledky. Verejná indexácia v tomto behu nepriniesla nový konkrétny Slovakia-eligible high-fit detail lepší než existujúce LUNYS/Ryvenia."},
+    {"name":"Brigada.sk","family":"other","status":"checked","hits":0,"note":"Reálne prehľadané BA administratíva/e-shop/IT/AI brigády; bez nového high-fit konkrétneho detailu."},
+    {"name":"Worki.sk","family":"other","status":"checked","hits":0,"note":"Reálne prehľadané BA/remote admin/e-shop/IT výsledky; bez nového kandidáta nad existujúci RM Biznis servis a LIVE threshold."},
+    {"name":"Práca za rohom","family":"other","status":"checked","hits":2,"note":"Použité na discovery/cross-check BA administratívnych výsledkov; nič nové s vyššou hodnotou a canonical výhodou oproti už aktívnym rolám."},
+    {"name":"Služby zamestnanosti / Kariera.sk","family":"government","status":"checked","hits":0,"note":"Kontrolované BA admin/IT/support indexy; bez nového kandidáta s dostatočným evidence contractom a vhodnou jazykovou/skill úrovňou."},
+    {"name":"Pretlak / StartupJobs","family":"other","status":"checked","hits":1,"note":"Kontrolované AI/support/e-commerce BA a Slovakia-remote výsledky. Bez nového kandidáta, ktorý by prešiel jazykovým a hard-skill gateom nad aktuálny TOP."},
+    {"name":"WordPress Jobs / tech-creative boards","family":"other","status":"checked","hits":0,"note":"WordPress Jobs/tech-creative discovery prehľadané; bez nového non-hard-dev Slovakia-remote výsledku s jasnou eligibility."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"note":"Overené konkrétne WordPress/WooCommerce výsledky. WordPress/Elementor Support Specialist je Remote, ale iba Philippines/United Kingdom a fluent English; WordPress Webmaster vyžaduje fluent English + US business hours; nový WooCommerce build má 5 USD fixed a 20–50 proposals. Small Agency WordPress maintenance je worldwide, 5–9 USD/h, 5–10 proposals a silný klient, ale je staršia, už má 1 hire + 5 interviewing a vyžaduje working PHP. 0 pridaných."},
+    {"name":"Reddit r/wordpressjobs","family":"community","status":"checked","hits":4,"note":"Najnovšie verejne indexované výsledky sú prevažne [FOR HIRE] alebo US-only hard-dev hiring; žiadny nový Slovakia-eligible hiring lead pre LIVE."},
+    {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"blocked","hits":0,"note":"Verejná indexácia neposkytla konkrétny overiteľný aktuálny hiring post. Priamy obsah skupín ostáva login/temporary-block obmedzený; 0 verified hits. Autentizovaný Nexus/local ingestion zostáva backlog."}
   ]
 }
