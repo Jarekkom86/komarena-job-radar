@@ -1,28 +1,25 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T15:24:53+02:00",
+  "updatedAt": "2026-08-28T16:14:53+02:00",
   "runSummary": {
-    "familiesChecked": 13,
-    "newActiveJobs": 1,
-    "rejectedByLocation": 2,
-    "rejectedByLanguageOrHardSkill": 8,
-    "rejectedAsWeakOrLowValue": 7,
-    "duplicateOrForHire": 5,
-    "note": "Široký refresh 28. 8. 2026 o 15:24 CEST prešiel Profesia, direct company careers, LinkedIn, Brigada.sk, Worki, Prácu za rohom, Kariera/Služby zamestnanosti, Pretlak/StartupJobs/WordPress Jobs, Upwork a ďalšie freelance indexy, Reddit/WP komunity a verejne indexovaný Facebook. Do LIVE prešiel Energohub Office manager / koordinátor firemných procesov v Dúbravke: 1 800 €/mes., SŠ s maturitou, CRM/digitálne nástroje, procesy a AI; pracovná AJ je iba výhodou. Ostatné nové leady padli na B2/fluent English, špecializované hard skills, vzdialenosť/country restriction, nočné smeny, vysokú konkurenciu alebo nízku hodnotu."
+    "familiesChecked": 5,
+    "newActiveJobs": 0,
+    "rejectedByLocation": 0,
+    "rejectedByLanguageOrHardSkill": 4,
+    "rejectedAsWeakOrLowValue": 2,
+    "duplicateOrForHire": 2,
+    "note": "Hodinový refresh 28. 8. 2026 o 16:14 CEST reálne skontroloval verejne dostupné BA/remote e-commerce, WordPress, administratíva a IT support výsledky cez Profesia/Prácu za rohom, LinkedIn, všeobecné pracovné indexy a aktuálne tech/support discovery. Nenašiel sa nový lead, ktorý by prebil existujúce LIVE priority. Form Factory IT Support Specialist bol potvrdený ako aktuálny a finančne zaujímavý (od 2 500 €/mes.), ale vyžaduje stredne pokročilú AJ a širšiu zodpovednosť za IT centrály a klubov, preto ostáva mimo priority. Sharp Brains DSS L1 je nový onsite B2B/freelance lead v Bratislave, ale verejný detail neposkytuje dostatočne silný jazykový/odmeňovací fit na zaradenie medzi priority. Recruitgarden Service Desk/System Administrator vyžaduje 3+ roky IT support/sysadmin, cloud a GitHub access management, preto je hard-skill reject. Foxelli e-commerce support je remote, ale fluent/near-native English a špecifické domain požiadavky sú blocker. Existujúci IZY VAPE e-commerce remote lead bol znovu potvrdený bez významnej zmeny."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":1,"note":"Reálne prehľadané BA/remote e-commerce, admin, office management, customer support a IT support výsledky. Nový LIVE winner: Energohub Office manager / koordinátor firemných procesov, Dúbravka, od 1 800 €/mes.; AJ iba výhoda, CRM/digitálne nástroje a AI sú priamo relevantné. TRIGON customer service bol reject pre pokročilú AJ aj nemčinu."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Direct company vrstva bola porovnaná s existujúcimi Hilti, Penta, Websupport, O2, LAST MILE, Pandora a ďalšími leadmi. Bez nového direct BA/remote výsledku, ktorý by prebil aktuálny TOP."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Aktuálne verejné výsledky zahŕňali Foxelli remote e-commerce support. Crochet Customer Support je 100 % remote a Slovakia-eligible, ale má špecifický crochet/domain skill a nízky fee; Customer Support & Sales má nočný režim. Bez nového LIVE winnera."},
-    {"name":"Brigada.sk","family":"other","status":"checked","hits":0,"note":"BA administratíva/e-shop/IT support discovery vykonané; verejný feed priniesol najmä všeobecné alebo hard-dev/nízko hodnotné položky. Bez nového leadu nad fit/value thresholdom."},
-    {"name":"Worki.sk","family":"other","status":"checked","hits":0,"note":"BA/remote administratíva, e-shop a IT support search vykonaný; bez nového overiteľného výsledku vhodnejšieho než existujúce LIVE položky."},
-    {"name":"Práca za rohom","family":"other","status":"ok","hits":1,"note":"Použité na detailné potvrdenie Energohub požiadaviek a lokality. Ide o Profesia mirror, preto sa nepočíta ako samostatný canonical source hit. Potvrdilo SŠ s maturitou, AI/CRM/digitálne nástroje a AJ iba ako výhodu."},
-    {"name":"Kariera.sk / Služby zamestnanosti","family":"government","status":"checked","hits":0,"note":"Aktuálne BA administratíva/IT/e-shop výsledky skontrolované; bez nového leadu pre LIVE po aplikovaní jazykového, hard-skill a lokalitného gateu."},
-    {"name":"Pretlak / StartupJobs / tech-creative boards","family":"other","status":"checked","hits":0,"note":"BA/remote AI, support a e-commerce discovery overené; bez nového výsledku nad existujúcimi OVB/LEAF/Penta/Hilti leadmi."},
-    {"name":"WordPress Jobs","family":"other","status":"checked","hits":0,"note":"Remote WordPress/WooCommerce support/maintenance discovery vykonané; bez nového Slovakia-eligible non-hard-dev leadu s primeranou hodnotou a jazykovým fitom."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"note":"Aktuálne worldwide WordPress/WooCommerce výsledky reálne skontrolované. Webmaster 5–15 USD/h vyžaduje fluent English, US business hours a PHP; speed optimization 18–30 USD/h má mandatory PHP a 20–50 proposals; WordPress Expert má 50+ proposals + PHP; AI VA 5–10 USD/h má 20–50 proposals; 5 USD Elementor fix bol value reject. Bez nového LIVE winnera."},
-    {"name":"Freelancermap / Freelancer / ďalšie freelance indexy","family":"freelance","status":"checked","hits":0,"note":"Bez nového konkrétneho high-value Slovakia-eligible leadu s primeranou konkurenciou."},
-    {"name":"Reddit r/wordpressjobs + verejné WP komunity","family":"community","status":"checked","hits":0,"note":"Aktuálne výsledky boli prevažne [FOR HIRE] ponuky developerov alebo staršie US-only hiring posty. Bez nového vhodného hiring dopytu."},
+    {"name":"Profesia / Práca za rohom","family":"profesia","status":"ok","hits":0,"note":"Aktuálne BA e-commerce, office/admin a IT support výsledky boli znovu skontrolované. IZY VAPE Back Office & Operations Coordinator zostáva aktívny bez významnej zmeny. Form Factory IT Support Specialist je aktuálny, od 2 500 €/mes. + KPI bonus, ale stredne pokročilá AJ a širšia samostatná IT zodpovednosť znižujú fit; nezaradené medzi priority."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Pri tejto hodinovej kontrole nebol nájdený nový direct-company BA/remote lead, ktorý by prebil existujúce Penta, Hilti, Websupport, O2, LAST MILE alebo Pandora priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Skontrolované aktuálne Bratislava/remote e-commerce a IT support výsledky. Sharp Brains DSS L1 je čerstvý onsite B2B/freelance lead, ale bez dostatočného potvrdenia jazykového a odmeňovacieho fitu; Foxelli remote e-commerce support má fluent/near-native English a špecifické domain požiadavky. Bez nového LIVE winnera."},
+    {"name":"Všeobecné pracovné indexy","family":"other","status":"checked","hits":0,"note":"Aktuálne indexované BA IT support výsledky skontrolované. Recruitgarden Service Desk/System Administrator vyžaduje 3+ roky IT support/sysadmin, account/access management, ticketing a cloud basics; hard-skill reject pre aktuálny profil."},
+    {"name":"Remote e-commerce / support discovery","family":"other","status":"checked","hits":0,"note":"Remote Slovakia e-commerce support discovery skontrolované. Klarstein role sú jazykovo špecializované (napr. C1 nemčina/taliančina), Foxelli vyžaduje fluent English alebo špecifický produktový domain. Bez vhodnejšieho nového leadu."},
+    {"name":"Pretlak / StartupJobs / tech-creative boards","family":"other","status":"checked","hits":0,"note":"V tejto hodinovej kontrole nebol nájdený nový výsledok, ktorý by prebil existujúci OVB AI/automation lead."},
+    {"name":"WordPress Jobs","family":"other","status":"checked","hits":0,"note":"Bez nového Slovakia-eligible non-hard-dev WordPress/WooCommerce leadu s lepším fitom než existujúce LIVE položky."},
+    {"name":"Upwork","family":"freelance","status":"checked","hits":0,"note":"Táto hodinová kontrola nepriniesla nový overený low-competition WooCommerce/WordPress lead lepší než existujúce uložené Upwork položky."},
+    {"name":"Reddit / verejné WP komunity","family":"community","status":"checked","hits":0,"note":"Bez nového relevantného hiring dopytu zachyteného v tejto kontrole."},
     {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"blocked","hits":0,"note":"Priamy obsah skupín zostáva limitovaný loginom/indexáciou. 0 verified hits; nič sa nepredstiera. Autentizovaný Nexus/local ingestion zostáva backlog priorita."}
   ]
 }
