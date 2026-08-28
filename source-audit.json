@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T15:16:21+02:00",
+  "updatedAt": "2026-08-28T15:24:53+02:00",
   "runSummary": {
     "familiesChecked": 13,
-    "newActiveJobs": 0,
-    "rejectedByLocation": 1,
-    "rejectedByLanguageOrHardSkill": 7,
-    "rejectedAsWeakOrLowValue": 6,
+    "newActiveJobs": 1,
+    "rejectedByLocation": 2,
+    "rejectedByLanguageOrHardSkill": 8,
+    "rejectedAsWeakOrLowValue": 7,
     "duplicateOrForHire": 5,
-    "note": "Hodinový refresh nadviazal na plný breadth audit z 14:24 a znovu overil hlavné verejné kanály: Profesia BA/remote, LinkedIn, direct company careers, Pretlak, GROWNi, Worki, Brigada.sk, Kariera/Služby zamestnanosti, Upwork, Reddit/WP komunity a verejne indexovateľné mirrory. Bez nového LIVE winnera. Nové/znovu vytiahnuté leady neprešli priority gateom: Power Automate & IT Support Specialist (2 600 €/mes.) je tematicky silný, ale má hard minimum English B2, každodennú AJ a VŠ II. stupňa; VÚB Digitálny agent je 100 % home office za 1 480 €/mes., ale ide o dlhšie existujúcu/recyklovanú ponuku bez silnejšieho fitu než aktuálny radar; KOOPERATIVA online predaj je relevantná e-commerce rola, no dostupný verejný detail zatiaľ nestačí na bezpečný high-priority verdict. Upwork priniesol WordPress/WooCommerce leady, ale PHP/hard-dev, 20–50 proposals alebo nízka hodnota znižujú fit. Reddit 28. 8. priniesol najmä [FOR HIRE] posty; existujúci language-learning WooCommerce dopyt už v non-Profesia vrstve je."
+    "note": "Široký refresh 28. 8. 2026 o 15:24 CEST prešiel Profesia, direct company careers, LinkedIn, Brigada.sk, Worki, Prácu za rohom, Kariera/Služby zamestnanosti, Pretlak/StartupJobs/WordPress Jobs, Upwork a ďalšie freelance indexy, Reddit/WP komunity a verejne indexovaný Facebook. Do LIVE prešiel Energohub Office manager / koordinátor firemných procesov v Dúbravke: 1 800 €/mes., SŠ s maturitou, CRM/digitálne nástroje, procesy a AI; pracovná AJ je iba výhodou. Ostatné nové leady padli na B2/fluent English, špecializované hard skills, vzdialenosť/country restriction, nočné smeny, vysokú konkurenciu alebo nízku hodnotu."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"Reálne prehľadané BA/remote e-commerce, administratíva, customer support a IT support výsledky 28. 8. 2026 okolo 15:15. Nové zobrazené leady: VÚB Digitálny agent 1 480 €/mes. (100 % HO), KOOPERATIVA online predaj 1 500 €/mes. a Power Automate & IT Support 2 600 €/mes. Power Automate má hard B2 + VŠ II.; VÚB je starší/recyklovaný inzerát; KOOPERATIVA zostáva v quarantine do detailného potvrdenia požiadaviek."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Direct company vrstva bola porovnaná s existujúcimi Hilti, Penta, Websupport, O2, LAST MILE a Allegro leadmi. Bez nového jednoznačne lepšieho BA/remote výsledku."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Aktuálne verejné LinkedIn výsledky nepriniesli nový lead nad existujúcimi položkami. Wolt Support Associate zostáva reject pre minimálne B2 English a zmeny večer/víkendy."},
-    {"name":"Brigada.sk","family":"other","status":"checked","hits":0,"note":"BA administratíva/e-shop/IT support discovery zopakované; bez nového výsledku nad existujúcim fit/value thresholdom."},
+    {"name":"Profesia","family":"profesia","status":"ok","hits":1,"note":"Reálne prehľadané BA/remote e-commerce, admin, office management, customer support a IT support výsledky. Nový LIVE winner: Energohub Office manager / koordinátor firemných procesov, Dúbravka, od 1 800 €/mes.; AJ iba výhoda, CRM/digitálne nástroje a AI sú priamo relevantné. TRIGON customer service bol reject pre pokročilú AJ aj nemčinu."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Direct company vrstva bola porovnaná s existujúcimi Hilti, Penta, Websupport, O2, LAST MILE, Pandora a ďalšími leadmi. Bez nového direct BA/remote výsledku, ktorý by prebil aktuálny TOP."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Aktuálne verejné výsledky zahŕňali Foxelli remote e-commerce support. Crochet Customer Support je 100 % remote a Slovakia-eligible, ale má špecifický crochet/domain skill a nízky fee; Customer Support & Sales má nočný režim. Bez nového LIVE winnera."},
+    {"name":"Brigada.sk","family":"other","status":"checked","hits":0,"note":"BA administratíva/e-shop/IT support discovery vykonané; verejný feed priniesol najmä všeobecné alebo hard-dev/nízko hodnotné položky. Bez nového leadu nad fit/value thresholdom."},
     {"name":"Worki.sk","family":"other","status":"checked","hits":0,"note":"BA/remote administratíva, e-shop a IT support search vykonaný; bez nového overiteľného výsledku vhodnejšieho než existujúce LIVE položky."},
-    {"name":"Kariera.sk / Služby zamestnanosti","family":"government","status":"checked","hits":0,"note":"Aktuálne verejné vyhľadávanie BA administratíva/IT/e-shop nevydalo nový lead pre LIVE. RAN Engineer je technicky zaujímavý, ale mimo cieľového support/e-commerce/admin smeru."},
-    {"name":"Pretlak / tech-creative boards","family":"other","status":"checked","hits":0,"note":"BA/remote AI, support a e-commerce discovery overené; bez nového výsledku nad existujúcim OVB AI & automation leadom."},
-    {"name":"GROWNi / flexi joby","family":"other","status":"checked","hits":0,"note":"GROWNi pracovné príležitosti a existujúci LEAF Implementation Support lead boli znovu overené; bez nového vhodnejšieho výsledku."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"note":"Aktuálne WordPress/WooCommerce výsledky reálne skontrolované. WordPress speed optimization 18–30 USD/h má mandatory PHP a 20–50 proposals; WordPress Expert má 50+ proposals a PHP; AI VA/automation je 5–10 USD/h a 20–50 proposals. Existujúci WooCommerce Assistant ostáva najlepší non-dev fit (<5 proposals), ale už má 3 hires a US Mountain Time."},
+    {"name":"Práca za rohom","family":"other","status":"ok","hits":1,"note":"Použité na detailné potvrdenie Energohub požiadaviek a lokality. Ide o Profesia mirror, preto sa nepočíta ako samostatný canonical source hit. Potvrdilo SŠ s maturitou, AI/CRM/digitálne nástroje a AJ iba ako výhodu."},
+    {"name":"Kariera.sk / Služby zamestnanosti","family":"government","status":"checked","hits":0,"note":"Aktuálne BA administratíva/IT/e-shop výsledky skontrolované; bez nového leadu pre LIVE po aplikovaní jazykového, hard-skill a lokalitného gateu."},
+    {"name":"Pretlak / StartupJobs / tech-creative boards","family":"other","status":"checked","hits":0,"note":"BA/remote AI, support a e-commerce discovery overené; bez nového výsledku nad existujúcimi OVB/LEAF/Penta/Hilti leadmi."},
+    {"name":"WordPress Jobs","family":"other","status":"checked","hits":0,"note":"Remote WordPress/WooCommerce support/maintenance discovery vykonané; bez nového Slovakia-eligible non-hard-dev leadu s primeranou hodnotou a jazykovým fitom."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"note":"Aktuálne worldwide WordPress/WooCommerce výsledky reálne skontrolované. Webmaster 5–15 USD/h vyžaduje fluent English, US business hours a PHP; speed optimization 18–30 USD/h má mandatory PHP a 20–50 proposals; WordPress Expert má 50+ proposals + PHP; AI VA 5–10 USD/h má 20–50 proposals; 5 USD Elementor fix bol value reject. Bez nového LIVE winnera."},
     {"name":"Freelancermap / Freelancer / ďalšie freelance indexy","family":"freelance","status":"checked","hits":0,"note":"Bez nového konkrétneho high-value Slovakia-eligible leadu s primeranou konkurenciou."},
-    {"name":"Reddit r/wordpressjobs + verejné WP komunity","family":"community","status":"checked","hits":0,"note":"Najnovšie výsledky 28. 8. sú prevažne [FOR HIRE]. Existujúci dopyt na WordPress/WooCommerce web pre online jazykový biznis už je v jobs-data-nonprof; nový hiring winner sa neobjavil."},
-    {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"blocked","hits":0,"note":"Priamy obsah skupín ostáva limitovaný loginom/indexáciou. 0 verified hits; nič sa nepredstiera."},
-    {"name":"Práca za rohom / ďalšie slovenské mirrory","family":"other","status":"checked","hits":0,"note":"Mirrory boli použité iba na cross-check čerstvosti; Profesia mirrory sa nepočítajú ako samostatné canonical source hits."}
+    {"name":"Reddit r/wordpressjobs + verejné WP komunity","family":"community","status":"checked","hits":0,"note":"Aktuálne výsledky boli prevažne [FOR HIRE] ponuky developerov alebo staršie US-only hiring posty. Bez nového vhodného hiring dopytu."},
+    {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"blocked","hits":0,"note":"Priamy obsah skupín zostáva limitovaný loginom/indexáciou. 0 verified hits; nič sa nepredstiera. Autentizovaný Nexus/local ingestion zostáva backlog priorita."}
   ]
 }
