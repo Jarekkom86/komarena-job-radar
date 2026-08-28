@@ -1,26 +1,26 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T22:14:07+02:00",
+  "updatedAt": "2026-08-28T22:27:12+02:00",
   "runSummary": {
     "familiesChecked": 10,
-    "newActiveJobs": 1,
-    "rejectedByLocation": 2,
+    "newActiveJobs": 0,
+    "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
-    "rejectedByLanguageOrHardSkill": 8,
-    "rejectedAsWeakOrLowValue": 6,
-    "duplicateOrForHire": 3,
-    "note": "Refresh 28. 8. 2026 o 22:14 reálne skontroloval Profesia, LinkedIn, priame/partnerské job zdroje, Worki, Kariera, Pretlak a aktuálne Upwork výsledky plus existujúce community/FB coverage. Nový lead Lanža – vodič/ka na doručovanie online nákupov v Bratislave – prešiel BA, vodič B, bez tachografu, immediate-start a value gateom a bol pridaný do jobs-data.json s Match 91. ČSOB Release Coordinator bol čerstvý a tematicky zaujímavý, ale zamietnutý pre plynulú AJ, min. 2 roky IT, ServiceNow/Jira a nočné/víkendové release aktivity. Sociálna poisťovňa – odborný poradca bola zamietnutá pre B2 AJ. KInIT Financial Administrator bol zamietnutý pre B2 AJ, advanced Excel a relevantnú finančnú prax. Upwork dnešné VA/WordPress leady boli prevažne fluent-English, nízkorozpočtové, hard-dev alebo už s hire. Feed bol aktualizovaný až po tejto reálnej kontrole; žiadne umelé posunutie updatedAt."
+    "rejectedByLanguageOrHardSkill": 4,
+    "rejectedAsWeakOrLowValue": 3,
+    "duplicateOrForHire": 4,
+    "note": "Refresh 28. 8. 2026 o 22:27 reálne skontroloval Profesia, direct company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Služby zamestnanosti, Pretlak/WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexovaný Facebook. Žiadny nový kandidát neprešiel súčasne BA/remote, jazykovým/hard-skill, value a duplicate gateom, preto jobs-data.json zostal fail-closed bez umelého updatedAt. Wolt Support Associate Bratislava bol zamietnutý pre povinnú B2 AJ. Upwork WordPress speed optimization vyžaduje PHP a mal 20–50 proposals; WordPress Webmaster vyžaduje fluent English, US business hours a už má hire; WooCommerce build lead bol iba 5 USD fixed-price a 20–50 proposals. Reddit aktuálne výsledky boli prevažne FOR HIRE alebo starší low-budget developer hiring. Facebook neposkytol konkrétny verejne overiteľný hiring post."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":1,"note":"Reálne prehľadané dnešné BA/remote admin, e-commerce, IT support a vodič/kuriér výsledky. Aktivovaný Lanža O5349252; ČSOB O5349165, Sociálna poisťovňa O5349249 a KInIT O5349125 zamietnuté podľa language/hard-skill gateu."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Priame firemné/partnerské výsledky porovnané s LIVE feedom; bez nového kandidáta, ktorý by prešiel všetkými gate-mi a nebol duplicitou."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Čerstvý ČSOB Release Coordinator potvrdený aj na LinkedIn, ale vyžaduje fluent English, 2 roky IT, ticketing a flexibilitu na nočné/víkendové releasy. Foxelli/Klarstein/SupportYourApp naďalej narážajú na fluent/ďalšie jazyky."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"note":"BA/online administratíva, e-shop a support refresh bez nového winnera nad existujúce LIVE možnosti."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"note":"Aktuálny BA brigáda/admin/support kontext bez nového overeného fit/value leadu."},
-    {"name":"Kariera / Služby zamestnanosti","family":"government-other","status":"checked","hits":0,"note":"Aktuálny BA admin/IT/support discovery bez nového kandidáta nad existujúci feed."},
-    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"AI/e-commerce/WordPress discovery bez nového Slovakia-eligible non-hard-dev leadu s lepším pomerom fit/hard-skill/value."},
-    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":0,"note":"Dnešné worldwide VA a WordPress/WooCommerce výsledky boli strong/fluent-English, hard-dev, veľmi nízky budget, vysoko konkurenčné alebo už mali hire; bez aktivácie."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Coverage zachované z poslednej čerstvej kontroly v rámci hodinového okna; bez nového verified hiring leadu."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia zostáva limited; bez stabilného konkrétneho aktuálneho hiring postu s priamym overiteľným linkom."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"Reálne prehľadané dnešné BA/remote e-commerce, admin, IT support a vodič/kuriér výsledky; bez nového kandidáta nad existujúci LIVE feed."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Reálne skontrolovaný direct-company lane vrátane Websupport/Hilti/Penta kontextu; bez nového canonical winnera."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Wolt Support Associate Bratislava je lokálne vhodný, ale vyžaduje professional working English minimálne B2; language reject. Bez nového vhodného winnera."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"note":"BA/online administratíva, e-shop a support refresh bez nového leadu, ktorý by prešiel všetkými gate-mi."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"note":"BA brigáda/admin/e-shop/IT support discovery bez nového overeného fit/value winnera."},
+    {"name":"Kariera / Služby zamestnanosti","family":"government-other","status":"checked","hits":0,"note":"BA admin/IT/support discovery bez nového kandidáta nad existujúci feed; mirrory sa nepovažujú za nový source hit."},
+    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"AI/e-commerce/WordPress discovery bez nového Slovakia-eligible non-hard-dev leadu s primeranou hodnotou."},
+    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":0,"note":"Aktuálne WP/Woo výsledky: speed optimization vyžaduje PHP a má 20–50 proposals; webmaster vyžaduje fluent English/US hours a už má hire; 5 USD WooCommerce lead je low-value. Bez aktivácie."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Aktuálne indexované výsledky sú prevažne FOR HIRE; starší HIRING WordPress lead je developer-heavy/low-budget. Bez nového vhodného hiring dopytu."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia zostáva limited; 0 verified hits, bez stabilného konkrétneho aktuálneho hiring postu s priamym overiteľným linkom."}
   ]
 }
