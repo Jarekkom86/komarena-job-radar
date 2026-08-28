@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 28. 8. 2026 20:31 CEST
+Aktualizované: 28. 8. 2026 21:35 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -39,7 +39,7 @@ Aktualizované: 28. 8. 2026 20:31 CEST
 5. **Energohub — Office manager / koordinátor firemných procesov — Match 92** — Dúbravka, od 1 800 €/mes.; koordinácia, CRM/digitálne nástroje, procesy a AI; pracovná AJ iba výhodou.
 6. **Penta Real Estate — Sales Administrator — Match 92** — Bratislava, 1 800 €/mes. + bonus + HO; CRM, dáta, reporty, dokumenty a podpora.
 7. **Hilti — Implementation & Service Specialist — Match 92** — Bratislava, od 1 800 €/mes. + bonusy + auto; implementation/service/CRM.
-8. **Websupport — Customer Success Advisor — Match 91** — hosting, SSL, troubleshooting, weby a customer support.
+8. **Websupport — Customer Success Advisor — Match 91** — hosting, SSL, troubleshooting, weby a customer support. Priamy career detail 28. 8. potvrdil otvorenú pozíciu; pozor na smeny 7:00–22:00 a pracovnú AJ.
 9. **VÚB — Digitálny agent/agentka — Match 90** — 100 % home office / Slovensko, 1 480 €/mes.; SŠ s maturitou, firma zaškoľuje; mínus bankový predaj a zmeny.
 10. **IZY VAPE — Back Office & Operations Coordinator – e-commerce | Remote — Match 90** — BA/prevažne HO, 1 600–2 000 €/mes.; e-shop/objednávky/reklamácie/logistika/AI. Riziko: AJ a neskorší nástup.
 11. **O2 — Digital Content Admin — Match 90** — 8 €/h, web/e-shop, produkty, ceny a landing pages.
@@ -60,19 +60,17 @@ Aktualizované: 28. 8. 2026 20:31 CEST
 26. **LAST MILE — Operátor NOC / Hotline podpora — Match 82** — Ružinov; first-line support; mínus 6–8 €/h a B1 AJ.
 27. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 28. 8. 2026 20:31 CEST
+## SOURCE AUDIT — 28. 8. 2026 21:35 CEST
 Reálne prehľadané skupiny: **Profesia; direct company careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Práca za rohom/Kariera.sk/Služby zamestnanosti; Pretlak/WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.**
 
 ### Výsledky tohto behu
-- **Nové aktívne položky do `jobs-data.json`: 0.** Žiadny nový kandidát neprešiel súčasne fit, hard-skill/language, BA/remote a value gateom; fail-closed preto správne zachoval existujúci feed.
-- **Powerlogy — Marketing Specialist:** Bratislava/hybrid, od 1 600 €, silný e-shop/WooCommerce/AI-content fit, ale detail výslovne požaduje slovenčinu aj angličtinu na veľmi dobrej úrovni. Preto language reject napriek veľmi dobrej obsahovej zhode. citeturn329058view0
-- **Upwork — WordPress Webmaster:** worldwide remote, ale fluent English, US business hours a PHP; reject pre jazyk + schedule/hard-skill. citeturn536082search1
-- **Upwork — WordPress Site Speed Optimization:** worldwide remote, 18–30 USD/h, ale mandatory PHP a 20–50 proposals; hard-dev/competition reject. citeturn536082search2
-- **Upwork — Small Agency WordPress maintenance:** worldwide remote a reálna maintenance náplň, ale 5–9 USD/h a technický scope zahŕňa PHP/security/hosting; value/hard-skill reject. citeturn536082search3
-- **Upwork — WooCommerce Assistant:** stále veľmi silný existujúci lead; pri poslednom dôkaze <5 proposals a skúsený klient. Je už v LIVE, preto sa nepridával duplicitne. citeturn536082search4
-- **Worki.sk:** dnešné TOP admin výsledky boli prevažne finančno-obchodné alebo jazykovo špecifické; existujúci RM Biznis servis ostáva v LIVE, bez nového winnera. citeturn995662search13
-- **Pretlak — CloseRocket Customer Success & UX Partner:** BA/onsite je lokalitne prípustný, ale predchádzajúci overený detail niesol fluent-English risk; bez nového dôkazu o zmene podmienok sa neaktivuje. citeturn995662search5
-- **Reddit:** čerstvé indexované výsledky sú prevažne `[FOR HIRE]` ponuky freelancerov alebo staršie hiring posty, nie nový relevantný hiring dopyt. citeturn536082reddit139turn536082reddit140
+- **Nové aktívne položky do `jobs-data.json`: 0.** Žiadny nový kandidát neprešiel súčasne fit, hard-skill/language, BA/remote a value gateom; `jobs-data.json` preto zostal fail-closed bez umelého prírastku.
+- **Websupport — Customer Success Advisor:** priamy firemný career detail stále obsahuje aktívny formulár a pozíciu v zozname otvorených miest. Spresnenie: smeny 7:00–22:00; večerné/víkendové smeny môžu byť z domu; angličtina má byť zvládnuteľná, ale nie je uvedená formálnou úrovňou. Existujúci lead zostáva bez duplicitného zápisu.
+- **Upwork — Virtual Assistant Full time:** čerstvý worldwide remote lead za UK hours, ale vyžaduje strong written/spoken English a klientsku telefonickú komunikáciu; language/support-intensity reject.
+- **Upwork — WooCommerce E-Commerce Expert:** čerstvý worldwide remote projekt s WooCommerce/AI/CRO/analytics, ale scope zahŕňa vývoj, GA4/GTM, Meta CAPI, SEO, AI recommendation systems a expert-level delivery; hard-skill reject.
+- **Upwork — WordPress expert / clean WooCommerce site:** malé 30–35 USD projekty, 10–50 proposals a pri časti už hire; low-value/competition reject.
+- **LinkedIn — Foxelli/TalentPop/Klarstein:** lokálne/remote support roly sú tematicky relevantné, ale požadujú fluent/near-native English alebo ďalší cudzí jazyk; language reject. Časť výsledkov je už closed/no longer accepting.
+- **Reddit / r/wordpressjobs:** aktuálne indexované výsledky sú prevažne `[FOR HIRE]`; starší HIRING WordPress lead má veľmi nízky budget a developerský scope.
 - **Facebook:** **0 verified hits**. Verejná indexácia neposkytla stabilný konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited`, nič sa nepredstiera.
 
 ### Run summary
@@ -80,12 +78,15 @@ Reálne prehľadané skupiny: **Profesia; direct company careers; LinkedIn Jobs;
 - Nové aktívne položky: **0**.
 - Vyradené lokalitou: **0**.
 - Quarantine pre nejasnú remote-country eligibility: **0**.
-- Vyradené jazykovým/hard-skill gateom: **5**.
-- Vyradené ako slabé/nízka hodnota: **4**.
+- Vyradené jazykovým/hard-skill gateom: **7**.
+- Vyradené ako slabé/nízka hodnota: **5**.
 - `[FOR HIRE]` / nevhodný typ leadu / duplicita: **3**.
 
 ### LIVE mix hlavného feedu
-Feed sa v tomto behu nemenil. Non-Profesia discovery zostáva povinná priorita a existujúce kvalitné položky sa nemažú kvôli percentám.
+- Aktívne položky: **31**.
+- Profesia: **15 / 31 = 48,4 %**.
+- Mimo Profesia: **16 / 31 = 51,6 %**.
+- Cieľ non-Profesia diverzity je splnený bez mazania kvalitných Profesia ponúk.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -195,12 +196,14 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 95. **Mandatory source-family SLA watchdog** — vedie `lastSuccessfulCheckAt` pre povinné source families a odhalí rodinu, ktorá nebola úspešne skontrolovaná v stanovenom okne.
 96. **Recruiter/company hiring-activity signal** — pri high-fit firmách sleduje čerstvosť ďalších otvorených pozícií a verejnej náborovej aktivity firmy/recruitera.
 97. **Application reuse cluster** — zoskupí podobné roly a pripraví spoločný claim-safe základ CV/argumentov, ktorý sa následne cielene upraví pre konkrétnu firmu.
-98. **Compensation evidence confidence band** — oddelí garantovaný základ, variabilnú zložku, odhadovanú/marketingovú sumu a neistotu; porovnávanie ponúk tak nebude nadhodnocovať role s nejasnými bonusmi alebo placeholder budgetom.
-99. **Application prerequisite completeness check** — pred `Reagovať dnes` skontroluje povinné CV, portfolio, odpovede na screening otázky, praktickú úlohu, platform credits a ďalšie vstupy; výsledkom bude reálny čas do odoslania a blokátor namiesto falošnej okamžitej priority.
-100. **Contract-form net-value normalizer** — prevedie TPP, dohodu, živnosť a freelance na porovnateľnú odhadovanú čistú hodnotu po zohľadnení odvodov, daní, neplatenej dovolenky, plateného voľna a základných benefitov; výsledok bude interval s neistotou, nie falošne presné číslo.
-101. **Trainable-gap cost estimator** — pri near-fit ponuke oddelí malú doučiteľnú medzeru od hard blockeru a odhadne čas prípravy potrebný pred reakciou.
-102. **Market-relative compensation percentile — NOVÉ** — porovná garantovanú odmenu každej role s aktuálnym mediánom podobných BA/remote rolí podľa tracku a typu kontraktu; nízko platené ponuky s veľkým scope sa automaticky posunú nižšie aj vtedy, keď majú vysoký obsahový Match.
-103. **Employer multi-application concentration guard — NOVÉ** — pred ďalšou reakciou na inú pozíciu v tej istej firme skontroluje už odoslané/rozpracované žiadosti, odporučí jednu najsilnejšiu rolu a zabráni scattershot aplikáciám, ktoré môžu znižovať dôveryhodnosť kandidáta.
+98. **Compensation evidence confidence band** — oddelí garantovaný základ, variabilnú zložku, odhadovanú/marketingovú sumu a neistotu.
+99. **Application prerequisite completeness check** — pred `Reagovať dnes` skontroluje povinné CV, portfolio, screening otázky, praktickú úlohu, platform credits a ďalšie vstupy.
+100. **Contract-form net-value normalizer** — prevedie TPP, dohodu, živnosť a freelance na porovnateľnú odhadovanú čistú hodnotu s intervalom neistoty.
+101. **Trainable-gap cost estimator** — pri near-fit ponuke oddelí malú doučiteľnú medzeru od hard blockeru a odhadne čas prípravy pred reakciou.
+102. **Market-relative compensation percentile** — porovná garantovanú odmenu s aktuálnym mediánom podobných BA/remote rolí.
+103. **Employer multi-application concentration guard** — zabráni scattershot aplikáciám na viac rolí v tej istej firme a odporučí najsilnejšiu.
+104. **Employer-paid cost ownership map — NOVÉ** — pri každej role rozlíši, kto platí pracovné zariadenie, telefón/internet, cestovné, parkovanie, školenie, certifikácie a povinné výjazdy; náklady prenesené na kandidáta sa odpočítajú z efektívnej hodnoty ponuky a zabránia nadhodnoteniu „remote“ alebo terénnych rolí.
+105. **Schedule-premium / weekend burden normalizer — NOVÉ** — premení večerné, víkendové, sviatočné, on-call a zmenové povinnosti na porovnateľnú časovú záťaž a kontroluje, či ich odmena reálne kompenzuje; pomôže odlíšiť napr. 100 % HO s každým druhým víkendom od štandardného Po–Pia remote režimu.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
