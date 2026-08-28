@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 28. 8. 2026 10:18 CEST
+Aktualizované: 28. 8. 2026 11:18 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -58,26 +58,29 @@ Aktualizované: 28. 8. 2026 10:18 CEST
 24. **LAST MILE — Operátor NOC / Hotline podpora — Match 82** — Ružinov; first-line support; mínus 6–8 €/h a B1 AJ.
 25. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 28. 8. 2026 10:18 CEST
-Reálne prehľadané families: **Profesia; direct company careers; LinkedIn Jobs; Brigada.sk; Worki.sk; Služby zamestnanosti/Kariera; Pretlak/tech-creative; WordPress Jobs; Upwork; Reddit/WP komunity; Facebook verejná indexácia.**
+## SOURCE AUDIT — 28. 8. 2026 11:18 CEST
+Reálne prehľadané zdrojové skupiny: **Profesia; direct company careers; LinkedIn Jobs; Brigada.sk; Worki.sk; Práca za rohom; Služby zamestnanosti; Pretlak; WordPress Jobs; Upwork; Freelancermap/public freelance discovery; Reddit/WP komunity; Facebook verejná indexácia.**
 
 ### Výsledky tohto behu
 - **Nové položky do `jobs-data.json`: 0.** Feed zostal fail-closed; nič sa nepridalo iba kvôli počtu.
-- **LinkedIn — KONE Business Support Agent with English:** Bratislava, čerstvý výsledok zverejnený len pred pár minútami. Verejný detail sa nepodarilo bezpečne načítať a teda nebola overená požadovaná úroveň AJ; kandidát ostáva mimo LIVE, kým sa neoverí hard gate.
-- **LinkedIn — Kanadevia Assistant / Insignia / ďalšie BA support-admin roly:** discovery potvrdená, ale bez detailu alebo s vyššou jazykovou/role náročnosťou; neaktivované.
-- **Digi Talents / Synpulse — L1 Support Engineer:** BA onsite alebo full remote zo Slovenska, min. 1 600 €/mes.; vyžaduje good English, 1–2 roky IT praxe, Windows+Unix+network a schopnosť onsite supportu. Navyše pozícia je naviazaná na Digi Talents program. Pre aktuálny profil príliš veľa hard/eligibility rizík; neaktivované.
-- **Worki:** existujúci RM Biznis servis znovu potvrdený ako BA/online 10–15 €/h. Shield-Sk e-shop administrátor je explicitne obsadený/zrušený.
-- **Upwork:** čerstvé worldwide WP/Woo leady boli reálne prehľadané. Typické výsledky: $5 Elementor fixes, $5 WooCommerce build/maintenance, $50 Elementor/PHP, $300 WP setup; hlavné mínusy sú extrémne nízka hodnota, 20–50 proposals alebo hard PHP. U.S.-only long-term assistant bol vyradený lokalitným/country gateom.
-- **Reddit:** aktuálne výsledky sú prevažne `[FOR HIRE]` alebo U.S.-only hiring.
+- **SupportYourApp — Remote E-Commerce Customer Support Consultant:** remote gate by prešiel, ale konkrétny verejný detail vyžaduje **C1 English v hovorení aj písaní** a skúsenosť s e-commerce supportom. Hard language reject.
+- **Wolt — Support Associate Bratislava:** lokalita je vhodná a po zaučení je možný HO, ale požaduje **minimálne B2 English**. Neaktivované.
+- **Websupport:** existujúci Customer Success Advisor je naďalej potvrdený priamo na firemnej kariére; nejde o nový lead.
+- **Worki:** Shield-Sk Administrátor e-shopu / zákaznícka podpora je explicitne obsadený/zrušený.
+- **Práca za rohom:** nález IZY VAPE je iba mirror už evidovaného Profesia inzerátu; žiadny nový nezávislý hit.
+- **Služby zamestnanosti:** dohľadaná BA administratíva za 400 €/mes. je staršia a hodnotovo nevyhovujúca.
+- **Pretlak:** CloseRocket Customer Success & UX Partner je BA onsite, ale role/jazyková náročnosť je vyššia než aktuálny profil; neaktivované.
+- **Upwork:** čerstvé worldwide výsledky zahŕňali WooCommerce build/maintenance za 5 USD, e-commerce VA za 50 USD, WP setup za 300 USD a remote admin/VA. Vyradené pre nízky budget, 20–50 proposals, hard-development alebo slabý risk/value profil; U.S.-only assistant vyradený country gateom.
+- **Reddit:** aktuálne výsledky prevažne `[FOR HIRE]`, nie hiring dopyty.
 - **Facebook:** **0 verified hits**. Prioritné WP/Woo/BA skupiny boli znovu kontrolované cez verejnú indexáciu; login/indexing limit zostáva, preto sa nič nepredstiera.
 
 ### Run summary
-- Families reálne skontrolované: **11**.
+- Reálne skontrolované zdrojové skupiny: **13**.
 - Nové aktívne položky: **0**.
-- Vyradené lokalitou/country eligibility: **2**.
-- Vyradené jazykovým/hard-skill gateom: **5**.
-- Vyradené ako slabé/nízka hodnota: **8**.
-- Duplikát / `[FOR HIRE]` / nevhodný typ leadu: **6**.
+- Vyradené lokalitou/country eligibility: **1**.
+- Vyradené jazykovým/hard-skill gateom: **6**.
+- Vyradené ako slabé/nízka hodnota: **7**.
+- Duplikát / `[FOR HIRE]` / nevhodný typ leadu: **5**.
 
 ### LIVE mix hlavného feedu
 - Posledný potvrdený stav: **28 aktívnych položiek**.
@@ -180,8 +183,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 79. CV/reaction variant outcome tracker.
 80. Application-cost / platform-credit guard.
 81. Hard-gate substitution search.
-82. **Claim-safe application evidence matrix — NOVÉ** — pred vytvorením CV alebo reakcie spojí každú významnú požiadavku ponuky s konkrétnym preukázaným dôkazom z MASTER profilu/projektov; požiadavky bez dôkazu sa označia ako `gap`, nie ako tvrdenie v CV. Prínos: menej prehnaných alebo neobhájiteľných tvrdení a vyššia dôveryhodnosť reakcií.
-83. **Daily application capacity scheduler — NOVÉ** — z TOP fronty vyberie realistický denný počet reakcií podľa Match, urgency, deadline, application friction a času potrebného na kvalitnú personalizáciu; namiesto 10 kariet `reagovať dnes` vytvorí napr. 3–5 skutočne vykonateľných priorít. Prínos: menej zahltenia a viac dokončených kvalitných reakcií.
+82. Claim-safe application evidence matrix.
+83. Daily application capacity scheduler.
+84. **Commute-adjusted opportunity value — NOVÉ** — spojí odmenu, pracovný čas, počet onsite dní, reálny čas dochádzky, palivo/parkovanie a prípadný HO do jednej porovnateľnej efektívnej hodinovej hodnoty. Prínos: dve podobne platené BA ponuky už nebudú hodnotené rovnako, ak jedna stojí výrazne viac času a peňazí na dochádzanie.
+85. **Application-channel conversion tracker — NOVÉ** — CRM bude oddelene sledovať reakcie, odpovede a pohovory podľa kanála podania (`direct email`, `company form`, `LinkedIn`, `Profesia`, `Upwork` a pod.) a pri rovnakom leade preferovať kanál s historicky vyššou úspešnosťou. Prínos: menej slepých reakcií a viac pohovorov z rovnakého času.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
