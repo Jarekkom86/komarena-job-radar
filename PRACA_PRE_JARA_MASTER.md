@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 28. 8. 2026 13:32 CEST
+Aktualizované: 28. 8. 2026 14:24 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -58,28 +58,28 @@ Aktualizované: 28. 8. 2026 13:32 CEST
 24. **LAST MILE — Operátor NOC / Hotline podpora — Match 82** — Ružinov; first-line support; mínus 6–8 €/h a B1 AJ.
 25. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 28. 8. 2026 13:32 CEST
-Reálne prehľadané zdrojové skupiny: **Profesia; direct company careers; LinkedIn Jobs; Brigada.sk; Worki.sk; Práca za rohom; Kariera/Služby zamestnanosti; Pretlak/tech-creative; StartupJobs/WordPress Jobs; Upwork; Freelancermap/Freelancer discovery; Reddit/WP komunity; Facebook verejná indexácia.**
+## SOURCE AUDIT — 28. 8. 2026 14:24 CEST
+Reálne prehľadané zdrojové skupiny: **Profesia; direct company careers; LinkedIn Jobs; Brigada.sk; Worki.sk; Práca za rohom; Kariera/Služby zamestnanosti; Pretlak/tech-creative; StartupJobs/WordPress Jobs; Upwork; Freelancermap/Freelancer a ďalšie freelance indexy; Reddit/WP komunity; Facebook verejná indexácia.**
 
 ### Výsledky tohto behu
 - **Nové položky do `jobs-data.json`: 0.** Feed zostal fail-closed; nič sa nepridalo iba kvôli počtu.
-- **VÚB — Digitálny agent/agentka, 100 % práca z domu, 1 480 €/mes.:** čerstvo indexované 28. 8. 2026 a lokalitne vhodné, ale bez jednoznačného konkrétneho canonical detailu a úplných jazykových/predajných požiadaviek ostáva v quarantine lane. citeturn529046search0turn552042search2
-- **3MON — IT & Operations Support:** čerstvá reindexácia existujúcej LIVE položky, nie nový lead. citeturn529046search13
-- **Würth — Back office specialist:** Bratislava, ale samotný názov aktuálneho detailu uvádza angličtinu a SAP ako nutné; hard-skill/language reject. citeturn552042search2
-- **Dexfinity — Junior WordPress Master:** Remote/Bratislava a obsahovo zaujímavé WordPress landing pages, ale C1 English a vysoká jazyková úroveň sú explicitná podmienka; neaktivované. citeturn821412search10
-- **LinkedIn support discovery:** KLARSTEIN Italy vyžaduje taliančinu; SupportYourApp vyžaduje fluent/B2 English; bez nového leadu vhodného pre A2 profil. citeturn105901search1turn105901search2turn105901search5
-- **Brigada.sk:** dnešná BA manipulačná brigáda 6 €/h prešla lokalitou, ale nie value/fit prahom; Dubnica sklad bol reject-distance. citeturn811980search0turn811980search1
-- **Upwork:** čerstvé worldwide WordPress leady boli hard-development, low-value alebo príliš konkurenčné. WordPress Site Speed ponúka 18–30 USD/h, ale vyžaduje PHP a má 20–50 proposals; WordPress Expert má 50+ proposals + PHP; WooCommerce Developer je len 5 USD fixed. citeturn333904search2turn333904search4turn333904search5
-- **Reddit:** najnovšie výsledky sú prevažne `[FOR HIRE]`, nie hiring dopyty; nový vhodný lead sa nepotvrdil. citeturn105901reddit84turn105901reddit86
+- **LinkedIn / Wolt Support Associate, Bratislava:** lokalita je vhodná a možný je HO po onboardingu, ale rola vyžaduje **minimálne B2 English** a večerné/víkendové smeny. Hard-language reject. citeturn409300search10
+- **Upwork — WooCommerce checkout/store support:** worldwide remote, ale len **20 USD fixed**, PHP je mandatory a konkurencia je 15–20 proposals. Hard-skill/value reject. citeturn409300search0
+- **Upwork — Designer needed to clean WordPress site:** dnešná zákazka je iba **30 USD**, má 10–15 proposals a už 1 hire; neprešla value/competition gateom. citeturn409300search2
+- **Upwork — eCommerce Virtual Assistant:** obsahovo sedí na e-commerce operatívu a je worldwide remote, ale budget je iba **50 USD fixed**; neprešla minimum-value prahom. citeturn409300search4
+- **Upwork — Remote IT Professional:** worldwide remote a tematicky zaujímavý Windows/AI support, ale 200 USD fixed, 20–50 proposals a požiadavka 3+ rokov IT support/system administration znižujú praktickú zhodu. citeturn409300search1
+- **Upwork — Hiring long term assistant:** menej než 5 proposals, ale je **U.S.-only**; `reject-distance/country eligibility`. citeturn409300search11
+- **Reddit:** dnešné WP/Woo výsledky sú `[FOR HIRE]` ponuky developerov, nie hiring dopyty; bez nového vhodného leadu. citeturn409300reddit132turn409300reddit136
 - **Facebook:** **0 verified hits**. Prioritné WP/Woo/BA skupiny boli znovu kontrolované verejnou indexáciou; login/indexing limit zostáva, preto sa nič nepredstiera.
+- **Ostatné slovenské a tech/creative zdroje:** vyhľadávanie bolo vykonané, ale nevrátilo nový plne overiteľný výsledok, ktorý by prešiel lokalitou, jazykom, hard-skill a value gateom.
 
 ### Run summary
 - Reálne skontrolované zdrojové skupiny: **13**.
 - Nové aktívne položky: **0**.
-- Vyradené lokalitou/country eligibility: **2**.
-- Vyradené jazykovým/hard-skill gateom: **8**.
-- Vyradené ako slabé/nízka hodnota: **6**.
-- Duplikát / `[FOR HIRE]` / nevhodný typ leadu: **5**.
+- Vyradené lokalitou/country eligibility: **1**.
+- Vyradené jazykovým/hard-skill gateom: **5**.
+- Vyradené ako slabé/nízka hodnota: **5**.
+- Duplikát / `[FOR HIRE]` / nevhodný typ leadu: **3**.
 
 ### LIVE mix hlavného feedu
 - Potvrdený stav: **28 aktívnych položiek**.
@@ -188,8 +188,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 85. **Application-channel conversion tracker** — sleduje odpovede a pohovory podľa kanála podania a pri rovnakom leade preferuje historicky úspešnejší kanál.
 86. **Employer legitimacy & reputation gate** — oddelene od `sourceTrust` overí samotného zamestnávateľa/klienta: konzistentnosť identity firmy, históriu kariérnych ponúk, verejnú stopu, podozrivé platobné alebo náborové signály a pri freelance aj vek/históriu klienta.
 87. **Duplicate application guard** — CRM pred otvorením reakcie skontroluje canonical role identity, firmu, názov pozície a už použité application channels, aby sa tá istá pozícia neposlala druhýkrát cez Profesia/LinkedIn/company form/mirror.
-88. **Income-start latency score — NOVÉ** — odhadne, kedy po reakcii môže reálne prísť prvý príjem: zohľadní plánovaný nástup, dĺžku výberu, neplatené školenie/skúšku, fakturačnú splatnosť pri živnosti/freelance a výplatný cyklus. Prínos: pri potrebe rýchleho príjmu vytiahne hore ponuky, ktoré začnú zarábať skôr, nie iba tie s vyššou nominálnou mzdou.
-89. **Phone-load compatibility flag — NOVÉ** — z dôkazov v inzeráte klasifikuje podiel telefonovania (`low / mixed / high / 90%+`) oddelene od všeobecného customer-support labelu. Prínos: rozlíši e-mail/chat/back-office support od rolí, ktoré sú v skutočnosti takmer celé call centrum, a zlepší praktickú zhodu aj reakčnú prioritu.
+88. **Income-start latency score** — odhadne, kedy po reakcii môže reálne prísť prvý príjem: zohľadní plánovaný nástup, dĺžku výberu, neplatené školenie/skúšku, fakturačnú splatnosť pri živnosti/freelance a výplatný cyklus.
+89. **Phone-load compatibility flag** — z dôkazov v inzeráte klasifikuje podiel telefonovania (`low / mixed / high / 90%+`) oddelene od všeobecného customer-support labelu.
+90. **Scope-to-pay mismatch detector — NOVÉ** — porovná šírku zodpovedností, požadovanú senioritu, pracovný čas a technický rozsah proti reálnej odmene. Praktický prínos: odfiltruje ponuky typu „WordPress + Shopify + webdev + leadgen + 6 dní týždenne“ za symbolický fixed budget ešte pred tým, než zaberú miesto v TOP alebo čas na reakciu.
+91. **Verification escalation queue — NOVÉ** — high-fit lead, ktorý je blokovaný iba jedným kritickým neznámym údajom (napr. AJ, remote-country eligibility, mzda alebo funkčný apply path), dostane cielené overenie canonical zdroja pred ďalším širokým discovery kolom. Praktický prínos: menej kvalitných ponúk zostane zbytočne v quarantine a čas sa nespotrebuje na opakované všeobecné vyhľadávanie.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
