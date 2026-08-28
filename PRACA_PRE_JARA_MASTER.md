@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 28. 8. 2026 19:19 CEST
+Aktualizované: 28. 8. 2026 20:31 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -60,35 +60,32 @@ Aktualizované: 28. 8. 2026 19:19 CEST
 26. **LAST MILE — Operátor NOC / Hotline podpora — Match 82** — Ružinov; first-line support; mínus 6–8 €/h a B1 AJ.
 27. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 28. 8. 2026 19:19 CEST
-Reálne prehľadané skupiny: **Profesia; direct company careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk/Služby zamestnanosti; Pretlak/WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.**
+## SOURCE AUDIT — 28. 8. 2026 20:31 CEST
+Reálne prehľadané skupiny: **Profesia; direct company careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Práca za rohom/Kariera.sk/Služby zamestnanosti; Pretlak/WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.**
 
 ### Výsledky tohto behu
-- **Nové aktívne položky do `jobs-data.json`: 0.** Žiadny nový kandidát neprešiel súčasne fit, hard-skill/language, BA/remote a value gateom. Existujúci feed sa kvôli tomu bezpečne nemenil.
-- **Websupport Customer Success Advisor:** znovu priamo potvrdený na firemnej kariére — Bratislava, TPP, 1 260 €/mes. + variabilná zložka; už je v LIVE feede, nejde o nový prírastok. citeturn310469search2
-- **LinkedIn — Wolt Support Associate:** Bratislava, ale minimum **B2 English**; hard-language reject. citeturn375201search12
-- **LinkedIn — Foxelli Crochet Customer Support:** 100 % remote a Slovakia-eligible, ale špecializovaný crochet/customer-support profil s vyšším komunikačným a doménovým rizikom; neprebil existujúce priority. citeturn375201search13
-- **Upwork — Virtual Assistant Full time:** worldwide remote a UK hours, ale vyžaduje strong spoken/written English a pravidelnú klientsku komunikáciu; jazykový risk. citeturn375201search1
-- **Upwork — WooCommerce leady:** čerstvé výsledky majú mandatory PHP/hard development, 20–50 alebo 50+ proposals, prípadne 30–35 USD fixed budget; hard-dev alebo value/competition reject. citeturn375201search0turn375201search2turn375201search3turn375201search4
-- **Kariera/Služby zamestnanosti — CCI Slovakia:** BA customer center, ale 6+ rokov praxe a neprimerane vysoký education gate; reject. citeturn523513search0
-- **Kariera/Služby zamestnanosti — Dotypos customer service:** BA, 1 500 €/mes., ale B1–B2 English; neprebil už evidovaný Dotypos tech support ani aktuálne priority. citeturn541100search0
-- **Služby zamestnanosti — Naturzon e-shop support:** obsahovo zaujímavé, ale onsite Poprad bez overeného remote; `reject-distance`. citeturn320332search0
-- **Worki.sk / Brigada.sk:** BA/admin/e-shop/IT discovery skontrolované; bez nového winnera nad fit/value thresholdom.
-- **Pretlak/WordPress Jobs:** bez nového Slovakia-eligible non-hard-dev leadu s primeranou hodnotou nad existujúcimi prioritami.
-- **Reddit:** aktuálne výsledky sú prevažne `[FOR HIRE]` ponuky freelancerov, nie hiring dopyty; bez nového vhodného verified leada. citeturn375201reddit108
-- **Facebook:** **0 verified hits**. Verejná indexácia neposkytla stabilný konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited`, nič sa nepredstiera. citeturn320332search1
+- **Nové aktívne položky do `jobs-data.json`: 0.** Žiadny nový kandidát neprešiel súčasne fit, hard-skill/language, BA/remote a value gateom; fail-closed preto správne zachoval existujúci feed.
+- **Powerlogy — Marketing Specialist:** Bratislava/hybrid, od 1 600 €, silný e-shop/WooCommerce/AI-content fit, ale detail výslovne požaduje slovenčinu aj angličtinu na veľmi dobrej úrovni. Preto language reject napriek veľmi dobrej obsahovej zhode. citeturn329058view0
+- **Upwork — WordPress Webmaster:** worldwide remote, ale fluent English, US business hours a PHP; reject pre jazyk + schedule/hard-skill. citeturn536082search1
+- **Upwork — WordPress Site Speed Optimization:** worldwide remote, 18–30 USD/h, ale mandatory PHP a 20–50 proposals; hard-dev/competition reject. citeturn536082search2
+- **Upwork — Small Agency WordPress maintenance:** worldwide remote a reálna maintenance náplň, ale 5–9 USD/h a technický scope zahŕňa PHP/security/hosting; value/hard-skill reject. citeturn536082search3
+- **Upwork — WooCommerce Assistant:** stále veľmi silný existujúci lead; pri poslednom dôkaze <5 proposals a skúsený klient. Je už v LIVE, preto sa nepridával duplicitne. citeturn536082search4
+- **Worki.sk:** dnešné TOP admin výsledky boli prevažne finančno-obchodné alebo jazykovo špecifické; existujúci RM Biznis servis ostáva v LIVE, bez nového winnera. citeturn995662search13
+- **Pretlak — CloseRocket Customer Success & UX Partner:** BA/onsite je lokalitne prípustný, ale predchádzajúci overený detail niesol fluent-English risk; bez nového dôkazu o zmene podmienok sa neaktivuje. citeturn995662search5
+- **Reddit:** čerstvé indexované výsledky sú prevažne `[FOR HIRE]` ponuky freelancerov alebo staršie hiring posty, nie nový relevantný hiring dopyt. citeturn536082reddit139turn536082reddit140
+- **Facebook:** **0 verified hits**. Verejná indexácia neposkytla stabilný konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited`, nič sa nepredstiera.
 
 ### Run summary
 - Reálne skontrolované zdrojové skupiny: **10**.
 - Nové aktívne položky: **0**.
-- Vyradené lokalitou: **1**.
+- Vyradené lokalitou: **0**.
 - Quarantine pre nejasnú remote-country eligibility: **0**.
 - Vyradené jazykovým/hard-skill gateom: **5**.
-- Vyradené ako slabé/nízka hodnota: **5**.
+- Vyradené ako slabé/nízka hodnota: **4**.
 - `[FOR HIRE]` / nevhodný typ leadu / duplicita: **3**.
 
 ### LIVE mix hlavného feedu
-Feed sa v tomto behu nemenil. Posledný potvrdený mix ostáva pod 60 % Profesia a non‑Profesia discovery zostáva povinná priorita.
+Feed sa v tomto behu nemenil. Non-Profesia discovery zostáva povinná priorita a existujúce kvalitné položky sa nemažú kvôli percentám.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -200,8 +197,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 97. **Application reuse cluster** — zoskupí podobné roly a pripraví spoločný claim-safe základ CV/argumentov, ktorý sa následne cielene upraví pre konkrétnu firmu.
 98. **Compensation evidence confidence band** — oddelí garantovaný základ, variabilnú zložku, odhadovanú/marketingovú sumu a neistotu; porovnávanie ponúk tak nebude nadhodnocovať role s nejasnými bonusmi alebo placeholder budgetom.
 99. **Application prerequisite completeness check** — pred `Reagovať dnes` skontroluje povinné CV, portfolio, odpovede na screening otázky, praktickú úlohu, platform credits a ďalšie vstupy; výsledkom bude reálny čas do odoslania a blokátor namiesto falošnej okamžitej priority.
-100. **Contract-form net-value normalizer — NOVÉ** — prevedie TPP, dohodu, živnosť a freelance na porovnateľnú odhadovanú čistú hodnotu po zohľadnení odvodov, daní, neplatenej dovolenky, plateného voľna a základných benefitov; výsledok bude interval s neistotou, nie falošne presné číslo.
-101. **Trainable-gap cost estimator — NOVÉ** — pri near-fit ponuke oddelí malú doučiteľnú medzeru (napr. konkrétny CRM/nástroj alebo proces) od hard blockeru a odhadne čas prípravy potrebný pred reakciou; cieľom je investovať pár hodín iba tam, kde to reálne zvýši šancu, bez predstierania už nadobudnutej zručnosti.
+100. **Contract-form net-value normalizer** — prevedie TPP, dohodu, živnosť a freelance na porovnateľnú odhadovanú čistú hodnotu po zohľadnení odvodov, daní, neplatenej dovolenky, plateného voľna a základných benefitov; výsledok bude interval s neistotou, nie falošne presné číslo.
+101. **Trainable-gap cost estimator** — pri near-fit ponuke oddelí malú doučiteľnú medzeru od hard blockeru a odhadne čas prípravy potrebný pred reakciou.
+102. **Market-relative compensation percentile — NOVÉ** — porovná garantovanú odmenu každej role s aktuálnym mediánom podobných BA/remote rolí podľa tracku a typu kontraktu; nízko platené ponuky s veľkým scope sa automaticky posunú nižšie aj vtedy, keď majú vysoký obsahový Match.
+103. **Employer multi-application concentration guard — NOVÉ** — pred ďalšou reakciou na inú pozíciu v tej istej firme skontroluje už odoslané/rozpracované žiadosti, odporučí jednu najsilnejšiu rolu a zabráni scattershot aplikáciám, ktoré môžu znižovať dôveryhodnosť kandidáta.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
