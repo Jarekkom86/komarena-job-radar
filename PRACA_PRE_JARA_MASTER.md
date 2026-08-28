@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 29. 8. 2026 00:27 CEST
+Aktualizované: 29. 8. 2026 01:35 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -62,31 +62,33 @@ Aktualizované: 29. 8. 2026 00:27 CEST
 28. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 29. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 29. 8. 2026 00:27 CEST — LATEST
-Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; direct company careers; Worki.sk; Brigada.sk; Služby zamestnanosti; Pretlak; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu 10+ nezávislých source families, minimálne 5 mimo Profesia.
+## SOURCE AUDIT — 29. 8. 2026 01:35 CEST — LATEST
+Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; direct company careers; Worki.sk; Brigada.sk; Služby zamestnanosti; Pretlak; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu 10 nezávislých source families, minimálne 5 mimo Profesia.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky do `jobs-data.json`: 0.** Feed zostáva fail-closed a `updatedAt` sa neposúval umelo.
-- **Foxelli Group — Customer Support & Sales Agent | E-commerce | Remote:** 100 % remote, Slovensko je explicitne povolené, ale rola má silný phone/sales charakter a možný režim 00:00–08:00 Lithuania time; schedule/sales compatibility ju drží pod existujúcimi prioritami.
-- **ESET — Global eCommerce Business Analyst:** Bratislava a čerstvá rola, ale ide o globálnu e-commerce business analytiku s komplexným scope a vyššou pravdepodobnosťou jazykového/hard-skill nároku; bez dôvodu prebiť aktuálne TOP.
-- **Klarstein — Customer Support for Italy:** BA alebo remote zo Slovenska, ale taliansky jazyk je jadrom roly; language reject.
-- **Pretlak — CloseRocket Customer Success & UX Partner:** BA, 1 500–2 100 €, obsahovo zaujímavé, ale fluent English z predchádzajúceho overenia ostáva hard gate.
-- **Služby zamestnanosti:** aktuálne dohľadateľné výsledky v cieľovej IT oblasti smerujú na hard software development/backend/API; hard-skill reject.
-- **WordPress Jobs / Upwork:** bez nového Slovakia-eligible non-hard-dev leadu, ktorý by mal lepšiu hodnotu než existujúce remote WP/Woo položky.
-- **Reddit / r/wordpressjobs:** čerstvé indexované výsledky sú prevažne `[FOR HIRE]`; starší WooCommerce/WordPress VA hiring lead je z februára a iba 2–4 USD/h, preto freshness/value reject.
+- **Nové aktívne položky do `jobs-data.json`: 0.** Feed zostal fail-closed a `updatedAt` sa neposunul umelo.
+- **Wolt — Support Associate FT/PT, Bratislava:** čerstvá a lokalitou vhodná podpora, ale minimum **B2 English** je tvrdý jazykový reject.
+- **Kanadevia Inova — Assistant, Petržalka:** lokalita a administratíva sedia, ale vyžaduje **fluent business English + min. 3 roky relevantnej admin/project support praxe**; hard language/experience reject.
+- **Insignia — Customer Service / Operations, Bratislava:** advanced/fluent English + zmenovosť; language/schedule reject.
+- **Profesia — AYURCOS odborný predajca, Bratislava:** zverejnené 29.8., ale 1 000 €/mes. a retail scope sú pod value/role-fit prahom.
+- **Worki:** existujúci RM Biznis servis je stále aktívny; Shield-Sk e-shop admin je už obsadený/zrušený.
+- **Brigada.sk:** aktuálne BA výsledky prevažne gastro/retail; Levice/Piešťany onsite výsledky odmietnuté lokalitným gateom.
+- **Upwork:** čerstvé WordPress tasky sú prevažne 30–35 USD fixed alebo 5–50 USD tasky s 10–50 proposals. Hodnota/konkurencia/scope neprekonáva existujúce LIVE WP/Woo leady.
+- **Reddit / r/wordpressjobs:** čerstvé výsledky sú prevažne `[FOR HIRE]`; bez nového overeného HIRING winnera.
 - **Facebook:** **0 verified hits**. Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited`, nič sa nepredstiera.
 
 ### Run summary
 - Reálne skontrolované zdrojové skupiny: **10**.
 - Nové aktívne položky: **0**.
 - Vyradené jazykovým/hard-skill gateom: **4**.
-- Vyradené ako slabé/nízka hodnota: **3**.
+- Vyradené ako slabé/nízka hodnota: **5**.
 - Duplicitné/existing/nevhodný typ leadu: **4**.
-- Vyradené pre nedostatočný freshness/value dôkaz: **1**.
+- Vyradené pre nedostatočný freshness/evidence dôkaz: **2**.
 
 ### LIVE mix
-- Hlavný feed ostáva na poslednom úspešnom dátovom stave z 28. 8. 2026 22:14; nebol umelo menený.
-- Non-Profesia discovery zostáva povinná a kvalitný non-Profesia lead má prednosť pred slabým kvótovým výsledkom.
+- Aktívny feed: **29 položiek**.
+- Odhadovaný source mix podľa aktuálneho feedu: **Profesia ~44,8 % / mimo Profesia ~55,2 %**.
+- Hlavný `jobs-data.json` ostáva na poslednom úspešnom dátovom stave z 28. 8. 2026 22:14; tento beh ho bez obsahovej zmeny neprepisoval.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -206,10 +208,12 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 105. Schedule-premium / weekend burden normalizer.
 106. Workload-intensity extractor.
 107. Remote workplace & privacy burden flag.
-108. **Zero-hit reason classifier** — pri každom zdroji rozlíši `no-results`, `all-rejected`, `duplicate-only`, `access-blocked`, `parser-degraded` a `query-mismatch`, aby nula nevyzerala rovnako pri skutočne prázdnom trhu aj pri technicky nefunkčnom zbere.
-109. **Role-family source blind-spot matrix** — vedie maticu `source family × cieľový smer` (WP/e-commerce, tech/IoT, admin, driver, warehouse) a označí, ktoré kombinácie boli v behu skutočne prehľadané; zabráni tomu, aby „10 rodín skontrolovaných“ zakrylo dieru napr. v WordPress alebo vodičskom lane.
-110. **Duty-mix decomposition — NOVÉ** — rozdelí text roly na odhadovaný podiel cieľovej práce (e-commerce/admin/tech/support) a penalizovaných činností (cold sales, telefonovanie, heavy physical, hard development). Match sa potom neoprie iba o pár správnych kľúčových slov, ak väčšina reálnej náplne patrí mimo preferovaný smer.
-111. **Same-role repost churn-risk signal — NOVÉ** — sleduje opakované zverejňovanie tej istej alebo veľmi podobnej pozície jedným zamestnávateľom v čase. Časté opakované nábory označí ako možný churn/retention risk a oddelí ich od legitímneho rastu firmy pomocou počtu paralelných otvorených rolí a hiring-activity kontextu.
+108. **Zero-hit reason classifier** — rozlíši `no-results`, `all-rejected`, `duplicate-only`, `access-blocked`, `parser-degraded` a `query-mismatch`.
+109. **Role-family source blind-spot matrix** — vedie maticu `source family × cieľový smer`, aby počet skontrolovaných zdrojov nezakryl dieru v konkrétnom lane.
+110. **Duty-mix decomposition** — odhadne podiel cieľovej práce vs. cold sales/telefonovanie/heavy physical/hard development a upraví Match podľa reálnej náplne.
+111. **Same-role repost churn-risk signal** — sleduje opakované zverejňovanie rovnakej roly jedným zamestnávateľom ako možný retention/churn risk.
+112. **Search-depth coverage quota — NOVÉ** — každý zdroj dostane rotujúcu povinnosť kontrolovať nielen top výsledky/prvú stránku, ale aj hlbšiu vzorku výsledkov a alternatívne zoradenie. Cieľ: znížiť ranking bias portálu a nájsť menšie firmy alebo čerstvé ponuky, ktoré nie sú v top SERP.
+113. **Search-index staleness detector — NOVÉ** — vedie fingerprint výsledkov, `publishedAt`, `crawledAt` a opakované rovnaké SERP položky. Ak vyhľadávač vracia starý cache bez nových dát, zdroj sa označí `index-stale` namiesto falošného `checked/no-results` a zber prejde na direct-site alebo alternatívny query path.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
