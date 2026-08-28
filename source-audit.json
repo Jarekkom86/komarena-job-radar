@@ -1,27 +1,26 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T17:12:47+02:00",
+  "updatedAt": "2026-08-28T17:29:20+02:00",
   "runSummary": {
-    "familiesChecked": 11,
-    "newActiveJobs": 1,
-    "rejectedByLocation": 2,
-    "quarantinedUnknownLocation": 1,
-    "rejectedByLanguageOrHardSkill": 10,
+    "familiesChecked": 10,
+    "newActiveJobs": 0,
+    "rejectedByLocation": 3,
+    "quarantinedUnknownLocation": 0,
+    "rejectedByLanguageOrHardSkill": 4,
     "rejectedAsWeakOrLowValue": 5,
-    "duplicateOrForHire": 4,
-    "note": "Hodinový refresh 28. 8. 2026 o 17:12 CEST reálne skontroloval Profesia, direct company careers, LinkedIn, Worki, Brigada.sk, Kariera/Služby zamestnanosti, Pretlak/GROWNi/StartupJobs, WordPress Jobs, Upwork, Reddit/WP komunity a verejne dostupný Facebook index. Nový vhodný prioritný lead: VÚB Digitálny agent/agentka, 100 % home office, 1 480 €/mes., vhodné od SŠ s maturitou, bez uvedenej cudzojazyčnej hard podmienky; práca je zmenová, ale bez nočných služieb, s občasnou pracovnou cestou do Popradu alebo Banskej Bystrice. Nové dnešné výsledky Commander HR reporting/AI boli zamietnuté pre VŠ II. stupňa + 2 roky HR praxe + B1 AJ; Würth back office pre mandatory SAP + stredne pokročilú AJ; Bubulákovo e-shop support pre onsite Šaľu. Foxelli remote e-commerce support je Slovakia-eligible, ale medzinárodná rola a časové okno/komunikačná náročnosť znižujú praktický fit oproti existujúcim prioritám. Facebook WooCommerce SK+CZ ostáva blokovaný login/temporary block; 0 verified hits."
+    "duplicateOrForHire": 2,
+    "note": "Refresh 28. 8. 2026 17:29 CEST reálne skontroloval Profesia, direct company careers, LinkedIn, Worki, Brigada.sk, Pretlak/WordPress Jobs, Upwork, Reddit/WP komunity a verejne indexovaný Facebook. Žiadny nový lead neprešiel súčasne BA/remote, jazykovým, hard-skill a value gateom tak, aby bezpečne prebil existujúce LIVE priority. Čerstvé Upwork WordPress leady boli worldwide remote, ale prevažne 30–35 USD fixed s 10–50 proposals alebo hard PHP scope. Wolt Bratislava stále vyžaduje minimum B2 English. Worki e-shop výsledky boli buď obsadené/zrušené alebo mimo BA bez overeného remote režimu. Brigada.sk priniesla BA gastro a vzdialené onsite brigády, ale nič profilovo silné. Reddit výsledky boli prevažne FOR HIRE posty. Facebook verejná indexácia neposkytla žiadny konkrétny overiteľný hiring post; 0 verified hits."
   },
   "sources": [
-    {"name":"Profesia / Práca za rohom","family":"profesia","status":"ok","hits":1,"note":"Reálne prehľadané nové BA/remote e-commerce, administratíva, customer support a IT výsledky. Pridaný VÚB Digitálny agent/agentka: 100 % home office, 1 480 €/mes., SŠ s maturitou stačí, firma zaškoľuje, bez explicitnej cudzojazyčnej podmienky; zmeny bez nočnej služby. Commander HR AI/reporting zamietnutý pre VŠ II. stupňa + 2 roky HR praxe + B1 AJ; Würth back office pre SAP + stredne pokročilú AJ; Bubulákovo pre onsite Šaľu."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"ok","hits":0,"note":"Existujúce priame firemné priority Websupport, O2, Hilti a Penta ostávajú relevantné. Bez nového priameho firemného leadu, ktorý by prešiel profilovým gateom."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Skontrolované BA a Slovakia-remote support/e-commerce výsledky. Foxelli Customer Support & Sales Agent je 100 % remote a Slovakia-eligible, ale medzinárodná komunikačná rola s nevhodným časovým oknom/prevádzkou neprebila existujúce priority. Wolt/SupportYourApp zostávajú jazykovo náročnejšie."},
-    {"name":"Worki.sk","family":"other","status":"checked","hits":0,"note":"BA/online administratíva, e-shop a IT discovery vykonané; bez nového plne overeného leadu nad existujúcim RM Biznis servis výsledkom."},
-    {"name":"Brigada.sk","family":"other","status":"checked","hits":0,"note":"BA administratíva/e-shop/IT/AI brigády prehľadané; bez nového výsledku, ktorý by prešiel fit/value gateom."},
-    {"name":"Kariera.sk / Služby zamestnanosti","family":"government","status":"checked","hits":0,"note":"Aktuálne BA administratívne a support výsledky boli skontrolované; bez nového kandidáta nad existujúcimi LIVE prioritami."},
-    {"name":"Pretlak / GROWNi / StartupJobs","family":"other","status":"checked","hits":0,"note":"GROWNi aktuálny zoznam a Pretlak boli skontrolované. Staršie/testovacie alebo profilovo nevhodné ponuky sa nepridávali. StartupJobs BeiT ostáva locationEligibility=unknown pre výkon zo Slovenska."},
-    {"name":"WordPress Jobs","family":"other","status":"checked","hits":0,"note":"Bez nového jednoznačne Slovakia-eligible non-hard-dev WordPress/WooCommerce leadu s primeranou hodnotou."},
-    {"name":"Upwork","family":"freelance","status":"checked","hits":0,"note":"Čerstvé worldwide WordPress/WooCommerce výsledky skontrolované; nič nové neprebilo existujúce WooCommerce/AI assistant leady po value, English a hard-dev gate."},
-    {"name":"Reddit / verejné WP komunity","family":"community","status":"checked","hits":0,"note":"Bez nového verified hiring dopytu s primeraným rozpočtom; prevažujú [FOR HIRE] posty alebo nízka hodnota."},
-    {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"blocked","hits":0,"note":"Verejný stabilný prístup ostáva blokovaný login/temporary block. 0 verified hits; nič sa nepredstiera. Autentizovaný Nexus/local ingestion zostáva backlog priorita."}
+    {"name":"Profesia / Práca za rohom","family":"profesia","status":"checked","hits":0,"note":"Dnešné BA/admin/support discovery bolo reálne skontrolované. Nový výsledok Obec Hrádok bol mimo BA a navyše nízko platený; ostatné dnešné výsledky neprebili existujúce LIVE priority."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Direct career discovery pre BA support/e-commerce/operations vykonané; bez nového silného kandidáta nad existujúcimi Hilti, Penta, Websupport, O2 a LAST MILE položkami."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"BA/Slovakia-remote support/e-commerce discovery vykonané. Wolt Support Associate v Bratislave stále vyžaduje minimum B2 English; hard-language reject."},
+    {"name":"Worki.sk","family":"other","status":"checked","hits":0,"note":"E-shop/admin/support výsledky skontrolované. Shield-Sk a Daffer sú už obsadené/zrušené; Bánovce nad Bebravou je mimo BA a vyžaduje aktívny EN/DE; RM Biznis servis ostáva existujúci relevantný LIVE lead."},
+    {"name":"Brigada.sk","family":"other","status":"checked","hits":0,"note":"BA a okolie discovery vykonané. Čerstvé výsledky boli prevažne gastro/obsluha alebo vzdialené onsite brigády (napr. Levice), nie profilovo vhodný web/admin/tech lead."},
+    {"name":"Pretlak / WordPress Jobs","family":"other","status":"checked","hits":0,"note":"Tech/creative a WordPress discovery vykonané; bez nového Slovakia-eligible non-hard-dev kandidáta s primeranou hodnotou nad existujúcimi LIVE prioritami."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":0,"note":"Čerstvé worldwide remote WordPress/WooCommerce leady reálne skontrolované. Designer cleanup WooCommerce/Product/Checkout = 30 USD fixed, 10–15 proposals; WordPress quick mobile fix = 35 USD fixed, 20–50 proposals; ďalšie leady mali 5–20 USD fixed alebo hard PHP/server scope. Bez nového LIVE winnera."},
+    {"name":"Reddit / verejné WP komunity","family":"community","status":"checked","hits":0,"note":"Aktuálne výsledky boli prevažne FOR HIRE ponuky freelancerov, nie konkrétne hiring dopyty. 0 verified suitable hiring hits."},
+    {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia neposkytla stabilný konkrétny aktuálny hiring post s priamym overiteľným linkom. 0 verified hits; nič sa nepredstiera. Autentizovaný Nexus/local ingestion zostáva backlog priorita."},
+    {"name":"Cross-source direct/public web discovery","family":"other","status":"checked","hits":0,"note":"Doplnkové BA/remote company a public-index vyhľadávanie vykonané na zachytenie výsledkov mimo hlavných boardov; bez nového kandidáta nad minimálnym opportunity thresholdom."}
   ]
 }
