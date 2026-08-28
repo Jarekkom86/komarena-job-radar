@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-28T09:00:00+02:00",
+  "policyVersion": "2026-08-28.1",
+  "activeFeedEligibility": {
+    "allowedLocationEligibility": ["ba-area", "remote-ok"],
+    "quarantineLocationEligibility": ["unknown"],
+    "rejectedLocationEligibility": ["reject-distance"],
+    "missingLocationEligibilityAction": "quarantine",
+    "missingLocationReasonAction": "quarantine",
+    "rule": "Active feed is Bratislava/nearby only, unless the role is genuinely remote/home-office and can be performed from Slovakia without regular commuting to a distant city."
+  },
+  "remoteEvidence": {
+    "remoteOkRequires": [
+      "explicit remote/home-office evidence",
+      "Slovakia or worldwide/eligible-country evidence",
+      "no mandatory regular commute to a distant worksite"
+    ],
+    "ambiguousRemoteAction": "quarantine",
+    "distantHybridAction": "reject-distance",
+    "countryRestrictionUnknownAction": "quarantine"
+  },
+  "baArea": {
+    "mode": "allowlist-plus-manual-review",
+    "knownEligiblePlaces": [
+      "Bratislava", "Petržalka", "Ružinov", "Nové Mesto", "Rača", "Dúbravka", "Karlova Ves", "Devínska Nová Ves",
+      "Senec", "Ivanka pri Dunaji", "Bernolákovo", "Most pri Bratislave", "Rovinka", "Dunajská Lužná", "Miloslavov",
+      "Chorvátsky Grob", "Pezinok", "Malacky"
+    ],
+    "unknownPlaceAction": "manual-review"
+  },
+  "requiredFieldsForNewActiveJobs": [
+    "id", "title", "company", "location", "url", "source", "sourceType", "sourceTrust", "verifiedAt", "scoreConfidence",
+    "locationEligibility", "locationReason"
+  ],
+  "failClosed": {
+    "doNotAutoDeleteLegacyJobs": true,
+    "doNotActivateUnknownEligibility": true,
+    "doNotAssumeRemoteFromTitleOnly": true,
+    "doNotAssumeSlovakiaEligibilityFromWorldwideMarketingTextWithoutDetailEvidence": true
+  }
+}
