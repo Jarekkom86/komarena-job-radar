@@ -1,26 +1,26 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T20:15:44+02:00",
+  "updatedAt": "2026-08-28T20:31:38+02:00",
   "runSummary": {
-    "familiesChecked": 9,
+    "familiesChecked": 10,
     "newActiveJobs": 0,
-    "rejectedByLocation": 1,
+    "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
-    "rejectedByLanguageOrHardSkill": 4,
-    "rejectedAsWeakOrLowValue": 5,
-    "duplicateOrForHire": 2,
-    "note": "Refresh 28. 8. 2026 o 20:15 reálne skontroloval Profesia, LinkedIn, firemné kariérne stránky, Worki, Brigada.sk, Kariera.sk, Pretlak, Upwork a verejné Reddit/WP výsledky. Nevznikol nový prioritný winner nad existujúcim feedom. VÚB Digitálny agent zostáva aktívny na Profesia a 3MON IT & Operations Support je znovu potvrdený ako aktuálna BA/hybrid ponuka za 2 000 EUR. PARTNERS Junior IT Projekt Manager bol vyradený pre tvrdý gate VŠ + 2 roky IT praxe a B2 AJ v texte požiadaviek. KOOPERATIVA Špecialista online predaja je zaujímavý e-commerce lead, ale vyžaduje VŠ I. stupňa, 3 roky relevantnej produktovej praxe, CRO/backlog/product-owner kompetencie; preto neprebil súčasné priority. Foxelli remote e-commerce support je Slovakia-eligible, ale vyžaduje fluent/near-native spoken English, nočný režim 00:00-08:00 LT a fixed service fee do 800 EUR po zdanení. Upwork priniesol čerstvé WordPress/VA leady, ale buď majú mandatory PHP, strong English, nízky fixed budget alebo vysokú konkurenciu. Brigada.sk našla flexibilné finančno-obchodné ponuky a Lozorno sklad za 6,50 EUR/h, no bez lepšieho fit/value. Kariera.sk priniesla Junior DevOps Slovak Telekom, ale ide o developerský/DevOps smer mimo aktuálneho low-code/support gate. Websupport Customer Success bol znovu potvrdený na priamom firemnom detaile."
+    "rejectedByLanguageOrHardSkill": 5,
+    "rejectedAsWeakOrLowValue": 4,
+    "duplicateOrForHire": 3,
+    "note": "Refresh 28. 8. 2026 o 20:31 reálne skontroloval Profesia, priame firemné kariéry, LinkedIn, Worki, Brigada.sk, Práca za rohom/Kariera/Služby zamestnanosti, Pretlak/WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejnú Facebook indexáciu. Nevznikol nový lead, ktorý by bezpečne prebil existujúci LIVE TOP. Powerlogy Marketing Specialist je obsahovo veľmi blízky e-commerce/WooCommerce profilu, ale detail výslovne žiada slovenčinu aj angličtinu na veľmi dobrej úrovni, preto bol vyradený language gateom. CloseRocket Customer Success & UX Partner je BA/onsite a zaujímavý AI/SaaS smer, ale predchádzajúci overený detail vyžaduje fluent English; bez nového dôkazu o zmene podmienok sa neaktivuje. Upwork priniesol čerstvé worldwide WordPress/WooCommerce leady, no Webmaster vyžaduje fluent English + US hours + PHP, speed optimization mandatory PHP a 20–50 proposals, small-agency maintenance má 5–9 USD/h a technický scope nad low-code gate. Existujúci WooCommerce Assistant zostáva potvrdený ako silný duplicate/existing lead: worldwide remote, <5 proposals pri poslednom dôkaze a skúsený klient; nepridával sa duplicitne. Worki dnešné TOP výsledky boli prevažne finančno-obchodné alebo s cudzím jazykom; bez nového winnera. Reddit výsledky sú prevažne FOR HIRE, nie hiring dopyty. Facebook stále 0 verified hits a limited coverage."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":2,"note":"Znovu potvrdené VÚB Digitálny agent (100 % home office, 1 480 EUR) a 3MON IT & Operations Support (Bratislava/hybrid, 2 000 EUR). PARTNERS Junior IT Projekt Manager reject: VŠ + 2 roky IT praxe + B2 AJ. KOOPERATIVA online predaj reject: VŠ I., 3 roky product/e-commerce praxe, CRO/backlog/product-owner profil."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"ok","hits":1,"note":"Websupport Customer Success Advisor znovu potvrdený na priamom detaile: Bratislava, TPP, 1 260 EUR + variabilná zložka; už je v LIVE feede."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Foxelli Customer Support & Sales Agent je 100 % remote a Slovakia-eligible, ale vyžaduje fluent/near-native spoken English, nočný pracovný blok a odmenu do 800 EUR po zdanení; hard-language/value reject. PARTNERS duplicate detail potvrdil VŠ/prax/AJ gate."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"note":"BA administratíva/e-shop/IT discovery bez nového overeného winnera nad aktuálnym fit/value thresholdom."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"note":"Aktuálne nájdené finančno-obchodné flexibilné ponuky a sklad Lozorno 6,50 EUR/h; bez lepšej zhody než existujúce brigády a bez nového prioritného winnera."},
-    {"name":"Kariera.sk / Služby zamestnanosti","family":"government-other","status":"checked","hits":0,"note":"Junior DevOps Slovak Telekom je aktuálny, ale smeruje do DevOps/software engineeringu a vyžaduje technické základy nad aktuálny support/low-code gate. Bez nového bezpečného winnera."},
-    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového Slovakia-eligible non-hard-dev leadu s lepším fit/value než existujúce OVB/WordPress/e-commerce priority."},
-    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":0,"note":"Čerstvé worldwide leady: WordPress Theme + WPML vyžaduje PHP; VA UK-hours vyžaduje strong spoken/written English; WP/Woo dizajn má nízky fixed budget; eCommerce VA má 10-15 proposals a nízky fixed budget. Bez nového LIVE winnera."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Aktuálny verejný výsledok je [FOR HIRE] ponuka freelancera, nie hiring dopyt; nič vhodné do LIVE feedu."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"V tomto behu nebol získaný stabilný konkrétny verejne overiteľný hiring post s priamym linkom; coverage ostáva limited a nič sa nepredstiera."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"BA/remote e-commerce, admin, support a tech discovery skontrolované. Žiadny nový lead nad aktuálnym TOP; existujúce čerstvé VÚB/Energohub/3MON zostávajú v LIVE feede."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Priame company-career discovery pre BA/support/e-commerce skontrolované; bez nového canonical direct-source winnera v tomto behu."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"BA e-commerce/support/operations discovery bez nového overeného kandidáta, ktorý by prešiel language/hard-skill/value gateom."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"note":"Dnešné TOP admin výsledky zahŕňali najmä finančno-obchodné roly alebo jazykovo špecifické remote pozície; existujúci RM Biznis servis zostáva v LIVE, bez nového winnera."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"note":"BA brigády/admin/e-shop discovery skontrolované; bez nového výsledku s lepším fit/value než existujúce možnosti."},
+    {"name":"Práca za rohom / Kariera / Služby zamestnanosti","family":"government-other","status":"checked","hits":0,"note":"Discovery skontrolované; Profesia mirrory sa nepočítali ako nezávislé source hits. Bez nového kandidáta, ktorý by prešiel lokalitným, jazykovým a hard-skill gateom."},
+    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"Powerlogy Marketing Specialist: Bratislava/hybrid, WooCommerce/e-shop/AI obsah a od 1 600 EUR, ale požaduje slovenčinu aj angličtinu na veľmi dobrej úrovni; language reject. CloseRocket zostáva neaktívny pre fluent-English risk. Bez nového LIVE winnera."},
+    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":0,"note":"WordPress Webmaster vyžaduje fluent English, US business hours a PHP; Site Speed Optimization mandatory PHP + 20–50 proposals; Small Agency maintenance 5–9 USD/h a technický scope nad low-code gate. Existujúci WooCommerce Assistant je duplicate/existing lead a ostáva aktívny, bez nového zápisu."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Aktuálne indexované výsledky sú prevažne FOR HIRE ponuky freelancerov alebo staršie hiring posty; nič nové vhodné do LIVE feedu."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia neposkytla stabilný konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva limited a nič sa nepredstiera."}
   ]
 }
