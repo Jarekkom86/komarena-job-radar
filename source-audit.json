@@ -1,22 +1,26 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T18:13:18+02:00",
+  "updatedAt": "2026-08-28T18:36:41+02:00",
   "runSummary": {
-    "familiesChecked": 6,
+    "familiesChecked": 10,
     "newActiveJobs": 0,
     "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
     "rejectedByLanguageOrHardSkill": 3,
-    "rejectedAsWeakOrLowValue": 2,
-    "duplicateOrForHire": 1,
-    "note": "Hourly refresh 28. 8. 2026 18:13 CEST reálne skontroloval čerstvé Profesia BA/admin/e-commerce výsledky, firemné kariéry, LinkedIn/public remote discovery a AI/remote discovery. Žiadny nový kandidát neprešiel všetkými existujúcimi BA/remote, jazykovými, hard-skill a value gateami tak, aby bezpečne prebil LIVE priority. VÚB Digital Agent zostáva čerstvá priorita. dm omni-channel stáž bola zamietnutá pre povinný status VŠ študenta a nemčinu A2. Foxelli remote e-commerce support bol zamietnutý pre fluent/near-native spoken English a nízku fixed fee do 800 EUR. Welo Generative AI Analyst je remote Slovakia a zaujímavý AI smer, ale krátky 4-týždňový freelance kontrakt za 12.10 USD/h a požiadavky na annotation/content review/QA skúsenosť neprekonali LIVE priority. Profesia ukázala nový 3MON IT & Operations Support za 2 000 EUR, ale bez dostatočne overeného detailu požiadaviek nebol bezpečne pridaný. jobs-data.json nebol v tomto behu prepísaný iba kvôli čerstvosti; jeho updatedAt zostáva čas poslednej reálnej dátovej zmeny/overenia."
+    "rejectedAsWeakOrLowValue": 4,
+    "duplicateOrForHire": 4,
+    "note": "Refresh 28. 8. 2026 18:36 CEST reálne skontroloval 10 source families: Profesia; direct company careers; LinkedIn; Worki; Brigada.sk; Pretlak/WordPress Jobs; Upwork/freelance; Reddit/WordPress communities; Facebook public indexing; cross-source public discovery. Žiadny nový kandidát neprešiel BA/remote, language/hard-skill a value gateom tak, aby bezpečne prebil aktuálny LIVE feed. Dnešné Upwork WordPress leady boli prevažne 30–35 USD fixed pri 10–50 proposals alebo vyžadovali mandatory PHP/server troubleshooting; Wolt Bratislava vyžaduje minimum B2 English. Reddit výsledky sú prevažne FOR HIRE, nie hiring dopyty. Facebook verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom. jobs-data.json sa nemení iba kvôli času auditu; updatedAt feedu ostáva čas poslednej reálnej dátovej zmeny/overenia."
   },
   "sources": [
-    {"name":"Profesia / Práca za rohom","family":"profesia","status":"checked","hits":0,"note":"Dnešné BA administratíva, e-commerce a support výsledky skontrolované. VÚB Digital Agent je už v LIVE. 3MON IT & Operations Support je čerstvý výsledok za 2 000 EUR s občasným home office, ale verejný discovery výpis neposkytol dostatočný detail hard požiadaviek na bezpečné zaradenie."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"dm omni-channel retailing overené priamo na dm jobs: 20 h/týž., 8,40 EUR/h, ihneď, e-shop agenda; hard reject pre povinný status VŠ študenta 1./2. ročníka a nemčinu min. A2."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Remote/e-commerce support discovery skontrolované. Foxelli Customer Support & Sales Agent je Slovakia-eligible 100% remote, ale vyžaduje fluent/near-native spoken English a fixed service fee je len do 800 EUR; hard-language/value reject."},
-    {"name":"AI / remote public discovery","family":"other","status":"checked","hits":0,"note":"Welo Generative AI Analyst – Slovak je aktuálny remote Slovakia freelance lead, 4 týždne, 12.10 USD/h; zaujímavý AI smer, ale krátky kontrakt a požadovaná relevantná annotation/content review/QA skúsenosť ho držia pod LIVE opportunity thresholdom."},
-    {"name":"E-commerce discovery","family":"other","status":"checked","hits":0,"note":"Profesia e-commerce BA stále ukazuje KOOPERATIVA online predaj, Pandora 30h a staršie marketplace/e-commerce roly; nič nové neprebilo existujúce LUNYS/IZY/LEAF priority."},
-    {"name":"Cross-source dedup / freshness","family":"other","status":"checked","hits":0,"note":"Nové discovery výsledky boli porovnané s aktuálnym LIVE feedom. Žiadna bezpečne overená nová priorita na pridanie; feed sa nefalšuje posunom updatedAt bez dátovej zmeny. Source audit je čerstvý a dokladá reálnu kontrolu o 18:13 CEST."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"BA e-commerce/admin/IT support discovery skontrolované; bez nového výsledku, ktorý by prebil existujúce LIVE priority."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Direct-company lane skontrolovaný; bez nového BA/remote winnera nad aktuálnym feedom."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Wolt Support Associate v Bratislave je aktuálny, ale vyžaduje professional working proficiency English min. B2; hard-language reject."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"note":"BA/admin/e-shop/IT discovery skontrolované; bez nového aktívneho kandidáta nad existujúcimi prioritami."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"note":"BA brigády skontrolované; bez vhodného admin/web/tech winnera nad value thresholdom."},
+    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"AI/e-commerce/WordPress discovery skontrolované; bez nového Slovakia-eligible non-hard-dev leadu s dostatočnou hodnotou."},
+    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":0,"note":"Dnešné WordPress leady: 35 USD fixed pri 20–50 proposals; 30 USD WooCommerce cleanup pri 10–15 proposals; checkout/500-error lead vyžaduje mandatory PHP. Ďalšie výsledky sú 5–15 USD fixed alebo hard-dev. Bez LIVE winnera."},
+    {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"note":"Aktuálne výsledky sú prevažne FOR HIRE ponuky freelancerov. Starší hiring lead má veľmi nízky budget; bez nového vhodného hiring dopytu."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia neposkytla stabilný konkrétny aktuálny hiring post s priamym overiteľným linkom; nič sa nepredstiera."},
+    {"name":"Cross-source public discovery / dedup","family":"other","status":"checked","hits":0,"note":"Výsledky porovnané s aktuálnym LIVE feedom a hard gateami. Žiadna nová bezpečne overená priorita; fail-closed zachovaný."}
   ]
 }
