@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 28. 8. 2026 03:25 CEST
+Aktualizované: 28. 8. 2026 04:19 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -55,37 +55,41 @@ Aktualizované: 28. 8. 2026 03:25 CEST
 21. **3MON — IT & Operations Support — Match 84**.
 22. **STU — Web špecialista CMS/web — Match 83**.
 23. **VNET — IT customer support — Match 82**.
-24. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
+24. **LAST MILE — Operátor NOC / Hotline podpora — Match 82** — Ružinov, Bratislava; first-line service desk, tickety, základný troubleshooting, skrátený úväzok/dohoda/živnosť/stáž, firma zaučí; mínus 6–8 €/h a B1 AJ.
+25. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 28. 8. 2026 03:25 CEST
+## SOURCE AUDIT — 28. 8. 2026 04:19 CEST
 Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak/StartupJobs; WordPress Jobs/tech-creative boards; Upwork; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
-- **Nové položky do `jobs-data.json`: 0.** Autoritatívny LIVE feed zostal zámerne nezmenený, pretože žiadny nový kandidát neprešiel kvalitou nad existujúci threshold bez výrazného language/hard-skill/country/value rizika.
-- **Priame firemné kariéry:** Websupport Customer Success Advisor bol znovu potvrdený ako aktívny priamo na Websupport Careers; Penta Sales Administrator je stále aktívny na Penta Careers. Ďalšie viditeľné direct-career roly boli sales alebo senior infra/dev, nie lepší fit.
-- **LinkedIn:** verejná indexácia nepriniesla nový konkrétny BA/Slovakia-remote high-fit detail lepší než existujúce LUNYS/Ryvenia.
-- **Brigada.sk / Worki / Práca za rohom / Služby zamestnanosti/Kariera:** bez nového kandidáta, ktorý by prešiel locality + language + hard-skill gateom a mal vyššiu praktickú hodnotu než aktuálny LIVE feed.
-- **Pretlak / StartupJobs / WordPress Jobs:** bez nového non-hard-dev Slovakia-remote výsledku s jasnou eligibility a lepším fitom.
-- **Upwork:** WordPress / Elementor Web Designer & Support Specialist je Remote, ale detail uvádza iba Philippines alebo United Kingdom a vyžaduje fluent spoken/written English; vyradené locality/language gateom. WordPress Webmaster vyžaduje fluent English + US business hours. WordPress Developer for WooCommerce má iba 5 USD fixed a 20–50 proposals. Worldwide **Wordpress Developer for Small Agency** je tematicky relevantný maintenance/troubleshooting kontrakt za 5–9 USD/h s 5–10 proposals a silným klientom, ale je už 3 týždne starý, klient má 1 hire + 5 interviewing a požaduje working knowledge PHP; ponechané ako near-fit mimo LIVE, nie ako nový silný lead.
-- **Reddit:** verejne indexované výsledky boli prevažne `[FOR HIRE]` alebo US-only hard-dev hiring.
+- **Nové položky do `jobs-data.json`: 1.** Pridaný **LAST MILE — Operátor NOC / Hotline podpora — Match 82** cez priamu firemnú kariéru. Lokalita Ružinov/Bratislava spĺňa hard gate; rola je first-line service desk/tickety/basic troubleshooting, firma deklaruje zaškolenie a dostupné sú viaceré flexibilné formy. B1 AJ a nižšia odmena ju držia mimo TOP priority.
+- **Profesia:** čerstvý Talent Solutions Junior reporting + IT support za 2 000 €/mes. je lokalitne vhodný, ale vyžaduje B2 AJ, VŠ I. stupňa a reálne SQL/SAP/MS Access; Qtri IT Support má B2 AJ, PHP/HTML a cestovanie po SR; Premium IT Tester/Data Analyst má vyšší skill/language gate. Bez nového Profesia prírastku.
+- **Priame firemné kariéry:** Penta Sales Administrator a Websupport Customer Success Advisor boli znovu potvrdené ako aktívne. LAST MILE Careers potvrdzuje Operátor NOC / Hotline podpora a bol použitý ako canonical direct source. Websupport Marketing Operations & AI Specialist bol vyradený pre fluent English + CRM/martech + 2+ roky relevantnej praxe.
+- **LinkedIn:** Wolt Support Associate má hard B2 AJ a smeny/weekendy; ďalšie nové BA/Slovakia roly boli analytickejšie alebo hard-skillovejšie. Bez nového high-fit LIVE kandidáta.
+- **Brigada.sk / Worki:** bez nového prírastku. Worki Shield-Sk e-shop admin je už obsadený/zrušený; RM Biznis servis ostáva aktívny a už je v LIVE.
+- **Práca za rohom:** použitá na discovery/cross-check LAST MILE; canonical bol migrovaný na priamu firemnú kariéru. Relatívne štítky typu „Dnešné/Len pár hodín“ sa nepoužili ako `publishedAt` bez originálneho dôkazu.
+- **Služby zamestnanosti/Kariera:** CCI customer centre má neprimerane vysoké požiadavky na vzdelanie/prax; Boataround je výrazne sales-oriented; REINVO vyžaduje B1–B2 AJ aj srbčinu. Bez nového vhodného LIVE kandidáta.
+- **Pretlak / StartupJobs / WordPress Jobs:** OVB ostáva existujúci silný LIVE kandidát; nové výsledky neprešli hard-skill/language filtrom. WordPress Jobs nepriniesol nový non-hard-dev Slovakia-remote výsledok s jasnou eligibility.
+- **Upwork:** nové WooCommerce/WordPress výsledky boli prevažne hard PHP/dev, veľmi nízky fixed budget alebo už vysoká konkurencia. Worldwide VA lead mal nízku konkurenciu, ale všeobecný VA scope a požadovaná jasná English komunikácia neprebili aktuálne relevantnejšie admin/web možnosti.
+- **Reddit:** verejne indexované výsledky boli prevažne `[FOR HIRE]`, US-only hard-dev alebo veľmi nízke budgety.
 - **Facebook:** **0 verified hits**. Verejná indexácia neposkytla konkrétny overiteľný aktuálny hiring post; obsah skupín ostáva login/temporary-block obmedzený. Autentizovaný Nexus/local ingestion zostáva potrebný.
 
 ### Run summary
 - Source families reálne skontrolované: **12**.
-- Nové aktívne položky: **0**.
+- Nové aktívne položky: **1**.
 - Vyradené lokalitou/country eligibility: **1**.
-- Vyradené jazykovým/hard-skill gateom: **4**.
-- Vyradené ako slabé/nízka hodnota alebo nízka šanca: **6**.
+- Vyradené jazykovým/hard-skill gateom: **5**.
+- Vyradené ako slabé/nízka hodnota alebo nízka šanca: **5**.
 - Duplikát / `[FOR HIRE]` / nevhodný typ leadu: **4**.
 
 ### LIVE mix hlavného `jobs-data.json`
-- **27 aktívnych položiek**.
-- Profesia: **12/27 = 44,4 %**.
-- LinkedIn: **2/27 = 7,4 %**.
-- Priame firemné kariéry: **6/27 = 22,2 %**.
-- GROWNi/Pretlak/Kariera/Worki/iný job board mimo Profesia: **4/27 = 14,8 %**.
-- Freelance: **3/27 = 11,1 %**.
-- **Mimo Profesia spolu: 15/27 = 55,6 %.**
+- **28 aktívnych položiek**.
+- Profesia: **12/28 = 42,9 %**.
+- LinkedIn: **2/28 = 7,1 %**.
+- Priame firemné kariéry: **7/28 = 25,0 %**.
+- GROWNi/Pretlak/Kariera/Worki/iný job board mimo Profesia: **4/28 = 14,3 %**.
+- Freelance: **3/28 = 10,7 %**.
+- **Mimo Profesia spolu: 16/28 = 57,1 %.**
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -165,8 +169,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 65. **Source-specific evidence contract** — podľa typu zdroja sa pred LIVE aktiváciou vyžaduje minimálna sada dôkazov; pri chýbajúcom kritickom poli ide kandidát do quarantine/recheck.
 66. **Employer-template reuse detector** — rozpozná, keď firma opakovane používa takmer rovnaký text náplne pre rozdielne názvy, mzdy alebo role. Prínos: menej chybných fuzzy dedupe a presnejší ranking konkrétnej aktuálnej role.
 67. **Vehicle-obligation classifier** — samostatne rozlíši `vodičák B výhoda`, `vodičák B povinný`, `vlastné auto povinné`, `služobné auto poskytnuté` a `terén bez jasného vozidla`. Prínos: terénne/support/vodičské ponuky sa nebudú javiť vhodne len preto, že lokalita sedí.
-68. **Client-engagement freshness signal — NOVÉ** — pri freelance zdrojoch oddelene sleduje `postedAt`, `lastViewedByClient`, `interviewing`, `hires` a aktívne kontrakty. Ak je inzerát formálne otvorený, ale klient ho dlho nepozrel alebo už intenzívne interviewuje/hireuje, zníži `apply-now` prioritu bez vyradenia. Prínos: menej času na ponuky, kde je reálna šanca na odpoveď už nízka.
-69. **Emergency-response SLA compatibility gate — NOVÉ** — identifikuje roly, ktoré vyžadujú pevné online hodiny, okamžité reakcie (napr. ticket do 15 minút), permanentnú dostupnosť alebo videohovory, a porovná ich s reálnou dostupnosťou kandidáta. Prínos: WordPress/support rola nebude vyzerať vysoko len podľa skill matchu, ak je praktický režim práce neudržateľný.
+68. **Client-engagement freshness signal** — pri freelance zdrojoch oddelene sleduje `postedAt`, `lastViewedByClient`, `interviewing`, `hires` a aktívne kontrakty. Ak je inzerát formálne otvorený, ale klient ho dlho nepozrel alebo už intenzívne interviewuje/hireuje, zníži `apply-now` prioritu bez vyradenia. Prínos: menej času na ponuky, kde je reálna šanca na odpoveď už nízka.
+69. **Emergency-response SLA compatibility gate** — identifikuje roly, ktoré vyžadujú pevné online hodiny, okamžité reakcie, permanentnú dostupnosť alebo videohovory, a porovná ich s reálnou dostupnosťou kandidáta. Prínos: support rola nebude vyzerať vysoko len podľa skill matchu, ak je praktický režim práce neudržateľný.
+70. **Multi-role employer collision guard — NOVÉ** — ak má jedna firma súčasne viac vhodných otvorených rolí, zoskupí ich, vyberie jeden primárny smer reakcie a upozorní pred paralelným poslaním viacerých nesúrodých žiadostí. Prínos: konzistentnejší príbeh kandidáta voči firme a menšie riziko, že viac žiadostí bude pôsobiť náhodne alebo duplicitne.
+71. **Rejected-role resurrection trigger — NOVÉ** — pri už vyradenenej/negatívne cachovanej ponuke sleduje zmenu kritického dôkazu: odstránené B2, zmena na full remote zo Slovenska, otvorenie country eligibility, vyšší garantovaný základ alebo hard skill zmenený na nice-to-have. Pri takej zmene automaticky vráti lead do quarantine/review. Prínos: už raz nevhodná ponuka sa môže stať reálne vhodnou bez zbytočného opakovaného čítania nezmenených inzerátov.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
