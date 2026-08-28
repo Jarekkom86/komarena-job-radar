@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T12:36:42+02:00",
+  "updatedAt": "2026-08-28T13:14:18+02:00",
   "runSummary": {
-    "familiesChecked": 13,
+    "familiesChecked": 6,
     "newActiveJobs": 0,
     "rejectedByLocation": 1,
-    "rejectedByLanguageOrHardSkill": 4,
-    "rejectedAsWeakOrLowValue": 6,
-    "duplicateOrForHire": 5,
-    "note": "Bez nového LIVE prírastku; fail-closed zachovaný. Reálne prehľadané Profesia, direct company/careers, LinkedIn Jobs, Brigada.sk, Worki.sk, Práca za rohom, Služby zamestnanosti, Pretlak/tech-creative, WordPress Jobs, Upwork, Freelancermap/public freelance discovery, Reddit/WP komunity a verejne indexovaný Facebook. Najbližší nový lead bol worldwide remote Upwork Virtual Assistant za 700 USD fixed, ale ide o všeobecnú rolu s novým klientom a povinnou jasnou angličtinou; neprekonal quality/risk threshold. eCommerce VA za 50 USD fixed bol vyradený pre nízku hodnotu. WooCommerce developer lead za 5 USD fixed bol vyradený pre extrémne nízky budget a 20–50 proposals. Wolt BA support zostáva nevhodný pre min. B2 English. Reddit dnes vracia najmä FOR HIRE ponuky dodávateľov, nie vhodné hiring dopyty. Facebook 0 verified hits."
+    "rejectedByLanguageOrHardSkill": 3,
+    "rejectedAsWeakOrLowValue": 4,
+    "duplicateOrForHire": 2,
+    "note": "Hodinový refresh vykonal reálnu kontrolu Profesia, LinkedIn, direct company careers, Pretlak, Worki a Upwork. Bez nového LIVE prírastku; fail-closed zachovaný. Profesia priniesla čerstvo reindexovaný VÚB lead 'Pracuj z domu ako Digitálny agent/agentka' za 1 480 €/mes., ale bez jednoznačne dohľadaného aktuálneho detailu/canonical URL a úplných jazykových/predajných požiadaviek zostáva v quarantine lane a neaktivuje sa. 3MON IT & Operations Support je iba reindexácia existujúcej aktívnej položky. Upwork priniesol čerstvé worldwide WordPress/WooCommerce leady, ale nové kusy boli low-value alebo hard-development: WooCommerce Developer 5 USD fixed, Elementor Pro 50 USD fixed s PHP a 20–50 proposals, eCommerce VA 50 USD fixed. Digital Operations Assistant bol US-only. Websupport/O2 kariérne zdroje neukázali nový lepší fit oproti existujúcim aktívnym položkám."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"BA/okolie e-shop, support, admin a IT discovery zopakované; bez nového kandidáta, ktorý by po location/language/value gate prekonal existujúci LIVE feed."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Priame career zdroje skontrolované v relevantných BA/remote smeroch; bez nového potvrdeného high-fit prírastku od posledného auditu."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"note":"Wolt Support Associate v Bratislave je aktuálne indexovaný, ale detail vyžaduje professional working proficiency English min. B2; neaktivované. Ostatné relevantné výsledky boli existujúce alebo slabšie."},
-    {"name":"Brigada.sk","family":"other","status":"checked","hits":0,"note":"BA administratíva/e-shop/IT brigády prehľadané; bez nového výsledku, ktorý by prešiel quality a hard-skill gate."},
-    {"name":"Worki.sk","family":"other","status":"checked","hits":0,"note":"BA/online e-shop, administratíva a IT discovery zopakované; bez nového vhodného LIVE kandidáta."},
-    {"name":"Práca za rohom","family":"other","status":"checked","hits":0,"note":"Discovery vykonané; bez nového nezávislého high-fit výsledku. Mirrory Profesia sa naďalej nepočítajú ako samostatný source hit."},
-    {"name":"Služby zamestnanosti","family":"government","status":"checked","hits":0,"note":"Bratislava administratíva/IT/support discovery vykonané; bez nového kvalitného a aktuálneho kandidáta vhodného pre LIVE feed."},
-    {"name":"Pretlak / tech-creative boards","family":"other","status":"checked","hits":0,"note":"BA/remote AI, e-commerce, customer support a web discovery vykonané; bez nového výsledku, ktorý by prekonal existujúce aktívne ponuky po language/hard-skill gate."},
-    {"name":"WordPress Jobs","family":"other","status":"checked","hits":0,"note":"Remote WordPress/WooCommerce discovery vykonané; bez nového jednoznačne Slovakia-eligible, non-hard-development leadu s primeranou hodnotou."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":5,"note":"Aktuálne worldwide remote leady: Virtual Assistant 700 USD fixed (5–10 proposals, nový klient; všeobecná rola a English risk), eCommerce VA 50 USD fixed (10–15 proposals; nízka hodnota), WooCommerce developer 5 USD fixed (20–50 proposals; extrémne nízky budget), WordPress webmaster 5–15 USD/h (fluent English + US business hours + PHP), customer-service/e-commerce VA s 50+ proposals. Žiadny neprešiel celkovým quality/risk thresholdom pre nový LIVE prírastok."},
-    {"name":"Freelancermap / ďalšie freelance indexy","family":"freelance","status":"checked","hits":0,"note":"Remote WP/Woo/admin discovery vykonané; bez nového konkrétneho overiteľného Slovakia-eligible leadu s dostatočným value/risk profilom."},
-    {"name":"Reddit r/wordpressjobs + verejné WP komunity","family":"community","status":"checked","hits":3,"note":"Dnešné výsledky sú prevažne [FOR HIRE] ponuky WordPress/WooCommerce developerov. Starší hiring lead má extrémne nízky budget a scam warnings v diskusii; nič neaktivované."},
-    {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"blocked","hits":0,"note":"Prioritné skupiny znovu vyhľadané cez verejnú indexáciu. Bez konkrétneho aktuálneho hiring postu s verejne overiteľným priamym linkom; login/indexing limit zostáva. 0 verified hits, nič sa nepredstiera."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":2,"note":"Najnovšie BA/remote výsledky reálne skontrolované. 3MON IT & Operations Support je existujúca položka/reindexácia. VÚB Digitálny agent/agentka pre prácu z domu za 1 480 €/mes. je potenciálne relevantný, ale bez aktuálneho canonical detailu a plných požiadaviek zatiaľ neaktivovaný."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Websupport a O2 kariérne zdroje skontrolované. Websupport má nové marketing/AI a infra roly, ale aktuálne sú mimo fitu pre hard-skill/seniority; O2 bez nového vhodnejšieho prírastku oproti existujúcemu Digital Content Admin."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"BA/remote support a e-commerce discovery vykonané. Nové viditeľné support výsledky boli jazykovo nevhodné (fluent English/German) alebo staršie; bez nového high-fit prírastku."},
+    {"name":"Pretlak / tech-creative boards","family":"other","status":"checked","hits":0,"note":"BA/remote AI, support a e-commerce discovery vykonané; bez nového výsledku, ktorý by prekonal existujúci OVB AI Automation fit po language/hard-skill gate."},
+    {"name":"Worki.sk","family":"other","status":"checked","hits":0,"note":"BA/online administratíva, e-shop a IT discovery zopakované; bez nového vhodného LIVE kandidáta."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":4,"note":"Čerstvé výsledky: WooCommerce Developer 5 USD fixed (20–50 proposals; hard reject low value), Elementor Pro 50 USD fixed (PHP + 20–50 proposals; low value/hard-skill), eCommerce VA 50 USD fixed (low value), Digital Operations Assistant 200 USD fixed je U.S.-only. Žiadny neprešiel quality/location/value thresholdom."},
+    {"name":"Brigada.sk","family":"other","status":"not-run","hits":0,"note":"V tomto hodinovom cykle nebolo potrebné opakovať úplný breadth scan; posledný plný audit 12:36 zostáva platný."},
+    {"name":"Práca za rohom","family":"other","status":"not-run","hits":0,"note":"Neskontrolované v tomto hodinovom cykle; kryté posledným plným auditom 12:36."},
+    {"name":"Služby zamestnanosti","family":"government","status":"checked","hits":1,"note":"VÚB Digitálny agent bol dohľadaný aj cez verejné employment indexy, ale aktuálny detail pre dnešný repost nebol dostatočne úplný na aktiváciu bez rizika freshness laundering."},
+    {"name":"WordPress Jobs","family":"other","status":"not-run","hits":0,"note":"Neskontrolované v tomto hodinovom cykle; širší WordPress discovery pokryl Upwork a posledný plný audit."},
+    {"name":"Freelancermap / ďalšie freelance indexy","family":"freelance","status":"not-run","hits":0,"note":"Neskontrolované v tomto hodinovom cykle; posledný plný audit zostáva platný."},
+    {"name":"Reddit r/wordpressjobs + verejné WP komunity","family":"community","status":"not-run","hits":0,"note":"Neskontrolované v tomto hodinovom cykle; posledný plný audit zostáva platný."},
+    {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"blocked","hits":0,"note":"Verejný prístup/indexing limit pretrváva. Bez konkrétneho verejne overiteľného postu sa nič neaktivuje."}
   ]
 }
