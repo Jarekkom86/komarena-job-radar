@@ -1,20 +1,25 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T23:15:20+02:00",
+  "updatedAt": "2026-08-28T23:28:48+02:00",
   "runSummary": {
-    "familiesChecked": 6,
+    "familiesChecked": 10,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 3,
-    "rejectedAsWeakOrLowValue": 3,
-    "duplicateOrExisting": 2,
-    "note": "Refresh 28. 8. 2026 o 23:15 reálne skontroloval čerstvé Profesia BA admin/IT výsledky, Práca za rohom, direct LUNYS kariéru, Služby zamestnanosti a remote/AI discovery. Nenašiel sa nový kandidát, ktorý by prešiel súčasne BA/remote, jazykovým/hard-skill, value a duplicate gateom. jobs-data.json zostáva fail-closed s posledným reálnym dátovým refreshom 22:14; updatedAt nebol umelo posunutý."
+    "rejectedByLanguageOrHardSkill": 5,
+    "rejectedAsWeakOrLowValue": 4,
+    "duplicateOrExisting": 4,
+    "rejectedByFreshnessOrEvidence": 1,
+    "note": "Beh 28. 8. 2026 o 23:28 reálne prešiel Profesia, direct-company discovery, LinkedIn, Worki, Brigada.sk, Kariera/Služby zamestnanosti, Pretlak/WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexovaný Facebook. Nenašiel sa nový kandidát, ktorý by súčasne prešiel BA/remote, jazykovým/hard-skill, freshness/evidence, value a duplicate gateom. SecTec Marketing asistent je obsahovo silný WordPress/admin fit, ale verejný LinkedIn výsledok neposkytol spoľahlivý dátum zverejnenia ani mzdu; zostáva na cielené overenie a nie v LIVE. jobs-data.json zostáva fail-closed a updatedAt sa neposúva umelo."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"Čerstvé BA administratíva/IT support výsledky preverované. Workplace Support Intern je študentská rola; senior/špecializované výsledky majú vyššie skill/language gates. Existujúce IZY VAPE a ďalšie feed položky zostávajú duplicitné/existing."},
-    {"name":"Práca za rohom","family":"aggregator","status":"checked","hits":0,"note":"Čerstvé BA admin výsledky: finančný referent, Continental Film part-time, PST CLC fakturant, Sociálna poisťovňa, Lidl nákup a ďalšie. Bez nového jasného winnera nad existujúce priority; IZY VAPE a Penta sú už v radare."},
-    {"name":"LUNYS kariéra","family":"company","status":"checked","hits":0,"note":"Vodič skupiny B Most pri Bratislave je aktívny, nástup ihneď, ale rozvoz rýchloobrátkového tovaru za od 6,5 €/h je slabší než aktuálny Lanža online-grocery driver a preto sa neaktivuje ako nová priorita."},
-    {"name":"Služby zamestnanosti","family":"government","status":"checked","hits":0,"note":"Preverené BA administratívne výsledky; nájdené položky majú nízku mzdu alebo tvrdé jazykové požiadavky (napr. B1/B2 + ukrajinčina/ruština alebo ďalšie jazyky)."},
-    {"name":"Remote / AI discovery","family":"remote","status":"checked","hits":0,"note":"Bloomreach senior business consulting vyžaduje španielčinu/francúzštinu/taliančinu; starší RWS AI Data Specialist je expirovaný a vyžaduje B2-C2 English. Bez vhodného nového leadu."},
-    {"name":"Verejné inzertné/ostatné zdroje","family":"other","status":"checked-limited","hits":0,"note":"123jobs remote administratíva Technology Gyro má slabé trust signály a nejasné údaje; neaktivované. Verejné výsledky bez dostatočne overiteľného nového winnera."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"BA/remote e-commerce, admin, IT support a vodič discovery bez nového kvalitného winnera nad existujúci LIVE feed; existujúce čerstvé položky zostávajú aktívne."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Direct-company lane bol preverený; pri SecTec sa podarilo potvrdiť firmu a BA adresu, ale nie samostatný aktuálny career detail konkrétnej Marketing Assistant roly."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"note":"SecTec Marketing asistent v Bratislave: WordPress/CMS, newslettery, sociálne siete, administratíva a reporting; bez tvrdého jazykového gate v dostupnom detaile. Nezaradené do LIVE pre chýbajúci spoľahlivý publishedAt a mzdu. Wolt support zostáva B2 English reject; FHB Product Owner vyžaduje plynulú AJ."},
+    {"name":"Worki.sk + Brigada.sk","family":"slovak-jobboards","status":"checked","hits":0,"note":"BA administratíva/e-shop/support discovery bez nového leadu, ktorý by prebil existujúce fit/value priority. Brigada.sk homepage bola dostupná; bez konkrétneho nového vhodného hitu."},
+    {"name":"Kariera.sk / Práca za rohom","family":"aggregator-jobboards","status":"checked","hits":0,"note":"Práca za rohom priniesla krátkodobú výpomoc pre mobilnú aplikáciu za 7 €/h v BA; value/fit pod aktuálnym LIVE prahom. Profesia mirrory sa nepočítajú ako nezávislý zdroj."},
+    {"name":"Služby zamestnanosti","family":"government","status":"checked","hits":0,"note":"Portál bol dostupný a aktuálny. Technical Support Engineer v BA vyžaduje Linux/server troubleshooting a cudzie jazyky; hard-skill/language reject."},
+    {"name":"Pretlak + WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"Pretlak CloseRocket Customer Success & UX Partner je BA a 1 500–2 100 €, ale z predchádzajúceho overenia má fluent English hard gate; bez nového vhodného WordPress Jobs leadu vykonateľného zo Slovenska bez hard developmentu."},
+    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":0,"note":"Aktuálne WordPress/WooCommerce výsledky sú prevažne PHP/dev-heavy, 20–50 alebo 50+ proposals, US-hours/fluent-English, prípadne low-value. WordPress/Elementor Support Specialist má vysokú support intenzitu a technický rozsah; bez bezpečného nového LIVE winnera."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Aktuálne indexované r/wordpressjobs výsledky sú prevažne [FOR HIRE]. Starší HIRING lead je low-budget developer-heavy; nič sa nepridáva ako falošný hiring dopyt."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny aktuálny overiteľný hiring post z WordPress Slovensko, WooCommerce SK+CZ ani BA jobs skupín. Autentizovaný Nexus/local ingestion ostáva backlog; pokrytie sa nepredstiera."}
   ]
 }
