@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-28T09:00:00+02:00",
+  "policyVersion": "2026-08-28.1",
+  "purpose": "Turn a valid opportunity into an action priority without changing the locked UI or overwriting the existing match score.",
+  "hardPrerequisites": {
+    "status": "active",
+    "locationEligibility": ["ba-area", "remote-ok"],
+    "verifiedAtRequired": true
+  },
+  "actionPriorityModel": {
+    "base": "existing score",
+    "signals": [
+      {"id":"fresh-under-24h","when":"publishedAt is known and age <= 24h","delta":6},
+      {"id":"fresh-under-72h","when":"publishedAt is known and age >24h and <=72h","delta":3},
+      {"id":"direct-company-source","when":"sourceType == company","delta":3},
+      {"id":"verified-contact","when":"contact is present","delta":2},
+      {"id":"high-confidence","when":"scoreConfidence >= 95","delta":2},
+      {"id":"remote-ambiguity","when":"locationEligibility == unknown","action":"quarantine"},
+      {"id":"stale-verification","when":"verifiedAt older than 48h for jobboard/freelance or older than 7d for direct company evergreen listing","delta":-5,"action":"reverify-before-apply"},
+      {"id":"high-competition","when":"competition explicitly reports 20-50 proposals or worse","delta":-5},
+      {"id":"missing-pay","when":"pay/payMonth/payHour are all absent","delta":-2},
+      {"id":"language-risk","when":"english is unknown and engLabel says mandatory English or higher level must be confirmed","delta":-3}
+    ],
+    "bands": [
+      {"min":95,"label":"APPLY-FIRST"},
+      {"min":88,"label":"APPLY-TODAY"},
+      {"min":80,"label":"REVIEW"},
+      {"min":0,"label":"LOW"}
+    ]
+  },
+  "safety": {
+    "neverAutoApply": true,
+    "neverInventPublishedAt": true,
+    "neverUseCrawlTimeAsPublishedAt": true,
+    "existingMatchScoreRemainsUntouched": true,
+    "crmFieldsRemainUntouched": true
+  }
+}
