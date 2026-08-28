@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 28. 8. 2026 11:18 CEST
+Aktualizované: 28. 8. 2026 12:36 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -58,28 +58,25 @@ Aktualizované: 28. 8. 2026 11:18 CEST
 24. **LAST MILE — Operátor NOC / Hotline podpora — Match 82** — Ružinov; first-line support; mínus 6–8 €/h a B1 AJ.
 25. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 28. 8. 2026 11:18 CEST
-Reálne prehľadané zdrojové skupiny: **Profesia; direct company careers; LinkedIn Jobs; Brigada.sk; Worki.sk; Práca za rohom; Služby zamestnanosti; Pretlak; WordPress Jobs; Upwork; Freelancermap/public freelance discovery; Reddit/WP komunity; Facebook verejná indexácia.**
+## SOURCE AUDIT — 28. 8. 2026 12:36 CEST
+Reálne prehľadané zdrojové skupiny: **Profesia; direct company careers; LinkedIn Jobs; Brigada.sk; Worki.sk; Práca za rohom; Služby zamestnanosti; Pretlak/tech-creative; WordPress Jobs; Upwork; Freelancermap/public freelance discovery; Reddit/WP komunity; Facebook verejná indexácia.**
 
 ### Výsledky tohto behu
 - **Nové položky do `jobs-data.json`: 0.** Feed zostal fail-closed; nič sa nepridalo iba kvôli počtu.
-- **SupportYourApp — Remote E-Commerce Customer Support Consultant:** remote gate by prešiel, ale konkrétny verejný detail vyžaduje **C1 English v hovorení aj písaní** a skúsenosť s e-commerce supportom. Hard language reject.
-- **Wolt — Support Associate Bratislava:** lokalita je vhodná a po zaučení je možný HO, ale požaduje **minimálne B2 English**. Neaktivované.
-- **Websupport:** existujúci Customer Success Advisor je naďalej potvrdený priamo na firemnej kariére; nejde o nový lead.
-- **Worki:** Shield-Sk Administrátor e-shopu / zákaznícka podpora je explicitne obsadený/zrušený.
-- **Práca za rohom:** nález IZY VAPE je iba mirror už evidovaného Profesia inzerátu; žiadny nový nezávislý hit.
-- **Služby zamestnanosti:** dohľadaná BA administratíva za 400 €/mes. je staršia a hodnotovo nevyhovujúca.
-- **Pretlak:** CloseRocket Customer Success & UX Partner je BA onsite, ale role/jazyková náročnosť je vyššia než aktuálny profil; neaktivované.
-- **Upwork:** čerstvé worldwide výsledky zahŕňali WooCommerce build/maintenance za 5 USD, e-commerce VA za 50 USD, WP setup za 300 USD a remote admin/VA. Vyradené pre nízky budget, 20–50 proposals, hard-development alebo slabý risk/value profil; U.S.-only assistant vyradený country gateom.
-- **Reddit:** aktuálne výsledky prevažne `[FOR HIRE]`, nie hiring dopyty.
+- **Upwork — Virtual Assistant, 700 USD fixed:** worldwide remote, 5–10 proposals a široká admin/CRM/content náplň, ale klient je úplne nový a rola vyžaduje jasnú komunikáciu v angličtine. Celkový client/value/language risk neprekonal existujúci feed, preto neaktivované. citeturn986025search4
+- **Upwork — eCommerce Virtual Assistant, 50 USD fixed:** worldwide remote, relevantná e-commerce/admin náplň, ale odmena je príliš nízka vzhľadom na komplexný scope. Neaktivované. citeturn986025search1
+- **Upwork — WooCommerce Developer, 5 USD fixed:** 20–50 proposals a extrémne nízky budget; hard reject cez value gate. citeturn986025search3
+- **Upwork — WordPress Webmaster, 5–15 USD/h:** worldwide remote, ale fluent English, US business hours a PHP/Webmaster náročnosť. Neaktivované. citeturn986025search2
+- **Wolt — Support Associate Bratislava:** lokalita je vhodná a po onboardingu je možný home office, ale požaduje minimálne B2 English. Neaktivované. citeturn986025search0
+- **Reddit:** dnešné WordPress/WooCommerce výsledky sú prevažne `[FOR HIRE]` ponuky dodávateľov, nie hiring dopyty. Starší hiring lead mal extrémne nízky budget a diskusia obsahuje scam warnings. citeturn986025reddit132turn986025reddit138
 - **Facebook:** **0 verified hits**. Prioritné WP/Woo/BA skupiny boli znovu kontrolované cez verejnú indexáciu; login/indexing limit zostáva, preto sa nič nepredstiera.
 
 ### Run summary
 - Reálne skontrolované zdrojové skupiny: **13**.
 - Nové aktívne položky: **0**.
 - Vyradené lokalitou/country eligibility: **1**.
-- Vyradené jazykovým/hard-skill gateom: **6**.
-- Vyradené ako slabé/nízka hodnota: **7**.
+- Vyradené jazykovým/hard-skill gateom: **4**.
+- Vyradené ako slabé/nízka hodnota: **6**.
 - Duplikát / `[FOR HIRE]` / nevhodný typ leadu: **5**.
 
 ### LIVE mix hlavného feedu
@@ -185,8 +182,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 81. Hard-gate substitution search.
 82. Claim-safe application evidence matrix.
 83. Daily application capacity scheduler.
-84. **Commute-adjusted opportunity value — NOVÉ** — spojí odmenu, pracovný čas, počet onsite dní, reálny čas dochádzky, palivo/parkovanie a prípadný HO do jednej porovnateľnej efektívnej hodinovej hodnoty. Prínos: dve podobne platené BA ponuky už nebudú hodnotené rovnako, ak jedna stojí výrazne viac času a peňazí na dochádzanie.
-85. **Application-channel conversion tracker — NOVÉ** — CRM bude oddelene sledovať reakcie, odpovede a pohovory podľa kanála podania (`direct email`, `company form`, `LinkedIn`, `Profesia`, `Upwork` a pod.) a pri rovnakom leade preferovať kanál s historicky vyššou úspešnosťou. Prínos: menej slepých reakcií a viac pohovorov z rovnakého času.
+84. **Commute-adjusted opportunity value** — spojí odmenu, pracovný čas, počet onsite dní, reálny čas dochádzky, palivo/parkovanie a HO do porovnateľnej efektívnej hodinovej hodnoty.
+85. **Application-channel conversion tracker** — sleduje odpovede a pohovory podľa kanála podania a pri rovnakom leade preferuje historicky úspešnejší kanál.
+86. **Employer legitimacy & reputation gate — NOVÉ** — oddelene od `sourceTrust` overí samotného zamestnávateľa/klienta: konzistentnosť identity firmy, históriu kariérnych ponúk, verejnú stopu, podozrivé platobné alebo náborové signály a pri freelance aj vek/históriu klienta. Prínos: menej času na pochybné firmy a výrazne nižšie riziko scam/low-quality leadov aj vtedy, keď pochádzajú z dôveryhodnej platformy.
+87. **Duplicate application guard — NOVÉ** — CRM pred otvorením reakcie skontroluje canonical role identity, firmu, názov pozície a už použité application channels, aby sa tá istá pozícia neposlala druhýkrát cez Profesia/LinkedIn/company form/mirror. Prínos: zabráni duplicitným reakciám, chaosu v follow-upe a zbytočnému negatívnemu dojmu u zamestnávateľa.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
