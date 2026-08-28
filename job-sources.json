@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T11:18:51+02:00",
-  "lastAuditAt": "2026-08-28T11:18:51+02:00",
+  "updatedAt": "2026-08-28T12:36:42+02:00",
+  "lastAuditAt": "2026-08-28T12:36:42+02:00",
   "policy": {"publicOnly":true,"doNotPretendPrivateFacebookCoverage":true,"dedupeByCanonicalUrl":true,"verifyBeforeActive":true},
   "sources": [
     {"id":"profesia","name":"Profesia","type":"jobboard","priority":100,"trust":98,"url":"https://www.profesia.sk/","coverage":"direct","note":"Jeden z hlavných zdrojov, nie default. Pri mirroroch preferovať canonical direct/company zdroj."},
@@ -25,7 +25,7 @@
     {"id":"jobs-cz","name":"Jobs.cz","type":"jobboard","priority":75,"trust":90,"url":"https://www.jobs.cz/","coverage":"public-index"},
     {"id":"prace-cz","name":"Prace.cz","type":"jobboard","priority":72,"trust":88,"url":"https://www.prace.cz/","coverage":"public-index"},
     {"id":"wordpress-jobs","name":"WordPress Jobs","type":"jobboard","priority":86,"trust":92,"url":"https://jobs.wordpress.net/","coverage":"direct","note":"Pred aktiváciou kontrolovať remote-friendly status a lokalitu. Ak discovery nevráti jednoznačný Slovakia-eligible remote alebo BA lead, neaktivovať iba podľa WordPress zhody."},
-    {"id":"upwork","name":"Upwork","type":"freelance","priority":92,"trust":82,"url":"https://www.upwork.com/","coverage":"public-index","note":"High-value source pre WooCommerce/WordPress support, AI/web assistance a admin work. Povinne kontrolovať competition, client history, explicit eligible countries, mandatory English, timezone, scope/budget a efektívnu hodinovú hodnotu. Fixed-price 15–50 USD leady s 15–50 proposals alebo mandatory PHP sa neaktivujú iba pre skill match. Pri platených reakciách sa má doplniť application-cost/platform-credit guard."},
+    {"id":"upwork","name":"Upwork","type":"freelance","priority":92,"trust":82,"url":"https://www.upwork.com/","coverage":"public-index","note":"High-value source pre WooCommerce/WordPress support, AI/web assistance a admin work. Povinne kontrolovať competition, client history, explicit eligible countries, mandatory English, timezone, scope/budget a efektívnu hodinovú hodnotu. Audit 28. 8. 2026 12:36 potvrdil, že nové worldwide VA/e-commerce leady boli buď nízko platené, jazykovo rizikové, hard-development alebo s príliš slabým client/value profilom; nepridávať iba pre remote status."},
     {"id":"freelancer","name":"Freelancer","type":"freelance","priority":68,"trust":72,"url":"https://www.freelancer.com/","coverage":"public-index","note":"Aktuálny WordPress/WooCommerce marketplace má často stovky bids na projekt; používať iba pri konkrétnom high-value lead-e s realistickou konkurenciou a scope."},
     {"id":"twine","name":"Twine","type":"freelance","priority":68,"trust":76,"url":"https://www.twine.net/jobs/in/slovakia/bratislava","coverage":"public-index","note":"Bratislava freelance discovery. WordPress filter pri audite 28. 8. 2026 uvádzal 0 WordPress jobs; nepredstierať coverage pri prázdnom filtri."},
     {"id":"freelancermap","name":"Freelancermap","type":"freelance","priority":70,"trust":80,"url":"https://www.freelancermap.com/","coverage":"public-index"},
