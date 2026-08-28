@@ -1,26 +1,22 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T17:29:20+02:00",
+  "updatedAt": "2026-08-28T18:13:18+02:00",
   "runSummary": {
-    "familiesChecked": 10,
+    "familiesChecked": 6,
     "newActiveJobs": 0,
-    "rejectedByLocation": 3,
+    "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
-    "rejectedByLanguageOrHardSkill": 4,
-    "rejectedAsWeakOrLowValue": 5,
-    "duplicateOrForHire": 2,
-    "note": "Refresh 28. 8. 2026 17:29 CEST reálne skontroloval Profesia, direct company careers, LinkedIn, Worki, Brigada.sk, Pretlak/WordPress Jobs, Upwork, Reddit/WP komunity a verejne indexovaný Facebook. Žiadny nový lead neprešiel súčasne BA/remote, jazykovým, hard-skill a value gateom tak, aby bezpečne prebil existujúce LIVE priority. Čerstvé Upwork WordPress leady boli worldwide remote, ale prevažne 30–35 USD fixed s 10–50 proposals alebo hard PHP scope. Wolt Bratislava stále vyžaduje minimum B2 English. Worki e-shop výsledky boli buď obsadené/zrušené alebo mimo BA bez overeného remote režimu. Brigada.sk priniesla BA gastro a vzdialené onsite brigády, ale nič profilovo silné. Reddit výsledky boli prevažne FOR HIRE posty. Facebook verejná indexácia neposkytla žiadny konkrétny overiteľný hiring post; 0 verified hits."
+    "rejectedByLanguageOrHardSkill": 3,
+    "rejectedAsWeakOrLowValue": 2,
+    "duplicateOrForHire": 1,
+    "note": "Hourly refresh 28. 8. 2026 18:13 CEST reálne skontroloval čerstvé Profesia BA/admin/e-commerce výsledky, firemné kariéry, LinkedIn/public remote discovery a AI/remote discovery. Žiadny nový kandidát neprešiel všetkými existujúcimi BA/remote, jazykovými, hard-skill a value gateami tak, aby bezpečne prebil LIVE priority. VÚB Digital Agent zostáva čerstvá priorita. dm omni-channel stáž bola zamietnutá pre povinný status VŠ študenta a nemčinu A2. Foxelli remote e-commerce support bol zamietnutý pre fluent/near-native spoken English a nízku fixed fee do 800 EUR. Welo Generative AI Analyst je remote Slovakia a zaujímavý AI smer, ale krátky 4-týždňový freelance kontrakt za 12.10 USD/h a požiadavky na annotation/content review/QA skúsenosť neprekonali LIVE priority. Profesia ukázala nový 3MON IT & Operations Support za 2 000 EUR, ale bez dostatočne overeného detailu požiadaviek nebol bezpečne pridaný. jobs-data.json nebol v tomto behu prepísaný iba kvôli čerstvosti; jeho updatedAt zostáva čas poslednej reálnej dátovej zmeny/overenia."
   },
   "sources": [
-    {"name":"Profesia / Práca za rohom","family":"profesia","status":"checked","hits":0,"note":"Dnešné BA/admin/support discovery bolo reálne skontrolované. Nový výsledok Obec Hrádok bol mimo BA a navyše nízko platený; ostatné dnešné výsledky neprebili existujúce LIVE priority."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Direct career discovery pre BA support/e-commerce/operations vykonané; bez nového silného kandidáta nad existujúcimi Hilti, Penta, Websupport, O2 a LAST MILE položkami."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"BA/Slovakia-remote support/e-commerce discovery vykonané. Wolt Support Associate v Bratislave stále vyžaduje minimum B2 English; hard-language reject."},
-    {"name":"Worki.sk","family":"other","status":"checked","hits":0,"note":"E-shop/admin/support výsledky skontrolované. Shield-Sk a Daffer sú už obsadené/zrušené; Bánovce nad Bebravou je mimo BA a vyžaduje aktívny EN/DE; RM Biznis servis ostáva existujúci relevantný LIVE lead."},
-    {"name":"Brigada.sk","family":"other","status":"checked","hits":0,"note":"BA a okolie discovery vykonané. Čerstvé výsledky boli prevažne gastro/obsluha alebo vzdialené onsite brigády (napr. Levice), nie profilovo vhodný web/admin/tech lead."},
-    {"name":"Pretlak / WordPress Jobs","family":"other","status":"checked","hits":0,"note":"Tech/creative a WordPress discovery vykonané; bez nového Slovakia-eligible non-hard-dev kandidáta s primeranou hodnotou nad existujúcimi LIVE prioritami."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":0,"note":"Čerstvé worldwide remote WordPress/WooCommerce leady reálne skontrolované. Designer cleanup WooCommerce/Product/Checkout = 30 USD fixed, 10–15 proposals; WordPress quick mobile fix = 35 USD fixed, 20–50 proposals; ďalšie leady mali 5–20 USD fixed alebo hard PHP/server scope. Bez nového LIVE winnera."},
-    {"name":"Reddit / verejné WP komunity","family":"community","status":"checked","hits":0,"note":"Aktuálne výsledky boli prevažne FOR HIRE ponuky freelancerov, nie konkrétne hiring dopyty. 0 verified suitable hiring hits."},
-    {"name":"Facebook – WordPress Slovensko / WooCommerce SK+CZ / Práca BA","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia neposkytla stabilný konkrétny aktuálny hiring post s priamym overiteľným linkom. 0 verified hits; nič sa nepredstiera. Autentizovaný Nexus/local ingestion zostáva backlog priorita."},
-    {"name":"Cross-source direct/public web discovery","family":"other","status":"checked","hits":0,"note":"Doplnkové BA/remote company a public-index vyhľadávanie vykonané na zachytenie výsledkov mimo hlavných boardov; bez nového kandidáta nad minimálnym opportunity thresholdom."}
+    {"name":"Profesia / Práca za rohom","family":"profesia","status":"checked","hits":0,"note":"Dnešné BA administratíva, e-commerce a support výsledky skontrolované. VÚB Digital Agent je už v LIVE. 3MON IT & Operations Support je čerstvý výsledok za 2 000 EUR s občasným home office, ale verejný discovery výpis neposkytol dostatočný detail hard požiadaviek na bezpečné zaradenie."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"dm omni-channel retailing overené priamo na dm jobs: 20 h/týž., 8,40 EUR/h, ihneď, e-shop agenda; hard reject pre povinný status VŠ študenta 1./2. ročníka a nemčinu min. A2."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Remote/e-commerce support discovery skontrolované. Foxelli Customer Support & Sales Agent je Slovakia-eligible 100% remote, ale vyžaduje fluent/near-native spoken English a fixed service fee je len do 800 EUR; hard-language/value reject."},
+    {"name":"AI / remote public discovery","family":"other","status":"checked","hits":0,"note":"Welo Generative AI Analyst – Slovak je aktuálny remote Slovakia freelance lead, 4 týždne, 12.10 USD/h; zaujímavý AI smer, ale krátky kontrakt a požadovaná relevantná annotation/content review/QA skúsenosť ho držia pod LIVE opportunity thresholdom."},
+    {"name":"E-commerce discovery","family":"other","status":"checked","hits":0,"note":"Profesia e-commerce BA stále ukazuje KOOPERATIVA online predaj, Pandora 30h a staršie marketplace/e-commerce roly; nič nové neprebilo existujúce LUNYS/IZY/LEAF priority."},
+    {"name":"Cross-source dedup / freshness","family":"other","status":"checked","hits":0,"note":"Nové discovery výsledky boli porovnané s aktuálnym LIVE feedom. Žiadna bezpečne overená nová priorita na pridanie; feed sa nefalšuje posunom updatedAt bez dátovej zmeny. Source audit je čerstvý a dokladá reálnu kontrolu o 18:13 CEST."}
   ]
 }
