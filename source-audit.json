@@ -1,26 +1,24 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T18:36:41+02:00",
+  "updatedAt": "2026-08-28T19:13:07+02:00",
   "runSummary": {
-    "familiesChecked": 10,
+    "familiesChecked": 8,
     "newActiveJobs": 0,
     "rejectedByLocation": 0,
-    "quarantinedUnknownLocation": 0,
-    "rejectedByLanguageOrHardSkill": 3,
-    "rejectedAsWeakOrLowValue": 4,
-    "duplicateOrForHire": 4,
-    "note": "Refresh 28. 8. 2026 18:36 CEST reálne skontroloval 10 source families: Profesia; direct company careers; LinkedIn; Worki; Brigada.sk; Pretlak/WordPress Jobs; Upwork/freelance; Reddit/WordPress communities; Facebook public indexing; cross-source public discovery. Žiadny nový kandidát neprešiel BA/remote, language/hard-skill a value gateom tak, aby bezpečne prebil aktuálny LIVE feed. Dnešné Upwork WordPress leady boli prevažne 30–35 USD fixed pri 10–50 proposals alebo vyžadovali mandatory PHP/server troubleshooting; Wolt Bratislava vyžaduje minimum B2 English. Reddit výsledky sú prevažne FOR HIRE, nie hiring dopyty. Facebook verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom. jobs-data.json sa nemení iba kvôli času auditu; updatedAt feedu ostáva čas poslednej reálnej dátovej zmeny/overenia."
+    "quarantinedUnknownLocation": 1,
+    "rejectedByLanguageOrHardSkill": 4,
+    "rejectedAsWeakOrLowValue": 3,
+    "duplicateOrForHire": 2,
+    "note": "Refresh 28. 8. 2026 19:13 CEST reálne skontroloval Profesia/e-commerce BA, direct company careers, LinkedIn, Worki/Brigada discovery, Pretlak/tech, Upwork/freelance a cross-source verejné výsledky. VÚB Digitálny agent bol znovu priamo overený ako aktívny (100 % home office, 1 480 EUR, SŠ s maturitou, bez jazykovej podmienky). Penta Sales Administrator a OVB AI/automatizácia zostávajú dostupné v priamych zdrojoch; Ryvenia Shoptet je stále verejne dohľadateľný. Nový KOOPERATIVA Špecialista/ka online predaja je aktívny v Bratislave za 1 500 EUR s občasným home office, ale bez dostupného plného detailu požiadaviek bol fail-closed ponechaný mimo LIVE feedu. KOOPERATIVA Investičný back office + automatizácia vyžaduje prax vo financiách/investíciách/asset managemente/bankovníctve alebo finančnom back office, preto neprešiel hard-experience gateom. KLARSTEIN Customer Support for France vyžaduje francúzštinu. Nové Upwork e-commerce/VA leady majú buď silnú písomnú AJ, vysokú konkurenciu 50+ proposals alebo nízky fixed budget. jobs-data.json updatedAt bol posunutý iba po tejto reálnej kontrole zdrojov; obsah kandidátov sa nemenil."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"BA e-commerce/admin/IT support discovery skontrolované; bez nového výsledku, ktorý by prebil existujúce LIVE priority."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Direct-company lane skontrolovaný; bez nového BA/remote winnera nad aktuálnym feedom."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Wolt Support Associate v Bratislave je aktuálny, ale vyžaduje professional working proficiency English min. B2; hard-language reject."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"note":"BA/admin/e-shop/IT discovery skontrolované; bez nového aktívneho kandidáta nad existujúcimi prioritami."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"note":"BA brigády skontrolované; bez vhodného admin/web/tech winnera nad value thresholdom."},
-    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"AI/e-commerce/WordPress discovery skontrolované; bez nového Slovakia-eligible non-hard-dev leadu s dostatočnou hodnotou."},
-    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":0,"note":"Dnešné WordPress leady: 35 USD fixed pri 20–50 proposals; 30 USD WooCommerce cleanup pri 10–15 proposals; checkout/500-error lead vyžaduje mandatory PHP. Ďalšie výsledky sú 5–15 USD fixed alebo hard-dev. Bez LIVE winnera."},
-    {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"note":"Aktuálne výsledky sú prevažne FOR HIRE ponuky freelancerov. Starší hiring lead má veľmi nízky budget; bez nového vhodného hiring dopytu."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia neposkytla stabilný konkrétny aktuálny hiring post s priamym overiteľným linkom; nič sa nepredstiera."},
-    {"name":"Cross-source public discovery / dedup","family":"other","status":"checked","hits":0,"note":"Výsledky porovnané s aktuálnym LIVE feedom a hard gateami. Žiadna nová bezpečne overená priorita; fail-closed zachovaný."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"BA e-commerce/admin/support discovery skontrolované. VÚB Digitálny agent priamo potvrdený aktívny. Nový KOOPERATIVA online predaj: 1 500 EUR, Bratislava, občasný home office; plné požiadavky sa nepodarilo spoľahlivo načítať, preto quarantine/fail-closed."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"KOOPERATIVA kariéra potvrdzuje online predaj aj investičný back office; Pandora Careers stále uvádza part-time Associate Assistant eCommerce Operations. KOOPERATIVA investičný back office vyžaduje relevantnú finančnú/investičnú prax, preto reject."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Ryvenia Shoptet Specialist je stále verejne dohľadateľný. KLARSTEIN Customer Support for France je čerstvý BA/remote lead, ale vyžaduje francúzštinu; hard-language reject."},
+    {"name":"Worki.sk / Brigada.sk","family":"worki-brigada","status":"checked","hits":0,"note":"Admin/e-shop/IT discovery skontrolované; bez nového bezpečne overeného winnera nad aktuálnymi prioritami."},
+    {"name":"Pretlak / tech discovery","family":"tech-creative","status":"checked","hits":0,"note":"OVB Špecialista/ka pre AI a automatizáciu zostáva dostupný v priamom detaile; bez novej lepšej non-hard-dev priority."},
+    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":0,"note":"Čerstvý e-commerce VA/customer service lead má 50+ proposals a silnú písomnú AJ; multi-platform eCommerce VA je iba 50 USD fixed pri 10–15 proposals. Ďalšie WordPress výsledky smerujú k hard developmentu alebo fluent English. Bez LIVE winnera."},
+    {"name":"Priame priority / recheck","family":"priority-recheck","status":"checked","hits":4,"note":"VÚB priamo overené dnes; Penta Sales Administrator a OVB AI/automatizácia otvorené v priamych zdrojoch; Ryvenia verejne dohľadateľná. Žiadny významný negatívny stavový posun."},
+    {"name":"Cross-source public discovery / dedup","family":"other","status":"checked","hits":0,"note":"Výsledky porovnané s aktuálnym LIVE feedom a hard gateami. Žiadna nová bezpečne overená priorita; deduplikácia a fail-closed zachované."}
   ]
 }
