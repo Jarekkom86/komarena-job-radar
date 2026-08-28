@@ -1,26 +1,26 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T21:12:26+02:00",
+  "updatedAt": "2026-08-28T21:35:41+02:00",
   "runSummary": {
     "familiesChecked": 10,
-    "newActiveJobs": 1,
-    "rejectedByLocation": 2,
+    "newActiveJobs": 0,
+    "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
     "rejectedByLanguageOrHardSkill": 7,
     "rejectedAsWeakOrLowValue": 5,
-    "duplicateOrForHire": 4,
-    "note": "Refresh 28. 8. 2026 o 21:12 reálne skontroloval Profesia, priame firemné kariéry, LinkedIn, Worki, Brigada.sk, Kariera/Služby zamestnanosti, Pretlak/GROWNi, Upwork, Reddit/WP komunity a verejnú Facebook indexáciu. Do LIVE pribudol Confilogi Group – 100 % home office, 1 520–2 200 EUR/mes., bez cudzieho jazyka ako podmienky; zostáva však normal priority pre živnosť, výrazný telefonický predaj, zmeny a každý druhý víkend. VÚB Digitálny agent aj 3MON IT & Operations Support boli čerstvo potvrdené ako aktívne. Nový TOP kandidát nad existujúce priority nevznikol. KInIT Financial Administrator bol vyradený pre B2 English; Jens&Litwak Power Automate & IT Support pre každodennú B2 English a požadovanú hands-on Power Automate/M365 prax; SupportYourApp technické/support roly pre C1/B2 English; Foxelli e-commerce support pre fluent/near-native English. Upwork priniesol nové WordPress leady, ale väčšina vyžaduje PHP/expert level, má vysokú konkurenciu alebo slabú odmenu; čerstvý $30 WooCommerce design fix je príliš malý a už má hire. Brigada.sk priniesla najmä finančné/OVB-style performance ponuky a sklad v Lozorne; bez nového admin/e-commerce winnera. Kariera priniesla čerstvé Telekom technické roly, ale scope je nad aktuálny low-code/support fit. Reddit dnešné výsledky sú prevažne FOR HIRE; staršie HIRING posty sú US-only alebo hard-dev. Facebook public index zostáva limited bez verifikovaného aktuálneho hiring postu."
+    "duplicateOrForHire": 3,
+    "note": "Refresh 28. 8. 2026 o 21:35 reálne skontroloval Profesia, priame firemné kariéry, LinkedIn, Worki, Brigada.sk, Kariera/Služby zamestnanosti, Pretlak/WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejnú Facebook indexáciu. Žiadny nový lead neprešiel súčasne BA/remote, language/hard-skill a value gateom, preto jobs-data.json zostal fail-closed bez nového aktívneho zápisu. Priamy Websupport career detail potvrdzuje, že Customer Success Advisor je stále otvorený; zároveň odhaľuje širšie smeny 7:00–22:00 a požiadavku nestratiť sa v angličtine, preto zostáva existujúcim leadom bez zvýšenia skóre. LinkedIn priniesol Foxelli/TalentPop/Klarstein support roly, ale požadujú fluent/near-native English alebo ďalší cudzí jazyk. Upwork priniesol čerstvý worldwide remote Virtual Assistant lead a viac WordPress/WooCommerce projektov; VA vyžaduje silnú hovorenú/písanú AJ, WooCommerce/WordPress projekty sú hard-dev, nízkorozpočtové, vysoko konkurenčné alebo už majú hire. Reddit je prevažne FOR HIRE alebo starší low-budget hiring. Facebook public index zostáva limited s 0 verified hits. LIVE hlavného feedu ostáva 31 položiek: 15 Profesia (48,4 %) a 16 mimo Profesia (51,6 %)."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"note":"Čerstvo potvrdené VÚB a 3MON. Nový Confilogi Group 100 % home office bol pridaný do LIVE ako normal priority: 1 520–2 200 EUR/mes., živnosť, telefonický predaj, zmeny a každý druhý víkend. KInIT/Jens&Litwak a ďalšie roly neprešli jazykovým alebo hard-skill gateom."},
-    {"name":"Firemné kariérne stránky","family":"company","status":"checked","hits":0,"note":"Priamy BA/support/e-commerce discovery bez nového canonical direct-source winnera v tomto behu; existujúce firemné leady zostávajú zachované."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"SupportYourApp a Foxelli remote/support výsledky boli aktuálne dostupné, ale vyžadujú C1/B2 alebo fluent/near-native English. Bez nového vhodného LIVE winnera."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"note":"Aktuálny admin/support discovery bez nového relevantného výsledku nad existujúci RM Biznis servis a ostatné LIVE možnosti."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"note":"Aktuálne celo-SK výsledky boli najmä finančno-obchodné/performance ponuky; sklad Lozorno 6,50 EUR/h je pod preferovaným fit/value a nebol pridaný."},
-    {"name":"Kariera / Služby zamestnanosti","family":"government-other","status":"checked","hits":0,"note":"Slovak Telekom DevOps a fixné siete Senec boli čerstvé, ale technický scope/hard-skill nároky sú nad aktuálny support/low-code gate. Bez nového LIVE kandidáta."},
-    {"name":"Pretlak / GROWNi","family":"tech-creative","status":"checked","hits":0,"note":"KInIT Financial Administrator je hybrid BA a 1 800 EUR, ale vyžaduje English B2 a pokročilý Excel; neaktivovaný. Existujúce OVB AI/LEAF priority ostávajú."},
-    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":0,"note":"Nové WordPress leady: Site Speed Optimization vyžaduje PHP a má 20–50 proposals; WordPress Expert PHP/50+ proposals; Elementor Pro job vyžaduje PHP a má hire; $30 WooCommerce design fix už má hire a je low-value. Bez nového leadu, ktorý by prebil existujúci WooCommerce Assistant."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Dnešné indexované výsledky sú FOR HIRE. Staršie HIRING posty sú US-only alebo hard-development a neprešli lokalitným/hard-skill gateom."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia neposkytla stabilný konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage zostáva limited."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"BA/remote e-commerce, admin a support discovery bol vykonaný; bez nového kandidáta, ktorý by prebil existujúci LIVE fit pri dodržaní jazykového, hard-skill a value gateu."},
+    {"name":"Firemné kariérne stránky","family":"company","status":"ok","hits":1,"note":"Priamy Websupport career detail potvrdil Customer Success Advisor ako stále otvorenú BA pozíciu. Detail zároveň spresňuje smeny 7:00–22:00 a potrebu zvládnuť angličtinu; existujúci lead sa zachováva bez nového duplicitného zápisu."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Aktuálne Foxelli/TalentPop/Klarstein support výsledky sú remote/BA, ale vyžadujú fluent/near-native English alebo nemčinu/taliančinu/gréčtinu/poľštinu. Bez vhodného nového LIVE winnera."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"note":"BA/online administratíva, e-shop a support boli prehľadané; bez nového výsledku nad existujúce LIVE možnosti."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"note":"BA/okolie administratíva, e-shop, support a brigády boli prehľadané; bez nového fit/value winnera."},
+    {"name":"Kariera / Služby zamestnanosti","family":"government-other","status":"checked","hits":0,"note":"Aktuálny BA admin/IT/support discovery bez nového kandidáta, ktorý by prešiel hard-skill/language/value gateom."},
+    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"AI/e-commerce/WordPress discovery bol vykonaný; bez nového Slovakia-eligible non-hard-dev leadu s primeranou hodnotou."},
+    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":0,"note":"Čerstvý worldwide remote Virtual Assistant vyžaduje strong written/spoken English. Dnešné WordPress/WooCommerce leady majú hard-dev scope, nízky budget, 10–50 proposals alebo už hire; bez nového vhodného aktívneho zápisu."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Aktuálne indexované výsledky sú prevažne FOR HIRE. Jeden starší HIRING WordPress lead má veľmi nízky budget a developerský scope; neaktivovaný."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia neposkytla stabilný konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage zostáva limited a nič sa nepredstiera."}
   ]
 }
