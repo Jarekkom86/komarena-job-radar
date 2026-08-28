@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 28. 8. 2026 07:20 CEST
+Aktualizované: 28. 8. 2026 08:25 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -58,28 +58,32 @@ Aktualizované: 28. 8. 2026 07:20 CEST
 24. **LAST MILE — Operátor NOC / Hotline podpora — Match 82** — Ružinov, Bratislava; first-line service desk, tickety, základný troubleshooting, skrátený úväzok/dohoda/živnosť/stáž, firma zaučí; mínus 6–8 €/h a B1 AJ.
 25. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 28. 8. 2026 07:20 CEST
-Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak/StartupJobs; WordPress Jobs/tech-creative boards; Upwork/freelance; Reddit; Facebook verejná indexácia.
+## SOURCE AUDIT — 28. 8. 2026 08:25 CEST
+Reálne prehľadané source families: Profesia; priame firemné kariéry; LinkedIn; Brigada.sk; Worki; Práca za rohom; Služby zamestnanosti/Kariera; Pretlak/StartupJobs; WordPress Jobs/tech-creative boards; Upwork; Freelancer/Twine/Contra/Freelancermap; Reddit; Facebook verejná indexácia.
 
 ### Výsledky tohto behu
-- **Nové položky do `jobs-data.json`: 0.** Feed zostal fail-closed; žiadny kandidát nebol pridaný iba preto, aby sa zvýšil počet.
-- **Powerlogy — Marketing Specialist:** aktualizované 27. 8. 2026, Bratislava/hybrid, od 1 600 € na faktúru. Náplň má silný prienik s e-shopom, obsahom, AI search a WordPress/WooCommerce sú bonus. Explicitná požiadavka je však **slovenčina aj angličtina na veľmi dobrej úrovni**, preto neprešiel A2-centric language gateom.
-- **Wolt — Support Associate (Part Time):** Bratislava, customer/courier/venue support, ale explicitne vyžaduje professional working proficiency English minimálne B2; vyradené jazykovým gateom.
-- **Upwork — Remote I.T Professional for Small Design Firm:** worldwide remote, Windows/AI/helpdesk, 10–20 h/týždeň, ale 200 USD fixed + 3+ roky IT supportu. Skillovo zaujímavé, ekonomicky slabé a experience threshold je vyšší; neaktivované.
-- **Upwork — eCommerce VA / Business Administrator / WordPress:** eCommerce VA má iba 50 USD fixed; Business Administrator 500 USD fixed má mandatory bookkeeping; WordPress/WooCommerce leady sú prevažne 5–50 USD fixed, hard-development alebo už 20–50 proposals. U.S.-only Digital Operations Assistant bol vyradený country eligibility gateom.
-- **WordPress Jobs:** aktuálne 7 open positions, ale portál uvádza **0 % remote-friendly**. Nové 27. 8. sú Houston/Slippery Rock USA; ďalšie sú development/hard-skill alebo mimo BA/remote gate.
-- **Priame firemné kariéry:** Websupport znovu potvrdený ako aktívny; VNET career stránka skontrolovaná. Bez nového silného direct-company leadu.
-- **Pretlak/StartupJobs:** CloseRocket Customer Success & UX Partner je BA onsite, ale fluent English je nutnosť. Luigi's Box výsledky sú hard-dev/English nevhodné. XDENT StartupJobs je primárne sales rola.
-- **Reddit:** dnešný r/wordpressjobs výsledok je `[FOR HIRE]`, nie hiring lead.
-- **Facebook:** **0 verified hits**. Verejný výsledok naďalej vracia Join/Log Into Facebook; prioritné WP/Woo/BA skupiny nemajú konkrétny aktuálny hiring post s verejne overiteľným priamym linkom.
+- **Nové položky do `jobs-data.json`: 0.** Feed zostal fail-closed; žiadny kandidát nebol pridaný iba preto, aby sa zvýšil počet. `jobs-data.json` preto zostal obsahovo nezmenený.
+- **Foxelli — Crochet Customer Support Agent / E-commerce / Remote:** 100 % remote a Slovensko je explicitne eligible, ale rola vyžaduje **fluent/near-native spoken English**, hands-on crochet, phone support/upsell a večerné/nočné okno. Neaktivované.
+- **Foxelli — Customer Support & Sales Agent:** remote a location-eligible, ale opäť fluent/near-native English + phone upsell + večerné/nočné smeny; neaktivované.
+- **Wolt — Support Associate:** Bratislava a HO po onboardingu, ale explicitne English min. B2; vyradené jazykovým gateom.
+- **Allegro — Junior špecialista podpory partnerov:** Bratislava / 100 % HO a silný marketplace/support fit, ale požaduje plynulú maďarčinu + slovenčinu; vyradené language gateom.
+- **Delta Electronics — administratívna podpora servisných a logistických aktivít:** zverejnené 27. 8., ale hlavné pracovisko Dubnica nad Váhom a iba občasný HO; `reject-distance`.
+- **Upwork — WordPress Small Fix:** worldwide remote, iba 15 USD fixed, už 20–50 proposals a klient už 1 človeka hired; nízka hodnota/nízka šanca.
+- **Upwork — WooCommerce checkout / 500 error / store management:** worldwide remote, 20 USD fixed, mandatory PHP a 15–20 proposals; hard-skill/value gate.
+- **Upwork — WordPress Website Builder with SEO:** worldwide remote, 50 USD za približne 15 podstrán a AI obrázky; klient je nový a scope/value slabý.
+- **Freelancer:** WordPress/WooCommerce projekty majú typicky stovky bids; bez konkrétneho high-value leadu s rozumnou konkurenciou.
+- **Twine:** Bratislava freelance feed má aktuálne social-media lead, ale WordPress filter uvádza **0 WordPress jobs**; bez použiteľného nového WP/e-commerce kandidáta.
+- **Reddit:** dnešné WordPress výsledky sú `[FOR HIRE]`, nie hiring leady. Starší hiring post má extrémne nízky budget a komunitné low-value/scam varovania.
+- **Facebook:** **0 verified hits**. Prioritné WP/Woo/BA skupiny boli znovu vyhľadávané cez verejnú indexáciu, ale bez konkrétneho aktuálneho hiring postu s verejne overiteľným priamym linkom.
+- **Websupport:** Customer Success Advisor znovu potvrdený priamo na firemnej kariére ako aktívny; ide o existujúcu položku, nie nový lead.
 
 ### Run summary
-- Source families reálne skontrolované: **12**.
+- Source families reálne skontrolované: **13**.
 - Nové aktívne položky: **0**.
-- Vyradené lokalitou/country eligibility: **3**.
-- Vyradené jazykovým/hard-skill gateom: **5**.
-- Vyradené ako slabé/nízka hodnota alebo nízka šanca: **6**.
-- Duplikát / `[FOR HIRE]` / closed alebo nevhodný typ leadu: **4**.
+- Vyradené lokalitou/country eligibility: **4**.
+- Vyradené jazykovým/hard-skill gateom: **7**.
+- Vyradené ako slabé/nízka hodnota alebo nízka šanca: **7**.
+- Duplikát / `[FOR HIRE]` / closed alebo nevhodný typ leadu: **5**.
 
 ### LIVE mix hlavného `jobs-data.json`
 - **28 aktívnych položiek**.
@@ -166,7 +170,7 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 63. **Guaranteed-pay floor gate** — oddelí garantovanú základnú mzdu od maximálnej/províznej odmeny a zabráni marketingovému hornému číslu deformovať ranking.
 64. **Repost freshness laundering detector** — mirror alebo agregátor nesmie zmeniť starú ponuku na „dnešnú“ iba tým, že ju znovu načítal alebo publikoval; `publishedAt` sa viaže na najstarší dôveryhodný canonical timestamp a zvlášť sa eviduje `lastSeenAt`.
 65. **Source-specific evidence contract** — podľa typu zdroja sa pred LIVE aktiváciou vyžaduje minimálna sada dôkazov; pri chýbajúcom kritickom poli ide kandidát do quarantine/recheck.
-66. **Employer-template reuse detector** — rozpozná, keď firma opakovane používa takmer rovnaký text náplne pre rozdielne názvy, mzdy alebo role. Prínos: menej chybných fuzzy dedupe a presnejší ranking konkrétnej aktuálnej role.
+66. **Employer-template reuse detector** — rozpozná, keď firma opakovane používa takmer rovnaký text náplne pre rozdielne názvy, mzdy alebo role.
 67. **Vehicle-obligation classifier** — samostatne rozlíši `vodičák B výhoda`, `vodičák B povinný`, `vlastné auto povinné`, `služobné auto poskytnuté` a `terén bez jasného vozidla`.
 68. **Client-engagement freshness signal** — pri freelance zdrojoch oddelene sleduje `postedAt`, `lastViewedByClient`, `interviewing`, `hires` a aktívne kontrakty.
 69. **Emergency-response SLA compatibility gate** — identifikuje roly, ktoré vyžadujú pevné online hodiny, okamžité reakcie, permanentnú dostupnosť alebo videohovory, a porovná ich s reálnou dostupnosťou.
@@ -176,8 +180,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 73. **Portfolio evidence auto-selector** — pre každú TOP ponuku vyberie 2–3 najrelevantnejšie už preukázané dôkazy do reakcie/CV bez vymýšľania skillov.
 74. **Audit-feed reconciliation invariant** — prepočíta source mix/active count/eligibility priamo z feedu a porovná s auditom a MASTER.
 75. **Remote engagement-model verifier** — pri remote rolách overí, či firma reálne vie zamestnať/kontrahovať človeka zo Slovenska, nie iba či text obsahuje remote/worldwide.
-76. **Onboarding/trainability signal — NOVÉ** — samostatne vyhodnotí, či firma výslovne zaškolí, prijíma absolventa/človeka bez praxe, alebo naopak očakáva okamžitú samostatnosť a viacročnú skúsenosť. Prínos: adjacent technické/support roly dostanú realistickejšie skóre; „firma zaučí“ môže zvýšiť šancu aj pri miernom skill gape, kým „3+ years required“ zníži prioritu.
-77. **Physical/field-work burden classifier — NOVÉ** — z textu rozlíši kancelársku prácu, občasný terén, pravidelné výjazdy, dlhé státie, sklad/manipuláciu a fyzickú záťaž. Prínos: e-shop/support/admin rola nebude hodnotená len podľa názvu, ak jej reálna náplň obsahuje významný sklad, nosenie alebo častý terén; ranking bude viac odrážať praktický pracovný deň.
+76. **Onboarding/trainability signal** — samostatne vyhodnotí, či firma výslovne zaškolí, prijíma absolventa/človeka bez praxe, alebo naopak očakáva okamžitú samostatnosť a viacročnú skúsenosť.
+77. **Physical/field-work burden classifier** — z textu rozlíši kancelársku prácu, občasný terén, pravidelné výjazdy, dlhé státie, sklad/manipuláciu a fyzickú záťaž.
+78. **Source-access degradation detector — NOVÉ** — porovná dnešný `status/hits` zdroja s jeho vlastnou históriou a rozlíši „na trhu nič nie je“ od „zdroj sa prestal indexovať, vrátil login wall alebo technicky degradoval“. Prínos: nulový hit z Facebooku, Contra či jobboardu nebude falošne interpretovaný ako nulový dopyt a sourcing vie automaticky presmerovať recheck kapacitu na náhradný prístup.
+79. **CV/reaction variant outcome tracker — NOVÉ** — pri každej reálnej reakcii uloží, aká verzia CV/reaction framingu bola použitá (e-commerce, tech support, admin, AI, vodič) a neskôr ju spojí s výsledkom `odpoveď / pohovor / zamietnutie / bez reakcie`. Prínos: ranking a Application Builder sa bude učiť z reálnych výsledkov, nie iba z teoretického Match skóre, bez potreby meniť fakty v CV.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
