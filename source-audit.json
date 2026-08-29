@@ -1,27 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T12:16:00+02:00",
+  "updatedAt": "2026-08-29T12:24:37+02:00",
   "runSummary": {
-    "familiesChecked": 8,
+    "familiesChecked": 10,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 5,
-    "rejectedAsWeakOrLowValue": 4,
-    "duplicateOrExisting": 3,
+    "rejectedByLanguageOrHardSkill": 6,
+    "rejectedAsWeakOrLowValue": 6,
+    "duplicateOrExisting": 4,
     "rejectedByFreshnessOrEvidence": 2,
     "rejectedByLocation": 1,
     "liveFeedCount": 34,
     "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
-    "freshnessStatus": "stale-over-60m",
-    "note": "Beh 29. 8. 2026 o 12:16 reálne prešiel Profesia, LinkedIn Jobs, priame firemné kariéry, Pretlak/GROWNi indexáciu, Upwork a širšie verejné job indexy. Nový prioritný winner sa nenašiel, preto jobs-data.json ostal fail-closed bez umelého posunu updatedAt. Nový Tesco Analytik párovania produktov a produktových dát (1 600 €, Bratislava, občasný home office) má explicitný English B2 gate, preto neprešiel. InterWay Sales Operations & Data Specialist (od 2 000 €, BA, občasný home office) vyžaduje min. 2 roky Sales Ops/CRM/reporting/data analytics, pokročilý Excel a English B1; je zaujímavý, ale nie nový winner oproti existujúcim prioritám. Accenture Junior AI Business Analyst má B2+ English, IT titul, približne 2 roky data/BI a Python/AI framework/cloud požiadavky. SupportYourApp AI Solutions Engineer má C1+ English a hands-on AI implementation gate. Upwork priniesol čerstvé WordPress/Shopify leads, ale nové vhodné výsledky boli buď veľmi nízko platené ($10 fixed), hard-dev, US-only alebo bez lepšej hodnoty než existujúci WordPress VA lead. Feed je teraz starší než 60 minút; incident je zaznamenaný bez kozmetického refreshu."
+    "freshnessStatus": "stale-over-60m-no-new-winner",
+    "note": "Beh 29. 8. 2026 o 12:24 CEST reálne prešiel Profesia, LinkedIn Jobs, priame firemné kariéry, Worki, Brigada.sk, Pretlak/tech-creative, WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexované Facebook skupiny. Nový prioritný winner sa nenašiel, preto jobs-data.json ostal fail-closed bez kozmetického posunu updatedAt. Powerlogy Marketing Specialist má výborný e-shop/WordPress/WooCommerce/AI fit a BA hybrid, ale explicitne vyžaduje slovenčinu aj angličtinu na veľmi dobrej úrovni. Wolt Support Associate má English min. B2. Nový Upwork full-time VA pre UK engineering firm je worldwide remote, ale vyžaduje strong written/spoken English a telefonovanie s klientmi. Upwork eCommerce VA pre multi-platform store je tematicky vhodný, ale $50 fixed-price pre complex project je scope-to-pay mismatch. Ďalšie WordPress leads boli hard-dev alebo nízko platené. Facebook ostáva 0 verified hits / limited."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":7,"note":"Overené BA/remote admin, produktové dáta, support, e-commerce a driver výsledky. Tesco produktové dáta má B2 English; existujúce priority ostávajú silnejšie."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":8,"note":"Overené nové/čerstvé BA a Slovakia remote výsledky. Accenture Junior AI BA má B2+, IT degree a data/AI hard-skill gate; SupportYourApp AI Solutions Engineer C1+ a hands-on AI implementation."},
-    {"name":"Priame firemné kariéry","family":"company-careers","status":"ok","hits":3,"note":"InterWay Sales Operations & Data Specialist overený priamo: od 2 000 €, BA, ASAP, min. 2 roky relevantnej praxe, pokročilý Excel, CRM a B1 English. Zaujímavý, ale nie nový prioritný winner."},
-    {"name":"Pretlak / GROWNi / tech-creative","family":"pretlak-growni","status":"checked","hits":1,"note":"Sweep bez nového low-language-gate leadu, ktorý by prebil existujúce AI/admin priority."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":6,"note":"Čerstvé WordPress/Shopify/VA leads: Shopify fulfillment $10 fixed je low-value; WordPress mobile fix $35 one-off je slabší než existujúci VA lead; ďalšie boli hard-dev alebo geo-restricted."},
-    {"name":"Verejné job indexy","family":"job-indexes","status":"checked","hits":5,"note":"Použité len na discovery/cross-check; kandidáti boli následne overovaní na primárnych alebo detailných zdrojoch, keď boli dostupné."},
-    {"name":"Remote support discovery","family":"remote-support","status":"checked","hits":2,"note":"Concentrix český home-office support vyžaduje native Czech a komunikatívnu English; nie je vhodný pre aktiváciu."},
-    {"name":"Community / social public index","family":"community","status":"limited","hits":0,"note":"Bez nového konkrétneho verejne overiteľného hiring postu; coverage zostáva limited."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":7,"note":"BA/remote e-shop, admin, support a driver sweep; bez nového low-language-gate winnera nad existujúce LIVE priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":7,"note":"BA/support výsledky overené; Wolt Support Associate je BA, ale vyžaduje professional English min. B2, preto bez aktivácie."},
+    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":3,"note":"Direct-career lane overený na známych BA/remote smeroch; bez nového priameho firemného winnera s A2-compatible language gate."},
+    {"name":"Worki.sk","family":"worki","status":"ok","hits":5,"note":"Aktuálna admin/customer-service stránka overená; RM Biznis servis ostáva existujúci LIVE lead. Ďalšie TOP výsledky boli jazykovo alebo obchodne slabšie."},
+    {"name":"Brigada.sk","family":"brigada","status":"ok","hits":8,"note":"Bratislava a okolie overené; aktuálne retail/sklad zmeny sú použiteľné ako núdzové brigády, ale neprebíjajú existujúce web/admin/driver priority."},
+    {"name":"Pretlak / tech-creative","family":"pretlak","status":"ok","hits":2,"note":"Powerlogy Marketing Specialist: BA hybrid, od 1 600 €, WordPress/WooCommerce/e-shop/AI obsahovo silný, ale požaduje slovenčinu a angličtinu na veľmi dobrej úrovni. CloseRocket má fluent English. Obe bez aktivácie pre language gate."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"note":"Bez nového Slovakia-eligible non-hard-dev WordPress/WooCommerce support/admin leadu."},
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":9,"note":"Nové worldwide remote VA/e-commerce/WordPress leads overené. UK engineering VA vyžaduje strong spoken/written English a phone client work. eCommerce VA má $50 fixed pre complex scope. WordPress fixes boli prevažne $5–50 fixed alebo hard-dev; bez nového winnera."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Najčerstvejšie výsledky sú prevažne FOR HIRE ponuky dodávateľov, nie konkrétne hiring dopyty vhodné pre aktiváciu."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"WordPress Slovensko, WooCommerce SK+CZ a BA pracovné skupiny neposkytli konkrétny aktuálny verejne overiteľný hiring post s priamym linkom. 0 verified hits; nič sa nepredstiera."}
   ]
 }
