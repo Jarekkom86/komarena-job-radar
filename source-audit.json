@@ -1,31 +1,26 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T09:29:11+02:00",
+  "updatedAt": "2026-08-29T10:15:52+02:00",
   "runSummary": {
-    "familiesChecked": 12,
+    "familiesChecked": 7,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 5,
-    "rejectedAsWeakOrLowValue": 5,
-    "duplicateOrExisting": 6,
-    "rejectedByFreshnessOrEvidence": 3,
-    "rejectedByLocation": 2,
+    "rejectedByLanguageOrHardSkill": 4,
+    "rejectedAsWeakOrLowValue": 3,
+    "duplicateOrExisting": 5,
+    "rejectedByFreshnessOrEvidence": 2,
+    "rejectedByLocation": 0,
     "liveFeedCount": 33,
     "jobsDataContentUpdatedAt": "2026-08-29T06:35:54+02:00",
-    "freshnessStatus": "content-unchanged-audit-fresh",
-    "note": "Beh 29. 8. 2026 o 09:29 reálne preveril Profesia, LinkedIn Jobs, priame firemné kariéry, Worki, Brigada.sk, Práca za rohom/Kariera, Služby zamestnanosti, Pretlak, WordPress Jobs, Upwork/freelance, Reddit/WordPress komunity a verejnú Facebook indexáciu. Bez nového winnera nad existujúce LIVE priority. Wolt Support Associate BA má minimálne B2 AJ; Metrohm IT Support v Petržalke má B1-B2 AJ, VŠ I. stupňa a aspoň 1 rok praxe; dnešné Upwork WordPress leady sú buď nízko platené/rozbehnuté, alebo vyžadujú preukázaný GoHighLevel skill. Worki RM Biznis servis je existujúca LIVE položka. Brigada.sk priniesla dnešné retail smeny, ale nejde o strategicky lepší smer. Facebook verejná indexácia neposkytla konkrétny overiteľný hiring post. jobs-data.json sa nemení, pretože sa nezmenil obsah feedu; audit freshness sa vedie oddelene od content freshness."
+    "freshnessStatus": "source-audit-fresh-jobs-feed-stale",
+    "note": "Beh 29. 8. 2026 o 10:15 reálne preveril čerstvé Profesia BA/admin/support/driver výsledky, LinkedIn support/operations, GROWNi/LEAF, Pretlak a priame detailné stránky existujúcich priorít. Lanža je stále aktívna s nástupom ihneď, 1 500–3 000 EUR/mes., vodičák B; VÚB Digitálny agent je stále aktívny 100 % home office za 1 480 EUR/mes.; LEAF Implementation Support Specialist zostáva dostupný. Energohub sa stále zobrazuje medzi čerstvými BA office-manager výsledkami za 1 800 EUR/mes. Nový InvenSense Office Manager (od 1 900 EUR, BA, občasný home office) bol zachytený, ale dostupný verejný výsledok neposkytol dosť požiadaviek na bezpečné povýšenie nad existujúce priority. Wolt Support Associate FT/PT vyžaduje minimálne B2 AJ a zmeny do 1:00/2:00, preto neprešiel. GA Drilling IT Operations Specialist je medior, onsite a vyžaduje širší M365/Azure/networking scope. Bez nového winnera. jobs-data.json sa v tomto behu nepodarilo bezpečne prepísať bez full-file replacementu, preto jeho updatedAt zostáva 06:35:54 a je starší než 60 min; stale stav je evidovaný, nie maskovaný."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":7,"note":"Preverené čerstvé BA/remote admin, support, web a driver výsledky. Lanža/Akfos zostávajú čerstvé existing priority. Nové výsledky mimo feedu neprešli language/hard-skill alebo dominance filtrom."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":8,"note":"Wolt Support Associate FT/PT je čerstvý BA lead, ale explicitne vyžaduje minimum B2 AJ. Ďalšie Customer Success/Support roly majú fluent/professional English alebo seniornejší scope. Bez aktivácie."},
-    {"name":"Priame firemné kariéry","family":"company-careers","status":"ok","hits":5,"note":"Overené Websupport Customer Success Advisor a O2 Digital Content Admin ako stále dostupné existujúce LIVE priority; O2 junior SIM/identity je hard-skill-heavy. Bez nového winnera."},
-    {"name":"Worki.sk","family":"worki","status":"ok","hits":5,"note":"RM Biznis servis zostáva medzi dnešnými BA admin výsledkami a je už v LIVE. Ďalšie home-office výsledky sú finančný predaj, jazykovo špecifické alebo mimo cieľového profilu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":2,"note":"Dnešné BA výsledky sú hlavne retail/dokladanie; napr. 29.8. BA 13,15 €/h. Neprinášajú lepšiu strategickú hodnotu než existujúce admin/web/driver priority."},
-    {"name":"Práca za rohom / Kariera","family":"pracazarohom-kariera","status":"checked","hits":2,"note":"Použité na discovery/corroboration; Profesia mirrory sa nepočítajú ako nezávislé hity. Bez nového kvalitného canonical leadu."},
-    {"name":"Služby zamestnanosti","family":"sluzby-zamestnanosti","status":"ok","hits":4,"note":"Metrohm IT Support Specialist, Petržalka, 1 800 €, je reálny BA technický support, ale požaduje VŠ I. stupňa, 1 rok praxe a AJ B1-B2; nezaradené. Hard development/SAP roly tiež vyradené."},
-    {"name":"Pretlak / tech-creative discovery","family":"pretlak","status":"checked","hits":1,"note":"Bez nového A2-compatible BA/remote web/e-commerce/AI/support kandidáta nad existujúce LIVE priority."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"note":"Cielený sweep bez nového Slovakia-eligible non-hard-dev WordPress/WooCommerce admin/support leadu."},
-    {"name":"Upwork / freelance","family":"upwork-freelance","status":"ok","hits":2,"note":"Dnešný WordPress→GoHighLevel migration lead je worldwide, ale vyžaduje preukázaný GHL skill a má 20–50 proposals. One-page WordPress lead je 40 USD, 15–20 proposals a 5 interviewing. Bez aktivácie."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":2,"note":"Najčerstvejšie indexované posty sú FOR HIRE ponuky freelancerov, nie hiring dopyty; bez aktivácie."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"WordPress Slovensko, WooCommerce SK+CZ a BA pracovné skupiny boli vyhľadané, ale verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom. 0 verified hits; nič sa nepredstiera."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":10,"note":"Čerstvé BA výsledky: InvenSense Office Manager od 1 900 EUR, Penta Sales Administrator od 1 800 EUR, Energohub 1 800 EUR, Eric SK e-shop/retail support brigáda, ďalšie admin pozície. Existujúce Lanža a VÚB boli otvorené priamo a potvrdené ako aktívne."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":4,"note":"Wolt Support Associate FT/PT je čerstvý BA lead, ale vyžaduje minimum B2 AJ a večerné/víkendové zmeny až do 1:00/2:00. Bez aktivácie."},
+    {"name":"GROWNi / LEAF","family":"growni","status":"ok","hits":3,"note":"LEAF Implementation Support Specialist je stále dostupný a ostáva silnou existujúcou prioritou; nové relevantnejšie položky nad jeho score sa nenašli."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":2,"note":"GA Drilling IT Operations Specialist od 2 500 EUR je onsite medior s M365/Azure/networking scope; nezodpovedá low-gate cieľu. Bez nového A2-compatible winnera."},
+    {"name":"Priame detailné stránky priorít","family":"direct-detail","status":"ok","hits":3,"note":"Lanža aktívna: Bratislava, ihneď, živnosť, 1 500–3 000 EUR, vodičák B. VÚB aktívna: 100 % home office, 1 480 EUR, SŠ s maturitou, bez nočných. LEAF detail dostupný."},
+    {"name":"Profesia office/admin discovery","family":"profesia-discovery","status":"ok","hits":8,"note":"InvenSense Office Manager je nový zaujímavý discovery lead, ale bez dostatočného verejného detailu o jazyku a hard-skills sa zatiaľ neaktivuje. Eric SK e-shop/retail podpora je relevantná brigáda, ale od 7 EUR/h a neprekonáva existujúce priority."},
+    {"name":"Remote/support discovery","family":"remote-support","status":"checked","hits":3,"note":"Klarstein Italy support vyžaduje taliančinu; Wolt B2 AJ; ďalšie support výsledky majú vyšší jazykový gate alebo slabší fit. Bez aktivácie."}
   ]
 }
