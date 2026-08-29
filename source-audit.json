@@ -1,27 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T14:13:44+02:00",
+  "updatedAt": "2026-08-29T14:34:37+02:00",
   "runSummary": {
-    "familiesChecked": 8,
+    "familiesChecked": 10,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 6,
-    "rejectedAsWeakOrLowValue": 4,
-    "duplicateOrExisting": 6,
-    "rejectedByFreshnessOrEvidence": 2,
-    "rejectedByLocation": 2,
+    "rejectedByLanguageOrHardSkill": 7,
+    "rejectedAsWeakOrLowValue": 6,
+    "duplicateOrExisting": 5,
+    "rejectedByFreshnessOrEvidence": 3,
+    "rejectedByLocation": 1,
     "liveFeedCount": 34,
     "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
-    "freshnessStatus": "stale-over-60m-no-content-change",
-    "note": "Beh 29. 8. 2026 o 14:13 CEST reálne preveril Profesia BA/okolie, Profesia remote/customer-support, technické/servisné roly, vodičské roly, LinkedIn/indexované remote výsledky, Worki, Upwork/freelance a priame firemné kariéry. Nový alebo významne zmenený prioritný winner sa nenašiel. 3MON IT & Operations Support za 2 000 EUR sa znovu objavil medzi najnovšími výsledkami, ale detail potvrdzuje AJ B2 a 3 roky praxe, preto zostáva mimo LIVE. VÚB Digitálny agent Remote bol znovu potvrdený na priamom Intesa Sanpaolo kariérnom zdroji ako aktívny, celé Slovensko, full-time, Students & Graduates. Confilogi zostáva aktívny 100 % home office. Nové vodičské výsledky sú prevažne C/C+E, mimo BA alebo slabšie než existujúce Lanža/Akfos. jobs-data.json sa nemenil, pretože nebola zistená obsahová zmena; updatedAt nebol posunutý kozmeticky. Feed je preto naďalej starší než 60 minút a tento stale stav je explicitne zaznamenaný."
+    "freshnessStatus": "stale-because-no-new-winner",
+    "note": "Beh 29. 8. 2026 o 14:34 CEST reálne preveril Profesia, priame firemné kariéry, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WordPress komunity a verejne indexovaný Facebook. Nový kandidát Veslo Back Office & Sales Support Manager je obsahovo silný a lokalitne BA, ale direct detail nesie dátum 27. 2. 2026; napriek čerstvému LinkedIn reindexu bol ponechaný mimo LIVE, kým sa nezíska čerstvejší aktívny hiring dôkaz. Foxelli E-commerce Technical Assistant je 100 % remote a Slovakia-eligible, ale vyžaduje hands-on Shopify Flow, Google Apps Script, REST API, Recharge a jasnú angličtinu; hard-skill/language gate ho drží mimo LIVE. ESET Customer Support je entry-level, ale vyžaduje ideálne B2 English; Wolt support vyžaduje B2. Upwork priniesol čerstvé worldwide VA/admin výsledky, no väčšina má nízky fixed budget, silnú angličtinu alebo slabý pomer hodnoty ku konkurencii. Facebook: 0 verified hits, coverage limited. jobs-data.json sa nemenil a updatedAt nebol kozmeticky posunutý."
   },
   "sources": [
-    {"name":"Profesia – BA všeobecne","family":"profesia","status":"checked","hits":14,"note":"Najnovšie BA výsledky preverované. 3MON resurfaced/reindexed, ale AJ B2 + 3 roky praxe; bez nového A2-compatible prioritného winnera."},
-    {"name":"Profesia – remote/customer support","family":"profesia-remote","status":"checked","hits":12,"note":"VÚB a Confilogi zostávajú aktívne. Nové KLARSTEIN/Crystal/Expandeco varianty majú jazykové gate alebo nižší fit."},
-    {"name":"Profesia – technické/servisné roly","family":"profesia-tech","status":"checked","hits":10,"note":"ALTRON, Siemens, elektroúdržba a podobné roly majú §/elektro kvalifikáciu alebo hard-skill gate; bez vhodnejšieho winnera."},
-    {"name":"Profesia – vodičské roly","family":"profesia-driver","status":"checked","hits":9,"note":"Nové výsledky prevažne mimo BA, C/C+E alebo medzinárodná doprava. Existujúce Lanža/Akfos ostávajú vhodnejšie."},
-    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":3,"note":"VÚB Digitálny agent Remote potvrdený priamo na Intesa Sanpaolo careers, dátum 27.8.2026, celé Slovensko, full-time, Students & Graduates."},
-    {"name":"LinkedIn / indexované remote výsledky","family":"linkedin","status":"checked","hits":5,"note":"Bez nového Slovakia-eligible low-language-gate winnera nad existujúce priority."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":3,"note":"Bez novej BA/remote admin/tech/driver položky s lepším fit/value."},
-    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":5,"note":"WordPress/VA výsledky preverované; bez nového kandidáta s lepším pomerom budget/competition/evidence než existujúci LIVE freelance lead."}
+    {"name":"Profesia – BA/remote všeobecne","family":"profesia","status":"checked","hits":12,"note":"BA e-shop/admin/support/driver sweep; bez nového A2-compatible winnera nad aktuálne LIVE priority."},
+    {"name":"Priame firemné kariéry","family":"company-careers","status":"ok","hits":4,"note":"Foxelli Ashby a Veslo direct career preverované. Veslo je silný BA back-office fit, ale direct publish date 27.2.2026; zatiaľ freshness quarantine. Foxelli tech assistant má hard skill + English burden."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":8,"note":"Veslo reindexované pred ~6 dňami; ESET Customer Support aktívny, ale B2 English; Wolt Support B2. Bez nového low-language-gate winnera."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":3,"note":"Bez novej BA/remote admin/tech položky s lepším fit/value než existujúce LIVE výsledky."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":4,"note":"BA/okolie admin/retail/sklad discovery; bez nového výsledku, ktorý by prebil existujúce admin/web/driver priority."},
+    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":4,"note":"Bez nového Slovakia-eligible non-hard-dev winnera. ESET startup mirror potvrdzuje B2 English burden."},
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":8,"note":"Čerstvé worldwide VA/admin/e-commerce výsledky overené. $300 full-time-ish admin, $15/$38 fixed microtasks a podobné výsledky sú low-value; silnejšie VA roly majú strong English alebo vysokú konkurenciu."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":1,"note":"Najčerstvejšie relevantné indexované výsledky neobsahujú nový Slovakia-eligible hiring lead; US-only WordPress developer posty vyradené lokalitou."},
+    {"name":"Facebook WordPress/WooCommerce/BA jobs – verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; nič sa nepredstiera."},
+    {"name":"Cross-source corroboration / search indexes","family":"corroboration","status":"checked","hits":6,"note":"Použité na overenie aktívnosti, jazykových požiadaviek a konfliktov. Reindex bez čerstvého direct publish dôkazu sa nepovažuje automaticky za nový inzerát."}
   ]
 }
