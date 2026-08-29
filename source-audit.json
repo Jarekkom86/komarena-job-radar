@@ -1,27 +1,31 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T09:15:15+02:00",
+  "updatedAt": "2026-08-29T09:29:11+02:00",
   "runSummary": {
-    "familiesChecked": 8,
+    "familiesChecked": 12,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 3,
-    "rejectedAsWeakOrLowValue": 4,
-    "duplicateOrExisting": 5,
-    "rejectedByFreshnessOrEvidence": 2,
-    "rejectedByLocation": 1,
+    "rejectedByLanguageOrHardSkill": 5,
+    "rejectedAsWeakOrLowValue": 5,
+    "duplicateOrExisting": 6,
+    "rejectedByFreshnessOrEvidence": 3,
+    "rejectedByLocation": 2,
     "liveFeedCount": 33,
     "jobsDataContentUpdatedAt": "2026-08-29T06:35:54+02:00",
-    "freshnessStatus": "stale-over-60m",
-    "note": "Beh 29. 8. 2026 o 09:15 reálne preveril čerstvé Profesia BA/remote admin, IT/support a driver výsledky, LinkedIn remote/e-commerce výsledky, GROWNi/LEAF a ďalšie verejne indexované zdroje. Bez novej prioritnej položky nad existujúce LIVE priority. VÚB, Lanža, Akfos, Confilogi, 3MON a LEAF sa stále zobrazujú ako aktívne/aktuálne výsledky. Nová administratívna výpomoc INDEX NOSLUŠ (1 650 EUR) má ekonomické zameranie a AJ B1-B2, preto neprešla hard-fit filtrom. Car Route vodič dodávky 1 800 EUR má síce vodičák B a okamžitý nástup, ale pracovný čas 1:30-11:30, ručnú nakládku/vykládku a pravidelnú trasu do Rakúska; je slabší fit než Lanža/Akfos. Foxelli remote support je uzavretý alebo jazykovo nevhodný. jobs-data.json zostáva nezmenený, pretože nebola nájdená nová ani významne zmenená LIVE položka; jeho timestamp je však starší než 60 minút a freshness incident je explicitne evidovaný."
+    "freshnessStatus": "content-unchanged-audit-fresh",
+    "note": "Beh 29. 8. 2026 o 09:29 reálne preveril Profesia, LinkedIn Jobs, priame firemné kariéry, Worki, Brigada.sk, Práca za rohom/Kariera, Služby zamestnanosti, Pretlak, WordPress Jobs, Upwork/freelance, Reddit/WordPress komunity a verejnú Facebook indexáciu. Bez nového winnera nad existujúce LIVE priority. Wolt Support Associate BA má minimálne B2 AJ; Metrohm IT Support v Petržalke má B1-B2 AJ, VŠ I. stupňa a aspoň 1 rok praxe; dnešné Upwork WordPress leady sú buď nízko platené/rozbehnuté, alebo vyžadujú preukázaný GoHighLevel skill. Worki RM Biznis servis je existujúca LIVE položka. Brigada.sk priniesla dnešné retail smeny, ale nejde o strategicky lepší smer. Facebook verejná indexácia neposkytla konkrétny overiteľný hiring post. jobs-data.json sa nemení, pretože sa nezmenil obsah feedu; audit freshness sa vedie oddelene od content freshness."
   },
   "sources": [
-    {"name":"Profesia – Bratislava administratíva","family":"profesia-admin","status":"ok","hits":6,"note":"Preverené najnovšie BA administratívne výsledky. VÚB zostáva aktívny. INDEX NOSLUŠ: 1 650 EUR, Po-Pia, archivácia/skenovanie, ale ekonomické vzdelanie + účtovníctvo a AJ B1-B2; nezaradené."},
-    {"name":"Profesia – IT / technická podpora","family":"profesia-tech","status":"ok","hits":4,"note":"3MON IT & Operations Support 2 000 EUR je stále aktívna existujúca položka; bez nového kandidáta s lepším profilom a A2-compatible požiadavkami."},
-    {"name":"Profesia – vodič / kuriér Bratislava","family":"profesia-driver","status":"ok","hits":5,"note":"Lanža a Akfos zostávajú aktívne. Car Route 1 800 EUR má vodičák B a ihneď, ale 1:30-11:30, Rakúsko a ručnú nakládku/vykládku; slabší fit než existujúce priority. Košík zostáva fyzicky náročnejší."},
-    {"name":"Profesia – remote customer support","family":"profesia-remote","status":"ok","hits":4,"note":"Confilogi a VÚB zostávajú aktívne. Ostatné čerstvé remote call-center výsledky sú prevažne predajné alebo jazykovo nevhodné."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":3,"note":"Preverené remote/e-commerce support výsledky; Foxelli verejný detail uvádza no longer accepting applications, iné výsledky majú vyššie jazykové požiadavky alebo sú duplicity."},
-    {"name":"GROWNi / LEAF","family":"growni","status":"ok","hits":1,"note":"LEAF Implementation Support Specialist zostáva verejne dostupný a relevantný; bez významnej zmeny oproti LIVE položke."},
-    {"name":"Pretlak / AI discovery","family":"pretlak","status":"checked","hits":1,"note":"Bez nového silnejšieho A2-compatible BA/remote AI/automation kandidáta nad existujúcu OVB prioritu."},
-    {"name":"Verejná web indexácia / ostatné portály","family":"other","status":"limited","hits":2,"note":"Použité na corroboration a discovery; bez nového overiteľného winnera. Pokrytie login-only a neindexovaných zdrojov sa nepredstiera."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":7,"note":"Preverené čerstvé BA/remote admin, support, web a driver výsledky. Lanža/Akfos zostávajú čerstvé existing priority. Nové výsledky mimo feedu neprešli language/hard-skill alebo dominance filtrom."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":8,"note":"Wolt Support Associate FT/PT je čerstvý BA lead, ale explicitne vyžaduje minimum B2 AJ. Ďalšie Customer Success/Support roly majú fluent/professional English alebo seniornejší scope. Bez aktivácie."},
+    {"name":"Priame firemné kariéry","family":"company-careers","status":"ok","hits":5,"note":"Overené Websupport Customer Success Advisor a O2 Digital Content Admin ako stále dostupné existujúce LIVE priority; O2 junior SIM/identity je hard-skill-heavy. Bez nového winnera."},
+    {"name":"Worki.sk","family":"worki","status":"ok","hits":5,"note":"RM Biznis servis zostáva medzi dnešnými BA admin výsledkami a je už v LIVE. Ďalšie home-office výsledky sú finančný predaj, jazykovo špecifické alebo mimo cieľového profilu."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":2,"note":"Dnešné BA výsledky sú hlavne retail/dokladanie; napr. 29.8. BA 13,15 €/h. Neprinášajú lepšiu strategickú hodnotu než existujúce admin/web/driver priority."},
+    {"name":"Práca za rohom / Kariera","family":"pracazarohom-kariera","status":"checked","hits":2,"note":"Použité na discovery/corroboration; Profesia mirrory sa nepočítajú ako nezávislé hity. Bez nového kvalitného canonical leadu."},
+    {"name":"Služby zamestnanosti","family":"sluzby-zamestnanosti","status":"ok","hits":4,"note":"Metrohm IT Support Specialist, Petržalka, 1 800 €, je reálny BA technický support, ale požaduje VŠ I. stupňa, 1 rok praxe a AJ B1-B2; nezaradené. Hard development/SAP roly tiež vyradené."},
+    {"name":"Pretlak / tech-creative discovery","family":"pretlak","status":"checked","hits":1,"note":"Bez nového A2-compatible BA/remote web/e-commerce/AI/support kandidáta nad existujúce LIVE priority."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"note":"Cielený sweep bez nového Slovakia-eligible non-hard-dev WordPress/WooCommerce admin/support leadu."},
+    {"name":"Upwork / freelance","family":"upwork-freelance","status":"ok","hits":2,"note":"Dnešný WordPress→GoHighLevel migration lead je worldwide, ale vyžaduje preukázaný GHL skill a má 20–50 proposals. One-page WordPress lead je 40 USD, 15–20 proposals a 5 interviewing. Bez aktivácie."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":2,"note":"Najčerstvejšie indexované posty sú FOR HIRE ponuky freelancerov, nie hiring dopyty; bez aktivácie."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"WordPress Slovensko, WooCommerce SK+CZ a BA pracovné skupiny boli vyhľadané, ale verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom. 0 verified hits; nič sa nepredstiera."}
   ]
 }
