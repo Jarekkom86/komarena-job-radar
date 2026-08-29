@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 29. 8. 2026 16:19 CEST
+Aktualizované: 29. 8. 2026 17:35 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -64,33 +64,34 @@ Aktualizované: 29. 8. 2026 16:19 CEST
 30. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 31. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 29. 8. 2026 16:19 CEST — LATEST
+## SOURCE AUDIT — 29. 8. 2026 17:35 CEST — LATEST
 Reálne prehľadané skupiny: **Profesia; direct company careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Pretlak/StartupJobs/WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia; cross-source corroboration.** Spolu **10 nezávislých kontrolovaných skupín**, minimálne 8 source families a viac než 5 mimo Profesia.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky do `jobs-data.json`: 0.** Feed zostal zámerne nezmenený a `updatedAt` sa neposúval bez obsahovej zmeny.
-- **Upwork:** čerstvé worldwide remote výsledky boli reálne preverené. `eCommerce Virtual Assistant for Multi-Platform Store` má iba **50 USD fixed**; `WordPress Developer for WooCommerce` iba **5 USD fixed**; `Virtual Assistant Full time job` má UK hours, **650 USD fixed** a vyžaduje excellent spoken/written English; `Virtual Assistant – Operations & Campaign Support` ponúka 5–7 USD/h, ale vyžaduje strong written/spoken English a časť U.S. working hours. Žiadna neprekonala súčasné LIVE priority.
-- **Reddit/WP komunity:** aktuálne nálezy sú prevažne `FOR HIRE` alebo US-only developer ponuky, nie vhodný Slovakia-eligible hiring lead.
-- **Brigada.sk:** použiteľné BA retail/sklad zmeny ostávajú emergency lane; neprebíjajú web/admin/driver priority.
+- **Upwork:** čerstvé worldwide remote výsledky boli prevažne generické VA/admin ponuky. Nové nálezy zahŕňali `Virtual Assistant needed for administrative tasks` za **15 USD fixed** s **20–50 proposals**, `Virtual Assistant for Data Entry` za **5 USD fixed**, `Data Entry CRM & Virtual Assistant Specialist` za **10 USD fixed** a UK-hours full-time VA so silnou požiadavkou na písanú aj hovorenú angličtinu. Žiadna neprekonala súčasné LIVE priority po value/language/evidence gate.
+- **LinkedIn:** Wolt Bratislava Support Associate bol reálne overený, ale vyžaduje **minimum B2 English**, preto nevstúpil do LIVE.
+- **Reddit/WP komunity:** dnešné nálezy sú `FOR HIRE` WordPress/WooCommerce developer posty, nie konkrétny hiring lead pre Jara.
+- **Brigada.sk/Worki/tech-creative:** bez nového kandidáta, ktorý by zlepšil web/admin/tech/driver priority pri zachovaní BA/remote a jazykového gateu.
 - **Facebook:** **0 verified hits**; verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom. Coverage zostáva `limited`.
 
 ### Run summary
 - Reálne skontrolované zdrojové skupiny: **10**.
 - Nové aktívne položky: **0**.
-- Vyradené jazykovým/hard-skill gateom: **9**.
-- Vyradené ako slabé/nízka hodnota: **10**.
-- Duplicitné/existing: **6**.
+- Vyradené jazykovým/hard-skill gateom: **6**.
+- Vyradené ako slabé/nízka hodnota: **7**.
+- Duplicitné/existing: **4**.
 - Vyradené pre freshness/evidence: **2**.
-- Vyradené pre lokalitu: **2**.
+- Vyradené pre lokalitu: **1**.
 - Vyradené pre neuskutočniteľné časové okno: **1**.
 
 ### LIVE mix
 - Aktívny feed: **34 položiek**.
 - Source mix ostáva približne **Profesia 44,1 % / mimo Profesia 55,9 %**.
 - `jobs-data.json.updatedAt` = **29. 8. 2026 10:27:16 CEST** — bez obsahovej zmeny.
-- `source-audit.json.updatedAt` = **29. 8. 2026 16:19:45 CEST**.
-- `job-sources.json.updatedAt` = **29. 8. 2026 16:19:45 CEST**.
-- Freshness reason: **`stale-because-no-new-winner`**, nie zlyhanie zberu.
+- `source-audit.json.updatedAt` = **29. 8. 2026 17:35:43 CEST**.
+- `job-sources.json.updatedAt` = **29. 8. 2026 17:35:43 CEST**.
+- Freshness reason: **`fresh-source-audit-no-content-change`**, nie zlyhanie zberu.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -244,8 +245,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 139. Required-tool specificity burden.
 140. Shift-start feasibility gate.
 141. Rolling source-mix window.
-142. **Title-vs-scope seniority resolver — NOVÉ** — senioritu neodvodzovať z názvu `Manager/Specialist/Junior`, ale zo skutočných povinností, ownershipu, požadovaných rokov praxe, rozhodovacích právomocí a hard-skillov. Praktický prínos: Radar neodmietne administratívne zvládnuteľnú rolu iba pre nafúknutý titul a zároveň neprecení „assistant“ rolu so skrytým seniorným scope.
-143. **Application-deadline confidence model — NOVÉ** — rozlíšiť explicitný deadline, `open until filled`, inferred deadline a neoverený/žiadny deadline; každý stav dostane confidence a vlastnú recheck SLA. Praktický prínos: menej zbytočne urgentných reakcií na evergreen inzeráty a menej premeškaných rolí s reálnym uzávierkovým termínom.
+142. **Title-vs-scope seniority resolver** — senioritu neodvodzovať z názvu `Manager/Specialist/Junior`, ale zo skutočných povinností, ownershipu, požadovaných rokov praxe, rozhodovacích právomocí a hard-skillov.
+143. **Application-deadline confidence model** — rozlíšiť explicitný deadline, `open until filled`, inferred deadline a neoverený/žiadny deadline; každý stav dostane confidence a vlastnú recheck SLA.
+144. **Generic-post / low-specificity suppression — NOVÉ** — pri freelance a VA inzerátoch merať konkrétnosť zadania: jasné deliverables, očakávaný workload/hodiny, nástroje, zodpovednosť, časové pásmo a spôsob odovzdania. Generické texty typu „administrative tasks / help our team“ bez scope detailu nedostanú vysokú prioritu iba preto, že sú čerstvé. Praktický prínos: menej času a Connects na neurčité low-value ponuky a vyššia kvalita shortlistu.
+145. **Freelance hire-to-spend anomaly signal — NOVÉ** — pri Upwork/freelance klientoch počítať spend na hire, pomer aktívnych hires, vek účtu a opakované micro-contracty. Extrémny počet hires pri veľmi nízkom celkovom spend (napr. desiatky hires za pár dolárov na zákazku) znižuje client quality aj apply-now prioritu. Praktický prínos: menej reakcií na churn/microtask klientov a vyššia šanca na stabilnejšiu, lepšie platenú zákazku.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
