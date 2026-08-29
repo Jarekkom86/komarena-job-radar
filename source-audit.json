@@ -1,36 +1,37 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T19:28:47+02:00",
+  "updatedAt": "2026-08-29T20:12:45+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
     "significantlyChangedPriorityJobs": 1,
-    "rejectedByLanguageOrHardSkill": 4,
-    "rejectedAsWeakOrLowValue": 7,
-    "duplicateOrExisting": 4,
+    "rejectedByLanguageOrHardSkill": 6,
+    "rejectedAsWeakOrLowValue": 8,
+    "duplicateOrExisting": 5,
     "rejectedByFreshnessOrEvidence": 2,
     "liveFeedCount": 34,
     "effectiveEligibleCount": 33,
     "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
-    "freshnessStatus": "content-change-pending-safe-feed-mutation",
-    "note": "Čerstvý audit 29. 8. 2026 o 19:28 CEST preveril Profesia, priame firemné kariéry/GROWNi, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WP komunity, verejne indexovaný Facebook a cross-source corroboration. Nový winner nebol nájdený. Významná zmena ostáva LUNYS: canonical LinkedIn detail už neprijíma žiadosti, preto LUNYS nemá byť aktívna TOP priorita. Nové Upwork hity z 29.8. boli prevažne generické alebo low-value fixed-price; UK-hours full-time VA vyžaduje strong spoken/written English. LinkedIn Wolt BA support vyžaduje minimum B2 English. Brigada.sk dnešný 13,15 EUR/h hit bol časovo viazaný na rannú zmenu a večer už nie je akčný. Facebook: 0 verified hits, coverage limited."
+    "freshnessStatus": "failed-over-60m-pending-safe-feed-mutation",
+    "note": "Čerstvý audit 29. 8. 2026 o 20:12 CEST preveril Profesia, priame firemné kariéry/GROWNi, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WP komunity, verejne indexovaný Facebook a cross-source corroboration. Nový prioritný winner nebol nájdený. Významná zmena ostáva LUNYS: canonical LinkedIn detail už neprijíma žiadosti, preto LUNYS nemá byť aktívna TOP priorita. LEAF je naďalej aktívny a prijíma prihlášky priebežne. Nové/čerstvé Profesia výsledky KONE Automation & AI Solutions Intern a Henkel International Team Assistant boli odmietnuté hard gate: KONE vyžaduje univerzitného študenta a fluent English; Henkel C1 English a min. 2 roky executive/admin praxe. Nové Upwork VA výsledky boli buď low-value (5–7 USD/h), mali strong English/US-hours gate alebo nedostatočný klientský signál. Facebook: 0 verified hits, coverage limited."
   },
   "sources": [
-    {"name":"Profesia – BA/remote všeobecne","family":"profesia","status":"ok","hits":4,"note":"Čerstvý sweep 29.8. 19:28; bez nového kandidáta, ktorý by prekonal existujúce BA/remote priority po language/hard-skill/value gate."},
-    {"name":"Priame firemné kariéry / GROWNi","family":"company-careers","status":"ok","hits":2,"note":"LEAF ostáva potvrdený aktívny s termínom do 14.9.2026; bez nového winnera."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"changed","hits":3,"note":"LUNYS canonical detail uvádza, že už neprijíma žiadosti. Wolt Bratislava Support Associate má minimum B2 English a je language reject."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"Bez nového kandidáta, ktorý by prekonal existujúce priority; freshness konflikty sa neaktivovali bez detailového dôkazu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":1,"note":"BA pokladník/dokladač 13,15 EUR/h bol viazaný na rannú zmenu 29.8.; v čase večerného auditu už nie je akčný."},
+    {"name":"Profesia – BA/remote všeobecne","family":"profesia","status":"ok","hits":5,"note":"Čerstvý sweep 29.8. 20:12; KONE AI intern má fluent English + university-student gate; Henkel International Team Assistant C1 + 2 roky praxe. Bez nového kandidáta nad existujúce priority."},
+    {"name":"Priame firemné kariéry / GROWNi","family":"company-careers","status":"ok","hits":3,"note":"LEAF ostáva aktívny, prevažne remote, od 1 500 EUR FTE, B1 AJ; prihlášky posudzujú priebežne. KONE canonical career detail potvrdzuje hard gate."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"changed","hits":3,"note":"LUNYS canonical detail ostáva uzavretý pre nové žiadosti; táto významná zmena musí byť premietnutá do jobs-data.json."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"Bez nového kandidáta, ktorý by prekonal existujúce priority; žiadna source-backed zmena LIVE položky."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":1,"note":"Bez akčného večerného BA hitu, ktorý by spĺňal prioritu a dostupnosť."},
     {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":2,"note":"Bez nového Slovakia-eligible non-hard-dev winnera s prijateľným language gate."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":7,"note":"29.8. pribudli worldwide VA/admin/WordPress výsledky, ale väčšina je low-value fixed-price alebo vyžaduje silnú angličtinu; žiadny nový winner nad LIVE priority."},
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":8,"note":"Čerstvé worldwide VA/admin/WordPress výsledky preverované. Operations & Campaign Support má strong spoken/written English, US-hours a iba 5–7 USD/h; Data Entry 20–50 USD/h má nový klientský účet a slabý dôkaz kvality. Žiadny nový prioritný winner."},
     {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":0,"note":"Bez konkrétneho aktuálneho hiring leadu vhodného pre LIVE feed."},
     {"name":"Facebook WordPress/WooCommerce/BA jobs – verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verejne overiteľných aktuálnych hiring postov; coverage sa nepredstiera."},
-    {"name":"Cross-source corroboration / search indexes","family":"corroboration","status":"ok","hits":6,"note":"Použité na potvrdenie stavu existujúcich priorít a closure LUNYS."
-    }
+    {"name":"Cross-source corroboration / search indexes","family":"corroboration","status":"ok","hits":7,"note":"Použité na potvrdenie LEAF, LUNYS closure a hard-gate podmienok nových Profesia/company-career výsledkov."}
   ],
   "writeStatus": {
     "jobsData": "pending-safe-mutation",
-    "jobsDataReason": "LUNYS má canonical closure evidence. Full-file feed sa nesmie prepisovať riskantne; zmena má prejsť atómovým parse/mutate/validate zápisom bez straty ostatných 33 oprávnených položiek.",
-    "jobsDataRequiredChange": "lunys-ecom: status active -> inactive/closed; priority today -> normal/closed; verifiedAt 2026-08-29T19:28:47+02:00. Po úspešnom zápise očakávaný aktívny feed count 33."
+    "jobsDataReason": "LUNYS má canonical closure evidence, ale v tomto behu nebolo možné vykonať atómový parse/mutate/validate zápis celého jobs-data.json cez dostupný konektor bez rizika straty ostatných validných položiek. Posledné validné dáta preto ostali zachované podľa fail-closed pravidla.",
+    "jobsDataRequiredChange": "lunys-ecom: status active -> inactive/closed; priority today -> normal/closed; verifiedAt 2026-08-29T20:12:45+02:00. Po úspešnom zápise očakávaný aktívny feed count 33.",
+    "jobsDataNonProf": "no-change-required",
+    "freshnessBreach": true
   }
 }
