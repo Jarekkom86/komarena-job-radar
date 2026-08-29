@@ -1,29 +1,27 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T13:21:45+02:00",
+  "updatedAt": "2026-08-29T14:13:44+02:00",
   "runSummary": {
-    "familiesChecked": 10,
+    "familiesChecked": 8,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 8,
-    "rejectedAsWeakOrLowValue": 6,
-    "duplicateOrExisting": 5,
-    "rejectedByFreshnessOrEvidence": 3,
-    "rejectedByLocation": 1,
+    "rejectedByLanguageOrHardSkill": 6,
+    "rejectedAsWeakOrLowValue": 4,
+    "duplicateOrExisting": 6,
+    "rejectedByFreshnessOrEvidence": 2,
+    "rejectedByLocation": 2,
     "liveFeedCount": 34,
     "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
-    "freshnessStatus": "stale-over-60m-no-new-winner",
-    "note": "Beh 29. 8. 2026 o 13:21 CEST reálne preveril Profesia, LinkedIn Jobs, priame firemné kariéry, Worki, Brigada.sk, Pretlak/tech-creative, WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexované Facebook skupiny. Nový prioritný winner sa nenašiel. Foxelli Careers je nový kvalitný direct-source lane pre 100 % remote e-commerce/AI roly dostupné zo Slovenska, ale Customer Support & Sales Agent vyžaduje fluent/near-native spoken English a nočný režim; Marketing Assistant je remote a AI/e-commerce relevantný, no verejný detail mieša assistant názov so seniornejšou marketing-manager/full-stack praxou a preto zostáva mimo LIVE do ďalšieho corroboration. CloudTalk remote support je starý/closed a vyžaduje fluent English. Upwork priniesol čerstvé VA/WordPress leads, ale buď majú $5–15 fixed low-value scope, 20–50 proposals, strong English alebo chýbajúci pay evidence. Facebook ostáva 0 verified hits / limited. jobs-data.json sa zámerne nemenil podľa fail-closed pravidla."
+    "freshnessStatus": "stale-over-60m-no-content-change",
+    "note": "Beh 29. 8. 2026 o 14:13 CEST reálne preveril Profesia BA/okolie, Profesia remote/customer-support, technické/servisné roly, vodičské roly, LinkedIn/indexované remote výsledky, Worki, Upwork/freelance a priame firemné kariéry. Nový alebo významne zmenený prioritný winner sa nenašiel. 3MON IT & Operations Support za 2 000 EUR sa znovu objavil medzi najnovšími výsledkami, ale detail potvrdzuje AJ B2 a 3 roky praxe, preto zostáva mimo LIVE. VÚB Digitálny agent Remote bol znovu potvrdený na priamom Intesa Sanpaolo kariérnom zdroji ako aktívny, celé Slovensko, full-time, Students & Graduates. Confilogi zostáva aktívny 100 % home office. Nové vodičské výsledky sú prevažne C/C+E, mimo BA alebo slabšie než existujúce Lanža/Akfos. jobs-data.json sa nemenil, pretože nebola zistená obsahová zmena; updatedAt nebol posunutý kozmeticky. Feed je preto naďalej starší než 60 minút a tento stale stav je explicitne zaznamenaný."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":12,"note":"BA/okolie + remote admin/support/driver sweep; existujúce Lanža, Akfos, VÚB a Confilogi ostávajú vhodnejšie než nové výsledky. Bez nového A2-compatible winnera."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":8,"note":"Overené BA/remote customer support a e-commerce roly. Foxelli support má fluent/near-native English a nočné zmeny; CloudTalk výsledok je starý/closed a fluent English. Bez aktivácie."},
-    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":5,"note":"Foxelli Ashby direct career lane potvrdený ako Slovakia-eligible remote zdroj. Support rola padá na fluent English; Marketing Assistant ostáva evidence-conflict/experience-risk kandidát, nie LIVE winner."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":4,"note":"Admin/customer-service sweep pre BA/remote; bez novej položky, ktorá by prekonala existujúce priority."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":6,"note":"BA brigády vodič/sklad/retail overené; použiteľné emergency-income možnosti, ale bez lepšieho fit/value než existujúce driver/admin priority."},
-    {"name":"Pretlak / tech-creative","family":"pretlak","status":"checked","hits":4,"note":"Powerlogy e-shop/marketing je obsahovo silný, ale vyžaduje veľmi dobrú slovenčinu a angličtinu; CloseRocket má fluent English. Bez nového low-language-gate winnera."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":4,"note":"Čerstvé výsledky sú hard-dev, užšie developer support scope alebo bez dostatočného budget evidence; bez Slovakia-eligible non-hard-dev winnera."},
-    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":7,"note":"Čerstvé VA/WordPress výsledky overené. Marketing VA $5 fixed a admin VA $15 fixed sú ekonomicky slabé; WooCommerce $5 fixed má 20–50 proposals; Mailchimp/Canva/WordPress VA je relevantný, ale verejný detail nemá spoľahlivý pay signal. Bez nového winnera."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Najčerstvejšie indexované príspevky sú prevažne FOR HIRE ponuky dodávateľov; žiadny nový vhodný hiring lead."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia neposkytla konkrétny aktuálny overiteľný hiring post pre BA/remote WordPress/admin; 0 verified hits, coverage limited."}
+    {"name":"Profesia – BA všeobecne","family":"profesia","status":"checked","hits":14,"note":"Najnovšie BA výsledky preverované. 3MON resurfaced/reindexed, ale AJ B2 + 3 roky praxe; bez nového A2-compatible prioritného winnera."},
+    {"name":"Profesia – remote/customer support","family":"profesia-remote","status":"checked","hits":12,"note":"VÚB a Confilogi zostávajú aktívne. Nové KLARSTEIN/Crystal/Expandeco varianty majú jazykové gate alebo nižší fit."},
+    {"name":"Profesia – technické/servisné roly","family":"profesia-tech","status":"checked","hits":10,"note":"ALTRON, Siemens, elektroúdržba a podobné roly majú §/elektro kvalifikáciu alebo hard-skill gate; bez vhodnejšieho winnera."},
+    {"name":"Profesia – vodičské roly","family":"profesia-driver","status":"checked","hits":9,"note":"Nové výsledky prevažne mimo BA, C/C+E alebo medzinárodná doprava. Existujúce Lanža/Akfos ostávajú vhodnejšie."},
+    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":3,"note":"VÚB Digitálny agent Remote potvrdený priamo na Intesa Sanpaolo careers, dátum 27.8.2026, celé Slovensko, full-time, Students & Graduates."},
+    {"name":"LinkedIn / indexované remote výsledky","family":"linkedin","status":"checked","hits":5,"note":"Bez nového Slovakia-eligible low-language-gate winnera nad existujúce priority."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":3,"note":"Bez novej BA/remote admin/tech/driver položky s lepším fit/value."},
+    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":5,"note":"WordPress/VA výsledky preverované; bez nového kandidáta s lepším pomerom budget/competition/evidence než existujúci LIVE freelance lead."}
   ]
 }
