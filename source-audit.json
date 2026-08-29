@@ -1,32 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T05:20:22+02:00",
+  "updatedAt": "2026-08-29T06:16:40+02:00",
   "runSummary": {
-    "familiesChecked": 12,
+    "familiesChecked": 9,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 3,
-    "rejectedAsWeakOrLowValue": 7,
-    "duplicateOrExisting": 1,
-    "rejectedByFreshnessOrEvidence": 4,
-    "rejectedByLocation": 1,
-    "liveFeedCount": 29,
-    "liveProfesiaEstimatePct": 44.8,
-    "liveNonProfesiaEstimatePct": 55.2,
-    "jobsDataContentUpdatedAt": "2026-08-29T04:14:09+02:00",
-    "note": "Beh 29. 8. 2026 o 05:20 reálne preveril 12 zdrojových rodín: Profesia, LinkedIn, priame firemné kariéry, Worki, Brigada.sk, Služby zamestnanosti/Kariera, Pretlak, StartupJobs/Jobs.cz lane, WordPress Jobs, Upwork/freelance, Reddit/WP komunity a Facebook verejnú indexáciu. Nevznikol nový kandidát, ktorý by bezpečne prekonal existujúci LIVE feed. Upwork priniesol čerstvé worldwide e-commerce/VA/WordPress ponuky, no aktuálne kandidáty mali nízky budget, vysokú konkurenciu alebo silnú angličtinu. Pretlak Dognet bol priamo otvorený a detail explicitne uvádza, že platnosť ponuky skončila. LinkedIn eCommerce výsledok Henkel už neprijíma žiadosti. Brigada.sk vrátila prevažne gastro/retail brigády mimo cieľového profilu. Worki discovery obsahoval staré/ukončené alebo finančno-obchodné roly. Facebook zostáva limited s 0 verified hiring hits. `jobs-data.json` sa preto fail-closed nemení a jeho `updatedAt` zostáva timestampom poslednej reálnej zmeny obsahu, nie posledného searchu."
+    "rejectedByLanguageOrHardSkill": 4,
+    "rejectedAsWeakOrLowValue": 5,
+    "duplicateOrExisting": 4,
+    "rejectedByFreshnessOrEvidence": 2,
+    "rejectedByLocation": 0,
+    "liveFeedCount": 32,
+    "liveProfesiaEstimatePct": 44,
+    "liveNonProfesiaEstimatePct": 56,
+    "jobsDataContentUpdatedAt": "2026-08-29T06:16:40+02:00",
+    "note": "Beh 29. 8. 2026 o 06:16 reálne preveril Profesia, LinkedIn Jobs, GROWNi/LEAF, Pretlak, Upwork, Worki, Brigada.sk, WordPress freelance lane a priame firemné kariéry. Feed nebol iba kozmeticky prečasovaný: aktívna Lanža bola znovu otvorená na Profesia a potvrdená s vodičákom B, 1 500–3 000 €/mes., nástupom ihneď a firemným vozidlom; LEAF Implementation Support bol znovu otvorený na GROWNi a ostáva aktívny, prevažne remote, s B1 AJ a termínom prihlásenia najneskôr 14. 9. 2026. Profesia remote sweep stále ukazuje existujúce VÚB a Confilogi ako najčerstvejšie relevantné položky. LinkedIn priniesol Wolt Support Associate full-time/part-time, ale vyžaduje profesionálnu AJ minimálne B2 a zmeny do 01:00–02:00, preto nejde do LIVE priorít. Foxelli e-commerce support je starší/slabší a jedna varianta už neprijíma žiadosti. Upwork priniesol nový WordPress/Mailchimp/Canva content-build VA job a ďalšie WordPress výsledky, ale bez overenej odmeny alebo s nízkym budgetom/vysokou konkurenciou; neprekonávajú existujúce WooCommerce/AI položky. jobs-data.json bol po tejto reálnej kontrole obnovený a Lanza + LEAF dostali nový verifiedAt; tým je freshness opäť pod 60 minút."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"Cielený BA/remote sweep pre web/e-shop, support, admin a vodičské roly bol vykonaný; bez nového overeného kandidáta nad existujúce LIVE priority."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"note":"Henkel Regional eCommerce Content Coordinator bol nájdený, ale detail uvádza `No longer accepting applications`; bez nového aktívneho winnera."},
-    {"name":"Priame firemné kariéry","family":"company","status":"checked","hits":0,"note":"Cielený sweep Websupport/Hilti/Penta a priamych career zdrojov bol vykonaný; bez nového canonical winnera."},
-    {"name":"Worki.sk","family":"slovak-jobboard","status":"checked","hits":1,"note":"Discovery vrátil prevažne staré/ukončené alebo finančno-obchodné roly; nič nové neprešlo BA/remote + fit gateom."},
-    {"name":"Brigada.sk","family":"slovak-jobboard","status":"checked","hits":2,"note":"Aktuálne výsledky boli najmä gastro/retail brigády v BA alebo mimo BA; neprekonávajú cieľový profil a jedna Levice ponuka je mimo lokalitného gateu."},
-    {"name":"Služby zamestnanosti / Kariera","family":"government-jobboard","status":"checked","hits":0,"note":"Cielený BA IT/support/admin sweep bez nového A2-compatible kandidáta nad existujúce LIVE technické/support položky."},
-    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":2,"note":"Dognet Account Manager bol obsahovo zaujímavý, ale detail explicitne uvádza, že platnosť ponuky skončila. Ostatné nájdené Pretlak výsledky sú staršie alebo slabšie než LIVE priority."},
-    {"name":"StartupJobs / Jobs.cz lane","family":"cz-startup-jobboard","status":"checked","hits":0,"note":"Remote mimo SR sa aktivuje iba pri explicitnej Slovakia eligibility; v tomto behu bez nového jednoznačného winnera."},
-    {"name":"WordPress Jobs / web freelance","family":"wordpress-jobboard","status":"checked","hits":2,"note":"Čerstvé WordPress/WooCommerce výsledky mali nízky fixed budget alebo hard-dev scope; bez bezpečne hodnotného prírastku."},
-    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":7,"note":"Preverené čerstvé worldwide eCommerce VA, WordPress/WooCommerce a remote assistant ponuky. $50 fixed eCommerce VA má 10–15 proposals; $5–20 WP/Woo ponuky sú value reject; full-time VA vyžaduje strong spoken/written English. Bez nového LIVE winnera."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":1,"note":"Aktuálne výsledky sú prevažne `FOR HIRE`; najnovší WordPress/WooCommerce post je ponuka služby, nie hiring lead. Bez aktivácie."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Cielená verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s overiteľným direct linkom. Coverage zostáva limited; 0 verified hits."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":4,"note":"Aktívna Lanža bola znovu overená priamym detailom. Remote sweep potvrdil VÚB a Confilogi ako existujúce položky; bez nového kandidáta nad LIVE priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":3,"note":"Wolt full-time/part-time support je aktívny, ale vyžaduje English B2 a večerné/víkendové zmeny. Foxelli support výsledky sú slabšie; jedna varianta už neprijíma žiadosti."},
+    {"name":"GROWNi / LEAF","family":"growni","status":"checked","hits":1,"note":"LEAF Implementation Support bol znovu otvorený a potvrdený ako aktívny: prevažne remote, flexibilný skrátený rozsah, B1 AJ, AI/backoffice/support; prihlášky priebežne, najneskôr 14. 9. 2026."},
+    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":0,"note":"Cielený AI/automation/support sweep bez nového jednoznačného winnera nad existujúce OVB/Hilti/LUNYS/LEAF priority."},
+    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":5,"note":"Nový VA content-build job kombinuje WordPress, Mailchimp, Canva a HTML email, ale bez overenej odmeny. Ďalšie čerstvé WordPress/Woo výsledky majú $5 fixed/nízky budget, vysokú konkurenciu alebo vyžadujú fluent written English; bez nového LIVE winnera."},
+    {"name":"Worki.sk","family":"slovak-jobboard","status":"checked","hits":0,"note":"Bez nového overeného BA/remote admin/tech/web kandidáta nad existujúcu Worki položku v LIVE feede."},
+    {"name":"Brigada.sk","family":"slovak-jobboard","status":"checked","hits":0,"note":"Cielený BA admin/e-shop/IT/vodič sweep bez novej kvalitnej priority."},
+    {"name":"WordPress Jobs / web freelance","family":"wordpress-jobboard","status":"checked","hits":2,"note":"Čerstvé WordPress výsledky sú prevažne developer scope alebo slabá ekonomika; neprekonávajú existujúce WooCommerce/WordPress položky."},
+    {"name":"Priame firemné kariéry","family":"company","status":"checked","hits":2,"note":"Websupport/Hilti lane bol preverený; bez nového canonical kandidáta. Existujúce priame firemné položky zostávajú v LIVE feede."}
   ]
 }
