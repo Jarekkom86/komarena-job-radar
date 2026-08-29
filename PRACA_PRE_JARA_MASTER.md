@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 29. 8. 2026 05:20 CEST
+Aktualizované: 29. 8. 2026 06:35 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -47,47 +47,50 @@ Aktualizované: 29. 8. 2026 05:20 CEST
 13. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia, 1 520 €/mes. + bonus.
 14. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote, 5–10 USD/h; mínus US Mountain Time.
 15. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
-16. **SuperFaktura — Supportový parťák — Match 87**.
-17. **Cerkam Facility Services — Terénny administratívny pracovník — Match 86** — Bratislava, od 1 500 €/mes. + bonusy.
-18. **RM Biznis servis / Worki — Manažér servisu klientov — Match 86** — väčšina práce online, občas BA, 10–15 €/h.
-19. **Bookio — B2B/SaaS online support — Match 85**.
-20. **AI & Tech Assistant / Upwork — Match 84** — worldwide remote; web/low-no-code/QA/AI workflows; language + competition risk.
-21. **Dotypos SK — Technický support — Match 84**.
-22. **Pandora — Associate Assistant, eCommerce Operations — Match 84**.
-23. **Allit — End-User Support — Match 84**.
-24. **3MON — IT & Operations Support — Match 84**.
-25. **STU — Web špecialista CMS/web — Match 83**.
-26. **VNET — IT customer support — Match 82**.
-27. **LAST MILE — Operátor NOC / Hotline podpora — Match 82**.
-28. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
-29. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
+16. **Akfos — kuriér/vodič B, kusové zásielky — Match 88** — Bratislava, 1 500 €/mes., ASAP; skrátený úväzok/dohoda/živnosť, bez tachografu a bez C/C+E.
+17. **SuperFaktura — Supportový parťák — Match 87**.
+18. **Cerkam Facility Services — Terénny administratívny pracovník — Match 86** — Bratislava, od 1 500 €/mes. + bonusy.
+19. **RM Biznis servis / Worki — Manažér servisu klientov — Match 86** — väčšina práce online, občas BA, 10–15 €/h.
+20. **Bookio — B2B/SaaS online support — Match 85**.
+21. **AI & Tech Assistant / Upwork — Match 84** — worldwide remote; web/low-no-code/QA/AI workflows; language + competition risk.
+22. **Dotypos SK — Technický support — Match 84**.
+23. **Pandora — Associate Assistant, eCommerce Operations — Match 84**.
+24. **Allit — End-User Support — Match 84**.
+25. **3MON — IT & Operations Support — Match 84**.
+26. **STU — Web špecialista CMS/web — Match 83**.
+27. **VNET — IT customer support — Match 82**.
+28. **LAST MILE — Operátor NOC / Hotline podpora — Match 82**.
+29. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
+30. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 29. 8. 2026 05:20 CEST — LATEST
-Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; direct company careers; Worki.sk; Brigada.sk; Služby zamestnanosti/Kariera; Pretlak; StartupJobs/Jobs.cz lane; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu 12 kontrolovaných zdrojových skupín.
+## SOURCE AUDIT — 29. 8. 2026 06:35 CEST — LATEST
+Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; direct company careers; Worki.sk; Brigada.sk; Služby zamestnanosti/Kariera; Pretlak; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu 11 nezávislých kontrolovaných skupín, z toho výrazná väčšina mimo Profesia.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky do `jobs-data.json`: 0.** Feed zostal fail-closed; bez kvalitného nového winnera sa pracovné položky ani ich content timestamp neprepisujú.
-- **Upwork:** čerstvý multi-platform eCommerce VA je worldwide remote, ale len **50 USD fixed-price** a už 10–15 proposals; WordPress/WooCommerce joby v aktuálnom indexe majú budget 5–20 USD alebo hard-development scope. Full-time remote VA má 650 USD, no výslovne žiada silnú hovorenú a písanú angličtinu. Neaktivované pre value/language mismatch. citeturn711742search0turn711742search3turn711742search8turn711742search10
-- **Pretlak — Dognet Account Manager:** veľmi dobrý e-commerce/klientsky fit, Bratislava hybrid a 1 800–2 200 €, ale priamy detail explicitne uvádza **„Platnosť tejto ponuky skončila“**, preto sa nesmie aktivovať. citeturn341150view0
-- **LinkedIn — Henkel Regional eCommerce Content Coordinator:** e-commerce obsahovo relevantné, ale LinkedIn už uvádza **No longer accepting applications**. citeturn214794search7
-- **Brigada.sk:** aktuálny sweep priniesol najmä gastro/retail výsledky; BA barista/ZOO ponuky sú mimo cieľového profilu, Levice je mimo lokalitného gateu. citeturn214794search2turn214794search3turn214794search9
-- **Worki:** discovery vrátil staré/ukončené alebo finančno-obchodné roly; bez nového vhodného BA/remote winnera. citeturn214794search4
-- **Reddit / WordPress komunity:** najnovšie relevantné výsledky sú `FOR HIRE`, nie pracovné dopyty. Bez aktivácie. citeturn711742reddit149
-- **Facebook:** **0 verified hits**. Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited`.
+- **Nové aktívne položky do `jobs-data.json`: 1 — Akfos, kuriér/vodič B, Bratislava.** Overený detail: rozvoz kusových zásielok v pridelenom rajóne, pridelené vozidlo, skener/platobný terminál, približne 6:00–15:00/16:00, skrátený úväzok/dohoda/živnosť, 1 500 €/mes., ASAP, vodičák B bez tachografu. Lanža zostáva vyššie, pretože má lepší pay range a preferovaný online-grocery model.
+- **Profesia:** čerstvý Akfos aktivovaný; Lanža znovu potvrdená. Tenus koordinátor bol vyradený pre B2 AJ a cestovanie; Galanta elektroúdržba a Zvolen technická rola nespĺňajú profil/lokalitu alebo kvalifikáciu.
+- **LinkedIn:** Multitude Office Manager je zaujímavý BA admin kandidát s 1 900 €, ale vyžaduje komfortnú hovorenú AJ. Brady Customer Service vyžaduje English + German; Marlink B2; SupportYourApp fluent English; Roche strong English + špecifické diagnostické zázemie. Bez aktivácie.
+- **Priame firemné kariéry:** O2/Websupport/Hilti lane preverený. O2 Junior špecialista na SIM/identity je aktívny, BA a 2 500 €/mes., ale očakáva 3 roky IT/cyber/telco a základy kryptografie, databáz a Active Directory — príliš veľký hard-skill gap oproti vhodnejším LIVE rolám.
+- **Upwork:** fresh worldwide WordPress výsledky prevažne $5–35 fixed-price, 15–50 proposals alebo hard PHP/strong English. Full-time remote VA za $650 vyžaduje silnú hovorenú aj písanú angličtinu. Bez nového LIVE winnera.
+- **Worki / Brigada / Služby zamestnanosti / Kariera:** bez nového BA/remote winnera nad existujúce priority; technické výsledky často narážajú na vyššiu AJ/VŠ/hard-skill požiadavky.
+- **Pretlak / WordPress Jobs:** bez nového A2-compatible BA/remote non-hard-dev winnera s primeranou ekonomikou.
+- **Reddit / WordPress komunity:** čerstvé výsledky sú prevažne `FOR HIRE`, nie hiring leady.
+- **Facebook:** **0 verified hits**. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited`.
 
 ### Run summary
-- Reálne skontrolované zdrojové skupiny: **12**.
-- Nové aktívne položky: **0**.
-- Vyradené jazykovým/hard-skill gateom: **3**.
-- Vyradené ako slabé/nízka hodnota: **7**.
-- Duplicitné/existing: **1**.
-- Vyradené pre freshness/evidence: **4**.
-- Vyradené pre lokalitu: **1**.
+- Reálne skontrolované zdrojové skupiny: **11**.
+- Nové aktívne položky: **1**.
+- Vyradené jazykovým/hard-skill gateom: **7**.
+- Vyradené ako slabé/nízka hodnota: **4**.
+- Duplicitné/existing: **4**.
+- Vyradené pre freshness/evidence: **5**.
+- Vyradené pre lokalitu: **2**.
 
 ### LIVE mix
-- Aktívny feed: **29 položiek**.
-- Odhadovaný source mix: **Profesia ~44,8 % / mimo Profesia ~55,2 %**.
-- `jobs-data.json.updatedAt` ostáva **29. 8. 2026 04:14 CEST**, pretože je to timestamp poslednej reálnej zmeny pracovného obsahu. Aktuálnosť searchu je vedená v `source-audit.json.updatedAt` = **05:20 CEST**. Toto zámerne oddeľuje „čerstvosť zberu“ od „času poslednej zmeny feedu“ a zabraňuje falošnej čerstvosti.
+- Aktívny feed: **33 položiek**.
+- Odhadovaný source mix po pridaní Akfos: **Profesia ~45,5 % / mimo Profesia ~54,5 %**.
+- `jobs-data.json.updatedAt` = **29. 8. 2026 06:35 CEST**, pretože pribudla reálna pracovná položka.
+- `source-audit.json.updatedAt` = **29. 8. 2026 06:35 CEST** ako dôkaz aktuálneho multi-source searchu.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -219,8 +222,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 117. **Opportunity evidence TTL by field** — každému kritickému poľu (`salary`, `remotePolicy`, `language`, `publishedAt`, `applicationOpen`, `worksite`) pridelí vlastnú dobu platnosti a pri expirácii obnoví iba konkrétny dôkaz.
 118. **Onboarding-vs-recurring travel classifier** — oddelí jednorazové onboarding/školenie/cestu od pravidelného hybridného dochádzania. Vďaka tomu sa 100 % remote rola s jednorazovým školením zbytočne nevyradí, ale pravidelný vzdialený hybrid neprejde lokalitným gateom.
 119. **Screening-question evidence prefill map** — pri top ponuke vytiahne typické screening otázky z apply flow a ku každej priradí iba overené fakty z MASTER profilu/CV (`proven`, `needs-confirmation`, `unsupported`). Skráti reakciu a zabráni nepravdivým odpovediam bez automatického odoslania.
-120. **Search freshness vs content freshness split — NOVÉ** — oddelí `lastSearchAt` od `jobs-data.updatedAt`. Radar tak nebude označovať feed za „stale“ len preto, že posledný hodinový search nenašiel novú ponuku; zároveň sa nebude falošne meniť timestamp pracovných dát bez reálnej zmeny obsahu. Bezpečná dátová implementácia už používa `source-audit.updatedAt` ako dôkaz posledného searchu; UI vrstva môže neskôr tento údaj zobrazovať bez zásahu do job feedu.
-121. **Calendar-aware source weighting — NOVÉ** — váhy zdrojov prispôsobí dňu a času. Cez víkend zvýši discovery kapacitu pre Upwork/freelance, community a remote indexy, ktoré reálne publikujú aj mimo pracovných dní; firemné kariéry/ÚPSVR pritom ostanú povinne kontrolované, ale nebudú zbytočne spotrebúvať väčšinu hĺbky searchu pri nízkej víkendovej aktivite. Cieľ: viac čerstvých výsledkov bez porušenia 8-family diversity floor.
+120. **Search freshness vs content freshness split** — oddelí `lastSearchAt` od `jobs-data.updatedAt`. Radar tak nebude označovať feed za stale len preto, že posledný search nenašiel novú ponuku; zároveň sa nebude falošne meniť timestamp pracovných dát bez reálnej zmeny obsahu.
+121. **Calendar-aware source weighting** — cez víkend zvýši discovery kapacitu pre Upwork/freelance, community a remote indexy, ktoré reálne publikujú aj mimo pracovných dní; firemné kariéry/ÚPSVR pritom ostanú povinne kontrolované.
+122. **Probation & termination-risk extractor — NOVÉ** — pri ponuke oddelene vytiahne skúšobnú dobu, dobu určitú/neurčitú, výpovednú lehotu, agentúrny/contract-to-hire model a výkonové podmienky. Cieľ: vysoký Match nesmie zakryť vysoké riziko rýchlej straty príjmu alebo nejasnej stability.
+123. **Exclusivity / non-compete / IP-risk flag — NOVÉ** — pri verejne dostupných podmienkach označí exkluzivitu, zákaz konkurenčnej práce, rozsah prevodu IP, povinný monitoring alebo neprimerané obmedzenia freelancera/zamestnanca. Neháda podmienky, iba eviduje dôkaz alebo `unknown`; pomáha vyradiť právne nevýhodné zákazky ešte pred investíciou času do reakcie.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
