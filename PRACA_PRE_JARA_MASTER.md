@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 29. 8. 2026 21:34 CEST
+Aktualizované: 29. 8. 2026 23:29 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -65,32 +65,31 @@ Aktualizované: 29. 8. 2026 21:34 CEST
 31. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 32. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 29. 8. 2026 21:34 CEST — LATEST
-Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; Worki.sk + Brigada.sk; Pretlak/tech-creative; WordPress Jobs; Upwork/freelance; Služby zamestnanosti/Kariera; Reddit/WP komunity; Facebook verejná indexácia; feed integrity/dedupe.** Spolu **10 nezávislých kontrolovaných skupín**, minimálne 8 source families a viac než 5 mimo Profesia.
+## SOURCE AUDIT — 29. 8. 2026 23:29 CEST — LATEST
+Reálne prehľadané skupiny: **Profesia; priame firemné kariéry; LinkedIn Jobs; Worki.sk; Brigada.sk; Pretlak; StartupJobs; WordPress Jobs; Upwork/freelance; Služby zamestnanosti/Kariera; Reddit/WP komunity; Facebook verejná indexácia.** Spolu **12 nezávislých kontrolovaných skupín**, minimálne 8 source families a viac než 5 mimo Profesia.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 1 — Zenea E-Commerce Specialist, Match 92.** Bratislava/Nivy, hybrid, 1 600–2 000 €, entry-level; angličtina alebo maďarčina iba výhodou. Shopify/Klaviyo gap je prenositeľný z WooCommerce/e-commerce skúseností.
-- **Významná korekcia: LUNYS zostáva active.** Čerstvý canonical LinkedIn výsledok 29.8. 21:34 zobrazuje plný inzerát bez closure banneru v načítanom obsahu; predchádzajúci closure signál sa nepovažuje za dostatočný na vyradenie.
-- **LinkedIn rejects:** Wolt Support Associate = minimum B2 English; KLARSTEIN = francúzština.
-- **Upwork:** Email/Social/Content Build je near-fit, ale 20–50 proposals + Mailchimp/HTML/Canva/social creative burden; Operations & Campaign Support = 5–7 USD/h, strong English a U.S. hours. Bez nového winnera.
-- **Reddit:** výsledky boli FOR HIRE, US-only alebo staršie.
+- **Nové aktívne položky: 0.** Žiadny nový kandidát bezpečne neprebil existujúce priority po locality/language/hard-skill/value gate.
+- **Najpresnejší nový skill hit:** Upwork `Data entry specialist for woocomrace products and order management` — worldwide remote, WooCommerce produkty + objednávky + WordPress/Data Entry, 15–20 proposals; klient 13k USD spend a 669 hires. Napriek presnému fitu ide iba o **5 USD fixed-price pri označení Complex project**, preto bol vyradený ako scope-to-pay mismatch.
+- **Ďalší Upwork:** Elementor Pro Forms & SMTP — worldwide remote, ale iba **10 USD fixed-price** a vyžaduje Elementor Pro/SMTP/HTML-CSS customization; nepridané.
+- **WordPress Jobs:** portál je dostupný a aktívny, ale bez nového Slovakia-eligible non-hard-dev winnera.
 - **Facebook:** **0 verified hits**, coverage `limited`; žiadny fiktívny post.
 
 ### Run summary
-- Reálne skontrolované zdrojové skupiny: **10**.
-- Nové aktívne položky: **1**.
-- Významne zmenené priority: **1 (LUNYS active proof obnovený)**.
+- Reálne skontrolované zdrojové skupiny: **12**.
+- Nové aktívne položky: **0**.
+- Významne zmenené priority: **0**.
 - Vyradené jazykovým/hard-skill gateom: **4**.
-- Vyradené ako slabé/nízka hodnota: **4**.
-- Duplicitné/existing: **2**.
+- Vyradené ako slabé/nízka hodnota: **5**.
+- Duplicitné/existing: **3**.
 - Vyradené pre freshness/evidence: **3**.
 
 ### LIVE mix
 - `jobs-data.json`: **35 aktívnych položiek**.
-- Source mix: **Profesia 17 / 35 = 48,6 %; mimo Profesia 18 / 35 = 51,4 %**.
+- Source mix zostáva pod 60 % Profesia hranicou; posledný potvrdený mix bol **Profesia 17 / 35 = 48,6 %; mimo Profesia 18 / 35 = 51,4 %**.
 - `jobs-data.json.updatedAt` = **29. 8. 2026 21:34:36 CEST**.
-- `source-audit.json.updatedAt` = **29. 8. 2026 21:34:36 CEST**.
-- Freshness: **OK**.
+- `source-audit.json.updatedAt` = **29. 8. 2026 23:29:51 CEST**.
+- Freshness feedu: **stale >60 min**, ale fail-closed zachováva posledné validné dáta; `updatedAt` sa neposúva bez reálnej obsahovej zmeny.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -219,3 +218,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 114. CV requirement coverage score.
 115. **Platform-gap transferability score** — rozlíši blízko prenositeľný gap (WooCommerce → Shopify, ActiveCampaign → Klaviyo) od skutočne nového hard-skill gapu; zníži falošné vyradenia kvalitných e-commerce rolí.
 116. **Closure-proof quorum** — status `closed` sa zmení až po dostatočnom canonical dôkaze (explicitný closure banner/404/expired + recheck), aby jeden nekonzistentný indexovaný signál nevyradil stále aktívnu ponuku.
+117. **Micro-budget exploit filter** — pri freelance ponukách odhalí extrémne nízky fixed budget voči rozsahu a označeniu projektu (napr. 5 USD za komplexnú WooCommerce operatívu), aby skillovo presné, ale ekonomicky nezmyselné zákazky nezahlcovali TOP výsledky.
+118. **Verified client economics score** — kombinuje klientský spend, počet hires, konkurenciu a reálny budget konkrétnej zákazky; vysoká história klienta sama nesmie kompenzovať neudržateľnú cenu konkrétneho projektu.
