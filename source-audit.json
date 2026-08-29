@@ -1,35 +1,37 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T21:13:14+02:00",
+  "updatedAt": "2026-08-29T21:34:36+02:00",
   "runSummary": {
-    "familiesChecked": 8,
+    "familiesChecked": 10,
     "newActiveJobs": 0,
-    "significantlyChangedPriorityJobs": 1,
+    "significantlyChangedPriorityJobs": 0,
     "rejectedByLanguageOrHardSkill": 4,
     "rejectedAsWeakOrLowValue": 4,
-    "duplicateOrExisting": 3,
+    "duplicateOrExisting": 2,
     "rejectedByFreshnessOrEvidence": 3,
     "liveFeedCount": 34,
     "effectiveEligibleCount": 34,
     "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
-    "freshnessStatus": "failed-over-60m-pending-safe-feed-write",
-    "note": "Audit 29. 8. 2026 o 21:13 CEST reálne preveril Profesia/Kariera, priame a canonical job pages, LinkedIn Jobs, GROWNi, Pretlak/AI smer a Upwork remote. Dôležitá korekcia: predchádzajúci audit označil LUNYS e-commerce za closed, ale aktuálny canonical LinkedIn výsledok opäť zobrazuje plný aktívny inzerát a text 'No longer accepting applications' sa v čerstvom výsledku nenachádza. Preto sa LUNYS nepovažuje za potvrdene uzavretý a posledné validné jobs-data sa zachovávajú. LEAF Implementation Support Specialist zostáva aktívny a vhodný. Nové remote výsledky Foxelli/TalentPop/SupportYourApp boli vyradené pre fluent/near-native English, German alebo vyšší hard-skill burden. Upwork Virtual Assistant Data Entry (20–50 USD/h, worldwide, posted 6h ago) bol vyradený pre nového klienta bez spend/hire histórie a slabý trust signal; Virtual Assistant — Email, Social & Content Build zostáva zaujímavý, ale neprekonal existujúce priority pre Mailchimp/HTML/Canva požiadavky a 20–50 proposals."
+    "freshnessStatus": "valid-content-no-safe-content-change",
+    "note": "Audit 29. 8. 2026 o 21:34 CEST reálne preveril Profesia, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/tech-creative, WordPress Jobs, Upwork, Služby zamestnanosti/Kariera, Reddit/WP komunity a verejne indexovaný Facebook. Nebol nájdený nový BA/okolie alebo Slovakia-eligible remote kandidát, ktorý by po lokalitnom, jazykovom, hard-skill, konkurencii a value gate prekonal existujúce LIVE priority. Wolt Support Associate je Bratislava, ale vyžaduje minimum B2 English. KLARSTEIN customer support vyžaduje francúzštinu. Upwork Operations & Campaign Support je worldwide, ale požaduje strong written/spoken English, U.S. hours a má nízku sadzbu 5–7 USD/h. Upwork Email/Social/Content Build je obsahovo near-fit (WordPress/Mailchimp/Canva), ale má 20–50 proposals a vyšší kreatívno-HTML burden, preto sa nepridáva. Reddit výsledky boli FOR HIRE, US-only alebo staršie. Facebook verejná indexácia neposkytla žiadny konkrétny overiteľný aktuálny hiring post; 0 verified hits, coverage limited."
   },
   "sources": [
-    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":0,"note":"Čerstvý BA/admin/e-commerce/tech-support sweep bez nového kandidáta, ktorý by po hard-gate a value-gate prebil existujúce priority."},
-    {"name":"Kariera.sk / ÚPSVR mirror","family":"other-sk-jobboards","status":"checked","hits":3,"note":"Potvrdený Dotypos support ako existujúci lead; staré Zoznam/Syntex ponuky sú neaktívne. ESET 2 700 EUR support rola má výrazne vyšší enterprise/security skill burden, preto sa neaktivuje."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":6,"note":"LUNYS canonical detail znovu zobrazuje plný inzerát; fresh find nenašiel text 'No longer accepting applications'. TalentPop vyžaduje fluent German + English; SupportYourApp fluent English; Foxelli support near-native English. Bez nového vhodného winnera."},
-    {"name":"GROWNi / LEAF","family":"growni","status":"ok","hits":1,"note":"LEAF Implementation Support Specialist zostáva aktívny: prevažne home office, flexibilný skrátený úväzok, od 1 500 EUR FTE, praktická AI/backoffice/customer-support zhoda a bez požiadavky na perfektnú angličtinu."},
-    {"name":"Pretlak / AI smer","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového verified BA/remote near-fit kandidáta, ktorý by prekonal aktuálny OVB AI/automation lead."},
-    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":3,"note":"Virtual Assistant Data Entry: posted ~6h, worldwide, 20–50 USD/h, 15–20 proposals, ale klient člen len od 27.8.2026 bez spend/hire history — low-trust, nepridané. Email/Social/Content Build zostáva near-fit, no má Mailchimp/HTML/Canva/social creative burden a 20–50 proposals. WordPress/Elementor support rola je viac hard-web a on-call charakter."},
-    {"name":"Remote support/e-commerce company roles","family":"company-remote","status":"checked","hits":4,"note":"Foxelli a SupportYourApp výsledky preverované; relevantné role majú fluent/near-native English alebo už neprijímajú prihlášky. Bez vhodného nového leadu."},
-    {"name":"Freshness / dedupe integrity","family":"feed-integrity","status":"degraded","hits":1,"note":"Deduplikácia zachovala 34 položiek bez nového duplicate insertu. jobs-data updatedAt je však stále 10:27 CEST; bezpečný full-file write sa v tomto behu nepodarilo vykonať cez dostupný konektor bez prepisu celého súboru, preto fail-closed zachováva validné dáta."}
+    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":0,"note":"Čerstvý BA/admin/e-commerce/tech-support sweep bez nového kandidáta, ktorý by prebil existujúce priority po hard-gate a value-gate."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"note":"Wolt Bratislava Support Associate je aktuálny, ale minimum B2 English = language reject. KLARSTEIN support je BA/remote SK, ale vyžaduje francúzštinu = reject."},
+    {"name":"Worki.sk + Brigada.sk","family":"other-sk-jobboards","status":"checked","hits":0,"note":"Bez nového akčného BA/remote winnera; časovo viazané brigády po cutoff čase sa neaktivujú."},
+    {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového overeného BA/remote low-language-gate kandidáta nad existujúce AI/e-commerce priority."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"note":"Cielený remote WordPress/WooCommerce sweep bez nového Slovakia-eligible non-hard-dev leadu."},
+    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":3,"note":"Email/Social/Content Build je near-fit, ale 20–50 proposals a Mailchimp/HTML/Canva/social creative burden. Operations & Campaign Support je 5–7 USD/h, strong English a U.S. hours. WordPress/Elementor support je viac hard-web/on-call. Bez nového LIVE winnera."},
+    {"name":"Služby zamestnanosti / Kariera","family":"government-other","status":"checked","hits":0,"note":"Bez nového kvalifikovaného Bratislava/remote kandidáta po lokalitnom a hard-skill gate."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Aktuálne výsledky boli prevažne FOR HIRE, US-only alebo staršie; 0 konkrétnych vhodných hiring leadov."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage sa nepredstiera."},
+    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"ok","hits":0,"note":"Žiadny duplicate insert, žiadny nový reject-distance kandidát v aktívnom feede; 34 existujúcich položiek zachovaných fail-closed."}
   ],
   "writeStatus": {
-    "jobsData": "unchanged-valid-but-stale",
-    "jobsDataReason": "Aktuálny audit podporuje zachovanie LUNYS ako active; nebola zistená nová alebo významne zmenená ponuka vyžadujúca obsahový insert/delete. Feed však nebolo možné bezpečne prepisovať iba kvôli refresh timestampu bez kompletnej validovanej full-file mutácie.",
-    "jobsDataRequiredChange": "Pri najbližšom bezpečnom full-file zápise po reálnej kontrole zdrojov aktualizovať updatedAt a verifiedAt iba pri skutočne overených položkách; LUNYS neoznačovať closed bez opätovne potvrdeného canonical closure signálu.",
-    "jobsDataNonProf": "no-change-required",
-    "freshnessBreach": true
+    "jobsData": "unchanged-valid-no-new-winner",
+    "jobsDataReason": "Nebola nájdená nová ani významne zmenená ponuka, ktorá by vyžadovala bezpečný obsahový insert/update. Existujúci validný feed sa podľa fail-closed pravidla zachováva.",
+    "jobsDataNonProf": "locked-no-change",
+    "jobSources": "no-registry-change-required",
+    "freshnessBreach": false
   }
 }
