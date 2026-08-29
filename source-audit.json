@@ -1,37 +1,41 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T20:12:45+02:00",
+  "updatedAt": "2026-08-29T20:23:11+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
-    "significantlyChangedPriorityJobs": 1,
-    "rejectedByLanguageOrHardSkill": 6,
-    "rejectedAsWeakOrLowValue": 8,
-    "duplicateOrExisting": 5,
-    "rejectedByFreshnessOrEvidence": 2,
+    "significantlyChangedPriorityJobs": 0,
+    "rejectedByLanguageOrHardSkill": 5,
+    "rejectedAsWeakOrLowValue": 5,
+    "duplicateOrExisting": 3,
+    "rejectedByFreshnessOrEvidence": 3,
     "liveFeedCount": 34,
     "effectiveEligibleCount": 33,
     "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
     "freshnessStatus": "failed-over-60m-pending-safe-feed-mutation",
-    "note": "Čerstvý audit 29. 8. 2026 o 20:12 CEST preveril Profesia, priame firemné kariéry/GROWNi, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WP komunity, verejne indexovaný Facebook a cross-source corroboration. Nový prioritný winner nebol nájdený. Významná zmena ostáva LUNYS: canonical LinkedIn detail už neprijíma žiadosti, preto LUNYS nemá byť aktívna TOP priorita. LEAF je naďalej aktívny a prijíma prihlášky priebežne. Nové/čerstvé Profesia výsledky KONE Automation & AI Solutions Intern a Henkel International Team Assistant boli odmietnuté hard gate: KONE vyžaduje univerzitného študenta a fluent English; Henkel C1 English a min. 2 roky executive/admin praxe. Nové Upwork VA výsledky boli buď low-value (5–7 USD/h), mali strong English/US-hours gate alebo nedostatočný klientský signál. Facebook: 0 verified hits, coverage limited."
+    "note": "Audit 29. 8. 2026 o 20:23 CEST reálne preveril Profesia, priame firemné kariéry, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Služby zamestnanosti, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexovaný Facebook. Nový prioritný winner nebol nájdený. Najzaujímavejší nový lead je Upwork Virtual Assistant — Email, Social & Content Build: worldwide remote, WordPress + Mailchimp + Canva, 8–15 USD/h, 4–6 h/týždeň, klient 53k USD spend; kvôli 20–50 proposals, požadovanému hands-on Mailchimp/HTML/Canva/social creative a implicitnej angličtine zatiaľ neprebil existujúce LIVE priority. Foxelli E-commerce Technical Assistant má canonical LinkedIn stav 'No longer accepting applications' a zároveň hard Shopify Flow/Apps Script/REST/API + English požiadavky. Worki Nutra Group bolo dnes aktualizované, ale ide o aktívny telefonický predaj, preto low-value pre preferovaný profil. Brigada.sk dnešná BA zmena už časovo skončila. Facebook: 0 verified hits, coverage limited."
   },
   "sources": [
-    {"name":"Profesia – BA/remote všeobecne","family":"profesia","status":"ok","hits":5,"note":"Čerstvý sweep 29.8. 20:12; KONE AI intern má fluent English + university-student gate; Henkel International Team Assistant C1 + 2 roky praxe. Bez nového kandidáta nad existujúce priority."},
-    {"name":"Priame firemné kariéry / GROWNi","family":"company-careers","status":"ok","hits":3,"note":"LEAF ostáva aktívny, prevažne remote, od 1 500 EUR FTE, B1 AJ; prihlášky posudzujú priebežne. KONE canonical career detail potvrdzuje hard gate."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"changed","hits":3,"note":"LUNYS canonical detail ostáva uzavretý pre nové žiadosti; táto významná zmena musí byť premietnutá do jobs-data.json."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"Bez nového kandidáta, ktorý by prekonal existujúce priority; žiadna source-backed zmena LIVE položky."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":1,"note":"Bez akčného večerného BA hitu, ktorý by spĺňal prioritu a dostupnosť."},
-    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":2,"note":"Bez nového Slovakia-eligible non-hard-dev winnera s prijateľným language gate."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":8,"note":"Čerstvé worldwide VA/admin/WordPress výsledky preverované. Operations & Campaign Support má strong spoken/written English, US-hours a iba 5–7 USD/h; Data Entry 20–50 USD/h má nový klientský účet a slabý dôkaz kvality. Žiadny nový prioritný winner."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":0,"note":"Bez konkrétneho aktuálneho hiring leadu vhodného pre LIVE feed."},
-    {"name":"Facebook WordPress/WooCommerce/BA jobs – verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verejne overiteľných aktuálnych hiring postov; coverage sa nepredstiera."},
-    {"name":"Cross-source corroboration / search indexes","family":"corroboration","status":"ok","hits":7,"note":"Použité na potvrdenie LEAF, LUNYS closure a hard-gate podmienok nových Profesia/company-career výsledkov."}
+    {"name":"Profesia – BA/remote všeobecne","family":"profesia","status":"checked","hits":0,"note":"Čerstvý sweep 29.8. 20:23; bez nového BA/remote kandidáta, ktorý by po jazykovom, hard-skill a value gate prebil existujúce priority."},
+    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":1,"note":"Foxelli E-commerce Technical Assistant bol overený cez canonical LinkedIn detail ako už neprijímajúci žiadosti; zároveň má Shopify Flow/Apps Script/REST/API + English hard burden. Bez nového winnera."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":4,"note":"Čerstvé BA/remote support/e-commerce výsledky preverované. TalentPop vyžaduje fluent German + English; Klarstein France vyžaduje francúzštinu; SupportYourApp fluent English. Foxelli Tech Assistant closed. Bez vhodného nového LIVE kandidáta."},
+    {"name":"Worki.sk","family":"worki","status":"ok","hits":1,"note":"Nutra Group call-center bolo aktualizované 29.8.2026, 100 % HO, 1 200–2 500 EUR, ale ide o aktívny telefonický predaj z teplej databázy; nepridáva sa kvôli nízkej zhode s preferovanými smermi."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":1,"note":"BA pokladník/dokladač 13,15 EUR/h bol viazaný na 29.8. 06:30–13:00 a v čase auditu už nie je akčný; nepridáva sa."},
+    {"name":"Kariera.sk / Služby zamestnanosti","family":"other-sk-jobboards","status":"checked","hits":0,"note":"Cielený BA/admin/IT-support sweep bez nového kvalifikovaného winnera; vzdialené alebo odborné nerelevantné výsledky vyradené."},
+    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":1,"note":"Humánny pokrok HR Specialist je remote + BA meetings, ale vyžaduje skúsený HR profil a mzdovú/HR ownership prax; nie je vhodná near-fit rola. Bez nového WP/WooCommerce support winnera."},
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":5,"note":"Najlepší nový lead: Virtual Assistant — Email, Social & Content Build, worldwide remote, WordPress/Mailchimp/Canva, 8–15 USD/h, 4–6 h/týždeň, klient 53k USD spend a 34 hires. Neaktivovaný kvôli 20–50 proposals a požadovanému hands-on Mailchimp/HTML/Canva/social creative. Operations & Campaign Support je iba 5–7 USD/h, strong English a US-hours. Ostatné boli staršie/low-value."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":0,"note":"Bez konkrétneho čerstvého hiring leadu vhodného pre Slovensko; nájdené posty boli staršie, US-only alebo FOR HIRE."},
+    {"name":"Facebook WordPress/WooCommerce/BA jobs – verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verejne overiteľných aktuálnych hiring postov s priamym linkom; coverage sa nepredstiera."}
   ],
   "writeStatus": {
     "jobsData": "pending-safe-mutation",
-    "jobsDataReason": "LUNYS má canonical closure evidence, ale v tomto behu nebolo možné vykonať atómový parse/mutate/validate zápis celého jobs-data.json cez dostupný konektor bez rizika straty ostatných validných položiek. Posledné validné dáta preto ostali zachované podľa fail-closed pravidla.",
-    "jobsDataRequiredChange": "lunys-ecom: status active -> inactive/closed; priority today -> normal/closed; verifiedAt 2026-08-29T20:12:45+02:00. Po úspešnom zápise očakávaný aktívny feed count 33.",
+    "jobsDataReason": "LUNYS má canonical closure evidence z predchádzajúceho auditu, ale v tomto behu nebol bezpečne vykonaný full-file parse/mutate/validate zápis cez dostupný GitHub konektor. Fail-closed zachováva ostatných 33 validných položiek.",
+    "jobsDataRequiredChange": "lunys-ecom: status active -> inactive/closed; priority today -> normal/closed; po zápise očakávaný aktívny feed count 33.",
     "jobsDataNonProf": "no-change-required",
+    "masterBacklogPending": [
+      "150. Opportunity marginal-gain gate — nový lead sa aktivuje iba ak prináša jasný prírastok oproti existujúcemu TOP v aspoň jednej osi: vyšší fit, lepšia odmena, nižšia konkurencia, lepší schedule alebo unikátny smer; zabráni nafukovaniu feedu pri slabých near-duplicates.",
+      "151. Evidence-weighted application readiness — pre každý lead oddelene skóruje, či už existujú dôkazy pre požadované nástroje/portfolio (napr. Mailchimp, Canva, WordPress, Shopify); znižuje čas strávený na ponukách, kde by reakcia vyžadovala vymýšľanie alebo veľké doučenie."
+    ],
     "freshnessBreach": true
   }
 }
