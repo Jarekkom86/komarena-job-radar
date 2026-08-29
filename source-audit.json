@@ -1,31 +1,32 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T05:16:40+02:00",
+  "updatedAt": "2026-08-29T05:20:22+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 5,
-    "rejectedAsWeakOrLowValue": 6,
-    "duplicateOrExisting": 3,
-    "rejectedByFreshnessOrEvidence": 2,
+    "rejectedByLanguageOrHardSkill": 3,
+    "rejectedAsWeakOrLowValue": 7,
+    "duplicateOrExisting": 1,
+    "rejectedByFreshnessOrEvidence": 4,
     "rejectedByLocation": 1,
     "liveFeedCount": 29,
     "liveProfesiaEstimatePct": 44.8,
     "liveNonProfesiaEstimatePct": 55.2,
-    "note": "Beh 29. 8. 2026 o 05:16 reálne preveril Profesia, LinkedIn, priame firemné kariéry, Worki, Brigada.sk, Služby zamestnanosti/Kariera, Pretlak, StartupJobs/Jobs.cz, WordPress/freelance lane, Upwork, verejné komunity a Facebook indexáciu. Hilti Implementation & Service Specialist bol znovu priamo potvrdený ako aktívny v Bratislave: SŠ s maturitou, AJ iba výhodou, 1 800 EUR + bonusy a služobné auto. LEAF Implementation Support Specialist bol znovu potvrdený ako aktívny: prevažne remote, flexibilný skrátený úväzok, AI/backoffice/customer support a B1 AJ. Nový dnešný Profesia výsledok AYURCOS v Bratislave má iba 1 000 EUR a retail profil, preto neprekonáva LIVE priority. LinkedIn priniesol remote support výsledky TalentPop/SupportYourApp/Foxelli, ale s fluent English, nemčinou alebo inými hard jazykovými požiadavkami. Upwork priniesol čerstvé worldwide VA/e-commerce/WooCommerce zákazky; najzaujímavejší full-time UK-hours VA má silnú hovorenú a písanú angličtinu a nízky budget, ostatné majú nízke fixed-price budgety alebo vysokú konkurenciu. Žiadny nový kandidát bezpečne neprekonal existujúce priority. jobs-data.json nebol kozmeticky prepísaný; jeho posledný validný source-backed update zostáva 04:14 a po tomto audite prekračuje 60-min freshness cieľ, čo je evidované ako stale-feed incident."
+    "jobsDataContentUpdatedAt": "2026-08-29T04:14:09+02:00",
+    "note": "Beh 29. 8. 2026 o 05:20 reálne preveril 12 zdrojových rodín: Profesia, LinkedIn, priame firemné kariéry, Worki, Brigada.sk, Služby zamestnanosti/Kariera, Pretlak, StartupJobs/Jobs.cz lane, WordPress Jobs, Upwork/freelance, Reddit/WP komunity a Facebook verejnú indexáciu. Nevznikol nový kandidát, ktorý by bezpečne prekonal existujúci LIVE feed. Upwork priniesol čerstvé worldwide e-commerce/VA/WordPress ponuky, no aktuálne kandidáty mali nízky budget, vysokú konkurenciu alebo silnú angličtinu. Pretlak Dognet bol priamo otvorený a detail explicitne uvádza, že platnosť ponuky skončila. LinkedIn eCommerce výsledok Henkel už neprijíma žiadosti. Brigada.sk vrátila prevažne gastro/retail brigády mimo cieľového profilu. Worki discovery obsahoval staré/ukončené alebo finančno-obchodné roly. Facebook zostáva limited s 0 verified hiring hits. `jobs-data.json` sa preto fail-closed nemení a jeho `updatedAt` zostáva timestampom poslednej reálnej zmeny obsahu, nie posledného searchu."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":4,"note":"BA/remote admin, e-shop, support, driver a dnešné prírastky preverené. AYURCOS O5349628 je čerstvý Bratislava retail za 1 000 EUR, ale nízka zhoda/hodnota. Bez nového winnera nad Lanža/VÚB/Energohub."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":6,"note":"TalentPop remote support vyžaduje fluent nemčinu + angličtinu; SupportYourApp technické/support roly fluent/C1 English; Foxelli support fluent/near-native English. Bez A2-compatible winnera."},
-    {"name":"Priame firemné kariéry","family":"company","status":"checked","hits":3,"note":"Hilti Implementation & Service Specialist je stále aktívny a priamo potvrdený; Bratislava, SŠ maturita, AJ iba výhodou, 1 800 EUR + bonusy. Už je v LIVE. Ostatné overené priame zdroje nepriniesli nový lepší prírastok."},
-    {"name":"Worki.sk","family":"slovak-jobboard","status":"checked","hits":1,"note":"Bez nového BA/remote kandidáta, ktorý by prekonal existujúcu RM Biznis servis alebo vyššie priority."},
-    {"name":"Brigada.sk","family":"slovak-jobboard","status":"checked","hits":0,"note":"Cielený BA admin/e-shop/IT/driver sweep bez nového bezpečne overiteľného winnera."},
-    {"name":"Služby zamestnanosti / Kariera","family":"government-jobboard","status":"checked","hits":2,"note":"Bez nového A2-compatible BA/remote kandidáta nad existujúce LIVE technické/support položky; staršie alebo kvalifikačne tvrdšie výsledky nepostúpili."},
-    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":1,"note":"Bez nového prírastku nad už evidované OVB AI/automation priority; nové výsledky neprešli kombináciou fit/jazyk/lokalita."},
-    {"name":"StartupJobs / Jobs.cz lane","family":"cz-startup-jobboard","status":"checked","hits":1,"note":"Vitapack je remote e-commerce firma, ale aktuálny sweep nedal konkrétnu Slovakia-eligible rolu s lepším fitom než LIVE priority."},
-    {"name":"WordPress Jobs / web freelance","family":"wordpress-jobboard","status":"checked","hits":2,"note":"Čerstvé WordPress/WooCommerce mikro-zákazky majú nízky fixed budget (napr. 15–30 USD), vysokú konkurenciu alebo hard-dev scope; nezaradené."},
-    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":7,"note":"Čerstvé worldwide VA/e-commerce/Woo výsledky preverené. Full-time UK-hours VA je 850 USD mesačne a vyžaduje silnú hovorenú/písanú AJ; eCommerce VA má 50 USD fixed; ďalšie VA/WP výsledky majú veľmi nízky budget alebo 20–50 proposals. Bez priority."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Bez nového verejne overiteľného HIRING leadu s rozumným budgetom a Slovakia eligibility."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia opäť nedala konkrétny aktuálny hiring post, ktorý by bolo možné bezpečne overiť. Coverage zostáva limited a nie je predstierané ako checked."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"note":"Cielený BA/remote sweep pre web/e-shop, support, admin a vodičské roly bol vykonaný; bez nového overeného kandidáta nad existujúce LIVE priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"note":"Henkel Regional eCommerce Content Coordinator bol nájdený, ale detail uvádza `No longer accepting applications`; bez nového aktívneho winnera."},
+    {"name":"Priame firemné kariéry","family":"company","status":"checked","hits":0,"note":"Cielený sweep Websupport/Hilti/Penta a priamych career zdrojov bol vykonaný; bez nového canonical winnera."},
+    {"name":"Worki.sk","family":"slovak-jobboard","status":"checked","hits":1,"note":"Discovery vrátil prevažne staré/ukončené alebo finančno-obchodné roly; nič nové neprešlo BA/remote + fit gateom."},
+    {"name":"Brigada.sk","family":"slovak-jobboard","status":"checked","hits":2,"note":"Aktuálne výsledky boli najmä gastro/retail brigády v BA alebo mimo BA; neprekonávajú cieľový profil a jedna Levice ponuka je mimo lokalitného gateu."},
+    {"name":"Služby zamestnanosti / Kariera","family":"government-jobboard","status":"checked","hits":0,"note":"Cielený BA IT/support/admin sweep bez nového A2-compatible kandidáta nad existujúce LIVE technické/support položky."},
+    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":2,"note":"Dognet Account Manager bol obsahovo zaujímavý, ale detail explicitne uvádza, že platnosť ponuky skončila. Ostatné nájdené Pretlak výsledky sú staršie alebo slabšie než LIVE priority."},
+    {"name":"StartupJobs / Jobs.cz lane","family":"cz-startup-jobboard","status":"checked","hits":0,"note":"Remote mimo SR sa aktivuje iba pri explicitnej Slovakia eligibility; v tomto behu bez nového jednoznačného winnera."},
+    {"name":"WordPress Jobs / web freelance","family":"wordpress-jobboard","status":"checked","hits":2,"note":"Čerstvé WordPress/WooCommerce výsledky mali nízky fixed budget alebo hard-dev scope; bez bezpečne hodnotného prírastku."},
+    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":7,"note":"Preverené čerstvé worldwide eCommerce VA, WordPress/WooCommerce a remote assistant ponuky. $50 fixed eCommerce VA má 10–15 proposals; $5–20 WP/Woo ponuky sú value reject; full-time VA vyžaduje strong spoken/written English. Bez nového LIVE winnera."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":1,"note":"Aktuálne výsledky sú prevažne `FOR HIRE`; najnovší WordPress/WooCommerce post je ponuka služby, nie hiring lead. Bez aktivácie."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Cielená verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s overiteľným direct linkom. Coverage zostáva limited; 0 verified hits."}
   ]
 }
