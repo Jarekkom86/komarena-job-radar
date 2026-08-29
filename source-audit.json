@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T18:12:00+02:00",
+  "updatedAt": "2026-08-29T18:24:00+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 5,
-    "rejectedAsWeakOrLowValue": 6,
+    "rejectedByLanguageOrHardSkill": 6,
+    "rejectedAsWeakOrLowValue": 8,
     "duplicateOrExisting": 4,
-    "rejectedByFreshnessOrEvidence": 2,
+    "rejectedByFreshnessOrEvidence": 3,
     "rejectedByLocation": 1,
-    "rejectedByTimeWindow": 1,
+    "rejectedByTimeWindow": 2,
     "liveFeedCount": 34,
     "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
     "freshnessStatus": "fresh-source-audit-no-content-change",
-    "note": "Beh 29. 8. 2026 o 18:12 CEST reálne preveril Profesia, priame firemné kariéry/cross-source company výsledky, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WordPress komunity, verejne indexovaný Facebook a cross-source corroboration. Profesia naďalej potvrdzuje existujúce remote priority VÚB Digitálny agent a Confilogi. Čerstvý Upwork sweep našiel najmä Virtual Assistant – Operations & Campaign Support (5–7 USD/h, strong written/spoken English, US-hours overlap) a Virtual Assistant — Email, Social & Content Build (8–15 USD/h, Mailchimp/HTML/WordPress/Canva, 20–50 proposals); ani jeden neprekonal existujúce LIVE priority. LinkedIn výsledky priniesli starý/neaktívny Foxelli support a fluent German+English TalentPop rolu, preto neprešli hard gateom. Nevznikla nová ani významne zmenená prioritná ponuka. jobs-data.json sa obsahovo nemenil a jeho updatedAt nebol posunutý bez obsahovej zmeny; čerstvosť zdrojov je doložená týmto auditom."
+    "note": "Beh 29. 8. 2026 o 18:24 CEST reálne preveril Profesia, priame firemné kariéry/cross-source company výsledky, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WordPress komunity, verejne indexovaný Facebook a cross-source corroboration. Dnešná Profesia AYURCOS Eurovea má e-shop/Wolt presah, ale B1 AJ a 1 000–1 300 EUR mesačne ju držia pod LIVE prioritami. Worki Nutra Group je remote a bez cudzieho jazyka, ale detail uvádza posledný update 18. 8. 2026, zatiaľ čo search index ho označil ako aktualizovaný 29. 8.; navyše ide o výrazný aktívny telefonický predaj, preto neprešiel freshness/value gateom. Upwork priniesol čerstvé worldwide VA/admin a WooCommerce výsledky, no prevažne generické alebo low-value fixed-price ponuky, prípadne silnú angličtinu/UK-hours. LinkedIn Wolt zostáva B2 English reject. Reddit dnešné WP nálezy sú FOR HIRE, nie hiring leady. Nevznikla nová ani významne zmenená prioritná ponuka; jobs-data.json sa obsahovo nemenil a jeho updatedAt sa neposúval bez obsahovej zmeny."
   },
   "sources": [
-    {"name":"Profesia – BA/remote všeobecne","family":"profesia","status":"checked","hits":9,"note":"Čerstvý sweep 29.8. o 18:12; VÚB Digitálny agent a Confilogi zostávajú viditeľné, bez nového BA/remote low-language-gate winnera nad LIVE priority."},
+    {"name":"Profesia – BA/remote všeobecne","family":"profesia","status":"ok","hits":11,"note":"Čerstvý sweep 29.8. o 18:24; AYURCOS Eurovea je nový dnešný BA hit, ale B1 AJ a 1 000–1 300 EUR/mes. neprekonávajú LIVE priority. ČSOB product-manager hit je odborne mimo cieľového profilu."},
     {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":2,"note":"Canonical company/cross-source výsledky preverované; bez novej A2/B1-compatible priority nad existujúci feed."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":3,"note":"Foxelli remote support je starý a no longer accepting applications; TalentPop vyžaduje fluent German and English. Bez nového winnera."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"Bez novej BA/remote admin/tech položky s lepším fit/value než existujúce LIVE výsledky."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":2,"note":"Bez novej prioritnej admin/driver/tech brigády nad existujúce emergency lane."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":3,"note":"Wolt BA part-time support vyžaduje minimum B2 English; ďalšie aktuálne výsledky neprešli language/value gateom."},
+    {"name":"Worki.sk","family":"worki","status":"ok","hits":2,"note":"Nutra Group remote call-center: bez cudzieho jazyka a 1 200–2 500 EUR, ale silný aktívny predaj. Search index uviedol update 29.8., detail stránky 18.8.; freshness konflikt = neaktivovať bez nového dôkazu."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":3,"note":"Dnešná BA pokladňa/dokladanie 13,15 EUR/h bola jednorazová ranná zmena 29.8. a v čase auditu už časovo nerelevantná. Ostatné nationwide finančné/neurčité ponuky neprešli quality gateom."},
     {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového Slovakia-eligible non-hard-dev WordPress/e-commerce/support leadu."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":6,"note":"Worldwide remote sweep 29.8. o 18:12: Operations & Campaign Support 5–7 USD/h vyžaduje strong spoken/written English a US-hours overlap; Email/Social/Content Build 8–15 USD/h vyžaduje Mailchimp, HTML email templates, WordPress, Squarespace a Canva a má 20–50 proposals. Bez nového winnera nad aktuálny feed."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":1,"note":"Bez konkrétneho nového Slovakia-eligible hiring leadu; žiadna zmena priority."},
-    {"name":"Facebook WordPress/WooCommerce/BA jobs – verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; posledné validné dáta zachované."},
-    {"name":"Cross-source corroboration / search indexes","family":"corroboration","status":"checked","hits":7,"note":"Použité na overenie aktivity, jazykových požiadaviek, remote eligibility, budgetu a competition. Reindex bez obsahovej zmeny sa nepovažuje za nový inzerát."}
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":8,"note":"Worldwide remote sweep 29.8. o 18:24: nové VA/admin výsledky zahŕňajú 15 USD fixed generic admin, 5 USD data-entry, 10 USD CRM/data-entry, 650 USD full-time UK-hours VA so strong spoken/written English a WooCommerce 5 USD fixed s 20–50 proposals. Bez winnera nad aktuálny feed."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":3,"note":"Dnešné WordPress/WooCommerce výsledky sú FOR HIRE developer posty, nie konkrétne hiring leady pre Jara."},
+    {"name":"Facebook WordPress/WooCommerce/BA jobs – verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; 0 verified hits, nič sa nepredstiera."},
+    {"name":"Cross-source corroboration / search indexes","family":"corroboration","status":"ok","hits":9,"note":"Použité na overenie aktivity, jazykových požiadaviek, remote eligibility, budgetu, competition a rozporov index vs detail. Reindex bez detailového freshness dôkazu sa nepovažuje za nový inzerát."}
   ]
 }
