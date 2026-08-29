@@ -1,29 +1,27 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T11:33:00+02:00",
+  "updatedAt": "2026-08-29T12:16:00+02:00",
   "runSummary": {
-    "familiesChecked": 10,
+    "familiesChecked": 8,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 6,
-    "rejectedAsWeakOrLowValue": 5,
-    "duplicateOrExisting": 4,
+    "rejectedByLanguageOrHardSkill": 5,
+    "rejectedAsWeakOrLowValue": 4,
+    "duplicateOrExisting": 3,
     "rejectedByFreshnessOrEvidence": 2,
     "rejectedByLocation": 1,
     "liveFeedCount": 34,
     "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
-    "freshnessStatus": "fresh",
-    "note": "Beh 29. 8. 2026 o 11:33 reálne prešiel Profesia, priame kariéry, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/tech-creative, WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexovaný Facebook. Nový prioritný winner sa nenašiel, preto jobs-data.json ostal fail-closed bez umelého prírastku. Wolt Support Associate je čerstvý BA support, ale má explicitný English B2 gate. Foxelli remote e-commerce support je Slovakia-eligible, ale vyžaduje fluent/near-native spoken English a výrazný sales/phone load. Kanadevia Assistant vyžaduje fluent business English a 3 roky admin/project support. Allegro partner support vyžaduje maďarčinu + slovenčinu. CloseRocket vyžaduje fluent English. Upwork priniesol čerstvé VA výsledky, ale buď silnú hovorenú angličtinu, vysokú konkurenciu alebo slabú/neurčitú hodnotu. Brigada.sk má dnešné BA retail zmeny 13,15 €/h, ale strategicky neprebíjajú existujúce admin/web/driver priority. Facebook coverage ostáva limited bez konkrétneho verejne overiteľného hiring postu."
+    "freshnessStatus": "stale-over-60m",
+    "note": "Beh 29. 8. 2026 o 12:16 reálne prešiel Profesia, LinkedIn Jobs, priame firemné kariéry, Pretlak/GROWNi indexáciu, Upwork a širšie verejné job indexy. Nový prioritný winner sa nenašiel, preto jobs-data.json ostal fail-closed bez umelého posunu updatedAt. Nový Tesco Analytik párovania produktov a produktových dát (1 600 €, Bratislava, občasný home office) má explicitný English B2 gate, preto neprešiel. InterWay Sales Operations & Data Specialist (od 2 000 €, BA, občasný home office) vyžaduje min. 2 roky Sales Ops/CRM/reporting/data analytics, pokročilý Excel a English B1; je zaujímavý, ale nie nový winner oproti existujúcim prioritám. Accenture Junior AI Business Analyst má B2+ English, IT titul, približne 2 roky data/BI a Python/AI framework/cloud požiadavky. SupportYourApp AI Solutions Engineer má C1+ English a hands-on AI implementation gate. Upwork priniesol čerstvé WordPress/Shopify leads, ale nové vhodné výsledky boli buď veľmi nízko platené ($10 fixed), hard-dev, US-only alebo bez lepšej hodnoty než existujúci WordPress VA lead. Feed je teraz starší než 60 minút; incident je zaznamenaný bez kozmetického refreshu."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":6,"note":"BA/remote e-shop, admin, support a driver sweep. Bez nového low-language-gate winnera; existujúce Lanža/Akfos/VÚB/Energohub ostávajú silnejšie."},
-    {"name":"Priame firemné kariéry","family":"company-careers","status":"ok","hits":4,"note":"Overené direct-career výsledky vrátane Allegro a Kanadevia. Allegro partner support má maďarčinu ako tvrdú podmienku; Kanadevia Assistant fluent business English + 3 roky praxe. Bez aktivácie."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":8,"note":"Čerstvý Wolt Support Associate v Ružinove je BA a vhodný typ supportu, ale minimum English B2 je explicitný hard gate. Foxelli remote e-commerce support vyžaduje fluent/near-native English. Bez aktivácie."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"BA/remote admin/e-shop/IT support sweep bez nového výsledku, ktorý by prebil existujúci RM Biznis servis alebo TOP admin roly."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":3,"note":"Dnešné BA/Rovinka retail zmeny 13,15 €/h boli overené. Sú použiteľné ako núdzová brigáda, ale neprebíjajú existujúce strategické admin/web/driver možnosti, preto bez aktivácie."},
-    {"name":"Pretlak / tech-creative","family":"pretlak-tech","status":"ok","hits":2,"note":"CloseRocket Customer Success & UX Partner je BA a 1 500–2 100 €, ale fluent English je výslovne nutnosť. Bez aktivácie."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"note":"Remote support/WooCommerce sweep bez nového Slovakia-eligible non-hard-dev leadu."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":7,"note":"Čerstvé VA/WordPress výsledky overené. Full-time VA engineering support vyžaduje strong written/spoken English; ďalšie výsledky mali vysokú konkurenciu, neurčitú hodnotu alebo hard-dev scope. Bez nového winnera."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":0,"note":"Najčerstvejšie indexované výsledky sú prevažne FOR HIRE alebo US-only hard-development hiring; bez vhodného leadu."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom. 0 verified hits; coverage zostáva limited a nič sa nepredstiera."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":7,"note":"Overené BA/remote admin, produktové dáta, support, e-commerce a driver výsledky. Tesco produktové dáta má B2 English; existujúce priority ostávajú silnejšie."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":8,"note":"Overené nové/čerstvé BA a Slovakia remote výsledky. Accenture Junior AI BA má B2+, IT degree a data/AI hard-skill gate; SupportYourApp AI Solutions Engineer C1+ a hands-on AI implementation."},
+    {"name":"Priame firemné kariéry","family":"company-careers","status":"ok","hits":3,"note":"InterWay Sales Operations & Data Specialist overený priamo: od 2 000 €, BA, ASAP, min. 2 roky relevantnej praxe, pokročilý Excel, CRM a B1 English. Zaujímavý, ale nie nový prioritný winner."},
+    {"name":"Pretlak / GROWNi / tech-creative","family":"pretlak-growni","status":"checked","hits":1,"note":"Sweep bez nového low-language-gate leadu, ktorý by prebil existujúce AI/admin priority."},
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":6,"note":"Čerstvé WordPress/Shopify/VA leads: Shopify fulfillment $10 fixed je low-value; WordPress mobile fix $35 one-off je slabší než existujúci VA lead; ďalšie boli hard-dev alebo geo-restricted."},
+    {"name":"Verejné job indexy","family":"job-indexes","status":"checked","hits":5,"note":"Použité len na discovery/cross-check; kandidáti boli následne overovaní na primárnych alebo detailných zdrojoch, keď boli dostupné."},
+    {"name":"Remote support discovery","family":"remote-support","status":"checked","hits":2,"note":"Concentrix český home-office support vyžaduje native Czech a komunikatívnu English; nie je vhodný pre aktiváciu."},
+    {"name":"Community / social public index","family":"community","status":"limited","hits":0,"note":"Bez nového konkrétneho verejne overiteľného hiring postu; coverage zostáva limited."}
   ]
 }
