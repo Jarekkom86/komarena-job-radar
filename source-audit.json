@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T10:27:16+02:00",
+  "updatedAt": "2026-08-29T11:12:57+02:00",
   "runSummary": {
     "familiesChecked": 10,
-    "newActiveJobs": 1,
-    "rejectedByLanguageOrHardSkill": 5,
+    "newActiveJobs": 0,
+    "rejectedByLanguageOrHardSkill": 4,
     "rejectedAsWeakOrLowValue": 6,
-    "duplicateOrExisting": 4,
-    "rejectedByFreshnessOrEvidence": 3,
+    "duplicateOrExisting": 5,
+    "rejectedByFreshnessOrEvidence": 2,
     "rejectedByLocation": 2,
     "liveFeedCount": 34,
     "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
     "freshnessStatus": "fresh",
-    "note": "Beh 29. 8. 2026 o 10:27 prešiel Profesia, priame kariéry, LinkedIn, Worki, Brigada.sk, Pretlak/WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexovaný Facebook. Nový winner: Upwork Virtual Assistant for Book Coaching Business — worldwide remote, WordPress updates + ActiveCampaign + administratíva, 10–15 USD/h, zverejnené približne 5 h pred overením; 20–50 proposals a malý klientský spend znižujú score na 88. SupportYourApp roly boli vyradené pre fluent/C1 English alebo ďalší jazyk. Pretlak Datacop je senior/hybrid a mimo low-gate profilu. Brigada.sk čerstvé výsledky sú prevažne retail alebo hard PHP. Facebook opäť 0 verified hiring hits; coverage ostáva limited, nič sa nepredstiera."
+    "note": "Beh 29. 8. 2026 o 11:12 reálne prešiel Profesia, priame kariéry, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/tech-creative, WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexovaný Facebook. Nový prioritný winner sa nenašiel. Profesia priniesla čerstvého IT Administrátora od Lugera & Maklér za 2 000 €/mes., ale rola vyžaduje AJ B2 a minimálne 2 roky obdobnej IT administrátorskej praxe, preto neprešla hard-skill/language gateom. CloseRocket Customer Success & UX Partner v Bratislave je zaujímavý AI/SaaS fit 1 500–2 100 €, no fluent English je výslovne nutnosť, preto bez aktivácie. Upwork mal čerstvé WordPress/WooCommerce projekty, ale prevažne hard-dev/expert scope alebo nízku hodnotu; žiadny neprebil existujúce aktívne freelance leady. Brigada.sk a Worki bez nového overiteľného BA/remote winnera. Facebook coverage ostáva limited bez konkrétneho verejne overiteľného hiring postu."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":6,"note":"Cielený BA/remote sweep pre e-shop, administratívu, support a vodič B. Existujúce priority Lanža, Akfos, VÚB a Energohub zostávajú silné; bez nového winnera v tomto behu."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":7,"note":"Cielený BA/remote sweep pre e-shop, administratívu, support a vodič B. Nový IT Administrátor Lugera & Maklér (2 000 €/mes., Bratislava, HO možný) bol vyradený pre AJ B2 + minimálne 2 roky podobnej praxe; existujúce priority ostávajú silnejšie."},
     {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":2,"note":"Cielený search customer support/e-commerce/technical support v BA/remote SK; bez nového priameho firemného leadu, ktorý by bezpečne prebil existujúce Websupport/O2/Hilti/Penta položky."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":4,"note":"SupportYourApp remote roly sú verejne indexované, ale aktuálne relevantné výsledky vyžadujú fluent Swedish+English alebo C1 English/IT infrastructure; bez aktivácie."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"note":"BA/remote administratíva, e-shop a IT support boli vyhľadané; bez nového overiteľného winnera nad existujúci RM Biznis servis."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":4,"note":"Aktuálny BA feed bol skontrolovaný. Viditeľné výsledky sú prevažne retail/online dotazníky alebo hard PHP programovanie; bez strategicky lepšieho prírastku."},
-    {"name":"Pretlak / tech-creative","family":"pretlak-tech","status":"ok","hits":1,"note":"Datacop Technical Marketing Specialist je Bratislava hybrid, 2 500–4 000 €, ale senior track s US/UK eCommerce klientmi a vysokým ownership/hard-skill očakávaním; nezaradené."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":3,"note":"Remote/e-commerce/support sweep bez nového Slovakia-eligible low-language-gate winnera. Aktuálne viditeľné medzinárodné support roly majú prevažne fluent English alebo ďalší jazyk."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"BA/remote administratíva, e-shop a IT support boli vyhľadané; čerstvo aktualizované výsledky s ďalším povinným jazykom alebo mimo BA/remote gate neboli aktivované."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":6,"note":"Aktuálny feed skontrolovaný. Viditeľné celoslovenské výsledky sú prevažne nejasné finančné/obchodné stáže, dotazníky alebo fyzická e-shop brigáda mimo BA; bez strategicky lepšieho prírastku."},
+    {"name":"Pretlak / tech-creative","family":"pretlak-tech","status":"ok","hits":4,"note":"CloseRocket Customer Success & UX Partner je Bratislava onsite, graduate/junior/mid a 1 500–2 100 €, ale Fluent English je explicitná nutnosť. PUELLAvone CRM je remote/Košice, no mid CRM/Bloomreach specialist track. Bez aktivácie."},
     {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"note":"Cielený remote support/WooCommerce sweep bez nového Slovakia-eligible non-hard-dev výsledku."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":8,"note":"Nový aktívny lead: Virtual Assistant for Book Coaching Business — WordPress + ActiveCampaign + administratíva, worldwide remote, 10–15 USD/h, 1–3 mesiace, publikované približne 5 h pred kontrolou, 20–50 proposals. Ďalšie čerstvé VA/WP výsledky mali fluent English, slabšiu odmenu, vyššiu konkurenciu alebo hard dev scope."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":0,"note":"Najčerstvejšie indexované výsledky sú prevažne FOR HIRE ponuky freelancerov alebo US-only hard-development hiring; bez vhodného hiring leadu pre Slovensko."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"WordPress Slovensko, WooCommerce SK+CZ a BA pracovné skupiny boli vyhľadané verejnou indexáciou, ale nevrátili konkrétny aktuálny hiring post s priamym overiteľným linkom. 0 verified hits; nič sa nepredstiera."}
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":8,"note":"Čerstvé WordPress/WooCommerce výsledky boli overené. Väčšina je hard development/expert scope (PHP, custom plugins, API, rebuildy) alebo slabé malé fixed-price úlohy; žiadny nový lead neprebil existujúce WooCommerce Assistant / Book Coaching VA / WP maintenance položky."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":0,"note":"Bez nového aktuálneho hiring leadu s jasnou Slovakia/Europe eligibility a non-hard-dev scope."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom. 0 verified hits; coverage zostáva limited a nič sa nepredstiera."}
   ]
 }
