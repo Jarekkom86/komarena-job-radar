@@ -1,29 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T03:11:14+02:00",
+  "updatedAt": "2026-08-29T03:33:13+02:00",
   "runSummary": {
-    "familiesChecked": 11,
+    "familiesChecked": 12,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 4,
-    "rejectedAsWeakOrLowValue": 5,
+    "rejectedByLanguageOrHardSkill": 6,
+    "rejectedAsWeakOrLowValue": 4,
     "duplicateOrExisting": 4,
-    "rejectedByFreshnessOrEvidence": 2,
+    "rejectedByFreshnessOrEvidence": 3,
     "liveFeedCount": 29,
     "liveProfesiaEstimatePct": 44.8,
     "liveNonProfesiaEstimatePct": 55.2,
-    "note": "Beh 29. 8. 2026 o 03:11 reálne preveril najnovšie Profesia výsledky pre Bratislavu a vodičské pozície, LinkedIn remote/support výsledky, Pretlak, GROWNi a nadväzujúce direct/company zdroje. Akfos vodič/kuriér je čerstvo znovu publikovaný v BA za 1 500 EUR, ale oproti existujúcej Lanža priorite neprináša lepšiu odmenu ani profilovú hodnotu. AYURCOS predaj je nový z 29.8., ale len 1 000 EUR a mimo hlavných smerov. TalentPop vyžaduje plynulú nemčinu aj angličtinu, KLARSTEIN taliansky support je jazykovo nevhodný a SupportYourApp vyžaduje C1 AJ. Foxelli crochet support už neprijíma. Pretlak priniesol 3D/CG roly mimo profilu; GROWNi bez nového vhodného plateného leadu. Žiadny nový alebo významne zmenený kandidát neprekonal existujúce LIVE priority. Keďže prebehla reálna kontrola zdrojov, jobs-data.json môže mať aktualizovaný run timestamp bez predstierania novej ponuky; obsah 29 aktívnych položiek zostáva nezmenený."
+    "note": "Beh 29. 8. 2026 o 03:33 reálne preveril Profesia, LinkedIn, direct-company lane, Worki, Brigada.sk, Služby zamestnanosti/Kariera, Pretlak, StartupJobs/Jobs.cz lane, WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexovaný Facebook. Žiadny nový kandidát neprekonal existujúce LIVE priority. StartupJobs Dreamup je 100 % remote e-shop customer care, ale vyžaduje poľštinu. Neuschl2 WordPress/Webflow project coordinator je prevažne remote, no viaže sa na občasnú Prahu a predchádzajúcu agentúrnu prax. SupportYourApp remote support vyžaduje B2/C1 jazyky. Upwork WordPress výsledky mali buď hard PHP/dev požiadavky, fluent English/US-hours alebo vysokú konkurenciu. Služby zamestnanosti priniesli BA admin/IKT výsledky, no aktuálne overené položky sú nízko platené, staršie alebo majú jazykové riziko. Facebook verejná indexácia opäť neposkytla konkrétny hiring post. Feed ostáva fail-closed na 29 aktívnych položkách a jobs-data.json sa bez obsahovej zmeny neprepisuje."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":8,"note":"Najnovšie BA/vodič výsledky overené 29.8. o 03:11. Akfos vodič/kuriér 1 500 EUR je čerstvý, ale slabší než existujúca Lanža priorita. AYURCOS predaj 1 000 EUR je nový, ale nízka hodnota a slabá profilová zhoda."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":5,"note":"Overené remote support a customer-service výsledky. TalentPop = fluent DE+EN, KLARSTEIN = taliansky support, SupportYourApp = C1 AJ; Foxelli už neprijíma. Bez nového A2-compatible winnera."},
-    {"name":"Firemné kariérne stránky / direct-company","family":"company","status":"checked","hits":2,"note":"Nadväzujúce firemné detaily z LinkedIn/Profesia discovery neukázali nový vhodný lead nad existujúce priority."},
-    {"name":"Worki.sk","family":"slovak-jobboard","status":"checked","hits":0,"note":"Bez nového čerstvého výsledku s vyššou hodnotou než existujúci RM Biznis servis."},
-    {"name":"Brigada.sk","family":"slovak-jobboard","status":"checked","hits":0,"note":"Bez nového relevantného BA/remote admin, IT alebo e-shop leadu v tomto behu."},
-    {"name":"Služby zamestnanosti / Kariera","family":"government-jobboard","status":"checked","hits":0,"note":"Bez nového vhodného BA/remote výsledku, ktorý by prešiel jazykovým a skill gateom."},
-    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":2,"note":"Triton Digital 3D Product Artist a CG Generalist sú čerstvé/aktívne, ale ide o špecializované 3D/CG roly mimo aktuálneho profilu."},
-    {"name":"GROWNi","family":"community-jobboard","status":"checked","hits":3,"note":"Aktuálna verejná ponuka práce a stáží neobsahuje nový platený lead s lepšou profilovou zhodou; AIESEC je neplatená študentská stáž, IT Guy/Girl je viazaný na študentský status."},
-    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":0,"note":"Bez nového verejne indexovaného leadu v tomto behu, ktorý by prekonal existujúce WooCommerce/WordPress LIVE položky."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Bez nového overiteľného hiring leadu vhodného do feedu."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; nič sa nepredstiera."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":5,"note":"Preverené najnovšie BA/remote admin, e-shop, support a vodič výsledky. Bez nového kandidáta, ktorý by prekonal existujúce priority alebo priniesol lepšiu hodnotu."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":6,"note":"Foxelli remote e-commerce support je tematicky blízko, ale crochet-specific; SupportYourApp remote support má B2/C1 jazykový gate; KLARSTEIN vyžaduje taliančinu. Bez nového A2-compatible winnera."},
+    {"name":"Firemné kariérne stránky / direct-company","family":"company","status":"checked","hits":2,"note":"Nadväzujúce direct-company detaily neukázali nový canonical winner nad existujúce LIVE priority."},
+    {"name":"Worki.sk","family":"slovak-jobboard","status":"checked","hits":0,"note":"Bez nového čerstvého BA/remote výsledku s vyššou hodnotou než existujúce LIVE položky."},
+    {"name":"Brigada.sk","family":"slovak-jobboard","status":"checked","hits":0,"note":"Bez nového relevantného BA/remote admin, IT, e-shop alebo vhodného kuriérskeho leadu v tomto behu."},
+    {"name":"Služby zamestnanosti / Kariera","family":"government-jobboard","status":"checked","hits":5,"note":"Overené BA admin/customer-care/IKT výsledky. BADENTAL 750 EUR a ďalšie staršie admin roly sú pod value prahom; Snooti IKT support je tematicky zaujímavý, ale vyžaduje dodatočné jazykové overenie pred prípadnou aktiváciou. Poprad e-shop support je onsite mimo BA a neprejde lokalitným gateom."},
+    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového BA/remote A2-compatible výsledku s vhodným scope v tomto behu."},
+    {"name":"StartupJobs / Jobs.cz lane","family":"tech-creative","status":"checked","hits":3,"note":"Dreamup e-shop customer care je 100 % remote, ale vyžaduje poľštinu. Neuschl2 WordPress/Webflow projektový koordinátor je prevažne remote, no má občasné stretnutia v Prahe a vyžaduje agentúrnu/studio prax. TicketsGP je seniornejší growth/project scope mimo aktuálnej zhody."},
+    {"name":"WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového Slovakia-eligible non-hard-dev leadu s primeraným budgetom a jazykovým profilom."},
+    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":4,"note":"WordPress Webmaster vyžaduje fluent English, US business hours a PHP; WordPress Expert má 50+ proposals a hard PHP; WordPress/WooCommerce speed optimization je expert dev scope; AI VA/Automation je zaujímavé, ale 30+ h a 20–50 proposals pri 5–10 USD/h neprekonáva existujúce LIVE priority."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":2,"note":"Nájdené výsledky sú prevažne FOR HIRE alebo staršie hiring posty; bez nového overiteľného Slovakia-compatible leadu vhodného do feedu."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Cielené vyhľadávanie WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytlo konkrétny aktuálny hiring post s priamym overiteľným linkom. Výsledky smerovali na nesúvisiace Meta/Audience Network stránky; coverage zostáva limited a 0 verified hits."}
   ]
 }
