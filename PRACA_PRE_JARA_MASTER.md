@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 29. 8. 2026 10:27 CEST
+Aktualizované: 29. 8. 2026 11:33 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -48,7 +48,7 @@ Aktualizované: 29. 8. 2026 10:27 CEST
 14. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote, 5–10 USD/h; mínus US Mountain Time.
 15. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
 16. **Akfos — kuriér/vodič B, kusové zásielky — Match 88** — Bratislava, 1 500 €/mes., ASAP; skrátený úväzok/dohoda/živnosť, bez tachografu a bez C/C+E.
-17. **Upwork — Virtual Assistant for Book Coaching Business — Match 88 — NOVÉ** — worldwide remote, 10–15 USD/h; WordPress aktualizácie + ActiveCampaign + administratíva; čerstvé približne 5 h, mínus 20–50 proposals a malý client spend.
+17. **Upwork — Virtual Assistant for Book Coaching Business — Match 88** — worldwide remote, 10–15 USD/h; WordPress aktualizácie + ActiveCampaign + administratíva; mínus 20–50 proposals a malý client spend.
 18. **SuperFaktura — Supportový parťák — Match 87**.
 19. **Cerkam Facility Services — Terénny administratívny pracovník — Match 86** — Bratislava, od 1 500 €/mes. + bonusy.
 20. **RM Biznis servis / Worki — Manažér servisu klientov — Match 86** — väčšina práce online, občas BA, 10–15 €/h.
@@ -64,36 +64,36 @@ Aktualizované: 29. 8. 2026 10:27 CEST
 30. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 31. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 29. 8. 2026 10:27 CEST — LATEST
+## SOURCE AUDIT — 29. 8. 2026 11:33 CEST — LATEST
 Reálne prehľadané skupiny: **Profesia; direct company careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Pretlak/tech-creative; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu **10 nezávislých kontrolovaných skupín**, z toho 9 mimo Profesia.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky do `jobs-data.json`: 1.**
-- **NOVÉ — Upwork: Virtual Assistant for Book Coaching Business — Match 88.** Worldwide remote, 10–15 USD/h, <30 h/týždeň, 1–3 mesiace. Scope: aktualizácia WordPress webu, ActiveCampaign e-mail kampane, štandardizácia zmlúv a administratívna podpora. Pri overení zverejnené približne pred 5 hodinami; 20–50 proposals, 0 interviewing. Aktivované s `locationEligibility: remote-ok`. Zdroj: https://www.upwork.com/freelance-jobs/apply/Virtual-Assistant-for-Book-Coaching-Business_~022092608466327455097/
-- **Upwork — WooCommerce Assistant:** existujúci winner je stále verejne dostupný; <5 proposals podľa posledného overenia, ale US Mountain Time ostáva významný mínus. Zdroj: https://www.upwork.com/freelance-jobs/apply/WooCommerce-Assistant_~022091929951949047161/
-- **Upwork — VA Email/Social/Content Build:** WordPress + Mailchimp + Canva, 8–15 USD/h a worldwide remote, ale 20–50 proposals a širší marketing/creative scope; neprebíja nový jednoduchší admin/WP lead. Zdroj: https://www.upwork.com/freelance-jobs/apply/Virtual-Assistant-Email-Social-Content-Build-Mailchimp-Canva-WordPress_~022093278865367176299/
-- **LinkedIn — SupportYourApp:** remote support výsledky sú dostupné, ale relevantné roly vyžadujú fluent Swedish+English alebo C1 English/IT infrastructure; jazykový/hard-skill reject.
-- **Pretlak — Datacop Technical Marketing Specialist:** Bratislava hybrid, 2 500–4 000 €, ale senior track s US/UK eCommerce klientmi a vysokým ownership/hard-skill očakávaním; bez aktivácie.
-- **Brigada.sk:** BA feed skontrolovaný; viditeľné výsledky sú prevažne retail/dotazníky alebo hard PHP programovanie, bez strategicky lepšieho prírastku.
-- **Worki:** BA/remote admin/e-shop/IT support sweep bez nového winnera nad existujúci RM Biznis servis.
+- **Nové aktívne položky do `jobs-data.json`: 0.** `jobs-data.json` zostal zámerne nezmenený; fail-closed pravidlo zakazuje pridávať slabší výsledok iba kvôli frekvencii behu alebo source mixu.
+- **Wolt — Support Associate (Full Time), Ružinov:** čerstvý BA support, 1 340–1 410 €/mes., po tréningu možný HO, ale explicitne vyžaduje **English min. B2** a zmeny ráno/večer/víkendy. Jazykový gate → bez aktivácie. Zdroj: https://sk.linkedin.com/jobs/view/support-associate-full-time-at-wolt-4447674791
+- **Foxelli — Customer Support & Sales Agent | E-commerce | Remote:** 100 % remote a Slovakia-eligible, ale direct-career detail vyžaduje **fluent/near-native spoken English**, phone-based support/upselling a nočný/večerný schedule podľa variantu. Jazykový + workload gate → bez aktivácie. Zdroj: https://jobs.ashbyhq.com/foxelligroup/1c05611a-1337-4c82-9ed8-88a859c47086
+- **Kanadevia Inova — Assistant, Petržalka:** 1 300 €/mes. + 13. plat + bonus + 2 dni HO, ale vyžaduje **fluent business English** a minimálne 3 roky admin/project support. Bez aktivácie. Zdroj: https://sk.linkedin.com/jobs/view/assistant-at-kanadevia-inova-4458784771
+- **Allegro — Junior špecialista podpory partnerov:** direct-career, 100 % HO, ale komunikácia je prevažne **maďarsky a slovensky**; povinná maďarčina → bez aktivácie. Zdroj: https://careers.allegro.eu/job/Bratislava-Junior-%C5%A1pecialista-podpory-partnerov/1363537155/
+- **Pretlak — CloseRocket Customer Success & UX Partner:** Bratislava, 1 500–2 100 €, AI/SaaS obsahovo zaujímavé, ale **fluent English** je nutnosť. Bez aktivácie. Zdroj: https://pretlak.com/cs/job/deal-machine-s-r-o/junior-mid-graduate-customer-success-and-ux-partner/4vi4Lyb7W
+- **Brigada.sk:** dnešné BA/Rovinka retail zmeny 13,15 €/h boli overené; sú použiteľné ako núdzová brigáda, ale neprebíjajú existujúce web/admin/driver priority. Bez aktivácie.
+- **Upwork:** čerstvé VA/WordPress výsledky boli overené; najnovší full-time VA engineering-support lead vyžaduje strong written/spoken English, ďalšie výsledky mali vysokú konkurenciu, hard-dev scope alebo slabú/neurčitú hodnotu. Bez nového winnera.
 - **WordPress Jobs:** bez nového Slovakia-eligible non-hard-dev support/admin leadu.
-- **Reddit / WordPress komunity:** najčerstvejšie výsledky sú prevažne `FOR HIRE` alebo US-only hard-development hiring, bez aktivácie.
+- **Reddit / WordPress komunity:** najčerstvejšie indexované výsledky sú prevažne `FOR HIRE` alebo US-only hard-development hiring, bez aktivácie.
 - **Facebook:** **0 verified hits**. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited` a nič sa nepredstiera.
 
 ### Run summary
 - Reálne skontrolované zdrojové skupiny: **10**.
-- Nové aktívne položky: **1**.
-- Vyradené jazykovým/hard-skill gateom: **5**.
-- Vyradené ako slabé/nízka hodnota: **6**.
+- Nové aktívne položky: **0**.
+- Vyradené jazykovým/hard-skill gateom: **6**.
+- Vyradené ako slabé/nízka hodnota: **5**.
 - Duplicitné/existing: **4**.
-- Vyradené pre freshness/evidence: **3**.
-- Vyradené pre lokalitu: **2**.
+- Vyradené pre freshness/evidence: **2**.
+- Vyradené pre lokalitu: **1**.
 
 ### LIVE mix
 - Aktívny feed: **34 položiek**.
-- Source mix: približne **Profesia 44,1 % / mimo Profesia 55,9 %**.
-- `jobs-data.json.updatedAt` = **29. 8. 2026 10:27:16 CEST**.
-- `source-audit.json.updatedAt` = **29. 8. 2026 10:27:16 CEST**.
+- Source mix ostáva približne **Profesia 44,1 % / mimo Profesia 55,9 %**.
+- `jobs-data.json.updatedAt` = **29. 8. 2026 10:27:16 CEST** — bez zmeny, pretože nebol nový winner.
+- `source-audit.json.updatedAt` = **29. 8. 2026 11:33:00 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -235,8 +235,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 127. Opportunity dominance graph.
 128. Contractor payment-latency & cash-flow risk.
 129. Variable-pay dependency ratio.
-130. **Freelance client-budget realism detector — NOVÉ** — porovnať deklarovaný budget/sadzbu s požadovaným scope, počtom deliverables a senioritou. Ak klient žiada WordPress + e-mail automation + social + dizajn + reporting za cenu typickú pre jednoduchú VA prácu, zvýšiť `scopeToBudgetRisk` ešte pred reakciou. Praktický prínos: menej času na podhodnotené „všetko v jednom“ freelance ponuky a lepšie rozlíšenie skutočne výhodných remote zákaziek.
-131. **Evidence-backed skill adjacency map — NOVÉ** — pri každej ponuke oddeliť `already-proven`, `adjacent/trainable` a `hard-gap` zručnosti a pre `adjacent/trainable` vyžadovať konkrétny most z existujúcej praxe (napr. WooCommerce → Shopify product admin, WordPress formuláre → ActiveCampaign workflow). Praktický prínos: bezpečne zachytiť viac near-fit ponúk bez vymýšľania schopností a zároveň znížiť false-positive ranking pri hard skilloch.
+130. Freelance client-budget realism detector.
+131. Evidence-backed skill adjacency map.
+132. **Candidate-data / payment scam gate — NOVÉ** — pri job/freelance leade rozpoznať neprimerané požiadavky na platbu, bankové údaje, doklady totožnosti, crypto/gift cards, vzdialený prístup alebo presun mimo bezpečného hiring kanála ešte pred overenou ponukou. Praktický prínos: zníženie rizika podvodu a straty času na falošné remote ponuky bez znižovania coverage legitímnych zdrojov.
+133. **Channel-specific language burden classifier — NOVÉ** — oddeliť jazykovú náročnosť podľa kanála `written/email/chat`, `phone`, `video/live meeting`, `client-facing negotiation`. Písomný B1/B2 text s nástrojmi nemusí byť rovnaký hard gate ako fluent spoken English na telefonickej podpore; skóre sa má opierať o konkrétny komunikačný kanál z inzerátu. Praktický prínos: menej false-positive aj false-negative výsledkov pri remote support/admin rolách a presnejšie využitie A2 profilu.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
