@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T12:24:37+02:00",
+  "updatedAt": "2026-08-29T13:13:42+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 6,
-    "rejectedAsWeakOrLowValue": 6,
+    "rejectedByLanguageOrHardSkill": 7,
+    "rejectedAsWeakOrLowValue": 5,
     "duplicateOrExisting": 4,
     "rejectedByFreshnessOrEvidence": 2,
     "rejectedByLocation": 1,
     "liveFeedCount": 34,
     "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
     "freshnessStatus": "stale-over-60m-no-new-winner",
-    "note": "Beh 29. 8. 2026 o 12:24 CEST reálne prešiel Profesia, LinkedIn Jobs, priame firemné kariéry, Worki, Brigada.sk, Pretlak/tech-creative, WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexované Facebook skupiny. Nový prioritný winner sa nenašiel, preto jobs-data.json ostal fail-closed bez kozmetického posunu updatedAt. Powerlogy Marketing Specialist má výborný e-shop/WordPress/WooCommerce/AI fit a BA hybrid, ale explicitne vyžaduje slovenčinu aj angličtinu na veľmi dobrej úrovni. Wolt Support Associate má English min. B2. Nový Upwork full-time VA pre UK engineering firm je worldwide remote, ale vyžaduje strong written/spoken English a telefonovanie s klientmi. Upwork eCommerce VA pre multi-platform store je tematicky vhodný, ale $50 fixed-price pre complex project je scope-to-pay mismatch. Ďalšie WordPress leads boli hard-dev alebo nízko platené. Facebook ostáva 0 verified hits / limited."
+    "note": "Beh 29. 8. 2026 o 13:13 CEST reálne preveril Profesia (BA/okolie, remote admin/support, driver a IT support), LinkedIn Jobs, priame firemné kariéry cez verejnú indexáciu, Worki, Brigada.sk, Pretlak/tech-creative, WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexované Facebook skupiny. Lanža, Akfos, VÚB a Confilogi zostávajú verejne aktívne/viditeľné; nový prioritný winner sa nenašiel. Nový Tatra Supercompute IT Service Desk pre AI dátové centrum je tematicky veľmi silný (L1 support, Bratislava, od 1 800 EUR), ale vyžaduje aktívnu angličtinu B2, 24/7 zmeny a nástup 1. 11. 2026, preto neprešiel jazykovým/prevádzkovým gate. LAST MILE technický konzultant ponúka 2 000–2 500 EUR a technicky sedí, ale vyžaduje B1 AJ a reálnu prax s CCTV/EZS/ACS/slaboprúdom, preto nebol aktivovaný. WordPress Jobs priniesol nový Enfold/CSS projekt, ale ide o užší developer/support scope s TBD budgetom; ďalšie výsledky sú hard-dev alebo lokálne mimo SR. Upwork mal čerstvý VA Mailchimp/Canva/WordPress lead, ale dostupný verejný detail neposkytol spoľahlivú sadzbu a neprekonal existujúce priority. jobs-data.json sa nezmenil, preto updatedAt zostal na poslednom reálnom content update 10:27:16 a feed je korektne označený stale nad 60 minút."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":7,"note":"BA/remote e-shop, admin, support a driver sweep; bez nového low-language-gate winnera nad existujúce LIVE priority."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":7,"note":"BA/support výsledky overené; Wolt Support Associate je BA, ale vyžaduje professional English min. B2, preto bez aktivácie."},
-    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":3,"note":"Direct-career lane overený na známych BA/remote smeroch; bez nového priameho firemného winnera s A2-compatible language gate."},
-    {"name":"Worki.sk","family":"worki","status":"ok","hits":5,"note":"Aktuálna admin/customer-service stránka overená; RM Biznis servis ostáva existujúci LIVE lead. Ďalšie TOP výsledky boli jazykovo alebo obchodne slabšie."},
-    {"name":"Brigada.sk","family":"brigada","status":"ok","hits":8,"note":"Bratislava a okolie overené; aktuálne retail/sklad zmeny sú použiteľné ako núdzové brigády, ale neprebíjajú existujúce web/admin/driver priority."},
-    {"name":"Pretlak / tech-creative","family":"pretlak","status":"ok","hits":2,"note":"Powerlogy Marketing Specialist: BA hybrid, od 1 600 €, WordPress/WooCommerce/e-shop/AI obsahovo silný, ale požaduje slovenčinu a angličtinu na veľmi dobrej úrovni. CloseRocket má fluent English. Obe bez aktivácie pre language gate."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"note":"Bez nového Slovakia-eligible non-hard-dev WordPress/WooCommerce support/admin leadu."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":9,"note":"Nové worldwide remote VA/e-commerce/WordPress leads overené. UK engineering VA vyžaduje strong spoken/written English a phone client work. eCommerce VA má $50 fixed pre complex scope. WordPress fixes boli prevažne $5–50 fixed alebo hard-dev; bez nového winnera."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Najčerstvejšie výsledky sú prevažne FOR HIRE ponuky dodávateľov, nie konkrétne hiring dopyty vhodné pre aktiváciu."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"WordPress Slovensko, WooCommerce SK+CZ a BA pracovné skupiny neposkytli konkrétny aktuálny verejne overiteľný hiring post s priamym linkom. 0 verified hits; nič sa nepredstiera."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":12,"note":"Overené BA/okolie, remote administratíva/support, kuriéri a IT support. Lanža, Akfos, VÚB a Confilogi zostávajú aktívne. Tatra Supercompute L1 AI data-center support je nový, ale B2 AJ + 24/7 zmeny sú hard mismatch pre prioritný feed."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":5,"note":"Remote/customer-support výsledky overené; čerstvé relevantné výsledky majú jazykový gate (napr. fluent German/English) alebo sú staršie/closed. Bez nového winnera."},
+    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":3,"note":"Firemné/priame kariérne výsledky pre BA technický/support smer preverené cez verejné zdroje; bez nového A2-compatible winnera."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":4,"note":"Admin/customer-service sweep pre BA/remote; bez novej položky, ktorá by prekonala existujúce priority."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":6,"note":"BA brigády vodič/sklad/admin overené; bez lepšieho pomeru fit/odmena než existujúce LIVE priority."},
+    {"name":"Pretlak / tech-creative","family":"pretlak","status":"checked","hits":2,"note":"AI/e-commerce/WordPress lane overený; bez nového low-language-gate winnera."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":4,"note":"Enfold/CSS help je čerstvý projekt s TBD budgetom a užším developer scope; ďalšie čerstvé ponuky sú senior/hard-dev alebo lokálne mimo vhodného režimu."},
+    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":4,"note":"Čerstvý VA Mailchimp/Canva/WordPress lead je worldwide remote, ale verejný detail neposkytol spoľahlivú sadzbu; neaktivovaný bez dostatočného pay/evidence signálu. Ostatné výsledky hard-dev alebo slabší fit."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Čerstvé indexované príspevky sú prevažne FOR HIRE ponuky dodávateľov, nie hiring dopyty; 0 vhodných verified leads."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia neposkytla konkrétny aktuálny overiteľný hiring post pre BA/remote WordPress/admin; 0 verified hits."}
   ]
 }
