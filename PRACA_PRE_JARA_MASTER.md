@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 29. 8. 2026 07:22 CEST
+Aktualizované: 29. 8. 2026 08:36 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -63,33 +63,32 @@ Aktualizované: 29. 8. 2026 07:22 CEST
 29. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 30. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 29. 8. 2026 07:22 CEST — LATEST
-Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; direct company careers; Worki.sk; Brigada.sk; Práca za rohom/Kariera; Služby zamestnanosti; Pretlak/WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu 11 nezávislých kontrolovaných skupín, z toho výrazná väčšina mimo Profesia.
+## SOURCE AUDIT — 29. 8. 2026 08:36 CEST — LATEST
+Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; direct company careers; Worki.sk; Brigada.sk; Práca za rohom/Kariera; Služby zamestnanosti; Pretlak/StartupJobs/WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu 11 nezávislých kontrolovaných skupín, z toho výrazná väčšina mimo Profesia.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky do `jobs-data.json`: 0.** `jobs-data.json.updatedAt` zostáva **29. 8. 2026 06:35:54 CEST**, pretože sa obsah LIVE feedu nezmenil; timestamp sa neposúva kozmeticky.
-- **APM Digital — Office Manager / Operations Coordinator:** priama APM Freelancers stránka potvrdzuje otvorený JID-1288 v Bratislave, 1 500–2 500 €/mes. a HO do 40 %. Aktuálny detail však uvádza výbornú angličtinu/C1 ako podmienku, preto hard language gate a bez aktivácie.
-- **TDK InvenSense — Office Manager:** čerstvý Bratislava lead, cca 23–28k €/rok a bonus, ale vyžaduje pokročilú angličtinu a CV v angličtine; bez aktivácie.
-- **Arvin & Benet — Office Manager/ka:** BA near-fit s administratívou, klientskym servisom, interným systémom, dokumentmi, objednávkami a úradmi. Firemná career stránka uvádza AJ iba ako výhodu, Profesia štruktúra však uvádza B1 a verejné zdroje sa rozchádzajú aj v mzde (1 400 vs. 1 600 €). Do LIVE sa nezaraďuje, kým sa konflikt kritických polí nerozrieši.
-- **Upwork:** čerstvé worldwide eCommerce VA / WordPress / VA výsledky, ale buď strong English, nízky fixed budget (5–100 USD), vysoká konkurencia 10–50+ proposals, alebo slabý scope-to-pay pomer.
-- **Worki / Brigada / Služby zamestnanosti / Kariera:** bez nového BA/remote winnera nad existujúce priority.
-- **Pretlak / WordPress Jobs:** bez nového A2-compatible BA/remote non-hard-dev winnera s primeranou ekonomikou.
-- **Reddit / WordPress komunity:** najčerstvejšie výsledky sú prevažne `FOR HIRE`; bez nového kvalitného hiring leadu.
+- **Upwork — WordPress Landing Page Designer & Developer:** zverejnené dnes, worldwide remote, 40 USD fixed; pri kontrole 15–20 proposals a už 5 interviewing. Scope je čistý WordPress one-page build bez tvrdého PHP gateu, ale ekonomika a rozbehnutý výber sú slabšie než existujúce LIVE príležitosti, preto bez aktivácie. citeturn209450search0
+- **Upwork — Wordpress expert:** čerstvý worldwide remote quick-fix za 35 USD, ale 20–50 proposals a nízka absolútna hodnota; bez aktivácie. citeturn714270search9
+- **Upwork — WooCommerce checkout/store management:** worldwide remote, ale iba 20 USD fixed a povinné PHP; 15–20 proposals. Hard-skill + scope-to-pay gate. citeturn714270search0
+- **Indeed remote discovery:** našlo WordPress/GHL, WordPress/SEO a ďalšie remote role, ale časť je hard-development a pri agregovaných výsledkoch nie je dostatočne potvrdená country eligibility pre prácu zo Slovenska; preto zostávajú mimo LIVE, kým sa neoverí jurisdikcia/remote politika. citeturn209450search1turn209450search4
+- **Reddit / WordPress komunity:** dnešné výsledky sú `FOR HIRE` ponuky freelancerov, nie hiring dopyty; bez aktivácie. citeturn714270reddit122turn714270reddit126
+- **Worki / Brigada / Služby zamestnanosti / Kariera / Pretlak / StartupJobs / WordPress Jobs:** bez nového BA/remote winnera nad existujúce priority.
 - **Facebook:** **0 verified hits**. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited`.
 
 ### Run summary
 - Reálne skontrolované zdrojové skupiny: **11**.
 - Nové aktívne položky: **0**.
-- Vyradené jazykovým/hard-skill gateom: **6**.
-- Vyradené ako slabé/nízka hodnota: **5**.
-- Duplicitné/existing: **5**.
-- Vyradené pre freshness/evidence: **4**.
+- Vyradené jazykovým/hard-skill gateom: **5**.
+- Vyradené ako slabé/nízka hodnota: **8**.
+- Duplicitné/existing: **4**.
+- Vyradené pre freshness/evidence: **3**.
 - Vyradené pre lokalitu: **2**.
 
 ### LIVE mix
 - Aktívny feed: **33 položiek**.
 - Source mix zostáva približne **Profesia 45,5 % / mimo Profesia 54,5 %**.
-- `source-audit.json.updatedAt` = **29. 8. 2026 07:22 CEST** ako dôkaz aktuálneho multi-source searchu.
+- `source-audit.json.updatedAt` = **29. 8. 2026 08:36 CEST** ako dôkaz aktuálneho multi-source searchu.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -225,8 +224,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 121. Calendar-aware source weighting.
 122. Probation & termination-risk extractor.
 123. Exclusivity / non-compete / IP-risk flag.
-124. **Selection-location burden gate — NOVÉ** — pri remote/HO ponuke oddelene eviduje miesto a povinnosť osobného pohovoru, assessmentu, onboardingu a pravidelnej práce. Remote rola tak neprejde automaticky ako `remote-ok`, ak výber alebo onboarding vyžaduje opakované drahé cesty do vzdialeného mesta/krajiny; jednorazová primeraná cesta sa naopak nepomýli s recurring hybridom.
-125. **Critical-field conflict bundle — NOVÉ** — ak sa direct career, jobboard a index rozchádzajú v kritickom poli (`pay`, `language`, `remotePolicy`, `worksite`, `contract`), uloží všetky verzie spolu so sourceTrust a observedAt a nastaví stav `conflict`. Radar nesmie z konfliktu vybrať optimistickejšiu hodnotu len preto, že zvyšuje Match; najprv sa musí určiť autoritatívny alebo novší dôkaz. Praktický trigger z tohto behu: Arvin & Benet 1 400 vs. 1 600 € a AJ výhoda vs. B1 v štruktúre.
+124. Selection-location burden gate.
+125. Critical-field conflict bundle.
+126. **Remote employment jurisdiction & invoicing compatibility gate — NOVÉ** — pri zahraničnej remote ponuke oddelene overí, či firma/platforma reálne prijíma pracovníka alebo kontraktora zo Slovenska, aký typ zmluvy používa (employment/EOR/B2B/freelance), či nevzniká country-only obmedzenie a či je spôsob fakturácie/platby kompatibilný. `remote` bez potvrdenej jurisdikcie už nebude automaticky znamenať `remote-ok`; neoverené roly zostanú v quarantine. Praktický prínos: odstráni čas strávený na lákavých remote inzerátoch, ktoré sú v skutočnosti US/PH/UK-only alebo vyžadujú lokálny payroll.
+127. **Opportunity dominance graph — NOVÉ** — pred aktiváciou/notification porovná nového kandidáta s existujúcimi LIVE rolami v rovnakej track skupine podľa Match, garantovanej odmeny, lokality/remote, pracovného času, jazykového rizika, hard-skill gapu, application friction a freshness. Ak je nový lead vo všetkých praktických parametroch horší než existujúca aktívna príležitosť a neprináša nový zdroj/unikátnu výhodu, ostane iba v audite namiesto zahltenia LIVE feedu. Praktický trigger: dnešné 20–40 USD WordPress micro-gigy sú reálne, ale objektívne dominované existujúcimi kvalitnejšími WP/Woo remote príležitosťami.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
