@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T11:12:57+02:00",
+  "updatedAt": "2026-08-29T11:33:00+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 4,
-    "rejectedAsWeakOrLowValue": 6,
-    "duplicateOrExisting": 5,
+    "rejectedByLanguageOrHardSkill": 6,
+    "rejectedAsWeakOrLowValue": 5,
+    "duplicateOrExisting": 4,
     "rejectedByFreshnessOrEvidence": 2,
-    "rejectedByLocation": 2,
+    "rejectedByLocation": 1,
     "liveFeedCount": 34,
     "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
     "freshnessStatus": "fresh",
-    "note": "Beh 29. 8. 2026 o 11:12 reálne prešiel Profesia, priame kariéry, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/tech-creative, WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexovaný Facebook. Nový prioritný winner sa nenašiel. Profesia priniesla čerstvého IT Administrátora od Lugera & Maklér za 2 000 €/mes., ale rola vyžaduje AJ B2 a minimálne 2 roky obdobnej IT administrátorskej praxe, preto neprešla hard-skill/language gateom. CloseRocket Customer Success & UX Partner v Bratislave je zaujímavý AI/SaaS fit 1 500–2 100 €, no fluent English je výslovne nutnosť, preto bez aktivácie. Upwork mal čerstvé WordPress/WooCommerce projekty, ale prevažne hard-dev/expert scope alebo nízku hodnotu; žiadny neprebil existujúce aktívne freelance leady. Brigada.sk a Worki bez nového overiteľného BA/remote winnera. Facebook coverage ostáva limited bez konkrétneho verejne overiteľného hiring postu."
+    "note": "Beh 29. 8. 2026 o 11:33 reálne prešiel Profesia, priame kariéry, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/tech-creative, WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexovaný Facebook. Nový prioritný winner sa nenašiel, preto jobs-data.json ostal fail-closed bez umelého prírastku. Wolt Support Associate je čerstvý BA support, ale má explicitný English B2 gate. Foxelli remote e-commerce support je Slovakia-eligible, ale vyžaduje fluent/near-native spoken English a výrazný sales/phone load. Kanadevia Assistant vyžaduje fluent business English a 3 roky admin/project support. Allegro partner support vyžaduje maďarčinu + slovenčinu. CloseRocket vyžaduje fluent English. Upwork priniesol čerstvé VA výsledky, ale buď silnú hovorenú angličtinu, vysokú konkurenciu alebo slabú/neurčitú hodnotu. Brigada.sk má dnešné BA retail zmeny 13,15 €/h, ale strategicky neprebíjajú existujúce admin/web/driver priority. Facebook coverage ostáva limited bez konkrétneho verejne overiteľného hiring postu."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":7,"note":"Cielený BA/remote sweep pre e-shop, administratívu, support a vodič B. Nový IT Administrátor Lugera & Maklér (2 000 €/mes., Bratislava, HO možný) bol vyradený pre AJ B2 + minimálne 2 roky podobnej praxe; existujúce priority ostávajú silnejšie."},
-    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":2,"note":"Cielený search customer support/e-commerce/technical support v BA/remote SK; bez nového priameho firemného leadu, ktorý by bezpečne prebil existujúce Websupport/O2/Hilti/Penta položky."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":3,"note":"Remote/e-commerce/support sweep bez nového Slovakia-eligible low-language-gate winnera. Aktuálne viditeľné medzinárodné support roly majú prevažne fluent English alebo ďalší jazyk."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"BA/remote administratíva, e-shop a IT support boli vyhľadané; čerstvo aktualizované výsledky s ďalším povinným jazykom alebo mimo BA/remote gate neboli aktivované."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":6,"note":"Aktuálny feed skontrolovaný. Viditeľné celoslovenské výsledky sú prevažne nejasné finančné/obchodné stáže, dotazníky alebo fyzická e-shop brigáda mimo BA; bez strategicky lepšieho prírastku."},
-    {"name":"Pretlak / tech-creative","family":"pretlak-tech","status":"ok","hits":4,"note":"CloseRocket Customer Success & UX Partner je Bratislava onsite, graduate/junior/mid a 1 500–2 100 €, ale Fluent English je explicitná nutnosť. PUELLAvone CRM je remote/Košice, no mid CRM/Bloomreach specialist track. Bez aktivácie."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"note":"Cielený remote support/WooCommerce sweep bez nového Slovakia-eligible non-hard-dev výsledku."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":8,"note":"Čerstvé WordPress/WooCommerce výsledky boli overené. Väčšina je hard development/expert scope (PHP, custom plugins, API, rebuildy) alebo slabé malé fixed-price úlohy; žiadny nový lead neprebil existujúce WooCommerce Assistant / Book Coaching VA / WP maintenance položky."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":0,"note":"Bez nového aktuálneho hiring leadu s jasnou Slovakia/Europe eligibility a non-hard-dev scope."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":6,"note":"BA/remote e-shop, admin, support a driver sweep. Bez nového low-language-gate winnera; existujúce Lanža/Akfos/VÚB/Energohub ostávajú silnejšie."},
+    {"name":"Priame firemné kariéry","family":"company-careers","status":"ok","hits":4,"note":"Overené direct-career výsledky vrátane Allegro a Kanadevia. Allegro partner support má maďarčinu ako tvrdú podmienku; Kanadevia Assistant fluent business English + 3 roky praxe. Bez aktivácie."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":8,"note":"Čerstvý Wolt Support Associate v Ružinove je BA a vhodný typ supportu, ale minimum English B2 je explicitný hard gate. Foxelli remote e-commerce support vyžaduje fluent/near-native English. Bez aktivácie."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"BA/remote admin/e-shop/IT support sweep bez nového výsledku, ktorý by prebil existujúci RM Biznis servis alebo TOP admin roly."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":3,"note":"Dnešné BA/Rovinka retail zmeny 13,15 €/h boli overené. Sú použiteľné ako núdzová brigáda, ale neprebíjajú existujúce strategické admin/web/driver možnosti, preto bez aktivácie."},
+    {"name":"Pretlak / tech-creative","family":"pretlak-tech","status":"ok","hits":2,"note":"CloseRocket Customer Success & UX Partner je BA a 1 500–2 100 €, ale fluent English je výslovne nutnosť. Bez aktivácie."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"note":"Remote support/WooCommerce sweep bez nového Slovakia-eligible non-hard-dev leadu."},
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":7,"note":"Čerstvé VA/WordPress výsledky overené. Full-time VA engineering support vyžaduje strong written/spoken English; ďalšie výsledky mali vysokú konkurenciu, neurčitú hodnotu alebo hard-dev scope. Bez nového winnera."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":0,"note":"Najčerstvejšie indexované výsledky sú prevažne FOR HIRE alebo US-only hard-development hiring; bez vhodného leadu."},
     {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom. 0 verified hits; coverage zostáva limited a nič sa nepredstiera."}
   ]
 }
