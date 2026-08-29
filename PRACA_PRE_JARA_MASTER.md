@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 29. 8. 2026 02:36 CEST
+Aktualizované: 29. 8. 2026 03:33 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -62,31 +62,31 @@ Aktualizované: 29. 8. 2026 02:36 CEST
 28. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 29. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 29. 8. 2026 02:36 CEST — LATEST
-Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; direct company careers; Worki.sk; Brigada.sk; Služby zamestnanosti/Kariera; Pretlak; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu 11 kontrolovaných zdrojových skupín, minimálne 5 mimo Profesia.
+## SOURCE AUDIT — 29. 8. 2026 03:33 CEST — LATEST
+Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; direct company careers; Worki.sk; Brigada.sk; Služby zamestnanosti/Kariera; Pretlak; StartupJobs/Jobs.cz lane; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu 12 kontrolovaných zdrojových skupín, výrazná väčšina mimo Profesia.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky do `jobs-data.json`: 0.** Feed zostal fail-closed; bez kvalitného nového winnera sa `updatedAt` neposúva umelo.
-- **Tatra Supercompute — IT Service Desk špecialista/ka pre AI dátové centrum, Bratislava:** zverejnené 28.8.2026, od 1 800 €/mes., L1 support, incidenty, ticketing a troubleshooting. Lokalita sedí a technický smer je zaujímavý, ale rola vyžaduje **angličtinu B2**, CV v angličtine a **24/7 zmenovú prevádzku**. Preto nejde do aktívnych odporúčaných TOP výsledkov.
-- **Rhythm&Ridge — WordPress Developer, remote 10 h/týždeň:** technicky veľmi relevantné, ale forma je dohoda o brigádnickej práci študentov; preto nevhodné.
-- **Worki — Shield-Sk e-shop admin:** stránka priamo uvádza, že miesto bolo obsadené alebo zrušené; negatívny freshness dôkaz.
-- **Pretlak — Datacop Technical Marketing Specialist:** Bratislava, 2 500–4 000 €, ale Mid/Senior/Expert a firma hľadá človeka, ktorý už seniorný štandard spĺňa od prvého dňa; hard-experience reject.
-- **Upwork:** čerstvé WordPress/WooCommerce projekty z 28.8.2026 boli reálne preverované. Väčšina má povinný PHP/dev presah, vysokú konkurenciu 20–50+ proposals alebo nízky fixed budget 30–250 USD. Žiadny nový lead neprekonáva existujúce LIVE freelance priority.
-- **Reddit / WordPress komunity:** čerstvé diskusie existujú, ale bez konkrétneho overeného HIRING postu vhodného do feedu.
-- **Facebook:** **0 verified hits**. Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited`, nič sa nepredstiera.
+- **Nové aktívne položky do `jobs-data.json`: 0.** Feed zostal fail-closed; bez kvalitného nového winnera sa obsah ani timestamp neprepisuje.
+- **StartupJobs — Dreamup Customer care / online agent pre e-shop:** 100 % remote, ale vyžaduje poľštinu; jazykový hard reject. citeturn497384search3
+- **StartupJobs — Neuschl2 Medior Account Manager / projektový koordinátor, Jira + Webflow/WordPress:** prevažne remote, no občasné stretnutia v Prahe a požadovaná predchádzajúca agentúrna/studio prax znižujú reálnu vhodnosť; neaktivované. citeturn497384search4
+- **LinkedIn / SupportYourApp:** remote technický/customer support je obsahovo relevantný, ale aktuálne nájdené roly vyžadujú B2/C1 angličtinu alebo ďalší plynulý jazyk; language reject. citeturn308861search5turn308861search8
+- **Upwork:** WordPress Webmaster vyžaduje fluent English, US business hours a PHP; WordPress Expert má 50+ proposals a hard PHP; WooCommerce speed optimization je expert dev scope. AI Virtual Assistant & Automation Specialist je tematicky zaujímavý, ale 30+ h/týždeň, 20–50 proposals a 5–10 USD/h neprekonáva existujúce LIVE priority. citeturn308861search1turn308861search3turn308861search4turn308861search9
+- **Služby zamestnanosti/Kariera:** BA admin/customer-care/IKT výsledky boli preverované. BADENTAL recepcia je 750 €/mes.; ďalšie administratívne položky sú staršie alebo nízko platené. Naturzon e-shop support je síce profilovo zaujímavý, ale onsite Poprad = `reject-distance`. citeturn497384search0turn497384search8
+- **Reddit / WordPress komunity:** nájdené výsledky sú prevažne FOR HIRE alebo staršie hiring posty; bez nového overiteľného Slovakia-compatible leadu. citeturn308861reddit115turn308861reddit119
+- **Facebook:** **0 verified hits**. Cielené vyhľadávanie WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín nevrátilo konkrétny aktuálny hiring post; verejná indexácia priniesla nesúvisiace Meta/Audience Network výsledky, preto coverage ostáva `limited` a nič sa nepredstiera. citeturn829476search0
 
 ### Run summary
-- Reálne skontrolované zdrojové skupiny: **11**.
+- Reálne skontrolované zdrojové skupiny: **12**.
 - Nové aktívne položky: **0**.
-- Vyradené jazykovým/hard-skill gateom: **5**.
-- Vyradené ako slabé/nízka hodnota: **8**.
-- Duplicitné/existing: **5**.
-- Vyradené pre freshness/evidence: **2**.
+- Vyradené jazykovým/hard-skill gateom: **6**.
+- Vyradené ako slabé/nízka hodnota: **4**.
+- Duplicitné/existing: **4**.
+- Vyradené pre freshness/evidence/lokalitu: **3**.
 
 ### LIVE mix
 - Aktívny feed: **29 položiek**.
-- Odhadovaný source mix podľa aktuálneho feedu: **Profesia ~44,8 % / mimo Profesia ~55,2 %**.
-- Hlavný `jobs-data.json` ostáva na poslednom úspešnom dátovom stave z 28. 8. 2026 22:14; tento beh ho bez obsahovej zmeny neprepisoval.
+- Odhadovaný source mix: **Profesia ~44,8 % / mimo Profesia ~55,2 %**.
+- `jobs-data.json` ostal nezmenený, pretože nebol nový bezpečne overený prírastok; tým sa zachováva fail-closed evidencia a nevytvára sa falošná čerstvosť.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -212,8 +212,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 111. **Same-role repost churn-risk signal** — sleduje opakované zverejňovanie rovnakej roly jedným zamestnávateľom ako možný retention/churn risk.
 112. **Search-depth coverage quota** — každý zdroj dostane rotujúcu povinnosť kontrolovať nielen top výsledky/prvú stránku, ale aj hlbšiu vzorku výsledkov a alternatívne zoradenie.
 113. **Search-index staleness detector** — vedie fingerprint výsledkov, `publishedAt`, `crawledAt` a opakované rovnaké SERP položky; starý cache sa označí `index-stale` namiesto falošného `checked/no-results`.
-114. **CV requirement coverage score — NOVÉ** — pred odporúčaním reakcie vypočíta percento požiadaviek ponuky, ktoré majú reálny dôkaz v MASTER CV/profile. Rozdelí ich na `proven`, `trainable-gap`, `unsupported` a zabráni vysokému Match skóre pri chýbajúcich kritických dôkazoch bez toho, aby si systém kvalifikácie domýšľal.
-115. **Query-to-hire attribution ledger — NOVÉ** — ku každej prijatej/odmietnutej položke uloží presný discovery query variant a source path, ktorý ju našiel. Následne vie merať yield konkrétnych query variantov, rušiť dlhodobo nulové formulácie a rozširovať fungujúce synonymá pri zachovaní povinnej zdrojovej diverzity.
+114. **CV requirement coverage score** — pred odporúčaním reakcie vypočíta percento požiadaviek ponuky, ktoré majú reálny dôkaz v MASTER CV/profile. Rozdelí ich na `proven`, `trainable-gap`, `unsupported`.
+115. **Query-to-hire attribution ledger** — ku každej prijatej/odmietnutej položke uloží presný discovery query variant a source path, ktorý ju našiel, aby bolo možné merať skutočný yield query formulácií.
+116. **Near-miss language substitution miner — NOVÉ** — pri vyradení silnej remote/BA roly iba kvôli poľštine/B2/C1 automaticky spustí cielený search na tú istú role-family s `Slovak/Czech/A2/no language required`, aby každý kvalitný reject vytvoril okamžitú náhradnú discovery vetvu namiesto slepého konca.
+117. **Opportunity evidence TTL by field — NOVÉ** — každému kritickému poľu (`salary`, `remotePolicy`, `language`, `publishedAt`, `applicationOpen`, `worksite`) pridelí vlastnú dobu platnosti a pri expirácii obnoví iba konkrétny dôkaz. Znižuje falošné revalidácie celého inzerátu a zároveň rýchlejšie zachytí zmenu remote režimu, uzavretie náboru alebo zmenu požiadaviek.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
