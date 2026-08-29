@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T07:22:01+02:00",
+  "updatedAt": "2026-08-29T08:36:23+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 6,
-    "rejectedAsWeakOrLowValue": 5,
-    "duplicateOrExisting": 5,
-    "rejectedByFreshnessOrEvidence": 4,
+    "rejectedByLanguageOrHardSkill": 5,
+    "rejectedAsWeakOrLowValue": 8,
+    "duplicateOrExisting": 4,
+    "rejectedByFreshnessOrEvidence": 3,
     "rejectedByLocation": 2,
     "liveFeedCount": 33,
     "jobsDataContentUpdatedAt": "2026-08-29T06:35:54+02:00",
-    "note": "Beh 29. 8. 2026 o 07:22 reálne preveril Profesia, LinkedIn Jobs, priame firemné kariéry, Worki, Brigada.sk, Prácu za rohom/Kariera, Služby zamestnanosti, Pretlak/WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexovaný Facebook. Bez nového kandidáta, ktorý by bezpečne prekonal existujúce LIVE priority. APM Digital Office Manager/Operations Coordinator je aktuálne otvorený v Bratislave s 1 500–2 500 € a HO do 40 %, ale C1 angličtina je explicitná podmienka. TDK InvenSense Office Manager je čerstvý BA lead s cca 23–28k €/rok, ale vyžaduje pokročilú angličtinu a CV v angličtine. Arvin & Benet Office Manager je near-fit a firemná kariéra uvádza angličtinu iba ako výhodu, no verejné zdroje si odporujú v mzde (1 400 vs. 1 600 €) a Profesia štruktúra uvádza B1; preto zatiaľ neaktivovaný. Upwork priniesol čerstvé worldwide e-commerce/WordPress/VA výsledky, ale buď majú silnú AJ, nízky budget, alebo vysokú konkurenciu. Facebook zostáva 0 verified hits. jobs-data.json sa nemení, aby sa jeho updatedAt neposúval bez reálnej zmeny obsahu."
+    "note": "Beh 29. 8. 2026 o 08:36 reálne preveril Profesia, LinkedIn Jobs, priame firemné kariéry, Worki, Brigada.sk, Prácu za rohom/Kariera, Služby zamestnanosti, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexovaný Facebook. Bez novej aktívnej položky, ktorá by bezpečne prekonala existujúce LIVE priority. Najčerstvejšie remote WordPress leady boli Upwork one-page build za 40 USD (15–20 proposals, 5 interviewing), WordPress expert fix za 35 USD (20–50 proposals) a WooCommerce checkout/store management za 20 USD s povinným PHP; všetky boli vyradené pre slabý scope-to-pay, konkurenciu alebo hard-skill profil. Reddit dnes priniesol iba FOR HIRE ponuky, nie hiring dopyt. Indeed remote discovery ukázal viac WordPress rolí, ale väčšina je hard-development alebo s neoverenou country eligibility; bez aktivácie, kým sa nepotvrdí možnosť práce zo Slovenska. Facebook zostáva 0 verified hits. jobs-data.json sa nemení, aby sa jeho updatedAt neposúval bez reálnej zmeny obsahu."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":6,"note":"Preverené čerstvé BA admin/e-shop/support/driver výsledky. APM Digital má C1 AJ hard gate; TDK/InvenSense advanced English; Arvin & Benet near-fit má B1/zdrojový konflikt a zostáva mimo LIVE. Bez nového winnera nad existujúce priority."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":5,"note":"Čerstvý TDK InvenSense Office Manager v BA (14 h) vyžaduje advanced English. APM Digital repost potvrdzuje aktívny Office Manager/Operations Coordinator, ale detail má C1 AJ. LUNYS je existujúci canonical LIVE hit. Bez nového A2-compatible winnera."},
-    {"name":"Priame firemné kariéry","family":"company","status":"ok","hits":4,"note":"APM Freelancers priamo potvrdzuje otvorený JID-1288 v Bratislave, 1 500–2 500 € a HO do 40 %, no Profesia detail potvrdzuje C1 AJ. Arvin & Benet career page potvrdzuje Office Manager BA a AJ iba ako výhodu, ale salary/language evidence konflikt bráni bezpečnej aktivácii."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":2,"note":"Cielený BA/remote admin/IT/support search nepriniesol nový aktívny near-A2 winner; viaceré indexované výsledky sú staré/zrušené alebo hard-skill heavy."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":1,"note":"BA administratíva/e-shop/IT/kuriér sweep bez nového kvalitného kandidáta nad existujúce brigádne a driver priority."},
-    {"name":"Práca za rohom / Kariera","family":"other-jobboards","status":"checked","hits":5,"note":"Použité na corroboration a discovery. Potvrdili TDK/InvenSense a APM/Arvin near-fit výsledky, ale mirror sa nepočíta ako nezávislý canonical hit."},
-    {"name":"Služby zamestnanosti","family":"government","status":"checked","hits":0,"note":"Bez nového BA/remote kandidáta s primeraným scope a jazykovým profilom v tomto behu."},
-    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového A2-compatible BA/remote non-hard-dev web/e-commerce/support leadu s primeranou ekonomikou."},
-    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":7,"note":"Čerstvé worldwide výsledky: eCommerce VA, WordPress fixes a remote VA. Vyradené pre silnú AJ, nízky fixed budget (5–100 USD), 10–50+ proposals alebo slabý scope-to-pay pomer. Bez nového LIVE winnera."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":4,"note":"Najčerstvejšie r/wordpressjobs výsledky sú prevažne FOR HIRE ponuky freelancerov; starší HIRING lead má veľmi nízky budget. Bez aktivácie."},
+    {"name":"Profesia","family":"profesia","status":"ok","hits":5,"note":"Preverené čerstvé BA/remote admin, e-shop, support a driver výsledky. Bez nového A2-compatible kandidáta, ktorý by prekonal existujúce LIVE priority; existujúce silné ponuky zostávajú aktívne."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":4,"note":"Preverené nové BA/remote web, support a operations výsledky. Relevantné výsledky boli prevažne duplicity existujúcich rolí alebo mali vyššiu AJ/hard-skill požiadavky."},
+    {"name":"Priame firemné kariéry","family":"company","status":"checked","hits":3,"note":"Kontrola priamych career stránok nepriniesla nový kandidát nad existujúce TOP role. Direct-source preference ostáva zachovaná."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"BA/remote admin/IT/support sweep bez nového winnera; relevantné indexované výsledky boli slabšie než existujúce LIVE položky alebo staršie."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":1,"note":"BA administratíva/e-shop/IT/kuriér sweep bez novej kvalitnej brigády nad existujúce priority."},
+    {"name":"Práca za rohom / Kariera","family":"other-jobboards","status":"checked","hits":3,"note":"Použité na discovery/corroboration; bez nového samostatného canonical hitu, ktorý by splnil kvalitu a nebol mirror alebo duplicita."},
+    {"name":"Služby zamestnanosti","family":"government","status":"checked","hits":0,"note":"Bez nového BA/remote kandidáta s primeraným scope, lokalitou a jazykovým profilom."},
+    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového A2-compatible BA/remote non-hard-dev web/e-commerce/support leadu s primeranou ekonomikou."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":8,"note":"Čerstvé worldwide WordPress leady: one-page build 40 USD (15–20 proposals, 5 interviewing), quick mobile fix 35 USD (20–50 proposals), WooCommerce checkout/store management 20 USD s povinným PHP a ďalšie low-budget fixy. Vyradené pre nízku hodnotu, vysokú konkurenciu alebo hard-skill profil; bez nového LIVE winnera."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":4,"note":"Dnešné r/wordpressjobs výsledky sú FOR HIRE ponuky freelancerov, nie hiring dopyty. Starší hiring lead má slabú ekonomiku; bez aktivácie."},
     {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hiring hits. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny post s priamym overiteľným linkom; coverage sa nepredstiera."}
   ]
 }
