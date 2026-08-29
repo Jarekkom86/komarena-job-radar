@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 29. 8. 2026 15:29 CEST
+Aktualizované: 29. 8. 2026 16:19 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -64,33 +64,32 @@ Aktualizované: 29. 8. 2026 15:29 CEST
 30. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 31. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 29. 8. 2026 15:29 CEST — LATEST
+## SOURCE AUDIT — 29. 8. 2026 16:19 CEST — LATEST
 Reálne prehľadané skupiny: **Profesia; direct company careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Pretlak/StartupJobs/WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia; cross-source corroboration.** Spolu **10 nezávislých kontrolovaných skupín**, minimálne 8 source families a viac než 5 mimo Profesia.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky do `jobs-data.json`: 0.** Feed ostal zámerne nezmenený; `updatedAt` sa neposúval kozmeticky. Fail-closed pravidlo zabránilo pridať low-value, hard-language alebo časovo nepoužiteľný výsledok iba kvôli frekvencii behu.
-- **Upwork — nové worldwide remote VA/admin výsledky:** čerstvá administratívna VA za 15 USD fixed mala 20–50 proposals; data-entry 5 USD fixed a marketing VA 5 USD fixed sú pod ekonomickým prahom; document review 38 USD fixed je krátky low-value gig; full-time online admin za 300 USD fixed má strong-English burden a slabý efektívny hodinový value. Bez nového winnera. citeturn733386search0turn733386search2turn733386search3turn733386search4turn733386search1
-- **LinkedIn / Wolt Support Associate:** Bratislava a čiastočný HO po onboardingu, ale minimum **B2 English** a večerné/víkendové zmeny. Jazykový gate zostáva správny. citeturn733386search8
-- **Brigada.sk:** potvrdené BA/okolie retail/sklad zmeny. Dnešné sobotné zmeny za **13,15 €/h** sú po 15:29 pri časti výsledkov už časovo nepoužiteľné; zajtrajšia BA skladová zmena za **13,69 €/h** je použiteľná, ale ako emergency-lane neprebíja existujúce web/admin/driver priority. citeturn400331search0turn400331search6
-- **WordPress Jobs / Reddit:** bez nového Slovakia-eligible non-hard-dev hiring leadu. Dnešné Reddit WordPress/WooCommerce výsledky sú prevažne `FOR HIRE`, teda ponuky služieb, nie dopyty po práci. citeturn733386reddit105
-- **Facebook:** **0 verified hits**. Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited`.
+- **Nové aktívne položky do `jobs-data.json`: 0.** Feed zostal zámerne nezmenený a `updatedAt` sa neposúval bez obsahovej zmeny.
+- **Upwork:** čerstvé worldwide remote výsledky boli reálne preverené. `eCommerce Virtual Assistant for Multi-Platform Store` má iba **50 USD fixed**; `WordPress Developer for WooCommerce` iba **5 USD fixed**; `Virtual Assistant Full time job` má UK hours, **650 USD fixed** a vyžaduje excellent spoken/written English; `Virtual Assistant – Operations & Campaign Support` ponúka 5–7 USD/h, ale vyžaduje strong written/spoken English a časť U.S. working hours. Žiadna neprekonala súčasné LIVE priority.
+- **Reddit/WP komunity:** aktuálne nálezy sú prevažne `FOR HIRE` alebo US-only developer ponuky, nie vhodný Slovakia-eligible hiring lead.
+- **Brigada.sk:** použiteľné BA retail/sklad zmeny ostávajú emergency lane; neprebíjajú web/admin/driver priority.
+- **Facebook:** **0 verified hits**; verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom. Coverage zostáva `limited`.
 
 ### Run summary
 - Reálne skontrolované zdrojové skupiny: **10**.
 - Nové aktívne položky: **0**.
-- Vyradené jazykovým/hard-skill gateom: **7**.
-- Vyradené ako slabé/nízka hodnota: **8**.
-- Duplicitné/existing: **5**.
+- Vyradené jazykovým/hard-skill gateom: **9**.
+- Vyradené ako slabé/nízka hodnota: **10**.
+- Duplicitné/existing: **6**.
 - Vyradené pre freshness/evidence: **2**.
-- Vyradené pre lokalitu: **1**.
-- Vyradené pre neuskutočniteľné časové okno: **3**.
+- Vyradené pre lokalitu: **2**.
+- Vyradené pre neuskutočniteľné časové okno: **1**.
 
 ### LIVE mix
 - Aktívny feed: **34 položiek**.
 - Source mix ostáva približne **Profesia 44,1 % / mimo Profesia 55,9 %**.
 - `jobs-data.json.updatedAt` = **29. 8. 2026 10:27:16 CEST** — bez obsahovej zmeny.
-- `source-audit.json.updatedAt` = **29. 8. 2026 15:29:00 CEST**.
-- `job-sources.json.updatedAt` = **29. 8. 2026 15:29:00 CEST**.
+- `source-audit.json.updatedAt` = **29. 8. 2026 16:19:45 CEST**.
+- `job-sources.json.updatedAt` = **29. 8. 2026 16:19:45 CEST**.
 - Freshness reason: **`stale-because-no-new-winner`**, nie zlyhanie zberu.
 
 ## FAIL-CLOSED pravidlá
@@ -241,10 +240,12 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 135. Low-value freelance suppression floor.
 136. Behavioral preference calibrator.
 137. Role-family outcome calibration.
-138. **Freshness-proof promotion rule** — výsledok zo staršej direct career stránky sa nesmie presunúť do LIVE iba preto, že ho agregátor alebo LinkedIn znovu indexoval. Promotion vyžaduje aspoň jeden silný čerstvý dôkaz: explicitný nový publish/update dátum, aktívny apply endpoint s čerstvou job ID/ATS stopou alebo nezávislý recent company hiring signal. Praktický prínos: menej starých evergreen ponúk maskovaných ako nové.
-139. **Required-tool specificity burden** — oddeliť všeobecnú technickú zdatnosť od povinných hands-on nástrojov typu Shopify Flow, Recharge, Google Apps Script, RBAC/SSO či konkrétne API stacky. Každá explicitne povinná technológia dostane evidence stav `proven / adjacent / trainable / missing`; viacero `missing` položiek automaticky zníži scoreConfidence a prioritu aj keď názov role vyzerá ideálne. Praktický prínos: menej falošne vysokých AI/e-commerce matchov a kvalitnejšie reakcie na role, ktoré sú reálne zvládnuteľné.
-140. **Shift-start feasibility gate — NOVÉ** — pri jednorazových brigádach a zmenách nehodnotiť iba dátum, ale aj konkrétny začiatok zmeny voči aktuálnemu času a realistickému času presunu. Ak zmena už začala alebo sa na ňu nedá bezpečne doraziť, označiť ju `time-window-expired` a neaktivovať ju ani pri vysokej hodinovke. Praktický prínos: Radar prestane zobrazovať lákavé, ale už nepoužiteľné same-day brigády.
-141. **Rolling source-mix window — NOVÉ** — diverzitu nemerať iba na celom LIVE feede, ale aj na posledných 24 h / posledných 10 nových prírastkoch. Ak staré non-Profesia položky držia celkový mix pekný, ale nové výsledky začnú byť prevažne z Profesia, systém to odhalí a zvýši discovery budget mimo Profesia. Praktický prínos: reálna dlhodobá diverzita zdrojov namiesto opticky dobrého historického priemeru.
+138. Freshness-proof promotion rule.
+139. Required-tool specificity burden.
+140. Shift-start feasibility gate.
+141. Rolling source-mix window.
+142. **Title-vs-scope seniority resolver — NOVÉ** — senioritu neodvodzovať z názvu `Manager/Specialist/Junior`, ale zo skutočných povinností, ownershipu, požadovaných rokov praxe, rozhodovacích právomocí a hard-skillov. Praktický prínos: Radar neodmietne administratívne zvládnuteľnú rolu iba pre nafúknutý titul a zároveň neprecení „assistant“ rolu so skrytým seniorným scope.
+143. **Application-deadline confidence model — NOVÉ** — rozlíšiť explicitný deadline, `open until filled`, inferred deadline a neoverený/žiadny deadline; každý stav dostane confidence a vlastnú recheck SLA. Praktický prínos: menej zbytočne urgentných reakcií na evergreen inzeráty a menej premeškaných rolí s reálnym uzávierkovým termínom.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
