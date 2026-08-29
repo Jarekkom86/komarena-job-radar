@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 29. 8. 2026 04:26 CEST
+Aktualizované: 29. 8. 2026 05:20 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -62,34 +62,32 @@ Aktualizované: 29. 8. 2026 04:26 CEST
 28. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 29. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 29. 8. 2026 04:26 CEST — LATEST
-Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; direct company careers; Worki.sk; Brigada.sk; Služby zamestnanosti/Kariera; Pretlak; StartupJobs/Jobs.cz lane; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu 12 kontrolovaných zdrojových skupín, z toho väčšina mimo Profesia.
+## SOURCE AUDIT — 29. 8. 2026 05:20 CEST — LATEST
+Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; direct company careers; Worki.sk; Brigada.sk; Služby zamestnanosti/Kariera; Pretlak; StartupJobs/Jobs.cz lane; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu 12 kontrolovaných zdrojových skupín.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky do `jobs-data.json`: 0.** Feed zostal fail-closed; bez kvalitného nového winnera sa obsah ani timestamp neprepisuje.
-- **Služby zamestnanosti — Metrohm Research Slovakia, IT Support Specialist:** Petržalka, 1 800 €/mes. a obsahovo relevantný support/troubleshooting, ale vyžaduje VŠ I. stupňa a AJ B1/B2. Preto neaktivované. citeturn204699view0
-- **LinkedIn — Wolt Support Associate:** Bratislava a možný HO po onboardingu, ale minimum B2 English je tvrdý jazykový mínus. citeturn969991search0turn969991search2
-- **LinkedIn / SupportYourApp:** remote technický support/AI roly sú obsahovo relevantné, no aktuálne výsledky vyžadujú fluent English alebo vyšší technický scope. citeturn969991search1turn969991search7
-- **LinkedIn — KLARSTEIN:** Bratislava alebo remote zo Slovenska, ale zákaznícka podpora je pre taliansky trh; language reject. citeturn969991search6
-- **Worki:** pracovník e-shopu v Raslaviciach je onsite mimo BA a bez overeného remote režimu = `reject-distance`. citeturn204699search7
-- **Upwork:** čerstvé worldwide eCommerce VA, WooCommerce a VA výsledky boli overené. Multi-platform eCommerce VA má 10–15 proposals, ale iba 50 USD fixed-price pre nejasný komplexný scope; full-time VA vyžaduje strong spoken/written English; WooCommerce developer má 20–50 proposals a 5 USD fixed-price; product migration má 5 USD fixed-price. Neaktivované pre nízku hodnotu/jazyk/competition mismatch. citeturn204699search8turn204699search4turn204699search5turn204699search2
-- **Priame firemné zdroje:** O2 Digital Content Admin a Websupport Customer Success sú stále verejne overiteľné, ale už sú v LIVE; bez nového canonical winnera. citeturn318092search0turn318092search5
-- **Reddit / WordPress komunity:** aktuálne výsledky sú prevažne `FOR HIRE`; starší HIRING post má extrémne nízky budget a diskusia obsahuje výrazné quality/scam warningy. Bez bezpečného hiring leadu. citeturn969991reddit135turn969991reddit141
-- **Facebook:** **0 verified hits**. Cielená verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post; coverage ostáva `limited` a nič sa nepredstiera.
+- **Nové aktívne položky do `jobs-data.json`: 0.** Feed zostal fail-closed; bez kvalitného nového winnera sa pracovné položky ani ich content timestamp neprepisujú.
+- **Upwork:** čerstvý multi-platform eCommerce VA je worldwide remote, ale len **50 USD fixed-price** a už 10–15 proposals; WordPress/WooCommerce joby v aktuálnom indexe majú budget 5–20 USD alebo hard-development scope. Full-time remote VA má 650 USD, no výslovne žiada silnú hovorenú a písanú angličtinu. Neaktivované pre value/language mismatch. citeturn711742search0turn711742search3turn711742search8turn711742search10
+- **Pretlak — Dognet Account Manager:** veľmi dobrý e-commerce/klientsky fit, Bratislava hybrid a 1 800–2 200 €, ale priamy detail explicitne uvádza **„Platnosť tejto ponuky skončila“**, preto sa nesmie aktivovať. citeturn341150view0
+- **LinkedIn — Henkel Regional eCommerce Content Coordinator:** e-commerce obsahovo relevantné, ale LinkedIn už uvádza **No longer accepting applications**. citeturn214794search7
+- **Brigada.sk:** aktuálny sweep priniesol najmä gastro/retail výsledky; BA barista/ZOO ponuky sú mimo cieľového profilu, Levice je mimo lokalitného gateu. citeturn214794search2turn214794search3turn214794search9
+- **Worki:** discovery vrátil staré/ukončené alebo finančno-obchodné roly; bez nového vhodného BA/remote winnera. citeturn214794search4
+- **Reddit / WordPress komunity:** najnovšie relevantné výsledky sú `FOR HIRE`, nie pracovné dopyty. Bez aktivácie. citeturn711742reddit149
+- **Facebook:** **0 verified hits**. Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited`.
 
 ### Run summary
 - Reálne skontrolované zdrojové skupiny: **12**.
 - Nové aktívne položky: **0**.
-- Vyradené jazykovým/hard-skill gateom: **4**.
-- Vyradené ako slabé/nízka hodnota: **4**.
-- Duplicitné/existing: **2**.
-- Vyradené pre freshness/evidence: **3**.
+- Vyradené jazykovým/hard-skill gateom: **3**.
+- Vyradené ako slabé/nízka hodnota: **7**.
+- Duplicitné/existing: **1**.
+- Vyradené pre freshness/evidence: **4**.
 - Vyradené pre lokalitu: **1**.
 
 ### LIVE mix
 - Aktívny feed: **29 položiek**.
 - Odhadovaný source mix: **Profesia ~44,8 % / mimo Profesia ~55,2 %**.
-- `jobs-data.json` ostal nezmenený, pretože nebol nový bezpečne overený prírastok; tým sa zachováva fail-closed evidencia a nevytvára sa falošná čerstvosť.
+- `jobs-data.json.updatedAt` ostáva **29. 8. 2026 04:14 CEST**, pretože je to timestamp poslednej reálnej zmeny pracovného obsahu. Aktuálnosť searchu je vedená v `source-audit.json.updatedAt` = **05:20 CEST**. Toto zámerne oddeľuje „čerstvosť zberu“ od „času poslednej zmeny feedu“ a zabraňuje falošnej čerstvosti.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -219,8 +217,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 115. **Query-to-hire attribution ledger** — ku každej prijatej/odmietnutej položke uloží presný discovery query variant a source path, ktorý ju našiel, aby bolo možné merať skutočný yield query formulácií.
 116. **Near-miss language substitution miner** — pri vyradení silnej remote/BA roly iba kvôli poľštine/B2/C1 automaticky spustí cielený search na tú istú role-family s `Slovak/Czech/A2/no language required`, aby každý kvalitný reject vytvoril okamžitú náhradnú discovery vetvu namiesto slepého konca.
 117. **Opportunity evidence TTL by field** — každému kritickému poľu (`salary`, `remotePolicy`, `language`, `publishedAt`, `applicationOpen`, `worksite`) pridelí vlastnú dobu platnosti a pri expirácii obnoví iba konkrétny dôkaz.
-118. **Onboarding-vs-recurring travel classifier — NOVÉ** — oddelí jednorazové onboarding/školenie/cestu od pravidelného hybridného dochádzania. Vďaka tomu sa 100 % remote rola s jednorazovým školením zbytočne nevyradí, ale pravidelný vzdialený hybrid neprejde lokalitným gateom.
-119. **Screening-question evidence prefill map — NOVÉ** — pri top ponuke vytiahne typické screening otázky z apply flow a ku každej priradí iba overené fakty z MASTER profilu/CV (`proven`, `needs-confirmation`, `unsupported`). Skráti reakciu a zabráni nepravdivým odpovediam bez automatického odoslania.
+118. **Onboarding-vs-recurring travel classifier** — oddelí jednorazové onboarding/školenie/cestu od pravidelného hybridného dochádzania. Vďaka tomu sa 100 % remote rola s jednorazovým školením zbytočne nevyradí, ale pravidelný vzdialený hybrid neprejde lokalitným gateom.
+119. **Screening-question evidence prefill map** — pri top ponuke vytiahne typické screening otázky z apply flow a ku každej priradí iba overené fakty z MASTER profilu/CV (`proven`, `needs-confirmation`, `unsupported`). Skráti reakciu a zabráni nepravdivým odpovediam bez automatického odoslania.
+120. **Search freshness vs content freshness split — NOVÉ** — oddelí `lastSearchAt` od `jobs-data.updatedAt`. Radar tak nebude označovať feed za „stale“ len preto, že posledný hodinový search nenašiel novú ponuku; zároveň sa nebude falošne meniť timestamp pracovných dát bez reálnej zmeny obsahu. Bezpečná dátová implementácia už používa `source-audit.updatedAt` ako dôkaz posledného searchu; UI vrstva môže neskôr tento údaj zobrazovať bez zásahu do job feedu.
+121. **Calendar-aware source weighting — NOVÉ** — váhy zdrojov prispôsobí dňu a času. Cez víkend zvýši discovery kapacitu pre Upwork/freelance, community a remote indexy, ktoré reálne publikujú aj mimo pracovných dní; firemné kariéry/ÚPSVR pritom ostanú povinne kontrolované, ale nebudú zbytočne spotrebúvať väčšinu hĺbky searchu pri nízkej víkendovej aktivite. Cieľ: viac čerstvých výsledkov bez porušenia 8-family diversity floor.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
