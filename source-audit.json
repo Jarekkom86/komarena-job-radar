@@ -1,23 +1,31 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T04:14:09+02:00",
+  "updatedAt": "2026-08-29T04:26:18+02:00",
   "runSummary": {
-    "familiesChecked": 5,
+    "familiesChecked": 12,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 3,
-    "rejectedAsWeakOrLowValue": 2,
+    "rejectedByLanguageOrHardSkill": 4,
+    "rejectedAsWeakOrLowValue": 4,
     "duplicateOrExisting": 2,
-    "rejectedByFreshnessOrEvidence": 0,
+    "rejectedByFreshnessOrEvidence": 3,
+    "rejectedByLocation": 1,
     "liveFeedCount": 29,
     "liveProfesiaEstimatePct": 44.8,
     "liveNonProfesiaEstimatePct": 55.2,
-    "note": "Beh 29. 8. 2026 o 04:14 reálne preveril najnovšie Profesia vodič/kuriér výsledky, LinkedIn e-commerce/support lane, Pretlak a priame detaily prioritných výsledkov. Lanža zostáva aktívna a naďalej je najsilnejší vodičský online-nákup lead; Akfos je čerstvý, ale slabší hodnotou, Car Route je starší a Košík má vyššiu fyzickú záťaž. Foxelli Crochet Customer Support už neprijíma žiadosti; Foxelli Customer Support & Sales Agent je síce 100 % remote, ale medzinárodná sales/support rola s vyšším jazykovým rizikom. KLARSTEIN vyžaduje taliančinu a Wolt B2 English. Žiadny nový kandidát neprekonal existujúce LIVE priority. jobs-data.json bol po tejto reálnej kontrole posunutý na nový updatedAt; obsah ponúk ostal zachovaný, okrem nového verifiedAt pri potvrdenej Lanža ponuke."
+    "note": "Beh 29. 8. 2026 o 04:26 reálne preveril Profesia; LinkedIn; priame firemné kariéry; Worki; Brigada.sk; Služby zamestnanosti/Kariera; Pretlak; StartupJobs/Jobs.cz lane; WordPress Jobs; Upwork/freelance; Reddit/WordPress komunity; Facebook verejnú indexáciu. Žiadny nový kandidát bezpečne neprekonal existujúce LIVE priority. Metrohm IT Support v Petržalke má relevantnú náplň a 1 800 EUR, ale vyžaduje VŠ I. stupňa a AJ B1/B2. Wolt support vyžaduje B2 AJ; SupportYourApp fluent English; KLARSTEIN taliančinu. Upwork priniesol čerstvé worldwide VA/e-commerce/WooCommerce výsledky, ale buď s veľmi nízkym budgetom, silnou angličtinou, vysokou konkurenciou alebo neprimeraným scope. O2 Digital Content Admin a Websupport Customer Success sú stále priamo overiteľné a už v LIVE. Facebook opäť neposkytol konkrétny verejne overiteľný hiring post. jobs-data.json ostal fail-closed nezmenený, aby nevznikla falošná čerstvosť."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":4,"note":"Najnovšie vodič/kuriér výsledky: Lanža potvrdená aktívna, Akfos nový ale slabší než Lanža, Car Route starší, Košík vyššia fyzická záťaž. Bez nového winnera."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":4,"note":"Foxelli Crochet už neprijíma žiadosti; Foxelli Customer Support & Sales Agent je remote, ale s vyšším jazykovým/sales rizikom. KLARSTEIN vyžaduje taliančinu, Wolt B2 English."},
-    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":1,"note":"Bez nového vhodného BA/remote kandidáta, ktorý by prekonal existujúce AI/automation priority."},
-    {"name":"Priame detaily prioritných ponúk","family":"company","status":"checked","hits":1,"note":"Lanža detail potvrdený ako aktívny: Bratislava, vodičský preukaz B, živnosť, nástup ihneď, 1 500–3 000 EUR/mes., až 140 EUR/deň."},
-    {"name":"Ostatné zdrojové rodiny","family":"other","status":"limited","hits":0,"note":"V tomto hodinovom behu neboli opakovane prehľadávané všetky nízkovýnosové rodiny, pretože predchádzajúci audit o 03:33 ich už čerstvo preveril; stav z predchádzajúceho behu ostáva zachovaný ako evidencia."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":3,"note":"BA/remote e-shop, support, admin a driver lane preverený; bez nového winnera nad aktuálne TOP. Existujúce čerstvé Lanža/VÚB/Energohub zostávajú relevantné."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":4,"note":"Wolt Support BA má B2 English; SupportYourApp remote roly majú fluent/B2+ English; KLARSTEIN customer support vyžaduje taliančinu. Bez A2-compatible winnera."},
+    {"name":"Priame firemné kariéry","family":"company","status":"checked","hits":4,"note":"O2 Digital Content Admin a Websupport Customer Success zostávajú overiteľné a už sú v LIVE; ďalšie O2 technické roly sú seniornejšie/špecializované. Bez nového canonical prírastku."},
+    {"name":"Worki.sk","family":"slovak-jobboard","status":"checked","hits":1,"note":"Nájdený e-shop pracovník v Raslaviciach je onsite mimo BA a bez overeného remote režimu = reject-distance."},
+    {"name":"Brigada.sk","family":"slovak-jobboard","status":"checked","hits":0,"note":"Cielený BA admin/e-shop/AI sweep bez nového overiteľného výsledku, ktorý by prekonal LIVE priority."},
+    {"name":"Služby zamestnanosti / Kariera","family":"government-jobboard","status":"checked","hits":3,"note":"Metrohm IT Support Petržalka je lokálne relevantný, ale VŠ I. stupňa + AJ B1/B2 sú významný gate. Systémový programátor je hard-dev; staršie admin roly majú nízku hodnotu."},
+    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového BA/remote A2-compatible AI/e-commerce/customer-success kandidáta nad existujúce OVB a ďalšie LIVE priority."},
+    {"name":"StartupJobs / Jobs.cz lane","family":"cz-startup-jobboard","status":"checked","hits":0,"note":"Remote výsledky preverované iba pri Slovakia eligibility; bez nového jednoznačne Slovakia-eligible winnera."},
+    {"name":"WordPress Jobs","family":"wordpress-jobboard","status":"checked","hits":0,"note":"Bez nového non-hard-dev WordPress/WooCommerce support alebo admin leadu s vhodným scope a Slovakia eligibility."},
+    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":6,"note":"Čerstvé worldwide výsledky: eCommerce VA, WooCommerce developer, remote VA a product migration. Väčšina má 10–50+ proposals, silnú English požiadavku alebo veľmi nízky/neurčitý budget; nič neprekonalo existujúce LIVE remote WP/Woo položky."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":4,"note":"Aktuálne výsledky sú prevažne FOR HIRE; starší HIRING post má extrémne nízky budget a scam/quality warningy. Bez bezpečného hiring leadu."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. WordPress Slovensko, WooCommerce SK+CZ a BA pracovné skupiny neposkytli konkrétny aktuálny verejne overiteľný hiring post. Coverage ostáva limited; nič sa nepredstiera."}
   ]
 }
