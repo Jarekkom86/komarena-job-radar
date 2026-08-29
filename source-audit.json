@@ -1,41 +1,43 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T00:14:53+02:00",
+  "updatedAt": "2026-08-30T00:38:03+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "newActiveJobs": 0,
-    "significantlyChangedPriorityJobs": 0,
-    "rejectedByLanguageOrHardSkill": 3,
-    "rejectedAsWeakOrLowValue": 6,
-    "duplicateOrExisting": 6,
+    "significantlyChangedPriorityJobs": 1,
+    "rejectedByLanguageOrHardSkill": 4,
+    "rejectedAsWeakOrLowValue": 5,
+    "duplicateOrExisting": 5,
     "rejectedByFreshnessOrEvidence": 3,
     "liveFeedCount": 35,
     "effectiveEligibleCount": 35,
     "jobsDataContentUpdatedAt": "2026-08-29T21:34:36+02:00",
     "freshnessStatus": "stale-over-60m",
-    "note": "Audit 30. 8. 2026 o 00:14 CEST reálne preveril Profesia, priame firemné kariéry, LinkedIn Jobs, Worki, Brigada.sk, Pretlak, StartupJobs, WordPress Jobs, Upwork, Služby zamestnanosti/Kariera, Reddit/WP komunity a verejne indexovaný Facebook. Existujúce priority LUNYS, LEAF, OVB AI/automation, Penta Sales Administrator, Lanža a Energohub boli znovu nájdené ako dostupné/aktívne vo verejných zdrojoch; bez významnej zmeny podmienok. Nový InvenSense Office Manager (1 900 €+, bonus do 20 %) bol vyradený pre fluent/pokročilú angličtinu a povinnú office presence. Čerstvý Upwork Virtual Assistant Data Entry ponúka 20–50 USD/h, worldwide remote a 6+ mesiacov, ale klient je nový od 27. 8. 2026 bez preukázanej spend/hire histórie; bez dostatočného trust signálu sa nepovýšil do feedu. WordPress Jobs priniesol nové security/development ponuky, no sú hard-dev/security scope mimo cieľového non-hard-dev profilu. Facebook verejná indexácia opäť nepriniesla verified hiring hit."
+    "note": "Audit 30. 8. 2026 o 00:38 CEST reálne preveril Profesia, priame firemné kariéry, LinkedIn Jobs, Worki, Brigada.sk, Pretlak, StartupJobs, WordPress Jobs, Upwork, Služby zamestnanosti/Kariera, Reddit/WP komunity a verejne indexovaný Facebook. Najvýznamnejší nový kandidát je HEATING PRO – Technický pracovník/pracovníčka (sklad, rozvoz, nákup), Bratislava, 1 600–2 500 €, nástup ihneď, jednozmenná prevádzka 7:00–15:30, voľné víkendy/sviatky, vodičák B, bez cudzieho jazyka; scope kombinuje techniku, materiálové zabezpečenie, interný systém a rozvoz firemným vozidlom. Kandidát prešiel locality/language/hard-skill/value gate a zaslúži LIVE aktiváciu, ale jobs-data.json nebol prepísaný, pretože dostupný GitHub write konektor podporuje iba kompletnú náhradu súboru a bezpečný atómový append/patch nie je k dispozícii. Full-file manuálna rekonštrukcia 35-položkového feedu by porušila fail-closed princíp. Wolt Support bol vyradený pre min. B2 AJ. StartupJobs Dreamup customer care je 100 % remote, ale vyžaduje poľštinu. Upwork WooCommerce troubleshooting hit je iba 20 USD fixed a vyžaduje PHP/server troubleshooting. Facebook verejná indexácia opäť nepriniesla verified hiring hit."
   },
   "sources": [
-    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":3,"note":"Aktuálny BA sweep potvrdil existujúce IZY VAPE, Energohub a Penta-like admin/e-commerce smery. Nový InvenSense Office Manager od 1 900 € má pokročilú/fluent AJ a office presence, preto neprešiel language/work-mode gate."},
-    {"name":"Priame firemné kariérne stránky","family":"company-careers","status":"checked","hits":1,"note":"Penta Sales Administrator je stále uvedený na oficiálnej kariérnej stránke Penta Real Estate; 1 800 €, Bratislava, home office benefit. Bez významnej zmeny."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"note":"LUNYS e-commerce canonical detail je stále verejne dostupný bez closure banneru. InvenSense nový Office Manager bol vyradený pre fluent English/office presence."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"note":"Bez nového kandidáta, ktorý by prebil existujúce admin/remote priority."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"note":"Bratislavský zdroj dostupný; bez nového overiteľného kandidáta s lepšou kombináciou scope/pay než existujúce priority."},
-    {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":1,"note":"OVB Špecialista/ka pre AI a automatizáciu zostáva verejne dostupný: remote/hybrid Bratislava, od 2 000 €, Python/API/LLM/Make/n8n sú výhodou, nie podmienkou."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"note":"Bez nového explicitne Slovakia-eligible remote non-hard-dev kandidáta nad existujúce priority."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":2,"note":"Nové ponuky 27.–28. 8. sú prevažne senior development/security remediation scope; neprešli hard-skill gate pre cieľový WP admin/support profil."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":4,"note":"Čerstvý Virtual Assistant Data Entry: worldwide, 20–50 USD/h, <30 h/týždeň, 6+ mesiacov, 15–20 proposals, ale klient je nový bez spend/hire histórie — nedostatočný trust. Ďalšie čerstvé VA/WP hity mali 5–50 USD fixed alebo výrazne dev scope, preto nepridané."},
-    {"name":"Služby zamestnanosti / Kariera","family":"government-other","status":"checked","hits":0,"note":"Nájdené vodičské ponuky boli buď výrazne slabšie platené, staršie, alebo vyžadovali C/medzinárodnú dopravu; neprešli value/fit gate."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Bez nového konkrétneho aktuálneho Slovakia-eligible hiring leadu s dostatočným trust signálom."},
+    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":2,"note":"Nové/čerstvé BA výsledky neprebili TOP priority; Wolt Support Associate bol vyradený pre minimálne B2 angličtinu."},
+    {"name":"Priame firemné kariérne stránky","family":"company-careers","status":"checked","hits":1,"note":"Bez nového direct-source kandidáta nad aktuálne priority; existujúce Penta/Hilti/Websupport smery zostávajú relevantné."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"note":"Wolt Full Time/Part Time Bratislava je čerstvý, ale oba detaily vyžadujú professional English min. B2; neprešli jazykovým gateom."},
+    {"name":"Worki.sk","family":"worki","status":"ok","hits":2,"note":"Najvýznamnejší hit: HEATING PRO – Technický pracovník/pracovníčka (sklad, rozvoz, nákup), Stará Vajnorská 17 Bratislava, 1 600–2 500 €, ihneď, 7:00–15:30, B, bez cudzieho jazyka, firma zaučí; vhodný na LIVE aktiváciu. Staršie finančno-obchodné/call-center hity zostali nižšie pre sales-intensity alebo freshness."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"note":"Bez nového overiteľného BA kandidáta, ktorý by prebil existujúce brigádnické priority."},
+    {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":1,"note":"Bez nového winnera nad existujúci OVB AI/automation; jazykové a hard-skill gate zachované."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":1,"note":"Dreamup Customer care / online agent pre e-shop je 100 % remote a čerstvý, ale vyžaduje poľštinu; vyradené jazykovým gateom."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":1,"note":"Bez nového Slovakia-eligible non-hard-dev leadu; aktuálne výsledky sú prevažne developer/security scope."},
+    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":2,"note":"WooCommerce checkout/500/store-management hit je worldwide, ale 20 USD fixed a vyžaduje PHP/server troubleshooting; nepridané pre scope-to-pay + hard-skill mismatch. Ostatné čerstvé VA/WP výsledky neprebili existujúce priority."},
+    {"name":"Služby zamestnanosti / Kariera","family":"government-other","status":"checked","hits":0,"note":"Bez nového BA/remote kandidáta nad aktuálne priority; staršie alebo menej vhodné technické/vodičské výsledky nepovýšené."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Nájdené remote WordPress hiring posty boli staršie, US-only alebo hard-dev/fluent-English; 0 vhodných LIVE leadov."},
     {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits; verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym linkom. Coverage sa nepredstiera."},
-    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"warning","hits":6,"note":"Existujúce priority LUNYS, LEAF, OVB, Penta, Lanža a Energohub boli reálne znovu overené vo verejných zdrojoch a nevykázali významnú zmenu. jobs-data.json však zostal nezmenený, aby sa bez bezpečného úplného atómového prepisu nepoškodil 35-položkový feed; jeho updatedAt 21:34:36 CEST je preto starší než 60 minút."}
+    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"warning","hits":1,"note":"HEATING PRO prešiel gate, ale bezpečný zápis do jobs-data.json je blokovaný absenciou patch/append write operácie; fail-closed zachoval posledný validný 35-položkový feed. Nevykonal sa riskantný full-file rewrite."}
   ],
   "writeStatus": {
-    "jobsData": "no-change-preserved-valid-data",
-    "jobsDataReason": "Žiadna nová alebo významne zmenená položka neprešla všetkými gate. Existujúce priority boli reálne znovu overené, ale samotný jobs-data.json nebol prepisovaný iba kvôli timestampu; posledný validný feed zostal zachovaný.",
+    "jobsData": "blocked-safe-patch-unavailable",
+    "jobsDataReason": "HEATING PRO je nový kvalifikovaný kandidát, ale dostupný GitHub write konektor podporuje iba kompletnú náhradu súboru. Bez atómového append/patch mechanizmu by ručná rekonštrukcia 35-položkového JSON feedu zvyšovala riziko poškodenia dát, preto fail-closed zápis nevykonal.",
     "jobsDataNonProf": "no-change",
-    "jobSources": "refreshed-existing-source-notes",
+    "jobSources": "no-structural-change",
+    "master": "blocked-safe-append-unavailable",
+    "masterReason": "Dve nové navrhnuté zlepšenia pre backlog: (119) role-title inflation detector – odhalí názov, ktorý znie junior/assistant, ale povinnosti/požiadavky sú seniorné; (120) workday predictability score – rozlíši stabilný jednozmenný režim od variabilných/nejasných zmien a zohľadní ho v akčnom rankingu. Bez bezpečného append/patch mechanizmu nebol MASTER full-file prepísaný.",
     "freshnessBreach": true,
-    "freshnessBreachReason": "jobs-data.json updatedAt 2026-08-29T21:34:36+02:00 je pri audite 2026-08-30T00:14:53+02:00 starší než 60 minút. updatedAt nebol umelo posunutý, pretože jobs-data obsahovo zmenený nebol."
+    "freshnessBreachReason": "jobs-data.json updatedAt 2026-08-29T21:34:36+02:00 je starší než 60 minút; timestamp sa neposúva bez bezpečnej obsahovej zmeny."
   }
 }
