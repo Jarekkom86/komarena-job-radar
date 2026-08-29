@@ -1,29 +1,27 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T08:36:23+02:00",
+  "updatedAt": "2026-08-29T09:15:15+02:00",
   "runSummary": {
-    "familiesChecked": 11,
+    "familiesChecked": 8,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 5,
-    "rejectedAsWeakOrLowValue": 8,
-    "duplicateOrExisting": 4,
-    "rejectedByFreshnessOrEvidence": 3,
-    "rejectedByLocation": 2,
+    "rejectedByLanguageOrHardSkill": 3,
+    "rejectedAsWeakOrLowValue": 4,
+    "duplicateOrExisting": 5,
+    "rejectedByFreshnessOrEvidence": 2,
+    "rejectedByLocation": 1,
     "liveFeedCount": 33,
     "jobsDataContentUpdatedAt": "2026-08-29T06:35:54+02:00",
-    "note": "Beh 29. 8. 2026 o 08:36 reálne preveril Profesia, LinkedIn Jobs, priame firemné kariéry, Worki, Brigada.sk, Prácu za rohom/Kariera, Služby zamestnanosti, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexovaný Facebook. Bez novej aktívnej položky, ktorá by bezpečne prekonala existujúce LIVE priority. Najčerstvejšie remote WordPress leady boli Upwork one-page build za 40 USD (15–20 proposals, 5 interviewing), WordPress expert fix za 35 USD (20–50 proposals) a WooCommerce checkout/store management za 20 USD s povinným PHP; všetky boli vyradené pre slabý scope-to-pay, konkurenciu alebo hard-skill profil. Reddit dnes priniesol iba FOR HIRE ponuky, nie hiring dopyt. Indeed remote discovery ukázal viac WordPress rolí, ale väčšina je hard-development alebo s neoverenou country eligibility; bez aktivácie, kým sa nepotvrdí možnosť práce zo Slovenska. Facebook zostáva 0 verified hits. jobs-data.json sa nemení, aby sa jeho updatedAt neposúval bez reálnej zmeny obsahu."
+    "freshnessStatus": "stale-over-60m",
+    "note": "Beh 29. 8. 2026 o 09:15 reálne preveril čerstvé Profesia BA/remote admin, IT/support a driver výsledky, LinkedIn remote/e-commerce výsledky, GROWNi/LEAF a ďalšie verejne indexované zdroje. Bez novej prioritnej položky nad existujúce LIVE priority. VÚB, Lanža, Akfos, Confilogi, 3MON a LEAF sa stále zobrazujú ako aktívne/aktuálne výsledky. Nová administratívna výpomoc INDEX NOSLUŠ (1 650 EUR) má ekonomické zameranie a AJ B1-B2, preto neprešla hard-fit filtrom. Car Route vodič dodávky 1 800 EUR má síce vodičák B a okamžitý nástup, ale pracovný čas 1:30-11:30, ručnú nakládku/vykládku a pravidelnú trasu do Rakúska; je slabší fit než Lanža/Akfos. Foxelli remote support je uzavretý alebo jazykovo nevhodný. jobs-data.json zostáva nezmenený, pretože nebola nájdená nová ani významne zmenená LIVE položka; jeho timestamp je však starší než 60 minút a freshness incident je explicitne evidovaný."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":5,"note":"Preverené čerstvé BA/remote admin, e-shop, support a driver výsledky. Bez nového A2-compatible kandidáta, ktorý by prekonal existujúce LIVE priority; existujúce silné ponuky zostávajú aktívne."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":4,"note":"Preverené nové BA/remote web, support a operations výsledky. Relevantné výsledky boli prevažne duplicity existujúcich rolí alebo mali vyššiu AJ/hard-skill požiadavky."},
-    {"name":"Priame firemné kariéry","family":"company","status":"checked","hits":3,"note":"Kontrola priamych career stránok nepriniesla nový kandidát nad existujúce TOP role. Direct-source preference ostáva zachovaná."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"BA/remote admin/IT/support sweep bez nového winnera; relevantné indexované výsledky boli slabšie než existujúce LIVE položky alebo staršie."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":1,"note":"BA administratíva/e-shop/IT/kuriér sweep bez novej kvalitnej brigády nad existujúce priority."},
-    {"name":"Práca za rohom / Kariera","family":"other-jobboards","status":"checked","hits":3,"note":"Použité na discovery/corroboration; bez nového samostatného canonical hitu, ktorý by splnil kvalitu a nebol mirror alebo duplicita."},
-    {"name":"Služby zamestnanosti","family":"government","status":"checked","hits":0,"note":"Bez nového BA/remote kandidáta s primeraným scope, lokalitou a jazykovým profilom."},
-    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového A2-compatible BA/remote non-hard-dev web/e-commerce/support leadu s primeranou ekonomikou."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":8,"note":"Čerstvé worldwide WordPress leady: one-page build 40 USD (15–20 proposals, 5 interviewing), quick mobile fix 35 USD (20–50 proposals), WooCommerce checkout/store management 20 USD s povinným PHP a ďalšie low-budget fixy. Vyradené pre nízku hodnotu, vysokú konkurenciu alebo hard-skill profil; bez nového LIVE winnera."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":4,"note":"Dnešné r/wordpressjobs výsledky sú FOR HIRE ponuky freelancerov, nie hiring dopyty. Starší hiring lead má slabú ekonomiku; bez aktivácie."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hiring hits. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny post s priamym overiteľným linkom; coverage sa nepredstiera."}
+    {"name":"Profesia – Bratislava administratíva","family":"profesia-admin","status":"ok","hits":6,"note":"Preverené najnovšie BA administratívne výsledky. VÚB zostáva aktívny. INDEX NOSLUŠ: 1 650 EUR, Po-Pia, archivácia/skenovanie, ale ekonomické vzdelanie + účtovníctvo a AJ B1-B2; nezaradené."},
+    {"name":"Profesia – IT / technická podpora","family":"profesia-tech","status":"ok","hits":4,"note":"3MON IT & Operations Support 2 000 EUR je stále aktívna existujúca položka; bez nového kandidáta s lepším profilom a A2-compatible požiadavkami."},
+    {"name":"Profesia – vodič / kuriér Bratislava","family":"profesia-driver","status":"ok","hits":5,"note":"Lanža a Akfos zostávajú aktívne. Car Route 1 800 EUR má vodičák B a ihneď, ale 1:30-11:30, Rakúsko a ručnú nakládku/vykládku; slabší fit než existujúce priority. Košík zostáva fyzicky náročnejší."},
+    {"name":"Profesia – remote customer support","family":"profesia-remote","status":"ok","hits":4,"note":"Confilogi a VÚB zostávajú aktívne. Ostatné čerstvé remote call-center výsledky sú prevažne predajné alebo jazykovo nevhodné."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":3,"note":"Preverené remote/e-commerce support výsledky; Foxelli verejný detail uvádza no longer accepting applications, iné výsledky majú vyššie jazykové požiadavky alebo sú duplicity."},
+    {"name":"GROWNi / LEAF","family":"growni","status":"ok","hits":1,"note":"LEAF Implementation Support Specialist zostáva verejne dostupný a relevantný; bez významnej zmeny oproti LIVE položke."},
+    {"name":"Pretlak / AI discovery","family":"pretlak","status":"checked","hits":1,"note":"Bez nového silnejšieho A2-compatible BA/remote AI/automation kandidáta nad existujúcu OVB prioritu."},
+    {"name":"Verejná web indexácia / ostatné portály","family":"other","status":"limited","hits":2,"note":"Použité na corroboration a discovery; bez nového overiteľného winnera. Pokrytie login-only a neindexovaných zdrojov sa nepredstiera."}
   ]
 }
