@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 29. 8. 2026 19:28 CEST
+Aktualizované: 29. 8. 2026 21:34 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -32,66 +32,65 @@ Aktualizované: 29. 8. 2026 19:28 CEST
 - Agregátor/repost nesmie prebiť priamy firemný zdroj.
 
 ## Aktuálne TOP
-- **LUNYS — UZAVRETÉ / vyradiť z aktívneho TOP.** Canonical LinkedIn detail 29. 8. 2026 už uvádza, že neprijíma žiadosti; `jobs-data.json` čaká na bezpečný atómový status patch.
-1. **LEAF — Implementation Support Specialist — Match 94** — prevažne remote; customer support + back-office + reporty + web obsah + AI automatizácie.
-2. **OVB — Špecialista/ka pre AI a automatizáciu — Match 93** — Bratislava remote/hybrid, od 2 000 €/mes.; AI agenti a procesy.
-3. **Ryvenia — Shoptet Specialist — Match 93** — Bratislava/full remote/hybrid; produkty, kategórie, CSV, migrácie, QA.
-4. **Energohub — Office manager / koordinátor firemných procesov — Match 92** — Dúbravka, od 1 800 €/mes.; koordinácia, CRM/digitálne nástroje, procesy a AI; pracovná AJ iba výhodou.
-5. **Penta Real Estate — Sales Administrator — Match 92** — Bratislava, 1 800 €/mes. + bonus + HO; CRM, dáta, reporty, dokumenty a podpora.
-6. **Hilti — Implementation & Service Specialist — Match 92** — Bratislava, od 1 800 €/mes. + bonusy + auto; implementation/service/CRM.
-7. **Websupport — Customer Success Advisor — Match 91** — hosting, SSL, troubleshooting, weby a customer support.
-8. **Lanža — Vodič/ka online nákupov — Match 91** — BA + okolie; online nákupy, nie jedlo; 1 500–3 000 €/mes., služobné vozidlo, B bez tachografu.
-9. **VÚB — Digitálny agent/agentka — Match 90** — 100 % home office / Slovensko, 1 480 €/mes.; SŠ s maturitou, firma zaškoľuje.
-10. **IZY VAPE — Back Office & Operations Coordinator – e-commerce | Remote — Match 90** — BA/prevažne HO, 1 600–2 000 €/mes.; e-shop/objednávky/reklamácie/logistika/AI.
-11. **O2 — Digital Content Admin — Match 90** — 8 €/h, web/e-shop, produkty, ceny a landing pages.
-12. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia, 1 520 €/mes. + bonus.
-13. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote, 5–10 USD/h; mínus US Mountain Time.
-14. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
-15. **Akfos — kuriér/vodič B, kusové zásielky — Match 88** — Bratislava, 1 500 €/mes., ASAP; skrátený úväzok/dohoda/živnosť, bez tachografu a bez C/C+E.
-16. **Upwork — Virtual Assistant for Book Coaching Business — Match 88** — worldwide remote, 10–15 USD/h; WordPress aktualizácie + ActiveCampaign + administratíva; mínus 20–50 proposals a malý client spend.
-17. **SuperFaktura — Supportový parťák — Match 87**.
-18. **Cerkam Facility Services — Terénny administratívny pracovník — Match 86** — Bratislava, od 1 500 €/mes. + bonusy.
-19. **RM Biznis servis / Worki — Manažér servisu klientov — Match 86** — väčšina práce online, občas BA, 10–15 €/h.
-20. **Bookio — B2B/SaaS online support — Match 85**.
-21. **AI & Tech Assistant / Upwork — Match 84** — worldwide remote; web/low-no-code/QA/AI workflows; language + competition risk.
-22. **Dotypos SK — Technický support — Match 84**.
-23. **Pandora — Associate Assistant, eCommerce Operations — Match 84**.
-24. **Allit — End-User Support — Match 84**.
-25. **3MON — IT & Operations Support — Match 84**.
-26. **STU — Web špecialista CMS/web — Match 83**.
-27. **VNET — IT customer support — Match 82**.
-28. **LAST MILE — Operátor NOC / Hotline podpora — Match 82**.
-29. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
-30. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
+1. **LUNYS — E-commerce špecialista — Match 96** — Bratislava/Most pri Bratislave; WooCommerce/Shoptet/Magento, správa e-shopu, testovanie a AI. Fresh canonical LinkedIn 29.8. 21:34 zobrazuje plný inzerát bez closure banneru v načítanom obsahu; zostáva active.
+2. **LEAF — Implementation Support Specialist — Match 94** — prevažne remote; customer support + back-office + reporty + web obsah + AI automatizácie.
+3. **OVB — Špecialista/ka pre AI a automatizáciu — Match 93** — Bratislava remote/hybrid, od 2 000 €/mes.; AI agenti a procesy.
+4. **Ryvenia — Shoptet Specialist — Match 93** — Bratislava/full remote/hybrid; produkty, kategórie, CSV, migrácie, QA.
+5. **Zenea — E-Commerce Specialist — Match 92** — Nivy Tower Bratislava/hybrid, 1 600–2 000 €/mes.; Shopify, produkty, nákupná cesta, UGC/influenceri, Asana, Klaviyo, Excel/reporting; AJ iba výhodou. Hlavný gap: Shopify/Klaviyo namiesto WooCommerce.
+6. **Energohub — Office manager / koordinátor firemných procesov — Match 92** — Dúbravka, od 1 800 €/mes.; koordinácia, CRM/digitálne nástroje, procesy a AI; pracovná AJ iba výhodou.
+7. **Penta Real Estate — Sales Administrator — Match 92** — Bratislava, 1 800 €/mes. + bonus + HO; CRM, dáta, reporty, dokumenty a podpora.
+8. **Hilti — Implementation & Service Specialist — Match 92** — Bratislava, od 1 800 €/mes. + bonusy + auto; implementation/service/CRM.
+9. **Websupport — Customer Success Advisor — Match 91** — hosting, SSL, troubleshooting, weby a customer support.
+10. **Lanža — Vodič/ka online nákupov — Match 91** — BA + okolie; online nákupy, nie jedlo; 1 500–3 000 €/mes., služobné vozidlo, B bez tachografu.
+11. **VÚB — Digitálny agent/agentka — Match 90** — 100 % home office / Slovensko, 1 480 €/mes.; SŠ s maturitou, firma zaškoľuje.
+12. **IZY VAPE — Back Office & Operations Coordinator – e-commerce | Remote — Match 90** — BA/prevažne HO, 1 600–2 000 €/mes.; e-shop/objednávky/reklamácie/logistika/AI.
+13. **O2 — Digital Content Admin — Match 90** — 8 €/h, web/e-shop, produkty, ceny a landing pages.
+14. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia, 1 520 €/mes. + bonus.
+15. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote, 5–10 USD/h; mínus US Mountain Time.
+16. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
+17. **Akfos — kuriér/vodič B, kusové zásielky — Match 88** — Bratislava, 1 500 €/mes., ASAP; bez tachografu a bez C/C+E.
+18. **Upwork — Virtual Assistant for Book Coaching Business — Match 88** — worldwide remote, 10–15 USD/h; WordPress + ActiveCampaign + administratíva.
+19. **SuperFaktura — Supportový parťák — Match 87**.
+20. **Cerkam Facility Services — Terénny administratívny pracovník — Match 86** — Bratislava, od 1 500 €/mes. + bonusy.
+21. **RM Biznis servis / Worki — Manažér servisu klientov — Match 86** — väčšina práce online, občas BA, 10–15 €/h.
+22. **Bookio — B2B/SaaS online support — Match 85**.
+23. **AI & Tech Assistant / Upwork — Match 84** — worldwide remote; web/low-no-code/QA/AI workflows; language + competition risk.
+24. **Dotypos SK — Technický support — Match 84**.
+25. **Pandora — Associate Assistant, eCommerce Operations — Match 84**.
+26. **Allit — End-User Support — Match 84**.
+27. **3MON — IT & Operations Support — Match 84**.
+28. **STU — Web špecialista CMS/web — Match 83**.
+29. **VNET — IT customer support — Match 82**.
+30. **LAST MILE — Operátor NOC / Hotline podpora — Match 82**.
+31. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
+32. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 29. 8. 2026 19:28 CEST — LATEST
-Reálne prehľadané skupiny: **Profesia; direct company careers/GROWNi; LinkedIn Jobs; Worki.sk; Brigada.sk; Pretlak/StartupJobs/WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia; cross-source corroboration.** Spolu **10 nezávislých kontrolovaných skupín**, minimálne 8 source families a viac než 5 mimo Profesia.
+## SOURCE AUDIT — 29. 8. 2026 21:34 CEST — LATEST
+Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; Worki.sk + Brigada.sk; Pretlak/tech-creative; WordPress Jobs; Upwork/freelance; Služby zamestnanosti/Kariera; Reddit/WP komunity; Facebook verejná indexácia; feed integrity/dedupe.** Spolu **10 nezávislých kontrolovaných skupín**, minimálne 8 source families a viac než 5 mimo Profesia.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 0.** Nenašiel sa nový kandidát, ktorý by po lokalitnom, jazykovom, hard-skill a value gate prekonal existujúce priority.
-- **Významná zmena:** LUNYS canonical LinkedIn listing už neprijíma žiadosti; v MASTER je vyradený z TOP. `jobs-data.json` zatiaľ obsahuje starý `active` stav a vyžaduje bezpečný atómový status patch bez rizika straty ostatných validných položiek.
-- **Upwork:** 29.8. pribudli worldwide VA/admin/WordPress hity, ale väčšina bola low-value fixed-price; full-time UK-hours VA vyžaduje strong written/spoken English. Žiadny nový winner.
-- **LinkedIn:** Wolt Bratislava Support Associate vyžaduje **minimum B2 English**, preto zostáva hard language reject. citeturn733107search12turn733107search13
-- **Brigada.sk:** BA pokladňa/dokladanie za **13,15 €/h** bola viazaná na rannú zmenu 29.8.; večer už nie je reálne akčná. citeturn733107search14
-- **Worki:** bez nového aktívneho winnera; starý SFÉRA Support L1 je už obsadený/zrušený. citeturn733107search15
-- **Facebook:** **0 verified hits**; verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom. Coverage zostáva `limited`.
+- **Nové aktívne položky: 1 — Zenea E-Commerce Specialist, Match 92.** Bratislava/Nivy, hybrid, 1 600–2 000 €, entry-level; angličtina alebo maďarčina iba výhodou. Shopify/Klaviyo gap je prenositeľný z WooCommerce/e-commerce skúseností.
+- **Významná korekcia: LUNYS zostáva active.** Čerstvý canonical LinkedIn výsledok 29.8. 21:34 zobrazuje plný inzerát bez closure banneru v načítanom obsahu; predchádzajúci closure signál sa nepovažuje za dostatočný na vyradenie.
+- **LinkedIn rejects:** Wolt Support Associate = minimum B2 English; KLARSTEIN = francúzština.
+- **Upwork:** Email/Social/Content Build je near-fit, ale 20–50 proposals + Mailchimp/HTML/Canva/social creative burden; Operations & Campaign Support = 5–7 USD/h, strong English a U.S. hours. Bez nového winnera.
+- **Reddit:** výsledky boli FOR HIRE, US-only alebo staršie.
+- **Facebook:** **0 verified hits**, coverage `limited`; žiadny fiktívny post.
 
 ### Run summary
 - Reálne skontrolované zdrojové skupiny: **10**.
-- Nové aktívne položky: **0**.
-- Významne zmenené priority: **1 (LUNYS closure)**.
+- Nové aktívne položky: **1**.
+- Významne zmenené priority: **1 (LUNYS active proof obnovený)**.
 - Vyradené jazykovým/hard-skill gateom: **4**.
-- Vyradené ako slabé/nízka hodnota: **7**.
-- Duplicitné/existing: **4**.
-- Vyradené pre freshness/evidence: **2**.
+- Vyradené ako slabé/nízka hodnota: **4**.
+- Duplicitné/existing: **2**.
+- Vyradené pre freshness/evidence: **3**.
 
 ### LIVE mix
-- Fyzický `jobs-data.json` má stále **34 položiek**, ale **efektívne oprávnených je 33**, pretože LUNYS má canonical closure evidence.
-- Posledný potvrdený source mix pred closure ostáva približne **Profesia 44,1 % / mimo Profesia 55,9 %**; po status patchi sa mix znovu prepočíta.
-- `jobs-data.json.updatedAt` = **29. 8. 2026 10:27:16 CEST** — obsahový status patch LUNYS čaká na bezpečnú mutáciu.
-- `source-audit.json.updatedAt` = **29. 8. 2026 19:28:47 CEST**.
-- `job-sources.json.updatedAt` = **29. 8. 2026 19:28:47 CEST**.
-- Freshness reason: **`content-change-pending-safe-feed-mutation`**.
+- `jobs-data.json`: **35 aktívnych položiek**.
+- Source mix: **Profesia 17 / 35 = 48,6 %; mimo Profesia 18 / 35 = 51,4 %**.
+- `jobs-data.json.updatedAt` = **29. 8. 2026 21:34:36 CEST**.
+- `source-audit.json.updatedAt` = **29. 8. 2026 21:34:36 CEST**.
+- Freshness: **OK**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -218,42 +217,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 112. Search-depth coverage quota.
 113. Search-index staleness detector.
 114. CV requirement coverage score.
-115. Query-to-hire attribution ledger.
-116. Near-miss language substitution miner.
-117. Opportunity evidence TTL by field.
-118. Onboarding-vs-recurring travel classifier.
-119. Screening-question evidence prefill map.
-120. Search freshness vs content freshness split.
-121. Calendar-aware source weighting.
-122. Probation & termination-risk extractor.
-123. Exclusivity / non-compete / IP-risk flag.
-124. Selection-location burden gate.
-125. Critical-field conflict bundle.
-126. Remote employment jurisdiction & invoicing compatibility gate.
-127. Opportunity dominance graph.
-128. Contractor payment-latency & cash-flow risk.
-129. Variable-pay dependency ratio.
-130. Freelance client-budget realism detector.
-131. Evidence-backed skill adjacency map.
-132. Candidate-data / payment scam gate.
-133. Channel-specific language burden classifier.
-134. Feed freshness reason code.
-135. Low-value freelance suppression floor.
-136. Behavioral preference calibrator.
-137. Role-family outcome calibration.
-138. Freshness-proof promotion rule.
-139. Required-tool specificity burden.
-140. Shift-start feasibility gate.
-141. Rolling source-mix window.
-142. **Title-vs-scope seniority resolver** — senioritu neodvodzovať z názvu `Manager/Specialist/Junior`, ale zo skutočných povinností, ownershipu, požadovaných rokov praxe, rozhodovacích právomocí a hard-skillov.
-143. **Application-deadline confidence model** — rozlíšiť explicitný deadline, `open until filled`, inferred deadline a neoverený/žiadny deadline; každý stav dostane confidence a vlastnú recheck SLA.
-144. **Generic-post / low-specificity suppression** — pri freelance a VA inzerátoch merať konkrétnosť zadania: jasné deliverables, workload/hodiny, nástroje, zodpovednosť, časové pásmo a spôsob odovzdania.
-145. **Freelance hire-to-spend anomaly signal** — pri Upwork/freelance klientoch počítať spend na hire, pomer aktívnych hires, vek účtu a opakované micro-contracty.
-146. **Employer stability / continuity signal** — pre TPP a dlhodobé kontrakty oddeliť legitimitu firmy od pravdepodobnosti stabilnej práce: vek a veľkosť firmy, opakované náborové churn signály, verejné rušenie pobočiek/layoffs, dĺžka existencie role a dôveryhodné finančno-prevádzkové signály.
-147. **Contract-duration / continuity score** — explicitne normalizovať dobu kontraktu a pravdepodobnosť pokračovania: TPP neurčito, TPP určito, 6+ mesiacov, 3–6 mesiacov, 1–3 mesiace, jednorazová zákazka; oddeliť `contract-to-hire` marketing od reálne doloženého pokračovania.
-148. **Atomic feed mutation pipeline — NOVÉ** — pri každej statusovej alebo obsahovej zmene použiť `parse → mutate → schema validate → count/category invariant → commit`; ak validácia zlyhá, feed ostáva nedotknutý a zmena ide do explicitnej patch queue. Praktický prínos: odstráni dnešný problém, keď closure LUNYS vieme overiť, ale nechceme riskovať stratu validných položiek pri full-file rewrite.
-149. **Actionability cutoff timestamp — NOVÉ** — pre časovo viazané brigády, jednorazové zmeny a urgentné zákazky ukladať `lastUsefulApplyAt`/`actionableUntil`, nie iba `publishedAt` alebo deadline. Praktický prínos: ranná brigáda sa večer automaticky prestane tváriť ako relevantný hit, aj keď stránka ostáva indexovaná.
-
-## Live repository
-Repozitár: `Jarekkom86/komarena-job-radar`.
-Aktuálny MASTER UI: v6.4; automat UI nemení.
+115. **Platform-gap transferability score** — rozlíši blízko prenositeľný gap (WooCommerce → Shopify, ActiveCampaign → Klaviyo) od skutočne nového hard-skill gapu; zníži falošné vyradenia kvalitných e-commerce rolí.
+116. **Closure-proof quorum** — status `closed` sa zmení až po dostatočnom canonical dôkaze (explicitný closure banner/404/expired + recheck), aby jeden nekonzistentný indexovaný signál nevyradil stále aktívnu ponuku.
