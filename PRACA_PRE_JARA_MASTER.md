@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 29. 8. 2026 01:35 CEST
+Aktualizované: 29. 8. 2026 02:36 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -62,28 +62,26 @@ Aktualizované: 29. 8. 2026 01:35 CEST
 28. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 29. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 29. 8. 2026 01:35 CEST — LATEST
-Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; direct company careers; Worki.sk; Brigada.sk; Služby zamestnanosti; Pretlak; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu 10 nezávislých source families, minimálne 5 mimo Profesia.
+## SOURCE AUDIT — 29. 8. 2026 02:36 CEST — LATEST
+Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; direct company careers; Worki.sk; Brigada.sk; Služby zamestnanosti/Kariera; Pretlak; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu 11 kontrolovaných zdrojových skupín, minimálne 5 mimo Profesia.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky do `jobs-data.json`: 0.** Feed zostal fail-closed a `updatedAt` sa neposunul umelo.
-- **Wolt — Support Associate FT/PT, Bratislava:** čerstvá a lokalitou vhodná podpora, ale minimum **B2 English** je tvrdý jazykový reject.
-- **Kanadevia Inova — Assistant, Petržalka:** lokalita a administratíva sedia, ale vyžaduje **fluent business English + min. 3 roky relevantnej admin/project support praxe**; hard language/experience reject.
-- **Insignia — Customer Service / Operations, Bratislava:** advanced/fluent English + zmenovosť; language/schedule reject.
-- **Profesia — AYURCOS odborný predajca, Bratislava:** zverejnené 29.8., ale 1 000 €/mes. a retail scope sú pod value/role-fit prahom.
-- **Worki:** existujúci RM Biznis servis je stále aktívny; Shield-Sk e-shop admin je už obsadený/zrušený.
-- **Brigada.sk:** aktuálne BA výsledky prevažne gastro/retail; Levice/Piešťany onsite výsledky odmietnuté lokalitným gateom.
-- **Upwork:** čerstvé WordPress tasky sú prevažne 30–35 USD fixed alebo 5–50 USD tasky s 10–50 proposals. Hodnota/konkurencia/scope neprekonáva existujúce LIVE WP/Woo leady.
-- **Reddit / r/wordpressjobs:** čerstvé výsledky sú prevažne `[FOR HIRE]`; bez nového overeného HIRING winnera.
+- **Nové aktívne položky do `jobs-data.json`: 0.** Feed zostal fail-closed; bez kvalitného nového winnera sa `updatedAt` neposúva umelo.
+- **Tatra Supercompute — IT Service Desk špecialista/ka pre AI dátové centrum, Bratislava:** zverejnené 28.8.2026, od 1 800 €/mes., L1 support, incidenty, ticketing a troubleshooting. Lokalita sedí a technický smer je zaujímavý, ale rola vyžaduje **angličtinu B2**, CV v angličtine a **24/7 zmenovú prevádzku**. Preto nejde do aktívnych odporúčaných TOP výsledkov.
+- **Rhythm&Ridge — WordPress Developer, remote 10 h/týždeň:** technicky veľmi relevantné, ale forma je dohoda o brigádnickej práci študentov; preto nevhodné.
+- **Worki — Shield-Sk e-shop admin:** stránka priamo uvádza, že miesto bolo obsadené alebo zrušené; negatívny freshness dôkaz.
+- **Pretlak — Datacop Technical Marketing Specialist:** Bratislava, 2 500–4 000 €, ale Mid/Senior/Expert a firma hľadá človeka, ktorý už seniorný štandard spĺňa od prvého dňa; hard-experience reject.
+- **Upwork:** čerstvé WordPress/WooCommerce projekty z 28.8.2026 boli reálne preverované. Väčšina má povinný PHP/dev presah, vysokú konkurenciu 20–50+ proposals alebo nízky fixed budget 30–250 USD. Žiadny nový lead neprekonáva existujúce LIVE freelance priority.
+- **Reddit / WordPress komunity:** čerstvé diskusie existujú, ale bez konkrétneho overeného HIRING postu vhodného do feedu.
 - **Facebook:** **0 verified hits**. Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited`, nič sa nepredstiera.
 
 ### Run summary
-- Reálne skontrolované zdrojové skupiny: **10**.
+- Reálne skontrolované zdrojové skupiny: **11**.
 - Nové aktívne položky: **0**.
-- Vyradené jazykovým/hard-skill gateom: **4**.
-- Vyradené ako slabé/nízka hodnota: **5**.
-- Duplicitné/existing/nevhodný typ leadu: **4**.
-- Vyradené pre nedostatočný freshness/evidence dôkaz: **2**.
+- Vyradené jazykovým/hard-skill gateom: **5**.
+- Vyradené ako slabé/nízka hodnota: **8**.
+- Duplicitné/existing: **5**.
+- Vyradené pre freshness/evidence: **2**.
 
 ### LIVE mix
 - Aktívny feed: **29 položiek**.
@@ -212,8 +210,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 109. **Role-family source blind-spot matrix** — vedie maticu `source family × cieľový smer`, aby počet skontrolovaných zdrojov nezakryl dieru v konkrétnom lane.
 110. **Duty-mix decomposition** — odhadne podiel cieľovej práce vs. cold sales/telefonovanie/heavy physical/hard development a upraví Match podľa reálnej náplne.
 111. **Same-role repost churn-risk signal** — sleduje opakované zverejňovanie rovnakej roly jedným zamestnávateľom ako možný retention/churn risk.
-112. **Search-depth coverage quota — NOVÉ** — každý zdroj dostane rotujúcu povinnosť kontrolovať nielen top výsledky/prvú stránku, ale aj hlbšiu vzorku výsledkov a alternatívne zoradenie. Cieľ: znížiť ranking bias portálu a nájsť menšie firmy alebo čerstvé ponuky, ktoré nie sú v top SERP.
-113. **Search-index staleness detector — NOVÉ** — vedie fingerprint výsledkov, `publishedAt`, `crawledAt` a opakované rovnaké SERP položky. Ak vyhľadávač vracia starý cache bez nových dát, zdroj sa označí `index-stale` namiesto falošného `checked/no-results` a zber prejde na direct-site alebo alternatívny query path.
+112. **Search-depth coverage quota** — každý zdroj dostane rotujúcu povinnosť kontrolovať nielen top výsledky/prvú stránku, ale aj hlbšiu vzorku výsledkov a alternatívne zoradenie.
+113. **Search-index staleness detector** — vedie fingerprint výsledkov, `publishedAt`, `crawledAt` a opakované rovnaké SERP položky; starý cache sa označí `index-stale` namiesto falošného `checked/no-results`.
+114. **CV requirement coverage score — NOVÉ** — pred odporúčaním reakcie vypočíta percento požiadaviek ponuky, ktoré majú reálny dôkaz v MASTER CV/profile. Rozdelí ich na `proven`, `trainable-gap`, `unsupported` a zabráni vysokému Match skóre pri chýbajúcich kritických dôkazoch bez toho, aby si systém kvalifikácie domýšľal.
+115. **Query-to-hire attribution ledger — NOVÉ** — ku každej prijatej/odmietnutej položke uloží presný discovery query variant a source path, ktorý ju našiel. Následne vie merať yield konkrétnych query variantov, rušiť dlhodobo nulové formulácie a rozširovať fungujúce synonymá pri zachovaní povinnej zdrojovej diverzity.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
