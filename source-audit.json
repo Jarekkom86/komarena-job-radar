@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T16:19:45+02:00",
+  "updatedAt": "2026-08-29T17:14:29+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 9,
-    "rejectedAsWeakOrLowValue": 10,
-    "duplicateOrExisting": 6,
+    "rejectedByLanguageOrHardSkill": 8,
+    "rejectedAsWeakOrLowValue": 8,
+    "duplicateOrExisting": 5,
     "rejectedByFreshnessOrEvidence": 2,
     "rejectedByLocation": 2,
     "rejectedByTimeWindow": 1,
     "liveFeedCount": 34,
     "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
-    "freshnessStatus": "stale-because-no-new-winner",
-    "note": "Beh 29. 8. 2026 o 16:19 CEST reálne preveril Profesia, priame firemné kariéry, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WordPress komunity, verejne indexovaný Facebook a cross-source corroboration. Čerstvé Upwork výsledky boli worldwide remote, ale eCommerce VA mala iba 50 USD fixed, WordPress/WooCommerce developer 5 USD fixed, UK-hours full-time VA 650 USD fixed s excellent English a operations VA 5–7 USD/h so strong English + US hours. Reddit priniesol FOR HIRE alebo US-only developer výsledky. Žiadny nový kandidát neprešiel súčasne value, jazykovým, lokalitným a hard-skill gateom lepšie než LIVE priority. Facebook verejná indexácia ostáva bez overeného priameho hiring postu. jobs-data.json sa nemenil a updatedAt nebol posunutý bez obsahovej zmeny."
+    "freshnessStatus": "fresh-source-audit-no-content-change",
+    "note": "Beh 29. 8. 2026 o 17:14 CEST reálne preveril Profesia, priame firemné kariéry, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WordPress komunity, verejne indexovaný Facebook a cross-source corroboration. VÚB Digitálny agent a Confilogi zostávajú aktívne. Čerstvé Profesia výsledky v support/e-commerce zahŕňali najmä jazykovo špecifické roly, KOOPERATIVA online predaj a leiCON Machine Control; neprekonali existujúce LIVE priority po language/hard-skill/value gate. Upwork priniesol worldwide remote VA/WordPress výsledky, ale najlepší nový kandidát 8–15 USD/h mal 20–50 proposals a širší Mailchimp/Canva/Squarespace skill mix; ďalšie VA výsledky boli 4–7 USD/h alebo vyžadovali strong/fluent English a US hours. Žiadny nový kandidát neprešiel súčasne value, jazykovým, lokalitným a hard-skill gateom lepšie než LIVE priority. jobs-data.json sa obsahovo nemenil a jeho updatedAt nebol posunutý bez obsahovej zmeny; čerstvosť kontroly je evidovaná týmto source-audit timestampom."
   },
   "sources": [
-    {"name":"Profesia – BA/remote všeobecne","family":"profesia","status":"checked","hits":9,"note":"Čerstvý sweep 29.8. o 16:19; bez nového BA/remote e-shop/admin/support/driver winnera nad existujúce LIVE priority."},
+    {"name":"Profesia – BA/remote všeobecne","family":"profesia","status":"checked","hits":11,"note":"Čerstvý sweep 29.8. o 17:14; VÚB a Confilogi potvrdené, nové support/e-commerce výsledky neprekonali existujúce LIVE priority po language/hard-skill/value gate."},
     {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":3,"note":"Priame BA/remote firemné zdroje preverované; bez nového A2-compatible winnera nad LIVE priority."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":6,"note":"BA/remote výsledky preverované; relevantné support/e-commerce roly mali vyššiu AJ alebo neprekonali existujúce priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":5,"note":"BA/remote výsledky preverované; relevantné support/e-commerce roly mali vyššiu AJ alebo neprekonali existujúce priority."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"Bez novej BA/remote admin/tech položky s lepším fit/value než existujúce LIVE výsledky."},
     {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":4,"note":"Použiteľné BA retail/sklad zmeny zostávajú emergency lane; neprebíjajú web/admin/driver priority."},
     {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového Slovakia-eligible non-hard-dev WordPress/e-commerce/support leadu."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":10,"note":"Čerstvé worldwide remote výsledky preverované. eCommerce VA 50 USD fixed, WooCommerce developer 5 USD fixed a WordPress formatting 5 USD/post sú pod value prahom; UK-hours full-time VA 650 USD fixed vyžaduje excellent English; operations VA 5–7 USD/h vyžaduje strong English a časť US hodín. Bez nového winnera."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":3,"note":"Aktuálne výsledky sú prevažne FOR HIRE alebo US-only developer ponuky; bez konkrétneho Slovakia-eligible hiring leadu pre LIVE."},
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":6,"note":"Worldwide remote výsledky preverované. Najlepší nový WordPress/marketing VA bol 8–15 USD/h, 4–6 h/týždeň, ale mal 20–50 proposals a široký Mailchimp/Canva/Squarespace skill mix. Ďalšie VA výsledky boli 4–7 USD/h alebo vyžadovali strong/fluent English a časť US hodín. Bez nového winnera."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":2,"note":"Bez konkrétneho nového Slovakia-eligible hiring leadu pre LIVE."},
     {"name":"Facebook WordPress/WooCommerce/BA jobs – verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits; verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom."},
-    {"name":"Cross-source corroboration / search indexes","family":"corroboration","status":"checked","hits":8,"note":"Použité na overenie čerstvosti, aktivity, jazykových požiadaviek, remote eligibility, rozpočtu a canonical detailov. Reindex bez zmeny sa nepovažuje za nový inzerát."}
+    {"name":"Cross-source corroboration / search indexes","family":"corroboration","status":"checked","hits":9,"note":"Použité na overenie čerstvosti, aktivity, jazykových požiadaviek, remote eligibility, rozpočtu a canonical detailov. Reindex bez zmeny sa nepovažuje za nový inzerát."}
   ]
 }
