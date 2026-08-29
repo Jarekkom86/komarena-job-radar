@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 29. 8. 2026 08:36 CEST
+Aktualizované: 29. 8. 2026 09:29 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -63,32 +63,35 @@ Aktualizované: 29. 8. 2026 08:36 CEST
 29. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 30. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 29. 8. 2026 08:36 CEST — LATEST
-Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; direct company careers; Worki.sk; Brigada.sk; Práca za rohom/Kariera; Služby zamestnanosti; Pretlak/StartupJobs/WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu 11 nezávislých kontrolovaných skupín, z toho výrazná väčšina mimo Profesia.
+## SOURCE AUDIT — 29. 8. 2026 09:29 CEST — LATEST
+Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; direct company careers; Worki.sk; Brigada.sk; Práca za rohom/Kariera; Služby zamestnanosti; Pretlak; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu **12 nezávislých kontrolovaných skupín**, z toho 11 mimo Profesia.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky do `jobs-data.json`: 0.** `jobs-data.json.updatedAt` zostáva **29. 8. 2026 06:35:54 CEST**, pretože sa obsah LIVE feedu nezmenil; timestamp sa neposúva kozmeticky.
-- **Upwork — WordPress Landing Page Designer & Developer:** zverejnené dnes, worldwide remote, 40 USD fixed; pri kontrole 15–20 proposals a už 5 interviewing. Scope je čistý WordPress one-page build bez tvrdého PHP gateu, ale ekonomika a rozbehnutý výber sú slabšie než existujúce LIVE príležitosti, preto bez aktivácie. citeturn209450search0
-- **Upwork — Wordpress expert:** čerstvý worldwide remote quick-fix za 35 USD, ale 20–50 proposals a nízka absolútna hodnota; bez aktivácie. citeturn714270search9
-- **Upwork — WooCommerce checkout/store management:** worldwide remote, ale iba 20 USD fixed a povinné PHP; 15–20 proposals. Hard-skill + scope-to-pay gate. citeturn714270search0
-- **Indeed remote discovery:** našlo WordPress/GHL, WordPress/SEO a ďalšie remote role, ale časť je hard-development a pri agregovaných výsledkoch nie je dostatočne potvrdená country eligibility pre prácu zo Slovenska; preto zostávajú mimo LIVE, kým sa neoverí jurisdikcia/remote politika. citeturn209450search1turn209450search4
-- **Reddit / WordPress komunity:** dnešné výsledky sú `FOR HIRE` ponuky freelancerov, nie hiring dopyty; bez aktivácie. citeturn714270reddit122turn714270reddit126
-- **Worki / Brigada / Služby zamestnanosti / Kariera / Pretlak / StartupJobs / WordPress Jobs:** bez nového BA/remote winnera nad existujúce priority.
-- **Facebook:** **0 verified hits**. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited`.
+- **Nové aktívne položky do `jobs-data.json`: 0.** Obsah LIVE feedu sa nezmenil, preto sa `jobs-data.json.updatedAt` neposúva kozmeticky a zostáva **29. 8. 2026 06:35:54 CEST**.
+- **LinkedIn — Wolt Support Associate FT/PT, Bratislava:** čerstvá lokálna support rola, ale explicitne vyžaduje **English minimum B2**, preto neprešla jazykovým profilom. Zdroj: https://sk.linkedin.com/jobs/view/support-associate-full-time-at-wolt-4447674791
+- **Služby zamestnanosti — Metrohm Research Slovakia, IT Support Specialist, Petržalka, 1 800 €/mes.:** práca je veľmi relevantná na troubleshooting a end-user support, ale požaduje **VŠ I. stupňa, aspoň 1 rok praxe a AJ B1–B2**, preto sa neaktivovala. Zdroj: https://sluzbyzamestnanosti.gov.sk/pracovne-ponuky/67ad9499-6440-468b-bf41-6b0e3df33264
+- **Upwork — WordPress → GoHighLevel Website Migration Contractor:** worldwide remote, 150 USD za prvé 2 test weby, ale vyžaduje už preukázanú prax v **native GoHighLevel Website Builder** a pri kontrole má 20–50 proposals; hard-skill + competition gate. Zdroj: https://www.upwork.com/freelance-jobs/apply/WordPress-GoHighLevel-Website-Migration-Contractor_~022093515018380851799/
+- **Upwork — WordPress Landing Page Designer & Developer:** worldwide remote, 40 USD fixed, 15–20 proposals a už 5 interviewing; nízka hodnota a rozbehnutý výber, bez aktivácie. Zdroj: https://www.upwork.com/freelance-jobs/apply/WordPress-Landing-Page-Designer-Developer-Needed_~022093526607484637907/
+- **Worki:** existujúci RM Biznis servis je stále medzi aktuálnymi BA admin výsledkami a už je v LIVE; ďalšie home-office výsledky sú finančný predaj, jazykovo špecifické alebo mimo profilu.
+- **Brigada.sk:** dnešné BA výsledky sú prevažne retail/dokladanie (napr. 13,15 €/h), teda použiteľná núdzová brigáda, ale nie lepší strategický smer než aktívne admin/web/driver možnosti.
+- **Priame kariéry:** Websupport Customer Success Advisor a O2 Digital Content Admin zostávajú verejne dostupné; bez významnej zmeny. O2 junior SIM/identity je zaujímavý rastový smer, ale jeho technické predpoklady sú nad aktuálny bezpečný fit.
+- **Reddit / WordPress komunity:** najčerstvejšie indexované výsledky sú `FOR HIRE` ponuky freelancerov, nie hiring dopyty; bez aktivácie.
+- **Facebook:** **0 verified hits**. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited` a nič sa nepredstiera.
 
 ### Run summary
-- Reálne skontrolované zdrojové skupiny: **11**.
+- Reálne skontrolované zdrojové skupiny: **12**.
 - Nové aktívne položky: **0**.
 - Vyradené jazykovým/hard-skill gateom: **5**.
-- Vyradené ako slabé/nízka hodnota: **8**.
-- Duplicitné/existing: **4**.
+- Vyradené ako slabé/nízka hodnota: **5**.
+- Duplicitné/existing: **6**.
 - Vyradené pre freshness/evidence: **3**.
 - Vyradené pre lokalitu: **2**.
 
 ### LIVE mix
 - Aktívny feed: **33 položiek**.
 - Source mix zostáva približne **Profesia 45,5 % / mimo Profesia 54,5 %**.
-- `source-audit.json.updatedAt` = **29. 8. 2026 08:36 CEST** ako dôkaz aktuálneho multi-source searchu.
+- `source-audit.json.updatedAt` = **29. 8. 2026 09:29 CEST**.
+- Audit freshness a content freshness sa vedú oddelene: search bol vykonaný teraz, ale LIVE obsah sa nezmenil.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -226,8 +229,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 123. Exclusivity / non-compete / IP-risk flag.
 124. Selection-location burden gate.
 125. Critical-field conflict bundle.
-126. **Remote employment jurisdiction & invoicing compatibility gate — NOVÉ** — pri zahraničnej remote ponuke oddelene overí, či firma/platforma reálne prijíma pracovníka alebo kontraktora zo Slovenska, aký typ zmluvy používa (employment/EOR/B2B/freelance), či nevzniká country-only obmedzenie a či je spôsob fakturácie/platby kompatibilný. `remote` bez potvrdenej jurisdikcie už nebude automaticky znamenať `remote-ok`; neoverené roly zostanú v quarantine. Praktický prínos: odstráni čas strávený na lákavých remote inzerátoch, ktoré sú v skutočnosti US/PH/UK-only alebo vyžadujú lokálny payroll.
-127. **Opportunity dominance graph — NOVÉ** — pred aktiváciou/notification porovná nového kandidáta s existujúcimi LIVE rolami v rovnakej track skupine podľa Match, garantovanej odmeny, lokality/remote, pracovného času, jazykového rizika, hard-skill gapu, application friction a freshness. Ak je nový lead vo všetkých praktických parametroch horší než existujúca aktívna príležitosť a neprináša nový zdroj/unikátnu výhodu, ostane iba v audite namiesto zahltenia LIVE feedu. Praktický trigger: dnešné 20–40 USD WordPress micro-gigy sú reálne, ale objektívne dominované existujúcimi kvalitnejšími WP/Woo remote príležitosťami.
+126. Remote employment jurisdiction & invoicing compatibility gate.
+127. Opportunity dominance graph.
+128. **Contractor payment-latency & cash-flow risk — NOVÉ** — pri freelance/živnostenských ponukách evidovať prvý možný dátum výplaty, fakturačný cyklus, splatnosť (napr. 14/30/60 dní), platformový hold a prípadnú podmienku schválenia timesheetu. Z vypočítanej reálnej dostupnosti peňazí vznikne samostatný cash-flow risk, aby vysoká hodinovka s prvou platbou o 45–60 dní neprebila ponuku s nižšou sadzbou, ale rýchlym príjmom.
+129. **Variable-pay dependency ratio — NOVÉ** — oddeliť garantovaný základ od provízií, bonusov, OTE a výkonovej zložky a vypočítať, aká časť deklarovanej odmeny je skutočne garantovaná. Pri ponukách typu „1 500–3 000 €“ alebo „od X + neobmedzené bonusy“ sa bude ranking opierať primárne o garantovanú sumu a variabilná časť dostane samostatnú confidence/risk vrstvu. Praktický prínos: menej času na ponuky s marketingovo nafúknutou odmenou a lepšie porovnanie TPP vs. živnosť/freelance.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
