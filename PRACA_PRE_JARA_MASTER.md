@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 29. 8. 2026 06:35 CEST
+Aktualizované: 29. 8. 2026 07:22 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -63,34 +63,33 @@ Aktualizované: 29. 8. 2026 06:35 CEST
 29. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 30. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 29. 8. 2026 06:35 CEST — LATEST
-Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; direct company careers; Worki.sk; Brigada.sk; Služby zamestnanosti/Kariera; Pretlak; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu 11 nezávislých kontrolovaných skupín, z toho výrazná väčšina mimo Profesia.
+## SOURCE AUDIT — 29. 8. 2026 07:22 CEST — LATEST
+Reálne prehľadané skupiny: **Profesia; LinkedIn Jobs; direct company careers; Worki.sk; Brigada.sk; Práca za rohom/Kariera; Služby zamestnanosti; Pretlak/WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu 11 nezávislých kontrolovaných skupín, z toho výrazná väčšina mimo Profesia.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky do `jobs-data.json`: 1 — Akfos, kuriér/vodič B, Bratislava.** Overený detail: rozvoz kusových zásielok v pridelenom rajóne, pridelené vozidlo, skener/platobný terminál, približne 6:00–15:00/16:00, skrátený úväzok/dohoda/živnosť, 1 500 €/mes., ASAP, vodičák B bez tachografu. Lanža zostáva vyššie, pretože má lepší pay range a preferovaný online-grocery model.
-- **Profesia:** čerstvý Akfos aktivovaný; Lanža znovu potvrdená. Tenus koordinátor bol vyradený pre B2 AJ a cestovanie; Galanta elektroúdržba a Zvolen technická rola nespĺňajú profil/lokalitu alebo kvalifikáciu.
-- **LinkedIn:** Multitude Office Manager je zaujímavý BA admin kandidát s 1 900 €, ale vyžaduje komfortnú hovorenú AJ. Brady Customer Service vyžaduje English + German; Marlink B2; SupportYourApp fluent English; Roche strong English + špecifické diagnostické zázemie. Bez aktivácie.
-- **Priame firemné kariéry:** O2/Websupport/Hilti lane preverený. O2 Junior špecialista na SIM/identity je aktívny, BA a 2 500 €/mes., ale očakáva 3 roky IT/cyber/telco a základy kryptografie, databáz a Active Directory — príliš veľký hard-skill gap oproti vhodnejším LIVE rolám.
-- **Upwork:** fresh worldwide WordPress výsledky prevažne $5–35 fixed-price, 15–50 proposals alebo hard PHP/strong English. Full-time remote VA za $650 vyžaduje silnú hovorenú aj písanú angličtinu. Bez nového LIVE winnera.
-- **Worki / Brigada / Služby zamestnanosti / Kariera:** bez nového BA/remote winnera nad existujúce priority; technické výsledky často narážajú na vyššiu AJ/VŠ/hard-skill požiadavky.
+- **Nové aktívne položky do `jobs-data.json`: 0.** `jobs-data.json.updatedAt` zostáva **29. 8. 2026 06:35:54 CEST**, pretože sa obsah LIVE feedu nezmenil; timestamp sa neposúva kozmeticky.
+- **APM Digital — Office Manager / Operations Coordinator:** priama APM Freelancers stránka potvrdzuje otvorený JID-1288 v Bratislave, 1 500–2 500 €/mes. a HO do 40 %. Aktuálny detail však uvádza výbornú angličtinu/C1 ako podmienku, preto hard language gate a bez aktivácie.
+- **TDK InvenSense — Office Manager:** čerstvý Bratislava lead, cca 23–28k €/rok a bonus, ale vyžaduje pokročilú angličtinu a CV v angličtine; bez aktivácie.
+- **Arvin & Benet — Office Manager/ka:** BA near-fit s administratívou, klientskym servisom, interným systémom, dokumentmi, objednávkami a úradmi. Firemná career stránka uvádza AJ iba ako výhodu, Profesia štruktúra však uvádza B1 a verejné zdroje sa rozchádzajú aj v mzde (1 400 vs. 1 600 €). Do LIVE sa nezaraďuje, kým sa konflikt kritických polí nerozrieši.
+- **Upwork:** čerstvé worldwide eCommerce VA / WordPress / VA výsledky, ale buď strong English, nízky fixed budget (5–100 USD), vysoká konkurencia 10–50+ proposals, alebo slabý scope-to-pay pomer.
+- **Worki / Brigada / Služby zamestnanosti / Kariera:** bez nového BA/remote winnera nad existujúce priority.
 - **Pretlak / WordPress Jobs:** bez nového A2-compatible BA/remote non-hard-dev winnera s primeranou ekonomikou.
-- **Reddit / WordPress komunity:** čerstvé výsledky sú prevažne `FOR HIRE`, nie hiring leady.
+- **Reddit / WordPress komunity:** najčerstvejšie výsledky sú prevažne `FOR HIRE`; bez nového kvalitného hiring leadu.
 - **Facebook:** **0 verified hits**. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited`.
 
 ### Run summary
 - Reálne skontrolované zdrojové skupiny: **11**.
-- Nové aktívne položky: **1**.
-- Vyradené jazykovým/hard-skill gateom: **7**.
-- Vyradené ako slabé/nízka hodnota: **4**.
-- Duplicitné/existing: **4**.
-- Vyradené pre freshness/evidence: **5**.
+- Nové aktívne položky: **0**.
+- Vyradené jazykovým/hard-skill gateom: **6**.
+- Vyradené ako slabé/nízka hodnota: **5**.
+- Duplicitné/existing: **5**.
+- Vyradené pre freshness/evidence: **4**.
 - Vyradené pre lokalitu: **2**.
 
 ### LIVE mix
 - Aktívny feed: **33 položiek**.
-- Odhadovaný source mix po pridaní Akfos: **Profesia ~45,5 % / mimo Profesia ~54,5 %**.
-- `jobs-data.json.updatedAt` = **29. 8. 2026 06:35 CEST**, pretože pribudla reálna pracovná položka.
-- `source-audit.json.updatedAt` = **29. 8. 2026 06:35 CEST** ako dôkaz aktuálneho multi-source searchu.
+- Source mix zostáva približne **Profesia 45,5 % / mimo Profesia 54,5 %**.
+- `source-audit.json.updatedAt` = **29. 8. 2026 07:22 CEST** ako dôkaz aktuálneho multi-source searchu.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -210,22 +209,24 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 105. Schedule-premium / weekend burden normalizer.
 106. Workload-intensity extractor.
 107. Remote workplace & privacy burden flag.
-108. **Zero-hit reason classifier** — rozlíši `no-results`, `all-rejected`, `duplicate-only`, `access-blocked`, `parser-degraded` a `query-mismatch`.
-109. **Role-family source blind-spot matrix** — vedie maticu `source family × cieľový smer`, aby počet skontrolovaných zdrojov nezakryl dieru v konkrétnom lane.
-110. **Duty-mix decomposition** — odhadne podiel cieľovej práce vs. cold sales/telefonovanie/heavy physical/hard development a upraví Match podľa reálnej náplne.
-111. **Same-role repost churn-risk signal** — sleduje opakované zverejňovanie rovnakej roly jedným zamestnávateľom ako možný retention/churn risk.
-112. **Search-depth coverage quota** — každý zdroj dostane rotujúcu povinnosť kontrolovať nielen top výsledky/prvú stránku, ale aj hlbšiu vzorku výsledkov a alternatívne zoradenie.
-113. **Search-index staleness detector** — vedie fingerprint výsledkov, `publishedAt`, `crawledAt` a opakované rovnaké SERP položky; starý cache sa označí `index-stale` namiesto falošného `checked/no-results`.
-114. **CV requirement coverage score** — pred odporúčaním reakcie vypočíta percento požiadaviek ponuky, ktoré majú reálny dôkaz v MASTER CV/profile. Rozdelí ich na `proven`, `trainable-gap`, `unsupported`.
-115. **Query-to-hire attribution ledger** — ku každej prijatej/odmietnutej položke uloží presný discovery query variant a source path, ktorý ju našiel, aby bolo možné merať skutočný yield query formulácií.
-116. **Near-miss language substitution miner** — pri vyradení silnej remote/BA roly iba kvôli poľštine/B2/C1 automaticky spustí cielený search na tú istú role-family s `Slovak/Czech/A2/no language required`, aby každý kvalitný reject vytvoril okamžitú náhradnú discovery vetvu namiesto slepého konca.
-117. **Opportunity evidence TTL by field** — každému kritickému poľu (`salary`, `remotePolicy`, `language`, `publishedAt`, `applicationOpen`, `worksite`) pridelí vlastnú dobu platnosti a pri expirácii obnoví iba konkrétny dôkaz.
-118. **Onboarding-vs-recurring travel classifier** — oddelí jednorazové onboarding/školenie/cestu od pravidelného hybridného dochádzania. Vďaka tomu sa 100 % remote rola s jednorazovým školením zbytočne nevyradí, ale pravidelný vzdialený hybrid neprejde lokalitným gateom.
-119. **Screening-question evidence prefill map** — pri top ponuke vytiahne typické screening otázky z apply flow a ku každej priradí iba overené fakty z MASTER profilu/CV (`proven`, `needs-confirmation`, `unsupported`). Skráti reakciu a zabráni nepravdivým odpovediam bez automatického odoslania.
-120. **Search freshness vs content freshness split** — oddelí `lastSearchAt` od `jobs-data.updatedAt`. Radar tak nebude označovať feed za stale len preto, že posledný search nenašiel novú ponuku; zároveň sa nebude falošne meniť timestamp pracovných dát bez reálnej zmeny obsahu.
-121. **Calendar-aware source weighting** — cez víkend zvýši discovery kapacitu pre Upwork/freelance, community a remote indexy, ktoré reálne publikujú aj mimo pracovných dní; firemné kariéry/ÚPSVR pritom ostanú povinne kontrolované.
-122. **Probation & termination-risk extractor — NOVÉ** — pri ponuke oddelene vytiahne skúšobnú dobu, dobu určitú/neurčitú, výpovednú lehotu, agentúrny/contract-to-hire model a výkonové podmienky. Cieľ: vysoký Match nesmie zakryť vysoké riziko rýchlej straty príjmu alebo nejasnej stability.
-123. **Exclusivity / non-compete / IP-risk flag — NOVÉ** — pri verejne dostupných podmienkach označí exkluzivitu, zákaz konkurenčnej práce, rozsah prevodu IP, povinný monitoring alebo neprimerané obmedzenia freelancera/zamestnanca. Neháda podmienky, iba eviduje dôkaz alebo `unknown`; pomáha vyradiť právne nevýhodné zákazky ešte pred investíciou času do reakcie.
+108. Zero-hit reason classifier.
+109. Role-family source blind-spot matrix.
+110. Duty-mix decomposition.
+111. Same-role repost churn-risk signal.
+112. Search-depth coverage quota.
+113. Search-index staleness detector.
+114. CV requirement coverage score.
+115. Query-to-hire attribution ledger.
+116. Near-miss language substitution miner.
+117. Opportunity evidence TTL by field.
+118. Onboarding-vs-recurring travel classifier.
+119. Screening-question evidence prefill map.
+120. Search freshness vs content freshness split.
+121. Calendar-aware source weighting.
+122. Probation & termination-risk extractor.
+123. Exclusivity / non-compete / IP-risk flag.
+124. **Selection-location burden gate — NOVÉ** — pri remote/HO ponuke oddelene eviduje miesto a povinnosť osobného pohovoru, assessmentu, onboardingu a pravidelnej práce. Remote rola tak neprejde automaticky ako `remote-ok`, ak výber alebo onboarding vyžaduje opakované drahé cesty do vzdialeného mesta/krajiny; jednorazová primeraná cesta sa naopak nepomýli s recurring hybridom.
+125. **Critical-field conflict bundle — NOVÉ** — ak sa direct career, jobboard a index rozchádzajú v kritickom poli (`pay`, `language`, `remotePolicy`, `worksite`, `contract`), uloží všetky verzie spolu so sourceTrust a observedAt a nastaví stav `conflict`. Radar nesmie z konfliktu vybrať optimistickejšiu hodnotu len preto, že zvyšuje Match; najprv sa musí určiť autoritatívny alebo novší dôkaz. Praktický trigger z tohto behu: Arvin & Benet 1 400 vs. 1 600 € a AJ výhoda vs. B1 v štruktúre.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
