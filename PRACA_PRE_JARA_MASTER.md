@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 29. 8. 2026 17:35 CEST
+Aktualizované: 29. 8. 2026 18:24 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -64,33 +64,35 @@ Aktualizované: 29. 8. 2026 17:35 CEST
 30. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 31. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 29. 8. 2026 17:35 CEST — LATEST
+## SOURCE AUDIT — 29. 8. 2026 18:24 CEST — LATEST
 Reálne prehľadané skupiny: **Profesia; direct company careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Pretlak/StartupJobs/WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia; cross-source corroboration.** Spolu **10 nezávislých kontrolovaných skupín**, minimálne 8 source families a viac než 5 mimo Profesia.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky do `jobs-data.json`: 0.** Feed zostal zámerne nezmenený a `updatedAt` sa neposúval bez obsahovej zmeny.
-- **Upwork:** čerstvé worldwide remote výsledky boli prevažne generické VA/admin ponuky. Nové nálezy zahŕňali `Virtual Assistant needed for administrative tasks` za **15 USD fixed** s **20–50 proposals**, `Virtual Assistant for Data Entry` za **5 USD fixed**, `Data Entry CRM & Virtual Assistant Specialist` za **10 USD fixed** a UK-hours full-time VA so silnou požiadavkou na písanú aj hovorenú angličtinu. Žiadna neprekonala súčasné LIVE priority po value/language/evidence gate.
-- **LinkedIn:** Wolt Bratislava Support Associate bol reálne overený, ale vyžaduje **minimum B2 English**, preto nevstúpil do LIVE.
-- **Reddit/WP komunity:** dnešné nálezy sú `FOR HIRE` WordPress/WooCommerce developer posty, nie konkrétny hiring lead pre Jara.
-- **Brigada.sk/Worki/tech-creative:** bez nového kandidáta, ktorý by zlepšil web/admin/tech/driver priority pri zachovaní BA/remote a jazykového gateu.
+- **Profesia:** dnešný nový AYURCOS/SPA CEYLON hit v Eurovei zahŕňa e-shop/Wolt objednávky, ale požaduje **B1 AJ** a ponúka približne **1 000–1 300 €/mes.**, preto neprekonáva súčasné priority. Dnešný ČSOB produktový manažér je odborne mimo cieľového profilu.
+- **Worki:** Nutra Group remote call-center ponúka **1 200–2 500 €/mes.**, bez cudzieho jazyka, ale ide o výrazný aktívny telefonický predaj. Navyše search index ho označil ako aktualizovaný 29.8., zatiaľ čo detail uvádza update 18.8.; freshness konflikt = neaktivovať bez čerstvého detailového dôkazu.
+- **Brigada.sk:** BA pokladňa/dokladanie za **13,15 €/h** bola jednorazová ranná zmena 29.8.; v čase auditu už nebola reálne použiteľná.
+- **Upwork:** čerstvé worldwide remote výsledky boli prevažne generické alebo low-value: 15 USD fixed admin, 5 USD data-entry, 10 USD CRM/data-entry, 5 USD WooCommerce fixed; full-time UK-hours VA vyžaduje strong spoken/written English. Žiadna neprekonala LIVE priority.
+- **LinkedIn:** Wolt Bratislava Support Associate zostáva hard language reject pre **minimum B2 English**.
+- **Reddit/WP komunity:** dnešné nálezy sú `FOR HIRE` WordPress/WooCommerce developer posty, nie hiring leady.
 - **Facebook:** **0 verified hits**; verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom. Coverage zostáva `limited`.
 
 ### Run summary
 - Reálne skontrolované zdrojové skupiny: **10**.
 - Nové aktívne položky: **0**.
 - Vyradené jazykovým/hard-skill gateom: **6**.
-- Vyradené ako slabé/nízka hodnota: **7**.
+- Vyradené ako slabé/nízka hodnota: **8**.
 - Duplicitné/existing: **4**.
-- Vyradené pre freshness/evidence: **2**.
+- Vyradené pre freshness/evidence: **3**.
 - Vyradené pre lokalitu: **1**.
-- Vyradené pre neuskutočniteľné časové okno: **1**.
+- Vyradené pre neuskutočniteľné časové okno: **2**.
 
 ### LIVE mix
 - Aktívny feed: **34 položiek**.
 - Source mix ostáva približne **Profesia 44,1 % / mimo Profesia 55,9 %**.
 - `jobs-data.json.updatedAt` = **29. 8. 2026 10:27:16 CEST** — bez obsahovej zmeny.
-- `source-audit.json.updatedAt` = **29. 8. 2026 17:35:43 CEST**.
-- `job-sources.json.updatedAt` = **29. 8. 2026 17:35:43 CEST**.
+- `source-audit.json.updatedAt` = **29. 8. 2026 18:24:00 CEST**.
+- `job-sources.json.updatedAt` = **29. 8. 2026 18:24:00 CEST**.
 - Freshness reason: **`fresh-source-audit-no-content-change`**, nie zlyhanie zberu.
 
 ## FAIL-CLOSED pravidlá
@@ -247,8 +249,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 141. Rolling source-mix window.
 142. **Title-vs-scope seniority resolver** — senioritu neodvodzovať z názvu `Manager/Specialist/Junior`, ale zo skutočných povinností, ownershipu, požadovaných rokov praxe, rozhodovacích právomocí a hard-skillov.
 143. **Application-deadline confidence model** — rozlíšiť explicitný deadline, `open until filled`, inferred deadline a neoverený/žiadny deadline; každý stav dostane confidence a vlastnú recheck SLA.
-144. **Generic-post / low-specificity suppression — NOVÉ** — pri freelance a VA inzerátoch merať konkrétnosť zadania: jasné deliverables, očakávaný workload/hodiny, nástroje, zodpovednosť, časové pásmo a spôsob odovzdania. Generické texty typu „administrative tasks / help our team“ bez scope detailu nedostanú vysokú prioritu iba preto, že sú čerstvé. Praktický prínos: menej času a Connects na neurčité low-value ponuky a vyššia kvalita shortlistu.
-145. **Freelance hire-to-spend anomaly signal — NOVÉ** — pri Upwork/freelance klientoch počítať spend na hire, pomer aktívnych hires, vek účtu a opakované micro-contracty. Extrémny počet hires pri veľmi nízkom celkovom spend (napr. desiatky hires za pár dolárov na zákazku) znižuje client quality aj apply-now prioritu. Praktický prínos: menej reakcií na churn/microtask klientov a vyššia šanca na stabilnejšiu, lepšie platenú zákazku.
+144. **Generic-post / low-specificity suppression** — pri freelance a VA inzerátoch merať konkrétnosť zadania: jasné deliverables, workload/hodiny, nástroje, zodpovednosť, časové pásmo a spôsob odovzdania.
+145. **Freelance hire-to-spend anomaly signal** — pri Upwork/freelance klientoch počítať spend na hire, pomer aktívnych hires, vek účtu a opakované micro-contracty.
+146. **Employer stability / continuity signal — NOVÉ** — pre TPP a dlhodobé kontrakty oddeliť legitimitu firmy od pravdepodobnosti stabilnej práce: vek a veľkosť firmy, opakované náborové churn signály, verejné rušenie pobočiek/layoffs, dĺžka existencie role a dôveryhodné finančno-prevádzkové signály. Praktický prínos: rovnaký Match už nebude dávať rovnakú prioritu stabilnej firme a zamestnávateľovi s vysokým rizikom rýchleho zániku role.
+147. **Contract-duration / continuity score — NOVÉ** — explicitne normalizovať dobu kontraktu a pravdepodobnosť pokračovania: TPP neurčito, TPP určito, 6+ mesiacov, 3–6 mesiacov, 1–3 mesiace, jednorazová zákazka; oddeliť `contract-to-hire` marketing od reálne doloženého pokračovania. Praktický prínos: lepšie zoradenie podľa istoty príjmu a menej času na krátke zákazky, ktoré vyzerajú atraktívne iba hodinovou sadzbou.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
