@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T16:16:33+02:00",
+  "updatedAt": "2026-08-29T16:19:45+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 8,
-    "rejectedAsWeakOrLowValue": 7,
+    "rejectedByLanguageOrHardSkill": 9,
+    "rejectedAsWeakOrLowValue": 10,
     "duplicateOrExisting": 6,
     "rejectedByFreshnessOrEvidence": 2,
     "rejectedByLocation": 2,
@@ -13,18 +13,18 @@
     "liveFeedCount": 34,
     "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
     "freshnessStatus": "stale-because-no-new-winner",
-    "note": "Beh 29. 8. 2026 o 16:16 CEST reálne preveril Profesia, priame firemné kariéry, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WordPress komunity, verejne indexovaný Facebook a cross-source corroboration. Nový ESET Customer Support Specialist je BA technický support vhodný aj pre absolventa, ale vyžaduje aktívnu AJ ideálne B2 a základ od 1 250 EUR, preto neprešiel prioritným jazykovým/value filtrom. Čerstvé Upwork VA výsledky boli worldwide remote, no mali buď strong/fluent English burden, nízku sadzbu/fixed budget, US-hours požiadavku alebo už vyššiu konkurenciu. Brigada.sk má použiteľné BA zmeny na 30.-31.8., ale emergency retail/sklad lane neprebíja existujúce web/admin/driver priority. Reddit priniesol iba FOR HIRE ponuky služieb, nie hiring leady. Facebook verejná indexácia ostáva bez overeného priameho hiring postu. jobs-data.json sa nemenil a updatedAt nebol posunutý bez obsahovej zmeny."
+    "note": "Beh 29. 8. 2026 o 16:19 CEST reálne preveril Profesia, priame firemné kariéry, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WordPress komunity, verejne indexovaný Facebook a cross-source corroboration. Čerstvé Upwork výsledky boli worldwide remote, ale eCommerce VA mala iba 50 USD fixed, WordPress/WooCommerce developer 5 USD fixed, UK-hours full-time VA 650 USD fixed s excellent English a operations VA 5–7 USD/h so strong English + US hours. Reddit priniesol FOR HIRE alebo US-only developer výsledky. Žiadny nový kandidát neprešiel súčasne value, jazykovým, lokalitným a hard-skill gateom lepšie než LIVE priority. Facebook verejná indexácia ostáva bez overeného priameho hiring postu. jobs-data.json sa nemenil a updatedAt nebol posunutý bez obsahovej zmeny."
   },
   "sources": [
-    {"name":"Profesia – BA/remote všeobecne","family":"profesia","status":"checked","hits":9,"note":"Čerstvý sweep 29.8. zachytil napr. IT Administrátor Lugera 2 000 EUR, no scope obsahuje infra/servery/siete/SQL a medzinárodný IT tím; ďalšie čerstvé BA výsledky neprekonali existujúce priority."},
-    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":3,"note":"ESET/Hilti a ďalšie priame zdroje preverované; bez nového A2-compatible winnera nad LIVE priority."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":6,"note":"Nový ESET Customer Support Specialist overený: BA, entry-level/fresh graduates, basic tech support, ale AJ ideálne B2 a základ od 1 250 EUR. Foxelli remote e-commerce support je Slovakia-eligible, no fluent/near-native English, nočný rozvrh a service fee do 800 EUR ho vyradili."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"Bez novej BA/remote admin/tech položky s lepším fit/value než existujúci RM Biznis servis a ostatné LIVE výsledky."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":4,"note":"Použiteľné BA zmeny 30.-31.8. vrátane Ružinov 10,52 EUR/h a Bratislava 6,25 EUR/h; emergency lane, nie nový prioritný winner."},
+    {"name":"Profesia – BA/remote všeobecne","family":"profesia","status":"checked","hits":9,"note":"Čerstvý sweep 29.8. o 16:19; bez nového BA/remote e-shop/admin/support/driver winnera nad existujúce LIVE priority."},
+    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":3,"note":"Priame BA/remote firemné zdroje preverované; bez nového A2-compatible winnera nad LIVE priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":6,"note":"BA/remote výsledky preverované; relevantné support/e-commerce roly mali vyššiu AJ alebo neprekonali existujúce priority."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"Bez novej BA/remote admin/tech položky s lepším fit/value než existujúce LIVE výsledky."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":4,"note":"Použiteľné BA retail/sklad zmeny zostávajú emergency lane; neprebíjajú web/admin/driver priority."},
     {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového Slovakia-eligible non-hard-dev WordPress/e-commerce/support leadu."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":8,"note":"Čerstvé worldwide remote VA/admin/WordPress výsledky preverované. Operations VA 5-7 USD/h vyžaduje strong English a US hours; full-time UK-hours VA 650 USD fixed vyžaduje excellent spoken/written English; e-commerce VA 50 USD fixed a WordPress blog formatting 5 USD/post sú pod value prahom. Bez nového winnera."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":2,"note":"Dnešné WordPress/WooCommerce výsledky sú FOR HIRE ponuky služieb, nie dopyty po pracovníkovi; nevstupujú do LIVE feedu."},
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":10,"note":"Čerstvé worldwide remote výsledky preverované. eCommerce VA 50 USD fixed, WooCommerce developer 5 USD fixed a WordPress formatting 5 USD/post sú pod value prahom; UK-hours full-time VA 650 USD fixed vyžaduje excellent English; operations VA 5–7 USD/h vyžaduje strong English a časť US hodín. Bez nového winnera."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":3,"note":"Aktuálne výsledky sú prevažne FOR HIRE alebo US-only developer ponuky; bez konkrétneho Slovakia-eligible hiring leadu pre LIVE."},
     {"name":"Facebook WordPress/WooCommerce/BA jobs – verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits; verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom."},
-    {"name":"Cross-source corroboration / search indexes","family":"corroboration","status":"checked","hits":7,"note":"Použité na overenie čerstvosti, aktivity, jazykových požiadaviek, remote eligibility a canonical detailov. Reindex bez zmeny sa nepovažuje za nový inzerát."}
+    {"name":"Cross-source corroboration / search indexes","family":"corroboration","status":"checked","hits":8,"note":"Použité na overenie čerstvosti, aktivity, jazykových požiadaviek, remote eligibility, rozpočtu a canonical detailov. Reindex bez zmeny sa nepovažuje za nový inzerát."}
   ]
 }
