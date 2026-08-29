@@ -1,37 +1,43 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T22:15:12+02:00",
+  "updatedAt": "2026-08-29T22:24:00+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
     "significantlyChangedPriorityJobs": 0,
-    "rejectedByLanguageOrHardSkill": 3,
+    "rejectedByLanguageOrHardSkill": 4,
     "rejectedAsWeakOrLowValue": 4,
-    "duplicateOrExisting": 3,
-    "rejectedByFreshnessOrEvidence": 2,
+    "duplicateOrExisting": 2,
+    "rejectedByFreshnessOrEvidence": 3,
     "liveFeedCount": 35,
     "effectiveEligibleCount": 35,
     "jobsDataContentUpdatedAt": "2026-08-29T21:34:36+02:00",
     "freshnessStatus": "ok",
-    "note": "Audit 29. 8. 2026 o 22:15 CEST reálne preveril Profesia, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/tech-creative, WordPress Jobs, Upwork, Služby zamestnanosti/Kariera, Reddit/WP komunity a verejne indexovaný Facebook. Bez nového alebo významne zmeneného prioritného winnera. Profesia priniesla nový Vedúci administratívy / Office & Administration Manager v PRO EXTERIÉR (Ružinov, 1 550–1 850 EUR), ale detail uvádza VŠ I. stupňa, B2 angličtinu ako jazykovú požiadavku vedľa C2 slovenčiny a 5 rokov praxe; preto neprešiel hard-skill/profile gate. Lanža a Akfos zostávajú v čerstvom BA vodič/kuriér výpise aktívne. Nový Upwork Virtual Assistant Data Entry je worldwide remote, 20–50 USD/h a 15–20 proposals, ale klientský účet je úplne nový (od 27. 8. 2026) bez overenej histórie spend/hire, preto sa nepovyšuje nad existujúce priority. WooCommerce VA lead z predchádzajúceho dňa vyžaduje strong WooCommerce Subscriptions, Meta Ads, Xero a good written English, takže ide o vyšší hard-skill burden."
+    "note": "Audit 29. 8. 2026 o 22:24 CEST reálne preveril minimálne 10 zdrojových skupín: Profesia, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/tech-creative, WordPress Jobs, Upwork, Služby zamestnanosti/Kariera, Reddit/WP komunity a verejne indexovaný Facebook. Bez nového kandidáta, ktorý by bezpečne prebil existujúce priority. WordPress Jobs priniesol nové listingy z 27.-28.8., ale ide o senior/expert developer roly s custom themes, PHP/JS, API, server/DNS/SSH a ďalšími hard-skill požiadavkami. Upwork má čerstvý worldwide WordPress Website Cleanup & Professional Design Improvements za 190 USD, ale listing je označený Expert a je výrazne dizajnovo orientovaný, preto neprešiel minimálnym opportunity thresholdom. Brigada.sk aktuálne indexuje BA skladovú zmenu na 30.8. za 13,69 EUR/h a ďalšie zmeny za 10,50 EUR/h; bez priameho konkrétneho listing URL a detailu fyzickej záťaže ich tento beh nezaraďuje do LIVE feedu. Facebook ostáva 0 verified hits / limited."
   },
   "sources": [
-    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":3,"note":"Čerstvý BA office/admin a driver sweep. PRO EXTERIÉR nový listing odmietnutý pre VŠ/B2/5-ročnú prax. Lanža a Akfos sú na aktuálnom vodič/kuriér výpise stále aktívne."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Bez nového verified Bratislava/remote low-language-gate kandidáta nad existujúce e-commerce priority v tomto behu."},
-    {"name":"Worki.sk + Brigada.sk","family":"other-sk-jobboards","status":"checked","hits":0,"note":"Bez nového akčného BA/remote winnera; žiadna položka neprekonala existujúce priority po lokalitnom, jazykovom a value gate."},
+    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":0,"note":"Čerstvý BA/remote sweep bez nového low-language, low-hard-skill kandidáta nad existujúce priority; existujúce Lanža/Akfos a e-commerce priority ostávajú bez významnej zmeny."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Bez nového verified Bratislava/remote kandidáta s lepším fitom než aktuálne e-commerce/admin priority."},
+    {"name":"Worki.sk + Brigada.sk","family":"other-sk-jobboards","status":"checked","hits":5,"note":"Brigada.sk indexuje BA skladové zmeny 30.8. za 13,69 EUR/h a 31.8.-3.9. približne 10,50 EUR/h. Keďže v tomto behu nebol získaný priamy konkrétny listing URL ani detail fyzickej záťaže, položky ostávajú mimo LIVE feedu do priameho overenia."},
     {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového verified BA/remote low-language-gate kandidáta nad existujúce AI/e-commerce priority."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"note":"Cielený remote WordPress/WooCommerce sweep bez nového Slovakia-eligible non-hard-dev leadu nad existujúce priority."},
-    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":3,"note":"Virtual Assistant Data Entry je worldwide remote a 20–50 USD/h, ale klient je nový bez spend/hire histórie; trust gate neprešiel. WooCommerce Subscriptions VA má vyšší hard-skill burden (Subscriptions, Meta Ads, Xero, good written English). Staršie WordPress VA výsledky zostali slabšie alebo duplicitné."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":3,"note":"Nové listingy z 27.-28.8. sú prevažne senior/expert WordPress development: custom themes, PHP/JS, API, server management, DNS/SSH alebo India/Mumbai onsite. Odmietnuté hard-skill/lokalitným gateom."},
+    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":4,"note":"Čerstvý WordPress Website Cleanup & Professional Design Improvements je worldwide, 190 USD fixed, ale Expert a dizajnovo orientovaný; ďalšie dnešné webové výsledky sú hard-dev/Webflow alebo nízkej hodnoty. Bez nového winnera."},
     {"name":"Služby zamestnanosti / Kariera","family":"government-other","status":"checked","hits":0,"note":"Bez nového kvalifikovaného Bratislava/remote kandidáta po lokalitnom a hard-skill gate."},
     {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Bez nového konkrétneho, aktuálneho a Slovakia-eligible hiring leadu s dostatočným trust signálom."},
     {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage sa nepredstiera."},
-    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"ok","hits":3,"note":"Žiadny duplicate insert ani neodôvodnený status flip. LIVE feed zostáva 35 položiek. jobs-data updatedAt ostáva 21:34:36, pretože tento beh nepriniesol reálnu obsahovú zmenu; v čase auditu je stále pod 60-min freshness limitom."}
+    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"ok","hits":3,"note":"Žiadny duplicate insert, neodôvodnený status flip ani vzdialený onsite/hybrid insert. LIVE feed ostáva 35 položiek; jobs-data updatedAt 21:34:36 je stále v akceptovateľnej freshness hranici."}
   ],
   "writeStatus": {
     "jobsData": "no-change",
-    "jobsDataReason": "Žiadna nová alebo významne zmenená položka neprešla všetkými gate; updatedAt sa neposúva iba kvôli čerstvosti.",
+    "jobsDataReason": "Žiadna nová alebo významne zmenená položka neprešla všetkými gate; updatedAt sa neposúva iba kvôli auditu.",
     "jobsDataNonProf": "locked-no-change",
     "jobSources": "registry-valid-no-new-source-family",
+    "masterBacklog": "pending-safe-append",
+    "masterBacklogReason": "Dve nové rozvojové položky boli identifikované, ale konektor pre existujúci MASTER podporuje iba kompletnú náhradu súboru; bez bezpečného patch/append mechanizmu sa plný MASTER v tomto behu neprepisuje, aby sa nestratil existujúci backlog.",
     "freshnessBreach": false
-  }
+  },
+  "backlogCandidates": [
+    {"name":"Evidence-to-action latency score","benefit":"Meria čas od zverejnenia/overenia ponuky po okamih, keď je možné bezpečne reagovať; zvýhodní príležitosti, kde je priamy apply path a všetky kritické podmienky už overené."},
+    {"name":"One-shift opportunity lane","benefit":"Oddelí jednorazové BA brigády s termínom do 24–72 h od dlhodobých pracovných ponúk, vyžaduje priamy listing URL, presný čas, odmenu a fyzickú záťaž a zabráni ich miešaniu s kariérnym rankingom."}
+  ]
 }
