@@ -1,41 +1,35 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T20:23:11+02:00",
+  "updatedAt": "2026-08-29T21:13:14+02:00",
   "runSummary": {
-    "familiesChecked": 10,
+    "familiesChecked": 8,
     "newActiveJobs": 0,
-    "significantlyChangedPriorityJobs": 0,
-    "rejectedByLanguageOrHardSkill": 5,
-    "rejectedAsWeakOrLowValue": 5,
+    "significantlyChangedPriorityJobs": 1,
+    "rejectedByLanguageOrHardSkill": 4,
+    "rejectedAsWeakOrLowValue": 4,
     "duplicateOrExisting": 3,
     "rejectedByFreshnessOrEvidence": 3,
     "liveFeedCount": 34,
-    "effectiveEligibleCount": 33,
+    "effectiveEligibleCount": 34,
     "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
-    "freshnessStatus": "failed-over-60m-pending-safe-feed-mutation",
-    "note": "Audit 29. 8. 2026 o 20:23 CEST reálne preveril Profesia, priame firemné kariéry, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Služby zamestnanosti, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WP komunity a verejne indexovaný Facebook. Nový prioritný winner nebol nájdený. Najzaujímavejší nový lead je Upwork Virtual Assistant — Email, Social & Content Build: worldwide remote, WordPress + Mailchimp + Canva, 8–15 USD/h, 4–6 h/týždeň, klient 53k USD spend; kvôli 20–50 proposals, požadovanému hands-on Mailchimp/HTML/Canva/social creative a implicitnej angličtine zatiaľ neprebil existujúce LIVE priority. Foxelli E-commerce Technical Assistant má canonical LinkedIn stav 'No longer accepting applications' a zároveň hard Shopify Flow/Apps Script/REST/API + English požiadavky. Worki Nutra Group bolo dnes aktualizované, ale ide o aktívny telefonický predaj, preto low-value pre preferovaný profil. Brigada.sk dnešná BA zmena už časovo skončila. Facebook: 0 verified hits, coverage limited."
+    "freshnessStatus": "failed-over-60m-pending-safe-feed-write",
+    "note": "Audit 29. 8. 2026 o 21:13 CEST reálne preveril Profesia/Kariera, priame a canonical job pages, LinkedIn Jobs, GROWNi, Pretlak/AI smer a Upwork remote. Dôležitá korekcia: predchádzajúci audit označil LUNYS e-commerce za closed, ale aktuálny canonical LinkedIn výsledok opäť zobrazuje plný aktívny inzerát a text 'No longer accepting applications' sa v čerstvom výsledku nenachádza. Preto sa LUNYS nepovažuje za potvrdene uzavretý a posledné validné jobs-data sa zachovávajú. LEAF Implementation Support Specialist zostáva aktívny a vhodný. Nové remote výsledky Foxelli/TalentPop/SupportYourApp boli vyradené pre fluent/near-native English, German alebo vyšší hard-skill burden. Upwork Virtual Assistant Data Entry (20–50 USD/h, worldwide, posted 6h ago) bol vyradený pre nového klienta bez spend/hire histórie a slabý trust signal; Virtual Assistant — Email, Social & Content Build zostáva zaujímavý, ale neprekonal existujúce priority pre Mailchimp/HTML/Canva požiadavky a 20–50 proposals."
   },
   "sources": [
-    {"name":"Profesia – BA/remote všeobecne","family":"profesia","status":"checked","hits":0,"note":"Čerstvý sweep 29.8. 20:23; bez nového BA/remote kandidáta, ktorý by po jazykovom, hard-skill a value gate prebil existujúce priority."},
-    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":1,"note":"Foxelli E-commerce Technical Assistant bol overený cez canonical LinkedIn detail ako už neprijímajúci žiadosti; zároveň má Shopify Flow/Apps Script/REST/API + English hard burden. Bez nového winnera."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":4,"note":"Čerstvé BA/remote support/e-commerce výsledky preverované. TalentPop vyžaduje fluent German + English; Klarstein France vyžaduje francúzštinu; SupportYourApp fluent English. Foxelli Tech Assistant closed. Bez vhodného nového LIVE kandidáta."},
-    {"name":"Worki.sk","family":"worki","status":"ok","hits":1,"note":"Nutra Group call-center bolo aktualizované 29.8.2026, 100 % HO, 1 200–2 500 EUR, ale ide o aktívny telefonický predaj z teplej databázy; nepridáva sa kvôli nízkej zhode s preferovanými smermi."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":1,"note":"BA pokladník/dokladač 13,15 EUR/h bol viazaný na 29.8. 06:30–13:00 a v čase auditu už nie je akčný; nepridáva sa."},
-    {"name":"Kariera.sk / Služby zamestnanosti","family":"other-sk-jobboards","status":"checked","hits":0,"note":"Cielený BA/admin/IT-support sweep bez nového kvalifikovaného winnera; vzdialené alebo odborné nerelevantné výsledky vyradené."},
-    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":1,"note":"Humánny pokrok HR Specialist je remote + BA meetings, ale vyžaduje skúsený HR profil a mzdovú/HR ownership prax; nie je vhodná near-fit rola. Bez nového WP/WooCommerce support winnera."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":5,"note":"Najlepší nový lead: Virtual Assistant — Email, Social & Content Build, worldwide remote, WordPress/Mailchimp/Canva, 8–15 USD/h, 4–6 h/týždeň, klient 53k USD spend a 34 hires. Neaktivovaný kvôli 20–50 proposals a požadovanému hands-on Mailchimp/HTML/Canva/social creative. Operations & Campaign Support je iba 5–7 USD/h, strong English a US-hours. Ostatné boli staršie/low-value."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":0,"note":"Bez konkrétneho čerstvého hiring leadu vhodného pre Slovensko; nájdené posty boli staršie, US-only alebo FOR HIRE."},
-    {"name":"Facebook WordPress/WooCommerce/BA jobs – verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verejne overiteľných aktuálnych hiring postov s priamym linkom; coverage sa nepredstiera."}
+    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":0,"note":"Čerstvý BA/admin/e-commerce/tech-support sweep bez nového kandidáta, ktorý by po hard-gate a value-gate prebil existujúce priority."},
+    {"name":"Kariera.sk / ÚPSVR mirror","family":"other-sk-jobboards","status":"checked","hits":3,"note":"Potvrdený Dotypos support ako existujúci lead; staré Zoznam/Syntex ponuky sú neaktívne. ESET 2 700 EUR support rola má výrazne vyšší enterprise/security skill burden, preto sa neaktivuje."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":6,"note":"LUNYS canonical detail znovu zobrazuje plný inzerát; fresh find nenašiel text 'No longer accepting applications'. TalentPop vyžaduje fluent German + English; SupportYourApp fluent English; Foxelli support near-native English. Bez nového vhodného winnera."},
+    {"name":"GROWNi / LEAF","family":"growni","status":"ok","hits":1,"note":"LEAF Implementation Support Specialist zostáva aktívny: prevažne home office, flexibilný skrátený úväzok, od 1 500 EUR FTE, praktická AI/backoffice/customer-support zhoda a bez požiadavky na perfektnú angličtinu."},
+    {"name":"Pretlak / AI smer","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového verified BA/remote near-fit kandidáta, ktorý by prekonal aktuálny OVB AI/automation lead."},
+    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":3,"note":"Virtual Assistant Data Entry: posted ~6h, worldwide, 20–50 USD/h, 15–20 proposals, ale klient člen len od 27.8.2026 bez spend/hire history — low-trust, nepridané. Email/Social/Content Build zostáva near-fit, no má Mailchimp/HTML/Canva/social creative burden a 20–50 proposals. WordPress/Elementor support rola je viac hard-web a on-call charakter."},
+    {"name":"Remote support/e-commerce company roles","family":"company-remote","status":"checked","hits":4,"note":"Foxelli a SupportYourApp výsledky preverované; relevantné role majú fluent/near-native English alebo už neprijímajú prihlášky. Bez vhodného nového leadu."},
+    {"name":"Freshness / dedupe integrity","family":"feed-integrity","status":"degraded","hits":1,"note":"Deduplikácia zachovala 34 položiek bez nového duplicate insertu. jobs-data updatedAt je však stále 10:27 CEST; bezpečný full-file write sa v tomto behu nepodarilo vykonať cez dostupný konektor bez prepisu celého súboru, preto fail-closed zachováva validné dáta."}
   ],
   "writeStatus": {
-    "jobsData": "pending-safe-mutation",
-    "jobsDataReason": "LUNYS má canonical closure evidence z predchádzajúceho auditu, ale v tomto behu nebol bezpečne vykonaný full-file parse/mutate/validate zápis cez dostupný GitHub konektor. Fail-closed zachováva ostatných 33 validných položiek.",
-    "jobsDataRequiredChange": "lunys-ecom: status active -> inactive/closed; priority today -> normal/closed; po zápise očakávaný aktívny feed count 33.",
+    "jobsData": "unchanged-valid-but-stale",
+    "jobsDataReason": "Aktuálny audit podporuje zachovanie LUNYS ako active; nebola zistená nová alebo významne zmenená ponuka vyžadujúca obsahový insert/delete. Feed však nebolo možné bezpečne prepisovať iba kvôli refresh timestampu bez kompletnej validovanej full-file mutácie.",
+    "jobsDataRequiredChange": "Pri najbližšom bezpečnom full-file zápise po reálnej kontrole zdrojov aktualizovať updatedAt a verifiedAt iba pri skutočne overených položkách; LUNYS neoznačovať closed bez opätovne potvrdeného canonical closure signálu.",
     "jobsDataNonProf": "no-change-required",
-    "masterBacklogPending": [
-      "150. Opportunity marginal-gain gate — nový lead sa aktivuje iba ak prináša jasný prírastok oproti existujúcemu TOP v aspoň jednej osi: vyšší fit, lepšia odmena, nižšia konkurencia, lepší schedule alebo unikátny smer; zabráni nafukovaniu feedu pri slabých near-duplicates.",
-      "151. Evidence-weighted application readiness — pre každý lead oddelene skóruje, či už existujú dôkazy pre požadované nástroje/portfolio (napr. Mailchimp, Canva, WordPress, Shopify); znižuje čas strávený na ponukách, kde by reakcia vyžadovala vymýšľanie alebo veľké doučenie."
-    ],
     "freshnessBreach": true
   }
 }
