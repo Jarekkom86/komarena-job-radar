@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T17:14:29+02:00",
+  "updatedAt": "2026-08-29T17:35:43+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 8,
-    "rejectedAsWeakOrLowValue": 8,
-    "duplicateOrExisting": 5,
+    "rejectedByLanguageOrHardSkill": 6,
+    "rejectedAsWeakOrLowValue": 7,
+    "duplicateOrExisting": 4,
     "rejectedByFreshnessOrEvidence": 2,
-    "rejectedByLocation": 2,
+    "rejectedByLocation": 1,
     "rejectedByTimeWindow": 1,
     "liveFeedCount": 34,
     "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
     "freshnessStatus": "fresh-source-audit-no-content-change",
-    "note": "Beh 29. 8. 2026 o 17:14 CEST reálne preveril Profesia, priame firemné kariéry, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WordPress komunity, verejne indexovaný Facebook a cross-source corroboration. VÚB Digitálny agent a Confilogi zostávajú aktívne. Čerstvé Profesia výsledky v support/e-commerce zahŕňali najmä jazykovo špecifické roly, KOOPERATIVA online predaj a leiCON Machine Control; neprekonali existujúce LIVE priority po language/hard-skill/value gate. Upwork priniesol worldwide remote VA/WordPress výsledky, ale najlepší nový kandidát 8–15 USD/h mal 20–50 proposals a širší Mailchimp/Canva/Squarespace skill mix; ďalšie VA výsledky boli 4–7 USD/h alebo vyžadovali strong/fluent English a US hours. Žiadny nový kandidát neprešiel súčasne value, jazykovým, lokalitným a hard-skill gateom lepšie než LIVE priority. jobs-data.json sa obsahovo nemenil a jeho updatedAt nebol posunutý bez obsahovej zmeny; čerstvosť kontroly je evidovaná týmto source-audit timestampom."
+    "note": "Beh 29. 8. 2026 o 17:35 CEST reálne preveril Profesia, priame firemné kariéry/cross-source company výsledky, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WordPress komunity, verejne indexovaný Facebook a cross-source corroboration. Od predchádzajúceho auditu nevznikol nový kandidát, ktorý by súčasne prešiel BA/remote hard gate, A2/B1 jazykovým profilom, value floorom a hard-skill gateom lepšie než existujúce LIVE priority. Čerstvé Upwork výsledky zahŕňali generické VA/admin ponuky za 5–15 USD fixed s 10–50 proposals, CRM/data-entry microtasky a full-time UK-hours VA s požiadavkou strong/excellent English; nevstúpili do LIVE. Wolt Bratislava Support Associate bol vyradený pre minimum B2 English. Reddit priniesol iba FOR HIRE WordPress developer posty, nie hiring lead. Facebook verejná indexácia opäť neposkytla konkrétny overiteľný hiring post. jobs-data.json sa obsahovo nemenil a jeho updatedAt nebol posunutý bez obsahovej zmeny."
   },
   "sources": [
-    {"name":"Profesia – BA/remote všeobecne","family":"profesia","status":"checked","hits":11,"note":"Čerstvý sweep 29.8. o 17:14; VÚB a Confilogi potvrdené, nové support/e-commerce výsledky neprekonali existujúce LIVE priority po language/hard-skill/value gate."},
-    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":3,"note":"Priame BA/remote firemné zdroje preverované; bez nového A2-compatible winnera nad LIVE priority."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":5,"note":"BA/remote výsledky preverované; relevantné support/e-commerce roly mali vyššiu AJ alebo neprekonali existujúce priority."},
+    {"name":"Profesia – BA/remote všeobecne","family":"profesia","status":"checked","hits":10,"note":"Čerstvý sweep 29.8. o 17:35; bez nového BA/remote low-language-gate winnera nad existujúce LIVE priority."},
+    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":3,"note":"Priame BA/remote firemné zdroje a canonical company výsledky preverované; bez nového A2-compatible winnera nad LIVE priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":5,"note":"BA/remote výsledky preverované. Wolt Support Associate Bratislava má minimum B2 English; ďalšie relevantné support/e-commerce roly neprešli language/value gateom."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"Bez novej BA/remote admin/tech položky s lepším fit/value než existujúce LIVE výsledky."},
     {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":4,"note":"Použiteľné BA retail/sklad zmeny zostávajú emergency lane; neprebíjajú web/admin/driver priority."},
     {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového Slovakia-eligible non-hard-dev WordPress/e-commerce/support leadu."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":6,"note":"Worldwide remote výsledky preverované. Najlepší nový WordPress/marketing VA bol 8–15 USD/h, 4–6 h/týždeň, ale mal 20–50 proposals a široký Mailchimp/Canva/Squarespace skill mix. Ďalšie VA výsledky boli 4–7 USD/h alebo vyžadovali strong/fluent English a časť US hodín. Bez nového winnera."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":2,"note":"Bez konkrétneho nového Slovakia-eligible hiring leadu pre LIVE."},
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":7,"note":"Worldwide remote sweep 29.8. o 17:35: nové generické VA/admin ponuky boli prevažne 5–15 USD fixed, 10–50 proposals alebo mali nejasný workload; UK-hours full-time VA vyžaduje strong/excellent English. Bez nového winnera nad aktuálny Book Coaching VA/WooCommerce lane."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":2,"note":"Dnešné výsledky boli FOR HIRE WordPress/WooCommerce developer ponuky, nie konkrétny Slovakia-eligible hiring lead."},
     {"name":"Facebook WordPress/WooCommerce/BA jobs – verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits; verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom."},
-    {"name":"Cross-source corroboration / search indexes","family":"corroboration","status":"checked","hits":9,"note":"Použité na overenie čerstvosti, aktivity, jazykových požiadaviek, remote eligibility, rozpočtu a canonical detailov. Reindex bez zmeny sa nepovažuje za nový inzerát."}
+    {"name":"Cross-source corroboration / search indexes","family":"corroboration","status":"checked","hits":8,"note":"Použité na overenie čerstvosti, aktivity, jazykových požiadaviek, remote eligibility, rozpočtu, competition a canonical detailov. Reindex bez obsahovej zmeny sa nepovažuje za nový inzerát."}
   ]
 }
