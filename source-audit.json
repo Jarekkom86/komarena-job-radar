@@ -1,30 +1,34 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T18:24:00+02:00",
+  "updatedAt": "2026-08-29T19:16:00+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 6,
-    "rejectedAsWeakOrLowValue": 8,
+    "significantlyChangedPriorityJobs": 1,
+    "rejectedByLanguageOrHardSkill": 3,
+    "rejectedAsWeakOrLowValue": 5,
     "duplicateOrExisting": 4,
-    "rejectedByFreshnessOrEvidence": 3,
-    "rejectedByLocation": 1,
-    "rejectedByTimeWindow": 2,
+    "rejectedByFreshnessOrEvidence": 2,
     "liveFeedCount": 34,
     "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
-    "freshnessStatus": "fresh-source-audit-no-content-change",
-    "note": "Beh 29. 8. 2026 o 18:24 CEST reálne preveril Profesia, priame firemné kariéry/cross-source company výsledky, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WordPress komunity, verejne indexovaný Facebook a cross-source corroboration. Dnešná Profesia AYURCOS Eurovea má e-shop/Wolt presah, ale B1 AJ a 1 000–1 300 EUR mesačne ju držia pod LIVE prioritami. Worki Nutra Group je remote a bez cudzieho jazyka, ale detail uvádza posledný update 18. 8. 2026, zatiaľ čo search index ho označil ako aktualizovaný 29. 8.; navyše ide o výrazný aktívny telefonický predaj, preto neprešiel freshness/value gateom. Upwork priniesol čerstvé worldwide VA/admin a WooCommerce výsledky, no prevažne generické alebo low-value fixed-price ponuky, prípadne silnú angličtinu/UK-hours. LinkedIn Wolt zostáva B2 English reject. Reddit dnešné WP nálezy sú FOR HIRE, nie hiring leady. Nevznikla nová ani významne zmenená prioritná ponuka; jobs-data.json sa obsahovo nemenil a jeho updatedAt sa neposúval bez obsahovej zmeny."
+    "freshnessStatus": "update-error-priority-status-not-written",
+    "note": "Čerstvý audit 29. 8. 2026 o 19:16 CEST reálne preveril Profesia, GROWNi/priame kariéry, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, Upwork/freelance, Reddit/WP komunity, verejne indexovaný Facebook a cross-source corroboration. Významná zmena: canonical LinkedIn detail LUNYS E-commerce špecialista teraz výslovne uvádza 'No longer accepting applications'. LUNYS preto už nemá byť vedený ako aktívna TOP priorita. LEAF bol znovu potvrdený ako aktívny: GROWNi detail je aktualizovaný 27.8.2026, prihlášky sa posudzujú priebežne a najneskôr do 14.9.2026. Nový Profesia hit Lugera IT Administrátor (2 000 EUR) je technicky výrazne náročnejší: infra, servery, LAN/WiFi, SQL a medzinárodný IT tím; neprekonáva cieľové priority. AYURCOS Eurovea ostáva low-value/B1 reject. Počas tohto behu sa nepodarilo bezpečne prepísať jobs-data.json bez rizika straty validných položiek, preto fail-closed pravidlo zachovalo posledný validný feed a chyba zápisu je explicitne evidovaná."
   },
   "sources": [
-    {"name":"Profesia – BA/remote všeobecne","family":"profesia","status":"ok","hits":11,"note":"Čerstvý sweep 29.8. o 18:24; AYURCOS Eurovea je nový dnešný BA hit, ale B1 AJ a 1 000–1 300 EUR/mes. neprekonávajú LIVE priority. ČSOB product-manager hit je odborne mimo cieľového profilu."},
-    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":2,"note":"Canonical company/cross-source výsledky preverované; bez novej A2/B1-compatible priority nad existujúci feed."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":3,"note":"Wolt BA part-time support vyžaduje minimum B2 English; ďalšie aktuálne výsledky neprešli language/value gateom."},
-    {"name":"Worki.sk","family":"worki","status":"ok","hits":2,"note":"Nutra Group remote call-center: bez cudzieho jazyka a 1 200–2 500 EUR, ale silný aktívny predaj. Search index uviedol update 29.8., detail stránky 18.8.; freshness konflikt = neaktivovať bez nového dôkazu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":3,"note":"Dnešná BA pokladňa/dokladanie 13,15 EUR/h bola jednorazová ranná zmena 29.8. a v čase auditu už časovo nerelevantná. Ostatné nationwide finančné/neurčité ponuky neprešli quality gateom."},
-    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového Slovakia-eligible non-hard-dev WordPress/e-commerce/support leadu."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":8,"note":"Worldwide remote sweep 29.8. o 18:24: nové VA/admin výsledky zahŕňajú 15 USD fixed generic admin, 5 USD data-entry, 10 USD CRM/data-entry, 650 USD full-time UK-hours VA so strong spoken/written English a WooCommerce 5 USD fixed s 20–50 proposals. Bez winnera nad aktuálny feed."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":3,"note":"Dnešné WordPress/WooCommerce výsledky sú FOR HIRE developer posty, nie konkrétne hiring leady pre Jara."},
-    {"name":"Facebook WordPress/WooCommerce/BA jobs – verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; 0 verified hits, nič sa nepredstiera."},
-    {"name":"Cross-source corroboration / search indexes","family":"corroboration","status":"ok","hits":9,"note":"Použité na overenie aktivity, jazykových požiadaviek, remote eligibility, budgetu, competition a rozporov index vs detail. Reindex bez detailového freshness dôkazu sa nepovažuje za nový inzerát."}
-  ]
+    {"name":"Profesia – BA/remote všeobecne","family":"profesia","status":"ok","hits":4,"note":"Čerstvý sweep 29.8. o 19:16. Nový Lugera IT Administrátor za 2 000 EUR má infra/servery/LAN-WiFi/SQL scope a je mimo vhodného non-hard-dev profilu; AYURCOS zostáva B1/low-value reject."},
+    {"name":"Priame firemné kariéry / GROWNi","family":"company-careers","status":"ok","hits":2,"note":"LEAF Implementation Support Specialist znovu potvrdený ako aktívny; GROWNi detail aktualizovaný 27.8.2026, priebežné posudzovanie, najneskorší termín prihlášky 14.9.2026."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"changed","hits":3,"note":"Významná zmena: LUNYS E-commerce špecialista na canonical LinkedIn detaile uvádza No longer accepting applications. Feed má byť pri najbližšom bezpečnom zápise označený closed/inactive."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"Bez nového kandidáta, ktorý by prekonal existujúce priority; staršie freshness konflikty sa nepreklasifikovali bez detailového dôkazu."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":1,"note":"Bez novej použiteľnej BA brigády s vyššou hodnotou než existujúci feed."},
+    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":2,"note":"OVB zostáva relevantný existujúci kandidát; bez nového Slovakia-eligible non-hard-dev winnera."},
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":4,"note":"Čerstvý sweep priniesol najmä generické VA a WooCommerce/development zákazky; bez nového winnera nad existujúce remote priority."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":0,"note":"Bez konkrétneho aktuálneho hiring leadu vhodného pre LIVE feed."},
+    {"name":"Facebook WordPress/WooCommerce/BA jobs – verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verejne overiteľných aktuálnych hiring postov; coverage sa nepredstiera."},
+    {"name":"Cross-source corroboration / search indexes","family":"corroboration","status":"ok","hits":6,"note":"Použité na potvrdenie stavu LUNYS, LEAF, OVB a ďalších výsledkov. LUNYS closure má priamy canonical dôkaz."}
+  ],
+  "writeStatus": {
+    "jobsData": "blocked-fail-closed",
+    "jobsDataReason": "Bezpečný full-file rewrite sa v tomto behu nepodarilo dokončiť bez rizika straty validných položiek. Posledné validné jobs-data.json bolo ponechané nezmenené podľa fail-closed pravidla.",
+    "jobsDataRequiredChange": "LUNYS lunys-ecom: active -> closed/inactive; verifiedAt 2026-08-29T19:16:00+02:00; updatedAt zmeniť až spolu s týmto reálnym obsahovým zásahom."
+  }
 }
