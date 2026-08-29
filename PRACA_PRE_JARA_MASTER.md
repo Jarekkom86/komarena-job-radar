@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 29. 8. 2026 12:24 CEST
+Aktualizované: 29. 8. 2026 13:21 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -64,36 +64,38 @@ Aktualizované: 29. 8. 2026 12:24 CEST
 30. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 31. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 29. 8. 2026 12:24 CEST — LATEST
+## SOURCE AUDIT — 29. 8. 2026 13:21 CEST — LATEST
 Reálne prehľadané skupiny: **Profesia; direct company careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Pretlak/tech-creative; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu **10 nezávislých kontrolovaných skupín**, z toho 9 mimo Profesia.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky do `jobs-data.json`: 0.** `jobs-data.json` zostal zámerne nezmenený; fail-closed pravidlo zakazuje pridávať slabší výsledok iba kvôli frekvencii behu alebo source mixu.
-- **Pretlak — Powerlogy Marketing Specialist:** Bratislava hybrid, od 1 600 €, obsahovo veľmi silný fit pre e-shop/WordPress/WooCommerce/AI search a správu obsahu. Tvrdý problém je explicitná požiadavka **slovenčina a angličtina na veľmi dobrej úrovni**, preto bez aktivácie. Zdroj: https://pretlak.com/en/job/powerlogy/marketing-specialist/IAnwjJvd_
-- **LinkedIn — Wolt Support Associate (Part Time), Bratislava:** relevantný customer-support smer, ale explicitne vyžaduje **professional working proficiency in English, minimum B2** a večerné/víkendové zmeny. Bez aktivácie. Zdroj: https://sk.linkedin.com/jobs/view/support-associate-part-time-at-wolt-4456874250
-- **Upwork — Virtual Assistant Full time job / UK engineering company:** worldwide remote a dlhodobá spolupráca, ale požaduje **strong written and spoken English** a telefonickú komunikáciu s klientmi. Language/channel burden je nad A2 profilom. Bez aktivácie. Zdroj: https://www.upwork.com/freelance-jobs/apply/Virtual-Assistant-Full-time-job_~022093317274650570398/
-- **Upwork — eCommerce Virtual Assistant for Multi-Platform Store:** tematicky dobrý admin/e-commerce fit a worldwide remote, ale **$50 fixed-price pre complex project** je scope-to-pay mismatch; bez aktivácie. Zdroj: https://www.upwork.com/freelance-jobs/apply/eCommerce-Virtual-Assistant-for-Multi-Platform-Store_~022092911791618625394/
-- **Upwork WordPress leads:** nové kusy boli prevažne $5–50 fixed, expert/hard-dev alebo s 20–50 proposals; neprebíjajú existujúce WordPress/VA leady.
-- **Worki.sk:** aktuálne admin/customer-service výsledky overené; RM Biznis servis ostáva existujúci LIVE lead. Nový vhodnejší BA/remote winner sa nenašiel.
-- **Brigada.sk:** aktuálne BA retail/sklad smeny sú reálne a použiteľné ako núdzový príjem, ale neprebíjajú existujúce admin/web/driver priority.
-- **WordPress Jobs:** bez nového Slovakia-eligible non-hard-dev support/admin leadu.
-- **Reddit / WordPress komunity:** čerstvé indexované výsledky sú prevažne `FOR HIRE` ponuky dodávateľov, nie konkrétne hiring dopyty.
-- **Facebook:** **0 verified hits**. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited` a nič sa nepredstiera.
+- **Nové aktívne položky do `jobs-data.json`: 0.** Feed ostal zámerne nezmenený. Fail-closed pravidlo správne zabránilo pridať slabší alebo dôkazovo nejasný výsledok iba kvôli frekvencii behu.
+- **NOVÝ DIRECT SOURCE — Foxelli Group Careers (Ashby):** potvrdený ako kvalitný 100 % remote e-commerce/AI zdroj s explicitnou dostupnosťou pre Slovensko. `job-sources.json` bol rozšírený o samostatný `foxelli-careers` záznam s trust 100. Canonical: https://jobs.ashbyhq.com/foxelligroup
+- **Foxelli — Customer Support & Sales Agent | E-commerce | Remote:** obsahovo zaujímavé e-commerce/support, ale vyžaduje **fluent alebo near-native spoken English** a konkrétny aktuálny variant má nočnú zmenu 00:00–08:00 Lithuanian time. Bez aktivácie.
+- **Foxelli — Marketing Assistant | DTC E-commerce | 100% Remote EU:** Slovakia eligible, AI + e-commerce + research + copy + project coordination. Zatiaľ neaktivované, pretože verejný direct detail mieša názov „Marketing Assistant“ so seniornejšou požiadavkou na Marketing Manager/full-stack marketer experience; pred LIVE je potrebné corroboration, aby sa nepretláčal near-fit s nejasnou senioritou.
+- **CloudTalk — Customer Support Representative:** search výsledok je starý a konkrétny detail uvádza no-longer-accepting / fluent English; bez aktivácie.
+- **LinkedIn ďalšie support roly:** TalentPop, SupportYourApp, Netzon a Foxelli majú fluent/B2/C1 English alebo ďalší jazyk; jazykový gate ich správne odfiltruje.
+- **Pretlak:** Powerlogy ostáva obsahovo silný WP/Woo/e-shop/AI lead, ale má explicitnú veľmi dobrú angličtinu. CloseRocket má fluent English. Bez aktivácie.
+- **Upwork:** čerstvý Marketing VA je $5 fixed; admin VA $15 fixed; WooCommerce developer je $5 fixed + 20–50 proposals. Mailchimp/Canva/WordPress VA je tematicky relevantný, ale verejný detail neposkytol spoľahlivý pay signal. Žiadny neprekonal existujúce LIVE priority.
+- **Brigada.sk:** BA vodič/retail/sklad možnosti overené; použiteľné ako núdzový príjem, ale slabší pomer fit/odmena než Lanža/Akfos a admin/web priority.
+- **WordPress Jobs:** bez nového Slovakia-eligible non-hard-dev support/admin winnera.
+- **Reddit / WordPress komunity:** čerstvé indexované výsledky sú prevažne `FOR HIRE` ponuky dodávateľov, nie hiring dopyty.
+- **Facebook:** **0 verified hits**. Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage ostáva `limited`.
 
 ### Run summary
 - Reálne skontrolované zdrojové skupiny: **10**.
 - Nové aktívne položky: **0**.
-- Vyradené jazykovým/hard-skill gateom: **6**.
+- Vyradené jazykovým/hard-skill gateom: **8**.
 - Vyradené ako slabé/nízka hodnota: **6**.
-- Duplicitné/existing: **4**.
-- Vyradené pre freshness/evidence: **2**.
+- Duplicitné/existing: **5**.
+- Vyradené pre freshness/evidence: **3**.
 - Vyradené pre lokalitu: **1**.
 
 ### LIVE mix
 - Aktívny feed: **34 položiek**.
 - Source mix ostáva približne **Profesia 44,1 % / mimo Profesia 55,9 %**.
 - `jobs-data.json.updatedAt` = **29. 8. 2026 10:27:16 CEST** — bez zmeny, pretože nebol nový winner.
-- `source-audit.json.updatedAt` = **29. 8. 2026 12:24:37 CEST**.
+- `source-audit.json.updatedAt` = **29. 8. 2026 13:21:45 CEST**.
+- `job-sources.json.updatedAt` = **29. 8. 2026 13:21:45 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -239,8 +241,10 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 131. Evidence-backed skill adjacency map.
 132. Candidate-data / payment scam gate.
 133. Channel-specific language burden classifier.
-134. **Feed freshness reason code — NOVÉ** — odlíšiť `stale-because-no-new-winner` od skutočného zlyhania zberu/parsing pipeline. Praktický prínos: Source Radar nebude vyvolávať falošný incident iba preto, že fail-closed správne neprepísal `jobs-data.updatedAt`; technický problém sa bude dať od legitímnej stability feedu rozlíšiť okamžite.
-135. **Low-value freelance suppression floor — NOVÉ** — kombinovať fixed-price budget, deklarovanú komplexnosť, odhadovaný čas, konkurenciu a klientský spend do tvrdého minimálneho ekonomického prahu ešte pred scoringom. Praktický prínos: menej času na $5–50 WordPress/e-commerce zákazky, ktoré síce kľúčovými slovami sedia, ale ekonomicky nedávajú zmysel; search kapacita sa presunie na kvalitnejšie leads.
+134. **Feed freshness reason code** — odlíšiť `stale-because-no-new-winner` od skutočného zlyhania zberu/parsing pipeline.
+135. **Low-value freelance suppression floor** — kombinovať fixed-price budget, deklarovanú komplexnosť, odhadovaný čas, konkurenciu a client spend do tvrdého minimálneho ekonomického prahu pred scoringom.
+136. **Behavioral preference calibrator — NOVÉ** — bezpečne využívať existujúce CRM signály `open/read/star/remove/status` na učenie reálnych preferencií medzi web/tech/admin/driver rolami bez prepisovania hard gateov. Praktický prínos: Radar sa nebude spoliehať iba na statický profil; po čase začne vyššie dávať typy ponúk, ktoré používateľ skutočne otvára, hviezdičkuje a posúva do `zaujem/reagovane`, a nižšie tie, ktoré opakovane odstraňuje.
+137. **Role-family outcome calibration — NOVÉ** — oddelene od source-success analytics sledovať konverziu podľa typu role: `zobrazené → záujem → reakcia → odpoveď → pohovor → ponuka`. Praktický prínos: ak napríklad e-commerce admin roly reálne vedú k pohovorom častejšie než všeobecný IT support, ranking sa môže evidence-based posunúť tým smerom bez znižovania source diverzity.
 
 ## Live repository
 Repozitár: `Jarekkom86/komarena-job-radar`.
