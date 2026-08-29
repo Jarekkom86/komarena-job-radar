@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-29T08:43:15+02:00",
+  "purpose": "Distinguish genuine remote work from distant hybrid work by required travel cadence, without changing the existing UI or feed schema.",
+  "cadenceClasses": {
+    "none": {"eligibility":"remote-ok","action":"allow"},
+    "exceptional": {"definition":"Onboarding, rare company event or ad-hoc trip only; no recurring distant-office schedule.","eligibility":"remote-ok","action":"allow-with-evidence"},
+    "monthly-or-more": {"definition":"Recurring required attendance in a distant city at least monthly.","eligibility":"reject-distance","action":"exclude"},
+    "weekly": {"eligibility":"reject-distance","action":"exclude"},
+    "unknown": {"eligibility":"unknown","action":"quarantine"}
+  },
+  "evidencePriority": [
+    "employer job detail",
+    "employer careers FAQ or remote policy",
+    "recruiter/company post",
+    "trusted job board detail",
+    "search snippet only"
+  ],
+  "requiredRemoteFacts": [
+    "work can be performed from Slovakia",
+    "no recurring distant-office attendance",
+    "travel cadence is none or exceptional"
+  ],
+  "failClosed": true,
+  "notes": [
+    "The word remote alone is insufficient when the listing also names a distant office or hybrid regime.",
+    "Occasional onboarding or rare company events may remain remote-ok only when the listing makes the non-recurring nature clear.",
+    "If cadence cannot be verified, use locationEligibility unknown and keep the role outside active recommendations."
+  ]
+}
