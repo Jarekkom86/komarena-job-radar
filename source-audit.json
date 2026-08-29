@@ -3,35 +3,35 @@
   "updatedAt": "2026-08-29T21:34:36+02:00",
   "runSummary": {
     "familiesChecked": 10,
-    "newActiveJobs": 0,
-    "significantlyChangedPriorityJobs": 0,
+    "newActiveJobs": 1,
+    "significantlyChangedPriorityJobs": 1,
     "rejectedByLanguageOrHardSkill": 4,
     "rejectedAsWeakOrLowValue": 4,
     "duplicateOrExisting": 2,
     "rejectedByFreshnessOrEvidence": 3,
-    "liveFeedCount": 34,
-    "effectiveEligibleCount": 34,
-    "jobsDataContentUpdatedAt": "2026-08-29T10:27:16+02:00",
-    "freshnessStatus": "valid-content-no-safe-content-change",
-    "note": "Audit 29. 8. 2026 o 21:34 CEST reálne preveril Profesia, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/tech-creative, WordPress Jobs, Upwork, Služby zamestnanosti/Kariera, Reddit/WP komunity a verejne indexovaný Facebook. Nebol nájdený nový BA/okolie alebo Slovakia-eligible remote kandidát, ktorý by po lokalitnom, jazykovom, hard-skill, konkurencii a value gate prekonal existujúce LIVE priority. Wolt Support Associate je Bratislava, ale vyžaduje minimum B2 English. KLARSTEIN customer support vyžaduje francúzštinu. Upwork Operations & Campaign Support je worldwide, ale požaduje strong written/spoken English, U.S. hours a má nízku sadzbu 5–7 USD/h. Upwork Email/Social/Content Build je obsahovo near-fit (WordPress/Mailchimp/Canva), ale má 20–50 proposals a vyšší kreatívno-HTML burden, preto sa nepridáva. Reddit výsledky boli FOR HIRE, US-only alebo staršie. Facebook verejná indexácia neposkytla žiadny konkrétny overiteľný aktuálny hiring post; 0 verified hits, coverage limited."
+    "liveFeedCount": 35,
+    "effectiveEligibleCount": 35,
+    "jobsDataContentUpdatedAt": "2026-08-29T21:34:36+02:00",
+    "freshnessStatus": "ok",
+    "note": "Audit 29. 8. 2026 o 21:34 CEST reálne preveril Profesia, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/tech-creative, WordPress Jobs, Upwork, Služby zamestnanosti/Kariera, Reddit/WP komunity a verejne indexovaný Facebook. Nový aktívny kandidát: Zenea E-Commerce Specialist, Nivy Tower Bratislava/hybrid, 1 600–2 000 EUR, entry-level, slovenčina/čeština native, angličtina alebo maďarčina iba výhodou. Scope: Shopify store management, produkty, nákupná cesta, influencer/UGC koordinácia, Asana, Klaviyo, Excel/reporting; Shopify/Klaviyo sú gap oproti WooCommerce, ale blízko prenositeľné. LUNYS e-commerce bol znovu čerstvo overený na canonical LinkedIn; aktuálny výsledok zobrazuje plný inzerát bez closure banneru v načítanom obsahu, preto zostáva active. Wolt Support Associate je Bratislava, ale vyžaduje minimum B2 English. KLARSTEIN vyžaduje francúzštinu. Upwork Operations & Campaign Support je low-value 5–7 USD/h + strong English/U.S. hours; Email/Social/Content Build má 20–50 proposals a vyšší Mailchimp/HTML/Canva burden. Facebook: 0 verified hits, coverage limited."
   },
   "sources": [
-    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":0,"note":"Čerstvý BA/admin/e-commerce/tech-support sweep bez nového kandidáta, ktorý by prebil existujúce priority po hard-gate a value-gate."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"note":"Wolt Bratislava Support Associate je aktuálny, ale minimum B2 English = language reject. KLARSTEIN support je BA/remote SK, ale vyžaduje francúzštinu = reject."},
+    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":0,"note":"Čerstvý BA/admin/e-commerce/tech-support sweep bez nového kandidáta nad existujúce priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":4,"note":"Nový LIVE winner: Zenea E-Commerce Specialist, Bratislava/Nivy hybrid, 1 600–2 000 EUR, AJ iba výhodou. LUNYS canonical e-commerce znovu overený ako aktívny v načítanom výsledku. Wolt minimum B2 English = reject; KLARSTEIN francúzština = reject."},
     {"name":"Worki.sk + Brigada.sk","family":"other-sk-jobboards","status":"checked","hits":0,"note":"Bez nového akčného BA/remote winnera; časovo viazané brigády po cutoff čase sa neaktivujú."},
-    {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového overeného BA/remote low-language-gate kandidáta nad existujúce AI/e-commerce priority."},
+    {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového verified BA/remote low-language-gate kandidáta nad existujúce AI/e-commerce priority."},
     {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"note":"Cielený remote WordPress/WooCommerce sweep bez nového Slovakia-eligible non-hard-dev leadu."},
     {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":3,"note":"Email/Social/Content Build je near-fit, ale 20–50 proposals a Mailchimp/HTML/Canva/social creative burden. Operations & Campaign Support je 5–7 USD/h, strong English a U.S. hours. WordPress/Elementor support je viac hard-web/on-call. Bez nového LIVE winnera."},
     {"name":"Služby zamestnanosti / Kariera","family":"government-other","status":"checked","hits":0,"note":"Bez nového kvalifikovaného Bratislava/remote kandidáta po lokalitnom a hard-skill gate."},
     {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Aktuálne výsledky boli prevažne FOR HIRE, US-only alebo staršie; 0 konkrétnych vhodných hiring leadov."},
     {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage sa nepredstiera."},
-    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"ok","hits":0,"note":"Žiadny duplicate insert, žiadny nový reject-distance kandidát v aktívnom feede; 34 existujúcich položiek zachovaných fail-closed."}
+    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"ok","hits":2,"note":"Zenea prešla ba-area gate; LUNYS active proof obnovený. Žiadny duplicate insert. LIVE feed 35, Profesia 17 (48,6 %) / mimo Profesia 18 (51,4 %)."}
   ],
   "writeStatus": {
-    "jobsData": "unchanged-valid-no-new-winner",
-    "jobsDataReason": "Nebola nájdená nová ani významne zmenená ponuka, ktorá by vyžadovala bezpečný obsahový insert/update. Existujúci validný feed sa podľa fail-closed pravidla zachováva.",
+    "jobsData": "updated",
+    "jobsDataReason": "Pridaná jedna nová overená BA/hybrid e-commerce ponuka Zenea a obnovený čerstvý active proof LUNYS bez zmeny stabilného ID.",
     "jobsDataNonProf": "locked-no-change",
-    "jobSources": "no-registry-change-required",
+    "jobSources": "registry-valid-no-new-source-family",
     "freshnessBreach": false
   }
 }
