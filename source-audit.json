@@ -1,31 +1,26 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T06:35:54+02:00",
+  "updatedAt": "2026-08-29T07:12:00+02:00",
   "runSummary": {
-    "familiesChecked": 11,
-    "newActiveJobs": 1,
-    "rejectedByLanguageOrHardSkill": 7,
-    "rejectedAsWeakOrLowValue": 4,
+    "familiesChecked": 8,
+    "newActiveJobs": 0,
+    "rejectedByLanguageOrHardSkill": 5,
+    "rejectedAsWeakOrLowValue": 3,
     "duplicateOrExisting": 4,
-    "rejectedByFreshnessOrEvidence": 5,
-    "rejectedByLocation": 2,
+    "rejectedByFreshnessOrEvidence": 2,
+    "rejectedByLocation": 0,
     "liveFeedCount": 33,
-    "liveProfesiaEstimatePct": 45.5,
-    "liveNonProfesiaEstimatePct": 54.5,
     "jobsDataContentUpdatedAt": "2026-08-29T06:35:54+02:00",
-    "note": "Beh 29. 8. 2026 o 06:35 reálne preveril Profesia, LinkedIn Jobs, priame firemné kariéry (O2/Websupport/Hilti lane), Worki.sk, Brigada.sk, Služby zamestnanosti/Kariera, Pretlak, WordPress Jobs, Upwork, Reddit/WP komunity a verejne indexovaný Facebook. Nový LIVE winner: Akfos – kuriér/vodič B v Bratislave na rozvoz kusových zásielok, 1 500 €/mes., ASAP, bez tachografu a bez C/C+E. Lanža ostáva vyššie pre lepší pay range a preferovaný online-grocery model. Upwork priniesol viac čerstvých worldwide WordPress výsledkov, ale prevažne $5–35 fixed-price, 15–50 proposals alebo silnú English/hard-PHP požiadavku. LinkedIn priniesol Multitude Office Manager, Brady Customer Service, Marlink/SupportYourApp/Roche support a ďalšie roly, no jazykové alebo hard-skill požiadavky ich držia mimo LIVE priorít. O2 direct career priniesol Junior špecialistu na SIM/identity za 2 500 €, ale 3 roky IT/cyber/telco + kryptografia/AD/databázy sú príliš veľký hard-skill gap. Facebook verejná indexácia opäť neposkytla konkrétny overiteľný hiring post; 0 verified hits."
+    "note": "Beh 29. 8. 2026 o 07:12 reálne preveril čerstvé Profesia výsledky pre Bratislavu/remote, LinkedIn Jobs, GROWNi, Pretlak a vybrané remote support/e-commerce lane. Bez nového alebo významne zmeneného kandidáta, ktorý by prekonal existujúce LIVE priority. Profesia priniesla nové/čerstvé administratívne a support výsledky (SAV office manager, MŽP technická pomoc, KLARSTEIN jazykové support roly), ale dostupné verejné dáta neposkytli bezpečný dôvod na povýšenie nad existujúce priority; KLARSTEIN roly majú jazykový gate. LinkedIn výsledky boli prevažne staršie alebo vyžadovali nemčinu/francúzštinu/fluent English. Feed jobs-data.json zostáva source-backed z 06:35:54 a je stále v 60-minútovom freshness limite; updatedAt nebol kozmeticky posunutý."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":2,"note":"Nový overený winner Akfos O5349190: Bratislava, kusové zásielky, vodič B, 1 500 €/mes., ASAP. Lanža O5349252 zostáva aktívna a vyššie hodnotená."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":7,"note":"Multitude Office Manager je BA a 1 900 €, ale vyžaduje komfortnú hovorenú AJ; Brady vyžaduje English + German; Marlink B2; SupportYourApp fluent English; Roche silnú AJ + klinické/diagnostické zázemie. Bez nového A2-compatible winnera."},
-    {"name":"Priame firemné kariéry","family":"company","status":"checked","hits":3,"note":"O2, Websupport a Hilti lane preverený. O2 Junior SIM/identity je aktívny a 2 500 €, ale vyžaduje 3 roky IT/cyber/telco a kryptografiu/AD/databázy; existujúce O2 Digital Content, Websupport a Hilti položky ostávajú lepšia zhoda."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"note":"Bez nového overeného BA/remote admin/tech/web kandidáta nad existujúce LIVE priority."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"note":"Cielený BA admin/e-shop/IT/kuriér sweep bez nového kvalitného winnera."},
-    {"name":"Služby zamestnanosti / Kariera","family":"government-jobboard","status":"checked","hits":1,"note":"Aktuálne technické/support výsledky buď vyžadujú vyššiu AJ, VŠ alebo hard technické zázemie; bez aktivácie."},
-    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového BA/remote A2-compatible AI/e-commerce/support výsledku, ktorý by prekonal existujúce OVB/LEAF/Hilti priority."},
-    {"name":"WordPress Jobs","family":"wordpress-jobboard","status":"checked","hits":0,"note":"Bez nového Slovakia-eligible non-hard-dev WordPress/WooCommerce admin/support leadu s primeranou ekonomikou."},
-    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":6,"note":"Čerstvé worldwide WordPress výsledky boli prevažne $5–35 fixed-price, 15–50 proposals alebo vyžadovali strong English/PHP; full-time VA za $650 vyžaduje strong written/spoken English. Bez nového LIVE winnera."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Najčerstvejšie výsledky sú prevažne FOR HIRE ponuky freelancerov, nie bezpečné hiring leady. Bez aktivácie."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA pracovných skupín neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage sa nepredstiera."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":5,"note":"Preverené najnovšie BA administratíva/remote výsledky. Nové názvy zahŕňajú Office manažér/ka SAV (1 800 €), Asistent/ka technickej pomoci MŽP (1 600 €) a jazykové KLARSTEIN support roly. Bez bezpečne overeného nového winnera nad existujúce priority; VÚB/Confilogi a vodičské priority zostávajú v LIVE."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":5,"note":"Čerstvé indexované support roly boli prevažne jazykovo nevhodné: TalentPop DE/EN, KLARSTEIN FR, SupportYourApp fluent English/Swedish. Foxelli crochet support už neprijíma. Bez nového A2-compatible winnera."},
+    {"name":"GROWNi","family":"growni","status":"checked","hits":2,"note":"Indexované výsledky zahŕňajú staršie alebo nízko hodnotené položky; IT Guy/Girl je študentská rola s PHP/API a 7 €/h, bez zmeny priorít."},
+    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového verejne indexovaného BA/remote AI/web/support výsledku nad existujúce OVB/LEAF priority."},
+    {"name":"Priame firemné kariéry","family":"company","status":"checked","hits":1,"note":"V tejto iterácii nevznikol nový priamy firemný lead s lepším fitom než existujúce LIVE company položky."},
+    {"name":"Remote support jobboards","family":"remote-support","status":"checked","hits":4,"note":"Kandidáti narážajú na povinnú francúzštinu, nemčinu, švédčinu alebo fluent English; bez aktivácie."},
+    {"name":"Freelance / WordPress lane","family":"freelance","status":"checked","hits":0,"note":"Bez nového overiteľného low-language WordPress/WooCommerce admin/support leadu s lepšou ekonomikou a primeranou konkurenciou."},
+    {"name":"Community / Facebook public index","family":"community","status":"limited","hits":0,"note":"Verejná indexácia neposkytla nový konkrétny overiteľný hiring post; coverage sa nepredstiera."}
   ]
 }
