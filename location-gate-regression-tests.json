@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-29T08:43:15+02:00",
+  "purpose": "Fail-closed regression checks for the Bratislava-area or genuine-remote hard gate. This file is additive and does not mutate UI, CRM, baseline or feed data.",
+  "rules": {
+    "activeAllowedEligibility": ["ba-area", "remote-ok"],
+    "activeForbiddenEligibility": ["unknown", "reject-distance"],
+    "requiredFieldsForActive": ["locationEligibility", "locationReason", "verifiedAt"],
+    "remoteRequiredEvidence": ["locationReason"],
+    "unknownAction": "quarantine",
+    "rejectDistanceAction": "exclude"
+  },
+  "regressionCases": [
+    {"case":"Bratislava onsite","location":"Bratislava","remote":false,"expected":"ba-area","active":true},
+    {"case":"Senec onsite","location":"Senec","remote":false,"expected":"ba-area","active":true},
+    {"case":"Kosice onsite","location":"Košice","remote":false,"expected":"reject-distance","active":false},
+    {"case":"Kosice hybrid weekly","location":"Košice","remote":true,"travelCadence":"weekly","expected":"reject-distance","active":false},
+    {"case":"Slovakia 100 percent remote","location":"Slovensko","remote":true,"remoteFromSlovakiaVerified":true,"expected":"remote-ok","active":true},
+    {"case":"Worldwide remote country unclear","location":"Worldwide","remote":true,"remoteFromSlovakiaVerified":false,"expected":"unknown","active":false}
+  ],
+  "invariants": [
+    "No active job may have locationEligibility unknown or reject-distance.",
+    "Every active remote-ok job must state why work from Slovakia is allowed.",
+    "A distant hybrid role is never rescued by match score, salary or source quality.",
+    "A failed location check must not delete existing data; it quarantines the item for review."
+  ]
+}
