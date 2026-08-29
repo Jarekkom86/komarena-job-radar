@@ -1,43 +1,39 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T22:24:00+02:00",
+  "updatedAt": "2026-08-29T23:13:40+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
     "significantlyChangedPriorityJobs": 0,
-    "rejectedByLanguageOrHardSkill": 4,
+    "rejectedByLanguageOrHardSkill": 5,
     "rejectedAsWeakOrLowValue": 4,
-    "duplicateOrExisting": 2,
+    "duplicateOrExisting": 3,
     "rejectedByFreshnessOrEvidence": 3,
     "liveFeedCount": 35,
     "effectiveEligibleCount": 35,
     "jobsDataContentUpdatedAt": "2026-08-29T21:34:36+02:00",
-    "freshnessStatus": "ok",
-    "note": "Audit 29. 8. 2026 o 22:24 CEST reálne preveril minimálne 10 zdrojových skupín: Profesia, LinkedIn Jobs, Worki, Brigada.sk, Pretlak/tech-creative, WordPress Jobs, Upwork, Služby zamestnanosti/Kariera, Reddit/WP komunity a verejne indexovaný Facebook. Bez nového kandidáta, ktorý by bezpečne prebil existujúce priority. WordPress Jobs priniesol nové listingy z 27.-28.8., ale ide o senior/expert developer roly s custom themes, PHP/JS, API, server/DNS/SSH a ďalšími hard-skill požiadavkami. Upwork má čerstvý worldwide WordPress Website Cleanup & Professional Design Improvements za 190 USD, ale listing je označený Expert a je výrazne dizajnovo orientovaný, preto neprešiel minimálnym opportunity thresholdom. Brigada.sk aktuálne indexuje BA skladovú zmenu na 30.8. za 13,69 EUR/h a ďalšie zmeny za 10,50 EUR/h; bez priameho konkrétneho listing URL a detailu fyzickej záťaže ich tento beh nezaraďuje do LIVE feedu. Facebook ostáva 0 verified hits / limited."
+    "freshnessStatus": "stale-over-60m",
+    "note": "Audit 29. 8. 2026 o 23:13 CEST reálne preveril Profesia, LinkedIn Jobs, Worki/Brigada, Pretlak, WordPress Jobs, Upwork, GROWNi/LEAF, Služby zamestnanosti/Kariera, komunity a verejne indexovaný Facebook. Bez nového kandidáta, ktorý by bezpečne prebil existujúce priority. Nový Profesia IT Administrátor od Lugera & Maklér je Bratislava, ASAP a 2 000 EUR/mes., ale rozsah zahŕňa správu infraštruktúry, serverov, LAN/WiFi, SQL a medzinárodný IT tím; bez úplného overenia jazykových a praxových požiadaviek sa v tomto behu nezaraďuje. Upwork Virtual Assistant – Email, Social & Content Build je worldwide remote, 8–15 USD/h, 4–6 h/týždeň a klient má 53k USD spend/34 hires, no vyžaduje hands-on Mailchimp, editáciu HTML e-mailových šablón, WordPress, Squarespace, Canva a ukážky práce; pri 20–50 proposals neprekonáva aktuálne TOP priority. LEAF Implementation Support ostáva aktívny a prevažne remote."
   },
   "sources": [
-    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":0,"note":"Čerstvý BA/remote sweep bez nového low-language, low-hard-skill kandidáta nad existujúce priority; existujúce Lanža/Akfos a e-commerce priority ostávajú bez významnej zmeny."},
+    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":1,"note":"Nový IT Administrátor Lugera & Maklér: Bratislava, ASAP, 2 000 EUR/mes.; zaujímavý technický support presah, ale širší infra/admin/SQL scope a neúplne overené jazykové/praxové požiadavky znamenajú no-insert v tomto behu."},
     {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"note":"Bez nového verified Bratislava/remote kandidáta s lepším fitom než aktuálne e-commerce/admin priority."},
-    {"name":"Worki.sk + Brigada.sk","family":"other-sk-jobboards","status":"checked","hits":5,"note":"Brigada.sk indexuje BA skladové zmeny 30.8. za 13,69 EUR/h a 31.8.-3.9. približne 10,50 EUR/h. Keďže v tomto behu nebol získaný priamy konkrétny listing URL ani detail fyzickej záťaže, položky ostávajú mimo LIVE feedu do priameho overenia."},
+    {"name":"Worki.sk + Brigada.sk","family":"other-sk-jobboards","status":"checked","hits":0,"note":"Bez nového kandidáta s priamym overiteľným listingom, jasnou fyzickou záťažou a lepším fitom než aktuálne BA vodičské/brigádnické priority."},
     {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového verified BA/remote low-language-gate kandidáta nad existujúce AI/e-commerce priority."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":3,"note":"Nové listingy z 27.-28.8. sú prevažne senior/expert WordPress development: custom themes, PHP/JS, API, server management, DNS/SSH alebo India/Mumbai onsite. Odmietnuté hard-skill/lokalitným gateom."},
-    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":4,"note":"Čerstvý WordPress Website Cleanup & Professional Design Improvements je worldwide, 190 USD fixed, ale Expert a dizajnovo orientovaný; ďalšie dnešné webové výsledky sú hard-dev/Webflow alebo nízkej hodnoty. Bez nového winnera."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"note":"Bez nového non-hard-dev WordPress kandidáta, ktorý by prešiel existujúce skill a location gates."},
+    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":2,"note":"Preverený worldwide VA Email/Social/Content Build: 8–15 USD/h, 4–6 h/týždeň, etablovaný klient, ale Mailchimp + HTML email templates + Squarespace + Canva + portfolio requirement a 20–50 proposals; neprekonáva TOP priority. Ďalšie VA výsledky boli slabšie alebo regionálne obmedzené."},
+    {"name":"GROWNi / LEAF","family":"growni","status":"checked","hits":1,"note":"LEAF Implementation Support Specialist ostáva aktívny: prevažne home office, flexibilný skrátený úväzok, od 1 500 EUR/mes. pri FTE ekvivalente."},
     {"name":"Služby zamestnanosti / Kariera","family":"government-other","status":"checked","hits":0,"note":"Bez nového kvalifikovaného Bratislava/remote kandidáta po lokalitnom a hard-skill gate."},
     {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Bez nového konkrétneho, aktuálneho a Slovakia-eligible hiring leadu s dostatočným trust signálom."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage sa nepredstiera."},
-    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"ok","hits":3,"note":"Žiadny duplicate insert, neodôvodnený status flip ani vzdialený onsite/hybrid insert. LIVE feed ostáva 35 položiek; jobs-data updatedAt 21:34:36 je stále v akceptovateľnej freshness hranici."}
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits; coverage sa nepredstiera."},
+    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"warning","hits":3,"note":"Žiadny duplicate insert ani neodôvodnený status flip. jobs-data.json zostáva na poslednom reálnom content update 21:34:36 CEST; o 23:13 prekročil 60-min freshness hranicu. updatedAt nebol umelo posunutý."}
   ],
   "writeStatus": {
     "jobsData": "no-change",
     "jobsDataReason": "Žiadna nová alebo významne zmenená položka neprešla všetkými gate; updatedAt sa neposúva iba kvôli auditu.",
-    "jobsDataNonProf": "locked-no-change",
+    "jobsDataNonProf": "no-change",
     "jobSources": "registry-valid-no-new-source-family",
-    "masterBacklog": "pending-safe-append",
-    "masterBacklogReason": "Dve nové rozvojové položky boli identifikované, ale konektor pre existujúci MASTER podporuje iba kompletnú náhradu súboru; bez bezpečného patch/append mechanizmu sa plný MASTER v tomto behu neprepisuje, aby sa nestratil existujúci backlog.",
-    "freshnessBreach": false
-  },
-  "backlogCandidates": [
-    {"name":"Evidence-to-action latency score","benefit":"Meria čas od zverejnenia/overenia ponuky po okamih, keď je možné bezpečne reagovať; zvýhodní príležitosti, kde je priamy apply path a všetky kritické podmienky už overené."},
-    {"name":"One-shift opportunity lane","benefit":"Oddelí jednorazové BA brigády s termínom do 24–72 h od dlhodobých pracovných ponúk, vyžaduje priamy listing URL, presný čas, odmenu a fyzickú záťaž a zabráni ich miešaniu s kariérnym rankingom."}
-  ]
+    "freshnessBreach": true,
+    "freshnessBreachReason": "jobs-data.json updatedAt 2026-08-29T21:34:36+02:00 je pri audite 23:13:40 CEST starší než 60 minút; posledné validné dáta boli zachované podľa fail-closed pravidla."
+  }
 }
