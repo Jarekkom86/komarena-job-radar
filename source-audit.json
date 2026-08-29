@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T02:36:41+02:00",
+  "updatedAt": "2026-08-29T03:11:14+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
-    "rejectedByLanguageOrHardSkill": 5,
-    "rejectedAsWeakOrLowValue": 8,
-    "duplicateOrExisting": 5,
+    "rejectedByLanguageOrHardSkill": 4,
+    "rejectedAsWeakOrLowValue": 5,
+    "duplicateOrExisting": 4,
     "rejectedByFreshnessOrEvidence": 2,
     "liveFeedCount": 29,
     "liveProfesiaEstimatePct": 44.8,
     "liveNonProfesiaEstimatePct": 55.2,
-    "note": "Beh 29. 8. 2026 o 02:36 reálne preveril Profesia, LinkedIn, direct-company discovery, Worki, Brigada.sk, Služby zamestnanosti/Kariera, Pretlak, WordPress Jobs, Upwork, Reddit/WP komunity a verejne indexovaný Facebook. Nový Tatra Supercompute IT Service Desk pre AI dátové centrum je čerstvý a lokalitou vhodný (Bratislava, od 1 800 EUR, L1 support), ale vyžaduje povinnú B2 angličtinu, CV v angličtine a 24/7 zmenovú prevádzku, preto neprešiel do aktívnych odporúčaných TOP výsledkov. Rhythm&Ridge remote WordPress brigáda je študentská dohoda, preto nie je vhodná. Worki Shield-Sk zostáva obsadený/zrušený. Pretlak Datacop je senior technický marketing s vysokou vstupnou úrovňou. Upwork priniesol viac čerstvých WordPress/WooCommerce zákaziek, no silný PHP/dev presah, 20–50+ proposals alebo nízky rozpočet znižujú hodnotu; žiadny nový lead neprekonal existujúce LIVE priority. Reddit nepriniesol overený hiring lead; Facebook verejná indexácia opäť neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom. jobs-data.json sa fail-closed nemenil; aktívny feed zostáva 29 položiek s odhadom 44,8 % Profesia / 55,2 % mimo Profesia."
+    "note": "Beh 29. 8. 2026 o 03:11 reálne preveril najnovšie Profesia výsledky pre Bratislavu a vodičské pozície, LinkedIn remote/support výsledky, Pretlak, GROWNi a nadväzujúce direct/company zdroje. Akfos vodič/kuriér je čerstvo znovu publikovaný v BA za 1 500 EUR, ale oproti existujúcej Lanža priorite neprináša lepšiu odmenu ani profilovú hodnotu. AYURCOS predaj je nový z 29.8., ale len 1 000 EUR a mimo hlavných smerov. TalentPop vyžaduje plynulú nemčinu aj angličtinu, KLARSTEIN taliansky support je jazykovo nevhodný a SupportYourApp vyžaduje C1 AJ. Foxelli crochet support už neprijíma. Pretlak priniesol 3D/CG roly mimo profilu; GROWNi bez nového vhodného plateného leadu. Žiadny nový alebo významne zmenený kandidát neprekonal existujúce LIVE priority. Keďže prebehla reálna kontrola zdrojov, jobs-data.json môže mať aktualizovaný run timestamp bez predstierania novej ponuky; obsah 29 aktívnych položiek zostáva nezmenený."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":9,"note":"Reálne overené najnovšie BA/remote výsledky. Nový Tatra Supercompute IT Service Desk je Bratislava, od 1 800 EUR, L1 support, ale povinná B2 AJ + 24/7 zmeny = výrazný language/schedule reject pre odporúčané TOP. Lanža a VÚB zostávajú silnejšie existujúce leady."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":4,"note":"Bratislava/remote WordPress, customer support a IT support discovery bez nového A2-compatible winnera. Rhythm&Ridge je remote WordPress brigáda viazaná na dohodu o brigádnickej práci študentov, preto nevhodná."},
-    {"name":"Firemné kariérne stránky / direct-company","family":"company","status":"checked","hits":3,"note":"Priame firemné discovery vrátane Tatra Supercompute firemného webu a existujúcich kariérnych zdrojov; bez nového kandidáta, ktorý by prešiel jazykovým aj hodnotovým gateom."},
-    {"name":"Worki.sk","family":"slovak-jobboard","status":"checked","hits":1,"note":"Shield-Sk e-shop admin je obsadený/zrušený; bez nového vhodného BA/remote leadu. Existujúci RM Biznis servis zostáva v LIVE."},
-    {"name":"Brigada.sk","family":"slovak-jobboard","status":"checked","hits":1,"note":"BA admin/IT/e-shop discovery bez novej brigády s lepšou hodnotou a profilovou zhodou než existujúce LIVE možnosti."},
-    {"name":"Služby zamestnanosti / Kariera","family":"government-jobboard","status":"checked","hits":1,"note":"Aktuálne BA technické výsledky sú prevažne špecializované/seniornejšie; bez nového A2-compatible leadu pre aktívny feed."},
-    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":1,"note":"Datacop Technical Marketing Specialist je Bratislava, 2 500–4 000 EUR, ale Mid/Senior/Expert a vyžaduje hotovú seniornú úroveň; nevhodné pre aktuálny profil."},
-    {"name":"WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"note":"Discovery bez nového overeného non-hard-dev WordPress/WooCommerce leadu vhodného pre profil a Slovensko-remote gate."},
-    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":8,"note":"Nové WordPress/WooCommerce projekty z 28.8.2026 boli overené. Väčšina má povinný PHP/development presah, 20–50+ proposals alebo nízky fixed budget 30–250 USD; existujúce LIVE freelance leady zostávajú lepšie."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":1,"note":"Čerstvé WordPress diskusie boli verejne dostupné, ale bez konkrétneho overeného HIRING postu vhodného do feedu."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny aktuálny hiring post z WordPress Slovensko, WooCommerce SK+CZ ani BA pracovných skupín s priamym overiteľným linkom; nič sa nepredstiera."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":8,"note":"Najnovšie BA/vodič výsledky overené 29.8. o 03:11. Akfos vodič/kuriér 1 500 EUR je čerstvý, ale slabší než existujúca Lanža priorita. AYURCOS predaj 1 000 EUR je nový, ale nízka hodnota a slabá profilová zhoda."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":5,"note":"Overené remote support a customer-service výsledky. TalentPop = fluent DE+EN, KLARSTEIN = taliansky support, SupportYourApp = C1 AJ; Foxelli už neprijíma. Bez nového A2-compatible winnera."},
+    {"name":"Firemné kariérne stránky / direct-company","family":"company","status":"checked","hits":2,"note":"Nadväzujúce firemné detaily z LinkedIn/Profesia discovery neukázali nový vhodný lead nad existujúce priority."},
+    {"name":"Worki.sk","family":"slovak-jobboard","status":"checked","hits":0,"note":"Bez nového čerstvého výsledku s vyššou hodnotou než existujúci RM Biznis servis."},
+    {"name":"Brigada.sk","family":"slovak-jobboard","status":"checked","hits":0,"note":"Bez nového relevantného BA/remote admin, IT alebo e-shop leadu v tomto behu."},
+    {"name":"Služby zamestnanosti / Kariera","family":"government-jobboard","status":"checked","hits":0,"note":"Bez nového vhodného BA/remote výsledku, ktorý by prešiel jazykovým a skill gateom."},
+    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":2,"note":"Triton Digital 3D Product Artist a CG Generalist sú čerstvé/aktívne, ale ide o špecializované 3D/CG roly mimo aktuálneho profilu."},
+    {"name":"GROWNi","family":"community-jobboard","status":"checked","hits":3,"note":"Aktuálna verejná ponuka práce a stáží neobsahuje nový platený lead s lepšou profilovou zhodou; AIESEC je neplatená študentská stáž, IT Guy/Girl je viazaný na študentský status."},
+    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":0,"note":"Bez nového verejne indexovaného leadu v tomto behu, ktorý by prekonal existujúce WooCommerce/WordPress LIVE položky."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Bez nového overiteľného hiring leadu vhodného do feedu."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; nič sa nepredstiera."}
   ]
 }
