@@ -1,42 +1,36 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T04:29:28+02:00",
+  "updatedAt": "2026-08-30T05:16:43+02:00",
   "runSummary": {
-    "familiesChecked": 12,
+    "familiesChecked": 8,
     "newActiveJobs": 0,
     "significantlyChangedPriorityJobs": 0,
-    "rejectedByLanguageOrHardSkill": 6,
-    "rejectedAsWeakOrLowValue": 6,
-    "duplicateOrExisting": 4,
-    "rejectedByFreshnessOrEvidence": 4,
+    "rejectedByLanguageOrHardSkill": 4,
+    "rejectedAsWeakOrLowValue": 3,
+    "duplicateOrExisting": 3,
+    "rejectedByFreshnessOrEvidence": 2,
     "liveFeedCount": 36,
     "effectiveEligibleCount": 36,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessStatus": "stale-over-60m-no-qualified-content-change",
-    "note": "Audit 30.8.2026 04:29 CEST reálne preveril Profesia, priame firemné kariéry, LinkedIn Jobs, Worki, Brigada.sk, Pretlak, StartupJobs, WordPress Jobs, Upwork, Služby zamestnanosti/Kariera, Reddit/WP komunity a verejnú Facebook indexáciu. Nevznikol nový BA/okolie alebo Slovakia-eligible remote kandidát, ktorý by prešiel locality/language/hard-skill/value gateom a prebil aktuálne LIVE priority. StartupJobs customer-care pre e-shop je 100 % remote, ale vyžaduje poľštinu; WordPress Jobs má 10 otvorených pozícií, no nový Senior WordPress Developer je výrazne PHP/JS/server/API-heavy; Reddit výsledky boli US-only, low-budget alebo slabé/pochybné. Facebook zostáva 0 verified hits / limited. jobs-data.json sa obsahovo nemení a updatedAt sa neposúva bez reálnej zmeny."
+    "note": "Reálny audit 30.8.2026 05:16 CEST preveril Profesia/BA technické a admin výsledky, priame firemné výsledky cez Profesia, Worki, StartupJobs a Upwork remote discovery. Nevznikol nový alebo významne zmenený kandidát, ktorý by prešiel locality/language/hard-skill/value gateom a prebil aktuálne LIVE priority. Tatra Supercompute IT Service Desk pre AI dátové centrum je zaujímavý obsahovo, ale vyžaduje aktívnu angličtinu B2, anglické CV a 24/7 trojzmennú prevádzku. Form Factory IT Support Specialist ponúka 2 500 EUR a technicky sedí, no vyžaduje B2 angličtinu, pravidelnú komunikáciu so zahraničným IT tímom a 1–3 roky IT Support/Infrastructure praxe. Caffeespresso servis/zásobovanie 1 400–2 000 EUR neprekonáva HEATING PRO. Upwork VA discovery nepriniesol nový dôveryhodný non-hard-dev kandidát nad existujúce LIVE zákazky. jobs-data.json sa obsahovo nemení a updatedAt sa neposúva bez reálnej zmeny."
   },
   "sources": [
-    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":0,"note":"Čerstvý discovery beh pre BA/okolie a remote bez nového kandidáta, ktorý by prebil existujúce TOP priority pri zachovaní language/hard-skill gateu."},
-    {"name":"Priame firemné kariérne stránky","family":"company-careers","status":"checked","hits":0,"note":"Preverené známe high-match kariérne zdroje; bez nového direct-source winnera nad existujúce Penta/Hilti/Websupport priority."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":4,"note":"Aktuálny BA support/operations discovery vracia najmä už známe alebo jazykovo náročnejšie výsledky; Wolt Support zostáva mimo priorít pre vyšší jazykový gate."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"note":"Bez nového kvalifikovaného prírastku nad existujúci HEATING PRO a RM Biznis servis."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"note":"Bez novej BA brigády s dostatočným detailom, aktuálnosťou a hodnotou pre LIVE aktiváciu."},
-    {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":1,"note":"Aktuálne výsledky bez nového low-language-gate e-commerce/AI/support winnera; dostupný e-commerce content lead je skôr marketingovo-seniorný smer."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":3,"note":"Customer care / online agent pre e-shop je 100 % remote, ale povinne s poľštinou; ďalšie remote výsledky sú výrazne sales/growth/performance-heavy. Bez LIVE aktivácie."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":10,"note":"Portál uvádza 10 open positions. Nový Senior WordPress Developer z 27.8. vyžaduje custom themes, PHP/JS, React, server management, SSH/DNS, API/Git a performance ops; správne vyradený ako hard-dev/server-heavy."},
-    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":7,"note":"Čerstvé WordPress/WooCommerce výsledky zahŕňajú build/development a checkout/customisation scope; žiadny nový non-hard-dev admin/support projekt s lepším pomerom scope/pay/competition než existujúce LIVE zákazky."},
-    {"name":"Služby zamestnanosti / Kariera / mirrors","family":"government-other","status":"checked","hits":0,"note":"Bez nového overiteľného BA/remote kandidáta, ktorý by splnil profil a prebil súčasné priority."},
-    {"name":"Komunitné / verejne indexované hiring zdroje","family":"community","status":"checked","hits":4,"note":"Reddit/WP hiring výsledky boli prevažne US-only, fluent-English/dev-heavy, extrémne low-budget alebo s varovnými community signálmi; 0 vhodných LIVE aktivácií."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits; verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom. Coverage zostáva limited a nič sa nepredstiera."},
-    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"ok","hits":0,"note":"LIVE feed zostáva 36 položiek; canonical dedupe, BA/remote eligibility, stable IDs a fail-closed pravidlá zachované. Žiadny >20 % pokles ani strata kategórie."}
+    {"name":"Profesia / BA technické a admin jobboards","family":"profesia","status":"checked","hits":7,"note":"Čerstvé výsledky zahŕňali Tatra Supercompute IT Service Desk, Form Factory IT Support, Caffeespresso servis/zásobovanie, PRO EXTERIÉR administratívu a ďalšie technické roly. Bez nového kandidáta, ktorý by prešiel všetkými hard filtrami a prebil LIVE priority."},
+    {"name":"Priame firemné výsledky / company listings","family":"company-careers","status":"checked","hits":3,"note":"Form Factory a Tatra Supercompute boli overené na detailnej ponuke; oba narazili na B2 angličtinu, Tatra navyše na 24/7 trojzmennú prevádzku."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"note":"Bez nového kvalifikovaného prírastku nad HEATING PRO a existujúce technicko-logistické priority."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"note":"Bez nového Slovakia-eligible remote výsledku s prijateľným language/hard-skill gateom."},
+    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":5,"note":"VA/admin/WordPress discovery bez nového overiteľného kandidáta s lepším pomerom scope/pay/trust/competition než existujúce LIVE zákazky."},
+    {"name":"Bratislava servis/IT support discovery","family":"tech-support","status":"checked","hits":6,"note":"Profesia servis/IT support stránka je čerstvá; relevantné nové alebo znovuindexované výsledky boli preverené a vyradené podľa language/hard-skill/value pravidiel."},
+    {"name":"Remote admin/customer support discovery","family":"remote-admin","status":"checked","hits":2,"note":"Bez nového prioritného remote kandidáta, ktorý by prebil VÚB/LEAF/ďalšie LIVE remote priority."},
+    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"ok","hits":0,"note":"LIVE feed zostáva 36 položiek; canonical dedupe, BA/remote eligibility, stable IDs a fail-closed pravidlá zachované. Žiadny potvrdený dôvod meniť jobs-data.json."}
   ],
   "writeStatus": {
     "jobsData": "no-change",
     "jobsDataReason": "Bez novej alebo významne zmenenej prioritnej položky; updatedAt sa neposúva iba na kozmetické omladenie feedu.",
-    "jobsDataNonProf": "no-change-locked",
-    "jobSources": "audit-timestamp-refresh",
-    "master": "audit-and-backlog-refresh",
+    "jobsDataNonProf": "no-change",
+    "sourceAudit": "updated-after-real-source-check",
     "freshnessBreach": true,
-    "freshnessBreachReason": "jobs-data.json posledná obsahová aktualizácia 2026-08-30T01:15:21+02:00; reálny audit 04:29 nevytvoril kvalifikovanú obsahovú zmenu, preto sa feed timestamp zámerne nemení."
+    "freshnessBreachReason": "jobs-data.json posledná obsahová aktualizácia 2026-08-30T01:15:21+02:00; reálny audit 05:16 nevytvoril kvalifikovanú obsahovú zmenu, preto feed timestamp zostáva nezmenený."
   }
 }
