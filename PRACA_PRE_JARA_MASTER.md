@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 30. 8. 2026 04:29 CEST
+Aktualizované: 30. 8. 2026 06:29 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -66,31 +66,34 @@ Aktualizované: 30. 8. 2026 04:29 CEST
 32. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 33. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 30. 8. 2026 04:29 CEST — LATEST
-Reálne prehľadané skupiny: **Profesia; priame firemné kariéry; LinkedIn Jobs; Worki.sk; Brigada.sk; Pretlak; StartupJobs; WordPress Jobs; Upwork/freelance; Služby zamestnanosti/Kariera; Reddit/WP komunity; Facebook verejná indexácia.** Spolu **12 nezávislých kontrolovaných skupín**, minimálne 8 source families a viac než 5 mimo Profesia.
+## SOURCE AUDIT — 30. 8. 2026 06:29 CEST — LATEST
+Reálne prehľadané skupiny: **Profesia; priame firemné kariéry; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; StartupJobs; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu **12 nezávislých kontrolovaných skupín**, minimálne 8 source families a viac než 5 mimo Profesia.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky: 0.** Nevznikol nový kandidát, ktorý by bezpečne prešiel locality/language/hard-skill/value gateom a prebil aktuálne priority.
-- **StartupJobs:** 100 % remote Customer care / online agent pre e-shop je aktuálny, ale vyžaduje poľštinu; ďalšie výsledky sú sales/growth/performance-heavy, preto bez LIVE aktivácie.
-- **WordPress Jobs:** portál uvádza 10 otvorených pozícií. Nový Senior WordPress Developer z 27.8. je custom-theme/PHP/JS/React/server/SSH/DNS/API/Git-heavy; správne vyradený ako hard-dev/server rola.
-- **Upwork:** čerstvé WordPress/WooCommerce výsledky existujú, ale dominujú build/development/customisation projekty; bez nového non-hard-dev admin/support projektu s lepším scope/pay/competition pomerom než existujúce LIVE zákazky.
-- **Reddit/WP komunity:** aktuálne hiring výsledky sú prevažne US-only, fluent-English/dev-heavy, extrémne low-budget alebo s varovnými community signálmi; 0 bezpečných LIVE aktivácií.
+- **LinkedIn:** čerstvý BA technical-support index obsahuje nové roly, ale prominentné výsledky sú fluent-English, hard-skill alebo už pokryté existujúcimi prioritami; bez nového LIVE winnera.
+- **Brigada.sk:** Bratislava brigády boli reálne prehľadané, ale verejný výsledok neposkytol nový konkrétny detail s dostatočným pay/scope/evidence profilom.
+- **Kariera.sk:** administratíva/logistika boli prehľadané; prominentné čerstvé výsledky boli mimo BA/okolia alebo bez vhodného remote režimu, preto locality gate zostal fail-closed.
+- **Pretlak / StartupJobs / WordPress Jobs:** bez nového WP/Woo/e-shop/AI low-language-gate kandidáta; výsledky sú jazykovo alebo hard-skill náročnejšie.
+- **Upwork:** WordPress/WooCommerce/VA discovery vykonaný; nové výsledky neprekonali LIVE scope/pay/competition profil alebo boli development-heavy.
+- **Reddit/WP komunity:** 0 kvalifikovaných Slovakia-eligible non-hard-dev LIVE hitov.
 - **Facebook:** **0 verified hits**, coverage `limited`; žiadny fiktívny post.
 
 ### Run summary
 - Reálne skontrolované zdrojové skupiny: **12**.
 - Nové aktívne položky: **0**.
 - Významne zmenené priority: **0**.
-- Vyradené jazykovým/hard-skill gateom: **6**.
-- Vyradené ako slabé/nízka hodnota: **6**.
+- Vyradené jazykovým/hard-skill gateom: **5**.
+- Vyradené ako slabé/nízka hodnota: **4**.
 - Duplicitné/existing: **4**.
-- Vyradené pre freshness/evidence: **4**.
+- Vyradené pre freshness/evidence: **3**.
+- Vyradené lokalitným gateom: **2**.
 
 ### LIVE mix
 - `jobs-data.json`: **36 aktívnych položiek**.
-- Posledný potvrdený mix: približne **Profesia 17 / 36 = 47,2 %; mimo Profesia 19 / 36 = 52,8 %**.
+- Potvrdený mix: približne **Profesia 17 / 36 = 47,2 %; mimo Profesia 19 / 36 = 52,8 %**.
 - `jobs-data.json.updatedAt` = **30. 8. 2026 01:15:21 CEST**.
-- `source-audit.json.updatedAt` = **30. 8. 2026 04:29:28 CEST**.
+- `source-audit.json.updatedAt` = **30. 8. 2026 06:29:57 CEST**.
 - `jobs-data.json.updatedAt` sa neposúva bez reálnej obsahovej zmeny.
 
 ## FAIL-CLOSED pravidlá
@@ -220,7 +223,7 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 114. CV requirement coverage score.
 115. **Platform-gap transferability score** — rozlíši blízko prenositeľný gap (WooCommerce → Shopify, ActiveCampaign → Klaviyo) od skutočne nového hard-skill gapu; zníži falošné vyradenia kvalitných e-commerce rolí.
 116. **Closure-proof quorum** — status `closed` sa zmení až po dostatočnom canonical dôkaze (explicitný closure banner/404/expired + recheck), aby jeden nekonzistentný indexovaný signál nevyradil stále aktívnu ponuku.
-117. **Micro-budget exploit filter** — pri freelance ponukách odhalí extrémne nízky fixed budget voči rozsahu a označeniu projektu (napr. 5 USD za komplexnú WooCommerce operatívu), aby skillovo presné, ale ekonomicky nezmyselné zákazky nezahlcovali TOP výsledky.
+117. **Micro-budget exploit filter** — pri freelance ponukách odhalí extrémne nízky fixed budget voči rozsahu a označeniu projektu, aby skillovo presné, ale ekonomicky nezmyselné zákazky nezahlcovali TOP výsledky.
 118. **Verified client economics score** — kombinuje klientský spend, počet hires, konkurenciu a reálny budget konkrétnej zákazky; vysoká história klienta sama nesmie kompenzovať neudržateľnú cenu konkrétneho projektu.
 119. **Weekend/night source-pattern booster** — meria, ktoré source families reálne publikujú kvalitné BA/remote ponuky cez víkend a v nočných hodinách; v týchto oknách presunie viac discovery kapacity na zdroje s historicky vyšším čerstvým výnosom bez porušenia povinného 8-family minima.
 120. **Known-employer career delta watchlist** — pre overené firmy s vysokým matchom porovná snapshot ich career stránky medzi behmi a zvýrazní iba nové roly alebo zmenu kritických požiadaviek; znižuje čas stratený opakovaným čítaním nezmenených career stránok.
@@ -228,3 +231,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 122. **Application-pack stale-evidence invalidator** — pri zmene canonical požiadaviek, lokality, mzdy, closure statusu alebo eligibility automaticky označí už pripravené CV/reakciu za `stale`, aby sa neposlala verzia založená na starých podmienkach.
 123. **Published-date provenance resolver** — oddelene eviduje `postedAt`, `updatedAt`, `indexedAt`, `crawledAt` a source timestamp; nikdy neprepisuje skutočný dátum zverejnenia dátumom crawl/indexácie. Zníži falošnú čerstvosť a zlé `<24h` priority pri agregátoroch a LinkedIn indexoch.
 124. **Guaranteed-hours certainty score** — pri part-time/freelance/hourly ponukách rozlíši garantované minimum hodín od `up to`, on-call a neurčitých availability okien; do income-floor výpočtu pustí iba reálne garantované hodiny a zníži riziko zdanlivo dobre platených, ale príjmovo neistých ponúk.
+125. **Source-family evidence floor** — každý povinný source family dostane minimálny evidenčný prah (konkrétny detail alebo explicitný 0-hit dôkaz), aby audit nepočítal iba všeobecnú landing page ako plnohodnotné pokrytie.
+126. **Fresh-result novelty hash** — pre každý nový výsledok vytvorí hash z canonical URL + company + title + critical requirements; pri ďalších behoch rýchlo odlíši skutočne nový lead od recyklovaného indexového výsledku a zníži duplicitné čítanie.
