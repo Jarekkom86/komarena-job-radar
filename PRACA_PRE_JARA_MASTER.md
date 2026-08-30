@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 30. 8. 2026 06:29 CEST
+Aktualizované: 30. 8. 2026 10:28 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -66,16 +66,16 @@ Aktualizované: 30. 8. 2026 06:29 CEST
 32. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 33. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 30. 8. 2026 06:29 CEST — LATEST
+## SOURCE AUDIT — 30. 8. 2026 10:28 CEST — LATEST
 Reálne prehľadané skupiny: **Profesia; priame firemné kariéry; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; StartupJobs; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu **12 nezávislých kontrolovaných skupín**, minimálne 8 source families a viac než 5 mimo Profesia.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky: 0.** Nevznikol nový kandidát, ktorý by bezpečne prešiel locality/language/hard-skill/value gateom a prebil aktuálne priority.
-- **LinkedIn:** čerstvý BA technical-support index obsahuje nové roly, ale prominentné výsledky sú fluent-English, hard-skill alebo už pokryté existujúcimi prioritami; bez nového LIVE winnera.
-- **Brigada.sk:** Bratislava brigády boli reálne prehľadané, ale verejný výsledok neposkytol nový konkrétny detail s dostatočným pay/scope/evidence profilom.
-- **Kariera.sk:** administratíva/logistika boli prehľadané; prominentné čerstvé výsledky boli mimo BA/okolia alebo bez vhodného remote režimu, preto locality gate zostal fail-closed.
-- **Pretlak / StartupJobs / WordPress Jobs:** bez nového WP/Woo/e-shop/AI low-language-gate kandidáta; výsledky sú jazykovo alebo hard-skill náročnejšie.
-- **Upwork:** WordPress/WooCommerce/VA discovery vykonaný; nové výsledky neprekonali LIVE scope/pay/competition profil alebo boli development-heavy.
+- **LinkedIn:** Foxelli E-commerce Technical Assistant je `no longer accepting applications`; SupportYourApp remote support výsledky majú fluent/C1 English alebo ďalší jazyk, preto bez LIVE winnera.
+- **Worki.sk:** aktuálny BA sklad/VZV výsledok bol overený, ale je fyzickejší/VZV-orientovaný a neprekonal HEATING PRO ani vyššie priority.
+- **Brigada.sk / Kariera.sk:** discovery preverené; bez nového konkrétneho BA/remote detailu s dostatočným pay/scope/evidence profilom.
+- **Pretlak / StartupJobs / WordPress Jobs:** bez nového WP/Woo/e-shop/AI low-language-gate kandidáta.
+- **Upwork:** čerstvý `E-commerce Virtual Assistant | Product Listings, Customer Support & Store Management` je Worldwide remote, ale iba 7–8 USD/h, má 20–50 proposals a už 1 hire; ekonomicky/konkurenčne slabý, preto sa nepridáva. `Website & SEO Management 2026` zostáva silný pending WooCommerce lead 15–30 USD/h, no bez novej bezpečnej LIVE mutácie.
 - **Reddit/WP komunity:** 0 kvalifikovaných Slovakia-eligible non-hard-dev LIVE hitov.
 - **Facebook:** **0 verified hits**, coverage `limited`; žiadny fiktívny post.
 
@@ -83,17 +83,17 @@ Reálne prehľadané skupiny: **Profesia; priame firemné kariéry; LinkedIn Job
 - Reálne skontrolované zdrojové skupiny: **12**.
 - Nové aktívne položky: **0**.
 - Významne zmenené priority: **0**.
-- Vyradené jazykovým/hard-skill gateom: **5**.
-- Vyradené ako slabé/nízka hodnota: **4**.
-- Duplicitné/existing: **4**.
-- Vyradené pre freshness/evidence: **3**.
-- Vyradené lokalitným gateom: **2**.
+- Vyradené jazykovým/hard-skill gateom: **4**.
+- Vyradené ako slabé/nízka hodnota: **5**.
+- Duplicitné/existing: **3**.
+- Vyradené pre freshness/evidence: **2**.
+- Vyradené lokalitným gateom: **1**.
 
 ### LIVE mix
 - `jobs-data.json`: **36 aktívnych položiek**.
 - Potvrdený mix: približne **Profesia 17 / 36 = 47,2 %; mimo Profesia 19 / 36 = 52,8 %**.
 - `jobs-data.json.updatedAt` = **30. 8. 2026 01:15:21 CEST**.
-- `source-audit.json.updatedAt` = **30. 8. 2026 06:29:57 CEST**.
+- `source-audit.json.updatedAt` = **30. 8. 2026 10:28:13 CEST**.
 - `jobs-data.json.updatedAt` sa neposúva bez reálnej obsahovej zmeny.
 
 ## FAIL-CLOSED pravidlá
@@ -233,3 +233,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 124. **Guaranteed-hours certainty score** — pri part-time/freelance/hourly ponukách rozlíši garantované minimum hodín od `up to`, on-call a neurčitých availability okien; do income-floor výpočtu pustí iba reálne garantované hodiny a zníži riziko zdanlivo dobre platených, ale príjmovo neistých ponúk.
 125. **Source-family evidence floor** — každý povinný source family dostane minimálny evidenčný prah (konkrétny detail alebo explicitný 0-hit dôkaz), aby audit nepočítal iba všeobecnú landing page ako plnohodnotné pokrytie.
 126. **Fresh-result novelty hash** — pre každý nový výsledok vytvorí hash z canonical URL + company + title + critical requirements; pri ďalších behoch rýchlo odlíši skutočne nový lead od recyklovaného indexového výsledku a zníži duplicitné čítanie.
+127. **Recruiter-hours-aware urgency score** — pri `ihneď`/`ASAP` zohľadní deň v týždni, víkend/sviatok a reálne kontaktné hodiny zamestnávateľa; zabráni falošnej same-day priorite, keď sa žiadosť objektívne začne riešiť až nasledujúci pracovný deň.
+128. **Single-shift expiry hard gate** — pri brigádach viazaných na konkrétny dátum alebo zmenu uloží check-in/start cutoff; po jeho uplynutí ich vyradí z aktívne odporúčaných výsledkov bez mazania historického záznamu.
