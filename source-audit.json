@@ -1,50 +1,36 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T15:22:27+02:00",
+  "updatedAt": "2026-08-30T16:13:24+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "rejectedByLanguageOrHardSkill": 3,
-    "rejectedAsWeakOrLowValue": 3,
-    "duplicateOrExisting": 3,
+    "duplicateOrExisting": 4,
+    "rejectedAsWeakOrLowValue": 5,
     "rejectedByFreshnessOrEvidence": 2,
-    "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 1,
-    "liveMainCount": 36,
-    "liveSourceMix": {"profesia":17,"nonProfesia":19,"profesiaPct":47.2,"nonProfesiaPct":52.8},
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "breach-no-qualified-feed-delta",
-    "note": "Reálny audit 30.8.2026 15:22 CEST preveril 12 source families: Profesia, firemné careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera.sk, Pretlak, StartupJobs, WordPress Jobs, Upwork, Reddit/WordPress komunity a verejnú Facebook indexáciu. Nevznikol nový kandidát, ktorý by bezpečne prešiel všetkými LIVE gate. Najzaujímavejší nový komunitný dopyt je Reddit r/wordpressjobs 'I'm looking for a website creator': online language-learning business, online shop pre digitálne produkty, WordPress/WooCommerce ako preferovaná možnosť, newsletter, Etsy sync, basic SEO a training. Keďže post neuvádza krajinu klienta ani jednoznačné potvrdenie, že zákazku možno vykonať zo Slovenska bez onsite povinnosti, locationEligibility je unknown a lead zostáva v quarantine do overenia. Facebook priniesol 0 verejne overiteľných hiring postov."
+    "note": "Reálny audit 30.8.2026 16:13 CEST preveril Profesia, Worki, Kariera, Brigada.sk, LinkedIn, Pretlak, StartupJobs, WordPress Jobs, Upwork, Reddit/WordPress komunity, priame careers a verejnú Facebook discovery. Nevznikol nový kandidát, ktorý by bezpečne prešiel LIVE gate a prekonal existujúce priority. Profesia potvrdila existujúce Lanža 1500–3000 EUR a Košík.sk 2500–3000 EUR; AK Facility Services zostáva existujúci hit. Car Route vodič dodávky do 3,5 t za 1800 EUR a CORNER SK skladník/vodič B 1450–1650 EUR sú relevantné, ale staršie/refreshed a neprekonávajú aktuálne priority. Nový Upwork WordPress redesign lead je developer/design scope bez dostatočného pay/evidence detailu pre LIVE prioritu."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"BA/okolie/remote WordPress, e-shop, admin, technická podpora a vodič discovery reálne preverená; bez nového kvalifikovaného winnera."},
-    {"name":"Priame verejné careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Foxelli a ďalšie verejné BA/Slovakia-eligible careers preverené; bez nového kandidáta, ktorý by prešiel language/fit gateom."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"BA/Slovakia remote e-commerce/customer/technical support discovery preverená; verejne indexované čerstvé výsledky neposkytli nový kvalifikovaný winner."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA technická, servisná, logistická, administratívna a vodičská discovery preverená; HEATING PRO zostáva existujúca LIVE priorita, bez nového silnejšieho hitu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"note":"Bratislavské brigády reálne preverené; verejný listing neukázal nový prioritný hit vhodný pre LIVE feed."},
-    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"note":"BA administratívne, technické a obchodné výsledky preverené; bez nového kandidáta nad aktuálne priority."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"note":"BA/remote creative/web/e-commerce discovery preverená; bez vhodného non-hard-dev winnera."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"note":"Remote WordPress/e-commerce/support discovery preverená; bez jednoznačne Slovakia-eligible kandidáta s lepším fitom než existujúci feed."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"ok","hits":2,"added":0,"rejectedHardSkill":2,"note":"Aktuálny feed má 10 otvorených pozícií; nové roly z 27.–28.8. sú prevažne development/security/performance alebo onsite/region-bound, preto neprechádzajú prioritným hard-skill/location profilom."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":3,"added":0,"duplicateOrExisting":1,"rejectedWeakOrLowValue":2,"note":"Remote discovery pre WooCommerce/website/admin pokračuje; všeobecné nové výsledky neprekonali existujúce pending/LIVE priority pomerom odmena, konkurencia a jazyková náročnosť."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"ok","hits":1,"added":0,"quarantinedUnknownLocation":1,"note":"Konkrétny verejný hiring post r/wordpressjobs 'I'm looking for a website creator' požaduje online shop pre digitálne produkty, WordPress/WooCommerce, newsletter integráciu, Etsy sync, basic SEO a training. Je veľmi silný vecný fit, ale post neuvádza remote/country eligibility; locationEligibility=unknown, preto nie je v LIVE feed-e."},
-    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"WordPress Slovensko, WooCommerce SK+CZ a Práca/brigády Bratislava verejne vyhľadané. Žiadny konkrétny verejne overiteľný hiring post s priamym linkom nebol nájdený; coverage ostáva limited a 0 verified hits. Autentizovaný Nexus/local ingestion zostáva backlog potreba, automat ho nespúšťa."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":7,"added":0,"note":"BA vodič/kuriér/sklad/reklamácie/support reálne preverené. Lanža a Košík ostávajú priority; Car Route a CORNER SK sú relevantné, ale neprekonávajú existujúce priority."},
+    {"name":"Priame verejné careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Bez nového kvalifikovaného winnera."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Verejne indexované BA/Slovakia výsledky neposkytli nový čerstvý kvalifikovaný winner."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"Bratislavský kraj a relevantné technické/vodičské výsledky preverené; bez nového prioritného hitu."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"note":"Bratislavská discovery preverená; bez konkrétneho nového prioritného hitu."},
+    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":2,"added":0,"note":"Nové poštové/logistické BA výsledky 30.8. majú 1160–1240 EUR resp. približne 1170 EUR a neprechádzajú prioritným value gate."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"note":"Bez nového vhodného non-hard-dev winnera."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"note":"Bez jednoznačne Slovakia-eligible kandidáta s lepším fitom než existujúci feed."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"ok","hits":2,"added":0,"note":"Feed má 10 otvorených pozícií; najnovšie sú prevažne senior development/security/performance alebo region-bound."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":2,"added":0,"note":"Nový WordPress Designer & Developer website modernization lead je remote, ale ide o širší redesign/development scope a dostupný index neposkytuje odmenu ani dostatok dôkazov na povýšenie nad existujúci pending WooCommerce/SEO lead."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"ok","hits":1,"added":0,"quarantinedUnknownLocation":1,"note":"Website creator/WooCommerce dopyt zostáva v quarantine pre chýbajúci explicitný Slovakia/remote eligibility dôkaz."},
+    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"note":"Bez verejne overiteľného nového hiring postu; coverage limited."}
   ],
   "verificationQueue": [
-    {
-      "id":"reddit-wordpressjobs-1vyoiny",
-      "title":"I'm looking for a website creator – online language-learning shop",
-      "source":"Reddit r/wordpressjobs",
-      "url":"https://www.reddit.com/r/wordpressjobs/comments/1vyoiny/im_looking_for_a_website_creator/",
-      "locationEligibility":"unknown",
-      "locationReason":"Projekt je zjavne digitálny a uchádzači v komentároch hovoria o remote práci, ale autor postu sám neuvádza svoju krajinu, explicitný remote režim ani potvrdenie, že dodávateľa prijíma zo Slovenska. Hard locality gate preto vyžaduje overenie pred LIVE aktiváciou.",
-      "fit":"WordPress/WooCommerce, digitálne produkty, newsletter integration, Etsy sync, basic SEO, obsahové stránky a training",
-      "provisionalScore":94,
-      "status":"verify-location-before-active"
-    }
+    {"id":"reddit-wordpressjobs-1vyoiny","title":"I'm looking for a website creator – online language-learning shop","source":"Reddit r/wordpressjobs","url":"https://www.reddit.com/r/wordpressjobs/comments/1vyoiny/im_looking_for_a_website_creator/","locationEligibility":"unknown","provisionalScore":94,"status":"verify-location-before-active"}
   ],
   "pendingCandidate": {
     "id":"upwork-website-seo-management-2093603919086755488",
@@ -53,20 +39,12 @@
     "url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/",
     "locationEligibility":"remote-ok",
     "pay":"15–30 USD/h",
-    "form":"<30 h/týždeň • 6+ mesiacov • ongoing",
-    "languageRisk":"onboarding/interviewing call, weekly reporting and Loom audit imply practical spoken/written English",
     "provisionalScore":91,
     "status":"pending-safe-write"
   },
-  "developmentBacklogAddedThisRun": [
-    {"id":"community-location-proof-handshake","title":"Community location-proof handshake","why":"Pri Reddit/FB/community dopytoch automaticky vyhľadať explicitný country/remote dôkaz v poste, profile a komentároch a až potom povoliť remote-ok; zníži riziko falošného remote fitu."},
-    {"id":"scope-to-portfolio-evidence-matcher","title":"Scope-to-portfolio evidence matcher","why":"Rozložiť dopyt na konkrétne deliverables (WooCommerce, newsletter, Etsy, SEO, training) a ku každému priradiť existujúci dôkaz praxe alebo označiť gap; zrýchli rozhodnutie, či reagovať a čo ukázať klientovi."}
-  ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-active-delta",
-    "jobSources":"updated",
     "sourceAudit":"updated-after-real-source-check",
-    "master":"updated",
     "lockedFilesTouched":false
   }
 }
