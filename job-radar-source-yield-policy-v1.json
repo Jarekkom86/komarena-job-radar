@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "name": "Source yield and exploration policy",
+  "createdAt": "2026-08-30T08:28:17+02:00",
+  "purpose": "Spend sourcing effort where it produces eligible BA/remote opportunities while preserving discovery outside Profesia.",
+  "metricsPerFamily": [
+    "checks7d",
+    "qualifiedHits7d",
+    "activeAdds7d",
+    "baOrRemoteEligible7d",
+    "duplicateRate7d",
+    "hardGateRejectRate7d",
+    "accessStatus",
+    "lastQualifiedHitAt"
+  ],
+  "allocation": {
+    "explorationFloor": "Every required source family remains checked; no family is dropped solely for low recent yield.",
+    "priorityBoost": "Increase query depth for families producing BA/remote eligible, non-duplicate leads in the last 7 days.",
+    "deprioritize": "Reduce repeated near-identical queries when a family has high duplicate/hard-gate rejection rates, but preserve the exploration floor.",
+    "profesiaCap": "Profesia may remain a high-yield family but cannot consume the non-Profesia exploration budget.",
+    "blockedSources": "Blocked/limited sources such as public Facebook receive truthful status and a separate access-recovery backlog; zero verified hits are never converted into synthetic yield."
+  },
+  "successDefinition": "A source is valuable when it produces a concrete, canonical, currently active opportunity that passes BA/remote, language, hard-skill and minimum-value gates—not merely search-result volume.",
+  "safeWriteRule": "This policy changes sourcing/query allocation only; it must not rewrite locked UI, CRM, baseline, stable IDs or existing job records."
+}
