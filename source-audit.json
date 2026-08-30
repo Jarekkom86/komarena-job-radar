@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T20:12:26+02:00",
+  "updatedAt": "2026-08-30T20:36:54+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 2,
-    "rejectedAsWeakOrLowValue": 8,
+    "duplicateOrExisting": 3,
+    "rejectedAsWeakOrLowValue": 9,
     "rejectedByFreshnessOrEvidence": 2,
     "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
@@ -17,26 +17,27 @@
     "freshnessStatus": "breach-no-qualified-feed-delta",
     "liveFeedCount": 36,
     "liveFeedMix": {"profesia":17,"nonProfesia":19,"profesiaPct":47.2,"nonProfesiaPct":52.8},
-    "note": "Reálny audit 30.8.2026 20:12 CEST prehľadal 12 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, StartupJobs, Upwork, WordPress Jobs/tech index, Reddit/WordPress komunity a verejne indexované Facebook skupiny. Nevznikol nový kvalifikovaný LIVE winner ani významná zmena priority. HEATING PRO bol znovu overený ako aktívny: Stará Vajnorská Bratislava, nástup ihneď, 1 600–2 500 €/mes., vodičák B, bez cudzieho jazyka. Upwork Website & SEO Management 2026 zostáva aktívny pending remote lead; detail bol dnes znovu indexovaný a stále ide o dlhodobú WooCommerce/eCommerce správu, no application-friction a anglická komunikácia ostávajú rizikom. Nový Upwork WordPress Designer & Developer – Website Modernization je čerstvý, ale development-heavy redesign scope bez dostatočnej value/fit výhody; WordPress Jobs Senior WordPress Developer vyžaduje custom themes, PHP/JS, React, server management a SSH a je hard-dev. Worki zároveň ukázalo nový autobusový vodičský lead za 10 €/h pre Bratislavu/Šaštín, ktorý neprešiel kvalifikačným gateom. jobs-data.json sa bez kvalifikovanej delty nemení a timestamp sa umelo neposúva."
+    "note": "Reálny audit 30.8.2026 20:36 CEST prehľadal 12 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, StartupJobs, Upwork, WordPress Jobs/tech index, Reddit/WordPress komunity a verejne indexované Facebook skupiny. Nevznikol nový kvalifikovaný LIVE winner ani významná zmena priority. LinkedIn ukázal čerstvý ESET Customer Support Specialist v Bratislave, ale rola vyžaduje aktívnu angličtinu a pri dostupných support variantoch sa objavuje B2 alebo ďalší cudzí jazyk, preto neprešla jazykovým profilom bez bezpečného detailu. Wolt Support zostáva vyradený pre explicitné minimum B2 English. Foliovision User Support je profilovo zaujímavý WordPress/HTML support v Bratislave, ale verejný detail nemá čerstvý active-hiring proof a vyžaduje aktívne písanie v angličtine, preto sa neaktivuje. StartupJobs Customer care pre e-shop je 100 % remote, ale vyžaduje poľštinu. WordPress Jobs Senior WordPress Developer je remote, no explicitne hard-dev: custom themes, PHP/JS, React, server/DNS/SSH, API a deployment. Upwork priniesol WordPress/Shopify e-commerce VA výsledky, ale nič neprekonalo existujúci pending Website & SEO Management 2026 po započítaní jazyka, konkurencie a scope. Facebook zostáva 0 verified hits / limited. jobs-data.json sa bez kvalifikovanej delty nemení a timestamp sa umelo neposúva."
   },
   "sources": [
     {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/okolie WordPress/e-shop/admin/technical/support/driver discovery prehľadané; bez nového kvalifikovaného winnera nad LIVE priority."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejné BA/Slovakia-remote company-career discovery prehľadané; bez nového kvalifikovaného priameho firemného winnera."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava WordPress/e-commerce/support/admin discovery prehľadané; bez nového verejne overiteľného kvalifikovaného hitu."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":2,"added":0,"rejected":1,"note":"HEATING PRO znovu overený ako aktívny a bez významnej zmeny. Nový autobusový vodičský lead 10 €/h Bratislava/Šaštín neprešiel kvalifikačným profilom Job Radaru."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava admin/kuriér/sklad brigády prehľadané; bez nového overiteľného prioritného výsledku."},
-    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA e-shop/admin/support/driver discovery prehľadané; bez nového kvalifikovaného výsledku."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":1,"added":0,"rejected":1,"note":"Čerstvý marketingový výsledok neprekonal existujúce priority; bez vhodného nového non-hard-dev BA/remote winnera."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Remote WordPress/e-commerce/support discovery prehľadané; bez nového Slovakia-eligible winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":8,"added":0,"rejected":6,"note":"Čerstvé Worldwide remote WordPress/WooCommerce výsledky preverené. Website & SEO Management 2026 zostáva pending. Nový WordPress Website Modernization je development-heavy; ďalšie Shopify/build/fix a low-value ledy neprekonali priority."},
-    {"name":"WordPress Jobs / tech index","family":"wordpress-jobs","status":"checked","hits":2,"added":0,"rejected":2,"note":"Index má nové pozície z 27.–28.8. Senior WordPress Developer je remote, ale vyžaduje custom theme dev, PHP/JS, React, server/DNS/SSH a staging ops; ostatné nové pozície sú tiež hard-dev alebo geograficky nevhodné."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":2,"added":0,"rejected":2,"note":"Wolt canonical Greenhouse a Foliovision direct support detail reálne preverené. Wolt padá na explicitnom B2 English; Foliovision nemá dostatočne čerstvý active-hiring proof a vyžaduje aktívne písanie v angličtine."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":3,"added":0,"rejected":3,"note":"Čerstvé BA support výsledky vrátane ESET Customer Support Specialist a Wolt preverené; Wolt má minimum B2 English, ESET detail nemá bezpečný A2-compatible proof a súvisiace support roly vyžadujú B2/ďalší jazyk."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava technická podpora/admin/vodič/sklad discovery prehľadané; bez nového silnejšieho kvalifikovaného hitu."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava admin/kuriér/sklad/web brigády prehľadané; bez nového overiteľného prioritného výsledku."},
+    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA e-shop/admin/support/driver discovery prehľadané; index v tomto behu neposkytol nový kvalifikovaný detail."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote WordPress/e-commerce/support discovery prehľadané; bez nového non-hard-dev winnera."},
+    {"name":"StartupJobs","family":"startupjobs","status":"ok","hits":2,"added":0,"rejected":2,"note":"Customer care / online agent pre e-shop je 100 % remote, ale vyžaduje poľštinu; ďalšie čerstvé výsledky boli grafika alebo sales a neprešli profilom."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":5,"added":0,"rejected":4,"note":"Čerstvé Worldwide remote WordPress/WooCommerce/Shopify VA a web výsledky preverené. Website & SEO Management 2026 zostáva najsilnejší pending; nové Product Posting/SEO VA a eCommerce VA/Admin výsledky neprekonali existujúce priority po započítaní jazyka, scope a konkurencie."},
+    {"name":"WordPress Jobs / tech index","family":"wordpress-jobs","status":"ok","hits":2,"added":0,"rejected":2,"note":"Senior WordPress Developer z 27.8. je remote, ale vyžaduje custom theme dev, PHP/JS, React, server/DNS/SSH, API, Git a staging/deployment; hard-dev gate. Index má iba 10 open positions a 10 % remote-friendly."},
     {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejne indexované WordPress/WooCommerce hiring dopyty prehľadané; bez nového konkrétneho Slovakia-eligible winnera s dostatočným remote proof."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"Verejný index neposkytol konkrétny overiteľný nový hiring post s priamym linkom; 0 verified hits. Autentizovaný Nexus/local ingestion ostáva backlog."}
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"Verejný index neposkytol konkrétny overiteľný nový hiring post s priamym linkom; 0 verified hits. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa."}
   ],
   "verificationQueue": [
     {"id":"linkedin-sectec-marketing-asistent-4362401102","title":"Marketing asistent – WordPress/CMS, newslettery, administratíva","source":"LinkedIn Jobs / SecTec","url":"https://sk.linkedin.com/jobs/view/marketing-asistent-at-sectec-4362401102","locationEligibility":"ba-area","languageEligibility":"no-explicit-gate-found","reason":"Veľmi dobrý profilový fit a flexibilná forma v Bratislave. Pred LIVE aktiváciou overiť mzdu, aktuálny dátum publikácie/active-hiring proof a prípadnú skrytú jazykovú požiadavku."},
     {"id":"upwork-wp-woo-spezialist-2088184469556084370","title":"WordPress-/WooCommerce-Spezialist – langfristige Unterstützung","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/WordPress-WooCommerce-Spezialist-langfristige-Unterst-tzung_~022088184469556084370/","locationEligibility":"remote-ok","languageEligibility":"unknown","reason":"Worldwide remote, ale listing je celý po nemecky a explicitná jazyková požiadavka chýba; pred odporúčaním overiť komunikačný jazyk."},
-    {"id":"upwork-ecommerce-va-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/commerce-Virtual-Assistant-WooCommerce-Subscriptions-Customer-Service-Xero_~022093200734923132353/","locationEligibility":"remote-ok","languageEligibility":"risk-b2-like-written","reason":"Worldwide Remote Job, 10–15 USD/h, <30 h/týždeň, 1–3 mesiace, contract-to-hire; explicitne vyžaduje good written English, strong WooCommerce + WooCommerce Subscriptions, Meta Ads Manager a basic Xero. Vecne silný fit, ale jazykový a špecializovaný skill gap bráni LIVE odporúčaniu."}
+    {"id":"upwork-ecommerce-va-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/commerce-Virtual-Assistant-WooCommerce-Subscriptions-Customer-Service-Xero_~022093200734923132353/","locationEligibility":"remote-ok","languageEligibility":"risk-b2-like-written","reason":"Worldwide Remote Job, 10–15 USD/h, <30 h/týždeň, 1–3 mesiace, contract-to-hire; explicitne vyžaduje good written English, strong WooCommerce + WooCommerce Subscriptions, Meta Ads Manager a basic Xero. Vecne silný fit, ale jazykový a špecializovaný skill gap bráni LIVE odporúčaniu."},
+    {"id":"foliovision-user-support","title":"User Support – WordPress/FV Player","source":"Foliovision direct","url":"https://foliovision.com/jobs/technical-support","locationEligibility":"ba-area","languageEligibility":"risk-written-english","reason":"Bratislava, WordPress/HTML troubleshooting a user support sú profilovo silné, ale verejný detail nemá čerstvý active-hiring proof a vyžaduje aktívne písanie v angličtine; ponechať na overenie, nie LIVE."}
   ],
   "pendingCandidate": {
     "id":"upwork-website-seo-management-2093603919086755488",
@@ -48,13 +49,16 @@
     "provisionalScore":91,
     "status":"pending-language-and-application-friction-review"
   },
-  "developmentBacklogAddedThisRun": [],
+  "developmentBacklogAddedThisRun": [
+    {"name":"Canonical application-route health monitor","reason":"Pri každom TOP/pending leade overovať nielen existenciu detailu, ale aj funkčnosť reálneho apply endpointu a prípadný login/region gate; zabráni plytvaniu časom na ponuky, ktoré vyhľadávač stále ukazuje, ale nedajú sa reálne podať."},
+    {"name":"Fresh competitor-pressure decay","reason":"Pri freelance leadoch kombinovať vek ponuky s počtom proposals/interviewing a odhadovať, ako rýchlo klesá reply probability; pomôže prioritizovať čerstvé low-competition zákazky pred staršími high-fit leadmi s už zaplneným funnelom."}
+  ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-delta",
     "jobsDataNonProf":"locked-preserved",
     "sourceAudit":"updated-after-real-12-family-check",
-    "jobSources":"preserved-no-registry-delta",
-    "master":"preserved-no-rule-delta",
+    "jobSources":"update-planned-this-run",
+    "master":"backlog-update-planned-this-run",
     "lockedFilesTouched":false
   }
 }
