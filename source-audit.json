@@ -1,42 +1,42 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T22:14:11+02:00",
+  "updatedAt": "2026-08-30T22:25:01+02:00",
   "runSummary": {
-    "familiesChecked": 10,
+    "familiesChecked": 11,
     "newActiveJobs": 0,
-    "significantPendingCandidates": 1,
+    "significantPendingCandidates": 2,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 3,
-    "rejectedAsWeakOrLowValue": 9,
-    "rejectedByFreshnessOrEvidence": 1,
+    "duplicateOrExisting": 4,
+    "rejectedAsWeakOrLowValue": 10,
+    "rejectedByFreshnessOrEvidence": 2,
     "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "breach-no-qualified-feed-delta",
+    "freshnessStatus": "breach-qualified-candidate-write-blocked-fail-closed",
     "liveFeedCount": 36,
     "liveFeedMix": {"profesia":17,"nonProfesia":19,"profesiaPct":47.2,"nonProfesiaPct":52.8},
-    "note": "Reálny audit 30.8.2026 22:14 CEST prehľadal 10 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak/WordPress Jobs tech lane, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Nevznikol nový kvalifikovaný LIVE winner ani významná zmena existujúcej priority. HEATING PRO je stále verejne aktívny za 1 600–2 500 EUR/mes. Profesia objavila IZY VAPE Back Office & Operations Coordinator – e-commerce za 1 600–2 000 EUR/mes., prevažne remote, s veľmi dobrým e-commerce/admin fitom, ale listing má tvrdé požiadavky VŠ I. stupňa, B2 angličtinu a 3 roky praxe a plánovaný nástup až november–december 2026, preto nejde do TODAY priority. Upwork Wordpress website technical enhancements je Worldwide remote za 15–35 USD/h, ale vyžaduje PHP/Web Development, má 20–50 proposals, 7 interviewing a už 1 hire; ide o technickejší a konkurenčne rozbehnutý lead. Brigada.sk ostáva na 103 BA brigádach; viditeľné vodičské/skladové ponuky neprekonávajú existujúce value/fit priority. jobs-data.json zostáva fail-closed bez umelej zmeny timestampu."
+    "note": "Audit 30.8.2026 22:25 CEST reálne prehľadal 11 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Práca za rohom, Pretlak/WordPress Jobs, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Nový kvalifikovaný direct-company kandidát je AlzaBox Špecialista v Bratislave: 1 430 EUR fix + variabilná zložka do 610 EUR, flexibilný Po–Pi režim, čiastočný home office, vodičský preukaz B, MS Office, komunikácia/akvizícia a využívanie AI nástrojov; cudzí jazyk nie je uvedený ako podmienka. Kandidát prechádza BA hard gate a nemá hard-development gate. Autoritatívny jobs-data.json sa v tomto behu nemení, pretože konektor vracia veľký súbor truncovaný a update_file vyžaduje kompletný replacement; risk poškodenia 36-položkového feedu je fail-closed blocker. Upwork nové fresh výsledky boli prevažne low-value alebo mali silný English/phone friction. Facebook: 0 verified hits, limited."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":3,"added":0,"rejected":1,"note":"Overené BA/okolie admin/e-commerce/driver discovery. IZY VAPE 1 600–2 000 EUR/mes. je profilovo zaujímavý, ale B2 AJ + VŠ I. stupňa + 3 roky praxe a nástup november–december 2026 ho držia mimo TODAY priority. Energohub zostáva verejne aktívny v BA."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bez nového silnejšieho kvalifikovaného priameho hiring hitu."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/EEA WordPress/e-commerce/support discovery bez nového čerstvého A2-compatible winnera; indexované staršie roly nie sú aktívne alebo sú outdated."},
-    {"name":"Worki.sk","family":"worki","status":"ok","hits":1,"added":0,"rejected":0,"note":"HEATING PRO Technický pracovník – sklad, rozvoz, nákup je stále verejne aktívny; 1 600–2 500 EUR/mes., nástup ASAP. Bez významnej zmeny oproti LIVE záznamu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":3,"added":0,"rejected":3,"note":"103 BA brigád v aktuálnom indexe. Vodič detského vláčika AVION 6 EUR/h netto a Metro konsolidácia/distribúcia 7 EUR/h sú aktuálne, ale slabšie než LIVE priority."},
-    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Aktuálny portál a BA/logistika discovery prehľadané; bez nového kvalifikovaného detailu, ktorý by prekonal LIVE priority."},
-    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bez nového vhodného non-hard-dev WordPress/e-commerce leadu."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":2,"added":0,"rejected":1,"note":"Nový Wordpress website technical enhancements: Worldwide, 15–35 USD/h, 3–6 mesiacov, ale mandatory PHP/Web Development, 20–50 proposals, 7 interviewing a 1 hire; nezaradené nad existujúci pending Website & SEO Management 2026."},
-    {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejné výsledky neukázali nový overiteľný WordPress/WooCommerce hiring dopyt vhodný pre profil."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"0 verified hits. Bez konkrétneho relevantného verejne overiteľného hiring postu; autentizovaný Nexus/local ingestion ostáva backlog."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote WordPress/e-shop/admin/technical/support/driver discovery skontrolované; bez nového čerstvého kvalifikovaného winnera nad LIVE priority."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":4,"added":0,"rejected":3,"note":"Alza, Wolt a IKEA careers reálne kontrolované. AlzaBox Špecialista je nový kvalifikovaný BA kandidát. Wolt support má jazykový friction; IKEA logistické/customer-service roly sú menej prioritné alebo fyzickejšie."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejne indexované BA/remote WordPress/e-commerce/support výsledky preverené; bez nového A2-compatible winnera."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA administratíva/technická podpora/vodič/sklad discovery preverené; bez nového silnejšieho kvalifikovaného hitu."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":4,"added":0,"rejected":4,"note":"103 BA brigád. Vodič detského vláčika v AVIONe je 6 EUR/h netto, Metro skladové brigády 7 EUR/h; neprekonávajú LIVE value/fit priority."},
+    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA e-shop/admin/support discovery prehľadané; bez nového kvalifikovaného detailu."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":4,"added":0,"rejected":3,"note":"Čerstvý BA index potvrdzuje Lanža a Akfos ako existujúce LIVE položky; ďalšie vodič/sklad/technické ponuky sú slabšie alebo vyžadujú C/VZV/§22. Mirrory Profesia sa nerátajú ako nezávislé prírastky."},
+    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bez nového vhodného non-hard-dev WordPress/WooCommerce leadu."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":3,"added":0,"rejected":3,"note":"Fresh Virtual Assistant + Cold Caller je Worldwide remote, ale iba 3–4 USD/h a vyžaduje phone communication; Shopify VA 650 USD má Strong English + Loom a je starší; WhatsApp/order VA 300 USD mesačne má 50+ proposals. Žiadny neprekonáva existujúci Website & SEO Management pending lead."},
+    {"name":"Reddit / WordPress komunity","family":"communities","status":"limited","hits":0,"added":0,"rejected":1,"note":"Verejné indexy ukázali najmä agregované VA hiring posty/reposty bez dostatočne konkrétneho originálneho WordPress/WooCommerce leadu pre LIVE feed."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"0 verified hits. Bez konkrétneho verejne overiteľného hiring postu a priameho linku; autentizovaný Nexus/local ingestion ostáva backlog."}
   ],
   "verificationQueue": [
-    {"id":"profesia-izy-vape-5348749","title":"Back Office & Operations Coordinator – e-commerce | Remote","source":"Profesia / IZY VAPE CE","url":"https://www.profesia.sk/praca/izy-vape-ce/O5348749","locationEligibility":"remote-ok","languageEligibility":"hard-b2-gate","reason":"Silný e-commerce/back-office/WooCommerce/AI profilový fit a 1 600–2 000 EUR/mes., väčšinou remote. Neaktivovať ako TODAY: explicitne B2 angličtina, VŠ I. stupňa, 3 roky praxe a plánovaný nástup november–december 2026."},
-    {"id":"linkedin-sectec-marketing-asistent-4362401102","title":"Marketing asistent – WordPress/CMS, newslettery, administratíva","source":"LinkedIn Jobs / SecTec","url":"https://sk.linkedin.com/jobs/view/marketing-asistent-at-sectec-4362401102","locationEligibility":"ba-area","languageEligibility":"no-explicit-gate-found","reason":"Veľmi dobrý profilový fit a flexibilná forma v Bratislave. Pred LIVE aktiváciou overiť mzdu, aktuálny dátum publikácie/active-hiring proof a prípadnú skrytú jazykovú požiadavku."},
-    {"id":"upwork-wp-woo-spezialist-2088184469556084370","title":"WordPress-/WooCommerce-Spezialist – langfristige Unterstützung","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/WordPress-WooCommerce-Spezialist-langfristige-Unterst-tzung_~022088184469556084370/","locationEligibility":"remote-ok","languageEligibility":"unknown","reason":"Worldwide remote, ale listing je celý po nemecky a explicitná jazyková požiadavka chýba; pred odporúčaním overiť komunikačný jazyk."},
-    {"id":"upwork-ecommerce-va-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/commerce-Virtual-Assistant-WooCommerce-Subscriptions-Customer-Service-Xero_~022093200734923132353/","locationEligibility":"remote-ok","languageEligibility":"risk-b2-like-written","reason":"Worldwide Remote Job, 10–15 USD/h; explicitne vyžaduje good written English a špecializované WooCommerce Subscriptions/Meta Ads/Xero skills."},
-    {"id":"foliovision-user-support","title":"User Support – WordPress/FV Player","source":"Foliovision direct","url":"https://foliovision.com/jobs/technical-support","locationEligibility":"ba-area","languageEligibility":"risk-written-english","reason":"Bratislava, WordPress/HTML troubleshooting a user support sú profilovo silné, ale verejný detail nemá čerstvý active-hiring proof a vyžaduje aktívne písanie v angličtine."}
+    {"id":"alza-alzabox-specialist-ba-2026","title":"AlzaBox Špecialista","source":"Alza.sk kariéra – direct company career","url":"https://kariera.alza.sk/pozicia/pracuj-na-pozicii-specialista-expanzie-pre-alzaboxy-pomahaj-nam-rast-a-rozsirovat-sa/","locationEligibility":"ba-area","languageEligibility":"ok-no-foreign-language-gate","provisionalScore":89,"reason":"Kancelárie Bratislava, plný úväzok, 1 430 EUR fix + variabilná zložka do 610 EUR, flexibilný Po–Pi režim s čiastočným HO. Vodičák B, Excel užívateľsky, komunikácia/akvizícia a AI nástroje; prax z realít/obchodu je iba výhodou. Prechádza lokalitným a language gateom. Aktivácia čaká iba na bezpečný jobs-data full-content write path."},
+    {"id":"profesia-izy-vape-5348749","title":"Back Office & Operations Coordinator – e-commerce | Remote","source":"Profesia / IZY VAPE CE","url":"https://www.profesia.sk/praca/izy-vape-ce/O5348749","locationEligibility":"remote-ok","languageEligibility":"hard-b2-gate","reason":"Silný e-commerce/back-office profil, ale B2 AJ + VŠ I. stupňa + 3 roky praxe a nástup november–december 2026; nie TODAY."},
+    {"id":"linkedin-sectec-marketing-asistent-4362401102","title":"Marketing asistent – WordPress/CMS, newslettery, administratíva","source":"LinkedIn Jobs / SecTec","url":"https://sk.linkedin.com/jobs/view/marketing-asistent-at-sectec-4362401102","locationEligibility":"ba-area","languageEligibility":"no-explicit-gate-found","reason":"Dobrý profilový fit v Bratislave. Pred LIVE aktiváciou stále chýba čerstvý active-hiring proof a mzda."},
+    {"id":"upwork-ecommerce-va-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/commerce-Virtual-Assistant-WooCommerce-Subscriptions-Customer-Service-Xero_~022093200734923132353/","locationEligibility":"remote-ok","languageEligibility":"risk-b2-like-written","reason":"Worldwide remote, ale explicitne good written English + špecializované WooCommerce Subscriptions/Meta Ads/Xero skills."}
   ],
   "pendingCandidate": {
     "id":"upwork-website-seo-management-2093603919086755488",
@@ -48,12 +48,16 @@
     "provisionalScore":91,
     "status":"pending-language-and-application-friction-review"
   },
-  "developmentBacklogAddedThisRun": [],
+  "developmentBacklogAddedThisRun": [
+    {"id":"safe-json-append-writer","title":"Safe JSON append writer with pre/post invariants","value":"Lokálny/Nexus helper načíta celý jobs-data.json, pridá iba nový objekt, validuje JSON schema, počet položiek, unikátne ID a kategórie a až potom commitne. Odstráni opakovaný connector full-replacement blocker bez zásahu do UI/baseline."},
+    {"id":"direct-career-delta-cache","title":"Direct-career delta cache with canonical-first promotion","value":"Ukladať hash/canonical URL posledných direct-company výsledkov a pri novom/zmene prioritne overovať direct career detail pred job board mirrorom. Zníži duplicitné discovery a zrýchli zachytenie čerstvých firemných ponúk."}
+  ],
   "writeStatus": {
-    "jobsData":"preserved-no-qualified-delta",
-    "jobsDataNonProf":"preserved-no-qualified-delta",
-    "sourceAudit":"updated-after-real-10-family-check",
-    "master":"full-file-read-still-truncated; no unsafe rewrite attempted",
+    "jobsData":"preserved-fail-closed-qualified-candidate-awaits-safe-full-content-write",
+    "jobsDataNonProf":"locked-preserved",
+    "jobSources":"pending-current-run-refresh",
+    "sourceAudit":"updated-after-real-11-family-check",
+    "master":"full-file-read/write path not safely available in this run; backlog duplicated here pending safe MASTER append",
     "lockedFilesTouched":false
   }
 }
