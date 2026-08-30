@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 30. 8. 2026 16:25 CEST
+Aktualizované: 30. 8. 2026 17:25 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -66,34 +66,33 @@ Aktualizované: 30. 8. 2026 16:25 CEST
 32. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 33. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 30. 8. 2026 16:25 CEST — LATEST
+## SOURCE AUDIT — 30. 8. 2026 17:25 CEST — LATEST
 Reálne prehľadané skupiny: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **10 nezávislých source families**, z toho 9 mimo Profesia.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 0.** Žiadny nový kandidát bezpečne neprešiel locality/language/hard-skill/value gateom; `jobs-data.json` sa preto obsahovo nemení a existujúci feed zostáva fail-closed zachovaný.
-- **LinkedIn:** verejný index vrátil EEA CMS Operator a Junior Web Designer, ale obe stránky uvádzajú `No longer accepting applications`; vyradené pre neaktivitu/freshness.
-- **Kariera.sk:** aktuálny index priniesol výsledky v Žiline, teda mimo tvrdého BA/remote gate; neaktivované.
-- **Profesia / Worki / Brigada.sk / Pretlak:** reálne prehľadané BA/remote discovery lanes; bez nového kvalifikovaného winnera nad aktuálne LIVE priority.
-- **Priame careers:** verejná discovery priniesla všeobecné DHL/Philips a zahraničné výsledky, ale nie nový BA alebo Slovakia-remote kandidát spĺňajúci profil.
-- **Upwork:** čerstvé všeobecné VA/data/web výsledky existujú, ale `Website & SEO Management 2026` zostáva najsilnejší pending remote-ok lead (15–30 USD/h); nové výsledky ho neprekonali pomerom fit/odmena/konkurencia alebo boli dev-heavy.
-- **Reddit/WordPress komunity:** existujúci WooCommerce website-creator lead zostáva v quarantine s `locationEligibility: unknown`, pretože verejný post stále nemá explicitný country/remote dôkaz pre výkon zo Slovenska.
+- **Nové aktívne položky: 0.** Žiadny nový kandidát bezpečne neprešiel locality/language/hard-skill/value gateom; `jobs-data.json` sa obsahovo nemení a existujúci feed zostáva fail-closed zachovaný.
+- **Priame careers:** DHL HR Coordinator v Ivanke pri Dunaji bol v čerstvom indexe, ale canonical career detail už uvádza, že prijímanie žiadostí je uzavreté; vyradené pre neaktivitu.
+- **LinkedIn:** EEA Junior Web Designer a CMS Operator sú stále `No longer accepting applications`; bez nového aktívneho winnera.
+- **Profesia / Worki / Brigada.sk / Kariera.sk / Pretlak:** reálne prehľadané BA/remote discovery lanes; bez nového kvalifikovaného výsledku nad aktuálne LIVE priority.
+- **Upwork:** `WordPress-/WooCommerce-Spezialist – langfristige Unterstützung` je Worldwide remote za 8–15 USD/h, ale je 3 týždne starý, má 20–50 proposals, 2 interviewing a 10 invites; listing je celý po nemecky bez explicitného language proof, preto `languageEligibility: unknown` a nie LIVE. WooCommerce redesign za 225 USD je expert UI/UX scope s 20–50 proposals a klient už má hire. `Website & SEO Management 2026` zostáva najsilnejší pending remote-ok lead za 15–30 USD/h.
+- **Reddit/WordPress komunity:** verejne indexované hiring výsledky boli US-only alebo hard-dev; bez nového Slovakia-eligible winnera.
 - **Facebook:** **0 verified hits**, coverage `limited`; žiadny konkrétny verejne overiteľný hiring post s priamym linkom.
 
 ### Run summary
 - Reálne skontrolované source families: **10**.
 - Nové aktívne položky: **0**.
-- Významné pending/quarantine kandidáty: **1 pending + 1 quarantine**.
-- Vyradené ako slabé/nízka hodnota: **5**.
+- Významné pending kandidáty: **1**.
+- Language quarantine: **1**.
+- Vyradené ako slabé/nízka hodnota: **4**.
 - Vyradené pre freshness/evidence: **3**.
-- Vyradené lokalitou: **2**.
-- Duplicitné/existing: **2**.
-- Quarantine pre nejasnú lokalitu/remote eligibility: **1**.
+- Vyradené lokalitou: **1**.
+- Duplicitné/existing: **1**.
 
 ### LIVE mix
 - `jobs-data.json`: **36 aktívnych položiek**.
 - Potvrdený mix: približne **Profesia 17 / 36 = 47,2 %; mimo Profesia 19 / 36 = 52,8 %**.
 - `jobs-data.json.updatedAt` = **30. 8. 2026 01:15:21 CEST**; bez reálnej kvalifikovanej obsahovej delty sa timestamp umelo neposúva.
-- `source-audit.json.updatedAt` = **30. 8. 2026 16:25:37 CEST**.
+- `source-audit.json.updatedAt` = **30. 8. 2026 17:25:29 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -225,3 +224,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 117. Scope-to-portfolio evidence matcher — rozložiť dopyt na konkrétne deliverables (napr. WooCommerce, newsletter, Etsy, SEO, training) a ku každému priradiť existujúci dôkaz praxe alebo označiť gap; zrýchli rozhodnutie, či reagovať a ktoré referencie použiť.
 118. Search-result evidence aging clock — pri každom discovery hite ukladať vek posledného detailného dôkazu oddelene od veku indexu/crawlu; zabráni povýšeniu starej alebo už uzavretej ponuky len preto, že ju vyhľadávač dnes znovu preindexoval.
 119. Source-family zero-yield rotation — ak source family opakovane vracia 0 kvalifikovaných kandidátov, meniť query archetyp, synonymá rolí a lokalitné výrazy pri zachovaní exploration floor; zvýši coverage bez falošného označovania zdroja za nefunkčný.
+120. Listing-language ambiguity quarantine — ak je celý listing v inom jazyku než SK/CZ/EN a explicitná jazyková požiadavka chýba, nastaviť `languageEligibility: unknown` a nepovýšiť ho do TOP/LIVE bez overenia komunikačného jazyka.
+121. Invite-to-interview efficiency signal — pri freelance leadoch vyhodnocovať pomer `invites / unanswered invites / interviewing / hires`; masové pozvánky s nízkou konverziou penalizovať ako signál nižšej reply probability a vyššej aplikačnej straty času.
