@@ -64,9 +64,9 @@
   ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-active-delta",
-    "jobSources":"update-requested-this-run",
+    "jobSources":"updated",
     "sourceAudit":"updated-after-real-source-check",
-    "master":"update-requested-this-run",
+    "master":"updated",
     "lockedFilesTouched":false
   }
 }
