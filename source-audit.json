@@ -1,36 +1,35 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T16:13:24+02:00",
+  "updatedAt": "2026-08-30T16:25:37+02:00",
   "runSummary": {
-    "familiesChecked": 12,
+    "familiesChecked": 10,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 4,
+    "duplicateOrExisting": 2,
     "rejectedAsWeakOrLowValue": 5,
-    "rejectedByFreshnessOrEvidence": 2,
+    "rejectedByFreshnessOrEvidence": 3,
+    "rejectedByLocation": 2,
     "quarantinedUnknownLocation": 1,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "breach-no-qualified-feed-delta",
-    "note": "Reálny audit 30.8.2026 16:13 CEST preveril Profesia, Worki, Kariera, Brigada.sk, LinkedIn, Pretlak, StartupJobs, WordPress Jobs, Upwork, Reddit/WordPress komunity, priame careers a verejnú Facebook discovery. Nevznikol nový kandidát, ktorý by bezpečne prešiel LIVE gate a prekonal existujúce priority. Profesia potvrdila existujúce Lanža 1500–3000 EUR a Košík.sk 2500–3000 EUR; AK Facility Services zostáva existujúci hit. Car Route vodič dodávky do 3,5 t za 1800 EUR a CORNER SK skladník/vodič B 1450–1650 EUR sú relevantné, ale staršie/refreshed a neprekonávajú aktuálne priority. Nový Upwork WordPress redesign lead je developer/design scope bez dostatočného pay/evidence detailu pre LIVE prioritu."
+    "note": "Reálny audit 30.8.2026 16:25 CEST preveril Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a verejnú Facebook discovery. Nevznikol nový kandidát, ktorý by bezpečne prešiel lokalitným, jazykovým, hard-skill a value gateom. LinkedIn index vrátil staré/no-longer-accepting EEA CMS/web roly; Kariera discovery vrátila mimo-gate Žilinu. Upwork má čerstvé všeobecné VA/data/web výsledky, ale bez lepšieho WooCommerce/odmena/fit profilu než existujúce LIVE/pending priority. Facebook neposkytol žiadny konkrétny verejne overiteľný hiring post."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":7,"added":0,"note":"BA vodič/kuriér/sklad/reklamácie/support reálne preverené. Lanža a Košík ostávajú priority; Car Route a CORNER SK sú relevantné, ale neprekonávajú existujúce priority."},
-    {"name":"Priame verejné careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Bez nového kvalifikovaného winnera."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Verejne indexované BA/Slovakia výsledky neposkytli nový čerstvý kvalifikovaný winner."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"Bratislavský kraj a relevantné technické/vodičské výsledky preverené; bez nového prioritného hitu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"note":"Bratislavská discovery preverená; bez konkrétneho nového prioritného hitu."},
-    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":2,"added":0,"note":"Nové poštové/logistické BA výsledky 30.8. majú 1160–1240 EUR resp. približne 1170 EUR a neprechádzajú prioritným value gate."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"note":"Bez nového vhodného non-hard-dev winnera."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"note":"Bez jednoznačne Slovakia-eligible kandidáta s lepším fitom než existujúci feed."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"ok","hits":2,"added":0,"note":"Feed má 10 otvorených pozícií; najnovšie sú prevažne senior development/security/performance alebo region-bound."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":2,"added":0,"note":"Nový WordPress Designer & Developer website modernization lead je remote, ale ide o širší redesign/development scope a dostupný index neposkytuje odmenu ani dostatok dôkazov na povýšenie nad existujúci pending WooCommerce/SEO lead."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"ok","hits":1,"added":0,"quarantinedUnknownLocation":1,"note":"Website creator/WooCommerce dopyt zostáva v quarantine pre chýbajúci explicitný Slovakia/remote eligibility dôkaz."},
-    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"note":"Bez verejne overiteľného nového hiring postu; coverage limited."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"BA/remote WooCommerce, e-shop, administratíva, technický support a vodič discovery preverené; bez nového kvalifikovaného winnera nad LIVE priority."},
+    {"name":"Priame verejné careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Verejné career zdroje boli prehľadané; objavili sa všeobecné DHL/Philips a zahraničné výsledky, ale bez nového BA alebo Slovakia-remote kandidáta spĺňajúceho profil."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"added":0,"note":"Verejný index vrátil EEA CMS Operator a Junior Web Designer, oba už neakceptujú žiadosti; vyradené pre neaktivitu/freshness."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"Bratislava technická podpora/admin/vodič/sklad discovery preverená; bez nového kvalifikovaného hitu."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"note":"Bratislavské brigády administratíva/vodič/sklad preverené; bez nového konkrétneho prioritného hitu."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"rejectedLocation":1,"note":"Index priniesol aktuálne obchodné výsledky v Žiline; mimo tvrdého BA/remote gate, preto neaktivované."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"note":"BA/remote WordPress/e-commerce/support discovery preverená; bez nového non-hard-dev winnera."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":5,"added":0,"note":"Verejný index má čerstvé remote VA/data/web výsledky. Website & SEO Management 2026 zostáva najsilnejší existujúci pending lead; nové všeobecné VA/web ponuky ho neprekonali pomerom fit/odmena/konkurencia alebo boli príliš dev-heavy."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"ok","hits":2,"added":0,"quarantinedUnknownLocation":1,"note":"r/wordpressjobs a r/VirtualAssistant boli verejne prehľadané. Existujúci WooCommerce website-creator lead zostáva v quarantine pre chýbajúci explicitný Slovakia/remote eligibility dôkaz; nové verejné výsledky neprekonali LIVE priority."},
+    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny overiteľný hiring post a priamy link; autentizovaný Nexus/local agent ostáva backlog potreba, automat ho nespúšťa."}
   ],
   "verificationQueue": [
-    {"id":"reddit-wordpressjobs-1vyoiny","title":"I'm looking for a website creator – online language-learning shop","source":"Reddit r/wordpressjobs","url":"https://www.reddit.com/r/wordpressjobs/comments/1vyoiny/im_looking_for_a_website_creator/","locationEligibility":"unknown","provisionalScore":94,"status":"verify-location-before-active"}
+    {"id":"reddit-wordpressjobs-1vyoiny","title":"I'm looking for a website creator – online language-learning shop","source":"Reddit r/wordpressjobs","url":"https://www.reddit.com/r/wordpressjobs/comments/1vyoiny/im_looking_for_a_website_creator/","locationEligibility":"unknown","locationReason":"Verejný post neobsahuje explicitný country/remote eligibility dôkaz pre prácu zo Slovenska.","provisionalScore":94,"status":"verify-location-before-active"}
   ],
   "pendingCandidate": {
     "id":"upwork-website-seo-management-2093603919086755488",
@@ -40,10 +39,22 @@
     "locationEligibility":"remote-ok",
     "pay":"15–30 USD/h",
     "provisionalScore":91,
-    "status":"pending-safe-write"
+    "status":"pending-language-and-application-friction-review"
   },
+  "liveMix": {
+    "activeJobs": 36,
+    "profesia": 17,
+    "nonProfesia": 19,
+    "profesiaPct": 47.2,
+    "nonProfesiaPct": 52.8
+  },
+  "masterBacklogAdditions": [
+    {"name":"Search-result evidence aging clock","reason":"Každému discovery hitu ukladať vek posledného detailného dôkazu oddelene od veku indexu; zabráni povýšeniu starého/no-longer-accepting výsledku len preto, že bol dnes znovu crawlovaný."},
+    {"name":"Source-family zero-yield rotation","reason":"Ak source family opakovane vracia 0 kvalifikovaných kandidátov, meniť query archetyp/lokalitné synonymá pri zachovaní exploration floor; zvýši coverage bez falošného označovania zdroja za nefunkčný."}
+  ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-active-delta",
+    "jobSources":"updated-after-real-source-check",
     "sourceAudit":"updated-after-real-source-check",
     "lockedFilesTouched":false
   }
