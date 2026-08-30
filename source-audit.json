@@ -1,35 +1,37 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T19:10:51+02:00",
+  "updatedAt": "2026-08-30T19:32:52+02:00",
   "runSummary": {
-    "familiesChecked": 10,
+    "familiesChecked": 12,
     "newActiveJobs": 0,
-    "significantPendingCandidates": 2,
+    "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 4,
-    "rejectedAsWeakOrLowValue": 5,
+    "duplicateOrExisting": 1,
+    "rejectedAsWeakOrLowValue": 6,
     "rejectedByFreshnessOrEvidence": 2,
     "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
-    "quarantinedUnknownLanguage": 1,
+    "quarantinedUnknownLanguage": 0,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "breach-no-qualified-feed-delta",
     "liveFeedCount": 36,
     "liveFeedMix": {"profesia":17,"nonProfesia":19,"profesiaPct":47.2,"nonProfesiaPct":52.8},
-    "note": "Reálny audit 30.8.2026 19:10 CEST preveril Profesia, Worki, Upwork, Kariera, Brigada.sk, Pretlak, StartupJobs, LinkedIn Jobs, GROWNi a priame company-career výsledky pre Bratislavu, okolie a vhodný remote režim. Nevznikol nový kvalifikovaný LIVE winner. SecTec Marketing asistent je nový veľmi dobrý WordPress/CMS + administratíva + reporting fit s flexibilnou formou v Bratislave a bez explicitného English gate v indexovanom detaile, ale chýba overená mzda a čerstvý dátum publikácie, preto zostáva pending. KInIT Financial Administrator je čerstvý hybrid Bratislava za od 1 800 EUR/mes. s okamžitým nástupom, ale explicitne vyžaduje English B2 a pokročilý Excel; preto neprešiel language gate. PROPLUSCO Senec 1 350–1 500 EUR je čerstvý, ale skladová práca zahŕňa priemerne 10 kg balíky a 2 zmeny, takže neprekonáva existujúce priority. Upwork WooCommerce VA ledy zostávajú bez nového winnera. jobs-data.json sa bez kvalifikovanej delty nemenil; timestamp sa umelo neposúval."
+    "note": "Reálny audit 30.8.2026 19:32 CEST prehľadal 12 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, StartupJobs, Upwork, WordPress Jobs/tech index, Reddit/WordPress komunity a verejne indexované Facebook skupiny. Nevznikol nový kvalifikovaný LIVE winner. Upwork Website & SEO Management 2026 zostáva najsilnejší pending remote-ok lead za 15–30 USD/h, ale onboarding call, týždenný reporting a povinný 15-min Loom audit zvyšujú spoken/written English a application-friction riziko. Nový WordPress WooCommerce E-Commerce Developer je Worldwide remote a čerstvý, ale 83.87 USD fixed za build/optimization scope s PHP nice-to-have je development-heavy a hodnotovo slabý, preto sa neaktivuje. Všeobecný VA lead za 15 USD fixed a marketing VA za 5 USD fixed boli vyradené pre nízku hodnotu; Shopify app lead za 100 USD vyžaduje Billing API/app-development. Facebook neposkytol žiadny konkrétny verejne overiteľný hiring post, preto 0 verified hits a limited. jobs-data.json sa bez kvalifikovanej delty nemení a timestamp sa umelo neposúva."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":1,"note":"BA/okolie vodič, sklad, admin, WordPress/e-shop lanes preverené. PROPLUSCO Senec 1 350–1 500 EUR, ASAP, 2 zmeny a priemerne 10 kg balíky; fit/value/fyzická záťaž neprekonali LIVE priority."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"rejected":1,"note":"PROPLUSCO direct careers preverené ako corroboration; bez nového firemného winnera nad existujúce priority."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"added":0,"rejected":1,"note":"SecTec Marketing asistent: Bratislava, entry-level/flexible, WordPress/CMS, newslettery, administratíva a reporting; bez explicitného English gate, ale bez overenej mzdy a čerstvého publishedAt zostáva pending. Starý LUNYS e-commerce výsledok je 2 mesiace starý a nie nový."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA technické, vodičské, skladové a administratívne lanes preverené; bez nového kvalifikovaného winnera."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava admin/kuriér/sklad krátkodobé lanes preverené; bez nového overiteľného prioritného výsledku."},
-    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":2,"added":0,"rejected":2,"note":"Index preverený; relevantné e-commerce/logistika výsledky boli neaktívne alebo neprešli freshness/value gateom."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"WordPress/e-commerce/CMS/support discovery preverené; bez vhodného nového non-hard-dev BA/remote winnera."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Remote WordPress/e-commerce/support discovery preverené; bez nového Slovakia-eligible winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":4,"added":0,"rejected":2,"note":"WooCommerce a admin/VA index preverený. E-commerce VA WooCommerce/Subscriptions/Xero ostáva vecne silný, ale good written English + špecializované skill požiadavky bránia LIVE. Starší WordPress/Shopify e-commerce VA fixed 10 USD a ďalšie low-value/hard-dev kusy neprešli value gateom."},
-    {"name":"GROWNi","family":"growni","status":"checked","hits":3,"added":0,"rejected":1,"note":"LEAF Implementation Support Specialist zostáva existujúci relevantný lead. Nový KInIT Financial Administrator: hybrid Bratislava, od 1 800 EUR/mes., nástup ihneď, aktualizované 28.8.2026, ale explicitne English B2 + advanced Excel; language gate."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/okolie WordPress/e-shop/admin/technical/support/driver discovery prehľadané; bez nového kvalifikovaného winnera nad LIVE priority."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejné BA/Slovakia-remote company-career discovery prehľadané; bez nového kvalifikovaného priameho firemného winnera."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava WordPress/e-commerce/support/admin discovery prehľadané; bez nového verejne overiteľného kvalifikovaného hitu."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava technické, vodičské, skladové a administratívne lanes prehľadané; bez nového kvalifikovaného winnera."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava admin/kuriér/sklad brigády prehľadané; bez nového overiteľného prioritného výsledku."},
+    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA e-shop/admin/support/driver discovery prehľadané; bez nového kvalifikovaného výsledku."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"WordPress/e-commerce/CMS/support discovery prehľadané; bez vhodného nového non-hard-dev BA/remote winnera."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Remote WordPress/e-commerce/support discovery prehľadané; bez nového Slovakia-eligible winnera."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":8,"added":0,"rejected":6,"note":"Čerstvé Worldwide remote WordPress/WooCommerce/VA výsledky preverené. Website & SEO Management 2026 zostáva pending 15–30 USD/h. Nový WooCommerce build 83.87 USD fixed je development-heavy/low-value; Shopify Billing API app 100 USD je hard-dev; VA 15 USD fixed a marketing VA 5 USD fixed sú low-value; ďalšie build/fix ledy neprekonali priority."},
+    {"name":"WordPress Jobs / tech index","family":"wordpress-jobs","status":"checked","hits":1,"added":0,"rejected":1,"note":"WordPress development discovery prehľadané; nové indexované výsledky boli developer/build oriented a neprešli hard-skill/value gateom."},
+    {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejne indexované WordPress/WooCommerce hiring dopyty prehľadané; bez nového konkrétneho Slovakia-eligible winnera s dostatočným remote proof."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"WordPress Slovensko, WooCommerce SK+CZ a práca/brigády Bratislava vyhľadané cez verejný index. Nebol dostupný konkrétny verejne overiteľný hiring post s priamym linkom; 0 verified hits. Autentizovaný Nexus/local ingestion ostáva backlog, automat ho nespúšťa."}
   ],
   "verificationQueue": [
     {"id":"linkedin-sectec-marketing-asistent-4362401102","title":"Marketing asistent – WordPress/CMS, newslettery, administratíva","source":"LinkedIn Jobs / SecTec","url":"https://sk.linkedin.com/jobs/view/marketing-asistent-at-sectec-4362401102","locationEligibility":"ba-area","languageEligibility":"no-explicit-gate-found","reason":"Veľmi dobrý profilový fit a flexibilná forma v Bratislave. Pred LIVE aktiváciou overiť mzdu, aktuálny dátum publikácie/active-hiring proof a prípadnú skrytú jazykovú požiadavku."},
@@ -46,13 +48,16 @@
     "provisionalScore":91,
     "status":"pending-language-and-application-friction-review"
   },
-  "developmentBacklogAddedThisRun": [],
+  "developmentBacklogAddedThisRun": [
+    {"name":"Fresh-hit confirmation retry window","description":"Ak čerstvý high-fit výsledok existuje vo verejnom indexe, ale detail je dočasne nedostupný alebo neúplný, zaradiť ho do krátkeho prioritného recheck okna namiesto straty alebo predčasnej aktivácie; znižuje missed-opportunity risk bez porušenia fail-closed."},
+    {"name":"Source-check evidence ledger","description":"Ku každej source family ukladať minimálny dôkaz behu: query archetyp, čas kontroly, počet indexovaných kandidátov a rozhodovací výsledok. Umožní auditovať, že zdroj bol naozaj skontrolovaný, a odlíši skutočný zero-hit od coverage/index failure."}
+  ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-delta",
-    "jobsDataNonProf":"preserved-no-qualified-delta",
-    "sourceAudit":"updated-after-real-10-family-check",
-    "jobSources":"registry-preserved-no-new-source-family-required",
-    "master":"preserved",
+    "jobsDataNonProf":"locked-preserved",
+    "sourceAudit":"updated-after-real-12-family-check",
+    "jobSources":"update-pending-this-run",
+    "master":"backlog-update-pending-safe-write",
     "lockedFilesTouched":false
   }
 }
