@@ -1,43 +1,43 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T03:14:30+02:00",
+  "updatedAt": "2026-08-30T03:31:58+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "newActiveJobs": 0,
     "significantlyChangedPriorityJobs": 0,
-    "rejectedByLanguageOrHardSkill": 4,
-    "rejectedAsWeakOrLowValue": 5,
+    "rejectedByLanguageOrHardSkill": 5,
+    "rejectedAsWeakOrLowValue": 6,
     "duplicateOrExisting": 4,
-    "rejectedByFreshnessOrEvidence": 3,
+    "rejectedByFreshnessOrEvidence": 4,
     "liveFeedCount": 36,
     "effectiveEligibleCount": 36,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessStatus": "stale-over-60m",
-    "note": "Audit 30. 8. 2026 03:14 reálne preveril 12 zdrojových rodín. Nevznikla nová alebo významne zmenená prioritná ponuka, ktorá by bezpečne prešla locality, language, hard-skill a value gateom a prekonala aktuálne priority. Profesia priniesla CORNER SK – Skladník/skladníčka – Vodič/vodička sk. B (1 450–1 650 EUR, Bratislava, Po–Pi 06:30–15:00), ale ide o fyzickejší sklad/rozvoz nápojov a hodnotou neprekonáva HEATING PRO ani existujúce vodičské priority, preto nebola aktivovaná. LinkedIn/Foxelli E-commerce Technical Assistant (AI & Shopify) je remote, ale vyžaduje hands-on Shopify Flow, Google Apps Script, REST API, Recharge, RBAC/SSO/2FA a jasnú angličtinu; hard-skill reject. Upwork priniesol čerstvý worldwide Virtual Assistant for Website Launch (150 USD fixed, WordPress, 10–15 proposals, klient 9.1k USD spend/41 hires), ale rozsah a hodinová ekonomika nie sú dostatočne jasné na bezpečné povýšenie nad existujúce LIVE priority; ďalšie VA výsledky mali silnú angličtinu alebo nízku odmenu. jobs-data.json sa zámerne nemenil, lebo nevznikla reálna obsahová zmena. Keďže posledná obsahová zmena LIVE feedu je 01:15:21 CEST, 60-minútový freshness cieľ je prekročený; timestamp nebol umelo posunutý."
+    "note": "Audit 30.8.2026 03:31 preveril 12 zdrojových rodín. Bez novej položky, ktorá by prešla lokalitou, jazykom, hard-skill a value gateom a prekonala aktuálne priority. Čerstvé Profesia výsledky: AYURCOS Eurovea je slabší retail/predaj; Tatra banka trainee je student-only a obsahuje Java/SQL/Python; Lugera IT Administrátor má server/network/SQL scope a neúplný verejný jazykový dôkaz. WordPress Jobs uvádza 10 otvorených pozícií, prevažne developer/security/performance/server alebo geograficky viazané. Upwork výsledky sú prevažne dev-heavy alebo neprekonávajú LIVE priority. Reddit hiring posty nemajú dostatočne jasný pay/scope/eligibility dôkaz. Facebook: 0 verified hits. jobs-data.json sa zámerne nemenil."
   },
   "sources": [
-    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":3,"note":"Overené aktuálne BA vodič/sklad výsledky. CORNER SK je aktívny (1 450–1 650 EUR, Po–Pi 06:30–15:00), ale fyzickosť a slabšia hodnota ho držia pod HEATING PRO/Lanža; Lanža a Akfos zostávajú existujúce LIVE položky."},
-    {"name":"Priame firemné kariérne stránky","family":"company-careers","status":"checked","hits":0,"note":"Bez nového direct-source winnera nad existujúce priority."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":4,"note":"Foxelli E-commerce Technical Assistant je remote, ale vyžaduje Shopify Flow, Apps Script, REST API, Recharge a bezpečnostné IAM znalosti plus jasnú angličtinu; hard-skill reject. Wolt Support Associate je študentský part-time s AJ B2 a večernými/víkendovými zmenami."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"HEATING PRO zostáva najsilnejší relevantný Worki kandidát; ďalší lepší prírastok sa nepotvrdil."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"note":"Bez novej BA brigády s dostatočným detailom a hodnotou nad existujúce priority."},
-    {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového vhodného low-language-gate kandidáta."},
+    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":4,"note":"AYURCOS je slabší retail/predaj; Tatra banka trainee je student-only + Java/SQL/Python; Lugera IT Administrátor má server/network/SQL scope a neúplný jazykový dôkaz. Bez nového LIVE winnera."},
+    {"name":"Priame firemné kariérne stránky","family":"company-careers","status":"checked","hits":0,"note":"Bez nového direct-source winnera."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":3,"note":"Bez nového BA/remote kandidáta, ktorý by prešiel gateom a prebil LIVE priority."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"HEATING PRO zostáva najsilnejší relevantný Worki kandidát."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"note":"Bez novej BA brigády s dostatočným detailom a hodnotou."},
+    {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":1,"note":"Tech výsledky sú hard-skill heavy; bez vhodného low-language-gate winnera."},
     {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"note":"Bez nového explicitne Slovakia-eligible non-hard-dev winnera."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":1,"note":"Aktuálne WordPress výsledky zostávajú prevažne dev/support-heavy alebo s nárokmi nad profil Radaru."},
-    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":5,"note":"Nový Virtual Assistant for Website Launch: worldwide, 150 USD fixed, WordPress, 10–15 proposals, klient 9.1k USD spend/41 hires; scope/hodinová ekonomika nejasná, preto bez LIVE aktivácie. Ďalšie nové VA ponuky mali nízku odmenu alebo silnú angličtinu."},
-    {"name":"Služby zamestnanosti / Kariera","family":"government-other","status":"checked","hits":1,"note":"Bez nového kvalifikovaného winnera pre profil Radaru."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Bez nového verejne overiteľného leadu s dostatočne jasným pay/scope/eligibility dôkazom."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"Verejná indexácia stále neposkytuje spoľahlivé pokrytie; 0 verified hits."},
-    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"ok","hits":0,"note":"Žiadna nová položka nebola aktivovaná. LIVE feed zostáva 36 položiek; canonical dedupe, BA/remote eligibility a fail-closed pravidlá zostali zachované."}
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":10,"note":"10 open positions; nové výsledky prevažne developer/security/performance/full-stack/server alebo geograficky viazané."},
+    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":6,"note":"Čerstvé verejné WordPress/web výsledky sú prevažne development-heavy alebo hodnotou neprekonávajú LIVE priority."},
+    {"name":"Služby zamestnanosti / Kariera","family":"government-other","status":"checked","hits":1,"note":"Bez nového kvalifikovaného winnera."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":2,"note":"Aktuálne hiring posty nemajú dostatočne jasný pay/scope/eligibility dôkaz pre LIVE aktiváciu."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits; coverage limited."},
+    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"ok","hits":0,"note":"LIVE feed zostáva 36 položiek; canonical dedupe, BA/remote eligibility a fail-closed pravidlá zachované."}
   ],
   "writeStatus": {
     "jobsData": "no-change",
-    "jobsDataReason": "Nevznikla nová overená obsahová zmena, ktorá by prešla pravidlami; updatedAt sa zámerne neposúva.",
+    "jobsDataReason": "Bez novej overenej obsahovej zmeny; updatedAt sa neposúva.",
     "jobsDataNonProf": "no-change",
-    "jobsDataNonProfReason": "Bootstrap feed nebolo potrebné meniť.",
-    "jobSources": "checked",
-    "master": "checked",
+    "jobSources": "checked-no-structural-change",
+    "master": "pending-safe-full-read",
+    "masterReason": "Nové backlog návrhy: evidence-age weighted ranking; weekend/after-hours application readiness. MASTER neprepisovať bez bezpečného kompletného čítania aktuálneho obsahu.",
     "freshnessBreach": true,
-    "freshnessBreachReason": "jobs-data.json má poslednú reálnu obsahovú aktualizáciu 2026-08-30T01:15:21+02:00; pri audite 03:14:30 CEST je starší než 60 minút. Timestamp nebol posunutý bez obsahovej zmeny."
+    "freshnessBreachReason": "jobs-data.json posledná reálna zmena 2026-08-30T01:15:21+02:00; timestamp nebol posunutý bez obsahovej zmeny."
   }
 }
