@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 30. 8. 2026 10:28 CEST
+Aktualizované: 30. 8. 2026 11:29 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -66,25 +66,24 @@ Aktualizované: 30. 8. 2026 10:28 CEST
 32. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 33. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 30. 8. 2026 10:28 CEST — LATEST
-Reálne prehľadané skupiny: **Profesia; priame firemné kariéry; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; StartupJobs; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu **12 nezávislých kontrolovaných skupín**, minimálne 8 source families a viac než 5 mimo Profesia.
+## SOURCE AUDIT — 30. 8. 2026 11:29 CEST — LATEST
+Reálne prehľadané skupiny: **Profesia; priame firemné kariéry; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu **11 nezávislých kontrolovaných skupín**, minimálne 8 source families a viac než 5 mimo Profesia.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky: 0.** Nevznikol nový kandidát, ktorý by bezpečne prešiel locality/language/hard-skill/value gateom a prebil aktuálne priority.
-- **LinkedIn:** Foxelli E-commerce Technical Assistant je `no longer accepting applications`; SupportYourApp remote support výsledky majú fluent/C1 English alebo ďalší jazyk, preto bez LIVE winnera.
-- **Worki.sk:** aktuálny BA sklad/VZV výsledok bol overený, ale je fyzickejší/VZV-orientovaný a neprekonal HEATING PRO ani vyššie priority.
-- **Brigada.sk / Kariera.sk:** discovery preverené; bez nového konkrétneho BA/remote detailu s dostatočným pay/scope/evidence profilom.
-- **Pretlak / StartupJobs / WordPress Jobs:** bez nového WP/Woo/e-shop/AI low-language-gate kandidáta.
-- **Upwork:** čerstvý `E-commerce Virtual Assistant | Product Listings, Customer Support & Store Management` je Worldwide remote, ale iba 7–8 USD/h, má 20–50 proposals a už 1 hire; ekonomicky/konkurenčne slabý, preto sa nepridáva. `Website & SEO Management 2026` zostáva silný pending WooCommerce lead 15–30 USD/h, no bez novej bezpečnej LIVE mutácie.
+- **Profesia / LinkedIn / Worki / Brigada.sk / Kariera.sk:** discovery reálne preverené; bez nového kvalifikovaného BA/remote winnera nad LIVE priority.
+- **Pretlak:** bez nového vhodného WordPress/e-commerce non-hard-dev kandidáta.
+- **WordPress Jobs:** aktuálny feed je prevažne development/performance/theme; bez vhodného non-hard-dev Slovakia-eligible leadu.
+- **Upwork:** `eCommerce Virtual Assistant & Admin Support, Shopify and WooCommerce` je Worldwide remote, ale iba **10 USD fixed**, má **20–50 proposals** a už **1 hire**, preto low-value reject. `Virtual Assistant for Recipe Website` je Worldwide remote a má **<5 proposals**, ale explicitne vyžaduje predchádzajúcu prax na recipe website, preto hard prior-domain gate. `Virtual Assistant — Email, Social & Content Build (Mailchimp, Canva, WordPress)` je obsahovo zaujímavá, **8–15 USD/h**, ale iba **4–6 h/týždeň**, 20–50 proposals, vyžaduje ukážky práce a vlastnoručne napísanú odpoveď; zostáva side-gig near-fit, nie hlavná LIVE priorita. `Website & SEO Management 2026` ostáva silný pending WooCommerce lead 15–30 USD/h.
 - **Reddit/WP komunity:** 0 kvalifikovaných Slovakia-eligible non-hard-dev LIVE hitov.
 - **Facebook:** **0 verified hits**, coverage `limited`; žiadny fiktívny post.
 
 ### Run summary
-- Reálne skontrolované zdrojové skupiny: **12**.
+- Reálne skontrolované zdrojové skupiny: **11**.
 - Nové aktívne položky: **0**.
 - Významne zmenené priority: **0**.
-- Vyradené jazykovým/hard-skill gateom: **4**.
-- Vyradené ako slabé/nízka hodnota: **5**.
+- Vyradené jazykovým/hard-skill gateom: **3**.
+- Vyradené ako slabé/nízka hodnota: **4**.
 - Duplicitné/existing: **3**.
 - Vyradené pre freshness/evidence: **2**.
 - Vyradené lokalitným gateom: **1**.
@@ -93,7 +92,7 @@ Reálne prehľadané skupiny: **Profesia; priame firemné kariéry; LinkedIn Job
 - `jobs-data.json`: **36 aktívnych položiek**.
 - Potvrdený mix: približne **Profesia 17 / 36 = 47,2 %; mimo Profesia 19 / 36 = 52,8 %**.
 - `jobs-data.json.updatedAt` = **30. 8. 2026 01:15:21 CEST**.
-- `source-audit.json.updatedAt` = **30. 8. 2026 10:28:13 CEST**.
+- `source-audit.json.updatedAt` = **30. 8. 2026 11:29:49 CEST**.
 - `jobs-data.json.updatedAt` sa neposúva bez reálnej obsahovej zmeny.
 
 ## FAIL-CLOSED pravidlá
@@ -218,20 +217,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 109. Role-family source blind-spot matrix.
 110. Duty-mix decomposition.
 111. Same-role repost churn-risk signal.
-112. Search-depth coverage quota.
-113. Search-index staleness detector.
-114. CV requirement coverage score.
-115. **Platform-gap transferability score** — rozlíši blízko prenositeľný gap (WooCommerce → Shopify, ActiveCampaign → Klaviyo) od skutočne nového hard-skill gapu; zníži falošné vyradenia kvalitných e-commerce rolí.
-116. **Closure-proof quorum** — status `closed` sa zmení až po dostatočnom canonical dôkaze (explicitný closure banner/404/expired + recheck), aby jeden nekonzistentný indexovaný signál nevyradil stále aktívnu ponuku.
-117. **Micro-budget exploit filter** — pri freelance ponukách odhalí extrémne nízky fixed budget voči rozsahu a označeniu projektu, aby skillovo presné, ale ekonomicky nezmyselné zákazky nezahlcovali TOP výsledky.
-118. **Verified client economics score** — kombinuje klientský spend, počet hires, konkurenciu a reálny budget konkrétnej zákazky; vysoká história klienta sama nesmie kompenzovať neudržateľnú cenu konkrétneho projektu.
-119. **Weekend/night source-pattern booster** — meria, ktoré source families reálne publikujú kvalitné BA/remote ponuky cez víkend a v nočných hodinách; v týchto oknách presunie viac discovery kapacity na zdroje s historicky vyšším čerstvým výnosom bez porušenia povinného 8-family minima.
-120. **Known-employer career delta watchlist** — pre overené firmy s vysokým matchom porovná snapshot ich career stránky medzi behmi a zvýrazní iba nové roly alebo zmenu kritických požiadaviek; znižuje čas stratený opakovaným čítaním nezmenených career stránok.
-121. **Role-title alias learner** — učí sa neštandardné názvy pozícií z reálnej náplne práce a mapuje ich na e-commerce/support/admin role families; zvyšuje recall bez rozšírenia hard-skill tolerancie.
-122. **Application-pack stale-evidence invalidator** — pri zmene canonical požiadaviek, lokality, mzdy, closure statusu alebo eligibility automaticky označí už pripravené CV/reakciu za `stale`, aby sa neposlala verzia založená na starých podmienkach.
-123. **Published-date provenance resolver** — oddelene eviduje `postedAt`, `updatedAt`, `indexedAt`, `crawledAt` a source timestamp; nikdy neprepisuje skutočný dátum zverejnenia dátumom crawl/indexácie. Zníži falošnú čerstvosť a zlé `<24h` priority pri agregátoroch a LinkedIn indexoch.
-124. **Guaranteed-hours certainty score** — pri part-time/freelance/hourly ponukách rozlíši garantované minimum hodín od `up to`, on-call a neurčitých availability okien; do income-floor výpočtu pustí iba reálne garantované hodiny a zníži riziko zdanlivo dobre platených, ale príjmovo neistých ponúk.
-125. **Source-family evidence floor** — každý povinný source family dostane minimálny evidenčný prah (konkrétny detail alebo explicitný 0-hit dôkaz), aby audit nepočítal iba všeobecnú landing page ako plnohodnotné pokrytie.
-126. **Fresh-result novelty hash** — pre každý nový výsledok vytvorí hash z canonical URL + company + title + critical requirements; pri ďalších behoch rýchlo odlíši skutočne nový lead od recyklovaného indexového výsledku a zníži duplicitné čítanie.
-127. **Recruiter-hours-aware urgency score** — pri `ihneď`/`ASAP` zohľadní deň v týždni, víkend/sviatok a reálne kontaktné hodiny zamestnávateľa; zabráni falošnej same-day priorite, keď sa žiadosť objektívne začne riešiť až nasledujúci pracovný deň.
-128. **Single-shift expiry hard gate** — pri brigádach viazaných na konkrétny dátum alebo zmenu uloží check-in/start cutoff; po jeho uplynutí ich vyradí z aktívne odporúčaných výsledkov bez mazania historického záznamu.
+112. Application authorship constraint flag — detegovať ponuky, ktoré výslovne vyžadujú vlastnoručne napísanú odpoveď alebo zakazujú AI-generovaný text, a zabrániť automatickému použitiu Application Builder výstupu bez manuálnej úpravy.
+113. Minimum weekly earning potential gate — počítať realistický týždenný/mesačný earning potential z hodinovej sadzby a dostupného rozsahu hodín; tiny-hour zákazky držať v side-gig lane, aby neprebíjali stabilnejšie príležitosti.
