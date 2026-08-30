@@ -54,9 +54,9 @@
   "writeStatus": {
     "jobsData":"preserved-no-qualified-delta",
     "jobsDataReason":"Nevznikla nová položka, ktorá by prešla všetkými gate a mala byť bezpečne pridaná; existujúci feed sa preto nemení.",
-    "jobSources":"update-requested-this-run",
+    "jobSources":"updated",
     "sourceAudit":"updated-after-real-source-check",
-    "master":"update-requested-this-run",
+    "master":"updated",
     "lockedFilesTouched":false
   }
 }
