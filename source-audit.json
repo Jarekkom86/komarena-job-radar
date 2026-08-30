@@ -1,38 +1,35 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T14:15:46+02:00",
+  "updatedAt": "2026-08-30T14:36:11+02:00",
   "runSummary": {
-    "familiesChecked": 13,
+    "familiesChecked": 12,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "rejectedByLanguageOrHardSkill": 4,
-    "rejectedAsWeakOrLowValue": 7,
-    "duplicateOrExisting": 5,
+    "rejectedByLanguageOrHardSkill": 3,
+    "rejectedAsWeakOrLowValue": 5,
+    "duplicateOrExisting": 3,
     "rejectedByFreshnessOrEvidence": 3,
-    "rejectedByLocation": 3,
+    "rejectedByLocation": 2,
     "liveMainCount": 36,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
-    "jobsDataNonprofUpdatedAt": "2026-08-30T08:12:31+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "breach",
-    "note": "Reálny audit 30.8.2026 14:15 CEST prehľadal 13 source families. Nevznikol nový ani významne zmenený prioritný LIVE kandidát. Cerkam O5348670 Terénny administratívny pracovník je stále aktívny a už existuje vo feede; starší Cerkam O5182843 za 1 900 EUR je ukončený a nie je nový kandidát. Upwork E-commerce Virtual Assistant je Worldwide remote a obsahovo sedí na product listings/customer support/store management, ale 7–8 USD/h, 20–50 proposals a už 1 hire ho držia pod prioritným prahom. Nový Upwork WordPress/WooCommerce developer hit za 83,87 USD fixed-price je príliš nízko platený a dev-oriented. WordPress Jobs má nové ponuky z 27.–28.8., ale prevažne dev/security alebo regionálne obmedzené. Brigada.sk má nový vodičský hit v AVIONe, ale je študentská brigáda za 6 EUR/h netto a nie je prioritná. Profesia/Worki/Kariera/Pretlak/LinkedIn/company/community verejné zdroje boli preverené; bez nového winnera."
+    "note": "Reálny audit 30.8.2026 14:36 CEST prehľadal 12 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera, Pretlak, StartupJobs, WordPress Jobs, Upwork/freelance, Reddit/WordPress komunity a Facebook verejnú indexáciu. Nevznikol nový ani významne zmenený prioritný LIVE kandidát. Upwork Website & SEO Management 2026 zostáva najsilnejší pending lead: Worldwide remote, 15–30 USD/h, 6+ mesiacov, WooCommerce operations; onboarding/interview call, weekly reporting a povinný Loom audit zvyšujú praktickú spoken/written English a aplikačnú náročnosť. Nový Upwork Operations & Campaign Support je worldwide remote, ale 5–7 USD/h, strong spoken/written English a vysoká interview aktivita ho držia pod prahom. Brigada.sk vodič detského vláčika v AVIONe je BA, ale študentská brigáda 6 EUR/h netto a nie je prioritná. Reddit hiring výsledky sú staršie alebo US-only/hard-dev. Facebook neposkytol konkrétny verejne overiteľný hiring post."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":2,"added":0,"duplicateOrExisting":1,"rejectedByFreshnessOrEvidence":1,"note":"BA/remote administratíva, vodič/kuriér, technická podpora a e-commerce discovery preverené. Cerkam O5348670 je aktívny a už vo feede; starší O5182843 je ukončený."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Slovakia/remote customer support a e-commerce discovery bez nového kvalifikovaného winnera."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"duplicateOrExisting":1,"note":"Existujúce technicko-logistické priority ostávajú referenčné; bez nového silnejšieho kvalifikovaného hitu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":2,"added":0,"rejectedWeakOrLowValue":2,"note":"Nový vodič detského vláčika v AVIONe je študentská brigáda za 6 EUR/h netto; ďalšie skladové/retail brigády neprekonávajú LIVE priority."},
-    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":1,"added":0,"rejectedHardSkill":1,"note":"Čerstvý RAN Engineer Slovak Telekom je absolvent-friendly, ale vyžaduje špecializovaný telekom/RAN technický profil; mimo cieľového fitu."},
-    {"name":"Služby zamestnanosti","family":"sluzby-zamestnanosti","status":"checked","hits":0,"added":0,"note":"Verejný BA/remote discovery bez nového vhodného hitu."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":1,"added":0,"duplicateOrExisting":1,"note":"Aktuálne verejné výsledky neukázali nový non-hard-dev winner nad existujúce priority."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"note":"Remote/WordPress/project-coordination discovery bez nového Slovakia-eligible winnera."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"ok","hits":10,"added":0,"rejectedHardSkill":3,"rejectedByLocation":2,"rejectedWeakOrLowValue":2,"note":"10 otvorených pozícií; nové 27.–28.8. sú prevažne dev/security/performance alebo regionálne viazané. Bez vhodného non-hard-dev remote winnera."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":6,"added":0,"rejectedWeakOrLowValue":4,"rejectedByLocation":1,"duplicateOrExisting":1,"note":"Nový E-commerce Virtual Assistant: Worldwide remote, 7–8 USD/h, 20–50 proposals, 1 hire – obsahovo fit, ekonomicky/konkurenčne slabý. Nový WooCommerce developer projekt má iba 83,87 USD fixed-price. Website & SEO Management 2026 ostáva najsilnejší pending lead."},
-    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":1,"added":0,"rejectedHardSkill":1,"note":"SupportYourApp kariéra je remote-friendly, ale verejný profil zdôrazňuje native-like jazykové schopnosti; bez overeného vhodného SK/A2-B1 konkrétneho detailu sa fail-closed nezaraďuje."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":2,"added":0,"rejectedWeakOrLowValue":2,"note":"Aktuálne výsledky sú prevažne FOR HIRE alebo staršie hiring posty; bez nového overiteľného klientského winnera."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"Verejná indexácia neposkytla nový konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion zostáva backlog."},
-    {"name":"Feed integrity / dedupe / freshness","family":"feed-integrity","status":"warning","hits":1,"added":0,"note":"Dedupe nevytvoril nový prioritný záznam. Reálna kontrola zdrojov prebehla, ale jobs-data.json sa v tomto behu nedal bezpečne atomicky prepísať cez dostupný GitHub connector bez rizika straty truncovaného obsahu; posledné validné dáta preto ostali zachované. jobs-data.json updatedAt ostáva 2026-08-30T01:15:21+02:00 a jobs-data-nonprof.json 2026-08-30T08:12:31+02:00, takže 60-min SLA zostáva porušené."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"BA/remote WordPress/e-shop/admin/technical/support/driver discovery reálne preverené; bez nového kvalifikovaného winnera nad LIVE priority."},
+    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Foxelli/public Slovakia-remote careers preverené; bez nového kandidáta vhodnejšieho než existujúce LIVE priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Bratislava/Slovakia remote e-commerce/support discovery bez nového kvalifikovaného winnera."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA technická/admin/vodič discovery preverená; bez nového silnejšieho hitu. Existujúci HEATING PRO zostáva LIVE priorita."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":1,"added":0,"rejectedWeakOrLowValue":1,"note":"Vodič detského vláčika v AVION Shopping Centre Bratislava: nástup od 30.8.2026, VP B, ale iba študentská dohoda a 6 EUR/h netto; nízka hodnota oproti LIVE prioritám."},
+    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"note":"BA administratívne/technické/e-shop discovery preverené; bez nového LIVE winnera."},
+    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":1,"added":0,"rejectedHardSkill":1,"note":"Aktuálne výsledky neukázali nový Slovakia-eligible non-hard-dev WordPress/e-commerce winner; dev-heavy alebo account/project roly s vyššou jazykovou/praxovou náročnosťou sa nezaraďujú."},
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":3,"added":0,"rejectedWeakOrLowValue":1,"duplicateOrExisting":1,"note":"Website & SEO Management 2026 ostáva najsilnejší pending lead: Worldwide, 15–30 USD/h, 6+ mesiacov, WooCommerce/SEO/store upkeep; 15–20 proposals, 0 interviewing. Operations & Campaign Support je 5–7 USD/h, vyžaduje strong written/spoken English a má 6 interviewing, preto sa neaktivuje."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":2,"added":0,"rejectedByLocation":1,"rejectedHardSkill":1,"note":"Verejne dohľadateľné hiring posty sú staršie; US-only WordPress Developer je reject-distance a vyžaduje PHP/JS/API + strong English. Bez čerstvého vhodného klientského winnera."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Verejná indexácia WordPress/WooCommerce/BA jobs neposkytla konkrétny hiring post s priamym verejne overiteľným linkom; autentizovaný Nexus/local ingestion ostáva backlog."},
+    {"name":"Cross-source locality verification","family":"location-gate","status":"checked","hits":2,"added":0,"rejectedByLocation":2,"note":"Vzdialené onsite/US-only výsledky boli vyradené; iba BA-area alebo jednoznačný Worldwide/Slovakia-compatible remote prechádza gateom."},
+    {"name":"Feed integrity / dedupe / freshness","family":"feed-integrity","status":"warning","hits":1,"added":0,"note":"Žiadny nový kvalifikovaný delta nevyžadoval zmenu LIVE feedu. jobs-data.json sa zároveň nedá bezpečne kompletne rekonštruovať z truncovaného connector výstupu pre atómový full-file update; posledné validné dáta zostali zachované. jobs-data.json updatedAt ostáva 2026-08-30T01:15:21+02:00, preto 60-min SLA zostáva porušené."}
   ],
   "pendingCandidate": {
     "id":"upwork-website-seo-management-2093603919086755488",
@@ -44,20 +41,22 @@
     "pay":"15–30 USD/h",
     "form":"<30 h/týždeň • 6+ mesiacov • ongoing",
     "competition":"15–20 proposals; 0 interviewing",
-    "languageRisk":"onboarding call, weekly reporting and Loom audit imply practical spoken/written English",
+    "languageRisk":"onboarding/interviewing call, weekly reporting and Loom audit imply practical spoken/written English",
     "skillRisks":["Helium 10","Seller Central","15-minute Loom site audit"],
     "provisionalScore":91,
     "status":"pending-safe-write"
   },
   "developmentBacklogAddedThisRun": [
-    {"name":"Remote exception frequency cap","problem":"Ponuka môže hovoriť prevažne remote, ale zároveň vyžadovať občasné stretnutia v Prahe alebo inom vzdialenom meste; bez frekvencie je remote-ok ľahko falošne pozitívny.","value":"Extrahovať frekvenciu povinných onsite návštev a aktivovať remote-ok iba pod definovaným limitom; nejasnú frekvenciu držať ako unknown do overenia."},
-    {"name":"English modality decomposer","problem":"Jedno CEFR číslo nerozlišuje čítanie dokumentácie, písanie e-mailov, live telefonáty, video pohovory a predajné hovory, hoci ich náročnosť je pre kandidáta zásadne odlišná.","value":"Rozložiť jazykový gate na reading/writing/phone/video/sales a penalizovať najmä povinnú live spoken English namiesto plošného vyradenia všetkých rolí s angličtinou."}
+    {"name":"Proposal effort ROI score","problem":"Niektoré freelance leady vyžadujú audit, Loom video, test task alebo rozsiahlu personalizovanú ponuku ešte pred prvým kontaktom; samotný match score neukazuje časové náklady na reakciu.","value":"Odhadnúť minúty potrebné na kvalitnú reakciu a porovnať ich s hodinovou sadzbou, konkurenciou a client quality; prioritizovať leady s lepším očakávaným výnosom na čas reakcie."},
+    {"name":"Competition momentum tracker","problem":"Statický počet proposals/interviewing rýchlo starne a nevie rozlíšiť čerstvý otvorený lead od zákazky, kde klient už aktívne vyberá medzi viacerými ľuďmi.","value":"Pri opakovaných kontrolách ukladať zmenu proposals/interviewing/invites a znižovať apply-now prioritu pri prudko rastúcej konkurencii alebo pokročilom interview stave."}
   ],
   "writeStatus": {
-    "jobsData":"preserved-write-blocked-safe-atomic-retrieval",
-    "jobsDataReason":"Reálna kontrola zdrojov prebehla, ale dostupný GitHub connector vracia veľký jobs-data.json po častiach/truncovane a update vyžaduje kompletný obsah. Fail-closed: neprepísať súbor s rizikom straty validných položiek.",
-    "jobsDataNonprof":"preserved-no-qualified-priority-delta",
+    "jobsData":"preserved-no-qualified-delta-and-safe-rewrite-unavailable",
+    "jobsDataReason":"Nevznikol nový kvalifikovaný LIVE winner. Navyše connector vracia jobs-data.json truncovane, kým update vyžaduje kompletný obsah; fail-closed zakazuje riskantný full-file rewrite.",
+    "jobSources":"update-requested-this-run",
     "sourceAudit":"updated-after-real-source-check",
+    "master":"pending-safe-full-content-write",
+    "masterReason":"PRACA_PRE_JARA_MASTER.md je pri načítaní truncovaný a update vyžaduje úplný obsah. Dve nové backlog položky sú zachytené v audite, kým nebude dostupný bezpečný patch/full fetch.",
     "lockedFilesTouched":false
   }
 }
