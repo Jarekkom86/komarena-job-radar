@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 30. 8. 2026 13:18 CEST
+Aktualizované: 30. 8. 2026 15:22 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -66,36 +66,34 @@ Aktualizované: 30. 8. 2026 13:18 CEST
 32. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 33. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 30. 8. 2026 13:18 CEST — LATEST
-Reálne prehľadané skupiny: **Profesia; priame firemné kariéry; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Služby zamestnanosti; Pretlak; StartupJobs; WordPress Jobs; Upwork/freelance; Reddit/WP komunity; Facebook verejná indexácia.** Spolu **13 nezávislých kontrolovaných source families**, z toho 12 mimo Profesia.
+## SOURCE AUDIT — 30. 8. 2026 15:22 CEST — LATEST
+Reálne prehľadané skupiny: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; StartupJobs; WordPress Jobs; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **12 nezávislých source families**, z toho 11 mimo Profesia.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 0.** Nevznikol kandidát, ktorý by bezpečne prešiel locality/language/hard-skill/value gateom a prebil aktuálne priority.
-- **Profesia / Worki / Brigada.sk / Kariera / Služby zamestnanosti:** reálne preverené BA/remote výsledky; bez nového kvalifikovaného winnera. HEATING PRO zostáva existing LIVE priorita.
-- **LinkedIn + Foxelli direct careers:** nový verejne dostupný `Crochet Customer Support Agent | E-commerce | Remote` je 100 % remote a explicitne Slovakia-eligible, ale vyžaduje **fluent/near-native spoken English**, hands-on crochet expertízu, phone support/upselling a večerný USA shift; hard reject.
-- **Foxelli Marketing Assistant / Churn Specialist:** Slovakia-eligible remote, ale marketing/growth scope neprebíja cieľový ranking; Marketing Assistant uvádza 2 000–2 500 € after taxes na contract/freelance režime.
-- **StartupJobs:** `Medior Account Manager & Projektový koordinátor – Jira, Webflow/WordPress` za 45–60 tis. Kč je prevažne remote, ale má občasné stretnutia Praha 5/klient, vyžaduje relevantnú agentúrnu/account/project prax a AJ na call/e-mail; lokalitný/fit gate, nezaraďuje sa.
-- **Pretlak / WordPress Jobs:** bez nového vhodného Slovakia-eligible non-hard-dev winnera.
-- **Upwork:** `Website & SEO Management 2026` zostáva najsilnejší pending WooCommerce lead: Worldwide remote, 15–30 USD/h, 6+ mesiacov; onboarding call, weekly reporting a povinný Loom audit zvyšujú jazykovú a aplikačnú náročnosť. Ostatné nové VA/support hity boli slabšie alebo jazykovo náročné.
-- **Reddit/WP komunity:** dohľadateľný WooCommerce/WordPress content-assistant post je starší a bez dostatočného freshness dôkazu pre LIVE aktiváciu.
+- **Nové aktívne položky: 0.** Žiadny nový kandidát bezpečne neprešiel locality/language/hard-skill/value gateom.
+- **Nový silný komunitný lead v quarantine:** Reddit r/wordpressjobs — `I'm looking for a website creator`. Dopyt je na online language-learning business: online shop pre digitálne produkty, WordPress/WooCommerce ako preferovaná možnosť, newsletter integration, Etsy sync, basic SEO, Home/Shop/About/Blog/Contact/newsletter a training. Vecný fit je veľmi vysoký, predbežne **94/100**, ale autor postu neuvádza krajinu ani explicitnú remote/country eligibility. Preto `locationEligibility: unknown` a zákazka sa **neaktivuje**, kým nebude overené, že ju možno vykonať zo Slovenska bez onsite povinnosti.
+- **Profesia / Worki / Brigada.sk / Kariera.sk:** BA/remote výsledky preverené; bez nového kvalifikovaného winnera. HEATING PRO zostáva existing LIVE priorita.
+- **LinkedIn + priame careers:** bez nového overeného kandidáta nad LIVE priority; staré/no-longer-accepting a language-heavy výsledky sa nezaraďujú.
+- **Pretlak / StartupJobs:** bez nového Slovakia-compatible non-hard-dev winnera.
+- **WordPress Jobs:** aktuálny verejný feed má 10 otvorených pozícií; nové roly z 27.–28.8. sú prevažne development/security/performance alebo region-bound, preto neprechádzajú hard-skill/location profilom.
+- **Upwork:** `Website & SEO Management 2026` zostáva pending remote-ok lead (15–30 USD/h, 6+ mesiacov), ale live aktivácia zostáva zadržaná pre praktickú spoken/written English náročnosť a aplikačný friction. Nové všeobecné výsledky ho neprekonali pomerom fit/odmena/konkurencia.
 - **Facebook:** **0 verified hits**, coverage `limited`; WordPress Slovensko, WooCommerce SK+CZ aj BA jobs boli verejne vyhľadané, ale bez konkrétneho overiteľného hiring postu a priameho linku.
 
 ### Run summary
-- Reálne skontrolované source families: **13**.
+- Reálne skontrolované source families: **12**.
 - Nové aktívne položky: **0**.
-- Významne zmenené priority: **0**.
-- Vyradené jazykovým/hard-skill gateom: **4**.
-- Vyradené ako slabé/nízka hodnota: **5**.
-- Duplicitné/existing: **4**.
-- Vyradené pre freshness/evidence: **3**.
-- Vyradené lokalitným gateom: **2**.
+- Významné pending/quarantine kandidáty: **1 nový + 1 existujúci pending**.
+- Vyradené jazykovým/hard-skill gateom: **3**.
+- Vyradené ako slabé/nízka hodnota: **3**.
+- Duplicitné/existing: **3**.
+- Vyradené pre freshness/evidence: **2**.
+- Quarantine pre nejasnú lokalitu/remote eligibility: **1**.
 
 ### LIVE mix
 - `jobs-data.json`: **36 aktívnych položiek**.
 - Potvrdený mix: približne **Profesia 17 / 36 = 47,2 %; mimo Profesia 19 / 36 = 52,8 %**.
-- `jobs-data.json.updatedAt` = **30. 8. 2026 01:15:21 CEST**.
-- `source-audit.json.updatedAt` = **30. 8. 2026 13:18:42 CEST**.
-- `jobs-data.json.updatedAt` sa neposúva bez reálnej obsahovej zmeny.
+- `jobs-data.json.updatedAt` = **30. 8. 2026 01:15:21 CEST**; bez reálnej kvalifikovanej obsahovej delty sa timestamp umelo neposúva.
+- `source-audit.json.updatedAt` = **30. 8. 2026 15:22:27 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -223,3 +221,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 113. Minimum weekly earning potential gate — počítať realistický týždenný/mesačný earning potential z hodinovej sadzby a dostupného rozsahu hodín; tiny-hour zákazky držať v side-gig lane, aby neprebíjali stabilnejšie príležitosti.
 114. Remote exception frequency cap — extrahovať frekvenciu povinných onsite návštev pri „remote“ rolách a `remote-ok` povoliť iba pod definovaným limitom; nejasnú frekvenciu držať ako `unknown`, aby občasná Praha/Brno nevytvárala falošný remote fit.
 115. English modality decomposer — rozložiť jazykový gate na reading/writing/phone/video/sales; povinnú live spoken English penalizovať výraznejšie než čítanie dokumentácie alebo jednoduché písanie, aby CEFR údaj nebol príliš hrubý filter.
+116. Community location-proof handshake — pri Reddit/FB/community dopytoch automaticky hľadať explicitný country/remote dôkaz v poste, profile a komentároch a až potom povoliť `remote-ok`; pri absencii dôkazu ponechať `unknown` a nevkladať do LIVE.
+117. Scope-to-portfolio evidence matcher — rozložiť dopyt na konkrétne deliverables (napr. WooCommerce, newsletter, Etsy, SEO, training) a ku každému priradiť existujúci dôkaz praxe alebo označiť gap; zrýchli rozhodnutie, či reagovať a ktoré referencie použiť.
