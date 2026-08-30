@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T20:36:54+02:00",
+  "updatedAt": "2026-08-30T21:15:43+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 3,
-    "rejectedAsWeakOrLowValue": 9,
+    "duplicateOrExisting": 4,
+    "rejectedAsWeakOrLowValue": 10,
     "rejectedByFreshnessOrEvidence": 2,
     "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
@@ -17,21 +17,21 @@
     "freshnessStatus": "breach-no-qualified-feed-delta",
     "liveFeedCount": 36,
     "liveFeedMix": {"profesia":17,"nonProfesia":19,"profesiaPct":47.2,"nonProfesiaPct":52.8},
-    "note": "Reálny audit 30.8.2026 20:36 CEST prehľadal 12 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, StartupJobs, Upwork, WordPress Jobs/tech index, Reddit/WordPress komunity a verejne indexované Facebook skupiny. Nevznikol nový kvalifikovaný LIVE winner ani významná zmena priority. LinkedIn ukázal čerstvý ESET Customer Support Specialist v Bratislave, ale rola vyžaduje aktívnu angličtinu a pri dostupných support variantoch sa objavuje B2 alebo ďalší cudzí jazyk, preto neprešla jazykovým profilom bez bezpečného detailu. Wolt Support zostáva vyradený pre explicitné minimum B2 English. Foliovision User Support je profilovo zaujímavý WordPress/HTML support v Bratislave, ale verejný detail nemá čerstvý active-hiring proof a vyžaduje aktívne písanie v angličtine, preto sa neaktivuje. StartupJobs Customer care pre e-shop je 100 % remote, ale vyžaduje poľštinu. WordPress Jobs Senior WordPress Developer je remote, no explicitne hard-dev: custom themes, PHP/JS, React, server/DNS/SSH, API a deployment. Upwork priniesol WordPress/Shopify e-commerce VA výsledky, ale nič neprekonalo existujúci pending Website & SEO Management 2026 po započítaní jazyka, konkurencie a scope. Facebook zostáva 0 verified hits / limited. jobs-data.json sa bez kvalifikovanej delty nemení a timestamp sa umelo neposúva."
+    "note": "Reálny audit 30.8.2026 21:15 CEST prehľadal 12 source families podľa pravidiel Job Radaru. Nevznikol nový kvalifikovaný LIVE winner ani významná zmena priority. Profesia stále ukazuje Košík.sk 2 500–3 000 EUR ako existujúcu silnú vodičskú ponuku; nejde o nový hit. Worki discovery neprinieslo silnejší aktuálny BA výsledok než existujúci HEATING PRO. Upwork priniesol nový WordPress WooCommerce E-Commerce Developer za 83.87 USD fixed, Worldwide, 5–10 proposals, ale scope je explicitne developer/build/performance a odmena je nízka vzhľadom na rozsah, preto bol vyradený. Nový Reliable Proactive Virtual Assistant je obsahovo blízky WordPress/admin/AI, ale iba 3–5 USD/h a vyžaduje strong English communication. Virtual Assistant for Website Launch za 150 USD fixed má už 10–15 proposals a 5 interviewing a neprekonáva existujúci pending Website & SEO Management 2026. Pretlak priniesol 3D Product Artist 10–18 EUR/h, ale ide o špecializované 3D/CAD/CGI mimo profil. LinkedIn/support výsledky neodstránili jazykový gate; Wolt canonical stále vyžaduje minimum B2 English. Reddit dnešné WordPress výsledky boli FOR HIRE ponuky freelancerov, nie hiring dopyty. Facebook verejná indexácia neposkytla overiteľný nový hiring hit. jobs-data.json ani jobs-data-nonprof.json sa bez kvalifikovanej delty nemenia a timestamp sa umelo neposúva."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/okolie WordPress/e-shop/admin/technical/support/driver discovery prehľadané; bez nového kvalifikovaného winnera nad LIVE priority."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":2,"added":0,"rejected":2,"note":"Wolt canonical Greenhouse a Foliovision direct support detail reálne preverené. Wolt padá na explicitnom B2 English; Foliovision nemá dostatočne čerstvý active-hiring proof a vyžaduje aktívne písanie v angličtine."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":3,"added":0,"rejected":3,"note":"Čerstvé BA support výsledky vrátane ESET Customer Support Specialist a Wolt preverené; Wolt má minimum B2 English, ESET detail nemá bezpečný A2-compatible proof a súvisiace support roly vyžadujú B2/ďalší jazyk."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava technická podpora/admin/vodič/sklad discovery prehľadané; bez nového silnejšieho kvalifikovaného hitu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava admin/kuriér/sklad/web brigády prehľadané; bez nového overiteľného prioritného výsledku."},
-    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA e-shop/admin/support/driver discovery prehľadané; index v tomto behu neposkytol nový kvalifikovaný detail."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote WordPress/e-commerce/support discovery prehľadané; bez nového non-hard-dev winnera."},
-    {"name":"StartupJobs","family":"startupjobs","status":"ok","hits":2,"added":0,"rejected":2,"note":"Customer care / online agent pre e-shop je 100 % remote, ale vyžaduje poľštinu; ďalšie čerstvé výsledky boli grafika alebo sales a neprešli profilom."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":5,"added":0,"rejected":4,"note":"Čerstvé Worldwide remote WordPress/WooCommerce/Shopify VA a web výsledky preverené. Website & SEO Management 2026 zostáva najsilnejší pending; nové Product Posting/SEO VA a eCommerce VA/Admin výsledky neprekonali existujúce priority po započítaní jazyka, scope a konkurencie."},
-    {"name":"WordPress Jobs / tech index","family":"wordpress-jobs","status":"ok","hits":2,"added":0,"rejected":2,"note":"Senior WordPress Developer z 27.8. je remote, ale vyžaduje custom theme dev, PHP/JS, React, server/DNS/SSH, API, Git a staging/deployment; hard-dev gate. Index má iba 10 open positions a 10 % remote-friendly."},
-    {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejne indexované WordPress/WooCommerce hiring dopyty prehľadané; bez nového konkrétneho Slovakia-eligible winnera s dostatočným remote proof."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"Verejný index neposkytol konkrétny overiteľný nový hiring post s priamym linkom; 0 verified hits. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":0,"note":"BA/okolie admin/driver discovery prehľadané. Košík.sk 2 500–3 000 EUR je existujúci/duplicitný silný hit, nie nový winner."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":1,"added":0,"rejected":1,"note":"Wolt canonical support route opätovne preverená; jazykový gate minimum B2 English zostáva."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":2,"added":0,"rejected":2,"note":"BA customer/support discovery prehľadané; čerstvý A2-compatible prioritný hit sa nepotvrdil."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"note":"BA technická podpora/admin/vodič/sklad discovery prehľadané; bez nového silnejšieho kvalifikovaného hitu než existujúci HEATING PRO."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":1,"added":0,"rejected":1,"note":"Vodič detského vláčika v AVIONe je aktuálny od 30.8., ale iba študentská dohoda a cca 6 EUR/h netto; mimo cieľového value gate."},
+    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA e-shop/admin/support/driver discovery prehľadané; bez nového kvalifikovaného detailu."},
+    {"name":"Pretlak","family":"pretlak","status":"ok","hits":2,"added":0,"rejected":2,"note":"3D Product Artist 10–18 EUR/h je remote/hybrid/onsite BA, ale špecializovaný 3D/CAD/CGI profil; Blackmagic Fusion rola je senior expert mimo profil."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":1,"added":0,"rejected":1,"note":"Preverené remote/support indexy; bez nového Slovakia-eligible A2-compatible winnera."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":0,"rejected":5,"note":"Nový WooCommerce E-Commerce Developer 83.87 USD fixed bol vyradený pre hard-dev/build scope a slabú ekonomiku; Reliable Proactive VA 3–5 USD/h padá na sadzbe a strong English; Website Launch VA 150 USD fixed má 10–15 proposals a 5 interviewing. Existing Website & SEO Management 2026 zostáva najsilnejší pending."},
+    {"name":"WordPress Jobs / tech index","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Remote WordPress discovery prehľadané; bez nového non-hard-dev winnera."},
+    {"name":"Reddit / WordPress komunity","family":"communities","status":"ok","hits":2,"added":0,"rejected":2,"note":"Dnešné WordPress/WooCommerce výsledky boli FOR HIRE ponuky freelancerov, nie hiring dopyty; nezaradené."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"Verejný index neposkytol konkrétny overiteľný nový hiring post s priamym linkom; 0 verified hits. Autentizovaný Nexus/local ingestion ostáva backlog."}
   ],
   "verificationQueue": [
     {"id":"linkedin-sectec-marketing-asistent-4362401102","title":"Marketing asistent – WordPress/CMS, newslettery, administratíva","source":"LinkedIn Jobs / SecTec","url":"https://sk.linkedin.com/jobs/view/marketing-asistent-at-sectec-4362401102","locationEligibility":"ba-area","languageEligibility":"no-explicit-gate-found","reason":"Veľmi dobrý profilový fit a flexibilná forma v Bratislave. Pred LIVE aktiváciou overiť mzdu, aktuálny dátum publikácie/active-hiring proof a prípadnú skrytú jazykovú požiadavku."},
@@ -55,10 +55,8 @@
   ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-delta",
-    "jobsDataNonProf":"locked-preserved",
+    "jobsDataNonProf":"preserved-no-qualified-delta",
     "sourceAudit":"updated-after-real-12-family-check",
-    "jobSources":"updated-after-real-12-family-check",
-    "master":"updated-audit-and-backlog-124-125",
     "lockedFilesTouched":false
   }
 }
