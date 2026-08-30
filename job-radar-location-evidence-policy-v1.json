@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "name": "Location evidence confidence gate",
+  "createdAt": "2026-08-30T08:28:17+02:00",
+  "purpose": "Prevent BA/remote eligibility from being inferred from weak search snippets or marketing labels.",
+  "hardGate": true,
+  "accepted": {
+    "ba-area": {
+      "minimumEvidence": ["job detail names BA-area worksite", "company career detail names BA-area worksite"],
+      "requiredFields": ["locationEligibility", "locationReason", "verifiedAt", "url"]
+    },
+    "remote-ok": {
+      "minimumEvidence": ["job detail explicitly allows remote from Slovakia", "worldwide/Europe remote detail has no Slovakia exclusion and no recurring distant-office obligation"],
+      "requiredFields": ["locationEligibility", "locationReason", "verifiedAt", "url"]
+    }
+  },
+  "quarantine": [
+    "remote only appears in search-result snippet",
+    "hybrid is stated but office cadence/location is unclear",
+    "locationReason merely repeats the title without evidence",
+    "country eligibility is missing for a foreign remote role",
+    "only an aggregator/repost asserts remote while canonical detail is unavailable"
+  ],
+  "reject": [
+    "onsite outside BA commuting area",
+    "regular weekly or monthly commute to a distant city",
+    "canonical detail contradicts remote/BA claim"
+  ],
+  "conflictRule": "Canonical job detail beats search index, repost and aggregator. Any unresolved conflict => locationEligibility=unknown and no active recommendation.",
+  "safeWriteRule": "Never delete an existing active item solely because evidence is temporarily unavailable; quarantine on next substantive verification if conflict is confirmed."
+}
