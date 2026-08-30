@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 30. 8. 2026 17:25 CEST
+Aktualizované: 30. 8. 2026 19:32 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -66,33 +66,31 @@ Aktualizované: 30. 8. 2026 17:25 CEST
 32. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 33. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 30. 8. 2026 17:25 CEST — LATEST
-Reálne prehľadané skupiny: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **10 nezávislých source families**, z toho 9 mimo Profesia.
+## SOURCE AUDIT — 30. 8. 2026 19:32 CEST — LATEST
+Reálne prehľadané skupiny: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; StartupJobs; Upwork; WordPress Jobs/tech index; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **12 nezávislých source families**, z toho 11 mimo Profesia.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky: 0.** Žiadny nový kandidát bezpečne neprešiel locality/language/hard-skill/value gateom; `jobs-data.json` sa obsahovo nemení a existujúci feed zostáva fail-closed zachovaný.
-- **Priame careers:** DHL HR Coordinator v Ivanke pri Dunaji bol v čerstvom indexe, ale canonical career detail už uvádza, že prijímanie žiadostí je uzavreté; vyradené pre neaktivitu.
-- **LinkedIn:** EEA Junior Web Designer a CMS Operator sú stále `No longer accepting applications`; bez nového aktívneho winnera.
-- **Profesia / Worki / Brigada.sk / Kariera.sk / Pretlak:** reálne prehľadané BA/remote discovery lanes; bez nového kvalifikovaného výsledku nad aktuálne LIVE priority.
-- **Upwork:** `WordPress-/WooCommerce-Spezialist – langfristige Unterstützung` je Worldwide remote za 8–15 USD/h, ale je 3 týždne starý, má 20–50 proposals, 2 interviewing a 10 invites; listing je celý po nemecky bez explicitného language proof, preto `languageEligibility: unknown` a nie LIVE. WooCommerce redesign za 225 USD je expert UI/UX scope s 20–50 proposals a klient už má hire. `Website & SEO Management 2026` zostáva najsilnejší pending remote-ok lead za 15–30 USD/h.
-- **Reddit/WordPress komunity:** verejne indexované hiring výsledky boli US-only alebo hard-dev; bez nového Slovakia-eligible winnera.
-- **Facebook:** **0 verified hits**, coverage `limited`; žiadny konkrétny verejne overiteľný hiring post s priamym linkom.
+- **Profesia / priame careers / LinkedIn / Worki / Brigada.sk / Kariera.sk / Pretlak / StartupJobs:** reálne prehľadané BA/remote discovery lanes; bez nového kvalifikovaného winnera nad aktuálne LIVE priority.
+- **Upwork:** `Website & SEO Management 2026` zostáva najsilnejší pending remote-ok lead za 15–30 USD/h. Je vecne silný na WooCommerce operations, ale onboarding/interview call, týždenný reporting a povinný 15-min Loom audit vytvárajú vyššiu spoken/written English a application-friction záťaž. Nový `WordPress WooCommerce E-Commerce Developer` je Worldwide remote a čerstvý, ale za 83,87 USD fixed ide o build/optimization development scope s PHP nice-to-have, preto neprešiel value/hard-skill gateom. Shopify app lead za 100 USD vyžaduje Billing API/app-development. Všeobecný VA lead za 15 USD fixed a marketing VA za 5 USD fixed boli vyradené pre nízku hodnotu.
+- **WordPress Jobs/tech index:** čerstvé výsledky boli developer/build oriented; bez non-hard-dev winnera.
+- **Reddit/WordPress komunity:** verejne indexované hiring dopyty nepriniesli nový konkrétny Slovakia-eligible winner s dostatočným remote proof.
+- **Facebook:** **0 verified hits**, coverage `limited`; žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 
 ### Run summary
-- Reálne skontrolované source families: **10**.
+- Reálne skontrolované source families: **12**.
 - Nové aktívne položky: **0**.
 - Významné pending kandidáty: **1**.
-- Language quarantine: **1**.
-- Vyradené ako slabé/nízka hodnota: **4**.
-- Vyradené pre freshness/evidence: **3**.
-- Vyradené lokalitou: **1**.
+- Vyradené ako slabé/nízka hodnota: **6**.
+- Vyradené pre freshness/evidence: **2**.
+- Vyradené lokalitou: **0**.
 - Duplicitné/existing: **1**.
 
 ### LIVE mix
 - `jobs-data.json`: **36 aktívnych položiek**.
 - Potvrdený mix: približne **Profesia 17 / 36 = 47,2 %; mimo Profesia 19 / 36 = 52,8 %**.
 - `jobs-data.json.updatedAt` = **30. 8. 2026 01:15:21 CEST**; bez reálnej kvalifikovanej obsahovej delty sa timestamp umelo neposúva.
-- `source-audit.json.updatedAt` = **30. 8. 2026 17:25:29 CEST**.
+- `source-audit.json.updatedAt` = **30. 8. 2026 19:32:52 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -226,3 +224,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 119. Source-family zero-yield rotation — ak source family opakovane vracia 0 kvalifikovaných kandidátov, meniť query archetyp, synonymá rolí a lokalitné výrazy pri zachovaní exploration floor; zvýši coverage bez falošného označovania zdroja za nefunkčný.
 120. Listing-language ambiguity quarantine — ak je celý listing v inom jazyku než SK/CZ/EN a explicitná jazyková požiadavka chýba, nastaviť `languageEligibility: unknown` a nepovýšiť ho do TOP/LIVE bez overenia komunikačného jazyka.
 121. Invite-to-interview efficiency signal — pri freelance leadoch vyhodnocovať pomer `invites / unanswered invites / interviewing / hires`; masové pozvánky s nízkou konverziou penalizovať ako signál nižšej reply probability a vyššej aplikačnej straty času.
+122. Fresh-hit confirmation retry window — ak čerstvý high-fit výsledok existuje vo verejnom indexe, ale detail je dočasne nedostupný alebo neúplný, zaradiť ho do krátkeho prioritného recheck okna namiesto straty alebo predčasnej aktivácie; znižuje missed-opportunity risk bez porušenia fail-closed.
+123. Source-check evidence ledger — ku každej source family ukladať minimálny dôkaz behu: query archetyp, čas kontroly, počet indexovaných kandidátov a rozhodovací výsledok; umožní auditovať, že zdroj bol naozaj skontrolovaný, a odlíši skutočný zero-hit od coverage/index failure.
