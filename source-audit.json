@@ -1,36 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T05:16:43+02:00",
+  "updatedAt": "2026-08-30T05:25:15+02:00",
   "runSummary": {
-    "familiesChecked": 8,
+    "familiesChecked": 11,
     "newActiveJobs": 0,
     "significantlyChangedPriorityJobs": 0,
-    "rejectedByLanguageOrHardSkill": 4,
-    "rejectedAsWeakOrLowValue": 3,
-    "duplicateOrExisting": 3,
-    "rejectedByFreshnessOrEvidence": 2,
+    "rejectedByLanguageOrHardSkill": 5,
+    "rejectedAsWeakOrLowValue": 5,
+    "duplicateOrExisting": 2,
+    "rejectedByFreshnessOrEvidence": 4,
     "liveFeedCount": 36,
     "effectiveEligibleCount": 36,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessStatus": "stale-over-60m-no-qualified-content-change",
-    "note": "Reálny audit 30.8.2026 05:16 CEST preveril Profesia/BA technické a admin výsledky, priame firemné výsledky cez Profesia, Worki, StartupJobs a Upwork remote discovery. Nevznikol nový alebo významne zmenený kandidát, ktorý by prešiel locality/language/hard-skill/value gateom a prebil aktuálne LIVE priority. Tatra Supercompute IT Service Desk pre AI dátové centrum je zaujímavý obsahovo, ale vyžaduje aktívnu angličtinu B2, anglické CV a 24/7 trojzmennú prevádzku. Form Factory IT Support Specialist ponúka 2 500 EUR a technicky sedí, no vyžaduje B2 angličtinu, pravidelnú komunikáciu so zahraničným IT tímom a 1–3 roky IT Support/Infrastructure praxe. Caffeespresso servis/zásobovanie 1 400–2 000 EUR neprekonáva HEATING PRO. Upwork VA discovery nepriniesol nový dôveryhodný non-hard-dev kandidát nad existujúce LIVE zákazky. jobs-data.json sa obsahovo nemení a updatedAt sa neposúva bez reálnej zmeny."
+    "note": "Reálny audit 30.8.2026 05:25 CEST preveril Profesia, LinkedIn/company discovery, Worki, Brigada.sk, Pretlak, WordPress Jobs, Upwork, Služby zamestnanosti/Kariera, Reddit/WP komunitu a verejne indexovaný Facebook. Nevznikol nový alebo významne zmenený kandidát, ktorý by bezpečne prešiel locality/language/hard-skill/value/trust gateom a prebil aktuálne LIVE priority. Upwork priniesol nový worldwide remote VA lead za 700 USD s 5–10 proposals, ale klient je nový (od 26.8.2026), rozsah je neurčitý, English communication je súčasťou práce a ide o one-time contract-to-hire listing; zostáva discovery-only, nie LIVE. Čerstvý Upwork WordPress plugin marketing lead je marketing/growth-heavy; WordPress/WooCommerce developer lead za 5 USD je ekonomicky neakceptovateľný. WordPress Jobs má 10 otvorených pozícií, no nové výsledky sú prevažne hard-dev, USA/on-site alebo bez Slovakia eligibility. Facebook neposkytol žiadny konkrétny verejne overiteľný hiring post. jobs-data.json sa obsahovo nemení a updatedAt sa neposúva bez reálnej zmeny."
   },
   "sources": [
-    {"name":"Profesia / BA technické a admin jobboards","family":"profesia","status":"checked","hits":7,"note":"Čerstvé výsledky zahŕňali Tatra Supercompute IT Service Desk, Form Factory IT Support, Caffeespresso servis/zásobovanie, PRO EXTERIÉR administratívu a ďalšie technické roly. Bez nového kandidáta, ktorý by prešiel všetkými hard filtrami a prebil LIVE priority."},
-    {"name":"Priame firemné výsledky / company listings","family":"company-careers","status":"checked","hits":3,"note":"Form Factory a Tatra Supercompute boli overené na detailnej ponuke; oba narazili na B2 angličtinu, Tatra navyše na 24/7 trojzmennú prevádzku."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"note":"Bez nového kvalifikovaného prírastku nad HEATING PRO a existujúce technicko-logistické priority."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"note":"Bez nového Slovakia-eligible remote výsledku s prijateľným language/hard-skill gateom."},
-    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":5,"note":"VA/admin/WordPress discovery bez nového overiteľného kandidáta s lepším pomerom scope/pay/trust/competition než existujúce LIVE zákazky."},
-    {"name":"Bratislava servis/IT support discovery","family":"tech-support","status":"checked","hits":6,"note":"Profesia servis/IT support stránka je čerstvá; relevantné nové alebo znovuindexované výsledky boli preverené a vyradené podľa language/hard-skill/value pravidiel."},
-    {"name":"Remote admin/customer support discovery","family":"remote-admin","status":"checked","hits":2,"note":"Bez nového prioritného remote kandidáta, ktorý by prebil VÚB/LEAF/ďalšie LIVE remote priority."},
-    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"ok","hits":0,"note":"LIVE feed zostáva 36 položiek; canonical dedupe, BA/remote eligibility, stable IDs a fail-closed pravidlá zachované. Žiadny potvrdený dôvod meniť jobs-data.json."}
+    {"name":"Profesia / Bratislava jobboard discovery","family":"profesia","status":"checked","hits":0,"note":"Čerstvé BA e-shop/admin/technical-support vyhľadávanie neprinieslo nový kvalifikovaný winner nad existujúce LIVE priority."},
+    {"name":"LinkedIn Jobs + priame firemné career discovery","family":"linkedin-company","status":"checked","hits":0,"note":"BA/remote e-commerce/support/operations discovery bez nového kandidáta s lepším locality/language/value profilom než aktuálne TOP položky."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"Výsledky v širšom regióne boli preverené; bez nového BA/remote kandidáta, ktorý by prebil HEATING PRO alebo existujúce technicko-logistické priority."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":2,"note":"Aktuálne indexované sklad/rozvoz brigády nemajú dostatočný BA/detail/value dôkaz na LIVE aktiváciu; nič slabé sa nepridáva kvôli kvóte."},
+    {"name":"Pretlak / creative-tech","family":"pretlak","status":"checked","hits":0,"note":"Bez nového WP/Woo/e-commerce/AI low-language-gate kandidáta vhodného pre BA alebo overený remote zo Slovenska."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":10,"note":"Portál uvádza 10 open positions. Nové listingy sú prevažne development/security/full-stack, USA/on-site alebo nemajú overenú Slovakia remote eligibility; 0 LIVE vhodných prírastkov."},
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":8,"note":"Nový VA lead 700 USD / 5–10 proposals je worldwide remote, ale nový klient + neurčitý scope + English communication + one-time contract znižujú trust/actionability. WordPress plugin marketing je growth-heavy a WooCommerce developer za 5 USD je micro-budget exploit; 0 LIVE prírastkov."},
+    {"name":"Služby zamestnanosti + Kariera","family":"government-kariera","status":"checked","hits":0,"note":"Bez nového BA/remote kandidáta s dostatočným detailom a zhodou; agregované alebo geograficky irelevantné výsledky neaktivované."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"checked","hits":2,"note":"Aktuálne výsledky sú hlavne for-hire, low-budget alebo developer-heavy; 0 konkrétnych kvalitných hiring leadov pre LIVE feed."},
+    {"name":"Facebook verejná indexácia – WordPress/WooCommerce/BA práce","family":"facebook-public","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; nič sa nepredstiera."},
+    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"ok","hits":0,"note":"LIVE feed zostáva 36 položiek; canonical dedupe, BA/remote hard gate, stable IDs a fail-closed pravidlá zachované. Žiadny potvrdený dôvod meniť jobs-data.json."}
+  ],
+  "developmentBacklogAdditions": [
+    {"name":"Selection-language risk signal","benefit":"Oddelene hodnotí jazyk pracovnej náplne od jazyka výberového procesu/interview. Ponuka môže mať AJ iba ako výhodu, ale pohovor alebo praktická úloha môžu prebiehať v angličtine; tento signál zabráni preceňovaniu reálnej šance na úspech."},
+    {"name":"Freelance payout friction score","benefit":"Pri remote freelance zákazkách započíta platform fee, menu/FX, payout metódu, minimálnu garantovanú sumu a prípadné cezhraničné kontraktačné obmedzenia. Zlepší porovnanie reálneho čistého výnosu s lokálnou TPP/živnosť alternatívou."}
   ],
   "writeStatus": {
     "jobsData": "no-change",
     "jobsDataReason": "Bez novej alebo významne zmenenej prioritnej položky; updatedAt sa neposúva iba na kozmetické omladenie feedu.",
-    "jobsDataNonProf": "no-change",
+    "jobsDataNonProf": "locked-no-change",
+    "jobSources": "no-structural-change",
     "sourceAudit": "updated-after-real-source-check",
+    "masterBacklog": "pending-safe-full-file-write",
+    "masterBacklogReason": "Dve nové zlepšenia sú zachytené v tomto audite, ale dostupná GitHub write operácia pre existujúci MASTER vyžaduje kompletnú náhradu súboru; bez bezpečne načítaného celého aktuálneho obsahu sa full-file rewrite nevykonal podľa FAIL-CLOSED pravidla.",
     "freshnessBreach": true,
-    "freshnessBreachReason": "jobs-data.json posledná obsahová aktualizácia 2026-08-30T01:15:21+02:00; reálny audit 05:16 nevytvoril kvalifikovanú obsahovú zmenu, preto feed timestamp zostáva nezmenený."
+    "freshnessBreachReason": "jobs-data.json posledná obsahová aktualizácia 2026-08-30T01:15:21+02:00; reálny audit 05:25 nevytvoril kvalifikovanú obsahovú zmenu, preto feed timestamp zostáva nezmenený."
   }
 }
