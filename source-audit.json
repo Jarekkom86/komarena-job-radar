@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T21:15:43+02:00",
+  "updatedAt": "2026-08-30T21:23:45+02:00",
   "runSummary": {
-    "familiesChecked": 12,
+    "familiesChecked": 10,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 4,
-    "rejectedAsWeakOrLowValue": 10,
-    "rejectedByFreshnessOrEvidence": 2,
+    "duplicateOrExisting": 2,
+    "rejectedAsWeakOrLowValue": 8,
+    "rejectedByFreshnessOrEvidence": 1,
     "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
@@ -17,27 +17,25 @@
     "freshnessStatus": "breach-no-qualified-feed-delta",
     "liveFeedCount": 36,
     "liveFeedMix": {"profesia":17,"nonProfesia":19,"profesiaPct":47.2,"nonProfesiaPct":52.8},
-    "note": "Reálny audit 30.8.2026 21:15 CEST prehľadal 12 source families podľa pravidiel Job Radaru. Nevznikol nový kvalifikovaný LIVE winner ani významná zmena priority. Profesia stále ukazuje Košík.sk 2 500–3 000 EUR ako existujúcu silnú vodičskú ponuku; nejde o nový hit. Worki discovery neprinieslo silnejší aktuálny BA výsledok než existujúci HEATING PRO. Upwork priniesol nový WordPress WooCommerce E-Commerce Developer za 83.87 USD fixed, Worldwide, 5–10 proposals, ale scope je explicitne developer/build/performance a odmena je nízka vzhľadom na rozsah, preto bol vyradený. Nový Reliable Proactive Virtual Assistant je obsahovo blízky WordPress/admin/AI, ale iba 3–5 USD/h a vyžaduje strong English communication. Virtual Assistant for Website Launch za 150 USD fixed má už 10–15 proposals a 5 interviewing a neprekonáva existujúci pending Website & SEO Management 2026. Pretlak priniesol 3D Product Artist 10–18 EUR/h, ale ide o špecializované 3D/CAD/CGI mimo profil. LinkedIn/support výsledky neodstránili jazykový gate; Wolt canonical stále vyžaduje minimum B2 English. Reddit dnešné WordPress výsledky boli FOR HIRE ponuky freelancerov, nie hiring dopyty. Facebook verejná indexácia neposkytla overiteľný nový hiring hit. jobs-data.json ani jobs-data-nonprof.json sa bez kvalifikovanej delty nemenia a timestamp sa umelo neposúva."
+    "note": "Reálny audit 30.8.2026 21:23 CEST prehľadal 10 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak/WordPress Jobs tech lane, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Nevznikol nový kvalifikovaný LIVE winner. Brigada.sk má 103 BA brigád vrátane vodiča detského vláčika a skladových Metro rolí, ale neprekonávajú value/fit prioritu. Upwork priniesol čerstvé WordPress/WooCommerce developer výsledky; Shopify Billing API a custom cart fixes sú hard-dev a low-value, WordPress/WooCommerce food-ordering je developer-heavy. Wolt direct courier Bratislava je verejne aktívny a flexibilný, ale ide o food/grocery platform delivery bez garantovanej odmeny a vlastné vozidlo, preto sa nepridáva nad existujúce Lanža/Akfos priority. Reddit výsledky sú prevažne FOR HIRE ponuky freelancerov, nie hiring dopyty. Facebook neposkytol konkrétny overiteľný hiring post. jobs-data.json zostáva fail-closed bez umelej zmeny timestampu."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":0,"note":"BA/okolie admin/driver discovery prehľadané. Košík.sk 2 500–3 000 EUR je existujúci/duplicitný silný hit, nie nový winner."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":1,"added":0,"rejected":1,"note":"Wolt canonical support route opätovne preverená; jazykový gate minimum B2 English zostáva."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":2,"added":0,"rejected":2,"note":"BA customer/support discovery prehľadané; čerstvý A2-compatible prioritný hit sa nepotvrdil."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"note":"BA technická podpora/admin/vodič/sklad discovery prehľadané; bez nového silnejšieho kvalifikovaného hitu než existujúci HEATING PRO."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":1,"added":0,"rejected":1,"note":"Vodič detského vláčika v AVIONe je aktuálny od 30.8., ale iba študentská dohoda a cca 6 EUR/h netto; mimo cieľového value gate."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/okolie WordPress/e-shop/admin/support/driver discovery prehľadané; bez nového kvalifikovaného winnera."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":1,"added":0,"rejected":1,"note":"Wolt Courier Bratislava verejne aktívny a flexibilný; vlastné vozidlo/bike/scooter, platform delivery, bez garantovanej odmeny. Neaktivovaný nad existujúce silnejšie vodičské priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA e-commerce/support discovery prehľadané; bez nového bezpečne A2-compatible silného hitu."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA technická podpora/admin/vodič/sklad discovery prehľadané; bez nového silnejšieho kvalifikovaného hitu."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":3,"added":0,"rejected":3,"note":"103 BA brigád v indexe. Vodič detského vláčika AVION cca 6 EUR/h netto a Metro konsolidácia/distribúcia 7 EUR/h sú aktuálne, ale slabšie než LIVE priority."},
     {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA e-shop/admin/support/driver discovery prehľadané; bez nového kvalifikovaného detailu."},
-    {"name":"Pretlak","family":"pretlak","status":"ok","hits":2,"added":0,"rejected":2,"note":"3D Product Artist 10–18 EUR/h je remote/hybrid/onsite BA, ale špecializovaný 3D/CAD/CGI profil; Blackmagic Fusion rola je senior expert mimo profil."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":1,"added":0,"rejected":1,"note":"Preverené remote/support indexy; bez nového Slovakia-eligible A2-compatible winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":0,"rejected":5,"note":"Nový WooCommerce E-Commerce Developer 83.87 USD fixed bol vyradený pre hard-dev/build scope a slabú ekonomiku; Reliable Proactive VA 3–5 USD/h padá na sadzbe a strong English; Website Launch VA 150 USD fixed má 10–15 proposals a 5 interviewing. Existing Website & SEO Management 2026 zostáva najsilnejší pending."},
-    {"name":"WordPress Jobs / tech index","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Remote WordPress discovery prehľadané; bez nového non-hard-dev winnera."},
-    {"name":"Reddit / WordPress komunity","family":"communities","status":"ok","hits":2,"added":0,"rejected":2,"note":"Dnešné WordPress/WooCommerce výsledky boli FOR HIRE ponuky freelancerov, nie hiring dopyty; nezaradené."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"Verejný index neposkytol konkrétny overiteľný nový hiring post s priamym linkom; 0 verified hits. Autentizovaný Nexus/local ingestion ostáva backlog."}
+    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":1,"added":0,"rejected":1,"note":"WordPress tech discovery prehľadané; čerstvé developer roly sú hard-dev alebo neprimerane technické voči profilu."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":5,"added":0,"rejected":5,"note":"Čerstvé výsledky: Shopify Billing API 100 USD fixed = hard-dev/API; Shopify cart fix 60 USD expert = custom theme coding; WordPress/WooCommerce food ordering = experienced developer scope; WordPress modernization = designer/developer; WooCommerce tire catalog 800 USD = multilingual/fitment implementation. Žiadny neprekonáva pending Website & SEO Management 2026 pomerom fit/riziko."},
+    {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejne indexované výsledky sú prevažne FOR HIRE ponuky freelancerov, nie hiring dopyty; bez nového overiteľného klientského leadu."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny relevantný hiring post s priamym linkom; autentizovaný Nexus/local ingestion ostáva backlog."}
   ],
   "verificationQueue": [
     {"id":"linkedin-sectec-marketing-asistent-4362401102","title":"Marketing asistent – WordPress/CMS, newslettery, administratíva","source":"LinkedIn Jobs / SecTec","url":"https://sk.linkedin.com/jobs/view/marketing-asistent-at-sectec-4362401102","locationEligibility":"ba-area","languageEligibility":"no-explicit-gate-found","reason":"Veľmi dobrý profilový fit a flexibilná forma v Bratislave. Pred LIVE aktiváciou overiť mzdu, aktuálny dátum publikácie/active-hiring proof a prípadnú skrytú jazykovú požiadavku."},
     {"id":"upwork-wp-woo-spezialist-2088184469556084370","title":"WordPress-/WooCommerce-Spezialist – langfristige Unterstützung","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/WordPress-WooCommerce-Spezialist-langfristige-Unterst-tzung_~022088184469556084370/","locationEligibility":"remote-ok","languageEligibility":"unknown","reason":"Worldwide remote, ale listing je celý po nemecky a explicitná jazyková požiadavka chýba; pred odporúčaním overiť komunikačný jazyk."},
-    {"id":"upwork-ecommerce-va-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/commerce-Virtual-Assistant-WooCommerce-Subscriptions-Customer-Service-Xero_~022093200734923132353/","locationEligibility":"remote-ok","languageEligibility":"risk-b2-like-written","reason":"Worldwide Remote Job, 10–15 USD/h, <30 h/týždeň, 1–3 mesiace, contract-to-hire; explicitne vyžaduje good written English, strong WooCommerce + WooCommerce Subscriptions, Meta Ads Manager a basic Xero. Vecne silný fit, ale jazykový a špecializovaný skill gap bráni LIVE odporúčaniu."},
-    {"id":"foliovision-user-support","title":"User Support – WordPress/FV Player","source":"Foliovision direct","url":"https://foliovision.com/jobs/technical-support","locationEligibility":"ba-area","languageEligibility":"risk-written-english","reason":"Bratislava, WordPress/HTML troubleshooting a user support sú profilovo silné, ale verejný detail nemá čerstvý active-hiring proof a vyžaduje aktívne písanie v angličtine; ponechať na overenie, nie LIVE."}
+    {"id":"upwork-ecommerce-va-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/commerce-Virtual-Assistant-WooCommerce-Subscriptions-Customer-Service-Xero_~022093200734923132353/","locationEligibility":"remote-ok","languageEligibility":"risk-b2-like-written","reason":"Worldwide Remote Job, 10–15 USD/h; explicitne vyžaduje good written English a špecializované WooCommerce Subscriptions/Meta Ads/Xero skills."},
+    {"id":"foliovision-user-support","title":"User Support – WordPress/FV Player","source":"Foliovision direct","url":"https://foliovision.com/jobs/technical-support","locationEligibility":"ba-area","languageEligibility":"risk-written-english","reason":"Bratislava, WordPress/HTML troubleshooting a user support sú profilovo silné, ale verejný detail nemá čerstvý active-hiring proof a vyžaduje aktívne písanie v angličtine."}
   ],
   "pendingCandidate": {
     "id":"upwork-website-seo-management-2093603919086755488",
@@ -50,13 +48,15 @@
     "status":"pending-language-and-application-friction-review"
   },
   "developmentBacklogAddedThisRun": [
-    {"name":"Canonical application-route health monitor","reason":"Pri každom TOP/pending leade overovať nielen existenciu detailu, ale aj funkčnosť reálneho apply endpointu a prípadný login/region gate; zabráni plytvaniu časom na ponuky, ktoré vyhľadávač stále ukazuje, ale nedajú sa reálne podať."},
-    {"name":"Fresh competitor-pressure decay","reason":"Pri freelance leadoch kombinovať vek ponuky s počtom proposals/interviewing a odhadovať, ako rýchlo klesá reply probability; pomôže prioritizovať čerstvé low-competition zákazky pred staršími high-fit leadmi s už zaplneným funnelom."}
+    {"name":"Value-normalized gig comparator","reason":"Pri vodičských a krátkych freelance možnostiach počítať garantovanú odmenu, vlastné náklady, platform fee, čas čakania a neistotu objemu; zabráni tomu, aby flexibilná ale negarantovaná platformová práca vytlačila stabilnejšiu ponuku s jasným pay floor."},
+    {"name":"Public-index hiring-intent classifier","reason":"Pri Reddit/Facebook/community výsledkoch automaticky rozlíšiť HIRING/LOOKING FOR od FOR HIRE/AVAILABLE a portfolio self-promotion; zníži falošné pozitíva a zrýchli community sourcing bez predstierania dopytu."}
   ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-delta",
-    "jobsDataNonProf":"preserved-no-qualified-delta",
-    "sourceAudit":"updated-after-real-12-family-check",
+    "jobsDataNonProf":"locked-preserved",
+    "sourceAudit":"updated-after-real-10-family-check",
+    "jobSources":"update-attempted-this-run",
+    "master":"backlog-write-blocked-by-full-file-read-truncation",
     "lockedFilesTouched":false
   }
 }
