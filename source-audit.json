@@ -1,36 +1,28 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T16:25:37+02:00",
+  "updatedAt": "2026-08-30T17:11:17+02:00",
   "runSummary": {
-    "familiesChecked": 10,
+    "familiesChecked": 4,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
     "duplicateOrExisting": 2,
-    "rejectedAsWeakOrLowValue": 5,
-    "rejectedByFreshnessOrEvidence": 3,
-    "rejectedByLocation": 2,
-    "quarantinedUnknownLocation": 1,
+    "rejectedAsWeakOrLowValue": 3,
+    "rejectedByFreshnessOrEvidence": 0,
+    "rejectedByLocation": 0,
+    "quarantinedUnknownLocation": 0,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "breach-no-qualified-feed-delta",
-    "note": "Reálny audit 30.8.2026 16:25 CEST preveril Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a verejnú Facebook discovery. Nevznikol nový kandidát, ktorý by bezpečne prešiel lokalitným, jazykovým, hard-skill a value gateom. LinkedIn index vrátil staré/no-longer-accepting EEA CMS/web roly; Kariera discovery vrátila mimo-gate Žilinu. Upwork má čerstvé všeobecné VA/data/web výsledky, ale bez lepšieho WooCommerce/odmena/fit profilu než existujúce LIVE/pending priority. Facebook neposkytol žiadny konkrétny verejne overiteľný hiring post."
+    "note": "Reálny audit 30.8.2026 17:11 CEST preveril Profesia, Worki.sk, Pretlak a Upwork podľa existujúcich BA/okolie/remote pravidiel. Nevznikol nový kandidát, ktorý by bezpečne prešiel lokalitným, jazykovým, hard-skill a value gateom. Profesia priniesla nový administratívny hit Key Marketing 1 500 EUR/mes., ale bez dôkazu lepšieho fitu než existujúce priority. Worki potvrdilo HEATING PRO 1 600–2 500 EUR/mes. ako existujúci aktívny hit. Upwork priniesol nový Reliable Proactive Virtual Assistant s WordPress/AI/admin scope, ale len 3–5 USD/h a explicitne silnou angličtinou; vyradené. Website & SEO Management 2026 zostáva najsilnejší pending WooCommerce remote lead za 15–30 USD/h."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"BA/remote WooCommerce, e-shop, administratíva, technický support a vodič discovery preverené; bez nového kvalifikovaného winnera nad LIVE priority."},
-    {"name":"Priame verejné careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Verejné career zdroje boli prehľadané; objavili sa všeobecné DHL/Philips a zahraničné výsledky, ale bez nového BA alebo Slovakia-remote kandidáta spĺňajúceho profil."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"added":0,"note":"Verejný index vrátil EEA CMS Operator a Junior Web Designer, oba už neakceptujú žiadosti; vyradené pre neaktivitu/freshness."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"Bratislava technická podpora/admin/vodič/sklad discovery preverená; bez nového kvalifikovaného hitu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"note":"Bratislavské brigády administratíva/vodič/sklad preverené; bez nového konkrétneho prioritného hitu."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"rejectedLocation":1,"note":"Index priniesol aktuálne obchodné výsledky v Žiline; mimo tvrdého BA/remote gate, preto neaktivované."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"note":"Bratislava administratíva bola čerstvo preverená. Nový Key Marketing 1 500 EUR/mes. nepreukázal lepší fit/value než LIVE priority, preto neaktivovaný."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"note":"HEATING PRO 1 600–2 500 EUR/mes. zostáva aktívny existujúci hit; bez nového kvalifikovaného winnera."},
     {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"note":"BA/remote WordPress/e-commerce/support discovery preverená; bez nového non-hard-dev winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":5,"added":0,"note":"Verejný index má čerstvé remote VA/data/web výsledky. Website & SEO Management 2026 zostáva najsilnejší existujúci pending lead; nové všeobecné VA/web ponuky ho neprekonali pomerom fit/odmena/konkurencia alebo boli príliš dev-heavy."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"ok","hits":2,"added":0,"quarantinedUnknownLocation":1,"note":"r/wordpressjobs a r/VirtualAssistant boli verejne prehľadané. Existujúci WooCommerce website-creator lead zostáva v quarantine pre chýbajúci explicitný Slovakia/remote eligibility dôkaz; nové verejné výsledky neprekonali LIVE priority."},
-    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny overiteľný hiring post a priamy link; autentizovaný Nexus/local agent ostáva backlog potreba, automat ho nespúšťa."}
+    {"name":"Upwork","family":"upwork","status":"ok","hits":4,"added":0,"note":"Website & SEO Management 2026 zostáva najsilnejší pending lead (15–30 USD/h). Nový Reliable Proactive Virtual Assistant má WordPress/AI/admin fit, ale iba 3–5 USD/h a strong-English gate; ďalšie nové WooCommerce/VA výsledky boli dev-heavy alebo low-value."}
   ],
-  "verificationQueue": [
-    {"id":"reddit-wordpressjobs-1vyoiny","title":"I'm looking for a website creator – online language-learning shop","source":"Reddit r/wordpressjobs","url":"https://www.reddit.com/r/wordpressjobs/comments/1vyoiny/im_looking_for_a_website_creator/","locationEligibility":"unknown","locationReason":"Verejný post neobsahuje explicitný country/remote eligibility dôkaz pre prácu zo Slovenska.","provisionalScore":94,"status":"verify-location-before-active"}
-  ],
+  "verificationQueue": [],
   "pendingCandidate": {
     "id":"upwork-website-seo-management-2093603919086755488",
     "title":"Website & SEO Management 2026 – WooCommerce operations",
@@ -41,20 +33,9 @@
     "provisionalScore":91,
     "status":"pending-language-and-application-friction-review"
   },
-  "liveMix": {
-    "activeJobs": 36,
-    "profesia": 17,
-    "nonProfesia": 19,
-    "profesiaPct": 47.2,
-    "nonProfesiaPct": 52.8
-  },
-  "masterBacklogAdditions": [
-    {"name":"Search-result evidence aging clock","reason":"Každému discovery hitu ukladať vek posledného detailného dôkazu oddelene od veku indexu; zabráni povýšeniu starého/no-longer-accepting výsledku len preto, že bol dnes znovu crawlovaný."},
-    {"name":"Source-family zero-yield rotation","reason":"Ak source family opakovane vracia 0 kvalifikovaných kandidátov, meniť query archetyp/lokalitné synonymá pri zachovaní exploration floor; zvýši coverage bez falošného označovania zdroja za nefunkčný."}
-  ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-active-delta",
-    "jobSources":"updated-after-real-source-check",
+    "jobsDataNonProf":"preserved-no-qualified-active-delta",
     "sourceAudit":"updated-after-real-source-check",
     "lockedFilesTouched":false
   }
