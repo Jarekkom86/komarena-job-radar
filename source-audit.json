@@ -56,8 +56,8 @@
     "jobsData":"preserved-no-qualified-delta",
     "jobsDataNonProf":"locked-preserved",
     "sourceAudit":"updated-after-real-12-family-check",
-    "jobSources":"update-pending-this-run",
-    "master":"backlog-update-pending-safe-write",
+    "jobSources":"updated-audit-metadata-no-registry-delta",
+    "master":"updated-source-audit-and-two-new-backlog-items",
     "lockedFilesTouched":false
   }
 }
