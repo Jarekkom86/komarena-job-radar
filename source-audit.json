@@ -1,32 +1,35 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T09:26:30+02:00",
+  "updatedAt": "2026-08-30T10:14:45+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "rejectedByLanguageOrHardSkill": 2,
-    "rejectedAsWeakOrLowValue": 3,
-    "duplicateOrExisting": 1,
+    "rejectedByLanguageOrHardSkill": 3,
+    "rejectedAsWeakOrLowValue": 4,
+    "duplicateOrExisting": 2,
     "rejectedByFreshnessOrEvidence": 2,
     "rejectedByLocation": 1,
     "liveMainCount": 36,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
-    "note": "Reálny audit 30.8.2026 09:26 CEST preveril 10 source families: Profesia, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork/freelance, priame firemné careers, Reddit/WP komunity a verejne indexovaný Facebook. Najsilnejší nový kandidát je Upwork E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero: Worldwide remote, 10–15 USD/h, <30 h/týždeň, 1–3 mesiace, contract-to-hire, 15–20 proposals. Skillovo veľmi silný fit, ale vyžaduje good written English, WooCommerce Subscriptions, Meta Ads Manager a basic Xero; preto score držané pod absolútnym TOP a kandidát ostáva pending, kým sa bezpečne nevykoná atómový zápis do autoritatívneho jobs-data.json."
+    "jobsDataNonprofUpdatedAt": "2026-08-30T08:12:31+02:00",
+    "freshnessSlaMinutes": 60,
+    "freshnessStatus": "breach",
+    "note": "Reálny audit 30.8.2026 10:14 CEST preveril Profesia, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork/freelance, priame firemné careers, Reddit/WP komunity a verejne indexovaný Facebook. Nenašiel nový ani významne zmenený prioritný winner. Upwork E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero zostáva relevantný pending kandidát, ale explicitne vyžaduje good written English, WooCommerce Subscriptions, Meta Ads Manager a basic Xero. Čerstvé WooCommerce výsledky boli prevažne development-heavy alebo nízkej hodnoty. Feed timestamp sa neposunul bez bezpečného full-file zápisu; posledné validné dáta sú zachované."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Čerstvé BA/remote WordPress, e-shop, admin a support discovery bez nového overiteľného winnera nad LIVE priority."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Bratislava e-commerce/support discovery prehľadané; verejne indexované výsledky nepriniesli nový kvalifikovaný winner."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA technický support/admin/driver discovery bez kandidáta nad HEATING PRO a existujúce priority."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"note":"Bratislava brigády prehľadané; bez nového konkrétneho detailu s dostatočnou hodnotou a dôkazmi."},
-    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"note":"Portál dostupný; prominentné výsledky neprešli BA/remote alebo role-fit gateom."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"note":"BA/remote WordPress/e-commerce/support discovery bez nového vhodného non-hard-dev winnera."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":2,"added":0,"rejectedWeakOrLowValue":1,"note":"Nový E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero je Worldwide remote, 10–15 USD/h, <30 h/týždeň, 1–3 mesiace, contract-to-hire, 15–20 proposals. Silný obsahový fit, ale good written English + WooCommerce Subscriptions + Meta Ads Manager + basic Xero sú riziká. Pending pre bezpečný feed write. Ďalšie WordPress výsledky boli development-heavy alebo slabšie."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"BA/remote admin, support, technické, vodičské a e-commerce discovery reálne preverené; bez nového overiteľného winnera nad existujúce priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Bratislava/Slovakia remote e-commerce, support a operations discovery bez nového kvalifikovaného winnera."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"note":"Čerstvé indexované výsledky neprekonali HEATING PRO; relevantný nový výsledok bol mimo BA alebo vyžadoval slabšiu lokalitnú/skill zhodu."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"note":"Portál a BA brigádnické discovery preverené; bez nového konkrétneho detailu s dostatočnou prioritou."},
+    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":1,"added":0,"note":"Aktuálne ponuky a 24h discovery preverené; nájdené výsledky boli mimo BA/remote alebo neprekonali existujúce priority."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"note":"BA/remote WordPress, e-commerce, support a operations discovery bez nového vhodného non-hard-dev winnera."},
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":4,"added":0,"rejectedWeakOrLowValue":2,"rejectedHardSkill":2,"note":"E-commerce VA WooCommerce/Subscriptions/Xero zostáva najzaujímavejší pending lead, ale má explicitný written-English a špecifický Subscriptions/Meta/Xero gate. Nové WooCommerce výsledky z posledných 14–19 hodín boli developer-heavy, expert-level alebo nízko platené."},
     {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Verejne indexované BA/Slovakia-remote firemné careers bez nového winnera nad aktuálny feed."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"added":0,"note":"Verejne indexované komunity prehľadané; 0 konkrétnych Slovakia-eligible non-hard-dev hiring hitov."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny overiteľný hiring post s priamym linkom; nič sa nevymýšľa. Autentizovaný Nexus/local ingestion zostáva backlog."},
-    {"name":"Feed integrity / dedupe / freshness","family":"feed-integrity","status":"warning","hits":1,"added":0,"note":"jobs-data.json sa nepodarilo bezpečne atómovo doplniť cez dostupný connector bez kompletného netruncovaného obsahu; FAIL-CLOSED zachoval existujúcich 36 položiek. Zamknuté UI/renderery/baseline/bootstrap neboli menené."}
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"added":0,"note":"Verejne indexované komunity prehľadané; bez konkrétneho nového Slovakia-eligible non-hard-dev hiring hitu."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny overiteľný hiring post s priamym linkom; nič sa nevymýšľa."},
+    {"name":"Feed integrity / dedupe / freshness","family":"feed-integrity","status":"warning","hits":1,"added":0,"note":"jobs-data.json ostáva na 01:15:21 CEST a jobs-data-nonprof.json na 08:12:31 CEST. Reálna kontrola zdrojov prebehla 10:14 CEST, ale dostupné čítanie dátových súborov je truncované a update_file vyžaduje kompletnú náhradu. FAIL-CLOSED zachoval posledné validné dáta; 60-minútový feed freshness SLA je prekročený."}
   ],
   "pendingCandidate": {
     "id":"upwork-ecommerce-va-woocommerce-subscriptions-xero-2093200734923132353",
@@ -34,7 +37,7 @@
     "source":"Upwork",
     "url":"https://www.upwork.com/freelance-jobs/apply/commerce-Virtual-Assistant-WooCommerce-Subscriptions-Customer-Service-Xero_~022093200734923132353/",
     "locationEligibility":"remote-ok",
-    "locationReason":"Upwork detail explicitly states Worldwide and Remote Job; no regular onsite requirement is listed.",
+    "locationReason":"Upwork detail states Worldwide and Remote Job; no regular onsite requirement is listed.",
     "pay":"10–15 USD/h",
     "form":"<30 h/týždeň • 1–3 mesiace • contract-to-hire • ongoing",
     "competition":"15–20 proposals; 0 interviewing; 0 invites",
@@ -43,18 +46,12 @@
     "provisionalScore":87,
     "status":"pending-safe-write"
   },
-  "masterBacklogPending": [
-    "Skill-proof microportfolio generator — pre TOP lead automaticky vyberie 3–5 konkrétnych dôkazov z existujúcej praxe/projektov a mapuje ich na mandatory requirements bez vymýšľania skills; cieľom je zrýchliť kvalitnú reakciu a znížiť claim-risk.",
-    "Application timing advantage estimator — kombinuje publishedAt, proposal count, client last-viewed, interviewing/invites a lokálny čas klienta a určí, či reagovať okamžite, dnes alebo lead už nechať tak; šetrí Connects a čas pri freelance ponukách."
-  ],
   "writeStatus": {
-    "jobsData":"blocked-fail-closed-pending-atomic-write",
-    "jobsDataReason":"Nový kvalifikovaný kandidát existuje, ale dostupné čítanie jobs-data.json je truncované a update_file vyžaduje kompletnú náhradu. Bez netruncovaného obsahu sa full-file rewrite nevykonal.",
-    "jobSources":"preserved-no-registry-change",
-    "jobSourcesReason":"Nevznikla nová source family ani zmena source registry vyžadujúca bezpečný prepis.",
+    "jobsData":"preserved-fail-closed",
+    "jobsDataReason":"Bez novej kvalifikovanej obsahovej zmeny a bez bezpečne dostupného kompletného netruncovaného obsahu sa full-file rewrite nevykonal.",
+    "jobsDataNonprof":"preserved-fail-closed",
+    "jobsDataNonprofReason":"Reálna kontrola prebehla, ale connector vracia súbor truncovaný; timestamp sa neposúva bez bezpečného kompletného zápisu.",
     "sourceAudit":"updated-after-real-source-check",
-    "master":"pending-safe-append",
-    "masterReason":"Dve nové zlepšenia sú zachytené v audite; MASTER fetch je truncovaný a full-file rewrite by nebol fail-closed bezpečný.",
     "lockedFilesTouched":false
   }
 }
