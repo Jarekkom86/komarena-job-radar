@@ -1,36 +1,35 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T11:15:36+02:00",
+  "updatedAt": "2026-08-30T11:29:49+02:00",
   "runSummary": {
-    "familiesChecked": 12,
+    "familiesChecked": 11,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "rejectedByLanguageOrHardSkill": 4,
-    "rejectedAsWeakOrLowValue": 6,
-    "duplicateOrExisting": 4,
+    "rejectedByLanguageOrHardSkill": 3,
+    "rejectedAsWeakOrLowValue": 4,
+    "duplicateOrExisting": 3,
     "rejectedByFreshnessOrEvidence": 2,
     "rejectedByLocation": 1,
     "liveMainCount": 36,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "breach",
-    "note": "Reálny audit 30.8.2026 11:15 CEST preveril Profesia, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, StartupJobs, WordPress Jobs, Upwork/freelance, priame firemné careers, Reddit/WP komunity a verejne indexovaný Facebook. Žiadny nový kandidát bezpečne neprebil aktuálne priority. Nový Komunálny podnik Bratislavy – Technický pracovník dopravy (1 500–1 600 €, ASAP, BA) je relevantný administratívno-dopravný near-fit bez jazykového gate, ale 3 roky požadovanej praxe a nižšia hodnota oproti TOP kandidátom ho držia mimo prioritného LIVE prírastku. Key Marketing je obchodno-provízny profil a neprešiel value/sales-intensity gate. Čerstvé Upwork WordPress/VA výsledky boli buď hard-dev, príliš lacné alebo mali silný English gate."
+    "note": "Reálny audit 30.8.2026 11:29 CEST preveril Profesia, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, WordPress Jobs, Upwork/freelance, priame firemné careers, Reddit/WP komunity a verejne indexovaný Facebook. Žiadny nový kandidát bezpečne neprebil aktuálne LIVE priority. Upwork eCommerce VA Shopify/WooCommerce má dobrý scope, ale iba 10 USD fixed, 20–50 proposals a už 1 hire. Recipe Website VA je Worldwide remote a má <5 proposals, ale explicitne vyžaduje predchádzajúcu prax na recipe website. Mailchimp/Canva/WordPress VA je obsahovo blízka, ale iba 4–6 h/týždeň, 8–15 USD/h, 20–50 proposals a vyžaduje ukážky práce plus explicitne vlastnoručne napísanú odpoveď."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":4,"added":0,"note":"Preverené nové BA administratívne, dopravné, vodičské a support výsledky. KPB Technický pracovník dopravy je near-fit, nie priorita; Key Marketing je obchodno-provízny profil; existujúce Lanža/Akfos zostávajú bez významnej zmeny."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"added":0,"note":"BA/remote support a e-commerce discovery bez nového kandidáta nad existujúce priority."},
-    {"name":"Worki.sk","family":"worki","status":"ok","hits":2,"added":0,"note":"HEATING PRO je naďalej aktívny: 1 600–2 500 €, nástup ihneď; ďalšie výsledky neprekonali jeho fit/value profil."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"note":"Bratislava administratíva/kuriér/sklad/web discovery preverené; bez nového detailu s dostatočnou prioritou."},
-    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"note":"BA e-shop/admin/support/logistika discovery preverené; bez nového kvalifikovaného hitu."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"note":"BA/remote WordPress/e-commerce/support discovery bez nového vhodného non-hard-dev winnera."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"note":"Remote e-commerce/support discovery preverené; bez nového Slovakia-eligible kandidáta, ktorý by prešiel jazykovým a skill gateom."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"note":"Čerstvé WordPress/WooCommerce discovery preverené; bez vhodného non-hard-dev leadu."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":5,"added":0,"rejectedWeakOrLowValue":3,"rejectedHardSkill":1,"duplicateOrExisting":1,"note":"Nový WordPress/WooCommerce build za 83.87 USD fixed je hard-dev a nízka hodnota; Proactive VA má silný English communication gate; staršie AI VA 5–10 USD/h má 20–50 proposals. Website & SEO Management 2026 zostáva existujúci pending WooCommerce lead 15–30 USD/h."},
-    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Verejne indexované BA/Slovakia-remote firemné careers bez nového winnera nad LIVE feed."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"added":0,"note":"Verejne indexované komunity prehľadané; bez konkrétneho nového Slovakia-eligible non-hard-dev hiring hitu."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny overiteľný hiring post s priamym linkom; autentizovaný Nexus/local ingestion zostáva backlog potreba."},
-    {"name":"Feed integrity / dedupe / freshness","family":"feed-integrity","status":"warning","hits":1,"added":0,"note":"jobs-data.json ostáva na 01:15:21 CEST. Nevznikol nový prioritný LIVE prírastok ani významná zmena existujúcej priority, takže updatedAt sa zámerne neposúva. Existujúce validné položky sa fail-closed nemažú."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"note":"BA/remote e-shop/admin/technical/support discovery reálne preverené; bez nového kvalifikovaného winnera nad aktuálne LIVE priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"added":0,"note":"Slovakia/BA support discovery preverené; Wolt support zostáva jazykovo nad profilom a ostatné verejne indexované výsledky neprebili LIVE priority."},
+    {"name":"Worki.sk","family":"worki","status":"ok","hits":1,"added":0,"note":"Worki bolo reálne prehľadané; existujúci HEATING PRO zostáva silnejší než nové dostupné výsledky."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"note":"Bratislava administratíva/vodič/sklad/technical discovery preverené; bez nového detailu s dostatočnou hodnotou."},
+    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"note":"BA administratíva/e-shop/support discovery preverené; bez nového kvalifikovaného hitu."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"note":"BA/remote tech/creative discovery preverené; bez vhodného WordPress/e-commerce non-hard-dev winnera."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"note":"Aktuálny feed obsahuje najmä development/performance/theme roly; bez vhodného non-hard-dev Slovakia-eligible leadu."},
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":4,"added":0,"rejectedWeakOrLowValue":2,"rejectedHardSkill":1,"duplicateOrExisting":1,"note":"eCommerce VA Shopify/WooCommerce: Worldwide remote, ale 10 USD fixed + 20–50 proposals + 1 hire = low-value reject. Recipe Website VA: Worldwide remote, <5 proposals, ale hard prior-domain experience gate. Mailchimp/Canva/WordPress VA: 8–15 USD/h, 4–6 h/týždeň, 20–50 proposals, portfolio/authorship friction; side-gig near-fit, nie LIVE priority. Website & SEO Management 2026 zostáva existujúci pending lead 15–30 USD/h."},
+    {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Verejne indexované BA/Slovakia-remote company careers preverené; bez nového winnera nad LIVE feed."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"added":0,"note":"Verejne indexované community výsledky prehľadané; 0 nových konkrétnych Slovakia-eligible non-hard-dev hiring hitov."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny overiteľný hiring post s priamym linkom; nič fiktívne sa nevytvára. Autentizovaný Nexus/local ingestion zostáva backlog potreba."},
+    {"name":"Feed integrity / dedupe / freshness","family":"feed-integrity","status":"warning","hits":1,"added":0,"note":"jobs-data.json ostáva na 01:15:21 CEST. Nevznikol nový prioritný LIVE prírastok ani významná zmena existujúcej priority, preto sa feed fail-closed nemení a updatedAt sa zámerne neposúva."}
   ],
   "pendingCandidate": {
     "id":"upwork-website-seo-management-2093603919086755488",
@@ -47,13 +46,16 @@
     "provisionalScore":91,
     "status":"pending-safe-write"
   },
-  "developmentBacklogAddedThisRun": [],
+  "developmentBacklogAddedThisRun": [
+    {"name":"Application authorship constraint flag","problem":"Niektoré ponuky výslovne zakazujú AI-generovanú odpoveď alebo vyžadujú vlastnoručne napísaný text; automatický Application Builder by mohol znížiť šancu alebo porušiť pokyn klienta.","value":"Detegovať požiadavky typu 'written by you, not ChatGPT' a označiť reakciu ako manual-authorship-required, aby sa generovaný text nepoužil bez úpravy."},
+    {"name":"Minimum weekly earning potential gate","problem":"Dobrá hodinová sadzba môže zakrývať veľmi nízky rozsah hodín, napr. 4–6 h/týždeň, a taká zákazka môže nesprávne vytlačiť stabilnejšiu prácu.","value":"Počítať realistický týždenný/mesačný earning potential z rate × hours a tiny-hour zákazky držať v side-gig lane, nie v hlavnej TOP priorite."}
+  ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-priority-delta",
-    "jobsDataReason":"Nevznikla nová prioritná položka ani významná zmena existujúcej priority; updatedAt sa preto nemení.",
-    "jobSources":"preserved",
+    "jobsDataReason":"Nevznikla nová prioritná položka ani významná zmena existujúcej priority; feed sa fail-closed nemení.",
+    "jobSources":"pending-current-run-note-update",
     "sourceAudit":"updated-after-real-source-check",
-    "master":"preserved",
+    "master":"pending-current-run-update",
     "lockedFilesTouched":false
   }
 }
