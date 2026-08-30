@@ -1,57 +1,90 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T08:25:35+02:00",
+  "updatedAt": "2026-08-30T09:15:00+02:00",
   "runSummary": {
-    "familiesChecked": 9,
+    "familiesChecked": 5,
     "newActiveJobs": 0,
-    "significantPendingCandidates": 1,
+    "significantPendingCandidates": 0,
     "significantlyChangedPriorityJobs": 0,
     "rejectedByLanguageOrHardSkill": 2,
-    "rejectedAsWeakOrLowValue": 3,
+    "rejectedAsWeakOrLowValue": 2,
     "duplicateOrExisting": 2,
-    "rejectedByFreshnessOrEvidence": 2,
+    "rejectedByFreshnessOrEvidence": 0,
     "rejectedByLocation": 1,
     "liveMainCount": 36,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
-    "freshnessStatus": "audit-fresh-main-write-blocked",
-    "note": "Reálny audit 30.8.2026 08:25 CEST preveril 9 source families: Profesia, priame firemné career stránky, LinkedIn Jobs, Worki.sk, Brigada.sk, Pretlak, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Najsilnejší nový kandidát je Upwork Website & SEO Management 2026: Worldwide remote, WooCommerce operations, plugin maintenance, on-page SEO, page-speed monitoring, dlhodobý kontrakt 6+ mesiacov, menej než 30 h/týždeň, 15–30 USD/h, 15–20 proposals, klient 13k USD spend / 36 hires. Hard locality gate prešiel ako remote-ok. Angličtina nie je explicitne úrovňovo definovaná, no weekly reporting, onboarding call a 15-min Loom audit predstavujú jazykový/application-friction risk. Kandidát nie je v aktuálnom jobs-data.json. Main feed nebol prepísaný, pretože dostupný GitHub write endpoint vyžaduje kompletný obsah súboru; automat odmietol riskantný čiastočný/full-file rewrite bez bezpečného programatického patch mechanizmu. jobs-data-nonprof.json zostal v tomto behu nedotknutý podľa lock pravidla."
+    "overlayContentUpdatedAt": "2026-08-30T08:12:31+02:00",
+    "freshnessStatus": "source-audit-fresh-feed-overlay-stale-over-60m",
+    "note": "Reálny audit 30.8.2026 približne 09:15 CEST preveril Profesia, Upwork, Worki.sk, Pretlak a priame/remote discovery výsledky pre Bratislavu, okolie a vhodný remote režim. Existujúce VÚB a Confilogi zostávajú verejne aktívne v čerstvom Profesia výpise. Čerstvé skladové výsledky v Bratislave neprekonali HEATING PRO/Košík/Lanža. Nový Upwork Elementor WordPress SEO Specialist je Worldwide remote a tematicky relevantný, ale pri kontrole už mal 15–20 proposals, 14 interviewing a 34 invites, preto bol vyradený ako nízka pravdepodobnosť výhry. TELOMAR e-shop support je mimo lokalitného gate (Košický kraj, iba občasný home office) a navyše vyžaduje kombináciu jazykov. Nový prioritný winner sa nepotvrdil. jobs-data.json ani jobs-data-nonprof.json neboli obsahovo menené, preto ich updatedAt nebol kozmeticky posunutý."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":2,"added":0,"rejectedLanguageOrHardSkill":0,"rejectedDuplicate":2,"rejectedLocation":0,"note":"BA driver discovery reálne vykonané. Košík.sk Bratislava 2 500–3 000 €/mes. a Lanža sú verejne aktívne; Košík bol už zachytený predchádzajúcim auditom a preto sa nepočíta ako nový hit tohto behu."},
-    {"name":"Priame firemné career stránky","family":"company-careers","status":"checked","hits":0,"added":0,"rejectedLanguageOrHardSkill":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Career discovery vykonané; verejné výsledky DHL/Philips a ďalšie indexované career pages nepriniesli nový BA/Slovakia-remote kandidát s lepším fitom než LIVE priority."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"added":0,"rejectedLanguageOrHardSkill":1,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Bratislava e-commerce/support discovery vykonané; prominentný indexovaný výsledok Forbes korektor je mimo role-fit a čerstvé vhodné e-commerce roly sa neobjavili."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejectedLanguageOrHardSkill":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Bratislava admin/technical/driver discovery vykonané; bez nového kandidáta nad existujúci HEATING PRO a RM Biznis servis."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":1,"added":0,"rejectedLanguageOrHardSkill":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Bratislava landing a aktuálne brigádne výsledky boli prehľadané; bez nového konkrétneho overiteľného detailu s hodnotou nad LIVE priority."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":1,"added":0,"rejectedLanguageOrHardSkill":1,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Tech/creative discovery vykonané; indexované výsledky boli developerské/skillovo mimo cieľového profilu alebo nepriniesli nový kvalifikovaný winner."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":5,"added":0,"rejectedLanguageOrHardSkill":0,"rejectedWeakOrLowValue":3,"rejectedLocation":0,"pending":1,"note":"Nový silný pending lead: Website & SEO Management 2026 — Worldwide remote, WooCommerce, 6+ mesiacov, <30 h/týždeň, 15–30 USD/h, 15–20 proposals, klient 13k USD spend/36 hires. Ďalší eCommerce VA fixed-price 10 USD je ekonomicky slabý; hard-dev PHP výsledky vyradené."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"checked","hits":1,"verifiedHits":1,"added":0,"note":"Verejne indexované komunity boli prehľadané; aktuálny VA hiring roundup nepredstavuje konkrétny lepší Slovakia-eligible WooCommerce/WordPress lead s dostatočným canonical detailom."},
-    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny overiteľný post z WordPress Slovensko, WooCommerce SK+CZ ani Práca/brigády Bratislava s priamym linkom; žiadna fiktívna ponuka nevytvorená."},
-    {"name":"Feed integrity / locality / lock enforcement","family":"feed-integrity","status":"ok","hits":1,"added":0,"note":"Tvrdý BA/remote gate a dedupe uplatnené. Zamknuté UI/renderery/baseline/bootstrap neboli v tomto behu menené. Predchádzajúci overlay jobs-data-nonprof.json sa v tomto behu zámerne nemenil. Main write bol fail-closed, nie nahradený overlay zápisom."}
+    {
+      "name": "Profesia",
+      "family": "profesia",
+      "status": "ok",
+      "hits": 6,
+      "added": 0,
+      "rejectedLanguageOrHardSkill": 1,
+      "rejectedDuplicate": 2,
+      "rejectedLocation": 1,
+      "note": "Čerstvý remote/customer-support výpis potvrdil VÚB 1 480 EUR a Confilogi 1 520–2 200 EUR ako stále aktívne. Bratislavský skladový výpis priniesol MODEL OBALY 1 200–1 400 EUR, PRESPOR 1 400 EUR a DHL 1 200 EUR; žiadny neprekonal existujúce priority. TELOMAR e-shop support je Košický kraj s iba občasným home office a jazykovým gate, preto sa nezaradil."
+    },
+    {
+      "name": "Upwork / freelance",
+      "family": "upwork",
+      "status": "ok",
+      "hits": 2,
+      "added": 0,
+      "rejectedWeakOrLowValue": 2,
+      "rejectedLocation": 0,
+      "note": "Nový Elementor WordPress SEO Specialist je Worldwide remote, fixed 350 USD a ongoing, ale pri kontrole už 15–20 proposals, 14 interviewing, 34 invites a nový klient bez histórie; nepovýšený medzi priority. Starší WordPress/Elementor support lead ostáva skillovo a komunikačne náročnejší než cieľový profil."
+    },
+    {
+      "name": "Worki.sk",
+      "family": "worki",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "note": "Bratislava technický/driver/admin discovery bez nového kandidáta nad HEATING PRO a ostatné LIVE priority."
+    },
+    {
+      "name": "Pretlak",
+      "family": "pretlak",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "note": "Remote/BA AI, support a e-commerce discovery bez nového kvalifikovaného winnera nad OVB AI/automation."
+    },
+    {
+      "name": "Priame firemné / remote discovery",
+      "family": "company-careers",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "note": "Čerstvé verejne indexované výsledky nepriniesli nový BA/Slovakia-remote kandidát s vyšším fitom než aktuálny feed."
+    },
+    {
+      "name": "Feed integrity / dedupe / freshness",
+      "family": "feed-integrity",
+      "status": "warning",
+      "hits": 1,
+      "added": 0,
+      "note": "Dedupe a locality gate boli uplatnené. Autoritatívny jobs-data.json zostáva na 01:15:21 CEST a overlay jobs-data-nonprof.json na 08:12:31 CEST. Keďže pri tomto behu nevznikla kvalifikovaná obsahová zmena, updatedAt dátových feedov nebol posunutý iba kvôli vzhľadu čerstvosti. Overlay už prekročil 60-minútový freshness limit."
+    }
   ],
-  "pendingCandidate": {
-    "id":"upwork-website-seo-management-2093603919086755488",
-    "title":"Website & SEO Management 2026 — WooCommerce operations",
-    "source":"Upwork",
-    "url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/",
-    "locationEligibility":"remote-ok",
-    "locationReason":"Upwork detail explicitne uvádza Worldwide a Remote Job bez country restriction alebo onsite povinnosti.",
-    "scoreCandidate":91,
-    "reason":"Najlepší nový lead tohto behu, ale jobs-data.json nebol prepísaný bez bezpečného atomického patchu."
-  },
+  "pendingCandidate": null,
   "masterBacklogPending": [
     "Canonical application-evidence bundle — pri kliknutí Reagovať vytvorí snapshot kritických podmienok (lokalita, jazyk, budget, deadline, mandatory skills) a uloží hash, aby sa pri neskoršej zmene inzerátu dalo presne zistiť, z akej verzie vzniklo CV/reakcia.",
     "Freelance onboarding-friction estimator — samostatne skóruje povinné Loom video, unpaid audit, live call, test task, platform credits a reporting burden voči očakávanej hodnote kontraktu; znižuje prioritu leadov, kde vstupná práca nie je primeraná pravdepodobnosti výhry."
   ],
   "writeStatus": {
-    "jobsData":"blocked-fail-closed",
-    "jobsDataReason":"Nový Upwork lead je overený, ale main file nebol riskantne kompletne prepísaný bez bezpečného patch mechanizmu.",
-    "jobSources":"preserved-no-new-source-family",
-    "jobSourcesReason":"Nevznikol nový source family ani trust-policy change; existujúci register ostáva platný.",
-    "sourceAudit":"updated-after-real-9-family-check",
-    "master":"pending-safe-write",
-    "masterReason":"Dve nové konkrétne zlepšenia sú zaznamenané v audite; ich zápis do MASTER vyžaduje bezpečný full-file patch bez straty existujúceho backlogu.",
-    "lockedFilesTouched":false,
-    "freshnessBreach":true,
-    "freshnessBreachReason":"Overený nový lead zatiaľ nie je v autoritatívnom jobs-data.json; vyžaduje bezpečný main-feed patch."
+    "jobsData": "preserved-no-qualified-content-change",
+    "jobsDataReason": "Po reálnej kontrole nevznikla nová ani významne zmenená prioritná položka; timestamp nebol posunutý kozmeticky.",
+    "jobsDataNonprof": "preserved-no-qualified-content-change",
+    "jobsDataNonprofReason": "Overlay zostal obsahovo nezmenený; timestamp nebol posunutý bez zmeny feedu.",
+    "sourceAudit": "updated-after-real-source-check",
+    "lockedFilesTouched": false,
+    "freshnessBreach": true,
+    "freshnessBreachReason": "jobs-data-nonprof.json má poslednú dátovú aktualizáciu 08:12:31 CEST; v čase dokončenia auditu je starší než 60 minút."
   }
 }
