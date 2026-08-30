@@ -1,36 +1,36 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T10:28:13+02:00",
+  "updatedAt": "2026-08-30T11:15:36+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
     "rejectedByLanguageOrHardSkill": 4,
-    "rejectedAsWeakOrLowValue": 5,
-    "duplicateOrExisting": 3,
+    "rejectedAsWeakOrLowValue": 6,
+    "duplicateOrExisting": 4,
     "rejectedByFreshnessOrEvidence": 2,
     "rejectedByLocation": 1,
     "liveMainCount": 36,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "breach",
-    "note": "Reálny audit 30.8.2026 10:28 CEST preveril Profesia, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, StartupJobs, WordPress Jobs, Upwork/freelance, priame firemné careers, Reddit/WP komunity a verejne indexovaný Facebook. Žiadny nový kandidát bezpečne neprebil aktuálne priority. Čerstvý Upwork E-commerce Virtual Assistant pre product listings/customer support/store management je Worldwide remote, ale iba 7–8 USD/h, má 20–50 proposals a už 1 hire, preto je low-value/competition reject. Existing Website & SEO Management 2026 zostáva kvalitný pending WooCommerce lead, ale nebol novo aktivovaný bez bezpečnej full-file mutácie jobs-data.json."
+    "note": "Reálny audit 30.8.2026 11:15 CEST preveril Profesia, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, StartupJobs, WordPress Jobs, Upwork/freelance, priame firemné careers, Reddit/WP komunity a verejne indexovaný Facebook. Žiadny nový kandidát bezpečne neprebil aktuálne priority. Nový Komunálny podnik Bratislavy – Technický pracovník dopravy (1 500–1 600 €, ASAP, BA) je relevantný administratívno-dopravný near-fit bez jazykového gate, ale 3 roky požadovanej praxe a nižšia hodnota oproti TOP kandidátom ho držia mimo prioritného LIVE prírastku. Key Marketing je obchodno-provízny profil a neprešiel value/sales-intensity gate. Čerstvé Upwork WordPress/VA výsledky boli buď hard-dev, príliš lacné alebo mali silný English gate."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"BA/remote e-commerce, admin, support, technické a vodičské discovery reálne preverené; bez nového kvalifikovaného winnera."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"added":0,"note":"BA/remote support a e-commerce výsledky preverené. Foxelli Technical Assistant je no longer accepting applications a SupportYourApp roly majú fluent/C1 English alebo ďalší jazyk."},
-    {"name":"Worki.sk","family":"worki","status":"ok","hits":1,"added":0,"note":"Aktuálny BA sklad/VZV výsledok overený, ale profil je fyzickejší a VZV-orientovaný; neprekonal HEATING PRO ani vyššie priority."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"note":"Bratislava administratíva/kuriér/sklad/web discovery preverené; bez nového detailu s dostatočnou hodnotou."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":4,"added":0,"note":"Preverené nové BA administratívne, dopravné, vodičské a support výsledky. KPB Technický pracovník dopravy je near-fit, nie priorita; Key Marketing je obchodno-provízny profil; existujúce Lanža/Akfos zostávajú bez významnej zmeny."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"added":0,"note":"BA/remote support a e-commerce discovery bez nového kandidáta nad existujúce priority."},
+    {"name":"Worki.sk","family":"worki","status":"ok","hits":2,"added":0,"note":"HEATING PRO je naďalej aktívny: 1 600–2 500 €, nástup ihneď; ďalšie výsledky neprekonali jeho fit/value profil."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"note":"Bratislava administratíva/kuriér/sklad/web discovery preverené; bez nového detailu s dostatočnou prioritou."},
     {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"note":"BA e-shop/admin/support/logistika discovery preverené; bez nového kvalifikovaného hitu."},
     {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"note":"BA/remote WordPress/e-commerce/support discovery bez nového vhodného non-hard-dev winnera."},
     {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"note":"Remote e-commerce/support discovery preverené; bez nového Slovakia-eligible kandidáta, ktorý by prešiel jazykovým a skill gateom."},
     {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"note":"Čerstvé WordPress/WooCommerce discovery preverené; bez vhodného non-hard-dev leadu."},
-    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":5,"added":0,"rejectedWeakOrLowValue":3,"rejectedHardSkill":1,"duplicateOrExisting":1,"note":"Najnovší E-commerce VA product listings/customer support/store management je Worldwide remote, 7–8 USD/h, 20–50 proposals a 1 hire — ekonomicky/konkurenčne slabý. Website & SEO Management 2026 ostáva existujúci silný pending WooCommerce lead 15–30 USD/h."},
+    {"name":"Upwork / freelance","family":"upwork","status":"ok","hits":5,"added":0,"rejectedWeakOrLowValue":3,"rejectedHardSkill":1,"duplicateOrExisting":1,"note":"Nový WordPress/WooCommerce build za 83.87 USD fixed je hard-dev a nízka hodnota; Proactive VA má silný English communication gate; staršie AI VA 5–10 USD/h má 20–50 proposals. Website & SEO Management 2026 zostáva existujúci pending WooCommerce lead 15–30 USD/h."},
     {"name":"Priame firemné kariéry","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Verejne indexované BA/Slovakia-remote firemné careers bez nového winnera nad LIVE feed."},
     {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"added":0,"note":"Verejne indexované komunity prehľadané; bez konkrétneho nového Slovakia-eligible non-hard-dev hiring hitu."},
     {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny overiteľný hiring post s priamym linkom; autentizovaný Nexus/local ingestion zostáva backlog potreba."},
-    {"name":"Feed integrity / dedupe / freshness","family":"feed-integrity","status":"warning","hits":1,"added":0,"note":"jobs-data.json ostáva na 01:15:21 CEST. Nový kvalifikovaný LIVE prírastok nevznikol, takže feed sa zámerne neprepisuje. Existujúce položky sa fail-closed nemažú; zamknuté baseline/bootstrap/UI/renderery ostali nedotknuté."}
+    {"name":"Feed integrity / dedupe / freshness","family":"feed-integrity","status":"warning","hits":1,"added":0,"note":"jobs-data.json ostáva na 01:15:21 CEST. Nevznikol nový prioritný LIVE prírastok ani významná zmena existujúcej priority, takže updatedAt sa zámerne neposúva. Existujúce validné položky sa fail-closed nemažú."}
   ],
   "pendingCandidate": {
     "id":"upwork-website-seo-management-2093603919086755488",
@@ -47,16 +47,13 @@
     "provisionalScore":91,
     "status":"pending-safe-write"
   },
-  "developmentBacklogAddedThisRun": [
-    {"name":"Recruiter-hours-aware urgency score","reason":"Pri slovách ihneď/ASAP zohľadní deň v týždni a reálne kontaktné hodiny zamestnávateľa, aby nedeľná alebo nočná ponuka nedostala falošnú same-day urgent prioritu."},
-    {"name":"Single-shift expiry hard gate","reason":"Pri brigádach viazaných na konkrétnu zmenu/dátum uloží check-in/start cutoff a po jeho uplynutí ich automaticky vyradí z odporúčaných výsledkov bez mazania historického záznamu."}
-  ],
+  "developmentBacklogAddedThisRun": [],
   "writeStatus": {
-    "jobsData":"preserved-no-qualified-delta",
-    "jobsDataReason":"Nevznikla nová položka, ktorá by prešla všetkými gate a mala byť bezpečne pridaná; existujúci feed sa preto nemení.",
-    "jobSources":"updated",
+    "jobsData":"preserved-no-qualified-priority-delta",
+    "jobsDataReason":"Nevznikla nová prioritná položka ani významná zmena existujúcej priority; updatedAt sa preto nemení.",
+    "jobSources":"preserved",
     "sourceAudit":"updated-after-real-source-check",
-    "master":"updated",
+    "master":"preserved",
     "lockedFilesTouched":false
   }
 }
