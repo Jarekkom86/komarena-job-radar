@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T18:36:05+02:00",
+  "updatedAt": "2026-08-30T19:10:51+02:00",
   "runSummary": {
-    "familiesChecked": 11,
+    "familiesChecked": 10,
     "newActiveJobs": 0,
-    "significantPendingCandidates": 1,
+    "significantPendingCandidates": 2,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 3,
-    "rejectedAsWeakOrLowValue": 6,
+    "duplicateOrExisting": 4,
+    "rejectedAsWeakOrLowValue": 5,
     "rejectedByFreshnessOrEvidence": 2,
     "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
@@ -17,24 +17,24 @@
     "freshnessStatus": "breach-no-qualified-feed-delta",
     "liveFeedCount": 36,
     "liveFeedMix": {"profesia":17,"nonProfesia":19,"profesiaPct":47.2,"nonProfesiaPct":52.8},
-    "note": "Reálny audit 30.8.2026 18:36 CEST preveril 11 source families pre Bratislavu, okolie a vhodný remote režim. Nevznikol nový kvalifikovaný LIVE winner. Upwork WooCommerce index priniesol čerstvé výsledky, ale väčšina bola hard-dev, nízko-hodnotová alebo už známa. E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero zostáva remote-ok a vecne silný, ale explicitne vyžaduje good written English a skúsenosti s WooCommerce Subscriptions, Meta Ads Manager a basic Xero; preto zostáva pending, nie LIVE. jobs-data.json sa bez kvalifikovanej delty nemenil; timestamp sa umelo neposúval. Facebook verejná indexácia nevrátila žiadny konkrétny overiteľný hiring post."
+    "note": "Reálny audit 30.8.2026 19:10 CEST preveril Profesia, Worki, Upwork, Kariera, Brigada.sk, Pretlak, StartupJobs, LinkedIn Jobs, GROWNi a priame company-career výsledky pre Bratislavu, okolie a vhodný remote režim. Nevznikol nový kvalifikovaný LIVE winner. SecTec Marketing asistent je nový veľmi dobrý WordPress/CMS + administratíva + reporting fit s flexibilnou formou v Bratislave a bez explicitného English gate v indexovanom detaile, ale chýba overená mzda a čerstvý dátum publikácie, preto zostáva pending. KInIT Financial Administrator je čerstvý hybrid Bratislava za od 1 800 EUR/mes. s okamžitým nástupom, ale explicitne vyžaduje English B2 a pokročilý Excel; preto neprešiel language gate. PROPLUSCO Senec 1 350–1 500 EUR je čerstvý, ale skladová práca zahŕňa priemerne 10 kg balíky a 2 zmeny, takže neprekonáva existujúce priority. Upwork WooCommerce VA ledy zostávajú bez nového winnera. jobs-data.json sa bez kvalifikovanej delty nemenil; timestamp sa umelo neposúval."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/okolie WordPress, e-shop, admin, support, vodič a sklad lanes preverené; bez nového kvalifikovaného winnera."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejne indexované firemné careers a SmartRecruiters BA/support/e-commerce lanes preverené; bez nového overiteľného winnera."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava e-commerce/CMS/support discovery preverené; bez nového overiteľného kvalifikovaného výsledku."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA technická podpora, administratíva, vodič a sklad lanes preverené; bez nového kvalifikovaného hitu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava administratíva, kuriér, sklad a krátkodobé brigády preverené; bez nového overiteľného winnera."},
-    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":2,"added":0,"rejected":2,"note":"Aktuálny index preverený; zobrazené relevantne príbuzné výsledky neprešli lokalitou/fit/value gateom a neboli zaradené."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"WordPress/e-commerce/CMS/support discovery preverené; bez vhodného non-hard-dev BA/remote winnera."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Remote WordPress/e-commerce discovery preverené; bez nového Slovakia-eligible winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":9,"added":0,"rejected":6,"note":"WooCommerce index priniesol čerstvé hard-dev a low-value kusy plus už známe VA ledy. WooCommerce Product Listing & Upload Specialist je tematicky vhodný, ale bez dostatočne overeného detailu pay/client/activity na povýšenie. E-commerce VA s WooCommerce Subscriptions/Xero je remote-ok, no good written English + Subscriptions/Meta Ads/Xero sú významné skill/language riziká; zostáva pending. $7 fixed WordPress/Shopify product posting je nízka hodnota a už má hire."},
-    {"name":"Reddit/WordPress komunity","family":"community","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejne indexované WordPress/WooCommerce hiring komunity preverené; bez nového konkrétneho Slovakia-eligible winnera."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"0 verified hits. Verejná indexácia nevrátila konkrétny nový hiring post s priamym linkom; autentizovaný Nexus/local ingestion zostáva backlog potreba a v tomto behu sa nespúšťal."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":1,"note":"BA/okolie vodič, sklad, admin, WordPress/e-shop lanes preverené. PROPLUSCO Senec 1 350–1 500 EUR, ASAP, 2 zmeny a priemerne 10 kg balíky; fit/value/fyzická záťaž neprekonali LIVE priority."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"rejected":1,"note":"PROPLUSCO direct careers preverené ako corroboration; bez nového firemného winnera nad existujúce priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"added":0,"rejected":1,"note":"SecTec Marketing asistent: Bratislava, entry-level/flexible, WordPress/CMS, newslettery, administratíva a reporting; bez explicitného English gate, ale bez overenej mzdy a čerstvého publishedAt zostáva pending. Starý LUNYS e-commerce výsledok je 2 mesiace starý a nie nový."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA technické, vodičské, skladové a administratívne lanes preverené; bez nového kvalifikovaného winnera."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava admin/kuriér/sklad krátkodobé lanes preverené; bez nového overiteľného prioritného výsledku."},
+    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":2,"added":0,"rejected":2,"note":"Index preverený; relevantné e-commerce/logistika výsledky boli neaktívne alebo neprešli freshness/value gateom."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"WordPress/e-commerce/CMS/support discovery preverené; bez vhodného nového non-hard-dev BA/remote winnera."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Remote WordPress/e-commerce/support discovery preverené; bez nového Slovakia-eligible winnera."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":4,"added":0,"rejected":2,"note":"WooCommerce a admin/VA index preverený. E-commerce VA WooCommerce/Subscriptions/Xero ostáva vecne silný, ale good written English + špecializované skill požiadavky bránia LIVE. Starší WordPress/Shopify e-commerce VA fixed 10 USD a ďalšie low-value/hard-dev kusy neprešli value gateom."},
+    {"name":"GROWNi","family":"growni","status":"checked","hits":3,"added":0,"rejected":1,"note":"LEAF Implementation Support Specialist zostáva existujúci relevantný lead. Nový KInIT Financial Administrator: hybrid Bratislava, od 1 800 EUR/mes., nástup ihneď, aktualizované 28.8.2026, ale explicitne English B2 + advanced Excel; language gate."}
   ],
   "verificationQueue": [
+    {"id":"linkedin-sectec-marketing-asistent-4362401102","title":"Marketing asistent – WordPress/CMS, newslettery, administratíva","source":"LinkedIn Jobs / SecTec","url":"https://sk.linkedin.com/jobs/view/marketing-asistent-at-sectec-4362401102","locationEligibility":"ba-area","languageEligibility":"no-explicit-gate-found","reason":"Veľmi dobrý profilový fit a flexibilná forma v Bratislave. Pred LIVE aktiváciou overiť mzdu, aktuálny dátum publikácie/active-hiring proof a prípadnú skrytú jazykovú požiadavku."},
     {"id":"upwork-wp-woo-spezialist-2088184469556084370","title":"WordPress-/WooCommerce-Spezialist – langfristige Unterstützung","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/WordPress-WooCommerce-Spezialist-langfristige-Unterst-tzung_~022088184469556084370/","locationEligibility":"remote-ok","languageEligibility":"unknown","reason":"Worldwide remote, ale listing je celý po nemecky a explicitná jazyková požiadavka chýba; pred odporúčaním overiť komunikačný jazyk."},
-    {"id":"upwork-ecommerce-va-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/commerce-Virtual-Assistant-WooCommerce-Subscriptions-Customer-Service-Xero_~022093200734923132353/","locationEligibility":"remote-ok","languageEligibility":"risk-b2-like-written","reason":"Worldwide Remote Job, 10–15 USD/h, <30 h/týždeň, 1–3 mesiace, contract-to-hire; explicitne vyžaduje good written English, strong WooCommerce + WooCommerce Subscriptions, Meta Ads Manager a basic Xero. Vecne silný fit, ale jazykový a špecializovaný skill gap bráni LIVE odporúčaniu bez ďalšieho proof."}
+    {"id":"upwork-ecommerce-va-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/commerce-Virtual-Assistant-WooCommerce-Subscriptions-Customer-Service-Xero_~022093200734923132353/","locationEligibility":"remote-ok","languageEligibility":"risk-b2-like-written","reason":"Worldwide Remote Job, 10–15 USD/h, <30 h/týždeň, 1–3 mesiace, contract-to-hire; explicitne vyžaduje good written English, strong WooCommerce + WooCommerce Subscriptions, Meta Ads Manager a basic Xero. Vecne silný fit, ale jazykový a špecializovaný skill gap bráni LIVE odporúčaniu."}
   ],
   "pendingCandidate": {
     "id":"upwork-website-seo-management-2093603919086755488",
@@ -46,16 +46,13 @@
     "provisionalScore":91,
     "status":"pending-language-and-application-friction-review"
   },
-  "developmentBacklogAddedThisRun": [
-    {"name":"Pending-candidate aging SLA","reason":"Pending ledy môžu zostať v audite príliš dlho bez rozhodnutia. Zaviesť časový limit podľa freshness/competition a po jeho prekročení automaticky vyžiadať re-verification alebo presunúť lead do expired quarantine."},
-    {"name":"Skill-gap proof checklist per lead","reason":"Pri leadoch ako WooCommerce Subscriptions/Xero/Meta Ads rozlíšiť skutočný blocker od rýchlo doplniteľného gapu: ku každému mandatory skillu uložiť proof/none/trainable a odhad času na bezpečné doplnenie pred reakciou."}
-  ],
+  "developmentBacklogAddedThisRun": [],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-delta",
-    "jobsDataNonProf":"preserved-locked",
-    "sourceAudit":"updated-after-real-11-family-check",
+    "jobsDataNonProf":"preserved-no-qualified-delta",
+    "sourceAudit":"updated-after-real-10-family-check",
     "jobSources":"registry-preserved-no-new-source-family-required",
-    "master":"pending-safe-append-of-2-new-backlog-items",
+    "master":"preserved",
     "lockedFilesTouched":false
   }
 }
