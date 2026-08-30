@@ -1,28 +1,39 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T17:11:17+02:00",
+  "updatedAt": "2026-08-30T17:25:29+02:00",
   "runSummary": {
-    "familiesChecked": 4,
+    "familiesChecked": 10,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 2,
-    "rejectedAsWeakOrLowValue": 3,
-    "rejectedByFreshnessOrEvidence": 0,
-    "rejectedByLocation": 0,
+    "duplicateOrExisting": 1,
+    "rejectedAsWeakOrLowValue": 4,
+    "rejectedByFreshnessOrEvidence": 3,
+    "rejectedByLocation": 1,
     "quarantinedUnknownLocation": 0,
+    "quarantinedUnknownLanguage": 1,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "breach-no-qualified-feed-delta",
-    "note": "Reálny audit 30.8.2026 17:11 CEST preveril Profesia, Worki.sk, Pretlak a Upwork podľa existujúcich BA/okolie/remote pravidiel. Nevznikol nový kandidát, ktorý by bezpečne prešiel lokalitným, jazykovým, hard-skill a value gateom. Profesia priniesla nový administratívny hit Key Marketing 1 500 EUR/mes., ale bez dôkazu lepšieho fitu než existujúce priority. Worki potvrdilo HEATING PRO 1 600–2 500 EUR/mes. ako existujúci aktívny hit. Upwork priniesol nový Reliable Proactive Virtual Assistant s WordPress/AI/admin scope, ale len 3–5 USD/h a explicitne silnou angličtinou; vyradené. Website & SEO Management 2026 zostáva najsilnejší pending WooCommerce remote lead za 15–30 USD/h."
+    "liveFeedCount": 36,
+    "liveFeedMix": {"profesia":17,"nonProfesia":19,"profesiaPct":47.2,"nonProfesiaPct":52.8},
+    "note": "Reálny audit 30.8.2026 17:25 CEST preveril 10 nezávislých source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Nevznikol nový kandidát, ktorý by bezpečne prešiel lokalitným, jazykovým, hard-skill a value gateom. Upwork WordPress/WooCommerce Spezialist je Worldwide remote, 8–15 USD/h, ale je 3 týždne starý, má 20–50 proposals, 2 interviewing, 10 invites a celý listing je po nemecky bez explicitného language proof; preto ostáva mimo LIVE. Website & SEO Management 2026 zostáva najsilnejší pending WooCommerce remote lead 15–30 USD/h."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"note":"Bratislava administratíva bola čerstvo preverená. Nový Key Marketing 1 500 EUR/mes. nepreukázal lepší fit/value než LIVE priority, preto neaktivovaný."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"note":"HEATING PRO 1 600–2 500 EUR/mes. zostáva aktívny existujúci hit; bez nového kvalifikovaného winnera."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"note":"BA/remote WordPress/e-commerce/support discovery preverená; bez nového non-hard-dev winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":4,"added":0,"note":"Website & SEO Management 2026 zostáva najsilnejší pending lead (15–30 USD/h). Nový Reliable Proactive Virtual Assistant má WordPress/AI/admin fit, ale iba 3–5 USD/h a strong-English gate; ďalšie nové WooCommerce/VA výsledky boli dev-heavy alebo low-value."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote WordPress, e-shop, administratíva, technická podpora a vodič discovery preverené; bez nového kvalifikovaného winnera."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"rejected":1,"note":"DHL HR Coordinator v Ivanke pri Dunaji sa objavil v čerstvom indexe, ale canonical career detail už uvádza, že prijímanie žiadostí je uzavreté; neaktivované."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"added":0,"rejected":2,"note":"Verejný index vrátil EEA Junior Web Designer a CMS Operator, oba canonical detaily uvádzajú No longer accepting applications."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/okolie admin/tech/support/driver discovery preverené; bez nového kvalifikovaného hitu nad LIVE priority."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava administratíva, vodič, sklad a krátkodobé brigády preverené; bez nového overiteľného winnera."},
+    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Aktuálny index a administratívne/driver lanes preverené; zobrazené aktuálne výsledky neprešli BA/remote a fit gateom."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote WordPress, e-commerce, CMS a support discovery preverené; bez vhodného non-hard-dev winnera."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":3,"added":0,"rejected":2,"note":"WordPress/WooCommerce Spezialist: Worldwide remote, 8–15 USD/h, 3 týždne starý, 20–50 proposals, 2 interviewing, 10 invites; listing je po nemecky bez explicitného language proof, preto language quarantine/low priority. WooCommerce redesign za 225 USD je expert UI/UX scope s 20–50 proposals a klient už má hire. Website & SEO Management 2026 zostáva najsilnejší pending lead."},
+    {"name":"Reddit/WordPress komunity","family":"community","status":"checked","hits":1,"added":0,"rejected":1,"note":"Verejne indexované WordPress hiring výsledky preverené; čerstvejší relevantný hiring hit bol US-only alebo hard-dev. Žiadny nový Slovakia-eligible community winner."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"WordPress Slovensko, WooCommerce Komunita SK+CZ a Práca/brigády Bratislava a okolie boli verejne vyhľadané; index neposkytol konkrétny verejne overiteľný hiring post s priamym linkom. 0 verified hits. Autentizovaný Nexus/local ingestion zostáva backlog, automat ho nespúšťa."}
   ],
-  "verificationQueue": [],
+  "verificationQueue": [
+    {"id":"upwork-wp-woo-spezialist-2088184469556084370","title":"WordPress-/WooCommerce-Spezialist – langfristige Unterstützung","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/WordPress-WooCommerce-Spezialist-langfristige-Unterst-tzung_~022088184469556084370/","locationEligibility":"remote-ok","languageEligibility":"unknown","reason":"Worldwide remote, ale listing je celý po nemecky a explicitná jazyková požiadavka chýba; pred odporúčaním overiť komunikačný jazyk."}
+  ],
   "pendingCandidate": {
     "id":"upwork-website-seo-management-2093603919086755488",
     "title":"Website & SEO Management 2026 – WooCommerce operations",
@@ -33,10 +44,16 @@
     "provisionalScore":91,
     "status":"pending-language-and-application-friction-review"
   },
+  "developmentBacklogAddedThisRun": [
+    {"name":"Listing-language ambiguity quarantine","value":"Ak je celý listing v inom jazyku než SK/CZ/EN a explicitná jazyková požiadavka chýba, označiť languageEligibility=unknown a nepovýšiť ho do TOP/LIVE bez overenia komunikačného jazyka."},
+    {"name":"Invite-to-interview efficiency signal","value":"Pri freelance leadoch vyhodnocovať pomer invites, unanswered invites, interviewing a hires; masové pozvánky s nízkou konverziou penalizovať ako signál slabšej reply probability a vyššej aplikačnej straty času."}
+  ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-active-delta",
-    "jobsDataNonProf":"preserved-no-qualified-active-delta",
-    "sourceAudit":"updated-after-real-source-check",
+    "jobsDataNonProf":"locked-preserved",
+    "sourceAudit":"updated-after-real-10-family-check",
+    "jobSources":"registry-preserved-no-new-source-family",
+    "master":"pending-update-this-run",
     "lockedFilesTouched":false
   }
 }
