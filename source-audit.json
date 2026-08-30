@@ -1,42 +1,42 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T01:28:55+02:00",
+  "updatedAt": "2026-08-30T02:13:52+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "newActiveJobs": 0,
     "significantlyChangedPriorityJobs": 0,
     "rejectedByLanguageOrHardSkill": 4,
-    "rejectedAsWeakOrLowValue": 5,
-    "duplicateOrExisting": 4,
+    "rejectedAsWeakOrLowValue": 4,
+    "duplicateOrExisting": 3,
     "rejectedByFreshnessOrEvidence": 3,
     "liveFeedCount": 36,
     "effectiveEligibleCount": 36,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessStatus": "fresh-under-60m",
-    "note": "Audit 30. 8. 2026 01:28 znovu preveril 12 zdrojových rodín. Nevznikla nová BA/okolie alebo Slovakia-eligible remote ponuka, ktorá by prešla locality, language, hard-skill a value gateom a prekonala aktuálne priority. Upwork priniesol WordPress/WooCommerce projekty, ale nové výsledky boli prevažne build/integration hard-dev scope alebo slabší pomer rozsah/odmena; konkrétny Meta Business Suite + WooCommerce projekt vyžaduje pokročilé Meta/catalog/feed/ownership troubleshooting a nebol povýšený. Reddit nepriniesol nový konkrétny hiring lead; Facebook verejná indexácia zostáva limited s 0 verified hits. jobs-data.json sa zámerne nemenil, pretože nevznikla reálna obsahová zmena."
+    "note": "Audit 30. 8. 2026 02:13 reálne preveril 12 zdrojových rodín. Nevznikla nová BA/okolie alebo Slovakia-eligible remote ponuka, ktorá by bezpečne prešla locality, language, hard-skill a value gateom a prekonala aktuálne priority. Nový Upwork E-commerce Virtual Assistant je Worldwide remote a tematicky silný (WooCommerce/customer service), ale vyžaduje strong WooCommerce + WooCommerce Subscriptions, good written English, Meta Ads Manager a basic Xero; pri profile Job Radaru ide o kombinovaný language/experience gap, preto nebol aktivovaný. Kariera/EPF vodič dodávky 1 200–2 000 EUR bol vyradený pre povinné BE a tachografovú kartu. WordPress Jobs priniesol čerstvú Senior WordPress Developer rolu, ale ide o hard-dev/server/API scope. Facebook verejná indexácia zostáva limited s 0 verified hits. jobs-data.json sa zámerne nemenil, lebo nevznikla reálna obsahová zmena."
   },
   "sources": [
-    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":1,"note":"Prehľadané BA/okolie cieľové smery; bez nového kandidáta, ktorý by po hard gate prebil LIVE priority."},
-    {"name":"Priame firemné kariérne stránky","family":"company-careers","status":"checked","hits":1,"note":"Prehľadané relevantné BA support/e-commerce/operations kariéry; bez nového direct-source winnera."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"note":"Verejná indexácia pre BA e-commerce/support/technical role; bez nového dostatočne vhodného a čerstvého kandidáta."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"HEATING PRO zostáva aktuálne najnovší overený Worki prírastok v LIVE; bez ďalšieho lepšieho kandidáta."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"note":"Bez novej BA brigády s dostatočným detailom, actionability a hodnotou nad existujúce priority."},
+    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":0,"note":"Čerstvé BA/okolie cielené vyhľadávania bez nového overeného kandidáta, ktorý by prešiel hard gate a prebil LIVE priority."},
+    {"name":"Priame firemné kariérne stránky","family":"company-careers","status":"checked","hits":1,"note":"Kontrola BA/remote support/e-commerce/operations zdrojov; bez nového direct-source winnera."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"note":"Verejná indexácia pre BA/remote CMS/e-commerce/support; nájdený CMS výsledok bol už uzavretý, bez nového kvalifikovaného leadu."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"HEATING PRO zostáva najnovší relevantný Worki prírastok v LIVE; bez ďalšieho lepšieho kandidáta."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"note":"Bez novej BA brigády s dostatočnou hodnotou a actionability nad existujúce priority."},
     {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":0,"note":"Bez nového low-language-gate e-commerce/AI/support winnera."},
     {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"note":"Bez nového explicitne Slovakia-eligible remote non-hard-dev kandidáta."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":2,"note":"Nové výsledky sú prevažne developer/build/integration scope; bez vhodného non-hard-dev Slovakia-eligible leadu."},
-    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":5,"note":"Skontrolované nové WordPress/WooCommerce projekty. Build/launch a WooCommerce integration projekty vyžadujú vyšší developer scope; Meta Business Suite + WooCommerce cleanup je pokročilý integration/account-ownership troubleshooting. Bez nového prioritného winnera."},
-    {"name":"Služby zamestnanosti / Kariera","family":"government-other","status":"checked","hits":0,"note":"Bez nového BA/remote kandidáta nad aktuálne LIVE priority."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":0,"note":"Bez konkrétneho aktuálneho hiring postu vhodného pre LIVE feed."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":2,"note":"Čerstvý Senior WordPress Developer z 27.8. vyžaduje custom themes, PHP/MySQL, server-side caching, REST API, Git a incident ownership; hard-dev gate. Bez vhodného non-hard-dev leadu."},
+    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":5,"note":"Nový Worldwide E-commerce Virtual Assistant za 10–15 USD/h má dobrý WooCommerce/admin tematický fit, ale vyžaduje strong WooCommerce, WooCommerce Subscriptions, good written English, Meta Ads Manager a basic Xero; 15–20 proposals. Neaktivovaný pre kombinovaný language/experience gap. Ďalšie výsledky prevažne build/dev scope."},
+    {"name":"Služby zamestnanosti / Kariera","family":"government-other","status":"checked","hits":3,"note":"EPF vodič dodávky 1 200–2 000 EUR/mes. je BA a jazdí na otočku, ale vyžaduje BE + tachografovú kartu, preto hard reject. Ďalšie nové výsledky sú slabšie alebo mimo profilu."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":2,"note":"Nájdené nové hiring posty na tvorbu/development webov, ale bez dostatočne jasného scope/pay/eligibility pre bezpečnú LIVE aktiváciu."},
     {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny aktuálny hiring post s priamym overiteľným linkom; coverage sa nepredstiera."},
-    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"ok","hits":0,"note":"Žiadna nová položka nebola aktivovaná. LIVE feed zostáva 36 položiek; BA/okolie alebo remote-ok gate a fail-closed zostali zachované."}
+    {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"ok","hits":0,"note":"Žiadna nová položka nebola aktivovaná. LIVE feed zostáva 36 položiek; BA/okolie alebo remote-ok gate, dedupe a fail-closed zostali zachované."}
   ],
   "writeStatus": {
     "jobsData": "no-change",
     "jobsDataReason": "Nevznikla nová overená obsahová zmena; 36-položkový LIVE feed zostáva zachovaný a updatedAt sa umelo neposúva.",
     "jobsDataNonProf": "no-change",
     "jobsDataNonProfReason": "Zamknutý bootstrap nebol menený.",
-    "jobSources": "audit-refresh",
-    "master": "audit-and-backlog-refresh",
+    "jobSources": "no-change",
+    "master": "no-change",
     "freshnessBreach": false,
     "freshnessBreachReason": null
   }
