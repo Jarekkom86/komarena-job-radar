@@ -1,51 +1,53 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T00:16:14+02:00",
+  "updatedAt": "2026-08-31T00:28:00+02:00",
   "runSummary": {
-    "familiesChecked": 10,
+    "familiesChecked": 11,
     "newActiveJobs": 0,
     "significantPendingCandidates": 3,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 4,
-    "rejectedAsWeakOrLowValue": 9,
-    "rejectedByFreshnessOrEvidence": 4,
-    "rejectedByLocation": 2,
+    "duplicateOrExisting": 5,
+    "rejectedAsWeakOrLowValue": 8,
+    "rejectedByFreshnessOrEvidence": 5,
+    "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
-    "quarantinedUnknownLanguage": 1,
+    "quarantinedUnknownLanguage": 2,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "breach-qualified-candidates-write-blocked-fail-closed",
+    "freshnessStatus": "audit-fresh-jobs-feed-preserved-fail-closed",
     "liveFeedCount": 36,
-    "note": "Audit 31.8.2026 00:16 CEST reálne prehľadal 10 source families. Profesia potvrdila, že existujúce Lanža a Akfos kuriérske ponuky boli znovu refreshnuté medzi najnovšími, ale bez dôkazu o významnej zmene odmeny, formy alebo hard gates; Košík.sk Bratislava zostáva aktívny za 2 500–3 000 EUR/mes. Nový prioritný winner sa nepotvrdil. LinkedIn priniesol Sharp Brains Information Technology Support Engineer v Bratislava Metropolitan Area, no verejný detail neposkytuje dostatočný jazykový/hard-skill proof a pri 192 uchádzačoch neprekonáva existujúce priority. Upwork priniesol eCommerce VA/WooCommerce admin lead, ale iba za 10 USD fixed, preto neprešiel value gateom. Autoritatívny jobs-data.json je zachovaný fail-closed: GitHub connector naďalej vyžaduje kompletný replacement a dostupný read path vracia veľký feed truncovane. updatedAt nebol umelo posunutý."
+    "liveSourceMix": {"profesia":17,"nonProfesia":19,"profesiaPct":47.2,"nonProfesiaPct":52.8},
+    "note": "Audit 31.8.2026 00:28 CEST reálne prehľadal 11 source families. Nový kvalifikovaný winner sa nepotvrdil. AlzaBox Špecialista zostáva priamo aktívny na Alza careers v Bratislave s fixom 1 430 EUR + variabilnou zložkou do 610 EUR a zostáva vo verification queue pre safe jobs-data write. Foxelli Customer Support & Sales Agent je remote zo Slovenska, ale vyžaduje fluent/near-native spoken English a preto je vyradený language gateom. Foxelli Churn Specialist je remote-ok pre Slovensko, ale verejný detail v tomto behu neposkytol dostatočný A2-compatible language/skill proof na LIVE aktiváciu. WordPress Jobs má nové remote/onsite položky, no relevantný Pangolin Senior WordPress Developer zostáva hard-dev (custom themes, PHP/JS/React, server/DNS/SSH/API/Git). Upwork e-commerce/WooCommerce discovery prinieslo VA/product-admin výsledky, ale nové hity neprekonali existujúce pending priority pomerom fit/odmena/friction. Facebook zostáva 0 verified hits / limited. Autoritatívny jobs-data.json sa bez bezpečného full-content write path nemenil."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":5,"added":0,"rejected":2,"note":"BA administratíva, kuriér/vodič a remote support boli reálne kontrolované. Lanža a Akfos sú čerstvo refreshnuté existujúce položky bez potvrdenej významnej zmeny; Košík.sk Bratislava zostáva aktívny 2 500–3 000 EUR/mes. Nový winner sa nepotvrdil."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"note":"HEATING PRO zostáva indexovaný s odmenou 1 600–2 500 EUR/mes.; nový silnejší BA technicko-logistický hit sa nepotvrdil."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":3,"added":0,"rejected":3,"note":"Čerstvý eCommerce Virtual Assistant & Admin Support pre Shopify/WooCommerce je len 10 USD fixed; ďalšie WP/WooCommerce výsledky sú developer-heavy alebo staršie. Existing Website & SEO Management lead zostáva silnejší pending kandidát."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":3,"added":0,"rejected":2,"note":"Sharp Brains Information Technology Support Engineer je čerstvý BA contract hit, ale verejný detail nemá dostatočný language/hard-skill proof a má 192 applicants. Ostatné CMS/web výsledky sú staré alebo closed."},
-    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":2,"added":0,"rejected":2,"note":"Indexované výsledky boli prevažne mimo cieľovej lokality alebo s tvrdšími odbornými požiadavkami; bez nového kvalifikovaného BA/remote winnera."},
-    {"name":"Služby zamestnanosti","family":"sluzby-zamestnanosti","status":"checked","hits":0,"added":0,"rejected":0,"note":"Portál je dostupný a bol reálne prehľadaný pre BA vodič/admin/technik; verejný index neposkytol nový kvalifikovaný detail."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA brigádnické admin/vodič/sklad discovery bez nového výsledku nad existujúce priority."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"Remote/BA web, e-commerce, support a AI discovery bez nového non-hard-dev kandidáta s dostatočným dôkazom."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Slovakia-eligible remote e-commerce/customer-support/WordPress discovery bez nového kvalifikovaného výsledku."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Existujúci AlzaBox Špecialista zostáva vo verification queue; nový silnejší direct-career hit sa nepotvrdil."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":3,"added":0,"rejected":1,"note":"BA/remote WordPress, admin, technical support a vodič discovery prehľadané; bez nového kvalifikovaného winnera."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":2,"added":0,"rejected":1,"note":"Verejná indexácia pre BA technical/e-commerce support preverená; bez nového bezpečne kvalifikovaného A2-compatible hitu."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"note":"BA administratíva/technik/vodič/sklad prehľadané; HEATING PRO zostáva existujúca LIVE položka."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA brigády admin/vodič/sklad prehľadané; bez nového výsledku nad existujúce priority."},
+    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA e-shop/admin/support/vodič discovery bez nového kvalifikovaného hitu."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote WordPress/e-commerce/support discovery bez nového non-hard-dev winnera."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"ok","hits":2,"added":0,"rejected":2,"note":"Index má 10 open positions. Pangolin Senior WordPress Developer je remote, ale hard-dev/server-heavy; ďalšie nové položky sú onsite alebo mimo fit."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":0,"rejected":5,"note":"WooCommerce/WordPress VA, product listing a admin výsledky preverené. Nové hity neprekonali existujúci pending Website & SEO Management 2026; 10 USD fixed VA bol vyradený value gateom."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"limited","hits":1,"added":0,"rejected":1,"note":"Verejné hiring/for-hire indexy preverené; čerstvý nájdený WordPress post bol ponuka služby od freelancera, nie hiring dopyt."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"0 verified hits. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nepridáva; autentizovaný Nexus/local ingestion ostáva backlog."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":4,"added":0,"rejected":2,"note":"Alza a Foxelli direct careers preverené. AlzaBox Špecialista zostáva aktívny a BA-eligible pending safe write. Foxelli Support vyradený pre fluent/near-native English; Churn Specialist ostáva bez dostatočného language/skill proof."}
   ],
   "verificationQueue": [
-    {"id":"profesia-kosik-kurier-ba-5348230","title":"Kuriér pre Košík.sk v Bratislave: Zarob si až 180 EUR denne!","source":"Profesia / Košík.cz s.r.o.","url":"https://www.profesia.sk/praca/kosik-cz/O5348230","locationEligibility":"ba-area","languageEligibility":"ok-no-foreign-language-gate-found","provisionalScore":93,"reason":"Bratislava-Devínska Nová Ves, 2 500–3 000 EUR/mes., až 180 EUR/deň, SZČO, vodičský preukaz B minimálne 2 roky, flexibilné plánovanie a nástup ihneď. Silná zhoda na preferovaný rozvoz online nákupov, nie jedla. Riziko je fyzická záťaž pri vynášaní nákupov."},
-    {"id":"alza-alzabox-specialist-ba-2026","title":"AlzaBox Špecialista","source":"Alza.sk kariéra – direct company career","url":"https://kariera.alza.sk/pozicia/pracuj-na-pozicii-specialista-expanzie-pre-alzaboxy-pomahaj-nam-rast-a-rozsirovat-sa/","locationEligibility":"ba-area","languageEligibility":"ok-no-foreign-language-gate","provisionalScore":89,"reason":"Kancelárie Bratislava, plný úväzok, 1 430 EUR fix + variabilná zložka do 610 EUR, flexibilný Po–Pi režim s čiastočným HO. Vodičák B, Excel, komunikácia/akvizícia a AI nástroje; prax z realít/obchodu je výhodou. Aktivácia čaká na bezpečný jobs-data full-content write path."},
+    {"id":"profesia-kosik-kurier-ba-5348230","title":"Kuriér pre Košík.sk v Bratislave: Zarob si až 180 EUR denne!","source":"Profesia / Košík.cz s.r.o.","url":"https://www.profesia.sk/praca/kosik-cz/O5348230","locationEligibility":"ba-area","languageEligibility":"ok-no-foreign-language-gate-found","provisionalScore":93,"reason":"Bratislava-Devínska Nová Ves, 2 500–3 000 EUR/mes., až 180 EUR/deň, SZČO, vodičský preukaz B minimálne 2 roky, flexibilné plánovanie a nástup ihneď. Silná zhoda na rozvoz online nákupov; rizikom je fyzická záťaž."},
+    {"id":"alza-alzabox-specialist-ba-2026","title":"AlzaBox Špecialista","source":"Alza.sk kariéra – direct company career","url":"https://kariera.alza.sk/pozicia/pracuj-na-pozicii-specialista-expanzie-pre-alzaboxy-pomahaj-nam-rast-a-rozsirovat-sa/","locationEligibility":"ba-area","languageEligibility":"ok-no-foreign-language-gate-found","provisionalScore":89,"reason":"Direct career stále aktívny 31.8.2026: kancelárie Bratislava, plný úväzok, 1 430 EUR fix + variabilná zložka do 610 EUR. Aktivácia čaká na bezpečný jobs-data full-content write path."},
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":91,"reason":"15–30 USD/h, WooCommerce operations; pending language/application-friction review."}
   ],
   "backlogAdditionsThisRun": [
-    {"title":"Safe large-feed writer","value":"Získať jobs-data.json cez non-truncating transport alebo lokálny Git checkout a zapisovať len po JSON parse, count/ID uniqueness kontrole a diff guardoch."},
-    {"title":"Refresh-vs-change discriminator","value":"Pri jobboard refreshoch oddeliť recency bump od skutočnej zmeny mzdy, formy, lokality alebo hard gates, aby sa neprodukovali falošné priority alerts."}
+    {"title":"Source-family opportunity half-life model","value":"Učiť typickú dobu, počas ktorej zostávajú ponuky na jednotlivých source families reálne otvorené, a podľa nej nastavovať recheck prioritu namiesto jednotnej freshness decay."},
+    {"title":"Verification-queue aging SLA","value":"Každej pending položke priradiť deadline na doplnenie chýbajúceho language/location/evidence proof; po SLA ju automaticky znížiť v priorite, nie potichu držať v queue."}
   ],
   "writeStatus": {
-    "jobsData":"preserved-fail-closed-qualified-candidates-await-safe-full-content-write",
+    "jobsData":"preserved-fail-closed-no-new-safe-full-content-write",
     "jobsDataNonProf":"preserved-locked",
-    "sourceAudit":"updated-after-real-10-family-check",
+    "sourceAudit":"updated-after-real-11-family-check",
     "jobSources":"preserved-no-registry-structure-change-required",
-    "master":"preserved",
+    "master":"pending-safe-append-blocked-by-truncated-read",
     "lockedFilesTouched":false,
-    "blocker":"GitHub connector update_file requires complete replacement content for jobs-data.json. Large-file reads remain truncated, so no risky partial replacement was committed."
+    "blocker":"GitHub update_file vyžaduje kompletný replacement. jobs-data.json a PRACA_PRE_JARA_MASTER.md sa dostupným read path vracajú truncovane; bez celého obsahu sa nevykonáva riskantný full-file rewrite."
   }
 }
