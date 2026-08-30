@@ -1,54 +1,52 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T01:15:05+02:00",
+  "updatedAt": "2026-08-31T01:32:30+02:00",
   "runSummary": {
     "familiesChecked": 11,
-    "newActiveJobs": 0,
-    "significantPendingCandidates": 4,
+    "newActiveJobs": 2,
+    "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 6,
-    "rejectedAsWeakOrLowValue": 9,
-    "rejectedByFreshnessOrEvidence": 5,
-    "rejectedByLocation": 2,
+    "duplicateOrExisting": 5,
+    "rejectedAsWeakOrLowValue": 10,
+    "rejectedByFreshnessOrEvidence": 3,
+    "rejectedByLocation": 1,
     "quarantinedUnknownLocation": 0,
-    "quarantinedUnknownLanguage": 3,
-    "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
+    "quarantinedUnknownLanguage": 1,
+    "jobsDataContentUpdatedAt": "2026-08-31T01:32:30+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "audit-fresh-jobs-feed-stale-over-60m",
-    "liveFeedCount": 36,
-    "liveSourceMix": {"profesia":17,"nonProfesia":19,"profesiaPct":47.2,"nonProfesiaPct":52.8},
-    "note": "Audit 31.8.2026 01:15 CEST reálne prehľadal 11 source families. Nový plne kvalifikovaný winner sa nepotvrdil. Profesia priniesla čerstvú BA ponuku Lugera Servisný technik/Servisná technička (1 400–1 600 EUR + výkonnostné odmeny, servis a opravy zariadení, výjazdy, školenia, služobné vozidlo), ale dostupný verejný detail v tomto behu neposkytol dostatočný proof o jazykových a odborných hard-gates, preto zostáva vo verification queue. AlzaBox Špecialista zostáva priamo aktívny na Alza careers v Bratislave s fixom 1 430 EUR + variabilnou zložkou do 610 EUR. HEATING PRO zostáva aktívny s nástupom ihneď a 1 600–2 500 EUR/mes. Brigada.sk má 103 BA brigád, ale nové viditeľné hity neprekonali existujúce priority. WordPress Jobs nový relevantný Pangolin Senior WordPress Developer zostáva hard-dev/server-heavy. Upwork WooCommerce/WordPress discovery bez nového lepšieho low-friction winnera. Jobs feed sa nemenil, pretože v tomto behu nebola bezpečne dokončená kvalifikácia nového kandidáta; updatedAt jobs-data sa neposúva bez obsahovej zmeny."
+    "freshnessStatus": "fresh",
+    "liveFeedCount": 38,
+    "liveSourceMix": {"profesia":18,"nonProfesia":20,"profesiaPct":47.4,"nonProfesiaPct":52.6},
+    "note": "Audit 31.8.2026 01:32 CEST reálne prehľadal 11 source families. Dve položky prešli všetkými gate-mi: AlzaBox Špecialista z priamej Alza kariéry (Bratislava, 1 430 EUR fix + až 610 EUR variabilná zložka, Po–Pi flexibilne, čiastočný HO, vodičák B, AI nástroje; bez cudzieho jazyka medzi uvedenými podmienkami) a Košík.sk kuriér v Bratislave (2 500–3 000 EUR/mes., až 150 EUR/deň v canonical Profesia detaile, živnosť, vodičák B min. 2 roky, nástup ihneď). Lugera Servisný technik bol po detailnom overení vyradený pre povinnú elektrotechnickú spôsobilosť §21 a technickú prax. Foxelli Crochet Customer Support bol vyradený pre fluent/near-native spoken English a povinnú hands-on crochet prax. Facebook verejná indexácia zostáva 0 verified hits / limited."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":5,"added":0,"rejected":2,"note":"Najnovšie BA/remote výsledky pre vodič/admin/technik/e-commerce prehľadané. Nový Lugera servisný technik je relevantný, ale čaká na hard-gate verification."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":2,"added":0,"rejected":1,"note":"Verejná indexácia BA e-commerce/support/AI preverená; bez nového bezpečne kvalifikovaného hitu nad existujúce LIVE priority."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"note":"HEATING PRO je stále aktívny: Bratislava, nástup ihneď, 1 600–2 500 EUR/mes., vodičák B, bez cudzieho jazyka."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":6,"added":0,"rejected":5,"note":"103 BA brigád. Nové viditeľné hity vrátane vodiča detského vláčika a Metro skladových brigád sú slabšie fitom alebo odmenou než existujúce priority."},
-    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":2,"added":0,"rejected":1,"note":"BA technický support/e-shop/vodič discovery bez nového kvalifikovaného winnera."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":1,"added":0,"rejected":0,"note":"AI/automation/e-commerce discovery bez nového hitu nad existujúcu OVB AI Automation položku."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"ok","hits":2,"added":0,"rejected":2,"note":"Pangolin Senior WordPress Developer je remote, ale hard-dev/server-heavy; bez vhodnejšej support/admin položky."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":5,"added":0,"rejected":4,"note":"WooCommerce/WordPress, VA a data-entry discovery preverené; bez nového výsledku, ktorý by prekonal existujúce WooCommerce pending/LIVE položky pomerom fit, sadzba a friction."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"limited","hits":2,"added":0,"rejected":2,"note":"Čerstvý WordPress/WooCommerce výsledok je For Hire ponuka freelancera, nie hiring dopyt; bez použiteľného leadu."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"0 verejne overiteľných hiring hitov s dostatočným detailom; nič sa nepridáva bez priameho dôkazu."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":3,"added":0,"rejected":0,"note":"Alza careers priamo potvrdzuje aktívny AlzaBox Špecialista: Kancelárie Bratislava, 1 430 EUR fix + variabilná zložka do 610 EUR. Ostatné direct-career priority bez potvrdenej významnej zmeny."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":4,"added":1,"rejected":2,"note":"Košík.sk Bratislava bezpečne kvalifikovaný a pridaný. Lugera servisný technik vyradený: §21+ a technická elektroprax sú povinné hard gates."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":3,"added":0,"rejected":2,"note":"BA support/IT výsledky preverené; verejné hity boli prevažne jazykovo náročné, staršie alebo bez lepšieho fitu než LIVE priority."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"note":"BA technická/admin/vodič discovery preverená; HEATING PRO zostáva existing LIVE, bez nového winnera."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":7,"added":0,"rejected":6,"note":"103 BA brigád v indexe; vodič vláčika, Metro konsolidácia/distribúcia a ďalšie viditeľné hity sú slabšie fitom/odmenou než LIVE priority."},
+    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":2,"added":0,"rejected":2,"note":"BA support/admin discovery bez nového kvalifikovaného winnera; nájdené detaily boli staré alebo neaktívne."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":1,"added":0,"rejected":0,"note":"BA/remote AI/e-commerce/support discovery preverená; bez nového vhodného non-hard-dev hitu nad existujúce priority."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":1,"added":0,"rejected":1,"note":"Open index preverený; bez vhodnej support/admin položky. Dostupné relevantné roly ostávajú developer-heavy."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":11,"added":0,"rejected":9,"note":"Worldwide remote WordPress/WooCommerce/VA discovery preverená. Nové hity boli prevažne nízko platené, hard-dev alebo s výrazným language/application friction; pending Website & SEO Management 2026 zostáva na recheck."},
+    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":1,"added":0,"rejected":1,"note":"Verejne indexovaný čerstvý výsledok bol freelancer hľadajúci prácu, nie hiring dopyt."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"0 verified hiring hitov s konkrétnym verejným postom a priamym linkom. Pokrytie zostáva limited; nič sa nevymýšľa."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":5,"added":1,"rejected":3,"note":"AlzaBox Špecialista priamo overený a kvalifikovaný. Foxelli Crochet Support vyradený pre fluent/near-native spoken English + hands-on crochet. FYST/client-support discovery niesol vyššie jazykové požiadavky."
+    }
   ],
   "verificationQueue": [
-    {"id":"profesia-kosik-kurier-ba-5348230","title":"Kuriér pre Košík.sk v Bratislave: Zarob si až 180 EUR denne!","source":"Profesia / Košík.cz s.r.o.","url":"https://www.profesia.sk/praca/kosik-cz/O5348230","locationEligibility":"ba-area","languageEligibility":"ok-no-foreign-language-gate-found","provisionalScore":93,"reason":"Bratislava-Devínska Nová Ves, 2 500–3 000 EUR/mes., až 180 EUR/deň, SZČO, vodičský preukaz B minimálne 2 roky, flexibilné plánovanie a nástup ihneď. Silná zhoda na rozvoz online nákupov; rizikom je fyzická záťaž."},
-    {"id":"alza-alzabox-specialist-ba-2026","title":"AlzaBox Špecialista","source":"Alza.sk kariéra – direct company career","url":"https://kariera.alza.sk/pozicia/pracuj-na-pozicii-specialista-expanzie-pre-alzaboxy-pomahaj-nam-rast-a-rozsirovat-sa/","locationEligibility":"ba-area","languageEligibility":"ok-no-foreign-language-gate-found","provisionalScore":89,"reason":"Direct career stále aktívny 31.8.2026: kancelárie Bratislava, plný úväzok, 1 430 EUR fix + variabilná zložka do 610 EUR."},
-    {"id":"profesia-lugera-servisny-technik-5349771","title":"Servisný technik/Servisná technička","source":"Profesia / Lugera & Maklér","url":"https://www.profesia.sk/praca/lugera-makler/O5349771","locationEligibility":"ba-area","languageEligibility":"pending","provisionalScore":88,"reason":"Čerstvá BA technická rola publikovaná 30.8.2026; 1 400–1 600 EUR brutto + výkonnostné odmeny, servis a opravy zariadení, výjazdy, komplexné zaškolenie a služobné vozidlo po skúšobnej dobe. Pred LIVE aktiváciou treba potvrdiť jazykové a odborné hard-gates."},
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":91,"reason":"15–30 USD/h, WooCommerce operations; pending language/application-friction review."}
   ],
   "backlogAdditionsThisRun": [
-    {"title":"Use Git blob read for large feed","value":"GitHub fetch_blob dokáže vrátiť celý jobs-data blob aj keď contents wrapper zobrazuje truncovaný náhľad; použiť ho ako bezpečný read path pri nasledujúcom kvalifikovanom full-feed write."},
-    {"title":"Verification-queue aging SLA","value":"Pending kandidátov s chýbajúcim hard-gate proof znovu overovať prioritne a po SLA znížiť ich akčnú prioritu."}
+    {"title":"Hard-qualification evidence resolver","value":"Pri pending kandidátoch automaticky dohľadať presný detail povinných certifikácií/licencií a rozhodnúť hard gate ešte v tom istom behu; dnešný príklad Lugera §21 ukázal hodnotu tohto kroku."},
+    {"title":"Canonical compensation drift detector","value":"Pri rovnakom job ID porovnať rozdiely medzi canonical detailom a mirrorom (napr. Košík 150 vs. 180 EUR/deň) a v LIVE feede zobrazovať konzervatívnu canonical hodnotu s poznámkou o konflikte."}
   ],
   "writeStatus": {
-    "jobsData":"preserved-no-qualified-content-change-this-run",
-    "jobsDataNonProf":"preserved-no-qualified-content-change-this-run",
+    "jobsData":"qualified-two-job-delta-planned",
+    "jobsDataNonProf":"preserved-locked",
     "sourceAudit":"updated-after-real-11-family-check",
-    "jobSources":"preserved-no-registry-structure-change-required",
-    "master":"preserved",
+    "jobSources":"update-required-for-current-audit-notes",
+    "master":"update-required-with-run-summary-and-backlog",
     "lockedFilesTouched":false,
-    "blocker":"jobs-data freshness exceeds 60 minutes because no new candidate was fully qualified for safe feed insertion in this run. Timestamp was intentionally not advanced without a real content change. Large-file read blocker is now mitigated by GitHub fetch_blob for future writes."
+    "blocker":null
   }
 }
