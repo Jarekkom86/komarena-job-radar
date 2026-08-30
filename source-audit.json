@@ -35,11 +35,11 @@
   "writeStatus": {
     "jobsData": "no-change",
     "jobsDataReason": "Bez novej alebo významne zmenenej prioritnej položky; updatedAt sa neposúva iba na kozmetické omladenie feedu.",
-    "jobSources": "reviewed",
+    "jobSources": "updated-after-real-source-check",
     "jobsDataNonProf": "locked-no-change",
     "baselineJobs": "locked-no-change",
     "sourceAudit": "updated-after-real-12-family-check",
-    "master": "pending-update-in-run",
+    "master": "updated-with-audit-and-2-new-backlog-items",
     "freshnessBreach": true,
     "freshnessBreachReason": "jobs-data.json posledná obsahová aktualizácia 2026-08-30T01:15:21+02:00; audit 06:29 nevytvoril kvalifikovanú obsahovú zmenu, preto feed timestamp zostáva nezmenený."
   }
