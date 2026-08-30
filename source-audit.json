@@ -1,63 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T22:25:01+02:00",
+  "updatedAt": "2026-08-30T23:12:49+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
-    "significantPendingCandidates": 2,
+    "significantPendingCandidates": 3,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 4,
-    "rejectedAsWeakOrLowValue": 10,
+    "duplicateOrExisting": 5,
+    "rejectedAsWeakOrLowValue": 12,
     "rejectedByFreshnessOrEvidence": 2,
     "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "breach-qualified-candidate-write-blocked-fail-closed",
+    "freshnessStatus": "breach-qualified-candidates-write-blocked-fail-closed",
     "liveFeedCount": 36,
-    "liveFeedMix": {"profesia":17,"nonProfesia":19,"profesiaPct":47.2,"nonProfesiaPct":52.8},
-    "note": "Audit 30.8.2026 22:25 CEST reálne prehľadal 11 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Práca za rohom, Pretlak/WordPress Jobs, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Nový kvalifikovaný direct-company kandidát je AlzaBox Špecialista v Bratislave: 1 430 EUR fix + variabilná zložka do 610 EUR, flexibilný Po–Pi režim, čiastočný home office, vodičský preukaz B, MS Office, komunikácia/akvizícia a využívanie AI nástrojov; cudzí jazyk nie je uvedený ako podmienka. Kandidát prechádza BA hard gate a nemá hard-development gate. Autoritatívny jobs-data.json sa v tomto behu nemení, pretože konektor vracia veľký súbor truncovaný a update_file vyžaduje kompletný replacement; risk poškodenia 36-položkového feedu je fail-closed blocker. Upwork nové fresh výsledky boli prevažne low-value alebo mali silný English/phone friction. Facebook: 0 verified hits, limited."
+    "note": "Audit 30.8.2026 23:12 CEST reálne prehľadal aktuálne BA/okolie/remote zdroje. Nový prioritný kandidát Košík.sk kuriér Bratislava je aktívny: 2 500–3 000 EUR/mes., až 180 EUR/deň, SZČO, vodičák B, flexibilné plánovanie a nástup ihneď; nejde o rozvoz jedla, ale online nákupov. Fyzická záťaž zahŕňa možné vynášanie nákupov. AlzaBox Špecialista zostáva aktívny priamo na Alza kariére: 1 430 EUR fix + variabilná zložka do 610 EUR, BA, čiastočný home office, vodičák B, MS Office a AI nástroje. Autoritatívny jobs-data.json sa nemení, pretože GitHub connector vracia veľký súbor po častiach/truncovane a update_file vyžaduje kompletný replacement; bez bezpečnej automatickej rekonštrukcie celého 36-položkového feedu by zápis riskoval stratu dát. Posledné validné dáta sú zachované fail-closed a updatedAt nebol umelo posunutý."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote WordPress/e-shop/admin/technical/support/driver discovery skontrolované; bez nového čerstvého kvalifikovaného winnera nad LIVE priority."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":4,"added":0,"rejected":3,"note":"Alza, Wolt a IKEA careers reálne kontrolované. AlzaBox Špecialista je nový kvalifikovaný BA kandidát. Wolt support má jazykový friction; IKEA logistické/customer-service roly sú menej prioritné alebo fyzickejšie."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejne indexované BA/remote WordPress/e-commerce/support výsledky preverené; bez nového A2-compatible winnera."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA administratíva/technická podpora/vodič/sklad discovery preverené; bez nového silnejšieho kvalifikovaného hitu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":4,"added":0,"rejected":4,"note":"103 BA brigád. Vodič detského vláčika v AVIONe je 6 EUR/h netto, Metro skladové brigády 7 EUR/h; neprekonávajú LIVE value/fit priority."},
-    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA e-shop/admin/support discovery prehľadané; bez nového kvalifikovaného detailu."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":4,"added":0,"rejected":3,"note":"Čerstvý BA index potvrdzuje Lanža a Akfos ako existujúce LIVE položky; ďalšie vodič/sklad/technické ponuky sú slabšie alebo vyžadujú C/VZV/§22. Mirrory Profesia sa nerátajú ako nezávislé prírastky."},
-    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bez nového vhodného non-hard-dev WordPress/WooCommerce leadu."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":3,"added":0,"rejected":3,"note":"Fresh Virtual Assistant + Cold Caller je Worldwide remote, ale iba 3–4 USD/h a vyžaduje phone communication; Shopify VA 650 USD má Strong English + Loom a je starší; WhatsApp/order VA 300 USD mesačne má 50+ proposals. Žiadny neprekonáva existujúci Website & SEO Management pending lead."},
-    {"name":"Reddit / WordPress komunity","family":"communities","status":"limited","hits":0,"added":0,"rejected":1,"note":"Verejné indexy ukázali najmä agregované VA hiring posty/reposty bez dostatočne konkrétneho originálneho WordPress/WooCommerce leadu pre LIVE feed."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"0 verified hits. Bez konkrétneho verejne overiteľného hiring postu a priameho linku; autentizovaný Nexus/local ingestion ostáva backlog."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":4,"added":0,"rejected":2,"note":"Potvrdený nový Košík.sk kuriér Bratislava 2 500–3 000 EUR/mes., publikovaný 26.8.2026 a stále aktívny. Ďalšie kuriérske výsledky sú slabšie alebo existujúce."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":4,"added":0,"rejected":3,"note":"Alza kariéra stále priamo uvádza AlzaBox Špecialista v Bratislave; Wolt support a IKEA BA roly sú menej vhodné kvôli jazykovému/fyzickému frictionu."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote WordPress, e-commerce a support discovery bez nového silnejšieho winnera."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA technická podpora, sklad, vodič a administratíva skontrolované; bez nového silnejšieho hitu než LIVE priority."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":2,"note":"BA brigády neprekonali aktuálne value/fit priority."},
+    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":1,"added":0,"rejected":1,"note":"Aktuálne indexy bez nového kvalifikovaného detailu nad LIVE priority."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":8,"added":0,"rejected":5,"note":"Potvrdený Košík.sk kuriér 2 500–3 000 EUR/mes.; Cerkam je existujúci LIVE hit. Ďalšie vodič/sklad ponuky sú slabšie alebo vyžadujú VZV/C/§22."},
+    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bez nového non-hard-dev WordPress/WooCommerce leadu nad existujúce priority."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":5,"added":0,"rejected":4,"note":"Čerstvé WooCommerce/WordPress VA výsledky sú buď už známe, low-value alebo majú silnejší English/dev friction; žiadny neprekonáva pending Website & SEO Management lead."},
+    {"name":"Reddit / WordPress komunity","family":"communities","status":"limited","hits":0,"added":0,"rejected":1,"note":"Bez dostatočne konkrétneho a verejne overiteľného originálneho leadu pre LIVE feed."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"0 verified hits; autentizovaný Nexus/local ingestion ostáva backlog."}
   ],
   "verificationQueue": [
-    {"id":"alza-alzabox-specialist-ba-2026","title":"AlzaBox Špecialista","source":"Alza.sk kariéra – direct company career","url":"https://kariera.alza.sk/pozicia/pracuj-na-pozicii-specialista-expanzie-pre-alzaboxy-pomahaj-nam-rast-a-rozsirovat-sa/","locationEligibility":"ba-area","languageEligibility":"ok-no-foreign-language-gate","provisionalScore":89,"reason":"Kancelárie Bratislava, plný úväzok, 1 430 EUR fix + variabilná zložka do 610 EUR, flexibilný Po–Pi režim s čiastočným HO. Vodičák B, Excel užívateľsky, komunikácia/akvizícia a AI nástroje; prax z realít/obchodu je iba výhodou. Prechádza lokalitným a language gateom. Aktivácia čaká iba na bezpečný jobs-data full-content write path."},
-    {"id":"profesia-izy-vape-5348749","title":"Back Office & Operations Coordinator – e-commerce | Remote","source":"Profesia / IZY VAPE CE","url":"https://www.profesia.sk/praca/izy-vape-ce/O5348749","locationEligibility":"remote-ok","languageEligibility":"hard-b2-gate","reason":"Silný e-commerce/back-office profil, ale B2 AJ + VŠ I. stupňa + 3 roky praxe a nástup november–december 2026; nie TODAY."},
-    {"id":"linkedin-sectec-marketing-asistent-4362401102","title":"Marketing asistent – WordPress/CMS, newslettery, administratíva","source":"LinkedIn Jobs / SecTec","url":"https://sk.linkedin.com/jobs/view/marketing-asistent-at-sectec-4362401102","locationEligibility":"ba-area","languageEligibility":"no-explicit-gate-found","reason":"Dobrý profilový fit v Bratislave. Pred LIVE aktiváciou stále chýba čerstvý active-hiring proof a mzda."},
-    {"id":"upwork-ecommerce-va-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/commerce-Virtual-Assistant-WooCommerce-Subscriptions-Customer-Service-Xero_~022093200734923132353/","locationEligibility":"remote-ok","languageEligibility":"risk-b2-like-written","reason":"Worldwide remote, ale explicitne good written English + špecializované WooCommerce Subscriptions/Meta Ads/Xero skills."}
-  ],
-  "pendingCandidate": {
-    "id":"upwork-website-seo-management-2093603919086755488",
-    "title":"Website & SEO Management 2026 – WooCommerce operations",
-    "source":"Upwork",
-    "url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/",
-    "locationEligibility":"remote-ok",
-    "pay":"15–30 USD/h",
-    "provisionalScore":91,
-    "status":"pending-language-and-application-friction-review"
-  },
-  "developmentBacklogAddedThisRun": [
-    {"id":"safe-json-append-writer","title":"Safe JSON append writer with pre/post invariants","value":"Lokálny/Nexus helper načíta celý jobs-data.json, pridá iba nový objekt, validuje JSON schema, počet položiek, unikátne ID a kategórie a až potom commitne. Odstráni opakovaný connector full-replacement blocker bez zásahu do UI/baseline."},
-    {"id":"direct-career-delta-cache","title":"Direct-career delta cache with canonical-first promotion","value":"Ukladať hash/canonical URL posledných direct-company výsledkov a pri novom/zmene prioritne overovať direct career detail pred job board mirrorom. Zníži duplicitné discovery a zrýchli zachytenie čerstvých firemných ponúk."}
+    {"id":"profesia-kosik-kurier-ba-5348230","title":"Kuriér pre Košík.sk v Bratislave: Zarob si až 180 EUR denne!","source":"Profesia / Košík.cz s.r.o.","url":"https://www.profesia.sk/praca/kosik-cz/O5348230","locationEligibility":"ba-area","languageEligibility":"ok-no-foreign-language-gate-found","provisionalScore":93,"reason":"Bratislava-Devínska Nová Ves, 2 500–3 000 EUR/mes., až 180 EUR/deň, SZČO, vodičský preukaz B minimálne 2 roky, flexibilné plánovanie a nástup ihneď. Silná zhoda na preferovaný rozvoz online nákupov, nie jedla. Riziko je fyzická záťaž pri vynášaní nákupov."},
+    {"id":"alza-alzabox-specialist-ba-2026","title":"AlzaBox Špecialista","source":"Alza.sk kariéra – direct company career","url":"https://kariera.alza.sk/pozicia/pracuj-na-pozicii-specialista-expanzie-pre-alzaboxy-pomahaj-nam-rast-a-rozsirovat-sa/","locationEligibility":"ba-area","languageEligibility":"ok-no-foreign-language-gate","provisionalScore":89,"reason":"Kancelárie Bratislava, plný úväzok, 1 430 EUR fix + variabilná zložka do 610 EUR, flexibilný Po–Pi režim s čiastočným HO. Vodičák B, Excel, komunikácia/akvizícia a AI nástroje; prax z realít/obchodu je výhodou. Aktivácia čaká na bezpečný jobs-data full-content write path."},
+    {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":91,"reason":"15–30 USD/h, WooCommerce operations; pending language/application-friction review."}
   ],
   "writeStatus": {
-    "jobsData":"preserved-fail-closed-qualified-candidate-awaits-safe-full-content-write",
-    "jobsDataNonProf":"locked-preserved",
-    "jobSources":"pending-current-run-refresh",
+    "jobsData":"preserved-fail-closed-qualified-candidates-await-safe-full-content-write",
+    "jobsDataNonProf":"preserved-no-required-change",
     "sourceAudit":"updated-after-real-11-family-check",
-    "master":"full-file-read/write path not safely available in this run; backlog duplicated here pending safe MASTER append",
-    "lockedFilesTouched":false
+    "lockedFilesTouched":false,
+    "blocker":"GitHub connector requires complete replacement content for jobs-data.json while large-file reads are chunked/truncated; no risky partial reconstruction committed."
   }
 }
