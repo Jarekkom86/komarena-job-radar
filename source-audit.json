@@ -53,9 +53,9 @@
   "writeStatus": {
     "jobsData":"preserved-no-qualified-priority-delta",
     "jobsDataReason":"Nevznikla nová prioritná položka ani významná zmena existujúcej priority; feed sa fail-closed nemení.",
-    "jobSources":"pending-current-run-note-update",
+    "jobSources":"updated-current-run-notes",
     "sourceAudit":"updated-after-real-source-check",
-    "master":"pending-current-run-update",
+    "master":"updated-current-run-audit-and-backlog",
     "lockedFilesTouched":false
   }
 }
