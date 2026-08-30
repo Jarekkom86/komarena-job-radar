@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 30. 8. 2026 01:28 CEST
+Aktualizované: 30. 8. 2026 02:26 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -66,31 +66,32 @@ Aktualizované: 30. 8. 2026 01:28 CEST
 32. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 33. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 30. 8. 2026 01:28 CEST — LATEST
+## SOURCE AUDIT — 30. 8. 2026 02:26 CEST — LATEST
 Reálne prehľadané skupiny: **Profesia; priame firemné kariéry; LinkedIn Jobs; Worki.sk; Brigada.sk; Pretlak; StartupJobs; WordPress Jobs; Upwork/freelance; Služby zamestnanosti/Kariera; Reddit/WP komunity; Facebook verejná indexácia.** Spolu **12 nezávislých kontrolovaných skupín**, minimálne 8 source families a viac než 5 mimo Profesia.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 0.** Od poslednej obsahovej zmeny o 01:15 nevznikol nový kandidát, ktorý by bezpečne prešiel locality/language/hard-skill/value gateom a prebil aktuálne priority.
-- **Upwork:** nové WordPress/WooCommerce výsledky boli prevažne build/launch/integration hard-scope. Konkrétny `Meta Business Suite + WooCommerce / Facebook / Instagram Cleanup & Integration Specialist` je relevantný tematicky, ale vyžaduje pokročilé Meta Business ownership, katalógy, feedy, permissions a integračné troubleshooting; preto nebol povýšený. Ďalšie WordPress build projekty sú developer scope.
-- **WordPress Jobs:** bez vhodného Slovakia-eligible non-hard-dev leadu.
-- **Reddit:** bez nového konkrétneho hiring leadu.
+- **Nové aktívne položky: 0.** Nevznikol nový kandidát, ktorý by bezpečne prešiel locality/language/hard-skill/value gateom a prebil aktuálne priority.
+- **LinkedIn Jobs:** čerstvý **Orange Senior Fleet Officer** je v Bratislave a ponúka 1 600 € + bonusy + čiastočný HO, ale vyžaduje 3–5 rokov skúseností s fleetom, pokročilý Excel, angličtinu a 24/7 pohotovostnú podporu podľa rozpisu; preto sa neaktivoval.
+- **WordPress Jobs:** aktuálne uvádza 10 otvorených pozícií. Nové 27.–28.8. sú prevažne WordPress developer/security/performance/full-stack/server scope alebo geograficky viazané; bez vhodného Slovakia-eligible non-hard-dev leadu.
+- **Upwork:** čerstvé WordPress/VA/e-commerce výsledky existujú, ale nové kandidáty sú dev-heavy, language-heavy alebo neprekonávajú existujúce LIVE priority.
+- **Reddit:** verejne indexované aktuálne hiring posty pre website creator a WordPress dev/designer nemajú dostatočne jasný pay/scope/eligibility dôkaz pre bezpečnú LIVE aktiváciu.
 - **Facebook:** **0 verified hits**, coverage `limited`; žiadny fiktívny post.
 
 ### Run summary
 - Reálne skontrolované zdrojové skupiny: **12**.
 - Nové aktívne položky: **0**.
 - Významne zmenené priority: **0**.
-- Vyradené jazykovým/hard-skill gateom: **4**.
-- Vyradené ako slabé/nízka hodnota: **5**.
-- Duplicitné/existing: **4**.
-- Vyradené pre freshness/evidence: **3**.
+- Vyradené jazykovým/hard-skill gateom: **5**.
+- Vyradené ako slabé/nízka hodnota: **4**.
+- Duplicitné/existing: **3**.
+- Vyradené pre freshness/evidence: **4**.
 
 ### LIVE mix
 - `jobs-data.json`: **36 aktívnych položiek**.
 - Posledný potvrdený mix po pridaní HEATING PRO: približne **Profesia 17 / 36 = 47,2 %; mimo Profesia 19 / 36 = 52,8 %**.
 - `jobs-data.json.updatedAt` = **30. 8. 2026 01:15:21 CEST**.
-- `source-audit.json.updatedAt` = **30. 8. 2026 01:28:55 CEST**.
-- Freshness feedu: **fresh <60 min**; `jobs-data.json.updatedAt` sa neposúva bez reálnej obsahovej zmeny.
+- `source-audit.json.updatedAt` = **30. 8. 2026 02:26:18 CEST**.
+- `jobs-data.json.updatedAt` sa neposúva bez reálnej obsahovej zmeny.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -223,3 +224,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 118. **Verified client economics score** — kombinuje klientský spend, počet hires, konkurenciu a reálny budget konkrétnej zákazky; vysoká história klienta sama nesmie kompenzovať neudržateľnú cenu konkrétneho projektu.
 119. **Weekend/night source-pattern booster** — meria, ktoré source families reálne publikujú kvalitné BA/remote ponuky cez víkend a v nočných hodinách; v týchto oknách presunie viac discovery kapacity na zdroje s historicky vyšším čerstvým výnosom bez porušenia povinného 8-family minima.
 120. **Known-employer career delta watchlist** — pre overené firmy s vysokým matchom (napr. Hilti, Penta, Websupport, Foxelli) porovná snapshot ich career stránky medzi behmi a zvýrazní iba nové roly alebo zmenu kritických požiadaviek; znižuje čas stratený opakovaným čítaním nezmenených career stránok.
+121. **Role-title alias learner** — učí sa neštandardné názvy pozícií z reálnej náplne práce (napr. „operations agent“, „digital coordinator“, „implementation support“) a mapuje ich na e-commerce/support/admin role families; zvyšuje recall bez rozšírenia hard-skill tolerancie.
+122. **Application-pack stale-evidence invalidator** — pri zmene canonical požiadaviek, lokality, mzdy, closure statusu alebo eligibility automaticky označí už pripravené CV/reakciu za `stale`, aby sa neposlala verzia založená na starých podmienkach.
