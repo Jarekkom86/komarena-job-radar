@@ -30,8 +30,7 @@
     {"name":"Upwork","family":"upwork","status":"ok","hits":11,"added":0,"rejected":9,"note":"Worldwide remote WordPress/WooCommerce/VA discovery preverená. Nové hity boli prevažne nízko platené, hard-dev alebo s výrazným language/application friction; pending Website & SEO Management 2026 zostáva na recheck."},
     {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":1,"added":0,"rejected":1,"note":"Verejne indexovaný čerstvý výsledok bol freelancer hľadajúci prácu, nie hiring dopyt."},
     {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"0 verified hiring hitov s konkrétnym verejným postom a priamym linkom. Pokrytie zostáva limited; nič sa nevymýšľa."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":5,"added":1,"rejected":3,"note":"AlzaBox Špecialista priamo overený a kvalifikovaný. Foxelli Crochet Support vyradený pre fluent/near-native spoken English + hands-on crochet. FYST/client-support discovery niesol vyššie jazykové požiadavky."
-    }
+    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":5,"added":1,"rejected":3,"note":"AlzaBox Špecialista priamo overený a kvalifikovaný. Foxelli Crochet Support vyradený pre fluent/near-native spoken English + hands-on crochet. FYST/client-support discovery niesol vyššie jazykové požiadavky."}
   ],
   "verificationQueue": [
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":91,"reason":"15–30 USD/h, WooCommerce operations; pending language/application-friction review."}
@@ -41,11 +40,11 @@
     {"title":"Canonical compensation drift detector","value":"Pri rovnakom job ID porovnať rozdiely medzi canonical detailom a mirrorom (napr. Košík 150 vs. 180 EUR/deň) a v LIVE feede zobrazovať konzervatívnu canonical hodnotu s poznámkou o konflikte."}
   ],
   "writeStatus": {
-    "jobsData":"qualified-two-job-delta-planned",
+    "jobsData":"updated-two-qualified-active-jobs",
     "jobsDataNonProf":"preserved-locked",
-    "sourceAudit":"updated-after-real-11-family-check",
-    "jobSources":"update-required-for-current-audit-notes",
-    "master":"update-required-with-run-summary-and-backlog",
+    "sourceAudit":"updated-after-real-11-family-check-and-finalized",
+    "jobSources":"updated-current-audit-notes",
+    "master":"updated-run-summary-and-two-backlog-additions",
     "lockedFilesTouched":false,
     "blocker":null
   }
