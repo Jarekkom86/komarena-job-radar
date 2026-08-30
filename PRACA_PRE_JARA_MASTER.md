@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 30. 8. 2026 19:32 CEST
+Aktualizované: 30. 8. 2026 20:36 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -32,12 +32,12 @@ Aktualizované: 30. 8. 2026 19:32 CEST
 - Agregátor/repost nesmie prebiť priamy firemný zdroj.
 
 ## Aktuálne TOP
-1. **LUNYS — E-commerce špecialista — Match 96** — Bratislava/Most pri Bratislave; WooCommerce/Shoptet/Magento, správa e-shopu, testovanie a AI. Fresh canonical LinkedIn 29.8. 21:34 zobrazuje plný inzerát bez closure banneru v načítanom obsahu; zostáva active.
-2. **HEATING PRO — Technický pracovník/pracovníčka – sklad, rozvoz, nákup — Match 94** — Stará Vajnorská 17, Bratislava; 1 600–2 500 €/mes., ihneď, 7:00–15:30, vodičák B, bez cudzieho jazyka, firma zaučí. Technicko-logistická zhoda; mínus bežná fyzická manipulácia s materiálom.
+1. **LUNYS — E-commerce špecialista — Match 96** — Bratislava/Most pri Bratislave; WooCommerce/Shoptet/Magento, správa e-shopu, testovanie a AI.
+2. **HEATING PRO — Technický pracovník/pracovníčka – sklad, rozvoz, nákup — Match 94** — Stará Vajnorská 17, Bratislava; 1 600–2 500 €/mes., ihneď, 7:00–15:30, vodičák B, bez cudzieho jazyka, firma zaučí.
 3. **LEAF — Implementation Support Specialist — Match 94** — prevažne remote; customer support + back-office + reporty + web obsah + AI automatizácie.
 4. **OVB — Špecialista/ka pre AI a automatizáciu — Match 93** — Bratislava remote/hybrid, od 2 000 €/mes.; AI agenti a procesy.
 5. **Ryvenia — Shoptet Specialist — Match 93** — Bratislava/full remote/hybrid; produkty, kategórie, CSV, migrácie, QA.
-6. **Zenea — E-Commerce Specialist — Match 92** — Nivy Tower Bratislava/hybrid, 1 600–2 000 €/mes.; Shopify, produkty, nákupná cesta, UGC/influenceri, Asana, Klaviyo, Excel/reporting; AJ iba výhodou. Hlavný gap: Shopify/Klaviyo namiesto WooCommerce.
+6. **Zenea — E-Commerce Specialist — Match 92** — Nivy Tower Bratislava/hybrid, 1 600–2 000 €/mes.; Shopify, produkty, nákupná cesta, Asana, Klaviyo, Excel/reporting; AJ iba výhodou.
 7. **Energohub — Office manager / koordinátor firemných procesov — Match 92** — Dúbravka, od 1 800 €/mes.; koordinácia, CRM/digitálne nástroje, procesy a AI; pracovná AJ iba výhodou.
 8. **Penta Real Estate — Sales Administrator — Match 92** — Bratislava, 1 800 €/mes. + bonus + HO; CRM, dáta, reporty, dokumenty a podpora.
 9. **Hilti — Implementation & Service Specialist — Match 92** — Bratislava, od 1 800 €/mes. + bonusy + auto; implementation/service/CRM.
@@ -66,31 +66,33 @@ Aktualizované: 30. 8. 2026 19:32 CEST
 32. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 33. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 30. 8. 2026 19:32 CEST — LATEST
+## SOURCE AUDIT — 30. 8. 2026 20:36 CEST — LATEST
 Reálne prehľadané skupiny: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; StartupJobs; Upwork; WordPress Jobs/tech index; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **12 nezávislých source families**, z toho 11 mimo Profesia.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 0.** Žiadny nový kandidát bezpečne neprešiel locality/language/hard-skill/value gateom; `jobs-data.json` sa obsahovo nemení a existujúci feed zostáva fail-closed zachovaný.
-- **Profesia / priame careers / LinkedIn / Worki / Brigada.sk / Kariera.sk / Pretlak / StartupJobs:** reálne prehľadané BA/remote discovery lanes; bez nového kvalifikovaného winnera nad aktuálne LIVE priority.
-- **Upwork:** `Website & SEO Management 2026` zostáva najsilnejší pending remote-ok lead za 15–30 USD/h. Je vecne silný na WooCommerce operations, ale onboarding/interview call, týždenný reporting a povinný 15-min Loom audit vytvárajú vyššiu spoken/written English a application-friction záťaž. Nový `WordPress WooCommerce E-Commerce Developer` je Worldwide remote a čerstvý, ale za 83,87 USD fixed ide o build/optimization development scope s PHP nice-to-have, preto neprešiel value/hard-skill gateom. Shopify app lead za 100 USD vyžaduje Billing API/app-development. Všeobecný VA lead za 15 USD fixed a marketing VA za 5 USD fixed boli vyradené pre nízku hodnotu.
-- **WordPress Jobs/tech index:** čerstvé výsledky boli developer/build oriented; bez non-hard-dev winnera.
-- **Reddit/WordPress komunity:** verejne indexované hiring dopyty nepriniesli nový konkrétny Slovakia-eligible winner s dostatočným remote proof.
+- **Nové aktívne položky: 0.** Žiadny nový kandidát bezpečne neprešiel locality/language/hard-skill/value gateom; `jobs-data.json` zostáva fail-closed zachovaný a timestamp sa umelo neposúva.
+- **LinkedIn/direct careers:** čerstvý ESET Customer Support Specialist v Bratislave je zaujímavý technický support, ale bez bezpečného A2-compatible language proof sa neaktivuje. Wolt má explicitné minimum B2 English. Foliovision User Support je silný WordPress/HTML troubleshooting fit v Bratislave, ale verejný detail nemá čerstvý active-hiring proof a vyžaduje aktívne písanie v angličtine.
+- **Worki / Brigada.sk / Kariera / Pretlak:** reálne prehľadané, bez nového kvalifikovaného winnera.
+- **StartupJobs:** 100 % remote e-shop customer-care lead je aktuálny, ale vyžaduje poľštinu; ostatné čerstvé výsledky boli grafika alebo sales.
+- **Upwork:** nové WordPress/Shopify e-commerce VA výsledky boli preverené; `Website & SEO Management 2026` zostáva najsilnejší pending remote-ok lead za 15–30 USD/h, ale language/application friction ostáva významný.
+- **WordPress Jobs:** Senior WordPress Developer z 27.8. je remote, ale explicitne hard-dev: custom themes, PHP/JS, React, server/DNS/SSH, API, Git a staging/deployment.
+- **Reddit/WordPress komunity:** bez nového konkrétneho Slovakia-eligible winnera s dostatočným remote proof.
 - **Facebook:** **0 verified hits**, coverage `limited`; žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 
 ### Run summary
 - Reálne skontrolované source families: **12**.
 - Nové aktívne položky: **0**.
 - Významné pending kandidáty: **1**.
-- Vyradené ako slabé/nízka hodnota: **6**.
+- Duplicitné/existing: **3**.
+- Vyradené ako slabé/nízka hodnota: **9**.
 - Vyradené pre freshness/evidence: **2**.
 - Vyradené lokalitou: **0**.
-- Duplicitné/existing: **1**.
 
 ### LIVE mix
 - `jobs-data.json`: **36 aktívnych položiek**.
 - Potvrdený mix: približne **Profesia 17 / 36 = 47,2 %; mimo Profesia 19 / 36 = 52,8 %**.
 - `jobs-data.json.updatedAt` = **30. 8. 2026 01:15:21 CEST**; bez reálnej kvalifikovanej obsahovej delty sa timestamp umelo neposúva.
-- `source-audit.json.updatedAt` = **30. 8. 2026 19:32:52 CEST**.
+- `source-audit.json.updatedAt` = **30. 8. 2026 20:36:54 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -216,13 +218,15 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 111. Same-role repost churn-risk signal.
 112. Application authorship constraint flag — detegovať ponuky, ktoré výslovne vyžadujú vlastnoručne napísanú odpoveď alebo zakazujú AI-generovaný text, a zabrániť automatickému použitiu Application Builder výstupu bez manuálnej úpravy.
 113. Minimum weekly earning potential gate — počítať realistický týždenný/mesačný earning potential z hodinovej sadzby a dostupného rozsahu hodín; tiny-hour zákazky držať v side-gig lane, aby neprebíjali stabilnejšie príležitosti.
-114. Remote exception frequency cap — extrahovať frekvenciu povinných onsite návštev pri „remote“ rolách a `remote-ok` povoliť iba pod definovaným limitom; nejasnú frekvenciu držať ako `unknown`, aby občasná Praha/Brno nevytvárala falošný remote fit.
-115. English modality decomposer — rozložiť jazykový gate na reading/writing/phone/video/sales; povinnú live spoken English penalizovať výraznejšie než čítanie dokumentácie alebo jednoduché písanie, aby CEFR údaj nebol príliš hrubý filter.
-116. Community location-proof handshake — pri Reddit/FB/community dopytoch automaticky hľadať explicitný country/remote dôkaz v poste, profile a komentároch a až potom povoliť `remote-ok`; pri absencii dôkazu ponechať `unknown` a nevkladať do LIVE.
-117. Scope-to-portfolio evidence matcher — rozložiť dopyt na konkrétne deliverables (napr. WooCommerce, newsletter, Etsy, SEO, training) a ku každému priradiť existujúci dôkaz praxe alebo označiť gap; zrýchli rozhodnutie, či reagovať a ktoré referencie použiť.
-118. Search-result evidence aging clock — pri každom discovery hite ukladať vek posledného detailného dôkazu oddelene od veku indexu/crawlu; zabráni povýšeniu starej alebo už uzavretej ponuky len preto, že ju vyhľadávač dnes znovu preindexoval.
-119. Source-family zero-yield rotation — ak source family opakovane vracia 0 kvalifikovaných kandidátov, meniť query archetyp, synonymá rolí a lokalitné výrazy pri zachovaní exploration floor; zvýši coverage bez falošného označovania zdroja za nefunkčný.
-120. Listing-language ambiguity quarantine — ak je celý listing v inom jazyku než SK/CZ/EN a explicitná jazyková požiadavka chýba, nastaviť `languageEligibility: unknown` a nepovýšiť ho do TOP/LIVE bez overenia komunikačného jazyka.
-121. Invite-to-interview efficiency signal — pri freelance leadoch vyhodnocovať pomer `invites / unanswered invites / interviewing / hires`; masové pozvánky s nízkou konverziou penalizovať ako signál nižšej reply probability a vyššej aplikačnej straty času.
-122. Fresh-hit confirmation retry window — ak čerstvý high-fit výsledok existuje vo verejnom indexe, ale detail je dočasne nedostupný alebo neúplný, zaradiť ho do krátkeho prioritného recheck okna namiesto straty alebo predčasnej aktivácie; znižuje missed-opportunity risk bez porušenia fail-closed.
-123. Source-check evidence ledger — ku každej source family ukladať minimálny dôkaz behu: query archetyp, čas kontroly, počet indexovaných kandidátov a rozhodovací výsledok; umožní auditovať, že zdroj bol naozaj skontrolovaný, a odlíši skutočný zero-hit od coverage/index failure.
+114. Remote exception frequency cap — extrahovať frekvenciu povinných onsite návštev pri „remote“ rolách a `remote-ok` povoliť iba pod definovaným limitom; nejasnú frekvenciu držať ako `unknown`.
+115. English modality decomposer — rozložiť jazykový gate na reading/writing/phone/video/sales; povinnú live spoken English penalizovať výraznejšie než čítanie dokumentácie alebo jednoduché písanie.
+116. Community location-proof handshake — pri Reddit/FB/community dopytoch hľadať explicitný country/remote dôkaz a až potom povoliť `remote-ok`.
+117. Scope-to-portfolio evidence matcher — rozložiť dopyt na deliverables a ku každému priradiť existujúci dôkaz praxe alebo označiť gap.
+118. Search-result evidence aging clock — ukladať vek posledného detailného dôkazu oddelene od veku indexu/crawlu.
+119. Source-family zero-yield rotation — pri opakovanom zero-yield meniť query archetyp a synonymá pri zachovaní exploration floor.
+120. Listing-language ambiguity quarantine — pri cudzom jazyku bez explicitnej jazykovej požiadavky nastaviť `languageEligibility: unknown`.
+121. Invite-to-interview efficiency signal — pri freelance leadoch vyhodnocovať invites/interviewing/hires a penalizovať nízku konverziu.
+122. Fresh-hit confirmation retry window — fresh high-fit hit s neúplným detailom zaradiť do krátkeho prioritného recheck okna.
+123. Source-check evidence ledger — ku každej source family ukladať query archetyp, čas kontroly, počet kandidátov a výsledok rozhodnutia.
+124. Canonical application-route health monitor — pri TOP/pending leadoch overovať aj funkčnosť reálneho apply endpointu, login/region gate a dostupnosť formulára; zabráni plytvaniu časom na ponuky, ktoré index existujúco zobrazuje, ale už sa na ne nedá reagovať.
+125. Fresh competitor-pressure decay — pri freelance leadoch kombinovať vek ponuky s počtom proposals/interviewing a odhadovať pokles reply probability; čerstvé low-competition zákazky tak dostanú prednosť pred staršími high-fit leadmi s už zaplneným funnelom.
