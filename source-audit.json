@@ -1,35 +1,35 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T17:25:29+02:00",
+  "updatedAt": "2026-08-30T18:13:52+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 1,
-    "rejectedAsWeakOrLowValue": 4,
+    "duplicateOrExisting": 2,
+    "rejectedAsWeakOrLowValue": 5,
     "rejectedByFreshnessOrEvidence": 3,
     "rejectedByLocation": 1,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 1,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "breach-no-qualified-feed-delta",
+    "freshnessStatus": "breach-write-blocked-by-safe-full-file-read",
     "liveFeedCount": 36,
     "liveFeedMix": {"profesia":17,"nonProfesia":19,"profesiaPct":47.2,"nonProfesiaPct":52.8},
-    "note": "Reálny audit 30.8.2026 17:25 CEST preveril 10 nezávislých source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Nevznikol nový kandidát, ktorý by bezpečne prešiel lokalitným, jazykovým, hard-skill a value gateom. Upwork WordPress/WooCommerce Spezialist je Worldwide remote, 8–15 USD/h, ale je 3 týždne starý, má 20–50 proposals, 2 interviewing, 10 invites a celý listing je po nemecky bez explicitného language proof; preto ostáva mimo LIVE. Website & SEO Management 2026 zostáva najsilnejší pending WooCommerce remote lead 15–30 USD/h."
+    "note": "Reálny audit 30.8.2026 18:13 CEST preveril 10 source families pre Bratislavu, okolie a vhodný remote režim. Nevznikol nový ani významne zmenený prioritný winner. Profesia má znovu indexovaný PRO EXTERIÉR Office & Administration Manager 1 550–1 850 EUR, ale canonical detail je pôvodne z 14.8.2026 a má tvrdé gatey VŠ I. stupňa, AJ B2 a 5 rokov praxe; preto nejde do priority. Upwork priniesol viac WooCommerce/WordPress výsledkov, ale aktuálne nové kusy sú buď hard-dev, nízko-hodnotové fixed-price alebo bez lepšieho pomeru fit/competition než existujúci pending Website & SEO Management 2026. jobs-data.json sa nepodarilo bezpečne prepísať: dostupný GitHub reader vracia celý JSON truncovane, takže full-file replacement by riskoval stratu validných dát. Posledné validné dáta boli zachované a updatedAt nebol falšovaný."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote WordPress, e-shop, administratíva, technická podpora a vodič discovery preverené; bez nového kvalifikovaného winnera."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"rejected":1,"note":"DHL HR Coordinator v Ivanke pri Dunaji sa objavil v čerstvom indexe, ale canonical career detail už uvádza, že prijímanie žiadostí je uzavreté; neaktivované."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"added":0,"rejected":2,"note":"Verejný index vrátil EEA Junior Web Designer a CMS Operator, oba canonical detaily uvádzajú No longer accepting applications."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/okolie admin/tech/support/driver discovery preverené; bez nového kvalifikovaného hitu nad LIVE priority."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":2,"added":0,"rejected":2,"note":"BA office/admin, remote, driver a technické lanes preverené. PRO EXTERIÉR bol re-indexovaný ako čerstvý, no canonical listing je z 14.8.2026 a vyžaduje VŠ I., AJ B2 a 5 rokov praxe. AYURCOS 1 000 EUR je pod value gate."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bez nového overiteľného BA/remote winnera nad existujúce priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"added":0,"rejected":1,"note":"CMS Operator index zostáva starý/closed-signál; žiadny nový overený Slovakia-eligible winner."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"note":"Aktuálny index BA/okolie a adjacent region lanes preverený; bez nového kvalifikovaného hitu nad LIVE priority."},
     {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava administratíva, vodič, sklad a krátkodobé brigády preverené; bez nového overiteľného winnera."},
-    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Aktuálny index a administratívne/driver lanes preverené; zobrazené aktuálne výsledky neprešli BA/remote a fit gateom."},
+    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":2,"added":0,"rejected":2,"note":"Aktuálny index vodič/admin preverený; dostupné čerstvé výsledky boli mimo lokality alebo pod value/fit gate."},
     {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote WordPress, e-commerce, CMS a support discovery preverené; bez vhodného non-hard-dev winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":3,"added":0,"rejected":2,"note":"WordPress/WooCommerce Spezialist: Worldwide remote, 8–15 USD/h, 3 týždne starý, 20–50 proposals, 2 interviewing, 10 invites; listing je po nemecky bez explicitného language proof, preto language quarantine/low priority. WooCommerce redesign za 225 USD je expert UI/UX scope s 20–50 proposals a klient už má hire. Website & SEO Management 2026 zostáva najsilnejší pending lead."},
-    {"name":"Reddit/WordPress komunity","family":"community","status":"checked","hits":1,"added":0,"rejected":1,"note":"Verejne indexované WordPress hiring výsledky preverené; čerstvejší relevantný hiring hit bol US-only alebo hard-dev. Žiadny nový Slovakia-eligible community winner."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"WordPress Slovensko, WooCommerce Komunita SK+CZ a Práca/brigády Bratislava a okolie boli verejne vyhľadané; index neposkytol konkrétny verejne overiteľný hiring post s priamym linkom. 0 verified hits. Autentizovaný Nexus/local ingestion zostáva backlog, automat ho nespúšťa."}
+    {"name":"Upwork","family":"upwork","status":"ok","hits":7,"added":0,"rejected":6,"note":"Novšie výsledky zahŕňajú WordPress Website Developer $200 fixed, eCommerce VA $10 fixed, WooCommerce developer/backend a product upload. Žiadny neprekonal existujúci pending Website & SEO Management 2026 pomerom fit/value/competition; hard-dev a low-value kusy odmietnuté."},
+    {"name":"Reddit/WordPress komunity","family":"community","status":"checked","hits":1,"added":0,"rejected":1,"note":"Verejne indexované hiring výsledky neobsahovali nový vhodný Slovakia-eligible WordPress/admin winner."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"Verejná indexácia nevrátila konkrétny overiteľný nový hiring post s priamym linkom; autentizovaný Nexus/local ingestion zostáva mimo tohto behu."}
   ],
   "verificationQueue": [
     {"id":"upwork-wp-woo-spezialist-2088184469556084370","title":"WordPress-/WooCommerce-Spezialist – langfristige Unterstützung","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/WordPress-WooCommerce-Spezialist-langfristige-Unterst-tzung_~022088184469556084370/","locationEligibility":"remote-ok","languageEligibility":"unknown","reason":"Worldwide remote, ale listing je celý po nemecky a explicitná jazyková požiadavka chýba; pred odporúčaním overiť komunikačný jazyk."}
@@ -44,16 +44,13 @@
     "provisionalScore":91,
     "status":"pending-language-and-application-friction-review"
   },
-  "developmentBacklogAddedThisRun": [
-    {"name":"Listing-language ambiguity quarantine","value":"Ak je celý listing v inom jazyku než SK/CZ/EN a explicitná jazyková požiadavka chýba, označiť languageEligibility=unknown a nepovýšiť ho do TOP/LIVE bez overenia komunikačného jazyka."},
-    {"name":"Invite-to-interview efficiency signal","value":"Pri freelance leadoch vyhodnocovať pomer invites, unanswered invites, interviewing a hires; masové pozvánky s nízkou konverziou penalizovať ako signál slabšej reply probability a vyššej aplikačnej straty času."}
-  ],
+  "developmentBacklogAddedThisRun": [],
   "writeStatus": {
-    "jobsData":"preserved-no-qualified-active-delta",
-    "jobsDataNonProf":"locked-preserved",
+    "jobsData":"preserved-write-blocked-truncated-full-file-read",
+    "jobsDataNonProf":"preserved-no-qualified-delta",
     "sourceAudit":"updated-after-real-10-family-check",
     "jobSources":"registry-preserved-no-new-source-family",
-    "master":"updated-with-audit-and-2-new-backlog-items",
+    "master":"preserved",
     "lockedFilesTouched":false
   }
 }
