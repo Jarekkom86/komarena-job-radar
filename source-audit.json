@@ -1,38 +1,40 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T18:13:52+02:00",
+  "updatedAt": "2026-08-30T18:36:05+02:00",
   "runSummary": {
-    "familiesChecked": 10,
+    "familiesChecked": 11,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 2,
-    "rejectedAsWeakOrLowValue": 5,
-    "rejectedByFreshnessOrEvidence": 3,
-    "rejectedByLocation": 1,
+    "duplicateOrExisting": 3,
+    "rejectedAsWeakOrLowValue": 6,
+    "rejectedByFreshnessOrEvidence": 2,
+    "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 1,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "breach-write-blocked-by-safe-full-file-read",
+    "freshnessStatus": "breach-no-qualified-feed-delta",
     "liveFeedCount": 36,
     "liveFeedMix": {"profesia":17,"nonProfesia":19,"profesiaPct":47.2,"nonProfesiaPct":52.8},
-    "note": "Reálny audit 30.8.2026 18:13 CEST preveril 10 source families pre Bratislavu, okolie a vhodný remote režim. Nevznikol nový ani významne zmenený prioritný winner. Profesia má znovu indexovaný PRO EXTERIÉR Office & Administration Manager 1 550–1 850 EUR, ale canonical detail je pôvodne z 14.8.2026 a má tvrdé gatey VŠ I. stupňa, AJ B2 a 5 rokov praxe; preto nejde do priority. Upwork priniesol viac WooCommerce/WordPress výsledkov, ale aktuálne nové kusy sú buď hard-dev, nízko-hodnotové fixed-price alebo bez lepšieho pomeru fit/competition než existujúci pending Website & SEO Management 2026. jobs-data.json sa nepodarilo bezpečne prepísať: dostupný GitHub reader vracia celý JSON truncovane, takže full-file replacement by riskoval stratu validných dát. Posledné validné dáta boli zachované a updatedAt nebol falšovaný."
+    "note": "Reálny audit 30.8.2026 18:36 CEST preveril 11 source families pre Bratislavu, okolie a vhodný remote režim. Nevznikol nový kvalifikovaný LIVE winner. Upwork WooCommerce index priniesol čerstvé výsledky, ale väčšina bola hard-dev, nízko-hodnotová alebo už známa. E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero zostáva remote-ok a vecne silný, ale explicitne vyžaduje good written English a skúsenosti s WooCommerce Subscriptions, Meta Ads Manager a basic Xero; preto zostáva pending, nie LIVE. jobs-data.json sa bez kvalifikovanej delty nemenil; timestamp sa umelo neposúval. Facebook verejná indexácia nevrátila žiadny konkrétny overiteľný hiring post."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":2,"added":0,"rejected":2,"note":"BA office/admin, remote, driver a technické lanes preverené. PRO EXTERIÉR bol re-indexovaný ako čerstvý, no canonical listing je z 14.8.2026 a vyžaduje VŠ I., AJ B2 a 5 rokov praxe. AYURCOS 1 000 EUR je pod value gate."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bez nového overiteľného BA/remote winnera nad existujúce priority."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"added":0,"rejected":1,"note":"CMS Operator index zostáva starý/closed-signál; žiadny nový overený Slovakia-eligible winner."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"note":"Aktuálny index BA/okolie a adjacent region lanes preverený; bez nového kvalifikovaného hitu nad LIVE priority."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava administratíva, vodič, sklad a krátkodobé brigády preverené; bez nového overiteľného winnera."},
-    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":2,"added":0,"rejected":2,"note":"Aktuálny index vodič/admin preverený; dostupné čerstvé výsledky boli mimo lokality alebo pod value/fit gate."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote WordPress, e-commerce, CMS a support discovery preverené; bez vhodného non-hard-dev winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":7,"added":0,"rejected":6,"note":"Novšie výsledky zahŕňajú WordPress Website Developer $200 fixed, eCommerce VA $10 fixed, WooCommerce developer/backend a product upload. Žiadny neprekonal existujúci pending Website & SEO Management 2026 pomerom fit/value/competition; hard-dev a low-value kusy odmietnuté."},
-    {"name":"Reddit/WordPress komunity","family":"community","status":"checked","hits":1,"added":0,"rejected":1,"note":"Verejne indexované hiring výsledky neobsahovali nový vhodný Slovakia-eligible WordPress/admin winner."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"Verejná indexácia nevrátila konkrétny overiteľný nový hiring post s priamym linkom; autentizovaný Nexus/local ingestion zostáva mimo tohto behu."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/okolie WordPress, e-shop, admin, support, vodič a sklad lanes preverené; bez nového kvalifikovaného winnera."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejne indexované firemné careers a SmartRecruiters BA/support/e-commerce lanes preverené; bez nového overiteľného winnera."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava e-commerce/CMS/support discovery preverené; bez nového overiteľného kvalifikovaného výsledku."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA technická podpora, administratíva, vodič a sklad lanes preverené; bez nového kvalifikovaného hitu."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava administratíva, kuriér, sklad a krátkodobé brigády preverené; bez nového overiteľného winnera."},
+    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":2,"added":0,"rejected":2,"note":"Aktuálny index preverený; zobrazené relevantne príbuzné výsledky neprešli lokalitou/fit/value gateom a neboli zaradené."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"WordPress/e-commerce/CMS/support discovery preverené; bez vhodného non-hard-dev BA/remote winnera."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Remote WordPress/e-commerce discovery preverené; bez nového Slovakia-eligible winnera."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":9,"added":0,"rejected":6,"note":"WooCommerce index priniesol čerstvé hard-dev a low-value kusy plus už známe VA ledy. WooCommerce Product Listing & Upload Specialist je tematicky vhodný, ale bez dostatočne overeného detailu pay/client/activity na povýšenie. E-commerce VA s WooCommerce Subscriptions/Xero je remote-ok, no good written English + Subscriptions/Meta Ads/Xero sú významné skill/language riziká; zostáva pending. $7 fixed WordPress/Shopify product posting je nízka hodnota a už má hire."},
+    {"name":"Reddit/WordPress komunity","family":"community","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejne indexované WordPress/WooCommerce hiring komunity preverené; bez nového konkrétneho Slovakia-eligible winnera."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"0 verified hits. Verejná indexácia nevrátila konkrétny nový hiring post s priamym linkom; autentizovaný Nexus/local ingestion zostáva backlog potreba a v tomto behu sa nespúšťal."}
   ],
   "verificationQueue": [
-    {"id":"upwork-wp-woo-spezialist-2088184469556084370","title":"WordPress-/WooCommerce-Spezialist – langfristige Unterstützung","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/WordPress-WooCommerce-Spezialist-langfristige-Unterst-tzung_~022088184469556084370/","locationEligibility":"remote-ok","languageEligibility":"unknown","reason":"Worldwide remote, ale listing je celý po nemecky a explicitná jazyková požiadavka chýba; pred odporúčaním overiť komunikačný jazyk."}
+    {"id":"upwork-wp-woo-spezialist-2088184469556084370","title":"WordPress-/WooCommerce-Spezialist – langfristige Unterstützung","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/WordPress-WooCommerce-Spezialist-langfristige-Unterst-tzung_~022088184469556084370/","locationEligibility":"remote-ok","languageEligibility":"unknown","reason":"Worldwide remote, ale listing je celý po nemecky a explicitná jazyková požiadavka chýba; pred odporúčaním overiť komunikačný jazyk."},
+    {"id":"upwork-ecommerce-va-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/commerce-Virtual-Assistant-WooCommerce-Subscriptions-Customer-Service-Xero_~022093200734923132353/","locationEligibility":"remote-ok","languageEligibility":"risk-b2-like-written","reason":"Worldwide Remote Job, 10–15 USD/h, <30 h/týždeň, 1–3 mesiace, contract-to-hire; explicitne vyžaduje good written English, strong WooCommerce + WooCommerce Subscriptions, Meta Ads Manager a basic Xero. Vecne silný fit, ale jazykový a špecializovaný skill gap bráni LIVE odporúčaniu bez ďalšieho proof."}
   ],
   "pendingCandidate": {
     "id":"upwork-website-seo-management-2093603919086755488",
@@ -44,13 +46,16 @@
     "provisionalScore":91,
     "status":"pending-language-and-application-friction-review"
   },
-  "developmentBacklogAddedThisRun": [],
+  "developmentBacklogAddedThisRun": [
+    {"name":"Pending-candidate aging SLA","reason":"Pending ledy môžu zostať v audite príliš dlho bez rozhodnutia. Zaviesť časový limit podľa freshness/competition a po jeho prekročení automaticky vyžiadať re-verification alebo presunúť lead do expired quarantine."},
+    {"name":"Skill-gap proof checklist per lead","reason":"Pri leadoch ako WooCommerce Subscriptions/Xero/Meta Ads rozlíšiť skutočný blocker od rýchlo doplniteľného gapu: ku každému mandatory skillu uložiť proof/none/trainable a odhad času na bezpečné doplnenie pred reakciou."}
+  ],
   "writeStatus": {
-    "jobsData":"preserved-write-blocked-truncated-full-file-read",
-    "jobsDataNonProf":"preserved-no-qualified-delta",
-    "sourceAudit":"updated-after-real-10-family-check",
-    "jobSources":"registry-preserved-no-new-source-family",
-    "master":"preserved",
+    "jobsData":"preserved-no-qualified-delta",
+    "jobsDataNonProf":"preserved-locked",
+    "sourceAudit":"updated-after-real-11-family-check",
+    "jobSources":"registry-preserved-no-new-source-family-required",
+    "master":"pending-safe-append-of-2-new-backlog-items",
     "lockedFilesTouched":false
   }
 }
