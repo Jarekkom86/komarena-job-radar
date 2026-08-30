@@ -1,43 +1,41 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T03:31:58+02:00",
+  "updatedAt": "2026-08-30T04:13:51+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "newActiveJobs": 0,
     "significantlyChangedPriorityJobs": 0,
-    "rejectedByLanguageOrHardSkill": 5,
-    "rejectedAsWeakOrLowValue": 6,
-    "duplicateOrExisting": 4,
-    "rejectedByFreshnessOrEvidence": 4,
+    "rejectedByLanguageOrHardSkill": 4,
+    "rejectedAsWeakOrLowValue": 7,
+    "duplicateOrExisting": 5,
+    "rejectedByFreshnessOrEvidence": 3,
     "liveFeedCount": 36,
     "effectiveEligibleCount": 36,
     "jobsDataContentUpdatedAt": "2026-08-30T01:15:21+02:00",
     "freshnessStatus": "stale-over-60m",
-    "note": "Audit 30.8.2026 03:31 preveril 12 zdrojových rodín. Bez novej položky, ktorá by prešla lokalitou, jazykom, hard-skill a value gateom a prekonala aktuálne priority. Čerstvé Profesia výsledky: AYURCOS Eurovea je slabší retail/predaj; Tatra banka trainee je student-only a obsahuje Java/SQL/Python; Lugera IT Administrátor má server/network/SQL scope a neúplný verejný jazykový dôkaz. WordPress Jobs uvádza 10 otvorených pozícií, prevažne developer/security/performance/server alebo geograficky viazané. Upwork výsledky sú prevažne dev-heavy alebo neprekonávajú LIVE priority. Reddit hiring posty nemajú dostatočne jasný pay/scope/eligibility dôkaz. Facebook: 0 verified hits. jobs-data.json sa zámerne nemenil."
+    "note": "Audit 30.8.2026 04:13 CEST reálne preveril Profesia/BA administratívu a technické roly, Worki, LinkedIn, Upwork, WordPress Jobs, StartupJobs, Pretlak, Brigada.sk a ďalšie verejne indexované zdroje. HEATING PRO zostáva aktívny na Worki (1 600–2 500 EUR/mes.) a existujúci RM Biznis servis zostáva aktívny (10–15 EUR/h, prevažne online). Nový/obnovený PRO EXTERIER Vedúci administratívy (1 550–1 850 EUR/mes.) je relevantný, ale neprekonáva súčasné prioritné role a nevytvára nový LIVE winner. Upwork priniesol nové worldwide VA výsledky, ale buď majú silnú angličtinu/expert gate, nízku sadzbu alebo slabší value signal. WordPress Jobs zostáva prevažne developer/server-heavy. Bez novej alebo významne zmenenej prioritnej ponuky; jobs-data.json sa obsahovo nemenil a timestamp nebol posunutý iba kvôli vzhľadu čerstvosti."
   },
   "sources": [
-    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":4,"note":"AYURCOS je slabší retail/predaj; Tatra banka trainee je student-only + Java/SQL/Python; Lugera IT Administrátor má server/network/SQL scope a neúplný jazykový dôkaz. Bez nového LIVE winnera."},
-    {"name":"Priame firemné kariérne stránky","family":"company-careers","status":"checked","hits":0,"note":"Bez nového direct-source winnera."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":3,"note":"Bez nového BA/remote kandidáta, ktorý by prešiel gateom a prebil LIVE priority."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"note":"HEATING PRO zostáva najsilnejší relevantný Worki kandidát."},
+    {"name":"Profesia / BA jobboards","family":"profesia","status":"checked","hits":8,"note":"Čerstvé BA výsledky zahŕňajú PRO EXTERIER Vedúci administratívy 1 550–1 850 EUR, STILL servisného technika, ATRIOS recepcia/social, HDI asistenta a ďalšie. PRO EXTERIER je relevantný, ale neprekonáva existujúce TOP priority; ostatné sú slabšie alebo majú iný gate."},
+    {"name":"Priame firemné kariérne stránky","family":"company-careers","status":"checked","hits":1,"note":"Bez nového direct-source winnera nad existujúce Penta/Hilti/Websupport/O2 priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":4,"note":"Aktuálne BA support/operations výsledky bez nového kandidáta, ktorý by prešiel jazykovým a hard-skill gateom a prebil LIVE priority."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":6,"note":"HEATING PRO zostáva aktívny 1 600–2 500 EUR/mes.; RM Biznis servis zostáva aktívny 10–15 EUR/h, prevažne online. Ďalšie dnešné TOP výsledky sú stavebné, finančno-obchodné alebo slabšie."},
     {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"note":"Bez novej BA brigády s dostatočným detailom a hodnotou."},
-    {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":1,"note":"Tech výsledky sú hard-skill heavy; bez vhodného low-language-gate winnera."},
+    {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":1,"note":"Bez nového low-language-gate winnera nad existujúcu OVB AI/automation položku."},
     {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"note":"Bez nového explicitne Slovakia-eligible non-hard-dev winnera."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":10,"note":"10 open positions; nové výsledky prevažne developer/security/performance/full-stack/server alebo geograficky viazané."},
-    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":6,"note":"Čerstvé verejné WordPress/web výsledky sú prevažne development-heavy alebo hodnotou neprekonávajú LIVE priority."},
-    {"name":"Služby zamestnanosti / Kariera","family":"government-other","status":"checked","hits":1,"note":"Bez nového kvalifikovaného winnera."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"checked","hits":2,"note":"Aktuálne hiring posty nemajú dostatočne jasný pay/scope/eligibility dôkaz pre LIVE aktiváciu."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":10,"note":"10 otvorených pozícií; nový Senior WordPress Developer je výrazne dev/server-heavy, ostatné neprekonávajú LIVE web/admin priority."},
+    {"name":"Upwork / freelance","family":"upwork","status":"checked","hits":7,"note":"Nové worldwide VA/operations výsledky preverované. Operations & Campaign Support je 5–7 USD/h a vyžaduje strong written/spoken English + US-hours; recipe-site VA vyžaduje špecifickú recipe workflow prax; ostatné sú low-value alebo regionálne obmedzené."},
+    {"name":"Služby zamestnanosti / Kariera / mirrors","family":"government-other","status":"checked","hits":2,"note":"Bez nového kvalifikovaného winnera."},
+    {"name":"Komunitné / verejne indexované hiring zdroje","family":"community","status":"checked","hits":1,"note":"Bez dostatočne overeného pay/scope/eligibility kandidáta pre LIVE aktiváciu."},
     {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"note":"0 verified hits; coverage limited."},
     {"name":"Feed integrity / dedupe / location gate","family":"feed-integrity","status":"ok","hits":0,"note":"LIVE feed zostáva 36 položiek; canonical dedupe, BA/remote eligibility a fail-closed pravidlá zachované."}
   ],
   "writeStatus": {
     "jobsData": "no-change",
-    "jobsDataReason": "Bez novej overenej obsahovej zmeny; updatedAt sa neposúva.",
+    "jobsDataReason": "Bez novej alebo významne zmenenej prioritnej položky; updatedAt sa neposúva iba na kozmetické omladenie feedu.",
     "jobsDataNonProf": "no-change",
     "jobSources": "checked-no-structural-change",
-    "master": "pending-safe-full-read",
-    "masterReason": "Nové backlog návrhy: evidence-age weighted ranking; weekend/after-hours application readiness. MASTER neprepisovať bez bezpečného kompletného čítania aktuálneho obsahu.",
     "freshnessBreach": true,
-    "freshnessBreachReason": "jobs-data.json posledná reálna zmena 2026-08-30T01:15:21+02:00; timestamp nebol posunutý bez obsahovej zmeny."
+    "freshnessBreachReason": "jobs-data.json posledná obsahová aktualizácia 2026-08-30T01:15:21+02:00; po reálnej kontrole nevznikla kvalifikovaná obsahová zmena, preto timestamp zostal zachovaný."
   }
 }
