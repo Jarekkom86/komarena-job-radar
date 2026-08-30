@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 30. 8. 2026 15:22 CEST
+Aktualizované: 30. 8. 2026 16:25 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -66,34 +66,34 @@ Aktualizované: 30. 8. 2026 15:22 CEST
 32. **Confilogi — Operátor zákazníckej linky 100 % HO — Match 82** — remote SK, 1 520–2 200 €/mes.; mínus predaj, živnosť a víkendy.
 33. **Upwork — WordPress Website Updates & Maintenance — Match 80**.
 
-## SOURCE AUDIT — 30. 8. 2026 15:22 CEST — LATEST
-Reálne prehľadané skupiny: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; StartupJobs; WordPress Jobs; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **12 nezávislých source families**, z toho 11 mimo Profesia.
+## SOURCE AUDIT — 30. 8. 2026 16:25 CEST — LATEST
+Reálne prehľadané skupiny: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **10 nezávislých source families**, z toho 9 mimo Profesia.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 0.** Žiadny nový kandidát bezpečne neprešiel locality/language/hard-skill/value gateom.
-- **Nový silný komunitný lead v quarantine:** Reddit r/wordpressjobs — `I'm looking for a website creator`. Dopyt je na online language-learning business: online shop pre digitálne produkty, WordPress/WooCommerce ako preferovaná možnosť, newsletter integration, Etsy sync, basic SEO, Home/Shop/About/Blog/Contact/newsletter a training. Vecný fit je veľmi vysoký, predbežne **94/100**, ale autor postu neuvádza krajinu ani explicitnú remote/country eligibility. Preto `locationEligibility: unknown` a zákazka sa **neaktivuje**, kým nebude overené, že ju možno vykonať zo Slovenska bez onsite povinnosti.
-- **Profesia / Worki / Brigada.sk / Kariera.sk:** BA/remote výsledky preverené; bez nového kvalifikovaného winnera. HEATING PRO zostáva existing LIVE priorita.
-- **LinkedIn + priame careers:** bez nového overeného kandidáta nad LIVE priority; staré/no-longer-accepting a language-heavy výsledky sa nezaraďujú.
-- **Pretlak / StartupJobs:** bez nového Slovakia-compatible non-hard-dev winnera.
-- **WordPress Jobs:** aktuálny verejný feed má 10 otvorených pozícií; nové roly z 27.–28.8. sú prevažne development/security/performance alebo region-bound, preto neprechádzajú hard-skill/location profilom.
-- **Upwork:** `Website & SEO Management 2026` zostáva pending remote-ok lead (15–30 USD/h, 6+ mesiacov), ale live aktivácia zostáva zadržaná pre praktickú spoken/written English náročnosť a aplikačný friction. Nové všeobecné výsledky ho neprekonali pomerom fit/odmena/konkurencia.
-- **Facebook:** **0 verified hits**, coverage `limited`; WordPress Slovensko, WooCommerce SK+CZ aj BA jobs boli verejne vyhľadané, ale bez konkrétneho overiteľného hiring postu a priameho linku.
+- **Nové aktívne položky: 0.** Žiadny nový kandidát bezpečne neprešiel locality/language/hard-skill/value gateom; `jobs-data.json` sa preto obsahovo nemení a existujúci feed zostáva fail-closed zachovaný.
+- **LinkedIn:** verejný index vrátil EEA CMS Operator a Junior Web Designer, ale obe stránky uvádzajú `No longer accepting applications`; vyradené pre neaktivitu/freshness.
+- **Kariera.sk:** aktuálny index priniesol výsledky v Žiline, teda mimo tvrdého BA/remote gate; neaktivované.
+- **Profesia / Worki / Brigada.sk / Pretlak:** reálne prehľadané BA/remote discovery lanes; bez nového kvalifikovaného winnera nad aktuálne LIVE priority.
+- **Priame careers:** verejná discovery priniesla všeobecné DHL/Philips a zahraničné výsledky, ale nie nový BA alebo Slovakia-remote kandidát spĺňajúci profil.
+- **Upwork:** čerstvé všeobecné VA/data/web výsledky existujú, ale `Website & SEO Management 2026` zostáva najsilnejší pending remote-ok lead (15–30 USD/h); nové výsledky ho neprekonali pomerom fit/odmena/konkurencia alebo boli dev-heavy.
+- **Reddit/WordPress komunity:** existujúci WooCommerce website-creator lead zostáva v quarantine s `locationEligibility: unknown`, pretože verejný post stále nemá explicitný country/remote dôkaz pre výkon zo Slovenska.
+- **Facebook:** **0 verified hits**, coverage `limited`; žiadny konkrétny verejne overiteľný hiring post s priamym linkom.
 
 ### Run summary
-- Reálne skontrolované source families: **12**.
+- Reálne skontrolované source families: **10**.
 - Nové aktívne položky: **0**.
-- Významné pending/quarantine kandidáty: **1 nový + 1 existujúci pending**.
-- Vyradené jazykovým/hard-skill gateom: **3**.
-- Vyradené ako slabé/nízka hodnota: **3**.
-- Duplicitné/existing: **3**.
-- Vyradené pre freshness/evidence: **2**.
+- Významné pending/quarantine kandidáty: **1 pending + 1 quarantine**.
+- Vyradené ako slabé/nízka hodnota: **5**.
+- Vyradené pre freshness/evidence: **3**.
+- Vyradené lokalitou: **2**.
+- Duplicitné/existing: **2**.
 - Quarantine pre nejasnú lokalitu/remote eligibility: **1**.
 
 ### LIVE mix
 - `jobs-data.json`: **36 aktívnych položiek**.
 - Potvrdený mix: približne **Profesia 17 / 36 = 47,2 %; mimo Profesia 19 / 36 = 52,8 %**.
 - `jobs-data.json.updatedAt` = **30. 8. 2026 01:15:21 CEST**; bez reálnej kvalifikovanej obsahovej delty sa timestamp umelo neposúva.
-- `source-audit.json.updatedAt` = **30. 8. 2026 15:22:27 CEST**.
+- `source-audit.json.updatedAt` = **30. 8. 2026 16:25:37 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -223,3 +223,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 115. English modality decomposer — rozložiť jazykový gate na reading/writing/phone/video/sales; povinnú live spoken English penalizovať výraznejšie než čítanie dokumentácie alebo jednoduché písanie, aby CEFR údaj nebol príliš hrubý filter.
 116. Community location-proof handshake — pri Reddit/FB/community dopytoch automaticky hľadať explicitný country/remote dôkaz v poste, profile a komentároch a až potom povoliť `remote-ok`; pri absencii dôkazu ponechať `unknown` a nevkladať do LIVE.
 117. Scope-to-portfolio evidence matcher — rozložiť dopyt na konkrétne deliverables (napr. WooCommerce, newsletter, Etsy, SEO, training) a ku každému priradiť existujúci dôkaz praxe alebo označiť gap; zrýchli rozhodnutie, či reagovať a ktoré referencie použiť.
+118. Search-result evidence aging clock — pri každom discovery hite ukladať vek posledného detailného dôkazu oddelene od veku indexu/crawlu; zabráni povýšeniu starej alebo už uzavretej ponuky len preto, že ju vyhľadávač dnes znovu preindexoval.
+119. Source-family zero-yield rotation — ak source family opakovane vracia 0 kvalifikovaných kandidátov, meniť query archetyp, synonymá rolí a lokalitné výrazy pri zachovaní exploration floor; zvýši coverage bez falošného označovania zdroja za nefunkčný.
