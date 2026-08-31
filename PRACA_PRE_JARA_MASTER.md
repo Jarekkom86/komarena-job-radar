@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 31. 8. 2026 11:30 CEST
+Aktualizované: 31. 8. 2026 15:41 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -55,26 +55,26 @@ Aktualizované: 31. 8. 2026 11:30 CEST
 21. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 22. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 31. 8. 2026 11:30 CEST — LATEST
-Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; StartupJobs/tech-creative; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
+## SOURCE AUDIT — 31. 8. 2026 15:41 CEST — LATEST
+Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **10 nezávislých source families**, z toho **9 mimo Profesia**.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky: 0.** Žiadny čerstvý kandidát bezpečne neprekonal existujúce LIVE priority po lokalitnom, jazykovom, hard-skill, freshness a value gate.
-- **Upwork:** našiel sa `WooCommerce Product Upload Specialist` — Worldwide remote, recurring monthly, 8–15 USD/h, 20–50 proposals, 1 interviewing, klient naposledy otvoril ponuku pred 6 dňami a požaduje dobrú písanú angličtinu. Je relevantný, ale je dominovaný existujúcim LIVE `WooCommerce Product Listing & Upload Specialist` s 10–30 USD/h a lepším value/freshness profilom, preto sa nepridáva.
-- **LinkedIn:** verejný index vrátil AgentFire Junior Web Designer, ale detail už uvádza `No longer accepting applications`; freshness/evidence gate.
-- **Priame firemné careers:** DHL `HR Coordinator` v Ivanke pri Dunaji je už `no longer open for applications`; nepridané.
-- **Profesia/Worki/Brigada/Kariera/Pretlak/StartupJobs:** reálne vyhľadané; bez nového kvalifikovaného winnera.
-- **Reddit/WordPress komunity:** bez nového konkrétneho verejne overiteľného hiring dopytu spĺňajúceho evidence + location gate.
+- **Upwork:** product-upload, product-listing, WooCommerce a WordPress e-commerce discovery priniesli nové verejne indexované hity, ale boli prevažne mikro-budget, hard-dev, staršie alebo location-restricted. Existujúci LIVE `WooCommerce Product Listing & Upload Specialist` zostáva hodnotnejší a vhodnejší.
+- **Profesia / Worki / Brigada / Kariera / Pretlak:** reálne vyhľadané; bez nového kvalifikovaného winnera.
+- **LinkedIn:** verejný BA/remote index bol preverený; bez nového verejne overiteľného winnera spĺňajúceho jazykový a lokalitný gate.
+- **Priame firemné careers:** bez nového active winnera nad existujúce priority.
+- **Reddit/WordPress komunity:** nájdený obsah bol prevažne For Hire/self-promo alebo všeobecné diskusie bez evidence-grade hiring dopytu a location proof.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 
 ### Run summary
-- Reálne skontrolované source families: **11**.
+- Reálne skontrolované source families: **10**.
 - Nové aktívne položky: **0**.
-- Významné pending kandidáty: **0 nové**; 2 staršie verification-queue kandidáty zostávajú.
+- Významné pending kandidáty: **0 nové**; starší `Website & SEO Management 2026` zostáva vo verification queue.
 - LIVE feed: **39 aktívnych položiek**.
 - Mix: **Profesia 18 / 39 = 46,2 %; mimo Profesia 21 / 39 = 53,8 %**.
 - `jobs-data.json.updatedAt` = **31. 8. 2026 07:32:56 CEST** — zámerne neposunuté bez kvalifikovaného obsahového delta.
-- `source-audit.json.updatedAt` = **31. 8. 2026 11:30:05 CEST**.
+- `source-audit.json.updatedAt` = **31. 8. 2026 15:41:21 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -224,3 +224,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 135. **Dominated-hit early-abort gate** — keď už pay/location/language poskytne dostatočný hard-negative dôkaz, ukončiť drahé detailné parsovanie kandidáta v tom istom behu. Šetrí discovery kapacitu pri opakovaných 5,50–7 €/h retail/warehouse výsledkoch bez znižovania coverage.
 136. **Notification significance contract** — definovať objektívne prahy, kedy hodinový beh používateľa skutočne upozorní: nový TOP lead, materiálna zmena mzdy/statusu/deadline alebo technická chyba. Zníži notifikačný šum bez straty dôležitých udalostí.
 137. **Reapply eligibility cooldown policy** — prepojiť CRM stav, canonical job identity a čas od poslednej reakcie; zabráni duplicitnému prihlasovaniu na ten istý repost a zároveň povolí nový action window pri legitímne obnovenej ponuke po dostatočnom čase.
+138. **Search-result freshness confidence decay** — oddeliť canonical `publishedAt`, crawler recency a reálnu activity evidence; ak čerstvosť stojí iba na indexe vyhľadávača, confidence postupne klesá a kandidát neprebije novšie canonical LIVE položky.
+139. **Remote market-rate sanity band** — pre remote marketplace scope udržiavať dátový minimálny value band podľa odhadovaného úsilia; mikro-budget e-commerce/admin úlohy sa odfiltrujú ešte pred drahým detailným verification, s možnosťou výnimky pri strategickom portfóliovom prínose.
