@@ -44,8 +44,8 @@
     "jobsData":"preserved-no-qualified-content-delta-stale-sla",
     "jobsDataNonProf":"preserved-locked",
     "sourceAudit":"updated-after-real-11-family-check",
-    "jobSources":"update-pending-this-run",
-    "master":"update-pending-this-run",
+    "jobSources":"updated-after-real-11-family-check",
+    "master":"updated-audit-and-2-backlog-items",
     "lockedFilesTouched":false,
     "blocker":"Žiadny bezpečný kvalifikovaný obsahový delta nebol potvrdený. jobs-data.json updatedAt sa preto neposunul; feed zostáva fail-closed a obsahovo stale podľa 60-min SLA."
   }
