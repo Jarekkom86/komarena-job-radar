@@ -1,52 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T02:35:27+02:00",
+  "updatedAt": "2026-08-31T03:11:48+02:00",
   "runSummary": {
-    "familiesChecked": 11,
+    "familiesChecked": 7,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 1,
-    "rejectedAsWeakOrLowValue": 7,
-    "rejectedByFreshnessOrEvidence": 2,
-    "rejectedByLanguageOrSkill": 4,
-    "rejectedByLocation": 1,
+    "duplicateOrExisting": 2,
+    "rejectedAsWeakOrLowValue": 8,
+    "rejectedByFreshnessOrEvidence": 1,
+    "rejectedByLanguageOrSkill": 2,
+    "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
-    "quarantinedUnknownLanguage": 1,
+    "quarantinedUnknownLanguage": 0,
     "jobsDataContentUpdatedAt": "2026-08-31T01:32:30+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "fresh",
+    "freshnessStatus": "stale",
     "liveFeedCount": 38,
     "liveSourceMix": {"profesia":18,"nonProfesia":20,"profesiaPct":47.4,"nonProfesiaPct":52.6},
-    "note": "Audit 31.8.2026 02:35 CEST reálne prehľadal 11 source families pre Bratislavu, okolie a remote vykonateľný zo Slovenska. Nevznikol nový LIVE winner. Najsilnejší otvorený non-Profesia kandidát zostáva Upwork Website & SEO Management 2026: Worldwide remote, WooCommerce operations, 15–30 USD/h, 6+ mesiacov; explicitná jazyková úroveň nie je uvedená, ale onboarding call, týždenný reporting a povinný Loom audit zvyšujú application/language friction, preto zostáva vo verification queue. LinkedIn Wolt Support Associate Bratislava bol vyradený pre explicitnú angličtinu min. B2. Reddit WordPress hiring hit bol US-only a hard-dev. Ďalšie Upwork výsledky boli prevažne nízko platené, staršie, silno anglicky orientované alebo developer-heavy. Facebook verejná indexácia neposkytla konkrétny verejne overiteľný hiring post, preto 0 verified hits / limited. jobs-data.json zostáva fail-closed bez umelého updatedAt posunu."
+    "note": "Audit 31.8.2026 03:11 CEST reálne preveril hlavné zdrojové rodiny pre Bratislavu, okolie a vhodný remote. Nevznikol nový jednoznačne kvalifikovaný LIVE winner. AK Facility Services kuriér sa znovu objavil medzi najnovšími výsledkami Profesia, ale canonical detail stále uvádza dátum zverejnenia 15.8.2026; bez dôkazu reálneho repostu alebo zmeny podmienok sa feed nemení. Ponuka zostáva relevantná: Bratislava/Senec a okolie, 1 300–2 000 EUR, Po–Pi, víkendy a sviatky voľné, firemná dodávka, vodičák B, bez CV; preto je vo verification queue. ENGIE servisný technik NN/VN za 2 000 EUR bol vyradený pre povinný §23 bez obmedzenia napätia a 2 roky praxe. Wolt Support Associate zostáva vyradený pre English min. B2. Upwork fresh výsledky boli prevažne nízko platené alebo developer-heavy; nový WooCommerce build za 83,87 USD fixed neprešiel value/scope gate. jobs-data.json zostáva fail-closed bez umelého updatedAt posunu a prekročil 60-minútové obsahové freshness SLA."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA WordPress/e-shop/support/technické/vodič discovery bolo vyhľadané; v tomto behu nebol potvrdený nový kvalifikovaný detail nad existujúce LIVE priority."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":1,"added":0,"rejected":1,"note":"Wolt Support Associate Part Time Bratislava je verejne dostupný, ale vyžaduje professional working proficiency English minimum B2; language gate => reject."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA technická/admin/vodič/support discovery vyhľadaná; bez nového kvalifikovaného winnera."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA administratíva/vodič/sklad discovery vyhľadaná; bez nového relevantného hitu nad aktuálny feed."},
-    {"name":"Kariera.sk","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA administratíva/technická podpora/e-commerce discovery vyhľadaná; bez nového kvalifikovaného winnera."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA/remote e-commerce/WordPress/support discovery vyhľadaná; bez vhodného non-hard-dev winnera."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh WooCommerce/support remote discovery vyhľadaná; nebol potvrdený nový support/admin hit vhodný pre cieľový profil."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":8,"added":0,"rejected":7,"note":"Worldwide WooCommerce/WordPress/VA discovery reálne preverená. Website & SEO Management 2026 zostáva strongest pending (15–30 USD/h, 6+ mesiacov). Ostatné hity: 30 USD fixed WooCommerce build, 5 USD WooCommerce dev, 50 USD multi-platform VA, 5–7 USD/h US-hours VA, 100 USD full-week WordPress/Shopify VA/dev, Spanish-only VA a ďalšie slabšie/nesúladné ponuky."},
-    {"name":"Reddit / WordPress komunity","family":"community","status":"ok","hits":3,"added":0,"rejected":3,"note":"Verejne indexované WordPress výsledky preverené. Hiring WordPress Developer 70–80 USD/h je explicitne US-only + hard-dev; ďalšie čerstvé výsledky boli FOR HIRE, nie hiring dopyty."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"0 verified hiring hitov s konkrétnym verejným postom a priamym linkom. Verejná indexácia ostáva partial/limited; autentizovaný Nexus/local ingestion sa automaticky nespúšťa."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Alza/direct-company BA support/AI/operations discovery bolo vyhľadané; bez nového kvalifikovaného direct-career winnera. Existujúci AlzaBox Bratislava sa zachováva fail-closed."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":5,"added":0,"rejected":3,"note":"Fresh BA results preverené. AK Facility kuriér sa zobrazuje medzi najnovšími, ale canonical detail má stále posting date 15.8.2026; bez potvrdenej obsahovej zmeny/repostu sa nezapisuje ako nový. CORNER skladník-vodič 1 450–1 650 EUR je slabší a fyzickejší než LIVE priority. ENGIE servisný technik 2 000 EUR vyžaduje §23 bez obmedzenia napätia + 2 roky praxe, reject."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"added":0,"rejected":1,"note":"Wolt Support Associate Bratislava bol znovu overený; professional working proficiency English minimum B2 => language gate reject."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA technická/admin/vodič discovery vyhľadaná; bez nového winnera nad HEATING PRO a existujúce LIVE priority."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA/remote WordPress/e-commerce/support discovery vyhľadaná; bez nového kvalifikovaného non-hard-dev hitu."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh WooCommerce/support remote discovery vyhľadaná; bez nového vhodného support/admin leadu."},
+    {"name":"Upwork","family":"upwork","status":"checked","hits":8,"added":0,"rejected":8,"note":"Fresh Worldwide WordPress/WooCommerce/VA výsledky preverené. WooCommerce build 83.87 USD fixed má 5–10 proposals, ale scope je kompletný e-shop + performance a odmena je nízka; reject value/scope. Ostatné výsledky boli nízko platené, staršie, developer-heavy alebo s výrazným English/time friction."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Direct-company BA support/AI/operations discovery skontrolovaná; bez nového kvalifikovaného winnera. Existujúci AlzaBox sa zachováva fail-closed."}
   ],
   "verificationQueue": [
-    {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":91,"reason":"Worldwide remote, 15–30 USD/h, 6+ mesiacov, WooCommerce product listing/plugin maintenance/SEO/store upkeep. Explicitná English úroveň nie je uvedená; onboarding call, weekly reporting a 15-min Loom audit vyžadujú ďalší language/application-friction check."}
+    {"id":"profesia-ak-facility-5339733","title":"Kuriér/Kuriérka – Senec a okolie","source":"Profesia / AK Facility Services","url":"https://www.profesia.sk/praca/ak-facility-services/O5339733","locationEligibility":"ba-area","languageEligibility":"ok","provisionalScore":89,"reason":"Veľmi dobrý vodičský fit: 1 300–2 000 EUR, Po–Pi, víkendy a sviatky voľné, firemná dodávka, vodičák B, absolvent OK, bez CV. Search listing ho 31.8. znovu ukázal medzi najnovšími, ale canonical detail stále uvádza dátum zverejnenia 15.8.2026; pred LIVE pridaním treba potvrdiť skutočný repost alebo zmenu obsahu, aby sa nefalšovala čerstvosť."},
+    {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":91,"reason":"Worldwide remote, 15–30 USD/h, 6+ mesiacov, WooCommerce product listing/plugin maintenance/SEO/store upkeep. Explicitná English úroveň nie je uvedená; onboarding call, weekly reporting a 15-min Loom audit zvyšujú application/language friction."}
   ],
-  "backlogAdditionsThisRun": [
-    {"title":"Upwork spend-per-hire quality anomaly detector","value":"Pri freelance leadoch počítať pomer total spend / hires / active hires a označiť klientov s veľkým počtom náborov, ale nezvyčajne nízkym spendom; šetrí Connects a čas pri masovo lacných náborových účtoch."},
-    {"title":"Application artifact burden estimator","value":"Pred apply spočítať povinné neplatené artefakty ako Loom audit, test, sample, questionnaire a call; penalizovať roly, kde vstupný effort neúmerne prevyšuje očakávanú hodnotu alebo reply probability."}
-  ],
+  "backlogAdditionsThisRun": [],
   "writeStatus": {
-    "jobsData":"preserved-no-qualified-content-delta",
-    "jobsDataNonProf":"preserved-locked",
-    "sourceAudit":"updated-after-real-11-family-check",
-    "jobSources":"updated-after-real-11-family-check",
-    "master":"blocked-safe-full-rewrite-unavailable",
+    "jobsData":"preserved-no-qualified-content-delta-stale-sla",
+    "jobsDataNonProf":"preserved-no-qualified-content-delta",
+    "sourceAudit":"updated-after-real-7-family-check",
+    "jobSources":"preserved",
+    "master":"preserved",
     "lockedFilesTouched":false,
-    "blocker":"PRACA_PRE_JARA_MASTER.md je cez konektor vracaný truncovaný; update_file vyžaduje kompletný obsah, preto sa MASTER v tomto behu bezpečne neprepisuje. Dve nové backlog položky sú zachytené v source-audit.json na neskorší bezpečný merge."
+    "blocker":"Žiadny bezpečný kvalifikovaný obsahový delta nebol potvrdený. jobs-data.json updatedAt sa preto neposunul. Obsahový feed je starší než 60 minút a freshness SLA je v tomto behu označené stale."
   }
 }
