@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T12:15:20+02:00",
+  "updatedAt": "2026-08-31T12:29:19+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
     "significantPendingCandidates": 0,
     "significantlyChangedPriorityJobs": 0,
     "significantlyChangedExistingJobs": 0,
-    "duplicateOrExisting": 3,
-    "rejectedAsWeakOrLowValue": 6,
-    "rejectedByFreshnessOrEvidence": 3,
-    "rejectedByLanguageOrSkill": 3,
+    "duplicateOrExisting": 4,
+    "rejectedAsWeakOrLowValue": 5,
+    "rejectedByFreshnessOrEvidence": 4,
+    "rejectedByLanguageOrSkill": 2,
     "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
@@ -19,30 +19,35 @@
     "freshnessStatus": "content-stale-audit-fresh",
     "liveFeedCount": 39,
     "liveSourceMix": {"profesia":18,"nonProfesia":21,"profesiaPct":46.2,"nonProfesiaPct":53.8},
-    "note": "Audit 31.8.2026 12:15 CEST reálne prehľadal 11 source families. Bez nového alebo významne zmeneného prioritného winnera. Profesia Bratislava latest bol skontrolovaný; čerstvý Wolt Support Associate zostáva mimo priority pre povinnú AJ minimálne B2. Upwork pending Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support bol definitívne overený: Worldwide remote, 5–10 h/týždeň, 6+ mesiacov, 6–10 USD/h, 20–50 proposals, písomná angličtina, deadline 6.9.2026. Je obsahovo dobrý fit, ale sadzbou a konkurenciou neprekonáva existujúce LIVE WooCommerce priority, preto nebol promovovaný. Nové Upwork VA/cold-calling výsledky boli nízko platené alebo komunikačne náročné; staršie WordPress výsledky boli neaktuálne/low-value. LinkedIn výsledky vyžadujú fluent English/German alebo sú už closed; Brigada.sk nový pokladník 5,50 €/h je mimo cieľového smeru. jobs-data.json zostal fail-closed bez kvalifikovaného obsahového delta a updatedAt nebol posunutý."
+    "note": "Audit 31.8.2026 12:29 CEST reálne prehľadal 11 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, StartupJobs, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Bez nového alebo významne zmeneného prioritného winnera. Upwork stále verejne indexuje WooCommerce Product Listing & Upload Specialist (50–75 produktov), ktorý je už LIVE, a starší recurring WooCommerce Product Upload Specialist s horším value/freshness profilom; nové data-entry výsledky boli prevažne low-value. LinkedIn AgentFire Junior Web Designer a Ludicrum CMS Operator sú no longer accepting applications. Verejné Facebook vyhľadávanie neposkytlo konkrétny overiteľný hiring post, preto 0 verified hits a limited. jobs-data.json zostal fail-closed bez kvalifikovaného obsahového delta a updatedAt sa neposunul."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"Bratislava latest a relevantné support/admin/driver/e-shop discovery reálne preverené. Čerstvý Wolt Support Associate vyžaduje profesionálnu AJ minimálne B2, preto mimo priority."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Priame firemné lane bolo kontrolované cez aktuálne indexované výsledky; bez nového kvalifikovaného winnera."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":4,"added":0,"rejected":4,"changed":0,"note":"Aktuálne remote support výsledky boli prevažne fluent-English/German; Foxelli e-commerce support je už no longer accepting applications. Bez priority-grade prírastku."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA WordPress/e-shop/support/admin/driver discovery reálne vyhľadaná; bez nového kvalifikovaného detailu nad LIVE priority."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Priame firemné career discovery reálne vyhľadané cez verejný index; bez nového active winnera spĺňajúceho fit + location gate."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":2,"added":0,"rejected":2,"changed":0,"note":"Verejný index vrátil AgentFire Junior Web Designer a Ludicrum CMS Operator; oba detaily uvádzajú no longer accepting applications."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Bratislava technická podpora/admin/vodič/sklad discovery reálne vyhľadané; bez nového kvalifikovaného winnera."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"Nová zmena pokladník/pokladníčka Ružinov 31.8.2026 za 5,50 €/h je mimo cieľového admin/tech/e-commerce/driver smeru a nízko platená."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA e-shop/admin/technik/vodič discovery preverené; bez nového kvalifikovaného detailu."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Remote/BA WordPress/e-commerce/support discovery reálne vyhľadané; bez nového winnera."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA administratíva/kuriér/sklad/web discovery reálne vyhľadaná; bez nového konkrétneho kvalifikovaného hitu."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA e-shop/admin/technik/vodič discovery reálne preverené; bez nového kvalifikovaného detailu."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA/remote WordPress/e-commerce/content/support discovery reálne vyhľadaná; bez nového vhodného non-hard-dev winnera."},
     {"name":"StartupJobs / tech-creative","family":"startupjobs-tech","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Tech/creative remote discovery preverené; bez nového Slovakia-eligible non-hard-dev winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":0,"rejected":5,"changed":0,"note":"Tech-Savvy VA bol plne overený: Worldwide, 5–10 h/týždeň, 6+ mesiacov, 6–10 USD/h, 20–50 proposals, written English, deadline 6.9.2026. Dobrá zhoda, ale pod existujúcimi LIVE WooCommerce leadmi. Ďalšie nové VA/cold-calling výsledky boli low-pay alebo communication-heavy."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejne indexované hiring discovery preverené; bez konkrétneho evidence-grade dopytu pre LIVE."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":7,"added":0,"rejected":5,"changed":0,"note":"WooCommerce Product Listing & Upload Specialist je stále verejne aktívny/indexovaný, ale už je LIVE. Recurring WooCommerce Product Upload Specialist je relevantný, no horší než existujúca LIVE priorita. Ďalšie data-entry/product-upload výsledky boli prevažne low-value alebo mimo cieľového scope."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejne indexované WordPress/WooCommerce hiring discovery reálne preverené; bez nového konkrétneho evidence-grade dopytu pre LIVE."},
     {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"0 verified hits; verejný search neposkytol konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion nebol spustený."}
   ],
   "verificationQueue": [
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","reason":"WooCommerce operations, 15–30 USD/h, 6+ mesiacov; širší SEO/tool scope a call/reporting zvyšujú friction.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Recheck communication burden and tool-fit before LIVE promotion."}
   ],
-  "developmentBacklogAddedThisRun": [],
+  "developmentBacklogAddedThisRun": [
+    {"name":"Source-family false-negative probe","reason":"Ak source family vráti 0 hitov, spustiť jeden alternatívny synonym/domain query probe a merať, či nulový výsledok nebol spôsobený príliš úzkou formuláciou dopytu; zvyšuje coverage bez predstierania prístupu."},
+    {"name":"Apply-deadline timezone normalizer","reason":"Normalizovať explicitné deadline a časové okná z marketplace/jobboard zdrojov do Europe/Bratislava vrátane neistoty pri chýbajúcom timezone, aby sa predišlo zmeškaným reakciám."}
+  ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-delta",
     "jobsDataNonProf":"locked-preserved",
     "sourceAudit":"updated-after-real-11-family-check",
+    "jobSources":"pending-refresh-this-run",
+    "master":"blocked-safe-preserve-truncated-read",
     "lockedFilesTouched":false,
-    "blocker":null
+    "blocker":"PRACA_PRE_JARA_MASTER.md cannot be safely full-replaced because connector read is truncated; backlog additions are preserved here until a lossless append/full-read path is available."
   }
 }
