@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 31. 8. 2026 09:35 CEST
+Aktualizované: 31. 8. 2026 10:37 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -55,25 +55,28 @@ Aktualizované: 31. 8. 2026 09:35 CEST
 21. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 22. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 31. 8. 2026 09:35 CEST — LATEST
-Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **10 nezávislých source families**, z toho **9 mimo Profesia**.
+## SOURCE AUDIT — 31. 8. 2026 10:37 CEST — LATEST
+Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; StartupJobs; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky: 0.** Žiadny čerstvý kandidát bezpečne neprekonal existujúce LIVE priority po lokalitnom, jazykovom, hard-skill, freshness a value gate.
-- **Kariera.sk:** technická podpora v Bratislave za 1 400–1 700 € je verejne dostupná, ale približne 3 mesiace stará a neprešla freshness/evidence promotion gate.
-- **Upwork:** existujúci WooCommerce Product Listing & Upload Specialist bol znovu nájdený a deduplikovaný. Dlhodobý WordPress/WooCommerce support v nemčine je scope-fit, ale povinný jazyk je mimo profilu; ďalšie čerstvé výsledky boli hard-dev, video/creative alebo slabšie hodnotou.
-- **Profesia/Worki/Brigada/Pretlak/direct careers/LinkedIn:** reálne vyhľadané, bez nového kvalifikovaného winnera.
+- **LinkedIn:** verejný index cez starší Accenture detail ukázal čerstvé „similar jobs“ signály pre Wolt Support Associate, ESET Customer Support Specialist, Lenovo Sales Support a DSV Control Tower. Bez otvoreného priameho/canonical detailu ich nepovažujeme za verified kandidátov; indirect sidebar hit sa nesmie povýšiť do LIVE.
+- **Wolt direct careers:** Support Associate Bratislava/Ružinov je aktívny, ale už známy a zostáva pod language/value gateom.
+- **Brigada.sk:** dnešné BA/Ružinov retail zmeny 5,50–6,25 €/h a dlhodobá administratívna pomoc na účtovnom oddelení 7 €/h sú reálne, ale hodnotovo slabšie než LIVE priority.
+- **StartupJobs:** Medior Account Manager & projektový koordinátor – Jira/Webflow/WordPress, 45–60 tis. Kč, prevažne remote, ale s občasným onsite Praha 5/klienti a požiadavkou agentúrnej/studio praxe; reject-distance/skill burden.
+- **Upwork:** existujúci WooCommerce Product Listing & Upload Specialist bol znovu nájdený a deduplikovaný; ďalšie čerstvé výsledky boli hard-dev, low-budget alebo bez lepšieho fit/value než LIVE.
+- **Profesia/Worki/Kariera/Pretlak/direct careers:** reálne vyhľadané, bez nového kvalifikovaného winnera.
 - **Reddit/WordPress komunity:** bez nového verejne overiteľného hiring dopytu spĺňajúceho evidence + location gate.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 
 ### Run summary
-- Reálne skontrolované source families: **10**.
+- Reálne skontrolované source families: **11**.
 - Nové aktívne položky: **0**.
 - Významné pending kandidáty: **0 nové**; 2 staršie verification-queue kandidáty zostávajú.
 - LIVE feed: **39 aktívnych položiek**.
 - Mix: **Profesia 18 / 39 = 46,2 %; mimo Profesia 21 / 39 = 53,8 %**.
 - `jobs-data.json.updatedAt` = **31. 8. 2026 07:32:56 CEST** — zámerne neposunuté bez kvalifikovaného obsahového delta.
-- `source-audit.json.updatedAt` = **31. 8. 2026 09:35:48 CEST**.
+- `source-audit.json.updatedAt` = **31. 8. 2026 10:37:31 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -219,3 +222,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 131. **Pending-candidate evidence checklist** — každý verification-queue kandidát musí mať zoznam chýbajúcich dôkazov (jazyk, remote eligibility, active state, pay) a presný ďalší overovací krok; znižuje opakované slepé rechecky a skracuje promotion/reject rozhodnutie.
 132. **Publication-time confidence normalizer** — rozlišovať presný canonical `publishedAt`, relatívny údaj typu „2 days ago“ a iba crawl timestamp; zabráni falošnej freshness a spraví `<24h` prioritu dôveryhodnejšou.
 133. **Dominated-candidate suppression memory** — pri kandidátovi, ktorý opakovane neprekoná LIVE položku rovnakého tracku kvôli mzde, jazyku, freshness alebo hard-skill burden, uložiť dôvod a dočasne znížiť recheck frekvenciu; uvoľní discovery kapacitu bez straty nového delta.
+134. **Indirect discovery provenance guard** — pri LinkedIn a podobných zdrojoch evidovať `discoveryRoute=direct-query|similar-jobs|aggregator`; výsledok zo sidebaru/related jobs nesmie prejsť do LIVE bez otvorenia a overenia canonical detailu. Znižuje falošné fresh hity z nepriamych indexových signálov.
+135. **Dominated-hit early-abort gate** — keď už pay/location/language poskytne dostatočný hard-negative dôkaz, ukončiť drahé detailné parsovanie kandidáta v tom istom behu. Šetrí discovery kapacitu pri opakovaných 5,50–7 €/h retail/warehouse výsledkoch bez znižovania coverage.
