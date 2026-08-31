@@ -1,53 +1,50 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T12:29:19+02:00",
+  "updatedAt": "2026-08-31T13:12:36+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
     "significantPendingCandidates": 0,
     "significantlyChangedPriorityJobs": 0,
     "significantlyChangedExistingJobs": 0,
-    "duplicateOrExisting": 4,
-    "rejectedAsWeakOrLowValue": 5,
+    "duplicateOrExisting": 3,
+    "rejectedAsWeakOrLowValue": 6,
     "rejectedByFreshnessOrEvidence": 4,
-    "rejectedByLanguageOrSkill": 2,
+    "rejectedByLanguageOrSkill": 3,
     "rejectedByLocation": 0,
-    "quarantinedUnknownLocation": 0,
+    "quarantinedUnknownLocation": 1,
     "quarantinedUnknownLanguage": 0,
     "jobsDataContentUpdatedAt": "2026-08-31T07:32:56+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "content-stale-audit-fresh",
     "liveFeedCount": 39,
     "liveSourceMix": {"profesia":18,"nonProfesia":21,"profesiaPct":46.2,"nonProfesiaPct":53.8},
-    "note": "Audit 31.8.2026 12:29 CEST reálne prehľadal 11 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, StartupJobs, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Bez nového alebo významne zmeneného prioritného winnera. Upwork stále verejne indexuje WooCommerce Product Listing & Upload Specialist (50–75 produktov), ktorý je už LIVE, a starší recurring WooCommerce Product Upload Specialist s horším value/freshness profilom; nové data-entry výsledky boli prevažne low-value. LinkedIn AgentFire Junior Web Designer a Ludicrum CMS Operator sú no longer accepting applications. Verejné Facebook vyhľadávanie neposkytlo konkrétny overiteľný hiring post, preto 0 verified hits a limited. jobs-data.json zostal fail-closed bez kvalifikovaného obsahového delta a updatedAt sa neposunul."
+    "note": "Audit 31.8.2026 13:12 CEST reálne prehľadal 11 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, StartupJobs, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Bez nového alebo významne zmeneného prioritného winnera. LEAF Implementation Support Specialist zostáva verejne aktívny a bez významnej zmeny. Foxelli Customer Support & Sales Agent je Slovakia-eligible remote, ale vyžaduje fluent/near-native spoken English a ponúka do 800 EUR po zdanení, preto hard language/value reject. Upwork stále indexuje LIVE WooCommerce Product Listing & Upload Specialist; recurring WooCommerce Product Upload Specialist je dominovaný LIVE leadom. Nový WooCommerce product/order data-entry hit za 5 USD fixed je low-value reject. Reddit priniesol čerstvé WordPress hiring posty, ale bez dostatočného location/pay/scope evidence na LIVE aktiváciu. Verejné Facebook vyhľadávanie neposkytlo konkrétny overiteľný hiring post, preto 0 verified hits a limited. jobs-data.json zostal fail-closed bez kvalifikovaného obsahového delta a updatedAt sa neposunul."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA WordPress/e-shop/support/admin/driver discovery reálne vyhľadaná; bez nového kvalifikovaného detailu nad LIVE priority."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Priame firemné career discovery reálne vyhľadané cez verejný index; bez nového active winnera spĺňajúceho fit + location gate."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":2,"added":0,"rejected":2,"changed":0,"note":"Verejný index vrátil AgentFire Junior Web Designer a Ludicrum CMS Operator; oba detaily uvádzajú no longer accepting applications."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA WordPress/e-shop/support/admin/driver discovery reálne vyhľadaná; čerstvý search nevrátil nový kvalifikovaný BA detail nad existujúce LIVE priority."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":4,"added":0,"rejected":3,"changed":0,"note":"LEAF detail znovu overený ako aktívny bez významnej zmeny. Foxelli support je Slovakia-eligible remote, ale fluent/near-native spoken English + nízky fee; ďalšie Foxelli growth/marketing roly sú mimo praktického fitu."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejný index pre Bratislava/Slovakia WordPress, e-commerce a support discovery preverený; bez nového evidence-grade hitu."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Bratislava technická podpora/admin/vodič/sklad discovery reálne vyhľadané; bez nového kvalifikovaného winnera."},
     {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA administratíva/kuriér/sklad/web discovery reálne vyhľadaná; bez nového konkrétneho kvalifikovaného hitu."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA e-shop/admin/technik/vodič discovery reálne preverené; bez nového kvalifikovaného detailu."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"BA e-shop/admin/technik/vodič discovery preverené; dostupný zákaznícky-support výsledok bol starý/low-value a neprešiel freshness/value gate."},
     {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA/remote WordPress/e-commerce/content/support discovery reálne vyhľadaná; bez nového vhodného non-hard-dev winnera."},
     {"name":"StartupJobs / tech-creative","family":"startupjobs-tech","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Tech/creative remote discovery preverené; bez nového Slovakia-eligible non-hard-dev winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":7,"added":0,"rejected":5,"changed":0,"note":"WooCommerce Product Listing & Upload Specialist je stále verejne aktívny/indexovaný, ale už je LIVE. Recurring WooCommerce Product Upload Specialist je relevantný, no horší než existujúca LIVE priorita. Ďalšie data-entry/product-upload výsledky boli prevažne low-value alebo mimo cieľového scope."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejne indexované WordPress/WooCommerce hiring discovery reálne preverené; bez nového konkrétneho evidence-grade dopytu pre LIVE."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":0,"rejected":5,"changed":0,"note":"LIVE WooCommerce Product Listing & Upload Specialist je stále verejne aktívny/indexovaný. Recurring WooCommerce Product Upload Specialist je relevantný, ale dominovaný LIVE leadom. Nový WooCommerce product/order data-entry hit za 5 USD fixed a ďalšie výsledky boli low-value alebo hard-dev."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":2,"added":0,"rejected":2,"changed":0,"note":"Našli sa čerstvé hiring posty pre website creator / WordPress dev-designer, ale verejný detail neposkytuje dostatočný pay/location/scope evidence na bezpečnú LIVE aktiváciu; ponechané mimo feedu."},
     {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"0 verified hits; verejný search neposkytol konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion nebol spustený."}
   ],
   "verificationQueue": [
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","reason":"WooCommerce operations, 15–30 USD/h, 6+ mesiacov; širší SEO/tool scope a call/reporting zvyšujú friction.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Recheck communication burden and tool-fit before LIVE promotion."}
   ],
-  "developmentBacklogAddedThisRun": [
-    {"name":"Source-family false-negative probe","reason":"Ak source family vráti 0 hitov, spustiť jeden alternatívny synonym/domain query probe a merať, či nulový výsledok nebol spôsobený príliš úzkou formuláciou dopytu; zvyšuje coverage bez predstierania prístupu."},
-    {"name":"Apply-deadline timezone normalizer","reason":"Normalizovať explicitné deadline a časové okná z marketplace/jobboard zdrojov do Europe/Bratislava vrátane neistoty pri chýbajúcom timezone, aby sa predišlo zmeškaným reakciám."}
-  ],
+  "developmentBacklogAddedThisRun": [],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-delta",
     "jobsDataNonProf":"locked-preserved",
     "sourceAudit":"updated-after-real-11-family-check",
-    "jobSources":"updated-after-real-11-family-check",
-    "master":"blocked-safe-preserve-truncated-read",
+    "jobSources":"preserved-no-registry-change-needed",
+    "master":"preserved-no-safe-full-replacement-needed",
     "lockedFilesTouched":false,
-    "blocker":"PRACA_PRE_JARA_MASTER.md cannot be safely full-replaced because connector read is truncated; backlog additions are preserved here until a lossless append/full-read path is available."
+    "blocker":"jobs-data.json content freshness remains over the 60-minute SLA because no qualified content delta was found; updatedAt was intentionally not advanced."
   }
 }
