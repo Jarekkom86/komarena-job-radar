@@ -1,35 +1,35 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T09:35:48+02:00",
+  "updatedAt": "2026-08-31T10:14:28+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
     "significantPendingCandidates": 0,
     "significantlyChangedPriorityJobs": 0,
     "significantlyChangedExistingJobs": 0,
-    "duplicateOrExisting": 2,
-    "rejectedAsWeakOrLowValue": 5,
-    "rejectedByFreshnessOrEvidence": 5,
+    "duplicateOrExisting": 3,
+    "rejectedAsWeakOrLowValue": 6,
+    "rejectedByFreshnessOrEvidence": 4,
     "rejectedByLanguageOrSkill": 3,
     "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
     "jobsDataContentUpdatedAt": "2026-08-31T07:32:56+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "content-unchanged-audit-fresh",
+    "freshnessStatus": "content-stale-audit-fresh",
     "liveFeedCount": 39,
     "liveSourceMix": {"profesia":18,"nonProfesia":21,"profesiaPct":46.2,"nonProfesiaPct":53.8},
-    "note": "Audit 31.8.2026 09:35 CEST reálne preveril Profesia, priame firemné careers/indexy, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a verejne indexovaný Facebook. Nebol potvrdený nový ani významne zmenený prioritný winner. Kariera verejne ukázala Technickú podporu v Bratislave za 1 400–1 700 EUR, ale výsledok je približne 3 mesiace starý a neprekonáva freshness/evidence gate. Upwork priniesol dlhodobý WordPress/WooCommerce support v nemčine, ktorý je scope-fit, ale jazykový burden je mimo profilu; ďalšie čerstvé výsledky boli hard-dev, video/creative alebo slabšie hodnotou. Existujúci WooCommerce Product Listing & Upload Specialist zostáva LIVE a bol znovu nájdený ako existujúci duplikát. Facebook verejná indexácia neposkytla žiadny konkrétny overiteľný hiring post. jobs-data.json zostal fail-closed bez obsahového delta; jeho updatedAt sa zámerne neposúva iba kvôli auditu."
+    "note": "Audit 31.8.2026 10:14 CEST reálne preveril Profesia, priame firemné careers/indexy, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a verejne indexovaný Facebook. Nebol potvrdený nový ani významne zmenený prioritný winner. Existujúce priority HEATING PRO, AlzaBox Špecialista a Košík.sk boli znovu overené ako aktívne bez významnej zmeny podmienok. LinkedIn priniesol Wolt Support Associate v Bratislave, ale vyžaduje angličtinu minimálne B2 a mzda 1 340–1 410 EUR neprekonáva hard-gate/ranking profil. Brigada.sk mala čerstvé retailové jednodňové zmeny 5,50–6,25 EUR/h, ktoré sú hodnotovo slabé. Upwork znovu ukázal Tech-Savvy VA – WordPress Website Management & Digital Marketing Support (Worldwide, 5–10 h/týždeň, long-term), ale compensation a praktický English burden stále nie sú dostatočne overené na LIVE promotion; ďalšie výsledky boli hard-dev alebo slabšie hodnotou. jobs-data.json zostal fail-closed bez kvalifikovaného obsahového delta; jeho updatedAt sa zámerne neposúva iba kvôli auditu. Obsahový feed je preto nad 60-minútovým freshness SLA napriek čerstvému source auditu."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA WordPress/e-shop/support/admin/driver discovery reálne vyhľadaná; verejný index nevrátil nový kvalifikovaný konkrétny detail nad existujúce LIVE priority."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Priame career discovery pre Bratislavu/Slovensko reálne vyhľadané; bez nového overiteľného delta nad existujúce LIVE položky."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejný index pre Bratislava support/admin/CMS bol preverený; bez nového čerstvého kvalifikovaného detailu."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava technická podpora, administratíva, vodič a sklad discovery reálne vyhľadaná; bez nového kvalifikovaného winnera."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava administratíva/kuriér/sklad/web discovery reálne vyhľadaná; bez nového konkrétneho výsledku pre LIVE promotion."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":3,"added":0,"rejected":3,"note":"Aktuálny index preverený. Technická podpora v Bratislave 1 400–1 700 EUR je približne 3 mesiace stará; ďalšie výsledky boli mimo ranking profilu alebo bez dostatočnej freshness/evidence."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"BA WordPress/e-shop/support/admin/driver discovery reálne vyhľadaná; Košík.sk bol znovu overený ako aktívny duplikát bez významnej zmeny."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":2,"added":0,"rejected":0,"changed":0,"note":"AlzaBox Špecialista bol reálne znovu overený ako aktívny za 1 430 EUR fix + variabilná zložka do 610 EUR; bez významnej zmeny. Ďalší AlzaBox variant pre Viedeň nie je povýšený bez overenia jazykového/location fitu."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"added":0,"rejected":2,"note":"Wolt Support Associate full-time aj part-time boli preverené; oba vyžadujú angličtinu minimálne B2, full-time mzda 1 340–1 410 EUR a part-time je študentský/shift profil, preto bez LIVE promotion."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"HEATING PRO – Technický pracovník (sklad, rozvoz, nákup) znovu overený ako aktívny, 1 600–2 500 EUR alebo živnosť 10–15 EUR/h, nástup ihneď; bez významnej zmeny."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":3,"added":0,"rejected":3,"note":"Čerstvé BA/Ružinov retailové jednodňové zmeny 31.8. boli 5,50–6,25 EUR/h; hodnotovo a profilovo slabšie než LIVE priority."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Aktuálny discovery pre BA technickú podporu/admin/vodič/WordPress bez nového kvalifikovaného čerstvého detailu."},
     {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote WordPress/e-commerce/content/support discovery reálne vyhľadaná; bez nového vhodného non-hard-dev winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":8,"added":0,"rejected":7,"note":"WordPress/WooCommerce/admin discovery reálne preverená. Existujúci WooCommerce Product Listing & Upload Specialist bol znovu nájdený a deduplikovaný. Dlhodobý WordPress/WooCommerce support v nemčine je scope-fit, ale jazykový burden je mimo profilu. Ďalšie hity boli hard-dev, video/creative, staršie alebo hodnotovo slabšie."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":7,"added":0,"rejected":3,"note":"WordPress/WooCommerce/VA discovery preverená. Tech-Savvy VA – WordPress Website Management & Digital Marketing Support zostáva verification candidate: Worldwide, 5–10 h/týždeň, long-term, ale bez spoľahlivo overenej sadzby a practical English burden. WordPress WooCommerce build za 83,87 USD fixed a ďalšie hard-dev/low-value ponuky boli zamietnuté."},
     {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejne indexovaný hiring discovery bez nového konkrétneho dopytu spĺňajúceho evidence a location gate."},
     {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"0 verified hits; verejná indexácia neposkytla konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog, automat ho nespúšťa."}
   ],
@@ -37,17 +37,14 @@
     {"id":"upwork-tech-savvy-va-wordpress-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Tech-Savvy-Virtual-Assistant-Wordpress-Website-Management-Digital-Marketing-Support_~022094223212146933823/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":89,"reason":"Worldwide remote, 5–10 h/týždeň, part-time long-term; hlavná zodpovednosť je WordPress website management, publikovanie obsahu, úpravy stránok, formuláre a jednoduché integrácie. Veľmi dobrý scope fit, ale sadzba a praktický spoken-English burden nie sú dostatočne overené.","missingEvidence":["hourly rate","spoken/written English burden","client activity/proposals"],"nextVerification":"Overiť compensation a communication burden pred LIVE promotion."},
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","reason":"WooCommerce operations, 15–30 USD/h, 6+ mesiacov; širší SEO/tool scope a call/reporting zvyšujú friction.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Recheck communication burden and tool-fit before LIVE promotion."}
   ],
-  "developmentBacklogAddedThisRun": [
-    {"name":"Publication-time confidence normalizer","reason":"Rozlišovať presný publishedAt z canonical detailu, relatívny údaj typu '2 days ago' a iba crawl timestamp; zníži falošnú freshness a pomôže <24h prioritizácii bez preceňovania starých indexov."},
-    {"name":"Dominated-candidate suppression memory","reason":"Ak kandidát opakovane neprekoná existujúcu LIVE položku rovnakého tracku kvôli mzde, jazyku, freshness alebo hard-skill burden, uložiť dôvod a dočasne znížiť recheck frekvenciu; šetrí discovery kapacitu bez straty nových delta."}
-  ],
+  "developmentBacklogAddedThisRun": [],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-content-delta",
     "jobsDataNonProf":"preserved-locked",
     "sourceAudit":"updated-after-real-10-family-check",
     "jobSources":"preserved-no-structural-source-registry-change",
-    "master":"updated-audit-and-two-new-backlog-items",
+    "master":"preserved-no-change",
     "lockedFilesTouched":false,
-    "blocker":null
+    "blocker":"jobs-data content freshness exceeds 60 minutes because no qualified content delta was confirmed; updatedAt intentionally not bumped solely for freshness"
   }
 }
