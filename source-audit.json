@@ -45,7 +45,7 @@
     "jobsDataNonProf":"locked-preserved",
     "jobSources":"updated-after-real-10-family-check",
     "sourceAudit":"updated-after-real-10-family-check",
-    "master":"pending-sync-in-this-run",
+    "master":"updated-and-synced",
     "lockedFilesTouched":false,
     "blocker":null
   }
