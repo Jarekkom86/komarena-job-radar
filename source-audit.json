@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T22:34:19+02:00",
+  "updatedAt": "2026-08-31T23:13:40+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
@@ -8,7 +8,7 @@
     "significantlyChangedPriorityJobs": 0,
     "significantlyChangedExistingJobs": 0,
     "duplicateOrExisting": 3,
-    "rejectedAsWeakOrLowValue": 4,
+    "rejectedAsWeakOrLowValue": 5,
     "rejectedByFreshnessOrEvidence": 3,
     "rejectedByLanguageOrSkill": 2,
     "rejectedByLocation": 0,
@@ -20,18 +20,18 @@
     "freshnessStatus": "ok-audit-no-qualified-live-delta",
     "liveFeedCount": 41,
     "liveSourceMix": {"profesia":18,"nonProfesia":23,"profesiaPct":43.9,"nonProfesiaPct":56.1},
-    "note": "Audit 31.8.2026 22:34 CEST reálne preveril 10 source families. Nenašiel sa nový evidence-grade kandidát, ktorý by prešiel lokalitným, jazykovým, hard-skill, value a dedupe gateom a zároveň zlepšil LIVE feed. jobs-data.json zostal fail-closed bez umelého posunu timestampu. Najčerstvejší nový Upwork e-commerce VA je Worldwide remote, ale iba 3–6 USD/h pri 20–50 proposals a slabom klientskom spend signále, preto neprešiel value/competition gateom. Worki prinieslo čerstvé výsledky v širšom priľahlom regióne, no jeden multi-region obchodný hit má nejasnú reálnu bázu/dochádzanie a zostáva mimo aktívneho feedu."
+    "note": "Audit 31.8.2026 23:13 CEST reálne preveril 10 source families. Nenašiel sa nový evidence-grade kandidát ani významná zmena existujúcej priority, ktorá by prešla lokalitným, jazykovým, hard-skill, value a dedupe gateom a zlepšila LIVE feed. jobs-data.json zostal fail-closed bez umelého posunu timestampu. Čerstvý Profesia hit Trenujeme kombinuje predajňu s e-commerce asistenciou v Bratislave, ale garantovaná odmena 560–1 000 EUR/mes. pri part-time/živnosti a predajná zložka ho držia pod existujúcimi prioritami. Upwork Tech-Savvy VA ostáva 6–10 USD/h, 20–50 proposals, 0 interviewing a bez významnej zmeny podmienok."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA WordPress/e-shop, technický support, admin, vodič a sklad discovery reálne preverené; bez nového kvalifikovaného winnera nad LIVE feed."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"BA WordPress/e-shop, technický support, admin, vodič a sklad discovery reálne preverené. Nový/čerstvý Trenujeme e-commerce asistent na Račianskej je lokálne vhodný, ale 560–1 000 EUR/mes. pri part-time/živnosti a predajná zložka neprešli value/priority gateom."},
     {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Priame BA/Slovakia careers discovery reálne preverené; bez nového kvalifikovaného non-hard-dev kandidáta."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"rejected":2,"changed":0,"note":"Verejný BA/EU remote web/support index reálne preverený. AgentFire a Ludicrum sú closed; Joinrs/Canonical web rola je hard-development a už neakceptuje prihlášky. Bez LIVE promotion."},
-    {"name":"Worki.sk","family":"worki","status":"ok","hits":2,"added":0,"rejected":1,"changed":0,"unknownLocation":1,"note":"Reálne preverené čerstvé výsledky v priľahlom regióne. Technik KTL Šamorín je mimo cieľového skill profilu; multi-region obchodná rola uvádza aj Senec, ale bez detailného dôkazu reálnej pracovnej bázy/dochádzania ostáva locationEligibility unknown a mimo aktívnych odporúčaní."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA administratíva/technické/kuriérske brigády boli vyhľadané; verejný index neposkytol nový vhodný aktuálny hit."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"rejected":2,"changed":0,"note":"Verejný BA/EU remote web/support index reálne preverený. Dostupné support výsledky boli closed alebo vyžadovali fluent/ďalší jazyk; bez LIVE promotion."},
+    {"name":"Worki.sk","family":"worki","status":"ok","hits":2,"added":0,"rejected":1,"changed":0,"unknownLocation":1,"note":"Reálne preverené čerstvé výsledky. Nové dostupné hity mimo BA boli lokalitne nevhodné; multi-region obchodný hit ostáva bez detailného dôkazu reálnej pracovnej bázy/dochádzania locationEligibility unknown."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA administratíva/technické/kuriérske brigády boli vyhľadané; verejný index neposkytol nový vhodný prioritný hit."},
     {"name":"Kariera.sk / lokálne jobboardy","family":"local-jobboards","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Kariera/Zoznam BA discovery reálne preverené; dostupný index nepriniesol nový relevantný BA/remote detail."},
-    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"ok","hits":1,"added":0,"rejected":0,"changed":0,"note":"Powerlogy Marketing Specialist je stále verejne aktívny a obsahovo silný e-commerce/WooCommerce fit, ale explicitná veľmi dobrá angličtina ho naďalej drží mimo LIVE. StartupJobs/WordPress Jobs discovery bez nového Slovakia-eligible non-hard-dev winnera."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":4,"added":0,"rejected":3,"changed":0,"duplicateOrExisting":1,"note":"Worldwide remote WordPress/WooCommerce/product-admin discovery reálne preverené. WooCommerce Product Listing & Upload Specialist je už LIVE. Nový Electronics Store e-commerce VA (WooCommerce/eBay/Amazon/Facebook Marketplace) je iba 3–6 USD/h, >30 h/týždeň, 20–50 proposals a klient má iba 134 USD spend, preto neprešiel value/competition gateom. Ďalšie mikro-budget data-entry/e-commerce hity neboli pridané."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejne indexované WordPress/WooCommerce hiring komunity boli reálne vyhľadané; bez konkrétneho čerstvého evidence-grade dopytu s pay/location/active proofom."},
+    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"ok","hits":1,"added":0,"rejected":0,"changed":0,"note":"Powerlogy Marketing Specialist zostáva obsahovo silný e-commerce/WooCommerce fit v Bratislave, ale explicitná veľmi dobrá angličtina ho drží mimo LIVE. StartupJobs/WordPress Jobs discovery bez nového Slovakia-eligible non-hard-dev winnera."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":4,"added":0,"rejected":3,"changed":0,"duplicateOrExisting":1,"note":"Worldwide remote WordPress/WooCommerce/product-admin discovery reálne preverené. Tech-Savvy VA ostáva 6–10 USD/h, 5–10 h/týždeň, 20–50 proposals, 0 interviewing a prevažne písomná komunikácia; bez významnej zmeny oproti queue. Nové data-entry/e-commerce hity mali mikro-budget alebo slabý client signal a neprešli value gateom."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejne indexované čerstvé WordPress/WooCommerce posty boli prevažne FOR HIRE ponuky freelancerov, nie hiring dopyty. Bez evidence-grade kandidáta."},
     {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"Verejná indexácia skupín pre Bratislavu, WordPress Slovensko a WooCommerce SK/CZ bola vyhľadaná; 0 verified hits a žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion nebol spustený."}
   ],
   "verificationQueue": [
@@ -39,20 +39,15 @@
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","pay":"15–30 USD/h","hours":"<30 h/týždeň","duration":"6+ mesiacov","competition":"20–50 proposals; 0 interviewing; 0 invites","reason":"Silný WooCommerce operations fit, ale vyžaduje SEO nástroje, weekly reporting, onboarding call a Loom audit.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Keep in verification queue."},
     {"id":"pretlak-powerlogy-marketing-specialist-20260827","title":"Marketing Specialist – e-commerce, WordPress/WooCommerce, AI content","source":"Pretlak","url":"https://pretlak.com/job/powerlogy/marketing-specialist/IAnwjJvd_","locationEligibility":"ba-area","languageEligibility":"pending-high-risk","provisionalScore":84,"applicationFriction":"medium","reason":"Výborný e-commerce/WooCommerce/AI-content fit v Bratislave, ale inzerát explicitne požaduje slovenčinu a angličtinu na veľmi dobrej úrovni.","missingEvidence":["whether spoken English is daily/mandatory at B2+ level"],"nextVerification":"Keep out of active recommendations unless language burden is confirmed compatible."}
   ],
-  "developmentBacklogAddedThisRun": [
-    {"name":"GitHub Actions 5-minute high-priority poller","reason":"Pre source families s reálnym <24h prínosom spúšťať bezpečný 5-minútový discovery poll s rate-limit budgetom, canonical verification a fail-closed write guardom. Skráti čas od publikovania po reakciu bez toho, aby sa každá pomalá source family zbytočne kontrolovala rovnako často."},
-    {"name":"CRM-calibrated reply-probability model","reason":"Z CRM výsledkov priebežne odhadovať pravdepodobnosť odpovede podľa source family, role tracku, apply latency, konkurencie a employer history; používať iba ako tie-breaker po hard gateoch. Pomôže míňať reakčný čas na ponuky s najvyššou praktickou šancou na odpoveď."}
-  ],
+  "developmentBacklogAddedThisRun": [],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-live-delta",
-    "jobSources":"updated-current-run",
+    "jobSources":"preserved-no-structural-source-change",
     "jobsDataNonProf":"preserved-locked",
     "sourceAudit":"updated-after-real-10-family-check",
-    "master":"updated-current-run",
+    "master":"preserved-no-policy-change",
     "lockedFilesTouched":false,
     "jobsDataCommit":"d0cbcea917236931e1fb14d73a4e355c9f1e5851",
-    "jobSourcesCommit":"ffb1e297ac24d0f9ee3c9f50efad02e24ad8949c",
-    "masterCommit":"3fd85540732fb9ed9d0b14de6b14f6b88f797547",
-    "note":"No locked files touched. jobs-data.json stayed unchanged because this run produced no qualified LIVE delta; source register, audit and MASTER were refreshed truthfully."
+    "note":"No locked files touched. jobs-data.json stayed unchanged because this run produced no qualified LIVE delta; source-audit.json was refreshed truthfully after real source checks."
   }
 }
