@@ -45,8 +45,8 @@
     "jobsData":"preserved-no-qualified-content-delta",
     "jobsDataNonProf":"preserved-locked",
     "sourceAudit":"updated-after-real-10-family-check",
-    "jobSources":"pending-current-run-note-refresh",
-    "master":"pending-current-run-audit-refresh",
+    "jobSources":"updated-current-run-notes",
+    "master":"updated-current-run-audit-and-backlog",
     "lockedFilesTouched":false,
     "blocker":null
   }
