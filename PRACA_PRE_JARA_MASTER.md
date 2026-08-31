@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 31. 8. 2026 04:35 CEST
+Aktualizované: 31. 8. 2026 07:32 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,41 +38,43 @@ Aktualizované: 31. 8. 2026 04:35 CEST
 4. **OVB — Špecialista/ka pre AI a automatizáciu — Match 93** — Bratislava remote/hybrid, od 2 000 €/mes.
 5. **Ryvenia — Shoptet Specialist — Match 93** — Bratislava/full remote/hybrid.
 6. **Košík.sk — Kuriér Bratislava — Match 93** — BA-Devínska Nová Ves/BA okolie; 2 500–3 000 €/mes., canonical detail až 150 €/deň, živnosť, vodičák B min. 2 roky, ihneď.
-7. **Zenea — E-Commerce Specialist — Match 92** — Bratislava/hybrid, 1 600–2 000 €/mes.; Shopify/Klaviyo/Excel/reporting.
-8. **Energohub — Office manager / koordinátor procesov — Match 92** — Dúbravka, od 1 800 €/mes.; CRM, procesy, AI.
-9. **Penta Real Estate — Sales Administrator — Match 92** — Bratislava, 1 800 €/mes. + bonus + HO.
-10. **Hilti — Implementation & Service Specialist — Match 92** — Bratislava, od 1 800 €/mes. + bonusy + auto.
-11. **Websupport — Customer Success Advisor — Match 91** — weby, hosting, SSL, troubleshooting.
-12. **Lanža — Vodič/ka online nákupov — Match 91** — BA + okolie; 1 500–3 000 €/mes.
-13. **VÚB — Digitálny agent/agentka — Match 90** — 100 % home office / Slovensko.
-14. **IZY VAPE — Back Office & Operations Coordinator – e-commerce — Match 90** — BA/prevažne HO.
-15. **O2 — Digital Content Admin — Match 90** — web/e-shop, produkty, ceny, landing pages.
-16. **Alza.sk — AlzaBox Špecialista — Match 89** — Bratislava, 1 430 € fix + až 610 € variabilná zložka; Po–Pi flexibilne, čiastočný HO, Excel, vodičák B, AI nástroje; realitná/obchodná prax iba výhodou.
-17. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia.
-18. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote; mínus US Mountain Time.
-19. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
-20. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
-21. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
+7. **Upwork — WooCommerce Product Listing & Upload Specialist — Match 92** — Worldwide remote; 10–30 USD/h; 50–75 produktov; Dutch iba preferované, ChatGPT fallback povolený.
+8. **Zenea — E-Commerce Specialist — Match 92** — Bratislava/hybrid, 1 600–2 000 €/mes.; Shopify/Klaviyo/Excel/reporting.
+9. **Energohub — Office manager / koordinátor procesov — Match 92** — Dúbravka, od 1 800 €/mes.; CRM, procesy, AI.
+10. **Penta Real Estate — Sales Administrator — Match 92** — Bratislava, 1 800 €/mes. + bonus + HO.
+11. **Hilti — Implementation & Service Specialist — Match 92** — Bratislava, od 1 800 €/mes. + bonusy + auto.
+12. **Websupport — Customer Success Advisor — Match 91** — weby, hosting, SSL, troubleshooting.
+13. **Lanža — Vodič/ka online nákupov — Match 91** — BA + okolie; 1 500–3 000 €/mes.
+14. **VÚB — Digitálny agent/agentka — Match 90** — 100 % home office / Slovensko.
+15. **IZY VAPE — Back Office & Operations Coordinator – e-commerce — Match 90** — BA/prevažne HO.
+16. **O2 — Digital Content Admin — Match 90** — web/e-shop, produkty, ceny, landing pages.
+17. **Alza.sk — AlzaBox Špecialista — Match 89** — Bratislava, 1 430 € fix + až 610 € variabilná zložka; Po–Pi flexibilne, čiastočný HO, Excel, vodičák B, AI nástroje; realitná/obchodná prax iba výhodou.
+18. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia.
+19. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote; mínus US Mountain Time.
+20. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
+21. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
+22. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 31. 8. 2026 04:35 CEST — LATEST
-Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; WordPress Jobs; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
+## SOURCE AUDIT — 31. 8. 2026 07:32 CEST — LATEST
+Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **10 nezávislých source families**, z toho **9 mimo Profesia**.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 0.** `jobs-data.json` zostáva fail-closed bez umelého posunu `updatedAt`, pretože nevznikol nový kandidát, ktorý by bezpečne prešiel location/language/hard-skill/value gateom a prekonal existujúce LIVE priority.
-- **Kariera:** aktuálny BA index ukázal Operations Coordinator v Boataround.com od 1 500 €/mes., ale záznam nesie dátum 9. 8. 2026 a bez čerstvého canonical active-hiring proof sa neaktivuje.
-- **Upwork:** fresh discovery vrátil najmä brand/design alebo všeobecné web integračné projekty; Canva portfolio integrácia je staršia a neprekonáva LIVE WordPress/e-commerce priority. `Website & SEO Management 2026` ostáva vo verification queue.
-- **Profesia/LinkedIn/Worki/Brigada/Pretlak/WordPress Jobs/direct company careers:** reálne vyhľadané, bez nového kvalifikovaného winnera nad existujúce LIVE priority.
-- **Reddit/WordPress komunity:** verejne indexované výsledky neposkytli nový konkrétny hiring dopyt s dostatočným scope/pay/location dôkazom.
+- **Nové aktívne položky: 1.** Upwork `WooCommerce Product Listing & Upload Specialist` bol znovu priamo overený ako Worldwide Remote Job, 10–30 USD/h, 50–75 produktov, <30 h/týždeň, 1–3 mesiace a ongoing project. Dutch je iba preferované; klient explicitne pripúšťa ChatGPT na holandské produktové texty.
+- **Existujúca obsahová zmena: 1.** `3MON — IT & Operations Support` má aktuálne 2 100 €/mes.; LIVE záznam bol opravený z 2 000 na 2 100 €.
+- **Brigada.sk:** 103 BA brigád v indexe; vodič detského vláčika a Metro sklad/distribúcia sú reálne, ale hodnotovo neprekonávajú LIVE priority.
+- **LinkedIn:** verejne indexované WordPress/CMS výsledky boli staré alebo uzavreté; nepridané.
+- **Profesia/Worki/Kariera/Pretlak/direct careers:** reálne vyhľadané, bez ďalšieho kvalifikovaného winnera.
+- **Reddit/WordPress komunity:** verejne indexované výsledky boli prevažne FOR HIRE, nie hiring dopyty.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 
 ### Run summary
-- Reálne skontrolované source families: **11**.
-- Nové aktívne položky: **0**.
-- Významné pending kandidáty: **1**.
-- LIVE feed zostáva: **38 aktívnych položiek**.
-- Mix: **Profesia 18 / 38 = 47,4 %; mimo Profesia 20 / 38 = 52,6 %**.
-- `jobs-data.json.updatedAt` = **31. 8. 2026 01:32:30 CEST**; obsahový feed timestamp zostáva starší, pretože neexistuje kvalifikovaný obsahový delta. Audit freshness je aktuálny samostatne.
-- `source-audit.json.updatedAt` = **31. 8. 2026 04:35:53 CEST**.
+- Reálne skontrolované source families: **10**.
+- Nové aktívne položky: **1**.
+- Významné pending kandidáty: **2**.
+- LIVE feed: **39 aktívnych položiek**.
+- Mix: **Profesia 18 / 39 = 46,2 %; mimo Profesia 21 / 39 = 53,8 %**.
+- `jobs-data.json.updatedAt` = **31. 8. 2026 07:32:56 CEST**.
+- `source-audit.json.updatedAt` = **31. 8. 2026 07:32:56 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -216,3 +218,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 129. **Verification queue TTL + auto-expiry policy** — pending kandidát po definovanom počte behov bez nového dôkazu prejde do cold state; zníži opakované rechecky starých neoveriteľných ponúk a uvoľní discovery kapacitu pre čerstvé leady.
 130. **Audit-vs-feed freshness separation** — evidovať samostatne `lastDiscoveryAt`/`lastAuditAt` a `jobsDataUpdatedAt`; úspešný audit bez kvalifikovaného delta nebude vyzerať ako technická chyba a nebude tlačiť systém k falošnému posúvaniu feed timestampu.
 131. **Pending-candidate evidence checklist** — každý verification-queue kandidát musí mať zoznam chýbajúcich dôkazov (jazyk, remote eligibility, active state, pay) a presný ďalší overovací krok; znižuje opakované slepé rechecky a skracuje promotion/reject rozhodnutie.
+132. **Full-file chunk reassembly invariant** — pri veľkých autoritatívnych JSON/MASTER súboroch čítať po riadkových úsekoch, pred write kontrolovať počet položiek, prvé/posledné ID a uzavretie JSON/Markdown; odstraňuje doterajší blocker bezpečného GitHub replacementu bez rizika straty feedu.
+133. **Paid-test / trial-work risk scorer** — pri zákazkách rozlišovať platený/neplatený test, rozsah testu a jeho pomer k hodnote zákazky; znižuje čas strávený na neprimeraných skúšobných úlohách a zlepšuje prioritu apply-now.
