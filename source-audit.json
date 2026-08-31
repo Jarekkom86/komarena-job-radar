@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T19:19:17+02:00",
+  "updatedAt": "2026-08-31T20:12:11+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "significantlyChangedExistingJobs": 0,
-    "duplicateOrExisting": 4,
+    "significantlyChangedExistingJobs": 1,
+    "duplicateOrExisting": 5,
     "rejectedAsWeakOrLowValue": 6,
     "rejectedByFreshnessOrEvidence": 3,
     "rejectedByLanguageOrSkill": 4,
@@ -15,41 +15,39 @@
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
     "jobsDataContentUpdatedAt": "2026-08-31T18:21:13+02:00",
+    "jobsDataNonProfUpdatedAt": "2026-08-30T08:12:31+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "fresh-but-qualified-delta-write-blocked",
+    "freshnessStatus": "stale-qualified-delta-write-blocked",
     "liveFeedCount": 40,
     "liveSourceMix": {"profesia":18,"nonProfesia":22,"profesiaPct":45.0,"nonProfesiaPct":55.0},
-    "note": "Audit 31.8.2026 19:19 CEST reálne preveril 11 source families. Najsilnejší nový kandidát je Upwork Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support: Worldwide remote, 5–10 h/týždeň, 6–10 USD/h, 6+ mesiacov, menej než 5 proposals, platený test, WordPress/Elementor maintenance a primárne písomná komunikácia; US Eastern overlap je preferovaný, nie povinný. Kandidát prešiel location/scope gate a jazykové riziko je nižšie než pri typických call-heavy remote rolách. Autoritatívny jobs-data.json nebol prepísaný, pretože dostupný GitHub full read je truncovaný a writer vyžaduje kompletný replacement; feed bol zachovaný fail-closed."
+    "note": "Audit 31.8.2026 20:12 CEST reálne preveril 11 source families. Nový prioritný winner sa nepotvrdil. Najvýznamnejšia zmena je prudký nárast konkurencie pri Upwork Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support: activity sa zmenila z <5 proposals pri predchádzajúcej kontrole na 20–50 proposals, 0 interviewing, 0 invites. Samotný scope, pay 6–10 USD/h, 5–10 h/týždeň, Worldwide remote a primárne písomná komunikácia zostávajú nezmenené. jobs-data.json zostal zachovaný fail-closed, pretože dostupný GitHub konektor vracia veľký súbor truncovaný a update vyžaduje kompletný replacement. jobs-data.json je preto po tomto audite starší než 60-min freshness SLA; updatedAt nebol umelo posunutý."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"BA WordPress/e-shop/support/admin/driver discovery preverené; bez nového kvalifikovaného winnera nad LIVE priority."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":4,"added":0,"rejected":2,"changed":0,"note":"Reálne preverené Slovak Telekom, Alza a ďalšie priame careers. Telekom Magenta Experience a AlzaBox Špecialista zostávajú existujúce LIVE priority. Alza Technik automatizácie Bernolákovo je lokálne vhodný a AJ je iba výhoda, ale vyžaduje elektrovyhlášku §21; Prevádzkový technik/údržbár Bernolákovo takisto vyžaduje §21, preto oba vyradené cez hard-skill gate."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":1,"added":0,"rejected":1,"changed":0,"note":"Verejné discovery preverené; nájdené výsledky boli zatvorené, vzdialené alebo s hard-dev/B2+ požiadavkami, bez nového evidence-grade winnera."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"HEATING PRO Stará Vajnorská zostáva existujúca LIVE priorita; bez nového lepšieho technicko-logistického hitu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"Konkrétna BA brigáda pokladník/dokladač 31.8. za 6,25 €/h bola overená, ale je slabá oproti aktuálnym prioritám a mimo hlavného skill fitu."},
-    {"name":"Kariera.sk / lokálne jobboardy","family":"local-jobboards","status":"checked","hits":2,"added":0,"rejected":2,"changed":0,"note":"BA a práca-z-domu discovery preverené; výsledky boli mimo prioritného scope, vzdialené alebo canonical/mirror duplicity."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"Powerlogy e-commerce/WooCommerce smer ostáva obsahovo relevantný, ale explicitná veľmi dobrá angličtina ho drží mimo LIVE priority."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Remote WordPress/e-commerce discovery preverené; bez konkrétneho Slovakia-eligible non-hard-dev hitu vhodného na LIVE."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":0,"rejected":4,"changed":1,"note":"Čerstvý Tech-Savvy VA je Worldwide remote, 5–10 h/týždeň, 6–10 USD/h, 6+ mesiacov, menej než 5 proposals, platený test, WordPress/Elementor/Kajabi maintenance a primárne písomná komunikácia; US Eastern overlap len preferovaný. Ďalšie hity boli microbudget, hard-dev, Greek-only alebo s vysokou konkurenciou/scope friction."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejne indexované komunity boli vyhľadané, ale bez nového konkrétneho hiring postu s dostatočným location/pay/active proofom."},
-    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"WordPress Slovensko, WooCommerce SK+CZ a BA job-group discovery preverené cez verejnú indexáciu; 0 konkrétnych verejne overiteľných hiring postov s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog potreba, automat ho nespúšťa."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"Najnovšie BA ponuky preverené; bez nového kvalifikovaného priority winnera. Čerstvé výsledky boli prevažne mimo cieľových trackov alebo s hard gate požiadavkami."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":4,"added":0,"rejected":2,"changed":0,"note":"Alza a Telekom preverené. AlzaBox Špecialista zostáva aktívny bez významnej zmeny; nové technické Alza roly v Bernolákove naďalej vyžadujú elektro kvalifikáciu a neprechádzajú hard-skill gate."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":1,"added":0,"rejected":1,"changed":0,"note":"Verejné discovery preverené; bez nového evidence-grade BA/remote hitu vhodného podľa existujúcich pravidiel."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"HEATING PRO Stará Vajnorská je naďalej dohľadateľná ako existujúca LIVE priorita; bez novej lepšej technicko-logistickej ponuky."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"BA brigády preverené; bez ponuky, ktorá by prekonala existujúce priority."},
+    {"name":"Kariera.sk / lokálne jobboardy","family":"local-jobboards","status":"checked","hits":2,"added":0,"rejected":2,"changed":0,"note":"BA a remote discovery preverené; výsledky boli mimo scope, staré alebo canonical/mirror duplicity."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"Powerlogy Marketing Specialist zostáva obsahovo relevantný hybrid BA/WooCommerce smer, ale explicitná veľmi dobrá angličtina ho drží mimo LIVE priority."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Remote WordPress/e-commerce discovery preverené; bez nového Slovakia-eligible non-hard-dev hitu vhodného na LIVE."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":0,"rejected":4,"changed":1,"note":"Tech-Savvy VA zostáva Worldwide remote, 5–10 h/týždeň, 6–10 USD/h, 6+ mesiacov a primárne písomná komunikácia; konkurencia však vzrástla z <5 na 20–50 proposals, stále 0 interviewing a 0 invites. Ostatné hity boli staršie, microbudget alebo hard-dev."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejne indexované komunity preverené; bez nového konkrétneho hiring postu s dostatočným pay/location/active proofom."},
+    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"Verejná indexácia bez konkrétneho overiteľného hiring postu; posledné validné dáta zachované."}
   ],
   "verificationQueue": [
-    {"id":"upwork-tech-savvy-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Tech-Savvy-Virtual-Assistant-Wordpress-Website-Management-Digital-Marketing-Support_~022094223212146933823/","locationEligibility":"remote-ok","locationReason":"Upwork explicitne uvádza Worldwide + Remote Job; práca je samostatná na vlastnom rozvrhu, US Eastern overlap je preferovaný, nie povinný.","languageEligibility":"ok-written-primary","provisionalScore":91,"applicationFriction":"low-medium","pay":"6–10 USD/h","hours":"5–10 h/týždeň na štart, room to grow","duration":"6+ mesiacov","competition":"Less than 5 proposals; 0 interviewing","clientSignal":"US client, member since 2018, 7.2k USD spend, 54 hires","reason":"Veľmi silný non-hard-dev WordPress/Elementor maintenance fit: blog/content publishing, bežné web úpravy, forms/embeds/tracking snippets, plugin updates a QA, plus AI tools. Komunikácia je primárne písomná; platený test znižuje riziko neplatenej skúšky.","missingEvidence":["presný praktický rozsah US Eastern overlap počas bežného týždňa"],"nextVerification":"Promote to LIVE immediately once a safe full jobs-data replacement/patch path is available; apply-before window is Sunday 6 September 2026."},
+    {"id":"upwork-tech-savvy-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Tech-Savvy-Virtual-Assistant-Wordpress-Website-Management-Digital-Marketing-Support_~022094223212146933823/","locationEligibility":"remote-ok","languageEligibility":"ok-written-primary","provisionalScore":89,"applicationFriction":"medium-high","pay":"6–10 USD/h","hours":"5–10 h/týždeň na štart, room to grow","duration":"6+ mesiacov","competition":"20–50 proposals; 0 interviewing; 0 invites","clientSignal":"US client, member since 2018, 7.2k USD spend, 54 hires","reason":"Scope zostáva silný WordPress/Elementor maintenance fit a komunikácia je primárne písomná, ale proposal velocity prudko zhoršila šancu oproti predchádzajúcej kontrole.","missingEvidence":["presný praktický rozsah US Eastern overlap počas bežného týždňa"],"nextVerification":"Keep candidate qualified but reduce urgency score due competition spike; recheck activity on next run."},
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","reason":"WooCommerce operations, 15–30 USD/h, 6+ mesiacov; širší SEO/tool scope a pravidelné reporting/call očakávania zvyšujú friction.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Recheck communication burden and tool-fit before LIVE promotion."},
     {"id":"pretlak-powerlogy-marketing-specialist-20260827","title":"Marketing Specialist – e-commerce, WordPress/WooCommerce, AI content","source":"Pretlak","url":"https://pretlak.com/job/powerlogy/marketing-specialist/IAnwjJvd_","locationEligibility":"ba-area","languageEligibility":"pending-high-risk","provisionalScore":84,"applicationFriction":"medium","reason":"Výborný e-commerce/WooCommerce/AI-content fit v Bratislave, ale inzerát explicitne požaduje slovenčinu a angličtinu na veľmi dobrej úrovni.","missingEvidence":["whether spoken English is daily/mandatory at B2+ level"],"nextVerification":"Keep out of active recommendations unless language burden is confirmed compatible."}
   ],
-  "developmentBacklogAddedThisRun": [
-    {"id":"timezone-overlap-friction-score","title":"Timezone-overlap friction score","reason":"Pri remote ponukách rozlišovať povinný vs. preferovaný časový overlap a prepočítať jeho reálny dopad na slovenský čas. Zníži falošné vyradenia kvalitných Worldwide rolí a súčasne odhalí ponuky, ktoré sú remote iba formálne, ale vyžadujú pravidelný nočný režim."},
-    {"id":"proposal-velocity-urgency","title":"Proposal-velocity urgency tracker","reason":"Pri marketplace leadoch ukladať snapshots proposals/interviewing a zmenu za hodinu. Čerstvý lead s <5 proposals má krátke okno vysokej šance; systém má zvýšiť prioritu reakcie skôr, než konkurencia narastie, namiesto statického jednorazového competition skóre."}
-  ],
+  "developmentBacklogAddedThisRun": [],
   "writeStatus": {
-    "jobsData":"preserved-qualified-delta-write-blocked",
+    "jobsData":"preserved-qualified-delta-write-blocked-and-stale",
     "jobSources":"registry-preserved-no-structural-change",
-    "jobsDataNonProf":"locked-preserved",
+    "jobsDataNonProf":"preserved-stale",
     "sourceAudit":"updated-after-real-11-family-check",
     "master":"not-written-large-file-full-replacement-risk",
     "lockedFilesTouched":false,
-    "note":"Qualified Upwork delta confirmed. jobs-data and MASTER were preserved fail-closed because connector full reads are truncated while write requires complete replacement. No locked UI/renderers/baseline/bootstrap files were touched."
+    "note":"Qualified activity delta confirmed on Upwork. jobs-data and jobs-data-nonprof were preserved fail-closed because connector full reads are truncated while writes require complete replacements. Their updatedAt values were not advanced."
   }
 }
