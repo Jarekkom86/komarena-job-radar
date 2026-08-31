@@ -1,50 +1,52 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T13:12:36+02:00",
+  "updatedAt": "2026-08-31T13:37:38+02:00",
   "runSummary": {
-    "familiesChecked": 11,
+    "familiesChecked": 10,
     "newActiveJobs": 0,
     "significantPendingCandidates": 0,
     "significantlyChangedPriorityJobs": 0,
     "significantlyChangedExistingJobs": 0,
-    "duplicateOrExisting": 3,
-    "rejectedAsWeakOrLowValue": 6,
-    "rejectedByFreshnessOrEvidence": 4,
-    "rejectedByLanguageOrSkill": 3,
+    "duplicateOrExisting": 4,
+    "rejectedAsWeakOrLowValue": 4,
+    "rejectedByFreshnessOrEvidence": 3,
+    "rejectedByLanguageOrSkill": 2,
     "rejectedByLocation": 0,
-    "quarantinedUnknownLocation": 1,
+    "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
     "jobsDataContentUpdatedAt": "2026-08-31T07:32:56+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "content-stale-audit-fresh",
     "liveFeedCount": 39,
     "liveSourceMix": {"profesia":18,"nonProfesia":21,"profesiaPct":46.2,"nonProfesiaPct":53.8},
-    "note": "Audit 31.8.2026 13:12 CEST reálne prehľadal 11 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, StartupJobs, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Bez nového alebo významne zmeneného prioritného winnera. LEAF Implementation Support Specialist zostáva verejne aktívny a bez významnej zmeny. Foxelli Customer Support & Sales Agent je Slovakia-eligible remote, ale vyžaduje fluent/near-native spoken English a ponúka do 800 EUR po zdanení, preto hard language/value reject. Upwork stále indexuje LIVE WooCommerce Product Listing & Upload Specialist; recurring WooCommerce Product Upload Specialist je dominovaný LIVE leadom. Nový WooCommerce product/order data-entry hit za 5 USD fixed je low-value reject. Reddit priniesol čerstvé WordPress hiring posty, ale bez dostatočného location/pay/scope evidence na LIVE aktiváciu. Verejné Facebook vyhľadávanie neposkytlo konkrétny overiteľný hiring post, preto 0 verified hits a limited. jobs-data.json zostal fail-closed bez kvalifikovaného obsahového delta a updatedAt sa neposunul."
+    "note": "Audit 31.8.2026 13:37 CEST reálne prehľadal 10 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Bez nového alebo významne zmeneného prioritného winnera. Tesco Analytik/čka párovania produktov a produktových dát je relevantný BA/product-data kandidát za 1 600 EUR, ale vyžaduje angličtinu B2 a preto neprešiel language-fit gate. Tesco call-centre brigáda v Bratislave je viazaná na denné VŠ štúdium a B2+ angličtinu, preto eligibility/language reject. Upwork priniesol nový Worldwide remote e-commerce VA pre WooCommerce a ďalšie kanály za 3–6 USD/h; scope je relevantný, ale hodinová sadzba a slabá história klienta sú pod LIVE value threshold. Existujúci LIVE WooCommerce Product Listing & Upload Specialist ostáva verejne indexovaný. LinkedIn vrátil staré/closed AgentFire a Ludicrum výsledky, preto žiadny fresh active hit. Reddit bez evidence-grade WordPress/WooCommerce hiring leadu. Facebook 0 verified hits, limited. jobs-data.json zostal fail-closed bez kvalifikovaného obsahového delta a jeho updatedAt sa neposunul."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA WordPress/e-shop/support/admin/driver discovery reálne vyhľadaná; čerstvý search nevrátil nový kvalifikovaný BA detail nad existujúce LIVE priority."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":4,"added":0,"rejected":3,"changed":0,"note":"LEAF detail znovu overený ako aktívny bez významnej zmeny. Foxelli support je Slovakia-eligible remote, ale fluent/near-native spoken English + nízky fee; ďalšie Foxelli growth/marketing roly sú mimo praktického fitu."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejný index pre Bratislava/Slovakia WordPress, e-commerce a support discovery preverený; bez nového evidence-grade hitu."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Bratislava technická podpora/admin/vodič/sklad discovery reálne vyhľadané; bez nového kvalifikovaného winnera."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA administratíva/kuriér/sklad/web discovery reálne vyhľadaná; bez nového konkrétneho kvalifikovaného hitu."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"BA e-shop/admin/technik/vodič discovery preverené; dostupný zákaznícky-support výsledok bol starý/low-value a neprešiel freshness/value gate."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA/remote WordPress/e-commerce/content/support discovery reálne vyhľadaná; bez nového vhodného non-hard-dev winnera."},
-    {"name":"StartupJobs / tech-creative","family":"startupjobs-tech","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Tech/creative remote discovery preverené; bez nového Slovakia-eligible non-hard-dev winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":0,"rejected":5,"changed":0,"note":"LIVE WooCommerce Product Listing & Upload Specialist je stále verejne aktívny/indexovaný. Recurring WooCommerce Product Upload Specialist je relevantný, ale dominovaný LIVE leadom. Nový WooCommerce product/order data-entry hit za 5 USD fixed a ďalšie výsledky boli low-value alebo hard-dev."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":2,"added":0,"rejected":2,"changed":0,"note":"Našli sa čerstvé hiring posty pre website creator / WordPress dev-designer, ale verejný detail neposkytuje dostatočný pay/location/scope evidence na bezpečnú LIVE aktiváciu; ponechané mimo feedu."},
+    {"name":"Profesia","family":"profesia","status":"ok","hits":2,"added":0,"rejected":2,"changed":0,"note":"BA discovery reálne vyhľadaná. Tesco produktové dáta 1 600 EUR/mes. sú relevantné, ale povinná AJ B2 je výrazný mismatch; Tesco call-centre brigáda je student-only + B2+. Bez nového LIVE winnera."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"Priame company-career discovery reálne preverené (vrátane Alza/SmartRecruiters typu indexov); bez nového kvalifikovaného BA/remote winnera nad existujúce LIVE položky."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":2,"added":0,"rejected":2,"changed":0,"note":"Verejný index pre BA/EEA web-support preverený. AgentFire Junior Web Designer a Ludicrum CMS Operator sú staré/closed; nepridané."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Bratislava technická podpora/admin/vodič discovery reálne vyhľadané; bez nového kvalifikovaného winnera."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA administratíva/kuriér/sklad discovery reálne vyhľadaná; bez nového konkrétneho kvalifikovaného hitu."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":2,"added":0,"rejected":2,"changed":0,"note":"BA administratíva/logistika discovery preverené. Danucem Business Assistant je starší/slabší fit; logistický výsledok Kechnec zlyháva lokalitný gate a nebol aktivovaný."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA/remote WordPress/e-commerce/content discovery reálne vyhľadaná; bez nového vhodného non-hard-dev winnera."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":0,"rejected":5,"changed":0,"note":"Nový Worldwide remote E-commerce VA / product listing + WooCommerce scope je čerstvý, ale iba 3–6 USD/h a klient má nízky spend; value reject. E-commerce VA za 7–8 USD/h je tiež pod aktuálnymi LIVE prioritami. Existujúci LIVE WooCommerce Product Listing & Upload Specialist ostáva indexovaný."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejná r/forhire/WordPress discovery preverená; bez konkrétneho čerstvého evidence-grade WordPress/WooCommerce hiring leadu s dostatočným pay/location proof."},
     {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"0 verified hits; verejný search neposkytol konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion nebol spustený."}
   ],
   "verificationQueue": [
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","reason":"WooCommerce operations, 15–30 USD/h, 6+ mesiacov; širší SEO/tool scope a call/reporting zvyšujú friction.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Recheck communication burden and tool-fit before LIVE promotion."}
   ],
-  "developmentBacklogAddedThisRun": [],
+  "developmentBacklogAddedThisRun": [
+    {"name":"Employment-form eligibility gate","problem":"Niektoré zdanlivo vhodné brigády sú legálne/prakticky dostupné iba pre špecifický status uchádzača (napr. denný VŠ študent).","improvement":"Pred scoringom extrahovať student-only, dôchodca, ŤZP, age/licence/contract-status podmienky a hard-rejectnúť nekompatibilný employment form ešte pred detailným rankingom."},
+    {"name":"Negative-evidence reuse cache across mirrors","problem":"Rovnaká ponuka sa vracia cez Profesia, LinkedIn a Práca za rohom a opakovane sa znovu overujú tie isté hard negatíva ako B2+ alebo student-only.","improvement":"Cacheovať canonical hard-negative evidence podľa role identity a zdieľať ho naprieč mirrormi s TTL; znižuje duplicitné overovanie a šetrí discovery kapacitu."}
+  ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-delta",
     "jobsDataNonProf":"locked-preserved",
-    "sourceAudit":"updated-after-real-11-family-check",
+    "sourceAudit":"updated-after-real-10-family-check",
     "jobSources":"preserved-no-registry-change-needed",
-    "master":"preserved-no-safe-full-replacement-needed",
+    "master":"backlog-items-recorded-in-source-audit; full-file replacement not attempted because connector read is truncated",
     "lockedFilesTouched":false,
-    "blocker":"jobs-data.json content freshness remains over the 60-minute SLA because no qualified content delta was found; updatedAt was intentionally not advanced."
+    "blocker":"PRACA_PRE_JARA_MASTER.md cannot be safely rewritten from a truncated connector read in this run; the two mandatory backlog additions are persisted in source-audit.json for later MASTER reconciliation. jobs-data.json content freshness remains over the 60-minute SLA because no qualified content delta was found; updatedAt was intentionally not advanced."
   }
 }
