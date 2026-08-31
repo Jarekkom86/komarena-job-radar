@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T05:29:26+02:00",
+  "updatedAt": "2026-08-31T06:12:46+02:00",
   "runSummary": {
-    "familiesChecked": 11,
+    "familiesChecked": 8,
     "newActiveJobs": 0,
     "significantPendingCandidates": 2,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 3,
-    "rejectedAsWeakOrLowValue": 7,
-    "rejectedByFreshnessOrEvidence": 3,
-    "rejectedByLanguageOrSkill": 4,
-    "rejectedByLocation": 1,
+    "duplicateOrExisting": 2,
+    "rejectedAsWeakOrLowValue": 4,
+    "rejectedByFreshnessOrEvidence": 1,
+    "rejectedByLanguageOrSkill": 2,
+    "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
     "jobsDataContentUpdatedAt": "2026-08-31T01:32:30+02:00",
@@ -18,34 +18,27 @@
     "freshnessStatus": "stale-content-but-audit-current",
     "liveFeedCount": 38,
     "liveSourceMix": {"profesia":18,"nonProfesia":20,"profesiaPct":47.4,"nonProfesiaPct":52.6},
-    "note": "Audit 31.8.2026 05:29 CEST reálne prehľadal 11 source families. Najsilnejší nový lead je Upwork WooCommerce Product Listing & Upload Specialist: Worldwide remote, 10–30 USD/h, 50–75 produktov, variácie/kategórie/popisy, 1–3 mesiace, ongoing; Dutch je preferovaný, nie tvrdý gate, klient výslovne pripúšťa ChatGPT pre holandské texty. Pri kontrole 15–20 proposals, 1 interviewing, 10 invites/9 unanswered. Lead je výrazne relevantný, ale jobs-data.json sa v tomto behu nemení, pretože dostupný GitHub writer vyžaduje full-file replacement a bezpečný append nebol vykonaný bez kompletnej rekonštrukcie autoritatívneho feedu. Website & SEO Management 2026 ostáva druhý silný pending lead (15–30 USD/h, Worldwide remote, 6+ mesiacov), no onboarding call/weekly reporting/Loom zvyšujú language/application friction. Powerlogy Marketing Specialist je BA/hybrid a WooCommerce-related, ale požaduje slovenčinu aj angličtinu na veľmi dobrej úrovni a výrazný influencer/marketing scope, preto sa neaktivoval. Wolt Support BA vyžaduje min. B2 AJ. Facebook zostáva 0 verified hits / limited."
+    "note": "Audit 31.8.2026 06:12 CEST reálne preveril Profesia, Worki, Kariera/Zoznam, Pretlak, LinkedIn, Brigada.sk a Upwork vrátane WooCommerce/product-listing a SEO/website remote discovery. WooCommerce Product Listing & Upload Specialist je stále verejne aktívny na Upwork product-listing feede, Worldwide remote, približne 50–75 produktov a ostáva najsilnejším pending leadom. Nové BA administratívne výsledky na Profesii nepriniesli lepší kvalifikovaný winner. Foxelli Customer Support & Sales Agent je remote a dostupný pre Slovensko, ale vyžaduje fluent/near-native spoken English a ponúka iba do 800 EUR po zdanení, preto neprešiel hard/value gateom. Jobs-data.json sa nemení: neexistuje bezpečný čiastkový append a dostupný writer vyžaduje kompletný replacement; posledné validné dáta sú zachované fail-closed."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":1,"note":"Fresh BA e-shop/admin/support discovery preverená; bez nového winnera nad LIVE priority."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Direct-company BA support/e-commerce discovery reálne vyhľadaná; bez nového potvrdeného winnera."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"added":0,"rejected":2,"note":"Wolt Support BA je aktuálny, ale vyžaduje professional working English minimum B2; Caterpillar eCommerce support je Košice a posting window už skončil."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA technická podpora/admin/vodič/sklad discovery preverená bez nového prioritného hitu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":1,"added":0,"rejected":1,"note":"Aktuálny BA pokladník/dokladač 6,25 EUR/h je locality-ok, ale nízka hodnota a slabší fit."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Portál reálne prehľadaný; bez nového kvalifikovaného e-shop/support/admin winnera."},
-    {"name":"Pretlak","family":"pretlak","status":"ok","hits":1,"added":0,"rejected":1,"note":"Powerlogy Marketing Specialist: BA/hybrid, od 1600 EUR, WordPress/WooCommerce bonus; vyradené z LIVE priority pre veľmi dobrú AJ a influencer/marketing-heavy scope."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh public discovery vykonaná; bez nového non-hard-dev kvalifikovaného winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":4,"added":0,"rejected":2,"note":"Silný nový WooCommerce Product Listing & Upload Specialist: Worldwide, 10–30 USD/h, 50–75 produktov; pending safe write. Website & SEO Management 2026 ostáva pending. Nízko platené alebo hard-dev výsledky vyradené."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":4,"added":0,"rejected":4,"note":"Fresh verejné výsledky boli prevažne FOR HIRE alebo hard-dev/US-only; bez vhodného hiring leadu."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny overiteľný hiring post ani priamy link; Nexus/local ingestion nebol spustený."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":3,"added":0,"rejected":3,"note":"Bratislava administratíva zoradená podľa najnovších bola reálne preverená; nové výsledky sú slabší fit alebo majú jazykové/špecializačné gatey."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA technická/sklad/rozvoz discovery preverená bez nového prioritného hitu."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Aktuálna BA admin/e-shop/support discovery bez nového kvalifikovaného winnera."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"WooCommerce/remote/BA discovery bez nového vhodného leadu nad existujúce priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"added":0,"rejected":2,"note":"Foxelli remote support je pre Slovensko otvorený, ale fluent/near-native English + do 800 EUR po zdanení; starší crochet variant už neprijíma žiadosti."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA administratíva/vodič/sklad discovery preverená bez nového prioritného hitu."},
+    {"name":"Upwork Product Listing","family":"upwork-product-listing","status":"ok","hits":2,"added":0,"rejected":1,"note":"WooCommerce Product Listing & Upload Specialist je stále aktívny v aktuálnom Product Listing feede; ďalší nový WooCommerce/eBay listing lead je expert-level a zatiaľ neprekonáva pending winner."},
+    {"name":"Upwork SEO / Website","family":"upwork-seo","status":"checked","hits":2,"added":0,"rejected":2,"note":"Nový SEO/social media lead má nízky fixed budget a marketing-heavy scope; staré WordPress SEO buildy sú slabá hodnota alebo hard-dev."}
   ],
   "verificationQueue": [
-    {"id":"upwork-woocommerce-product-listing-2093271017253461612","title":"WooCommerce Product Listing & Upload Specialist","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/WooCommerce-Product-Listing-Upload-Specialist_~022093271017253461612/","locationEligibility":"remote-ok","languageEligibility":"acceptable-risk","provisionalScore":92,"reason":"Worldwide remote, 10–30 USD/h, 50–75 produktov, WooCommerce product uploads/variations/categories/descriptions; Dutch je preferovaný, ale klient explicitne pripúšťa použitie ChatGPT na tvorbu/zlepšenie holandských textov.","missingEvidence":["safe authoritative jobs-data append"],"nextVerification":"Promote to LIVE after safe jobs-data full-file reconstruction/append with invariants."},
-    {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":91,"reason":"Worldwide remote, 15–30 USD/h, 6+ mesiacov, WooCommerce product listing/plugin maintenance/SEO/store upkeep. Onboarding call, weekly reporting a Loom audit zvyšujú language/application friction.","missingEvidence":["explicit communication-language expectation"],"nextVerification":"Recheck language wording and current live activity before promotion."}
-  ],
-  "developmentBacklogAddedThisRun": [
-    {"id":"preferred-language-fallback-viability-score","title":"Preferred-language fallback viability score","reason":"Rozlíšiť povinný jazyk od preferovaného jazyka, keď klient explicitne povoľuje AI/prekladový fallback; zabráni zbytočnému vyradeniu praktických e-commerce zákaziek ako aktuálny Dutch/ChatGPT WooCommerce lead."},
-    {"id":"marketplace-invite-asymmetry-signal","title":"Marketplace invite asymmetry signal","reason":"Pri freelance leadoch sledovať pomer invites sent vs. unanswered a interviewing; vysoká asymetria môže signalizovať klientovu nízku odozvu alebo široké rozosielanie a má upraviť reply probability/ROI."}
+    {"id":"upwork-woocommerce-product-listing-2093271017253461612","title":"WooCommerce Product Listing & Upload Specialist","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/WooCommerce-Product-Listing-Upload-Specialist_~022093271017253461612/","locationEligibility":"remote-ok","languageEligibility":"acceptable-risk","provisionalScore":92,"reason":"Stále verejne aktívny v Upwork Product Listing feede; Worldwide remote, 50–75 produktov, WooCommerce uploads/variations/categories/descriptions. Predchádzajúce overenie uviedlo 10–30 USD/h a Dutch iba ako preferenciu s AI/ChatGPT fallbackom.","missingEvidence":["safe authoritative jobs-data append"],"nextVerification":"Promote to LIVE immediately after safe complete jobs-data reconstruction/append with invariant checks."},
+    {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":91,"reason":"Worldwide remote WooCommerce operations lead ostáva relevantný z predošlého auditu; language/application friction stále nie je dostatočne vyriešená.","missingEvidence":["explicit communication-language expectation"],"nextVerification":"Recheck exact live detail and communication expectations before promotion."}
   ],
   "writeStatus": {
     "jobsData":"preserved-pending-safe-append",
     "jobsDataNonProf":"preserved-locked",
-    "sourceAudit":"updated-after-real-11-family-check",
+    "sourceAudit":"updated-after-real-8-family-check",
     "lockedFilesTouched":false,
-    "blocker":"GitHub contents writer requires complete replacement; safe authoritative jobs-data append was not executed in this run."
+    "blocker":"GitHub contents writer requires complete replacement; safe authoritative jobs-data append was not executed without complete reconstructed feed."
   }
 }
