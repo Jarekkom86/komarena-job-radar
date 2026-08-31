@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T18:21:13+02:00",
+  "updatedAt": "2026-08-31T18:33:24+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
@@ -8,10 +8,10 @@
     "significantlyChangedPriorityJobs": 0,
     "significantlyChangedExistingJobs": 0,
     "duplicateOrExisting": 4,
-    "rejectedAsWeakOrLowValue": 6,
+    "rejectedAsWeakOrLowValue": 7,
     "rejectedByFreshnessOrEvidence": 3,
-    "rejectedByLanguageOrSkill": 2,
-    "rejectedByLocation": 1,
+    "rejectedByLanguageOrSkill": 4,
+    "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
     "jobsDataContentUpdatedAt": "2026-08-31T18:21:13+02:00",
@@ -19,29 +19,35 @@
     "freshnessStatus": "fresh",
     "liveFeedCount": 40,
     "liveSourceMix": {"profesia":18,"nonProfesia":22,"profesiaPct":45.0,"nonProfesiaPct":55.0},
-    "note": "Audit 31.8.2026 18:21 CEST reálne preveril 10 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Nebol potvrdený nový ani významne zmenený prioritný winner. Priame overenie potvrdilo aktívny Telekom Magenta Experience Center a AlzaBox Špecialista; Worki stále zobrazuje HEATING PRO ako aktívnu relevantnú BA ponuku. Čerstvé Upwork výsledky boli slabšie než existujúce LIVE WooCommerce priority (napr. 83,87 USD fixed-price hard-dev build) alebo mali jazykový/value mismatch; nemecká dlhodobá WooCommerce podpora za 8–15 USD/h neprekonala existujúci LIVE WooCommerce Product Listing & Upload Specialist za 10–30 USD/h a implicitne nesie nemecký komunikačný risk. LinkedIn discovery prinieslo technický support Bloomreach/SupportYourApp, ale s vyššou angličtinou a prevádzkovými nárokmi. Reddit/Pretlak/Brigada/Kariera/Facebook discovery nepriniesli kvalifikovaný nový winner. jobs-data.json.updatedAt bol posunutý až po tejto reálnej kontrole zdrojov ako timestamp validácie feedu; žiadny obsahový delta nebol fingovaný."
+    "note": "Audit 31.8.2026 18:33 CEST reálne preveril 10 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Práca za rohom/Kariera discovery, Pretlak, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Nebol potvrdený nový kvalifikovaný LIVE winner. Pretlak priniesol veľmi relevantný Powerlogy Marketing Specialist v Bratislave (hybrid, od 1 600 €, faktúra) s WordPress/WooCommerce/e-shop/AI obsahom, ale požaduje slovenčinu a angličtinu na veľmi dobrej úrovni; vzhľadom na jazykový profil nejde do aktívne odporúčaného feedu bez ďalšieho overenia. LinkedIn Netzon technický support vyžaduje fluent Dutch + English a Wolt Support Associate min. B2 English + student status, preto vyradené. Brigada.sk má 103 BA brigád; relevantnejšie logistické hity sú pod existujúcimi LIVE prioritami. Upwork čerstvé Shopify/WooCommerce hity boli buď mikro-budget alebo hard-dev. Facebook verejná indexácia neposkytla žiadny konkrétny overiteľný hiring post."
   },
   "sources": [
     {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA/remote e-shop, support, admin, vodič a technické discovery reálne preverené; bez nového kvalifikovaného winnera oproti LIVE feedu."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":2,"added":0,"rejected":0,"changed":0,"note":"Slovak Telekom Magenta Experience Center a AlzaBox Špecialista znovu overené na priamych kariérnych stránkach ako aktívne bez významnej zmeny podmienok."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":2,"added":0,"rejected":2,"changed":0,"note":"Bloomreach Technical Support a SupportYourApp remote support preverované; vyššia angličtina a/alebo prevádzkové nároky ich držia pod existujúcimi prioritami."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":2,"added":0,"rejected":1,"changed":0,"note":"HEATING PRO je stále zobrazované ako aktívna relevantná BA ponuka 1 600–2 500 €; ďalšie výsledky boli staré, obsadené alebo mimo fitu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA admin/kuriér/sklad discovery reálne preverená; bez nového kvalifikovaného hitu nad LIVE feed."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Aktuálny index a BA/remote technická podpora/e-shop/admin discovery preverené; bez nového winnera."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"BA/remote discovery preverená; nájdený CG Generalist je mimo cieľového skill smeru, bez relevantného nového AI/e-commerce/support winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":3,"added":0,"rejected":3,"changed":0,"note":"Čerstvé WooCommerce/WordPress discovery preverené. WooCommerce build za 83,87 USD fixed je hard-dev/value mismatch; dlhodobá nemecká WooCommerce podpora 8–15 USD/h je slabšia než existujúci LIVE Product Listing & Upload Specialist 10–30 USD/h a nesie nemecký komunikačný risk."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":2,"added":0,"rejected":2,"changed":0,"note":"Verejné hiring/forhire discovery preverené; nájdené posty boli buď ponuka freelancera, alebo mali US-time/location friction a neprešli LIVE gate."},
-    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"Verejná indexácia neposkytla konkrétny overiteľný hiring post s priamym linkom; posledné validné dáta zostali zachované."}
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":2,"added":0,"rejected":0,"changed":0,"note":"Priame BA/okolie career discovery reálne preverené; bez nového direct-source winnera nad existujúce LIVE priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":2,"added":0,"rejected":2,"changed":0,"note":"Netzon Order Management/Sales/Technical Support vyžaduje fluent Dutch + English; Wolt Support Associate vyžaduje student status a English min. B2. Obe vyradené cez language/eligibility gate."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"BA technické/logistické discovery preverené; HEATING PRO zostáva existujúca LIVE priorita, bez nového lepšieho fitu."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":3,"added":0,"rejected":3,"changed":0,"note":"103 BA brigád. Vodič detského vláčika a Metro konsolidácia/distribúcia boli reálne viditeľné, ale slabšie než aktuálne LIVE priority; nebol pridaný slabý výsledok iba kvôli diverzite."},
+    {"name":"Práca za rohom / Kariera discovery","family":"local-jobboards","status":"ok","hits":4,"added":0,"rejected":2,"changed":0,"note":"BA discovery ukazuje Lanža/Akfos mirror duplicity a ďalšie support/admin/driver hity; canonical duplicity sa nepočítajú ako nový nezávislý zdroj. Bez nového winnera."},
+    {"name":"Pretlak","family":"pretlak","status":"ok","hits":1,"added":0,"rejected":1,"changed":0,"note":"Powerlogy Marketing Specialist: Bratislava hybrid, od 1 600 €, WordPress/WooCommerce alebo podobné, e-shop obsah a AI search. Veľmi dobrý smerovo, ale explicitne požaduje slovenčinu a angličtinu na veľmi dobrej úrovni; výrazná jazyková penalizácia, preto nie LIVE."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":4,"added":0,"rejected":4,"changed":0,"note":"Čerstvé product-listing/data-entry a WooCommerce discovery preverené. Shopify Product Listing & Data Entry Expert je Worldwide Remote, ale iba 10 USD fixed; ďalšie WooCommerce build/migration hity sú hard-dev alebo scope-to-pay mismatch."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":1,"added":0,"rejected":1,"changed":0,"note":"Verejný čerstvý WordPress/WooCommerce post bol ponuka freelancera [for hire], nie hiring dopyt; 0 evidence-grade kandidátov pre LIVE."},
+    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"Verejná indexácia neposkytla konkrétny overiteľný hiring post s priamym linkom. 0 verified hits; autentizovaný Nexus/local ingestion ostáva backlog, automat ho nespúšťa."}
   ],
   "verificationQueue": [
-    {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","reason":"WooCommerce operations, 15–30 USD/h, 6+ mesiacov; širší SEO/tool scope a call/reporting zvyšujú friction.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Recheck communication burden and tool-fit before LIVE promotion."}
+    {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","reason":"WooCommerce operations, 15–30 USD/h, 6+ mesiacov; širší SEO/tool scope a call/reporting zvyšujú friction.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Recheck communication burden and tool-fit before LIVE promotion."},
+    {"id":"pretlak-powerlogy-marketing-specialist-20260827","title":"Marketing Specialist – e-commerce, WordPress/WooCommerce, AI content","source":"Pretlak","url":"https://pretlak.com/job/powerlogy/marketing-specialist/IAnwjJvd_","locationEligibility":"ba-area","languageEligibility":"pending-high-risk","provisionalScore":84,"applicationFriction":"medium","reason":"Výborný e-commerce/WooCommerce/AI-content fit v Bratislave, ale inzerát explicitne požaduje slovenčinu a angličtinu na veľmi dobrej úrovni.","missingEvidence":["whether spoken English is daily/mandatory at B2+ level","whether strong Slovak plus practical AI-assisted English can be accepted"],"nextVerification":"Keep out of active recommendations unless language burden is confirmed compatible."}
   ],
-  "developmentBacklogAddedThisRun": [],
+  "developmentBacklogAddedThisRun": [
+    {"id":"language-demand-modality-evidence","title":"Language demand modality evidence","reason":"Rozlišovať požiadavku na písanú, hovorenú, internú a klientsku angličtinu; zabráni vyradeniu role, kde je možné bezpečne pomôcť AI pri písanom obsahu, ale zároveň neprepustí rolu s povinnými B2/C1 hovormi."},
+    {"id":"mirror-canonical-yield-accounting","title":"Mirror-to-canonical yield accounting","reason":"Oddeliť discovery zásluhu mirror portálu od canonical zdroja a merať, ktorý zdroj reálne priniesol unikátnu príležitosť; zlepší source-success analytics bez falošného navyšovania diverzity."}
+  ],
   "writeStatus": {
-    "jobsData":"revalidated-after-real-source-check-no-qualified-content-delta",
-    "jobsDataNonProf":"preserved-no-qualified-content-delta",
+    "jobsData":"preserved-no-qualified-content-delta",
+    "jobsDataNonProf":"preserved-locked",
     "sourceAudit":"updated-after-real-10-family-check",
+    "jobSources":"registry-refresh-pending-safe-full-file-write",
+    "master":"backlog-sync-blocked-by-truncated-full-file-read",
     "lockedFilesTouched":false,
-    "note":"jobs-data.json updatedAt reflects a real 18:21 CEST source validation. Existing job records were preserved because no qualified new or significant delta was confirmed. Fail-closed behavior retained for weak, stale, ambiguous, language-blocked and location-blocked candidates."
+    "note":"No active feed delta was justified. Locked UI/renderers/baseline/bootstrap untouched. MASTER full replacement was not attempted because the available read is truncated; two new backlog items are persisted here for later safe MASTER synchronization."
   }
 }
