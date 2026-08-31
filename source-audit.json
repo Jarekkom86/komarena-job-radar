@@ -44,7 +44,7 @@
     "jobsData":"preserved-no-qualified-delta",
     "jobsDataNonProf":"locked-preserved",
     "sourceAudit":"updated-after-real-10-family-check",
-    "jobSources":"pending-current-run-refresh",
+    "jobSources":"updated-current-run-refresh",
     "master":"backlog-pending-safe-append-due-large-file-replacement-limit",
     "lockedFilesTouched":false,
     "blocker":"jobs-data.json content freshness remains over the 60-minute SLA because no qualified content delta was found; updatedAt was intentionally not advanced. MASTER append is pending because the connector exposes only full-file replacement while the large MASTER read is truncated; destructive rewrite is refused fail-closed."
