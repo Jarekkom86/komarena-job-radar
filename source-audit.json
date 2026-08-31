@@ -44,7 +44,7 @@
     "jobsData":"preserved-no-qualified-content-delta",
     "jobsDataNonProf":"preserved-locked",
     "sourceAudit":"updated-after-real-11-family-check",
-    "jobSources":"pending-update-this-run",
+    "jobSources":"updated-after-real-11-family-check",
     "master":"blocked-safe-full-rewrite-unavailable",
     "lockedFilesTouched":false,
     "blocker":"PRACA_PRE_JARA_MASTER.md je cez konektor vracaný truncovaný; update_file vyžaduje kompletný obsah, preto sa MASTER v tomto behu bezpečne neprepisuje. Dve nové backlog položky sú zachytené v source-audit.json na neskorší bezpečný merge."
