@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T05:10:49+02:00",
+  "updatedAt": "2026-08-31T05:29:26+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
-    "significantPendingCandidates": 1,
+    "significantPendingCandidates": 2,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 4,
-    "rejectedAsWeakOrLowValue": 8,
-    "rejectedByFreshnessOrEvidence": 4,
-    "rejectedByLanguageOrSkill": 5,
+    "duplicateOrExisting": 3,
+    "rejectedAsWeakOrLowValue": 7,
+    "rejectedByFreshnessOrEvidence": 3,
+    "rejectedByLanguageOrSkill": 4,
     "rejectedByLocation": 1,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
@@ -18,33 +18,34 @@
     "freshnessStatus": "stale-content-but-audit-current",
     "liveFeedCount": 38,
     "liveSourceMix": {"profesia":18,"nonProfesia":20,"profesiaPct":47.4,"nonProfesiaPct":52.6},
-    "note": "Audit 31.8.2026 05:10 CEST reálne prehľadal 11 source families. Žiadny nový kandidát bezpečne neprešiel lokalitným, jazykovým, hard-skill a value gateom ako nový prioritný LIVE winner. Profesia ukázala čerstvý repost Office asistent/ka – e-shop & retail podpora (Eric SK/Fusakle, Dúbravka, od 7 EUR/h, dohoda/živnosť, pracovné dni približne 9:00–15:00, sezónne do konca 12/2026 až 1/2027, bez cudzieho jazyka), ale vzhľadom na nízku hodinovú odmenu a sezónnosť neprekonáva existujúce LIVE e-commerce priority a nebol aktivovaný. Fintegence Customer Support & Risk Analyst & ICT/DORA Trainee je BA/hybrid a 7,50 EUR/h, no ide o starší augustový listing s fintech/compliance špecializáciou a neprekonáva aktuálne priority. InvenSense Office Manager vyžaduje pokročilú AJ a office presence; HDI asistent vyžaduje AJ + nemčinu; WordPress Jobs fresh výsledok je senior hard-development rola; Upwork fresh discovery nepriniesol kvalifikovaný WooCommerce/admin winner. Reddit/WordPress community discovery nepriniesol nový vhodný hiring lead; Facebook verejná indexácia neposkytla overiteľný konkrétny hit. jobs-data.json ostáva fail-closed bez umelého updatedAt posunu."
+    "note": "Audit 31.8.2026 05:29 CEST reálne prehľadal 11 source families. Najsilnejší nový lead je Upwork WooCommerce Product Listing & Upload Specialist: Worldwide remote, 10–30 USD/h, 50–75 produktov, variácie/kategórie/popisy, 1–3 mesiace, ongoing; Dutch je preferovaný, nie tvrdý gate, klient výslovne pripúšťa ChatGPT pre holandské texty. Pri kontrole 15–20 proposals, 1 interviewing, 10 invites/9 unanswered. Lead je výrazne relevantný, ale jobs-data.json sa v tomto behu nemení, pretože dostupný GitHub writer vyžaduje full-file replacement a bezpečný append nebol vykonaný bez kompletnej rekonštrukcie autoritatívneho feedu. Website & SEO Management 2026 ostáva druhý silný pending lead (15–30 USD/h, Worldwide remote, 6+ mesiacov), no onboarding call/weekly reporting/Loom zvyšujú language/application friction. Powerlogy Marketing Specialist je BA/hybrid a WooCommerce-related, ale požaduje slovenčinu aj angličtinu na veľmi dobrej úrovni a výrazný influencer/marketing scope, preto sa neaktivoval. Wolt Support BA vyžaduje min. B2 AJ. Facebook zostáva 0 verified hits / limited."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":6,"added":0,"rejected":6,"note":"Fresh BA admin/e-shop/support/driver discovery reálne preverená. Eric SK/Fusakle e-shop office support je relevantný, ale od 7 EUR/h a sezónnosť ho držia pod existujúcimi LIVE e-commerce prioritami; HDI a InvenSense majú jazykové hard/strong gates; Cliniq je všeobecnejšia admin rola s B1 AJ."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Priame BA/support/operations careers discovery preverená; bez nového potvrdeného winnera. Existujúce direct-source LIVE položky ostávajú zachované fail-closed."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"added":0,"rejected":1,"note":"Fresh Bratislava/remote e-commerce/support discovery preverená; verejne indexovaný CMS Operator bol starý a už neprijímal prihlášky, preto sa neaktivoval."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava/okolie technická podpora, administratíva, vodič a sklad discovery reálne vyhľadaná; bez nového prioritného kvalifikovaného hitu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA administratíva/vodič/sklad brigády reálne preverené; bez nového verejne overiteľného prioritného winnera."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"rejected":1,"note":"Boataround Operations Coordinator bol znovu zachytený, ale autoritatívny ÚPSVR záznam je z mája 2026; bez čerstvého hiring dôkazu sa neaktivuje."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA/remote e-commerce/WordPress/content/support discovery reálne vyhľadaná; bez nového kvalifikovaného hitu."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":2,"added":0,"rejected":2,"note":"Fresh WordPress Jobs index preverený. Senior WordPress Developer je remote, ale vyžaduje custom themes, PHP/JS, React, server management, API, Git a ďalšie hard-development skills; ostatné čerstvé role boli lokalitne alebo skillovo nevhodné."},
-    {"name":"Upwork","family":"upwork","status":"checked","hits":5,"added":0,"rejected":5,"note":"Fresh WordPress/WooCommerce/VA discovery preverená. Výsledky boli prevažne nízko platené fixed-price web buildy, migrácie alebo dizajn; neobjavil sa nový WooCommerce/admin winner nad LIVE priority. Website & SEO Management 2026 ostáva vo verification queue."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":4,"added":0,"rejected":4,"note":"Verejne indexované hiring príspevky preverené. Čerstvé výsledky boli buď FOR HIRE, US-only/hard-dev, veľmi nízko platené, alebo staršie než aktuálne prioritné okno."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny overiteľný hiring post ani priamy link; autentizovaný Nexus/local ingestion nebol spustený."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":1,"note":"Fresh BA e-shop/admin/support discovery preverená; bez nového winnera nad LIVE priority."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Direct-company BA support/e-commerce discovery reálne vyhľadaná; bez nového potvrdeného winnera."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"added":0,"rejected":2,"note":"Wolt Support BA je aktuálny, ale vyžaduje professional working English minimum B2; Caterpillar eCommerce support je Košice a posting window už skončil."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA technická podpora/admin/vodič/sklad discovery preverená bez nového prioritného hitu."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":1,"added":0,"rejected":1,"note":"Aktuálny BA pokladník/dokladač 6,25 EUR/h je locality-ok, ale nízka hodnota a slabší fit."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Portál reálne prehľadaný; bez nového kvalifikovaného e-shop/support/admin winnera."},
+    {"name":"Pretlak","family":"pretlak","status":"ok","hits":1,"added":0,"rejected":1,"note":"Powerlogy Marketing Specialist: BA/hybrid, od 1600 EUR, WordPress/WooCommerce bonus; vyradené z LIVE priority pre veľmi dobrú AJ a influencer/marketing-heavy scope."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh public discovery vykonaná; bez nového non-hard-dev kvalifikovaného winnera."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":4,"added":0,"rejected":2,"note":"Silný nový WooCommerce Product Listing & Upload Specialist: Worldwide, 10–30 USD/h, 50–75 produktov; pending safe write. Website & SEO Management 2026 ostáva pending. Nízko platené alebo hard-dev výsledky vyradené."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":4,"added":0,"rejected":4,"note":"Fresh verejné výsledky boli prevažne FOR HIRE alebo hard-dev/US-only; bez vhodného hiring leadu."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny overiteľný hiring post ani priamy link; Nexus/local ingestion nebol spustený."}
   ],
   "verificationQueue": [
-    {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":91,"reason":"Worldwide remote, 15–30 USD/h, 6+ mesiacov, WooCommerce product listing/plugin maintenance/SEO/store upkeep. Explicitná English úroveň nie je uvedená; onboarding call, weekly reporting a Loom audit zvyšujú application/language friction.","missingEvidence":["explicit communication-language expectation","current active-hiring state"],"nextVerification":"Recheck canonical detail for language wording and live proposal/interview state before promotion."}
+    {"id":"upwork-woocommerce-product-listing-2093271017253461612","title":"WooCommerce Product Listing & Upload Specialist","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/WooCommerce-Product-Listing-Upload-Specialist_~022093271017253461612/","locationEligibility":"remote-ok","languageEligibility":"acceptable-risk","provisionalScore":92,"reason":"Worldwide remote, 10–30 USD/h, 50–75 produktov, WooCommerce product uploads/variations/categories/descriptions; Dutch je preferovaný, ale klient explicitne pripúšťa použitie ChatGPT na tvorbu/zlepšenie holandských textov.","missingEvidence":["safe authoritative jobs-data append"],"nextVerification":"Promote to LIVE after safe jobs-data full-file reconstruction/append with invariants."},
+    {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":91,"reason":"Worldwide remote, 15–30 USD/h, 6+ mesiacov, WooCommerce product listing/plugin maintenance/SEO/store upkeep. Onboarding call, weekly reporting a Loom audit zvyšujú language/application friction.","missingEvidence":["explicit communication-language expectation"],"nextVerification":"Recheck language wording and current live activity before promotion."}
   ],
   "developmentBacklogAddedThisRun": [
-    {"id":"low-pay-seasonal-relevance-gate","title":"Low-pay seasonal relevance gate","reason":"Relevantné e-commerce/admin brigády s nízkou hodinovou sadzbou a sezónnym horizontom odlíšiť od plnohodnotných LIVE priorít, aby silný keyword fit neprebil ekonomickú hodnotu a stabilitu."},
-    {"id":"repost-vs-original-age-resolver","title":"Repost vs original age resolver","reason":"Pri výsledkoch, ktoré sa na jobboarde objavia ako dnešné/včerajšie, porovnať canonical/original publication age a zabrániť freshness laundering bez reálnej zmeny ponuky."}
+    {"id":"preferred-language-fallback-viability-score","title":"Preferred-language fallback viability score","reason":"Rozlíšiť povinný jazyk od preferovaného jazyka, keď klient explicitne povoľuje AI/prekladový fallback; zabráni zbytočnému vyradeniu praktických e-commerce zákaziek ako aktuálny Dutch/ChatGPT WooCommerce lead."},
+    {"id":"marketplace-invite-asymmetry-signal","title":"Marketplace invite asymmetry signal","reason":"Pri freelance leadoch sledovať pomer invites sent vs. unanswered a interviewing; vysoká asymetria môže signalizovať klientovu nízku odozvu alebo široké rozosielanie a má upraviť reply probability/ROI."}
   ],
   "writeStatus": {
-    "jobsData":"preserved-no-qualified-content-delta",
+    "jobsData":"preserved-pending-safe-append",
     "jobsDataNonProf":"preserved-locked",
     "sourceAudit":"updated-after-real-11-family-check",
     "lockedFilesTouched":false,
-    "blocker":null
+    "blocker":"GitHub contents writer requires complete replacement; safe authoritative jobs-data append was not executed in this run."
   }
 }
