@@ -45,12 +45,14 @@
   ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-live-delta",
-    "jobSources":"update-pending-this-run",
+    "jobSources":"updated-current-run",
     "jobsDataNonProf":"preserved-locked",
     "sourceAudit":"updated-after-real-10-family-check",
-    "master":"update-pending-this-run",
+    "master":"updated-current-run",
     "lockedFilesTouched":false,
     "jobsDataCommit":"d0cbcea917236931e1fb14d73a4e355c9f1e5851",
-    "note":"No locked files touched. jobs-data.json stayed unchanged because this run produced no qualified LIVE delta."
+    "jobSourcesCommit":"ffb1e297ac24d0f9ee3c9f50efad02e24ad8949c",
+    "masterCommit":"3fd85540732fb9ed9d0b14de6b14f6b88f797547",
+    "note":"No locked files touched. jobs-data.json stayed unchanged because this run produced no qualified LIVE delta; source register, audit and MASTER were refreshed truthfully."
   }
 }
