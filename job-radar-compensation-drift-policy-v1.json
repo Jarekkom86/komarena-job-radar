@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "name": "Canonical Compensation Drift Detector",
+  "version": "1.0.0",
+  "purpose": "Prevent mirrors, reposts and stale search indexes from inflating pay or creating false urgency when the canonical job detail states different compensation.",
+  "rules": {
+    "canonicalPriority": ["employer-career-page", "canonical-job-detail", "original-platform-post", "job-board-mirror", "aggregator", "search-index"],
+    "compareSameRoleIdentity": true,
+    "materialMonthlyDriftPercent": 10,
+    "materialHourlyDriftPercent": 10,
+    "materialDailyDriftPercent": 10,
+    "canonicalValueWinsForRanking": true,
+    "higherMirrorValueNeverRaisesScore": true,
+    "conflictAction": "retain-role-with-conservative-canonical-value-and-record-conflict",
+    "canonicalUnavailableAction": "mark-compensation-confidence-low-and-do-not-use-mirror-value-as-guaranteed-pay",
+    "locationGatePrecedence": "Compensation never overrides ba-area/remote-ok hard eligibility."
+  },
+  "requiredFieldsOnConflict": [
+    "compensationCanonical",
+    "compensationObservedAlternates",
+    "compensationEvidenceUrl",
+    "compensationCheckedAt",
+    "compensationConfidence",
+    "compensationConflictReason"
+  ],
+  "confidenceValues": ["high", "medium", "low", "conflict"],
+  "rankingInvariant": "Guaranteed-pay ranking must use the strongest canonical evidence and must not use a higher repost/mirror number when canonical evidence is lower or ambiguous.",
+  "example": {
+    "case": "canonical detail says 150 EUR/day while mirror says 180 EUR/day",
+    "result": "rank and display guaranteed value from canonical 150 EUR/day; preserve 180 EUR/day only as observed conflict evidence"
+  },
+  "preservation": ["stable IDs", "canonical dedupe", "sourceTrust", "verifiedAt", "scoreConfidence", "locationEligibility", "locationReason", "CRM/user edits"]
+}
