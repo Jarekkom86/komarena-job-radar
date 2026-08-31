@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T04:35:53+02:00",
+  "updatedAt": "2026-08-31T05:10:49+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 3,
-    "rejectedAsWeakOrLowValue": 7,
-    "rejectedByFreshnessOrEvidence": 3,
-    "rejectedByLanguageOrSkill": 3,
-    "rejectedByLocation": 0,
+    "duplicateOrExisting": 4,
+    "rejectedAsWeakOrLowValue": 8,
+    "rejectedByFreshnessOrEvidence": 4,
+    "rejectedByLanguageOrSkill": 5,
+    "rejectedByLocation": 1,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
     "jobsDataContentUpdatedAt": "2026-08-31T01:32:30+02:00",
@@ -18,27 +18,27 @@
     "freshnessStatus": "stale-content-but-audit-current",
     "liveFeedCount": 38,
     "liveSourceMix": {"profesia":18,"nonProfesia":20,"profesiaPct":47.4,"nonProfesiaPct":52.6},
-    "note": "Audit 31.8.2026 04:35 CEST reálne prehľadal 11 source families. Žiadny nový kandidát bezpečne neprešiel lokalitným, jazykovým, hard-skill a value gateom nad existujúce LIVE priority. Kariera.sk dnes indexuje BA Operations Coordinator od 1 500 EUR, ale zobrazený záznam je z 9.8.2026 a bez čerstvého canonical hiring proof, preto sa neaktivuje. Upwork fresh discovery vrátil najmä brand/design alebo všeobecné web projekty bez silného WooCommerce/admin fitu; Canva portfolio integrácia je staršia a neprekonáva LIVE priority. Priama company discovery nevygenerovala nový potvrdený BA/remote winner. Facebook verejná indexácia ostala na 0 verified hits. jobs-data.json ostáva fail-closed bez umelého updatedAt posunu; audit freshness je aktuálny, obsahový feed timestamp ostáva starší, lebo nevznikol kvalifikovaný delta."
+    "note": "Audit 31.8.2026 05:10 CEST reálne prehľadal 11 source families. Žiadny nový kandidát bezpečne neprešiel lokalitným, jazykovým, hard-skill a value gateom ako nový prioritný LIVE winner. Profesia ukázala čerstvý repost Office asistent/ka – e-shop & retail podpora (Eric SK/Fusakle, Dúbravka, od 7 EUR/h, dohoda/živnosť, pracovné dni približne 9:00–15:00, sezónne do konca 12/2026 až 1/2027, bez cudzieho jazyka), ale vzhľadom na nízku hodinovú odmenu a sezónnosť neprekonáva existujúce LIVE e-commerce priority a nebol aktivovaný. Fintegence Customer Support & Risk Analyst & ICT/DORA Trainee je BA/hybrid a 7,50 EUR/h, no ide o starší augustový listing s fintech/compliance špecializáciou a neprekonáva aktuálne priority. InvenSense Office Manager vyžaduje pokročilú AJ a office presence; HDI asistent vyžaduje AJ + nemčinu; WordPress Jobs fresh výsledok je senior hard-development rola; Upwork fresh discovery nepriniesol kvalifikovaný WooCommerce/admin winner. Reddit/WordPress community discovery nepriniesol nový vhodný hiring lead; Facebook verejná indexácia neposkytla overiteľný konkrétny hit. jobs-data.json ostáva fail-closed bez umelého updatedAt posunu."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA WordPress/e-shop/support/admin/driver discovery reálne vyhľadaná; v tomto indexovanom behu bez nového konkrétneho kvalifikovaného hitu nad LIVE priority."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Priame BA/support/operations careers discovery reálne preverená; bez nového potvrdeného winnera. Existujúce direct-source LIVE položky sa zachovávajú fail-closed."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava/remote technical support, e-commerce a customer-care discovery reálne vyhľadaná; bez nového verejne overiteľného non-hard-dev winnera."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava/okolie technická podpora, administratíva, vodič a sklad discovery reálne vyhľadaná; bez nového prioritného kvalifikovaného hitu v tomto behu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA administratíva/vodič/sklad brigády reálne vyhľadané; bez nového verejne overiteľného prioritného winnera."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":1,"added":0,"rejected":1,"note":"Portál reálne prehľadaný. Index ukázal Operations Coordinator, Boataround.com, Bratislava, od 1 500 EUR, ale záznam nesie dátum 9.8.2026 a bez čerstvého canonical active-hiring proof nebol pridaný."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":6,"added":0,"rejected":6,"note":"Fresh BA admin/e-shop/support/driver discovery reálne preverená. Eric SK/Fusakle e-shop office support je relevantný, ale od 7 EUR/h a sezónnosť ho držia pod existujúcimi LIVE e-commerce prioritami; HDI a InvenSense majú jazykové hard/strong gates; Cliniq je všeobecnejšia admin rola s B1 AJ."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Priame BA/support/operations careers discovery preverená; bez nového potvrdeného winnera. Existujúce direct-source LIVE položky ostávajú zachované fail-closed."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"added":0,"rejected":1,"note":"Fresh Bratislava/remote e-commerce/support discovery preverená; verejne indexovaný CMS Operator bol starý a už neprijímal prihlášky, preto sa neaktivoval."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava/okolie technická podpora, administratíva, vodič a sklad discovery reálne vyhľadaná; bez nového prioritného kvalifikovaného hitu."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA administratíva/vodič/sklad brigády reálne preverené; bez nového verejne overiteľného prioritného winnera."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"rejected":1,"note":"Boataround Operations Coordinator bol znovu zachytený, ale autoritatívny ÚPSVR záznam je z mája 2026; bez čerstvého hiring dôkazu sa neaktivuje."},
     {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA/remote e-commerce/WordPress/content/support discovery reálne vyhľadaná; bez nového kvalifikovaného hitu."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh remote WooCommerce/WordPress support discovery preverená; v tomto behu bez nového non-hard-dev kvalifikovaného winnera."},
-    {"name":"Upwork","family":"upwork","status":"checked","hits":2,"added":0,"rejected":2,"note":"Fresh WordPress/WooCommerce/VA discovery reálne preverená. Výsledky zahŕňali brand/design a Canva portfolio integráciu, ktoré neprekonali LIVE priority ani nepredstavovali silný e-shop/admin fit."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"limited","hits":0,"added":0,"rejected":0,"note":"Verejne indexované WordPress/WooCommerce hiring komunity boli preverené; bez nového konkrétneho dopytu s dostatočným scope/pay/location dôkazom."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":2,"added":0,"rejected":2,"note":"Fresh WordPress Jobs index preverený. Senior WordPress Developer je remote, ale vyžaduje custom themes, PHP/JS, React, server management, API, Git a ďalšie hard-development skills; ostatné čerstvé role boli lokalitne alebo skillovo nevhodné."},
+    {"name":"Upwork","family":"upwork","status":"checked","hits":5,"added":0,"rejected":5,"note":"Fresh WordPress/WooCommerce/VA discovery preverená. Výsledky boli prevažne nízko platené fixed-price web buildy, migrácie alebo dizajn; neobjavil sa nový WooCommerce/admin winner nad LIVE priority. Website & SEO Management 2026 ostáva vo verification queue."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"checked","hits":4,"added":0,"rejected":4,"note":"Verejne indexované hiring príspevky preverené. Čerstvé výsledky boli buď FOR HIRE, US-only/hard-dev, veľmi nízko platené, alebo staršie než aktuálne prioritné okno."},
     {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny overiteľný hiring post ani priamy link; autentizovaný Nexus/local ingestion nebol spustený."}
   ],
   "verificationQueue": [
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":91,"reason":"Worldwide remote, 15–30 USD/h, 6+ mesiacov, WooCommerce product listing/plugin maintenance/SEO/store upkeep. Explicitná English úroveň nie je uvedená; onboarding call, weekly reporting a Loom audit zvyšujú application/language friction.","missingEvidence":["explicit communication-language expectation","current active-hiring state"],"nextVerification":"Recheck canonical detail for language wording and live proposal/interview state before promotion."}
   ],
   "developmentBacklogAddedThisRun": [
-    {"id":"audit-feed-freshness-split","title":"Audit-vs-feed freshness separation","reason":"Oddeliť lastDiscoveryAt/lastAuditAt od jobsDataUpdatedAt, aby úspešný audit bez kvalifikovaného delta nevyzeral ako technicky stale alebo aby nevznikala motivácia posúvať feed timestamp bez obsahovej zmeny."},
-    {"id":"pending-evidence-checklist","title":"Pending-candidate evidence checklist","reason":"Každý verification-queue kandidát má explicitne evidovať chýbajúce dôkazy a najbližší overovací krok; zníži opakované slepé rechecky a urýchli promotion/reject rozhodnutie."}
+    {"id":"low-pay-seasonal-relevance-gate","title":"Low-pay seasonal relevance gate","reason":"Relevantné e-commerce/admin brigády s nízkou hodinovou sadzbou a sezónnym horizontom odlíšiť od plnohodnotných LIVE priorít, aby silný keyword fit neprebil ekonomickú hodnotu a stabilitu."},
+    {"id":"repost-vs-original-age-resolver","title":"Repost vs original age resolver","reason":"Pri výsledkoch, ktoré sa na jobboarde objavia ako dnešné/včerajšie, porovnať canonical/original publication age a zabrániť freshness laundering bez reálnej zmeny ponuky."}
   ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-content-delta",
