@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 31. 8. 2026 08:35 CEST
+Aktualizované: 31. 8. 2026 09:35 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -55,15 +55,14 @@ Aktualizované: 31. 8. 2026 08:35 CEST
 21. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 22. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 31. 8. 2026 08:35 CEST — LATEST
+## SOURCE AUDIT — 31. 8. 2026 09:35 CEST — LATEST
 Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **10 nezávislých source families**, z toho **9 mimo Profesia**.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky: 0.** Žiadny čerstvý kandidát bezpečne neprekonal existujúce LIVE priority po lokalitnom, jazykovom, hard-skill, freshness a value gate.
-- **LinkedIn:** AgentFire Junior Web Designer a Ludicrum CMS Operator boli verejne indexované, ale oba sú približne 4–5 mesiacov staré a označené `No longer accepting applications`.
-- **Kariera.sk:** verejný index vrátil starý technik PO/BOZP výsledok približne 1,3 roka starý; mimo ranking profilu.
-- **Upwork:** najbližší vhodný dlhodobý WordPress/WooCommerce support je Worldwide remote za 8–15 USD/h, ale je približne 2 týždne starý, má 20–50 proposals, 2 interviewing, 10 invites a 9 unanswered invites. Scope je dobrý, no freshness/competition/value neprekonali aktuálne LIVE WooCommerce priority. Ďalšie hity boli hard-dev, expert UI/UX alebo nízko platené.
-- **Profesia/Worki/Brigada/Pretlak/direct careers:** reálne vyhľadané, bez nového kvalifikovaného winnera.
+- **Kariera.sk:** technická podpora v Bratislave za 1 400–1 700 € je verejne dostupná, ale približne 3 mesiace stará a neprešla freshness/evidence promotion gate.
+- **Upwork:** existujúci WooCommerce Product Listing & Upload Specialist bol znovu nájdený a deduplikovaný. Dlhodobý WordPress/WooCommerce support v nemčine je scope-fit, ale povinný jazyk je mimo profilu; ďalšie čerstvé výsledky boli hard-dev, video/creative alebo slabšie hodnotou.
+- **Profesia/Worki/Brigada/Pretlak/direct careers/LinkedIn:** reálne vyhľadané, bez nového kvalifikovaného winnera.
 - **Reddit/WordPress komunity:** bez nového verejne overiteľného hiring dopytu spĺňajúceho evidence + location gate.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 
@@ -74,7 +73,7 @@ Reálne prehľadané source families: **Profesia; priame firemné careers; Linke
 - LIVE feed: **39 aktívnych položiek**.
 - Mix: **Profesia 18 / 39 = 46,2 %; mimo Profesia 21 / 39 = 53,8 %**.
 - `jobs-data.json.updatedAt` = **31. 8. 2026 07:32:56 CEST** — zámerne neposunuté bez kvalifikovaného obsahového delta.
-- `source-audit.json.updatedAt` = **31. 8. 2026 08:35:09 CEST**.
+- `source-audit.json.updatedAt` = **31. 8. 2026 09:35:48 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -218,7 +217,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 129. **Verification queue TTL + auto-expiry policy** — pending kandidát po definovanom počte behov bez nového dôkazu prejde do cold state; zníži opakované rechecky starých neoveriteľných ponúk a uvoľní discovery kapacitu pre čerstvé leady.
 130. **Audit-vs-feed freshness separation** — evidovať samostatne `lastDiscoveryAt`/`lastAuditAt` a `jobsDataUpdatedAt`; úspešný audit bez kvalifikovaného delta nebude vyzerať ako technická chyba a nebude tlačiť systém k falošnému posúvaniu feed timestampu.
 131. **Pending-candidate evidence checklist** — každý verification-queue kandidát musí mať zoznam chýbajúcich dôkazov (jazyk, remote eligibility, active state, pay) a presný ďalší overovací krok; znižuje opakované slepé rechecky a skracuje promotion/reject rozhodnutie.
-132. **Full-file chunk reassembly invariant** — pri veľkých autoritatívnych JSON/MASTER súboroch čítať po riadkových úsekoch, pred write kontrolovať počet položiek, prvé/posledné ID a uzavretie JSON/Markdown; odstraňuje doterajší blocker bezpečného GitHub replacementu bez rizika straty feedu.
-133. **Paid-test / trial-work risk scorer** — pri zákazkách rozlišovať platený/neplatený test, rozsah testu a jeho pomer k hodnote zákazky; znižuje čas strávený na neprimeraných skúšobných úlohách a zlepšuje prioritu apply-now.
-134. **Source-query yield memory** — evidovať presný vyhľadávací dotaz, source family, počet relevantných hitov, pridaných a vyradených položiek; nízko-výnosné formulácie sa nebudú opakovať bez dôvodu a úspešné query dostanú vyššiu prioritu pri zachovaní exploration floor.
-135. **Listing disappearance confirmation quorum** — existujúcu LIVE položku demotovať alebo uzavrieť až po dvoch nezávislých closure signáloch alebo explicitnom `closed` stave canonical zdroja; posilní fail-closed proti dočasným indexovým výpadkom.
+132. **Publication-time confidence normalizer** — rozlišovať presný canonical `publishedAt`, relatívny údaj typu „2 days ago“ a iba crawl timestamp; zabráni falošnej freshness a spraví `<24h` prioritu dôveryhodnejšou.
+133. **Dominated-candidate suppression memory** — pri kandidátovi, ktorý opakovane neprekoná LIVE položku rovnakého tracku kvôli mzde, jazyku, freshness alebo hard-skill burden, uložiť dôvod a dočasne znížiť recheck frekvenciu; uvoľní discovery kapacitu bez straty nového delta.
