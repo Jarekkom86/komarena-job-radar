@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T14:28:08+02:00",
+  "updatedAt": "2026-08-31T14:42:00+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
     "significantPendingCandidates": 0,
     "significantlyChangedPriorityJobs": 0,
     "significantlyChangedExistingJobs": 0,
-    "duplicateOrExisting": 5,
-    "rejectedAsWeakOrLowValue": 6,
+    "duplicateOrExisting": 4,
+    "rejectedAsWeakOrLowValue": 7,
     "rejectedByFreshnessOrEvidence": 3,
-    "rejectedByLanguageOrSkill": 2,
-    "rejectedByLocation": 0,
+    "rejectedByLanguageOrSkill": 4,
+    "rejectedByLocation": 2,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
     "jobsDataContentUpdatedAt": "2026-08-31T07:32:56+02:00",
@@ -19,31 +19,34 @@
     "freshnessStatus": "content-stale-audit-fresh",
     "liveFeedCount": 39,
     "liveSourceMix": {"profesia":18,"nonProfesia":21,"profesiaPct":46.2,"nonProfesiaPct":53.8},
-    "note": "Audit 31.8.2026 14:28 CEST reálne prehľadal 10 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Bez nového alebo významne zmeneného prioritného winnera. Existujúci LIVE WooCommerce Product Listing & Upload Specialist ostáva aktívny za 10–30 USD/h; activity je 15–20 proposals, 1 interviewing, 10 invites, bez významnej zmeny oproti poslednej kontrole. Nový/čerstvo indexovaný Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support je Worldwide remote a obsahovo relevantný, ale ide o už skôr overený pending lead a neprekonáva LIVE WooCommerce prioritu. Nový Upwork E-commerce VA/Product Listing pre WooCommerce a viac kanálov je 3–6 USD/h, preto value reject. Car Route Vodič dodávky do 3,5t v Petržalke ponúka 1 800 EUR/mes. a nástup ihneď, ale pravidelná trasa BA–Rakúsko–BA, pracovný čas utorok–sobota 1:30–11:30 a ručná nakládka/vykládka ho držia pod existujúcimi vodičskými prioritami. AlzaBox Špecialista ostáva aktívny za 1 430 EUR fix + až 610 EUR variabilne. HEATING PRO je stále verejne dostupný s nástupom ASAP. Profesia remote index priniesol Dotačného špecialistu za 2 500 EUR a Social Media Creator 700 EUR; prvý je špecializovaný grantový scope mimo jadra a druhý je slabší value/fit. Reddit bez evidence-grade hiring leadu; Facebook 0 verified hits, limited. jobs-data.json zostal fail-closed bez kvalifikovaného obsahového delta a jeho updatedAt sa neposunul."
+    "note": "Audit 31.8.2026 14:42 CEST reálne prehľadal 10 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Bez nového alebo významne zmeneného prioritného winnera. Najčerstvejší relevantný Upwork hit Shopify Product Listing & Data Entry Expert je Worldwide remote, menej než 5 proposals a scope presne sedí na e-shop/product admin, ale rozpočet je iba 10 USD fixed-price, preto ekonomický reject. WordPress workshop web za 300 USD má 50+ proposals a širší account/payment/content-access build scope; real-estate web za 160 USD vyžaduje IDX/MLS expertízu; WooCommerce theme customisation za 30 USD zahŕňa payment gateway, GST, speed/security/SEO a 30 dní podpory, preto value/scope reject. Fotograf v Miami je síce chybne označený ako Worldwide Remote Job, ale fyzické plnenie je v Miami 31.8.2026, preto reject-distance. LinkedIn priniesol najmä jazykovo alebo lokalitne nevhodné výsledky (napr. Dutch support s relokáciou do Grécka) a staršie/neaktívne role. Worki potvrdil existujúci HEATING PRO; Kariera má BA technickú podporu 1 400–1 700 EUR, ale ide o starší indexovaný detail bez nového priority delta. Reddit bez evidence-grade hiring leadu; Facebook 0 verified hits, limited. jobs-data.json zostal fail-closed bez kvalifikovaného obsahového delta a jeho updatedAt sa neposunul."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":7,"added":0,"rejected":5,"changed":0,"note":"BA, remote a vodičské discovery reálne preverené. Car Route 1 800 EUR/mes. je aktívny, ale režim Ut–So 1:30–11:30, pravidelná trasa do Rakúska a ručná manipulácia znižujú fit. Dotačný špecialista 2 500 EUR je špecializovaný grantový scope; Social Media Creator 700 EUR je slabší value/fit. Existujúce Košík/Lanža/Akfos ostávajú indexované."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"Alza kariéra reálne preverená; AlzaBox Špecialista Bratislava ostáva aktívny za 1 430 EUR fix + až 610 EUR variabilnú zložku. Bez nového kvalifikovaného winnera."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":1,"added":0,"rejected":1,"changed":0,"note":"Verejný index pre BA/remote support preverený. SupportYourApp remote výsledok je starý približne 11 mesiacov a fluent-English, preto freshness/language reject."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"HEATING PRO canonical/export detail je stále verejne dostupný; Bratislava, nástup ASAP. Bez významnej zmeny oproti LIVE položke."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"Aktuálny BA hit pokladník Ružinov 5,50 EUR/h je mimo cieľového smeru/value threshold; nepridaný."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA e-shop/admin/technická podpora discovery preverené; bez nového konkrétneho kvalifikovaného winnera."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA/remote WordPress/e-commerce/content discovery reálne preverená; bez nového vhodného non-hard-dev winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":8,"added":0,"rejected":6,"changed":0,"note":"Existujúci LIVE WooCommerce Product Listing & Upload Specialist ostáva aktívny za 10–30 USD/h; 15–20 proposals, 1 interviewing, 10 invites. Tech-Savvy WordPress VA je obsahovo relevantný, ale už skôr overený pending lead. Nový e-commerce VA s WooCommerce/multichannel scope je iba 3–6 USD/h; ďalšie čerstvé WooCommerce fixed-price hity 5–200 USD majú slabší scope-to-pay profil než LIVE priority."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejná Reddit discovery preverená; výsledky sú najmä self-promo [for hire], nie konkrétny hiring dopyt. Bez evidence-grade leadu."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA WordPress/e-shop/support/admin/driver discovery reálne preverené pre 31.8.2026; bez nového konkrétneho kvalifikovaného detailu nad LIVE priority."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Alza/IKEA/Lidl a ďalšie priame BA career discovery reálne prehľadané; bez nového active winnera spĺňajúceho fit + location gate."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":6,"added":0,"rejected":6,"changed":0,"note":"Verejný index BA/remote support reálne preverený. Dutch-speaking remote-in-Greece rola vyžaduje holandčinu a relokáciu; ďalšie výsledky boli staré, hard-skill alebo mimo BA/remote eligibility."},
+    {"name":"Worki.sk","family":"worki","status":"ok","hits":2,"added":0,"rejected":1,"changed":0,"note":"BA/okolie technická/admin/vodič discovery preverená. HEATING PRO zostáva existujúci LIVE hit; ďalšie výsledky neprekonali priority alebo boli mimo profilu."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA administratíva, vodič, sklad a e-shop brigády reálne vyhľadané; bez nového kvalifikovaného hitu."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":2,"added":0,"rejected":1,"changed":0,"note":"BA discovery reálne preverené. Grafton Technická podpora 1 400–1 700 EUR je verejne dostupná, ale indexovaný detail je približne 3 mesiace starý a neprináša nový priority delta; ostatné BA výsledky boli slabšie/mimo jadra."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA/remote WordPress/e-commerce/content/support discovery reálne vyhľadaná; bez nového vhodného non-hard-dev winnera."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":8,"added":0,"rejected":7,"changed":0,"note":"Čerstvé Worldwide remote hity reálne preverené. Shopify Product Listing & Data Entry Expert má <5 proposals, ale iba 10 USD fixed-price; workshop WordPress build 300 USD má 50+ proposals; real-estate IDX/MLS 160 USD a WooCommerce theme customisation 30 USD sú hard-skill/scope-to-pay reject. Existujúci LIVE WooCommerce Product Listing & Upload Specialist zostáva hodnotnejší."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejná Reddit discovery preverená; výsledky sú prevažne self-promo/For Hire alebo agregované zoznamy, nie konkrétny evidence-grade hiring dopyt s vhodným location proof."},
     {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"0 verified hits; verejný search neposkytol konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion nebol spustený."}
   ],
   "verificationQueue": [
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","reason":"WooCommerce operations, 15–30 USD/h, 6+ mesiacov; širší SEO/tool scope a call/reporting zvyšujú friction.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Recheck communication burden and tool-fit before LIVE promotion."}
   ],
-  "developmentBacklogAddedThisRun": [],
+  "developmentBacklogAddedThisRun": [
+    {"name":"Remote-label physical-location contradiction detector","problem":"Niektoré marketplace ponuky sú označené Worldwide/Remote, hoci samotné plnenie vyžaduje fyzickú prítomnosť na konkrétnom mieste (napr. fotograf v Miami).","benefit":"Automaticky porovná structured remote flag so scope textom, dátumom a miestom výkonu a pri rozpore nastaví reject-distance namiesto falošného remote-ok."},
+    {"name":"Microbudget e-commerce task floor","problem":"Čerstvé Shopify/WooCommerce administratívne hity môžu mať výborný skill fit, ale absurdne nízky fixed-price rozpočet, ktorý zahlcuje discovery a stojí application credits/čas.","benefit":"Pred rankingom vypočíta minimálnu ekonomickú životaschopnosť fixed-price tasku podľa rozsahu položiek, požadovaných výstupov a odhadovanej práce; low-value hity zostanú v audite, nie v LIVE feede."}
+  ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-delta",
     "jobsDataNonProf":"locked-preserved",
     "sourceAudit":"updated-after-real-10-family-check",
-    "jobSources":"preserved-no-registry-change-needed",
-    "master":"preserved-no-required-structural-change",
+    "jobSources":"pending-current-run-refresh",
+    "master":"backlog-pending-safe-append-due-large-file-replacement-limit",
     "lockedFilesTouched":false,
-    "blocker":"jobs-data.json content freshness remains over the 60-minute SLA because no qualified content delta was found; updatedAt was intentionally not advanced. Last valid feed content was preserved fail-closed."
+    "blocker":"jobs-data.json content freshness remains over the 60-minute SLA because no qualified content delta was found; updatedAt was intentionally not advanced. MASTER append is pending because the connector exposes only full-file replacement while the large MASTER read is truncated; destructive rewrite is refused fail-closed."
   }
 }
