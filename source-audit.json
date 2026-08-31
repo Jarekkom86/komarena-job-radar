@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T17:26:52+02:00",
+  "updatedAt": "2026-08-31T17:34:58+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
@@ -8,7 +8,7 @@
     "significantlyChangedPriorityJobs": 0,
     "significantlyChangedExistingJobs": 0,
     "duplicateOrExisting": 4,
-    "rejectedAsWeakOrLowValue": 7,
+    "rejectedAsWeakOrLowValue": 8,
     "rejectedByFreshnessOrEvidence": 2,
     "rejectedByLanguageOrSkill": 0,
     "rejectedByLocation": 0,
@@ -19,30 +19,33 @@
     "freshnessStatus": "fresh",
     "liveFeedCount": 40,
     "liveSourceMix": {"profesia":18,"nonProfesia":22,"profesiaPct":45.0,"nonProfesiaPct":55.0},
-    "note": "Audit 31.8.2026 17:26 CEST reálne preveril 10 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Nebol potvrdený nový ani významne zmenený prioritný winner. Existujúce LIVE priority HEATING PRO (1 600–2 500 €/mes.), AlzaBox Špecialista (1 430 € fix + až 610 € variabilne) a Košík.sk kuriér (2 500–3 000 €/mes.) zostávajú verejne aktívne bez významnej zmeny. Upwork WordPress/WooCommerce discovery priniesol najmä mikro-budget alebo hard-dev projekty ($5–$200 fixed) a nič, čo by prekonalo existujúce LIVE web/e-commerce priority. Brigada.sk priniesla nové všeobecné finančno-obchodné/študentské ponuky, ktoré neprešli relevance/value gate. Reddit ani Facebook verejná indexácia neposkytli evidence-grade čerstvý hiring hit. jobs-data.json nebol dotknutý, pretože nevznikol kvalifikovaný obsahový delta; jeho updatedAt zostáva 16:41:03 po poslednej reálnej obsahovej zmene. Pri čase auditu je feed stále v 60-minútovom freshness SLA."
+    "note": "Audit 31.8.2026 17:34 CEST reálne preveril 10 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Nebol potvrdený nový ani významne zmenený prioritný winner. Čerstvý Upwork Shopify Product Listing & Data Entry Expert je Worldwide/Remote a tematicky veľmi presný, ale iba 10 USD fixed-price, preto bol vyradený cez microbudget/value gate. Worki discovery prinieslo aktualizované všeobecné obchodné, technické a skladové roly vrátane lokality Senec/priľahlého regiónu, ale bez lepšieho fitu oproti existujúcim LIVE prioritám. Reddit priniesol konkrétne WordPress hiring posty, ale bez dostatočného location/remote-to-Slovakia a ekonomického proofu na LIVE aktiváciu. Facebook verejná indexácia neposkytla žiadny konkrétny overiteľný hiring post. jobs-data.json nebol dotknutý, pretože nevznikol kvalifikovaný obsahový delta."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"BA vodič/admin/tech/e-shop discovery preverená. Košík.sk zostáva existujúci LIVE za 2 500–3 000 €/mes.; bez nového kvalifikovaného winnera."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":1,"added":0,"rejected":0,"changed":0,"note":"AlzaBox Špecialista overený na canonical Alza kariére: 1 430 € fix + až 610 € variabilne, Bratislava, čiastočný home office; bez významnej zmeny."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejný BA/remote support/e-commerce/WordPress index preverený; bez nového evidence-grade kvalifikovaného hitu."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"HEATING PRO zostáva aktívny na Worki za 1 600–2 500 €/mes., Bratislava, TPP alebo živnosť; bez významnej zmeny."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":3,"added":0,"rejected":3,"changed":0,"note":"Aktuálne celoslovenské finančno-obchodné/študentské ponuky preverené; neprešli Job Radar relevance/value gate a nebol nájdený lepší BA administratíva/vodič/sklad/e-shop hit."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA e-shop/support/tech discovery preverená; bez nového kvalifikovaného winnera oproti LIVE feedu."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA WordPress/e-shop/support/admin/driver discovery reálne preverená; bez nového kvalifikovaného winnera oproti LIVE feedu."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA/okolie priame career discovery reálne preverené; bez nového direct-source winnera nad existujúce Telekom/Alza/Hilti priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejný BA/remote support/e-commerce/WordPress/IoT index preverený; bez nového evidence-grade kvalifikovaného hitu."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":3,"added":0,"rejected":3,"changed":0,"note":"Čerstvé/aktualizované technické, obchodné a skladové výsledky preverené. Senec sa objavil v regionálnych obchodných ponukách, ale bez lepšieho ranking fitu oproti HEATING PRO a ďalším LIVE prioritám."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":2,"added":0,"rejected":2,"changed":0,"note":"BA admin/kuriér/sklad discovery reálne vyhľadaná; nájdené všeobecné/študentské výsledky neprešli relevance/value gate."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA e-shop/support/tech/admin discovery preverená; bez nového kvalifikovaného winnera."},
     {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA/remote WordPress/e-commerce/content/support discovery preverená; bez nového vhodného non-hard-dev winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":7,"added":0,"rejected":7,"changed":0,"note":"Čerstvé WordPress/WooCommerce discovery preverené. Výsledky zahŕňali najmä $5–$200 fixed mikro-budget práce, hard-dev/redesign scope alebo staršie ponuky; nič neprekonalo existujúce LIVE web/e-commerce priority."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejne indexované hiring discovery preverené; bez čerstvého konkrétneho evidence-grade WordPress/WooCommerce dopytu vhodného pre Radar."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":3,"added":0,"rejected":3,"changed":0,"note":"Čerstvé e-commerce/WordPress discovery preverené. Shopify Product Listing & Data Entry Expert je Worldwide Remote, menej než 5 proposals, ale iba 10 USD fixed; ďalšie výsledky boli hard-dev alebo scope-to-pay mismatch."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":2,"added":0,"rejected":2,"changed":0,"note":"Konkrétne verejne indexované hiring posty boli nájdené, ale chýbal dostatočný Slovakia-remote/location a ekonomický proof na bezpečnú LIVE aktiváciu."},
     {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"0 verified hits; verejná indexácia neposkytla konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion nebol spustený."}
   ],
   "verificationQueue": [
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","reason":"WooCommerce operations, 15–30 USD/h, 6+ mesiacov; širší SEO/tool scope a call/reporting zvyšujú friction.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Recheck communication burden and tool-fit before LIVE promotion."}
   ],
-  "developmentBacklogAddedThisRun": [],
+  "developmentBacklogAddedThisRun": [
+    {"name":"Search-query result-set fingerprint","value":"Ukladať hash/identitu výsledkovej sady pre konkrétny source+query a pri ďalšom behu rozpoznať nezmenený index. Zníži opakované parsovanie rovnakých výsledkov, pričom čerstvé načítanie zdroja ostáva podmienkou pravdivého checked statusu."},
+    {"name":"New-employer discovery diversity boost","value":"Pri rovnako kvalitných kandidátoch mierne zvýhodniť overený prvý relevantný hit od zamestnávateľa, ktorý ešte nie je vo LIVE feede. Znižuje koncentráciu na pár firiem bez znižovania hard gateov alebo quality threshold."}
+  ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-content-delta",
     "jobsDataNonProf":"locked-preserved",
-    "jobSources":"not-required",
+    "jobSources":"updated-after-real-10-family-check",
     "sourceAudit":"updated-after-real-10-family-check",
-    "master":"not-required",
+    "master":"pending-same-run-sync",
     "lockedFilesTouched":false,
     "blocker":null
   }
