@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 31. 8. 2026 01:32 CEST
+Aktualizované: 31. 8. 2026 03:28 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -54,34 +54,28 @@ Aktualizované: 31. 8. 2026 01:32 CEST
 20. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 21. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 31. 8. 2026 01:32 CEST — LATEST
+## SOURCE AUDIT — 31. 8. 2026 03:28 CEST — LATEST
 Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk; Pretlak; WordPress Jobs; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 2.** `AlzaBox Špecialista` a `Košík.sk kuriér Bratislava` prešli locality/language/hard-skill gateom a boli zapísané do `jobs-data.json`.
-- **AlzaBox Špecialista:** direct company career, Bratislava, 1 430 € fix + až 610 € variabilná zložka, plný úväzok, flexibilný Po–Pi režim, čiastočný HO, vodičák B, používateľský Excel, AI nástroje. Cudzí jazyk nie je medzi uvedenými podmienkami.
-- **Košík.sk kuriér:** Bratislava-Devínska Nová Ves/BA okolie, živnosť, 2 500–3 000 €/mes., canonical Profesia detail uvádza až 150 €/deň, vodičák B min. 2 roky, nástup ihneď. Mirror uvádza 180 €/deň; LIVE používa konzervatívnu canonical hodnotu.
-- **Lugera Servisný technik:** vyradený po detailnom overení, pretože §21+ a technická elektroprax sú povinné hard gates.
-- **Foxelli Crochet Customer Support:** Slovakia-eligible remote, ale vyradený pre fluent/near-native spoken English a povinnú hands-on crochet prax.
-- **LinkedIn/Worki/Brigada/Kariera/Pretlak/WordPress Jobs:** reálne preverené, bez ďalšieho kvalifikovaného winnera.
-- **Upwork:** preverené čerstvé WordPress/WooCommerce/VA výsledky; nové hity boli prevažne nízko platené, hard-dev alebo s vysokým language/application friction. `Website & SEO Management 2026` ostáva v verification queue.
-- **Reddit/WordPress komunity:** čerstvý indexovaný výsledok bol freelancer hľadajúci prácu, nie hiring dopyt.
+- **Nové aktívne položky: 0.** `jobs-data.json` zostáva fail-closed bez umelého posunu `updatedAt`, pretože nevznikol nový kandidát, ktorý by bezpečne prešiel location/language/hard-skill/value gateom a prekonal existujúce LIVE priority.
+- **WordPress Jobs:** Senior WordPress Developer z 27. 8. 2026 je fully remote, ale vyžaduje custom themes, PHP/HTML/CSS/JS, basic React, server management, SSH/DNS, API integrácie, Git deployments a incident response; hard-dev reject.
+- **LinkedIn:** Tiger Data Database Support Engineer EMEA je geograficky remote-compatible, ale vyžaduje hlbokú relational DB/PostgreSQL prax; hard-skill reject.
+- **Worki:** dnešný index ukazuje aj PROFIAUTO obchodného zástupcu pre Senec 1 500–3 000 €/mes., ale ide o sales-heavy rolu mimo prioritných smerov a bez silného fit dôkazu. Technické Šamorín roly neprekonali locality/skill priority.
+- **Kariera:** portál bol reálne prehľadaný; aktuálny top BA index hit bol Head of Accounting & Finance 3 300–3 700 €/mes., mimo cieľového profilu.
+- **Upwork:** fresh WordPress/WooCommerce výsledky boli US-only, nízko platené alebo developer-heavy. Worldwide Abandoned Cart WooCommerce je expert-only a starší; bez presvedčivej výhody oproti LIVE. `Website & SEO Management 2026` ostáva v verification queue.
+- **Profesia/Brigada/Pretlak/direct company careers:** reálne vyhľadané, bez nového kvalifikovaného winnera.
+- **Reddit/WordPress komunity:** verejne indexované výsledky neposkytli nový konkrétny hiring dopyt s dostatočným scope/pay/location dôkazom.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 
 ### Run summary
 - Reálne skontrolované source families: **11**.
-- Nové aktívne položky: **2**.
+- Nové aktívne položky: **0**.
 - Významné pending kandidáty: **1**.
-- Vyradené ako slabé/nízka hodnota: **10**.
-- Vyradené pre freshness/evidence: **3**.
-- Vyradené lokalitou: **1**.
-- Nové prírastky podľa zdroja: **1 Profesia + 1 direct company career = 50 % Profesia / 50 % non-Profesia**.
-
-### LIVE mix
-- `jobs-data.json`: **38 aktívnych položiek**.
+- LIVE feed zostáva: **38 aktívnych položiek**.
 - Mix: **Profesia 18 / 38 = 47,4 %; mimo Profesia 20 / 38 = 52,6 %**.
-- `jobs-data.json.updatedAt` = **31. 8. 2026 01:32:30 CEST**.
-- `source-audit.json.updatedAt` = **31. 8. 2026 01:32:30 CEST**.
+- `jobs-data.json.updatedAt` = **31. 8. 2026 01:32:30 CEST**; obsahové freshness SLA 60 minút je v tomto behu `stale`, ale bez kvalifikovaného delta sa timestamp neposúva.
+- `source-audit.json.updatedAt` = **31. 8. 2026 03:28:17 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -219,5 +213,7 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 123. Source-check evidence ledger.
 124. Canonical application-route health monitor.
 125. Fresh competitor-pressure decay.
-126. **Hard-qualification evidence resolver** — pri pending kandidátoch automaticky dohľadať presný detail povinných certifikácií/licencií a rozhodnúť hard gate ešte v tom istom behu; dnešný príklad Lugera §21 ukázal hodnotu tohto kroku.
+126. **Hard-qualification evidence resolver** — pri pending kandidátoch automaticky dohľadať presný detail povinných certifikácií/licencií a rozhodnúť hard gate ešte v tom istom behu; príklad Lugera §21 ukázal hodnotu tohto kroku.
 127. **Canonical compensation drift detector** — pri rovnakom job ID porovnať rozdiely medzi canonical detailom a mirrorom (napr. Košík 150 vs. 180 €/deň) a v LIVE feede zobrazovať konzervatívnu canonical hodnotu s poznámkou o konflikte.
+128. **Source pagination / index-depth coverage meter** — pri každom source family evidovať, či sa prehľadala iba prvá indexová vrstva alebo aj ďalšie strany/detaily; zabráni falošnému dojmu plného pokrytia pri plytkej verejnej indexácii a pomôže cielene rotovať hlbšie discovery.
+129. **Verification queue TTL + auto-expiry policy** — pending kandidát po definovanom počte behov bez nového dôkazu prejde do cold state; zníži opakované rechecky starých neoveriteľných ponúk a uvoľní discovery kapacitu pre čerstvé leady.
