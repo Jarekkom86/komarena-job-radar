@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T15:41:21+02:00",
+  "updatedAt": "2026-08-31T16:20:14+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
     "significantPendingCandidates": 0,
     "significantlyChangedPriorityJobs": 0,
     "significantlyChangedExistingJobs": 0,
-    "duplicateOrExisting": 3,
-    "rejectedAsWeakOrLowValue": 7,
+    "duplicateOrExisting": 4,
+    "rejectedAsWeakOrLowValue": 8,
     "rejectedByFreshnessOrEvidence": 4,
     "rejectedByLanguageOrSkill": 3,
     "rejectedByLocation": 1,
@@ -19,27 +19,24 @@
     "freshnessStatus": "content-stale-audit-fresh",
     "liveFeedCount": 39,
     "liveSourceMix": {"profesia":18,"nonProfesia":21,"profesiaPct":46.2,"nonProfesiaPct":53.8},
-    "note": "Audit 31.8.2026 15:41 CEST reálne prehľadal 10 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Bez nového alebo významne zmeneného prioritného winnera. Upwork product-upload discovery ukazuje nové Shopify/product-listing hity, ale dostupné verejné výsledky boli buď staršie než čerstvý LIVE WooCommerce lead, mikro-budget, hard-dev alebo location-restricted. Existujúci LIVE WooCommerce Product Listing & Upload Specialist zostáva aktívny a kvalitnejší. Reddit priniesol prevažne For Hire/self-promo alebo všeobecné komunitné vlákna bez evidence-grade hiring dopytu. Facebook 0 verified hits, limited. jobs-data.json zostal fail-closed bez prepisu, pretože nevznikol kvalifikovaný obsahový delta."
+    "note": "Audit 31.8.2026 16:20 CEST reálne preveril 10 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Znovu overené prioritné LIVE HEATING PRO, AlzaBox Špecialista a Košík.sk bez významnej zmeny podmienok. Nový verejne overený Upwork E-commerce Virtual Assistant je worldwide remote, WooCommerce/Shopify + product listings + customer support, ale iba 7–8 USD/h, 20–50 proposals a 1 hire; neprekonáva existujúce LIVE WooCommerce priority. Upwork ďalšie nové product-listing hity boli mikro-budget, hard-dev, staršie alebo horšie platené. Reddit priniesol iba For Hire/self-promo, nie evidence-grade hiring dopyt. Facebook 0 verified hits, limited. jobs-data.json zostal fail-closed bez prepisu, pretože nevznikol kvalifikovaný obsahový delta."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Cielené BA WordPress/e-shop/support/admin/driver discovery reálne preverené 31.8.2026 15:41; bez nového kvalifikovaného detailu nad LIVE priority."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"Priame BA career discovery reálne preverené; bez nového active winnera. Existujúce priame firemné priority zostávajú zachované fail-closed."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejný BA/remote WordPress/support index preverený; bez nového verejne overiteľného winnera spĺňajúceho jazykový a lokalitný gate."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Bratislava technická podpora, administratíva, vodič a sklad discovery reálne vyhľadaná; bez nového kvalifikovaného hitu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA administratíva, vodič, sklad a e-shop brigády reálne vyhľadané; bez nového kvalifikovaného hitu."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA technická podpora/e-shop/admin discovery preverená; verejný index v tomto behu nevrátil nový vhodný BA winner."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA/remote WordPress/e-commerce/content/support discovery reálne vyhľadaná; bez nového vhodného non-hard-dev winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":8,"added":0,"rejected":7,"changed":0,"note":"Product Upload, Product Listing, WooCommerce a WordPress e-commerce discovery reálne preverené. Verejne indexované nové hity zahŕňali Shopify listings, product research/listing, 5 USD WooCommerce data-entry a hard-dev WooCommerce projekty; neprekonali existujúci LIVE WooCommerce Product Listing & Upload Specialist."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejná Reddit discovery preverená; nájdený obsah bol prevažne For Hire/self-promo, všeobecné diskusie alebo bez evidence-grade hiring dopytu a location proof."},
-    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"0 verified hits; verejný search neposkytol konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion nebol spustený."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"BA vodič/admin/tech/e-shop discovery a existujúci Košík.sk detail reálne preverené 31.8.2026 16:20; bez nového kvalifikovaného winnera alebo významnej zmeny."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"AlzaBox Špecialista priamo na Alza kariére znovu overený ako aktívny; bez významnej zmeny kľúčových podmienok."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":4,"added":0,"rejected":4,"changed":0,"note":"Verejný BA/remote support/IoT/operations index preverený. Objavili sa role ako Smart Apartment Data Customer Success Program Manager a technické delivery/manager pozície, ale seniorita/jazyk/scope ich drží mimo aktuálneho Job Radar priority gate."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"HEATING PRO detail znovu reálne overený: aktívny, 1 600–2 500 €/mes., živnosť 10–15 €/h, nástup ihneď, vodičák B, bez cudzieho jazyka; bez významnej zmeny."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA administratíva, vodič, sklad a e-shop discovery reálne vyhľadaná; bez nového kvalifikovaného hitu."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA technická podpora/e-shop/admin discovery preverená; bez nového vhodného verejne overiteľného winnera."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA/remote WordPress/e-commerce/content/support discovery preverená; bez nového vhodného non-hard-dev winnera."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":8,"added":0,"rejected":8,"changed":0,"note":"Reálne preverené WordPress/WooCommerce/Product Upload/Product Listing/VA výsledky. E-commerce Virtual Assistant: Worldwide, <30 h/týždeň, 1–3 mesiace, 7–8 USD/h, 20–50 proposals, 1 hire; obsahovo sedí, ale value/competition je horší než existujúce LIVE WooCommerce priority. Ďalšie nové hity boli mikro-budget, hard-dev alebo slabšie."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":1,"added":0,"rejected":1,"changed":0,"note":"Čerstvý WordPress/WooCommerce výsledok bol For Hire/self-promo developera, nie hiring dopyt; odmietnuté ako neplatný lead."},
+    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"0 verified hits; verejný index neposkytol konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion nebol spustený."}
   ],
   "verificationQueue": [
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","reason":"WooCommerce operations, 15–30 USD/h, 6+ mesiacov; širší SEO/tool scope a call/reporting zvyšujú friction.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Recheck communication burden and tool-fit before LIVE promotion."}
   ],
-  "developmentBacklogAddedThisRun": [
-    {"id":"search-result-freshness-confidence-decay","title":"Search-result freshness confidence decay","problem":"Public search indexes can surface stale job pages as if they were fresh, wasting verification time and inflating false positives.","improvement":"Track crawl date, explicit published date and canonical-page activity separately; decay ranking confidence when freshness comes only from crawler recency rather than employer/job metadata.","benefit":"Reduces stale leads and prioritizes genuinely new opportunities without deleting existing LIVE items."},
-    {"id":"remote-market-rate-sanity-band","title":"Remote market-rate sanity band","problem":"Remote marketplaces frequently return tiny fixed-price tasks that match skills but are economically irrational compared with stronger LIVE leads.","improvement":"Maintain a data-only minimum value band by scope and estimated effort; flag micro-budget e-commerce/admin jobs before full verification while still allowing unusually strategic exceptions.","benefit":"Saves screening time and keeps ranking focused on realistic earning opportunities."}
-  ],
+  "developmentBacklogAddedThisRun": [],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-delta",
     "jobsDataNonProf":"locked-preserved",
