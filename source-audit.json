@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T11:30:05+02:00",
+  "updatedAt": "2026-08-31T12:15:20+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
     "significantPendingCandidates": 0,
     "significantlyChangedPriorityJobs": 0,
     "significantlyChangedExistingJobs": 0,
-    "duplicateOrExisting": 4,
-    "rejectedAsWeakOrLowValue": 8,
-    "rejectedByFreshnessOrEvidence": 4,
+    "duplicateOrExisting": 3,
+    "rejectedAsWeakOrLowValue": 6,
+    "rejectedByFreshnessOrEvidence": 3,
     "rejectedByLanguageOrSkill": 3,
-    "rejectedByLocation": 1,
+    "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
     "jobsDataContentUpdatedAt": "2026-08-31T07:32:56+02:00",
@@ -19,35 +19,29 @@
     "freshnessStatus": "content-stale-audit-fresh",
     "liveFeedCount": 39,
     "liveSourceMix": {"profesia":18,"nonProfesia":21,"profesiaPct":46.2,"nonProfesiaPct":53.8},
-    "note": "Audit 31.8.2026 11:30 CEST reálne prehľadal 11 source families. Bez nového kandidáta, ktorý by bezpečne prekonal LIVE priority. Upwork WooCommerce Product Upload Specialist (8–15 USD/h, Worldwide, recurring monthly) je relevantný, ale je dominovaný existujúcim LIVE WooCommerce Product Listing & Upload Specialist (10–30 USD/h): má 20–50 proposals, 1 interviewing a klient ho naposledy otvoril pred 6 dňami, navyše vyžaduje dobrú písanú angličtinu. LinkedIn našiel starý/no-longer-accepting web designer výsledok; DHL Ivanka HR Coordinator už neprijíma. Reddit bez konkrétneho vhodného hiring dopytu; Facebook verejná indexácia bez verified postu. jobs-data.json zostal fail-closed bez obsahového delta."
+    "note": "Audit 31.8.2026 12:15 CEST reálne prehľadal 11 source families. Bez nového alebo významne zmeneného prioritného winnera. Profesia Bratislava latest bol skontrolovaný; čerstvý Wolt Support Associate zostáva mimo priority pre povinnú AJ minimálne B2. Upwork pending Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support bol definitívne overený: Worldwide remote, 5–10 h/týždeň, 6+ mesiacov, 6–10 USD/h, 20–50 proposals, písomná angličtina, deadline 6.9.2026. Je obsahovo dobrý fit, ale sadzbou a konkurenciou neprekonáva existujúce LIVE WooCommerce priority, preto nebol promovovaný. Nové Upwork VA/cold-calling výsledky boli nízko platené alebo komunikačne náročné; staršie WordPress výsledky boli neaktuálne/low-value. LinkedIn výsledky vyžadujú fluent English/German alebo sú už closed; Brigada.sk nový pokladník 5,50 €/h je mimo cieľového smeru. jobs-data.json zostal fail-closed bez kvalifikovaného obsahového delta a updatedAt nebol posunutý."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA/okolie WordPress/e-shop/support/admin/driver discovery reálne vyhľadané; verejný index bez nového kvalifikovaného detailu."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"DHL careers reálne preverené; HR Coordinator Ivanka pri Dunaji je už closed/no longer open, preto nepridané."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":1,"added":0,"rejected":1,"changed":0,"note":"Verejný index pre EEA/BA web-support discovery preverený; AgentFire Junior Web Designer už neprijíma prihlášky."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"Bratislava latest a relevantné support/admin/driver/e-shop discovery reálne preverené. Čerstvý Wolt Support Associate vyžaduje profesionálnu AJ minimálne B2, preto mimo priority."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Priame firemné lane bolo kontrolované cez aktuálne indexované výsledky; bez nového kvalifikovaného winnera."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":4,"added":0,"rejected":4,"changed":0,"note":"Aktuálne remote support výsledky boli prevažne fluent-English/German; Foxelli e-commerce support je už no longer accepting applications. Bez priority-grade prírastku."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Bratislava technická podpora/admin/vodič/sklad discovery reálne vyhľadané; bez nového kvalifikovaného winnera."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA administratíva/kuriér/sklad discovery reálne vyhľadané; bez nového priority-grade detailu."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"Nová zmena pokladník/pokladníčka Ružinov 31.8.2026 za 5,50 €/h je mimo cieľového admin/tech/e-commerce/driver smeru a nízko platená."},
     {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA e-shop/admin/technik/vodič discovery preverené; bez nového kvalifikovaného detailu."},
     {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Remote/BA WordPress/e-commerce/support discovery reálne vyhľadané; bez nového winnera."},
-    {"name":"StartupJobs / tech-creative","family":"startupjobs-tech","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Tech/creative remote discovery preverené spolu s Pretlak lane; bez nového Slovakia-eligible non-hard-dev winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":8,"added":0,"rejected":7,"changed":0,"note":"Relevantný WooCommerce Product Upload Specialist: Worldwide remote, recurring monthly, 8–15 USD/h, 20–50 proposals, 1 interviewing, client last viewed 6 days ago, good written English; dominovaný existujúcim LIVE 10–30 USD/h leadom. Ďalšie WooCommerce/data-entry výsledky boli low-budget alebo hard-dev."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejne indexované r/forhire a WordPress/WooCommerce hiring discovery preverené; bez konkrétneho evidence-grade dopytu pre LIVE."},
+    {"name":"StartupJobs / tech-creative","family":"startupjobs-tech","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Tech/creative remote discovery preverené; bez nového Slovakia-eligible non-hard-dev winnera."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":0,"rejected":5,"changed":0,"note":"Tech-Savvy VA bol plne overený: Worldwide, 5–10 h/týždeň, 6+ mesiacov, 6–10 USD/h, 20–50 proposals, written English, deadline 6.9.2026. Dobrá zhoda, ale pod existujúcimi LIVE WooCommerce leadmi. Ďalšie nové VA/cold-calling výsledky boli low-pay alebo communication-heavy."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejne indexované hiring discovery preverené; bez konkrétneho evidence-grade dopytu pre LIVE."},
     {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"0 verified hits; verejný search neposkytol konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion nebol spustený."}
   ],
   "verificationQueue": [
-    {"id":"upwork-tech-savvy-va-wordpress-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Tech-Savvy-Virtual-Assistant-Wordpress-Website-Management-Digital-Marketing-Support_~022094223212146933823/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":89,"reason":"Worldwide remote, 5–10 h/týždeň, part-time long-term; WordPress website management a jednoduché integrácie dobre sedia, ale compensation a English burden nie sú dostatočne overené.","missingEvidence":["hourly rate","spoken/written English burden","client activity/proposals"],"nextVerification":"Overiť compensation a communication burden pred LIVE promotion."},
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","reason":"WooCommerce operations, 15–30 USD/h, 6+ mesiacov; širší SEO/tool scope a call/reporting zvyšujú friction.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Recheck communication burden and tool-fit before LIVE promotion."}
   ],
-  "developmentBacklogAddedThisRun": [
-    {"id":"notification-significance-contract","title":"Notification significance contract","value":"Definovať objektívne prahy pre upozornenie používateľa: nový TOP lead, materiálny pay/status/deadline delta alebo technická chyba; obmedzí hourly šum bez straty dôležitých udalostí."},
-    {"id":"reapply-cooldown-policy","title":"Reapply eligibility cooldown policy","value":"Prepojiť CRM stav a canonical job identity s cooldownom opätovnej reakcie; zabráni duplicitným prihláškam a zároveň označí legitímny repost po dostatočnom čase ako nový action window."}
-  ],
+  "developmentBacklogAddedThisRun": [],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-delta",
     "jobsDataNonProf":"locked-preserved",
     "sourceAudit":"updated-after-real-11-family-check",
-    "jobSources":"updated-current-run-a74d8841",
-    "master":"updated-current-run-6e9fd02c",
     "lockedFilesTouched":false,
     "blocker":null
   }
