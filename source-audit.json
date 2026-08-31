@@ -45,8 +45,8 @@
     "jobsDataNonProf":"locked-preserved",
     "jobSources":"updated-after-real-10-family-check",
     "sourceAudit":"updated-after-real-10-family-check",
-    "master":"pending-same-run-sync",
+    "master":"blocked-fail-closed-full-replacement-required",
     "lockedFilesTouched":false,
-    "blocker":null
+    "blocker":"PRACA_PRE_JARA_MASTER.md je možné cez dostupný GitHub writer iba kompletne nahradiť; čítanie veľkého súboru je segmentované/truncované v odpovedi. Bez spoľahlivého automatického zloženia celého obsahu nebol riskantný replacement vykonaný. Dve povinné backlog zlepšenia sú persistované v source-audit.json na následnú MASTER synchronizáciu."
   }
 }
