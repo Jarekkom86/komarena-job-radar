@@ -45,7 +45,7 @@
     "jobsData":"preserved-no-qualified-delta",
     "jobsDataNonProf":"locked-preserved",
     "sourceAudit":"updated-after-real-11-family-check",
-    "jobSources":"pending-refresh-this-run",
+    "jobSources":"updated-after-real-11-family-check",
     "master":"blocked-safe-preserve-truncated-read",
     "lockedFilesTouched":false,
     "blocker":"PRACA_PRE_JARA_MASTER.md cannot be safely full-replaced because connector read is truncated; backlog additions are preserved here until a lossless append/full-read path is available."
