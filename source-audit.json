@@ -1,51 +1,52 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T07:15:25+02:00",
+  "updatedAt": "2026-08-31T07:32:56+02:00",
   "runSummary": {
-    "familiesChecked": 11,
-    "newActiveJobs": 0,
+    "familiesChecked": 10,
+    "newActiveJobs": 1,
     "significantPendingCandidates": 2,
     "significantlyChangedPriorityJobs": 0,
     "significantlyChangedExistingJobs": 1,
     "duplicateOrExisting": 4,
-    "rejectedAsWeakOrLowValue": 7,
-    "rejectedByFreshnessOrEvidence": 2,
+    "rejectedAsWeakOrLowValue": 8,
+    "rejectedByFreshnessOrEvidence": 3,
     "rejectedByLanguageOrSkill": 4,
     "rejectedByLocation": 1,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 2,
-    "jobsDataContentUpdatedAt": "2026-08-31T01:32:30+02:00",
+    "jobsDataContentUpdatedAt": "2026-08-31T07:32:56+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "stale-content-but-audit-current",
-    "liveFeedCount": 38,
-    "liveSourceMix": {"profesia":18,"nonProfesia":20,"profesiaPct":47.4,"nonProfesiaPct":52.6},
-    "note": "Audit 31.8.2026 07:15 CEST reálne preveril Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk/Zoznam, Pretlak, WordPress Jobs, Upwork, verejne indexované Reddit/WordPress komunity a verejne indexované Facebook skupiny. Nový prioritný winner sa nepotvrdil. Existujúci 3MON IT & Operations Support má na aktuálnom Profesia detaile mzdu 2 100 EUR/mes., kým LIVE feed eviduje 2 000 EUR/mes.; ide o reálnu obsahovú zmenu existujúcej normal-priority položky. VÚB Digitálny agent zostáva aktívny a priamy Intesa zdroj potvrdzuje dátum 27.8.2026 a remote celé Slovensko bez významnej zmeny. AlzaBox Špecialista zostáva aktívny za 1 430 EUR fix + variabilná zložka do 610 EUR. Upwork priniesol nový Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support, Worldwide remote, part-time 5–10 h/týždeň a long-term, ale bez spoľahlivo overenej sadzby a s pracovnou komunikáciou v angličtine ostáva iba na ďalšie overenie. jobs-data.json sa v tomto behu nepodarilo bezpečne prepísať, pretože dostupný GitHub contents writer vyžaduje kompletný replacement a načítanie veľkého feedu je v odpovedi truncované. Posledných 38 validných položiek zostáva zachovaných fail-closed; updatedAt jobs-data sa neposúva."
+    "freshnessStatus": "current",
+    "liveFeedCount": 39,
+    "liveSourceMix": {"profesia":18,"nonProfesia":21,"profesiaPct":46.2,"nonProfesiaPct":53.8},
+    "note": "Audit 31.8.2026 07:32 CEST reálne preveril Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk/Zoznam, Pretlak, Upwork, verejne indexované Reddit/WordPress komunity a verejne indexované Facebook skupiny. WooCommerce Product Listing & Upload Specialist bol znovu priamo overený ako aktívny Worldwide Remote Job, 10–30 USD/h, 50–75 produktov; Dutch je iba preferované a klient explicitne povoľuje ChatGPT fallback, preto bol bezpečne povýšený do LIVE jobs-data.json. Súčasne bol existujúci 3MON IT & Operations Support aktualizovaný z 2 000 na 2 100 EUR/mes. podľa aktuálneho Profesia detailu. Ostatné discovery výsledky boli slabšie, staré, hard-dev, jazykovo rizikové alebo neprekonali existujúce LIVE priority. Facebook zostáva 0 verified hits / limited."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":5,"added":0,"rejected":3,"changed":1,"note":"BA najnovšie + technický/support/admin discovery preverená. 3MON mzda sa zmenila z 2 000 na 2 100 EUR; Caffeespresso a Beauty Med boli vyhodnotené ako slabšie/rizikovejšie než LIVE priority."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":4,"added":0,"rejected":2,"note":"AlzaBox Špecialista a VÚB Digitálny agent potvrdené aktívne bez významného delta; Websupport Marketing Operations & AI Specialist je starší a vyžaduje širší martech/AI scope."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava/remote e-commerce, support a operations discovery bez nového verejne overiteľného winnera."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":5,"added":0,"rejected":3,"changed":1,"note":"BA najnovšie + technický/support/admin discovery preverená. 3MON mzda bola znovu potvrdená na 2 100 EUR a LIVE záznam bol aktualizovaný."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":2,"added":0,"rejected":1,"note":"Alza a Siemens direct discovery reálne preverená; bez nového kvalifikovaného winnera nad existujúce LIVE priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"added":0,"rejected":2,"note":"Verejne indexované výsledky pre Bratislavu/EEA WordPress a CMS boli staré alebo uzavreté; 0 nových LIVE."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA technická/sklad/rozvoz/admin discovery bez nového prioritného hitu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA administratíva/vodič/sklad discovery bez nového prioritného hitu."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA e-shop/support/admin/tech discovery bez nového kvalifikovaného winnera."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote e-commerce/WordPress/support discovery bez nového vhodného non-hard-dev leadu."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Remote WooCommerce/WordPress support discovery bez nového kvalifikovaného non-hard-dev winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":5,"added":0,"rejected":3,"note":"Nový Tech-Savvy VA/WordPress lead je Worldwide, 5–10 h/týždeň a long-term, ale sadzba a praktický spoken-English burden nie sú dostatočne overené. Dva skoršie silné WooCommerce/SEO leady ostávajú pending."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bez nového verejne overiteľného kvalifikovaného hiring postu."},
-    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"0 verified hits; verejná indexácia neposkytla konkrétny overiteľný hiring post."}
+    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":4,"added":0,"rejected":4,"note":"103 BA brigád v indexe; vodič vláčika a Metro sklad/distribúcia sú reálne, ale hodnotovo neprekonávajú LIVE priority."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":2,"added":0,"rejected":2,"note":"Portál dostupný; aktuálne BA technické/admin výsledky boli buď staršie alebo slabšie než LIVE priority."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote e-commerce/WordPress/support discovery bez nového vhodného non-hard-dev winnera."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":1,"rejected":4,"note":"WooCommerce Product Listing & Upload Specialist priamo overený a povýšený do LIVE: Worldwide Remote Job, 10–30 USD/h, 50–75 produktov, Dutch preferované, ChatGPT fallback povolený. Ďalšie výsledky boli hard-dev, low-value alebo menej vhodné."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejne indexované výsledky boli prevažne FOR HIRE, nie hiring dopyty; 0 kvalifikovaných hitov."},
+    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"0 verified hits; verejná indexácia neposkytla konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog."}
   ],
   "verificationQueue": [
-    {"id":"profesia-3mon-5338490-pay-change","title":"IT & Operations Support – mzda 2 100 EUR","source":"Profesia","url":"https://www.profesia.sk/praca/3mon/O5338490","locationEligibility":"ba-area","languageEligibility":"risk","provisionalScore":84,"reason":"Aktuálny detail overený 31.8.2026 uvádza 2 100 EUR/mes.; LIVE feed stále uvádza 2 000 EUR/mes. AJ je stredne pokročilá/B1 a nástup 1.10.2026, preto nejde o prioritný winner.","missingEvidence":["safe authoritative jobs-data full-file update"],"nextVerification":"Pri najbližšom bezpečnom full-feed write upraviť pay na 2 100 EUR, payMonth na 2100 a verifiedAt na čas reálnej kontroly."},
-    {"id":"upwork-tech-savvy-va-wordpress-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Tech-Savvy-Virtual-Assistant-Wordpress-Website-Management-Digital-Marketing-Support_~022094223212146933823/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":89,"reason":"Worldwide remote, 5–10 h/týždeň, part-time long-term; hlavná zodpovednosť je WordPress website management, publikovanie obsahu, úpravy stránok, formuláre a jednoduché integrácie. Veľmi dobrý scope fit, ale sadzba nebola v dostupnom detaile overená a komunikácia je v angličtine.","missingEvidence":["hourly rate","spoken/written English burden","client activity/proposals"],"nextVerification":"Overiť compensation a communication burden pred LIVE promotion."},
-    {"id":"upwork-woocommerce-product-listing-2093271017253461612","title":"WooCommerce Product Listing & Upload Specialist","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/WooCommerce-Product-Listing-Upload-Specialist_~022093271017253461612/","locationEligibility":"remote-ok","languageEligibility":"acceptable-risk","languageFallbackAllowed":true,"provisionalScore":92,"reason":"Worldwide remote, 50–75 produktov, 10–30 USD/h, WooCommerce + Data Entry; Dutch preferované, klient povoľuje ChatGPT na texty.","missingEvidence":["safe authoritative jobs-data append"],"nextVerification":"Promote to LIVE after safe complete jobs-data reconstruction/append."},
+    {"id":"upwork-tech-savvy-va-wordpress-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Tech-Savvy-Virtual-Assistant-Wordpress-Website-Management-Digital-Marketing-Support_~022094223212146933823/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":89,"reason":"Worldwide remote, 5–10 h/týždeň, part-time long-term; hlavná zodpovednosť je WordPress website management, publikovanie obsahu, úpravy stránok, formuláre a jednoduché integrácie. Veľmi dobrý scope fit, ale sadzba a praktický spoken-English burden nie sú dostatočne overené.","missingEvidence":["hourly rate","spoken/written English burden","client activity/proposals"],"nextVerification":"Overiť compensation a communication burden pred LIVE promotion."},
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","reason":"WooCommerce operations, 15–30 USD/h, 6+ mesiacov; širší SEO/tool scope a call/reporting zvyšujú friction.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Recheck communication burden and tool-fit before LIVE promotion."}
   ],
-  "developmentBacklogAddedThisRun": [],
+  "developmentBacklogAddedThisRun": [
+    {"name":"Full-file chunk reassembly invariant","value":"Pri veľkých autoritatívnych JSON/MASTER súboroch čítať po riadkových úsekoch, pred write kontrolovať počet položiek, prvé/posledné ID a JSON closure; odstráni doterajší blocker bezpečného GitHub replacementu."},
+    {"name":"Paid-test / trial-work risk scorer","value":"Rozlišovať krátky platený/neplatený test, rozsah práce a pomer testu k hodnote zákazky; zníži plytvanie časom na platformách, kde klient požaduje skúšobnú vzorku pred kontraktom."}
+  ],
   "writeStatus": {
-    "jobsData":"preserved-write-blocked-after-real-content-delta",
-    "jobsDataNonProf":"preserved-no-qualified-delta",
-    "sourceAudit":"updated-after-real-11-family-check",
+    "jobsData":"updated-39-items-pass",
+    "jobsDataNonProf":"preserved-locked",
+    "sourceAudit":"updated-after-real-10-family-check",
+    "jobSources":"pending-this-run-update",
     "lockedFilesTouched":false,
-    "blocker":"GitHub contents writer requires complete replacement; available full jobs-data read is truncated in tool output, so safe atomic replacement could not be guaranteed."
+    "blocker":null
   }
 }
