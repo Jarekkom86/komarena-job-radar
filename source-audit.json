@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T10:37:31+02:00",
+  "updatedAt": "2026-08-31T11:13:27+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
     "significantPendingCandidates": 0,
     "significantlyChangedPriorityJobs": 0,
-    "significantlyChangedExistingJobs": 0,
-    "duplicateOrExisting": 4,
-    "rejectedAsWeakOrLowValue": 8,
-    "rejectedByFreshnessOrEvidence": 6,
+    "significantlyChangedExistingJobs": 1,
+    "duplicateOrExisting": 5,
+    "rejectedAsWeakOrLowValue": 9,
+    "rejectedByFreshnessOrEvidence": 4,
     "rejectedByLanguageOrSkill": 4,
-    "rejectedByLocation": 1,
+    "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
     "jobsDataContentUpdatedAt": "2026-08-31T07:32:56+02:00",
@@ -19,36 +19,33 @@
     "freshnessStatus": "content-stale-audit-fresh",
     "liveFeedCount": 39,
     "liveSourceMix": {"profesia":18,"nonProfesia":21,"profesiaPct":46.2,"nonProfesiaPct":53.8},
-    "note": "Audit 31.8.2026 10:37 CEST reálne preveril 11 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, StartupJobs, Upwork, Reddit/WordPress komunity a verejne indexovaný Facebook. Žiadny nový kandidát bezpečne neprekonal existujúce LIVE priority po location/language/hard-skill/value gate. LinkedIn verejný index cez starší detail ukázal čerstvé BA similar-jobs signály (Wolt Support Associate, ESET Customer Support Specialist, Lenovo Sales Support, DSV Control Tower), ale bez priameho overeného detailu ich audit nepovažuje za verified winners; Wolt bol navyše už v predchádzajúcom behu zamietnutý pre B2 English a slabšiu mzdu. Brigada.sk priniesla dnešné BA retail zmeny 5,50–6,25 EUR/h a dlhodobú administratívnu pomoc na účtovnom oddelení 7 EUR/h; hodnotovo neprekonávajú LIVE priority. StartupJobs Medior Account Manager/Webflow/WordPress je prevažne remote, ale vyžaduje občasné stretnutia v Prahe 5/klientoch a preukázanú agentúrnu prax, preto distance/skill gate. Upwork WooCommerce feed stále ukazuje už existujúci Product Listing & Upload Specialist a viac hard-dev alebo low-value výsledkov; nový winner nevznikol. jobs-data.json zostal fail-closed bez kvalifikovaného content delta; updatedAt sa zámerne neposúva iba kvôli auditu."
+    "note": "Audit 31.8.2026 11:13 CEST reálne preveril 11 source families pre Bratislavu, okolie a vhodný remote režim. HEATING PRO, AlzaBox Špecialista a LEAF Implementation Support Specialist boli opätovne potvrdené ako aktívne bez významnej zmeny jadra ponuky. Upwork WooCommerce Product Listing & Upload Specialist je stále aktívny; živé activity signály sa zmenili z LIVE feedu na približne 15–20 proposals, 1 interviewing, 10 invites a klient bol aktívny pred približne hodinou. Ide o reálnu zmenu zdrojových activity metadát, nie o nový winner. Nové Upwork výsledky boli prevažne low-value, hard-dev alebo s vysokým English burden; nový prioritný winner sa nepotvrdil. jobs-data.json zostal fail-closed, pretože v tomto behu nebol bezpečne vykonaný kompletný replacement 46 kB feedu; updatedAt sa neposunul iba kvôli auditu."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"Čerstvé BA discovery reálne vyhľadané; nájdený dnešný ATENA detail bol Banská Bystrica onsite, teda reject-distance. Bez nového BA/remote winnera."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":2,"added":0,"rejected":1,"changed":0,"note":"Wolt direct careers reálne preverené; Support Associate Bratislava/Ružinov je aktívny, ale už známy a language/value gate ho nepovyšuje. Ďalšie priame BA role neprekonali LIVE priority."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":4,"added":0,"rejected":2,"note":"Verejný index bol reálne preverený. Starší Accenture detail zobrazil fresh similar-jobs signály Wolt, ESET, Lenovo a DSV, ale bez priameho otvoreného detailu nejde o verified kandidátov; indirect sidebar hit sa nepovyšuje do LIVE."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"Bratislavský discovery reálne preverený; HEATING PRO ostáva existujúca LIVE priorita, bez nového kvalifikovaného winnera."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":4,"added":0,"rejected":4,"note":"Dnešné BA/Ružinov zmeny 5,50–6,25 EUR/h a dlhodobá administratívna pomoc na účtovnom oddelení 7 EUR/h sú reálne dostupné, ale hodnotovo slabšie než LIVE priority; Metro sklad/distribúcia okolo 7 EUR/h tiež bez promotion."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Aktuálny discovery pre BA e-shop/admin/support/driver reálne vyhľadaný; bez nového kvalifikovaného detailu."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote WordPress/e-commerce/support discovery reálne vyhľadaná; bez nového non-hard-dev winnera."},
-    {"name":"StartupJobs","family":"startupjobs","status":"ok","hits":1,"added":0,"rejected":1,"note":"Medior Account Manager & projektový koordinátor Jira/Webflow/WordPress, 45–60 tis. Kč, prevažne remote, ale s občasným onsite Praha 5/klienti a požiadavkou predchádzajúcej agentúrnej/studio praxe; reject-distance/skill burden."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":8,"added":0,"rejected":4,"note":"WooCommerce/WordPress/product-upload discovery reálne preverená. Existujúci Product Listing & Upload Specialist bol deduplikovaný; ďalšie fresh výsledky sú prevažne hard-dev, low-budget alebo všeobecný WP build bez lepšieho fit/value než LIVE."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejne indexované hiring komunity reálne preverené; bez nového konkrétneho dopytu spĺňajúceho evidence + location gate."},
-    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"0 verified hits; verejná indexácia neposkytla konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog, automat ho nespúšťa."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":2,"added":0,"rejected":0,"changed":0,"note":"BA/okolie discovery pre vodič/kuriér/admin/IT/support preverené; bez nového kvalifikovaného winnera."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":2,"added":0,"rejected":0,"changed":0,"note":"AlzaBox Špecialista priamo potvrdený aktívny: Bratislava, full-time, 1 430 EUR fix + až 610 EUR variabilne. Ďalšie priame firemné výsledky neprekonali LIVE priority."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":1,"added":0,"rejected":0,"changed":0,"note":"Verejný index pre BA e-commerce/support preverený; bez nového direct-detail winnera. Existing LUNYS zostáva bez potvrdenej významnej zmeny."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"HEATING PRO offer 2061835 je stále aktívny; Worki stále ponúka reakciu na pozíciu, ASAP, Stará Vajnorská, 10–15 EUR/h pri živnosti."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA brigádnický discovery pre admin/sklad/vodič preverený; bez nového priority-grade výsledku."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA admin/technik/vodič/e-shop discovery preverený; bez nového kvalifikovaného detailu."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA/remote WordPress/e-commerce/support discovery preverený; bez nového winnera nad existujúcimi LIVE prioritami."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":2,"added":0,"rejected":2,"changed":0,"note":"Remote/BA výsledky boli buď senior/hard-skill (napr. Senior Product Manager AI s fluent English), alebo mimo praktického fitu; bez promotion."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":9,"added":0,"rejected":8,"changed":1,"note":"WooCommerce Product Listing & Upload Specialist zostáva aktívny (10–30 USD/h, Worldwide, 50–75 produktov). Activity sa zmenila na 15–20 proposals, 1 interviewing, 10 invites; klient last viewed ~1 h. Nové WordPress/WooCommerce/VA výsledky boli prevažne low-budget, hard-dev alebo silne English-dependent."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejne indexované hiring komunity preverené; bez konkrétneho evidence-grade dopytu pre LIVE."},
+    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"Bez verejne overiteľného konkrétneho hiring postu s canonical linkom; autentizovaný Nexus/local ingestion nie je súčasťou tohto behu."}
   ],
   "verificationQueue": [
-    {"id":"upwork-tech-savvy-va-wordpress-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Tech-Savvy-Virtual-Assistant-Wordpress-Website-Management-Digital-Marketing-Support_~022094223212146933823/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":89,"reason":"Worldwide remote, 5–10 h/týždeň, part-time long-term; hlavná zodpovednosť je WordPress website management, publikovanie obsahu, úpravy stránok, formuláre a jednoduché integrácie. Veľmi dobrý scope fit, ale sadzba a praktický spoken-English burden nie sú dostatočne overené.","missingEvidence":["hourly rate","spoken/written English burden","client activity/proposals"],"nextVerification":"Overiť compensation a communication burden pred LIVE promotion."},
+    {"id":"upwork-tech-savvy-va-wordpress-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Tech-Savvy-Virtual-Assistant-Wordpress-Website-Management-Digital-Marketing-Support_~022094223212146933823/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":89,"reason":"Worldwide remote, 5–10 h/týždeň, part-time long-term; WordPress website management a jednoduché integrácie dobre sedia, ale compensation a English burden nie sú dostatočne overené.","missingEvidence":["hourly rate","spoken/written English burden","client activity/proposals"],"nextVerification":"Overiť compensation a communication burden pred LIVE promotion."},
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","reason":"WooCommerce operations, 15–30 USD/h, 6+ mesiacov; širší SEO/tool scope a call/reporting zvyšujú friction.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Recheck communication burden and tool-fit before LIVE promotion."}
   ],
-  "developmentBacklogAddedThisRun": [
-    {"title":"Indirect discovery provenance guard","reason":"LinkedIn fresh role signals sa často objavia iba v Similar jobs na staršom detaile. Evidovať discoveryRoute=direct-query|similar-jobs|aggregator a zakázať LIVE promotion z indirect route bez otvorenia canonical detailu."},
-    {"title":"Dominated-hit early-abort gate","reason":"Pri zjavne slabom pay/location/language výsledku zastaviť drahý detail parsing hneď po dostatočnom hard-negative evidence; zníži opakované spracovanie 5,50–7 EUR/h retail/warehouse šumu bez oslabenia coverage."}
-  ],
+  "developmentBacklogAddedThisRun": [],
   "writeStatus": {
-    "jobsData":"preserved-no-qualified-content-delta",
-    "jobsDataNonProf":"preserved-locked",
+    "jobsData":"preserved-update-blocked-full-replacement-not-executed",
+    "jobsDataNonProf":"preserved-no-qualified-delta",
     "sourceAudit":"updated-after-real-11-family-check",
     "jobSources":"preserved-no-structural-source-registry-change",
-    "master":"updated-audit-and-backlog",
+    "master":"preserved",
     "lockedFilesTouched":false,
-    "blocker":null
+    "blocker":"jobs-data.json content is 46 kB and connector write requires complete replacement; this run preserved the last valid feed rather than risk a partial or malformed replacement"
   }
 }
