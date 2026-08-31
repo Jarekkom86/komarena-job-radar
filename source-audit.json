@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T08:35:09+02:00",
+  "updatedAt": "2026-08-31T09:17:02+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
@@ -8,28 +8,28 @@
     "significantlyChangedPriorityJobs": 0,
     "significantlyChangedExistingJobs": 0,
     "duplicateOrExisting": 1,
-    "rejectedAsWeakOrLowValue": 7,
-    "rejectedByFreshnessOrEvidence": 3,
-    "rejectedByLanguageOrSkill": 3,
+    "rejectedAsWeakOrLowValue": 6,
+    "rejectedByFreshnessOrEvidence": 4,
+    "rejectedByLanguageOrSkill": 2,
     "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
     "jobsDataContentUpdatedAt": "2026-08-31T07:32:56+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "current",
+    "freshnessStatus": "stale",
     "liveFeedCount": 39,
     "liveSourceMix": {"profesia":18,"nonProfesia":21,"profesiaPct":46.2,"nonProfesiaPct":53.8},
-    "note": "Audit 31.8.2026 08:35 CEST reálne preveril Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a verejne indexovaný Facebook. Nebol potvrdený nový ani významne zmenený prioritný winner. LinkedIn verejne indexované CMS/web výsledky boli staré a uzavreté; Kariera výsledok bol starý. Upwork priniesol viac WordPress/WooCommerce výsledkov, ale najbližší vhodný dlhodobý WooCommerce support za 8–15 USD/h je už 2 týždne starý, má 20–50 proposals, 2 interviewing a 10 invites, takže neprekonal existujúce LIVE priority. Ďalšie Upwork hity boli hard-dev, expert UI/UX alebo nízko platené. jobs-data.json nebol bez kvalifikovaného obsahového delta prepísaný a updatedAt zostal 07:32:56 CEST."
+    "note": "Audit 31.8.2026 09:17 CEST reálne preveril Profesia, priame firemné careers/indexy, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a verejne indexovaný Facebook. Nebol potvrdený nový ani významne zmenený prioritný winner. Upwork priniesol čerstvý WordPress/WooCommerce build za 83.87 USD fixed, ktorý neprešiel scope-to-pay/value gate; e-commerce VA/WooCommerce customer-service rola je scope-fit, ale vyžaduje silnú písomnú angličtinu a širší Meta Ads/Xero/tool stack. Ďalší eCommerce VA hit za 10 USD fixed je ekonomicky slabý. LinkedIn verejný CMS výsledok zostáva starý a closed. Profesia/Worki/Brigada/Pretlak/direct-careers nepriniesli nový kvalifikovaný detail nad LIVE priority. jobs-data.json nebol bez kvalifikovaného obsahového delta prepísaný a updatedAt zostal 07:32:56 CEST; tým je obsahový feed v čase auditu nad 60-minútovým SLA."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA WordPress/e-shop/support/admin/driver discovery reálne vyhľadaná; verejný index v tomto behu nevrátil nový kvalifikovaný konkrétny detail nad existujúce LIVE priority."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Alza/direct-career discovery reálne vyhľadaná; bez nového overiteľného delta nad existujúce direct-source LIVE položky."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"added":0,"rejected":2,"note":"AgentFire Junior Web Designer a Ludicrum CMS Operator boli verejne indexované, ale oba výsledky sú približne 4–5 mesiacov staré a označené No longer accepting applications."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA WordPress/e-shop/support/admin/driver discovery reálne vyhľadaná; verejný index nevrátil nový kvalifikovaný konkrétny detail nad existujúce LIVE priority."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"SmartRecruiters/Lever/Greenhouse a priame career discovery pre Bratislavu/Slovensko reálne vyhľadané; bez nového overiteľného delta nad existujúce LIVE položky."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"added":0,"rejected":1,"note":"Ludicrum CMS Operator je verejne indexovaný, ale približne 5 mesiacov starý a označený No longer accepting applications."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava technická podpora, administratíva, vodič a sklad discovery reálne vyhľadaná; bez nového kvalifikovaného winnera."},
     {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava administratíva/kuriér/sklad/web discovery reálne vyhľadaná; bez nového konkrétneho výsledku pre LIVE promotion."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"rejected":1,"note":"Verejný index vrátil starý technik PO/BOZP výsledok; približne 1,3 roka starý a mimo ranking profilu, preto nepridaný."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":2,"added":0,"rejected":2,"note":"Aktuálny index bol preverený; dostupné BA výsledky boli mimo ranking profilu alebo bez dostatočnej zhody, starý technik PO/BOZP zostáva nevhodný."},
     {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote WordPress/e-commerce/content/support discovery reálne vyhľadaná; bez nového vhodného non-hard-dev winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":9,"added":0,"rejected":6,"note":"Čerstvé a verejne indexované WordPress/WooCommerce/admin výsledky preverené. Dlhodobý WooCommerce support 8–15 USD/h je 2 týždne starý, 20–50 proposals, 2 interviewing a 10 invites; neprekonal LIVE priority. Ďalšie hity boli hard-dev, expert UI/UX alebo ekonomicky slabé."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":0,"rejected":6,"note":"Čerstvé WordPress/WooCommerce/admin výsledky preverené. WordPress+WooCommerce build za 83.87 USD fixed neprešiel scope-to-pay gate. E-commerce VA s WooCommerce Subscriptions/customer support vyžaduje good written English a širší Meta Ads/Xero stack. eCommerce VA za 10 USD fixed je ekonomicky slabý. Ostatné hity boli staršie, expert UI/UX alebo hard-dev."},
     {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejne indexovaný hiring discovery bez nového konkrétneho dopytu spĺňajúceho evidence a location gate."},
     {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"0 verified hits; verejná indexácia neposkytla konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog, automat ho nespúšťa."}
   ],
@@ -45,9 +45,9 @@
     "jobsData":"preserved-no-qualified-content-delta",
     "jobsDataNonProf":"preserved-locked",
     "sourceAudit":"updated-after-real-10-family-check",
-    "jobSources":"updated-current-run-notes",
-    "master":"updated-current-run-audit-and-backlog",
+    "jobSources":"preserved-no-structural-change",
+    "master":"preserved-no-structural-change",
     "lockedFilesTouched":false,
-    "blocker":null
+    "blocker":"jobs-data freshness SLA exceeded because no qualified content delta was found; updatedAt intentionally not advanced"
   }
 }
