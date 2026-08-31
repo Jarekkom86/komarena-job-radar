@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 31. 8. 2026 20:30 CEST
+Aktualizované: 31. 8. 2026 22:34 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -55,28 +55,30 @@ Aktualizované: 31. 8. 2026 20:30 CEST
 21. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
 22. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 23. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
+24. **BOELS — Shop Advisor / Klientsky poradca pre hobbymarkety — Match 88** — Bratislava-Ružinov; Po–Pi flexibilne, výjazdy z domu, servisné vozidlo, jednoduchá technická údržba, vodičák B, od 1 400 €/mes. + bonus.
 
-## SOURCE AUDIT — 31. 8. 2026 20:30 CEST — LATEST
-Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Pretlak; StartupJobs; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
+## SOURCE AUDIT — 31. 8. 2026 22:34 CEST — LATEST
+Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Pretlak/StartupJobs/WordPress Jobs; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **10 nezávislých source families**, z toho **9 mimo Profesia**.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 0.** Nebol potvrdený nový kandidát, ktorý by bezpečne prešiel lokalitným, jazykovým, hard-skill, value a dedupe gateom a súčasne prekonal LIVE priority.
-- **Upwork:** `Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support` bol znovu canonical-overený ako Worldwide remote, 6–10 USD/h, 5–10 h/týždeň, 6+ mesiacov, primárne písomná komunikácia, US Eastern overlap iba preferovaný a aktuálne menej než 5 proposals. Ostáva vo verification queue, nie LIVE, kým sa nedorieši praktický timezone overlap a apply pack.
-- **Nový pending kandidát:** `Customer Service Representative for Brand` — Upwork, Worldwide remote, 1 000 USD fixed, email/chat support, klient 9,8k USD spend / 9 hires / 4 active. Nie je v LIVE, pretože chýba rozsah hodín/dĺžka projektu, deliverable definícia fixed-price a explicitný language-fit proof.
-- **Upwork ďalšie hity:** nové Elementor/WordPress build ponuky boli prevažne hard-dev alebo low-value/microbudget a neprešli rankingom.
-- **Pretlak:** Powerlogy Marketing Specialist zostáva veľmi dobrý e-commerce/WooCommerce/AI-content fit v Bratislave, ale explicitná veľmi dobrá angličtina ho drží mimo LIVE.
-- **Profesia / firemné careers / LinkedIn / Worki / Brigada / Kariera / StartupJobs:** reálne vyhľadané; bez nového kvalifikovaného winnera.
+- **Nové aktívne položky: 0.** Nebol potvrdený nový kandidát, ktorý by bezpečne prešiel lokalitným, jazykovým, hard-skill, value a dedupe gateom a súčasne zlepšil LIVE feed.
+- **Upwork:** nový `Virtual Assistant - Ongoing - Product Listing / Ecommerce Management` je Worldwide remote a obsahovo pokrýva WooCommerce/eBay/Amazon/Facebook Marketplace, inventory a customer communication, ale ponúka iba **3–6 USD/h**, vyžaduje **30+ h/týždeň**, má **20–50 proposals** a klient má iba **134 USD total spend**. Nepridané — value/competition/client-signal gate.
+- **Upwork existujúce priority:** `WooCommerce Product Listing & Upload Specialist` je už LIVE; `Tech-Savvy Virtual Assistant` a `Website & SEO Management 2026` zostávajú vo verification queue bez nového dôkazu, ktorý by menil ich stav.
+- **Worki:** čerstvé výsledky v širšom priľahlom regióne boli reálne preverené. `Technik KTL` v Šamoríne je mimo cieľového skill profilu. Multi-region obchodná rola uvádza aj Senec, ale bez presného dôkazu reálnej pracovnej bázy/dochádzania zostáva `locationEligibility: unknown` a mimo aktívnych odporúčaní.
+- **LinkedIn:** verejne indexované web/support výsledky boli closed alebo hard-development; AgentFire/Ludicrum sú closed a Joinrs/Canonical web pozícia už neakceptuje prihlášky.
+- **Pretlak:** Powerlogy Marketing Specialist zostáva verejne aktívny a obsahovo veľmi silný e-commerce/WooCommerce/AI-content fit v Bratislave, ale explicitná veľmi dobrá angličtina ho naďalej drží mimo LIVE.
+- **Profesia / priame careers / Brigada / Kariera / StartupJobs / WordPress Jobs:** reálne vyhľadané; bez nového kvalifikovaného winnera.
 - **Reddit/WordPress komunity:** bez čerstvého evidence-grade hiring dopytu s dostatočným pay/location/active proofom.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 
 ### Run summary
-- Reálne skontrolované source families: **11**.
+- Reálne skontrolované source families: **10**.
 - Nové aktívne položky: **0**.
-- Významné pending kandidáty: **1 nový** — Upwork Customer Service Representative for Brand; Tech-Savvy VA a Website & SEO Management ostávajú vo verification queue.
-- LIVE feed: **40 aktívnych položiek**.
-- Mix: **Profesia 18 / 40 = 45,0 %; mimo Profesia 22 / 40 = 55,0 %**.
-- `jobs-data.json.updatedAt` ostáva **31. 8. 2026 18:21:13 CEST** — bez kvalifikovaného LIVE delta sa timestamp neposúva umelo.
-- `source-audit.json.updatedAt` = **31. 8. 2026 20:30:37 CEST**.
+- Významné nové pending kandidáty: **0**.
+- LIVE feed: **41 aktívnych položiek**.
+- Mix: **Profesia 18 / 41 = 43,9 %; mimo Profesia 23 / 41 = 56,1 %**.
+- `jobs-data.json.updatedAt` ostáva **31. 8. 2026 22:13:19 CEST** — bez kvalifikovaného LIVE delta sa timestamp neposúva umelo.
+- `source-audit.json.updatedAt` = **31. 8. 2026 22:34:19 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -232,3 +234,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 141. **Variable-pay attainability evidence** — oddeliť `guaranteedBase`, `guaranteedRampVariable`, `targetVariable` a `uncappedVariable`; ranking má používať konzervatívnu dosiahnuteľnú hodnotu a jasne označiť výkonové riziko, aby nízky fix s marketingovo vysokým bonusom nebol nadhodnotený.
 142. **Fixed-price workload evidence gate** — marketplace fixed-price ponuka bez hodinového alebo deliverable rozsahu nesmie byť hodnotená len podľa nominálnej sumy; pred LIVE promotion vyžadovať hours/duration/deliverables a konzervatívny effective-hourly floor.
 143. **Canonical activity volatility reconciler** — pri marketplace activity signáloch ukladať timestampovaný canonical snapshot a pri skokoch typu `<5 ↔ 20–50 proposals` vyžadovať druhé potvrdenie; zabráni rankingovým zmenám spôsobeným nestabilnou indexáciou alebo cache.
+144. **GitHub Actions 5-minute high-priority poller** — pre source families s reálnym `<24h` prínosom spúšťať bezpečný 5-minútový discovery poll s rate-limit budgetom, canonical verification a fail-closed write guardom. Skráti čas od publikovania po reakciu bez zbytočného rovnako častého pollingu pomalých zdrojov.
+145. **CRM-calibrated reply-probability model** — z reálnych CRM výsledkov odhadovať pravdepodobnosť odpovede podľa source family, role tracku, apply latency, konkurencie a employer history; používať iba ako tie-breaker po hard gateoch, aby sa reakčný čas sústredil na ponuky s najvyššou praktickou šancou na odpoveď.
