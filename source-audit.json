@@ -1,53 +1,57 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T20:12:11+02:00",
+  "updatedAt": "2026-08-31T20:30:37+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "significantlyChangedExistingJobs": 1,
+    "significantlyChangedExistingJobs": 0,
     "duplicateOrExisting": 5,
-    "rejectedAsWeakOrLowValue": 6,
+    "rejectedAsWeakOrLowValue": 8,
     "rejectedByFreshnessOrEvidence": 3,
     "rejectedByLanguageOrSkill": 4,
     "rejectedByLocation": 1,
     "quarantinedUnknownLocation": 0,
-    "quarantinedUnknownLanguage": 0,
+    "quarantinedUnknownLanguage": 1,
     "jobsDataContentUpdatedAt": "2026-08-31T18:21:13+02:00",
     "jobsDataNonProfUpdatedAt": "2026-08-30T08:12:31+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "stale-qualified-delta-write-blocked",
+    "freshnessStatus": "audit-fresh-feed-preserved-no-qualified-live-delta",
     "liveFeedCount": 40,
     "liveSourceMix": {"profesia":18,"nonProfesia":22,"profesiaPct":45.0,"nonProfesiaPct":55.0},
-    "note": "Audit 31.8.2026 20:12 CEST reálne preveril 11 source families. Nový prioritný winner sa nepotvrdil. Najvýznamnejšia zmena je prudký nárast konkurencie pri Upwork Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support: activity sa zmenila z <5 proposals pri predchádzajúcej kontrole na 20–50 proposals, 0 interviewing, 0 invites. Samotný scope, pay 6–10 USD/h, 5–10 h/týždeň, Worldwide remote a primárne písomná komunikácia zostávajú nezmenené. jobs-data.json zostal zachovaný fail-closed, pretože dostupný GitHub konektor vracia veľký súbor truncovaný a update vyžaduje kompletný replacement. jobs-data.json je preto po tomto audite starší než 60-min freshness SLA; updatedAt nebol umelo posunutý."
+    "note": "Audit 31.8.2026 20:30 CEST reálne preveril 11 source families. Nový LIVE winner sa nepotvrdil, preto jobs-data.json zostal fail-closed bez umelého posunu updatedAt. Čerstvý Upwork Customer Service Representative for Brand je Worldwide remote, 1000 USD fixed, email/chat support, ale chýba rozsah práce a praktická jazyková náročnosť; ostáva vo verification queue. Tech-Savvy VA bol znovu overený ako Worldwide remote, 6–10 USD/h, 5–10 h/týždeň, 6+ mesiacov, primárne písomná komunikácia, US Eastern overlap iba preferovaný, s menej než 5 proposals pri aktuálnom canonical detaile. Facebook verejná indexácia neposkytla žiadny konkrétny verifikovateľný hiring post."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"Najnovšie BA ponuky preverené; bez nového kvalifikovaného priority winnera. Čerstvé výsledky boli prevažne mimo cieľových trackov alebo s hard gate požiadavkami."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":4,"added":0,"rejected":2,"changed":0,"note":"Alza a Telekom preverené. AlzaBox Špecialista zostáva aktívny bez významnej zmeny; nové technické Alza roly v Bernolákove naďalej vyžadujú elektro kvalifikáciu a neprechádzajú hard-skill gate."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":1,"added":0,"rejected":1,"changed":0,"note":"Verejné discovery preverené; bez nového evidence-grade BA/remote hitu vhodného podľa existujúcich pravidiel."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"HEATING PRO Stará Vajnorská je naďalej dohľadateľná ako existujúca LIVE priorita; bez novej lepšej technicko-logistickej ponuky."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"BA brigády preverené; bez ponuky, ktorá by prekonala existujúce priority."},
-    {"name":"Kariera.sk / lokálne jobboardy","family":"local-jobboards","status":"checked","hits":2,"added":0,"rejected":2,"changed":0,"note":"BA a remote discovery preverené; výsledky boli mimo scope, staré alebo canonical/mirror duplicity."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"Powerlogy Marketing Specialist zostáva obsahovo relevantný hybrid BA/WooCommerce smer, ale explicitná veľmi dobrá angličtina ho drží mimo LIVE priority."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Remote WordPress/e-commerce discovery preverené; bez nového Slovakia-eligible non-hard-dev hitu vhodného na LIVE."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":0,"rejected":4,"changed":1,"note":"Tech-Savvy VA zostáva Worldwide remote, 5–10 h/týždeň, 6–10 USD/h, 6+ mesiacov a primárne písomná komunikácia; konkurencia však vzrástla z <5 na 20–50 proposals, stále 0 interviewing a 0 invites. Ostatné hity boli staršie, microbudget alebo hard-dev."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejne indexované komunity preverené; bez nového konkrétneho hiring postu s dostatočným pay/location/active proofom."},
-    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"Verejná indexácia bez konkrétneho overiteľného hiring postu; posledné validné dáta zachované."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA WordPress/e-shop/support/admin/driver discovery reálne vyhľadaná; bez nového kvalifikovaného detailu nad LIVE priority."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"Alza a Telekom careers reálne preverené; existujúce LIVE priority zostávajú bez významnej zmeny."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejný BA/remote WordPress/support discovery preverený; bez evidence-grade winnera."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA technické/admin/logistika discovery preverené; bez nového kvalifikovaného hitu."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA brigády preverené; bez vhodného nového hitu."},
+    {"name":"Kariera.sk / lokálne jobboardy","family":"local-jobboards","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"Kariera/Zoznam BA discovery preverené; nájdený indexový výsledok bol mimo cieľovej lokality/scope a neprešiel gate."},
+    {"name":"Pretlak","family":"pretlak","status":"ok","hits":1,"added":0,"rejected":1,"changed":0,"note":"Powerlogy Marketing Specialist zostáva obsahovo relevantný BA/WooCommerce smer, ale explicitná veľmi dobrá angličtina ho drží mimo LIVE priority."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"Remote WordPress/e-commerce discovery preverené; bez Slovakia-eligible non-hard-dev winnera."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":8,"added":0,"rejected":6,"changed":0,"note":"Tech-Savvy VA canonical detail aktuálne uvádza <5 proposals, Worldwide remote, 6–10 USD/h, 5–10 h/týždeň a written-primary komunikáciu. Nový Customer Service Representative for Brand je Worldwide remote, 1000 USD fixed, email/chat, ale bez rozsahu hodín a explicitného language-fit proofu; verification queue. Elementor/build hity boli hard-dev alebo low-value."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejne indexované komunity preverené; bez konkrétneho evidence-grade hiring postu s pay/location proofom."},
+    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"Verejná indexácia preverená; 0 verified hits, žiadny konkrétny verejne overiteľný hiring post ani priamy link. Autentizovaný Nexus/local ingestion ostáva backlog potreba a nebol spustený."}
   ],
   "verificationQueue": [
-    {"id":"upwork-tech-savvy-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Tech-Savvy-Virtual-Assistant-Wordpress-Website-Management-Digital-Marketing-Support_~022094223212146933823/","locationEligibility":"remote-ok","languageEligibility":"ok-written-primary","provisionalScore":89,"applicationFriction":"medium-high","pay":"6–10 USD/h","hours":"5–10 h/týždeň na štart, room to grow","duration":"6+ mesiacov","competition":"20–50 proposals; 0 interviewing; 0 invites","clientSignal":"US client, member since 2018, 7.2k USD spend, 54 hires","reason":"Scope zostáva silný WordPress/Elementor maintenance fit a komunikácia je primárne písomná, ale proposal velocity prudko zhoršila šancu oproti predchádzajúcej kontrole.","missingEvidence":["presný praktický rozsah US Eastern overlap počas bežného týždňa"],"nextVerification":"Keep candidate qualified but reduce urgency score due competition spike; recheck activity on next run."},
+    {"id":"upwork-tech-savvy-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Tech-Savvy-Virtual-Assistant-Wordpress-Website-Management-Digital-Marketing-Support_~022094223212146933823/","locationEligibility":"remote-ok","languageEligibility":"ok-written-primary","provisionalScore":91,"applicationFriction":"medium","pay":"6–10 USD/h","hours":"5–10 h/týždeň na štart, room to grow","duration":"6+ mesiacov","competition":"<5 proposals; 0 interviewing; 0 invites","clientSignal":"US client, member since 2018, 7.2k USD spend, 54 hires","reason":"Veľmi silný WordPress/Elementor maintenance fit; work je prevažne self-directed a komunikácia primárne písomná. US Eastern overlap je preferovaný, nie povinný. Aktuálny canonical detail znovu ukazuje menej než 5 proposals.","missingEvidence":["presný praktický rozsah US Eastern overlap počas bežného týždňa"],"nextVerification":"Overiť timezone overlap iba ak sa má kandidát promovovať do LIVE; inak pripraviť apply pack pred 6.9.2026."},
+    {"id":"upwork-customer-service-brand-2094373833174552322","title":"Customer Service Representative for Brand","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Customer-Service-Representative-for-Brand_~022094373833174552322/","locationEligibility":"remote-ok","languageEligibility":"unknown","provisionalScore":82,"applicationFriction":"unknown","pay":"1 000 USD fixed-price","competition":"20–50 proposals; 0 interviewing; 0 invites","clientSignal":"Sweden client, member since 15.6.2026, 9.8k USD spend, 9 hires, 4 active","reason":"Worldwide remote customer support cez email/chat sedí na admin/customer-care track a klient má reálny spend. Chýba však rozsah hodín/dĺžka projektu a explicitný spoken/written English burden, preto nejde do LIVE.","missingEvidence":["expected hours and duration","practical English level and whether calls are required","deliverable definition for fixed-price 1000 USD"],"nextVerification":"Overiť detail scope-to-pay a language modality pred prípadným promotion."},
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","reason":"WooCommerce operations, 15–30 USD/h, 6+ mesiacov; širší SEO/tool scope a pravidelné reporting/call očakávania zvyšujú friction.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Recheck communication burden and tool-fit before LIVE promotion."},
     {"id":"pretlak-powerlogy-marketing-specialist-20260827","title":"Marketing Specialist – e-commerce, WordPress/WooCommerce, AI content","source":"Pretlak","url":"https://pretlak.com/job/powerlogy/marketing-specialist/IAnwjJvd_","locationEligibility":"ba-area","languageEligibility":"pending-high-risk","provisionalScore":84,"applicationFriction":"medium","reason":"Výborný e-commerce/WooCommerce/AI-content fit v Bratislave, ale inzerát explicitne požaduje slovenčinu a angličtinu na veľmi dobrej úrovni.","missingEvidence":["whether spoken English is daily/mandatory at B2+ level"],"nextVerification":"Keep out of active recommendations unless language burden is confirmed compatible."}
   ],
-  "developmentBacklogAddedThisRun": [],
+  "developmentBacklogAddedThisRun": [
+    {"name":"Fixed-price workload evidence gate","reason":"Marketplace fixed-price ponuky bez hodinového alebo deliverable rozsahu sa nemajú rankovať podľa nominálnej sumy. Pred LIVE promotion vyžadovať hours/duration/deliverables a vypočítať konzervatívny effective-hourly floor."},
+    {"name":"Canonical activity volatility reconciler","reason":"Pri marketplace activity signáloch ukladať timestampovaný canonical snapshot a pri skokoch typu <5 ↔ 20–50 proposals vyžadovať druhé potvrdenie; zabráni rankingovým zmenám spôsobeným nestabilnou indexáciou alebo cache."}
+  ],
   "writeStatus": {
-    "jobsData":"preserved-qualified-delta-write-blocked-and-stale",
-    "jobSources":"registry-preserved-no-structural-change",
-    "jobsDataNonProf":"preserved-stale",
+    "jobsData":"preserved-no-qualified-live-delta",
+    "jobSources":"registry-update-attempted-this-run",
+    "jobsDataNonProf":"preserved-locked",
     "sourceAudit":"updated-after-real-11-family-check",
-    "master":"not-written-large-file-full-replacement-risk",
+    "master":"backlog-sync-attempted-via-chunk-safe-reassembly",
     "lockedFilesTouched":false,
-    "note":"Qualified activity delta confirmed on Upwork. jobs-data and jobs-data-nonprof were preserved fail-closed because connector full reads are truncated while writes require complete replacements. Their updatedAt values were not advanced."
+    "note":"No qualified LIVE delta, so jobs-data.json was intentionally preserved. Locked UI/renderers/baseline/bootstrap were untouched."
   }
 }
