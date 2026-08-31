@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 31. 8. 2026 22:34 CEST
+Aktualizované: 31. 8. 2026 23:27 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -52,23 +52,24 @@ Aktualizované: 31. 8. 2026 22:34 CEST
 18. **Alza.sk — AlzaBox Špecialista — Match 89** — Bratislava, 1 430 € fix + až 610 € variabilná zložka; Po–Pi flexibilne, čiastočný HO, Excel, vodičák B, AI nástroje; realitná/obchodná prax iba výhodou.
 19. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia.
 20. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote; mínus US Mountain Time.
-21. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
-22. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
-23. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
-24. **BOELS — Shop Advisor / Klientsky poradca pre hobbymarkety — Match 88** — Bratislava-Ružinov; Po–Pi flexibilne, výjazdy z domu, servisné vozidlo, jednoduchá technická údržba, vodičák B, od 1 400 €/mes. + bonus.
+21. **BOELS — Shop Advisor / Klientsky poradca pre hobbymarkety — Match 89** — Bratislava-Ružinov; Po–Pi flexibilne, výjazdy z domu, servisné vozidlo, jednoduchá technická údržba, vodičák B, od 1 400 €/mes. + bonus.
+22. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
+23. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
+24. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 31. 8. 2026 22:34 CEST — LATEST
-Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Pretlak/StartupJobs/WordPress Jobs; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **10 nezávislých source families**, z toho **9 mimo Profesia**.
+## SOURCE AUDIT — 31. 8. 2026 23:27 CEST — LATEST
+Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Práca za rohom/Kariera.sk; Pretlak/StartupJobs/WordPress Jobs; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **10 nezávislých source families**, z toho **9 mimo Profesia**.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 0.** Nebol potvrdený nový kandidát, ktorý by bezpečne prešiel lokalitným, jazykovým, hard-skill, value a dedupe gateom a súčasne zlepšil LIVE feed.
-- **Upwork:** nový `Virtual Assistant - Ongoing - Product Listing / Ecommerce Management` je Worldwide remote a obsahovo pokrýva WooCommerce/eBay/Amazon/Facebook Marketplace, inventory a customer communication, ale ponúka iba **3–6 USD/h**, vyžaduje **30+ h/týždeň**, má **20–50 proposals** a klient má iba **134 USD total spend**. Nepridané — value/competition/client-signal gate.
-- **Upwork existujúce priority:** `WooCommerce Product Listing & Upload Specialist` je už LIVE; `Tech-Savvy Virtual Assistant` a `Website & SEO Management 2026` zostávajú vo verification queue bez nového dôkazu, ktorý by menil ich stav.
-- **Worki:** čerstvé výsledky v širšom priľahlom regióne boli reálne preverené. `Technik KTL` v Šamoríne je mimo cieľového skill profilu. Multi-region obchodná rola uvádza aj Senec, ale bez presného dôkazu reálnej pracovnej bázy/dochádzania zostáva `locationEligibility: unknown` a mimo aktívnych odporúčaní.
-- **LinkedIn:** verejne indexované web/support výsledky boli closed alebo hard-development; AgentFire/Ludicrum sú closed a Joinrs/Canonical web pozícia už neakceptuje prihlášky.
-- **Pretlak:** Powerlogy Marketing Specialist zostáva verejne aktívny a obsahovo veľmi silný e-commerce/WooCommerce/AI-content fit v Bratislave, ale explicitná veľmi dobrá angličtina ho naďalej drží mimo LIVE.
-- **Profesia / priame careers / Brigada / Kariera / StartupJobs / WordPress Jobs:** reálne vyhľadané; bez nového kvalifikovaného winnera.
-- **Reddit/WordPress komunity:** bez čerstvého evidence-grade hiring dopytu s dostatočným pay/location/active proofom.
+- **Nové aktívne položky: 0.** Nebol potvrdený nový kandidát, ktorý by bezpečne prešiel lokalitným, jazykovým, hard-skill, value a dedupe gateom a zároveň zlepšil LIVE feed.
+- **INDEX NOSLUŠ — výpomoc v predajni / asistent mobilnej aplikácie:** nový reálny BA hit, canonical overený priamo u INDEX NOSLUŠ aj na Profesia. Bratislava, dohoda, termín **3.–14. 9. 2026**, pomoc zákazníkom so skenovaním nákupu cez mobil, **7 €/h + zákonné víkendové príplatky**. Lokalita prešla (`ba-area`), ale krátke trvanie, nízka sadzba a promotérska/sales-intensity zložka ho držia pod existujúcimi LIVE prioritami; nepridané.
+- **Práca za rohom:** našla mirror rovnakej INDEX NOSLUŠ pozície; po canonical resolve sa mirror nepočíta ako nezávislý zdroj ani nový hit.
+- **LinkedIn:** SupportYourApp technical support vyžaduje **C1 English**; Foxelli e-commerce support je closed alebo vyžaduje fluent/near-native English plus špecializovanú crochet expertízu. Bez promotion.
+- **Worki:** HEATING PRO je už LIVE. EPF VZV/sklad výsledky v DNV sú lokálne vhodné, ale VZV/3-zmennosť a vyššia fyzická záťaž ich držia pod existujúcimi prioritami.
+- **Brigada.sk:** upratovanie skladu 2. 9. za 6,50 €/h a retail/pokladňa výsledky neprešli value/ranking gateom.
+- **StartupJobs:** WordPress/Webflow projektový koordinátor je prevažne remote, ale vyžaduje občasné stretnutia v Prahe; remote hard gate preto neprešiel.
+- **Upwork:** čerstvý Etsy VA má AI/listing scope a Worldwide remote, ale chýba transparentná sadzba a ide o krátky one-time projekt. Starší WooCommerce build za 30 USD fixed je microbudget a klient už najal človeka.
+- **Reddit/WordPress komunity:** čerstvé indexované výsledky boli prevažne FOR HIRE ponuky freelancerov, nie hiring dopyty.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 
 ### Run summary
@@ -78,7 +79,7 @@ Reálne prehľadané source families: **Profesia; priame firemné careers; Linke
 - LIVE feed: **41 aktívnych položiek**.
 - Mix: **Profesia 18 / 41 = 43,9 %; mimo Profesia 23 / 41 = 56,1 %**.
 - `jobs-data.json.updatedAt` ostáva **31. 8. 2026 22:13:19 CEST** — bez kvalifikovaného LIVE delta sa timestamp neposúva umelo.
-- `source-audit.json.updatedAt` = **31. 8. 2026 22:34:19 CEST**.
+- `source-audit.json.updatedAt` = **31. 8. 2026 23:27:04 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -216,23 +217,25 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 123. Source-check evidence ledger.
 124. Canonical application-route health monitor.
 125. Fresh competitor-pressure decay.
-126. **Hard-qualification evidence resolver** — pri pending kandidátoch automaticky dohľadať presný detail povinných certifikácií/licencií a rozhodnúť hard gate ešte v tom istom behu; príklad Lugera §21 ukázal hodnotu tohto kroku.
-127. **Canonical compensation drift detector** — pri rovnakom job ID porovnať rozdiely medzi canonical detailom a mirrorom (napr. Košík 150 vs. 180 €/deň) a v LIVE feede zobrazovať konzervatívnu canonical hodnotu s poznámkou o konflikte.
-128. **Source pagination / index-depth coverage meter** — pri každom source family evidovať, či sa prehľadala iba prvá indexová vrstva alebo aj ďalšie strany/detaily; zabráni falošnému dojmu plného pokrytia pri plytkej verejnej indexácii a pomôže cielene rotovať hlbšie discovery.
-129. **Verification queue TTL + auto-expiry policy** — pending kandidát po definovanom počte behov bez nového dôkazu prejde do cold state; zníži opakované rechecky starých neoveriteľných ponúk a uvoľní discovery kapacitu pre čerstvé leady.
-130. **Audit-vs-feed freshness separation** — evidovať samostatne `lastDiscoveryAt`/`lastAuditAt` a `jobsDataUpdatedAt`; úspešný audit bez kvalifikovaného delta nebude vyzerať ako technická chyba a nebude tlačiť systém k falošnému posúvaniu feed timestampu.
-131. **Pending-candidate evidence checklist** — každý verification-queue kandidát musí mať zoznam chýbajúcich dôkazov (jazyk, remote eligibility, active state, pay) a presný ďalší overovací krok; znižuje opakované slepé rechecky a skracuje promotion/reject rozhodnutie.
-132. **Publication-time confidence normalizer** — rozlišovať presný canonical `publishedAt`, relatívny údaj typu „2 days ago“ a iba crawl timestamp; zabráni falošnej freshness a spraví `<24h` prioritu dôveryhodnejšou.
-133. **Dominated-candidate suppression memory** — pri kandidátovi, ktorý opakovane neprekoná LIVE položku rovnakého tracku kvôli mzde, jazyku, freshness alebo hard-skill burden, uložiť dôvod a dočasne znížiť recheck frekvenciu; uvoľní discovery kapacitu bez straty nového delta.
-134. **Indirect discovery provenance guard** — pri LinkedIn a podobných zdrojoch evidovať `discoveryRoute=direct-query|similar-jobs|aggregator`; výsledok zo sidebaru/related jobs nesmie prejsť do LIVE bez otvorenia a overenia canonical detailu. Znižuje falošné fresh hity z nepriamych indexových signálov.
-135. **Dominated-hit early-abort gate** — keď už pay/location/language poskytne dostatočný hard-negative dôkaz, ukončiť drahé detailné parsovanie kandidáta v tom istom behu. Šetrí discovery kapacitu pri opakovaných 5,50–7 €/h retail/warehouse výsledkoch bez znižovania coverage.
-136. **Notification significance contract** — definovať objektívne prahy, kedy hodinový beh používateľa skutočne upozorní: nový TOP lead, materiálna zmena mzdy/statusu/deadline alebo technická chyba. Zníži notifikačný šum bez straty dôležitých udalostí.
-137. **Reapply eligibility cooldown policy** — prepojiť CRM stav, canonical job identity a čas od poslednej reakcie; zabráni duplicitnému prihlasovaniu na ten istý repost a zároveň povolí nový action window pri legitímne obnovenej ponuke po dostatočnom čase.
-138. **Search-result freshness confidence decay** — oddeliť canonical `publishedAt`, crawler recency a reálnu activity evidence; ak čerstvosť stojí iba na indexe vyhľadávača, confidence postupne klesá a kandidát neprebije novšie canonical LIVE položky.
-139. **Remote market-rate sanity band** — pre remote marketplace scope udržiavať dátový minimálny value band podľa odhadovaného úsilia; mikro-budget e-commerce/admin úlohy sa odfiltrujú ešte pred drahým detailným verification, s možnosťou výnimky pri strategickom portfóliovom prínose.
-140. **Role-environment relevance bonus** — samostatne evidovať, keď všeobecná customer-care/predajná rola poskytuje reálnu pracovnú expozíciu k cieľovým technológiám (Smart Home, IoT, web/e-commerce nástroje). Zvýši recall prenositeľných príležitostí bez toho, aby prekryl sales-intensity alebo hard-skill penalizácie.
-141. **Variable-pay attainability evidence** — oddeliť `guaranteedBase`, `guaranteedRampVariable`, `targetVariable` a `uncappedVariable`; ranking má používať konzervatívnu dosiahnuteľnú hodnotu a jasne označiť výkonové riziko, aby nízky fix s marketingovo vysokým bonusom nebol nadhodnotený.
-142. **Fixed-price workload evidence gate** — marketplace fixed-price ponuka bez hodinového alebo deliverable rozsahu nesmie byť hodnotená len podľa nominálnej sumy; pred LIVE promotion vyžadovať hours/duration/deliverables a konzervatívny effective-hourly floor.
-143. **Canonical activity volatility reconciler** — pri marketplace activity signáloch ukladať timestampovaný canonical snapshot a pri skokoch typu `<5 ↔ 20–50 proposals` vyžadovať druhé potvrdenie; zabráni rankingovým zmenám spôsobeným nestabilnou indexáciou alebo cache.
-144. **GitHub Actions 5-minute high-priority poller** — pre source families s reálnym `<24h` prínosom spúšťať bezpečný 5-minútový discovery poll s rate-limit budgetom, canonical verification a fail-closed write guardom. Skráti čas od publikovania po reakciu bez zbytočného rovnako častého pollingu pomalých zdrojov.
-145. **CRM-calibrated reply-probability model** — z reálnych CRM výsledkov odhadovať pravdepodobnosť odpovede podľa source family, role tracku, apply latency, konkurencie a employer history; používať iba ako tie-breaker po hard gateoch, aby sa reakčný čas sústredil na ponuky s najvyššou praktickou šancou na odpoveď.
+126. **Hard-qualification evidence resolver** — pri pending kandidátoch automaticky dohľadať presný detail povinných certifikácií/licencií a rozhodnúť hard gate ešte v tom istom behu.
+127. **Canonical compensation drift detector** — pri rovnakom job ID porovnať rozdiely medzi canonical detailom a mirrorom a v LIVE feede zobrazovať konzervatívnu canonical hodnotu s poznámkou o konflikte.
+128. **Source pagination / index-depth coverage meter** — evidovať hĺbku prehľadania source family a cielene rotovať hlbšie discovery.
+129. **Verification queue TTL + auto-expiry policy** — pending kandidát po definovanom počte behov bez nového dôkazu prejde do cold state.
+130. **Audit-vs-feed freshness separation** — evidovať samostatne discovery/audit a jobs-data aktualizáciu.
+131. **Pending-candidate evidence checklist** — verification kandidát musí mať presný zoznam chýbajúcich dôkazov a ďalší krok.
+132. **Publication-time confidence normalizer** — rozlišovať canonical publishedAt, relatívny údaj a crawl timestamp.
+133. **Dominated-candidate suppression memory** — pri opakovane slabšom kandidátovi dočasne znížiť recheck frekvenciu.
+134. **Indirect discovery provenance guard** — výsledok zo sidebaru/related jobs nesmie prejsť do LIVE bez canonical detailu.
+135. **Dominated-hit early-abort gate** — pri dostatočnom hard-negative dôkaze ukončiť drahé parsovanie kandidáta.
+136. **Notification significance contract** — objektívne prahy pre upozornenie: nový TOP lead, materiálna zmena alebo technická chyba.
+137. **Reapply eligibility cooldown policy** — zabráni duplicitnému prihlasovaniu na rovnaký repost a povolí legitímny nový action window.
+138. **Search-result freshness confidence decay** — ak freshness stojí iba na indexe, confidence postupne klesá.
+139. **Remote market-rate sanity band** — minimálny value band pre remote marketplace scope.
+140. **Role-environment relevance bonus** — bonus za reálnu expozíciu k cieľovým technológiám bez prekrytia hard gateov.
+141. **Variable-pay attainability evidence** — oddeliť guaranteed base/ramp/target/uncapped variable.
+142. **Fixed-price workload evidence gate** — fixed-price ponuka bez workload dôkazu nesmie byť hodnotená len podľa nominálnej sumy.
+143. **Canonical activity volatility reconciler** — pri marketplace activity skokoch vyžadovať druhé potvrdenie.
+144. **GitHub Actions 5-minute high-priority poller** — bezpečný častejší poll pre source families s reálnym <24h prínosom.
+145. **CRM-calibrated reply-probability model** — z reálnych CRM výsledkov odhadovať reply probability ako tie-breaker po hard gateoch.
+146. **Shift-block fit optimizer** — pri krátkych brigádach spočítať praktickú hodnotu konkrétnych smien vrátane dojazdu a disponibilného času; zabráni, aby nízko platená 6,5-hodinová zmena vyzerala lepšie než flexibilnejšia stabilná práca.
+147. **Training-date feasibility gate** — pri brigádach s povinným školením pred nástupom povoliť promotion iba ak je školenie ešte reálne absolvovateľné; zníži neakčné a expirované leady.
