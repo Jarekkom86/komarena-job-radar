@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "name": "Hard Qualification Evidence Resolver",
+  "version": "1.0.0",
+  "purpose": "Fail-closed resolver for mandatory licences, certificates, legal authorisations and non-trainable qualifications before a candidate can enter active recommended results.",
+  "rules": {
+    "mandatoryEvidenceRequired": true,
+    "allowedEvidenceSources": ["canonical-job-detail", "employer-career-page", "official-regulation-or-certification-source"],
+    "searchSnippetAloneIsInsufficient": true,
+    "unknownMandatoryQualificationAction": "quarantine",
+    "missingMandatoryQualificationAction": "reject-hard-qualification",
+    "preferredOrAdvantageOnlyAction": "do-not-hard-reject",
+    "conflictingEvidenceAction": "quarantine",
+    "locationGatePrecedence": "locationEligibility must still be ba-area or remote-ok; qualification resolution never overrides reject-distance or unknown location"
+  },
+  "requiredFields": [
+    "qualificationRequirement",
+    "qualificationRequirementType",
+    "qualificationEvidenceUrl",
+    "qualificationEvidenceCheckedAt",
+    "qualificationEligibility",
+    "qualificationReason"
+  ],
+  "eligibilityValues": ["eligible", "trainable", "unknown", "reject-hard-qualification"],
+  "requirementTypes": ["mandatory", "preferred", "advantage", "not-required", "unclear"],
+  "activeFeedInvariant": "A role with a mandatory qualification may be active only when qualificationEligibility is eligible or trainable and canonical evidence confirms that status.",
+  "examples": [
+    {"case":"mandatory §21 electrical qualification, candidate evidence absent","result":"reject-hard-qualification"},
+    {"case":"§21 listed only as advantage","result":"do-not-hard-reject"},
+    {"case":"mandatory certificate wording unclear between index and detail","result":"quarantine"}
+  ],
+  "preservation": ["stable IDs", "canonical dedupe", "sourceTrust", "verifiedAt", "scoreConfidence", "locationEligibility", "locationReason", "CRM/user edits"]
+}
