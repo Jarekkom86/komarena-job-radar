@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T08:20:12+02:00",
+  "updatedAt": "2026-08-31T08:35:09+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
     "significantPendingCandidates": 0,
     "significantlyChangedPriorityJobs": 0,
     "significantlyChangedExistingJobs": 0,
-    "duplicateOrExisting": 5,
-    "rejectedAsWeakOrLowValue": 9,
-    "rejectedByFreshnessOrEvidence": 4,
-    "rejectedByLanguageOrSkill": 5,
-    "rejectedByLocation": 1,
+    "duplicateOrExisting": 1,
+    "rejectedAsWeakOrLowValue": 7,
+    "rejectedByFreshnessOrEvidence": 3,
+    "rejectedByLanguageOrSkill": 3,
+    "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
     "jobsDataContentUpdatedAt": "2026-08-31T07:32:56+02:00",
@@ -19,31 +19,34 @@
     "freshnessStatus": "current",
     "liveFeedCount": 39,
     "liveSourceMix": {"profesia":18,"nonProfesia":21,"profesiaPct":46.2,"nonProfesiaPct":53.8},
-    "note": "Audit 31.8.2026 08:20 CEST reálne preveril Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada/Kariera indexy, Pretlak, Upwork a verejne indexované komunitné zdroje. Nebol potvrdený nový ani významne zmenený prioritný winner. Form Factory IT Support Specialist je obsahovo zaujímavý technický support za 2 500 EUR/mes. + KPI, ale canonical Profesia detail vyžaduje angličtinu B2, 1–3 roky IT Support/Infrastructure a pravidelné cestovanie po kluboch, preto neprešiel hard-gate/ranking profilom. Nové Upwork discovery výsledky boli prevažne hard-dev, dizajnérske alebo scope/pay menej vhodné než existujúce LIVE priority. jobs-data.json nebol bez obsahového delta prepísaný a updatedAt zostal 07:32:56 CEST."
+    "note": "Audit 31.8.2026 08:35 CEST reálne preveril Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a verejne indexovaný Facebook. Nebol potvrdený nový ani významne zmenený prioritný winner. LinkedIn verejne indexované CMS/web výsledky boli staré a uzavreté; Kariera výsledok bol starý. Upwork priniesol viac WordPress/WooCommerce výsledkov, ale najbližší vhodný dlhodobý WooCommerce support za 8–15 USD/h je už 2 týždne starý, má 20–50 proposals, 2 interviewing a 10 invites, takže neprekonal existujúce LIVE priority. Ďalšie Upwork hity boli hard-dev, expert UI/UX alebo nízko platené. jobs-data.json nebol bez kvalifikovaného obsahového delta prepísaný a updatedAt zostal 07:32:56 CEST."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":8,"added":0,"rejected":5,"changed":0,"note":"BA najnovšie + IT support, customer support, technické a vodičské discovery preverené. Form Factory IT Support (2 500 EUR) vyradený pre explicitné B2 AJ + 1–3 roky IT support/infrastructure; ďalšie čerstvé výsledky neprekonali LIVE priority."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":2,"added":0,"rejected":1,"note":"Priame/verejné hiring signály vrátane Form Factory/LinkedIn corroboration preverené; bez nového kvalifikovaného winnera."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"added":0,"rejected":1,"note":"Verejne indexovaný Form Factory hiring post potvrdzuje aktívny nábor, ale canonical Profesia detail má hard B2/experience gate; ďalší kvalifikovaný BA/remote winner sa nepotvrdil."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"note":"Technická/logistická discovery; HEATING PRO zostáva existujúca silná LIVE priorita, bez novej významnej zmeny."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":1,"added":0,"rejected":1,"note":"BA brigádnické/admin/logistické výsledky neprekonali aktuálne LIVE priority."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":2,"added":0,"rejected":2,"note":"Aktuálne indexy preverené; bez nového kvalifikovaného prioritného hitu."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote WordPress/e-commerce/support discovery bez nového vhodného non-hard-dev winnera."},
-    {"name":"Upwork","family":"upwork","status":"checked","hits":7,"added":0,"rejected":5,"note":"Čerstvé WordPress/WooCommerce/Shopify výsledky preverené. Nové hity boli prevažne hard development, dizajn/template build alebo širší scope; neprekonali existujúce LIVE WordPress/WooCommerce priority."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bez nového verejne overiteľného hiring dopytu spĺňajúceho LIVE evidence gate."},
-    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"0 verified hits; bez konkrétneho verejne overiteľného hiring postu s priamym linkom. Posledné validné dáta zachované."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA WordPress/e-shop/support/admin/driver discovery reálne vyhľadaná; verejný index v tomto behu nevrátil nový kvalifikovaný konkrétny detail nad existujúce LIVE priority."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Alza/direct-career discovery reálne vyhľadaná; bez nového overiteľného delta nad existujúce direct-source LIVE položky."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"added":0,"rejected":2,"note":"AgentFire Junior Web Designer a Ludicrum CMS Operator boli verejne indexované, ale oba výsledky sú približne 4–5 mesiacov staré a označené No longer accepting applications."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava technická podpora, administratíva, vodič a sklad discovery reálne vyhľadaná; bez nového kvalifikovaného winnera."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Bratislava administratíva/kuriér/sklad/web discovery reálne vyhľadaná; bez nového konkrétneho výsledku pre LIVE promotion."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"rejected":1,"note":"Verejný index vrátil starý technik PO/BOZP výsledok; približne 1,3 roka starý a mimo ranking profilu, preto nepridaný."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA/remote WordPress/e-commerce/content/support discovery reálne vyhľadaná; bez nového vhodného non-hard-dev winnera."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":9,"added":0,"rejected":6,"note":"Čerstvé a verejne indexované WordPress/WooCommerce/admin výsledky preverené. Dlhodobý WooCommerce support 8–15 USD/h je 2 týždne starý, 20–50 proposals, 2 interviewing a 10 invites; neprekonal LIVE priority. Ďalšie hity boli hard-dev, expert UI/UX alebo ekonomicky slabé."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"checked","hits":0,"added":0,"rejected":0,"note":"Verejne indexovaný hiring discovery bez nového konkrétneho dopytu spĺňajúceho evidence a location gate."},
+    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"0 verified hits; verejná indexácia neposkytla konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog, automat ho nespúšťa."}
   ],
   "verificationQueue": [
     {"id":"upwork-tech-savvy-va-wordpress-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Tech-Savvy-Virtual-Assistant-Wordpress-Website-Management-Digital-Marketing-Support_~022094223212146933823/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":89,"reason":"Worldwide remote, 5–10 h/týždeň, part-time long-term; hlavná zodpovednosť je WordPress website management, publikovanie obsahu, úpravy stránok, formuláre a jednoduché integrácie. Veľmi dobrý scope fit, ale sadzba a praktický spoken-English burden nie sú dostatočne overené.","missingEvidence":["hourly rate","spoken/written English burden","client activity/proposals"],"nextVerification":"Overiť compensation a communication burden pred LIVE promotion."},
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","reason":"WooCommerce operations, 15–30 USD/h, 6+ mesiacov; širší SEO/tool scope a call/reporting zvyšujú friction.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Recheck communication burden and tool-fit before LIVE promotion."}
   ],
-  "developmentBacklogAddedThisRun": [],
+  "developmentBacklogAddedThisRun": [
+    {"name":"Source-query yield memory","reason":"Evidovať presný search query + source family + relevant hits/added/rejected, aby sa opakovane nepálila kapacita na nízko-výnosné formulácie a úspešné dotazy dostali vyššiu prioritu bez zníženia exploration floor."},
+    {"name":"Listing disappearance confirmation quorum","reason":"Existujúcu LIVE položku demotovať alebo uzavrieť až po dvoch nezávislých closure signáloch alebo explicitnom canonical closed stave; posilní fail-closed proti dočasným indexovým výpadkom."}
+  ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-content-delta",
     "jobsDataNonProf":"preserved-locked",
     "sourceAudit":"updated-after-real-10-family-check",
-    "jobSources":"preserved-no-schema-change",
-    "master":"preserved-no-content-delta",
+    "jobSources":"pending-current-run-note-refresh",
+    "master":"pending-current-run-audit-refresh",
     "lockedFilesTouched":false,
     "blocker":null
   }
