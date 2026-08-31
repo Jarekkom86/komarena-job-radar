@@ -45,11 +45,13 @@
   ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-live-delta",
-    "jobSources":"update-planned-this-run",
+    "jobSources":"updated",
     "jobsDataNonProf":"preserved-locked",
     "sourceAudit":"updated-after-real-10-family-check",
-    "master":"update-planned-this-run",
+    "master":"updated",
     "lockedFilesTouched":false,
-    "note":"No locked files touched. jobs-data.json stayed unchanged because this run produced no qualified LIVE delta."
+    "jobSourcesCommit":"3423808155b381cfa60abcd4aab57ea90eb84730",
+    "masterCommit":"449f0132ef7201124f9af643219e58146b8b4c23",
+    "note":"No locked files touched. jobs-data.json stayed unchanged because this run produced no qualified LIVE delta; job-sources.json, source-audit.json and PRACA_PRE_JARA_MASTER.md were updated truthfully."
   }
 }
