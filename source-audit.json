@@ -1,47 +1,52 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T16:20:14+02:00",
+  "updatedAt": "2026-08-31T16:41:03+02:00",
   "runSummary": {
     "familiesChecked": 10,
-    "newActiveJobs": 0,
+    "newActiveJobs": 1,
     "significantPendingCandidates": 0,
     "significantlyChangedPriorityJobs": 0,
     "significantlyChangedExistingJobs": 0,
-    "duplicateOrExisting": 4,
-    "rejectedAsWeakOrLowValue": 8,
-    "rejectedByFreshnessOrEvidence": 4,
-    "rejectedByLanguageOrSkill": 3,
+    "duplicateOrExisting": 2,
+    "rejectedAsWeakOrLowValue": 5,
+    "rejectedByFreshnessOrEvidence": 2,
+    "rejectedByLanguageOrSkill": 2,
     "rejectedByLocation": 1,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
-    "jobsDataContentUpdatedAt": "2026-08-31T07:32:56+02:00",
+    "jobsDataContentUpdatedAt": "2026-08-31T16:41:03+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "content-stale-audit-fresh",
-    "liveFeedCount": 39,
-    "liveSourceMix": {"profesia":18,"nonProfesia":21,"profesiaPct":46.2,"nonProfesiaPct":53.8},
-    "note": "Audit 31.8.2026 16:20 CEST reálne preveril 10 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Znovu overené prioritné LIVE HEATING PRO, AlzaBox Špecialista a Košík.sk bez významnej zmeny podmienok. Nový verejne overený Upwork E-commerce Virtual Assistant je worldwide remote, WooCommerce/Shopify + product listings + customer support, ale iba 7–8 USD/h, 20–50 proposals a 1 hire; neprekonáva existujúce LIVE WooCommerce priority. Upwork ďalšie nové product-listing hity boli mikro-budget, hard-dev, staršie alebo horšie platené. Reddit priniesol iba For Hire/self-promo, nie evidence-grade hiring dopyt. Facebook 0 verified hits, limited. jobs-data.json zostal fail-closed bez prepisu, pretože nevznikol kvalifikovaný obsahový delta."
+    "freshnessStatus": "fresh",
+    "liveFeedCount": 40,
+    "liveSourceMix": {"profesia":18,"nonProfesia":22,"profesiaPct":45.0,"nonProfesiaPct":55.0},
+    "note": "Audit 31.8.2026 16:41 CEST reálne preveril 10 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Kariera.sk, Pretlak, Upwork, Reddit/WordPress komunity a Facebook verejnú indexáciu. Nový direct-source winner Slovak Telekom Magenta Experience Center Bratislava bol overený na firemnej kariére a pridaný do LIVE: 1 750 €/mes. nástupná odmena, smart-home/technologické prostredie, zákaznícka práca, bez povinnej AJ; mínus aktívny predaj a krátky/dlhý týždeň. Grafton L1 support bol vyradený pre povinné VŠ technické vzdelanie, podobnú prax a AJ B1. Wolt part-time support bol vyradený pre student-only režim a English B2. Naturzon e-shop admin je Poprad onsite bez overeného remote režimu, preto reject-distance. Upwork nové WordPress/WooCommerce hity boli mikro-budget alebo scope-to-pay mismatch. Facebook 0 verified hits, limited."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"BA vodič/admin/tech/e-shop discovery a existujúci Košík.sk detail reálne preverené 31.8.2026 16:20; bez nového kvalifikovaného winnera alebo významnej zmeny."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"AlzaBox Špecialista priamo na Alza kariére znovu overený ako aktívny; bez významnej zmeny kľúčových podmienok."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":4,"added":0,"rejected":4,"changed":0,"note":"Verejný BA/remote support/IoT/operations index preverený. Objavili sa role ako Smart Apartment Data Customer Success Program Manager a technické delivery/manager pozície, ale seniorita/jazyk/scope ich drží mimo aktuálneho Job Radar priority gate."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"changed":0,"note":"HEATING PRO detail znovu reálne overený: aktívny, 1 600–2 500 €/mes., živnosť 10–15 €/h, nástup ihneď, vodičák B, bez cudzieho jazyka; bez významnej zmeny."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA vodič/admin/tech/e-shop discovery reálne preverená 31.8.2026 16:41; bez nového kvalifikovaného winnera."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":1,"added":1,"rejected":0,"changed":0,"note":"Slovak Telekom / T-Mobile Kariéra: Magenta Experience Center Bratislava overený na canonical firemnom detaile a pridaný do LIVE. Direct source uvádza 1 750 €/mes., smart-home/technologické ukážky, mentoring/zaškolenie a bez povinnej AJ."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":1,"added":0,"rejected":1,"changed":0,"note":"Verejný BA/remote support/IoT index preverený. Wolt Support Associate Bratislava je part-time pre študentov a vyžaduje professional working English min. B2; rejected language/eligibility."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"note":"BA e-shop/support/tech discovery preverená. Starý Shield-SK e-shop admin detail je explicitne obsadený/zrušený; HEATING PRO zostáva existujúci LIVE, bez významnej zmeny."},
     {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA administratíva, vodič, sklad a e-shop discovery reálne vyhľadaná; bez nového kvalifikovaného hitu."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA technická podpora/e-shop/admin discovery preverená; bez nového vhodného verejne overiteľného winnera."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":3,"added":0,"rejected":2,"changed":0,"note":"Telekom Magenta Experience role nájdená aj cez Kariera mirror, ale LIVE používa kvalitnejší direct T-Mobile career canonical. Grafton Analytik zákazníckych sťažností 2 000 € vyžaduje VŠ I. stupňa technického smeru, podobnú prax a AJ B1; rejected skill/language. Naturzon e-shop admin je Poprad onsite bez remote proof; reject-distance."},
     {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"note":"BA/remote WordPress/e-commerce/content/support discovery preverená; bez nového vhodného non-hard-dev winnera."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":8,"added":0,"rejected":8,"changed":0,"note":"Reálne preverené WordPress/WooCommerce/Product Upload/Product Listing/VA výsledky. E-commerce Virtual Assistant: Worldwide, <30 h/týždeň, 1–3 mesiace, 7–8 USD/h, 20–50 proposals, 1 hire; obsahovo sedí, ale value/competition je horší než existujúce LIVE WooCommerce priority. Ďalšie nové hity boli mikro-budget, hard-dev alebo slabšie."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":1,"added":0,"rejected":1,"changed":0,"note":"Čerstvý WordPress/WooCommerce výsledok bol For Hire/self-promo developera, nie hiring dopyt; odmietnuté ako neplatný lead."},
-    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"0 verified hits; verejný index neposkytol konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion nebol spustený."}
+    {"name":"Upwork","family":"upwork","status":"ok","hits":4,"added":0,"rejected":4,"changed":0,"note":"Čerstvé Worldwide WordPress/WooCommerce hity reálne preverené: Elementor $10 fixed, WooCommerce landing page $50 fixed, WooCommerce data entry $5 fixed a ďalšie staršie/nízkovalue projekty. Všetky vyradené pre mikro-budget alebo scope-to-pay mismatch; existujúce LIVE WooCommerce priority zostávajú výrazne lepšie."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"note":"Verejne indexované hiring discovery preverené; nenašiel sa čerstvý konkrétny evidence-grade WordPress/WooCommerce dopyt spĺňajúci location proof."},
+    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"verifiedHits":0,"note":"0 verified hits; verejná indexácia neposkytla konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion nebol spustený."}
   ],
   "verificationQueue": [
     {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":90,"applicationFriction":"high","reason":"WooCommerce operations, 15–30 USD/h, 6+ mesiacov; širší SEO/tool scope a call/reporting zvyšujú friction.","missingEvidence":["practical spoken-English fit","proof of required SEO/tool experience"],"nextVerification":"Recheck communication burden and tool-fit before LIVE promotion."}
   ],
-  "developmentBacklogAddedThisRun": [],
+  "developmentBacklogAddedThisRun": [
+    {"id":"role-environment-relevance-bonus","title":"Role-environment relevance bonus","problem":"Job title môže vyzerať ako všeobecný retail/predaj, hoci pracovné prostredie poskytuje priamu expozíciu k cieľovým technológiám ako Smart Home, IoT alebo webové nástroje.","improvement":"Samostatne skórovať praktickú relevanciu pracovného prostredia a prenositeľné technologické exposure bez toho, aby to prekrývalo predajnú intenzitu alebo hard-skill gate."},
+    {"id":"variable-pay-attainability-evidence","title":"Variable-pay attainability evidence","problem":"Ponuky s nízkym fixom a vysokou variabilnou zložkou môžu v payMonth vyzerať lepšie, než je reálne garantované.","improvement":"Evidovať guaranteedBase, guaranteedRampVariable, targetVariable a uncappedVariable oddelene; ranking má používať konzervatívnu dosiahnuteľnú hodnotu a jasne označiť výkonové riziko."}
+  ],
   "writeStatus": {
-    "jobsData":"preserved-no-qualified-delta",
+    "jobsData":"updated-added-1-direct-company-role",
     "jobsDataNonProf":"locked-preserved",
+    "jobSources":"updated-after-real-10-family-check",
     "sourceAudit":"updated-after-real-10-family-check",
+    "master":"pending-sync-in-this-run",
     "lockedFilesTouched":false,
-    "blocker":"jobs-data.json content freshness remains over the 60-minute SLA, but no qualified content delta was found; fail-closed policy preserved the 39-item authoritative feed rather than performing a timestamp-only replacement."
+    "blocker":null
   }
 }
