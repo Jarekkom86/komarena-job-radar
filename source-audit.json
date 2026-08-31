@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T03:28:17+02:00",
+  "updatedAt": "2026-08-31T04:14:15+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 0,
-    "rejectedAsWeakOrLowValue": 7,
+    "duplicateOrExisting": 4,
+    "rejectedAsWeakOrLowValue": 8,
     "rejectedByFreshnessOrEvidence": 2,
-    "rejectedByLanguageOrSkill": 3,
+    "rejectedByLanguageOrSkill": 5,
     "rejectedByLocation": 1,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
@@ -18,35 +18,29 @@
     "freshnessStatus": "stale",
     "liveFeedCount": 38,
     "liveSourceMix": {"profesia":18,"nonProfesia":20,"profesiaPct":47.4,"nonProfesiaPct":52.6},
-    "note": "Audit 31.8.2026 03:28 CEST reálne prehľadal 11 source families: Profesia, direct company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera, Pretlak, WordPress Jobs, Upwork, Reddit/WordPress komunity a verejne indexovaný Facebook. Nevznikol nový kandidát, ktorý by bezpečne prekonal existujúce LIVE priority a zároveň prešiel location/language/hard-skill/value gateom. WordPress Jobs nový Senior WordPress Developer je fully remote, ale vyžaduje custom themes, PHP/JS, React, server management, SSH/DNS/API/Git a incident ownership, preto hard-dev reject. LinkedIn Tiger Data Database Support Engineer EMEA vyžaduje hlbokú PostgreSQL/DB prax, reject. Upwork fresh výsledky boli US-only, nízko platené alebo development-heavy; Worldwide WooCommerce abandoned-cart projekt je starší a expert-only, bez jasnej výhody oproti LIVE. Worki dnes ukazuje aj obchodného zástupcu pre Senec 1 500–3 000 EUR, ale ide o sales-heavy rolu mimo prioritných smerov a bez detailného fit dôkazu. Facebook verejná indexácia neposkytla konkrétny verifikovateľný hiring post, preto 0 verified hits / limited. jobs-data.json ostáva fail-closed bez umelého updatedAt posunu."
+    "note": "Audit 31.8.2026 04:14 CEST reálne prehľadal 11 source families podľa existujúcich Job Radar pravidiel. Nový alebo významne zmenený prioritný LIVE winner sa nepotvrdil. Fresh Profesia BA index priniesol Tesco Analytik/čka párovania produktov a produktových dát (1 600 EUR, občasný HO), ale povinná AJ B2 je hard language mismatch. dm omni-channel e-commerce stáž je obsahovo veľmi dobrý fit, ale vyžaduje status VŠ študenta a nemčinu A2. Čerstvé Upwork WordPress/WooCommerce/VA výsledky boli nízko platené, fixed-price scope/value mismatch, development-heavy alebo s vysokou konkurenciou; Website Launch VA 150 USD má už 5 interviewing. Priama verifikácia potvrdila HEATING PRO a LEAF ako naďalej aktívne bez významnej zmeny. Profesia stále zobrazuje Košík.sk 2 500–3 000 EUR a VÚB Digital Agent ako aktívne. jobs-data.json ostáva fail-closed bez umelého updatedAt posunu, takže obsahové 60-min freshness SLA je stále prekročené."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA WordPress/e-shop/support/admin/driver discovery bola reálne vyhľadaná; verejný index v tomto behu nevrátil nový detail, ktorý by bolo možné bezpečne aktivovať."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Direct-company BA support/AI/operations discovery bola reálne vyhľadaná vrátane Alza careers; bez nového kvalifikovaného winnera. Existujúci AlzaBox zostáva LIVE fail-closed."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":2,"added":0,"rejected":2,"note":"Fresh EMEA/support discovery preverená. Tiger Data Database Support Engineer EMEA je remote-region fit, ale vyžaduje hlbokú relational DB/PostgreSQL podporu; hard-skill reject. Starší listing je no longer accepting applications."},
-    {"name":"Worki.sk","family":"worki","status":"ok","hits":2,"added":0,"rejected":2,"note":"Fresh regionálne výsledky preverené. PROFIAUTO obchodný zástupca pokrýva Senec a 1 500–3 000 EUR, ale je sales-heavy a bez silnej väzby na cieľové tracky; technické Šamorín roly sú mimo prioritného BA denného dojazdu/skill fitu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA administratíva/vodič/sklad discovery bola reálne vyhľadaná; bez konkrétneho verejne indexovaného winnera v tomto behu."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":1,"added":0,"rejected":1,"note":"Portál bol reálne prehľadaný; aktuálny top BA hit v indexe bol Head of Accounting & Finance 3 300–3 700 EUR, mimo cieľového profilu."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA/remote WordPress/e-commerce/content/support discovery bola reálne vyhľadaná; bez nového vhodného non-hard-dev hitu."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"ok","hits":1,"added":0,"rejected":1,"note":"Senior WordPress Developer z 27.8.2026 je fully remote, ale povinné sú custom theme development, PHP/HTML/CSS/JS, basic React, server management, SSH/DNS, API integrations, Git deployments a incident response; hard-dev reject."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":7,"added":0,"rejected":7,"note":"Fresh WordPress/WooCommerce discovery preverená. WordPress Plugin je U.S.-only; migration to GHL za 100 USD a ďalšie malé buildy sú value/scope mismatch; Bricks a real-estate/IDX sú developer-heavy. Abandoned Cart WooCommerce je Worldwide, ale expert-only a starší bez presvedčivej priority. Žiadny nový LIVE winner."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"limited","hits":1,"added":0,"rejected":1,"note":"Verejne indexované komunity boli prehľadané. Index vrátil všeobecné VA/hiring agregácie alebo FOR HIRE obsah, nie konkrétny nový WordPress/WooCommerce dopyt s dostatočným location/pay/scope dôkazom."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"note":"0 verified hits. Verejné vyhľadávanie WordPress Slovensko / BA brigády neposkytlo konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog; automat ho nespúšťa."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":9,"added":0,"rejected":5,"note":"Fresh BA index reálne skontrolovaný. Existujúce VÚB, Košík a 3MON sú stále viditeľné; nové Tesco product-data bolo rejectnuté pre povinnú AJ B2. Ostatné čerstvé výsledky boli sales, senior IT alebo mimo cieľového profilu."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":2,"added":0,"rejected":1,"note":"Priame kariérne stránky skontrolované. dm omni-channel retailing je aktívne, ale vyžaduje VŠ študenta a nemčinu A2. Alza expanzia má 2 500 EUR, ale ide o manažérsku/sales-heavy rolu pod existujúcimi prioritami."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"added":0,"rejected":0,"note":"Fresh BA/remote support/e-commerce discovery preverená; bez nového kvalifikovaného non-hard-dev winnera."},
+    {"name":"Worki.sk","family":"worki","status":"ok","hits":3,"added":0,"rejected":2,"note":"HEATING PRO canonical detail znovu overený ako aktívny: 1 600–2 500 EUR, ihneď, vodič B, bez cudzieho jazyka. Ďalšie sklad/VZV výsledky vyžadujú špecifickú techniku alebo sú slabšie."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA administratíva/vodič/sklad discovery prebehla; bez nového overiteľného prioritného winnera."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"rejected":1,"note":"Fresh BA výsledky preverené; bez roly, ktorá by prekonala LIVE priority a zároveň prešla hard gates."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA/remote AI/web/support discovery preverená; bez nového kvalifikovaného hitu nad existujúci OVB LIVE záznam."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":1,"added":0,"rejected":1,"note":"Fresh remote WordPress discovery preverená; dostupné výsledky zostávajú development-heavy oproti non-hard-dev prioritám."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":8,"added":0,"rejected":8,"note":"Fresh WordPress/WooCommerce/VA výsledky preverené. WooCommerce build 83.87 USD a ďalšie malé buildy sú scope/value mismatch; Website Launch VA 150 USD má 10–15 proposals a 5 interviewing; ďalšie VA sú nízko platené alebo English-heavy."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-community","status":"limited","hits":0,"added":0,"rejected":0,"note":"Verejne indexované výsledky nepriniesli konkrétny nový hiring dopyt s dostatočným pay/scope/location dôkazom."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejected":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny overiteľný hiring post; autentizovaný Nexus ingestion nie je súčasťou tohto behu."}
   ],
   "verificationQueue": [
-    {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":91,"reason":"Worldwide remote, 15–30 USD/h, 6+ mesiacov, WooCommerce product listing/plugin maintenance/SEO/store upkeep. Explicitná English úroveň nie je uvedená; onboarding call, weekly reporting a 15-min Loom audit zvyšujú application/language friction."}
-  ],
-  "backlogAdditionsThisRun": [
-    {"id":"source-index-depth-coverage-meter","title":"Source pagination / index-depth coverage meter","benefit":"Pri každom source family evidovať, či sa prehľadala iba prvá indexová vrstva alebo aj ďalšie strany/detaily; zabráni označeniu zdroja ako plne pokrytého pri plytkej verejnej indexácii a pomôže cielene rotovať hlbšie discovery."},
-    {"id":"verification-queue-ttl-expiry","title":"Verification queue TTL + auto-expiry policy","benefit":"Pending kandidát po definovanom počte behov bez nového dôkazu automaticky prejde do cold state; zníži opakované rechecky starých neoveriteľných ponúk a uvoľní discovery kapacitu pre čerstvé leady."}
+    {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026 – WooCommerce operations","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Website-SEO-Management-2026_~022093603919086755488/","locationEligibility":"remote-ok","languageEligibility":"pending","provisionalScore":91,"reason":"Worldwide remote, 15–30 USD/h, 6+ mesiacov, WooCommerce product listing/plugin maintenance/SEO/store upkeep. Explicitná English úroveň nie je uvedená; onboarding call, weekly reporting a Loom audit zvyšujú application/language friction."}
   ],
   "writeStatus": {
     "jobsData":"preserved-no-qualified-content-delta-stale-sla",
     "jobsDataNonProf":"preserved-locked",
     "sourceAudit":"updated-after-real-11-family-check",
-    "jobSources":"updated-after-real-11-family-check",
-    "master":"updated-audit-and-2-backlog-items",
     "lockedFilesTouched":false,
-    "blocker":"Žiadny bezpečný kvalifikovaný obsahový delta nebol potvrdený. jobs-data.json updatedAt sa preto neposunul; feed zostáva fail-closed a obsahovo stale podľa 60-min SLA."
+    "blocker":"Žiadny bezpečný kvalifikovaný obsahový delta nebol potvrdený. jobs-data.json updatedAt sa preto neposunul; obsahové freshness SLA 60 minút ostáva prekročené."
   }
 }
