@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 31. 8. 2026 23:27 CEST
+Aktualizované: 1. 9. 2026 01:30 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -57,29 +57,29 @@ Aktualizované: 31. 8. 2026 23:27 CEST
 23. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 24. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 31. 8. 2026 23:27 CEST — LATEST
-Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Práca za rohom/Kariera.sk; Pretlak/StartupJobs/WordPress Jobs; Upwork; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **10 nezávislých source families**, z toho **9 mimo Profesia**.
+## SOURCE AUDIT — 1. 9. 2026 01:30 CEST — LATEST
+Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk/lokálne jobboardy; Pretlak/StartupJobs/WordPress Jobs; Upwork/freelance; Reddit/WordPress komunity; Facebook verejná indexácia; Služby zamestnanosti/doplnkový SK lane.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 0.** Nebol potvrdený nový kandidát, ktorý by bezpečne prešiel lokalitným, jazykovým, hard-skill, value a dedupe gateom a zároveň zlepšil LIVE feed.
-- **INDEX NOSLUŠ — výpomoc v predajni / asistent mobilnej aplikácie:** nový reálny BA hit, canonical overený priamo u INDEX NOSLUŠ aj na Profesia. Bratislava, dohoda, termín **3.–14. 9. 2026**, pomoc zákazníkom so skenovaním nákupu cez mobil, **7 €/h + zákonné víkendové príplatky**. Lokalita prešla (`ba-area`), ale krátke trvanie, nízka sadzba a promotérska/sales-intensity zložka ho držia pod existujúcimi LIVE prioritami; nepridané.
-- **Práca za rohom:** našla mirror rovnakej INDEX NOSLUŠ pozície; po canonical resolve sa mirror nepočíta ako nezávislý zdroj ani nový hit.
-- **LinkedIn:** SupportYourApp technical support vyžaduje **C1 English**; Foxelli e-commerce support je closed alebo vyžaduje fluent/near-native English plus špecializovanú crochet expertízu. Bez promotion.
-- **Worki:** HEATING PRO je už LIVE. EPF VZV/sklad výsledky v DNV sú lokálne vhodné, ale VZV/3-zmennosť a vyššia fyzická záťaž ich držia pod existujúcimi prioritami.
-- **Brigada.sk:** upratovanie skladu 2. 9. za 6,50 €/h a retail/pokladňa výsledky neprešli value/ranking gateom.
-- **StartupJobs:** WordPress/Webflow projektový koordinátor je prevažne remote, ale vyžaduje občasné stretnutia v Prahe; remote hard gate preto neprešiel.
-- **Upwork:** čerstvý Etsy VA má AI/listing scope a Worldwide remote, ale chýba transparentná sadzba a ide o krátky one-time projekt. Starší WooCommerce build za 30 USD fixed je microbudget a klient už najal človeka.
-- **Reddit/WordPress komunity:** čerstvé indexované výsledky boli prevažne FOR HIRE ponuky freelancerov, nie hiring dopyty.
+- **Nové aktívne položky: 0 zapísaných** — nie kvôli kvalite discovery, ale kvôli bezpečnostnému writer blockeru pri veľkom `jobs-data.json`.
+- **Významný promotion-ready kandidát:** **Upwork — Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support — provisional Match 91**. Worldwide remote; **6–10 USD/h**, **5–10 h/týždeň**, **6+ mesiacov**, **<5 proposals**, 0 interviewing; WordPress/Elementor maintenance, plugin updates, content publishing, forms/integrations, QA, AI tools vítané; self-directed schedule, US Eastern overlap iba preferred; training videos + written instructions; paid test; deadline **6. 9. 2026**.
+- **LinkedIn:** SupportYourApp technical/customer support hity vyžadujú B2/C1 alebo fluent English, preto neprešli language gateom.
+- **Upwork:** Website & SEO Management 2026 ostáva silný WooCommerce operations kandidát za **15–30 USD/h**, ale má vyššiu skill/application friction (SEO nástroje, reporting, Loom audit, onboarding call). WooCommerce Assistant 5–10 USD/h vyžaduje väčšinu US Mountain Time workday a preukázanú WooCommerce prax.
+- **Profesia / Worki / Brigada / Kariera / company careers / tech-creative lane:** reálne vyhľadané, bez nového evidence-grade winnera v tomto behu.
+- **Reddit/WordPress komunity:** bez konkrétneho evidence-grade hiring postu.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 
 ### Run summary
-- Reálne skontrolované source families: **10**.
-- Nové aktívne položky: **0**.
-- Významné nové pending kandidáty: **0**.
+- Reálne skontrolované source families: **11**.
+- Nové aktívne položky zapísané: **0**.
+- Významné nové/podstatne zmenené pending kandidáty: **1**.
 - LIVE feed: **41 aktívnych položiek**.
 - Mix: **Profesia 18 / 41 = 43,9 %; mimo Profesia 23 / 41 = 56,1 %**.
-- `jobs-data.json.updatedAt` ostáva **31. 8. 2026 22:13:19 CEST** — bez kvalifikovaného LIVE delta sa timestamp neposúva umelo.
-- `source-audit.json.updatedAt` = **31. 8. 2026 23:27:04 CEST**.
+- `jobs-data.json.updatedAt` ostáva **31. 8. 2026 22:13:19 CEST** — writer blocker, timestamp sa neposúva umelo.
+- `source-audit.json.updatedAt` = **1. 9. 2026 01:30:12 CEST**.
+
+### Technický blocker
+`jobs-data.json` je dostatočne veľký na to, že dostupný GitHub read vracia full-file payload truncovaný, zatiaľ čo writer vyžaduje kompletný replacement. Podľa FAIL-CLOSED sa súbor neprepisuje z neúplného obsahu, aby sa nestratilo 41 existujúcich LIVE položiek. Potrebný je bezpečný large-JSON patch/append writer alebo iný atómový write path.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -239,3 +239,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 145. **CRM-calibrated reply-probability model** — z reálnych CRM výsledkov odhadovať reply probability ako tie-breaker po hard gateoch.
 146. **Shift-block fit optimizer** — pri krátkych brigádach spočítať praktickú hodnotu konkrétnych smien vrátane dojazdu a disponibilného času; zabráni, aby nízko platená 6,5-hodinová zmena vyzerala lepšie než flexibilnejšia stabilná práca.
 147. **Training-date feasibility gate** — pri brigádach s povinným školením pred nástupom povoliť promotion iba ak je školenie ešte reálne absolvovateľné; zníži neakčné a expirované leady.
+148. **Safe large-JSON patch writer** — atómový append/update jednej položky v `jobs-data.json` bez nutnosti kompletného full-file replacementu; odstraňuje opakovaný FAIL-CLOSED promotion blocker pri truncovanom read-e.
+149. **Competition delta trigger pre freelance leady** — pri zmene proposals/interview/invites automaticky prepočíta action priority a zvýrazní krátke okno s vyššou reply probability.
