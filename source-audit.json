@@ -1,47 +1,45 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T06:23:08+02:00",
+  "updatedAt": "2026-09-01T07:15:21+02:00",
   "runSummary": {
-    "familiesChecked": 11,
+    "familiesChecked": 8,
     "newActiveJobs": 0,
-    "significantPendingCandidates": 3,
-    "significantlyChangedPriorityJobs": 0,
+    "significantPendingCandidates": 4,
+    "significantlyChangedPriorityJobs": 1,
     "jobsDataContentUpdatedAt": "2026-08-31T22:13:19+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "audit-fresh-content-feed-stale-safe-write-blocked",
     "liveFeedCount": 41,
     "liveSourceMix": {"profesia":18,"nonProfesia":23,"profesiaPct":43.9,"nonProfesiaPct":56.1},
-    "note": "Audit 1.9.2026 06:23 CEST reálne preveril Profesia, priame/company careers, LinkedIn public discovery, Worki, Brigada.sk, Práca za rohom, Kariera.sk, Pretlak/tech-creative, Upwork, Reddit a Facebook public indexing. Bez nového promotion-grade LIVE winnera. Upwork AI-Powered Online Business Growth VA je Worldwide remote a má <5 proposals, ale iba 3–5 USD/h a mandatory Claude API/Claude/Yelp Management, preto bol vyradený ako microbudget + hard-skill mismatch. Website & SEO Management 2026 je Worldwide remote 15–30 USD/h a silný WooCommerce fit, ale vyžaduje Helium 10, Seller Central, Search Console, SEO tooling, audit Loom a má 20–50 proposals, preto ostáva iba nízkoprioritný verification lead. jobs-data.json zostáva fail-closed, keďže bezpečný full-file patch path stále nie je dostupný."
+    "note": "Audit 1.9.2026 07:15 CEST reálne preveril Profesia, Worki, Kariera/Zoznam, LinkedIn public discovery, Pretlak, Upwork, Práca za rohom a priame/canonical zdroje. Lachim Trans GLS Malacky je stále aktívny a promotion-ready: dnešný mirror aj canonical Profesia uvádzajú Malacky, živnosť, nástup ihneď a od 1 900 EUR/mes. Tech-Savvy WordPress VA zostáva aktívny Worldwide remote za 6–10 USD/h, 5–10 h/týždeň, ale konkurencia je aktuálne 20–50 proposals, preto už nie je low-competition winner a provisional score je znížený. Nový Product Application Technician (ELETECHNIK, Senec, od 1 300 EUR + 2x ročné bonusy) je relevantný automation/technical lead, ale pred promotion treba overiť detailné qualification requirements a value fit. jobs-data.json zostáva fail-closed; safe blob read path bol nájdený cez Git tree/blob, ale dostupný write endpoint vyžaduje kompletný replacement a v tomto behu nebol vykonaný bez lokálnej bezpečnej transformácie/validácie celého 50 kB feedu. updatedAt hlavného feedu nebol posunutý."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Čerstvé BA/okolie WordPress, support a vodičské discovery bez nového overiteľného promotion-grade hitu nad existujúcimi kandidátmi."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Slovak Telekom a Alza priame career discovery reálne prehľadané; bez nového indexovaného BA winnera v tomto behu."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"note":"Verejná indexácia BA WordPress/support/customer-care lane bez nového promotion-grade hitu; coverage je čiastočné."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA technická podpora/admin/e-shop discovery bez nového vhodného hitu."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"limited","hits":0,"added":0,"verifiedHits":0,"note":"Verejná indexácia BA administratíva/kuriér/sklad neposkytla konkrétny nový overiteľný hit."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"note":"BA/okolie vodičská, technická a administratívna lane preverená; search index neposkytol nový relevantný BA výsledok v tomto behu."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"note":"BA technická podpora/e-shop/admin discovery preverená bez nového promotion-grade výsledku."},
-    {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"WordPress/WooCommerce BA alebo Slovakia-remote lane bez nového non-hard-dev winnera."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":2,"added":0,"pending":1,"rejected":{"hardSkill":1,"language":0,"duplicate":0,"location":0,"other":0,"microbudget":1},"note":"AI-Powered Online Business Growth VA: Worldwide, remote, <5 proposals, ale 3–5 USD/h a mandatory Claude API/Claude/Yelp -> reject. Website & SEO Management 2026: Worldwide, 15–30 USD/h, WooCommerce, 6+ months; 20–50 proposals a povinné Helium10/Seller Central/Search Console/SEO workflow + Loom audit -> verification low priority."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":0,"added":0,"note":"Verejne indexované WordPress/WooCommerce hiring discovery bez nového dostatočne overiteľného remote/payment kandidáta."},
-    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"verifiedHits":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny overiteľný hiring post s priamym linkom; autentizovaný Nexus/local ingestion nebol použitý."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":4,"added":0,"note":"Dnešné BA/okolie technické discovery: MediaTech AV 1 600–2 200, MicroStep servis 1 600, DTW UPS 2 000–2 300 a ELETECHNIK Product Application Technician Senec od 1 300. Lachim Trans GLS Malacky canonical detail je stále aktívny od 1 900 EUR/mes., živnosť, nástup ihneď."},
+    {"name":"Priame/canonical firemné zdroje","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Bez nového priameho BA/company-career winnera nad existujúcimi TOP LIVE kandidátmi v tomto behu."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"note":"Verejná discovery BA e-commerce/support lane bez nového promotion-grade hitu; coverage ostáva čiastočné."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA technická podpora/sklad/rozvoz/admin discovery bez nového kandidáta nad existujúcim HEATING PRO."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":1,"added":0,"note":"Lachim Trans – Kuriér pre GLS depo Malacky je dnes stále aktívny, od 1 900 EUR, živnosť; mirror uvádza doručovanie a zvoz v regióne Malacky a okolie, VP B min. 1 rok, prax výhodou nie podmienkou."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"note":"BA technická podpora/e-shop/admin discovery bez nového promotion-grade výsledku."},
+    {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Slovakia/BA remote WordPress/WooCommerce/AI lane bez nového non-hard-dev winnera nad existujúcimi LIVE položkami."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":4,"added":0,"pending":1,"rejected":{"hardSkill":1,"language":0,"duplicate":0,"location":0,"other":2,"microbudget":1},"note":"Tech-Savvy WordPress VA canonical detail: Worldwide, 5–10 h/week, 6+ months, 6–10 USD/h, self-directed, mostly written communication, US ET overlap preferred not required; activity now 20–50 proposals, 0 interviewing, 0 invites. New WooCommerce build at 83.87 USD fixed is development-heavy/value-low; generic VA 15 USD fixed has 50+ proposals; other discovered jobs did not beat current priority floor."}
   ],
   "verificationQueue": [
-    {"id":"profesia-lachim-trans-gls-malacky-20260901","title":"Kuriér pre GLS depo Malacky","company":"Lachim Trans s. r. o.","source":"Profesia / Práca za rohom mirror","locationEligibility":"ba-area","provisionalScore":91,"pay":"od 1 900 EUR/mes.","status":"promotion-ready-write-blocked","reason":"Aktuálny vodičský kandidát pre Malacky/okolie; promotion blokuje iba bezpečný large-JSON write path."},
-    {"id":"upwork-tech-savvy-wordpress-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":91,"pay":"6–10 USD/h","status":"promotion-ready-write-blocked","reason":"Worldwide remote, WordPress/Elementor management a priaznivá konkurencia; čaká na bezpečný jobs-data patch path."},
-    {"id":"kariera-grafton-tech-support-1540141","title":"Technická podpora (Ref. č.: 1003748)","company":"Grafton Slovakia s.r.o.","source":"Kariera.sk","locationEligibility":"ba-area","provisionalScore":87,"pay":"1 400–1 700 EUR/mes.","status":"verification","reason":"Silný technicko-terénny fit; pred promotion ostáva riziko fyzickej záťaže a celoslovenského cestovania."},
-    {"id":"upwork-website-seo-management-2093603919086755488","title":"Website & SEO Management 2026","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":82,"pay":"15–30 USD/h","status":"verification-low-priority","reason":"Silný WooCommerce/pay fit, ale 20–50 proposals a povinné Helium 10, Seller Central, Search Console, SEO tooling a Loom audit znižujú fit."}
+    {"id":"profesia-lachim-trans-gls-malacky-20260901","title":"Kuriér pre GLS depo Malacky","company":"Lachim Trans s. r. o.","source":"Profesia / Práca za rohom mirror","locationEligibility":"ba-area","provisionalScore":91,"pay":"od 1 900 EUR/mes.; predpokladaná fakturácia cca 1 800–2 200 EUR + tringelty","status":"promotion-ready-write-blocked","reason":"Dnes znovu potvrdený canonical Profesia aj Práca za rohom; Malacky/okolie, nástup ihneď, VP B min. 1 rok, prax nie je podmienkou. Promotion blokuje iba bezpečný full-feed write/validation krok."},
+    {"id":"upwork-tech-savvy-wordpress-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":86,"pay":"6–10 USD/h","status":"verification-high-competition","reason":"Worldwide remote a silný WordPress/Elementor fit; 5–10 h/týždeň a prevažne písomná komunikácia. Významná zmena: aktuálne 20–50 proposals, 0 interviewing; high-competition penalizácia znižuje prioritu."},
+    {"id":"profesia-eletechnik-product-application-technician-5350584","title":"Product Application Technician","company":"ELETECHNIK s.r.o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":84,"pay":"od 1 300 EUR/mes. + bonusy 2x ročne","status":"verification","reason":"Nový Senec technical/automation lead: návrh technických riešení automatizácie, cenové ponuky, klienti/dodávatelia. Pred promotion treba overiť presné kvalifikačné požiadavky a či plat/value prekonáva súčasné priority."},
+    {"id":"kariera-grafton-tech-support-1540141","title":"Technická podpora (Ref. č.: 1003748)","company":"Grafton Slovakia s.r.o.","source":"Kariera.sk","locationEligibility":"ba-area","provisionalScore":87,"pay":"1 400–1 700 EUR/mes.","status":"verification","reason":"Silný technicko-terénny fit; pred promotion ostáva riziko fyzickej záťaže a celoslovenského cestovania."}
   ],
   "developmentBacklogAdditions": [
     {"id":"client-spend-rate-sanity-ratio","title":"Client spend-to-rate sanity ratio","reason":"Pri freelance lead-e porovnať deklarovaný budget s historickým client spend/hire rate, aby sa rýchlo odhalili nízkorozpočtové alebo neudržateľné ponuky."},
-    {"id":"portfolio-proof-requirement-gate","title":"Portfolio-proof requirement gate","reason":"Samostatne penalizovať leady vyžadujúce konkrétne merateľné case studies, Loom audit alebo špecializované portfolio dôkazy, ktoré nie sú pripravené na okamžitú reakciu."}
+    {"id":"portfolio-proof-requirement-gate","title":"Portfolio-proof requirement gate","reason":"Samostatne penalizovať leady vyžadujúce konkrétne merateľné case studies, Loom audit alebo špecializované portfolio dôkazy, ktoré nie sú pripravené na okamžitú reakciu."},
+    {"id":"safe-large-json-transform-path","title":"Safe large JSON transform path","reason":"Použiť Git tree -> blob SHA -> full blob read -> lokálna JSON parse/transform/validate -> full replacement write, aby promotion-ready kandidáti neostávali blokovaní truncovaným fetch_file zobrazením."}
   ],
   "writeStatus": {
-    "jobsData":"blocked-safe-full-replacement-required; preserved-fail-closed",
+    "jobsData":"blocked-safe-full-replacement-not-completed; preserved-fail-closed",
     "jobSources":"registry-no-structural-delta-this-run",
-    "master":"large-file-safe-replacement-blocked; backlog additions persisted in source-audit for later MASTER sync",
+    "master":"no-structural-delta-this-run",
     "sourceAudit":"updated-after-real-source-check",
     "lockedFilesTouched":false,
-    "note":"jobs-data.json timestamp nebol posunutý; 41 LIVE položiek ostalo zachovaných."
+    "note":"Safe full blob read bol v tomto behu úspešne overený cez Git tree/blob, čím sa odstránila read časť starého blockera. jobs-data.json však nebol prepísaný bez kompletnej lokálnej parse/transform/validation fázy; timestamp ostal 2026-08-31T22:13:19+02:00 a 41 LIVE položiek bolo zachovaných."
   }
 }
