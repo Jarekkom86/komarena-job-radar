@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 1. 9. 2026 11:18 CEST
+Aktualizované: 1. 9. 2026 12:37 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -57,18 +57,16 @@ Aktualizované: 1. 9. 2026 11:18 CEST
 23. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 24. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 1. 9. 2026 11:18 CEST — LATEST
+## SOURCE AUDIT — 1. 9. 2026 12:37 CEST — LATEST
 Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Práca za rohom; Kariera.sk/Zoznam; Pretlak/StartupJobs tech-creative; Upwork/Freelancer freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky: 0.** `jobs-data.json` zostáva na **43 LIVE položkách**; timestamp feedu sa neposúva umelo.
 - **LIVE mix:** Profesia **20 / 43 = 46,5 %**, mimo Profesia **23 / 43 = 53,5 %**.
-- **Brigada.sk:** nájdená BA administratívna pomoc na účtovnom oddelení za **7 €/h** — faktúry, skenovanie, evidencia a organizácia dokumentov. Zatiaľ iba index/category evidence bez spoľahlivo vyriešeného konkrétneho detail/apply linku; podľa fail-closed nejde do LIVE.
-- **LinkedIn Jobs:** nový DHL **NET OPS Agent AM part-time** v Bratislave — 20 h/týždeň, 651–720 € brutto + bonus, základná AJ iba vítaná; výrazné mínusy sú pondelkový nástup o 01:00, ďalšie dni 05:30 a fyzická manipulácia so zásielkami. **DHL HR Operations Coordinator** v Ivanke pri Dunaji od 1 684 € je admin relevantný, ale komunikatívna AJ + HR doména/pokročilý Office ho držia pod priority threshold.
-- **Priame firemné careers:** starší DHL NET OPS direct detail je už closed; čerstvý LinkedIn repost sa preto nepovažuje za potvrdený direct-career canonical detail.
-- **Upwork/Freelance:** čerstvé výsledky boli najmä Bricks/Web Development build projekty, teda hard-development-heavy; žiadny nový promotion-grade delta.
-- **Worki / Práca za rohom / Kariera / Pretlak / StartupJobs / Profesia:** reálne prehľadané, bez nového evidence-grade winnera.
-- **Reddit/WordPress komunity:** bez nového konkrétneho Slovakia-eligible hiring leadu.
+- **Priame firemné careers:** Alza + Slovak Telekom reálne preverené. Alza **Technik automatizácie – Bernolákovo** je lokalitne vhodný a ponúka školenia, ale detail explicitne vyžaduje **vyhlášku §21** a ochotu pracovať v noci; preto hard-skill/schedule gate a bez LIVE promotion. Telekom čerstvé roly sú DevOps/hard-development-heavy; existujúci Magenta Experience Center ostáva LIVE.
+- **Upwork/Freelance:** nový **Virtual Assistant – Operations & Campaign Support** je Worldwide remote, ale 5–7 USD/h + strong written/spoken English + US working hours; **Virtual Assistant and Cold Caller** je 3–4 USD/h s vysokým phone-load; **WordPress & Shopify VA** má 8 h denne/6 dní za 100 USD fixed. Všetky zostali pod value/language/workload threshold. Ďalšie WooCommerce/WordPress build leady boli hard-dev alebo micro-budget.
+- **Profesia / LinkedIn / Worki / Brigada.sk / Práca za rohom / Kariera / Pretlak / StartupJobs:** reálne prehľadané, bez nového evidence-grade winnera.
+- **Reddit/WordPress komunity:** verejne indexované výsledky boli staršie, US-only alebo hard-development; bez nového konkrétneho Slovakia-eligible hiring leadu.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny fiktívny hit. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 - Existujúce 43 LIVE položky zostali zachované; žiadny fail-closed pokles ani strata kategórie nenastala.
 
@@ -79,7 +77,7 @@ Reálne prehľadané source families: **Profesia; priame firemné careers; Linke
 - LIVE feed: **43 aktívnych položiek**.
 - Mix: **Profesia 46,5 % / mimo Profesia 53,5 %**.
 - `jobs-data.json.updatedAt` ostáva **1. 9. 2026 10:14:41 CEST** — bez umelej zmeny.
-- `source-audit.json.updatedAt` = **1. 9. 2026 11:18:54 CEST**.
+- `source-audit.json.updatedAt` = **1. 9. 2026 12:37:52 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -251,3 +249,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 157. **Remote-country proof cache** — ukladať dôkaz, či Worldwide/Remote skutočne povoľuje Slovensko, a znovu ho používať pri repostoch/rovnakých klientoch; rýchlejšie vyradí US-only/EU-country-limited ponuky bez opakovaného manuálneho overovania.
 158. **Pre-dawn commute feasibility gate** — pri zmenách začínajúcich približne pred 05:00 automaticky overiť reálnu dostupnosť dopravy/parkovania a čas odchodu z BA okolia; zabráni vysokej priorite rolám, ktoré sú prakticky nedostupné napriek dobrej lokalite.
 159. **Circadian shift burden score** — samostatne penalizovať pravidelné nočné a extrémne skoré nástupy podľa frekvencie a trvania, nie iba generickým shift/weekend flagom; zlepší porovnanie part-time logistických rolí s dennou administratívou a technickou podporou.
+160. **Hard-skill training vs entry-qualification resolver** — rozlíšiť certifikácie, ktoré firma dodatočne zabezpečí, od tých, ktoré sú explicitne povinné už pri nástupe; zabráni falošne pozitívnemu promotion pri ponukách, kde marketing text sľubuje školenia, ale detail stále vyžaduje §21 alebo inú kvalifikáciu.
+161. **Workweek intensity value normalizer** — pri freelance/remote rolách prepočítať odmenu vzhľadom na 6-dňový týždeň, povinné časové okná, phone-load a skutočný počet hodín; rýchlo odfiltruje nízko platené VA zadania, ktoré nominálne vyzerajú remote-friendly, ale majú slabú efektívnu hodnotu.
