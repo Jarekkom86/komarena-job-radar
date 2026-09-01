@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "policy": "pending-verification-sla",
+  "createdAt": "2026-09-01T08:22:08+02:00",
+  "purpose": "Prevent strong candidates from aging in verificationQueue while preserving fail-closed evidence and BA/remote eligibility.",
+  "rules": {
+    "promotionReady": {"recheckWithinMinutes": 60, "action": "attempt safe promotion path; if write is blocked, keep top of queue and record blocker"},
+    "score90Plus": {"recheckWithinMinutes": 180, "action": "resolve missing evidence first"},
+    "score85To89": {"recheckWithinMinutes": 720, "action": "verify hard requirements, location and current listing status"},
+    "below85": {"recheckWithinMinutes": 1440, "action": "recheck only if source/listing remains active or scarcity justifies it"}
+  },
+  "evidenceOrder": ["location/remote eligibility", "listing active proof", "mandatory qualifications", "compensation", "work schedule/travel burden", "language", "canonical source/dedupe"],
+  "hardLocationRule": "Only ba-area or evidence-grade remote-ok may become LIVE. Distant onsite/regular hybrid is rejected; unclear remote remains quarantine.",
+  "expiry": {"promotionReadyBlockedHours": 6, "verificationWithoutNewEvidenceHours": 48, "actionAfterExpiry": "downgrade confidence or close pending state; never silently promote"},
+  "metrics": ["pending age", "time-to-promotion", "verification retries", "closed-before-promotion", "blocker reason"],
+  "expectedBenefit": "Cuts time between discovery and application by forcing the best pending BA/remote opportunities to be resolved first instead of remaining indefinitely in verification."
+}
