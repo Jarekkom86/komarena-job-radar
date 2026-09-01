@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 1. 9. 2026 10:28 CEST
+Aktualizované: 1. 9. 2026 11:18 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -57,26 +57,29 @@ Aktualizované: 1. 9. 2026 10:28 CEST
 23. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 24. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 1. 9. 2026 10:28 CEST — LATEST
+## SOURCE AUDIT — 1. 9. 2026 11:18 CEST — LATEST
 Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Práca za rohom; Kariera.sk/Zoznam; Pretlak/StartupJobs tech-creative; Upwork/Freelancer freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky: 0.** `jobs-data.json` zostáva na **43 LIVE položkách**; timestamp feedu sa neposúva umelo.
 - **LIVE mix:** Profesia **20 / 43 = 46,5 %**, mimo Profesia **23 / 43 = 53,5 %**.
-- **Upwork/Freelance:** nový Worldwide remote `eCommerce Virtual Assistant for Multi-Platform Store` bol vyradený cez value gate — 50 USD fixed-price pri komplexnom multi-platform scope. WordPress build/developer výsledky boli hard-development-heavy. `Website & SEO Management 2026` zostáva verification, nie LIVE.
-- **Reddit/WordPress komunity:** verejne indexovaný WordPress hiring výsledok bol US-only, preto neprešiel remote-country hard gateom; ďalšie výsledky boli FOR HIRE, nie konkrétne dopyty.
-- **LinkedIn / Worki / Brigada / Práca za rohom / Kariera / Pretlak / StartupJobs / priame careers:** reálne prehľadané, bez nového evidence-grade winnera.
+- **Brigada.sk:** nájdená BA administratívna pomoc na účtovnom oddelení za **7 €/h** — faktúry, skenovanie, evidencia a organizácia dokumentov. Zatiaľ iba index/category evidence bez spoľahlivo vyriešeného konkrétneho detail/apply linku; podľa fail-closed nejde do LIVE.
+- **LinkedIn Jobs:** nový DHL **NET OPS Agent AM part-time** v Bratislave — 20 h/týždeň, 651–720 € brutto + bonus, základná AJ iba vítaná; výrazné mínusy sú pondelkový nástup o 01:00, ďalšie dni 05:30 a fyzická manipulácia so zásielkami. **DHL HR Operations Coordinator** v Ivanke pri Dunaji od 1 684 € je admin relevantný, ale komunikatívna AJ + HR doména/pokročilý Office ho držia pod priority threshold.
+- **Priame firemné careers:** starší DHL NET OPS direct detail je už closed; čerstvý LinkedIn repost sa preto nepovažuje za potvrdený direct-career canonical detail.
+- **Upwork/Freelance:** čerstvé výsledky boli najmä Bricks/Web Development build projekty, teda hard-development-heavy; žiadny nový promotion-grade delta.
+- **Worki / Práca za rohom / Kariera / Pretlak / StartupJobs / Profesia:** reálne prehľadané, bez nového evidence-grade winnera.
+- **Reddit/WordPress komunity:** bez nového konkrétneho Slovakia-eligible hiring leadu.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny fiktívny hit. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 - Existujúce 43 LIVE položky zostali zachované; žiadny fail-closed pokles ani strata kategórie nenastala.
 
 ### Run summary
 - Reálne skontrolované source families: **11**.
 - Nové aktívne položky zapísané: **0**.
-- Významné pending kandidáty: **4**.
+- Významné pending kandidáty: **5**.
 - LIVE feed: **43 aktívnych položiek**.
 - Mix: **Profesia 46,5 % / mimo Profesia 53,5 %**.
 - `jobs-data.json.updatedAt` ostáva **1. 9. 2026 10:14:41 CEST** — bez umelej zmeny.
-- `source-audit.json.updatedAt` = **1. 9. 2026 10:28:33 CEST**.
+- `source-audit.json.updatedAt` = **1. 9. 2026 11:18:54 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -246,3 +249,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 155. **Language-friction × pay tradeoff** — pri admin/support rolách kombinovať explicitnú jazykovú úroveň s garantovanou mzdou a nástupnosťou, aby základná AJ + nižší plat bola porovnaná férovo proti lepšie plateným B2/C1 rolám.
 156. **Marketplace value floor by scope** — pre fixed-price a hourly marketplace leady nastaviť minimálny value floor podľa rozsahu, aby lacné komplexné e-commerce/VA zadania nevytláčali kvalitnejšie leady a neplytvali application kapacitou.
 157. **Remote-country proof cache** — ukladať dôkaz, či Worldwide/Remote skutočne povoľuje Slovensko, a znovu ho používať pri repostoch/rovnakých klientoch; rýchlejšie vyradí US-only/EU-country-limited ponuky bez opakovaného manuálneho overovania.
+158. **Pre-dawn commute feasibility gate** — pri zmenách začínajúcich približne pred 05:00 automaticky overiť reálnu dostupnosť dopravy/parkovania a čas odchodu z BA okolia; zabráni vysokej priorite rolám, ktoré sú prakticky nedostupné napriek dobrej lokalite.
+159. **Circadian shift burden score** — samostatne penalizovať pravidelné nočné a extrémne skoré nástupy podľa frekvencie a trvania, nie iba generickým shift/weekend flagom; zlepší porovnanie part-time logistických rolí s dennou administratívou a technickou podporou.
