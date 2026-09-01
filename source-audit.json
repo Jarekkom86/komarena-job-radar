@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T17:19:13+02:00",
+  "updatedAt": "2026-09-01T18:12:02+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
@@ -8,46 +8,43 @@
     "significantlyChangedPriorityJobs": 0,
     "jobsDataContentUpdatedAt": "2026-09-01T16:21:02+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "fresh",
+    "freshnessStatus": "stale",
     "liveFeedCount": 44,
-    "note": "Audit 1.9.2026 17:19 CEST reálne preveril 11 source families pre Bratislavu/okolie a skutočný remote. Nebol potvrdený nový ani významne zmenený prioritný kandidát nad aktuálny LIVE/pending set, preto jobs-data.json nebol obsahovo menený a jeho updatedAt zostal 16:21:02 CEST. Kariera priniesla čerstvé BA výsledky, no neprekonali existujúce priority; dnešné Upwork výsledky boli prevažne hard-dev alebo špecializované. Facebook zostal 0 verified hits / limited."
+    "note": "Audit 1.9.2026 18:12 CEST reálne preveril Bratislavu/okolie a skutočný remote naprieč 11 source families. Nebol potvrdený nový ani významne zmenený prioritný kandidát nad aktuálny LIVE/pending set. NAY Bratislava Danubia je na priamom firemnom detaile stále aktívny. Form Factory má stále slovenský Bratislava hiring signal, ale firemná careers indexácia súčasne zobrazuje český Praha detail, preto zostáva vo verification. Upwork Website & SEO Management 2026 ostáva aktívny Worldwide remote za 15–30 USD/h, 15–20 proposals, 0 interviewing. jobs-data.json sa v tomto behu nepodarilo bezpečne prepísať bez kompletného full-file roundtripu; posledné validné dáta boli zachované fail-closed a freshness SLA je prekročené."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"BA/okolie sweep pre WordPress/e-commerce, technickú podporu, administratívu, vodiča B a logistiku; bez nového promotion-grade delta nad LIVE/pending set."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Preverené priame firemné BA/remote zdroje; bez nového delta nad už LIVE/verification položky."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Verejná BA/remote discovery bez nového konkrétneho prioritného detailu."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Aktuálny BA technická podpora/admin/sklad/rozvoz sweep bez nového promotion-grade delta."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"BA administratíva/sklad/kuriér discovery bez vhodného prioritného hitu."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":3,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0},"note":"Dnešný BA index bol znovu preverený; čerstvé administratívne a brigádnické výsledky vrátane triedenia zásielok neprekonali aktuálny LIVE prioritný set podľa value/fit gate."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"BA technické, skladové a administratívne výsledky bez nového promotion-grade delta."},
-    {"name":"Pretlak / StartupJobs / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"WordPress/remote discovery bez nového promotion-grade kandidáta."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":4,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Dnešné výsledky zahŕňali WooCommerce/Python automatizáciu, Bricks Builder a ďalšie web-development zákazky; hard-dev alebo špecializovaný skill gate zabránil LIVE promotion."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"BA/okolie sweep pre WordPress/e-commerce, technickú podporu, administratívu, vodiča B, kuriéra a logistiku; bez nového promotion-grade delta."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":2,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0},"note":"NAY Bratislava Danubia je stále aktívny. Form Factory Slovakia hiring signal pre Bratislavu pretrváva, no careers index mieša český Praha detail; kandidát zostáva verification."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":1,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0},"note":"Potvrdený Form Factory Slovakia hiring signal; ide o už evidovaného verification kandidáta."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":2,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0},"note":"HEATING PRO ostáva relevantný LIVE hit. Technický nákupca Šamorín je staršia ponuka/aktualizácia a neprekonal aktuálne priority."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Bez nového overiteľného prioritného BA hitu v aktuálnej verejnej indexácii."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":1,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Dnešný index obsahuje nové BA-kraj výsledky, ale bez kandidáta nad LIVE/pending value/fit gate."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":5,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":2,"location":0},"note":"Aktuálne BA výsledky obsahujú sklad, servis/IT support a ďalšie role; nové skladové brigády sú pod prioritným value/fit gate. Form Factory je deduplikovaný s verification queue."},
+    {"name":"Pretlak / StartupJobs / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Bez nového promotion-grade WordPress/e-commerce/remote kandidáta vhodného pre existujúce pravidlá."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":3,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0},"note":"Website & SEO Management 2026 je stále aktívny Worldwide remote, 15–30 USD/h, 15–20 proposals, 0 interviewing; zostáva verification kvôli skill-proof gate. Dnešné ďalšie web výsledky boli viac hard-dev/design-specialist."},
     {"name":"Verejné komunity / Reddit / WordPress","family":"communities","status":"limited","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Bez konkrétneho Slovakia-eligible hiring leadu s priamym overiteľným detailom."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"0 verified hits; verejná indexácia neposkytla konkrétny overiteľný prioritný post. Nexus/local authenticated ingestion ostáva backlog a automat ho nespúšťa."}
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"0 verified hits; verejná indexácia neposkytla konkrétny overiteľný prioritný post."}
   ],
   "verificationQueue": [
-    {"id":"nay-elektrospecialista-danubia-91416","title":"Elektrošpecialista/tka pre NAY Bratislava Danubia","company":"NAY a.s.","source":"NAY kariéra","locationEligibility":"ba-area","provisionalScore":88,"pay":"priemer 1 550 EUR/mes.","status":"promotion-ready","reason":"Priamo potvrdený prioritný kandidát; vhodný na ďalšie LIVE promotion pri nasledujúcom delta audite po kontrole duplicity."},
-    {"id":"form-factory-it-support-20260825","title":"IT Support Specialist (m/ž)","company":"Form Factory Slovakia s.r.o.","source":"Profesia / Práca za rohom / LinkedIn corroboration","locationEligibility":"ba-area","provisionalScore":88,"pay":"od 2 500 EUR/mes. + KPI","status":"verification","reason":"Treba potvrdiť IT Support/Infrastructure prax, komunikatívnu angličtinu a travel burden."},
-    {"id":"upwork-website-seo-management-2026-2093603919086755488","title":"Website & SEO Management 2026","company":"Upwork klient – eCommerce/WooCommerce store","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":90,"pay":"15–30 USD/h","status":"verification","reason":"Silný WooCommerce/product-admin fit; skill proof gate zostáva otvorený."},
+    {"id":"nay-elektrospecialista-danubia-91416","title":"Elektrošpecialista/tka pre NAY Bratislava Danubia","company":"NAY a.s.","source":"NAY kariéra","locationEligibility":"ba-area","provisionalScore":88,"pay":"priemer 1 550 EUR/mes.","status":"promotion-ready","reason":"Priamy firemný detail je stále aktívny; vhodný na LIVE promotion po bezpečnom full-feed dedupe/write."},
+    {"id":"form-factory-it-support-20260825","title":"IT Support Specialist (m/ž)","company":"Form Factory Slovakia s.r.o.","source":"Slovakia hiring signal / mirrors","locationEligibility":"ba-area","provisionalScore":88,"pay":"od 2 500 EUR/mes. + KPI","status":"verification","reason":"Slovenský hiring signal je aktívny, ale firemná careers indexácia súčasne zobrazuje Praha detail; pred LIVE treba potvrdiť canonical BA apply route, IT Support/Infrastructure prax a angličtinu."},
+    {"id":"upwork-website-seo-management-2026-2093603919086755488","title":"Website & SEO Management 2026","company":"Upwork klient – eCommerce/WooCommerce store","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":90,"pay":"15–30 USD/h","status":"verification","reason":"Aktívny Worldwide remote; 15–20 proposals, 0 interviewing. Silný WooCommerce/product-admin fit, skill proof gate zostáva otvorený."},
     {"id":"upwork-tech-savvy-wordpress-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":86,"pay":"6–10 USD/h","status":"verification","reason":"Silný WordPress/Elementor fit, ale nižšia hodinovka a jazyk/timezone friction."},
     {"id":"upwork-ecommerce-va-subscriptions-xero-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":89,"pay":"10–15 USD/h","status":"verification","reason":"Worldwide remote; povinná silná WooCommerce Subscriptions prax, Meta Ads, Xero a dobrá písomná angličtina bránia LIVE promotion."},
     {"id":"profesia-eletechnik-product-application-technician-5350584","title":"Product Application Technician","company":"ELETECHNIK s.r.o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":84,"pay":"od 1 300 EUR/mes. + bonusy 2x ročne","status":"verification","reason":"Senec technical/automation lead; qualification/value proof zostáva otvorený."},
     {"id":"kariera-grafton-tech-support-1540141","title":"Technická podpora (Ref. č.: 1003748)","company":"Grafton Slovakia s.r.o.","source":"Kariera.sk","locationEligibility":"ba-area","provisionalScore":87,"pay":"1 400–1 700 EUR/mes.","status":"verification","reason":"Technicko-terénny fit; riziko fyzickej záťaže a celoslovenského cestovania."},
     {"id":"profesia-sav-office-manager-20260828","title":"Office manažér/office manažérka","company":"Neuroimunologický ústav SAV","source":"Profesia / Práca za rohom mirror","locationEligibility":"ba-area","provisionalScore":86,"pay":"od 1 800 EUR/mes.","status":"verification","reason":"Silný admin fit; B1 AJ a administratívna prax/MS Office gate zostáva otvorený."},
-    {"id":"cerkam-terenny-admin-5348670","title":"Terénny administratívny pracovník","company":"Cerkam Facility Services s. r. o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":86,"pay":"od 1 500 EUR/mes. + odmeny","status":"already-live","reason":"Položka už je v LIVE; verification mirror zostáva deduplikovaný a nový záznam sa nepridáva."}
+    {"id":"cerkam-terenny-admin-5348670","title":"Terénny administratívny pracovník","company":"Cerkam Facility Services s. r. o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":86,"pay":"od 1 500 EUR/mes. + odmeny","status":"already-live","reason":"Položka už je v LIVE; nový záznam sa nepridáva."}
   ],
   "liveMix": {"liveFeedCount":44,"profesiaCount":20,"profesiaPct":45.5,"nonProfesiaCount":24,"nonProfesiaPct":54.5},
   "backlogAdditionsThisRun": [
-    {"name":"Search-to-apply stale-link verifier","reason":"Pred odporúčaním automaticky overiť, že výsledok zo search indexu stále vedie na aktívny detail/apply route; znižuje false-positive čerstvé hity a šetrí čas pri reakcii."},
-    {"name":"Remote pay-floor calibrator","reason":"Pre freelance/remote ponuky porovnať hodinovku s reálnou jazykovou, timezone a platformovou záťažou a automaticky potlačiť nízku efektívnu hodnotu aj pri dobrom skill matchi."}
+    {"name":"Atomic full-feed roundtrip writer","reason":"Na každom behu bezpečne načítať celý jobs-data.json, parse/dedupe/validate a zapísať iba po úspešnej validácii; odstráni súčasný freshness write blocker bez rizika poškodenia feedu."}
   ],
   "writeStatus": {
-    "jobsData":"unchanged-no-content-delta-updatedAt-preserved",
-    "jobsDataNonProf":"unchanged-locked",
+    "jobsData":"unchanged-write-blocked-full-file-roundtrip-required",
+    "jobsDataNonProf":"unchanged",
     "sourceAudit":"updated-after-real-source-check",
-    "jobSources":"pending-note-refresh",
-    "master":"pending-audit-refresh",
     "lockedFilesTouched":false,
-    "note":"LIVE feed zostáva na 44 položkách. Nebol potvrdený nový alebo významne zmenený prioritný záznam, preto jobs-data.json nebol prepísaný a updatedAt nebol umelo posunutý."
+    "note":"LIVE feed zostáva na 44 položkách. Posledné validné jobs-data.json dáta boli zachované fail-closed. Reálna kontrola zdrojov prebehla, ale bezpečný full-file roundtrip zápis jobs-data.json sa v tomto behu nepodaril; freshness SLA je preto prekročené."
   }
 }
