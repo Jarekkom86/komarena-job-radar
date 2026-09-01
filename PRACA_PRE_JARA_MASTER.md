@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 1. 9. 2026 01:30 CEST
+Aktualizované: 1. 9. 2026 03:23 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -57,26 +57,27 @@ Aktualizované: 1. 9. 2026 01:30 CEST
 23. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 24. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 1. 9. 2026 01:30 CEST — LATEST
-Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk/lokálne jobboardy; Pretlak/StartupJobs/WordPress Jobs; Upwork/freelance; Reddit/WordPress komunity; Facebook verejná indexácia; Služby zamestnanosti/doplnkový SK lane.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
+## SOURCE AUDIT — 1. 9. 2026 03:23 CEST — LATEST
+Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk/lokálne jobboardy; Pretlak/StartupJobs/WordPress Jobs; Upwork/freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **10 nezávislých source families**, z toho **9 mimo Profesia**.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 0 zapísaných** — nie kvôli kvalite discovery, ale kvôli bezpečnostnému writer blockeru pri veľkom `jobs-data.json`.
-- **Významný promotion-ready kandidát:** **Upwork — Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support — provisional Match 91**. Worldwide remote; **6–10 USD/h**, **5–10 h/týždeň**, **6+ mesiacov**, **<5 proposals**, 0 interviewing; WordPress/Elementor maintenance, plugin updates, content publishing, forms/integrations, QA, AI tools vítané; self-directed schedule, US Eastern overlap iba preferred; training videos + written instructions; paid test; deadline **6. 9. 2026**.
-- **LinkedIn:** SupportYourApp technical/customer support hity vyžadujú B2/C1 alebo fluent English, preto neprešli language gateom.
-- **Upwork:** Website & SEO Management 2026 ostáva silný WooCommerce operations kandidát za **15–30 USD/h**, ale má vyššiu skill/application friction (SEO nástroje, reporting, Loom audit, onboarding call). WooCommerce Assistant 5–10 USD/h vyžaduje väčšinu US Mountain Time workday a preukázanú WooCommerce prax.
-- **Profesia / Worki / Brigada / Kariera / company careers / tech-creative lane:** reálne vyhľadané, bez nového evidence-grade winnera v tomto behu.
-- **Reddit/WordPress komunity:** bez konkrétneho evidence-grade hiring postu.
+- **Nové aktívne položky: 0 zapísaných** — `jobs-data.json` ostáva FAIL-CLOSED, pretože dostupný GitHub read stále vracia veľký full-file payload truncovaný a writer vyžaduje kompletný replacement.
+- **Nový verification kandidát:** **Upwork — E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero — provisional Match 87**. Worldwide remote; **10–15 USD/h**, **<30 h/týždeň**, 1–3 mesiace, contract-to-hire; **15–20 proposals**, 0 interviewing, 1 hire, klient bol aktívny pred 4 hodinami. Silný WooCommerce/admin/customer-support/troubleshooting fit, ale mandatory WooCommerce Subscriptions, Meta Ads Manager, basic Xero a good written English nie sú bezpečne doložené, preto nejde do LIVE.
+- **Company careers:** Slovak Telekom má nový Junior DevOps v Bratislave, ale ide o hard-dev/cloud scope. Foxelli má aktuálne Slovakia-eligible **100 % remote** e-commerce/support/marketing roly, no pred promotion chýba dostatočný language/mandatory-skill compatibility proof.
+- **LinkedIn:** Wolt Bratislava full-time aj part-time Support Associate vyžadujú minimum English B2, preto language gate.
+- **Worki:** HEATING PRO je existujúci LIVE duplicate; nový vodičský hit vyžaduje skupinu C a bol vyradený.
+- **Profesia / Brigada / Kariera / tech-creative lane:** reálne vyhľadané, bez nového evidence-grade winnera.
+- **Reddit/WordPress komunity:** indexovaný výsledok bol for-hire ponuka služby, nie konkrétny hiring dopyt.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 
 ### Run summary
-- Reálne skontrolované source families: **11**.
+- Reálne skontrolované source families: **10**.
 - Nové aktívne položky zapísané: **0**.
 - Významné nové/podstatne zmenené pending kandidáty: **1**.
 - LIVE feed: **41 aktívnych položiek**.
 - Mix: **Profesia 18 / 41 = 43,9 %; mimo Profesia 23 / 41 = 56,1 %**.
 - `jobs-data.json.updatedAt` ostáva **31. 8. 2026 22:13:19 CEST** — writer blocker, timestamp sa neposúva umelo.
-- `source-audit.json.updatedAt` = **1. 9. 2026 01:30:12 CEST**.
+- `source-audit.json.updatedAt` = **1. 9. 2026 03:23:16 CEST**.
 
 ### Technický blocker
 `jobs-data.json` je dostatočne veľký na to, že dostupný GitHub read vracia full-file payload truncovaný, zatiaľ čo writer vyžaduje kompletný replacement. Podľa FAIL-CLOSED sa súbor neprepisuje z neúplného obsahu, aby sa nestratilo 41 existujúcich LIVE položiek. Potrebný je bezpečný large-JSON patch/append writer alebo iný atómový write path.
@@ -241,3 +242,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 147. **Training-date feasibility gate** — pri brigádach s povinným školením pred nástupom povoliť promotion iba ak je školenie ešte reálne absolvovateľné; zníži neakčné a expirované leady.
 148. **Safe large-JSON patch writer** — atómový append/update jednej položky v `jobs-data.json` bez nutnosti kompletného full-file replacementu; odstraňuje opakovaný FAIL-CLOSED promotion blocker pri truncovanom read-e.
 149. **Competition delta trigger pre freelance leady** — pri zmene proposals/interview/invites automaticky prepočíta action priority a zvýrazní krátke okno s vyššou reply probability.
+150. **Mandatory-tool evidence matrix** — pri každej freelance/ops ponuke rozlíšiť required vs nice-to-have nástroje a automaticky mapovať iba doložené skúsenosti; zabráni preceňovaniu near-fit leadov a vymýšľaniu kvalifikácií.
+151. **Client active-contract saturation signal** — pri marketplace klientoch zohľadniť pomer active contracts/hire history a poslednú aktivitu klienta; zníži čas strávený nad leadmi, kde klient už najal alebo paralelne drží veľa kontraktov.
