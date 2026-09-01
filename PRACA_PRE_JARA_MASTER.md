@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 2. 9. 2026 00:36 CEST
+Aktualizované: 2. 9. 2026 01:34 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -58,20 +58,22 @@ Aktualizované: 2. 9. 2026 00:36 CEST
 24. **BOELS — Shop Advisor / Klientsky poradca pre hobbymarkety — Match 89** — Bratislava-Ružinov; Po–Pi flexibilne, výjazdy z domu, servisné vozidlo, jednoduchá technická údržba, vodičák B, od 1 400 €/mes. + bonus.
 25. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
 
-> Poznámka ku konzistencii: LUNYS E-commerce špecialista bol odstránený z LIVE po canonical LinkedIn stave „No longer accepting applications“. Predchádzajúci MASTER ho omylom ešte uvádzal ako TOP #1; tento rozpor je v tomto behu opravený.
+> Poznámka ku konzistencii: LUNYS E-commerce špecialista bol odstránený z LIVE po canonical LinkedIn stave „No longer accepting applications“. Predchádzajúci MASTER ho omylom ešte uvádzal ako TOP #1; rozpor zostáva opravený.
 
-## SOURCE AUDIT — 2. 9. 2026 00:36 CEST — LATEST
+## SOURCE AUDIT — 2. 9. 2026 01:34 CEST — LATEST
 Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs/company posts; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Práca za rohom; Pretlak/StartupJobs; Upwork freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 0.** `jobs-data.json` zostáva fail-closed na **44 LIVE položkách**; jeho obsahový timestamp **2. 9. 2026 00:11:10 CEST** nebol umelo posunutý.
+- **Nové aktívne položky: 0.** `jobs-data.json` zostáva fail-closed na **44 LIVE položkách**; obsahový timestamp **2. 9. 2026 00:11:10 CEST** nebol umelo posunutý.
 - **LIVE mix:** Profesia **21 / 44 = 47,7 %**, mimo Profesia **23 / 44 = 52,3 %**. Profesia zostáva pod 60 % health limitom.
-- **Priame firemné careers:** Websupport canonical detail znovu potvrdil **Customer Success Advisor** v Bratislave. Rola zahŕňa weby, hosting, SSL, troubleshooting, zákaznícku podporu a onboarding; firma uvádza možný rast až k WordPress expertíze. Ponuka už je LIVE, preto bez duplicity.
-- **Profesia / Práca za rohom:** čerstvý **CGI Slovakia — IT Technician_MEDIOR – End User Support** v Bratislave je technicky relevantný (HW/SW incidenty, Windows/M365, tikety, zariadenia, kabeláž), ale povinná **B1 AJ**, vodič B a základ od **1 200 €** ho zatiaľ držia iba vo verification s provisional Match 85.
-- **Brigada.sk:** čerstvý **Junior účtovník** v Bratislave zahŕňa triedenie, skenovanie a spracovanie dokladov; podmienka študent alebo ukončená OA/EU a nižšia priorita = bez LIVE promotion.
-- **Kariera.sk:** BA administratívne výsledky preverené; International Construction admin vyžaduje angličtinu + ukrajinčinu + ruštinu, preto neprešiel jazykovým gateom.
-- **LinkedIn:** verejná indexácia bola reálne preverená, ale relevantné výsledky boli prevažne Viedeň/Luxemburg alebo iné vzdialené onsite roly; 0 nových `ba-area` / `remote-ok` hitov.
-- **Upwork:** čerstvé Worldwide remote web/WooCommerce výsledky boli preverené; Python/FastAPI + WooCommerce je hard development a ďalšie web buildy vyžadujú plný design/development ownership, preto bez novej promotion-grade delty.
+- **Profesia / Práca za rohom:** **IZY VAPE — Back Office & Operations Coordinator – e-commerce | Remote** je stále verejne aktívny, 1 600–2 000 €/mes., prevažne home office zo Slovenska, s príležitostnými plánovanými stretnutiami v Bratislave. Náplň zahŕňa e-shop objednávky, logistiku, reklamácie, reporty, Trello a AI. Ide o už známu LIVE prioritu, preto bez duplicity.
+- **Práca za rohom:** potvrdený je aj známy **Lachim Trans — kuriér GLS Malacky**, spolu s ďalšími známymi BA vodičskými výsledkami; bez novej unikátnej promotion-grade delty.
+- **Priame firemné careers:** BA support/technické careers boli reálne preverené; bez nového canonical detailu, ktorý by prekonal súčasný LIVE/verification set.
+- **LinkedIn:** verejná indexácia BA WordPress/WooCommerce/support bola reálne preverená; bez nového konkrétneho promotion-grade detailu; coverage bez loginu ostáva `limited`.
+- **Worki.sk / Brigada.sk / Kariera.sk:** BA technická podpora, administratíva, e-shop, kuriér a sklad discovery boli preverené; bez novej vhodnej promotion-grade delty.
+- **Pretlak / StartupJobs:** discovery pre WordPress/e-commerce/support prebehla; Pretlak výsledky boli prevažne freelancer profily, nie nové hiring ponuky.
+- **Upwork:** Worldwide remote WordPress/WooCommerce VA discovery bola reálne preverená; tento sweep nepriniesol nový verejne overiteľný kandidát s lepším evidence/value profilom než existujúca verification queue.
+- **Reddit/komunity:** čerstvý r/wordpressjobs výsledok bol **FOR HIRE** WordPress/Shopify freelancer, teda nie hiring dopyt; nepridáva sa.
 - **Facebook:** **0 verified hits**, status `limited`; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 - Žiadna existujúca LIVE položka nebola odstránená a nedošlo k strate kategórie.
 
@@ -84,12 +86,12 @@ Reálne prehľadané source families: **Profesia; priame firemné careers; Linke
 - `jobs-data.json.updatedAt` = **2. 9. 2026 00:11:10 CEST**.
 
 ## Rozvojový backlog — nové položky z tohto behu
-1. **MASTER↔LIVE consistency gate** — pred zápisom MASTERu automaticky validovať každú TOP položku podľa stabilného LIVE ID/status v `jobs-data.json`. Ak je položka neaktívna, chýba alebo sa zmenil canonical status, MASTER update musí fail-closed namiesto publikovania zastaraného TOP zoznamu. Dnešný konkrétny problém: LUNYS už nebol LIVE, ale MASTER ho stále uvádzal ako TOP #1.
-2. **Language requirement evidence provenance** — pri každej novej/overovanej ponuke ukladať `explicitLanguageLevel`, `languageEvidenceSource` a `languageEvidenceType` (`canonical` / `jobboard` / `inferred`). Ranking má jazyk penalizovať podľa najsilnejšieho dostupného dôkazu, nie podľa nejasného agregovaného textu.
+1. **Applied-state suppression gate** — synchronizovať stav už odoslaných reakcií/CRM tak, aby discovery znovu neoznačoval už osloveného zamestnávateľa ako nový významný hit. Pri zmene platu, pracovného režimu, deadline alebo statusu sa má položka stále zobraziť ako material-change event.
+2. **Material-change notification fingerprint** — pre stabilné job ID ukladať fingerprint z platu, lokality, remote režimu, deadline/statusu a kľúčových požiadaviek. Opakované kontroly majú upozorniť iba vtedy, keď sa fingerprint materiálne zmení; tým sa odstráni hodinové opakovanie známych LIVE ponúk bez straty dôležitých zmien.
 
 ## Stav ochrany / zápisu
-- `jobs-data.json`: **nezmenený**, pretože nevznikla promotion-grade delta; 44 LIVE položiek zachovaných.
-- `job-sources.json`: **nezmenený**, nevznikla štrukturálna zmena registra zdrojov.
+- `jobs-data.json`: **nezmenený**, pretože nevznikla nová unikátna promotion-grade delta; 44 LIVE položiek zachovaných.
+- `job-sources.json`: **aktualizovaný** o čerstvý audit/freshness poznámky.
 - `source-audit.json`: **aktualizovaný** po reálnom 11-family audite.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný**; TOP zoznam zosúladený s LIVE feedom a pridané 2 nové backlog zlepšenia.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný**; audit zosúladený s týmto behom a pridané 2 nové backlog zlepšenia.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index: **nedotknuté / zamknuté**.
