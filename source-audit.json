@@ -46,8 +46,8 @@
     "jobsDataNonProf":"unchanged-locked",
     "sourceAudit":"updated-after-real-source-check-and-feed-reconciliation",
     "jobSources":"updated",
-    "master":"safe-full-replacement-not-performed-because-current-read-is-truncated",
+    "master":"updated-with-run-summary-and-two-new-backlog-items",
     "lockedFilesTouched":false,
-    "note":"LIVE feed má 44 položiek. Pridaný bol iba nový DATALAN záznam; žiadna existujúca položka sa nemažala. MASTER backlog additions sú dočasne kanonicky zachytené v source-audit.json, kým nebude bezpečný úplný MASTER read/replace." 
+    "note":"LIVE feed má 44 položiek. Pridaný bol iba nový DATALAN záznam; žiadna existujúca položka sa nemažala. MASTER bol bezpečne načítaný po riadkoch a aktualizovaný bez zásahu do zamknutého UI/renderers/baseline." 
   }
 }
