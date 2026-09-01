@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 1. 9. 2026 17:19 CEST
+Aktualizované: 1. 9. 2026 18:37 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -58,27 +58,28 @@ Aktualizované: 1. 9. 2026 17:19 CEST
 24. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 25. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 1. 9. 2026 17:19 CEST — LATEST
-Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Práca za rohom; Pretlak/StartupJobs tech-creative; Upwork freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
+## SOURCE AUDIT — 1. 9. 2026 18:37 CEST — LATEST
+Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs/company posts; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Práca za rohom; Pretlak/StartupJobs/WordPress Jobs; Upwork freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky: 0.** `jobs-data.json` zostáva na **44 LIVE položkách**; jeho obsahový timestamp **16:21:02 CEST** nebol umelo posunutý.
 - **LIVE mix:** Profesia **20 / 44 = 45,5 %**, mimo Profesia **24 / 44 = 54,5 %**.
-- **Kariera.sk/Zoznam:** dnešný BA index bol znovu preverený; čerstvé všeobecné administratívne a brigádnické výsledky vrátane triedenia zásielok neprekonali aktuálny LIVE prioritný set podľa value/fit gate.
-- **Upwork:** dnešné nájdené web výsledky zahŕňali WooCommerce/Python automatizáciu, Bricks Builder a ďalší web development; hard-dev alebo špecializovaný skill gate zabránil LIVE promotion.
-- **Profesia / firemné careers / LinkedIn / Worki / Brigada.sk / Práca za rohom / Pretlak / StartupJobs:** reálne prehľadané; bez nového evidence-grade winnera nad aktuálny LIVE/pending set.
-- **Reddit/WordPress komunity:** verejná indexácia bez nového konkrétneho Slovakia-eligible hiring leadu.
+- **Nový verification kandidát:** Powerlogy — Marketing Specialist; Bratislava/hybrid, junior/absolvent, od 1 600 €/mes. na faktúru, CMS/e-shop a WordPress/WooCommerce alebo podobné platformy, HO min. 2 dni týždenne. Nejde do LIVE, lebo inzerát explicitne požaduje slovenčinu aj angličtinu na veľmi dobrej úrovni.
+- **StartupJobs:** Customer care / online agent pre e-shop je 100 % remote, ale povinná poľština = language reject. Medior Account Manager / projektový koordinátor Webflow/WordPress je prevažne remote, ale má občasné povinné stretnutia v Prahe = `reject-distance`.
+- **Brigada.sk:** BA index obsahuje Metro skladové brigády a vodiča detského vláčika; neprekonali aktuálny LIVE value/fit gate.
+- **Upwork:** WooCommerce/e-commerce VA discovery prebehla; WooCommerce Subscriptions/Xero lead zostáva verification pre špecializované skills a dobrú písomnú AJ.
+- **Reddit/WordPress komunity:** výsledky boli prevažne `[for hire]` ponuky služieb, nie konkrétne hiring dopyty.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny fiktívny hit. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 - Žiadna existujúca LIVE položka nebola odstránená a nedošlo k strate kategórie.
 
 ### Run summary
 - Reálne skontrolované source families: **11**.
 - Nové aktívne položky zapísané: **0**.
-- Významné pending kandidáty: **9**.
+- Významné pending kandidáty: **10**.
 - LIVE feed: **44 aktívnych položiek**.
 - Mix: **Profesia 45,5 % / mimo Profesia 54,5 %**.
 - `jobs-data.json.updatedAt` = **1. 9. 2026 16:21:02 CEST**.
-- `source-audit.json.updatedAt` = **1. 9. 2026 17:19:13 CEST**.
+- `source-audit.json.updatedAt` = **1. 9. 2026 18:37:53 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -218,3 +219,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 125. Fresh competitor-pressure decay.
 126. Search-to-apply stale-link verifier — pred odporúčaním overiť, že indexovaný výsledok stále vedie na aktívny detail/apply route; znižuje false-positive čerstvé hity a šetrí čas pri reakcii.
 127. Remote pay-floor calibrator — pri freelance/remote ponukách porovnať hodinovku s jazykovou, timezone a platformovou záťažou a automaticky potlačiť nízku efektívnu hodnotu aj pri dobrom skill matchi.
+128. **Hybrid attendance obligation verifier** — pri hybrid/remote ponukách extrahovať minimálnu frekvenciu onsite návštev a mesto; vzdialená Praha/Brno rola nesmie prejsť gateom iba preto, že používa slovo remote.
+129. **Platform-skill transferability score** — rozlíšiť prenositeľné e-commerce skúsenosti (WooCommerce → Shopify/Shoptet/iný CMS) od skutočne povinných špecializovaných skillov; zlepší ranking bez predstierania kvalifikácií.
