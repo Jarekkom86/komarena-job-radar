@@ -1,44 +1,54 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T16:13:24+02:00",
+  "updatedAt": "2026-09-01T16:21:02+02:00",
   "runSummary": {
-    "familiesChecked": 10,
+    "familiesChecked": 11,
     "newActiveJobs": 0,
-    "significantPendingCandidates": 8,
+    "significantPendingCandidates": 10,
     "significantlyChangedPriorityJobs": 0,
     "jobsDataContentUpdatedAt": "2026-09-01T10:14:41+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "fresh-audit-main-feed-stale-safe-full-feed-write-unavailable",
     "liveFeedCount": 43,
-    "note": "Audit 1.9.2026 16:13 CEST reálne preveril verejne dostupné zdrojové rodiny pre Bratislavu, okolie a vhodný remote režim. Nepotvrdil sa nový promotion-grade kandidát nad existujúci LIVE výber. Upwork E-commerce VA – WooCommerce/Subscriptions/Customer Service/Xero zostáva verification: 10–15 USD/h, Worldwide remote, 15–20 proposals, 1 hire, 0 interviewing, ale vyžaduje silnú WooCommerce Subscriptions prax, Meta Ads, Xero a dobrú písomnú angličtinu. Nový Product Listing/Ecommerce Management VA bol vyradený pod value floor (3–6 USD/h, 30+ h/týždeň, 20–50 proposals). jobs-data.json zostal fail-closed; updatedAt nebol umelo posunutý, pretože tento runtime nemá bezpečný programatický full-feed parse/transform/write most pre celý veľký JSON."
+    "note": "Audit 1.9.2026 16:21 CEST reálne preveril 11 source families pre Bratislavu/okolie a skutočný remote. Nový silný kandidát: DATALAN Servisný technik, Bratislava-Petržalka; canonical firemná kariéra potvrdzuje servis PC/notebookov, diagnostiku bez pájkovania, zákaznícku agendu, vodič B, technické vzdelanie/prax iba ako výhodu, B1 AJ a občasný home office. Cerkam terénny administratívny pracovník bol zachytený ako nižšia admin alternatíva. Facebook verejná indexácia nepriniesla žiadny konkrétny overiteľný post: 0 verified hits, limited. jobs-data.json zostal fail-closed, lebo runtime nevie bezpečne transformovať a zapísať celý veľký JSON bez rizika straty existujúcich položiek."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"BA/okolie sweep pre WordPress/e-commerce, technickú podporu, administratívu, vodiča B a logistiku; bez nového promotion-grade delta."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Firemné kariéry boli zahrnuté v discovery; bez nového prioritného delta nad LIVE set."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Verejná BA/remote discovery bez nového overiteľného prioritného detailu."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"note":"Aktuálny BA technická podpora/admin/sklad/rozvoz sweep bez nového silnejšieho delta."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"note":"BA administratíva/sklad/kuriér discovery bez vhodného prioritného hitu."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"note":"Aktuálne ponuky skontrolované; bez nového kandidáta nad existujúce priority."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":5,"added":0,"note":"BA administratíva/vodič/kuriér discovery; bez nového promotion-grade delta."},
-    {"name":"Pretlak / StartupJobs / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Bratislava/remote WordPress, WooCommerce, e-commerce discovery bez nového kandidáta, ktorý uzavrel value/skill gate."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":5,"added":0,"note":"WooCommerce VA 10–15 USD/h ostáva verification pre povinnú WooCommerce Subscriptions/Meta Ads/Xero/písomnú AJ. Product Listing/Ecommerce VA 3–6 USD/h vyradený pod value floor. Ďalšie WooCommerce hity sú prevažne hard-dev."},
-    {"name":"Verejné komunity / indexácia","family":"communities","status":"limited","hits":0,"added":0,"note":"Bez konkrétneho verejne overiteľného Slovakia-eligible hiring leadu s priamym detailom."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"BA/okolie sweep pre WordPress/e-commerce, technickú podporu, administratívu, vodiča B a logistiku; bez nového promotion-grade delta nad LIVE/pending set."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":1,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"DATALAN canonical kariéra priamo potvrdila Servisného technika v Bratislave: technická diagnostika/opravy bez pájkovania, interná agenda, vodič B, B1 AJ, občasný HO; promotion-ready po write unblocku."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Verejná BA/remote discovery bez nového konkrétneho prioritného detailu."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0},"note":"Aktuálny BA technická podpora/admin/sklad/rozvoz sweep; relevantné výsledky bez nového delta nad existujúce LIVE/pending položky."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"BA administratíva/sklad/kuriér/WordPress discovery bez vhodného prioritného hitu."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0},"note":"BA ponuky preverené; relevantné NAY výsledky sú už známe a preferuje sa canonical firemná kariéra."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":4,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":2,"location":0},"note":"Aktuálny BA sweep potvrdil DATALAN Servisný technik a zachytil Cerkam Terénny administratívny pracovník od 1 500 EUR; DATALAN bol povýšený na canonical firemný zdroj."},
+    {"name":"Pretlak / StartupJobs / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"WordPress/WooCommerce/remote discovery bez nového promotion-grade kandidáta."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":4,"added":0,"rejected":{"language":1,"inactive":0,"duplicate":1,"location":0},"note":"WooCommerce/WordPress VA index stále prináša relevantné hity, ale nové výsledky neprekonali existujúcu verification queue pre value/skill/language friction."},
+    {"name":"Verejné komunity / Reddit / WordPress","family":"communities","status":"limited","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Verejná indexácia bez konkrétneho Slovakia-eligible hiring leadu s priamym detailom."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"WordPress Slovensko, WooCommerce Komunita SK+CZ a Práca/brigády Bratislava verejne vyhľadané. 0 konkrétnych verejne overiteľných postov s priamym linkom; žiadny fiktívny hit. Autentizovaný Nexus/local ingestion ostáva backlog a nebol spustený."}
   ],
   "verificationQueue": [
-    {"id":"nay-elektrospecialista-danubia-91416","title":"Elektrošpecialista/tka pre NAY Bratislava Danubia","company":"NAY a.s.","source":"NAY kariéra","locationEligibility":"ba-area","provisionalScore":88,"pay":"priemer 1 550 EUR/mes.","status":"promotion-ready-write-blocked","reason":"Predchádzajúco priamo potvrdený prioritný kandidát; LIVE promotion stále blokuje bezpečný full-feed write krok."},
+    {"id":"datalan-servisny-technik-ba-20260901","title":"Servisný technik (m/ž)","company":"DATALAN, a.s.","source":"DATALAN kariéra","locationEligibility":"ba-area","provisionalScore":90,"pay":"od 1 200 EUR/mes. + variabilná zložka","status":"promotion-ready-write-blocked","reason":"Priamy canonical detail: Bratislava/Petržalka, servis notebookov a PC, diagnostika a výmena dielov bez pájkovania, servis u zákazníkov BA/západné Slovensko, administratíva v interných systémoch, vodič B. Technické vzdelanie, ticketing aj opravy sú iba výhodou; B1 AJ je mierny mínus. Občasný HO."},
+    {"id":"cerkam-terenny-admin-5348670","title":"Terénny administratívny pracovník","company":"Cerkam Facility Services s. r. o.","source":"Práca za rohom / Profesia mirror","locationEligibility":"ba-area","provisionalScore":86,"pay":"od 1 500 EUR/mes. + odmeny","status":"verification","reason":"Silný admin/customer-care fit v Bratislave: evidencia a spracovanie požiadaviek, telefonická/e-mailová/osobná komunikácia, objednávky, interný systém a terén. Živnosť a terénna záťaž znižujú prioritu; treba overiť rozsah jázd a fyzickú náročnosť."},
+    {"id":"nay-elektrospecialista-danubia-91416","title":"Elektrošpecialista/tka pre NAY Bratislava Danubia","company":"NAY a.s.","source":"NAY kariéra","locationEligibility":"ba-area","provisionalScore":88,"pay":"priemer 1 550 EUR/mes.","status":"promotion-ready-write-blocked","reason":"Priamo potvrdený prioritný kandidát; LIVE promotion stále blokuje bezpečný full-feed write krok."},
     {"id":"form-factory-it-support-20260825","title":"IT Support Specialist (m/ž)","company":"Form Factory Slovakia s.r.o.","source":"Profesia / Práca za rohom / LinkedIn corroboration","locationEligibility":"ba-area","provisionalScore":88,"pay":"od 2 500 EUR/mes. + KPI","status":"verification","reason":"Treba potvrdiť IT Support/Infrastructure prax, komunikatívnu angličtinu a travel burden."},
     {"id":"upwork-website-seo-management-2026-2093603919086755488","title":"Website & SEO Management 2026","company":"Upwork klient – eCommerce/WooCommerce store","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":90,"pay":"15–30 USD/h","status":"verification","reason":"Silný WooCommerce/product-admin fit; skill proof gate zostáva otvorený."},
     {"id":"upwork-tech-savvy-wordpress-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":86,"pay":"6–10 USD/h","status":"verification","reason":"Silný WordPress/Elementor fit, ale nižšia hodinovka a jazyk/timezone friction."},
-    {"id":"upwork-ecommerce-va-subscriptions-xero-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":89,"pay":"10–15 USD/h","status":"verification","reason":"Worldwide remote; 15–20 proposals, 1 hire, 0 interviewing. Povinná silná WooCommerce Subscriptions prax, Meta Ads, Xero a dobrá písomná angličtina bránia LIVE promotion."},
+    {"id":"upwork-ecommerce-va-subscriptions-xero-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":89,"pay":"10–15 USD/h","status":"verification","reason":"Worldwide remote; povinná silná WooCommerce Subscriptions prax, Meta Ads, Xero a dobrá písomná angličtina bránia LIVE promotion."},
     {"id":"profesia-eletechnik-product-application-technician-5350584","title":"Product Application Technician","company":"ELETECHNIK s.r.o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":84,"pay":"od 1 300 EUR/mes. + bonusy 2x ročne","status":"verification","reason":"Senec technical/automation lead; qualification/value proof zostáva otvorený."},
     {"id":"kariera-grafton-tech-support-1540141","title":"Technická podpora (Ref. č.: 1003748)","company":"Grafton Slovakia s.r.o.","source":"Kariera.sk","locationEligibility":"ba-area","provisionalScore":87,"pay":"1 400–1 700 EUR/mes.","status":"verification","reason":"Technicko-terénny fit; riziko fyzickej záťaže a celoslovenského cestovania."},
     {"id":"profesia-sav-office-manager-20260828","title":"Office manažér/office manažérka","company":"Neuroimunologický ústav SAV","source":"Profesia / Práca za rohom mirror","locationEligibility":"ba-area","provisionalScore":86,"pay":"od 1 800 EUR/mes.","status":"verification","reason":"Silný admin fit; B1 AJ a administratívna prax/MS Office gate zostáva otvorený."}
   ],
+  "liveMix": {"liveFeedCount":43,"profesiaCount":20,"profesiaPct":46.5,"nonProfesiaCount":23,"nonProfesiaPct":53.5},
+  "backlogAdditionsThisRun": [
+    {"title":"Canonical compensation conflict detector","problem":"Rôzne stránky toho istého zamestnávateľa môžu uvádzať odlišný plat pre tú istú rolu (napr. detail vs promo/refresh stránka).","value":"Zabráni tomu, aby Radar nadhodnotil ponuku podľa marketingového alebo chybného mirror údaja; preferuje detail konkrétnej pozície a uloží konflikt na manuálne overenie."},
+    {"title":"Field-travel radius evidence gate","problem":"Technické/support roly môžu mať pracovisko Bratislava, ale pravidelné zásahy po západnom Slovensku výrazne menia časovú a dopravnú záťaž.","value":"Samostatne eviduje servisný rádius, frekvenciu výjazdov a firemné vozidlo; zlepší commute/value score bez nesprávneho reject-distance pri BA-centric terénnej práci."}
+  ],
   "writeStatus": {
     "jobsData":"unchanged-safe-full-feed-transform-write-unavailable",
-    "jobsDataNonProf":"unchanged",
+    "jobsDataNonProf":"unchanged-locked",
     "sourceAudit":"updated-after-real-source-check",
+    "jobSources":"pending-update-this-run",
+    "master":"pending-safe-update-or-blocked-by-full-replacement",
     "lockedFilesTouched":false,
-    "note":"LIVE feed ostáva 43 položiek. Hlavný feed je mimo 60-minútového SLA; posledné validné dáta boli zachované fail-closed."
+    "note":"LIVE feed ostáva 43 položiek. Hlavný feed sa nemenil, pretože bezpečný full-file transform/write nie je v tomto runtime dostupný."
   }
 }
