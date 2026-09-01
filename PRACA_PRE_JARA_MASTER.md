@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 1. 9. 2026 20:24 CEST
+Aktualizované: 1. 9. 2026 22:38 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -58,27 +58,27 @@ Aktualizované: 1. 9. 2026 20:24 CEST
 24. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 25. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 1. 9. 2026 20:24 CEST — LATEST
-Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs/company posts; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Práca za rohom; Pretlak/StartupJobs/WordPress Jobs; Upwork freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
+## SOURCE AUDIT — 1. 9. 2026 22:38 CEST — LATEST
+Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs/company posts; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Práca za rohom; Pretlak/StartupJobs; Upwork freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 0.** `jobs-data.json` zostáva na **44 LIVE položkách**; jeho obsahový timestamp **16:21:02 CEST** nebol umelo posunutý.
+- **Nové aktívne položky: 0.** `jobs-data.json` zostáva fail-closed na **44 LIVE položkách**; obsahový timestamp **16:21:02 CEST** nebol umelo posunutý.
 - **LIVE mix:** Profesia **20 / 44 = 45,5 %**, mimo Profesia **24 / 44 = 54,5 %**.
-- **Najsilnejší pending kandidát:** ČSOB — Operátor IT Service Desk-u; Bratislava/hybrid, L1 podpora, vhodné aj pre absolventov, mierne pokročilá AJ; ostáva `promotion-ready` v audite.
-- **Práca za rohom:** SENTIA services — Back office, Bratislava, 1 500–1 800 €/mes. overené. Vyradené pre rozhodujúcu povinnú prax v poisťovníctve a pokročilý MS Office; nejde o slabú lokalitnú zhodu, ale qualification reject.
-- **Kariera.sk:** Slovenská pošta — brigáda triediča zásielok, Tomášikova 54, Bratislava, 6,50 €/h + nočné príplatky do 9,30 €/h. Bez praxe a cudzieho jazyka, ale manuálna práca s bremenami a nočné zmeny znamenajú nízku prioritu.
-- **Upwork:** čerstvé WordPress buildy preverené; Blocksy fixed-price 50 USD a Bricks Builder developer leady sú pod value/skill prahom, preto neboli pridané.
-- **Facebook:** **0 verified hits**, status `limited`; žiadny fiktívny hit. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
+- **ČSOB — Operátor IT Service Desk-u:** 1. 9. 2026 o 22:38 znovu čerstvo potvrdený na Profesia pre Bratislavu s občasným home office, od 1 200 €/mes.; ostáva `promotion-ready`.
+- **NAY — Elektrošpecialista/tka Bratislava Danubia:** canonical NAY detail je stále verejne dostupný, Bratislava, plný úväzok, priemer 1 550 €/mes.; ostáva `promotion-ready`.
+- **Nový Upwork kandidát:** `Need Basic WooCommerce Website (Design & Development)` — Worldwide remote, **2 000 USD fixed-price**, contract-to-hire, mobile-first WooCommerce e-shop, produktové stránky, checkout, blog, SEO, testovanie a launch. Je to hodnotný lead, ale vyžaduje kompletný design+development ownership a má **50+ proposals / 5 interviewing**, preto ide do `verification`, nie LIVE.
+- **Kariera.sk:** Slovenská pošta — brigáda triediča zásielok v Bratislave ostáva low-priority verification pre manuálnu záťaž/nočné zmeny.
+- **Facebook:** **0 verified hits**, status `limited`; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 - Žiadna existujúca LIVE položka nebola odstránená a nedošlo k strate kategórie.
 
 ### Run summary
 - Reálne skontrolované source families: **11**.
 - Nové aktívne položky zapísané: **0**.
-- Významné pending kandidáty: **12**.
+- Významné pending kandidáty: **14**.
 - LIVE feed: **44 aktívnych položiek**.
 - Mix: **Profesia 45,5 % / mimo Profesia 54,5 %**.
 - `jobs-data.json.updatedAt` = **1. 9. 2026 16:21:02 CEST**.
-- `source-audit.json.updatedAt` = **1. 9. 2026 20:24:11 CEST**.
+- `source-audit.json.updatedAt` = **1. 9. 2026 22:38:16 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -222,3 +222,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 129. **Platform-skill transferability score** — rozlíšiť prenositeľné e-commerce skúsenosti (WooCommerce → Shopify/Shoptet/iný CMS) od skutočne povinných špecializovaných skillov; zlepší ranking bez predstierania kvalifikácií.
 130. **Hiring-post edit diff watcher** — pri každom rechecku porovnať kritické polia aktívneho inzerátu (mzda, jazyk, miesto, onsite frekvencia, povinné skills) a upozorniť iba na zmenu, ktorá mení eligibility, ranking alebo reakčnú stratégiu.
 131. **Source-family query rotation entropy guard** — udržiavať stabilnú kontrolnú query sadu, ale zároveň rotovať synonymá rolí pre web/e-shop, support, admin, vodič a logistiku, aby opakovaný audit nevytváral falošný pocit coverage z rovnakých dopytov.
+132. **Freelance effort-to-value estimator** — pri fixed-price WordPress/WooCommerce zákazkách odhadnúť rozsah podľa stránok, produktov, customizácie, checkoutu, launchu a supportu; porovnať s odmenou a konkurenciou, aby vysoká nominálna suma neprebila zlý hodinový výnos.
+133. **Promotion-ready aging watchdog** — promotion-ready položky nesmú zostať hodiny iba vo verification queue kvôli write pipeline; po prekročení SLA eskalovať technický blocker a prioritne vykonať bezpečný parse/dedupe/validate/write bez zásahu do zamknutých súborov.
