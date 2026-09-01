@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 1. 9. 2026 12:37 CEST
+Aktualizované: 1. 9. 2026 13:23 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -57,27 +57,28 @@ Aktualizované: 1. 9. 2026 12:37 CEST
 23. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 24. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 1. 9. 2026 12:37 CEST — LATEST
-Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Práca za rohom; Kariera.sk/Zoznam; Pretlak/StartupJobs tech-creative; Upwork/Freelancer freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
+## SOURCE AUDIT — 1. 9. 2026 13:23 CEST — LATEST
+Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Pretlak/StartupJobs tech-creative; Upwork/Freelancer freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **10 nezávislých source families**, z toho **9 mimo Profesia**.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky: 0.** `jobs-data.json` zostáva na **43 LIVE položkách**; timestamp feedu sa neposúva umelo.
 - **LIVE mix:** Profesia **20 / 43 = 46,5 %**, mimo Profesia **23 / 43 = 53,5 %**.
-- **Priame firemné careers:** Alza + Slovak Telekom reálne preverené. Alza **Technik automatizácie – Bernolákovo** je lokalitne vhodný a ponúka školenia, ale detail explicitne vyžaduje **vyhlášku §21** a ochotu pracovať v noci; preto hard-skill/schedule gate a bez LIVE promotion. Telekom čerstvé roly sú DevOps/hard-development-heavy; existujúci Magenta Experience Center ostáva LIVE.
-- **Upwork/Freelance:** nový **Virtual Assistant – Operations & Campaign Support** je Worldwide remote, ale 5–7 USD/h + strong written/spoken English + US working hours; **Virtual Assistant and Cold Caller** je 3–4 USD/h s vysokým phone-load; **WordPress & Shopify VA** má 8 h denne/6 dní za 100 USD fixed. Všetky zostali pod value/language/workload threshold. Ďalšie WooCommerce/WordPress build leady boli hard-dev alebo micro-budget.
-- **Profesia / LinkedIn / Worki / Brigada.sk / Práca za rohom / Kariera / Pretlak / StartupJobs:** reálne prehľadané, bez nového evidence-grade winnera.
-- **Reddit/WordPress komunity:** verejne indexované výsledky boli staršie, US-only alebo hard-development; bez nového konkrétneho Slovakia-eligible hiring leadu.
+- **Upwork:** nový **Virtual Assistant – Ongoing – Product Listing / Ecommerce Management** je Worldwide remote a obsahovo dobre sedí na produktové listingy, WooCommerce, inventory a customer communication, ale má iba **3–6 USD/h**, viac než 30 h/týždeň, **20–50 proposals** a klient len **134 USD spend**; neprešiel value/client-risk gate.
+- **Freelancer:** nový **E-commerce Virtual Assistant & Automation Expert** je remote a veľmi čerstvý, ale **2–8 USD/h**, povinné US Eastern business hours, telefonická podpora a strong spoken/written English sú mimo preferovaného profilu; bez LIVE promotion.
+- **Pretlak:** Powerlogy Marketing Specialist ostáva zaujímavý Bratislava/hybrid e-shop/WordPress/WooCommerce verification lead, ale veľmi dobrá angličtina je významný language gate.
+- **Profesia / LinkedIn / Worki / Brigada.sk / Kariera / StartupJobs:** reálne vyhľadané, bez nového evidence-grade winnera.
+- **Reddit/WordPress komunity:** verejná indexácia bez nového konkrétneho Slovakia-eligible hiring leadu.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny fiktívny hit. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
-- Existujúce 43 LIVE položky zostali zachované; žiadny fail-closed pokles ani strata kategórie nenastala.
+- Existujúcich 43 LIVE položiek zostalo zachovaných; žiadny fail-closed pokles ani strata kategórie nenastala.
 
 ### Run summary
-- Reálne skontrolované source families: **11**.
+- Reálne skontrolované source families: **10**.
 - Nové aktívne položky zapísané: **0**.
-- Významné pending kandidáty: **5**.
+- Významné pending kandidáty: **6**.
 - LIVE feed: **43 aktívnych položiek**.
 - Mix: **Profesia 46,5 % / mimo Profesia 53,5 %**.
 - `jobs-data.json.updatedAt` ostáva **1. 9. 2026 10:14:41 CEST** — bez umelej zmeny.
-- `source-audit.json.updatedAt` = **1. 9. 2026 12:37:52 CEST**.
+- `source-audit.json.updatedAt` = **1. 9. 2026 13:23:06 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -251,3 +252,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 159. **Circadian shift burden score** — samostatne penalizovať pravidelné nočné a extrémne skoré nástupy podľa frekvencie a trvania, nie iba generickým shift/weekend flagom; zlepší porovnanie part-time logistických rolí s dennou administratívou a technickou podporou.
 160. **Hard-skill training vs entry-qualification resolver** — rozlíšiť certifikácie, ktoré firma dodatočne zabezpečí, od tých, ktoré sú explicitne povinné už pri nástupe; zabráni falošne pozitívnemu promotion pri ponukách, kde marketing text sľubuje školenia, ale detail stále vyžaduje §21 alebo inú kvalifikáciu.
 161. **Workweek intensity value normalizer** — pri freelance/remote rolách prepočítať odmenu vzhľadom na 6-dňový týždeň, povinné časové okná, phone-load a skutočný počet hodín; rýchlo odfiltruje nízko platené VA zadania, ktoré nominálne vyzerajú remote-friendly, ale majú slabú efektívnu hodnotu.
+162. **E-commerce channel transferability mapper** — mapovať prenositeľnosť doloženej praxe medzi WooCommerce, Shopify, eBay, Amazon a marketplace listingami bez automatického tvrdenia znalosti neznámej platformy; zvýši coverage vhodných e-commerce rolí a zachová claim-safe ranking.
+163. **Fresh-post client-history risk trigger** — pri veľmi čerstvých marketplace leadoch kombinovať nízky počet proposals s klientským spendom, hire históriou a scope/pay pomerom; zabráni preceňovaniu čerstvej ponuky len preto, že je nová a má zatiaľ málo konkurencie.
