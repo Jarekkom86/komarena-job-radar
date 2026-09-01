@@ -51,8 +51,8 @@
     "jobsData":"unchanged-fail-closed-no-new-promotion-this-run",
     "jobsDataNonProf":"unchanged-locked",
     "sourceAudit":"updated-after-real-source-check",
-    "jobSources":"pending-update-this-run",
-    "master":"pending-update-this-run",
+    "jobSources":"updated-after-real-source-check",
+    "master":"updated-with-audit-and-two-new-backlog-items",
     "lockedFilesTouched":false,
     "note":"jobs-data.json ostáva na 44 validných LIVE položkách a updatedAt 2026-09-01T16:21:02+02:00. Nebol nájdený nový kandidát, ktorý by bezpečne prešiel hard gate + value gate + dedupe."
   }
