@@ -1,31 +1,32 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T19:37:07+02:00",
+  "updatedAt": "2026-09-01T20:15:05+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
-    "significantPendingCandidates": 10,
+    "significantPendingCandidates": 11,
     "significantlyChangedPriorityJobs": 0,
     "jobsDataContentUpdatedAt": "2026-09-01T16:21:02+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "stale",
     "liveFeedCount": 44,
-    "note": "Audit 1.9.2026 19:37 CEST reálne preveril 11 source families. Hilti Implementation & Service Specialist bol znovu potvrdený priamo na Hilti Careers aj cez čerstvý LinkedIn repost, ale už je v LIVE feede, preto sa nepridával duplicitne. Čerstvý Electrolux Professional Customer Care/After-Sales Technical Support Bratislava bol nájdený, ale povinná fluent English a vyššia technická kvalifikácia/prax ho vyradili z promotion-grade pre tento profil. Upwork priniesol nové WordPress buildy, no sú skôr hard-dev/design alebo nízkej hodnoty. Facebook verejná indexácia zostáva bez overeného konkrétneho hitu."
+    "note": "Audit 1.9.2026 20:15 CEST reálne preveril hlavné BA/okolie/remote source families. Nový prioritný kandidát ČSOB Operátor IT Service Desk-u (O5350972) bol publikovaný dnes a canonical Profesia detail potvrdzuje Bratislavu s občasným home office, vhodnosť aj pre absolventov, L1 podporu cez telefón/Remote Desktop, ServiceNow, Windows/Android, tlač, Outlook, mobily a účty/prístupy. Požadovaná AJ je iba mierne pokročilá; IT vzdelanie a predchádzajúci helpdesk sú výhodou, nie podmienkou. Feed nebol umelo označený za čerstvý: jobs-data.json zostáva na 16:21:02 CEST, preto je SLA stale."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"BA/okolie e-shop, technická podpora, administratíva, kuriér a logistika reálne vyhľadané; bez nového promotion-grade delta nad LIVE setom."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":1,"added":0,"note":"Hilti Implementation & Service Specialist je stále aktívny na canonical Hilti Careers, ale už je LIVE; nepridávať duplicitne."},
-    {"name":"LinkedIn Jobs / company posts","family":"linkedin","status":"ok","hits":2,"added":0,"note":"Hilti čerstvý repost potvrdil existujúci LIVE job. Electrolux Professional Customer Care Specialist je čerstvý BA hit, ale fluent English + vyššia technická kvalifikácia/prax = language/qualification reject."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA technická podpora/admin/sklad/rozvoz discovery reálne spustená; bez nového vhodného hitu."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"note":"BA brigády reálne vyhľadané; bez prioritného kandidáta nad LIVE set."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":2,"added":0,"note":"Aktuálna administratíva/technická podpora pre BA reálne preverená; dostupné výsledky boli staré/neaktívne, mimo kvalifikácie alebo pod value gate."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":1,"added":0,"note":"Electrolux After-Sales Technical Support Bratislava overený, ale mirror/rovnaká rola a zároveň výrazný language/qualification mismatch; nepridávať."},
-    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":1,"added":0,"note":"Powerlogy ostáva známy verification kandidát; bez nového promotion-grade delta v tomto behu."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":4,"added":0,"note":"Nové WordPress buildy a web projekty reálne skontrolované; väčšina je hard-dev/design scope alebo slabý budget, bez lepšieho support/admin kandidáta než existujúci LIVE/queue."},
-    {"name":"Verejné komunity / Reddit / WordPress","family":"communities","status":"limited","hits":0,"added":0,"note":"Verejná indexácia priniesla prevažne [FOR HIRE] ponuky freelancerov, nie konkrétne hiring dopyty vhodné na ingest."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits; žiadny konkrétny verejne overiteľný post s priamym linkom nebol nájdený. Autentizovaný Nexus/local ingestion ostáva backlog a nebol spustený."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":3,"added":0,"note":"Reálne preverené najnovšie BA technická podpora/helpdesk/admin/kuriér výsledky. Nový promotion-ready kandidát: ČSOB Operátor IT Service Desk-u, O5350972. ING IT Application Specialist je čerstvý, ale pravdepodobný vyšší language/enterprise skill gate; nepromovaný bez detailného proofu."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"note":"Hilti/NAY a priame career indexy preverené; bez novej canonical promotion-grade delty nad existujúci LIVE set."},
+    {"name":"LinkedIn Jobs / company posts","family":"linkedin","status":"checked","hits":0,"added":0,"note":"BA technical/customer support discovery spustená; bez nového overiteľného prioritného hitu lepšieho než ČSOB/aktuálny LIVE set."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA technická podpora/admin/sklad/rozvoz discovery reálne spustená; bez nového promotion-grade delta."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"note":"Aktuálne BA brigády preverené v rámci sweepu; bez prioritného kandidáta nad LIVE set."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"note":"BA technická podpora/admin discovery reálne spustená; bez nového vhodného canonical hitu."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"note":"Bez novej prioritnej delty v dostupnej verejnej indexácii."},
+    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Bez nového promotion-grade kandidáta nad existujúci AI/e-commerce LIVE set."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":8,"added":0,"note":"Čerstvé WordPress/WooCommerce/VA výsledky preverené. Nové build/design projekty sú prevažne hard-dev/design alebo slabý budget; Website & SEO Management ostáva známy verification kandidát. Social/VA výsledky boli buď country-restricted, nízko platené alebo vyžadovali silnú English/social content prax."},
+    {"name":"Verejné komunity / Reddit / WordPress","family":"communities","status":"limited","hits":0,"added":0,"note":"Bez konkrétneho verejne overiteľného hiring dopytu vhodného na ingest."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits; autentizovaný Nexus/local ingestion nebol v tomto behu dostupný."}
   ],
   "verificationQueue": [
+    {"id":"profesia-csob-it-service-desk-5350972","title":"ČSOB Operátor IT Service Desk-u (M/Ž)","company":"ČSOB Finančná skupina","status":"promotion-ready","provisionalScore":90,"pay":"od 1 200 EUR/mes. + variabilná zložka a benefity","reason":"Čerstvý 1.9.2026 BA hybrid L1 support; vhodné aj pre absolventov, Windows/Android/MS Office, ServiceNow, Remote Desktop; AJ mierne pokročilá. Predchádzajúci helpdesk/IT vzdelanie sú iba výhodou."},
     {"id":"powerlogy-marketing-specialist-20260827","title":"Marketing Specialist – e-shop, obsah, WordPress/WooCommerce","company":"Powerlogy","status":"verification","provisionalScore":84,"reason":"Silný fit, ale veľmi dobrá AJ je hard risk."},
     {"id":"nay-elektrospecialista-danubia-91416","title":"Elektrošpecialista/tka pre NAY Bratislava Danubia","company":"NAY a.s.","status":"promotion-ready","provisionalScore":88,"pay":"priemer 1 550 EUR/mes.","reason":"Priamy firemný detail bol v predchádzajúcich behoch aktívny; stále čaká na bezpečný dedupe/promotion check."},
     {"id":"form-factory-it-support-20260825","title":"IT Support Specialist (m/ž)","company":"Form Factory Slovakia s.r.o.","status":"verification","provisionalScore":88,"reason":"Treba canonical BA apply route a jazyk/experience proof."},
@@ -39,14 +40,14 @@
   ],
   "liveMix": {"liveFeedCount":44,"profesiaCount":20,"profesiaPct":45.5,"nonProfesiaCount":24,"nonProfesiaPct":54.5},
   "runBacklogAdditions": [
-    {"name":"Fresh-repost duplicate suppressor","problem":"Čerstvý LinkedIn repost môže vyzerať ako nový job, hoci canonical company role už je LIVE.","benefit":"Znižuje falošné notifikácie a duplicitné ingestovanie pri opakovanom repostovaní tej istej pozície."},
-    {"name":"Qualification-hardness evidence split","problem":"Joby často miešajú povinné vzdelanie/prax s preferovanými požiadavkami v rôznych zdrojoch.","benefit":"Oddelí hard qualification gate od nice-to-have a zlepší rozhodovanie pri technických/support rolách."}
+    {"name":"Safe full-feed transform writer","problem":"jobs-data.json je veľký a writer vyžaduje kompletný replacement; bez deterministického parse/transform/validate roundtripu je risk poškodenia feedu.","benefit":"Umožní bezpečne promovať overené kandidáty bez ručného skladania celého JSON súboru a bez umelého posúvania updatedAt."},
+    {"name":"Fresh service-desk matcher","problem":"Čerstvé L1/helpdesk ponuky sa môžu objaviť len pár hodín po poslednom obsahu feedu.","benefit":"Prioritizuje absolvent-friendly Windows/Remote Desktop/ServiceNow roly a znižuje oneskorenie ingestu."}
   ],
   "writeStatus": {
-    "jobsData":"unchanged-no-new-promotion-grade-job",
-    "jobsDataNonProf":"unchanged",
+    "jobsData":"blocked-safe-full-file-replacement-after-priority-delta",
+    "jobsDataNonProf":"unchanged-no-nonprof-promotion",
     "sourceAudit":"updated-after-real-source-check",
     "lockedFilesTouched":false,
-    "note":"jobs-data.json zostal na 44 validných LIVE položkách. Hilti je už LIVE; Electrolux bol vyradený pre fluent English/qualification mismatch. Dve nové backlog zlepšenia sú zachytené v audite; MASTER full-file zápis nebol vykonaný kvôli truncovanému načítaniu veľkého súboru."
+    "note":"jobs-data.json zostal na 44 validných LIVE položkách s updatedAt 2026-09-01T16:21:02+02:00. Nový ČSOB kandidát je promotion-ready, ale bez bezpečného deterministického full-file parse/transform/validate/write kroku nebol LIVE súbor ručne prepisovaný. Posledné validné dáta ostali zachované fail-closed a source-audit explicitne eviduje stale SLA aj nový kandidát." 
   }
 }
