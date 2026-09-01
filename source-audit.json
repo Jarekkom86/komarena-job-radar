@@ -1,48 +1,47 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T10:28:33+02:00",
+  "updatedAt": "2026-09-01T11:14:30+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
-    "significantPendingCandidates": 4,
+    "significantPendingCandidates": 5,
     "significantlyChangedPriorityJobs": 0,
     "jobsDataContentUpdatedAt": "2026-09-01T10:14:41+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "fresh-audit-no-feed-delta",
     "liveFeedCount": 43,
     "liveSourceMix": {"profesia":20,"nonProfesia":23,"profesiaPct":46.5,"nonProfesiaPct":53.5},
-    "note": "Audit 1.9.2026 10:28 CEST reálne preveril 11 source families. Nenašiel sa nový kandidát, ktorý by po lokalitnom, jazykovom, skill, value a dedupe gate prekonal aktuálny LIVE/pending set. jobs-data.json preto zostal bez umelej obsahovej alebo timestamp zmeny na 43 LIVE položkách. Upwork priniesol nové Worldwide remote e-commerce/VA výsledky, ale jeden bol iba 50 USD fixed-price a ďalšie boli hard-development alebo silnejšie skill/language fit; neboli promovované. Facebook verejná indexácia zostáva 0 verified hits / limited."
+    "note": "Audit 1.9.2026 11:14 CEST reálne preveril 11 source families. Nenašiel sa nový kandidát, ktorý by po lokalitnom, jazykovom, skill, value a dedupe gate prekonal aktuálny LIVE set, preto jobs-data.json ostáva bez umelej timestamp zmeny. Nový near-fit Neuroimunologický ústav SAV – Office manažér/ka (Bratislava, od 1 800 EUR) bol zaradený iba do verification queue: silná administratíva/archív/databázy, ale stredne pokročilá AJ a požadovaná administratívna prax znižujú istotu. Lachim Trans GLS Malacky je naďalej čerstvo indexovaný za od 1 900 EUR, bez významnej zmeny podmienok. Facebook verejná indexácia ostáva limited / 0 verified hits."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Čerstvý BA/okolie sweep pre WordPress/e-commerce, technický support, administratívu, vodiča B a logistiku bol vykonaný; bez nového promotion-grade detailu nad LIVE/pending setom."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Priame kariérne zdroje pre BA tech/support/e-commerce boli prehľadané; bez nového vhodného canonical kandidáta."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"note":"Verejná BA/remote discovery prehľadaná; bez nového konkrétneho promotion-grade hitu. Verejná indexácia je čiastočná."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":2,"added":0,"note":"BA/okolie sweep pre WordPress/e-commerce, technický support, administratívu, vodiča B a logistiku prebehol. Nový SAV office-manager near-fit neprešiel priamo do LIVE pre B1 AJ + prax gate; Lachim Trans ostáva bez významnej zmeny."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Priame kariérne zdroje pre BA tech/support/e-commerce prehľadané; bez nového vhodného canonical kandidáta."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"note":"Verejná BA/remote discovery prehľadaná; bez nového promotion-grade hitu. Verejná indexácia je čiastočná."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA administratíva/technická podpora/sklad/rozvoz discovery prehľadaná; bez nového vhodného detailu nad aktuálnym LIVE feedom."},
     {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"note":"BA administratíva/kuriér/vodič brigádnický sweep prebehol; bez vhodného nového evidence-grade hitu."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"note":"Bratislavský kraj a priľahlé lokality preverené; bez nového canonical winnera. Zdroj naďalej slúži aj na mirror/cross-check, nie ako nezávislý zdroj pre Profesia mirrory."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":3,"added":0,"note":"Bratislavský kraj preverený. Potvrdený čerstvý Lachim Trans GLS Malacky od 1 900 EUR a nový SAV Office manažér/ka od 1 800 EUR; SAV ostáva verification, nie LIVE. Hellmann je už v aktuálnom feed/predchádzajúcom audite."},
     {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"note":"BA support/admin/e-shop discovery prehľadaná; bez nového kvalifikovaného detailu."},
     {"name":"Pretlak / StartupJobs / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"WordPress/WooCommerce/e-commerce/support/AI non-hard-dev discovery prebehla; bez nového jasne Slovakia-eligible winnera."},
-    {"name":"Upwork / Freelancer / freelance","family":"freelance","status":"ok","hits":4,"added":0,"pending":2,"rejected":{"language":1,"inactive":0,"duplicate":1,"location":0,"hardSkill":1,"other":1},"note":"Worldwide remote discovery našla nové e-commerce/VA a WordPress výsledky. Multi-platform eCommerce VA za 50 USD fixed-price bol vyradený cez value gate; WordPress build/developer výsledky cez hard-skill gate. Website & SEO Management 2026 zostáva verification pre tool/proof requirements."},
-    {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":1,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":1,"hardSkill":0,"other":0},"note":"Verejne indexovaný hiring post pre WordPress bol US-only, preto reject-distance/remote-country gate. Ďalšie výsledky boli FOR HIRE, nie dopyty."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Verejné skupiny boli vyhľadané, ale bez konkrétneho verejne overiteľného hiring postu s priamym linkom. Autentizovaný Nexus/local ingestion zostáva backlog a automat ho nespúšťa."}
+    {"name":"Upwork / Freelancer / freelance","family":"freelance","status":"ok","hits":3,"added":0,"pending":2,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0,"hardSkill":1,"other":1},"note":"Worldwide remote sweep znovu našiel WooCommerce/e-commerce VA výsledky. Product Listing/Ecommerce Management za 3–6 USD/h pri >30 h/týždeň a 20–50 proposals ostáva pod value floor; ďalšie výsledky sú hard-dev alebo slabšie než existujúce pending leady."},
+    {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":0,"added":0,"note":"Verejne indexované výsledky neukázali nový konkrétny Slovakia-eligible hiring lead nad existujúcim setom."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Verejná indexácia bez konkrétneho overiteľného hiring postu s priamym linkom; autentizovaný Nexus/local ingestion zostáva backlog."}
   ],
   "verificationQueue": [
     {"id":"upwork-website-seo-management-2026-2093603919086755488","title":"Website & SEO Management 2026","company":"Upwork klient – eCommerce/WooCommerce store","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":90,"pay":"15–30 USD/h","status":"verification","reason":"Worldwide remote a silný WooCommerce/product-admin fit, ale pred promotion treba preukázať konkrétnu WooCommerce prax, Helium 10/Seller Central/Search Console/Yoast alebo Rank Math a schopnosť pripraviť Loom audit."},
     {"id":"upwork-tech-savvy-wordpress-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":86,"pay":"6–10 USD/h","status":"verification","reason":"Worldwide remote, 5–10 h/týždeň a silný WordPress/Elementor fit; nižšia hodinovka a jazyk/timezone friction."},
     {"id":"profesia-eletechnik-product-application-technician-5350584","title":"Product Application Technician","company":"ELETECHNIK s.r.o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":84,"pay":"od 1 300 EUR/mes. + bonusy 2x ročne","status":"verification","reason":"Senec technical/automation lead; pred promotion treba uzavrieť qualification/value proof."},
-    {"id":"kariera-grafton-tech-support-1540141","title":"Technická podpora (Ref. č.: 1003748)","company":"Grafton Slovakia s.r.o.","source":"Kariera.sk","locationEligibility":"ba-area","provisionalScore":87,"pay":"1 400–1 700 EUR/mes.","status":"verification","reason":"Technicko-terénny fit; pred promotion ostáva riziko fyzickej záťaže a celoslovenského cestovania."}
+    {"id":"kariera-grafton-tech-support-1540141","title":"Technická podpora (Ref. č.: 1003748)","company":"Grafton Slovakia s.r.o.","source":"Kariera.sk","locationEligibility":"ba-area","provisionalScore":87,"pay":"1 400–1 700 EUR/mes.","status":"verification","reason":"Technicko-terénny fit; pred promotion ostáva riziko fyzickej záťaže a celoslovenského cestovania."},
+    {"id":"profesia-sav-office-manager-20260828","title":"Office manažér/office manažérka","company":"Neuroimunologický ústav SAV","source":"Profesia / Práca za rohom mirror","locationEligibility":"ba-area","provisionalScore":86,"pay":"od 1 800 EUR/mes.","status":"verification","reason":"Bratislava, flexibilný pracovný čas a silný admin fit: evidencia zmlúv, archív, databázy, dokumentácia a podpora tímu. Pred LIVE promotion treba uzavrieť B1 AJ a požadovanú administratívnu prax/MS Office gate."}
   ],
   "developmentBacklogAdditions": [
-    {"id":"marketplace-value-floor-by-scope","title":"Marketplace value floor by scope","reason":"Pre fixed-price a hourly marketplace leady nastaviť minimálny value floor podľa rozsahu, aby lacné komplexné e-commerce/VA zadania nevytláčali kvalitnejšie leady a neplytvali application kapacitou."},
-    {"id":"remote-country-proof-cache","title":"Remote-country proof cache","reason":"Ukladať dôkaz, či Worldwide/Remote skutočne povoľuje Slovensko, a znovu ho používať pri repostoch/rovnakých klientoch; rýchlejšie vyradí US-only/EU-country-limited ponuky bez opakovaného manuálneho overovania."}
+    {"id":"marketplace-value-floor-by-scope","title":"Marketplace value floor by scope","reason":"Pre fixed-price a hourly marketplace leady nastaviť minimálny value floor podľa rozsahu."},
+    {"id":"remote-country-proof-cache","title":"Remote-country proof cache","reason":"Ukladať dôkaz, či Worldwide/Remote skutočne povoľuje Slovensko, a znovu ho používať pri repostoch/rovnakých klientoch."}
   ],
   "writeStatus": {
     "jobsData":"unchanged-no-qualified-feed-delta",
     "jobsDataNonProf":"unchanged-locked-bootstrap",
     "sourceAudit":"updated-after-real-11-family-source-check",
-    "jobSources":"updated-same-run",
-    "master":"updated-same-run-with-two-new-backlog-items",
     "lockedFilesTouched":false,
-    "note":"LIVE feed ostáva 43 položiek. Žiadny nový kandidát neprešiel všetkými hard gates a minimum-value/qualification threshold, preto jobs-data.json nebolo potrebné meniť."
+    "note":"LIVE feed ostáva 43 položiek. Žiadny nový kandidát neprešiel všetkými hard gates a minimum-value/qualification threshold; jobs-data.json.updatedAt nebolo umelo posunuté."
   }
 }
