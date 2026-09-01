@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T01:30:12+02:00",
+  "updatedAt": "2026-09-01T02:11:24+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
     "significantPendingCandidates": 1,
-    "significantlyChangedPriorityJobs": 1,
+    "significantlyChangedPriorityJobs": 0,
     "significantlyChangedExistingJobs": 0,
-    "duplicateOrExisting": 2,
-    "rejectedAsWeakOrLowValue": 5,
+    "duplicateOrExisting": 3,
+    "rejectedAsWeakOrLowValue": 6,
     "rejectedByFreshnessOrEvidence": 4,
-    "rejectedByLanguageOrSkill": 4,
+    "rejectedByLanguageOrSkill": 2,
     "rejectedByLocation": 0,
     "quarantinedUnknownLocation": 0,
     "quarantinedUnknownLanguage": 0,
@@ -20,20 +20,20 @@
     "freshnessStatus": "audit-fresh-promotion-blocked-by-safe-write",
     "liveFeedCount": 41,
     "liveSourceMix": {"profesia":18,"nonProfesia":23,"profesiaPct":43.9,"nonProfesiaPct":56.1},
-    "note": "Audit 1.9.2026 01:30 CEST reálne prehľadal 11 source families. Najvýznamnejšia zmena je Upwork Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support: Worldwide remote, 5–10 h/týždeň, 6+ mesiacov, 6–10 USD/h, menej než 5 proposals, 0 interviewing, self-directed schedule, US Eastern overlap iba preferred, nie required, paid test a deadline 6.9.2026. Ide o silný WordPress/Elementor non-hard-dev fit a kandidát je pripravený na LIVE promotion. jobs-data.json sa však v tomto behu bezpečne nezapísal, pretože konektor vyžaduje kompletný replacement veľkého súboru a dostupný full-file read je truncovaný; FAIL-CLOSED zabránil riziku straty existujúcich 41 položiek. Facebook zostáva 0 verified hits."
+    "note": "Audit 1.9.2026 02:11 CEST reálne prehľadal 11 source families. Bez nového alebo významne zmeneného prioritného winnera. Upwork Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support zostáva Worldwide remote, 5–10 h/týždeň, 6+ mesiacov, 6–10 USD/h, <5 proposals, 0 interviewing, self-directed schedule a US Eastern overlap iba preferred; stále je promotion-ready. Nové/čerstvo indexované Upwork leady boli slabšie: Virtual Assistant – Product Listing/Ecommerce Management 3–6 USD/h pri 20–50 proposals; AI-Powered Online Business Growth VA 3–5 USD/h a už 1 hire; E-commerce VA Product Listings/Support 7–8 USD/h pri 20–50 proposals a 1 hire. jobs-data.json sa nemenil, pretože nebolo možné bezpečne vykonať promotion pending kandidáta bez kompletného netruncovaného full-file readu; posledných 41 validných položiek ostalo zachovaných FAIL-CLOSED. Facebook zostáva 0 verified hits."
   },
   "sources": [
     {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"duplicateOrExisting":0,"note":"BA/remote WordPress, e-shop, technické, admin, driver a sklad discovery reálne vyhľadané; bez nového evidence-grade promotion hitu."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"duplicateOrExisting":0,"note":"Priame BA/Slovakia careers discovery reálne preverené cez verejný index (vrátane Telekom/Alza lane); bez nového kvalifikovaného detailu."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":5,"added":0,"rejected":5,"changed":0,"duplicateOrExisting":0,"note":"Remote technical/customer support discovery reálne vyhľadané. SupportYourApp hity vyžadujú B2/C1 alebo fluent English a časť je staršia; neprešli language/freshness gateom."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"duplicateOrExisting":0,"note":"Priame BA/Slovakia careers discovery reálne preverené vrátane Alza/Telekom lane; bez nového kvalifikovaného detailu."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"duplicateOrExisting":0,"note":"Remote technical/customer support discovery preverené; bez nového kandidáta, ktorý by prešiel aktuálnym language/value gateom."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"duplicateOrExisting":0,"note":"BA administratíva/technická podpora/vodič discovery reálne vyhľadané; bez nového kvalifikovaného hitu."},
     {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"duplicateOrExisting":0,"note":"BA administratíva/kuriér/sklad discovery reálne vyhľadaná; bez nového evidence-grade hitu."},
-    {"name":"Kariera.sk / lokálne jobboardy","family":"local-jobboards","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"duplicateOrExisting":0,"note":"Kariera/Zoznam lokálny BA discovery reálne vyhľadaný; bez nového kvalifikovaného detailu."},
+    {"name":"Kariera.sk / lokálne jobboardy","family":"local-jobboards","status":"checked","hits":1,"added":0,"rejected":1,"changed":0,"duplicateOrExisting":0,"note":"Kariera/Zoznam lokálny BA discovery reálne preverený; indexované výsledky bez nového prioritného BA kandidáta."},
     {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"duplicateOrExisting":0,"note":"Tech/creative WordPress/WooCommerce lane reálne vyhľadaná; bez nového Slovakia-eligible winnera."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":8,"added":0,"rejected":5,"changed":1,"duplicateOrExisting":2,"note":"Worldwide remote WordPress/WooCommerce/VA discovery reálne preverené. Tech-Savvy VA má teraz <5 proposals a je silný promotion kandidát. Website & SEO Management 2026 ostáva 15–30 USD/h, ale má vyššiu skill/application friction. WooCommerce Assistant 5–10 USD/h vyžaduje väčšinu US Mountain Time workday a preukázanú WooCommerce prax. Slabé fixed-price/microbudget a fluent-English hity vyradené."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":10,"added":0,"rejected":6,"changed":0,"duplicateOrExisting":3,"note":"Worldwide remote WordPress/WooCommerce/VA discovery reálne preverené. Tech-Savvy VA ostáva <5 proposals, 0 interviewing a promotion-ready. Nové leady: Electronics Store Product Listing/Ecommerce VA 3–6 USD/h pri 20–50 proposals; AI Business Growth VA 3–5 USD/h, 1 hire; E-commerce Product Listings/Support 7–8 USD/h pri 20–50 proposals, 1 hire. WooCommerce/Xero VA 10–15 USD/h má 15–20 proposals, 1 hire a vyššiu experience friction. Žiadny nový winner neprekonal pending Tech-Savvy VA."},
     {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"duplicateOrExisting":0,"note":"Verejne indexované Reddit/WordPress/WooCommerce hiring dotazy reálne vyhľadané; bez konkrétneho evidence-grade hiring postu."},
     {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"changed":0,"duplicateOrExisting":0,"verifiedHits":0,"note":"Práca/brigády Bratislava a WordPress/WooCommerce SK/CZ verejne vyhľadané; 0 verejne overiteľných konkrétnych hiring postov s priamym linkom. Autentizovaný Nexus/local ingestion nebol spustený."},
-    {"name":"Služby zamestnanosti / ďalší verejný SK lane","family":"government-other-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"duplicateOrExisting":0,"note":"Doplnkový slovenský verejný discovery lane zahrnutý v tomto behu; bez kvalifikovaného nového kandidáta."}
+    {"name":"Služby zamestnanosti / ďalší verejný SK lane","family":"government-other-sk","status":"checked","hits":0,"added":0,"rejected":0,"changed":0,"duplicateOrExisting":0,"note":"Portál Služby zamestnanosti a doplnkový slovenský verejný lane reálne preverený; bez kvalifikovaného nového kandidáta."}
   ],
   "verificationQueue": [
     {"id":"upwork-tech-savvy-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Tech-Savvy-Virtual-Assistant-Wordpress-Website-Management-Digital-Marketing-Support_~022094223212146933823/","locationEligibility":"remote-ok","locationReason":"Upwork uvádza Worldwide a Remote Job; práca je self-directed, US Eastern overlap je preferred, nie required.","languageEligibility":"moderate-written-primary","provisionalScore":91,"applicationFriction":"medium","pay":"6–10 USD/h","hours":"5–10 h/týždeň na štart, room to grow","duration":"6+ mesiacov","competition":"<5 proposals; 0 interviewing; 0 invites","clientSignal":"US client, member since 2018, 7.2k USD spend, 54 hires","deadline":"2026-09-06","reason":"Veľmi silný WordPress/Elementor maintenance a digital-support fit; AI tools vítané, training videos a written instructions, paid test. Nízka aktuálna konkurencia zvyšuje urgentnosť reakcie.","missingEvidence":["reálny objem live English komunikácie pri onboarding/interview"],"nextVerification":"Promotion-ready; zapísať do jobs-data.json hneď po bezpečnom full-file write path."},
@@ -48,7 +48,7 @@
     "jobsData":"blocked-safe-full-replacement-required; preserved-fail-closed",
     "jobsDataNonProf":"locked-preserved",
     "sourceAudit":"updated-after-real-11-family-check",
-    "jobSources":"pending-update-this-run",
+    "jobSources":"unchanged",
     "master":"backlog-pending-safe-sync",
     "lockedFilesTouched":false,
     "note":"Žiadny zamknutý UI/renderer/baseline/bootstrap súbor nebol zmenený. Promotion kandidát zostáva v queue iba kvôli bezpečnostnému write blockeru, nie kvôli kvalite ponuky."
