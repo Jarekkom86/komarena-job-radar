@@ -40,8 +40,8 @@
     "jobsData":"unchanged-no-qualified-feed-delta",
     "jobsDataNonProf":"unchanged-locked-bootstrap",
     "sourceAudit":"updated-after-real-11-family-source-check",
-    "jobSources":"pending-same-run-update",
-    "master":"pending-safe-update-or-fail-closed",
+    "jobSources":"updated-same-run",
+    "master":"updated-same-run-with-two-new-backlog-items",
     "lockedFilesTouched":false,
     "note":"LIVE feed ostáva 43 položiek. Žiadny nový kandidát neprešiel všetkými hard gates a minimum-value/qualification threshold, preto jobs-data.json nebolo potrebné meniť."
   }
