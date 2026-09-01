@@ -39,10 +39,10 @@
   ],
   "writeStatus": {
     "jobsData":"blocked-safe-transform-validation-bridge-not-available; preserved-fail-closed",
-    "jobSources":"pending-current-run-metadata-refresh",
-    "master":"pending-backlog-sync-if-safe-full-read-available",
+    "jobSources":"updated-current-run",
+    "master":"blocked-full-read-truncated; backlog additions preserved in source-audit for later safe sync",
     "sourceAudit":"updated-after-real-11-family-source-check",
     "lockedFilesTouched":false,
-    "note":"jobs-data.json ostal bez zmeny a bez posunu updatedAt. Zamknuté UI/renderery/baseline/bootstrap súbory neboli dotknuté."
+    "note":"jobs-data.json ostal bez zmeny a bez posunu updatedAt. job-sources.json bol aktualizovaný. MASTER sa neprepisoval, pretože runtime ho nedokáže načítať kompletne bez truncation. Zamknuté UI/renderery/baseline/bootstrap súbory neboli dotknuté."
   }
 }
