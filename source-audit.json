@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T23:18:00+02:00",
+  "updatedAt": "2026-09-01T23:25:27+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
@@ -10,20 +10,20 @@
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "stale",
     "liveFeedCount": 44,
-    "note": "Reálny audit 1.9.2026 večer preveril 11 source families podľa existujúceho Radaru. ČSOB Operátor IT Service Desk-u bol opäť potvrdený ako aktívny v Bratislave s občasným home office a ostáva promotion-ready. NAY Elektrošpecialista Bratislava Danubia je stále dostupný na canonical NAY detaile. Nový FEVA Slovakia skladník v Bratislave za 1 600–1 800 EUR v stabilnej jednozmennej prevádzke je čerstvý relevantný lead, ale bez načítaného canonical detailu ostáva verification. Upwork 2 000 USD WooCommerce build aj 500 USD Shoptimizer build sú stále aktívne; konkurencia a skill/portfolio gate ich držia vo verification. Verejná LinkedIn indexácia vydala čerstvý SoTalent logistics associate, ale analytická 1–2+ ročná prax a operations scope sú slabší fit. jobs-data.json zostal fail-closed na 44 validných LIVE položkách; updatedAt nebol posunutý, lebo dostupný GitHub writer vyžaduje kompletný replacement a v tomto behu nebol dostupný bezpečný parse/dedupe/validate roundtrip pre veľký feed."
+    "note": "Audit 1.9.2026 o 23:25 preveril 11 source families. Nebol nájdený nový promotion-grade kandidát nad aktuálny LIVE/verification set. Upwork priniesol čerstvé Worldwide remote WordPress/web hity, ale Blocksy build za 50 USD zlyhal na value gate a ďalší web build za 1 500 USD nemal dostatočný dôkaz WordPress/WooCommerce scope. Alza canonical kariéra potvrdila AlzaBox Špecialistu ako aktívny LIVE zdroj a ukázala aj Bernolákovo sklad/predák roly, ktoré sú slabšie voči existujúcim prioritám. Práca za rohom znovu ukázala Eric SK e-shop sezónnu podporu a Energohub, ktoré už patria do existujúceho radarového priestoru; Praha Bosch hybrid bol vyradený lokalitným gateom. Facebook verejná indexácia ostáva limited s 0 verified hits. jobs-data.json ostal fail-closed na 44 validných LIVE položkách a timestamp sa neposunul."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":14,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":3,"rejectedLocation":2,"note":"ČSOB Service Desk je dnes aktívny: Bratislava, občasný home office, od 1 200 EUR, absolvent-friendly L1 support. Čerstvý FEVA skladník: Bratislava, 1 600–1 800 EUR, jednozmenná prevádzka; verification do načítania canonical detailu. MediaTech AV systémový inžinier a ďalšie elektro role majú vyšší qualification gate."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Canonical NAY Elektrošpecialista/tka Bratislava Danubia ostáva verejne dostupný; plný úväzok a priemer 1 550 EUR/mes. Bez novej company-career delty nad existujúcu promotion-ready položku."},
-    {"name":"LinkedIn Jobs / company posts","family":"linkedin","status":"limited","hits":3,"added":0,"rejectedLanguage":0,"rejectedInactive":1,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Čerstvý SoTalent Operational Performance & Logistics Associate v Bratislave bol verejne indexovaný približne hodinu pred auditom; vyžaduje 1–2+ roky a výraznejší analyticko-operations profil, preto neprešiel priority gate. Starší Staffino support detail už neprijíma žiadosti."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejectedLanguage":1,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Verejná discovery preverená. Výsledok International Courier and Logistics Specialist vyžaduje špecifické západoafrické jazyky/dialekty a je mimo hard fit gate. Bez novej promotion-grade delty."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":5,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":1,"note":"Čerstvé ponuky v Bratislave/Senci preverené: distribúcia, skladové balenie, recepcia a vodič detského vláčika. Bez kandidáta, ktorý by prekonal existujúce priority podľa odmeny, stability a profilu."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":8,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":2,"rejectedLocation":2,"note":"Bratislavská indexácia z 1.9. preverená. Triedič zásielok ostáva low-priority; nové sklady/brigády sú slabšie platené alebo fyzickejšie. Technik BTS/OPP za 2 000 EUR vyžaduje špecializovanú BOZP/PO kvalifikáciu."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":1,"note":"Verejná discovery našla čerstvé e-shop/back-office výsledky mimo Bratislavského regiónu; bez novej BA/remote promotion-grade delty."},
-    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"WordPress/WooCommerce a remote discovery preverená; bez nového verejne overiteľného kandidáta nad existujúcu queue."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":7,"added":0,"rejectedLanguage":0,"rejectedInactive":1,"rejectedDuplicate":2,"rejectedLocation":0,"note":"Need Basic WooCommerce Website ostáva Worldwide remote, 2 000 USD fixed-price, contract-to-hire, 50+ proposals a 5 interviewing. WooCommerce Website Builder Needed ostáva 500 USD, 20–50 proposals, 0 interviewing. Nový custom print shop build má nízky budget vzhľadom na customizer scope a už má hire; neprešiel value gate."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Fresh BA WordPress/WooCommerce, support, admin a vodič discovery bola spustená; bez nového verejne overiteľného promotion-grade detailu v tomto behu."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":2,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":2,"rejectedLocation":0,"note":"Alza canonical kariéra potvrdená: AlzaBox Špecialista Bratislava ostáva aktívny LIVE; Predák v sklade Bernolákovo je platovo a profilovo slabší než aktuálne priority."},
+    {"name":"LinkedIn Jobs / company posts","family":"linkedin","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Verejná LinkedIn indexácia bola prehľadaná pre Bratislava WordPress/WooCommerce/support; bez nového detailu s dostatočným evidence setom. Coverage limited bez loginu."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Bratislava admin/support/vodič discovery preverená; bez nového prioritného kandidáta."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Bratislava brigády preverené; bez kandidáta nad existujúci ranking a value gate."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Čerstvá Bratislava indexácia preverená; bez nového kandidáta vhodnejšieho než existujúci LIVE/verification set."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":4,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":2,"rejectedLocation":1,"note":"Dúbravka feed ukázal Eric SK Office asistent/ka e-shop & retail podporu, Energohub a ďalšie BA roly; Energohub už je LIVE pri TOP prioritách. Bosch Praha hybrid bol vyradený ako reject-distance."},
+    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Pretlak priniesol 3D Product Artist v Bratislave, ale povinné 3ds Max/Cinema4D, render workflow a CAD skúsenosti sú mimo kvalifikačného fitu."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":4,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Čerstvé Worldwide remote hity preverené. WordPress Blocksy/Greenshift build za 50 USD zlyhal na scope-to-pay gate; generic coaching web za 1 500 USD nemá dostatočne potvrdený WordPress/WooCommerce scope; Python/FastAPI/WooCommerce integrácia je hard-dev a bola penalizovaná."},
     {"name":"Verejné komunity / Reddit","family":"communities","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Verejná WordPress/WooCommerce hiring discovery preverená; bez konkrétneho čerstvého hiring dopytu s dostatočným evidence setom."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Verejne indexované BA jobs a WordPress/WooCommerce výsledky boli prehľadané; bez konkrétneho overiteľného hiring postu vhodného na ingest. Coverage ostáva čiastočná bez autentizovaného ingestionu."}
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Verejne indexované BA jobs a WordPress/WooCommerce skupiny prehľadané; 0 verified hits a žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog."}
   ],
   "verificationQueue": [
     {"id":"profesia-csob-it-service-desk-5350972","title":"ČSOB Operátor IT Service Desk-u (M/Ž)","company":"ČSOB Finančná skupina","status":"promotion-ready","provisionalScore":90,"pay":"od 1 200 EUR/mes. + variabilná zložka a benefity","locationEligibility":"ba-area","reason":"Profesia 1.9.2026 znovu potvrdila aktívny detail: Bratislava, občasný home office, L1 podpora, Remote Desktop, ServiceNow, Windows/Android, účty a prístupy; vhodné aj pre absolventov. AJ mierne pokročilá je fit riziko, nie hard blocker."},
@@ -44,15 +44,16 @@
   ],
   "liveMix": {"liveFeedCount":44,"profesiaCount":20,"profesiaPct":45.5,"nonProfesiaCount":24,"nonProfesiaPct":54.5},
   "developmentBacklogAddedThisRun": [
-    {"name":"Safe jobs-data roundtrip writer","reason":"Odstrániť opakovaný blocker: načítať celý jobs-data.json, parse JSON, deduplikovať podľa id/canonical URL, validovať schema a až potom urobiť kompletný replacement. Pri chybe nesmie meniť pôvodný feed."}
+    {"name":"Verification queue promotion SLA by fit tier","reason":"TOP promotion-ready položky s vysokým fitom nesmú zostať blokované rovnakým SLA ako low-priority verification. Zaviesť kratší promotion deadline pre score >=88 a dlhší pre slabšie kandidáty."},
+    {"name":"Scope-to-pay hard floor for freelance builds","reason":"Fixed-price web/WooCommerce zákazky automaticky prepočítať na odhadovaný rozsah stránok, customizácie, launchu a supportu; pod minimálnu efektívnu hodinovku ich držať mimo odporúčaných výsledkov bez ohľadu na keyword match."}
   ],
   "writeStatus": {
-    "jobsData":"unchanged-fail-closed-no-safe-full-file-roundtrip-this-run",
-    "jobsDataNonProf":"unchanged-no-nonprof-promotion-this-run",
+    "jobsData":"unchanged-fail-closed-no-new-promotion-this-run",
+    "jobsDataNonProf":"unchanged-locked",
     "sourceAudit":"updated-after-real-source-check",
-    "jobSources":"unchanged-this-run",
-    "master":"unchanged-this-run",
+    "jobSources":"pending-update-this-run",
+    "master":"pending-update-this-run",
     "lockedFilesTouched":false,
-    "note":"jobs-data.json ostáva na 44 validných LIVE položkách a updatedAt 2026-09-01T16:21:02+02:00. Timestamp nebol posunutý. ČSOB a NAY zostávajú promotion-ready; FEVA pribudol do verification. Posledné validné dáta boli zachované fail-closed."
+    "note":"jobs-data.json ostáva na 44 validných LIVE položkách a updatedAt 2026-09-01T16:21:02+02:00. Nebol nájdený nový kandidát, ktorý by bezpečne prešiel hard gate + value gate + dedupe."
   }
 }
