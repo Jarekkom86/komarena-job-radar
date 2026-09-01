@@ -1,46 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T07:23:14+02:00",
+  "updatedAt": "2026-09-01T08:11:51+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "newActiveJobs": 0,
     "significantPendingCandidates": 4,
-    "significantlyChangedPriorityJobs": 0,
+    "significantlyChangedPriorityJobs": 1,
     "jobsDataContentUpdatedAt": "2026-08-31T22:13:19+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "audit-fresh-content-feed-stale-safe-write-blocked",
     "liveFeedCount": 41,
     "liveSourceMix": {"profesia":18,"nonProfesia":23,"profesiaPct":43.9,"nonProfesiaPct":56.1},
-    "note": "Audit 1.9.2026 07:23 CEST reálne preveril 10 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Práca za rohom, Kariera.sk/Zoznam, Pretlak/tech-creative, Upwork/freelance, Reddit/WordPress komunity a verejne indexovaný Facebook. Lachim Trans GLS Malacky je stále aktívny a promotion-ready: Profesia ho pri tomto behu uvádzala medzi najnovšími ponukami pre Malacky, od 1 900 EUR/mes. a bez potreby CV. Nový Upwork WordPress/WooCommerce build za 83.87 USD je hard-development/value-low a nebol pridaný. Verejná Facebook indexácia neposkytla žiadny konkrétny overiteľný hiring post; 0 verified hits. Full Git blob read jobs-data.json je funkčný, ale automat nemá bezpečný lokálny transform/validate/write bridge, preto hlavný feed ostáva fail-closed bez posunu timestampu."
+    "note": "Audit 1.9.2026 08:11 CEST reálne preveril 10 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Práca za rohom, Kariera.sk/Zoznam, Pretlak/tech-creative, Upwork/freelance, komunity a verejnú indexáciu. Lachim Trans – Kuriér pre GLS depo Malacky bol čerstvo potvrdený na Profesia aj agregátoroch: Malacky, živnosť, nástup ihneď, od 1 900 EUR/mes., reagovanie bez CV; oproti staršiemu 1 700 EUR záznamu ide o významné zlepšenie odmeny a promotion-ready kandidáta. Nové Upwork discovery bolo prevažne developer-heavy, microbudget alebo s vysokou konkurenciou; Tech-Savvy WordPress VA ostáva relevantný, ale nie je nový LIVE winner. Full Git blob read jobs-data.json je funkčný a potvrdil 41 LIVE položiek, ale tento runtime stále nemá bezpečný lokálny parse/transform/validate/write bridge pre 50 kB replacement. jobs-data.json preto ostal fail-closed bez umelého posunu updatedAt."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":4,"added":0,"note":"Čerstvé BA/okolie discovery; Lachim Trans – Kuriér pre GLS depo Malacky je stále aktívny, od 1 900 EUR/mes., Malacky. Ďalšie nové výsledky neprekonali hard-skill/value gate."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Boels a ďalšie priame BA/company career lanes preverené; bez nového winnera nad existujúcimi LIVE prioritami."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"note":"Verejná BA e-commerce/support discovery bola prehľadaná; bez nového promotion-grade hitu. Verejná indexácia je čiastočná."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA technická podpora/admin/sklad/rozvoz discovery bez nového kandidáta nad existujúcim HEATING PRO."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":3,"added":0,"note":"Preverené BA a Malacky lanes. GLS Malacky potvrdený ako stále hľadaný; ďalšie čerstvé lokálne výsledky boli mimo cieľového rankingu alebo vyžadovali inú kvalifikáciu."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"note":"Bratislavský support/e-shop/admin lane reálne prehľadaný; bez nového promotion-grade výsledku."},
-    {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"WordPress/WooCommerce/AI non-hard-dev lane bez nového Slovakia-eligible winnera nad súčasnými LIVE položkami."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":5,"added":0,"pending":1,"rejected":{"hardSkill":2,"language":0,"duplicate":1,"location":0,"other":1,"microbudget":2},"note":"Preverené WordPress/WooCommerce/VA výsledky. Nový WordPress WooCommerce E-Commerce Developer je Worldwide remote, ale development-heavy a iba 83.87 USD fixed; eCommerce VA Shopify/WooCommerce za 10 USD fixed je microbudget. Existujúci WooCommerce/VA verification kandidáti ostávajú bez promotion zmeny."},
-    {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":0,"added":0,"note":"Verejne indexované WordPress hiring/community výsledky prehľadané; bez konkrétneho nového hiring dopytu vhodného na LIVE promotion."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Verejná indexácia WordPress Slovensko, WooCommerce SK+CZ a BA práca/brigády neposkytla konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog; automat ho nespúšťa."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":5,"added":0,"pending":1,"note":"Čerstvý BA/okolie sweep. Lachim Trans – Kuriér pre GLS depo Malacky potvrdený dnes medzi najnovšími vodičskými ponukami: od 1 900 EUR/mes., reagovanie bez CV. Ide o promotion-ready delta, ktorú blokuje iba bezpečný full-feed write krok."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"note":"Boels careers a existujúce priame BA/company lanes preverené; bez nového winnera nad súčasnými LIVE prioritami."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"note":"Verejná BA e-commerce/support/AI discovery prehľadaná; bez nového promotion-grade hitu. Verejná indexácia je čiastočná."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA technická podpora/admin/sklad/rozvoz discovery bez nového kandidáta nad existujúcimi LIVE položkami."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":4,"added":0,"note":"Malacky/BA lanes preverené. Lachim Trans GLS Malacky potvrdený ako dnešná aktívna ponuka od 1 900 EUR/mes.; ďalšie čerstvé výsledky neprešli ranking/qualification gate."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":2,"added":0,"note":"Bratislavský support/admin lane reálne prehľadaný; bez nového promotion-grade výsledku nad existujúcimi prioritami."},
+    {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"AI/automation/WordPress non-hard-dev lane bez nového Slovakia-eligible winnera."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":9,"added":0,"pending":1,"rejected":{"hardSkill":4,"language":1,"duplicate":2,"location":0,"other":1,"microbudget":3},"note":"Preverené čerstvé WordPress/WooCommerce/VA výsledky. Nové listingy boli prevažne developer-heavy alebo microbudget. Tech-Savvy WordPress VA zostáva relevantný long-term Worldwide remote kandidát, ale nie je nový promotion delta v tomto behu."},
+    {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":0,"added":0,"note":"Verejne indexované hiring/community výsledky bez konkrétneho nového vhodného dopytu."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"Bez konkrétneho overiteľného hiring postu s priamym linkom; autentizovaný Nexus/local ingestion zostáva mimo tohto runtime."}
   ],
   "verificationQueue": [
-    {"id":"profesia-lachim-trans-gls-malacky-20260901","title":"Kuriér pre GLS depo Malacky","company":"Lachim Trans s. r. o.","source":"Profesia / Práca za rohom mirror","locationEligibility":"ba-area","provisionalScore":91,"pay":"od 1 900 EUR/mes.","status":"promotion-ready-write-blocked","reason":"V tomto behu znovu potvrdený na Profesia medzi najnovšími ponukami pre Malacky; lokalita aj vodičský lane prechádzajú gateom. Promotion blokuje iba bezpečný full-feed transform/validate/write krok."},
-    {"id":"upwork-tech-savvy-wordpress-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":86,"pay":"6–10 USD/h","status":"verification-high-competition","reason":"Worldwide remote a silný WordPress/Elementor fit; posledný overený competition signal 20–50 proposals, preto už nie low-competition winner."},
+    {"id":"profesia-lachim-trans-gls-malacky-20260901","title":"Kuriér pre GLS depo Malacky","company":"Lachim Trans s. r. o.","source":"Profesia / Práca za rohom / 8h mirror","locationEligibility":"ba-area","provisionalScore":91,"pay":"od 1 900 EUR/mes.","status":"promotion-ready-write-blocked","reason":"Dnes znovu potvrdený na Profesia medzi najnovšími ponukami pre Malacky a na ďalších agregátoroch; živnosť, nástup ihneď, reagovanie bez CV. Aktuálna odmena 1 900 EUR je vyššia než starší 1 700 EUR záznam. Promotion blokuje iba bezpečný full-feed transform/validate/write krok."},
+    {"id":"upwork-tech-savvy-wordpress-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":86,"pay":"6–10 USD/h","status":"verification","reason":"Worldwide remote, 5–10 h/týždeň a silný WordPress/Elementor fit; stále vhodné na manuálnu reakciu, ale nejde o nový promotion delta tohto behu."},
     {"id":"profesia-eletechnik-product-application-technician-5350584","title":"Product Application Technician","company":"ELETECHNIK s.r.o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":84,"pay":"od 1 300 EUR/mes. + bonusy 2x ročne","status":"verification","reason":"Senec technical/automation lead; pred promotion treba uzavrieť qualification/value proof."},
     {"id":"kariera-grafton-tech-support-1540141","title":"Technická podpora (Ref. č.: 1003748)","company":"Grafton Slovakia s.r.o.","source":"Kariera.sk","locationEligibility":"ba-area","provisionalScore":87,"pay":"1 400–1 700 EUR/mes.","status":"verification","reason":"Technicko-terénny fit; pred promotion ostáva riziko fyzickej záťaže a celoslovenského cestovania."}
   ],
   "developmentBacklogAdditions": [
-    {"id":"promotion-write-integrity-checksum","title":"Promotion write integrity checksum","reason":"Pred každým full-feed replacementom overiť pre/post počet položiek, množinu stabilných ID, kategórie, JSON schema a SHA; zápis povoliť iba pri nulovej neočakávanej strate. Odstráni opakovaný large-JSON blocker bez oslabenia FAIL-CLOSED."},
-    {"id":"pending-to-live-atomic-promotion-queue","title":"Pending-to-LIVE atomic promotion queue","reason":"Promotion-ready kandidáta najprv zapísať do staging objektu s location/dedupe/schema dôkazmi a až po validačnom PASS ho atómovo pripojiť do LIVE feedu. Zníži riziko poškodenia hlavného JSON a zrýchli pridávanie silných leadov."}
+    {"id":"promotion-write-integrity-checksum","title":"Promotion write integrity checksum","reason":"Pred každým full-feed replacementom overiť pre/post počet položiek, množinu stabilných ID, kategórie, JSON schema a SHA; zápis povoliť iba pri nulovej neočakávanej strate."},
+    {"id":"pending-to-live-atomic-promotion-queue","title":"Pending-to-LIVE atomic promotion queue","reason":"Promotion-ready kandidáta najprv zapísať do staging objektu s location/dedupe/schema dôkazmi a až po validačnom PASS ho atómovo pripojiť do LIVE feedu."}
   ],
   "writeStatus": {
     "jobsData":"blocked-safe-transform-validation-bridge-not-available; preserved-fail-closed",
-    "jobSources":"updated-this-run",
-    "master":"update-attempted-separately-this-run",
+    "jobSources":"not-required-this-run",
+    "master":"not-required-this-run",
     "sourceAudit":"updated-after-real-10-family-source-check",
     "lockedFilesTouched":false,
-    "note":"Full Git blob read jobs-data.json je funkčný a potvrdil 41 LIVE položiek. Bez bezpečného lokálneho parse/transform/validate bridge sa 50 kB feed neprepisuje ručne. Zamknuté UI/renderery/baseline neboli dotknuté."
+    "note":"Full Git blob read jobs-data.json je funkčný a potvrdil 41 LIVE položiek. Bez bezpečného lokálneho parse/transform/validate bridge sa 50 kB feed neprepisuje ručne. updatedAt jobs-data.json nebol posunutý."
   }
 }
