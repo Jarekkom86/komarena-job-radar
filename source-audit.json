@@ -1,55 +1,40 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T04:34:23+02:00",
+  "updatedAt": "2026-09-01T05:11:02+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
-    "significantPendingCandidates": 2,
+    "significantPendingCandidates": 1,
     "significantlyChangedPriorityJobs": 0,
-    "duplicateOrExisting": 3,
-    "rejectedAsWeakOrLowValue": 8,
-    "rejectedByFreshnessOrEvidence": 4,
-    "rejectedByLanguageOrSkill": 7,
-    "rejectedByLocation": 1,
-    "quarantinedUnknownLocation": 0,
     "jobsDataContentUpdatedAt": "2026-08-31T22:13:19+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "audit-fresh-content-feed-stale-safe-write-blocked",
     "liveFeedCount": 41,
-    "liveSourceMix": {"profesia":18,"nonProfesia":23,"profesiaPct":43.9,"nonProfesiaPct":56.1},
-    "note": "Audit 1.9.2026 04:34 CEST reálne prehľadal 11 source families. Najsilnejší nový lokálny kandidát je Lachim Trans – Kuriér pre GLS depo Malacky: dnešná ponuka, Malacky a okolie, živnosť/IČO, od 1 900 EUR, vodičák B min. 1 rok, bez cudzieho jazyka; prax kuriéra iba výhodou, nie podmienkou; nový elektrický vozový park a možnosť vozidla podľa dohody. Kandidát spĺňa ba-area gate a ranking driver lane, ale jobs-data.json nemožno bezpečne prepísať z truncovaného full-file readu. Freelancer Customer Service for Online Store je remote 8–15 USD/h, ale má 43 proposals a slabšiu prioritu; ostáva verification/low-priority. IKAR expedícia je nový BA skladový hit, ale nižší plat 1 100–1 250 EUR a dvoj/trojzmennosť ho držia pod existujúcimi LIVE prioritami. Persea Genetika je vyradená pre povinné VŠ II. stupňa v genetike/antropológii a pokročilú angličtinu. Facebook: 0 verified hits, limited."
+    "note": "Audit 1.9.2026 05:11 CEST reálne preveril Profesia, priame/company discovery, LinkedIn/indexed discovery, Worki, Brigada.sk, Práca za rohom, Kariera.sk, Pretlak/tech-creative, Upwork/Freelancer, Reddit a Facebook public indexing. Najsilnejší promotion-ready kandidát ostáva Lachim Trans – Kuriér pre GLS depo Malacky, ktorý Profesia stále uvádza ako aktuálny: Malacky, od 1 900 EUR/mes., reagovať bez životopisu. Nový prioritný winner nad týmto kandidátom sa nepotvrdil. Powerlogy ostáva mimo LIVE pre explicitnú veľmi dobrú angličtinu. jobs-data.json sa neprepísal, pretože dostupný full-file read je truncovaný a contents API vyžaduje bezpečný kompletný replacement; posledné validné dáta sú zachované fail-closed."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":3,"added":0,"rejected":2,"pending":1,"note":"Nájdený nový GLS kuriér Malacky (promotion-grade pending pre write blocker), IKAR expedícia BA je slabšia priorita; Persea Genetika reject pre VŠ II. stupňa + pokročilú AJ."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Prehľadané firemné careers/search lane pre BA support/e-commerce/technické roly; bez nového winnera nad existujúcimi LIVE prioritami."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":2,"added":0,"rejected":2,"note":"Sharp Brains IT Support Engineer Bratislava je technicky náročnejší contract IT lane; ďalšie indexované support roly sú jazykovo/senioritou nevhodné alebo closed/stale."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":0,"duplicateOrExisting":1,"note":"Technicko-logistický lane preverený; existujúci HEATING PRO ostáva silnejší LIVE výsledok."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"rejected":0,"note":"BA administratíva/kuriér/sklad discovery reálne preverená; bez nového verejne overiteľného promotion hitu."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":6,"added":0,"rejected":3,"duplicateOrExisting":3,"pending":1,"note":"Nový GLS kuriér Malacky potvrdený detailom; IKAR a Lanža/Akfos sú canonical/mirror alebo slabšie. Mirror sa nepočíta ako nezávislý nový job, canonical Profesia sa preferuje."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"rejected":1,"note":"Lokálny BA lane preverený; nájdený skladový hit bol slabší než existujúce priority."},
-    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":1,"added":0,"rejected":1,"note":"Powerlogy ostáva silný obsahový fit, ale explicitná veľmi dobrá angličtina naďalej drží lead mimo LIVE."},
-    {"name":"Upwork / Freelancer","family":"freelance","status":"ok","hits":7,"added":0,"rejected":6,"pending":1,"note":"Freelancer Customer Service for Online Store: remote, 8–15 USD/h, 43 proposals, open; obsahovo customer support/e-commerce, ale vysoká konkurencia a nejasná jazyková záťaž. Upwork nové výsledky boli hard-dev, mikrobudget alebo slabšie než existujúca verification queue."},
-    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":0,"added":0,"rejected":0,"note":"Verejne indexované hiring komunity preverené bez nového konkrétneho hiring dopytu vhodného na promotion."},
-    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"rejected":0,"verifiedHits":0,"note":"Verejná indexácia BA brigád a WordPress/WooCommerce SK/CZ neposkytla konkrétny overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion nebol spustený."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":2,"added":0,"pending":1,"note":"GLS kuriér Malacky je stále aktuálny a promotion-ready; ďalšie čerstvé driver výsledky vyžadujú C/D alebo sú slabšie."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Bez nového overeného winnera nad LIVE/pending prioritami."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Indexované discovery pre BA support/tech lane bez nového promotion-grade hitu."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"Technicko-logistický lane preverený; bez nového winnera nad HEATING PRO."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"limited","hits":0,"added":0,"note":"Verejná indexácia neposkytla nový promotion-grade hit."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":3,"added":0,"note":"BA servis/technik discovery preverené; Beauty Med Service Technician a Brightpick montážnik sú nové discovery hity, ale bez dostatočného overenia požiadaviek neboli promovované."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"note":"BA administratíva preverená; bez nového prioritného winnera."},
+    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":1,"added":0,"note":"Powerlogy Marketing Specialist je stále aktívny obsahový fit, ale vyžaduje slovenčinu aj angličtinu na veľmi dobrej úrovni."},
+    {"name":"Upwork / Freelancer","family":"freelance","status":"checked","hits":3,"added":0,"note":"WooCommerce/VA discovery preverené; existujúci E-commerce VA WooCommerce/Subscriptions/Xero ostáva verification-only pre skill/language risk; bez nového winnera."},
+    {"name":"Reddit / WordPress komunity","family":"reddit-wordpress","status":"limited","hits":0,"added":0,"note":"Bez nového konkrétneho verejne overiteľného hiring postu."},
+    {"name":"Facebook verejná indexácia","family":"facebook-public","status":"limited","hits":0,"added":0,"verifiedHits":0,"note":"Bez nového verejne overiteľného hiring postu; autentizovaný local ingestion nebol použitý."}
   ],
   "verificationQueue": [
-    {"id":"profesia-lachim-trans-gls-malacky-20260901","title":"Kuriér pre GLS depo Malacky","company":"Lachim Trans s. r. o.","source":"Profesia / canonical via Práca za rohom mirror","url":"https://www.pracazarohom.sk/dl/jd/PROF-02773eb3-bcbf-4513-881a-ee45a3804987","locationEligibility":"ba-area","locationReason":"Malacky a okolie patria do povoleného rozumného denného dojazdu v Bratislavskom kraji.","languageEligibility":"ok","provisionalScore":91,"applicationFriction":"low-medium","pay":"od 1 900 EUR; predpokladaná fakturácia 1 800–2 200 EUR + tringelty","form":"živnosť/IČO","publishedAt":"2026-09-01T00:00:00+02:00","reason":"Silný vodič B/kuriér fit: vodičák B min. 1 rok, prax iba výhodou, zaučenie, nový elektrický vozový park, región Malacky a okolie. Promotion do LIVE je blokovaná iba bezpečným large-JSON write pathom.","nextVerification":"Pri bezpečnom patch writeri pridať do jobs-data.json s canonical Profesia URL, ak sa dá získať priamy canonical detail; zachovať stabilné ID."},
-    {"id":"freelancer-customer-service-online-store-40670043","title":"Customer Service for Online Store","source":"Freelancer","url":"https://www.freelancer.com/projects/customer-service/customer-service-for-online-store-40670043","locationEligibility":"remote-ok","locationReason":"Freelancer detail uvádza Remote project bez onsite povinnosti.","languageEligibility":"unknown","provisionalScore":80,"applicationFriction":"high-competition","pay":"8–15 USD/h","competition":"43 proposals","reason":"Relevantný e-commerce customer-service/admin scope, ale vysoká konkurencia a nejasná reálna jazyková/časová záťaž ho držia mimo LIVE priority.","nextVerification":"Promote iba ak sa potvrdí kompatibilná jazyková záťaž a klientská dôveryhodnosť."},
-    {"id":"upwork-ecommerce-va-woocommerce-subscriptions-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/commerce-Virtual-Assistant-WooCommerce-Subscriptions-Customer-Service-Xero_~022093200734923132353/","locationEligibility":"remote-ok","languageEligibility":"written-english-risk","provisionalScore":87,"pay":"10–15 USD/h","reason":"Silný WooCommerce/admin fit, ale mandatory Subscriptions + Meta Ads/Xero + good written English nie sú bezpečne potvrdené."},
-    {"id":"upwork-tech-savvy-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","url":"https://www.upwork.com/freelance-jobs/apply/Tech-Savvy-Virtual-Assistant-Wordpress-Website-Management-Digital-Marketing-Support_~022094223212146933823/","locationEligibility":"remote-ok","languageEligibility":"moderate-written-primary","provisionalScore":86,"pay":"6–10 USD/h","reason":"Silný WordPress/Elementor maintenance fit; konkurencia a English onboarding ostávajú rizikom."},
-    {"id":"pretlak-powerlogy-marketing-specialist-20260827","title":"Marketing Specialist – e-commerce, WordPress/WooCommerce, AI content","source":"Pretlak","url":"https://pretlak.com/job/powerlogy/marketing-specialist/IAnwjJvd_","locationEligibility":"ba-area","languageEligibility":"pending-high-risk","provisionalScore":84,"reason":"Výborný e-commerce/WooCommerce/AI-content fit v Bratislave, ale inzerát explicitne požaduje veľmi dobrú angličtinu."}
-  ],
-  "developmentBacklogAddedThisRun": [
-    {"id":"canonical-url-promotion-resolver","title":"Canonical URL promotion resolver","problem":"Silný kandidát sa často objaví najprv cez mirror, no LIVE má preferovať primárny zdroj.","proposal":"Pred promotion automaticky dohľadať canonical employer/Profesia URL a uložiť mirror iba ako corroboration evidence; ak canonical nie je dostupný, označiť sourceResolution=pending bez blokovania auditu."},
-    {"id":"parcel-load-route-burden-score","title":"Parcel-load and route burden score","problem":"Kuriérske ponuky môžu vyzerať platovo dobre, ale reálna hmotnosť zásielok, počet stopov a schody zásadne menia praktickú vhodnosť.","proposal":"Pri driver lane evidovať max/typickú hmotnosť, stops/day, podiel bytoviek bez výťahu, typ vozidla a paid-loading time; z toho odvodiť physicalBurden a effectiveHourlyValue."}
+    {"id":"profesia-lachim-trans-gls-malacky-20260901","title":"Kuriér pre GLS depo Malacky","company":"Lachim Trans s. r. o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":91,"pay":"od 1 900 EUR/mes.","status":"promotion-ready-write-blocked","reason":"Aktuálna ponuka, vodičský lane a Malacky/okolie; Profesia ju pri tejto kontrole stále uvádza medzi čerstvými ponukami. Promotion blokuje iba bezpečný large-JSON write path."},
+    {"id":"upwork-ecommerce-va-woocommerce-subscriptions-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":87,"pay":"10–15 USD/h","status":"verification","reason":"Silný WooCommerce/admin fit, ale mandatory Subscriptions + Meta Ads/Xero + written English nie sú bezpečne potvrdené."},
+    {"id":"pretlak-powerlogy-marketing-specialist-20260827","title":"Marketing Specialist – e-commerce, WordPress/WooCommerce, AI content","source":"Pretlak","locationEligibility":"ba-area","provisionalScore":84,"status":"language-risk","reason":"Výborný obsahový fit, ale inzerát explicitne požaduje slovenčinu a angličtinu na veľmi dobrej úrovni."}
   ],
   "writeStatus": {
     "jobsData":"blocked-safe-full-replacement-required; preserved-fail-closed",
-    "jobsDataNonProf":"locked-preserved",
-    "sourceAudit":"updated-after-real-11-family-check",
-    "jobSources":"update-attempted-this-run",
-    "master":"blocked-truncated-read; backlog mirrored-in-source-audit",
+    "jobsDataNonProf":"preserved-no-qualified-delta",
+    "sourceAudit":"updated-after-real-source-check",
     "lockedFilesTouched":false,
-    "note":"Žiadny zamknutý UI/renderer/baseline/bootstrap súbor nebol zmenený. jobs-data.json zostáva na poslednom validnom obsahu; nový GLS kandidát je promotion-ready pending bezpečný patch writer."
+    "note":"updatedAt v jobs-data.json nebol posunutý. Posledných 41 validných LIVE položiek zostalo zachovaných."
   }
 }
