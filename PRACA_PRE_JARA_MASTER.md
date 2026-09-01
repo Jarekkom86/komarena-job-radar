@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 1. 9. 2026 09:23 CEST
+Aktualizované: 1. 9. 2026 10:28 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -57,31 +57,26 @@ Aktualizované: 1. 9. 2026 09:23 CEST
 23. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 24. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 1. 9. 2026 09:23 CEST — LATEST
+## SOURCE AUDIT — 1. 9. 2026 10:28 CEST — LATEST
 Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Práca za rohom; Kariera.sk/Zoznam; Pretlak/StartupJobs tech-creative; Upwork/Freelancer freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 0 zapísaných.** `jobs-data.json` ostáva FAIL-CLOSED na 41 LIVE položkách.
-- **Nový promotion-ready pending:** **Hellmann Worldwide Logistics — Asistentka/asistent oddelenia cestnej prepravy — provisional Match 92**. Galvaniho 15, Ružinov; od **1 200 €/mes. + kvartálne odmeny**; základná angličtina; vodičák B. Náplň presne trafila administratívno-digitalizačný smer: skenovanie, kontrola, evidencia a archivácia dokumentov, spracovanie objednávok, faktúr a dát v informačnom systéme. Prax v cestnej preprave je iba výhodou. Lokalita = `ba-area`.
-- **Promotion-ready pending:** **Lachim Trans — Kuriér pre GLS depo Malacky — provisional Match 91**, od **1 900 €/mes.**, lokalita prechádza `ba-area` gateom.
-- **Penta Real Estate — Sales Administrator** bol znovu potvrdený na priamom firemnom career detaile za **1 800 €**, ale už je LIVE; nejde o nový prírastok.
-- **KPB — Technický pracovník dopravy** je BA a 1 500–1 600 €/mes., ale 3 roky praxe + technické/ekonomické zameranie znižujú fit pod promotion threshold.
-- **Freelancer:** čerstvé WordPress výsledky sú prevažne PHP/debugging/build-heavy; `Customer Service for Online Store` zostáva remote, ale má 43 proposals.
-- **LinkedIn / Worki / Brigada / Kariera / Pretlak / StartupJobs:** reálne prehľadané, bez nového evidence-grade winnera.
-- **Reddit/WordPress komunity:** bez nového konkrétneho hiring dopytu vhodného na promotion.
+- **Nové aktívne položky: 0.** `jobs-data.json` zostáva na **43 LIVE položkách**; timestamp feedu sa neposúva umelo.
+- **LIVE mix:** Profesia **20 / 43 = 46,5 %**, mimo Profesia **23 / 43 = 53,5 %**.
+- **Upwork/Freelance:** nový Worldwide remote `eCommerce Virtual Assistant for Multi-Platform Store` bol vyradený cez value gate — 50 USD fixed-price pri komplexnom multi-platform scope. WordPress build/developer výsledky boli hard-development-heavy. `Website & SEO Management 2026` zostáva verification, nie LIVE.
+- **Reddit/WordPress komunity:** verejne indexovaný WordPress hiring výsledok bol US-only, preto neprešiel remote-country hard gateom; ďalšie výsledky boli FOR HIRE, nie konkrétne dopyty.
+- **LinkedIn / Worki / Brigada / Práca za rohom / Kariera / Pretlak / StartupJobs / priame careers:** reálne prehľadané, bez nového evidence-grade winnera.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny fiktívny hit. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
+- Existujúce 43 LIVE položky zostali zachované; žiadny fail-closed pokles ani strata kategórie nenastala.
 
 ### Run summary
 - Reálne skontrolované source families: **11**.
 - Nové aktívne položky zapísané: **0**.
-- Významné pending kandidáty: **6**, z toho **2 promotion-ready**.
-- LIVE feed: **41 aktívnych položiek**.
-- Mix: **Profesia 18 / 41 = 43,9 %; mimo Profesia 23 / 41 = 56,1 %**.
-- `jobs-data.json.updatedAt` ostáva **31. 8. 2026 22:13:19 CEST** — timestamp sa neposúva umelo.
-- `source-audit.json.updatedAt` = **1. 9. 2026 09:23:45 CEST**.
-
-### Technický blocker
-Full Git blob read `jobs-data.json` je funkčný, ale zostáva write-side blocker: dostupný GitHub writer vyžaduje kompletný replacement a runtime nemá bezpečný programatický parse/transform/validate bridge napojený na kompletný blob obsah. Podľa FAIL-CLOSED sa veľký feed neprepisuje ručne, aby sa nestratilo 41 existujúcich LIVE položiek. Hellmann aj GLS Malacky preto čakajú v promotion-ready queue.
+- Významné pending kandidáty: **4**.
+- LIVE feed: **43 aktívnych položiek**.
+- Mix: **Profesia 46,5 % / mimo Profesia 53,5 %**.
+- `jobs-data.json.updatedAt` ostáva **1. 9. 2026 10:14:41 CEST** — bez umelej zmeny.
+- `source-audit.json.updatedAt` = **1. 9. 2026 10:28:33 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -249,3 +244,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 153. **Pending-to-LIVE atomic promotion queue** — promotion-ready kandidáta najprv validovať v staging objekte s location/dedupe/schema dôkazmi a až po PASS ho atómovo pripojiť do LIVE feedu.
 154. **Document-work fit signal** — automaticky zvýrazniť roly s vysokým podielom skenovania, digitalizácie, evidencie, archivácie, faktúr a dátovej administratívy, aj keď title neobsahuje „digitalizácia/back-office“.
 155. **Language-friction × pay tradeoff** — pri admin/support rolách kombinovať explicitnú jazykovú úroveň s garantovanou mzdou a nástupnosťou, aby základná AJ + nižší plat bola porovnaná férovo proti lepšie plateným B2/C1 rolám.
+156. **Marketplace value floor by scope** — pre fixed-price a hourly marketplace leady nastaviť minimálny value floor podľa rozsahu, aby lacné komplexné e-commerce/VA zadania nevytláčali kvalitnejšie leady a neplytvali application kapacitou.
+157. **Remote-country proof cache** — ukladať dôkaz, či Worldwide/Remote skutočne povoľuje Slovensko, a znovu ho používať pri repostoch/rovnakých klientoch; rýchlejšie vyradí US-only/EU-country-limited ponuky bez opakovaného manuálneho overovania.
