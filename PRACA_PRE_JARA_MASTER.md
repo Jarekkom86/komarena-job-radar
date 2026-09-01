@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 1. 9. 2026 22:38 CEST
+Aktualizované: 1. 9. 2026 23:25 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -58,27 +58,27 @@ Aktualizované: 1. 9. 2026 22:38 CEST
 24. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 25. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 1. 9. 2026 22:38 CEST — LATEST
+## SOURCE AUDIT — 1. 9. 2026 23:25 CEST — LATEST
 Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs/company posts; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Práca za rohom; Pretlak/StartupJobs; Upwork freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky: 0.** `jobs-data.json` zostáva fail-closed na **44 LIVE položkách**; obsahový timestamp **16:21:02 CEST** nebol umelo posunutý.
 - **LIVE mix:** Profesia **20 / 44 = 45,5 %**, mimo Profesia **24 / 44 = 54,5 %**.
-- **ČSOB — Operátor IT Service Desk-u:** 1. 9. 2026 o 22:38 znovu čerstvo potvrdený na Profesia pre Bratislavu s občasným home office, od 1 200 €/mes.; ostáva `promotion-ready`.
-- **NAY — Elektrošpecialista/tka Bratislava Danubia:** canonical NAY detail je stále verejne dostupný, Bratislava, plný úväzok, priemer 1 550 €/mes.; ostáva `promotion-ready`.
-- **Nový Upwork kandidát:** `Need Basic WooCommerce Website (Design & Development)` — Worldwide remote, **2 000 USD fixed-price**, contract-to-hire, mobile-first WooCommerce e-shop, produktové stránky, checkout, blog, SEO, testovanie a launch. Je to hodnotný lead, ale vyžaduje kompletný design+development ownership a má **50+ proposals / 5 interviewing**, preto ide do `verification`, nie LIVE.
-- **Kariera.sk:** Slovenská pošta — brigáda triediča zásielok v Bratislave ostáva low-priority verification pre manuálnu záťaž/nočné zmeny.
+- **Priame firemné careers:** canonical Alza kariéra znovu potvrdila **AlzaBox Špecialistu Bratislava** ako aktívny LIVE zdroj; nový predák v sklade Bernolákovo je platovo/profilovo slabší než existujúce priority.
+- **Práca za rohom:** Dúbravka feed ukázal Eric SK sezónnu e-shop/retail podporu a už známy Energohub; Bosch Praha hybrid bol vyradený ako `reject-distance`.
+- **Pretlak:** 3D Product Artist Bratislava bol vyradený pre povinné 3ds Max/Cinema4D, render workflow a CAD prax.
+- **Upwork:** čerstvý WordPress Blocksy/Greenshift build je Worldwide remote, ale iba **50 USD fixed-price**, preto neprešiel scope-to-pay gate. Generic coaching web za **1 500 USD** nemá dostatočne potvrdený WordPress/WooCommerce scope a hard-dev Python/FastAPI/WooCommerce integrácia bola penalizovaná.
 - **Facebook:** **0 verified hits**, status `limited`; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 - Žiadna existujúca LIVE položka nebola odstránená a nedošlo k strate kategórie.
 
 ### Run summary
 - Reálne skontrolované source families: **11**.
 - Nové aktívne položky zapísané: **0**.
-- Významné pending kandidáty: **14**.
+- Významné pending kandidáty: **15**.
 - LIVE feed: **44 aktívnych položiek**.
 - Mix: **Profesia 45,5 % / mimo Profesia 54,5 %**.
 - `jobs-data.json.updatedAt` = **1. 9. 2026 16:21:02 CEST**.
-- `source-audit.json.updatedAt` = **1. 9. 2026 22:38:16 CEST**.
+- `source-audit.json.updatedAt` = **1. 9. 2026 23:25:27 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -224,3 +224,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 131. **Source-family query rotation entropy guard** — udržiavať stabilnú kontrolnú query sadu, ale zároveň rotovať synonymá rolí pre web/e-shop, support, admin, vodič a logistiku, aby opakovaný audit nevytváral falošný pocit coverage z rovnakých dopytov.
 132. **Freelance effort-to-value estimator** — pri fixed-price WordPress/WooCommerce zákazkách odhadnúť rozsah podľa stránok, produktov, customizácie, checkoutu, launchu a supportu; porovnať s odmenou a konkurenciou, aby vysoká nominálna suma neprebila zlý hodinový výnos.
 133. **Promotion-ready aging watchdog** — promotion-ready položky nesmú zostať hodiny iba vo verification queue kvôli write pipeline; po prekročení SLA eskalovať technický blocker a prioritne vykonať bezpečný parse/dedupe/validate/write bez zásahu do zamknutých súborov.
+134. **Verification queue promotion SLA by fit tier** — TOP `promotion-ready` položky so score ≥88 majú kratší promotion deadline než low-priority verification; znižuje čas, počas ktorého kvalitná ponuka čaká iba kvôli technickému pipeline blockeru.
+135. **Scope-to-pay hard floor for freelance builds** — fixed-price WordPress/WooCommerce zákazky prepočítať na odhadovaný rozsah stránok, customizácie, launchu a supportu; pod minimálnu efektívnu hodinovku ich nepúšťať medzi odporúčané výsledky ani pri silnom keyword matchi.
