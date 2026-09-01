@@ -1,51 +1,44 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T15:26:15+02:00",
+  "updatedAt": "2026-09-01T16:13:24+02:00",
   "runSummary": {
-    "familiesChecked": 11,
+    "familiesChecked": 10,
     "newActiveJobs": 0,
-    "significantPendingCandidates": 7,
+    "significantPendingCandidates": 8,
     "significantlyChangedPriorityJobs": 0,
     "jobsDataContentUpdatedAt": "2026-09-01T10:14:41+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "fresh-audit-main-feed-stale-promotion-write-blocked",
+    "freshnessStatus": "fresh-audit-main-feed-stale-safe-full-feed-write-unavailable",
     "liveFeedCount": 43,
-    "liveSourceMix": {"profesia":20,"nonProfesia":23,"profesiaPct":46.5,"nonProfesiaPct":53.5},
-    "note": "Audit 1.9.2026 15:26 CEST reálne preveril 11 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, Práca za rohom, Pretlak/StartupJobs tech-creative, Upwork freelance, Reddit/WordPress komunity a Facebook verejnú indexáciu. NAY Elektrošpecialista/tka Bratislava Danubia je stále priamo potvrdený na NAY kariére s možným nástupom 1.9.2026 a zostáva promotion-ready. Kariera.sk dnes zobrazuje aj NAY Bory a nové BA ponuky, ale bez vyššej priority nad existujúci LIVE výber. Upwork priniesol čerstvé WooCommerce/WordPress e-commerce hity, prevažne hard-dev alebo bez dostatočného value/skill dôkazu. jobs-data.json zostal fail-closed na poslednej validnej obsahovej verzii; updatedAt nebol umelo posunutý."
+    "note": "Audit 1.9.2026 16:13 CEST reálne preveril verejne dostupné zdrojové rodiny pre Bratislavu, okolie a vhodný remote režim. Nepotvrdil sa nový promotion-grade kandidát nad existujúci LIVE výber. Upwork E-commerce VA – WooCommerce/Subscriptions/Customer Service/Xero zostáva verification: 10–15 USD/h, Worldwide remote, 15–20 proposals, 1 hire, 0 interviewing, ale vyžaduje silnú WooCommerce Subscriptions prax, Meta Ads, Xero a dobrú písomnú angličtinu. Nový Product Listing/Ecommerce Management VA bol vyradený pod value floor (3–6 USD/h, 30+ h/týždeň, 20–50 proposals). jobs-data.json zostal fail-closed; updatedAt nebol umelo posunutý, pretože tento runtime nemá bezpečný programatický full-feed parse/transform/write most pre celý veľký JSON."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":2,"added":0,"note":"BA/okolie sweep pre WordPress/e-commerce, technický support, administratívu, vodiča B a logistiku bol reálne spustený 1.9.2026 15:26. Bez nového overeného promotion-grade delta nad existujúce LIVE priority."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":1,"added":0,"note":"NAY kariéra reálne potvrdená. Elektrošpecialista/tka Bratislava Danubia: Bratislava, plný úväzok, priemer 1 550 EUR, nástup 1.9.2026, predaj elektroniky/služieb; firma uvádza, že ostatné naučí a neuvádza povinnú AJ ani elektro vyhlášku."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Verejná BA/remote discovery bola reálne spustená; bez nového overiteľného prioritného detailu. Zobrazené výsledky mimo profilu alebo zastarané boli vyradené."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"note":"Aktuálny BA technická podpora/admin/sklad/rozvoz sweep bol reálne spustený; bez nového silnejšieho delta nad LIVE set."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"note":"BA administratíva/sklad/kuriér/WordPress discovery bola reálne spustená; bez nového vhodného prioritného hitu."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":2,"added":0,"note":"Kariera.sk Bratislava sweep bol reálne preverený 1.9.2026. Dnešné výsledky zahŕňajú NAY Bratislava Bory a ďalšie BA ponuky; NAY sa preferuje cez priamu NAY kariéru, ostatné neprekonali aktuálne priority."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"note":"BA/Malacky discovery bola reálne spustená; bez nového overiteľného prioritného delta nad existujúci GLS/Lachim a ďalšie LIVE položky."},
-    {"name":"Pretlak / StartupJobs / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Bratislava/remote WordPress, WooCommerce, e-commerce a tech-creative discovery bola reálne spustená; bez nového kandidáta, ktorý by uzavrel language/skill/value gate."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":4,"added":0,"note":"Čerstvá WordPress/WooCommerce discovery bola reálne spustená. WooCommerce index obsahuje nové AI automation, LMS/e-commerce build, SEO/GEO a payment-integration hity; väčšina je hard-dev alebo scope nad preferovanú úroveň. Existujúce e-commerce VA leady zostávajú value/skill-gated."},
-    {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":0,"added":0,"note":"Verejná indexácia bola reálne vyhľadaná; bez nového konkrétneho Slovakia-eligible hiring leadu s čerstvým overiteľným detailom."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Verejné vyhľadanie neposkytlo konkrétny verejne overiteľný hiring post s priamym linkom; authenticated ingestion cez Nexus/local agent ostáva backlog."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"BA/okolie sweep pre WordPress/e-commerce, technickú podporu, administratívu, vodiča B a logistiku; bez nového promotion-grade delta."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Firemné kariéry boli zahrnuté v discovery; bez nového prioritného delta nad LIVE set."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Verejná BA/remote discovery bez nového overiteľného prioritného detailu."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"note":"Aktuálny BA technická podpora/admin/sklad/rozvoz sweep bez nového silnejšieho delta."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"note":"BA administratíva/sklad/kuriér discovery bez vhodného prioritného hitu."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"note":"Aktuálne ponuky skontrolované; bez nového kandidáta nad existujúce priority."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":5,"added":0,"note":"BA administratíva/vodič/kuriér discovery; bez nového promotion-grade delta."},
+    {"name":"Pretlak / StartupJobs / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Bratislava/remote WordPress, WooCommerce, e-commerce discovery bez nového kandidáta, ktorý uzavrel value/skill gate."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":5,"added":0,"note":"WooCommerce VA 10–15 USD/h ostáva verification pre povinnú WooCommerce Subscriptions/Meta Ads/Xero/písomnú AJ. Product Listing/Ecommerce VA 3–6 USD/h vyradený pod value floor. Ďalšie WooCommerce hity sú prevažne hard-dev."},
+    {"name":"Verejné komunity / indexácia","family":"communities","status":"limited","hits":0,"added":0,"note":"Bez konkrétneho verejne overiteľného Slovakia-eligible hiring leadu s priamym detailom."}
   ],
   "verificationQueue": [
-    {"id":"nay-elektrospecialista-danubia-91416","title":"Elektrošpecialista/tka pre NAY Bratislava Danubia","company":"NAY a.s.","source":"NAY kariéra","locationEligibility":"ba-area","provisionalScore":88,"pay":"priemer 1 550 EUR/mes. (760 EUR fix + ošatné + zákonné príplatky + KPI výkonová časť)","status":"promotion-ready-write-blocked","reason":"Priama firemná kariéra znovu potvrdená 1.9.2026 15:26 CEST; Panónska cesta 16, Bratislava; možný nástup 1.9.2026; zákaznícky/technologický retail fit; firma uvádza, že ostatné naučí. Bez povinnej AJ alebo elektro vyhlášky v detaile. LIVE promotion blokuje iba chýbajúci bezpečný programatický append/transform pre veľký jobs-data.json."},
-    {"id":"form-factory-it-support-20260825","title":"IT Support Specialist (m/ž)","company":"Form Factory Slovakia s.r.o.","source":"Profesia / Práca za rohom / LinkedIn corroboration","locationEligibility":"ba-area","provisionalScore":88,"pay":"od 2 500 EUR/mes. + polročné KPI odmeny až 1,5× hrubej mzdy","status":"verification","reason":"Veľmi silný technický troubleshooting fit, ale pred LIVE promotion treba potvrdiť minimálne 1–3 roky IT Support/Infrastructure praxe a komunikatívnu angličtinu; pravidelné výjazdy po Slovensku zvyšujú travel burden."},
-    {"id":"upwork-website-seo-management-2026-2093603919086755488","title":"Website & SEO Management 2026","company":"Upwork klient – eCommerce/WooCommerce store","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":90,"pay":"15–30 USD/h","status":"verification","reason":"Worldwide remote a silný WooCommerce/product-admin fit, ale pred promotion treba preukázať konkrétnu WooCommerce prax, Helium 10/Seller Central/Search Console/Yoast alebo Rank Math a schopnosť pripraviť Loom audit."},
-    {"id":"upwork-tech-savvy-wordpress-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":86,"pay":"6–10 USD/h","status":"verification","reason":"Worldwide remote, 5–10 h/týždeň a silný WordPress/Elementor fit; nižšia hodinovka a jazyk/timezone friction."},
-    {"id":"profesia-eletechnik-product-application-technician-5350584","title":"Product Application Technician","company":"ELETECHNIK s.r.o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":84,"pay":"od 1 300 EUR/mes. + bonusy 2x ročne","status":"verification","reason":"Senec technical/automation lead; pred promotion treba uzavrieť qualification/value proof."},
-    {"id":"kariera-grafton-tech-support-1540141","title":"Technická podpora (Ref. č.: 1003748)","company":"Grafton Slovakia s.r.o.","source":"Kariera.sk","locationEligibility":"ba-area","provisionalScore":87,"pay":"1 400–1 700 EUR/mes.","status":"verification","reason":"Technicko-terénny fit; pred promotion ostáva riziko fyzickej záťaže a celoslovenského cestovania."},
-    {"id":"profesia-sav-office-manager-20260828","title":"Office manažér/office manažérka","company":"Neuroimunologický ústav SAV","source":"Profesia / Práca za rohom mirror","locationEligibility":"ba-area","provisionalScore":86,"pay":"od 1 800 EUR/mes.","status":"verification","reason":"Bratislava, flexibilný pracovný čas a silný admin fit; pred LIVE promotion treba uzavrieť B1 AJ a požadovanú administratívnu prax/MS Office gate."}
-  ],
-  "developmentBacklogAdditions": [
-    {"id":"same-day-start-validity-signal","title":"Same-day start validity signal","reason":"Pri ponuke s možným nástupom v deň auditu alebo v minulosti oddeliť stále aktívny inzerát od reálneho nástupného okna; zníži riziko, že LIVE priorita vyzerá urgentne len kvôli starému startDate."},
-    {"id":"jobboard-title-to-canonical-career-resolver","title":"Jobboard title-to-canonical career resolver","reason":"Pri rovnakom title/company nájdenom na Kariera/Profesia automaticky dohľadať a preferovať priamu firemnú kariéru, zachovať stabilné ID a mirror evidovať iba ako corroboration; zrýchli dedupe a zvýši dôveryhodnosť."}
+    {"id":"nay-elektrospecialista-danubia-91416","title":"Elektrošpecialista/tka pre NAY Bratislava Danubia","company":"NAY a.s.","source":"NAY kariéra","locationEligibility":"ba-area","provisionalScore":88,"pay":"priemer 1 550 EUR/mes.","status":"promotion-ready-write-blocked","reason":"Predchádzajúco priamo potvrdený prioritný kandidát; LIVE promotion stále blokuje bezpečný full-feed write krok."},
+    {"id":"form-factory-it-support-20260825","title":"IT Support Specialist (m/ž)","company":"Form Factory Slovakia s.r.o.","source":"Profesia / Práca za rohom / LinkedIn corroboration","locationEligibility":"ba-area","provisionalScore":88,"pay":"od 2 500 EUR/mes. + KPI","status":"verification","reason":"Treba potvrdiť IT Support/Infrastructure prax, komunikatívnu angličtinu a travel burden."},
+    {"id":"upwork-website-seo-management-2026-2093603919086755488","title":"Website & SEO Management 2026","company":"Upwork klient – eCommerce/WooCommerce store","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":90,"pay":"15–30 USD/h","status":"verification","reason":"Silný WooCommerce/product-admin fit; skill proof gate zostáva otvorený."},
+    {"id":"upwork-tech-savvy-wordpress-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":86,"pay":"6–10 USD/h","status":"verification","reason":"Silný WordPress/Elementor fit, ale nižšia hodinovka a jazyk/timezone friction."},
+    {"id":"upwork-ecommerce-va-subscriptions-xero-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":89,"pay":"10–15 USD/h","status":"verification","reason":"Worldwide remote; 15–20 proposals, 1 hire, 0 interviewing. Povinná silná WooCommerce Subscriptions prax, Meta Ads, Xero a dobrá písomná angličtina bránia LIVE promotion."},
+    {"id":"profesia-eletechnik-product-application-technician-5350584","title":"Product Application Technician","company":"ELETECHNIK s.r.o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":84,"pay":"od 1 300 EUR/mes. + bonusy 2x ročne","status":"verification","reason":"Senec technical/automation lead; qualification/value proof zostáva otvorený."},
+    {"id":"kariera-grafton-tech-support-1540141","title":"Technická podpora (Ref. č.: 1003748)","company":"Grafton Slovakia s.r.o.","source":"Kariera.sk","locationEligibility":"ba-area","provisionalScore":87,"pay":"1 400–1 700 EUR/mes.","status":"verification","reason":"Technicko-terénny fit; riziko fyzickej záťaže a celoslovenského cestovania."},
+    {"id":"profesia-sav-office-manager-20260828","title":"Office manažér/office manažérka","company":"Neuroimunologický ústav SAV","source":"Profesia / Práca za rohom mirror","locationEligibility":"ba-area","provisionalScore":86,"pay":"od 1 800 EUR/mes.","status":"verification","reason":"Silný admin fit; B1 AJ a administratívna prax/MS Office gate zostáva otvorený."}
   ],
   "writeStatus": {
-    "jobsData":"unchanged-promotion-ready-but-safe-append-transform-unavailable",
-    "jobsDataNonProf":"unchanged-locked",
-    "sourceAudit":"updated-after-real-11-family-source-check",
-    "jobSources":"pending-current-run-refresh",
-    "master":"pending-current-run-refresh",
+    "jobsData":"unchanged-safe-full-feed-transform-write-unavailable",
+    "jobsDataNonProf":"unchanged",
+    "sourceAudit":"updated-after-real-source-check",
     "lockedFilesTouched":false,
-    "note":"LIVE main feed ostáva 43 položiek. NAY Danubia je stále promotion-ready, ale jobs-data.json zostal fail-closed; celý blob je čitateľný, no bezpečný programatický append/transform s post-write count/ID/schema validáciou nie je v tomto runtime k dispozícii."
+    "note":"LIVE feed ostáva 43 položiek. Hlavný feed je mimo 60-minútového SLA; posledné validné dáta boli zachované fail-closed."
   }
 }
