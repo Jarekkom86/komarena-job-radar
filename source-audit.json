@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T12:13:04+02:00",
+  "updatedAt": "2026-09-01T12:37:52+02:00",
   "runSummary": {
-    "familiesChecked": 10,
+    "familiesChecked": 11,
     "newActiveJobs": 0,
     "significantPendingCandidates": 5,
     "significantlyChangedPriorityJobs": 0,
@@ -11,20 +11,20 @@
     "freshnessStatus": "fresh-audit-no-feed-delta",
     "liveFeedCount": 43,
     "liveSourceMix": {"profesia":20,"nonProfesia":23,"profesiaPct":46.5,"nonProfesiaPct":53.5},
-    "note": "Audit 1.9.2026 12:13 CEST reálne preveril 10 source families: Profesia, Worki, LinkedIn, Kariera/Zoznam, Upwork/freelance, Brigada.sk, Práca za rohom, Pretlak/tech-creative, Reddit/komunity a Facebook verejnú indexáciu. Nenašiel sa nový ani významne zmenený prioritný kandidát, ktorý by po lokalitnom, jazykovom, skill, value a dedupe gate prekonal aktuálny LIVE set. Nové indexované výsledky boli buď mimo profilu/lokality, hard-development, nízkej hodnoty alebo bez spoľahlivého canonical detailu. jobs-data.json ostáva bez umelej timestamp zmeny; posledných 43 validných LIVE položiek je zachovaných."
+    "note": "Audit 1.9.2026 12:37 CEST reálne preveril 11 source families: Profesia, priame firemné careers, LinkedIn, Worki, Brigada.sk, Práca za rohom, Kariera/Zoznam, Pretlak/StartupJobs tech-creative, Upwork/Freelancer freelance, Reddit/WordPress komunity a Facebook verejnú indexáciu. Nenašiel sa nový ani významne zmenený prioritný kandidát, ktorý by po lokalitnom, jazykovom, skill, value a dedupe gate prekonal aktuálny LIVE set. Priame Alza careers potvrdili Technik automatizácie v Bernolákove, ale vyžaduje vyhlášku §21 a nočné zmeny; Upwork priniesol čerstvý worldwide VA lead za 5–7 USD/h so silnou angličtinou a US-hours, teda slabý value/language fit. jobs-data.json ostáva bez umelej timestamp zmeny; posledných 43 validných LIVE položiek je zachovaných."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"note":"BA/okolie sweep pre administratívu, technický support, e-commerce, vodiča B a logistiku prebehol. Nový indexovaný fundraising hit za 1 500 EUR/mes. nie je silnejší profilový fit než aktuálny LIVE set; bez promotion delta."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"not-run-this-pass","hits":0,"added":0,"note":"V tomto priechode nebol samostatný direct-careers sweep; posledné validné dáta z predchádzajúceho auditu sa zachovali."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"BA/okolie sweep pre administratívu, technický support, e-commerce, vodiča B a logistiku prebehol; bez nového promotion-grade delta nad LIVE/pending setom."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":2,"added":0,"rejected":{"hardSkill":2},"note":"Alza a Slovak Telekom careers reálne preverené. Alza Technik automatizácie Bernolákovo: od 1 500 EUR, ale povinná vyhláška §21 a nočné zmeny; Telekom čerstvé DevOps roly sú hard-development-heavy. Existujúci AlzaBox a Magenta Experience Center ostávajú LIVE."},
     {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Verejná BA/remote discovery bez nového konkrétneho prioritného detailu nad existujúcim LIVE/pending setom."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA administratíva/technická podpora/sklad/rozvoz prehľadané; výsledky boli nerelevantné alebo mimo lokality/profilu."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA administratíva/technická podpora/sklad/rozvoz prehľadané; bez nového promotion-grade detailu nad LIVE feedom."},
     {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"note":"BA administratíva/sklad/skenovanie preverené; bez nového spoľahlivo vyriešeného canonical detailu nad existujúcim verification leadom."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"note":"BA discovery preverená; vyhľadávač vracal prevažne nerelevantné regionálne výsledky, bez nového canonical winnera."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"note":"Aktuálne ponuky preverené; zobrazené nové výsledky boli mimo BA alebo mimo profilového fitu. Bez LIVE delta."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"note":"BA discovery preverená; bez nového canonical winnera. Profesia mirrory sa nepočítajú ako nezávislý zdroj."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"note":"BA support/e-shop/admin discovery bez nového promotion-grade výsledku."},
     {"name":"Pretlak / StartupJobs / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"WordPress/WooCommerce/e-commerce/support/AI non-hard-dev discovery bez nového Slovakia-eligible winnera."},
-    {"name":"Upwork / Freelancer / freelance","family":"freelance","status":"checked","hits":3,"added":0,"pending":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"hardSkill":2,"other":1},"note":"Čerstvé indexované výsledky boli prevažne web-development/build scope; jeden remote VA/data-entry lead mal 50+ proposals a slabší klientský signál. Bez promotion delta."},
-    {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":0,"added":0,"note":"Verejne indexované výsledky neukázali nový konkrétny hiring lead vhodný pre Slovensko/remote nad existujúcim setom."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny verejne overiteľný BA/remote hiring post s priamym linkom."}
+    {"name":"Upwork / Freelancer / freelance","family":"freelance","status":"ok","hits":6,"added":0,"pending":0,"rejected":{"language":2,"inactive":0,"duplicate":1,"location":0,"hardSkill":2,"other":1},"note":"Čerstvé Upwork výsledky: Virtual Assistant – Operations & Campaign Support (5–7 USD/h) vyžaduje silnú písanú/hovorenú AJ a US-hours; Cold Caller VA (3–4 USD/h) má vysoký phone-load a nízky value; WordPress/Shopify VA je 8 h denne/6 dní, 100 USD fixed a silná AJ; ďalšie WordPress/WooCommerce build leady sú hard-dev alebo micro-budget. Existujúci WooCommerce Assistant je už v LIVE/pending ekosystéme, bez nového canonical promotion delta."},
+    {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":1,"added":0,"rejected":{"language":0,"inactive":1,"duplicate":0,"location":0,"hardSkill":0,"other":0},"note":"Verejne indexované výsledky obsahovali staršie remote WordPress support/developer posty; aktuálne použiteľný nový Slovakia-eligible lead nebol potvrdený."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny verejne overiteľný BA/remote hiring post s priamym linkom; Nexus/local authenticated ingestion ostáva backlog a automat ho nespúšťa."}
   ],
   "verificationQueue": [
     {"id":"upwork-website-seo-management-2026-2093603919086755488","title":"Website & SEO Management 2026","company":"Upwork klient – eCommerce/WooCommerce store","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":90,"pay":"15–30 USD/h","status":"verification","reason":"Worldwide remote a silný WooCommerce/product-admin fit, ale pred promotion treba preukázať konkrétnu WooCommerce prax, Helium 10/Seller Central/Search Console/Yoast alebo Rank Math a schopnosť pripraviť Loom audit."},
@@ -34,13 +34,13 @@
     {"id":"profesia-sav-office-manager-20260828","title":"Office manažér/office manažérka","company":"Neuroimunologický ústav SAV","source":"Profesia / Práca za rohom mirror","locationEligibility":"ba-area","provisionalScore":86,"pay":"od 1 800 EUR/mes.","status":"verification","reason":"Bratislava, flexibilný pracovný čas a silný admin fit: evidencia zmlúv, archív, databázy, dokumentácia a podpora tímu. Pred LIVE promotion treba uzavrieť B1 AJ a požadovanú administratívnu prax/MS Office gate."}
   ],
   "developmentBacklogAdditions": [
-    {"id":"pre-dawn-commute-feasibility-gate","title":"Pre-dawn commute feasibility gate","reason":"Pri zmenách začínajúcich približne pred 05:00 automaticky overiť reálnu dostupnosť dopravy/parkovania a čas odchodu z BA okolia; zabráni vysokej priorite rolám, ktoré sú prakticky nedostupné napriek dobrej lokalite."},
-    {"id":"circadian-shift-burden-score","title":"Circadian shift burden score","reason":"Samostatne penalizovať pravidelné nočné a extrémne skoré nástupy podľa frekvencie a trvania, nie iba generickým shift/weekend flagom; zlepší porovnanie part-time logistických rolí s dennou administratívou a technickou podporou."}
+    {"id":"hard-skill-training-vs-entry-qualification-resolver","title":"Hard-skill training vs entry-qualification resolver","reason":"Rozlíšiť certifikácie, ktoré firma dodatočne zabezpečí, od tých, ktoré sú explicitne povinné už pri nástupe; zabráni falošne pozitívnemu promotion pri ponukách, kde marketing text sľubuje školenia, ale detail stále vyžaduje §21 alebo inú kvalifikáciu."},
+    {"id":"workweek-intensity-value-normalizer","title":"Workweek intensity value normalizer","reason":"Pri freelance/remote rolách prepočítať odmenu vzhľadom na 6-dňový týždeň, povinné časové okná, phone-load a skutočný počet hodín; rýchlo odfiltruje nízko platené VA zadania, ktoré nominálne vyzerajú remote-friendly, ale majú slabú efektívnu hodnotu."}
   ],
   "writeStatus": {
     "jobsData":"unchanged-no-qualified-feed-delta",
     "jobsDataNonProf":"unchanged-locked-bootstrap",
-    "sourceAudit":"updated-after-real-10-family-source-check",
+    "sourceAudit":"updated-after-real-11-family-source-check",
     "lockedFilesTouched":false,
     "note":"LIVE feed ostáva 43 položiek. Žiadny nový kandidát neprešiel všetkými hard gates a minimum-value/qualification threshold; jobs-data.json.updatedAt nebolo umelo posunuté."
   }
