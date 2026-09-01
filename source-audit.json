@@ -44,8 +44,8 @@
     "jobsData":"blocked-safe-full-replacement-required; preserved-fail-closed",
     "jobsDataNonProf":"locked-preserved",
     "sourceAudit":"updated-after-real-10-family-check",
-    "jobSources":"update-pending-this-run",
-    "master":"backlog-sync-pending-this-run",
+    "jobSources":"updated-this-run",
+    "master":"updated-this-run-with-backlog-150-151",
     "lockedFilesTouched":false,
     "note":"Žiadny zamknutý UI/renderer/baseline/bootstrap súbor nebol zmenený. jobs-data.json zostáva na poslednom validnom obsahu; stale feed je technický write blocker, nie predstieraná čerstvosť."
   }
