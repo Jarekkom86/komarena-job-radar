@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 1. 9. 2026 16:21 CEST
+Aktualizované: 1. 9. 2026 17:19 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -58,29 +58,27 @@ Aktualizované: 1. 9. 2026 16:21 CEST
 24. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 25. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 1. 9. 2026 16:21 CEST — LATEST
+## SOURCE AUDIT — 1. 9. 2026 17:19 CEST — LATEST
 Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Práca za rohom; Pretlak/StartupJobs tech-creative; Upwork freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 1.** `jobs-data.json` má teraz **44 LIVE položiek**.
+- **Nové aktívne položky: 0.** `jobs-data.json` zostáva na **44 LIVE položkách**; jeho obsahový timestamp **16:21:02 CEST** nebol umelo posunutý.
 - **LIVE mix:** Profesia **20 / 44 = 45,5 %**, mimo Profesia **24 / 44 = 54,5 %**.
-- **DATALAN Servisný technik:** pridaný z priamej firemnej kariéry. Bratislava/Petržalka, TPP, pružný čas, občasný HO, vodič B. Náplň: servis notebookov a PC, diagnostika a výmena dielov bez pájkovania, servisné výjazdy, interná agenda a zákaznícka komunikácia. Technické vzdelanie, ticketing a prax s opravami sú iba výhodou; B1 AJ je mierny mínus. Canonical detail uvádza od 1 200 €/mes. + variabilnú zložku; marketingová DATALAN promo stránka obsahuje nejasný vyšší údaj, preto LIVE používa konzervatívny detail konkrétnej pozície.
-- **Práca za rohom:** DATALAN mirror bol deduplikovaný voči firemnému canonical zdroju; Cerkam už je LIVE, preto sa nepridával druhýkrát.
-- **NAY Elektrošpecialista Bratislava Danubia:** zostáva silný promotion-ready kandidát na ďalší beh po kontrole duplicity a čerstvosti.
-- **Upwork:** nové WooCommerce/WordPress/VA hity neprekonali existujúcu verification queue pre skill/value/language friction.
-- **LinkedIn / Worki / Brigada.sk / Kariera / Pretlak / StartupJobs:** reálne prehľadané; bez ďalšieho nového evidence-grade winnera.
+- **Kariera.sk/Zoznam:** dnešný BA index bol znovu preverený; čerstvé všeobecné administratívne a brigádnické výsledky vrátane triedenia zásielok neprekonali aktuálny LIVE prioritný set podľa value/fit gate.
+- **Upwork:** dnešné nájdené web výsledky zahŕňali WooCommerce/Python automatizáciu, Bricks Builder a ďalší web development; hard-dev alebo špecializovaný skill gate zabránil LIVE promotion.
+- **Profesia / firemné careers / LinkedIn / Worki / Brigada.sk / Práca za rohom / Pretlak / StartupJobs:** reálne prehľadané; bez nového evidence-grade winnera nad aktuálny LIVE/pending set.
 - **Reddit/WordPress komunity:** verejná indexácia bez nového konkrétneho Slovakia-eligible hiring leadu.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny fiktívny hit. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
-- Žiadna existujúca LIVE položka nebola odstránená; feed stúpol z 43 na 44 a nedošlo k strate kategórie.
+- Žiadna existujúca LIVE položka nebola odstránená a nedošlo k strate kategórie.
 
 ### Run summary
 - Reálne skontrolované source families: **11**.
-- Nové aktívne položky zapísané: **1**.
+- Nové aktívne položky zapísané: **0**.
 - Významné pending kandidáty: **9**.
 - LIVE feed: **44 aktívnych položiek**.
 - Mix: **Profesia 45,5 % / mimo Profesia 54,5 %**.
 - `jobs-data.json.updatedAt` = **1. 9. 2026 16:21:02 CEST**.
-- `source-audit.json.updatedAt` = **1. 9. 2026 16:21:02 CEST**.
+- `source-audit.json.updatedAt` = **1. 9. 2026 17:19:13 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -218,6 +216,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 123. Source-check evidence ledger.
 124. Canonical application-route health monitor.
 125. Fresh competitor-pressure decay.
-126. **Hard-qualification evidence resolver** — pri pending kandidátoch automaticky dohľadať presný detail povinných certifikácií/licencií a rozhodnúť hard gate ešte v tom istom behu.
-127. **Canonical compensation conflict detector** — pri rozdielnych mzdových údajoch medzi detailom konkrétnej pozície, promo stránkou a mirrorom uchovať konflikt, preferovať detail pozície a vyžiadať re-verifikáciu pred zvýšením score.
-128. **Field-travel radius evidence gate** — pri technických/support rolách oddeliť BA pracovisko od servisného rádiusu; evidovať frekvenciu výjazdov, región, firemné vozidlo a čas na cestách, aby sa commute/value score nerátal ako bežný vzdialený hybrid.
+126. Search-to-apply stale-link verifier — pred odporúčaním overiť, že indexovaný výsledok stále vedie na aktívny detail/apply route; znižuje false-positive čerstvé hity a šetrí čas pri reakcii.
+127. Remote pay-floor calibrator — pri freelance/remote ponukách porovnať hodinovku s jazykovou, timezone a platformovou záťažou a automaticky potlačiť nízku efektívnu hodnotu aj pri dobrom skill matchi.
