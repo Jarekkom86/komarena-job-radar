@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T16:21:02+02:00",
+  "updatedAt": "2026-09-01T17:12:25+02:00",
   "runSummary": {
     "familiesChecked": 11,
-    "newActiveJobs": 1,
+    "newActiveJobs": 0,
     "significantPendingCandidates": 9,
     "significantlyChangedPriorityJobs": 0,
     "jobsDataContentUpdatedAt": "2026-09-01T16:21:02+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "fresh",
     "liveFeedCount": 44,
-    "note": "Audit 1.9.2026 16:21 CEST reálne preveril 11 source families pre Bratislavu/okolie a skutočný remote. Nový LIVE prírastok: DATALAN Servisný technik, Bratislava-Petržalka; canonical firemná kariéra potvrdzuje servis PC/notebookov, diagnostiku bez pájkovania, zákaznícku agendu, vodič B, technické vzdelanie/prax iba ako výhodu, B1 AJ a občasný home office. Cerkam terénny administratívny pracovník už bol v LIVE feede, preto sa neduplikoval. Facebook verejná indexácia nepriniesla žiadny konkrétny overiteľný post: 0 verified hits, limited. Full-feed read a atomický replacement sa v tomto behu podarili bez fail-closed poklesu."
+    "note": "Audit 1.9.2026 17:12 CEST reálne preveril 11 source families pre Bratislavu/okolie a skutočný remote. Nebol potvrdený nový ani významne zmenený prioritný kandidát nad aktuálny LIVE/pending set, preto jobs-data.json nebol obsahovo menený a jeho updatedAt zostal 16:21:02 CEST. Posledná validná obsahová kontrola je pri tomto audite stále v 60-minútovom SLA. Nové indexované skladové/brigádnické výsledky v Bratislave a dnešné Upwork web-dev výsledky neprešli prioritným/value/skill gate. Pri chybách alebo limitovanej indexácii sa zachovali posledné validné dáta fail-closed."
   },
   "sources": [
     {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"BA/okolie sweep pre WordPress/e-commerce, technickú podporu, administratívu, vodiča B a logistiku; bez nového promotion-grade delta nad LIVE/pending set."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":1,"added":1,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"DATALAN canonical kariéra priamo potvrdila Servisného technika v Bratislave: technická diagnostika/opravy bez pájkovania, interná agenda, vodič B, B1 AJ, občasný HO. Pridané do LIVE z priameho zdroja."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Preverené Telekom, NAY a DATALAN firemné zdroje; bez nového delta nad už LIVE/verification položky."},
     {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Verejná BA/remote discovery bez nového konkrétneho prioritného detailu."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0},"note":"Aktuálny BA technická podpora/admin/sklad/rozvoz sweep; relevantné výsledky bez nového delta nad existujúce LIVE/pending položky."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"BA administratíva/sklad/kuriér/WordPress discovery bez vhodného prioritného hitu."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0},"note":"BA ponuky preverené; relevantné NAY výsledky sú už známe a preferuje sa canonical firemná kariéra."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":4,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":3,"location":0},"note":"Aktuálny BA sweep potvrdil DATALAN Servisný technik a Cerkam Terénny administratívny pracovník; oba mirrory boli deduplikované voči canonical/už LIVE záznamom."},
-    {"name":"Pretlak / StartupJobs / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"WordPress/WooCommerce/remote discovery bez nového promotion-grade kandidáta."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":4,"added":0,"rejected":{"language":1,"inactive":0,"duplicate":1,"location":0},"note":"WooCommerce/WordPress VA index stále prináša relevantné hity, ale nové výsledky neprekonali existujúcu verification queue pre value/skill/language friction."},
-    {"name":"Verejné komunity / Reddit / WordPress","family":"communities","status":"limited","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Verejná indexácia bez konkrétneho Slovakia-eligible hiring leadu s priamym detailom."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"WordPress Slovensko, WooCommerce Komunita SK+CZ a Práca/brigády Bratislava verejne vyhľadané. 0 konkrétnych verejne overiteľných postov s priamym linkom; žiadny fiktívny hit. Autentizovaný Nexus/local ingestion ostáva backlog a nebol spustený."}
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Aktuálny BA technická podpora/admin/sklad/rozvoz sweep bez nového promotion-grade delta."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"BA administratíva/sklad/kuriér discovery bez vhodného prioritného hitu."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":3,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0},"note":"Dnešný BA index priniesol všeobecné administratívne/skladové výsledky a brigádu triediča zásielok; neprekonali aktuálny LIVE prioritný set podľa value/fit gate."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":5,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":2,"location":0},"note":"Čerstvé BA skladové a technické výsledky vrátane Technických sietí Bratislava a krátkodobých skladových brigád; bez jasného prioritného delta nad existujúce LIVE položky."},
+    {"name":"Pretlak / StartupJobs / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"WordPress/remote discovery bez nového promotion-grade kandidáta."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":4,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Dnešné výsledky zahŕňali web-development a WooCommerce súvisiace zákazky, ale vyžadovali výraznejší dev/špecializovaný skill alebo neprekonali existujúcu verification queue."},
+    {"name":"Verejné komunity / Reddit / WordPress","family":"communities","status":"limited","hits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Bez konkrétneho Slovakia-eligible hiring leadu s priamym overiteľným detailom."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0},"note":"Bez konkrétneho verejne overiteľného prioritného postu; posledné validné dáta zachované fail-closed."}
   ],
   "verificationQueue": [
     {"id":"nay-elektrospecialista-danubia-91416","title":"Elektrošpecialista/tka pre NAY Bratislava Danubia","company":"NAY a.s.","source":"NAY kariéra","locationEligibility":"ba-area","provisionalScore":88,"pay":"priemer 1 550 EUR/mes.","status":"promotion-ready","reason":"Priamo potvrdený prioritný kandidát; vhodný na ďalšie LIVE promotion pri nasledujúcom delta audite po kontrole duplicity."},
@@ -34,20 +34,17 @@
     {"id":"profesia-eletechnik-product-application-technician-5350584","title":"Product Application Technician","company":"ELETECHNIK s.r.o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":84,"pay":"od 1 300 EUR/mes. + bonusy 2x ročne","status":"verification","reason":"Senec technical/automation lead; qualification/value proof zostáva otvorený."},
     {"id":"kariera-grafton-tech-support-1540141","title":"Technická podpora (Ref. č.: 1003748)","company":"Grafton Slovakia s.r.o.","source":"Kariera.sk","locationEligibility":"ba-area","provisionalScore":87,"pay":"1 400–1 700 EUR/mes.","status":"verification","reason":"Technicko-terénny fit; riziko fyzickej záťaže a celoslovenského cestovania."},
     {"id":"profesia-sav-office-manager-20260828","title":"Office manažér/office manažérka","company":"Neuroimunologický ústav SAV","source":"Profesia / Práca za rohom mirror","locationEligibility":"ba-area","provisionalScore":86,"pay":"od 1 800 EUR/mes.","status":"verification","reason":"Silný admin fit; B1 AJ a administratívna prax/MS Office gate zostáva otvorený."},
-    {"id":"cerkam-terenny-admin-5348670","title":"Terénny administratívny pracovník","company":"Cerkam Facility Services s. r. o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":86,"pay":"od 1 500 EUR/mes. + odmeny","status":"already-live","reason":"Po full-feed audite zistené, že položka už je v LIVE; verification mirror sa deduplikoval a nový záznam sa nepridal."}
+    {"id":"cerkam-terenny-admin-5348670","title":"Terénny administratívny pracovník","company":"Cerkam Facility Services s. r. o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":86,"pay":"od 1 500 EUR/mes. + odmeny","status":"already-live","reason":"Položka už je v LIVE; verification mirror zostáva deduplikovaný a nový záznam sa nepridáva."}
   ],
   "liveMix": {"liveFeedCount":44,"profesiaCount":20,"profesiaPct":45.5,"nonProfesiaCount":24,"nonProfesiaPct":54.5},
-  "backlogAdditionsThisRun": [
-    {"title":"Canonical compensation conflict detector","problem":"Rôzne stránky toho istého zamestnávateľa môžu uvádzať odlišný plat pre tú istú rolu (napr. detail vs promo/refresh stránka).","value":"Zabráni tomu, aby Radar nadhodnotil ponuku podľa marketingového alebo chybného mirror údaja; preferuje detail konkrétnej pozície a uloží konflikt na manuálne overenie."},
-    {"title":"Field-travel radius evidence gate","problem":"Technické/support roly môžu mať pracovisko Bratislava, ale pravidelné zásahy po západnom Slovensku výrazne menia časovú a dopravnú záťaž.","value":"Samostatne eviduje servisný rádius, frekvenciu výjazdov a firemné vozidlo; zlepší commute/value score bez nesprávneho reject-distance pri BA-centric terénnej práci."}
-  ],
+  "backlogAdditionsThisRun": [],
   "writeStatus": {
-    "jobsData":"updated-atomically-43-to-44-no-category-loss",
+    "jobsData":"unchanged-no-content-delta-updatedAt-preserved",
     "jobsDataNonProf":"unchanged-locked",
-    "sourceAudit":"updated-after-real-source-check-and-feed-reconciliation",
-    "jobSources":"updated",
-    "master":"updated-with-run-summary-and-two-new-backlog-items",
+    "sourceAudit":"updated-after-real-source-check",
+    "jobSources":"unchanged",
+    "master":"unchanged",
     "lockedFilesTouched":false,
-    "note":"LIVE feed má 44 položiek. Pridaný bol iba nový DATALAN záznam; žiadna existujúca položka sa nemažala. MASTER bol bezpečne načítaný po riadkoch a aktualizovaný bez zásahu do zamknutého UI/renderers/baseline." 
+    "note":"LIVE feed zostáva na 44 položkách. Nebol potvrdený nový alebo významne zmenený prioritný záznam, preto jobs-data.json nebol prepísaný a updatedAt nebol umelo posunutý. Posledná obsahová kontrola 16:21:02 CEST je pri audite 17:12:25 CEST stále v 60-minútovom SLA."
   }
 }
