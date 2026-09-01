@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 1. 9. 2026 03:23 CEST
+Aktualizované: 1. 9. 2026 07:23 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -57,30 +57,29 @@ Aktualizované: 1. 9. 2026 03:23 CEST
 23. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 24. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 1. 9. 2026 03:23 CEST — LATEST
-Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk/lokálne jobboardy; Pretlak/StartupJobs/WordPress Jobs; Upwork/freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **10 nezávislých source families**, z toho **9 mimo Profesia**.
+## SOURCE AUDIT — 1. 9. 2026 07:23 CEST — LATEST
+Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Práca za rohom; Kariera.sk/Zoznam; Pretlak/tech-creative; Upwork/freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **10 nezávislých source families**, z toho **9 mimo Profesia**.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 0 zapísaných** — `jobs-data.json` ostáva FAIL-CLOSED, pretože dostupný GitHub read stále vracia veľký full-file payload truncovaný a writer vyžaduje kompletný replacement.
-- **Nový verification kandidát:** **Upwork — E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero — provisional Match 87**. Worldwide remote; **10–15 USD/h**, **<30 h/týždeň**, 1–3 mesiace, contract-to-hire; **15–20 proposals**, 0 interviewing, 1 hire, klient bol aktívny pred 4 hodinami. Silný WooCommerce/admin/customer-support/troubleshooting fit, ale mandatory WooCommerce Subscriptions, Meta Ads Manager, basic Xero a good written English nie sú bezpečne doložené, preto nejde do LIVE.
-- **Company careers:** Slovak Telekom má nový Junior DevOps v Bratislave, ale ide o hard-dev/cloud scope. Foxelli má aktuálne Slovakia-eligible **100 % remote** e-commerce/support/marketing roly, no pred promotion chýba dostatočný language/mandatory-skill compatibility proof.
-- **LinkedIn:** Wolt Bratislava full-time aj part-time Support Associate vyžadujú minimum English B2, preto language gate.
-- **Worki:** HEATING PRO je existujúci LIVE duplicate; nový vodičský hit vyžaduje skupinu C a bol vyradený.
-- **Profesia / Brigada / Kariera / tech-creative lane:** reálne vyhľadané, bez nového evidence-grade winnera.
-- **Reddit/WordPress komunity:** indexovaný výsledok bol for-hire ponuka služby, nie konkrétny hiring dopyt.
+- **Nové aktívne položky: 0 zapísaných.** `jobs-data.json` ostáva FAIL-CLOSED na 41 LIVE položkách.
+- **Promotion-ready pending:** **Lachim Trans — Kuriér pre GLS depo Malacky — provisional Match 91**. Profesia ho pri čerstvej kontrole stále uvádza medzi najnovšími ponukami v Malackách, od **1 900 €/mes.**; lokalita prechádza `ba-area` gateom. Zápis do LIVE blokuje iba bezpečný full-feed transform/validate/write krok.
+- **Upwork:** nové WordPress/WooCommerce výsledky boli hard-development alebo ekonomicky slabé. `WordPress WooCommerce E-Commerce Developer` je Worldwide remote, ale iba **83,87 USD fixed-price** a development-heavy; `eCommerce VA & Admin Support, Shopify and WooCommerce` je iba **10 USD fixed-price**. Do LIVE sa nepridali.
+- **Práca za rohom:** GLS Malacky je stále aktívny; čerstvé lokálne BA/Malacky výsledky boli mimo cieľového rankingu alebo vyžadovali inú kvalifikáciu.
+- **LinkedIn / Worki / Kariera / Pretlak / company-careers:** reálne prehľadané, bez nového evidence-grade winnera.
+- **Reddit/WordPress komunity:** bez nového konkrétneho hiring dopytu vhodného na promotion.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 
 ### Run summary
 - Reálne skontrolované source families: **10**.
 - Nové aktívne položky zapísané: **0**.
-- Významné nové/podstatne zmenené pending kandidáty: **1**.
+- Významné pending kandidáty: **4**, z toho 1 promotion-ready.
 - LIVE feed: **41 aktívnych položiek**.
 - Mix: **Profesia 18 / 41 = 43,9 %; mimo Profesia 23 / 41 = 56,1 %**.
-- `jobs-data.json.updatedAt` ostáva **31. 8. 2026 22:13:19 CEST** — writer blocker, timestamp sa neposúva umelo.
-- `source-audit.json.updatedAt` = **1. 9. 2026 03:23:16 CEST**.
+- `jobs-data.json.updatedAt` ostáva **31. 8. 2026 22:13:19 CEST** — timestamp sa neposúva umelo.
+- `source-audit.json.updatedAt` = **1. 9. 2026 07:23:14 CEST**.
 
 ### Technický blocker
-`jobs-data.json` je dostatočne veľký na to, že dostupný GitHub read vracia full-file payload truncovaný, zatiaľ čo writer vyžaduje kompletný replacement. Podľa FAIL-CLOSED sa súbor neprepisuje z neúplného obsahu, aby sa nestratilo 41 existujúcich LIVE položiek. Potrebný je bezpečný large-JSON patch/append writer alebo iný atómový write path.
+Full Git blob read `jobs-data.json` je už funkčný a potvrdil kompletný približne 50 kB feed. Zostáva write-side blocker: dostupný GitHub writer vyžaduje kompletný replacement a tento runtime nemá bezpečný lokálny parse/transform/validate bridge napojený na blob obsah. Podľa FAIL-CLOSED sa veľký feed neprepisuje ručne, aby sa nestratilo 41 existujúcich LIVE položiek. Nové backlog položky 152–153 riešia práve bezpečný promotion write path.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -244,3 +243,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 149. **Competition delta trigger pre freelance leady** — pri zmene proposals/interview/invites automaticky prepočíta action priority a zvýrazní krátke okno s vyššou reply probability.
 150. **Mandatory-tool evidence matrix** — pri každej freelance/ops ponuke rozlíšiť required vs nice-to-have nástroje a automaticky mapovať iba doložené skúsenosti; zabráni preceňovaniu near-fit leadov a vymýšľaniu kvalifikácií.
 151. **Client active-contract saturation signal** — pri marketplace klientoch zohľadniť pomer active contracts/hire history a poslednú aktivitu klienta; zníži čas strávený nad leadmi, kde klient už najal alebo paralelne drží veľa kontraktov.
+152. **Promotion write integrity checksum** — pred full-feed replacementom overiť pre/post počet položiek, množinu stabilných ID, kategórie, JSON schema a SHA; zápis povoliť iba pri nulovej neočakávanej strate.
+153. **Pending-to-LIVE atomic promotion queue** — promotion-ready kandidáta najprv validovať v staging objekte s location/dedupe/schema dôkazmi a až po PASS ho atómovo pripojiť do LIVE feedu.
