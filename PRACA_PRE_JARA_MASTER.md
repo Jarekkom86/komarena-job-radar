@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 1. 9. 2026 13:23 CEST
+Aktualizované: 1. 9. 2026 15:26 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -57,28 +57,29 @@ Aktualizované: 1. 9. 2026 13:23 CEST
 23. **Akfos — kuriér/vodič B, kusové zásielky — Match 88**.
 24. **Upwork — Virtual Assistant for Book Coaching Business — Match 88**.
 
-## SOURCE AUDIT — 1. 9. 2026 13:23 CEST — LATEST
-Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Pretlak/StartupJobs tech-creative; Upwork/Freelancer freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **10 nezávislých source families**, z toho **9 mimo Profesia**.
+## SOURCE AUDIT — 1. 9. 2026 15:26 CEST — LATEST
+Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Práca za rohom; Pretlak/StartupJobs tech-creative; Upwork freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky: 0.** `jobs-data.json` zostáva na **43 LIVE položkách**; timestamp feedu sa neposúva umelo.
 - **LIVE mix:** Profesia **20 / 43 = 46,5 %**, mimo Profesia **23 / 43 = 53,5 %**.
-- **Upwork:** nový **Virtual Assistant – Ongoing – Product Listing / Ecommerce Management** je Worldwide remote a obsahovo dobre sedí na produktové listingy, WooCommerce, inventory a customer communication, ale má iba **3–6 USD/h**, viac než 30 h/týždeň, **20–50 proposals** a klient len **134 USD spend**; neprešiel value/client-risk gate.
-- **Freelancer:** nový **E-commerce Virtual Assistant & Automation Expert** je remote a veľmi čerstvý, ale **2–8 USD/h**, povinné US Eastern business hours, telefonická podpora a strong spoken/written English sú mimo preferovaného profilu; bez LIVE promotion.
-- **Pretlak:** Powerlogy Marketing Specialist ostáva zaujímavý Bratislava/hybrid e-shop/WordPress/WooCommerce verification lead, ale veľmi dobrá angličtina je významný language gate.
-- **Profesia / LinkedIn / Worki / Brigada.sk / Kariera / StartupJobs:** reálne vyhľadané, bez nového evidence-grade winnera.
+- **Priame careers:** NAY **Elektrošpecialista/tka Bratislava Danubia** je stále priamo aktívny, priemer **1 550 €/mes.**, Panónska cesta 16, Bratislava, možný nástup **1. 9. 2026**; firma uvádza, že ostatné naučí a v detaile nie je povinná AJ ani elektro vyhláška. Zostáva `promotion-ready-write-blocked`.
+- **Kariera.sk:** dnešné BA výsledky zahŕňajú aj NAY Bratislava Bory a ďalšie BA ponuky; pri NAY sa preferuje priamy firemný canonical zdroj.
+- **Upwork:** čerstvý WooCommerce/WordPress index obsahuje nové automation/build/SEO/payment-integration hity; väčšina je hard-dev alebo scope nad preferovanú úroveň. Existujúce VA/e-commerce leady ostávajú value/skill-gated.
+- **LinkedIn:** verejná BA/remote discovery bola reálne spustená; nájdené výsledky boli mimo profilu alebo zastarané.
+- **Worki / Brigada.sk / Práca za rohom / Pretlak / StartupJobs:** reálne prehľadané, bez nového evidence-grade winnera.
 - **Reddit/WordPress komunity:** verejná indexácia bez nového konkrétneho Slovakia-eligible hiring leadu.
 - **Facebook:** **0 verified hits**, status `limited`; žiadny fiktívny hit. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 - Existujúcich 43 LIVE položiek zostalo zachovaných; žiadny fail-closed pokles ani strata kategórie nenastala.
 
 ### Run summary
-- Reálne skontrolované source families: **10**.
+- Reálne skontrolované source families: **11**.
 - Nové aktívne položky zapísané: **0**.
-- Významné pending kandidáty: **6**.
+- Významné pending kandidáty: **7**.
 - LIVE feed: **43 aktívnych položiek**.
 - Mix: **Profesia 46,5 % / mimo Profesia 53,5 %**.
 - `jobs-data.json.updatedAt` ostáva **1. 9. 2026 10:14:41 CEST** — bez umelej zmeny.
-- `source-audit.json.updatedAt` = **1. 9. 2026 13:23:06 CEST**.
+- `source-audit.json.updatedAt` = **1. 9. 2026 15:26:15 CEST**.
 
 ## FAIL-CLOSED pravidlá
 - Existujúca aktívna položka sa nemaže iba preto, že ju nový search nenašiel.
@@ -254,3 +255,5 @@ Personalizovaná reakcia a cielené CV sa generujú iba z faktických údajov MA
 161. **Workweek intensity value normalizer** — pri freelance/remote rolách prepočítať odmenu vzhľadom na 6-dňový týždeň, povinné časové okná, phone-load a skutočný počet hodín; rýchlo odfiltruje nízko platené VA zadania, ktoré nominálne vyzerajú remote-friendly, ale majú slabú efektívnu hodnotu.
 162. **E-commerce channel transferability mapper** — mapovať prenositeľnosť doloženej praxe medzi WooCommerce, Shopify, eBay, Amazon a marketplace listingami bez automatického tvrdenia znalosti neznámej platformy; zvýši coverage vhodných e-commerce rolí a zachová claim-safe ranking.
 163. **Fresh-post client-history risk trigger** — pri veľmi čerstvých marketplace leadoch kombinovať nízky počet proposals s klientským spendom, hire históriou a scope/pay pomerom; zabráni preceňovaniu čerstvej ponuky len preto, že je nová a má zatiaľ málo konkurencie.
+164. **Same-day start validity signal** — pri ponuke s možným nástupom v deň auditu alebo v minulosti oddeliť stále aktívny inzerát od reálneho nástupného okna; zníži riziko, že LIVE priorita vyzerá urgentne len kvôli starému `startDate`.
+165. **Jobboard title-to-canonical career resolver** — pri rovnakom title/company nájdenom na Kariera/Profesia automaticky dohľadať a preferovať priamu firemnú kariéru, zachovať stabilné ID a mirror evidovať iba ako corroboration; zrýchli dedupe a zvýši dôveryhodnosť.
