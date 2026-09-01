@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T11:18:54+02:00",
+  "updatedAt": "2026-09-01T12:13:04+02:00",
   "runSummary": {
-    "familiesChecked": 11,
+    "familiesChecked": 10,
     "newActiveJobs": 0,
     "significantPendingCandidates": 5,
     "significantlyChangedPriorityJobs": 0,
@@ -11,20 +11,20 @@
     "freshnessStatus": "fresh-audit-no-feed-delta",
     "liveFeedCount": 43,
     "liveSourceMix": {"profesia":20,"nonProfesia":23,"profesiaPct":46.5,"nonProfesiaPct":53.5},
-    "note": "Audit 1.9.2026 11:18 CEST reálne preveril 11 source families. Nenašiel sa nový kandidát, ktorý by po lokalitnom, jazykovom, skill, value a dedupe gate prekonal aktuálny LIVE set, preto jobs-data.json ostáva bez umelej timestamp zmeny. Brigada.sk ukázala BA administratívnu pomoc na účtovnom oddelení za 7 EUR/h so skenovaním, evidenciou a organizáciou dokumentov, ale search/index výsledok neposkytol spoľahlivo vyriešený konkrétny detail/apply link, preto nejde do LIVE. LinkedIn priniesol čerstvý DHL NET OPS Agent AM part-time v Bratislave: 20 h/týždeň, 651–720 EUR brutto + bonus, základná AJ iba vítaná, ale veľmi skoré/nočné zmeny a fyzická manipulácia znižujú fit. DHL HR Operations Coordinator v Ivanke pri Dunaji za od 1 684 EUR je administratívne relevantný, ale vyžaduje komunikatívnu AJ, HR doménu a pokročilý MS Office, preto neprešiel do priority queue. Facebook verejná indexácia ostáva limited / 0 verified hits."
+    "note": "Audit 1.9.2026 12:13 CEST reálne preveril 10 source families: Profesia, Worki, LinkedIn, Kariera/Zoznam, Upwork/freelance, Brigada.sk, Práca za rohom, Pretlak/tech-creative, Reddit/komunity a Facebook verejnú indexáciu. Nenašiel sa nový ani významne zmenený prioritný kandidát, ktorý by po lokalitnom, jazykovom, skill, value a dedupe gate prekonal aktuálny LIVE set. Nové indexované výsledky boli buď mimo profilu/lokality, hard-development, nízkej hodnoty alebo bez spoľahlivého canonical detailu. jobs-data.json ostáva bez umelej timestamp zmeny; posledných 43 validných LIVE položiek je zachovaných."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"BA/okolie sweep pre WordPress/e-commerce, technický support, administratívu, vodiča B a logistiku prebehol; bez nového promotion-grade delta nad LIVE/pending setom."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"note":"Priame careers pre BA tech/support/e-commerce prehľadané. DHL direct detail pre staršiu NET OPS verziu je už closed, preto sa nepovažuje za aktívny canonical hit."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":2,"added":0,"note":"Verejná BA discovery našla čerstvý DHL NET OPS Agent AM part-time a DHL HR Operations Coordinator. NET OPS je nízko platený part-time s veľmi skorými/nočnými zmenami a fyzickou záťažou; HR rola má komunikatívnu AJ + HR/Office požiadavky. Obe ostali mimo LIVE."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA administratíva/technická podpora/sklad/rozvoz discovery prehľadaná; bez nového vhodného detailu nad aktuálnym LIVE feedom."},
-    {"name":"Brigada.sk","family":"brigada","status":"ok","hits":1,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"hardSkill":0,"other":1},"note":"Nájdená BA administratívna pomoc na účtovnom oddelení za 7 EUR/h: faktúry, skenovanie, evidencia a organizácia dokumentov. Zatiaľ iba index/category evidence bez spoľahlivo vyriešeného konkrétneho detail/apply linku; fail-closed, nie LIVE."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"note":"Bratislavský kraj preverený; bez nového canonical winnera. Profesia mirrory sa nepočítajú ako nezávislý zdroj."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"note":"BA support/admin/e-shop discovery prehľadaná; bez nového kvalifikovaného detailu."},
-    {"name":"Pretlak / StartupJobs / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"WordPress/WooCommerce/e-commerce/support/AI non-hard-dev discovery prebehla; bez nového jasne Slovakia-eligible winnera."},
-    {"name":"Upwork / Freelancer / freelance","family":"freelance","status":"checked","hits":3,"added":0,"pending":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"hardSkill":3,"other":0},"note":"Čerstvé verejne indexované výsledky boli najmä Bricks/Web Development build projekty alebo iný hard-development scope; neprešli profilovým hard-skill gateom. Existujúce silnejšie verification leady ostávajú bez významnej zmeny."},
-    {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":0,"added":0,"note":"Verejne indexované výsledky neukázali nový konkrétny Slovakia-eligible hiring lead nad existujúcim setom."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Verejná indexácia skupín WordPress Slovensko, WooCommerce SK+CZ a BA práca/brigády neposkytla konkrétny verejne overiteľný hiring post s priamym linkom; autentizovaný Nexus/local ingestion zostáva backlog."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":1,"added":0,"note":"BA/okolie sweep pre administratívu, technický support, e-commerce, vodiča B a logistiku prebehol. Nový indexovaný fundraising hit za 1 500 EUR/mes. nie je silnejší profilový fit než aktuálny LIVE set; bez promotion delta."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"not-run-this-pass","hits":0,"added":0,"note":"V tomto priechode nebol samostatný direct-careers sweep; posledné validné dáta z predchádzajúceho auditu sa zachovali."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Verejná BA/remote discovery bez nového konkrétneho prioritného detailu nad existujúcim LIVE/pending setom."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA administratíva/technická podpora/sklad/rozvoz prehľadané; výsledky boli nerelevantné alebo mimo lokality/profilu."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"note":"BA administratíva/sklad/skenovanie preverené; bez nového spoľahlivo vyriešeného canonical detailu nad existujúcim verification leadom."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"note":"BA discovery preverená; vyhľadávač vracal prevažne nerelevantné regionálne výsledky, bez nového canonical winnera."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"note":"Aktuálne ponuky preverené; zobrazené nové výsledky boli mimo BA alebo mimo profilového fitu. Bez LIVE delta."},
+    {"name":"Pretlak / StartupJobs / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"WordPress/WooCommerce/e-commerce/support/AI non-hard-dev discovery bez nového Slovakia-eligible winnera."},
+    {"name":"Upwork / Freelancer / freelance","family":"freelance","status":"checked","hits":3,"added":0,"pending":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"hardSkill":2,"other":1},"note":"Čerstvé indexované výsledky boli prevažne web-development/build scope; jeden remote VA/data-entry lead mal 50+ proposals a slabší klientský signál. Bez promotion delta."},
+    {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":0,"added":0,"note":"Verejne indexované výsledky neukázali nový konkrétny hiring lead vhodný pre Slovensko/remote nad existujúcim setom."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Verejná indexácia neposkytla konkrétny verejne overiteľný BA/remote hiring post s priamym linkom."}
   ],
   "verificationQueue": [
     {"id":"upwork-website-seo-management-2026-2093603919086755488","title":"Website & SEO Management 2026","company":"Upwork klient – eCommerce/WooCommerce store","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":90,"pay":"15–30 USD/h","status":"verification","reason":"Worldwide remote a silný WooCommerce/product-admin fit, ale pred promotion treba preukázať konkrétnu WooCommerce prax, Helium 10/Seller Central/Search Console/Yoast alebo Rank Math a schopnosť pripraviť Loom audit."},
@@ -40,7 +40,7 @@
   "writeStatus": {
     "jobsData":"unchanged-no-qualified-feed-delta",
     "jobsDataNonProf":"unchanged-locked-bootstrap",
-    "sourceAudit":"updated-after-real-11-family-source-check",
+    "sourceAudit":"updated-after-real-10-family-source-check",
     "lockedFilesTouched":false,
     "note":"LIVE feed ostáva 43 položiek. Žiadny nový kandidát neprešiel všetkými hard gates a minimum-value/qualification threshold; jobs-data.json.updatedAt nebolo umelo posunuté."
   }
