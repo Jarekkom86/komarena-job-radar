@@ -11,7 +11,7 @@
     "freshnessStatus": "audit-fresh-content-feed-stale-safe-write-blocked",
     "liveFeedCount": 41,
     "liveSourceMix": {"profesia":18,"nonProfesia":23,"profesiaPct":43.9,"nonProfesiaPct":56.1},
-    "note": "Audit 1.9.2026 09:23 CEST reálne preveril 11 source families: Profesia, priame firemné careers, LinkedIn Jobs, Worki.sk, Brigada.sk, Práca za rohom, Kariera.sk/Zoznam, Pretlak/StartupJobs tech-creative, Upwork/Freelancer freelance, verejne indexované komunity a verejnú Facebook indexáciu. Nový silný BA administratívny kandidát: Hellmann Worldwide Logistics – Asistentka/asistent oddelenia cestnej prepravy, Galvaniho 15 Ružinov, od 1 200 EUR + kvartálne odmeny, základná angličtina, vodičák B; náplň je skenovanie, kontrola, evidencia, archivácia, objednávky, faktúry a práca s informačným systémom. Kandidát prechádza location gateom a je promotion-ready, no jobs-data zápis zostáva blokovaný bezpečným full-feed transform/validate/write bridgeom. Penta Sales Administrator bol potvrdený na priamom firemnom career zdroji za 1 800 EUR, ale už je LIVE a nejde o nový prírastok. Práca za rohom zároveň potvrdila KPB Technický pracovník dopravy 1 500–1 600 EUR, ale 3 roky praxe a odbor technické/ekonomické znižujú fit. Facebook: 0 verified hits, limited."
+    "note": "Audit 1.9.2026 09:23 CEST reálne preveril 11 source families. Nový silný BA administratívny kandidát: Hellmann Worldwide Logistics – Asistentka/asistent oddelenia cestnej prepravy, Galvaniho 15 Ružinov, od 1 200 EUR + kvartálne odmeny, základná angličtina, vodičák B; náplň je skenovanie, kontrola, evidencia, archivácia, objednávky, faktúry a práca s informačným systémom. Kandidát prechádza location gateom a je promotion-ready, no jobs-data zápis zostáva blokovaný bezpečným full-feed transform/validate/write bridgeom. Penta Sales Administrator bol potvrdený na priamom firemnom career zdroji za 1 800 EUR, ale už je LIVE. Facebook: 0 verified hits, limited."
   },
   "sources": [
     {"name":"Profesia","family":"profesia","status":"ok","hits":5,"added":0,"pending":2,"rejected":{"language":0,"inactive":1,"duplicate":1,"location":0,"hardSkill":1,"other":1},"note":"Čerstvý BA sweep prebehol. Hellmann Worldwide Logistics je nový silný administratívny kandidát v Ružinove; canonical Profesia detail potvrdzuje od 1 200 EUR + kvartálne odmeny, základnú AJ, vodičák B a dokumentovo-dátovú agendu. KPB Technický pracovník dopravy je lokálne vhodný, ale žiada 3 roky praxe a technické/ekonomické zameranie. GLS Malacky zostáva promotion-ready."},
@@ -40,10 +40,10 @@
   ],
   "writeStatus": {
     "jobsData":"blocked-safe-programmatic-transform-write-bridge-not-available; preserved-fail-closed",
-    "jobSources":"update-required-this-run",
-    "master":"update-required-this-run",
+    "jobSources":"updated",
+    "master":"updated",
     "sourceAudit":"updated-after-real-11-family-source-check",
     "lockedFilesTouched":false,
-    "note":"jobs-data.json ostal bez zmeny a bez posunu updatedAt; 41 LIVE položiek zachovaných. Nový Hellmann kandidát a GLS Malacky sú promotion-ready, ale full-feed writer ostáva blokovaný bezpečným programatickým transform/validate bridgeom."
+    "note":"jobs-data.json ostal bez zmeny a bez posunu updatedAt; 41 LIVE položiek zachovaných. job-sources.json a MASTER boli aktualizované. Nový Hellmann kandidát a GLS Malacky sú promotion-ready, ale full-feed writer ostáva blokovaný bezpečným programatickým transform/validate bridgeom."
   }
 }
