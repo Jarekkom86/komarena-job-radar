@@ -1,46 +1,48 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T10:14:41+02:00",
+  "updatedAt": "2026-09-01T10:28:33+02:00",
   "runSummary": {
     "familiesChecked": 11,
-    "newActiveJobs": 2,
+    "newActiveJobs": 0,
     "significantPendingCandidates": 4,
     "significantlyChangedPriorityJobs": 0,
     "jobsDataContentUpdatedAt": "2026-09-01T10:14:41+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "fresh-content-written",
+    "freshnessStatus": "fresh-audit-no-feed-delta",
     "liveFeedCount": 43,
     "liveSourceMix": {"profesia":20,"nonProfesia":23,"profesiaPct":46.5,"nonProfesiaPct":53.5},
-    "note": "Audit 1.9.2026 10:14 CEST reálne preveril 11 source families. Po čerstvom canonical overení boli do LIVE feedu promovované dve prioritné ponuky: Hellmann Worldwide Logistics – Asistentka/asistent oddelenia cestnej prepravy v Ružinove (od 1 200 EUR + kvartálne odmeny; dokumenty, skenovanie, evidencia, archivácia, faktúry; AJ A2, vodičák B) a Lachim Trans – Kuriér pre GLS depo Malacky (od 1 900 EUR; približne 1 800–2 200 EUR fakturácia podľa výkonu + tringelty; nástup ihneď; vodičák B min. 1 rok). Predchádzajúcich 41 validných LIVE položiek bolo zachovaných a feed má teraz 43 položiek. updatedAt bol posunutý iba po reálnej zdrojovej kontrole a reálnej obsahovej zmene."
+    "note": "Audit 1.9.2026 10:28 CEST reálne preveril 11 source families. Nenašiel sa nový kandidát, ktorý by po lokalitnom, jazykovom, skill, value a dedupe gate prekonal aktuálny LIVE/pending set. jobs-data.json preto zostal bez umelej obsahovej alebo timestamp zmeny na 43 LIVE položkách. Upwork priniesol nové Worldwide remote e-commerce/VA výsledky, ale jeden bol iba 50 USD fixed-price a ďalšie boli hard-development alebo silnejšie skill/language fit; neboli promovované. Facebook verejná indexácia zostáva 0 verified hits / limited."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":6,"added":2,"pending":1,"rejected":{"language":0,"inactive":0,"duplicate":2,"location":0,"hardSkill":1,"other":0},"note":"Čerstvý BA/okolie sweep prebehol. Hellmann Worldwide Logistics a Lachim Trans/GLS Malacky boli canonical overené a promovované do LIVE. ELETECHNIK Product Application Technician v Senci ostáva vo verification queue pre qualification/value proof."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0,"hardSkill":0,"other":0},"note":"Priame careers boli preverené; bez nového kandidáta, ktorý by prekonal aktuálne priority. Existujúce firemné LIVE položky zostali zachované."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Čerstvý BA/okolie sweep pre WordPress/e-commerce, technický support, administratívu, vodiča B a logistiku bol vykonaný; bez nového promotion-grade detailu nad LIVE/pending setom."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Priame kariérne zdroje pre BA tech/support/e-commerce boli prehľadané; bez nového vhodného canonical kandidáta."},
     {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"note":"Verejná BA/remote discovery prehľadaná; bez nového konkrétneho promotion-grade hitu. Verejná indexácia je čiastočná."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA technická podpora/admin/sklad/rozvoz discovery prehľadaná; bez nového vhodného detailu nad existujúcim LIVE feedom."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":1,"added":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":0,"hardSkill":0,"other":1},"note":"Aktuálne brigádnické kategórie preverené. Konkrétny vodičský hit v Bratislave mal nízku odmenu a študentsko/jazykové obmedzenia, preto neprešiel priority/value gateom."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":4,"added":0,"pending":0,"rejected":{"language":0,"inactive":0,"duplicate":4,"location":0,"hardSkill":0,"other":0},"note":"Mirror potvrdil aktuálnosť Hellmann aj Lachim/GLS; ako canonical zápis zostala Profesia, preto mirror výsledky boli deduplikované."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"note":"Bratislavský support/admin/e-shop lane prehľadaný; bez nového kvalifikovaného detailu."},
-    {"name":"Pretlak / StartupJobs / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"WordPress/e-commerce/support/AI non-hard-dev discovery prebehla; bez nového jasne Slovakia-eligible winnera."},
-    {"name":"Upwork / Freelancer / freelance","family":"freelance","status":"checked","hits":0,"added":0,"pending":2,"note":"Remote WordPress/e-commerce/admin discovery prebehla; bez nového promotion-grade delta. Existujúce verification leady zostávajú v queue a neboli automaticky promovované bez čerstvého qualification proof."},
-    {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":0,"added":0,"note":"Verejne indexované hiring/community výsledky preverené; bez nového konkrétneho hiring dopytu s dostatočným pay/eligibility/evidence profilom."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Bez nového konkrétneho verejne overiteľného hiring postu s priamym linkom; verejná indexácia je iba čiastočná."}
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA administratíva/technická podpora/sklad/rozvoz discovery prehľadaná; bez nového vhodného detailu nad aktuálnym LIVE feedom."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"note":"BA administratíva/kuriér/vodič brigádnický sweep prebehol; bez vhodného nového evidence-grade hitu."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"note":"Bratislavský kraj a priľahlé lokality preverené; bez nového canonical winnera. Zdroj naďalej slúži aj na mirror/cross-check, nie ako nezávislý zdroj pre Profesia mirrory."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"note":"BA support/admin/e-shop discovery prehľadaná; bez nového kvalifikovaného detailu."},
+    {"name":"Pretlak / StartupJobs / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"WordPress/WooCommerce/e-commerce/support/AI non-hard-dev discovery prebehla; bez nového jasne Slovakia-eligible winnera."},
+    {"name":"Upwork / Freelancer / freelance","family":"freelance","status":"ok","hits":4,"added":0,"pending":2,"rejected":{"language":1,"inactive":0,"duplicate":1,"location":0,"hardSkill":1,"other":1},"note":"Worldwide remote discovery našla nové e-commerce/VA a WordPress výsledky. Multi-platform eCommerce VA za 50 USD fixed-price bol vyradený cez value gate; WordPress build/developer výsledky cez hard-skill gate. Website & SEO Management 2026 zostáva verification pre tool/proof requirements."},
+    {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":1,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":1,"hardSkill":0,"other":0},"note":"Verejne indexovaný hiring post pre WordPress bol US-only, preto reject-distance/remote-country gate. Ďalšie výsledky boli FOR HIRE, nie dopyty."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Verejné skupiny boli vyhľadané, ale bez konkrétneho verejne overiteľného hiring postu s priamym linkom. Autentizovaný Nexus/local ingestion zostáva backlog a automat ho nespúšťa."}
   ],
   "verificationQueue": [
     {"id":"upwork-website-seo-management-2026-2093603919086755488","title":"Website & SEO Management 2026","company":"Upwork klient – eCommerce/WooCommerce store","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":90,"pay":"15–30 USD/h","status":"verification","reason":"Worldwide remote a silný WooCommerce/product-admin fit, ale pred promotion treba preukázať konkrétnu WooCommerce prax, Helium 10/Seller Central/Search Console/Yoast alebo Rank Math a schopnosť pripraviť Loom audit."},
     {"id":"upwork-tech-savvy-wordpress-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":86,"pay":"6–10 USD/h","status":"verification","reason":"Worldwide remote, 5–10 h/týždeň a silný WordPress/Elementor fit; nižšia hodinovka a jazyk/timezone friction."},
-    {"id":"profesia-eletechnik-product-application-technician-5350584","title":"Product Application Technician","company":"ELETECHNIK s.r.o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":84,"pay":"od 1 300 EUR/mes. + bonusy 2x ročne","status":"verification","reason":"Senec technical/automation lead; dnes potvrdený ako čerstvý, pred promotion treba uzavrieť qualification/value proof."},
+    {"id":"profesia-eletechnik-product-application-technician-5350584","title":"Product Application Technician","company":"ELETECHNIK s.r.o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":84,"pay":"od 1 300 EUR/mes. + bonusy 2x ročne","status":"verification","reason":"Senec technical/automation lead; pred promotion treba uzavrieť qualification/value proof."},
     {"id":"kariera-grafton-tech-support-1540141","title":"Technická podpora (Ref. č.: 1003748)","company":"Grafton Slovakia s.r.o.","source":"Kariera.sk","locationEligibility":"ba-area","provisionalScore":87,"pay":"1 400–1 700 EUR/mes.","status":"verification","reason":"Technicko-terénny fit; pred promotion ostáva riziko fyzickej záťaže a celoslovenského cestovania."}
   ],
   "developmentBacklogAdditions": [
-    {"id":"document-work-fit-signal","title":"Document-work fit signal","reason":"Automaticky zvýrazniť roly s vysokým podielom skenovania, digitalizácie, evidencie, archivácie, faktúr a dátovej administratívy."},
-    {"id":"language-friction-to-pay-tradeoff","title":"Language-friction × pay tradeoff","reason":"Pri near-fit administratívnych/support rolách kombinovať explicitnú jazykovú náročnosť s garantovanou mzdou a nástupnosťou."}
+    {"id":"marketplace-value-floor-by-scope","title":"Marketplace value floor by scope","reason":"Pre fixed-price a hourly marketplace leady nastaviť minimálny value floor podľa rozsahu, aby lacné komplexné e-commerce/VA zadania nevytláčali kvalitnejšie leady a neplytvali application kapacitou."},
+    {"id":"remote-country-proof-cache","title":"Remote-country proof cache","reason":"Ukladať dôkaz, či Worldwide/Remote skutočne povoľuje Slovensko, a znovu ho používať pri repostoch/rovnakých klientoch; rýchlejšie vyradí US-only/EU-country-limited ponuky bez opakovaného manuálneho overovania."}
   ],
   "writeStatus": {
-    "jobsData":"updated-valid-full-replacement",
-    "jobsDataNonProf":"unchanged-no-nonprof-delta",
+    "jobsData":"unchanged-no-qualified-feed-delta",
+    "jobsDataNonProf":"unchanged-locked-bootstrap",
     "sourceAudit":"updated-after-real-11-family-source-check",
+    "jobSources":"pending-same-run-update",
+    "master":"pending-safe-update-or-fail-closed",
     "lockedFilesTouched":false,
-    "note":"Predchádzajúci safe full-feed write blocker bol odstránený. 41 validných LIVE položiek bolo zachovaných; Hellmann a Lachim/GLS boli pridané po čerstvom overení, takže LIVE feed má 43 položiek. jobs-data-nonprof.json nebolo potrebné meniť, pretože obe nové canonical položky sú Profesia."
+    "note":"LIVE feed ostáva 43 položiek. Žiadny nový kandidát neprešiel všetkými hard gates a minimum-value/qualification threshold, preto jobs-data.json nebolo potrebné meniť."
   }
 }
