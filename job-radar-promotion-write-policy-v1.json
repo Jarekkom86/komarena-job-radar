@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "policy": "promotion-write-integrity",
+  "createdAt": "2026-09-01T08:22:08+02:00",
+  "purpose": "Fail-closed contract for safely promoting verified pending candidates into jobs-data.json without losing existing LIVE jobs or user-facing compatibility.",
+  "preconditions": [
+    "candidate.locationEligibility must be ba-area or remote-ok",
+    "candidate must have stable id, canonical url, source, sourceType, sourceTrust, scoreConfidence, verifiedAt and locationReason",
+    "remote-ok must contain explicit Slovakia-compatible remote evidence; unclear distant hybrid remains unknown/rejected",
+    "candidate id and canonical role identity must not duplicate an existing LIVE job"
+  ],
+  "integrityChecks": {
+    "beforeWrite": ["parse JSON", "record existing job count", "record complete stable-id set", "record track/category counts"],
+    "afterTransform": ["parse JSON", "schemaVersion unchanged", "existing stable-id set is a subset of resulting stable-id set", "job count may only increase by intended promotions", "no existing job fields changed unless explicitly part of the promotion", "no category disappears", "all promoted jobs pass location hard gate"],
+    "abortOn": ["JSON parse failure", "unexpected id loss", "unexpected job mutation", "duplicate canonical identity", "locationEligibility unknown or reject-distance", "feed shrink", "schema mismatch"]
+  },
+  "promotionQueueStates": ["verification", "promotion-ready", "promoted", "rejected", "quarantine"],
+  "lockedCompatibility": ["UI", "CRM localStorage", "baseline-jobs.json", "source audit semantics", "stable IDs"],
+  "expectedBenefit": "Removes the current write-side bottleneck safely: verified BA/remote candidates can move from pending to LIVE without risking loss of the existing feed."
+}
