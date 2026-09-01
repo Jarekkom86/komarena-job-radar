@@ -50,9 +50,9 @@
     "jobsData":"unchanged-fail-closed-no-safe-promotion-roundtrip-this-run",
     "jobsDataNonProf":"unchanged-locked-bootstrap",
     "sourceAudit":"updated-after-real-source-check",
-    "jobSources":"pending-refresh-this-run",
-    "master":"pending-backlog-sync-this-run",
+    "jobSources":"updated-after-real-source-check",
+    "master":"updated-with-run-audit-and-two-new-backlog-items",
     "lockedFilesTouched":false,
-    "note":"jobs-data.json ostáva na 44 validných LIVE položkách a updatedAt 2026-09-01T16:21:02+02:00. Žiadna položka nebola odstránená. ČSOB a NAY zostávajú promotion-ready; nový Upwork 2 000 USD WooCommerce build je verification."
+    "note":"jobs-data.json ostáva na 44 validných LIVE položkách a updatedAt 2026-09-01T16:21:02+02:00. Žiadna položka nebola odstránená. ČSOB a NAY zostávajú promotion-ready; nový Upwork 2 000 USD WooCommerce build je verification. job-sources.json a MASTER boli úspešne synchronizované."
   }
 }
