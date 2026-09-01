@@ -1,31 +1,32 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-02T00:11:10+02:00",
+  "updatedAt": "2026-09-02T00:36:10+02:00",
   "runSummary": {
     "familiesChecked": 11,
-    "newActiveJobs": 1,
-    "significantPendingCandidates": 14,
-    "significantlyChangedPriorityJobs": 1,
+    "newActiveJobs": 0,
+    "significantPendingCandidates": 15,
+    "significantlyChangedPriorityJobs": 0,
     "jobsDataContentUpdatedAt": "2026-09-02T00:11:10+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "fresh",
     "liveFeedCount": 44,
-    "note": "Audit 2.9.2026 o 00:11 preveril 11 source families. Do LIVE bol po opakovanom čerstvom potvrdení povýšený ČSOB Operátor IT Service Desk-u (Bratislava/občasný HO, score 90). LUNYS E-commerce špecialista bol z LIVE odstránený po explicitnom canonical LinkedIn stave 'No longer accepting applications'. Ďalší promotion-grade kandidát nad aktuálny LIVE/verification set sa nepotvrdil. Upwork priniesol Worldwide remote WooCommerce/web hity, ale zostali pod value/skill gate. Facebook verejná indexácia ostáva limited bez verified hitu. jobs-data.json bol bezpečne prepísaný po reálnej obsahovej zmene; feed zostáva na 44 položkách a freshness SLA je obnovené."
+    "note": "Audit 2.9.2026 o 00:36 preveril 11 source families. Nevznikol nový promotion-grade LIVE prírastok. Priamy Websupport canonical detail znovu potvrdil Customer Success Advisor v Bratislave: weby/hosting/SSL/troubleshooting, onboarding a možný rast k WordPressu; položka už v LIVE existuje, preto bez duplicity. Čerstvý CGI IT Technician_MEDIOR – End User Support (Bratislava, od 1 200 EUR, B1 AJ, vodič B) bol pridaný iba do verification queue pre jazykový a value gate. Brigada.sk priniesla junior účtovníka v Bratislave, ale študentská/OA-EU podmienka a nižšia priorita ho držia mimo LIVE. Facebook verejná indexácia ostáva limited s 0 verified hits. jobs-data.json zostal fail-closed na 44 položkách; MASTER bol opravený, pretože ešte uvádzal už vyradený LUNYS ako TOP #1."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":2,"added":1,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Fresh BA helpdesk/support discovery znovu potvrdila ČSOB Operátora IT Service Desk-u ako čerstvú aktívnu ponuku; promotion-ready kandidát bol zapísaný do LIVE. Ďalšie čerstvé support roly neprešli nad aktuálny prioritný set."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":1,"rejectedLocation":0,"note":"Priame firemné kariérne zdroje pre BA support/e-commerce boli preverené; bez novej promotion-grade delty nad existujúci feed."},
-    {"name":"LinkedIn Jobs / company posts","family":"linkedin","status":"ok","hits":2,"added":0,"rejectedLanguage":0,"rejectedInactive":1,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Canonical LinkedIn detail LUNYS E-commerce špecialistu explicitne uvádza 'No longer accepting applications'; položka bola preto vyradená z LIVE ako významná zmena. Verejná indexácia nepriniesla nový hard-gate-pass kandidát."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Bratislava admin/support/vodič discovery preverená; bez nového prioritného kandidáta."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Bratislava brigády preverené; bez kandidáta nad existujúci ranking a value gate."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Čerstvá Bratislava indexácia preverená; bez nového kandidáta vhodnejšieho než existujúci LIVE/verification set."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":2,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":1,"rejectedLocation":0,"note":"BA admin/e-shop/support výsledky preverené; prevažne známe alebo slabšie roly, bez novej promotion-grade delty."},
-    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"AI/web/support discovery preverená; nové výsledky neprešli hard-skill alebo value gate nad aktuálne priority."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":3,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Worldwide remote WooCommerce/web hity boli preverené. Basic WooCommerce build za 2 000 USD ostáva verification pre full-build ownership a vysokú konkurenciu; ďalšie hity zlyhali na scope-to-pay alebo hard-dev gate."},
+    {"name":"Profesia","family":"profesia","status":"ok","hits":5,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":2,"rejectedLocation":0,"note":"BA IT support discovery preverená. Allit a Websupport sú už v LIVE; čerstvý CGI End User Support prešiel lokalitou, ale ostáva verification pre B1 AJ a nízky základ 1 200 EUR. Hard-dev/high-language roly neboli promovované."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":1,"rejectedLocation":0,"note":"Priamy Websupport canonical detail znovu potvrdil Customer Success Advisor Bratislava, 1 260 EUR + variabilná zložka, onboarding do webov/hostingu/SSL a možný rast k WordPressu; už existuje v LIVE, bez duplicity."},
+    {"name":"LinkedIn Jobs / company posts","family":"linkedin","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":2,"note":"Verejná LinkedIn indexácia bola reálne preverená. Vrátila prevažne Viedeň/Luxemburg alebo iné vzdialené onsite roly; 0 overených nových BA/remote-ok hitov."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Bratislava technická podpora/admin discovery preverená; bez novej promotion-grade delty."},
+    {"name":"Brigada.sk","family":"brigada","status":"ok","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Čerstvý Junior účtovník v Bratislave: triedenie, skenovanie a spracovanie dokladov; podmienka študent alebo ukončená OA/EU a nižšia priorita, preto bez LIVE promotion."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":2,"added":0,"rejectedLanguage":1,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"BA administratívne výsledky preverené. International Construction admin vyžaduje angličtinu + ukrajinčinu + ruštinu; Grafton Executive Support je menej prioritný než existujúci LIVE set."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":4,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":2,"rejectedLocation":0,"note":"Dnešný BA feed potvrdil CGI End User Support a známy SuperFaktura support; ďalšie výsledky boli slabšie alebo duplicitné. CGI ostáva verification, nie LIVE."},
+    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Pretlak/StartupJobs web/e-shop/support discovery bola reálne vyhľadaná; bez nového overiteľného kandidáta nad aktuálny LIVE/verification set."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":3,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Čerstvé Worldwide remote web/WooCommerce hity preverené. Python/FastAPI + WooCommerce integrácia je hard-dev; ďalšie web buildy vyžadujú samostatný design/development ownership a neprešli nad existujúce priority."},
     {"name":"Verejné komunity / Reddit","family":"communities","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Verejná WordPress/WooCommerce hiring discovery preverená; bez čerstvého konkrétneho hiring dopytu s dostatočným evidence setom."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Verejne indexované BA jobs a WordPress/WooCommerce skupiny prehľadané; 0 verified hits. Autentizovaný Nexus/local ingestion ostáva backlog."}
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Verejne indexované BA jobs a WordPress/WooCommerce skupiny prehľadané; 0 verified hits a žiadny konkrétny verejne overiteľný post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog."}
   ],
   "verificationQueue": [
+    {"id":"cgi-it-technician-medior-end-user-support-20260902","title":"IT Technician_MEDIOR – End User Support","company":"CGI Slovakia s. r. o.","status":"verification","provisionalScore":85,"pay":"od 1 200 EUR/mes.","locationEligibility":"ba-area","reason":"Čerstvá Bratislava rola: HW/SW troubleshooting, tikety, Windows/M365, koncové zariadenia, kabeláž a používateľská podpora. Skúsenosť na obdobnej IT pozícii je iba výhodou; vodič B je podmienkou. B1 angličtina a nízky základ znižujú ranking, preto zatiaľ nie LIVE."},
     {"id":"nay-elektrospecialista-danubia-91416","title":"Elektrošpecialista/tka pre NAY Bratislava Danubia","company":"NAY a.s.","status":"promotion-ready","provisionalScore":88,"pay":"priemer 1 550 EUR/mes.","locationEligibility":"ba-area","reason":"Priamy NAY detail je stále verejne dostupný: Bratislava, plný úväzok, technológie + zákaznícky predaj; čaká na ďalší čerstvý canonical recheck pred promotion."},
     {"id":"profesia-feva-skladnik-20260901","title":"Skladník – stabilná jednozmenná prevádzka","company":"FEVA Slovakia SK s.r.o.","status":"verification","provisionalScore":88,"pay":"1 600–1 800 EUR/mes.","locationEligibility":"ba-area","reason":"Čerstvý Bratislava lead; jednozmenná prevádzka a odmena sú silný fit. Pred LIVE treba canonical detail kvôli presnej fyzickej záťaži, času zmeny, požiadavkám a kontaktu."},
     {"id":"upwork-woocommerce-design-build-2094700337605270558","title":"Need Basic WooCommerce Website (Design & Development)","company":"Upwork klient – MuzzlePup","status":"verification","provisionalScore":87,"pay":"2 000 USD fixed-price","locationEligibility":"remote-ok","reason":"Worldwide remote, contract-to-hire. Silný WooCommerce fit a hodnota; mínus kompletný design+development ownership, customization, launch, 50+ proposals a 5 interviewing."},
@@ -42,14 +43,17 @@
     {"id":"profesia-sav-office-manager-20260828","title":"Office manažér/office manažérka","company":"Neuroimunologický ústav SAV","status":"verification","provisionalScore":86,"reason":"B1 AJ a prax/MS Office gate."}
   ],
   "liveMix": {"liveFeedCount":44,"profesiaCount":21,"profesiaPct":47.7,"nonProfesiaCount":23,"nonProfesiaPct":52.3},
-  "developmentBacklogAddedThisRun": [],
+  "developmentBacklogAddedThisRun": [
+    {"title":"MASTER↔LIVE consistency gate","problem":"MASTER TOP zoznam sa môže stať zastaraný voči jobs-data.json, čo sa aktuálne stalo po vyradení LUNYS.","proposal":"Pred zápisom MASTERu automaticky validovať všetky TOP položky podľa stabilného LIVE ID/status a zablokovať publikovanie odkazu na neaktívnu alebo chýbajúcu položku."},
+    {"title":"Language requirement evidence provenance","problem":"Jazykové penalizácie sa niekedy opierajú o agregovaný alebo nejednoznačný údaj.","proposal":"Pri každej novej/overovanej ponuke ukladať explicitLanguageLevel, languageEvidenceSource a languageEvidenceType=canonical|jobboard|inferred; ranking má penalizovať iba podľa najsilnejšieho overeného dôkazu."}
+  ],
   "writeStatus": {
-    "jobsData":"updated-after-real-content-change",
+    "jobsData":"unchanged-no-promotion-grade-delta",
     "jobsDataNonProf":"unchanged-locked",
     "sourceAudit":"updated-after-real-source-check",
     "jobSources":"unchanged-no-structural-source-change",
-    "master":"unchanged",
+    "master":"updated-to-fix-live-consistency-and-backlog",
     "lockedFilesTouched":false,
-    "note":"jobs-data.json bol bezpečne načítaný ako celý Git blob, deduplikovaný a zapísaný full-file replacementom. LUNYS bol vyradený po explicitnom canonical closure a ČSOB bol povýšený z promotion-ready do LIVE. Feed zostáva na 44 validných položkách; updatedAt 2026-09-02T00:11:10+02:00 odráža reálnu obsahovú zmenu."
+    "note":"jobs-data.json zostal na 44 LIVE položkách a updatedAt 2026-09-02T00:11:10+02:00 nebol umelo posunutý. Source audit bol čerstvo prepísaný po reálnom 11-family discovery; MASTER sa opravuje proti skutočnému LIVE feedu."
   }
 }
