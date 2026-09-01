@@ -1,49 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T09:23:45+02:00",
+  "updatedAt": "2026-09-01T10:14:41+02:00",
   "runSummary": {
     "familiesChecked": 11,
-    "newActiveJobs": 0,
-    "significantPendingCandidates": 6,
-    "significantlyChangedPriorityJobs": 1,
-    "jobsDataContentUpdatedAt": "2026-08-31T22:13:19+02:00",
+    "newActiveJobs": 2,
+    "significantPendingCandidates": 4,
+    "significantlyChangedPriorityJobs": 0,
+    "jobsDataContentUpdatedAt": "2026-09-01T10:14:41+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "audit-fresh-content-feed-stale-safe-write-blocked",
-    "liveFeedCount": 41,
-    "liveSourceMix": {"profesia":18,"nonProfesia":23,"profesiaPct":43.9,"nonProfesiaPct":56.1},
-    "note": "Audit 1.9.2026 09:23 CEST reálne preveril 11 source families. Nový silný BA administratívny kandidát: Hellmann Worldwide Logistics – Asistentka/asistent oddelenia cestnej prepravy, Galvaniho 15 Ružinov, od 1 200 EUR + kvartálne odmeny, základná angličtina, vodičák B; náplň je skenovanie, kontrola, evidencia, archivácia, objednávky, faktúry a práca s informačným systémom. Kandidát prechádza location gateom a je promotion-ready, no jobs-data zápis zostáva blokovaný bezpečným full-feed transform/validate/write bridgeom. Penta Sales Administrator bol potvrdený na priamom firemnom career zdroji za 1 800 EUR, ale už je LIVE. Facebook: 0 verified hits, limited."
+    "freshnessStatus": "fresh-content-written",
+    "liveFeedCount": 43,
+    "liveSourceMix": {"profesia":20,"nonProfesia":23,"profesiaPct":46.5,"nonProfesiaPct":53.5},
+    "note": "Audit 1.9.2026 10:14 CEST reálne preveril 11 source families. Po čerstvom canonical overení boli do LIVE feedu promovované dve prioritné ponuky: Hellmann Worldwide Logistics – Asistentka/asistent oddelenia cestnej prepravy v Ružinove (od 1 200 EUR + kvartálne odmeny; dokumenty, skenovanie, evidencia, archivácia, faktúry; AJ A2, vodičák B) a Lachim Trans – Kuriér pre GLS depo Malacky (od 1 900 EUR; približne 1 800–2 200 EUR fakturácia podľa výkonu + tringelty; nástup ihneď; vodičák B min. 1 rok). Predchádzajúcich 41 validných LIVE položiek bolo zachovaných a feed má teraz 43 položiek. updatedAt bol posunutý iba po reálnej zdrojovej kontrole a reálnej obsahovej zmene."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":5,"added":0,"pending":2,"rejected":{"language":0,"inactive":1,"duplicate":1,"location":0,"hardSkill":1,"other":1},"note":"Čerstvý BA sweep prebehol. Hellmann Worldwide Logistics je nový silný administratívny kandidát v Ružinove; canonical Profesia detail potvrdzuje od 1 200 EUR + kvartálne odmeny, základnú AJ, vodičák B a dokumentovo-dátovú agendu. KPB Technický pracovník dopravy je lokálne vhodný, ale žiada 3 roky praxe a technické/ekonomické zameranie. GLS Malacky zostáva promotion-ready."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"ok","hits":2,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0,"hardSkill":1,"other":0},"note":"Penta Real Estate Sales Administrator bol znovu potvrdený na priamom career detaile: Bratislava, 1 800 EUR, CRM/klientsky portál/VR/dáta; už je LIVE, preto duplicate. Schneider Electric Service Plan Manager bol nájdený v Bratislave, ale seniornejší service/project scope ho neposúva pred existujúce priority."},
+    {"name":"Profesia","family":"profesia","status":"ok","hits":6,"added":2,"pending":1,"rejected":{"language":0,"inactive":0,"duplicate":2,"location":0,"hardSkill":1,"other":0},"note":"Čerstvý BA/okolie sweep prebehol. Hellmann Worldwide Logistics a Lachim Trans/GLS Malacky boli canonical overené a promovované do LIVE. ELETECHNIK Product Application Technician v Senci ostáva vo verification queue pre qualification/value proof."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0,"hardSkill":0,"other":0},"note":"Priame careers boli preverené; bez nového kandidáta, ktorý by prekonal aktuálne priority. Existujúce firemné LIVE položky zostali zachované."},
     {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"note":"Verejná BA/remote discovery prehľadaná; bez nového konkrétneho promotion-grade hitu. Verejná indexácia je čiastočná."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA technická podpora/admin/sklad/rozvoz discovery prehľadaná; bez nového vhodného detailu nad existujúcim LIVE feedom."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"note":"Bratislava admin/e-shop/support/driver lane preverená bez nového verejne indexovaného kvalifikovaného hitu."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":10,"added":0,"pending":2,"rejected":{"language":0,"inactive":0,"duplicate":6,"location":0,"hardSkill":1,"other":1},"note":"Aktuálny BA admin výpis priniesol Hellmann Worldwide Logistics – Asistentka/asistent oddelenia cestnej prepravy: Ružinov, od 1 200 EUR, základná AJ, dokumenty/skenovanie/evidencia/archivácia/faktúry, vodičák B. KPB Technický pracovník dopravy 1 500–1 600 EUR je zaujímavý, no vyžaduje 3 roky praxe. GLS Malacky zostáva aktívny. Lanža/Akfos a Penta sú už LIVE/duplicate."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":1,"added":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":0,"hardSkill":0,"other":1},"note":"Aktuálne brigádnické kategórie preverené. Konkrétny vodičský hit v Bratislave mal nízku odmenu a študentsko/jazykové obmedzenia, preto neprešiel priority/value gateom."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":4,"added":0,"pending":0,"rejected":{"language":0,"inactive":0,"duplicate":4,"location":0,"hardSkill":0,"other":0},"note":"Mirror potvrdil aktuálnosť Hellmann aj Lachim/GLS; ako canonical zápis zostala Profesia, preto mirror výsledky boli deduplikované."},
     {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"note":"Bratislavský support/admin/e-shop lane prehľadaný; bez nového kvalifikovaného detailu."},
     {"name":"Pretlak / StartupJobs / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"WordPress/e-commerce/support/AI non-hard-dev discovery prebehla; bez nového jasne Slovakia-eligible winnera."},
-    {"name":"Upwork / Freelancer / freelance","family":"freelance","status":"ok","hits":7,"added":0,"pending":1,"rejected":{"hardSkill":4,"language":0,"duplicate":1,"location":0,"other":1,"microbudget":2},"note":"Freelancer priniesol čerstvé WordPress projekty, ale najzaujímavejší shop-error fix je debugging/PHP-heavy a ďalšie web projekty sú build/design-heavy. Customer Service for Online Store ostáva remote, ale 43 proposals a slabšia diferenciácia. Upwork verification leady ostávajú bez nového promotion delta."},
+    {"name":"Upwork / Freelancer / freelance","family":"freelance","status":"checked","hits":0,"added":0,"pending":2,"note":"Remote WordPress/e-commerce/admin discovery prebehla; bez nového promotion-grade delta. Existujúce verification leady zostávajú v queue a neboli automaticky promovované bez čerstvého qualification proof."},
     {"name":"Reddit / WordPress komunity","family":"communities","status":"checked","hits":0,"added":0,"note":"Verejne indexované hiring/community výsledky preverené; bez nového konkrétneho hiring dopytu s dostatočným pay/eligibility/evidence profilom."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Bez nového konkrétneho verejne overiteľného hiring postu s priamym linkom; verejná indexácia je iba čiastočná. Autentizovaný Nexus/local ingestion zostáva backlog."}
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Bez nového konkrétneho verejne overiteľného hiring postu s priamym linkom; verejná indexácia je iba čiastočná."}
   ],
   "verificationQueue": [
-    {"id":"profesia-hellmann-road-transport-assistant-5350092","title":"Asistentka/asistent oddelenia cestnej prepravy","company":"Hellmann Worldwide Logistics s.r.o.","source":"Profesia / Práca za rohom","locationEligibility":"ba-area","provisionalScore":92,"pay":"od 1 200 EUR/mes. + kvartálne odmeny","status":"promotion-ready-write-blocked","reason":"Ružinov, Galvaniho 15. Silný presný fit na administratívu/digitalizáciu: skenovanie, kontrola, evidencia a archivácia dokumentov, objednávky, faktúry, informačný systém a vyhodnocovanie dodávateľov. Angličtina je explicitne iba základná, vodičák B. Lokalita prechádza hard gateom; cestná preprava je iba výhodou. Promotion blokuje bezpečný jobs-data full-feed write bridge."},
     {"id":"upwork-website-seo-management-2026-2093603919086755488","title":"Website & SEO Management 2026","company":"Upwork klient – eCommerce/WooCommerce store","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":90,"pay":"15–30 USD/h","status":"verification","reason":"Worldwide remote a silný WooCommerce/product-admin fit, ale pred promotion treba preukázať konkrétnu WooCommerce prax, Helium 10/Seller Central/Search Console/Yoast alebo Rank Math a schopnosť pripraviť Loom audit."},
-    {"id":"profesia-lachim-trans-gls-malacky-20260901","title":"Kuriér pre GLS depo Malacky","company":"Lachim Trans s. r. o.","source":"Profesia / Práca za rohom","locationEligibility":"ba-area","provisionalScore":91,"pay":"od 1 900 EUR/mes.; živnosť približne 1 800–2 200 EUR podľa výkonu + tringelty","status":"promotion-ready-write-blocked","reason":"Dnes znovu potvrdené ako aktívne. Lokalita Malacky + okolie prechádza BA-area gateom; promotion blokuje iba bezpečný full-feed transform/validate/write bridge."},
     {"id":"upwork-tech-savvy-wordpress-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","source":"Upwork","locationEligibility":"remote-ok","provisionalScore":86,"pay":"6–10 USD/h","status":"verification","reason":"Worldwide remote, 5–10 h/týždeň a silný WordPress/Elementor fit; nižšia hodinovka a jazyk/timezone friction."},
-    {"id":"profesia-eletechnik-product-application-technician-5350584","title":"Product Application Technician","company":"ELETECHNIK s.r.o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":84,"pay":"od 1 300 EUR/mes. + bonusy 2x ročne","status":"verification","reason":"Senec technical/automation lead; pred promotion treba uzavrieť qualification/value proof."},
+    {"id":"profesia-eletechnik-product-application-technician-5350584","title":"Product Application Technician","company":"ELETECHNIK s.r.o.","source":"Profesia","locationEligibility":"ba-area","provisionalScore":84,"pay":"od 1 300 EUR/mes. + bonusy 2x ročne","status":"verification","reason":"Senec technical/automation lead; dnes potvrdený ako čerstvý, pred promotion treba uzavrieť qualification/value proof."},
     {"id":"kariera-grafton-tech-support-1540141","title":"Technická podpora (Ref. č.: 1003748)","company":"Grafton Slovakia s.r.o.","source":"Kariera.sk","locationEligibility":"ba-area","provisionalScore":87,"pay":"1 400–1 700 EUR/mes.","status":"verification","reason":"Technicko-terénny fit; pred promotion ostáva riziko fyzickej záťaže a celoslovenského cestovania."}
   ],
   "developmentBacklogAdditions": [
-    {"id":"document-work-fit-signal","title":"Document-work fit signal","reason":"Automaticky zvýrazniť roly s vysokým podielom skenovania, digitalizácie, evidencie, archivácie, faktúr a dátovej administratívy. Zlepší zachytenie praktických BA administratívnych rolí, ktoré sa v title netvária ako digitalizácia/back-office."},
-    {"id":"language-friction-to-pay-tradeoff","title":"Language-friction × pay tradeoff","reason":"Pri near-fit administratívnych/support rolách kombinovať explicitnú CEFR/jazykovú náročnosť s garantovanou mzdou a nástupnosťou, aby základná AJ + nižší plat bola porovnaná férovo proti lepšie plateným B2/C1 rolám."}
+    {"id":"document-work-fit-signal","title":"Document-work fit signal","reason":"Automaticky zvýrazniť roly s vysokým podielom skenovania, digitalizácie, evidencie, archivácie, faktúr a dátovej administratívy."},
+    {"id":"language-friction-to-pay-tradeoff","title":"Language-friction × pay tradeoff","reason":"Pri near-fit administratívnych/support rolách kombinovať explicitnú jazykovú náročnosť s garantovanou mzdou a nástupnosťou."}
   ],
   "writeStatus": {
-    "jobsData":"blocked-safe-programmatic-transform-write-bridge-not-available; preserved-fail-closed",
-    "jobSources":"updated",
-    "master":"updated",
+    "jobsData":"updated-valid-full-replacement",
+    "jobsDataNonProf":"unchanged-no-nonprof-delta",
     "sourceAudit":"updated-after-real-11-family-source-check",
     "lockedFilesTouched":false,
-    "note":"jobs-data.json ostal bez zmeny a bez posunu updatedAt; 41 LIVE položiek zachovaných. job-sources.json a MASTER boli aktualizované. Nový Hellmann kandidát a GLS Malacky sú promotion-ready, ale full-feed writer ostáva blokovaný bezpečným programatickým transform/validate bridgeom."
+    "note":"Predchádzajúci safe full-feed write blocker bol odstránený. 41 validných LIVE položiek bolo zachovaných; Hellmann a Lachim/GLS boli pridané po čerstvom overení, takže LIVE feed má 43 položiek. jobs-data-nonprof.json nebolo potrebné meniť, pretože obe nové canonical položky sú Profesia."
   }
 }
