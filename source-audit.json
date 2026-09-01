@@ -1,53 +1,56 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T20:15:05+02:00",
+  "updatedAt": "2026-09-01T20:24:11+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
-    "significantPendingCandidates": 11,
+    "significantPendingCandidates": 12,
     "significantlyChangedPriorityJobs": 0,
     "jobsDataContentUpdatedAt": "2026-09-01T16:21:02+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "stale",
     "liveFeedCount": 44,
-    "note": "Audit 1.9.2026 20:15 CEST reálne preveril hlavné BA/okolie/remote source families. Nový prioritný kandidát ČSOB Operátor IT Service Desk-u (O5350972) bol publikovaný dnes a canonical Profesia detail potvrdzuje Bratislavu s občasným home office, vhodnosť aj pre absolventov, L1 podporu cez telefón/Remote Desktop, ServiceNow, Windows/Android, tlač, Outlook, mobily a účty/prístupy. Požadovaná AJ je iba mierne pokročilá; IT vzdelanie a predchádzajúci helpdesk sú výhodou, nie podmienkou. Feed nebol umelo označený za čerstvý: jobs-data.json zostáva na 16:21:02 CEST, preto je SLA stale."
+    "note": "Audit 1.9.2026 20:24 CEST reálne preveril Profesia, priame firemné careers, LinkedIn, Worki, Brigada.sk, Kariera.sk, Práca za rohom, tech/creative zdroje, Upwork/freelance, verejné komunity a Facebook indexáciu. Najsilnejší promotion-ready delta ostáva ČSOB Operátor IT Service Desk-u v Bratislave/hybrid. Nový SENTIA Back office bol overený, ale vyradený pre rozhodujúcu povinnú prax v poisťovníctve. Slovenská pošta má čerstvú BA brigádu triediča zásielok do 9,30 EUR/h, ale fyzická záťaž/nočné zmeny ju držia pod prioritným prahom."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":3,"added":0,"note":"Reálne preverené najnovšie BA technická podpora/helpdesk/admin/kuriér výsledky. Nový promotion-ready kandidát: ČSOB Operátor IT Service Desk-u, O5350972. ING IT Application Specialist je čerstvý, ale pravdepodobný vyšší language/enterprise skill gate; nepromovaný bez detailného proofu."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"note":"Hilti/NAY a priame career indexy preverené; bez novej canonical promotion-grade delty nad existujúci LIVE set."},
-    {"name":"LinkedIn Jobs / company posts","family":"linkedin","status":"checked","hits":0,"added":0,"note":"BA technical/customer support discovery spustená; bez nového overiteľného prioritného hitu lepšieho než ČSOB/aktuálny LIVE set."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"note":"BA technická podpora/admin/sklad/rozvoz discovery reálne spustená; bez nového promotion-grade delta."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"note":"Aktuálne BA brigády preverené v rámci sweepu; bez prioritného kandidáta nad LIVE set."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"note":"BA technická podpora/admin discovery reálne spustená; bez nového vhodného canonical hitu."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"note":"Bez novej prioritnej delty v dostupnej verejnej indexácii."},
-    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Bez nového promotion-grade kandidáta nad existujúci AI/e-commerce LIVE set."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":8,"added":0,"note":"Čerstvé WordPress/WooCommerce/VA výsledky preverené. Nové build/design projekty sú prevažne hard-dev/design alebo slabý budget; Website & SEO Management ostáva známy verification kandidát. Social/VA výsledky boli buď country-restricted, nízko platené alebo vyžadovali silnú English/social content prax."},
-    {"name":"Verejné komunity / Reddit / WordPress","family":"communities","status":"limited","hits":0,"added":0,"note":"Bez konkrétneho verejne overiteľného hiring dopytu vhodného na ingest."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits; autentizovaný Nexus/local ingestion nebol v tomto behu dostupný."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":3,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":1,"rejectedLocation":0,"note":"ČSOB IT Service Desk ostáva promotion-ready; existujúce LIVE Profesia ponuky bez duplicitného ingestu."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":1,"rejectedLocation":0,"note":"Hilti a ďalšie BA canonical careers preverené; bez novej promotion-grade delty."},
+    {"name":"LinkedIn Jobs / company posts","family":"linkedin","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"BA support/e-commerce discovery spustená; bez nového overiteľného prioritného hitu."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"BA tech/admin/logistics discovery preverená; bez novej delty nad LIVE set."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"BA brigády preverené; bez vhodnejšej priority než aktuálny LIVE set."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":2,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Overená čerstvá Slovenská pošta brigáda triediča zásielok, Tomášikova 54, do 9,30 EUR/h; nepridaná pre fyzickú záťaž, nočné zmeny a nižšiu prioritu. Vedúci pošty Chorvátsky Grob bol zachytený v indexe, ale manažérsky/sales profil je slabší fit."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":2,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Nový SENTIA services Back office Bratislava 1 500–1 800 EUR overený; rozhodujúca prax v poisťovníctve a pokročilý MS Office = qualification reject. Ďalšie čerstvé BA výsledky neprekonali fit gate."},
+    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Bez nového promotion-grade WordPress/e-commerce/AI support kandidáta."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":6,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Čerstvé WordPress projekty preverené; Blocksy fixed-price 50 USD a Bricks Builder developer leady sú príliš hard-dev/design alebo nízky value. Bez lepšieho admin/maintenance leadu než existujúci LIVE/queue."},
+    {"name":"Verejné komunity / Reddit / WordPress","family":"communities","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Bez konkrétneho verejne overiteľného hiring dopytu vhodného na ingest."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"0 verified hits; verejná indexácia je čiastočná. Autentizovaný Nexus/local ingestion ostáva backlog a nebol spustený."}
   ],
   "verificationQueue": [
-    {"id":"profesia-csob-it-service-desk-5350972","title":"ČSOB Operátor IT Service Desk-u (M/Ž)","company":"ČSOB Finančná skupina","status":"promotion-ready","provisionalScore":90,"pay":"od 1 200 EUR/mes. + variabilná zložka a benefity","reason":"Čerstvý 1.9.2026 BA hybrid L1 support; vhodné aj pre absolventov, Windows/Android/MS Office, ServiceNow, Remote Desktop; AJ mierne pokročilá. Predchádzajúci helpdesk/IT vzdelanie sú iba výhodou."},
+    {"id":"profesia-csob-it-service-desk-5350972","title":"ČSOB Operátor IT Service Desk-u (M/Ž)","company":"ČSOB Finančná skupina","status":"promotion-ready","provisionalScore":90,"pay":"od 1 200 EUR/mes. + variabilná zložka a benefity","locationEligibility":"ba-area","reason":"Čerstvý BA hybrid L1 support; vhodné aj pre absolventov, Windows/Android/MS Office, ServiceNow, Remote Desktop; AJ mierne pokročilá. Predchádzajúci helpdesk/IT vzdelanie sú iba výhodou."},
+    {"id":"pracazarohom-sentia-backoffice-20260901","title":"Pracovník/čka Back office","company":"SENTIA services s. r. o.","status":"reject-qualification","provisionalScore":69,"pay":"1 500–1 800 EUR/mes.","locationEligibility":"ba-area","reason":"Bratislava Zwirn, ale prax v poisťovníctve je explicitne rozhodujúca a požaduje sa pokročilý MS Office."},
+    {"id":"kariera-posta-triedic-1473683","title":"BRIGÁDA - Triedič zásielok v Bratislave","company":"Slovenská pošta, a.s.","status":"verification-low-priority","provisionalScore":72,"pay":"6,50 EUR/h + nočné príplatky, spolu do 9,30 EUR/h","locationEligibility":"ba-area","reason":"Tomášikova 54, BA; bez praxe a cudzieho jazyka, ale manuálna práca s bremenami a nočné zmeny sú výrazný fit mínus."},
     {"id":"powerlogy-marketing-specialist-20260827","title":"Marketing Specialist – e-shop, obsah, WordPress/WooCommerce","company":"Powerlogy","status":"verification","provisionalScore":84,"reason":"Silný fit, ale veľmi dobrá AJ je hard risk."},
-    {"id":"nay-elektrospecialista-danubia-91416","title":"Elektrošpecialista/tka pre NAY Bratislava Danubia","company":"NAY a.s.","status":"promotion-ready","provisionalScore":88,"pay":"priemer 1 550 EUR/mes.","reason":"Priamy firemný detail bol v predchádzajúcich behoch aktívny; stále čaká na bezpečný dedupe/promotion check."},
+    {"id":"nay-elektrospecialista-danubia-91416","title":"Elektrošpecialista/tka pre NAY Bratislava Danubia","company":"NAY a.s.","status":"promotion-ready","provisionalScore":88,"pay":"priemer 1 550 EUR/mes.","reason":"Priamy firemný detail aktívny; čaká na dedupe/promotion check."},
     {"id":"form-factory-it-support-20260825","title":"IT Support Specialist (m/ž)","company":"Form Factory Slovakia s.r.o.","status":"verification","provisionalScore":88,"reason":"Treba canonical BA apply route a jazyk/experience proof."},
     {"id":"upwork-website-seo-management-2026-2093603919086755488","title":"Website & SEO Management 2026","status":"verification","provisionalScore":90,"reason":"Worldwide remote; skill-proof gate otvorený."},
     {"id":"upwork-tech-savvy-wordpress-va-2094223212146933823","title":"Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support","status":"verification","provisionalScore":86,"reason":"Worldwide remote; silný WordPress/Elementor fit, ale jazyk/timezone a odmena ostávajú friction."},
     {"id":"upwork-ecommerce-va-subscriptions-xero-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","status":"verification","provisionalScore":89,"reason":"Silný remote fit, ale povinné Subscriptions/Meta Ads/Xero + dobrá písomná AJ."},
     {"id":"profesia-eletechnik-product-application-technician-5350584","title":"Product Application Technician","company":"ELETECHNIK s.r.o.","status":"verification","provisionalScore":84,"reason":"Qualification/value proof otvorený."},
     {"id":"kariera-grafton-tech-support-1540141","title":"Technická podpora","company":"Grafton Slovakia s.r.o.","status":"verification","provisionalScore":87,"reason":"Fyzická záťaž a celoslovenské cestovanie."},
-    {"id":"profesia-sav-office-manager-20260828","title":"Office manažér/office manažérka","company":"Neuroimunologický ústav SAV","status":"verification","provisionalScore":86,"reason":"B1 AJ a prax/MS Office gate."},
-    {"id":"cerkam-terenny-admin-5348670","title":"Terénny administratívny pracovník","company":"Cerkam Facility Services s. r. o.","status":"already-live","provisionalScore":86,"reason":"Už je v LIVE; nepridávať duplicitne."}
+    {"id":"profesia-sav-office-manager-20260828","title":"Office manažér/office manažérka","company":"Neuroimunologický ústav SAV","status":"verification","provisionalScore":86,"reason":"B1 AJ a prax/MS Office gate."}
   ],
   "liveMix": {"liveFeedCount":44,"profesiaCount":20,"profesiaPct":45.5,"nonProfesiaCount":24,"nonProfesiaPct":54.5},
   "runBacklogAdditions": [
-    {"name":"Safe full-feed transform writer","problem":"jobs-data.json je veľký a writer vyžaduje kompletný replacement; bez deterministického parse/transform/validate roundtripu je risk poškodenia feedu.","benefit":"Umožní bezpečne promovať overené kandidáty bez ručného skladania celého JSON súboru a bez umelého posúvania updatedAt."},
-    {"name":"Fresh service-desk matcher","problem":"Čerstvé L1/helpdesk ponuky sa môžu objaviť len pár hodín po poslednom obsahu feedu.","benefit":"Prioritizuje absolvent-friendly Windows/Remote Desktop/ServiceNow roly a znižuje oneskorenie ingestu."}
+    {"name":"Hiring-post edit diff watcher","problem":"Aktívne ponuky sa po publikovaní menia bez nového URL alebo publication timestampu a môže sa zmeniť jazyk, miesto, mzda či povinné skills.","benefit":"Pri opakovanom overení porovná kritické polia a upozorní iba na zmenu, ktorá mení eligibility/ranking alebo reakčnú stratégiu."},
+    {"name":"Source-family query rotation entropy guard","problem":"Opakované rovnaké dopyty môžu dlhodobo prehliadať synonymá rolí a vytvárať falošný pocit coverage.","benefit":"Vynúti rotáciu synonymických query balíkov pre web/e-shop, support, admin, vodič a logistiku pri zachovaní minimálnej stabilnej kontrolnej sady."}
   ],
   "writeStatus": {
-    "jobsData":"blocked-safe-full-file-replacement-after-priority-delta",
-    "jobsDataNonProf":"unchanged-no-nonprof-promotion",
+    "jobsData":"unchanged-fail-closed-no-safe-transform-write-in-this-run",
+    "jobsDataNonProf":"locked-unchanged",
     "sourceAudit":"updated-after-real-source-check",
+    "jobSources":"pending-update-this-run",
+    "master":"pending-update-this-run",
     "lockedFilesTouched":false,
-    "note":"jobs-data.json zostal na 44 validných LIVE položkách s updatedAt 2026-09-01T16:21:02+02:00. Nový ČSOB kandidát je promotion-ready, ale bez bezpečného deterministického full-file parse/transform/validate/write kroku nebol LIVE súbor ručne prepisovaný. Posledné validné dáta ostali zachované fail-closed a source-audit explicitne eviduje stale SLA aj nový kandidát." 
+    "note":"LIVE feed ostáva 44 položiek a updatedAt 16:21:02 CEST; žiadna existujúca položka nebola odstránená. Promotion-ready ČSOB/NAY ostávajú v queue, pretože tento beh nevykonal bezpečný deterministický full-file transform jobs-data.json."
   }
 }
