@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-02T01:34:27+02:00",
+  "updatedAt": "2026-09-02T02:19:00+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "newActiveJobs": 0,
-    "significantPendingCandidates": 15,
+    "significantPendingCandidates": 17,
     "significantlyChangedPriorityJobs": 0,
     "jobsDataContentUpdatedAt": "2026-09-02T00:11:10+02:00",
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "stale",
     "liveFeedCount": 44,
-    "note": "Audit 2.9.2026 o 01:34 reálne preveril 11 source families. Nový unikátny promotion-grade LIVE prírastok sa nepotvrdil. IZY VAPE Back Office & Operations Coordinator je stále verejne aktívny: Bratislava/prevažne home office, 1 600–2 000 EUR, e-shop/logistika/reklamácie/reporting/AI, ale ide o už známu LIVE prioritu, preto bez duplicity. Práca za rohom potvrdila aj známeho Lachim Trans GLS Malacky. Reddit vrátil čerstvý FOR HIRE post, nie hiring dopyt. Facebook verejná indexácia nevrátila konkrétny overiteľný hiring post. jobs-data.json zostal fail-closed bez umelej zmeny timestampu.",
+    "note": "Audit 2.9.2026 o 02:19 reálne preveril 11 source families. Nový promotion-grade LIVE prírastok ani materiálna zmena existujúcej priority sa nepotvrdili. Upwork stále potvrdzuje známe Website & SEO Management 2026 a E-commerce VA WooCommerce/Subscriptions/Xero; nové nízkorozpočtové alebo hard-dev výsledky neprešli value/skill gate. Reddit priniesol dva čerstvé hiring signály pre WordPress/WooCommerce, ale bez rozpočtu a dostatočného klientského evidence zostávajú iba vo verification queue. Facebook verejná indexácia opäť nevrátila konkrétny overiteľný hiring post. jobs-data.json zostal fail-closed bez umelej zmeny timestampu.",
     "newBacklogImprovements": [
       "Applied-state suppression gate — synchronizovať stav už odoslaných reakcií/CRM tak, aby hodinový discovery neoznačoval už osloveného zamestnávateľa ako nový významný hit; pri zmene platu/statusu ho ponechať ako material-change event.",
       "Material-change notification fingerprint — pre stabilné job ID držať hash platu, lokality, remote režimu, deadline/statusu a požiadaviek; upozorniť znovu iba pri materiálnej zmene, čím sa odstránia opakované hodinové notifikácie známych LIVE ponúk."
     ]
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":3,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":3,"rejectedLocation":0,"note":"BA administratíva/e-commerce discovery preverená. IZY VAPE 1 600–2 000 EUR je stále aktívny a relevantný, ale už známa LIVE priorita; bez duplicity."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Priame career discovery pre BA support/technické roly reálne preverené; bez nového promotion-grade BA/remote-ok detailu."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"BA e-commerce/IT support/admin/driver discovery preverená; bez nového verejne overiteľného promotion-grade detailu v tomto sweepe."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Telekom, Alza, ČSOB/NAY a širší BA technický/support discovery preverený. Bez novej unikátnej promotion-grade delty; verejná indexácia ČSOB bola obmedzená na všeobecné stránky."},
     {"name":"LinkedIn Jobs / company posts","family":"linkedin","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Verejná indexácia BA WordPress/WooCommerce/support preverená; bez nového konkrétneho promotion-grade detailu. Coverage bez loginu je čiastočná."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Bratislava technická podpora/admin/kuriér/sklad discovery preverená; bez novej vhodnej delty."},
     {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Bratislava administratíva/technická podpora/e-shop brigády preverené; bez nového prioritného overiteľného hitu."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"BA discovery preverená; dostupné office/admin výsledky neprekonali aktuálny LIVE/verification set a nebol potvrdený nový promotion-grade detail."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":4,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":4,"rejectedLocation":0,"note":"Aktuálny BA feed preverený. IZY VAPE je stále aktívny; Lachim Trans GLS Malacky, Košík a Lanža sú známe kandidáty/LIVE položky. Bez novej unikátnej promotion-grade delty."},
-    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"WordPress/e-commerce/support discovery preverená; Pretlak výsledky boli prevažne freelancer profily, nie nové hiring ponuky; bez promotion."},
-    {"name":"Upwork / freelance","family":"freelance","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Worldwide remote WooCommerce/WordPress VA discovery reálne preverená; tento sweep nevrátil nový verejne overiteľný hit s lepším evidence/value profilom než existujúca queue."},
-    {"name":"Verejné komunity / Reddit","family":"communities","status":"limited","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"r/wordpressjobs preverený. Čerstvý výsledok bol FOR HIRE WordPress/Shopify developer, teda ponuka služby od freelancera, nie hiring dopyt; 0 vhodných hiring hitov."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"BA discovery preverená; index neposkytol nový detail, ktorý by prekonal aktuálny LIVE/verification set."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Aktuálny BA/okolie discovery preverený; bez novej unikátnej promotion-grade delty."},
+    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"WordPress/e-commerce/support discovery preverená; bez promotion-grade novej ponuky."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":7,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":2,"rejectedLocation":0,"note":"Worldwide remote WordPress/WooCommerce/VA discovery reálne preverená. Website & SEO Management 2026 a E-commerce VA WooCommerce/Subscriptions/Xero sú stále verejne aktívne, ale už známe verification položky. Nové výsledky zahŕňali hard-dev buildy alebo nízku hodnotu (napr. 5 USD/83.87 USD fixed), preto bez promotion."},
+    {"name":"Verejné komunity / Reddit","family":"communities","status":"ok","hits":2,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"r/wordpressjobs priniesol dva čerstvé hiring signály: online language-learning web s možným WooCommerce a urgent WordPress dev/designer. Oba bez overeného rozpočtu/klientského evidence, preto iba verification, nie LIVE promotion."},
     {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"note":"Verejná indexácia pre WordPress Slovensko/WooCommerce SK+CZ/Práca Bratislava nevrátila konkrétny verejne overiteľný hiring post s priamym linkom. 0 verified hits; autentizovaný Nexus/local ingestion ostáva backlog."}
   ],
   "verificationQueue": [
@@ -44,8 +44,10 @@
     {"id":"upwork-ecommerce-va-subscriptions-xero-2093200734923132353","title":"E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero","status":"verification","provisionalScore":89},
     {"id":"profesia-eletechnik-product-application-technician-5350584","title":"Product Application Technician","status":"verification","provisionalScore":84},
     {"id":"kariera-grafton-tech-support-1540141","title":"Technická podpora","status":"verification","provisionalScore":87},
-    {"id":"profesia-sav-office-manager-20260828","title":"Office manažér/office manažérka","status":"verification","provisionalScore":86}
+    {"id":"profesia-sav-office-manager-20260828","title":"Office manažér/office manažérka","status":"verification","provisionalScore":86},
+    {"id":"reddit-language-learning-woocommerce-20260902","title":"Website creator – online language-learning business / shop / WooCommerce option","status":"verification-no-budget","provisionalScore":80,"locationEligibility":"remote-ok"},
+    {"id":"reddit-wordpress-dev-designer-urgent-20260902","title":"Looking for a WordPress dev / designer – urgent","status":"verification-no-budget","provisionalScore":76,"locationEligibility":"remote-ok"}
   ],
   "liveMix":{"liveFeedCount":44,"profesiaCount":21,"profesiaPct":47.7,"nonProfesiaCount":23,"nonProfesiaPct":52.3},
-  "writeStatus":{"jobsData":"unchanged-no-promotion-grade-delta","jobsDataNonProf":"unchanged-locked","sourceAudit":"updated-after-real-source-check","jobSources":"updated-freshness-notes","master":"updated-audit-and-backlog","lockedFilesTouched":false,"note":"jobs-data.json updatedAt zostal 2026-09-02T00:11:10+02:00; žiadna existujúca LIVE položka nebola odstránená."}
+  "writeStatus":{"jobsData":"unchanged-no-promotion-grade-delta","jobsDataNonProf":"unchanged-locked","sourceAudit":"updated-after-real-source-check","jobSources":"unchanged","master":"unchanged","lockedFilesTouched":false,"note":"jobs-data.json updatedAt zostal 2026-09-02T00:11:10+02:00; žiadna existujúca LIVE položka nebola odstránená. Feed je mimo 60-minútového SLA a timestamp nebol posunutý bez bezpečného full-file write roundtripu."}
 }
