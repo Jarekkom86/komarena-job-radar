@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 2. 9. 2026 14:18 CEST
+Aktualizované: 2. 9. 2026 15:19 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -37,9 +37,11 @@ Aktualizované: 2. 9. 2026 14:18 CEST
 - LIVE mix: **Profesia 23/46 = 50,0 %**, mimo Profesia **23/46 = 50,0 %**.
 - Facebook verejná indexácia: `limited`, **0 verified hits**; žiadne fiktívne pokrytie.
 - Pending/verification queue: **32 kandidátov**.
-- Posledný beh nepridal nový LIVE job; od 14:11 nevznikla nová promotion-grade delta.
-- Upwork znovu potvrdil `WooCommerce Website Builder Needed` (Worldwide remote, 500 USD fixed-price), ale ponuka už je vo verification queue a nepredstavuje nový prírastok.
-- Reddit verejná indexácia v tomto behu nepriniesla nový overiteľný hiring dopyt vhodný pre Jara; všeobecné diskusie sa nepočítajú.
+- Beh o 15:19 nepridal nový LIVE job; nevznikla nová promotion-grade delta.
+- Upwork znovu potvrdil `E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero`: Worldwide remote, 10–15 USD/h, <30 h/týždeň, 1–3 mesiace, contract-to-hire. Ponuka už je vo verification queue; explicitne vyžaduje good written English, WooCommerce Subscriptions, Meta Ads Manager a základný Xero, preto sa automaticky nepromovala.
+- LinkedIn verejná indexácia priniesla Swiss Re `IT Service Analyst (part-time student role)` v Bratislave; študentská podmienka ju vyradila z aktívneho odporúčania.
+- Brigada.sk zostáva verejne indexačne limited; viditeľná BA kategória nepriniesla nový konkrétny promotion-grade detail.
+- Reddit verejná indexácia nepriniesla nový konkrétny vhodný hiring dopyt; všeobecné diskusie a `[FOR HIRE]` posty sa nepočítajú.
 - Facebook zostáva **0 verified hits / limited**.
 - SAV Asistent/ka riaditeľa zostáva `promotion-ready`: Bratislava, 1 800 €, 08:00–16:00, AJ A1–A2, deadline 15.10.2026; požaduje aspoň 5 rokov praxe.
 
@@ -95,12 +97,14 @@ Riešenie:
 - **Training-evidence confidence boost** — explicitné „zaškolíme“, mentoring alebo dôkladné onboarding tvrdenie evidovať ako dôkaz, ktorý znižuje riziko pri prenositeľných skilloch; nikdy ním však neobchádzať povinnú kvalifikáciu, jazyk alebo hard skill.
 - **Canonical freshness delta debounce** — pri opakovanom audite v krátkom intervale porovnať canonical URL + publishedAt/verified fingerprint a neprepočítavať nezmenené kandidáty; šetrí sourcing čas bez zníženia coverage a nikdy nesmie preskočiť nový alebo zmenený detail.
 - **Freelance portfolio-evidence requirement estimator** — pri Upwork/WordPress zákazkách extrahovať požiadavku na ukážky práce, podobné projekty alebo portfolio a odhadnúť, či existujúce dôkazy praxe stačia; znižuje plytvanie návrhmi na zákazky, kde klient explicitne očakáva silnejšie referencie.
+- **Student/eligibility hard-gate extractor** — explicitne rozlišovať študentský status, vekové/školské podmienky, internship eligibility a iné formálne obmedzenia ešte pred scoringom; zabráni vysokému skóre ponúk, na ktoré uchádzač formálne nemôže reagovať.
+- **Freelance client-engagement freshness signal** — pri Upwork zákazkách používať `last viewed by client`, počet hires/interviewing a vek ponuky ako signál reálnej aktivity klienta; pomáha prioritizovať zákazky, kde je ešte rozumná šanca na reakciu, bez preceňovania samotného počtu proposals.
 - Autentizovaný Facebook ingestion cez Nexus/local agent.
 - Source-success analytics, publishedAt/<24h priority, commute/distance, deadline alerts, company contact enrichment, duplicate cluster report, reply probability, GitHub Actions polling a cross-device sync.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: obsahovo nezmenený; feed zostal fail-closed na 46 LIVE položkách. Nebola nájdená nová promotion-grade delta.
-- `job-sources.json`: register zdrojov bol revalidovaný; bez štrukturálnej zmeny registra.
-- `source-audit.json`: aktualizovaný po reálnom audite 11 source families; Facebook zostáva 0 verified hits.
+- `job-sources.json`: register zdrojov revalidovaný po 15:19 audite; bez štrukturálnej zmeny registra.
+- `source-audit.json`: má byť aktualizovaný po reálnom audite 11 source families; Facebook zostáva 0 verified hits.
 - `PRACA_PRE_JARA_MASTER.md`: aktualizovaný o aktuálny sourcing stav a dve nové backlog zlepšenia.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
