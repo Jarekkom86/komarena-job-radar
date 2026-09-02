@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 2. 9. 2026 11:23 CEST
+Aktualizované: 2. 9. 2026 12:35 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -36,10 +36,12 @@ Aktualizované: 2. 9. 2026 11:23 CEST
 - Posledný sourcing audit: **11 source families**, z toho **10 mimo Profesia**.
 - LIVE mix: **Profesia 22/45 = 48,9 %**, mimo Profesia **23/45 = 51,1 %**.
 - Facebook verejná indexácia: `limited`, **0 verified hits**; žiadne fiktívne pokrytie.
-- Pending/verification queue: **30 kandidátov**.
+- Pending/verification queue: **32 kandidátov**.
 - Posledný beh nepridal nový LIVE job.
-- LinkedIn verejne potvrdil dve Wolt Support Associate roly v Bratislave: Full Time 1 340–1 410 €/mes. a Part Time 7,70 €/h. Obe však explicitne vyžadujú minimálne B2 angličtinu, preto boli vyradené z LIVE podľa jazykového ranking pravidla.
-- Upwork priniesol čerstvé worldwide remote VA/e-commerce výsledky, ale nové hity boli buď nízkej hodnoty, scope-nejasné alebo jazykovo slabšie; Sales Assistant 1 800 USD a Website & SEO Management 15–30 USD/h zostávajú vo verification.
+- NDS Špecialista prevádzky mýta: Bratislava-Karlova Ves, 1 887 €/mes., ale povinná B2 angličtina, VŠ II. stupňa a 2 roky praxe; nepridané do LIVE.
+- Wealth Effect Back Office Specialist: Bratislava, 2 000 €/mes.; konkrétny LinkedIn detail je `No longer accepting applications` a vyžaduje B2 angličtinu, preto nepridané.
+- Nový Upwork VA pre electronics e-shop je tematicky veľmi silný: WooCommerce, produktové listingy, inventár, customer support, Worldwide remote. Odmena je však iba 3–6 USD/h, 30+ h/týždeň, 6+ mesiacov a 20–50 proposals; zostáva iba vo verification.
+- Reddit r/wordpressjobs priniesol konkrétny hiring post na website creator, ale bez dostatočného dôkazu, že klient akceptuje remote zo Slovenska; `locationEligibility=unknown`, nie LIVE.
 - SAV Asistent/ka riaditeľa zostáva `promotion-ready`: Bratislava, 1 800 €, 08:00–16:00, AJ A1–A2, deadline 15.10.2026; požaduje aspoň 5 rokov praxe.
 
 ## Denné zlepšenia — 2. 9. 2026
@@ -95,14 +97,16 @@ Prínos: TOP kandidáti budú mať vyššiu pravdepodobnosť, že sa na nich dá
 - Role-scope complexity budget.
 - Source-query evidence manifest.
 - Verification value-decay score.
-- **Language-hard-gate evidence cache** — pri explicitne overenej B2/C1 požiadavke ukladať canonical evidence fingerprint a krátku TTL cache, aby sa rovnaký jazykovo nevhodný repost nehodnotil opakovane v každom hodinovom behu.
-- **Mirror-family independence checker** — porovnať title+company, textový fingerprint a canonical cieľ; mirror/repost sa nesmie počítať ako nezávislý source-family hit ani zvyšovať diversity metriku.
+- Language-hard-gate evidence cache.
+- Mirror-family independence checker.
+- **Low-pay freelance floor guard** — pri remote freelance ponukách porovnať odmenu s interným value floorom a časovou náročnosťou; tematicky silná, ale ekonomicky slabá zákazka nesmie dostať vysokú reakčnú prioritu.
+- **Public-community remote-eligibility evidence gate** — Reddit/FB/komunitný hiring post zaradiť medzi odporúčané až po explicitnom dôkaze, že klient akceptuje remote zo Slovenska; bez dôkazu `locationEligibility=unknown` a iba verification.
 - Autentizovaný Facebook ingestion cez Nexus/local agent.
 - Source-success analytics, publishedAt/<24h priority, commute/distance, deadline alerts, company contact enrichment, duplicate cluster report, reply probability, GitHub Actions polling a cross-device sync.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: obsahovo nezmenený; feed zostal fail-closed na 45 LIVE položkách.
-- `job-sources.json`: aktualizovaný audit timestamp a poznámky pre skutočne kontrolované zdroje.
-- `source-audit.json`: aktualizovaný po reálnom audite 11 source families; Wolt B2 roly sú evidované ako language reject a Facebook zostáva 0 verified hits.
-- `PRACA_PRE_JARA_MASTER.md`: aktualizovaný o aktuálny LIVE stav a dve nové backlog zlepšenia.
+- `job-sources.json`: register zdrojov zostáva štrukturálne bez zmeny; zdroje z tohto behu sú pravdivo zdokumentované v `source-audit.json`.
+- `source-audit.json`: aktualizovaný po reálnom audite 11 source families; Facebook zostáva 0 verified hits.
+- `PRACA_PRE_JARA_MASTER.md`: aktualizovaný o aktuálny sourcing stav a dve nové backlog zlepšenia.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
