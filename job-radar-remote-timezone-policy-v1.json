@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "policy": "remote-timezone-compatibility-v1",
+  "purpose": "Prevent nominally remote jobs from being recommended when mandatory working hours are impractical from Slovakia.",
+  "timezone": "Europe/Bratislava",
+  "rules": [
+    {
+      "id": "remote-flexible",
+      "when": "remote role has flexible/asynchronous hours or no mandatory foreign shift",
+      "result": "compatible",
+      "scoreAdjustment": 0
+    },
+    {
+      "id": "remote-eu-hours",
+      "when": "mandatory working window substantially overlaps 07:00-19:00 Europe/Bratislava",
+      "result": "compatible",
+      "scoreAdjustment": 0
+    },
+    {
+      "id": "remote-late-partial",
+      "when": "mandatory foreign hours require regular work after 22:00 Bratislava time but still allow at least 4 hours overlap before 22:00",
+      "result": "review",
+      "scoreAdjustment": -8
+    },
+    {
+      "id": "remote-night-shift",
+      "when": "mandatory schedule is predominantly 22:00-06:00 Europe/Bratislava or explicitly requires a US/Americas shift with no flexible alternative",
+      "result": "reject-schedule",
+      "scoreAdjustment": -30
+    },
+    {
+      "id": "remote-hours-unknown",
+      "when": "remote role references timezone/shift availability but exact required hours cannot be verified",
+      "result": "unknown",
+      "scoreAdjustment": -5,
+      "action": "verify before APPLY-FIRST"
+    }
+  ],
+  "fields": {
+    "remoteTimezoneEligibility": ["compatible", "review", "unknown", "reject-schedule"],
+    "remoteTimezoneReason": "human-readable evidence",
+    "requiredWorkingWindow": "optional source-stated working hours"
+  },
+  "safety": {
+    "doesNotOverrideLocationGate": true,
+    "doesNotModifyCRM": true,
+    "doesNotModifyStableIds": true,
+    "failClosedOnExplicitTimezoneConflict": true
+  }
+}
