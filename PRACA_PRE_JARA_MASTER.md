@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 2. 9. 2026 08:18 CEST
+Aktualizované: 2. 9. 2026 08:32 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -32,11 +32,12 @@ Aktualizované: 2. 9. 2026 08:18 CEST
 - Agregátor/repost nesmie prebiť priamy firemný zdroj.
 
 ## Aktuálny stav LIVE
-- Autoritatívny feed má aktuálne **44 LIVE položiek**.
+- Autoritatívny feed má aktuálne **45 LIVE položiek**.
 - Posledný sourcing audit: **11 source families**, z toho **10 mimo Profesia**.
-- LIVE mix pri poslednom audite: **Profesia 21/44 = 47,7 %**, mimo Profesia **23/44 = 52,3 %**.
+- LIVE mix pri poslednom audite: **Profesia 22/45 = 48,9 %**, mimo Profesia **23/45 = 51,1 %**.
 - Facebook verejná indexácia: `limited`, **0 verified hits**; žiadne fiktívne pokrytie.
-- Pending/verification queue pri poslednom audite: **25 kandidátov**.
+- Pending/verification queue pri poslednom audite: **28 kandidátov**.
+- Posledný beh nepridal nový LIVE job; zachytil iba verification kandidátov z LinkedIn a Upwork.
 
 ## Denné zlepšenia — 2. 9. 2026
 
@@ -87,12 +88,14 @@ Prínos: TOP kandidáti budú mať vyššiu pravdepodobnosť, že sa na nich dá
 - Material-change notification fingerprint.
 - Short-window opportunity urgency gate.
 - Application-friction score.
+- **Public-index stale-result quarantine** — ukladať published/crawled age a canonical availability evidence; staré alebo expirované indexové výsledky nesmú vstúpiť do verification bez nového canonical potvrdenia.
+- **Role-scope complexity budget** — vyhodnotiť infra/backend/devops a advanced-admin záťaž (server cache, CDN, API, GTM, Linux/Cloudways a podobne) a limitovať score pri scope nad preukázanú prax.
 - Autentizovaný Facebook ingestion cez Nexus/local agent.
 - Source-success analytics, publishedAt/<24h priority, commute/distance, deadline alerts, company contact enrichment, duplicate cluster report, reply probability, GitHub Actions polling a cross-device sync.
 
 ## Stav ochrany / zápisu
-- `jobs-data.json`: pri tomto rozvojovom zásahu obsahovo nemením; existujúci LIVE feed a používateľské dáta zostávajú zachované.
-- `job-radar-remote-timezone-policy-v1.json`: vytvorený.
-- `job-radar-application-link-health-policy-v1.json`: vytvorený.
-- `PRACA_PRE_JARA_MASTER.md`: aktualizovaný o dnešné dve implementácie.
+- `jobs-data.json`: pri tomto behu obsahovo nezmenený; feed zostal fail-closed na 45 LIVE položkách.
+- `job-sources.json`: bez štrukturálnej zmeny zdrojového registra v tomto behu.
+- `source-audit.json`: aktualizovaný po reálnom audite 11 source families.
+- `PRACA_PRE_JARA_MASTER.md`: aktualizovaný o aktuálny LIVE stav a dve nové backlog zlepšenia.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
