@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 2. 9. 2026 10:29 CEST
+Aktualizované: 2. 9. 2026 11:23 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -37,7 +37,9 @@ Aktualizované: 2. 9. 2026 10:29 CEST
 - LIVE mix: **Profesia 22/45 = 48,9 %**, mimo Profesia **23/45 = 51,1 %**.
 - Facebook verejná indexácia: `limited`, **0 verified hits**; žiadne fiktívne pokrytie.
 - Pending/verification queue: **30 kandidátov**.
-- Posledný beh nepridal nový LIVE job; nový Upwork Sales Assistant bol zaradený iba do verification kvôli nejasnému rozsahu a jazykovému riziku telefonickej komunikácie.
+- Posledný beh nepridal nový LIVE job.
+- LinkedIn verejne potvrdil dve Wolt Support Associate roly v Bratislave: Full Time 1 340–1 410 €/mes. a Part Time 7,70 €/h. Obe však explicitne vyžadujú minimálne B2 angličtinu, preto boli vyradené z LIVE podľa jazykového ranking pravidla.
+- Upwork priniesol čerstvé worldwide remote VA/e-commerce výsledky, ale nové hity boli buď nízkej hodnoty, scope-nejasné alebo jazykovo slabšie; Sales Assistant 1 800 USD a Website & SEO Management 15–30 USD/h zostávajú vo verification.
 - SAV Asistent/ka riaditeľa zostáva `promotion-ready`: Bratislava, 1 800 €, 08:00–16:00, AJ A1–A2, deadline 15.10.2026; požaduje aspoň 5 rokov praxe.
 
 ## Denné zlepšenia — 2. 9. 2026
@@ -91,14 +93,16 @@ Prínos: TOP kandidáti budú mať vyššiu pravdepodobnosť, že sa na nich dá
 - Application-friction score.
 - Public-index stale-result quarantine.
 - Role-scope complexity budget.
-- **Source-query evidence manifest** — pri každom behu ukladať timestamp, fingerprint použitých discovery query a počet verejne overiteľných výsledkov pre každú source family; zvýši auditovateľnosť a odhalí falošné „checked“ pokrytie.
-- **Verification value-decay score** — pending kandidátom znižovať prioritu podľa veku, rastúcej konkurencie, neaktivity klienta a blížiaceho sa deadline bez automatického mazania; čerstvé príležitosti sa dostanú vyššie.
+- Source-query evidence manifest.
+- Verification value-decay score.
+- **Language-hard-gate evidence cache** — pri explicitne overenej B2/C1 požiadavke ukladať canonical evidence fingerprint a krátku TTL cache, aby sa rovnaký jazykovo nevhodný repost nehodnotil opakovane v každom hodinovom behu.
+- **Mirror-family independence checker** — porovnať title+company, textový fingerprint a canonical cieľ; mirror/repost sa nesmie počítať ako nezávislý source-family hit ani zvyšovať diversity metriku.
 - Autentizovaný Facebook ingestion cez Nexus/local agent.
 - Source-success analytics, publishedAt/<24h priority, commute/distance, deadline alerts, company contact enrichment, duplicate cluster report, reply probability, GitHub Actions polling a cross-device sync.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: obsahovo nezmenený; feed zostal fail-closed na 45 LIVE položkách.
 - `job-sources.json`: aktualizovaný audit timestamp a poznámky pre skutočne kontrolované zdroje.
-- `source-audit.json`: aktualizovaný po reálnom audite 11 source families; nový Upwork Sales Assistant je vo verification queue.
+- `source-audit.json`: aktualizovaný po reálnom audite 11 source families; Wolt B2 roly sú evidované ako language reject a Facebook zostáva 0 verified hits.
 - `PRACA_PRE_JARA_MASTER.md`: aktualizovaný o aktuálny LIVE stav a dve nové backlog zlepšenia.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
