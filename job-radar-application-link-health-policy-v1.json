@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "policy": "application-link-health-v1",
+  "purpose": "Avoid wasting response time on expired, redirected, reposted or non-actionable job links and prefer the canonical application path.",
+  "rules": [
+    {
+      "id": "canonical-direct-apply",
+      "when": "verified canonical company/job-board detail is active and exposes a valid application path",
+      "result": "apply-ready",
+      "priority": 1
+    },
+    {
+      "id": "active-detail-no-apply",
+      "when": "job detail is active but application action/contact cannot be verified",
+      "result": "verify-application-path",
+      "priority": 2
+    },
+    {
+      "id": "mirror-only",
+      "when": "aggregator or repost is active but canonical source is missing/unknown",
+      "result": "verify-canonical",
+      "priority": 3,
+      "restriction": "must not become APPLY-FIRST solely from mirror evidence"
+    },
+    {
+      "id": "closed-or-expired",
+      "when": "canonical source states closed, expired, no longer accepting applications, 404/410, or equivalent terminal state",
+      "result": "reject-inactive",
+      "priority": 99
+    },
+    {
+      "id": "redirect-mismatch",
+      "when": "application URL redirects to a different role/company or generic careers homepage without the original vacancy",
+      "result": "quarantine",
+      "priority": 90
+    }
+  ],
+  "fields": {
+    "applicationEligibility": ["apply-ready", "verify-application-path", "verify-canonical", "quarantine", "reject-inactive"],
+    "applicationReason": "human-readable verification evidence",
+    "applicationVerifiedAt": "ISO-8601 timestamp",
+    "canonicalApplyUrl": "optional verified canonical application URL"
+  },
+  "verificationOrder": [
+    "canonical vacancy state",
+    "application action/contact exists",
+    "redirect target matches role/company",
+    "locationEligibility remains ba-area or remote-ok",
+    "stable ID/canonical dedupe preserved"
+  ],
+  "safety": {
+    "doesNotDeleteOnTransientNetworkFailure": true,
+    "transientFailureResult": "verify-application-path",
+    "doesNotModifyCRM": true,
+    "doesNotModifyStableIds": true,
+    "canonicalSourcePreferred": true
+  }
+}
