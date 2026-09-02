@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 2. 9. 2026 03:25 CEST
+Aktualizované: 2. 9. 2026 04:23 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -58,38 +58,41 @@ Aktualizované: 2. 9. 2026 03:25 CEST
 24. **BOELS — Shop Advisor / Klientsky poradca pre hobbymarkety — Match 89** — Bratislava-Ružinov; Po–Pi flexibilne, výjazdy z domu, servisné vozidlo, jednoduchá technická údržba, vodičák B, od 1 400 €/mes. + bonus.
 25. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
 
-> Poznámka ku konzistencii: LUNYS E-commerce špecialista bol odstránený z LIVE po canonical LinkedIn stave „No longer accepting applications“. Predchádzajúci MASTER ho omylom ešte uvádzal ako TOP #1; rozpor zostáva opravený.
+> Poznámka ku konzistencii: LUNYS E-commerce špecialista bol odstránený z LIVE po canonical LinkedIn stave „No longer accepting applications“. MASTER je s LIVE zosúladený.
 
-## SOURCE AUDIT — 2. 9. 2026 03:25 CEST — LATEST
+## SOURCE AUDIT — 2. 9. 2026 04:23 CEST — LATEST
 Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs/company posts; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Práca za rohom; Pretlak/StartupJobs; Upwork freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky: 0.** `jobs-data.json` zostáva fail-closed na **44 LIVE položkách**; obsahový timestamp **2. 9. 2026 00:11:10 CEST** nebol umelo posunutý.
 - **LIVE mix:** Profesia **21 / 44 = 47,7 %**, mimo Profesia **23 / 44 = 52,3 %**. Profesia zostáva pod 60 % health limitom.
-- **Priama firemná kariéra – Form Factory:** canonical stránka potvrdzuje **IT Support Specialist (m/ž), Bratislava, 2 500 €/brutto + polročné KPI odmeny až do 1,5-násobku hrubej mzdy**. Lokalita prechádza gateom, ale rola vyžaduje **komunikatívnu angličtinu, 1–3 roky IT Support/Infrastructure a praktický prehľad Entra ID, M365, Intune, Defender a Ubiquiti**; zostáva `verification-canonical-confirmed`, nie LIVE promotion.
-- **Práca za rohom:** známy **IZY VAPE — Back Office & Operations Coordinator – e-commerce | Remote** je stále verejne aktívny, 1 600–2 000 €/mes., ale je už LIVE a nevytvára sa duplicita. Znovu potvrdený je aj **INDEX NOSLUŠ — Asistent pre mobilnú aplikáciu**, Bratislava, 3.–14.9.2026, 7 €/h; zostáva krátkodobý `promotion-ready-write-deferred` kandidát.
-- **LinkedIn:** verejná indexácia bola reálne preverená; konkrétne WordPress/CMS výsledky, ktoré sa objavili, boli staré a označené `No longer accepting applications`; coverage bez loginu zostáva `limited`.
-- **Worki:** HEATING PRO sa znovu potvrdil ako známy LIVE výsledok; bez novej unikátnej delty.
-- **Brigada.sk / Kariera.sk:** BA administratíva, support, e-shop a kuriér discovery boli vykonané; bez nového promotion-grade výsledku.
+- **Nový verification kandidát — AT Car SK / BUDGET:** pracovník pobočky autopožičovne, Bratislava, ASAP, **1 200–1 500 €/mes.** Náplň: zmluvy, faktúry, rezervačný systém, dokumentácia, klientsky servis, presuny vozidiel a základné škodové udalosti. Lokalita prechádza gateom; B1 AJ a nižší plat ho držia na **provisional Match 84**, nie LIVE promotion.
+- **SK-NIC — Špecialista IT systémov a služieb:** Bratislava + občasný HO, 1 500 €/mes., obsahovo relevantný IT support/documentation fit, ale tvrdá **AJ B2**, **2 roky praxe** a pokročilý Excel/Word/PowerPoint = výrazná penalizácia; bez promotion.
+- **FOREVER Living — Specialista zákaznického servisu:** Ružinov, 1 300 €/mes., objednávky/reklamácie/evidencia zásob; B1 AJ a požadované 2 roky customer-service praxe; pod promotion prahom.
+- **Práca za rohom:** čerstvé BA admin/customer-care výsledky boli reálne skontrolované; známe Penta/INDEX ponuky nevytvárajú duplicity.
+- **LinkedIn:** verejná indexácia bola preverená; bez nového promotion-grade výsledku, coverage bez loginu zostáva `limited`.
+- **Worki / Brigada.sk / Kariera.sk:** BA administratíva, support, e-shop a kuriér discovery prebehla; bez nového promotion-grade výsledku.
 - **Pretlak / StartupJobs:** WordPress/WooCommerce/e-commerce/support discovery prebehla; bez nového verejne overiteľného hard-gate-pass kandidáta.
-- **Upwork:** čerstvé Worldwide remote WordPress/WooCommerce výsledky sú prevažne developer-heavy buildy/automation alebo majú horší effort/value profil než aktuálna verification queue; bez LIVE promotion.
-- **Reddit/komunity:** verejne indexované výsledky neobsahovali nový vhodný hiring dopyt vykonateľný zo Slovenska.
+- **Upwork:** Worldwide remote WordPress/WooCommerce discovery preverená; nové výsledky sú prevažne developer-heavy alebo majú horší effort/value profil než aktuálna verification queue.
+- **Reddit/komunity:** bez nového vhodného hiring dopytu vykonateľného zo Slovenska.
 - **Facebook:** **0 verified hits**, status `limited`; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 - Žiadna existujúca LIVE položka nebola odstránená a nedošlo k strate kategórie.
 
 ### Run summary
 - Reálne skontrolované source families: **11**.
 - Nové aktívne položky zapísané: **0**.
-- Významné pending/verification kandidáty: **19**.
+- Významné pending/verification kandidáty: **21**.
 - LIVE feed: **44 aktívnych položiek**.
 - Mix: **Profesia 47,7 % / mimo Profesia 52,3 %**.
 - `jobs-data.json.updatedAt` = **2. 9. 2026 00:11:10 CEST**.
 
 ## Rozvojový backlog — nové položky z tohto behu
-1. **Canonical-vs-aggregator location contradiction detector** — pri rovnakej pozícii porovnať lokalitu a pracovný režim na firemnej kariére proti job boardom. Ak sa rozchádzajú (napr. Praha vs Bratislava alebo remote vs onsite), nastaviť `locationEligibility: unknown` a zablokovať promotion, kým canonical detail nerozhodne. Rieši reálne riziko nesprávneho lokalitného gateu pri agregovaných/repostovaných inzerátoch.
-2. **Verification queue SLA + auto-expiry** — pre každú verification položku evidovať `firstSeenAt`, `lastVerifiedAt`, `verificationReason` a `maxAgeHours`; staré/neoverené kandidáty automaticky znížiť v priorite bez mazania LIVE feedu. Znižuje čas strávený opakovaným overovaním historických leadov a udržiava verification queue použiteľnú.
+1. **Freshness-weighted verification budget** — prideľovať čas overovania podľa kombinácie veku ponuky, skóre a pravdepodobnosti promotion. Čerstvé kandidáty s vysokým fitom sa overia okamžite; staré nízkohodnotné verification položky sa odsunú bez mazania LIVE feedu. Znižuje opakované prehľadávanie málo perspektívnych leadov a šetrí čas.
+2. **Hard-vs-soft requirement extractor** — pri každej ponuke oddeliť explicitne povinné požiadavky od „výhodou“, „ideálne“ a „preferujeme“. Penalizovať tvrdo iba skutočné bariéry a mäkké požiadavky započítať iba ako mierny mínus. Zlepší recall a obmedzí falošné vyradenia vhodných ponúk.
 
 ## Predchádzajúce backlog zlepšenia, ktoré zostávajú platné
+- Canonical-vs-aggregator location contradiction detector.
+- Verification queue SLA + auto-expiry.
 - Applied-state suppression gate.
 - Material-change notification fingerprint.
 - Short-window opportunity urgency gate.
