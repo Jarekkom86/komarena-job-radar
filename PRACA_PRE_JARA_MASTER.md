@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 2. 9. 2026 05:20 CEST
+Aktualizované: 2. 9. 2026 06:35 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -60,35 +60,36 @@ Aktualizované: 2. 9. 2026 05:20 CEST
 
 > Poznámka ku konzistencii: LUNYS E-commerce špecialista bol odstránený z LIVE po canonical LinkedIn stave „No longer accepting applications“. MASTER je s LIVE zosúladený.
 
-## SOURCE AUDIT — 2. 9. 2026 05:20 CEST — LATEST
+## SOURCE AUDIT — 2. 9. 2026 06:35 CEST — LATEST
 Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs/company posts; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Práca za rohom; Pretlak/StartupJobs; Upwork freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
 
 ### Výsledky tohto behu
-- **Nové aktívne položky: 0.** `jobs-data.json` zostáva fail-closed na **44 LIVE položkách**; obsahový timestamp **2. 9. 2026 00:11:10 CEST** nebol umelo posunutý.
+- **Nové aktívne položky: 0.** `jobs-data.json` zostáva fail-closed na **44 LIVE položkách**; bez novej unikátnej promotion-grade delty sa obsahový timestamp neposúva.
 - **LIVE mix:** Profesia **21 / 44 = 47,7 %**, mimo Profesia **23 / 44 = 52,3 %**. Profesia zostáva pod 60 % health limitom.
-- **Nový verification kandidát — Upwork / Nature Nomad:** Worldwide remote, **500 USD fixed-price**, ongoing/contract-to-hire. Scope zahŕňa WooCommerce + Printful product setup, produktové uploady/varianty a launch kolekcií, čo dobre sedí na e-commerce smer. Zároveň však požaduje pravidelný social scheduling a približne **8 short-form videí mesačne**, preto ide o social/video-heavy rolu a zostáva **provisional Match 86**, nie LIVE promotion.
-- **Upwork:** ďalší WooCommerce build výsledok už bol v existujúcej verification queue, takže nevznikla duplicita; SuiteDash lead bol US-only a Python/FastAPI/WooCommerce automation lead je hard-development, preto vyradené.
-- **Kariera.sk:** nový výsledok Vedúci pošty – Slovenský Grob je lokalitne prípustný, ale mimo prioritných trackov/fit, bez LIVE promotion.
+- **Upwork:** čerstvý `Need Basic WooCommerce Website (Design & Development)` bol znovu nájdený ako Worldwide remote, ale už existuje vo verification queue pod stabilným ID `upwork-woocommerce-design-build-2094700337605270558`; bez duplicity a bez promotion. Ďalšie čerstvé výsledky boli hard-dev, non-WordPress platformy alebo low-trust/value VA leady.
+- **LinkedIn:** verejne indexované EEA web/CMS výsledky boli canonical označené ako `No longer accepting applications`; bez LIVE ingestu. Coverage bez loginu zostáva `limited`.
+- **Kariera.sk:** čerstvé BA administratívne výsledky boli nájdené, ale neprebili aktuálny LIVE/verification fit; bez promotion.
 - **Profesia / firemné careers / Worki / Brigada.sk / Práca za rohom:** BA WordPress/e-shop/admin/IT support/kuriér discovery prebehla; bez novej unikátnej promotion-grade delty.
-- **LinkedIn:** verejná indexácia bola preverená; bez nového promotion-grade výsledku, coverage bez loginu zostáva `limited`.
 - **Pretlak / StartupJobs:** WordPress/WooCommerce/e-commerce/support discovery prebehla; bez nového verejne overiteľného hard-gate-pass kandidáta.
-- **Reddit/komunity:** bez nového vhodného hiring dopytu vykonateľného zo Slovenska.
+- **Reddit/komunity:** bez nového vhodného hiring dopytu vykonateľného zo Slovenska; nájdené výsledky boli sales/FOR HIRE alebo mimo prioritného tracku.
 - **Facebook:** **0 verified hits**, status `limited`; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 - Žiadna existujúca LIVE položka nebola odstránená a nedošlo k strate kategórie.
 
 ### Run summary
 - Reálne skontrolované source families: **11**.
 - Nové aktívne položky zapísané: **0**.
-- Významné pending/verification kandidáty: **24**.
+- Významné pending/verification kandidáty: **25**.
 - LIVE feed: **44 aktívnych položiek**.
 - Mix: **Profesia 47,7 % / mimo Profesia 52,3 %**.
-- `jobs-data.json.updatedAt` = **2. 9. 2026 00:11:10 CEST**.
+- `jobs-data.json.updatedAt` = **2. 9. 2026 05:16:20 CEST**.
 
 ## Rozvojový backlog — nové položky z tohto behu
-1. **Verification evidence snapshot hash** — pri zaradení kandidáta uložiť hash kľúčových canonical faktov (lokalita, remote režim, pay, hard requirements, published/expiry). Ďalší beh tak lacno rozlíši skutočnú zmenu od opakovaného nálezu a nebude znovu overovať rovnaký obsah bez dôvodu.
-2. **Fixed-price effort normalization** — pri freelance zákazkách odhadnúť hodinový ekvivalent z rozsahu deliverables a realistického časového pásma. Fixed-price ponuky s dobrým titulkom, ale slabým efektívnym €/h sa automaticky posunú nižšie bez vyradenia kvalitných leadov.
+1. **Freelance client-risk gate** — pred promotion freelance leadu evidovať vek účtu, spend/hire históriu, mass-hire pattern, nejasný scope a off-platform kontakt. Nízko-dôveryhodné alebo podozrivé leady znížiť v rankingu bez falošného vyradenia legitímnych nových klientov.
+2. **Physical-load & shift suitability extractor** — pre kuriér/sklad/retail automaticky extrahovať typickú hmotnosť, počet zastávok, nočné/víkendové zmeny a dĺžku smeny. Tieto faktory ukladať ako fit riziká, aby manuálne a časovo náročné ponuky neprebíjali vhodnejšie technické/admin roly.
 
 ## Predchádzajúce backlog zlepšenia, ktoré zostávajú platné
+- Verification evidence snapshot hash.
+- Fixed-price effort normalization.
 - Freshness-weighted verification budget.
 - Hard-vs-soft requirement extractor.
 - Canonical-vs-aggregator location contradiction detector.
