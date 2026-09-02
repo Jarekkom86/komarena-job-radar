@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 2. 9. 2026 06:35 CEST
+Aktualizované: 2. 9. 2026 07:29 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -60,18 +60,16 @@ Aktualizované: 2. 9. 2026 06:35 CEST
 
 > Poznámka ku konzistencii: LUNYS E-commerce špecialista bol odstránený z LIVE po canonical LinkedIn stave „No longer accepting applications“. MASTER je s LIVE zosúladený.
 
-## SOURCE AUDIT — 2. 9. 2026 06:35 CEST — LATEST
+## SOURCE AUDIT — 2. 9. 2026 07:29 CEST — LATEST
 Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs/company posts; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Práca za rohom; Pretlak/StartupJobs; Upwork freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
 
 ### Výsledky tohto behu
 - **Nové aktívne položky: 0.** `jobs-data.json` zostáva fail-closed na **44 LIVE položkách**; bez novej unikátnej promotion-grade delty sa obsahový timestamp neposúva.
 - **LIVE mix:** Profesia **21 / 44 = 47,7 %**, mimo Profesia **23 / 44 = 52,3 %**. Profesia zostáva pod 60 % health limitom.
-- **Upwork:** čerstvý `Need Basic WooCommerce Website (Design & Development)` bol znovu nájdený ako Worldwide remote, ale už existuje vo verification queue pod stabilným ID `upwork-woocommerce-design-build-2094700337605270558`; bez duplicity a bez promotion. Ďalšie čerstvé výsledky boli hard-dev, non-WordPress platformy alebo low-trust/value VA leady.
-- **LinkedIn:** verejne indexované EEA web/CMS výsledky boli canonical označené ako `No longer accepting applications`; bez LIVE ingestu. Coverage bez loginu zostáva `limited`.
-- **Kariera.sk:** čerstvé BA administratívne výsledky boli nájdené, ale neprebili aktuálny LIVE/verification fit; bez promotion.
-- **Profesia / firemné careers / Worki / Brigada.sk / Práca za rohom:** BA WordPress/e-shop/admin/IT support/kuriér discovery prebehla; bez novej unikátnej promotion-grade delty.
-- **Pretlak / StartupJobs:** WordPress/WooCommerce/e-commerce/support discovery prebehla; bez nového verejne overiteľného hard-gate-pass kandidáta.
-- **Reddit/komunity:** bez nového vhodného hiring dopytu vykonateľného zo Slovenska; nájdené výsledky boli sales/FOR HIRE alebo mimo prioritného tracku.
+- **Upwork:** `Need Basic WooCommerce Website (Design & Development)` bol znovu nájdený ako Worldwide remote, ale už existuje vo verification queue pod stabilným ID `upwork-woocommerce-design-build-2094700337605270558`; bez duplicity. Ďalšie výsledky zahŕňali low-budget Blocksy build, hard-dev Python/WooCommerce integráciu, non-WordPress platformy a US-only lead.
+- **Kariera.sk:** čerstvé BA brigádne výsledky boli nájdené; triedič Slovenskej pošty už existuje vo verification queue a je nízka priorita, ostatné neprebili LIVE/verification fit.
+- **Profesia / firemné careers / LinkedIn / Worki / Brigada.sk / Práca za rohom / Pretlak / StartupJobs:** reálny discovery prebehol; bez novej unikátnej promotion-grade delty.
+- **Reddit/komunity:** bez konkrétneho vhodného WordPress/WooCommerce hiring dopytu; verejný výsledok bol generický VA hiring roundup.
 - **Facebook:** **0 verified hits**, status `limited`; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
 - Žiadna existujúca LIVE položka nebola odstránená a nedošlo k strate kategórie.
 
@@ -84,10 +82,12 @@ Reálne prehľadané source families: **Profesia; priame firemné careers; Linke
 - `jobs-data.json.updatedAt` = **2. 9. 2026 05:16:20 CEST**.
 
 ## Rozvojový backlog — nové položky z tohto behu
-1. **Freelance client-risk gate** — pred promotion freelance leadu evidovať vek účtu, spend/hire históriu, mass-hire pattern, nejasný scope a off-platform kontakt. Nízko-dôveryhodné alebo podozrivé leady znížiť v rankingu bez falošného vyradenia legitímnych nových klientov.
-2. **Physical-load & shift suitability extractor** — pre kuriér/sklad/retail automaticky extrahovať typickú hmotnosť, počet zastávok, nočné/víkendové zmeny a dĺžku smeny. Tieto faktory ukladať ako fit riziká, aby manuálne a časovo náročné ponuky neprebíjali vhodnejšie technické/admin roly.
+1. **Source-family zero-result anomaly detector** — porovnať počet výsledkov a kvalitu coverage s historickým normálom zdroja. Náhly prepad na nulu označiť ako možnú indexačnú/robots chybu namiesto falošného záveru, že na trhu nič nie je.
+2. **Verification-to-LIVE transaction ledger** — pri každom promotion pokuse ukladať stabilné ID, canonical URL, dôvod promotion, pre/post počet LIVE položiek a validačný výsledok. Umožní bezpečný retry po write blockeri bez duplicitného alebo strateného kandidáta.
 
 ## Predchádzajúce backlog zlepšenia, ktoré zostávajú platné
+- Freelance client-risk gate.
+- Physical-load & shift suitability extractor.
 - Verification evidence snapshot hash.
 - Fixed-price effort normalization.
 - Freshness-weighted verification budget.
