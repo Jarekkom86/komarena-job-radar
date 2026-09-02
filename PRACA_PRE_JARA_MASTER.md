@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 2. 9. 2026 13:19 CEST
+Aktualizované: 2. 9. 2026 14:18 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -32,15 +32,14 @@ Aktualizované: 2. 9. 2026 13:19 CEST
 - Agregátor/repost nesmie prebiť priamy firemný zdroj.
 
 ## Aktuálny stav LIVE
-- Autoritatívny feed má aktuálne **45 LIVE položiek**.
+- Autoritatívny feed má aktuálne **46 LIVE položiek**.
 - Posledný sourcing audit: **11 source families**, z toho **10 mimo Profesia**.
-- LIVE mix: **Profesia 22/45 = 48,9 %**, mimo Profesia **23/45 = 51,1 %**.
+- LIVE mix: **Profesia 23/46 = 50,0 %**, mimo Profesia **23/46 = 50,0 %**.
 - Facebook verejná indexácia: `limited`, **0 verified hits**; žiadne fiktívne pokrytie.
-- Pending/verification queue: **33 kandidátov**.
-- Posledný beh nepridal nový LIVE job.
-- Nový lead **Eric SK / Fusakle — Office asistent/ka – e-shop & retail podpora – sezónna posila**: Dúbravka, pracovné dni približne 9:00–15:00, nástup počas septembra, sezóna približne do konca decembra 2026/prípadne januára 2027, 7 €/h, dohoda alebo IČO. Obsahovo veľmi dobrý e-shop/customer-care/admin fit, slovenčina bez cudzojazyčného gate a explicitné dôkladné zaškolenie. Pre nízku hodinovú odmenu a sezónnosť zostáva vo verification, nie LIVE.
-- Upwork sweep našiel čerstvé Worldwide WooCommerce projekty, ale najlepšie nové výsledky sú buď hard-development/CRO expert scope, alebo majú nízku hodnotu; bez nového LIVE ingestu.
-- Reddit verejná indexácia v tomto behu nepriniesla nový overiteľný hiring dopyt vhodný pre Jara; staršie/for-hire príspevky sa nepočítajú.
+- Pending/verification queue: **32 kandidátov**.
+- Posledný beh nepridal nový LIVE job; od 14:11 nevznikla nová promotion-grade delta.
+- Upwork znovu potvrdil `WooCommerce Website Builder Needed` (Worldwide remote, 500 USD fixed-price), ale ponuka už je vo verification queue a nepredstavuje nový prírastok.
+- Reddit verejná indexácia v tomto behu nepriniesla nový overiteľný hiring dopyt vhodný pre Jara; všeobecné diskusie sa nepočítajú.
 - Facebook zostáva **0 verified hits / limited**.
 - SAV Asistent/ka riaditeľa zostáva `promotion-ready`: Bratislava, 1 800 €, 08:00–16:00, AJ A1–A2, deadline 15.10.2026; požaduje aspoň 5 rokov praxe.
 
@@ -94,12 +93,14 @@ Riešenie:
 - Public-community remote-eligibility evidence gate.
 - **Seasonal runway + extension score** — pri časovo obmedzených brigádach počítať zostávajúce týždne práce, naliehavosť nástupu, odhad celkového zárobku a explicitný signál možného pokračovania; krátka sezónna ponuka sa nesmie tváriť rovnako hodnotne ako stabilná dlhodobá práca.
 - **Training-evidence confidence boost** — explicitné „zaškolíme“, mentoring alebo dôkladné onboarding tvrdenie evidovať ako dôkaz, ktorý znižuje riziko pri prenositeľných skilloch; nikdy ním však neobchádzať povinnú kvalifikáciu, jazyk alebo hard skill.
+- **Canonical freshness delta debounce** — pri opakovanom audite v krátkom intervale porovnať canonical URL + publishedAt/verified fingerprint a neprepočítavať nezmenené kandidáty; šetrí sourcing čas bez zníženia coverage a nikdy nesmie preskočiť nový alebo zmenený detail.
+- **Freelance portfolio-evidence requirement estimator** — pri Upwork/WordPress zákazkách extrahovať požiadavku na ukážky práce, podobné projekty alebo portfolio a odhadnúť, či existujúce dôkazy praxe stačia; znižuje plytvanie návrhmi na zákazky, kde klient explicitne očakáva silnejšie referencie.
 - Autentizovaný Facebook ingestion cez Nexus/local agent.
 - Source-success analytics, publishedAt/<24h priority, commute/distance, deadline alerts, company contact enrichment, duplicate cluster report, reply probability, GitHub Actions polling a cross-device sync.
 
 ## Stav ochrany / zápisu
-- `jobs-data.json`: obsahovo nezmenený; feed zostal fail-closed na 45 LIVE položkách. Nový Fusakle lead je verification pre nízku odmenu a sezónnosť.
-- `job-sources.json`: register zdrojov bol v tomto behu revalidovaný; štruktúra zdrojov zostáva zachovaná.
+- `jobs-data.json`: obsahovo nezmenený; feed zostal fail-closed na 46 LIVE položkách. Nebola nájdená nová promotion-grade delta.
+- `job-sources.json`: register zdrojov bol revalidovaný; bez štrukturálnej zmeny registra.
 - `source-audit.json`: aktualizovaný po reálnom audite 11 source families; Facebook zostáva 0 verified hits.
 - `PRACA_PRE_JARA_MASTER.md`: aktualizovaný o aktuálny sourcing stav a dve nové backlog zlepšenia.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
