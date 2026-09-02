@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 2. 9. 2026 19:21 CEST
+Aktualizované: 2. 9. 2026 23:23 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -36,38 +36,25 @@ Aktualizované: 2. 9. 2026 19:21 CEST
 - Posledný sourcing audit: **11 source families**, z toho **10 mimo Profesia**.
 - LIVE mix: **Profesia 23/46 = 50,0 %**, mimo Profesia **23/46 = 50,0 %**.
 - Facebook verejná indexácia: `limited`, **0 verified hits**; žiadne fiktívne pokrytie.
-- Pending/verification queue: **32 kandidátov**.
-- Beh o 19:21 nepridal nový LIVE job; nevznikla nová promotion-grade delta.
-- Brigada.sk priniesla konkrétny nový BA administratívny hit Toyota Financial Services: Galvaniho 19, 7 €/h, približne 20 h/týždeň, faktúry, skenovanie, evidencia, archivácia a interné systémy. Detail však vyžaduje **platný štatút študenta**, preto bol kandidát vyradený cez eligibility hard gate a nebol pridaný do LIVE.
-- Upwork sweep našiel nové worldwide VA/admin výsledky, ale bez novej promotion-grade delty: Sales Assistant 1 800 USD je už vo verification queue; Social Media Publishing Assistant je location-restricted mimo Slovenska; LinkedIn VA vyžaduje strong English; 100 USD company VA má slabý value/effort pomer.
-- Reddit verejná indexácia nepriniesla nový konkrétny vhodný hiring dopyt; všeobecné diskusie a `[FOR HIRE]` posty sa nepočítajú.
+- Pending/verification queue: **34 kandidátov**.
+- Beh o 23:23 nepridal nový LIVE job; nevznikla bezpečná nová promotion-grade delta po dedupe/applied-state kontrole.
+- **IZY VAPE CE – Back Office & Operations Coordinator – e-commerce | Remote** je veľmi silný overený lead: 1 600–2 000 €/mes., prevažne práca z domu z celého Slovenska, príležitostné vopred plánované stretnutia v Bratislave, e-shop objednávky, WooCommerce ako výhoda, logistika, reklamácie, reporting, Trello a AI nástroje. Angličtina B1 je mínus, nie absolútny hard gate. Ponuka však už bola v minulosti používateľom riešená/pripravovaná na reakciu, preto je v `source-audit.json` označená `verification-known-prior-lead-dedupe` a nebola slepo pridaná ako nový LIVE duplikát.
+- Upwork **E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero** zostáva verification: Worldwide remote, 10–15 USD/h, <30 h/týždeň, 1–3 mesiace, contract-to-hire; silný WooCommerce/admin fit, ale vyžaduje good written English, WooCommerce Subscriptions a basic Xero.
+- Reddit verejná indexácia nepriniesla nový konkrétny vhodný SK-eligible hiring dopyt; agregované VA linky ani `[FOR HIRE]` príspevky sa nepočítajú ako verified kandidát.
 - Facebook zostáva **0 verified hits / limited**.
-- SAV Asistent/ka riaditeľa zostáva `promotion-ready`: Bratislava, 1 800 €, 08:00–16:00, AJ A1–A2, deadline 15.10.2026; požaduje aspoň 5 rokov praxe.
 
-## Denné zlepšenia — 2. 9. 2026
-
-### 1. Remote Timezone Compatibility Gate — IMPLEMENTOVANÉ
-Súbor: `job-radar-remote-timezone-policy-v1.json`.
-
-Problém: označenie `Worldwide remote` alebo `remote-ok` ešte neznamená, že je ponuka prakticky vykonateľná zo Slovenska. Najmä freelance/US remote ponuky môžu vyžadovať pravidelnú nočnú zmenu alebo pevný americký pracovný čas.
-
-Riešenie:
-- flexibilný/asynchrónny remote alebo rozumný prekryv s 07:00–19:00 Europe/Bratislava = `compatible`;
-- pravidelná neskorá práca po 22:00 s čiastočným prekryvom = `review`;
-- prevažne nočná zmena 22:00–06:00 alebo povinný US shift bez alternatívy = `reject-schedule`;
-- nejasná povinná timezone dostupnosť = `unknown`, overiť pred `APPLY-FIRST`.
-
-### 2. Application Link Health + Canonical Apply Gate — IMPLEMENTOVANÉ
-Súbor: `job-radar-application-link-health-policy-v1.json`.
-
-Problém: aktívne vyzerajúci mirror/agregátor alebo starý detail môže viesť na zatvorenú pozíciu, generickú career stránku alebo nefunkčný apply flow.
-
-Riešenie:
-- aktívny canonical detail + overená cesta na reakciu = `apply-ready`;
-- aktívny detail bez overeného apply/contact = `verify-application-path`;
-- iba mirror bez canonical potvrdenia = `verify-canonical`, nesmie byť `APPLY-FIRST` iba na základe mirroru;
-- canonical stav closed/expired/no longer accepting/404/410 = `reject-inactive`;
-- transient network chyba nikdy automaticky nemaže existujúcu LIVE položku.
+## Source audit — 2. 9. 2026 23:23
+- Profesia: `ok`, 1 relevantný známy hit, 0 pridaných, 1 dedupe/prior-lead.
+- Priame company careers: `checked`, 0 nových vhodných hitov.
+- LinkedIn Jobs: `limited`, 0 nových promotion-grade hitov.
+- Worki.sk: `checked`, 0 nových vhodných hitov.
+- Brigada.sk: `checked`, 0 nových vhodných hitov.
+- Kariera.sk: `checked`, 0 nových vhodných hitov.
+- Práca za rohom: `ok`, IZY VAPE mirror potvrdený; nepočíta sa ako nezávislý nový job oproti Profesia canonical detailu.
+- Pretlak / StartupJobs / WordPress Jobs: `checked`, 0 nových hard-gate-pass kandidátov.
+- Upwork/freelance: `ok`, 2 relevantné výsledky, 0 LIVE prírastkov; jeden jazykovo/skillovo rizikový, jeden starší/duplicitný.
+- Reddit/komunity: `limited`, 0 vhodných SK-eligible verified hitov.
+- Facebook public index: `limited`, **0 verified hits**.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -92,20 +79,22 @@ Riešenie:
 - Mirror-family independence checker.
 - Low-pay freelance floor guard.
 - Public-community remote-eligibility evidence gate.
-- **Seasonal runway + extension score** — pri časovo obmedzených brigádach počítať zostávajúce týždne práce, naliehavosť nástupu, odhad celkového zárobku a explicitný signál možného pokračovania; krátka sezónna ponuka sa nesmie tváriť rovnako hodnotne ako stabilná dlhodobá práca.
-- **Training-evidence confidence boost** — explicitné „zaškolíme“, mentoring alebo dôkladné onboarding tvrdenie evidovať ako dôkaz, ktorý znižuje riziko pri prenositeľných skilloch; nikdy ním však neobchádzať povinnú kvalifikáciu, jazyk alebo hard skill.
-- **Canonical freshness delta debounce** — pri opakovanom audite v krátkom intervale porovnať canonical URL + publishedAt/verified fingerprint a neprepočítavať nezmenené kandidáty; šetrí sourcing čas bez zníženia coverage a nikdy nesmie preskočiť nový alebo zmenený detail.
-- **Freelance portfolio-evidence requirement estimator** — pri Upwork/WordPress zákazkách extrahovať požiadavku na ukážky práce, podobné projekty alebo portfolio a odhadnúť, či existujúce dôkazy praxe stačia; znižuje plytvanie návrhmi na zákazky, kde klient explicitne očakáva silnejšie referencie.
-- **Student/eligibility hard-gate extractor** — explicitne rozlišovať študentský status, vekové/školské podmienky, internship eligibility a iné formálne obmedzenia ešte pred scoringom; zabráni vysokému skóre ponúk, na ktoré uchádzač formálne nemôže reagovať.
-- **Freelance client-engagement freshness signal** — pri Upwork zákazkách používať `last viewed by client`, počet hires/interviewing a vek ponuky ako signál reálnej aktivity klienta; pomáha prioritizovať zákazky, kde je ešte rozumná šanca na reakciu, bez preceňovania samotného počtu proposals.
-- **Listing-to-detail completeness gate** — promotion kandidát môže vzniknúť až po otvorení konkrétneho detailu s overenou lokalitou, typom zmluvy, eligibility podmienkami a priamym URL; kategórie/snippety sa evidujú iba ako discovery signal. Rieši dnešný prípad, keď až detail Brigada.sk odhalil povinný študentský status.
-- **Part-time opportunity value normalizer** — pri hodinových a skrátených úväzkoch prepočítavať realistický mesačný ekvivalent z rozsahu hodín a oddeliť ho od nominálnej hodinovej sadzby; znižuje preceňovanie krátkych alebo nízkoobjemových brigád.
+- Seasonal runway + extension score.
+- Training-evidence confidence boost.
+- Canonical freshness delta debounce.
+- Freelance portfolio-evidence requirement estimator.
+- Student/eligibility hard-gate extractor.
+- Freelance client-engagement freshness signal.
+- Listing-to-detail completeness gate.
+- Part-time opportunity value normalizer.
+- **Prior-contact/application dedupe bridge** — pri discovery porovnať kandidáta nielen s LIVE JSON, ale aj s CRM/applied históriou a poslednými reakčnými balíkmi; zabráni opakovanému odporúčaniu ponuky, na ktorú už bol pripravený alebo odoslaný kontakt.
+- **Requirement evidence matrix** — pre každý high-fit kandidát ukladať povinné vs. výhodové požiadavky oddelene (jazyk, platforma, prax, nástroje) a scoring penalizovať iba podľa explicitnej tvrdosti; znižuje falošné rejecty pri požiadavkách typu WooCommerce/AI ako výhoda.
 - Autentizovaný Facebook ingestion cez Nexus/local agent.
 - Source-success analytics, publishedAt/<24h priority, commute/distance, deadline alerts, company contact enrichment, duplicate cluster report, reply probability, GitHub Actions polling a cross-device sync.
 
 ## Stav ochrany / zápisu
-- `jobs-data.json`: obsahovo nezmenený; feed zostal fail-closed na 46 LIVE položkách. Nebola nájdená nová promotion-grade delta.
-- `job-sources.json`: register zdrojov revalidovaný po 19:21 audite; bez štrukturálnej zmeny registra.
+- `jobs-data.json`: obsahovo nezmenený; feed zostal fail-closed na 46 LIVE položkách. IZY VAPE nebol automaticky vložený, kým sa neuzavrie prior-contact/applied-state dedupe.
 - `source-audit.json`: aktualizovaný po reálnom audite 11 source families; Facebook zostáva 0 verified hits.
-- `PRACA_PRE_JARA_MASTER.md`: aktualizovaný o aktuálny sourcing stav a dve nové backlog zlepšenia.
+- `job-sources.json`: register zdrojov bez potreby štrukturálnej zmeny; existujúce source families zostávajú autoritatívne.
+- `PRACA_PRE_JARA_MASTER.md`: aktualizovaný o sourcing stav a dve nové backlog zlepšenia.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
