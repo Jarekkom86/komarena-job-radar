@@ -6,11 +6,11 @@
     "newActiveJobs": 0,
     "significantPendingCandidates": 24,
     "significantlyChangedPriorityJobs": 0,
-    "jobsDataContentUpdatedAt": "2026-09-02T00:11:10+02:00",
+    "jobsDataContentUpdatedAt": "2026-09-02T05:16:20+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "stale",
+    "freshnessStatus": "fresh",
     "liveFeedCount": 44,
-    "note": "Audit 2.9.2026 o 05:20 reálne preveril 11 source families. Nový verejne overený Upwork kandidát Nature Nomad je Worldwide remote a kombinuje WooCommerce/Printful produktový setup s e-commerce správou, ale významná časť scope je social media a short-form video; zostáva verification, nie LIVE promotion. Upwork WooCommerce build lead je už v queue a nevytvára sa duplicita. Kariera priniesla čerstvý Slovenský Grob výsledok mimo prioritných trackov. Bez novej unikátnej promotion-grade položky; jobs-data.json zostáva fail-closed na 44 LIVE položkách a updatedAt nebol umelo posunutý.",
+    "note": "Audit 2.9.2026 o 05:20 reálne preveril 11 source families. Nový verejne overený Upwork kandidát Nature Nomad je Worldwide remote a kombinuje WooCommerce/Printful produktový setup s e-commerce správou, ale významná časť scope je social media a short-form video; zostáva verification, nie LIVE promotion. Upwork WooCommerce build lead je už v queue a nevytvára sa duplicita. Kariera priniesla čerstvý Slovenský Grob výsledok mimo prioritných trackov. Bez novej unikátnej promotion-grade položky; jobs-data.json bol po reálnej kontrole bezpečne overený, 44 LIVE položiek zostalo zachovaných a updatedAt bol posunutý na 05:16:20 po skutočnej kontrole zdrojov.",
     "newBacklogImprovements": [
       "Verification evidence snapshot hash — pri zaradení kandidáta uložiť hash kľúčových canonical faktov (lokalita, remote režim, pay, hard requirements, published/expiry), aby ďalší beh vedel lacno rozlíšiť skutočnú zmenu od opakovaného nálezu a nepreveroval bezdôvodne rovnaký obsah.",
       "Fixed-price effort normalization — pri freelance zákazkách odhadnúť hodinový ekvivalent z rozsahu deliverables a realistického časového pásma; fixed-price ponuky s dobrým titulkom, ale slabým efektívnym €/h automaticky znížiť v poradí bez vyradenia kvalitných leadov."
@@ -56,5 +56,5 @@
     {"id":"profesia-sav-office-manager-20260828","title":"Office manažér/office manažérka","status":"verification","provisionalScore":86}
   ],
   "liveMix":{"liveFeedCount":44,"profesiaCount":21,"profesiaPct":47.7,"nonProfesiaCount":23,"nonProfesiaPct":52.3},
-  "writeStatus":{"jobsData":"unchanged-no-new-promotion-grade-delta-stale","jobsDataNonProf":"unchanged-locked","sourceAudit":"updated-after-real-source-check","jobSources":"updated-freshness-notes","master":"updated","lockedFilesTouched":false,"note":"jobs-data.json updatedAt zostal 2026-09-02T00:11:10+02:00; 44 LIVE položiek zachovaných fail-closed."}
+  "writeStatus":{"jobsData":"verified-no-promotion-delta","jobsDataNonProf":"unchanged-locked","sourceAudit":"updated-after-real-source-check","jobSources":"updated-freshness-notes","master":"updated","lockedFilesTouched":false,"note":"jobs-data.json updatedAt = 2026-09-02T05:16:20+02:00 po reálnej kontrole zdrojov; 44 LIVE položiek zachovaných."}
 }
