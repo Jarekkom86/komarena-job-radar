@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 2. 9. 2026 07:29 CEST
+Aktualizované: 2. 9. 2026 08:18 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -31,61 +31,50 @@ Aktualizované: 2. 9. 2026 07:29 CEST
 - Lokalita BA/okolie alebo overený remote/HO je hard gate, nie bonus.
 - Agregátor/repost nesmie prebiť priamy firemný zdroj.
 
-## Aktuálne TOP / významné LIVE priority
-1. **HEATING PRO — Technický pracovník/pracovníčka – sklad, rozvoz, nákup — Match 94** — Bratislava; 1 600–2 500 €/mes., ihneď, vodičák B, bez cudzieho jazyka.
-2. **LEAF — Implementation Support Specialist — Match 94** — prevažne remote; customer support + back-office + web obsah + AI automatizácie.
-3. **OVB — Špecialista/ka pre AI a automatizáciu — Match 93** — Bratislava remote/hybrid, od 2 000 €/mes.
-4. **Ryvenia — Shoptet Specialist — Match 93** — Bratislava/full remote/hybrid.
-5. **Košík.sk — Kuriér Bratislava — Match 93** — BA-Devínska Nová Ves/BA okolie; 2 500–3 000 €/mes., canonical detail až 150 €/deň, živnosť, vodičák B min. 2 roky, ihneď.
-6. **Upwork — WooCommerce Product Listing & Upload Specialist — Match 92** — Worldwide remote; 10–30 USD/h; 50–75 produktov; Dutch iba preferované, ChatGPT fallback povolený.
-7. **Zenea — E-Commerce Specialist — Match 92** — Bratislava/hybrid, 1 600–2 000 €/mes.; Shopify/Klaviyo/Excel/reporting.
-8. **Energohub — Office manager / koordinátor procesov — Match 92** — Dúbravka, od 1 800 €/mes.; CRM, procesy, AI.
-9. **Penta Real Estate — Sales Administrator — Match 92** — Bratislava, 1 800 €/mes. + bonus + HO.
-10. **Hilti — Implementation & Service Specialist — Match 92** — Bratislava, od 1 800 €/mes. + bonusy + auto.
-11. **Hellmann Worldwide Logistics — Asistent/ka oddelenia cestnej prepravy — Match 92** — Ružinov; dokumenty, skenovanie, evidencia, fakturácia, A2 AJ.
-12. **Websupport — Customer Success Advisor — Match 91** — Bratislava; weby, hosting, SSL, troubleshooting, onboarding a rast smerom k WordPressu; 1 260 €/mes. + variabilná zložka.
-13. **Lanža — Vodič/ka online nákupov — Match 91** — BA + okolie; 1 500–3 000 €/mes.
-14. **Lachim Trans — Kuriér pre GLS depo Malacky — Match 91** — Malacky a okolie; od 1 900 €/mes., živnosť/s.r.o., vodičák B.
-15. **DATALAN — Servisný technik — Match 90** — Petržalka; servis notebookov/PC, diagnostika bez pájkovania, administratíva servisných požiadaviek, vodič B, B1 AJ, občasný HO; od 1 200 €/mes. + variabilná zložka.
-16. **ČSOB — Operátor IT Service Desk-u — Match 90** — Bratislava/občasný HO; L1 support, Remote Desktop, ServiceNow, účty/heslá, notebooky/mobily; vhodné aj pre absolventov; B1 AJ mínus.
-17. **VÚB — Digitálny agent/agentka — Match 90** — 100 % home office / Slovensko.
-18. **IZY VAPE — Back Office & Operations Coordinator – e-commerce — Match 90** — BA/prevažne HO.
-19. **O2 — Digital Content Admin — Match 90** — web/e-shop, produkty, ceny, landing pages.
-20. **Slovak Telekom — Magenta Experience Center Eurovea — Match 89** — Bratislava; 1 750 €/mes. pri nástupe, smart-home/technologické ukážky, customer care + predaj, bez povinnej AJ; mínus krátky/dlhý týždeň a sales intensity.
-21. **Alza.sk — AlzaBox Špecialista — Match 89** — Bratislava, 1 430 € fix + až 610 € variabilná zložka; Po–Pi flexibilne, čiastočný HO, Excel, vodičák B, AI nástroje.
-22. **Plutvy.sk — e-shop zákaznícka podpora — Match 89** — Petržalka, Po–Pia.
-23. **Upwork — WooCommerce Assistant — Match 89** — worldwide remote; mínus US Mountain Time.
-24. **BOELS — Shop Advisor / Klientsky poradca pre hobbymarkety — Match 89** — Bratislava-Ružinov; Po–Pi flexibilne, výjazdy z domu, servisné vozidlo, jednoduchá technická údržba, vodičák B, od 1 400 €/mes. + bonus.
-25. **ALL SPORTS — e-shop Bauer Hockey — Match 88**.
+## Aktuálny stav LIVE
+- Autoritatívny feed má aktuálne **44 LIVE položiek**.
+- Posledný sourcing audit: **11 source families**, z toho **10 mimo Profesia**.
+- LIVE mix pri poslednom audite: **Profesia 21/44 = 47,7 %**, mimo Profesia **23/44 = 52,3 %**.
+- Facebook verejná indexácia: `limited`, **0 verified hits**; žiadne fiktívne pokrytie.
+- Pending/verification queue pri poslednom audite: **25 kandidátov**.
 
-> Poznámka ku konzistencii: LUNYS E-commerce špecialista bol odstránený z LIVE po canonical LinkedIn stave „No longer accepting applications“. MASTER je s LIVE zosúladený.
+## Denné zlepšenia — 2. 9. 2026
 
-## SOURCE AUDIT — 2. 9. 2026 07:29 CEST — LATEST
-Reálne prehľadané source families: **Profesia; priame firemné careers; LinkedIn Jobs/company posts; Worki.sk; Brigada.sk; Kariera.sk/Zoznam; Práca za rohom; Pretlak/StartupJobs; Upwork freelance; Reddit/WordPress komunity; Facebook verejná indexácia.** Spolu **11 nezávislých source families**, z toho **10 mimo Profesia**.
+### 1. Remote Timezone Compatibility Gate — IMPLEMENTOVANÉ
+Súbor: `job-radar-remote-timezone-policy-v1.json`.
 
-### Výsledky tohto behu
-- **Nové aktívne položky: 0.** `jobs-data.json` zostáva fail-closed na **44 LIVE položkách**; bez novej unikátnej promotion-grade delty sa obsahový timestamp neposúva.
-- **LIVE mix:** Profesia **21 / 44 = 47,7 %**, mimo Profesia **23 / 44 = 52,3 %**. Profesia zostáva pod 60 % health limitom.
-- **Upwork:** `Need Basic WooCommerce Website (Design & Development)` bol znovu nájdený ako Worldwide remote, ale už existuje vo verification queue pod stabilným ID `upwork-woocommerce-design-build-2094700337605270558`; bez duplicity. Ďalšie výsledky zahŕňali low-budget Blocksy build, hard-dev Python/WooCommerce integráciu, non-WordPress platformy a US-only lead.
-- **Kariera.sk:** čerstvé BA brigádne výsledky boli nájdené; triedič Slovenskej pošty už existuje vo verification queue a je nízka priorita, ostatné neprebili LIVE/verification fit.
-- **Profesia / firemné careers / LinkedIn / Worki / Brigada.sk / Práca za rohom / Pretlak / StartupJobs:** reálny discovery prebehol; bez novej unikátnej promotion-grade delty.
-- **Reddit/komunity:** bez konkrétneho vhodného WordPress/WooCommerce hiring dopytu; verejný výsledok bol generický VA hiring roundup.
-- **Facebook:** **0 verified hits**, status `limited`; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a automat ho nespúšťa.
-- Žiadna existujúca LIVE položka nebola odstránená a nedošlo k strate kategórie.
+Problém: označenie `Worldwide remote` alebo `remote-ok` ešte neznamená, že je ponuka prakticky vykonateľná zo Slovenska. Najmä freelance/US remote ponuky môžu vyžadovať pravidelnú nočnú zmenu alebo pevný americký pracovný čas.
 
-### Run summary
-- Reálne skontrolované source families: **11**.
-- Nové aktívne položky zapísané: **0**.
-- Významné pending/verification kandidáty: **25**.
-- LIVE feed: **44 aktívnych položiek**.
-- Mix: **Profesia 47,7 % / mimo Profesia 52,3 %**.
-- `jobs-data.json.updatedAt` = **2. 9. 2026 05:16:20 CEST**.
+Riešenie:
+- flexibilný/asynchrónny remote alebo rozumný prekryv s 07:00–19:00 Europe/Bratislava = `compatible`;
+- pravidelná neskorá práca po 22:00 s čiastočným prekryvom = `review`;
+- prevažne nočná zmena 22:00–06:00 alebo povinný US shift bez alternatívy = `reject-schedule`;
+- nejasná povinná timezone dostupnosť = `unknown`, overiť pred `APPLY-FIRST`.
 
-## Rozvojový backlog — nové položky z tohto behu
-1. **Source-family zero-result anomaly detector** — porovnať počet výsledkov a kvalitu coverage s historickým normálom zdroja. Náhly prepad na nulu označiť ako možnú indexačnú/robots chybu namiesto falošného záveru, že na trhu nič nie je.
-2. **Verification-to-LIVE transaction ledger** — pri každom promotion pokuse ukladať stabilné ID, canonical URL, dôvod promotion, pre/post počet LIVE položiek a validačný výsledok. Umožní bezpečný retry po write blockeri bez duplicitného alebo strateného kandidáta.
+Bezpečnosť: politika nemení `locationEligibility`, CRM, stabilné ID ani zamknuté UI; iba pridáva druhý praktický gate pre remote ponuky.
 
-## Predchádzajúce backlog zlepšenia, ktoré zostávajú platné
+Prínos: menej času na nominálne remote ponuky, ktoré by v realite znamenali pravidelné nočné zmeny alebo nevhodný režim zo Slovenska.
+
+### 2. Application Link Health + Canonical Apply Gate — IMPLEMENTOVANÉ
+Súbor: `job-radar-application-link-health-policy-v1.json`.
+
+Problém: aktívne vyzerajúci mirror/agregátor alebo starý detail môže viesť na zatvorenú pozíciu, generickú career stránku alebo nefunkčný apply flow. To znižuje reálnu úspešnosť a plytvá časom pri reakcii.
+
+Riešenie:
+- aktívny canonical detail + overená cesta na reakciu = `apply-ready`;
+- aktívny detail bez overeného apply/contact = `verify-application-path`;
+- iba mirror bez canonical potvrdenia = `verify-canonical`, nesmie byť `APPLY-FIRST` iba na základe mirroru;
+- canonical stav closed/expired/no longer accepting/404/410 = `reject-inactive`;
+- redirect na inú rolu alebo generickú career homepage = `quarantine`;
+- transient network chyba nikdy automaticky nemaže existujúcu LIVE položku.
+
+Bezpečnosť: zachované stabilné ID, canonical dedupe, CRM, fail-closed správanie a BA/remote hard gate.
+
+Prínos: TOP kandidáti budú mať vyššiu pravdepodobnosť, že sa na nich dá okamžite a reálne reagovať, namiesto strácania času na mŕtvych alebo presmerovaných odkazoch.
+
+## Rozvojový backlog
+- Source-family zero-result anomaly detector.
+- Verification-to-LIVE transaction ledger.
 - Freelance client-risk gate.
 - Physical-load & shift suitability extractor.
 - Verification evidence snapshot hash.
@@ -102,8 +91,8 @@ Reálne prehľadané source families: **Profesia; priame firemné careers; Linke
 - Source-success analytics, publishedAt/<24h priority, commute/distance, deadline alerts, company contact enrichment, duplicate cluster report, reply probability, GitHub Actions polling a cross-device sync.
 
 ## Stav ochrany / zápisu
-- `jobs-data.json`: **nezmenený**, pretože nevznikla nová unikátna promotion-grade delta; 44 LIVE položiek zachovaných.
-- `job-sources.json`: **aktualizovaný** o čerstvý audit/freshness poznámky.
-- `source-audit.json`: **aktualizovaný** po reálnom 11-family audite.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný**; audit zosúladený s týmto behom a pridané 2 nové backlog zlepšenia.
-- `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index: **nedotknuté / zamknuté**.
+- `jobs-data.json`: pri tomto rozvojovom zásahu obsahovo nemením; existujúci LIVE feed a používateľské dáta zostávajú zachované.
+- `job-radar-remote-timezone-policy-v1.json`: vytvorený.
+- `job-radar-application-link-health-policy-v1.json`: vytvorený.
+- `PRACA_PRE_JARA_MASTER.md`: aktualizovaný o dnešné dve implementácie.
+- `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
