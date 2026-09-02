@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 2. 9. 2026 08:32 CEST
+Aktualizované: 2. 9. 2026 10:29 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -34,10 +34,11 @@ Aktualizované: 2. 9. 2026 08:32 CEST
 ## Aktuálny stav LIVE
 - Autoritatívny feed má aktuálne **45 LIVE položiek**.
 - Posledný sourcing audit: **11 source families**, z toho **10 mimo Profesia**.
-- LIVE mix pri poslednom audite: **Profesia 22/45 = 48,9 %**, mimo Profesia **23/45 = 51,1 %**.
+- LIVE mix: **Profesia 22/45 = 48,9 %**, mimo Profesia **23/45 = 51,1 %**.
 - Facebook verejná indexácia: `limited`, **0 verified hits**; žiadne fiktívne pokrytie.
-- Pending/verification queue pri poslednom audite: **28 kandidátov**.
-- Posledný beh nepridal nový LIVE job; zachytil iba verification kandidátov z LinkedIn a Upwork.
+- Pending/verification queue: **30 kandidátov**.
+- Posledný beh nepridal nový LIVE job; nový Upwork Sales Assistant bol zaradený iba do verification kvôli nejasnému rozsahu a jazykovému riziku telefonickej komunikácie.
+- SAV Asistent/ka riaditeľa zostáva `promotion-ready`: Bratislava, 1 800 €, 08:00–16:00, AJ A1–A2, deadline 15.10.2026; požaduje aspoň 5 rokov praxe.
 
 ## Denné zlepšenia — 2. 9. 2026
 
@@ -88,14 +89,16 @@ Prínos: TOP kandidáti budú mať vyššiu pravdepodobnosť, že sa na nich dá
 - Material-change notification fingerprint.
 - Short-window opportunity urgency gate.
 - Application-friction score.
-- **Public-index stale-result quarantine** — ukladať published/crawled age a canonical availability evidence; staré alebo expirované indexové výsledky nesmú vstúpiť do verification bez nového canonical potvrdenia.
-- **Role-scope complexity budget** — vyhodnotiť infra/backend/devops a advanced-admin záťaž (server cache, CDN, API, GTM, Linux/Cloudways a podobne) a limitovať score pri scope nad preukázanú prax.
+- Public-index stale-result quarantine.
+- Role-scope complexity budget.
+- **Source-query evidence manifest** — pri každom behu ukladať timestamp, fingerprint použitých discovery query a počet verejne overiteľných výsledkov pre každú source family; zvýši auditovateľnosť a odhalí falošné „checked“ pokrytie.
+- **Verification value-decay score** — pending kandidátom znižovať prioritu podľa veku, rastúcej konkurencie, neaktivity klienta a blížiaceho sa deadline bez automatického mazania; čerstvé príležitosti sa dostanú vyššie.
 - Autentizovaný Facebook ingestion cez Nexus/local agent.
 - Source-success analytics, publishedAt/<24h priority, commute/distance, deadline alerts, company contact enrichment, duplicate cluster report, reply probability, GitHub Actions polling a cross-device sync.
 
 ## Stav ochrany / zápisu
-- `jobs-data.json`: pri tomto behu obsahovo nezmenený; feed zostal fail-closed na 45 LIVE položkách.
-- `job-sources.json`: bez štrukturálnej zmeny zdrojového registra v tomto behu.
-- `source-audit.json`: aktualizovaný po reálnom audite 11 source families.
+- `jobs-data.json`: obsahovo nezmenený; feed zostal fail-closed na 45 LIVE položkách.
+- `job-sources.json`: aktualizovaný audit timestamp a poznámky pre skutočne kontrolované zdroje.
+- `source-audit.json`: aktualizovaný po reálnom audite 11 source families; nový Upwork Sales Assistant je vo verification queue.
 - `PRACA_PRE_JARA_MASTER.md`: aktualizovaný o aktuálny LIVE stav a dve nové backlog zlepšenia.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
