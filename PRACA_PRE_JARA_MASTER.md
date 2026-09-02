@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 2. 9. 2026 15:19 CEST
+Aktualizované: 2. 9. 2026 19:21 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -37,10 +37,9 @@ Aktualizované: 2. 9. 2026 15:19 CEST
 - LIVE mix: **Profesia 23/46 = 50,0 %**, mimo Profesia **23/46 = 50,0 %**.
 - Facebook verejná indexácia: `limited`, **0 verified hits**; žiadne fiktívne pokrytie.
 - Pending/verification queue: **32 kandidátov**.
-- Beh o 15:19 nepridal nový LIVE job; nevznikla nová promotion-grade delta.
-- Upwork znovu potvrdil `E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero`: Worldwide remote, 10–15 USD/h, <30 h/týždeň, 1–3 mesiace, contract-to-hire. Ponuka už je vo verification queue; explicitne vyžaduje good written English, WooCommerce Subscriptions, Meta Ads Manager a základný Xero, preto sa automaticky nepromovala.
-- LinkedIn verejná indexácia priniesla Swiss Re `IT Service Analyst (part-time student role)` v Bratislave; študentská podmienka ju vyradila z aktívneho odporúčania.
-- Brigada.sk zostáva verejne indexačne limited; viditeľná BA kategória nepriniesla nový konkrétny promotion-grade detail.
+- Beh o 19:21 nepridal nový LIVE job; nevznikla nová promotion-grade delta.
+- Brigada.sk priniesla konkrétny nový BA administratívny hit Toyota Financial Services: Galvaniho 19, 7 €/h, približne 20 h/týždeň, faktúry, skenovanie, evidencia, archivácia a interné systémy. Detail však vyžaduje **platný štatút študenta**, preto bol kandidát vyradený cez eligibility hard gate a nebol pridaný do LIVE.
+- Upwork sweep našiel nové worldwide VA/admin výsledky, ale bez novej promotion-grade delty: Sales Assistant 1 800 USD je už vo verification queue; Social Media Publishing Assistant je location-restricted mimo Slovenska; LinkedIn VA vyžaduje strong English; 100 USD company VA má slabý value/effort pomer.
 - Reddit verejná indexácia nepriniesla nový konkrétny vhodný hiring dopyt; všeobecné diskusie a `[FOR HIRE]` posty sa nepočítajú.
 - Facebook zostáva **0 verified hits / limited**.
 - SAV Asistent/ka riaditeľa zostáva `promotion-ready`: Bratislava, 1 800 €, 08:00–16:00, AJ A1–A2, deadline 15.10.2026; požaduje aspoň 5 rokov praxe.
@@ -99,12 +98,14 @@ Riešenie:
 - **Freelance portfolio-evidence requirement estimator** — pri Upwork/WordPress zákazkách extrahovať požiadavku na ukážky práce, podobné projekty alebo portfolio a odhadnúť, či existujúce dôkazy praxe stačia; znižuje plytvanie návrhmi na zákazky, kde klient explicitne očakáva silnejšie referencie.
 - **Student/eligibility hard-gate extractor** — explicitne rozlišovať študentský status, vekové/školské podmienky, internship eligibility a iné formálne obmedzenia ešte pred scoringom; zabráni vysokému skóre ponúk, na ktoré uchádzač formálne nemôže reagovať.
 - **Freelance client-engagement freshness signal** — pri Upwork zákazkách používať `last viewed by client`, počet hires/interviewing a vek ponuky ako signál reálnej aktivity klienta; pomáha prioritizovať zákazky, kde je ešte rozumná šanca na reakciu, bez preceňovania samotného počtu proposals.
+- **Listing-to-detail completeness gate** — promotion kandidát môže vzniknúť až po otvorení konkrétneho detailu s overenou lokalitou, typom zmluvy, eligibility podmienkami a priamym URL; kategórie/snippety sa evidujú iba ako discovery signal. Rieši dnešný prípad, keď až detail Brigada.sk odhalil povinný študentský status.
+- **Part-time opportunity value normalizer** — pri hodinových a skrátených úväzkoch prepočítavať realistický mesačný ekvivalent z rozsahu hodín a oddeliť ho od nominálnej hodinovej sadzby; znižuje preceňovanie krátkych alebo nízkoobjemových brigád.
 - Autentizovaný Facebook ingestion cez Nexus/local agent.
 - Source-success analytics, publishedAt/<24h priority, commute/distance, deadline alerts, company contact enrichment, duplicate cluster report, reply probability, GitHub Actions polling a cross-device sync.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: obsahovo nezmenený; feed zostal fail-closed na 46 LIVE položkách. Nebola nájdená nová promotion-grade delta.
-- `job-sources.json`: register zdrojov revalidovaný po 15:19 audite; bez štrukturálnej zmeny registra.
-- `source-audit.json`: má byť aktualizovaný po reálnom audite 11 source families; Facebook zostáva 0 verified hits.
+- `job-sources.json`: register zdrojov revalidovaný po 19:21 audite; bez štrukturálnej zmeny registra.
+- `source-audit.json`: aktualizovaný po reálnom audite 11 source families; Facebook zostáva 0 verified hits.
 - `PRACA_PRE_JARA_MASTER.md`: aktualizovaný o aktuálny sourcing stav a dve nové backlog zlepšenia.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
