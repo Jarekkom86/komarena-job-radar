@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 2. 9. 2026 23:23 CEST
+Aktualizované: 3. 9. 2026 00:25 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -36,23 +36,21 @@ Aktualizované: 2. 9. 2026 23:23 CEST
 - Posledný sourcing audit: **11 source families**, z toho **10 mimo Profesia**.
 - LIVE mix: **Profesia 23/46 = 50,0 %**, mimo Profesia **23/46 = 50,0 %**.
 - Facebook verejná indexácia: `limited`, **0 verified hits**; žiadne fiktívne pokrytie.
-- Pending/verification queue: **34 kandidátov**.
-- Beh o 23:23 nepridal nový LIVE job; nevznikla bezpečná nová promotion-grade delta po dedupe/applied-state kontrole.
-- **IZY VAPE CE – Back Office & Operations Coordinator – e-commerce | Remote** je veľmi silný overený lead: 1 600–2 000 €/mes., prevažne práca z domu z celého Slovenska, príležitostné vopred plánované stretnutia v Bratislave, e-shop objednávky, WooCommerce ako výhoda, logistika, reklamácie, reporting, Trello a AI nástroje. Angličtina B1 je mínus, nie absolútny hard gate. Ponuka však už bola v minulosti používateľom riešená/pripravovaná na reakciu, preto je v `source-audit.json` označená `verification-known-prior-lead-dedupe` a nebola slepo pridaná ako nový LIVE duplikát.
-- Upwork **E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero** zostáva verification: Worldwide remote, 10–15 USD/h, <30 h/týždeň, 1–3 mesiace, contract-to-hire; silný WooCommerce/admin fit, ale vyžaduje good written English, WooCommerce Subscriptions a basic Xero.
-- Reddit verejná indexácia nepriniesla nový konkrétny vhodný SK-eligible hiring dopyt; agregované VA linky ani `[FOR HIRE]` príspevky sa nepočítajú ako verified kandidát.
-- Facebook zostáva **0 verified hits / limited**.
+- `jobs-data.json` zostáva fail-closed na poslednom validnom stave, pretože dostupný GitHub writer vyžaduje kompletný replacement veľkého súboru.
+- Najsilnejší promotion-ready lead na zápis ostáva **Magistrát hlavného mesta SR Bratislavy – Odborný/á referent/tka podateľne**: Bratislava, 1 300 €/mes., SŠ s maturitou, bez povinnej cudzej reči, digitalizácia/evidencia zásielok, databázy, reporty, IS NORIS.
+- **Bolder Slovakia – Administrátor/ka korporátnej agendy**, Bratislava, 1 600 €/mes., bol v audite 3. 9. 2026 vyradený: explicitná AJ C1/C2, VŠ I. stupňa, min. 2 roky relevantnej praxe a skúsenosti s korporátnou dokumentáciou.
+- Upwork `Website & SEO Management 2026` zostáva relevantný verification kandidát; ďalšie WordPress/WooCommerce hity v tomto behu boli staršie, nízko platené, s fluent-English/US-hours požiadavkou alebo vysokou konkurenciou.
 
-## Source audit — 2. 9. 2026 23:23
-- Profesia: `ok`, 1 relevantný známy hit, 0 pridaných, 1 dedupe/prior-lead.
-- Priame company careers: `checked`, 0 nových vhodných hitov.
-- LinkedIn Jobs: `limited`, 0 nových promotion-grade hitov.
-- Worki.sk: `checked`, 0 nových vhodných hitov.
+## Source audit — 3. 9. 2026 00:25
+- Profesia: `checked`, bez novej promotion-grade delty.
+- Priame company careers: `checked`, bez nového vhodného canonical hitu.
+- LinkedIn Jobs: `limited`, Sharp Brains DSS L1 potvrdený, ale ide o už známu verification položku.
+- Worki.sk: `checked`, HEATING PRO stále verejne dostupný a už LIVE.
 - Brigada.sk: `checked`, 0 nových vhodných hitov.
-- Kariera.sk: `checked`, 0 nových vhodných hitov.
-- Práca za rohom: `ok`, IZY VAPE mirror potvrdený; nepočíta sa ako nezávislý nový job oproti Profesia canonical detailu.
+- Kariera.sk: `ok`, nový Bolder Slovakia hit, vyradený pre AJ C1/C2 + kvalifikáciu/prax.
+- Práca za rohom: `checked`, 0 nových promotion-grade hitov.
 - Pretlak / StartupJobs / WordPress Jobs: `checked`, 0 nových hard-gate-pass kandidátov.
-- Upwork/freelance: `ok`, 2 relevantné výsledky, 0 LIVE prírastkov; jeden jazykovo/skillovo rizikový, jeden starší/duplicitný.
+- Upwork/freelance: `ok`, 5 relevantných výsledkov; 0 LIVE prírastkov po language/value/duplicate gateoch.
 - Reddit/komunity: `limited`, 0 vhodných SK-eligible verified hitov.
 - Facebook public index: `limited`, **0 verified hits**.
 
@@ -87,14 +85,17 @@ Aktualizované: 2. 9. 2026 23:23 CEST
 - Freelance client-engagement freshness signal.
 - Listing-to-detail completeness gate.
 - Part-time opportunity value normalizer.
-- **Prior-contact/application dedupe bridge** — pri discovery porovnať kandidáta nielen s LIVE JSON, ale aj s CRM/applied históriou a poslednými reakčnými balíkmi; zabráni opakovanému odporúčaniu ponuky, na ktorú už bol pripravený alebo odoslaný kontakt.
-- **Requirement evidence matrix** — pre každý high-fit kandidát ukladať povinné vs. výhodové požiadavky oddelene (jazyk, platforma, prax, nástroje) a scoring penalizovať iba podľa explicitnej tvrdosti; znižuje falošné rejecty pri požiadavkách typu WooCommerce/AI ako výhoda.
+- Prior-contact/application dedupe bridge.
+- Requirement evidence matrix.
+- Safe partial JSON updater.
+- **Canonical payload completeness score** — pred promotion vyhodnotiť, či canonical detail poskytuje explicitné dôkazy pre jazyk, lokalitu/remote, mzdu, pracovný režim a tvrdé požiadavky; neúplné agregované listingy držať vo verification.
+- **English interaction-mode risk score** — odlíšiť pasívne čítanie dokumentácie od každodennej telefonickej/klientskej komunikácie, callov a screen-sharingu, aby jazyková penalizácia zodpovedala reálnej potrebe role.
 - Autentizovaný Facebook ingestion cez Nexus/local agent.
 - Source-success analytics, publishedAt/<24h priority, commute/distance, deadline alerts, company contact enrichment, duplicate cluster report, reply probability, GitHub Actions polling a cross-device sync.
 
 ## Stav ochrany / zápisu
-- `jobs-data.json`: obsahovo nezmenený; feed zostal fail-closed na 46 LIVE položkách. IZY VAPE nebol automaticky vložený, kým sa neuzavrie prior-contact/applied-state dedupe.
-- `source-audit.json`: aktualizovaný po reálnom audite 11 source families; Facebook zostáva 0 verified hits.
-- `job-sources.json`: register zdrojov bez potreby štrukturálnej zmeny; existujúce source families zostávajú autoritatívne.
-- `PRACA_PRE_JARA_MASTER.md`: aktualizovaný o sourcing stav a dve nové backlog zlepšenia.
+- `jobs-data.json`: obsahovo nezmenený; feed zostal fail-closed na 46 LIVE položkách.
+- `source-audit.json`: **aktualizovaný** po reálnom audite 11 source families; Facebook zostáva 0 verified hits.
+- `job-sources.json`: register zdrojov bol v tomto behu znovu použitý a validovaný; nevznikla štrukturálna zmena vyžadujúca bezpečný full-file rewrite.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný** o audit 00:25 a dve nové backlog zlepšenia.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
