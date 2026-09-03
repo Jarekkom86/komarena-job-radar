@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 3. 9. 2026 06:33 CEST
+Aktualizované: 3. 9. 2026 07:19 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,33 +35,33 @@ Aktualizované: 3. 9. 2026 06:33 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 06:33 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- **Upwork – E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero**: Worldwide remote, 10–15 USD/h, <30 h/týždeň, 1–3 mesiace, contract-to-hire. Obsahovo veľmi dobrý fit na WooCommerce admin, objednávky, subscription support, e-mail support a troubleshooting. Nepovýšené do LIVE pre explicitné `Good written English`, povinnú skúsenosť s WooCommerce Subscriptions a kombináciu Meta Ads + Xero; klient mal 15–20 proposals, 1 hire, 0 interviewing a ponuku naposledy pozrel pred 3 dňami. `locationEligibility: remote-ok`.
-- **Turner & Townsend – Business Operations Assistant**: administratívne obsahovo relevantné, ale explicitne vyžaduje 3–4 roky podobnej praxe a fluent Slovak + English, preto vyradené jazykovo/kvalifikačne.
+- Sweep 07:19 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- **Lugera & Maklér – IT Administrátor**: Bratislava, 2 000 EUR/mes., používateľská podpora, LAN/WiFi, účty, zariadenia, SQL a interné aplikácie. Lokalita prechádza (`ba-area`), ale explicitná AJ B2 a min. 2 roky podobnej praxe sú výrazný language/experience risk; nepovýšené do LIVE.
+- **Orot Bratislava – Manager of logistics**: Ružinov, 1 300 EUR/mes., administratívna a technická podpora import/export procesov monitorovacích zariadení, interné systémy, kuriéri, reporty; absolvent-friendly. Obsahovo zaujímavý IoT/logistika prienik, ale explicitná AJ B2/C1 až C1 je hard language mismatch; nepovýšené.
+- **Upwork WooCommerce/WordPress discovery**: verejný feed prináša čerstvé remote výsledky, ale aktuálne hity sú prevažne full-build/hard-development alebo všeobecné VA listingy bez dostatočne kvalitného konkrétneho payloadu; žiadny nový LIVE ingest.
 
-## Source audit — 3. 9. 2026 06:33
-- Profesia: `checked`; BA WordPress/support/admin/driver discovery preverené, bez novej promotion-grade delty.
-- Priame company careers: `ok`; Turner & Townsend Business Operations Assistant bol konkrétne preverený, ale vyradený pre fluent English + 3–4 roky relevantnej praxe.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez nového promotion-grade BA/remote hitu; jeden nesprávne lokalizovaný Driver Pretoria výsledok bol vyradený ako location mismatch.
-- Worki.sk: `checked`; BA discovery preverené, bez novej promotion-grade delty.
-- Brigada.sk: `checked`; BA administratíva/brigády preverené, bez novej promotion-grade delty.
-- Kariera.sk / Zoznam: `checked`; BA administratíva/support preverené, bez novej promotion-grade delty.
-- Pretlak: `ok`; aktuálny marketingový výsledok bol preverený, ale nie je lepší fit než existujúce LIVE smerovanie.
-- Upwork/freelance: `ok`; nový WooCommerce VA lead je verification-grade, nie LIVE, pre written-English a tool-stack risk.
-- Služby zamestnanosti: `checked`; BA administratíva/IT support discovery preverené, bez novej promotion-grade delty.
-- Reddit/komunity: `limited`; verejná indexácia preverená, 0 vhodných SK-eligible verified hiring hitov.
-- Facebook public index: `limited`, **0 verified hits**; bez konkrétneho verejne overiteľného hiring postu.
-- WordPress/tech discovery: `checked`; aktuálne verejné WordPress/WooCommerce výsledky sú prevažne hard-development/full-build alebo horší fit.
+## Source audit — 3. 9. 2026 07:19
+- Profesia: `ok`; BA support/admin/IoT/logistics discovery reálne preverené. 2 relevantné kandidáty (Lugera IT Administrátor, Orot Manager of logistics), oba vyradené z LIVE pre jazyk/experience gate.
+- Priame company careers: `checked`; Wolt/Schneider a ďalšie BA direct-career výsledky boli reálne preverené; bez novej promotion-grade delty. Schneider detail bol verejne 403/limited, preto sa nepočíta ako overený hit.
+- LinkedIn Jobs: `limited`; verejná indexácia reálne preverená, bez nového vhodného BA/remote hitu; coverage bez loginu zostáva limited.
+- Worki.sk: `checked`; BA administratíva/support discovery preverené, bez novej promotion-grade delty; časť indexovaných detailov je stará.
+- Brigada.sk: `checked`; BA brigády/admin discovery preverené, bez konkrétneho nového promotion-grade hitu.
+- Kariera.sk / Zoznam: `checked`; discovery preverené, nájdený starý Manpower výsledok nebol aktívna nová delta.
+- Pretlak / tech-creative: `checked`; WordPress/e-commerce/remote discovery preverené, bez nového hard-gate-pass kandidáta.
+- Upwork/freelance: `ok`; verejne indexované WooCommerce/WordPress/Data Entry/VA feedy preverené. Čerstvé hity sú buď hard-dev/full-build, low-information alebo mimo hodnotového/ranking gate; bez LIVE ingestu.
+- Reddit/komunity: `limited`; verejná indexácia preverená, bez konkrétneho SK-eligible verified hiring hitu.
+- Facebook public index: `limited`, **0 verified hits**; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom.
 
-### Audit počty 06:33
-- source families skontrolované: **12**
-- relevantné nové kandidáty: **2** (Upwork WooCommerce VA; Turner & Townsend Business Operations Assistant)
+### Audit počty 07:19
+- source families skontrolované: **10**
+- z toho mimo Profesia: **9**
+- relevantné nové kandidáty: **2**
 - pridané do LIVE: **0**
-- promotion-grade nové položky: **0**
-- verification-grade nové položky: **1** (Upwork WooCommerce VA)
-- vyradené pre jazyk/kvalifikáciu: **1** (Turner & Townsend)
-- vyradené pre lokalitu/mismatch: **1** (LinkedIn Pretoria driver mislabeled Bratislava)
+- verification/reject kandidáty: **2**
+- vyradené pre jazyk/kvalifikáciu/prax: **2**
+- vyradené pre lokalitu: **0**
 - Facebook verified hits: **0**
+- LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -103,21 +103,23 @@ Aktualizované: 3. 9. 2026 06:33 CEST
 - Competition-adjusted application ROI.
 - Autentizovaný Facebook ingestion cez Nexus/local agent.
 - Source-success analytics, publishedAt/<24h priority, commute/distance, deadline alerts, company contact enrichment, duplicate cluster report, reply probability, GitHub Actions polling a cross-device sync.
-- **Promotion-ready ageing gate** — ak kandidát už prešiel hard gate-mi a nový sweep znovu potvrdí aktívny/canonical stav, historický writer blocker ho nesmie držať vo verification queue.
-- **Timezone-overlap burden score** — pri remote/freelance ponukách penalizovať povinné US hours alebo široké globálne časové okná aj vtedy, keď je lokalita formálne Worldwide.
-- **Client-spend trust calibration** — pri freelance leadoch kombinovať historický spend, počet hires, aktivitu klienta a proposal/interview pomer, aby sa znížil čas strávený na low-probability klientov.
-- **Eligibility ambiguity quarantine** — ak ponuka uvádza nejednoznačné „študent / prípadne škola X“ bez jasného prijateľného typu uchádzača, držať ju mimo LIVE do explicitného overenia eligibility.
-- **Bulk-work effective-rate estimator** — pri fixed-price freelance úlohách odhadnúť efektívnu hodinovú sadzbu z počtu produktov/obrázkov/recordov a vyradiť objemovo nevýhodné zákazky aj pri tematicky silnom WooCommerce fit-e.
-- **Primary-source promotion retry queue** — pri silnom kandidátovi nájdenom na job boarde automaticky evidovať retry na firemný/canonical zdroj a pri úspechu prepnúť source provenance bez vytvorenia duplikátu.
-- **Cross-board freshness disagreement detector** — ak rovnaký job na jednom boarde vyzerá „dnešný“ a inde starší alebo neaktívny, nevytvoriť nový LIVE záznam, ale vyžiadať canonical recheck a uložiť dôvod rozdielu.
-- **Government-source vacancy expiry reconciler** — pri `Služby zamestnanosti` ukladať dátum ukončenia ponuky a pri každom rechecku rozlišovať aktívny štátny záznam od starého indexovaného výsledku; znižuje false-positive „čerstvé“ joby.
-- **Qualification-stack penalty** — kumulovať VŠ, minimálnu prax, jazyk a špecializované skill požiadavky do jedného risk skóre; technicky lákavá rola sa tak nepreceňuje iba podľa title/mzdy.
-- **Freelance mandatory-tool gap matrix** — pri e-commerce zákazkách oddeliť core WooCommerce/WordPress fit od povinných vedľajších nástrojov ako Subscriptions, Xero, Meta Ads či Klaviyo; zamedzí preceňovaniu tematicky atraktívnych leadov s priveľkým skill gapom.
-- **Client-view staleness penalty** — pri freelance ponukách znižovať application ROI, ak klient ponuku viac dní neotvoril, aj keď je listing stále formálne aktívny; šetrí čas na pravdepodobne opustených zákazkách.
+- Promotion-ready ageing gate.
+- Timezone-overlap burden score.
+- Client-spend trust calibration.
+- Eligibility ambiguity quarantine.
+- Bulk-work effective-rate estimator.
+- Primary-source promotion retry queue.
+- Cross-board freshness disagreement detector.
+- Government-source vacancy expiry reconciler.
+- Qualification-stack penalty.
+- Freelance mandatory-tool gap matrix.
+- Client-view staleness penalty.
+- **Audit payload sharding / append-only run ledger** — oddeliť veľkú historickú `verificationQueue` od malého per-run source auditu tak, aby hodinový writer vedel atomicky zapísať pravdivý audit bez nutnosti úplného replacementu veľkého JSON payloadu; zároveň zachovať spätnú kompatibilitu pre renderer cez build/merge krok.
+- **Language-risk reason normalization** — ukladať oddelene `requiredEnglishLevel`, `interactionMode` (written/phone/client-facing/internal) a `languageGateReason`; odstráni nejednotné rozhodovanie medzi B2/C1 titulmi a umožní presnejší ranking bez ručného čítania celého popisu.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: aktuálny bezpečný replacement je v tomto behu blokovaný tým, že konektor vracia veľký súbor truncovane; existujúca verification queue sa nesmie stratiť. FAIL-CLOSED: súbor neprepísaný.
-- `job-sources.json`: revalidácia prebehla; zapisovať iba ak je možné zachovať celý registry payload.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 06:33** s auditom a dvoma novými backlog zlepšeniami.
+- `source-audit.json`: posledný uložený audit je z **07:14**. Aktuálny run 07:19 ho nedokáže bezpečne nahradiť cez dostupný GitHub contents writer, pretože reader vracia veľký payload truncovane a replacement by mohol stratiť časť existujúcej verification queue. FAIL-CLOSED: súbor v tomto rune neprepísaný; táto technická medzera je explicitne evidovaná a rieši ju nový backlog `Audit payload sharding / append-only run ledger`.
+- `job-sources.json`: registry ostáva štrukturálne platný; bez novej source-family konfigurácie nebol nutný replacement. Posledný bezpečný zápis je 06:33.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 07:19** s reálnym auditom a dvoma novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
