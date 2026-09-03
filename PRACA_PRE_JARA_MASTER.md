@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 3. 9. 2026 19:36 CEST
+Aktualizované: 3. 9. 2026 20:34 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -36,33 +36,31 @@ Aktualizované: 3. 9. 2026 19:36 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 19:36 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- Čerstvý Upwork `Full-Time WordPress & WooCommerce Developer` je obsahovo blízky TOP smeru, ale ide o developer-heavy 30+ h/week scope; ďalšie čerstvé WP/WooCommerce výsledky boli full-build alebo low-value.
-- Brigada.sk priniesla same-day sklad v Lozorne za 6,50 €/h, ktorý bol pri audite už po pracovnej zmene, a dlhodobého vodiča detského vláčika v AVIONe, ale iba na študentskú dohodu za 6 €/h netto.
-- Direct-career remote výsledky SearchApi/FYST prešli lokalitne, ale boli hard-dev/senior-scope mimo profilu.
+- Sweep 20:34 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Upwork mal čerstvé WordPress/WooCommerce výsledky, ale dominovali full-build/developer-heavy scope alebo nízke fixed-price rozpočty; nič neprešlo do LIVE.
+- Kariera.sk mala čerstvé BA výsledky, no sklad od 960 EUR je low-value a vodičský discovery bol prevažne taxi/MKD/nákladná doprava mimo preferencie vodič B bez tachografu.
 - Facebook verejná indexácia ostáva **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 3. 9. 2026 19:36
-- Profesia: `checked`; BA WordPress/support/admin/driver discovery reálne preverené, bez novej promotion-grade delty.
-- Priame company careers: `checked`; 2 čitateľné remote výsledky, oba vyradené pre hard-dev/senior scope.
+## Source audit — 3. 9. 2026 20:34
+- Profesia: `checked`; BA WordPress/WooCommerce/admin/support/driver discovery reálne preverené, bez novej promotion-grade delty.
+- Priame company careers: `checked`; BA/remote support/e-commerce discovery reálne preverená, bez nového promotion-grade kandidáta.
 - LinkedIn Jobs: `limited`; verejná indexácia preverená, bez nového hard-gate-pass výsledku.
-- Worki.sk: `checked`; BA/okolie technický support/admin/driver discovery preverená, bez nového vhodného kandidáta.
-- Brigada.sk: `ok`; 2 relevantné/čiastočne relevantné výsledky, 0 LIVE — jeden same-day už po zmene, druhý študentská dohoda + nízka odmena.
-- Kariera.sk: `checked`; BA admin/support discovery bez novej promotion-grade delty.
-- Služby zamestnanosti: `checked`; BA admin/IT support/vodič discovery bez novej promotion-grade delty.
+- Worki.sk: `checked`; BA/okolie admin/support/driver discovery preverená, bez nového vhodného kandidáta.
+- Brigada.sk: `checked`; BA administratíva/kuriér/sklad discovery preverená, bez nového promotion kandidáta.
+- Kariera.sk: `ok`; 2 relevantné/čiastočne relevantné výsledky, 0 LIVE — sklad low-value a vodičské výsledky prevažne mimo preferovanej taxonómie.
 - Pretlak / StartupJobs / WordPress Jobs: `checked`; bez nového konkrétneho hiring hitu vhodného na promotion.
-- Upwork/freelance: `ok`; 4 relevantné/čiastočne relevantné výsledky, 0 LIVE promotion; developer-heavy/full-build/low-value alebo duplicate verification.
+- Upwork/freelance: `ok`; 6 relevantných/čiastočne relevantných výsledkov, 0 LIVE promotion; väčšina developer-heavy/full-build alebo low-value fixed-price.
 - Reddit/komunity: `limited`; verejná indexácia preverená, bez konkrétneho hiring dopytu vhodného na promotion.
 - Facebook public index: `limited`, **0 verified hits**; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom.
 
-### Audit počty 19:36
-- source families reálne skontrolované: **11**
-- z toho mimo Profesia: **10**
-- relevantné/čiastočne relevantné výsledky v novom sweep-e: **8+**
+### Audit počty 20:34
+- source families reálne skontrolované: **10**
+- z toho mimo Profesia: **9**
+- relevantné/čiastočne relevantné výsledky v novom sweep-e: **8**
 - pridané do LIVE: **0**
 - nové verification kandidáty: **0**
-- vyradené pre skill/scope mismatch: **4+**
-- vyradené pre value/eligibility/time-window: **3+**
+- vyradené pre skill/scope mismatch: **5+**
+- vyradené pre value: **3+**
 - locality reject: **0 nových promotion kandidátov**
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
@@ -132,22 +130,24 @@ Aktualizované: 3. 9. 2026 19:36 CEST
 - Source-result semantic locality validator.
 - Source-family query coverage heatmap.
 - Verification queue recheck budget allocator.
-- **Search-result location contradiction quarantine** — porovnávať titulok, deklarované pracovisko a text onsite/relocation; výsledok typu „Bratislava“ + „onsite Lisbon“ automaticky označiť `reject-distance` ešte pred rankingom.
-- **Freelance scope-to-budget unit estimator** — pri katalógových a obsahových zákazkách odhadovať cenu na produkt/obrázok/stránku a potlačiť ponuky, kde fixed-price vyzerá prijateľne iba preto, že skutočný objem práce nie je normalizovaný.
-- **Client hiring-volume anomaly detector** — pri freelance ponukách zachytiť neobvyklý počet požadovaných freelancerov, masový nábor a disproporciu medzi scope, odmenou a hiring count; takéto ponuky neposielať do LIVE bez dôveryhodného detailu.
-- **Microtask detail-insufficiency quarantine** — pri krátkych remote mikroúlohách bez konkrétneho opisu výstupu, dát alebo workflow vyžadovať detail scope pred promotion, aj keď deklarovaná odmena vyzerá nadpriemerne.
-- **Required-proof inventory matcher** — ku každej povinnej požiadavke kandidáta evidovať, či ju vie CV/portfólio doložiť konkrétnym dôkazom; bez dôkazu znižovať confidence a prioritu reakcie.
-- **Freelance client-response velocity signal** — kombinovať `last viewed`, `interviewing`, `hires` a čas od publikovania do jedného signálu; zvýhodniť čerstvé zákazky s reálnou aktivitou klienta pred stagnujúcimi listingami.
-- **Shift-language compound-risk gate** — kombinovať jazykovú požiadavku s 24/7/nočnými zmenami; technicky zaujímavé support roly s oboma rizikami automaticky výraznejšie penalizovať pred promotion.
-- **Freelance budget-scope contradiction detector** — pri long-term/complex scope a symbolickom fixed-price rozpočte označiť rozpor budget/scope a vyradiť listing ešte pred verification queue.
-- **Verification evidence age bands** — ku každej položke verification queue evidovať vek posledného canonical dôkazu (`<24 h` / `1–3 dni` / `>3 dni`) a staršie položky prioritne revalidovať pred novým discovery, aby queue nebola plná stale leadov.
-- **Source-family no-delta rotation planner** — keď rovnaká source family opakovane neprináša promotion-grade výsledok, presunúť časť query budgetu na alternatívne zdroje tej istej kategórie bez falšovania coverage; cieľom je zvýšiť reálnu diverzitu a discovery yield.
-- **Student-only contract eligibility gate** — pri brigádach explicitne rozpoznať `Dohodu o brigádnickej práci študentov`; bez dôkazu študentského statusu takú ponuku nevkladať do LIVE ani pri dobrej obsahovej zhode.
-- **Same-day shift expiration gate** — pri ponuke platnej iba v deň auditu porovnať aktuálny čas so začiatkom/koncom zmeny a po uplynutí použiteľného okna ju automaticky označiť ako neaktívnu pre nový alert.
+- Search-result location contradiction quarantine.
+- Freelance scope-to-budget unit estimator.
+- Client hiring-volume anomaly detector.
+- Microtask detail-insufficiency quarantine.
+- Required-proof inventory matcher.
+- Freelance client-response velocity signal.
+- Shift-language compound-risk gate.
+- Freelance budget-scope contradiction detector.
+- Verification evidence age bands.
+- Source-family no-delta rotation planner.
+- Student-only contract eligibility gate.
+- Same-day shift expiration gate.
+- **Search-family negative-result confidence** — pri source family bez hitov evidovať, či ide o skutočný zero-result alebo indexačné obmedzenie; zabráni to falošnému dojmu plného pokrytia.
+- **Driver-role taxonomy hard gate** — rozlíšiť kuriér/dodávka B od taxi, MKD, odťahovky a nákladnej dopravy už pri discovery; zníži sa čas strávený na nerelevantných vodičských výsledkoch.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: **aktualizovaný na 19:36**, verification queue zachovaná bez fiktívnych prírastkov.
-- `job-sources.json`: **aktualizovaný na 19:36** iba o auditové timestampy/poznámky skutočne kontrolovaných zdrojov; source definitions bez neodôvodnenej štrukturálnej zmeny.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 19:36** s reálnym auditom a 2 novými backlog zlepšeniami.
+- `source-audit.json`: **aktualizovaný na 20:34**, verification queue zachovaná bez fiktívnych prírastkov.
+- `job-sources.json`: **aktualizovaný na 20:34** iba o auditové timestampy/poznámky skutočne kontrolovaných zdrojov; source definitions bez neodôvodnenej štrukturálnej zmeny.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 20:34** s reálnym auditom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
