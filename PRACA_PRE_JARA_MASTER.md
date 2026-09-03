@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 3. 9. 2026 10:20 CEST
+Aktualizované: 3. 9. 2026 11:35 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -36,35 +36,32 @@ Aktualizované: 3. 9. 2026 10:20 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 10:20 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- **Upwork – WooCommerce Website Builder Needed**: Worldwide remote, 500 USD fixed-price, intermediate, ongoing; 20–50 proposals a full-store Shoptimizer build. Obsahovo relevantné, ale scope/competition/value risk znamená verification, nie LIVE.
-- **Upwork – Need Basic WooCommerce Website (Design & Development)**: Worldwide remote, 2 000 USD fixed-price, contract-to-hire, ale 50+ proposals, 5 interviewing a end-to-end design/build/launch scope. Silná zákazka, no hard/full-build rozsah je nad preferovaným non-hard-dev profilom; zostáva verification.
-- **Upwork – Data Entry Specialist for WooCommerce**: Worldwide remote, veľmi presný produktový/admin scope, ale iba 35 USD fixed-price pri neznámom objeme práce a 20–50 proposals; low-value/unknown-effort verification.
-- **Kariera Bratislava**: čerstvé indexované výsledky 3.9.2026 boli prevažne mimo ranking profilu alebo nižšej priority; bez nového promotion-grade kandidáta.
-- **Tesco Careers Bratislava**: priame career discovery našlo aktuálne manažérske/data roly, ale sú senior/specializované a mimo preferovaného profilu.
+- Sweep 11:35 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- **Upwork – WordPress Website Developer/Designer Needed to Update IT Consulting Company Website**: Worldwide remote, 1 000 USD fixed-price, existing-site modernization namiesto full build, teda tematicky dobrý smer. Do LIVE však nejde: požadovaný experienced WordPress/web-design profil, portfólio, staging/backup, 50+ proposals a úplne nový klientský účet bez histórie. Zaradené do verification.
+- **Upwork – Product Image Research & Preparation Specialist – WooCommerce Skincare Store**: Worldwide remote, WooCommerce + produktové dáta/obrázky, ale 100 USD fixed-price pre 100+ produktov a stovky obrázkov + Photoshop; zostáva low-effective-rate verification.
+- **AlzaBox Špecialista** zostáva LIVE a bol znovu potvrdený priamou firemnou kariérnou stránkou; nejde o nový hit.
+- Aktuálne H&M Bratislava priame career výsledky sú retail/visual merchandising nižšieho rankingu a neprinášajú nový prioritný fit.
 
-## Source audit — 3. 9. 2026 10:20
+## Source audit — 3. 9. 2026 11:35
 - Profesia: `checked`; BA WordPress/support/admin/driver discovery reálne preverené, bez novej promotion-grade delty.
-- Priame company careers: `ok`; verejne dostupné kariérne stránky reálne preverené, vrátane aktuálnych Tesco Bratislava výsledkov; bez vhodného non-hard-dev kandidáta.
+- Priame company careers: `ok`; Alza a ďalšie aktuálne firemné career výsledky reálne preverené, bez nového canonical promotion-grade hitu.
 - LinkedIn Jobs: `limited`; verejná indexácia preverená, bez nového konkrétneho BA/remote promotion-grade hitu.
-- Worki.sk: `checked`; BA technická/admin/e-shop discovery preverená, bez novej promotion-grade delty.
+- Worki.sk: `checked`; verejná BA discovery preverená, bez novej promotion-grade delty.
 - Brigada.sk: `checked`; BA administratíva/sklad/kuriér discovery preverené, bez nového promotion-grade hitu.
-- Kariera.sk / Zoznam: `ok`; Bratislava feed reálne preverený, čerstvé výsledky bez nového prioritného fitu nad existujúci LIVE/verification set.
+- Kariera.sk / Zoznam: `ok`; Bratislava feed reálne preverený, bez nového prioritného fitu nad existujúci LIVE/verification set.
 - Služby zamestnanosti: `checked`; verejný vyhľadávač dostupný a reálne preverený; bez novej promotion-grade BA/remote delty.
-- Pretlak: `checked`; WordPress/e-commerce/support discovery preverená, bez vhodného nového non-hard-dev kandidáta.
-- StartupJobs: `checked`; remote WordPress/WooCommerce discovery preverená, bez kandidáta, ktorý by prešiel jazykovým/skill/lokalitným gateom.
-- Upwork/freelance: `ok`; nové WooCommerce výsledky reálne preverené. Tri relevantné hity zostávajú verification pre full-build scope, konkurenciu alebo slabú efektívnu hodnotu.
-- Reddit/komunity: `limited`; verejná indexácia preverená; dnešné WordPress/WooCommerce výsledky sú prevažne `[FOR HIRE]` ponuky kandidátov, nie konkrétne hiring dopyty.
+- Pretlak / StartupJobs / WordPress Jobs: `checked`; bez vhodného nového non-hard-dev kandidáta.
+- Upwork/freelance: `ok`; 2 relevantné hity, z toho 1 už v queue a 1 nový verification lead; 0 LIVE promotion.
+- Reddit/komunity: `limited`; verejná indexácia preverená; bez čerstvého konkrétneho hiring dopytu vhodného pre SK remote.
 - Facebook public index: `limited`, **0 verified hits**; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom.
 
-### Audit počty 10:20
+### Audit počty 11:35
 - source families / zdroje skontrolované: **12**
 - z toho mimo Profesia: **11**
-- relevantné nové/novozachytené kandidáty: **3**
+- relevantné nové/novozachytené kandidáty: **2**
 - pridané do LIVE: **0**
-- verification/reject kandidáty: **3**
-- vyradené/pozdržané pre hard/full-build skill scope: **2**
-- vyradené/pozdržané pre nízku hodnotu alebo neznámy effort: **1**
+- nové verification kandidáty: **1**
+- dedupe / už evidované verification: **1**
 - vyradené pre lokalitu: **0**
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
@@ -128,12 +125,14 @@ Aktualizované: 3. 9. 2026 10:20 CEST
 - Shift-window burden score.
 - Driver credential hard-gate extractor.
 - Cross-border route burden score.
-- **Hiring-intent classifier for communities** — pri Reddit/Facebook/WordPress komunitách automaticky rozlíšiť `[HIRING]`/konkrétny dopyt od `[FOR HIRE]` sebaprezentácie, aby Source Radar nepočítal ponuky freelancerov ako pracovné hity.
-- **Freshness evidence confidence gate** — pri indexovaných výsledkoch oddeliť dátum publikovania ponuky od dátumu crawl/indexácie; `<24h` prioritu aktivovať iba pri dôveryhodnom `publishedAt`, nie iba pri čerstvom crawle.
+- Hiring-intent classifier for communities.
+- Freshness evidence confidence gate.
+- **Existing-site maintenance preference boost** — zvýhodniť WordPress/WooCommerce údržbu, opravy, obsahové aktualizácie a modernizáciu existujúceho webu oproti full-build zákazkám, ak sú ostatné riziká podobné.
+- **Source-result semantic locality validator** — pred započítaním hitu overiť, že lokalita v detaile ponuky skutočne patrí do BA/okolia alebo je explicitne remote-ok; nestačí lokalita zo search snippet/category stránky.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: posledný bezpečný JSON audit je aktuálny k 09:16; kompletný payload sa cez GitHub contents reader aj pri 10:20 sweepe vracia truncovane, takže replacement verification queue nebol vykonaný. Stav 10:20 je pravdivo zachytený v MASTER-i bez predstierania zápisu JSON auditu.
-- `job-sources.json`: registry zostáva štrukturálne platný; zdroje boli v tomto rune reálne preverené, bez novej source family a bez potreby meniť jeho štruktúru.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 10:20** s reálnym auditom a 2 novými backlog zlepšeniami.
+- `source-audit.json`: **aktualizovaný na 11:35**, verification queue zachovaná a rozšírená o 1 nový verification lead.
+- `job-sources.json`: **aktualizovaný na 11:35** s pravdivou freshness informáciou pre skutočne kontrolované zdroje.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 11:35** s reálnym auditom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
