@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "policy": "verification-to-live-transaction-ledger",
+  "createdAt": "2026-09-03T08:19:20+02:00",
+  "purpose": "Preserve an append-only, compact audit trail for candidate verification and promotion decisions without rewriting the large source-audit verification queue.",
+  "rules": {
+    "appendOnly": true,
+    "immutableEventIds": true,
+    "stableJobIdRequired": true,
+    "allowedLocationEligibilityForPromotion": ["ba-area", "remote-ok"],
+    "unknownLocationAction": "quarantine",
+    "rejectDistanceAction": "reject",
+    "promotionRequires": ["canonicalUrl", "verifiedAt", "sourceTrust", "scoreConfidence", "locationEligibility", "locationReason"],
+    "preserveCRM": true,
+    "preserveExistingJobs": true,
+    "failClosedOnConflict": true
+  },
+  "eventSchema": {
+    "eventId": "string",
+    "jobId": "string",
+    "at": "ISO-8601",
+    "fromState": "discovered|verification|promotion-ready|live|rejected|expired",
+    "toState": "verification|promotion-ready|live|rejected|expired",
+    "reasonCode": "string",
+    "canonicalUrl": "string|null",
+    "locationEligibility": "ba-area|remote-ok|unknown|reject-distance",
+    "evidenceFingerprint": "string|null"
+  }
+}
