@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "policy": "ba-area-commute-burden",
+  "createdAt": "2026-09-03T08:19:20+02:00",
+  "purpose": "Prioritize eligible Bratislava-area jobs by practical commute burden without weakening the hard BA/remote eligibility gate.",
+  "hardGate": {
+    "eligible": ["ba-area", "remote-ok"],
+    "neverConvertRejectDistanceToEligible": true,
+    "unknownRemainsQuarantined": true
+  },
+  "commuteBands": [
+    {"band":"A","oneWayMinutesMax":30,"effect":"priority-boost"},
+    {"band":"B","oneWayMinutesMax":45,"effect":"neutral"},
+    {"band":"C","oneWayMinutesMax":60,"effect":"priority-penalty"},
+    {"band":"D","oneWayMinutesMin":61,"effect":"manual-review-within-ba-area"}
+  ],
+  "evidenceRules": {
+    "origin": "Miloslavov / BA area",
+    "preferDoorToDoorEstimate": true,
+    "includePeakTrafficWhenKnown": true,
+    "remoteOkCommuteBand": "REMOTE",
+    "doNotGuessMissingWorkplace": true
+  },
+  "outputFields": ["commuteBand", "commuteMinutesEstimate", "commuteEvidenceAt", "commuteReason"],
+  "rankingOnly": true,
+  "preserveStableIds": true,
+  "preserveCRM": true
+}
