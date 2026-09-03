@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 3. 9. 2026 08:12 CEST
+Aktualizované: 3. 9. 2026 08:21 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,34 +35,31 @@ Aktualizované: 3. 9. 2026 08:12 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 08:12 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- **FEVA Slovakia SK – Obchodný referent / Fakturant**: Bratislava, 1 500–1 700 EUR/mes., ASAP, faktúry, objednávky, príjem tovaru, skladový systém, e-mail/telefón a vodičák B. Obsahovo dobrý admin/operations fit, ale explicitná AJ B1, požadovaná obdobná prax a aktívne oslovovanie nových odberateľov znižujú fit; ponechané vo verification, nie LIVE promotion.
-- **Ministerstvo vnútra SR – Odborný referent / odborná referentka**: Pribinova, Bratislava, 1 100 EUR/mes., ihneď, SŠ s maturitou, slovenčina; evidencia majetku, požiadavky, SAP a čiarové kódy. Kvalifikačne dostupné, ale odmena je pod prioritným rozsahom a rola je skôr fallback admin než promotion-grade hit.
-- **Nemocnica BORY – Technický dispečer**: obsahovo silný technický/monitoring fit (MaR, bezpečnostné a technologické systémy, ticketing), 1 700 EUR/mes., SŠ s maturitou, bez explicitnej AJ požiadavky; canonical Profesia však pri kontrole uvádza ukončené zverejnenie ponuky, preto `reject-inactive`.
-- **PRO Business Solutions – IT špecialista pre vývoj podnikového software, integrácie a AI**: Bratislava, od 5 000 EUR, ale min. 5 rokov vývoja/integrácií IS, Laravel/PHP, PostgreSQL, DevOps/CI/CD a AI integrácie; hard qualification mismatch, nepovýšené.
-- **Upwork discovery**: verejný Data Entry/WooCommerce/Product Listing feed bol reálne preverený. Nové výsledky sú buď low-value fixed-price (napr. WooCommerce data entry 35 USD / Shopify upload 5 USD), hard-build dev scope alebo bez dostatočného konkrétneho klientského/rate payloadu; bez promotion-grade ingestu.
+- Sweep 08:21 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- **Upwork – Data Entry Specialist for WooCommerce**: čerstvý Worldwide remote hit, WooCommerce produktové dáta, Excel/CSV, SKU/kategórie, AI-generované popisy a príprava importu; tematicky veľmi presný fit, ale iba **35 USD fixed-price**, 20–50 proposals a neznámy počet produktov/časový rozsah. `locationEligibility: remote-ok`; status `verification-low-value-unknown-effort`, nie LIVE promotion.
+- **Kariera/Zoznam – Slovenská pošta, brigáda zamestnanec poštovej prepravy Bratislava**: čerstvý BA hit z 2.9.2026, ale nižšia priorita a odmena do 9,30 EUR/h; bez promotion-grade posunu oproti existujúcim driver/logistics možnostiam.
 
-## Source audit — 3. 9. 2026 08:12
-- Profesia: `ok`; BA najnovšie, admin, IT/support, driver/logistics a technické výsledky reálne preverené. FEVA + MV SR pridané do verification/reject vrstvy; Bory technický dispečer canonical kontrolou označený ako ukončený.
-- Priame company careers: `checked`; PRO Business Solutions priamy detail overený, ale hard-dev/experience gate.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez nového vhodného BA/remote hitu; coverage bez loginu zostáva limited.
+## Source audit — 3. 9. 2026 08:21
+- Profesia: `checked`; BA WordPress/support/admin/driver discovery reálne preverené, bez novej promotion-grade delty.
+- Priame company careers: `checked`; BA/remote admin/support/e-commerce discovery preverená, bez nového canonical promotion-grade hitu.
+- LinkedIn Jobs: `limited`; verejná indexácia preverená; Driver – Pretoria bol explicitne vyradený ako location mismatch, pretože kontrakt je fyzicky v Pretórii napriek Bratislava labelu.
 - Worki.sk: `checked`; BA admin/support/driver discovery preverené, bez novej promotion-grade delty.
-- Brigada.sk: `checked`; BA brigády/admin/digitalizácia discovery preverené, bez konkrétneho nového promotion-grade hitu.
-- Kariera.sk / Zoznam: `checked`; discovery preverené, bez novej čerstvej vhodnej delty.
-- Pretlak / tech-creative: `checked`; WordPress/e-commerce/remote discovery preverené, bez nového hard-gate-pass kandidáta.
-- Upwork/freelance: `ok`; verejne indexované Data Entry, WooCommerce, WordPress E-commerce a Product Listing feedy preverené; nové hity sú low-value, hard-dev alebo bez dostatočného promotion payloadu.
+- Brigada.sk: `checked`; BA administratíva/digitalizácia discovery preverené, bez nového promotion-grade hitu.
+- Kariera.sk / Zoznam: `ok`; čerstvá brigáda Slovenskej pošty v Bratislave potvrdená, ale low-priority/value oproti LIVE alternatívam.
+- Pretlak / WordPress Jobs: `checked`; WordPress/WooCommerce remote discovery preverené; nájdené prevažne full-build/hard-development roly bez vhodného promotion fitu.
+- Upwork/freelance: `ok`; čerstvý **Data Entry Specialist for WooCommerce** je Worldwide remote a veľmi presný scope fit, ale 35 USD fixed-price + neznámy objem práce + 20–50 proposals znamenajú verification/value gate. Ďalšie dnešné WooCommerce hity sú full-build alebo hard-development.
 - Reddit/komunity: `limited`; verejná indexácia preverená, bez konkrétneho SK-eligible verified hiring hitu.
 - Facebook public index: `limited`, **0 verified hits**; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom.
+- Služby zamestnanosti: `checked`; verejný vyhľadávač dostupný, bez novej promotion-grade delty v tomto sweepe.
 
-### Audit počty 08:12
-- source families skontrolované: **10**
-- z toho mimo Profesia: **9**
-- relevantné nové/novozachytené kandidáty: **4**
+### Audit počty 08:21
+- source families skontrolované: **11**
+- z toho mimo Profesia: **10**
+- relevantné nové/novozachytené kandidáty: **2**
 - pridané do LIVE: **0**
-- verification/reject kandidáty: **4**
-- vyradené pre jazyk/kvalifikáciu/prax/value: **3**
-- vyradené ako inactive: **1**
-- vyradené pre lokalitu: **0**
+- verification/reject kandidáty: **2**
+- vyradené pre value/effort/nižšiu prioritu: **2**
+- vyradené pre lokalitu: **1** (LinkedIn Pretoria false-location result; nezaradené ako relevantný kandidát)
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
 
@@ -117,12 +114,14 @@ Aktualizované: 3. 9. 2026 08:12 CEST
 - Qualification-stack penalty.
 - Freelance mandatory-tool gap matrix.
 - Client-view staleness penalty.
-- **Audit payload sharding / append-only run ledger** — oddeliť veľkú historickú `verificationQueue` od malého per-run source auditu tak, aby hodinový writer vedel atomicky zapísať pravdivý audit bez nutnosti úplného replacementu veľkého JSON payloadu; zároveň zachovať spätnú kompatibilitu pre renderer cez build/merge krok.
-- **Language-risk reason normalization** — ukladať oddelene `requiredEnglishLevel`, `interactionMode` (written/phone/client-facing/internal) a `languageGateReason`; odstráni nejednotné rozhodovanie medzi B2/C1 titulmi a umožní presnejší ranking bez ručného čítania celého popisu.
+- Audit payload sharding / append-only run ledger.
+- Language-risk reason normalization.
+- **Unknown-effort fixed-price gate** — pri fixed-price zákazkách povinne zachytiť počet produktov/položiek/stránok alebo odhad hodín; ak scope chýba, nepovyšovať ani pri silnom tematickom fite, kým sa nedá odhadnúť efektívna hodinová sadzba.
+- **Fresh-post low-budget escalation guard** — čerstvosť `<24h` nesmie sama prekryť nízku absolútnu hodnotu zákazky; pri čerstvom hite s nízkym budgetom použiť iba verification a upozorniť iba vtedy, ak existuje jasný upsell/ongoing potenciál alebo mimoriadne nízka konkurencia.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: posledný bezpečne uložený audit zostáva z **07:14**. Aktuálny run 08:12 ho nedokáže bezpečne nahradiť cez dostupný GitHub contents writer, pretože reader vracia veľký payload truncovane a replacement by mohol stratiť časť existujúcej verification queue. FAIL-CLOSED: súbor v tomto rune neprepísaný; audit 08:12 je pravdivo zachytený v tomto MASTER-i.
-- `job-sources.json`: registry ostáva štrukturálne platný; bez novej source-family konfigurácie nebol nutný replacement.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 08:12** s reálnym auditom.
+- `source-audit.json`: úplný aktuálny payload sa dá prečítať cez stránkovaný response resource, ale GitHub contents writer stále vyžaduje kompletný replacement; v tomto rune som ho neprepísal, aby sa pri manuálnej rekonštrukcii nepoškodila 38-položková verification queue. Aktuálny audit 08:21 je pravdivo zachytený v MASTER-i; posledný bezpečný JSON audit ostáva 07:14.
+- `job-sources.json`: registry zostáva štrukturálne platný; v tomto rune nevznikla nová source family ani zmena konfigurácie vyžadujúca replacement.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 08:21** s reálnym auditom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
