@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 3. 9. 2026 14:30 CEST
+Aktualizované: 3. 9. 2026 15:29 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -36,35 +36,35 @@ Aktualizované: 3. 9. 2026 14:30 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 14:30 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- Čerstvý Upwork sweep znovu zachytil už evidované `Data Entry Specialist for WooCommerce`, Verity WordPress update, `WooCommerce Website Builder Needed`, Basic WooCommerce build a Product Image Research; dedupe zabránil opätovnému ingestu.
-- Nový Upwork mikro-task deklaruje 5–10 minút e-commerce práce, 100 USD fixed-price a nábor 99 freelancerov, ale bez konkrétneho scope a s novým klientskym účtom. Z dôvodu disproporcie a nedostatku detailov nebol zaradený do LIVE ani verification queue.
-- Nové WordPress custom-theme/plugin a ďalšie full-build výsledky boli vyradené pre hard-development/skill scope; Blocksy 50 USD a WooCommerce 5 USD ponuky pre value mismatch.
+- Sweep 15:29 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Upwork `Website & SEO Management 2026` zostáva silný remote WooCommerce maintenance kandidát, ale už je evidovaný vo verification queue; nový ingest by bol duplicita.
+- Nový čerstvý Upwork `WordPress + WooCommerce Developer` je Worldwide remote, ale iba **5 USD fixed-price** pri komplexnom/long-term scope, preto bol vyradený pre value mismatch.
+- Ďalšie WooCommerce/WordPress výsledky boli prevažne 7–30 USD fixed-price, full-build alebo s výraznejšou jazykovou/skill požiadavkou.
+- LinkedIn Wolt `Support Associate (Full Time)` je lokálne v Ružinove a obsahovo sedí na customer care, ale explicitne vyžaduje **minimum B2 English** a zmeny do 1:00, preto bez LIVE promotion.
 - Facebook verejná indexácia ostáva **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 3. 9. 2026 14:30
+## Source audit — 3. 9. 2026 15:29
 - Profesia: `checked`; BA WordPress/support/admin/driver discovery reálne preverené, bez novej promotion-grade delty.
 - Priame company careers: `checked`; direct-career discovery preverená, bez nového canonical promotion-grade hitu.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez nového promotion-grade BA/remote hitu; coverage bez loginu je čiastočná.
-- Worki.sk: `checked`; discovery preverená; vyhľadávanie vracalo aj vzdialené regióny, ale bez vhodného BA/remote kandidáta.
-- Brigada.sk: `checked`; BA administratíva/sklad/kuriér discovery preverené, bez nového promotion-grade hitu.
-- Kariera.sk / Zoznam: `checked`; Bratislava discovery preverené, bez novej promotion-grade delty.
-- Služby zamestnanosti: `checked`; BA admin/IT support/driver discovery preverené, bez novej promotion-grade delty.
-- Pretlak / StartupJobs / WordPress Jobs: `checked`; bez vhodného nového non-hard-dev kandidáta.
-- Upwork/freelance: `ok`; 10 relevantných alebo čiastočne relevantných výsledkov, z toho 5 dedupe, 2 low-value, 2 skill-heavy a 1 risk/underspecified; 0 LIVE promotion.
+- LinkedIn Jobs: `limited`; 4 relevantné/čiastočne relevantné výsledky, ale jazykový/skill/inactive gate; Wolt vyžaduje min. B2 English.
+- Worki.sk: `checked`; BA technický support/admin/driver discovery preverená, bez nového vhodného kandidáta.
+- Brigada.sk: `checked`; BA administratíva/kuriér/sklad discovery preverené, bez nového promotion-grade hitu.
+- Pretlak / StartupJobs: `ok`; Medevio 100% Remote je už vo verification queue; Pretlak vrátil freelancer profil, nie hiring dopyt.
+- Upwork/freelance: `ok`; 7 relevantných/čiastočne relevantných výsledkov: 1 dedupe, 4 low-value, 1 language-risk a 1 skill/full-build; 0 LIVE promotion.
 - Reddit/komunity: `limited`; verejná indexácia preverená, bez čerstvého konkrétneho hiring dopytu vhodného pre SK remote.
 - Facebook public index: `limited`, **0 verified hits**; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom.
+- Kariera.sk a Služby zamestnanosti neboli v tomto konkrétnom sweep-e označené ako skontrolované; posledná explicitná kontrola ostáva z 14:30.
 
-### Audit počty 14:30
-- source families / zdroje skontrolované: **11**
-- z toho mimo Profesia: **10**
-- relevantné/čiastočne relevantné kandidáty v novom sweep-e: **10**
+### Audit počty 15:29
+- source families reálne skontrolované: **9**
+- z toho mimo Profesia: **8**
+- relevantné/čiastočne relevantné výsledky v novom sweep-e: **13**
 - pridané do LIVE: **0**
 - nové verification kandidáty: **0**
-- dedupe / už evidované verification: **5**
-- vyradené pre hard-dev/skill mismatch: **2**
-- vyradené pre value mismatch: **2**
-- vyradené pre risk / nedostatočný scope: **1**
+- dedupe / už evidované verification: **2**
+- vyradené pre jazyk/inactive/skill mismatch: **6**
+- vyradené pre value mismatch: **4**
+- ostatné nepromotion hiring/non-hiring výsledky: **1**
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
 
@@ -137,10 +137,12 @@ Aktualizované: 3. 9. 2026 14:30 CEST
 - **Freelance scope-to-budget unit estimator** — pri katalógových a obsahových zákazkách odhadovať cenu na produkt/obrázok/stránku a potlačiť ponuky, kde fixed-price vyzerá prijateľne iba preto, že skutočný objem práce nie je normalizovaný.
 - **Client hiring-volume anomaly detector** — pri freelance ponukách zachytiť neobvyklý počet požadovaných freelancerov, masový nábor a disproporciu medzi scope, odmenou a hiring count; takéto ponuky neposielať do LIVE bez dôveryhodného detailu.
 - **Microtask detail-insufficiency quarantine** — pri krátkych remote mikroúlohách bez konkrétneho opisu výstupu, dát alebo workflow vyžadovať detail scope pred promotion, aj keď deklarovaná odmena vyzerá nadpriemerne.
+- **Required-proof inventory matcher** — ku každej povinnej požiadavke kandidáta evidovať, či ju vie CV/portfólio doložiť konkrétnym dôkazom; bez dôkazu znižovať confidence a prioritu reakcie.
+- **Freelance client-response velocity signal** — kombinovať `last viewed`, `interviewing`, `hires` a čas od publikovania do jedného signálu; zvýhodniť čerstvé zákazky s reálnou aktivitou klienta pred stagnujúcimi listingami.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: aktualizovaný na 14:30; verification queue zachovaná bez fiktívnych prírastkov.
-- `job-sources.json`: audit freshness aktualizovaná na 14:30 pre skutočne kontrolované zdroje.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 14:30** s reálnym auditom a 2 novými backlog zlepšeniami.
+- `source-audit.json`: aktualizovaný na 15:29; verification queue zachovaná bez fiktívnych prírastkov.
+- `job-sources.json`: audit freshness aktualizovaná na 15:29 iba pri skutočne kontrolovaných zdrojoch; Kariera/Služby zamestnanosti pravdivo označené ako nepreverené v tomto sweep-e.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 15:29** s reálnym auditom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
