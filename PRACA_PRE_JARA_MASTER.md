@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 3. 9. 2026 22:35 CEST
+Aktualizované: 3. 9. 2026 23:32 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -36,30 +36,32 @@ Aktualizované: 3. 9. 2026 22:35 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 22:35 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- **Nový silný verification lead:** Brigada.sk občiansky dopyt `Za úhradu naprogramovať Arduino` — Arduino má komunikovať cez RS485 s monitorom hluku 30–130 dB, uvedená odmena 70–130. Obsahovo ide o veľmi presný IoT/Arduino/RS485 zásah, ale portál uvádza iba `celé Slovensko` a verejný index nepotvrdzuje, že sa zákazka dá vykonať prevažne z domu alebo zaslaním zariadenia. Preto `locationEligibility: unknown` a bez LIVE promotion, kým sa nepotvrdí remote režim.
-- Upwork priniesol čerstvé Worldwide WordPress ponuky; nové hity boli buď low-budget (napr. 20 USD fixed-price), alebo expert/portfolio-heavy. Webflow DRAGO bol verejne indexovaný ako Worldwide, ale detail výslovne požaduje kandidáta based in U.S., preto location reject.
+- Sweep 23:32 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Arduino/RS485 občiansky dopyt z Brigada.sk zostáva vo verification queue s `locationEligibility: unknown`, pretože stále chýba explicitný remote/zaslanie-zariadenia dôkaz.
+- Upwork priniesol nové WordPress výsledky: landing page za 20 USD, custom WordPress page za 1 500 USD a website maintenance/management. Dostupné verejné detaily však boli buď low-budget, alebo developer/portfolio-heavy; bez LIVE promotion.
+- Worki ukázalo viac výsledkov s `Update 03.09.2026`, ale pôvodný dátum vytvorenia bol marec/máj 2026. Tieto záznamy sa nesmú považovať za `<24h` fresh leady iba na základe refresh dátumu.
+- Brigada.sk pri vodičovi detského vláčika AVION zobrazuje v zozname anomáliu `1000,00 EUR/h`, pričom text ponuky uvádza `6 EUR/h netto`; mzdový údaj je preto považovaný za nespoľahlivý bez canonical overenia.
 - Facebook verejná indexácia ostáva **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 3. 9. 2026 22:35
+## Source audit — 3. 9. 2026 23:32
 - Profesia: `checked`; BA WordPress/WooCommerce/admin/support/driver discovery reálne preverené, bez novej promotion-grade delty.
-- Priame company careers: `checked`; company-career discovery pre BA/remote reálne preverené, bez novej promotion-grade delty.
-- LinkedIn Jobs: `limited`; verejná indexácia našla aj Schneider IT Support L1, ale výsledok je 3 roky starý a požiadavky zahŕňajú veľmi dobrú AJ, networking a Windows/Linux server stack; bez promotion.
-- Worki.sk: `checked`; BA/remote výsledky reálne preverené; telesales je sales-heavy, vzdialené výsledky neprešli hard gate.
-- Brigada.sk: `ok`; **1 nový verification lead** Arduino + RS485, plus študentský vodič vláčika AVION 6 EUR/h netto bez promotion.
-- Kariera.sk: `ok`; čerstvý manipulant DNV je trojzmenná fyzická skladová práca; ostatné technické výsledky bez vhodného fitu.
+- Priame company careers: `checked`; BA/remote discovery reálne preverené, bez novej promotion-grade delty.
+- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez nového konkrétneho promotion-grade hitu.
+- Worki.sk: `checked`; 3 relevantné/čiastočne relevantné revalidácie, ale staré publish dátumy alebo lokalitný/role-fit fail; 0 LIVE promotion.
+- Brigada.sk: `ok`; Arduino/RS485 je už známy verification lead; AVION vodič vláčika má chybnú mzdovú jednotku; PHP programátor je hard-development mismatch; 0 LIVE promotion.
+- Kariera.sk/Zoznam: `checked`; BA admin/support/logistika discovery reálne preverené, bez novej promotion-grade delty.
 - Pretlak / StartupJobs / WordPress Jobs: `checked`; bez nového konkrétneho promotion-grade hitu.
-- Upwork/freelance: `ok`; viac čerstvých Worldwide WP/WooCommerce výsledkov, ale low-budget, developer-heavy, portfolio-heavy alebo geo-restricted.
+- Upwork/freelance: `ok`; viac čerstvých Worldwide WordPress výsledkov, ale low-budget alebo developer/portfolio-heavy; 0 LIVE promotion.
 - Reddit/komunity: `limited`; verejná indexácia preverená, bez konkrétneho hiring dopytu vhodného na promotion.
 - Facebook public index: `limited`, **0 verified hits**; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom.
 
-### Audit počty 22:35
+### Audit počty 23:32
 - source families reálne skontrolované: **10**
 - z toho mimo Profesia: **9**
-- relevantné/čiastočne relevantné nové alebo revalidované výsledky: **15+**
+- relevantné/čiastočne relevantné nové alebo revalidované výsledky: **13+**
 - pridané do LIVE: **0**
-- nové verification položky: **1**
-- vyradené/pozdržané pre jazyk/skill/value/lokalitu: **10+**
+- nové verification položky: **0**
+- vyradené/pozdržané pre jazyk/skill/value/lokalitu/staleness: **10+**
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
 
@@ -144,12 +146,14 @@ Aktualizované: 3. 9. 2026 22:35 CEST
 - Driver-role taxonomy hard gate.
 - Language-index false-positive verifier.
 - Role-title vs duty mismatch detector.
-- **Remote-proof extractor for nationwide gigs** — pri výsledkoch `celé Slovensko` vyžadovať explicitný dôkaz home-office, zaslania zariadenia alebo online odovzdania; bez dôkazu držať `locationEligibility: unknown` a zabrániť falošnému remote-ok.
-- **Micro-gig contactability score** — pri občianskych a krátkych zákazkách hodnotiť dostupnosť priameho kontaktu/canonical detailu bez registrácie a zvýhodniť dopyty, na ktoré sa dá reagovať okamžite s nízkym application friction.
+- Remote-proof extractor for nationwide gigs.
+- Micro-gig contactability score.
+- **Salary/unit anomaly detector** — porovnať numerickú mzdu, jednotku a text detailu; pri rozpore typu `1000 EUR/h` vs `6 EUR/h netto` zastaviť scoring a označiť hodnotu ako unreliable, kým sa neoverí canonical detail.
+- **Original-publish vs refreshed-date normalizer** — oddeľovať pôvodný dátum vytvorenia od dátumu aktualizácie; samotný refresh starého inzerátu nesmie automaticky dostať `publishedAt/<24h` prioritu.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: **aktualizovaný na 22:35**, zachovaná existujúca verification queue a pridaný Arduino/RS485 lead ako `locationEligibility: unknown`.
-- `job-sources.json`: bez štrukturálnej zmeny v tomto behu; existujúci register ostáva autoritatívny.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 22:35** s reálnym auditom a 2 novými backlog zlepšeniami.
+- `source-audit.json`: **aktualizovaný na 23:32**, verification queue zachovaná.
+- `job-sources.json`: **aktualizovaný na 23:32** s pravdivými audit notes.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 23:32** s reálnym auditom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
