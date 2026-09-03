@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 3. 9. 2026 20:34 CEST
+Aktualizované: 3. 9. 2026 21:25 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -36,32 +36,36 @@ Aktualizované: 3. 9. 2026 20:34 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 20:34 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- Upwork mal čerstvé WordPress/WooCommerce výsledky, ale dominovali full-build/developer-heavy scope alebo nízke fixed-price rozpočty; nič neprešlo do LIVE.
-- Kariera.sk mala čerstvé BA výsledky, no sklad od 960 EUR je low-value a vodičský discovery bol prevažne taxi/MKD/nákladná doprava mimo preferencie vodič B bez tachografu.
+- Sweep 21:25 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Čerstvý ŠÚKL `Odborný administratívny asistent/odborná administratívna asistentka` na Kvetnej v Bratislave má 1 200 EUR/mes. a je čerstvý BA admin hit, ale verejný index ho zároveň zaraďuje medzi ponuky s angličtinou bez spoľahlivého detailu úrovne; preto zatiaľ nie LIVE.
+- Deutsche Schule Bratislava má čerstvú 75 % pozíciu asistentky sekretariátu riaditeľky za 1 200 EUR/mes. s okamžitým nástupom; vzhľadom na školské/prekladové prostredie a neúplnú verejnú evidenciu jazykových požiadaviek nebola automaticky promovovaná.
+- Upwork mal nový `Full-Time WordPress & WooCommerce Developer` — Worldwide remote, 6+ mesiacov — ale scope vyžaduje silnú WP/WooCommerce development prax, Figma, Arabic RTL/multilingual, checkout/integrations a full-time ownership; hard skill mismatch.
+- Powerlogy Marketing Specialist ostáva veľmi silný e-commerce/WooCommerce obsahový fit v Bratislave, ale explicitne vyžaduje slovenčinu aj angličtinu na veľmi dobrej úrovni; language hard gate.
 - Facebook verejná indexácia ostáva **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 3. 9. 2026 20:34
-- Profesia: `checked`; BA WordPress/WooCommerce/admin/support/driver discovery reálne preverené, bez novej promotion-grade delty.
-- Priame company careers: `checked`; BA/remote support/e-commerce discovery reálne preverená, bez nového promotion-grade kandidáta.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez nového hard-gate-pass výsledku.
-- Worki.sk: `checked`; BA/okolie admin/support/driver discovery preverená, bez nového vhodného kandidáta.
-- Brigada.sk: `checked`; BA administratíva/kuriér/sklad discovery preverená, bez nového promotion kandidáta.
-- Kariera.sk: `ok`; 2 relevantné/čiastočne relevantné výsledky, 0 LIVE — sklad low-value a vodičské výsledky prevažne mimo preferovanej taxonómie.
-- Pretlak / StartupJobs / WordPress Jobs: `checked`; bez nového konkrétneho hiring hitu vhodného na promotion.
-- Upwork/freelance: `ok`; 6 relevantných/čiastočne relevantných výsledkov, 0 LIVE promotion; väčšina developer-heavy/full-build alebo low-value fixed-price.
+## Source audit — 3. 9. 2026 21:25
+- Profesia: `ok`; čerstvé BA admin výsledky vrátane ŠÚKL a Deutsche Schule, 0 LIVE promotion pre neúplné/jazykové evidence.
+- Priame company careers: `checked`; Alza a Siemens reálne preverené, bez novej promotion-grade delty.
+- LinkedIn Jobs: `limited`; verejný Twine restaurant-site maintenance hit bol dohľadateľný, ale bez dostatočne kompletného canonical scope na promotion.
+- Worki.sk: `checked`; BA/okolie discovery preverená, bez nového vhodného kandidáta.
+- Brigada.sk: `checked`; BA admin/brigády preverené, bez nového konkrétneho promotion-grade detailu.
+- Práca za rohom: `ok`; čerstvý ŠÚKL BA admin hit; WBA recepcia 7 EUR/h bola vyradená pre aktívnu stredne pokročilú AJ.
+- Kariera.sk: `checked`; BA admin/customer-care preverené; iCan customer-care je language-heavy.
+- Služby zamestnanosti: `ok`; iCan potvrdený v Bratislave-Petržalke, ale komunikácia najmä v angličtine a ruštine = language reject.
+- Pretlak / StartupJobs / WordPress Jobs: `ok`; Powerlogy revalidované ako obsahovo silné, ale s veľmi dobrou AJ; ostatné bez promotion-grade hitu.
+- Upwork/freelance: `ok`; nový full-time WP/WooCommerce hit je remote-ok, ale developer/Arabic RTL/Figma-heavy; známy E-commerce VA Subscriptions/Xero lead ostáva verification.
 - Reddit/komunity: `limited`; verejná indexácia preverená, bez konkrétneho hiring dopytu vhodného na promotion.
 - Facebook public index: `limited`, **0 verified hits**; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom.
 
-### Audit počty 20:34
-- source families reálne skontrolované: **10**
-- z toho mimo Profesia: **9**
-- relevantné/čiastočne relevantné výsledky v novom sweep-e: **8**
+### Audit počty 21:25
+- source families reálne skontrolované: **12**
+- z toho mimo Profesia: **11**
+- relevantné/čiastočne relevantné nové alebo revalidované výsledky: **8+**
 - pridané do LIVE: **0**
-- nové verification kandidáty: **0**
-- vyradené pre skill/scope mismatch: **5+**
-- vyradené pre value: **3+**
-- locality reject: **0 nových promotion kandidátov**
+- nové bezpečne promovované položky: **0**
+- vyradené/pozdržané pre jazyk: **5+**
+- vyradené pre hard skill/scope: **3+**
+- locality reject: **0 promotion kandidátov**
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
 
@@ -142,12 +146,14 @@ Aktualizované: 3. 9. 2026 20:34 CEST
 - Source-family no-delta rotation planner.
 - Student-only contract eligibility gate.
 - Same-day shift expiration gate.
-- **Search-family negative-result confidence** — pri source family bez hitov evidovať, či ide o skutočný zero-result alebo indexačné obmedzenie; zabráni to falošnému dojmu plného pokrytia.
-- **Driver-role taxonomy hard gate** — rozlíšiť kuriér/dodávka B od taxi, MKD, odťahovky a nákladnej dopravy už pri discovery; zníži sa čas strávený na nerelevantných vodičských výsledkoch.
+- Search-family negative-result confidence.
+- Driver-role taxonomy hard gate.
+- **Language-index false-positive verifier** — ak search/index zaradí ponuku do kategórie „anglický jazyk“, ale detail neukáže úroveň ani reálny spôsob použitia, automat nesmie odvodiť B1/B2; kandidát ostane v evidence quarantine do canonical overenia.
+- **Role-title vs duty mismatch detector** — porovná názov pozície so skutočnou náplňou a penalizuje prípady, kde „admin/support“ v skutočnosti znamená sales-heavy, hard-dev alebo multijazyčnú front-line rolu; zníži falošné TOP hity.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: **aktualizovaný na 20:34**, verification queue zachovaná bez fiktívnych prírastkov.
-- `job-sources.json`: **aktualizovaný na 20:34** iba o auditové timestampy/poznámky skutočne kontrolovaných zdrojov; source definitions bez neodôvodnenej štrukturálnej zmeny.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 20:34** s reálnym auditom a 2 novými backlog zlepšeniami.
+- `source-audit.json`: zápis nového auditu **nebol vykonaný**, pretože dostupný writer vyžaduje kompletný replacement a runtime nemá bezpečný patch mechanizmus na zachovanie 44-položkovej verification queue bez manuálnej rekonštrukcie. Posledný bezpečný audit ostáva 20:34; fail-closed má prednosť pred stratou queue.
+- `job-sources.json`: **aktualizovaný na 21:25** iba o auditové timestampy/poznámky skutočne kontrolovaných zdrojov; source definitions bez neodôvodnenej štrukturálnej zmeny.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 21:25** s reálnym auditom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
