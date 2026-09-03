@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 3. 9. 2026 07:19 CEST
+Aktualizované: 3. 9. 2026 08:12 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,30 +35,33 @@ Aktualizované: 3. 9. 2026 07:19 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 07:19 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- **Lugera & Maklér – IT Administrátor**: Bratislava, 2 000 EUR/mes., používateľská podpora, LAN/WiFi, účty, zariadenia, SQL a interné aplikácie. Lokalita prechádza (`ba-area`), ale explicitná AJ B2 a min. 2 roky podobnej praxe sú výrazný language/experience risk; nepovýšené do LIVE.
-- **Orot Bratislava – Manager of logistics**: Ružinov, 1 300 EUR/mes., administratívna a technická podpora import/export procesov monitorovacích zariadení, interné systémy, kuriéri, reporty; absolvent-friendly. Obsahovo zaujímavý IoT/logistika prienik, ale explicitná AJ B2/C1 až C1 je hard language mismatch; nepovýšené.
-- **Upwork WooCommerce/WordPress discovery**: verejný feed prináša čerstvé remote výsledky, ale aktuálne hity sú prevažne full-build/hard-development alebo všeobecné VA listingy bez dostatočne kvalitného konkrétneho payloadu; žiadny nový LIVE ingest.
+- Sweep 08:12 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- **FEVA Slovakia SK – Obchodný referent / Fakturant**: Bratislava, 1 500–1 700 EUR/mes., ASAP, faktúry, objednávky, príjem tovaru, skladový systém, e-mail/telefón a vodičák B. Obsahovo dobrý admin/operations fit, ale explicitná AJ B1, požadovaná obdobná prax a aktívne oslovovanie nových odberateľov znižujú fit; ponechané vo verification, nie LIVE promotion.
+- **Ministerstvo vnútra SR – Odborný referent / odborná referentka**: Pribinova, Bratislava, 1 100 EUR/mes., ihneď, SŠ s maturitou, slovenčina; evidencia majetku, požiadavky, SAP a čiarové kódy. Kvalifikačne dostupné, ale odmena je pod prioritným rozsahom a rola je skôr fallback admin než promotion-grade hit.
+- **Nemocnica BORY – Technický dispečer**: obsahovo silný technický/monitoring fit (MaR, bezpečnostné a technologické systémy, ticketing), 1 700 EUR/mes., SŠ s maturitou, bez explicitnej AJ požiadavky; canonical Profesia však pri kontrole uvádza ukončené zverejnenie ponuky, preto `reject-inactive`.
+- **PRO Business Solutions – IT špecialista pre vývoj podnikového software, integrácie a AI**: Bratislava, od 5 000 EUR, ale min. 5 rokov vývoja/integrácií IS, Laravel/PHP, PostgreSQL, DevOps/CI/CD a AI integrácie; hard qualification mismatch, nepovýšené.
+- **Upwork discovery**: verejný Data Entry/WooCommerce/Product Listing feed bol reálne preverený. Nové výsledky sú buď low-value fixed-price (napr. WooCommerce data entry 35 USD / Shopify upload 5 USD), hard-build dev scope alebo bez dostatočného konkrétneho klientského/rate payloadu; bez promotion-grade ingestu.
 
-## Source audit — 3. 9. 2026 07:19
-- Profesia: `ok`; BA support/admin/IoT/logistics discovery reálne preverené. 2 relevantné kandidáty (Lugera IT Administrátor, Orot Manager of logistics), oba vyradené z LIVE pre jazyk/experience gate.
-- Priame company careers: `checked`; Wolt/Schneider a ďalšie BA direct-career výsledky boli reálne preverené; bez novej promotion-grade delty. Schneider detail bol verejne 403/limited, preto sa nepočíta ako overený hit.
-- LinkedIn Jobs: `limited`; verejná indexácia reálne preverená, bez nového vhodného BA/remote hitu; coverage bez loginu zostáva limited.
-- Worki.sk: `checked`; BA administratíva/support discovery preverené, bez novej promotion-grade delty; časť indexovaných detailov je stará.
-- Brigada.sk: `checked`; BA brigády/admin discovery preverené, bez konkrétneho nového promotion-grade hitu.
-- Kariera.sk / Zoznam: `checked`; discovery preverené, nájdený starý Manpower výsledok nebol aktívna nová delta.
+## Source audit — 3. 9. 2026 08:12
+- Profesia: `ok`; BA najnovšie, admin, IT/support, driver/logistics a technické výsledky reálne preverené. FEVA + MV SR pridané do verification/reject vrstvy; Bory technický dispečer canonical kontrolou označený ako ukončený.
+- Priame company careers: `checked`; PRO Business Solutions priamy detail overený, ale hard-dev/experience gate.
+- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez nového vhodného BA/remote hitu; coverage bez loginu zostáva limited.
+- Worki.sk: `checked`; BA admin/support/driver discovery preverené, bez novej promotion-grade delty.
+- Brigada.sk: `checked`; BA brigády/admin/digitalizácia discovery preverené, bez konkrétneho nového promotion-grade hitu.
+- Kariera.sk / Zoznam: `checked`; discovery preverené, bez novej čerstvej vhodnej delty.
 - Pretlak / tech-creative: `checked`; WordPress/e-commerce/remote discovery preverené, bez nového hard-gate-pass kandidáta.
-- Upwork/freelance: `ok`; verejne indexované WooCommerce/WordPress/Data Entry/VA feedy preverené. Čerstvé hity sú buď hard-dev/full-build, low-information alebo mimo hodnotového/ranking gate; bez LIVE ingestu.
+- Upwork/freelance: `ok`; verejne indexované Data Entry, WooCommerce, WordPress E-commerce a Product Listing feedy preverené; nové hity sú low-value, hard-dev alebo bez dostatočného promotion payloadu.
 - Reddit/komunity: `limited`; verejná indexácia preverená, bez konkrétneho SK-eligible verified hiring hitu.
 - Facebook public index: `limited`, **0 verified hits**; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom.
 
-### Audit počty 07:19
+### Audit počty 08:12
 - source families skontrolované: **10**
 - z toho mimo Profesia: **9**
-- relevantné nové kandidáty: **2**
+- relevantné nové/novozachytené kandidáty: **4**
 - pridané do LIVE: **0**
-- verification/reject kandidáty: **2**
-- vyradené pre jazyk/kvalifikáciu/prax: **2**
+- verification/reject kandidáty: **4**
+- vyradené pre jazyk/kvalifikáciu/prax/value: **3**
+- vyradené ako inactive: **1**
 - vyradené pre lokalitu: **0**
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
@@ -119,7 +122,7 @@ Aktualizované: 3. 9. 2026 07:19 CEST
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: posledný uložený audit je z **07:14**. Aktuálny run 07:19 ho nedokáže bezpečne nahradiť cez dostupný GitHub contents writer, pretože reader vracia veľký payload truncovane a replacement by mohol stratiť časť existujúcej verification queue. FAIL-CLOSED: súbor v tomto rune neprepísaný; táto technická medzera je explicitne evidovaná a rieši ju nový backlog `Audit payload sharding / append-only run ledger`.
-- `job-sources.json`: registry ostáva štrukturálne platný; bez novej source-family konfigurácie nebol nutný replacement. Posledný bezpečný zápis je 06:33.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 07:19** s reálnym auditom a dvoma novými backlog zlepšeniami.
+- `source-audit.json`: posledný bezpečne uložený audit zostáva z **07:14**. Aktuálny run 08:12 ho nedokáže bezpečne nahradiť cez dostupný GitHub contents writer, pretože reader vracia veľký payload truncovane a replacement by mohol stratiť časť existujúcej verification queue. FAIL-CLOSED: súbor v tomto rune neprepísaný; audit 08:12 je pravdivo zachytený v tomto MASTER-i.
+- `job-sources.json`: registry ostáva štrukturálne platný; bez novej source-family konfigurácie nebol nutný replacement.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 08:12** s reálnym auditom.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
