@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 3. 9. 2026 04:26 CEST
+Aktualizované: 3. 9. 2026 05:25 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -33,36 +33,37 @@ Aktualizované: 3. 9. 2026 04:26 CEST
 
 ## Aktuálny stav LIVE
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
-- Posledný sourcing audit: **11 source families**, z toho **10 mimo Profesia**.
+- Posledný sourcing audit: **12 source families**, z toho **11 mimo Profesia**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - Facebook verejná indexácia: `limited`, **0 verified hits**; žiadne fiktívne pokrytie.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 04:26 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- **Magistrát hlavného mesta SR Bratislavy – Odborný/á referent/tka podateľne**: zverejnené 2.9.2026, Bratislava, od 1 300 EUR/mes., SŠ s maturitou. Veľmi silný obsahový fit na digitalizáciu, registratúru, databázy, reporty a administratívu; cudzí jazyk je iba výhodou. `locationEligibility: ba-area`. Kandidát je významný a promotion-grade po obsahovej stránke, ale writer pre `jobs-data.json` je v tomto behu fail-closed kvôli truncovanému read payloadu, preto nebol riskantne zapísaný.
-- **Upwork – E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero** zostáva relevantný remote lead, ale pracovná komunikácia v angličtine a špecializované WooCommerce Subscriptions/Xero požiadavky ho držia vo verification.
-- **DHL HR Operations Specialist, Bratislava** bol v discovery nájdený, ale canonical detail už vracia „no longer open for applications“, preto `rejectedInactive`.
+- Sweep 05:25 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- **Metrohm Research Slovakia – IT Support Specialist**, Einsteinova 33, Petržalka, **1 800 EUR/mes.**, nástup 1.10.2026, ponuka do 11.10.2026. Obsahovo relevantné: používateľská technická podpora, incidenty, troubleshooting, prístupy a diagnostické nástroje. `locationEligibility: ba-area`. Nepovýšené do LIVE pre kumulatívny qualification stack: VŠ I. stupňa, min. 1 rok praxe a angličtina B1–B2.
+- **StartSeason – odborný administratívny asistent**, Bratislava-Rača, 1 164 EUR/mes., bol vyradený pre VŠ I. stupňa + povinnú ruštinu B1–B2; lokalita sama o sebe prechádza.
+- Čerstvé Upwork WooCommerce výsledky sú prevažne custom/full-build scope; bez nového bezpečného non-hard-dev promotion kandidáta.
 
-## Source audit — 3. 9. 2026 04:26
-- Profesia: `ok`; čerstvý Magistrát podateľňa je relevantný BA hit, zverejnený 2.9.2026; ďalšie výsledky bez bezpečnej promotion delty.
-- Priame company careers: `checked`; BA careers preverené; DHL HR Operations canonical detail už neaktívny, preto nevstupuje do feedu.
+## Source audit — 3. 9. 2026 05:25
+- Profesia: `checked`; BA discovery preverené, bez novej promotion-grade delty.
+- Priame company careers: `checked`; BA careers preverené, bez novej canonical promotion-grade delty.
 - LinkedIn Jobs: `limited`; verejná indexácia preverená, coverage bez loginu neúplné, 0 nových verified promotion-grade hitov.
 - Worki.sk: `checked`; BA discovery preverené, bez novej promotion-grade delty.
-- Brigada.sk: `checked`; BA administratíva/brigády preverené, bez novej promotion-grade delty oproti už evidovaným verification kandidátom.
+- Brigada.sk: `checked`; BA administratíva/brigády preverené, bez novej promotion-grade delty.
 - Kariera.sk: `checked`; BA administratíva/support preverené, bez novej promotion-grade delty.
-- Práca za rohom: `ok`; čerstvý Magistrát podateľňa overený ako BA administratívny hit; mirror/cross-board sa nepočíta ako nezávislý job.
+- Práca za rohom: `ok`; verejne dostupný BA skladový feed obsahuje viac aktuálnych miest, väčšina je VZV/fyzicky orientovaná alebo slabšia než existujúce LIVE alternatívy.
+- Služby zamestnanosti: `ok`; Metrohm IT Support pridaný do verification; StartSeason vyradený pre jazyk + kvalifikáciu.
 - Pretlak / StartupJobs / WordPress Jobs: `checked`; WordPress/WooCommerce/e-commerce discovery preverené, bez nového hard-gate-pass kandidáta.
-- Upwork/freelance: `ok`; WooCommerce/WordPress remote discovery preverené; nové výsledky sú prevažne hard-dev/full-build alebo value/language-risk.
+- Upwork/freelance: `ok`; WooCommerce/WordPress remote discovery preverené, nové výsledky prevažne hard-dev/full-build, známe alebo value-risk.
 - Reddit/komunity: `limited`; verejná indexácia preverená, 0 vhodných SK-eligible verified hiring hitov.
 - Facebook public index: `limited`, **0 verified hits**; žiadny konkrétny verejne overiteľný hiring post, autentizovaný Nexus/local ingestion zostáva backlog.
 
-### Audit počty 04:26
-- source families skontrolované: 11
-- relevantné kandidáty: 3
+### Audit počty 05:25
+- source families skontrolované: 12
+- relevantné nové kandidáty: 2 na štátnom portáli + viac low-priority skladových výsledkov
 - pridané do LIVE: 0
-- vyradené pre neaktivitu: 1
-- vyradené pre jazyk/skill/value riziko: 2
+- pridané do verification: 1 (Metrohm IT Support)
+- vyradené pre jazyk/kvalifikáciu: minimálne 2
 - vyradené pre lokalitu: 0
-- duplicitné/mirror výsledky: minimálne 1 cluster (Magistrát na PZR/Profesia)
+- Upwork nové výsledky: 4 preverované, bez promotion-grade delty
 - Facebook verified hits: 0
 
 ## Rozvojový backlog
@@ -112,10 +113,12 @@ Aktualizované: 3. 9. 2026 04:26 CEST
 - **Bulk-work effective-rate estimator** — pri fixed-price freelance úlohách odhadnúť efektívnu hodinovú sadzbu z počtu produktov/obrázkov/recordov a vyradiť objemovo nevýhodné zákazky aj pri tematicky silnom WooCommerce fit-e.
 - **Primary-source promotion retry queue** — pri silnom kandidátovi nájdenom na job boarde automaticky evidovať retry na firemný/canonical zdroj a pri úspechu prepnúť source provenance bez vytvorenia duplikátu.
 - **Cross-board freshness disagreement detector** — ak rovnaký job na jednom boarde vyzerá „dnešný“ a inde starší alebo neaktívny, nevytvoriť nový LIVE záznam, ale vyžiadať canonical recheck a uložiť dôvod rozdielu.
+- **Government-source vacancy expiry reconciler** — pri `Služby zamestnanosti` ukladať dátum ukončenia ponuky a pri každom rechecku rozlišovať aktívny štátny záznam od starého indexovaného výsledku; znižuje false-positive „čerstvé“ joby.
+- **Qualification-stack penalty** — kumulovať VŠ, minimálnu prax, jazyk a špecializované skill požiadavky do jedného risk skóre; technicky lákavá rola sa tak nepreceňuje iba podľa title/mzdy.
 
 ## Stav ochrany / zápisu
-- `jobs-data.json`: bez zmeny; 48 LIVE položiek bezpečne zachovaných. Významný Magistrát kandidát nebol zapísaný, pretože dostupný reader vracia veľký JSON truncovane a writer vyžaduje kompletný replacement; FAIL-CLOSED zabránil riziku straty existujúcich položiek.
-- `source-audit.json`: v tomto behu **nezapísaný** z rovnakého technického dôvodu — veľký payload je truncovaný a úplný replacement by mohol stratiť verification queue. Pravdivý audit je preto zapísaný v tomto MASTERi, nie predstieraný v JSON audite.
-- `job-sources.json`: register revalidovaný; nevznikla štrukturálna zmena zdrojov, preto bez zápisu.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 04:26** s auditom, technickým stavom a dvoma novými backlog zlepšeniami.
+- `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
+- `source-audit.json`: **aktualizovaný na 05:25**; zachovaná existujúca verification queue a pridaný Metrohm kandidát. Audit commit: `7b1fe1ca5a873c3cd6fa95591a02d294fde7f240`.
+- `job-sources.json`: **aktualizovaný/revalidovaný na 05:25**, vrátane čerstvej poznámky k Službám zamestnanosti a pravdivého Facebook 0-hit stavu. Commit: `bbd364e07dc18a15638a585fa354092cb72ac98f`.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 05:25** s auditom a dvoma novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
