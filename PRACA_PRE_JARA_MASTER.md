@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 3. 9. 2026 03:28 CEST
+Aktualizované: 3. 9. 2026 04:26 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -37,23 +37,33 @@ Aktualizované: 3. 9. 2026 03:28 CEST
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - Facebook verejná indexácia: `limited`, **0 verified hits**; žiadne fiktívne pokrytie.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 03:28 nepriniesol nový promotion-grade LIVE kandidát; existujúce aktívne položky zostali fail-closed zachované.
-- **ea1 s.r.o. – Junior účtovník, Bratislava**: veľmi dobrý prienik na triedenie, spracovanie, zakladanie a skenovanie dokumentov, ale ponuka neuvádza odmenu a požiadavka „študent, prípadne ukončená OA/EU“ je eligibility riziko. Zaradené do verification, nie LIVE.
-- **Upwork – Product Image Research & Preparation Specialist – WooCommerce Skincare Store**: Worldwide remote, WooCommerce + Google Sheets + produktový katalóg, iba 5–10 proposals, ale 100 USD fixed-price za 100+ produktov / stovky obrázkov a povinný Photoshop vytvárajú slabú efektívnu hodinovú hodnotu. Value gate, nie LIVE.
-- **Neuroimunologický ústav SAV – Asistent/ka riaditeľa** zostáva vo verification ako `promotion-ready-awaiting-fresh-canonical`; pred promotion treba nový čerstvý canonical detail.
+- Sweep 04:26 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- **Magistrát hlavného mesta SR Bratislavy – Odborný/á referent/tka podateľne**: zverejnené 2.9.2026, Bratislava, od 1 300 EUR/mes., SŠ s maturitou. Veľmi silný obsahový fit na digitalizáciu, registratúru, databázy, reporty a administratívu; cudzí jazyk je iba výhodou. `locationEligibility: ba-area`. Kandidát je významný a promotion-grade po obsahovej stránke, ale writer pre `jobs-data.json` je v tomto behu fail-closed kvôli truncovanému read payloadu, preto nebol riskantne zapísaný.
+- **Upwork – E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero** zostáva relevantný remote lead, ale pracovná komunikácia v angličtine a špecializované WooCommerce Subscriptions/Xero požiadavky ho držia vo verification.
+- **DHL HR Operations Specialist, Bratislava** bol v discovery nájdený, ale canonical detail už vracia „no longer open for applications“, preto `rejectedInactive`.
 
-## Source audit — 3. 9. 2026 03:28
-- Profesia: `checked`; BA WordPress/e-shop/admin/IT support/driver discovery reálne preverené, bez novej promotion-grade delty.
-- Priame company careers: `checked`; BA kariérne stránky preverené, bez novej canonical promotion-grade delty.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, ale výsledky bez loginu sú neúplné a bez nového vhodného BA/remote hitu.
-- Worki.sk: `checked`; bez novej promotion-grade delty.
-- Brigada.sk: `ok`; nový Junior účtovník v Bratislave je reálny relevantný hit, ale ostáva verification pre nejasnú odmenu a eligibility.
-- Kariera.sk: `checked`; bez novej promotion-grade BA/remote delty.
-- Práca za rohom: `checked`; bez novej nezávislej promotion-grade delty.
-- Pretlak / StartupJobs / WordPress Jobs: `checked`; bez nového hard-gate-pass kandidáta.
-- Upwork/freelance: `ok`; nový WooCommerce product-image/catalog task je `remote-ok`, ale low-value fixed-price vzhľadom na deklarovaný objem práce.
-- Reddit/komunity: `limited`; 0 vhodných SK-eligible verified hiring hitov.
-- Facebook public index: `limited`, **0 verified hits**; autentizovaný Nexus/local ingestion zostáva backlog.
+## Source audit — 3. 9. 2026 04:26
+- Profesia: `ok`; čerstvý Magistrát podateľňa je relevantný BA hit, zverejnený 2.9.2026; ďalšie výsledky bez bezpečnej promotion delty.
+- Priame company careers: `checked`; BA careers preverené; DHL HR Operations canonical detail už neaktívny, preto nevstupuje do feedu.
+- LinkedIn Jobs: `limited`; verejná indexácia preverená, coverage bez loginu neúplné, 0 nových verified promotion-grade hitov.
+- Worki.sk: `checked`; BA discovery preverené, bez novej promotion-grade delty.
+- Brigada.sk: `checked`; BA administratíva/brigády preverené, bez novej promotion-grade delty oproti už evidovaným verification kandidátom.
+- Kariera.sk: `checked`; BA administratíva/support preverené, bez novej promotion-grade delty.
+- Práca za rohom: `ok`; čerstvý Magistrát podateľňa overený ako BA administratívny hit; mirror/cross-board sa nepočíta ako nezávislý job.
+- Pretlak / StartupJobs / WordPress Jobs: `checked`; WordPress/WooCommerce/e-commerce discovery preverené, bez nového hard-gate-pass kandidáta.
+- Upwork/freelance: `ok`; WooCommerce/WordPress remote discovery preverené; nové výsledky sú prevažne hard-dev/full-build alebo value/language-risk.
+- Reddit/komunity: `limited`; verejná indexácia preverená, 0 vhodných SK-eligible verified hiring hitov.
+- Facebook public index: `limited`, **0 verified hits**; žiadny konkrétny verejne overiteľný hiring post, autentizovaný Nexus/local ingestion zostáva backlog.
+
+### Audit počty 04:26
+- source families skontrolované: 11
+- relevantné kandidáty: 3
+- pridané do LIVE: 0
+- vyradené pre neaktivitu: 1
+- vyradené pre jazyk/skill/value riziko: 2
+- vyradené pre lokalitu: 0
+- duplicitné/mirror výsledky: minimálne 1 cluster (Magistrát na PZR/Profesia)
+- Facebook verified hits: 0
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -100,10 +110,12 @@ Aktualizované: 3. 9. 2026 03:28 CEST
 - **Client-spend trust calibration** — pri freelance leadoch kombinovať historický spend, počet hires, aktivitu klienta a proposal/interview pomer, aby sa znížil čas strávený na low-probability klientov.
 - **Eligibility ambiguity quarantine** — ak ponuka uvádza nejednoznačné „študent / prípadne škola X“ bez jasného prijateľného typu uchádzača, držať ju mimo LIVE do explicitného overenia eligibility.
 - **Bulk-work effective-rate estimator** — pri fixed-price freelance úlohách odhadnúť efektívnu hodinovú sadzbu z počtu produktov/obrázkov/recordov a vyradiť objemovo nevýhodné zákazky aj pri tematicky silnom WooCommerce fit-e.
+- **Primary-source promotion retry queue** — pri silnom kandidátovi nájdenom na job boarde automaticky evidovať retry na firemný/canonical zdroj a pri úspechu prepnúť source provenance bez vytvorenia duplikátu.
+- **Cross-board freshness disagreement detector** — ak rovnaký job na jednom boarde vyzerá „dnešný“ a inde starší alebo neaktívny, nevytvoriť nový LIVE záznam, ale vyžiadať canonical recheck a uložiť dôvod rozdielu.
 
 ## Stav ochrany / zápisu
-- `jobs-data.json`: bez zmeny; 48 LIVE položiek bezpečne zachovaných, žiadny nový promotion-grade kandidát.
-- `source-audit.json`: aktualizovaný po reálnom 03:28 multi-source sweepe.
-- `job-sources.json`: register revalidovaný; nevznikla štrukturálna zmena.
-- `PRACA_PRE_JARA_MASTER.md`: **synchronizovaný** so stavom 03:28.
+- `jobs-data.json`: bez zmeny; 48 LIVE položiek bezpečne zachovaných. Významný Magistrát kandidát nebol zapísaný, pretože dostupný reader vracia veľký JSON truncovane a writer vyžaduje kompletný replacement; FAIL-CLOSED zabránil riziku straty existujúcich položiek.
+- `source-audit.json`: v tomto behu **nezapísaný** z rovnakého technického dôvodu — veľký payload je truncovaný a úplný replacement by mohol stratiť verification queue. Pravdivý audit je preto zapísaný v tomto MASTERi, nie predstieraný v JSON audite.
+- `job-sources.json`: register revalidovaný; nevznikla štrukturálna zmena zdrojov, preto bez zápisu.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 04:26** s auditom, technickým stavom a dvoma novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
