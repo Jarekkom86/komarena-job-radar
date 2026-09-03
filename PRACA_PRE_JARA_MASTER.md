@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 3. 9. 2026 18:22 CEST
+Aktualizované: 3. 9. 2026 19:36 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -36,34 +36,34 @@ Aktualizované: 3. 9. 2026 18:22 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 18:22 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- Čerstvé Upwork `Data Entry Specialist for WooCommerce`, `WooCommerce Website Builder Needed` a `Need Basic WooCommerce Website` sú už evidované vo verification queue; nový ingest by bol duplicita.
-- Ďalšie čerstvé WordPress/WooCommerce výsledky boli full-build, custom-development alebo scope-heavy a nezodpovedali bezpečnému promotion profilu.
-- Práca za rohom priniesla čitateľný BA/Dúbravka feed, ale nové lokálne výsledky boli prevažne mimo prioritného ranking profilu.
-- LinkedIn public index vracal najmä senior/project alebo geograficky nesediace výsledky; konkrétny Luxembourg listing bol locality reject.
+- Sweep 19:36 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Čerstvý Upwork `Full-Time WordPress & WooCommerce Developer` je obsahovo blízky TOP smeru, ale ide o developer-heavy 30+ h/week scope; ďalšie čerstvé WP/WooCommerce výsledky boli full-build alebo low-value.
+- Brigada.sk priniesla same-day sklad v Lozorne za 6,50 €/h, ktorý bol pri audite už po pracovnej zmene, a dlhodobého vodiča detského vláčika v AVIONe, ale iba na študentskú dohodu za 6 €/h netto.
+- Direct-career remote výsledky SearchApi/FYST prešli lokalitne, ale boli hard-dev/senior-scope mimo profilu.
 - Facebook verejná indexácia ostáva **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 3. 9. 2026 18:22
+## Source audit — 3. 9. 2026 19:36
 - Profesia: `checked`; BA WordPress/support/admin/driver discovery reálne preverené, bez novej promotion-grade delty.
-- Priame company careers: `checked`; BA support/customer support/e-commerce discovery preverená, bez nového promotion-grade canonical hitu.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, ale výsledky boli prevažne senior/project alebo geograficky mimo hard gate.
+- Priame company careers: `checked`; 2 čitateľné remote výsledky, oba vyradené pre hard-dev/senior scope.
+- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez nového hard-gate-pass výsledku.
 - Worki.sk: `checked`; BA/okolie technický support/admin/driver discovery preverená, bez nového vhodného kandidáta.
-- Brigada.sk: `checked`; BA administratíva/kuriér/sklad discovery preverené, bez nového promotion-grade hitu.
-- Práca za rohom: `ok`; verejný BA/Dúbravka feed bol čitateľný, ale výsledky boli mimo rankingového sweet spotu.
+- Brigada.sk: `ok`; 2 relevantné/čiastočne relevantné výsledky, 0 LIVE — jeden same-day už po zmene, druhý študentská dohoda + nízka odmena.
+- Kariera.sk: `checked`; BA admin/support discovery bez novej promotion-grade delty.
+- Služby zamestnanosti: `checked`; BA admin/IT support/vodič discovery bez novej promotion-grade delty.
 - Pretlak / StartupJobs / WordPress Jobs: `checked`; bez nového konkrétneho hiring hitu vhodného na promotion.
-- Upwork/freelance: `ok`; 8 relevantných/čiastočne relevantných výsledkov, 0 LIVE promotion; 3 boli duplicity existujúcej queue, zvyšok value/skill/scope mismatch.
+- Upwork/freelance: `ok`; 4 relevantné/čiastočne relevantné výsledky, 0 LIVE promotion; developer-heavy/full-build/low-value alebo duplicate verification.
 - Reddit/komunity: `limited`; verejná indexácia preverená, bez konkrétneho hiring dopytu vhodného na promotion.
 - Facebook public index: `limited`, **0 verified hits**; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom.
 
-### Audit počty 18:22
-- source families reálne skontrolované: **10**
-- z toho mimo Profesia: **9**
-- relevantné/čiastočne relevantné výsledky v novom sweep-e: **10+**
+### Audit počty 19:36
+- source families reálne skontrolované: **11**
+- z toho mimo Profesia: **10**
+- relevantné/čiastočne relevantné výsledky v novom sweep-e: **8+**
 - pridané do LIVE: **0**
 - nové verification kandidáty: **0**
-- vyradené/odložené pre duplicitu: **3+**
-- vyradené pre value/skill/scope mismatch: **5+**
-- locality reject: **1+**
+- vyradené pre skill/scope mismatch: **4+**
+- vyradené pre value/eligibility/time-window: **3+**
+- locality reject: **0 nových promotion kandidátov**
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
 
@@ -142,10 +142,12 @@ Aktualizované: 3. 9. 2026 18:22 CEST
 - **Freelance budget-scope contradiction detector** — pri long-term/complex scope a symbolickom fixed-price rozpočte označiť rozpor budget/scope a vyradiť listing ešte pred verification queue.
 - **Verification evidence age bands** — ku každej položke verification queue evidovať vek posledného canonical dôkazu (`<24 h` / `1–3 dni` / `>3 dni`) a staršie položky prioritne revalidovať pred novým discovery, aby queue nebola plná stale leadov.
 - **Source-family no-delta rotation planner** — keď rovnaká source family opakovane neprináša promotion-grade výsledok, presunúť časť query budgetu na alternatívne zdroje tej istej kategórie bez falšovania coverage; cieľom je zvýšiť reálnu diverzitu a discovery yield.
+- **Student-only contract eligibility gate** — pri brigádach explicitne rozpoznať `Dohodu o brigádnickej práci študentov`; bez dôkazu študentského statusu takú ponuku nevkladať do LIVE ani pri dobrej obsahovej zhode.
+- **Same-day shift expiration gate** — pri ponuke platnej iba v deň auditu porovnať aktuálny čas so začiatkom/koncom zmeny a po uplynutí použiteľného okna ju automaticky označiť ako neaktívnu pre nový alert.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: **aktualizovaný na 18:22**, verification queue zachovaná bez fiktívnych prírastkov.
-- `job-sources.json`: **aktualizovaný na 18:22** iba o auditové timestampy/poznámky skutočne kontrolovaných zdrojov; source definitions bez neodôvodnenej štrukturálnej zmeny.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 18:22** s reálnym auditom a 2 novými backlog zlepšeniami.
+- `source-audit.json`: **aktualizovaný na 19:36**, verification queue zachovaná bez fiktívnych prírastkov.
+- `job-sources.json`: **aktualizovaný na 19:36** iba o auditové timestampy/poznámky skutočne kontrolovaných zdrojov; source definitions bez neodôvodnenej štrukturálnej zmeny.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 19:36** s reálnym auditom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
