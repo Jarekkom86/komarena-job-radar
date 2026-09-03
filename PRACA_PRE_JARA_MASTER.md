@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 3. 9. 2026 17:23 CEST
+Aktualizované: 3. 9. 2026 18:22 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -36,34 +36,34 @@ Aktualizované: 3. 9. 2026 17:23 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 17:23 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- LinkedIn/Marlink `Support Engineer` je lokálne v Bratislave a technicky relevantný, ale vyžaduje **AJ B2**, technické/IT/networking vzdelanie a 24/7 trojzmennú prevádzku; bez LIVE promotion.
-- Volkswagen `Ansible Tower/AWX Support Specialist` síce uvádza Bratislavu a remote až 100 %, ale ide o hard-dev/advanced IT stack, preto mimo rankingového sweet spotu.
-- Upwork `Website & SEO Management 2026` zostáva silný remote WooCommerce maintenance kandidát, ale už je evidovaný vo verification queue; nový ingest by bol duplicita.
-- Čerstvý Upwork `WordPress + WooCommerce Developer` je Worldwide remote a long-term, ale iba **5 USD fixed-price** pri komplexnom scope, preto value mismatch.
-- Ďalšie čerstvé Upwork VA/WordPress výsledky boli prevažne low-budget, hard-dev alebo vyžadovali silnú spoken/written English.
+- Sweep 18:22 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Čerstvé Upwork `Data Entry Specialist for WooCommerce`, `WooCommerce Website Builder Needed` a `Need Basic WooCommerce Website` sú už evidované vo verification queue; nový ingest by bol duplicita.
+- Ďalšie čerstvé WordPress/WooCommerce výsledky boli full-build, custom-development alebo scope-heavy a nezodpovedali bezpečnému promotion profilu.
+- Práca za rohom priniesla čitateľný BA/Dúbravka feed, ale nové lokálne výsledky boli prevažne mimo prioritného ranking profilu.
+- LinkedIn public index vracal najmä senior/project alebo geograficky nesediace výsledky; konkrétny Luxembourg listing bol locality reject.
 - Facebook verejná indexácia ostáva **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 3. 9. 2026 17:23
+## Source audit — 3. 9. 2026 18:22
 - Profesia: `checked`; BA WordPress/support/admin/driver discovery reálne preverené, bez novej promotion-grade delty.
-- Priame company careers: `ok`; Volkswagen advanced Ansible/AWX support zachytený, vyradený pre hard-dev/advanced-stack mismatch.
-- LinkedIn Jobs: `ok/limited coverage`; Marlink Support Engineer a SupportYourApp remote výsledok boli konkrétne čitateľné; oba zlyhali na language/qualification gate.
-- Worki.sk: `checked`; BA technický support/admin/driver discovery preverená, bez nového vhodného kandidáta.
+- Priame company careers: `checked`; BA support/customer support/e-commerce discovery preverená, bez nového promotion-grade canonical hitu.
+- LinkedIn Jobs: `limited`; verejná indexácia preverená, ale výsledky boli prevažne senior/project alebo geograficky mimo hard gate.
+- Worki.sk: `checked`; BA/okolie technický support/admin/driver discovery preverená, bez nového vhodného kandidáta.
 - Brigada.sk: `checked`; BA administratíva/kuriér/sklad discovery preverené, bez nového promotion-grade hitu.
+- Práca za rohom: `ok`; verejný BA/Dúbravka feed bol čitateľný, ale výsledky boli mimo rankingového sweet spotu.
 - Pretlak / StartupJobs / WordPress Jobs: `checked`; bez nového konkrétneho hiring hitu vhodného na promotion.
-- Upwork/freelance: `ok`; približne 10 relevantných/čiastočne relevantných výsledkov, 0 LIVE promotion pre value/language/skill/staleness/dedupe dôvody.
-- Reddit/komunity: `limited`; verejná indexácia preverená, čerstvé výsledky boli prevažne `for hire`, nie hiring dopyty.
+- Upwork/freelance: `ok`; 8 relevantných/čiastočne relevantných výsledkov, 0 LIVE promotion; 3 boli duplicity existujúcej queue, zvyšok value/skill/scope mismatch.
+- Reddit/komunity: `limited`; verejná indexácia preverená, bez konkrétneho hiring dopytu vhodného na promotion.
 - Facebook public index: `limited`, **0 verified hits**; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom.
 
-### Audit počty 17:23
-- source families reálne skontrolované: **9**
-- z toho mimo Profesia: **8**
-- relevantné/čiastočne relevantné výsledky v novom sweep-e: **13+**
+### Audit počty 18:22
+- source families reálne skontrolované: **10**
+- z toho mimo Profesia: **9**
+- relevantné/čiastočne relevantné výsledky v novom sweep-e: **10+**
 - pridané do LIVE: **0**
 - nové verification kandidáty: **0**
-- vyradené pre jazyk/qualification/shift mismatch: **4+**
-- vyradené pre value mismatch: **4+**
-- hard-dev/skill mismatch: **2+**
+- vyradené/odložené pre duplicitu: **3+**
+- vyradené pre value/skill/scope mismatch: **5+**
+- locality reject: **1+**
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
 
@@ -140,10 +140,12 @@ Aktualizované: 3. 9. 2026 17:23 CEST
 - **Freelance client-response velocity signal** — kombinovať `last viewed`, `interviewing`, `hires` a čas od publikovania do jedného signálu; zvýhodniť čerstvé zákazky s reálnou aktivitou klienta pred stagnujúcimi listingami.
 - **Shift-language compound-risk gate** — kombinovať jazykovú požiadavku s 24/7/nočnými zmenami; technicky zaujímavé support roly s oboma rizikami automaticky výraznejšie penalizovať pred promotion.
 - **Freelance budget-scope contradiction detector** — pri long-term/complex scope a symbolickom fixed-price rozpočte označiť rozpor budget/scope a vyradiť listing ešte pred verification queue.
+- **Verification evidence age bands** — ku každej položke verification queue evidovať vek posledného canonical dôkazu (`<24 h` / `1–3 dni` / `>3 dni`) a staršie položky prioritne revalidovať pred novým discovery, aby queue nebola plná stale leadov.
+- **Source-family no-delta rotation planner** — keď rovnaká source family opakovane neprináša promotion-grade výsledok, presunúť časť query budgetu na alternatívne zdroje tej istej kategórie bez falšovania coverage; cieľom je zvýšiť reálnu diverzitu a discovery yield.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: aktualizovaný na 17:23; verification queue zachovaná bez fiktívnych prírastkov.
-- `job-sources.json`: source definitions bez štrukturálnej zmeny; auditové timestampy/poznámky sa aktualizujú iba pri skutočne kontrolovaných zdrojoch.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 17:23** s reálnym auditom a 2 novými backlog zlepšeniami.
+- `source-audit.json`: **aktualizovaný na 18:22**, verification queue zachovaná bez fiktívnych prírastkov.
+- `job-sources.json`: **aktualizovaný na 18:22** iba o auditové timestampy/poznámky skutočne kontrolovaných zdrojov; source definitions bez neodôvodnenej štrukturálnej zmeny.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 18:22** s reálnym auditom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
