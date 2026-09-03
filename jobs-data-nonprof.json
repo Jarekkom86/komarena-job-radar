@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T08:12:31+02:00",
+  "updatedAt": "2026-09-03T16:14:25+02:00",
   "jobs": [
     {
       "id": "profesia-kosik-cz-5348230",
@@ -273,6 +273,35 @@
       "contact": "detail po otvorení Brigada.sk",
       "desc": "Konkrétny termín vychystávania objednávok v Senci 31. 8. za 7 €/hod., overený v aktuálnom zozname Brigada.sk.",
       "url": "https://www.brigada.sk/brigady-senec?page=3&prihlasenie="
+    },
+    {
+      "id": "profesia-atalian-tech-admin-5352071",
+      "title": "Technicko-administratívny pracovník - Bratislava",
+      "company": "ATALIAN SK s. r. o.",
+      "location": "Einsteinova, Petržalka, Bratislava",
+      "origin": "ponuka",
+      "score": 94,
+      "scoreConfidence": 99,
+      "source": "Profesia",
+      "sourceType": "jobboard",
+      "sourceTrust": 98,
+      "form": "TPP / plný úväzok",
+      "pay": "1 540–1 740 €/mes. brutto",
+      "payMonth": 1640,
+      "start": "1. 10. 2026",
+      "english": "ok",
+      "engLabel": "cudzí jazyk nie je v canonical detaile uvedený ako podmienka",
+      "track": "tech",
+      "priority": "today",
+      "status": "active",
+      "publishedAt": "2026-09-02T00:00:00+02:00",
+      "verifiedAt": "2026-09-03T16:14:25+02:00",
+      "expiresAt": null,
+      "contact": null,
+      "locationEligibility": "ba-area",
+      "locationReason": "Pracovisko Einsteinova v Petržalke; lokálna BA facility pozícia.",
+      "desc": "Veľmi silná zhoda na technicko-administratívny/facility smer: administratívna podpora facility managementu, práca v CAFM Chastia, evidencia servisných zásahov a technickej dokumentácie, koordinácia externých servisných firiem, sledovanie preventívnej údržby a riešenie drobných technických porúch. Inzerát výslovne uvádza, že netreba dlhoročné skúsenosti a dáva šancu aj absolventovi; vodičský preukaz B je požadovaný, elektrotechnický §21/22 je iba výhodou.",
+      "url": "https://www.profesia.sk/praca/atalian-sk/O5352071"
     }
   ]
 }
