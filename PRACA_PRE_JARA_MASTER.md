@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 3. 9. 2026 02:15 CEST
+Aktualizované: 3. 9. 2026 02:27 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -36,26 +36,23 @@ Aktualizované: 3. 9. 2026 02:15 CEST
 - Posledný sourcing audit: **11 source families**, z toho **10 mimo Profesia**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - Facebook verejná indexácia: `limited`, **0 verified hits**; žiadne fiktívne pokrytie.
-- `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — timestamp vznikol až po reálnej kontrole zdrojov a úspešnom deduplikovanom zápise.
-- Predchádzajúci full-replacement blocker bol v tomto behu bezpečne obídený cez line-based read kompletného JSON payloadu; feed je znovu v stave `fresh`.
-- Do LIVE boli po čerstvom overení promovované dve už evidované promotion-ready položky:
-  - **Magistrát hlavného mesta SR Bratislavy – Odborný/á referent/tka podateľne**: Bratislava, 1 300 €/mes., SŠ s maturitou, cudzí jazyk iba výhodou, digitalizácia/evidencia zásielok, databázy, reporty, IS NORIS.
-  - **INDEX NOSLUŠ – Výpomoc v predajni / Asistent pre mobilnú aplikáciu**: Bratislava, 7 €/h + príplatky, dohoda, projekt 3.–14.9.2026, zmeny 7:00–13:30 alebo 13:30–20:00.
+- `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
+- Sweep 02:27 nepriniesol nový promotion-grade LIVE kandidát; existujúce aktívne položky zostali fail-closed zachované.
+- Najčerstvejší Upwork lead **Virtual Assistant - Ongoing - Product Listing / Ecommerce Management** je Worldwide remote a obsahovo sedí na WooCommerce/listingy/inventár/customer support, ale 3–6 USD/h a 20–50 proposals ho držia vo verification/value-gate režime.
 - **Neuroimunologický ústav SAV – Asistent/ka riaditeľa** zostáva vo verification ako `promotion-ready-awaiting-fresh-canonical`; pred promotion treba nový čerstvý canonical detail.
 - **NAY Elektrošpecialista/tka** zostáva vo verification, pretože čerstvý canonical výsledok potvrdil Tuhovskú, nie pôvodný Danubia variant.
-- Nový Upwork lead **WooCommerce Developer for Website Improvements** je `remote-ok`, 1–3 mesiace a obsahovo relevantný, ale ide o `Expert` scope a pri kontrole mal 15–20 proposals a 4 interviewing; neprešiel do LIVE.
 
-## Source audit — 3. 9. 2026 02:15
-- Profesia: `checked`, BA WordPress/e-shop/admin/IT support/driver discovery preverené; Magistrát promoted do LIVE, bez ďalšej promotion-grade delty.
-- Priame company careers: `checked`, INDEX NOSLUŠ canonical detail overený a promoted do LIVE.
-- LinkedIn Jobs: `limited`, verejná indexácia preverená; bez nového presného SK/remote promotion-grade hitu.
-- Worki.sk: `checked`, známe BA hity bez novej delty.
-- Brigada.sk: `checked`, INDEX mirror deduplikovaný voči canonical firemnému detailu.
-- Kariera.sk: `checked`, bez novej promotion-grade delty; SAV čaká na fresh canonical reconfirmation.
-- Práca za rohom: `ok`, Magistrát referent podateľne znovu potvrdený ako aktívny a čerstvý; INDEX mirror deduplikovaný.
+## Source audit — 3. 9. 2026 02:27
+- Profesia: `checked`, BA WordPress/e-shop/admin/IT support/driver discovery preverené; bez novej promotion-grade delty.
+- Priame company careers: `checked`, BA IT/support/e-commerce careers discovery preverené; bez novej canonical delty.
+- LinkedIn Jobs: `limited`, verejná indexácia preverená; SupportYourApp výsledok už neakceptuje žiadosti, nový promotion-grade hit nevznikol.
+- Worki.sk: `checked`, bez novej promotion-grade delty.
+- Brigada.sk: `checked`, bez novej promotion-grade delty.
+- Kariera.sk: `checked`, bez novej promotion-grade delty.
+- Práca za rohom: `checked`, bez novej nezávislej promotion-grade delty.
 - Pretlak / StartupJobs / WordPress Jobs: `checked`, bez nového hard-gate-pass kandidáta.
-- Upwork/freelance: `ok`, nové WP/WooCommerce výsledky preverené; bez nového LIVE kandidáta po scope/value/competition gateoch.
-- Reddit/komunity: `limited`, 0 vhodných SK-eligible verified hitov.
+- Upwork/freelance: `ok`, e-commerce VA/listing lead preverený; `remote-ok`, ale 3–6 USD/h a vysoká konkurencia = verification/value gate, nie LIVE.
+- Reddit/komunity: `limited`, 0 vhodných SK-eligible verified hiring hitov; US-only WordPress hiring bolo vyradené lokalitným gateom.
 - Facebook public index: `limited`, **0 verified hits**; autentizovaný Nexus/local ingestion zostáva backlog.
 
 ## Rozvojový backlog
@@ -99,10 +96,12 @@ Aktualizované: 3. 9. 2026 02:15 CEST
 - Autentizovaný Facebook ingestion cez Nexus/local agent.
 - Source-success analytics, publishedAt/<24h priority, commute/distance, deadline alerts, company contact enrichment, duplicate cluster report, reply probability, GitHub Actions polling a cross-device sync.
 - **Promotion-ready ageing gate** — ak kandidát už prešiel hard gate-mi a nový sweep znovu potvrdí aktívny/canonical stav, historický writer blocker ho nesmie držať vo verification queue.
+- **Timezone-overlap burden score** — pri remote/freelance ponukách penalizovať povinné US hours alebo široké globálne časové okná aj vtedy, keď je lokalita formálne Worldwide.
+- **Client-spend trust calibration** — pri freelance leadoch kombinovať historický spend, počet hires, aktivitu klienta a proposal/interview pomer, aby sa znížil čas strávený na low-probability klientov.
 
 ## Stav ochrany / zápisu
-- `jobs-data.json`: **úspešne aktualizovaný** po reálnej kontrole; 48 LIVE položiek, deduplikované promotion Magistrát + INDEX NOSLUŠ.
-- `source-audit.json`: **úspešne aktualizovaný**; freshness `fresh`, 11 source families preverených, verification queue zachovaná bez dvoch promovovaných položiek.
-- `job-sources.json`: register bol revalidovaný; nevznikla štrukturálna zmena.
-- `PRACA_PRE_JARA_MASTER.md`: **synchronizovaný** so stavom 02:15.
+- `jobs-data.json`: bez zmeny; 48 LIVE položiek bezpečne zachovaných, žiadny nový promotion-grade kandidát.
+- `source-audit.json`: obsahovo auditovaný; writer pre veľký JSON zostáva náchylný na truncovaný read, preto bez riskantného full replacementu v tomto behu.
+- `job-sources.json`: register revalidovaný; nevznikla štrukturálna zmena.
+- `PRACA_PRE_JARA_MASTER.md`: **synchronizovaný** so stavom 02:27.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
