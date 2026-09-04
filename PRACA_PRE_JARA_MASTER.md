@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 4. 9. 2026 16:35 CEST
+Aktualizované: 4. 9. 2026 17:21 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -34,44 +34,38 @@ Aktualizované: 4. 9. 2026 16:35 CEST
 ## Aktuálny stav LIVE
 - Autoritatívny feed má **49 LIVE položiek**.
 - LIVE mix: **Profesia 24/49 = 49,0 %**, mimo Profesia **25/49 = 51,0 %**.
-- `jobs-data.json.updatedAt`: **2026-09-04T16:16:38+02:00** — posledná reálna LIVE promotion bola Slovak Telekom 496939.
-- Sweep 16:35 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- `jobs-data.json.updatedAt`: **2026-09-04T16:16:38+02:00**.
+- Sweep 17:21 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
 
-### Najlepší nový verification kandidát — Trenujeme.sk
-- `Predajca na predajni a e-commerce asistent Trenujeme Bratislava`, Račianska 31, Bratislava.
-- Presný pozitívny jazykový fit: **AJ A2**.
-- Veľmi relevantné úlohy: spracovanie objednávok, produktové texty a produkty v e-shope, administrácia e-shopu, reklamácie/výmeny, sklad, expedícia a zákaznícka komunikácia.
-- Forma: part-time / dohoda / živnosť, približne 60–120 h mesačne; 6,60 EUR/h + provízie, živnosť 8 EUR/h + provízie.
-- Dôvod, prečo nie je LIVE: nízky fix a výrazný doménový hard/soft burden — predaj bicyklov a športového sortimentu, základná montáž/servis bicykla, aktívny vzťah k cyklistike a ochota pracovať aj v sobotu.
-- Stav: `verification-domain-skill-low-fix`, `locationEligibility: ba-area`, provisional score 89.
+### Čerstvé zistenia 17:21
+- **Worki / Nutra Group LTD – Operátor call centra, home office**: 1 200–2 500 EUR/mes., živnosť, nástup ihneď, bez požiadavky na prax, iba slovenský jazyk. Nie LIVE: jadrom je aktívny telefonický predaj z teplej databázy a pôvodný publish je 11.3.2026; 3.9.2026 je iba aktualizácia. `locationEligibility: remote-ok`, ale rankingovo slabší než aktuálne priority.
+- **Práca za rohom**: dnešný BA office/sekretárka listing ukazuje viac čerstvých lokálnych kandidátov (napr. administratíva/recepcia/office coordination), ale v tomto behu bez detailného promotion-grade potvrdenia; preto žiadny automatický ingest.
+- **WordPress Jobs**: 9 otvorených pozícií; remote Pangolin je senior hard-dev s multisite/API/Git/production ownership, teda mimo vhodného profilu.
+- **Upwork**: resurfaced E-commerce VA WooCommerce/Subscriptions/Xero je už vo verification; dobrý scope, ale good written English + WooCommerce Subscriptions + Meta Ads + Xero sú stále výrazný proof burden.
+- **Reddit**: čerstvé verejne indexované výsledky sú FOR HIRE/self-promo, nie hiring dopyt.
+- **Facebook**: **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-### Ďalšie čerstvé zistenia
-- 3MON Office Manager / Executive Support: Bratislava, 1 650 EUR, silná e-shop/admin náplň, ale canonical detail uvádza **B2 AJ a 3 roky praxe** — verification, nie LIVE.
-- Služby zamestnanosti: čerstvý sklad Podunajské Biskupice 1 031 EUR a ďalšie BA ponuky sú fyzické alebo nižšie prioritné.
-- Upwork: Data Entry Specialist for WooCommerce ostáva relevantný verification kandidát; ďalšie čerstvé hity boli prevažne custom dev/plugin/full-build alebo slabší ROI.
-- Facebook: **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
-
-## Source audit — 4. 9. 2026 16:35
+## Source audit — 4. 9. 2026 17:21
 - source families reálne skontrolované: **11**
 - mimo Profesia: **10**
-- Profesia: `ok`; Trenujeme nový verification kandidát, bez LIVE promotion.
-- Priame company careers: `checked`; Telekom 496939 už je LIVE, bez unique delty.
+- Profesia: `checked`; bez novej promotion-grade delty.
+- Priame company careers: `checked`; Telekom existujúce kanonické LIVE ponuky, bez unique delty.
 - LinkedIn Jobs: `limited`; verejná indexácia preverená, bez promotion delty.
-- Worki.sk: `checked`; bez novej vhodnej priority delty.
+- Worki.sk: `ok`; 1 relevantný remote hit, vyradený z LIVE pre aktívny sales burden + refresh starého inzerátu.
 - Brigada.sk: `checked`; bez novej vhodnej priority delty.
-- Kariera.sk / Práca za rohom: `ok`; 3MON a ďalšie BA office hity, ale bez LIVE promotion.
-- Služby zamestnanosti: `checked`; bez novej vhodnej promotion-grade delty.
-- Pretlak / StartupJobs / WordPress Jobs: `checked`; bez promotion-grade zhody.
-- Upwork/freelance: `ok`; viac čerstvých WordPress/WooCommerce hitov, bez novej LIVE promotion.
-- Reddit/komunity: `limited`; viditeľný WordPress dopyt bez dostatočného remote/location proof.
+- Kariera.sk / Práca za rohom: `ok`; viac dnešných BA listing-level office kandidátov, bez bezpečnej promotion.
+- Služby zamestnanosti: `checked`; bez promotion-grade zhody.
+- Pretlak / StartupJobs / WordPress Jobs: `checked`; remote WordPress výsledok je hard-dev/senior mismatch.
+- Upwork/freelance: `ok`; resurfaced známy verification kandidát, bez novej LIVE promotion.
+- Reddit/komunity: `limited`; bez nového hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 16:35
+### Audit počty 17:21
 - pridané do LIVE: **0**
-- nové unique verification kandidáty: **1** — Trenujeme.sk
 - LIVE feed delta: **0**; fail-closed zachovanie 49 položiek
 - Facebook verified hits: **0**
-- verification queue: **51** položiek
+- Worki relevantné hity: **1**, LIVE promotion **0**
+- verification queue: **51** položiek; bez automatického mazania
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -190,12 +184,14 @@ Aktualizované: 4. 9. 2026 16:35 CEST
 - Canonical job-board freshness reconciliation.
 - Portfolio-proof readiness matcher.
 - Live-store change-risk penalty.
-- **Domain-product-knowledge hard/soft gate classifier** — odlíši všeobecný e-commerce/admin fit od rolí, kde úspech reálne stojí na špecifickej produktovej expertíze (napr. cyklistika, servis bicykla, odborný sortiment), aby vysoká zhoda názvu neprebila skrytý doménový mismatch.
-- **Commission-dependent income reliability score** — pri part-time/predajných rolách oddeliť garantovaný fix od provízií, historických maxím a podmienok ich získania; ranking bude pracovať s konzervatívnym garantovaným príjmom a bonus iba ako sekundárny upside.
+- Domain-product-knowledge hard/soft gate classifier.
+- Commission-dependent income reliability score.
+- **Outbound-sales quota/KPI burden extractor** — rozlíši customer-care/support pozície od rolí, kde je jadrom aktívny predaj, call quota, konverzia a výkonové KPI; zabráni tomu, aby remote + nízky language burden umelo vytlačili čistý sales job príliš vysoko.
+- **Portal-UI locale isolation** — oddeľovať jazyk rozhrania/indexovanej verzie portálu (napr. ukrajinská lokalizácia Worki) od skutočných jazykových požiadaviek pracovnej ponuky, aby lokalizovaný crawl nevytváral falošný language penalty alebo benefit.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **49 LIVE položiek bezpečne zachovaných**. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: **aktualizovaný na 16:35**, verification queue zachovaná a rozšírená o 1 unique kandidáta.
-- `job-sources.json`: **aktualizovaný na 16:35** podľa skutočne preverených zdrojov.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 16:35** s auditom a 2 novými backlog zlepšeniami.
+- `job-sources.json`: **aktualizovaný na 17:21** podľa skutočne preverených zdrojov.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 17:21** s auditom a 2 novými backlog zlepšeniami.
+- `source-audit.json`: musí zostať konzistentný s týmto behom; verification queue nesmie byť zmazaná ani skrátená.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index: **nedotknuté / zamknuté**.
