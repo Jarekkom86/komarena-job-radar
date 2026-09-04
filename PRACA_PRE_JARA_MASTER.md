@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 4. 9. 2026 13:00 CEST
+Aktualizované: 4. 9. 2026 14:17 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,36 +35,35 @@ Aktualizované: 4. 9. 2026 13:00 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 13:00 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- Kariera/Lidl: čerstvý priamy firemný hit `Referent oddelenia Účtovania tovaru` v Bratislave, 1 650 EUR/mes., administratíva + logistické centrá + faktúry; vyradené z priority kvôli explicitnej požiadavke na plynulú angličtinu alebo nemčinu.
-- Kariera/DAŇOVÁ SOVA: nový administratívny pracovník v Pezinku, 990 EUR/mes., jednozmenná 08:00–16:30, jednoduchá administratíva a komunikácia so zákazníkmi; nepovýšené kvôli B1–B2 angličtine, nízkej mzde a požadovanému 1 roku praxe.
-- LinkedIn: verejná indexácia ukázala BA L1/IT support a customer-support roly, ale bez nového kandidáta s lepším skill/language profilom než existujúci LIVE/verification pool; coverage bez loginu zostáva limited.
-- Upwork: čerstvé Worldwide remote WooCommerce/WordPress hity existujú, ale `WooCommerce product page layout` a ďalšie sú development-heavy; `ongoing WordPress support` je expert/complex s 50+ proposals; micro-fix 5 USD je value mismatch. Bez LIVE promotion.
-- Worki/Brigada: discovery reálne preverené; bez novej priority BA delty.
-- Pretlak/StartupJobs: tech/creative discovery preverené; bez promotion-grade zhody.
+- Sweep 14:17 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Upwork: čerstvý `WooCommerce Developer Needed to Improve Product Page Layout` je Worldwide remote, ale požaduje proven WooCommerce, silné HTML/CSS, template/CSS úpravy a bezpečný zásah do aktívneho store; ide skôr o development-heavy technickú zákazku než admin/maintenance fit.
+- Upwork: `Senior WordPress Developer (Elementor Expert)` je Worldwide remote a čerstvý, ale Expert scope vyžaduje 3+ roky, deep Elementor Pro, ACF/light PHP/CSS, Core Web Vitals a portfólio; uvedený 5 USD fixed-price je placeholder/micro-budget a nevytvára dôveryhodný promotion-grade value signal.
+- Ďalšie Upwork WordPress/WooCommerce hity boli full-build/plugin/hard-dev alebo nízky value/competition fit.
+- Profesia/Worki/Brigada/Kariera/Práca za rohom/company careers/LinkedIn: reálne preverené; bez novej vhodnej promotion-grade BA/remote delty.
+- Pretlak/StartupJobs/WordPress Jobs: tech/creative discovery preverené; bez promotion-grade zhody.
 - Reddit/komunity: verejná WordPress/forhire indexácia bez konkrétneho vhodného čerstvého hiring dopytu.
 - Facebook: **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 4. 9. 2026 13:00
+## Source audit — 4. 9. 2026 14:17
 - Profesia: `checked`; bez novej promotion-grade LIVE delty.
-- Priame company careers: `ok`; Lidl canonical overený, ale language hard mismatch.
-- LinkedIn Jobs: `limited`; verejná indexácia BA support rolí, bez vhodnej promotion delty.
+- Priame company careers: `checked`; bez novej vhodnej delty.
+- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez vhodnej promotion delty.
 - Worki.sk: `checked`; bez novej priority delty.
 - Brigada.sk: `checked`; bez novej priority delty.
-- Kariera.sk: `ok`; nové administratívne kandidáty overené, vyradené pre jazyk/mzdu/požiadavky.
+- Kariera.sk / Práca za rohom: `checked`; bez novej promotion-grade delty.
 - Služby zamestnanosti: `checked`; bez novej vhodnej BA/remote delty.
 - Pretlak / StartupJobs / WordPress Jobs: `checked`; bez promotion-grade zhody.
-- Upwork/freelance: `ok`; viac nových Worldwide WordPress/WooCommerce hitov, ale hard-dev/value/competition mismatch.
+- Upwork/freelance: `ok`; viac čerstvých Worldwide WordPress/WooCommerce hitov, ale hard-dev/value/experience mismatch.
 - Reddit/komunity: `limited`; bez nového konkrétneho hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 13:00
+### Audit počty 14:17
 - source families reálne skontrolované: **11**
 - z toho mimo Profesia: **10**
-- relevantné/semirelevantné kandidáty: **8**
+- relevantné/semirelevantné freelance kandidáty: **10**
 - pridané do LIVE: **0**
 - nové unique verification kandidáty: **0**
-- vyradené/pozdržané: Lidl tovarové účtovanie — plynulá AJ/DE; DAŇOVÁ SOVA — B1–B2 + 990 EUR; Upwork — hard-dev/value/competition; LinkedIn support — language/skill scope; ďalšie bez vhodnej delty
+- vyradené/pozdržané: Upwork — hard development, expert experience/portfolio, micro-budget alebo slabší value/competition fit; ostatné families bez vhodnej delty
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
 
@@ -181,12 +180,14 @@ Aktualizované: 4. 9. 2026 13:00 CEST
 - Search-index evidence expiry TTL.
 - Tool-gap confidence matrix for admin SaaS roles.
 - Freelance client-hire saturation penalty.
-- **Fluency-vs-functional-language hard-gate parser** — rozlišovať formulácie `plynule`, `komunikatívne`, `výhodou` a CEFR úroveň; zabráni tomu, aby administratívne roly s explicitnou plynulosťou prešli len preto, že presná CEFR úroveň chýba.
-- **Canonical job-board freshness reconciliation** — pri rovnakom kandidátovi porovnať dátum originálnej firemnej kariéry a job-boardu a freshness pripísať iba primárnemu zdroju; znižuje falošné „nové“ hity a duplicitné rechecky.
+- Fluency-vs-functional-language hard-gate parser.
+- Canonical job-board freshness reconciliation.
+- **Portfolio-proof readiness matcher** — pri freelance/WordPress ponukách automaticky porovnať požadované dôkazy (`Elementor portfolio`, konkrétny WooCommerce projekt, live-store maintenance) s reálne dostupnými referenciami ešte pred promotion; zníži čas strávený na ponukách, kde je application friction príliš vysoký.
+- **Live-store change-risk penalty** — pri zákazkách na aktívnom WooCommerce/WordPress webe zvýšiť rizikové skóre, ak klient požaduje template/PHP/CSS zásah bez explicitného stagingu, backupu alebo rollback plánu; uprednostniť bezpečnejšie admin/maintenance zákazky a chrániť úspešnosť realizácie.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: plánovaný audit 13:00; kompletný payload sa musí zachovať vrátane verification queue. Ak konektor neumožní bezpečný replacement, FAIL-CLOSED ponechá posledný validný audit bez poškodenia queue.
-- `job-sources.json`: aktualizácia source poznámok prebehne v tomto behu.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 13:00** s auditom a 2 novými backlog zlepšeniami.
+- `source-audit.json`: **aktualizovaný na 14:17**, verification queue zachovaná.
+- `job-sources.json`: **aktualizovaný na 14:17** podľa skutočne preverených zdrojov.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 14:17** s auditom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index: **nedotknuté / zamknuté**.
