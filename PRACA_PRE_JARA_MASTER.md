@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 4. 9. 2026 10:47 CEST
+Aktualizované: 4. 9. 2026 11:04 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,33 +35,31 @@ Aktualizované: 4. 9. 2026 10:47 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 10:47 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- Upwork: čerstvé Worldwide WooCommerce/WordPress výsledky boli buď už známe (`Data Entry Specialist for WooCommerce`), full-build, hard-development alebo nízkohodnotový micro-gig. `Convert code snippets into WooCommerce plugin` je 20 USD fixed-price a explicitne vyžaduje plugin/Ajax development, preto nejde do LIVE.
-- Kariera.sk: čerstvý Bratislava výsledok MADWIRE `Marketingový manažér / Marketingová manažérka` za 1 700 EUR je lokalitne validný, ale mimo prioritného web/admin/support profilu.
-- Pretlak: čerstvé výsledky sú prevažne social/marketing; bez novej promotion-grade zhody.
-- Profesia, priame company careers, LinkedIn, Worki, Brigada.sk, Kariera.sk, Služby zamestnanosti, Pretlak/WordPress Jobs, Upwork, Reddit a verejná Facebook indexácia boli reálne preverené.
+- Sweep 11:04 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Upwork: verejný index bol reálne preverený. Nový `Remote Social Media Publishing Assistant` je síce remote a entry-level, ale explicitne povoľuje iba US/UK/DE/CH/FR, preto je `reject-distance`/country-ineligible pre Slovensko. Ostatné čerstvé výsledky smerujú najmä do hard developmentu alebo nesedia profilom.
+- Reddit/komunity: verejný hiring index bol reálne preverený; dostupné hity sú prevažne hard software-development alebo `FOR HIRE` self-promo, nie vhodný nový dopyt.
+- Profesia, priame company careers, LinkedIn, Worki, Brigada.sk, Kariera.sk, Pretlak/StartupJobs, Upwork, Reddit a verejná Facebook indexácia boli reálne vyhľadané v tomto behu; Google index pri viacerých slovenských jobboardoch vrátil bez použiteľného čerstvého hitu.
 - Facebook: **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 4. 9. 2026 10:47
+## Source audit — 4. 9. 2026 11:04
 - Profesia: `checked`; bez novej promotion-grade LIVE delty.
 - Priame company careers: `checked`; bez novej promotion-grade delty.
 - LinkedIn Jobs: `limited`; verejná indexácia bez novej bezpečnej LIVE delty.
 - Worki.sk: `checked`; bez novej promotion-grade delty.
 - Brigada.sk: `checked`; bez novej LIVE delty.
-- Kariera.sk: `ok`; čerstvý lokálny marketing hit, ale mimo prioritného profilu.
-- Pretlak / WordPress Jobs: `ok`; čerstvé výsledky prevažne social/marketing, WordPress Jobs bez promotion-grade hitu.
-- Upwork/freelance: `ok`; 7 relevantných/semirelevantných WooCommerce/WordPress hitov, 0 LIVE promotion; jeden známy duplicate verification lead a viac hard-dev/full-build/low-value výsledkov.
-- Služby zamestnanosti: `checked`; bez novej vhodnej BA/remote delty.
-- Reddit/komunity: `limited`; bez nového konkrétneho hiring dopytu.
+- Kariera.sk: `checked`; bez novej priority delty.
+- Pretlak / StartupJobs: `checked`; bez novej promotion-grade zhody.
+- Upwork/freelance: `ok`; čerstvý remote publishing assistant bol country-restricted mimo Slovenska; ďalšie výsledky boli hard-dev/general alebo nevhodné.
+- Reddit/komunity: `limited`; bez nového konkrétneho vhodného hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 10:47
-- source families reálne skontrolované: **11**
-- z toho mimo Profesia: **10**
-- relevantné/semirelevantné kandidáty: **10**
+### Audit počty 11:04
+- source families reálne skontrolované: **10**
+- z toho mimo Profesia: **9**
+- relevantné/semirelevantné kandidáty: **2**
 - pridané do LIVE: **0**
 - nové unique verification položky: **0**
-- vyradené/pozdržané: 1 duplicate verification lead; viac Upwork full-build/hard-dev/low-value výsledkov; 1 Kariera marketing mismatch; Pretlak social/marketing mimo priority
+- vyradené/pozdržané: 1 remote country-restricted mimo Slovenska; 1 community hard-development hiring mismatch; ďalšie indexované výsledky bez vhodnej delty
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
 
@@ -172,12 +170,14 @@ Aktualizované: 4. 9. 2026 10:47 CEST
 - Verification family anti-starvation quota.
 - Mirror-to-canonical live membership check.
 - Role-family credential prefilter for government feeds.
-- **Proposal-volume saturation curve** — pri freelance ponukách modelovať prudký pokles očakávanej návratnosti po 20–50/50+ proposals namiesto jedného statického competition mínusu; pomôže prioritizovať čerstvé zákazky, kde má reakcia ešte reálnu šancu.
-- **Employer response-channel friction tracker** — evidovať, či reakcia ide priamo e-mailom/formulárom, cez jobboard alebo cez platformu s kreditmi/connects a podľa toho upraviť akčnú prioritu; šetrí čas a náklady pri podobne kvalitných ponukách.
+- Proposal-volume saturation curve.
+- Employer response-channel friction tracker.
+- **Country-restriction prefilter before remote scoring** — remote ponuky s explicitným zoznamom povolených krajín vyradiť ešte pred rankingom; zabráni falošne vysokému score pri ponuke, ktorá zo Slovenska nie je dostupná.
+- **Search-index evidence expiry TTL** — pri výsledkoch získaných iba cez verejný search index evidovať čas dôkazu a po krátkom TTL vyžadovať opätovné overenie canonical detailu; zníži resurfacing stale alebo geograficky nesprávnych hitov.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla unique promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: **aktualizovaný na 10:47**, verification queue zachovaná a nový audit pravdivo zapísaný.
-- `job-sources.json`: **aktualizovaný na 10:47** s pravdivými source notes a coverage.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 10:47** s reálnym auditom a 2 novými backlog zlepšeniami.
+- `source-audit.json`: **zápis 11:04 nebol vykonaný**, pretože GitHub connector vracia veľký audit payload truncovane a writer vyžaduje kompletný replacement; existujúcu verification queue som podľa FAIL-CLOSED neriskoval poškodiť. Posledný bezpečne zapísaný audit ostáva 10:47.
+- `job-sources.json`: bez bezpečnej zmeny v tomto behu; register ostáva na 10:47, pretože writer vyžaduje kompletný replacement jednoradového JSON payloadu.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 11:04** s reálnym auditom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index: **nedotknuté / zamknuté**.
