@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 4. 9. 2026 22:01 CEST
+Aktualizované: 4. 9. 2026 23:02 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,36 +35,37 @@ Aktualizované: 4. 9. 2026 22:01 CEST
 - Autoritatívny feed má **49 LIVE položiek**.
 - LIVE mix: **Profesia 24/49 = 49,0 %**, mimo Profesia **25/49 = 51,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-04T16:16:38+02:00**.
-- Sweep 22:01 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Sweep 23:02 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
 
-### Čerstvé zistenia 22:01
-- **Upwork – Virtual Assistant – Operations & Campaign Support**: Worldwide remote, 5–7 USD/h, menej než 30 h/týždeň. Obsahovo admin/operations fit, ale vyžaduje strong written/spoken English a dostupnosť počas U.S. working hours; bez promotion.
-- **Upwork – Digital Marketing Virtual Assistant**: Worldwide remote, čerstvý remote admin/CRM/email-marketing scope, ale explicitne excellent written/verbal English a 2+ roky praxe; bez promotion.
-- **Upwork – WordPress / Elementor Web Designer & Support Specialist**: Worldwide remote, WordPress maintenance/support/troubleshooting, ale hard support scope zahŕňa hosting, DNS, caching, emergency tickets a vyššiu samostatnosť; bez promotion.
-- **Upwork – WordPress & Shopify VA/Web Developer**: Worldwide remote, ale 8 h denne / 6 dní týždenne, good written/verbal English a HTML/CSS/Shopify požiadavky pri iba 100 USD fixed; value/workload gate.
-- **Reddit**: verejné výsledky sú prevažne `FOR HIRE` WordPress/WooCommerce self-promo, nie hiring dopyty.
+### Čerstvé zistenia 23:02
+- **Roche – Technical Support Specialist (Slovak & Czech language), Bratislava**: lokácia prechádza a technický support je relevantný smer, ale rola je v skutočnosti engineering/application consultancy pre IVD diagnostiku. Vyžaduje technické/IT/biochemické/lab vzdelanie alebo ekvivalent a angličtinu na medzinárodné tréningy a technické fóra. Bez promotion.
+- **Lenovo – SSG Customer Experience Specialist, Bratislava / hybrid**: zaujímavý prienik onboarding + troubleshooting + AI/LLM workflow automation, ale vyžaduje 2–5 rokov customer onboarding/customer success/support praxe, prezentácie a demá zákazníkom. Bez promotion.
+- **Upwork – Full-Time Virtual Assistant, Operations**: Worldwide remote, e-commerce operations/order processing/customer-service support, ale požaduje strong written English a fixný režim 12 hodín denne, 6 dní týždenne; workload gate.
+- **Upwork – Senior WordPress Developer (Elementor Expert)**: Worldwide remote, ale expert/3+ roky + Elementor Pro/ACF/light PHP/CSS a iba 5 USD fixed-price; budget/skill mismatch.
+- **Pretlak – ui42 PPC / Stretchfit Creative Strategist**: Bratislava, ale mid/senior performance-marketing/creative scope mimo cieľového profilu.
+- **Reddit**: verejný výsledok je znovu `FOR HIRE` WordPress/WooCommerce self-promo, nie hiring dopyt.
 - **Facebook**: **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 4. 9. 2026 22:01
+## Source audit — 4. 9. 2026 23:02
 - source families reálne skontrolované: **11**
 - mimo Profesia: **10**
 - Profesia: `checked`; bez novej promotion-grade delty.
-- Priame company careers: `checked`; Alza/Telekom discovery bez novej unique promotion-grade delty.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez promotion delty.
+- Priame company careers: `checked`; bez novej unique promotion-grade delty.
+- LinkedIn Jobs: `limited`; Roche/Lenovo preverení, bez LIVE promotion pre qualification/experience burden.
 - Worki.sk: `checked`; bez novej vhodnej delty.
 - Brigada.sk: `checked`; bez novej vhodnej priority delty.
-- Kariera.sk: `checked`; bez novej bezpečnej promotion-grade zhody.
-- Pretlak + StartupJobs: `checked`; bez promotion-grade zhody.
-- Upwork/freelance: `ok`; viac remote výsledkov, 0 LIVE promotion pre language/workload/budget/hard-scope riziká.
+- Práca za rohom/Kariera.sk: `checked`; bez novej bezpečnej promotion-grade zhody.
+- Pretlak + StartupJobs: `checked`; nové výsledky mimo cieľového skill profilu alebo už vo verification.
+- Upwork/freelance: `ok`; čerstvé výsledky, 0 LIVE promotion pre workload/budget/language/hard-scope riziká.
 - Reddit/komunity: `limited`; bez nového konkrétneho hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 22:01
+### Audit počty 23:02
 - pridané do LIVE: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 49 položiek
 - Facebook verified hits: **0**
-- Upwork relevantné hity: **8**, LIVE promotion **0**
-- vyradené/karanténa: jazyk/workload **4**, nízky budget/value **2**, hard scope **1**, duplicita/resurfacing **1**, lokalita **0**
+- nové relevantné kandidátske signály: LinkedIn **2**, Upwork **2**, Pretlak **2**; LIVE promotion **0**
+- vyradené/karanténa: qualification/language **1**, experience/presentation burden **1**, workload/language **1**, budget/hard-scope **1**, skill-profile mismatch **2**
 - verification queue: **56** položiek; bez automatického mazania
 
 ## Rozvojový backlog
@@ -118,90 +119,5 @@ Aktualizované: 4. 9. 2026 22:01 CEST
 - Qualification-stack penalty.
 - Freelance mandatory-tool gap matrix.
 - Client-view staleness penalty.
-- Audit payload sharding / append-only run ledger.
-- Language-risk reason normalization.
-- Unknown-effort fixed-price gate.
-- Fresh-post low-budget escalation guard.
-- Canonical careers evergreen-age detector.
-- Shift-window burden score.
-- Driver credential hard-gate extractor.
-- Cross-border route burden score.
-- Hiring-intent classifier for communities.
-- Freshness evidence confidence gate.
-- Existing-site maintenance preference boost.
-- Source-result semantic locality validator.
-- Source-family query coverage heatmap.
-- Verification queue recheck budget allocator.
-- Search-result location contradiction quarantine.
-- Freelance scope-to-budget unit estimator.
-- Client hiring-volume anomaly detector.
-- Microtask detail-insufficiency quarantine.
-- Required-proof inventory matcher.
-- Freelance client-response velocity signal.
-- Shift-language compound-risk gate.
-- Freelance budget-scope contradiction detector.
-- Verification evidence age bands.
-- Source-family no-delta rotation planner.
-- Student-only contract eligibility gate.
-- Same-day shift expiration gate.
-- Search-family negative-result confidence.
-- Driver-role taxonomy hard gate.
-- Language-index false-positive verifier.
-- Role-title vs duty mismatch detector.
-- Remote-proof extractor for nationwide gigs.
-- Micro-gig contactability score.
-- Salary/unit anomaly detector.
-- Original-publish vs refreshed-date normalizer.
-- Known-lead resurfacing suppressor.
-- Freelance hard-dev/value compound gate.
-- Long-term micro-budget contradiction gate.
-- Search-crawl freshness verifier.
-- Canonical freshness resolver pre resurfaced Profesia výsledky.
-- Inactive canonical suppressor.
-- Primary-source recency override.
-- Freelance duplicate-scope cluster suppressor.
-- Unspecified-language-level verifier.
-- Admin-role hidden-physical-duty detector.
-- Verified-zero reason taxonomy.
-- Source-status hysteresis.
-- Remote country-acceptance verifier.
-- Requirement-burden compound score.
-- Verification queue evidence completeness score.
-- Freelance micro-budget auto-quarantine threshold.
-- Seasonal start-distance penalty.
-- Seniority-scope mismatch classifier.
-- Canonical deactivation tombstone ledger.
-- Verification family anti-starvation quota.
-- Mirror-to-canonical live membership check.
-- Role-family credential prefilter for government feeds.
-- Proposal-volume saturation curve.
-- Employer response-channel friction tracker.
-- Country-restriction prefilter before remote scoring.
-- Search-index evidence expiry TTL.
-- Tool-gap confidence matrix for admin SaaS roles.
-- Freelance client-hire saturation penalty.
-- Fluency-vs-functional-language hard-gate parser.
-- Canonical job-board freshness reconciliation.
-- Portfolio-proof readiness matcher.
-- Live-store change-risk penalty.
-- Domain-product-knowledge hard/soft gate classifier.
-- Commission-dependent income reliability score.
-- Outbound-sales quota/KPI burden extractor.
-- Portal-UI locale isolation.
-- Excessive-workload hard gate.
-- Same-day detail verification budget.
-- Canonical-detail field delta watcher.
-- Contact-path validity verifier.
-- Freelance payment-verification trust signal.
-- Ultra-new client account quarantine.
-- Mandatory application-artifact readiness score.
-- Full-time monthly-budget hourly-equivalent sanity gate.
-- **U.S.-hours overlap feasibility score** — pri remote ponukách oddeliť všeobecný timezone overlap od explicitnej dostupnosti v U.S. working hours; pri A2 angličtine a rodinnom režime penalizovať leady, ktoré vyžadujú pravidelnú večernú/nočnú dostupnosť, aj keď sú formálne Worldwide remote.
-- **Support escalation depth classifier** — rozlíšiť bežnú WordPress administráciu od rolí, kde sa očakáva samostatná diagnostika DNS/hostingu/cache/production incidentov a 15-minútové emergency SLA; vyššia technická hĺbka automaticky zníži ranking bez toho, aby sa celá WordPress kategória nesprávne zahodila.
-
-## Stav ochrany / zápisu
-- `jobs-data.json`: bez zmeny; **49 LIVE položiek bezpečne zachovaných**. `jobs-data.updatedAt` sa zámerne neposunul.
-- `job-sources.json`: **aktualizovaný na 22:01** po reálnom source sweep-e.
-- `source-audit.json`: **aktualizovaný na 22:01**, verification queue fail-closed zachovaná.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 22:01** vrátane 2 nových backlog zlepšení.
-- `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index: **nedotknuté / zamknuté**.
+- **Implicit workplace-language risk detector** — z EMEA/global scope, anglického detailu, demo/training povinností a customer-facing komunikácie odhadnúť jazykové riziko aj keď inzerát nemá explicitné B1/B2/C1 pole; nikdy z toho nerobiť hard gate bez dôkazu.
+- **Applicant-count × listing-age opportunity decay** — pri verejne dostupnom počte uchádzačov kombinovať vek ponuky a konkurenciu do urgency/ROI skóre, aby sa čas nestrácal na staré silno saturované leady.
