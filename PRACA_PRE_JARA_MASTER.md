@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 4. 9. 2026 03:34 CEST
+Aktualizované: 4. 9. 2026 04:26 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -36,33 +36,37 @@ Aktualizované: 4. 9. 2026 03:34 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 03:34 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- Nový konkrétny lead **Alesa – Office manager/asistent** na Pretlak: Junior, onsite Bratislava, od 1 200 EUR, SŠ s maturitou, vodič B. Angličtina je uvedená ako požiadavka bez CEFR úrovne; zároveň náplň obsahuje aj office-prevádzkové činnosti (návštevy, pošta, kancelária, firemné autá). Preto ide do verification, nie LIVE.
-- Upwork fresh WooCommerce discovery priniesol Basic WooCommerce Website full-build scope; bez promotion pre hard/full-build charakter.
+- Sweep 04:26 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- **Powerlogy – Marketing Specialist** (Pretlak) sa znovu objavil ako BA/hybrid e-shop + WordPress/WooCommerce fit, ale ide o už evidovaný verification lead a požaduje angličtinu na veľmi dobrej úrovni; bez LIVE promotion.
+- Upwork priniesol dve už evidované WooCommerce verification položky a jeden čerstvo indexovaný WordPress result, ktorý je na canonical detaile už neaktívny; bez novej unique verification položky.
+- LinkedIn verejná indexácia priniesla jazykovo nevhodný SupportYourApp remote lead (švédčina + angličtina) a starší neaktívny IT-support výsledok; bez LIVE promotion.
 - Profesia, priame company careers, LinkedIn, Worki, Brigada.sk, Služby zamestnanosti, Kariera.sk, Práca za rohom, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit a verejná Facebook indexácia boli reálne preverené.
-- Facebook verejná indexácia ostáva **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
+- Facebook verejný prístup narazil na login/temporary-block signál: **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 4. 9. 2026 03:34
+## Source audit — 4. 9. 2026 04:26
 - Profesia: `checked`; BA discovery reálne preverené, bez novej promotion-grade delty.
-- Priame company careers: `checked`; Websupport/Alza index reálne preverený, bez novej promotion-grade delty.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez nového konkrétneho promotion-grade hitu.
+- Priame company careers: `checked`; verejné company-career discovery preverené, bez novej promotion-grade delty.
+- LinkedIn Jobs: `limited`; 2 relevantné/indexované výsledky, z toho 1 vyradený pre jazyk a 1 neaktívny.
 - Worki.sk: `checked`; bez novej promotion-grade delty.
 - Brigada.sk: `checked`; bez novej priority delty.
 - Služby zamestnanosti: `checked`; verejný index dostupný, bez nového promotion-grade BA administratívneho/IT-support hitu.
 - Kariera.sk: `checked`; BA admin/support discovery bez novej promotion-grade delty.
 - Práca za rohom / ďalšie SK boardy: `checked`; bez novej promotion-grade delty.
-- Pretlak / StartupJobs / WordPress Jobs: `ok`; **1 nový verification lead** — Alesa Office manager/asistent.
-- Upwork/freelance: `ok`; 1 fresh relevantný result, vyradený pre full-build/hard scope; 0 LIVE promotion.
-- Reddit/komunity: `limited`; verejná indexácia preverená, bez konkrétneho hiring dopytu vhodného na promotion.
-- Facebook public index: `limited`, **0 verified hits**; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom.
+- Pretlak / StartupJobs / WordPress Jobs: `ok`; 1 relevantný resurfaced Powerlogy lead, už vo verification; 0 nových unique verification.
+- Upwork/freelance: `ok`; 3 relevantné/indexované výsledky, 2 už evidované vo verification a 1 canonical neaktívny; 0 LIVE promotion.
+- Reddit/komunity: `limited`; verejná indexácia preverená, zachytený for-hire/self-promo obsah, nie nový hiring dopyt.
+- Facebook public index: `limited`, **0 verified hits**; login/temporary-block signál, žiadny konkrétny verejne overiteľný hiring post s priamym linkom.
 
-### Audit počty 03:34
+### Audit počty 04:26
 - source families reálne skontrolované: **12**
 - z toho mimo Profesia: **11**
-- nové relevantné kandidáty: **2**
+- relevantné/resurfaced kandidáty skontrolované: **6**
 - pridané do LIVE: **0**
-- nové verification položky: **1**
-- vyradené/pozdržané pre jazyk/skill/scope: **2**
+- nové unique verification položky: **0**
+- vyradené pre neaktivitu: **2**
+- vyradené/pozdržané pre jazyk: **1**
+- duplicitné/resurfaced už evidované: **3**
+- vyradené pre lokalitu: **0**
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
 
@@ -161,10 +165,12 @@ Aktualizované: 4. 9. 2026 03:34 CEST
 - Freelance duplicate-scope cluster suppressor.
 - **Unspecified-language-level verifier** — ak ponuka vyžaduje cudzí jazyk bez CEFR úrovne, dohľadať canonical/company detail alebo kontakt a nepovýšiť do LIVE, kým sa nepotvrdí A2/B1 kompatibilita.
 - **Admin-role hidden-physical-duty detector** — pri office/admin rolách samostatne skórovať upratovanie, občerstvenie, pochôdzky, starostlivosť o autá a inú prevádzkovú záťaž, aby titul Office Manager nepreceňoval reálny back-office fit.
+- **Verified-zero reason taxonomy** — pri nulových výsledkoch ukladať `true-zero` / `index-limited` / `login-blocked` / `query-noise` / `inactive-only`, aby nulový výsledok niesol aj kvalitu dôkazu.
+- **Source-status hysteresis** — pri návrate zdroja z `limited/blocked` na `checked/ok` vyžadovať opakovaný úspešný verejný read a evidovať `last-good`, aby Source Radar neflappoval pri dočasných anti-bot blokoch.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: **aktualizovaný na 03:34**, verification queue zachovaná a rozšírená o Alesa lead; nový audit pravdivo eviduje reálne kontrolované source families a 0 LIVE delta.
-- `job-sources.json`: **aktualizovaný na 03:34** s pravdivými freshness/status poznámkami.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 03:34** s reálnym auditom a 2 novými backlog zlepšeniami.
+- `source-audit.json`: **aktualizovaný na 04:26**, verification queue zachovaná na 48 položkách; nový audit pravdivo eviduje 12 reálne kontrolovaných source families a 0 LIVE delta.
+- `job-sources.json`: **aktualizovaný na 04:26** s pravdivými freshness/status poznámkami vrátane Facebook temporary-block stavu.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 04:26** s reálnym auditom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
