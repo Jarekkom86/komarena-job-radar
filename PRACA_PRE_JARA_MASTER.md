@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 00:17 CEST
+Aktualizované: 5. 9. 2026 01:13 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,39 +35,41 @@ Aktualizované: 5. 9. 2026 00:17 CEST
 - Autoritatívny feed má **49 LIVE položiek**.
 - LIVE mix: **Profesia 24/49 = 49,0 %**, mimo Profesia **25/49 = 51,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-04T16:16:38+02:00**.
-- Sweep 00:17 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Sweep 01:13 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
 
-### Čerstvé zistenia 00:17
-- **Upwork – Data Entry Specialist for WooCommerce**: Worldwide remote, WooCommerce produktové dáta, Excel/CSV, SKU/kategórie, AI-generated descriptions a image filename workflow. Kandidát už je vo verification queue; bez LIVE promotion pre fixných 35 USD, 20–50 proposals a neznámy počet produktov/odhad hodín.
-- **Upwork – WooCommerce Developer Needed to Improve Product Page Layout**: Worldwide remote, 60 USD fixed, Intermediate, 10–15 proposals. Scope je existujúca produktová stránka, responsive/CSS/HTML/WooCommerce customization a testovanie checkout/cart funkčnosti. Nepovýšené pre nový klientský účet bez verejnej histórie, technický customization burden a nízky fixed budget.
-- **Upwork – Wordpress developer, ongoing wordpress support**: Worldwide remote, 1 000 USD fixed, ale Expert/complex project a 50+ proposals; bez promotion.
-- **Práca za rohom – Laminam, Obchodný/á a administratívny/a asistent/ka**: Bratislava-Podunajské Biskupice, od 1 500 EUR, voľné víkendy a zaškolenie; obsahovo dobrý admin/customer-service fit, ale vyžaduje komunikatívnu angličtinu a maďarčinu na stredne pokročilej úrovni. Bez promotion pre compound language gate.
-- **Práca za rohom – BODHI part-time**: Bratislava, 8–12 EUR/h, e-shop objednávky/expedícia/sklad/reklamácie, ale verejný detail uvádza stredne pokročilú angličtinu, nemčinu aj maďarčinu. Bez promotion.
-- **LinkedIn/Reddit/Facebook**: verejná indexácia preverená; bez novej bezpečnej promotion-grade delty. Facebook ostáva **0 verified hits / limited**.
+### Čerstvé zistenia 01:13
+- **Upwork – Full-Time Virtual Assistant, Operations**: Worldwide remote a obsahovo relevantný e-commerce operations/customer-service scope (objednávky, fulfillment, data entry, ticket handling), ale požaduje **12 hodín denne, 6 dní v týždni**, strong written English, Expert level a má 20–50 proposals. Bez promotion pre neprimeraný workload + language gate.
+- **Upwork – Senior WordPress Developer (Elementor Expert)**: Worldwide remote, part-time/long-term deklarácia, ale Expert level, 3+ rokov WP/Elementor Pro, ACF/custom CSS/light PHP a iba **5 USD fixed-price**. Bez promotion.
+- **Upwork – Experienced WordPress Developer Needed**: Worldwide remote, ale custom theme + plugin development, PHP/JS a iba **20 USD fixed-price**. Hard-development mismatch + nízka odmena.
+- **LinkedIn/Twine – Freelance Web Developer – Restaurant Site Maintenance**: remote EEA, ale web je custom-built (nie WordPress/Shopify), požaduje bespoke-system bug fixing a e-commerce flow troubleshooting. Bez promotion pre hard-development mismatch.
+- **Reddit WordPress hiring**: konkrétne verejne overiteľné hiring posty boli US-only alebo Pakistan-only; podľa hard lokalitného gate vyradené.
+- **Facebook public index**: preverený; **0 verified hits / limited**.
 
-## Source audit — 5. 9. 2026 00:17
-- source families reálne skontrolované: **11**
-- mimo Profesia: **10**
+## Source audit — 5. 9. 2026 01:13
+- source families reálne skontrolované: **10**
+- mimo Profesia: **9**
 - Profesia: `checked`; bez novej promotion-grade delty.
-- Priame company careers: `checked`; bez novej unique promotion-grade delty.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez novej bezpečnej zhody.
+- Priame company careers: `checked`; Slovak Telekom preverený, bez novej unique promotion-grade delty.
+- LinkedIn Jobs: `limited`; Twine lead zachytený, ale hard-development mismatch; ďalšie výsledky boli staré/no longer accepting.
 - Worki.sk: `checked`; bez novej vhodnej delty.
 - Brigada.sk: `checked`; bez novej vhodnej priority delty.
-- Práca za rohom: `ok/checked`; nové BA admin kandidáty Laminam a BODHI zachytené, ale vyradené pre jazykový hard gate.
-- Pretlak + StartupJobs: `checked`; bez novej vhodnej promotion-grade zhody.
-- Upwork/freelance: `ok`; čerstvé Worldwide remote výsledky preverené, 0 LIVE promotion pre competition/budget/client-trust/scope riziká.
-- Reddit/komunity: `limited`; bez vhodného hiring dopytu vykonateľného zo Slovenska.
+- Práca za rohom: `checked`; bez novej promotion-grade delty.
+- Pretlak/tech-creative: `checked`; bez novej vhodnej promotion-grade zhody.
+- Upwork/freelance: `ok`; čerstvé Worldwide remote výsledky preverené, 0 LIVE promotion pre workload/language/skill/budget riziká.
+- Reddit/komunity: `limited`; overené hiring výsledky boli country-restricted mimo Slovenska.
 - Facebook public index: `limited`, **0 verified hits**.
-- Kariera/Zoznam: `checked`; bez novej bezpečnej promotion-grade delty.
 
-### Audit počty 00:17
+### Audit počty 01:13
 - pridané do LIVE: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 49 položiek
 - Facebook verified hits: **0**
-- nové relevantné kandidátske signály: Práca za rohom **2**, Upwork **3**; LIVE promotion **0**
-- vyradené/karanténa: compound language gate **2**, fixed-price/client-trust/scope **2**, expert+competition **1**
-- verification queue: zachovaná; WooCommerce Data Entry už bola evidovaná, bez duplicitného pridania.
-- `source-audit.json`: v tomto behu nebol prepísaný, pretože konektor umožňuje iba kompletný replacement veľkého súboru; pri nulovej LIVE delte a bez novej queue položky bol zvolený FAIL-CLOSED postup bez rizika straty existujúcej verification queue. `job-sources.json` a MASTER obsahujú čerstvý audit 00:17.
+- Upwork relevantné čerstvé signály: **8**, LIVE promotion **0**
+- LinkedIn relevantné signály: **1**, LIVE promotion **0**
+- Reddit konkrétne hiring signály: **2**, oba reject-country/location
+- verification queue: **57**, fail-closed zachovaná bez novej queue položky
+- `source-audit.json`: aktualizovaný na 01:13 so zachovaním celej verification queue.
+- `job-sources.json`: aktualizovaný na 01:13.
+- `jobs-data.json`: bez obsahovej zmeny, pretože nevznikla bezpečná nová LIVE promotion.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -124,5 +126,7 @@ Aktualizované: 5. 9. 2026 00:17 CEST
 - Applicant-count × listing-age opportunity decay.
 - Skill-burden × compensation frontier.
 - Remote-label contradiction extractor.
-- **Compound-language hard-gate detector** — pri ponuke s dvoma alebo viacerými povinnými cudzími jazykmi kombinovať jednotlivé language penalties do jedného tvrdého gate; zabrániť tomu, aby obsahovo atraktívna admin/e-shop rola prešla iba preto, že každý jazyk bol hodnotený izolovane.
-- **New-client fixed-price risk × effort gate** — pri freelance zákazkách s novým/neovereným klientom kombinovať account age, spend/hire history, fixed budget, počet proposals a odhad scope hodín; nízky budget + nový klient + technický zásah do live e-shopu automaticky držať vo verification, nie LIVE.
+- Compound-language hard-gate detector.
+- New-client fixed-price risk × effort gate.
+- **Workload sustainability gate** — extrahovať požadované hodiny/deň, dni/týždeň, nočné/časové prekryvy a povinnú online dostupnosť; role typu 12 h/deň × 6 dní/týždeň automaticky penalizovať alebo karantenizovať bez ohľadu na obsahový fit.
+- **Effective hourly compensation normalizer** — pri fixed-price/mesačných freelance ponukách kombinovať deklarovaný workload, minimálnu dostupnosť a odhadovaný rozsah na efektívnu hodinovú odmenu; odhaliť ponuky, ktoré vyzerajú atraktívne fixnou sumou, ale po prepočte padajú pod minimálnu ekonomickú hranicu.
