@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 4. 9. 2026 14:17 CEST
+Aktualizované: 4. 9. 2026 16:35 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -32,40 +32,46 @@ Aktualizované: 4. 9. 2026 14:17 CEST
 - Agregátor/repost nesmie prebiť priamy firemný zdroj.
 
 ## Aktuálny stav LIVE
-- Autoritatívny feed má aktuálne **48 LIVE položiek**.
-- LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
-- `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 14:17 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- Upwork: čerstvý `WooCommerce Developer Needed to Improve Product Page Layout` je Worldwide remote, ale požaduje proven WooCommerce, silné HTML/CSS, template/CSS úpravy a bezpečný zásah do aktívneho store; ide skôr o development-heavy technickú zákazku než admin/maintenance fit.
-- Upwork: `Senior WordPress Developer (Elementor Expert)` je Worldwide remote a čerstvý, ale Expert scope vyžaduje 3+ roky, deep Elementor Pro, ACF/light PHP/CSS, Core Web Vitals a portfólio; uvedený 5 USD fixed-price je placeholder/micro-budget a nevytvára dôveryhodný promotion-grade value signal.
-- Ďalšie Upwork WordPress/WooCommerce hity boli full-build/plugin/hard-dev alebo nízky value/competition fit.
-- Profesia/Worki/Brigada/Kariera/Práca za rohom/company careers/LinkedIn: reálne preverené; bez novej vhodnej promotion-grade BA/remote delty.
-- Pretlak/StartupJobs/WordPress Jobs: tech/creative discovery preverené; bez promotion-grade zhody.
-- Reddit/komunity: verejná WordPress/forhire indexácia bez konkrétneho vhodného čerstvého hiring dopytu.
+- Autoritatívny feed má **49 LIVE položiek**.
+- LIVE mix: **Profesia 24/49 = 49,0 %**, mimo Profesia **25/49 = 51,0 %**.
+- `jobs-data.json.updatedAt`: **2026-09-04T16:16:38+02:00** — posledná reálna LIVE promotion bola Slovak Telekom 496939.
+- Sweep 16:35 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+
+### Najlepší nový verification kandidát — Trenujeme.sk
+- `Predajca na predajni a e-commerce asistent Trenujeme Bratislava`, Račianska 31, Bratislava.
+- Presný pozitívny jazykový fit: **AJ A2**.
+- Veľmi relevantné úlohy: spracovanie objednávok, produktové texty a produkty v e-shope, administrácia e-shopu, reklamácie/výmeny, sklad, expedícia a zákaznícka komunikácia.
+- Forma: part-time / dohoda / živnosť, približne 60–120 h mesačne; 6,60 EUR/h + provízie, živnosť 8 EUR/h + provízie.
+- Dôvod, prečo nie je LIVE: nízky fix a výrazný doménový hard/soft burden — predaj bicyklov a športového sortimentu, základná montáž/servis bicykla, aktívny vzťah k cyklistike a ochota pracovať aj v sobotu.
+- Stav: `verification-domain-skill-low-fix`, `locationEligibility: ba-area`, provisional score 89.
+
+### Ďalšie čerstvé zistenia
+- 3MON Office Manager / Executive Support: Bratislava, 1 650 EUR, silná e-shop/admin náplň, ale canonical detail uvádza **B2 AJ a 3 roky praxe** — verification, nie LIVE.
+- Služby zamestnanosti: čerstvý sklad Podunajské Biskupice 1 031 EUR a ďalšie BA ponuky sú fyzické alebo nižšie prioritné.
+- Upwork: Data Entry Specialist for WooCommerce ostáva relevantný verification kandidát; ďalšie čerstvé hity boli prevažne custom dev/plugin/full-build alebo slabší ROI.
 - Facebook: **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 4. 9. 2026 14:17
-- Profesia: `checked`; bez novej promotion-grade LIVE delty.
-- Priame company careers: `checked`; bez novej vhodnej delty.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez vhodnej promotion delty.
-- Worki.sk: `checked`; bez novej priority delty.
-- Brigada.sk: `checked`; bez novej priority delty.
-- Kariera.sk / Práca za rohom: `checked`; bez novej promotion-grade delty.
-- Služby zamestnanosti: `checked`; bez novej vhodnej BA/remote delty.
+## Source audit — 4. 9. 2026 16:35
+- source families reálne skontrolované: **11**
+- mimo Profesia: **10**
+- Profesia: `ok`; Trenujeme nový verification kandidát, bez LIVE promotion.
+- Priame company careers: `checked`; Telekom 496939 už je LIVE, bez unique delty.
+- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez promotion delty.
+- Worki.sk: `checked`; bez novej vhodnej priority delty.
+- Brigada.sk: `checked`; bez novej vhodnej priority delty.
+- Kariera.sk / Práca za rohom: `ok`; 3MON a ďalšie BA office hity, ale bez LIVE promotion.
+- Služby zamestnanosti: `checked`; bez novej vhodnej promotion-grade delty.
 - Pretlak / StartupJobs / WordPress Jobs: `checked`; bez promotion-grade zhody.
-- Upwork/freelance: `ok`; viac čerstvých Worldwide WordPress/WooCommerce hitov, ale hard-dev/value/experience mismatch.
-- Reddit/komunity: `limited`; bez nového konkrétneho hiring dopytu.
+- Upwork/freelance: `ok`; viac čerstvých WordPress/WooCommerce hitov, bez novej LIVE promotion.
+- Reddit/komunity: `limited`; viditeľný WordPress dopyt bez dostatočného remote/location proof.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 14:17
-- source families reálne skontrolované: **11**
-- z toho mimo Profesia: **10**
-- relevantné/semirelevantné freelance kandidáty: **10**
+### Audit počty 16:35
 - pridané do LIVE: **0**
-- nové unique verification kandidáty: **0**
-- vyradené/pozdržané: Upwork — hard development, expert experience/portfolio, micro-budget alebo slabší value/competition fit; ostatné families bez vhodnej delty
+- nové unique verification kandidáty: **1** — Trenujeme.sk
+- LIVE feed delta: **0**; fail-closed zachovanie 49 položiek
 - Facebook verified hits: **0**
-- LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
+- verification queue: **51** položiek
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -182,12 +188,14 @@ Aktualizované: 4. 9. 2026 14:17 CEST
 - Freelance client-hire saturation penalty.
 - Fluency-vs-functional-language hard-gate parser.
 - Canonical job-board freshness reconciliation.
-- **Portfolio-proof readiness matcher** — pri freelance/WordPress ponukách automaticky porovnať požadované dôkazy (`Elementor portfolio`, konkrétny WooCommerce projekt, live-store maintenance) s reálne dostupnými referenciami ešte pred promotion; zníži čas strávený na ponukách, kde je application friction príliš vysoký.
-- **Live-store change-risk penalty** — pri zákazkách na aktívnom WooCommerce/WordPress webe zvýšiť rizikové skóre, ak klient požaduje template/PHP/CSS zásah bez explicitného stagingu, backupu alebo rollback plánu; uprednostniť bezpečnejšie admin/maintenance zákazky a chrániť úspešnosť realizácie.
+- Portfolio-proof readiness matcher.
+- Live-store change-risk penalty.
+- **Domain-product-knowledge hard/soft gate classifier** — odlíši všeobecný e-commerce/admin fit od rolí, kde úspech reálne stojí na špecifickej produktovej expertíze (napr. cyklistika, servis bicykla, odborný sortiment), aby vysoká zhoda názvu neprebila skrytý doménový mismatch.
+- **Commission-dependent income reliability score** — pri part-time/predajných rolách oddeliť garantovaný fix od provízií, historických maxím a podmienok ich získania; ranking bude pracovať s konzervatívnym garantovaným príjmom a bonus iba ako sekundárny upside.
 
 ## Stav ochrany / zápisu
-- `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: **aktualizovaný na 14:17**, verification queue zachovaná.
-- `job-sources.json`: **aktualizovaný na 14:17** podľa skutočne preverených zdrojov.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 14:17** s auditom a 2 novými backlog zlepšeniami.
+- `jobs-data.json`: bez zmeny; **49 LIVE položiek bezpečne zachovaných**. `jobs-data.updatedAt` sa zámerne neposunul.
+- `source-audit.json`: **aktualizovaný na 16:35**, verification queue zachovaná a rozšírená o 1 unique kandidáta.
+- `job-sources.json`: **aktualizovaný na 16:35** podľa skutočne preverených zdrojov.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 16:35** s auditom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index: **nedotknuté / zamknuté**.
