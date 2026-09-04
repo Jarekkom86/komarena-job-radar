@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 4. 9. 2026 05:24 CEST
+Aktualizované: 4. 9. 2026 06:20 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,35 +35,34 @@ Aktualizované: 4. 9. 2026 05:24 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 05:24 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- Upwork `Website & SEO Management 2026` je Worldwide remote, 15–30 USD/h, <30 h/týždeň a 6+ mesiacov, ale ide o už evidovaný verification lead. Vyžaduje WooCommerce výsledky, SEO, Helium 10/Seller Central, týždenný reporting a 15-minútový Loom audit; bez novej LIVE promotion.
-- Ďalšie čerstvo indexované Upwork WordPress/WooCommerce výsledky sú full-build alebo nízkorozpočtové a neprešli skill/value gate.
-- Worki a Kariera BA discovery boli reálne preverené; bez novej promotion-grade delty.
-- Profesia, priame company careers, LinkedIn, Worki, Brigada.sk, Služby zamestnanosti, Kariera.sk, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit a verejná Facebook indexácia boli reálne preverené.
-- Reddit verejný index priniesol iba `FOR HIRE` self-promo, nie konkrétny hiring dopyt.
+- Sweep 06:20 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Upwork `Data Entry Specialist for WooCommerce` je Worldwide remote a obsahovo veľmi dobrý fit: Excel/CSV, ceny, kategórie, SKU, AI-generated descriptions a príprava názvov obrázkov. Je však už evidovaný vo verification queue; 35 USD fixed-price, nejasný počet produktov/odhad hodín a 20–50 proposals znamenajú low-value/unknown-effort, preto bez LIVE promotion.
+- Upwork `Convert code snippets into WooCommerce plugin` (20 USD) a `Trustpilot integration` (10 USD) sú technicky príliš dev/API-heavy a zároveň hodnotovo slabé; nepridávať len kvôli source mixu.
+- Kariera.sk priniesla `Administrátor/ka korporátnej agendy` v Bratislave, ale AJ C1/C2 + VŠ I. stupňa + minimálne 2 roky relevantnej praxe sú hard mismatch.
+- Profesia, priame company careers, LinkedIn, Worki, Brigada.sk, Služby zamestnanosti, Kariera.sk, Práca za rohom, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit a verejná Facebook indexácia boli reálne preverené.
 - Facebook: **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 4. 9. 2026 05:24
+## Source audit — 4. 9. 2026 06:20
 - Profesia: `checked`; BA discovery bez novej promotion-grade delty.
-- Priame company careers: `checked`; bez novej promotion-grade delty; DHL BA HR Operations canonical je už closed.
+- Priame company careers: `checked`; bez novej promotion-grade delty.
 - LinkedIn Jobs: `limited`; verejná indexácia bez nového hard-gate-pass kandidáta.
 - Worki.sk: `checked`; BA/okolie discovery preverené, bez novej promotion-grade delty.
 - Brigada.sk: `checked`; bez novej priority delty.
 - Služby zamestnanosti: `checked`; bez nového promotion-grade BA administratívneho/IT-support hitu.
-- Kariera.sk: `checked`; BA admin discovery dostupná, bez novej promotion-grade delty.
+- Kariera.sk: `ok`; Bolder corporate admin overený, ale vyradený pre AJ C1/C2 + kvalifikáciu/prax; ďalšie výsledky bez LIVE delty.
 - Pretlak / StartupJobs / WordPress Jobs: `checked`; bez novej unique promotion-grade delty.
-- Upwork/freelance: `ok`; relevantný WooCommerce maintenance hit je resurfaced verification; ďalšie výsledky neprešli scope/value gate.
-- Reddit/komunity: `limited`; verejný index obsahuje self-promo/for-hire, nie konkrétny hiring dopyt.
+- Upwork/freelance: `ok`; 7 relevantných/semirelevantných výsledkov, 0 LIVE, 3 duplicity/resurfaced; nové výsledky prevažne hard-dev/full-build/low-value.
+- Reddit/komunity: `limited`; bez konkrétneho nového hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**; žiadny konkrétny verejný hiring post s priamym linkom.
-- Práca za rohom / ďalšie SK job-board discovery: `checked`; bez novej promotion-grade delty.
+- Práca za rohom / ďalšie SK job-board discovery: `checked`; bez novej unique promotion-grade delty.
 
-### Audit počty 05:24
+### Audit počty 06:20
 - source families reálne skontrolované: **12**
 - z toho mimo Profesia: **11**
 - pridané do LIVE: **0**
 - nové unique verification položky: **0**
-- vyradené/pozdržané pre scope/value/skill: **viacero resurfaced alebo weak-fit výsledkov**
-- vyradené pre lokalitu: **0 nových promotion kandidátov**
+- verification queue: **49** zachovaných položiek
+- vyradené/pozdržané pre scope/value/skill/jazyk/duplicitu: viacero čerstvých alebo resurfaced výsledkov
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
 
@@ -164,12 +163,14 @@ Aktualizované: 4. 9. 2026 05:24 CEST
 - Admin-role hidden-physical-duty detector.
 - Verified-zero reason taxonomy.
 - Source-status hysteresis.
-- **Remote country-acceptance verifier** — pri `Worldwide`/remote ponukách explicitne kontrolovať country exclusions, time-zone obmedzenia, payroll/contractor eligibility a povinnú lokálnu entitu pred `remote-ok` promotion.
-- **Requirement-burden compound score** — kombinovať počet povinných nástrojov, portfolio/proof task, interview/video požiadavky, komunikáciu a reporting do jedného friction skóre; vysoké friction bez adekvátnej odmeny držať vo verification.
+- Remote country-acceptance verifier.
+- Requirement-burden compound score.
+- **Verification queue evidence completeness score** — každému pending kandidátovi vypočítať, ktoré promotion-critical polia ešte chýbajú (pay, language level, canonical freshness, remote proof, effort/volume, client eligibility) a prioritne recheckovať položky, kde chýba iba jeden rozhodujúci dôkaz.
+- **Freelance micro-budget auto-quarantine threshold** — fixed-price WordPress/WooCommerce/API zákazky pod dynamickým minimom automaticky držať mimo LIVE, ak obsahujú custom development alebo nejasný rozsah; minimum odvodiť od odhadovaného effortu, nie iba nominálnej ceny.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: aktuálny bezpečne zapísaný JSON audit zostáva 04:26; beh 05:24 je pravdivo zdokumentovaný v MASTERi. Kompletný replacement verification queue nebol vykonaný bez bezpečného patch mechanizmu.
-- `job-sources.json`: bez štrukturálnej zmeny; register zdrojov zostáva platný, čerstvý audit je v tomto MASTERi.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 05:24** s reálnym auditom a 2 novými backlog zlepšeniami.
+- `source-audit.json`: **aktualizovaný na 06:20**, verification queue zachovaná na 49 položkách.
+- `job-sources.json`: **aktualizovaný na 06:20** s pravdivými source notes/status metadata.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 06:20** s reálnym auditom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
