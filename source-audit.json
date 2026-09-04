@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-04T07:18:27+02:00",
+  "updatedAt": "2026-09-04T08:55:00+02:00",
   "runSummary": {
-    "familiesChecked": 12,
+    "familiesChecked": 10,
     "newActiveJobs": 0,
     "significantPendingCandidates": 49,
     "significantlyChangedPriorityJobs": 0,
@@ -11,21 +11,19 @@
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "fresh-no-live-delta",
     "liveFeedCount": 48,
-    "note": "Audit 4.9.2026 o 07:18 reálne preveril 12 source families pre Bratislavu/okolie a vhodný remote. Nevznikla promotion-grade LIVE delta. Verejný LinkedIn priniesol sezónnu H&M Bory Mall stock brigádu až na december, čo je časovo vzdialený a rankingovo slabý lead. Práca za rohom priniesla DATALAN Product Manager pre MDM v Petržalke, ale ide o seniornejší product/MDM scope mimo prioritného profilu. Upwork WooCommerce výsledky boli prevažne už evidované vo verification alebo hard-dev/full-build/low-value. jobs-data.json ostal fail-closed na 48 validných položkách bez umelého posunu updatedAt."
+    "note": "Audit 4.9.2026 o 08:55 reálne preveril 10 source families pre Bratislavu/okolie a vhodný remote. Nevznikla promotion-grade LIVE delta. Worki výsledok Technik kamerových systémov Bratislava bol na canonical detaile označený ako obsadený/odstránený, preto bol vyradený ako inactive. Upwork WooCommerce discovery priniesla prevažne hard-dev/full-build výsledky alebo už evidovaný E-commerce VA lead. LinkedIn verejná indexácia vracala staré/neaktívne alebo vzdialené výsledky. Facebook zostáva 0 verified hits / limited. jobs-data.json ostal fail-closed na 48 validných položkách bez umelého posunu updatedAt."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"BA WordPress/WooCommerce/admin/support/driver discovery reálne preverená 4.9.2026 07:18; bez novej promotion-grade delty."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Priame career discovery reálne preverené 4.9.2026 07:18; bez novej promotion-grade delty."},
-    {"name":"LinkedIn Jobs / company posts","family":"linkedin","status":"limited","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Verejná LinkedIn indexácia preverená 4.9.2026 07:18. H&M Bory Mall stock brigáda je Bratislava, ale až december a nízka ranking priorita; bez LIVE promotion. Coverage bez loginu limited."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Worki BA/okolie discovery reálne preverené 4.9.2026 07:18; bez novej promotion-grade delty."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Brigada.sk discovery reálne preverená 4.9.2026 07:18; bez novej priority delty."},
-    {"name":"Služby zamestnanosti","family":"government-jobs","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Verejný štátny portál preverený 4.9.2026 07:18; bez nového promotion-grade BA admin/IT-support hitu."},
-    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Tech/creative discovery reálne preverená 4.9.2026 07:18; bez novej unique promotion-grade delty."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":6,"added":0,"rejectedLanguage":1,"rejectedInactive":0,"rejectedDuplicate":3,"rejectedLocation":1,"verificationAdded":0,"note":"Worldwide WooCommerce/WordPress discovery preverená. E-commerce VA Subscriptions/Xero a existing-site specialist sú už evidované; UK-only admin bol location reject, full-time developer/hard-dev výsledky sú skill mismatch. Bez LIVE promotion."},
-    {"name":"Verejné komunity / Reddit","family":"communities","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Verejná hiring indexácia preverená 4.9.2026 07:18; bez konkrétneho nového hiring dopytu. Coverage limited."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"zeroReason":"index-limited","note":"Verejná Facebook indexácia preverená 4.9.2026 07:18; bez konkrétneho verejne overiteľného hiring postu s priamym linkom. 0 verified hits; coverage limited."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"BA admin/support discovery reálne preverená 4.9.2026 07:18; bez novej unique promotion-grade delty."},
-    {"name":"Práca za rohom / ďalšie SK job-board discovery","family":"sk-jobboards-extra","status":"ok","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Práca za rohom BA discovery reálne preverená; DATALAN Product Manager pre MDM v Petržalke je lokálny, ale seniornejší product/MDM scope a nie prioritný fit, preto bez LIVE promotion."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"BA WordPress/WooCommerce/admin/support/driver discovery reálne preverená 4.9.2026 08:55; bez novej promotion-grade delty."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Priame company-career discovery reálne preverené 4.9.2026 08:55; bez novej promotion-grade delty."},
+    {"name":"LinkedIn Jobs / company posts","family":"linkedin","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":2,"rejectedDuplicate":0,"rejectedLocation":1,"verificationAdded":0,"note":"Verejná LinkedIn indexácia preverená 4.9.2026 08:55; nájdené výsledky boli staré/neaktívne alebo mimo lokalitného gate (napr. Košice). Coverage bez loginu limited."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":1,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Worki BA discovery reálne preverené. Technik kamerových systémov – Bratislava mal canonical detail 'ponuka už bola obsadená alebo zrušená'; 0 LIVE."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Brigada.sk BA discovery reálne preverená 4.9.2026 08:55; bez novej priority delty."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"BA admin/support/e-shop discovery reálne preverená 4.9.2026 08:55; bez novej unique promotion-grade delty."},
+    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Tech/creative discovery reálne preverená 4.9.2026 08:55; bez novej unique promotion-grade delty."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":3,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":2,"rejectedLocation":0,"verificationAdded":0,"note":"Worldwide WooCommerce/WordPress discovery preverená. E-commerce VA Subscriptions/Xero už je evidovaný vo verification; ďalšie čerstvé výsledky boli prevažne hard-dev/full-build/expert scope. Bez LIVE promotion."},
+    {"name":"Verejné komunity / Reddit","family":"communities","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Verejná WordPress/WooCommerce hiring indexácia preverená 4.9.2026 08:55; bez konkrétneho nového hiring dopytu. Coverage limited."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"zeroReason":"index-limited","note":"Verejná Facebook indexácia preverená 4.9.2026 08:55; bez konkrétneho verejne overiteľného hiring postu s priamym linkom. 0 verified hits; coverage limited."}
   ],
   "verificationQueue": [
     {"id":"pretlak-alesa-office-manager-assistant-20260902","title":"Office manager/asistent","company":"Alesa s. r. o.","status":"verification-language-level-hidden-ops-load","provisionalScore":87,"pay":"od 1 200 EUR/mes.","locationEligibility":"ba-area","locationReason":"Pretlak uvádza Onsite, Bratislava; lokálna BA pozícia bez vzdialeného dochádzania.","url":"https://pretlak.com/job/alesa-s-r-o/office-managerasistent/M-lP1LtnA"},
@@ -83,9 +81,9 @@
     "jobsData":"unchanged-no-promotion-grade-delta",
     "jobsDataNonProf":"unchanged-locked-bootstrap; last content update 2026-09-03T16:14:25+02:00",
     "sourceAudit":"updated-after-real-source-check",
-    "jobSources":"updated-audit-metadata",
+    "jobSources":"pending-same-run-update",
     "master":"pending-same-run-update",
     "lockedFilesTouched":false,
-    "note":"LIVE primary feed ostal fail-closed na 48 položkách. jobs-data.updatedAt sa neposunul, pretože nevznikla reálna LIVE content delta. Audit freshness je doložená source-audit.updatedAt 2026-09-04T07:18:27+02:00."
+    "note":"LIVE primary feed ostal fail-closed na 48 položkách. jobs-data.updatedAt sa neposunul, pretože nevznikla reálna LIVE content delta. Audit freshness je doložená source-audit.updatedAt 2026-09-04T08:55:00+02:00."
   }
 }
