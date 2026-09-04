@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 4. 9. 2026 01:26 CEST
+Aktualizované: 4. 9. 2026 02:21 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -36,33 +36,32 @@ Aktualizované: 4. 9. 2026 01:26 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 01:26 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- Fresh Upwork discovery našlo nový `WordPress + WooCommerce Developer` Worldwide remote hit, ale ide o komplexný/long-term scope za iba **5 USD fixed-price** pri 20–50 proposals. Bol vyradený ako low-value a nepridaný do LIVE ani notification priority.
-- Ďalšie čerstvé Upwork výsledky (`Data Entry Specialist for WooCommerce`, product-image catalog, Shoptimizer builder, full website design/development) sú už známe verification typy alebo hard-dev/full-build scope; bez LIVE promotion.
-- Služby zamestnanosti boli reálne preverené; verejný index dostupný, bez nového promotion-grade BA administratívneho/IT-support hitu.
+- Sweep 02:21 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Priame company careers boli reálne preverené cez Websupport a Slovak Telekom. Websupport Customer Success Advisor je už vo verification; nové Telekom výsledky sú skôr hard-dev/špecializované alebo sales, bez novej vhodnej LIVE promotion.
+- Upwork discovery zachytil WooCommerce/Data Entry/Product Image/Shoptimizer a ďalšie výsledky, ale relevantné typy sú už vo verification alebo ide o full-build/custom plugin/hard-dev scope. 0 LIVE promotion.
+- Worki, Brigada.sk, Služby zamestnanosti, Pretlak/StartupJobs/WordPress Jobs, LinkedIn, Reddit a verejná Facebook indexácia boli reálne preverené.
 - Facebook verejná indexácia ostáva **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 4. 9. 2026 01:26
-- Profesia: `checked`; BA WordPress/WooCommerce/admin/support/driver discovery reálne preverené, bez novej promotion-grade delty.
-- Priame company careers: `checked`; BA/remote discovery reálne preverené, bez novej promotion-grade delty.
+## Source audit — 4. 9. 2026 02:21
+- Profesia: `checked`; BA discovery reálne preverené, bez novej promotion-grade delty.
+- Priame company careers: `checked`; Websupport + Slovak Telekom reálne preverené, bez novej promotion-grade delty.
 - LinkedIn Jobs: `limited`; verejná indexácia preverená, bez nového konkrétneho promotion-grade hitu.
-- Worki.sk: `checked`; discovery preverená, bez nového promotion-grade hitu.
-- Brigada.sk: `checked`; discovery preverená, bez nového promotion-grade hitu; Arduino/RS485 zostáva existujúci verification lead.
-- Kariera.sk/Zoznam: `checked`; BA admin/support/logistika discovery preverená, bez novej promotion-grade delty.
-- Služby zamestnanosti: `checked`; verejný index dostupný, bez nového promotion-grade kandidáta v tomto sweep-e.
+- Worki.sk: `ok`; Šamorín/BA okolie prinieslo technický nákupca/technik výsledky, ale bez dostatočne silného overeného fitu na LIVE promotion.
+- Brigada.sk: `checked`; bez novej priority delty; Arduino/RS485 zostáva existujúci verification lead.
+- Služby zamestnanosti: `checked`; verejný index dostupný, bez nového promotion-grade BA administratívneho/IT-support hitu.
 - Pretlak / StartupJobs / WordPress Jobs: `checked`; bez nového konkrétneho promotion-grade hitu.
-- Upwork/freelance: `ok`; čerstvé Worldwide WordPress/WooCommerce výsledky, ale nový 5 USD fixed-price long-term hit je ekonomicky nevhodný; ostatné boli hard-development, full-build alebo známe verification typy; 0 LIVE promotion.
+- Upwork/freelance: `ok`; 7 relevantných/near-relevant výsledkov, ale 3 už známe typy, 3 hard-dev/full-build a 1 value/scope mismatch; 0 LIVE promotion.
 - Reddit/komunity: `limited`; verejná indexácia preverená, bez konkrétneho hiring dopytu vhodného na promotion.
 - Facebook public index: `limited`, **0 verified hits**; nebol nájdený konkrétny verejne overiteľný hiring post s priamym linkom.
-- Ďalšia slovenská job-board discovery vetva bola preverená cez Kariera/Worki/Brigada + štátny portál; mirror výsledky sa nepočítali ako nezávislé hity.
+- Ďalšie SK discovery: Worki + Brigada + štátny portál; mirror výsledky sa nepočítali ako nezávislé hity.
 
-### Audit počty 01:26
-- source families reálne skontrolované: **12**
-- z toho mimo Profesia: **11**
-- nové/revalidované relevantné kandidáty: **9+**
+### Audit počty 02:21
+- source families reálne skontrolované: **11**
+- z toho mimo Profesia: **10**
+- nové/revalidované relevantné kandidáty: **14+**
 - pridané do LIVE: **0**
 - nové verification položky: **0**
-- vyradené/pozdržané pre jazyk/skill/value/lokalitu/duplicitu: **9+**
+- vyradené/pozdržané pre jazyk/skill/value/lokalitu/duplicitu: **14+**
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
 
@@ -153,12 +152,16 @@ Aktualizované: 4. 9. 2026 01:26 CEST
 - Original-publish vs refreshed-date normalizer.
 - Known-lead resurfacing suppressor.
 - Freelance hard-dev/value compound gate.
-- **Long-term micro-budget contradiction gate** — ak inzerát deklaruje ongoing/long-term/complex project, ale fixed-price rozpočet je mikrohodnota, automaticky ho označiť ako ekonomicky nekonzistentný a nevkladať do LIVE ani notification priority.
-- **Search-crawl freshness verifier** — oddeliť `postedAt` od dátumu crawl/index refresh; čerstvý crawl bez čerstvého publikovania nesmie zvýšiť `<24h` prioritu ani vytvoriť falošnú novú deltu.
+- Long-term micro-budget contradiction gate.
+- Search-crawl freshness verifier.
+- Canonical freshness resolver pre resurfaced Profesia výsledky.
+- Inactive canonical suppressor.
+- **Primary-source recency override** — pri priamom firemnom career detaile s aktívnym formulárom alebo explicitne otvorenou pozíciou nesmie starý crawl/index dátum znížiť freshness pod úroveň aktuálne potvrdeného canonical stavu.
+- **Freelance duplicate-scope cluster suppressor** — zhlukovať veľmi podobné Upwork/WooCommerce výsledky podľa scope, budgetu a client/project fingerprintu, aby resurfacing a varianty rovnakého typu nezahlcovali verification queue ani audit počty.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: zápis auditu 01:26 je **technicky blokovaný full-replacement požiadavkou konektora pri veľkej verification queue**; existujúca queue ostala nedotknutá, posledný bezpečne zapísaný audit ostáva 00:32. Audit 01:26 je pravdivo zdokumentovaný v tomto MASTERi a `job-sources.json`.
-- `job-sources.json`: **aktualizovaný na 01:26** s pravdivými freshness/status poznámkami.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 01:26** s reálnym auditom a 2 novými backlog zlepšeniami.
+- `source-audit.json`: **aktualizovaný na 02:21**, verification queue zachovaná; nový audit pravdivo eviduje reálne kontrolované source families a 0 LIVE delta.
+- `job-sources.json`: **aktualizovaný na 02:21** s pravdivými freshness/status poznámkami.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 02:21** s reálnym auditom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
