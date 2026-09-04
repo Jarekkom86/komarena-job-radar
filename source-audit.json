@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-04T15:15:22+02:00",
+  "updatedAt": "2026-09-04T16:16:38+02:00",
   "runSummary": {
-    "familiesChecked": 11,
-    "newActiveJobs": 0,
+    "familiesChecked": 13,
+    "newActiveJobs": 1,
     "significantPendingCandidates": 50,
     "significantlyChangedPriorityJobs": 0,
-    "jobsDataContentUpdatedAt": "2026-09-03T02:15:13+02:00",
+    "jobsDataContentUpdatedAt": "2026-09-04T16:16:38+02:00",
     "jobsDataNonProfContentUpdatedAt": "2026-09-03T16:14:25+02:00",
     "freshnessSlaMinutes": 60,
-    "freshnessStatus": "fresh-no-live-delta",
-    "liveFeedCount": 48,
-    "note": "Audit 4.9.2026 o 15:15 reálne preveril 11 source families pre Bratislavu/okolie a vhodný remote. Nevznikla promotion-grade LIVE delta. Čerstvé BA výsledky z Brigada/Kariera boli prevažne nízko platené, študentské alebo fyzicky nevhodné; Upwork/WordPress discovery priniesol najmä hard-dev/full-build alebo slabý value fit. Profesia, priame careers, LinkedIn, Worki, Brigada, Kariera/Práca za rohom, Pretlak/StartupJobs/WordPress Jobs, Upwork, Služby zamestnanosti, Reddit a Facebook public index boli preverené; LinkedIn/Reddit/Facebook coverage zostáva limited. jobs-data.json ostal fail-closed na 48 validných položkách bez umelého posunu updatedAt."
+    "freshnessStatus": "fresh-live-delta",
+    "liveFeedCount": 49,
+    "note": "Audit 4.9.2026 o 16:16 reálne preveril BA/okolie a vhodný remote naprieč Profesia/company careers, Worki, Kariera, Pretlak, StartupJobs, WordPress Jobs, Upwork, Brigada.sk, LinkedIn public index, Služby zamestnanosti, Reddit a Facebook public index. Slovak Telekom pozícia 496939 bola znovu kanonicky overená na priamom firemnom zdroji a po deduplikácii promovovaná do LIVE. Ostatné čerstvé výsledky boli slabší fit, študentské/fyzické, hard-dev, regionálne obmedzené alebo bez dostatočnej promotion istoty."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"BA WordPress/WooCommerce/admin/support/driver discovery preverená 4.9.2026 15:15; bez novej promotion-grade delty."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Priame company-career discovery preverené 4.9.2026 15:15; bez novej promotion-grade delty."},
-    {"name":"LinkedIn Jobs / company posts","family":"linkedin","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Verejná LinkedIn indexácia preverená 4.9.2026 15:15; bez novej vhodnej promotion-grade delty. Coverage bez loginu limited."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Worki discovery preverené 4.9.2026 15:15; bez novej promotion-grade BA/remote delty."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":2,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Brigada.sk BA discovery preverená 4.9.2026 15:15. Nové indexované hity boli vodič detského vláčika za 6 EUR/h netto (študentská dohoda) a manipulačný pracovník 8 EUR/h s výraznou fyzickou záťažou; bez priority promotion."},
-    {"name":"Kariera.sk / Práca za rohom","family":"kariera","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Kariera/Práca za rohom BA discovery preverená 4.9.2026 15:15; bez novej promotion-grade delty."},
-    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Tech/creative discovery preverená 4.9.2026 15:15; bez nového promotion-grade hitu."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":8,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Worldwide WordPress/WooCommerce discovery preverená 4.9.2026 15:15. Čerstvé výsledky boli prevažne full-build/developer scope alebo nízka fixed-price hodnota; bez LIVE promotion."},
-    {"name":"Služby zamestnanosti","family":"government","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Verejný pracovný feed preverený 4.9.2026 15:15; bez novej vhodnej BA/remote LIVE delty."},
-    {"name":"Verejné komunity / Reddit","family":"communities","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Verejná WordPress/forhire hiring indexácia preverená 4.9.2026 15:15; bez nového konkrétneho vhodného hiring dopytu. Coverage limited."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"zeroReason":"index-limited","note":"Verejná Facebook indexácia preverená 4.9.2026 15:15; bez konkrétneho verejne overiteľného hiring postu s priamym linkom. 0 verified hits; coverage limited."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"BA WordPress/WooCommerce/admin/support/driver discovery preverená 4.9.2026 16:16; bez ďalšej promotion-grade delty."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":1,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Slovak Telekom 496939 kanonicky potvrdený: Bratislava/čiastočný HO, od 1 300 EUR + 23 % VZM, Back Office/B2B support, bez viditeľného cudzojazyčného alebo kvalifikačného hard gate; promovované do LIVE."},
+    {"name":"LinkedIn Jobs / company posts","family":"linkedin","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Verejná LinkedIn indexácia preverená 4.9.2026 16:16; bez novej vhodnej promotion-grade delty. Coverage bez loginu limited."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Bratislavský kraj preverený 4.9.2026 16:16; bez novej promotion-grade BA/remote delty."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":3,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"BA/okolie preverené 4.9.2026 16:16. Čerstvé hity boli najmä študentské, nízko platené alebo fyzické; napr. vodič detského vláčika 6 EUR/h netto iba pre študentov a skladová kompletizácia v Lozorne 6.50 EUR/h."},
+    {"name":"Kariera.sk / Práca za rohom","family":"kariera","status":"checked","hits":2,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Kariera preverená 4.9.2026 16:16. Administratívny pracovník Pezinok 990 EUR a ďalšie čerstvé výsledky neprebili existujúce priority; bez novej LIVE promotion."},
+    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Tech/creative a remote discovery preverené 4.9.2026 16:16; bez nového promotion-grade hitu."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":9,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":1,"rejectedLocation":0,"verificationAdded":0,"note":"WooCommerce/WordPress/VA discovery preverená 4.9.2026 16:16. WooCommerce Subscriptions VA je už známy verification kandidát; ďalšie čerstvé hity sú prevažne expert/hard-dev/full-build alebo slabší ROI."},
+    {"name":"Služby zamestnanosti","family":"government","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Verejný pracovný feed a vyhľadávanie preverené 4.9.2026 16:16; bez novej vhodnej BA/remote LIVE delty."},
+    {"name":"Verejné komunity / Reddit","family":"communities","status":"limited","hits":2,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":2,"verificationAdded":0,"note":"Reddit WordPress hiring preverený 4.9.2026 16:16; čerstvé/viditeľné developer ponuky boli US-only alebo Philippines-only a hard-dev, preto reject-distance/country restriction. Coverage limited."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"zeroReason":"index-limited","note":"Verejná Facebook indexácia preverená 4.9.2026 16:16; bez konkrétneho verejne overiteľného hiring postu s priamym linkom. 0 verified hits; coverage limited."}
   ],
   "verificationQueue": [
     {"id":"pretlak-alesa-office-manager-assistant-20260902","title":"Office manager/asistent","company":"Alesa s. r. o.","status":"verification-language-level-hidden-ops-load","provisionalScore":87,"pay":"od 1 200 EUR/mes.","locationEligibility":"ba-area","locationReason":"Pretlak uvádza Onsite, Bratislava; lokálna BA pozícia bez vzdialeného dochádzania.","url":"https://pretlak.com/job/alesa-s-r-o/office-managerasistent/M-lP1LtnA"},
@@ -78,12 +78,12 @@
     {"id":"upwork-existing-site-improvements-seo-2095474350880996227","title":"Web Developer Needed – Existing Website Improvements, Landing Pages & SEO","company":"Upwork client – Serbia","status":"verification-no-rate-competition-platform-scope","provisionalScore":87,"pay":"hourly – rate not public","locationEligibility":"remote-ok","locationReason":"Upwork canonical uvádza Worldwide + Remote Job, menej než 30 h/týždeň, 1–3 mesiace. Scope je existujúci web, landing pages, UX, GA4, Google Ads tracking, basic on-page SEO, page speed a fixes; chýba verejná sadzba a už je 20–50 proposals.","url":"https://www.upwork.com/freelance-jobs/apply/Web-Developer-Needed-Existing-Website-Improvements-Landing-Pages-SEO_~022095474350880996227/"},
     {"id":"foxelli-customer-support-sales-agent-20260904","title":"Customer Support & Sales Agent | E-commerce | Remote","company":"Foxelli Group","status":"verification-low-pay-phone-sales-language","provisionalScore":84,"pay":"up to 800 EUR after taxes / full-time freelance","locationEligibility":"remote-ok","locationReason":"Foxelli canonical careers uvádza 100 % remote, Slovensko medzi oprávnenými krajinami a minimálne 5 hodín prekryvu s EET pracovným časom. Silný e-commerce/support fit, ale full-time odmena do 800 EUR netto, phone/chat/email + upsell scope a anglické pracovné prostredie výrazne znižujú praktickú prioritu.","url":"https://jobs.ashbyhq.com/foxelligroup/1c05611a-1337-4c82-9ed8-88a859c47086"}
   ],
-  "liveMix": {"liveFeedCount":48,"profesiaCount":24,"profesiaPct":50.0,"nonProfesiaCount":24,"nonProfesiaPct":50.0},
+  "liveMix": {"liveFeedCount":49,"profesiaCount":24,"profesiaPct":49.0,"nonProfesiaCount":25,"nonProfesiaPct":51.0},
   "writeStatus": {
-    "jobsData":"unchanged-no-promotion-grade-delta",
+    "jobsData":"updated-real-live-promotion",
     "jobsDataNonProf":"unchanged-locked-bootstrap; last content update 2026-09-03T16:14:25+02:00",
     "sourceAudit":"updated-after-real-source-check",
     "lockedFilesTouched":false,
-    "note":"LIVE primary feed ostal fail-closed na 48 položkách. jobs-data.updatedAt sa neposunul, pretože nevznikla reálna LIVE content delta. Audit freshness je doložená source-audit.updatedAt 2026-09-04T15:15:22+02:00. Verification queue bola zachovaná."
+    "note":"LIVE primary feed má 49 položiek. jobs-data.updatedAt bol posunutý iba kvôli reálnej promotion Slovak Telekom 496939. Verification queue bola zachovaná. Audit freshness je doložená source-audit.updatedAt 2026-09-04T16:16:38+02:00."
   }
 }
