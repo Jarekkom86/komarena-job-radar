@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 4. 9. 2026 07:18 CEST
+Aktualizované: 4. 9. 2026 08:55 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,35 +35,33 @@ Aktualizované: 4. 9. 2026 07:18 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 07:18 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- LinkedIn verejný index priniesol `Brigádnik/Brigádnička práca s tovarom v mesiaci december, Bratislava, Bory Mall` pre H&M. Lokalita prechádza, ale nástup je až v decembri a ide o skladovo-retail brigádu nízko v rankingu; bez LIVE promotion.
-- Práca za rohom priniesla `Product Manager pre vývoj MDM riešenia (m/ž)` pre DATALAN v Petržalke. Lokalita prechádza, ale ide o seniornejší product/MDM scope, nie prioritný web/admin/support profil; bez LIVE promotion.
-- Upwork `E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero` je stále Worldwide remote, 10–15 USD/h a obsahovo relevantný, ale už je vo verification a vyžaduje good written English, WooCommerce Subscriptions, Meta Ads a Xero; bez promotion.
-- Upwork fresh výsledky `Full-Time WordPress & WooCommerce Developer` a ďalšie build/dev zadania boli hard-dev/full-time/full-build mismatch; UK-only admin bol vyradený lokalitne.
-- Profesia, priame company careers, LinkedIn, Worki, Brigada.sk, Služby zamestnanosti, Kariera.sk, Práca za rohom, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit a verejná Facebook indexácia boli reálne preverené.
+- Sweep 08:55 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Worki prinieslo `Technik kamerových systémov – Bratislava`, ale canonical detail priamo uvádza, že ponuka už bola obsadená alebo zrušená; preto 0 LIVE a `rejectedInactive: 1`.
+- Upwork WooCommerce discovery obsahuje stále `E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero`, ktorý je už vo verification; nové WooCommerce výsledky boli prevažne expert/hard-dev/full-build scope a neprešli rankingom.
+- LinkedIn verejný index v tomto behu vracal staré/neaktívne alebo mimo-BA výsledky; nič neprešlo hard gate.
+- Profesia, priame company careers, LinkedIn, Worki, Brigada.sk, Kariera.sk, Pretlak/WordPress Jobs, Upwork, Reddit a verejná Facebook indexácia boli reálne preverené.
+- Práca za rohom, Služby zamestnanosti a StartupJobs sa v tomto konkrétnom behu neoznačujú ako skontrolované; ich posledný overený audit ostáva 07:18.
 - Facebook: **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 4. 9. 2026 07:18
+## Source audit — 4. 9. 2026 08:55
 - Profesia: `checked`; BA discovery bez novej promotion-grade delty.
 - Priame company careers: `checked`; bez novej promotion-grade delty.
-- LinkedIn Jobs: `limited`; 1 lokálny sezónny H&M výsledok, ale december + nízky ranking; 0 LIVE.
-- Worki.sk: `checked`; BA/okolie discovery preverené, bez novej promotion-grade delty.
+- LinkedIn Jobs: `limited`; verejná indexácia priniesla iba staré/neaktívne alebo vzdialené výsledky; 0 LIVE.
+- Worki.sk: `checked`; 1 hit, canonical detail obsadený/zrušený; 0 LIVE.
 - Brigada.sk: `checked`; bez novej priority delty.
-- Služby zamestnanosti: `checked`; bez nového promotion-grade BA administratívneho/IT-support hitu.
 - Kariera.sk: `checked`; bez novej unique promotion-grade delty.
-- Pretlak / StartupJobs / WordPress Jobs: `checked`; bez novej unique promotion-grade delty.
-- Upwork/freelance: `ok`; 6 relevantných/semirelevantných výsledkov, 0 LIVE, 3 resurfaced/duplicitné; 1 language-heavy a 1 UK-only location reject.
+- Pretlak / WordPress Jobs: `checked`; bez novej unique promotion-grade delty.
+- Upwork/freelance: `ok`; 3 relevantné/semirelevantné výsledky, 0 LIVE; 2 resurfaced/duplicitné a zvyšok hard-dev/full-build/expert scope.
 - Reddit/komunity: `limited`; bez konkrétneho nového hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**; žiadny konkrétny verejný hiring post s priamym linkom.
-- Práca za rohom / ďalšie SK job-board discovery: `ok`; 1 lokálny DATALAN MDM product hit, ale seniornejší scope; 0 LIVE.
 
-### Audit počty 07:18
-- source families reálne skontrolované: **12**
-- z toho mimo Profesia: **11**
+### Audit počty 08:55
+- source families reálne skontrolované: **10**
+- z toho mimo Profesia: **9**
 - pridané do LIVE: **0**
 - nové unique verification položky: **0**
 - verification queue: **49** zachovaných položiek
-- vyradené/pozdržané pre scope/value/skill/jazyk/duplicitu/lokalitu: viacero čerstvých alebo resurfaced výsledkov
+- vyradené/pozdržané: Worki 1 inactive; LinkedIn staré/neaktívne a distance mismatch; Upwork resurfaced/hard-dev scope
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
 
@@ -170,10 +168,12 @@ Aktualizované: 4. 9. 2026 07:18 CEST
 - Freelance micro-budget auto-quarantine threshold.
 - **Seasonal start-distance penalty** — pri brigádach a krátkodobých ponukách penalizovať výsledky, ktorých reálny začiatok je vzdialený o viac týždňov/mesiacov, aby neprebíjali okamžite dostupné príležitosti len kvôli čerstvému indexu.
 - **Seniority-scope mismatch classifier** — odlíšiť názvom lákavé lokálne roly od pozícií, kde duty stack reálne znamená senior product ownership, MDM/enterprise platform management alebo inú zodpovednosť výrazne nad aktuálnym cieľovým profilom.
+- **Canonical deactivation tombstone ledger** — pri canonical stave „obsadené/zrušené“ uložiť dátum a dôkaz deactivation, aby stale index rovnakú ponuku opakovane nevracal do verification a neplytval ďalšími sweepmi.
+- **Verification family anti-starvation quota** — pri 49+ položkovej queue rezervovať recheck kapacitu pre každú source family, aby Upwork/Profesia objemom nevytlačili menšie, ale kvalitné direct/community zdroje.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: **aktualizovaný na 07:18**, verification queue zachovaná na 49 položkách.
-- `job-sources.json`: **aktualizovaný na 07:18** s pravdivými source notes/status metadata.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 07:18** s reálnym auditom a 2 novými backlog zlepšeniami.
+- `source-audit.json`: **aktualizovaný na 08:55**, verification queue zachovaná na 49 položkách.
+- `job-sources.json`: **aktualizovaný na 08:55** s pravdivými source notes/status metadata.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 08:55** s reálnym auditom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
