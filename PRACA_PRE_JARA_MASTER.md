@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 4. 9. 2026 09:27 CEST
+Aktualizované: 4. 9. 2026 10:47 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,37 +35,33 @@ Aktualizované: 4. 9. 2026 09:27 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 09:27 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- Silný resurfaced výsledok `Back Office & Operations Coordinator – e-commerce | Remote` (IZY VAPE CE) bol overený na Práca za rohom aj Profesia: prevažne home office zo Slovenska, e-shop/logistika/reklamácie/AI, 1 600–2 000 EUR. Dedupe kontrola však potvrdila, že položka `izy-vape-backoffice-ops-5348749` už je v LIVE feed-e; nový mirror sa nepridáva.
-- Upwork: nový WooCommerce product-page fix je Worldwide remote, 60 USD fixed-price, 10–15 proposals, ale vyžaduje proven WooCommerce + HTML/CSS a zásah do live shopu; pri rozpočte a scope ostáva mimo LIVE. WooCommerce Data Entry za 35 USD je resurfaced low-value verification lead.
-- Služby zamestnanosti: aktuálne indexované BA vodičské hity boli taxi alebo nákladné vozidlo; nepasujú na vodič B/kuriér bez tachografu.
-- StartupJobs: čerstvý tech/business výsledok 2Bminer je onsite/hybrid Praha, teda `reject-distance` pre BA profil.
-- Reddit priniesol iba čerstvé `FOR HIRE` self-promo príspevky, nie nový hiring dopyt.
-- Profesia, priame company careers, LinkedIn, Worki, Brigada.sk, Práca za rohom, Kariera.sk, Služby zamestnanosti, Pretlak/WordPress Jobs, StartupJobs, Upwork, Reddit a verejná Facebook indexácia boli reálne preverené.
+- Sweep 10:47 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Upwork: čerstvé Worldwide WooCommerce/WordPress výsledky boli buď už známe (`Data Entry Specialist for WooCommerce`), full-build, hard-development alebo nízkohodnotový micro-gig. `Convert code snippets into WooCommerce plugin` je 20 USD fixed-price a explicitne vyžaduje plugin/Ajax development, preto nejde do LIVE.
+- Kariera.sk: čerstvý Bratislava výsledok MADWIRE `Marketingový manažér / Marketingová manažérka` za 1 700 EUR je lokalitne validný, ale mimo prioritného web/admin/support profilu.
+- Pretlak: čerstvé výsledky sú prevažne social/marketing; bez novej promotion-grade zhody.
+- Profesia, priame company careers, LinkedIn, Worki, Brigada.sk, Kariera.sk, Služby zamestnanosti, Pretlak/WordPress Jobs, Upwork, Reddit a verejná Facebook indexácia boli reálne preverené.
 - Facebook: **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 4. 9. 2026 09:27
-- Profesia: `checked`; resurfaced IZY VAPE je už LIVE, 0 nový ingest.
+## Source audit — 4. 9. 2026 10:47
+- Profesia: `checked`; bez novej promotion-grade LIVE delty.
 - Priame company careers: `checked`; bez novej promotion-grade delty.
 - LinkedIn Jobs: `limited`; verejná indexácia bez novej bezpečnej LIVE delty.
 - Worki.sk: `checked`; bez novej promotion-grade delty.
 - Brigada.sk: `checked`; bez novej LIVE delty.
-- Práca za rohom: `ok`; 1 silný e-commerce/remote hit, ale duplicate/mirror už existujúcej LIVE Profesia položky.
-- Kariera.sk: `checked`; bez novej unique promotion-grade delty.
-- Služby zamestnanosti: `checked`; vodičské výsledky taxi/nákladné vozidlo, vyradené pre typ role/credential mismatch.
-- Pretlak / WordPress Jobs: `checked`; bez novej unique promotion-grade delty.
-- StartupJobs: `checked`; čerstvé výsledky mimo lokalitného gate alebo mimo cieľového profilu.
-- Upwork/freelance: `ok`; product-page WooCommerce fix 60 USD / 10–15 proposals a Data Entry WooCommerce 35 USD; 0 LIVE promotion.
-- Reddit/komunity: `limited`; iba FOR HIRE self-promo, bez nového hiring dopytu.
+- Kariera.sk: `ok`; čerstvý lokálny marketing hit, ale mimo prioritného profilu.
+- Pretlak / WordPress Jobs: `ok`; čerstvé výsledky prevažne social/marketing, WordPress Jobs bez promotion-grade hitu.
+- Upwork/freelance: `ok`; 7 relevantných/semirelevantných WooCommerce/WordPress hitov, 0 LIVE promotion; jeden známy duplicate verification lead a viac hard-dev/full-build/low-value výsledkov.
+- Služby zamestnanosti: `checked`; bez novej vhodnej BA/remote delty.
+- Reddit/komunity: `limited`; bez nového konkrétneho hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 09:27
-- source families reálne skontrolované: **13**
-- z toho mimo Profesia: **12**
-- relevantné/semirelevantné kandidáty: **6**
+### Audit počty 10:47
+- source families reálne skontrolované: **11**
+- z toho mimo Profesia: **10**
+- relevantné/semirelevantné kandidáty: **10**
 - pridané do LIVE: **0**
 - nové unique verification položky: **0**
-- vyradené/pozdržané: 1 duplicate/mirror IZY VAPE; 2 Upwork low-value/skill-burden; 2 government driver mismatch; 1 StartupJobs reject-distance
+- vyradené/pozdržané: 1 duplicate verification lead; viac Upwork full-build/hard-dev/low-value výsledkov; 1 Kariera marketing mismatch; Pretlak social/marketing mimo priority
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
 
@@ -174,12 +170,14 @@ Aktualizované: 4. 9. 2026 09:27 CEST
 - Seniority-scope mismatch classifier.
 - Canonical deactivation tombstone ledger.
 - Verification family anti-starvation quota.
-- **Mirror-to-canonical live membership check** — pred každým promotion pokusom overiť nielen URL/title+company, ale aj existujúci LIVE záznam z kvalitnejšieho zdroja; zabráni opakovanému spracovaniu silných mirrorov ako IZY VAPE cez Práca za rohom vs. Profesia.
-- **Role-family credential prefilter for government feeds** — ešte pred detailným rankingom mapovať ISCO/typ vodiča (taxi, nákladné, autobus, kuriér B) na používateľské credential gates, aby Služby zamestnanosti neplytvali recheck budgetom na C/C+E/taxi roly.
+- Mirror-to-canonical live membership check.
+- Role-family credential prefilter for government feeds.
+- **Proposal-volume saturation curve** — pri freelance ponukách modelovať prudký pokles očakávanej návratnosti po 20–50/50+ proposals namiesto jedného statického competition mínusu; pomôže prioritizovať čerstvé zákazky, kde má reakcia ešte reálnu šancu.
+- **Employer response-channel friction tracker** — evidovať, či reakcia ide priamo e-mailom/formulárom, cez jobboard alebo cez platformu s kreditmi/connects a podľa toho upraviť akčnú prioritu; šetrí čas a náklady pri podobne kvalitných ponukách.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla unique promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: posledný bezpečne zapísaný audit zostáva **08:55**; nový 09:27 sweep nebol prepísaný, pretože GitHub contents writer vyžaduje kompletný replacement a aktuálny reader vracia veľký verificationQueue payload truncovane. FAIL-CLOSED zabránil riziku poškodenia 49-položkovej queue.
-- `job-sources.json`: **aktualizovaný na 09:27** s pravdivými source notes a coverage.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 09:27** s reálnym auditom a 2 novými backlog zlepšeniami.
-- `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
+- `source-audit.json`: **aktualizovaný na 10:47**, verification queue zachovaná a nový audit pravdivo zapísaný.
+- `job-sources.json`: **aktualizovaný na 10:47** s pravdivými source notes a coverage.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 10:47** s reálnym auditom a 2 novými backlog zlepšeniami.
+- `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index: **nedotknuté / zamknuté**.
