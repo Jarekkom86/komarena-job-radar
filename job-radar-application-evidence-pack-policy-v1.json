@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "policy": "application-evidence-pack",
+  "version": "1.0.0",
+  "purpose": "Increase application success and reduce preparation time by deriving a compact evidence pack from already verified Job Radar data without changing CRM, UI, scoring, stable IDs, or source records.",
+  "eligibility": {
+    "allowedLocationEligibility": ["ba-area", "remote-ok"],
+    "blockedLocationEligibility": ["unknown", "reject-distance"],
+    "minimumScoreConfidence": 85,
+    "requireActiveStatus": true,
+    "requireCanonicalUrl": true
+  },
+  "output": {
+    "fields": [
+      "jobId",
+      "top3MatchEvidence",
+      "top2RiskEvidence",
+      "requiredProofToMention",
+      "cvEmphasis",
+      "firstContactAngle",
+      "factsNeedingVerification"
+    ],
+    "maxMatchEvidence": 3,
+    "maxRiskEvidence": 2,
+    "noInventedExperience": true,
+    "noAutoSend": true
+  },
+  "evidenceRules": {
+    "useOnlyVerifiedJobFields": true,
+    "preferDirectSourceEvidence": true,
+    "unknownRequirementMustRemainUnknown": true,
+    "hardRequirementGapMustBeExplicit": true,
+    "remoteEligibilityMustNotBeInferredFromTitleAlone": true
+  },
+  "safety": {
+    "mutatesJobsData": false,
+    "mutatesCRM": false,
+    "mutatesUI": false,
+    "mutatesBaseline": false,
+    "preservesStableIds": true,
+    "failClosed": true
+  }
+}
