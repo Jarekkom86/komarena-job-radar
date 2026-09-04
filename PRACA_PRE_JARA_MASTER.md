@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 4. 9. 2026 20:06 CEST
+Aktualizované: 4. 9. 2026 21:38 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,39 +35,39 @@ Aktualizované: 4. 9. 2026 20:06 CEST
 - Autoritatívny feed má **49 LIVE položiek**.
 - LIVE mix: **Profesia 24/49 = 49,0 %**, mimo Profesia **25/49 = 51,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-04T16:16:38+02:00**.
-- Sweep 20:06 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Sweep 21:38 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
 
-### Čerstvé zistenia 20:06
-- **Upwork – Data Management and Virtual Assistant Opportunity**: Worldwide remote, entry-level, 1 000 USD fixed, 5–10 proposals a 0 interviewing. Scope je jednoduchý presun dát zo spreadsheetov do dashboardu s možným pokračovaním na VA, ale klientský účet vznikol 1. 9. 2026 a scope/odmena sú neštandardne nesúmerné; bez ďalšieho trust/payment overenia nejde do LIVE.
-- **Upwork – Full-Time Virtual Assistant, Operations**: Worldwide remote, e-commerce operations/customer tickets/data entry, ale vyžaduje strong written English a extrémny režim 12 h denne / 6 dní v týždni; hard workload mismatch, bez promotion.
-- **Upwork – Data Entry Specialist for WooCommerce**: vhodný obsahovo, ale už evidovaný vo verification queue; 35 USD fixed, nejasný počet produktov a slabá efektívna hodnota.
-- **LinkedIn**: verejná indexácia limited; nájdený H&M Bory Mall listing je starý a už neprijíma žiadosti, bez promotion.
-- **Worki**: resurfaced e-shop admin/support listing je explicitne obsadený/zrušený; bez promotion.
-- **Reddit**: bez nového vhodného hiring dopytu; čerstvé výsledky sú prevažne `FOR HIRE`, nie dopyty zamestnávateľov.
+### Čerstvé zistenia 21:38
+- **Upwork – Full-Time Virtual Assistant, Operations**: Worldwide remote, e-commerce orders/fulfillment, data entry, checklisty a customer-service tickety. Obsahovo relevantné, ale vyžaduje **strong written English** a extrémny režim **12 h denne / 6 dní týždenne**; bez promotion.
+- **Upwork – Full-Time Executive Assistant / SMM Generalist**: Worldwide remote, 1 500 USD/mes., 5–10 proposals, klient s 31k USD spend a 30 hires. Hlavný blocker: **video editing je mandatory** a prihláška vyžaduje Loom video; bez promotion.
+- **Upwork – Virtual Assistant Customer Support & Communications**: Worldwide remote e-commerce support, ale strong written/spoken English, denné telefonáty a odmena len 125 USD/týždeň; bez promotion.
+- **Upwork – Full-Time Virtual Assistant**: Worldwide remote admin scope, ale iba 200 USD/mes. základ; value gate.
+- **Upwork – Admin and Quotation Assistant**: Worldwide remote, flexibilná lokalita, ale 20–50 proposals a nejasný workload; bez promotion.
+- **Reddit**: čerstvé výsledky sú prevažne `FOR HIRE` WordPress/WooCommerce self-promo, nie dopyty zamestnávateľov.
 - **Facebook**: **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 4. 9. 2026 20:06
+## Source audit — 4. 9. 2026 21:38
 - source families reálne skontrolované: **11**
 - mimo Profesia: **10**
 - Profesia: `checked`; bez novej promotion-grade delty.
 - Priame company careers: `checked`; bez novej unique promotion-grade delty.
 - LinkedIn Jobs: `limited`; verejná indexácia preverená, bez promotion delty.
-- Worki.sk: `ok`; relevantný resurfaced e-shop admin/support detail bol dostupný, ale je obsadený/zrušený.
+- Worki.sk: `checked`; bez novej vhodnej delty.
 - Brigada.sk: `checked`; bez novej vhodnej priority delty.
-- Kariera.sk: `ok`; čerstvý index dostupný, bez bezpečnej promotion-grade zhody pre ranking profil.
-- Pretlak: `checked`; bez promotion-grade zhody.
-- StartupJobs: `checked`; bez novej vhodnej delty.
-- Upwork/freelance: `ok`; viac relevantných remote kandidátov, 0 LIVE promotion pre trust/language/workload/budget riziká.
-- Reddit/komunity: `limited`; bez nového vhodného hiring dopytu.
+- Práca za rohom: `checked`; bez novej vhodnej delty.
+- Kariera.sk: `checked`; bez novej bezpečnej promotion-grade zhody.
+- Pretlak + StartupJobs: `checked`; bez promotion-grade zhody.
+- Upwork/freelance: `ok`; viac čerstvých remote kandidátov, 0 LIVE promotion pre language/workload/budget/application-friction riziká.
+- Reddit/komunity: `limited`; bez nového konkrétneho hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 20:06
+### Audit počty 21:38
 - pridané do LIVE: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 49 položiek
 - Facebook verified hits: **0**
-- Upwork relevantné hity: **4**, LIVE promotion **0**
-- vyradené/karanténa: jazyk/workload **1**, neaktivita **2**, nízka/nezrovnalá hodnota alebo trust **2**, lokalita **0**
-- verification queue: **51** položiek; bez automatického mazania
+- Upwork relevantné hity: **8**, LIVE promotion **0**
+- vyradené/karanténa: jazyk/workload **3**, nízky budget/trust/application friction **3**, duplicita/resurfacing **2**, lokalita **0**
+- verification queue: **56** položiek; bez automatického mazania
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -188,18 +188,20 @@ Aktualizované: 4. 9. 2026 20:06 CEST
 - Live-store change-risk penalty.
 - Domain-product-knowledge hard/soft gate classifier.
 - Commission-dependent income reliability score.
-- **Outbound-sales quota/KPI burden extractor** — rozlíši customer-care/support pozície od rolí, kde je jadrom aktívny predaj, call quota, konverzia a výkonové KPI; zabráni tomu, aby remote + nízky language burden umelo vytlačili čistý sales job príliš vysoko.
-- **Portal-UI locale isolation** — oddeľovať jazyk rozhrania/indexovanej verzie portálu od skutočných jazykových požiadaviek pracovnej ponuky.
-- **Excessive-workload hard gate** — automaticky karanténovať remote role s extrémnym požadovaným časovým rozsahom, aj keď tematicky sedia na e-commerce/admin profil.
-- **Same-day detail verification budget** — pri nových listing-level výsledkoch z dnešného dňa prideľovať prioritný verification budget podľa rankingu a lokality.
-- **Canonical-detail field delta watcher** — porovnávať pri opakovanej kontrole zmeny mzdy, lokality/remote režimu, jazykovej požiadavky a deadline oproti poslednému snapshotu; rerank spustiť iba pri materiálnej zmene, čím sa obmedzí resurfacing šum a zároveň sa neprehliadne reálne zlepšenie ponuky.
-- **Contact-path validity verifier** — pred TOP notifikáciou overiť, že apply URL/formulár alebo verejný kontakt je stále funkčný a konkrétna ponuka aktívna; zabráni stratám času na kvalitne vyzerajúce, ale prakticky nereagovateľné leady.
-- **Freelance payment-verification trust signal** — do hodnotenia freelance leadu zahrnúť, či má klient overenú platobnú metódu a históriu reálnych platieb; nové účty s vysokým fixed budgetom a nulovou históriou automaticky karanténovať na manuálne overenie.
-- **Ultra-new client account quarantine** — pri účte mladšom než 7 dní kombinovať vek účtu, spend, hires a pomer budget/scope; pri anomálii nepovýšiť lead ani pri vysokej obsahovej zhode.
+- Outbound-sales quota/KPI burden extractor.
+- Portal-UI locale isolation.
+- Excessive-workload hard gate.
+- Same-day detail verification budget.
+- Canonical-detail field delta watcher.
+- Contact-path validity verifier.
+- Freelance payment-verification trust signal.
+- Ultra-new client account quarantine.
+- **Mandatory application-artifact readiness score** — pred notifikáciou alebo promotion vyhodnotiť povinné Loom/video, portfólio, case study, test alebo referencie; lead s vysokou obsahovou zhodou, ale nepripraveným povinným artefaktom dostane nižšiu prioritu, aby sa neplytvalo časom na nereálnu okamžitú reakciu.
+- **Full-time monthly-budget hourly-equivalent sanity gate** — pri remote rolách s mesačným/fixed budgetom a explicitným pracovným rozsahom prepočítať efektívnu hodinovú odmenu; extrémne nízky prepočet pri 40–72 h/týždeň automaticky karanténovať aj keď je scope e-commerce/admin relevantný.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **49 LIVE položiek bezpečne zachovaných**. `jobs-data.updatedAt` sa zámerne neposunul.
-- `job-sources.json`: aktualizácia tohto behu sa vykonáva iba ak je možné bezpečne zapísať kompletný register.
-- `source-audit.json`: nový audit bol vytvorený logicky, ale zápis sa nesmie vykonať truncovaným payloadom; verification queue zostáva fail-closed chránená.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 20:06** s auditom a 2 novými backlog zlepšeniami.
+- `job-sources.json`: **aktualizovaný na 21:38** po reálnom source sweep-e.
+- `source-audit.json`: **aktualizovaný na 21:38**, verification queue fail-closed zachovaná.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 21:38** vrátane 2 nových backlog zlepšení.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index: **nedotknuté / zamknuté**.
