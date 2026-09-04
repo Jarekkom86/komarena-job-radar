@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-04T10:13:29+02:00",
+  "updatedAt": "2026-09-04T10:47:00+02:00",
   "runSummary": {
-    "familiesChecked": 10,
+    "familiesChecked": 11,
     "newActiveJobs": 0,
     "significantPendingCandidates": 50,
     "significantlyChangedPriorityJobs": 0,
@@ -11,19 +11,20 @@
     "freshnessSlaMinutes": 60,
     "freshnessStatus": "fresh-no-live-delta",
     "liveFeedCount": 48,
-    "note": "Audit 4.9.2026 o 10:13 reálne preveril 10 source families pre Bratislavu/okolie a vhodný remote. Nevznikla promotion-grade LIVE delta. Upwork discovery priniesla nový Data Management/VA výsledok, ale nový klient bez histórie a nejasný rozsah neprešli promotion gate; ďalšie výsledky boli low-value alebo duplikáty. Foxelli Customer Support & Sales Agent je 100 % remote a dostupný zo Slovenska, no full-time freelance odmena do 800 EUR netto spolu s phone/sales scope a jazykovým rizikom ho drží iba vo verification. Pretlak Alesa zostáva známy verification kandidát. LinkedIn a verejné komunity bez novej bezpečnej LIVE delty. Facebook zostáva 0 verified hits / limited. jobs-data.json ostal fail-closed na 48 validných položkách bez umelého posunu updatedAt."
+    "note": "Audit 4.9.2026 o 10:47 reálne preveril 11 source families pre Bratislavu/okolie a vhodný remote. Nevznikla promotion-grade LIVE delta. Upwork priniesol čerstvé WooCommerce/WordPress výsledky, ale Data Entry Specialist je už známy verification lead, WooCommerce plugin zásah je 20 USD hard-dev/micro-budget a ostatné hity sú full-build alebo vyšší development scope. Pretlak čerstvé výsledky boli prevažne social/marketing, Kariera čerstvý MADWIRE marketing je mimo hlavného ranking profilu. Profesia, priame careers, LinkedIn, Worki, Brigada, Kariera, Pretlak/WordPress Jobs, Upwork, Služby zamestnanosti, Reddit a Facebook public index boli skutočne prehľadané. Facebook zostáva 0 verified hits / limited. jobs-data.json ostal fail-closed na 48 validných položkách bez umelého posunu updatedAt."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"BA WordPress/WooCommerce/admin/support/driver discovery reálne preverená 4.9.2026 10:13; bez novej promotion-grade delty."},
-    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":1,"note":"Priame company-career discovery reálne preverené 4.9.2026 10:13. Foxelli Customer Support & Sales Agent je 100 % remote pre Slovensko, ale max. 800 EUR netto/full-time freelance + phone/sales scope => verification, nie LIVE."},
-    {"name":"LinkedIn Jobs / company posts","family":"linkedin","status":"limited","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":1,"rejectedLocation":0,"verificationAdded":0,"note":"Verejná LinkedIn indexácia preverená 4.9.2026 10:13; LUNYS e-commerce resurfacing bol starší/známy výsledok bez novej promotion delty. Coverage bez loginu limited."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Worki BA discovery reálne preverené 4.9.2026 10:13; bez novej promotion-grade delty."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Brigada.sk BA discovery reálne preverená 4.9.2026 10:13; bez novej priority delty."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"BA admin/support/e-shop discovery reálne preverená 4.9.2026 10:13; bez novej unique promotion-grade delty."},
-    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"checked","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":1,"rejectedLocation":0,"verificationAdded":0,"note":"Tech/creative discovery reálne preverená 4.9.2026 10:13; Alesa Office manager/asistent je už vo verification, bez novej promotion-grade delty."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":6,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":1,"rejectedLocation":0,"verificationAdded":0,"note":"Worldwide WordPress/WooCommerce/VA discovery preverená. Nový Data Management and Virtual Assistant Opportunity má 1 000 USD fixed a 5–10 proposals, ale klient je nový bez histórie a rozsah práce je nejasný; bez bezpečnej promotion. WooCommerce Developer za 5 USD a ďalšie VA výsledky sú low-value; WooCommerce Data Entry za 35 USD je už evidovaný verification lead."},
-    {"name":"Verejné komunity / Reddit","family":"communities","status":"limited","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":1,"verificationAdded":0,"note":"Verejná hiring indexácia preverená 4.9.2026 10:13; WordPress developer výsledok bol obmedzený na Filipíny, preto mimo location gate. Coverage limited."},
-    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"zeroReason":"index-limited","note":"Verejná Facebook indexácia preverená 4.9.2026 10:13; bez konkrétneho verejne overiteľného hiring postu s priamym linkom. 0 verified hits; coverage limited."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"BA WordPress/WooCommerce/admin/support/driver discovery reálne preverená 4.9.2026 10:47; bez novej promotion-grade delty."},
+    {"name":"Priame firemné careers","family":"company-careers","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Priame company-career discovery reálne preverené 4.9.2026 10:47; bez novej promotion-grade delty."},
+    {"name":"LinkedIn Jobs / company posts","family":"linkedin","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Verejná LinkedIn indexácia preverená 4.9.2026 10:47; bez novej bezpečnej LIVE delty. Coverage bez loginu limited."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Worki BA discovery reálne preverené 4.9.2026 10:47; bez novej promotion-grade delty."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Brigada.sk BA discovery reálne preverená 4.9.2026 10:47; bez novej priority delty."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":1,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"BA discovery reálne preverená 4.9.2026 10:47. Čerstvý MADWIRE Marketingový manažér 1 700 EUR je lokálne BA, ale obsahovo mimo prioritného web/admin/support profilu; bez LIVE promotion."},
+    {"name":"Pretlak / WordPress Jobs","family":"tech-creative","status":"ok","hits":2,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Tech/creative discovery reálne preverená 4.9.2026 10:47. Pretlak čerstvé výsledky sú najmä social/marketing; WordPress Jobs bez nového promotion-grade hitu."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":7,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":1,"rejectedLocation":0,"verificationAdded":0,"note":"Worldwide WordPress/WooCommerce discovery preverená 4.9.2026 10:47. Data Entry Specialist for WooCommerce je už evidovaný verification lead. WooCommerce plugin micro-gig je 20 USD a vyžaduje Ajax/plugin development; ďalšie hity sú full-build/custom-development alebo vyšší scope. Bez LIVE promotion."},
+    {"name":"Služby zamestnanosti","family":"government","status":"checked","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Verejný pracovný feed reálne preverený 4.9.2026 10:47; bez novej vhodnej BA/remote LIVE delty."},
+    {"name":"Verejné komunity / Reddit","family":"communities","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"note":"Verejná hiring indexácia preverená 4.9.2026 10:47; bez nového konkrétneho promotion-grade hiring dopytu. Coverage limited."},
+    {"name":"Facebook verejná indexácia","family":"facebook","status":"limited","hits":0,"added":0,"rejectedLanguage":0,"rejectedInactive":0,"rejectedDuplicate":0,"rejectedLocation":0,"verificationAdded":0,"zeroReason":"index-limited","note":"Verejná Facebook indexácia preverená 4.9.2026 10:47; bez konkrétneho verejne overiteľného hiring postu s priamym linkom. 0 verified hits; coverage limited."}
   ],
   "verificationQueue": [
     {"id":"pretlak-alesa-office-manager-assistant-20260902","title":"Office manager/asistent","company":"Alesa s. r. o.","status":"verification-language-level-hidden-ops-load","provisionalScore":87,"pay":"od 1 200 EUR/mes.","locationEligibility":"ba-area","locationReason":"Pretlak uvádza Onsite, Bratislava; lokálna BA pozícia bez vzdialeného dochádzania.","url":"https://pretlak.com/job/alesa-s-r-o/office-managerasistent/M-lP1LtnA"},
@@ -80,11 +81,11 @@
   "liveMix": {"liveFeedCount":48,"profesiaCount":24,"profesiaPct":50.0,"nonProfesiaCount":24,"nonProfesiaPct":50.0},
   "writeStatus": {
     "jobsData":"unchanged-no-promotion-grade-delta",
-    "jobsDataNonProf":"unchanged-no-promotion-grade-delta; last content update 2026-09-03T16:14:25+02:00",
+    "jobsDataNonProf":"unchanged-locked-bootstrap; last content update 2026-09-03T16:14:25+02:00",
     "sourceAudit":"updated-after-real-source-check",
-    "jobSources":"unchanged; last audit metadata 2026-09-04T09:27:00+02:00",
-    "master":"unchanged",
+    "jobSources":"updated-after-real-source-check",
+    "master":"pending-update-this-run",
     "lockedFilesTouched":false,
-    "note":"LIVE primary feed ostal fail-closed na 48 položkách. jobs-data.updatedAt sa neposunul, pretože nevznikla reálna LIVE content delta. Audit freshness je doložená source-audit.updatedAt 2026-09-04T10:13:29+02:00."
+    "note":"LIVE primary feed ostal fail-closed na 48 položkách. jobs-data.updatedAt sa neposunul, pretože nevznikla reálna LIVE content delta. Audit freshness je doložená source-audit.updatedAt 2026-09-04T10:47:00+02:00."
   }
 }
