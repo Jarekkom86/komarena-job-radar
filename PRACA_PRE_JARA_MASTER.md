@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 4. 9. 2026 06:20 CEST
+Aktualizované: 4. 9. 2026 07:18 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,34 +35,35 @@ Aktualizované: 4. 9. 2026 06:20 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 06:20 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- Upwork `Data Entry Specialist for WooCommerce` je Worldwide remote a obsahovo veľmi dobrý fit: Excel/CSV, ceny, kategórie, SKU, AI-generated descriptions a príprava názvov obrázkov. Je však už evidovaný vo verification queue; 35 USD fixed-price, nejasný počet produktov/odhad hodín a 20–50 proposals znamenajú low-value/unknown-effort, preto bez LIVE promotion.
-- Upwork `Convert code snippets into WooCommerce plugin` (20 USD) a `Trustpilot integration` (10 USD) sú technicky príliš dev/API-heavy a zároveň hodnotovo slabé; nepridávať len kvôli source mixu.
-- Kariera.sk priniesla `Administrátor/ka korporátnej agendy` v Bratislave, ale AJ C1/C2 + VŠ I. stupňa + minimálne 2 roky relevantnej praxe sú hard mismatch.
+- Sweep 07:18 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- LinkedIn verejný index priniesol `Brigádnik/Brigádnička práca s tovarom v mesiaci december, Bratislava, Bory Mall` pre H&M. Lokalita prechádza, ale nástup je až v decembri a ide o skladovo-retail brigádu nízko v rankingu; bez LIVE promotion.
+- Práca za rohom priniesla `Product Manager pre vývoj MDM riešenia (m/ž)` pre DATALAN v Petržalke. Lokalita prechádza, ale ide o seniornejší product/MDM scope, nie prioritný web/admin/support profil; bez LIVE promotion.
+- Upwork `E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero` je stále Worldwide remote, 10–15 USD/h a obsahovo relevantný, ale už je vo verification a vyžaduje good written English, WooCommerce Subscriptions, Meta Ads a Xero; bez promotion.
+- Upwork fresh výsledky `Full-Time WordPress & WooCommerce Developer` a ďalšie build/dev zadania boli hard-dev/full-time/full-build mismatch; UK-only admin bol vyradený lokalitne.
 - Profesia, priame company careers, LinkedIn, Worki, Brigada.sk, Služby zamestnanosti, Kariera.sk, Práca za rohom, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit a verejná Facebook indexácia boli reálne preverené.
 - Facebook: **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 4. 9. 2026 06:20
+## Source audit — 4. 9. 2026 07:18
 - Profesia: `checked`; BA discovery bez novej promotion-grade delty.
 - Priame company careers: `checked`; bez novej promotion-grade delty.
-- LinkedIn Jobs: `limited`; verejná indexácia bez nového hard-gate-pass kandidáta.
+- LinkedIn Jobs: `limited`; 1 lokálny sezónny H&M výsledok, ale december + nízky ranking; 0 LIVE.
 - Worki.sk: `checked`; BA/okolie discovery preverené, bez novej promotion-grade delty.
 - Brigada.sk: `checked`; bez novej priority delty.
 - Služby zamestnanosti: `checked`; bez nového promotion-grade BA administratívneho/IT-support hitu.
-- Kariera.sk: `ok`; Bolder corporate admin overený, ale vyradený pre AJ C1/C2 + kvalifikáciu/prax; ďalšie výsledky bez LIVE delty.
+- Kariera.sk: `checked`; bez novej unique promotion-grade delty.
 - Pretlak / StartupJobs / WordPress Jobs: `checked`; bez novej unique promotion-grade delty.
-- Upwork/freelance: `ok`; 7 relevantných/semirelevantných výsledkov, 0 LIVE, 3 duplicity/resurfaced; nové výsledky prevažne hard-dev/full-build/low-value.
+- Upwork/freelance: `ok`; 6 relevantných/semirelevantných výsledkov, 0 LIVE, 3 resurfaced/duplicitné; 1 language-heavy a 1 UK-only location reject.
 - Reddit/komunity: `limited`; bez konkrétneho nového hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**; žiadny konkrétny verejný hiring post s priamym linkom.
-- Práca za rohom / ďalšie SK job-board discovery: `checked`; bez novej unique promotion-grade delty.
+- Práca za rohom / ďalšie SK job-board discovery: `ok`; 1 lokálny DATALAN MDM product hit, ale seniornejší scope; 0 LIVE.
 
-### Audit počty 06:20
+### Audit počty 07:18
 - source families reálne skontrolované: **12**
 - z toho mimo Profesia: **11**
 - pridané do LIVE: **0**
 - nové unique verification položky: **0**
 - verification queue: **49** zachovaných položiek
-- vyradené/pozdržané pre scope/value/skill/jazyk/duplicitu: viacero čerstvých alebo resurfaced výsledkov
+- vyradené/pozdržané pre scope/value/skill/jazyk/duplicitu/lokalitu: viacero čerstvých alebo resurfaced výsledkov
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
 
@@ -165,12 +166,14 @@ Aktualizované: 4. 9. 2026 06:20 CEST
 - Source-status hysteresis.
 - Remote country-acceptance verifier.
 - Requirement-burden compound score.
-- **Verification queue evidence completeness score** — každému pending kandidátovi vypočítať, ktoré promotion-critical polia ešte chýbajú (pay, language level, canonical freshness, remote proof, effort/volume, client eligibility) a prioritne recheckovať položky, kde chýba iba jeden rozhodujúci dôkaz.
-- **Freelance micro-budget auto-quarantine threshold** — fixed-price WordPress/WooCommerce/API zákazky pod dynamickým minimom automaticky držať mimo LIVE, ak obsahujú custom development alebo nejasný rozsah; minimum odvodiť od odhadovaného effortu, nie iba nominálnej ceny.
+- Verification queue evidence completeness score.
+- Freelance micro-budget auto-quarantine threshold.
+- **Seasonal start-distance penalty** — pri brigádach a krátkodobých ponukách penalizovať výsledky, ktorých reálny začiatok je vzdialený o viac týždňov/mesiacov, aby neprebíjali okamžite dostupné príležitosti len kvôli čerstvému indexu.
+- **Seniority-scope mismatch classifier** — odlíšiť názvom lákavé lokálne roly od pozícií, kde duty stack reálne znamená senior product ownership, MDM/enterprise platform management alebo inú zodpovednosť výrazne nad aktuálnym cieľovým profilom.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: **aktualizovaný na 06:20**, verification queue zachovaná na 49 položkách.
-- `job-sources.json`: **aktualizovaný na 06:20** s pravdivými source notes/status metadata.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 06:20** s reálnym auditom a 2 novými backlog zlepšeniami.
+- `source-audit.json`: **aktualizovaný na 07:18**, verification queue zachovaná na 49 položkách.
+- `job-sources.json`: **aktualizovaný na 07:18** s pravdivými source notes/status metadata.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 07:18** s reálnym auditom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index, CRM: **nedotknuté / zamknuté**.
