@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "policy": "source-outage-fallback",
+  "version": "1.0.0",
+  "purpose": "Preserve sourcing coverage when a normally productive source is blocked, unavailable, or returns an anomalous zero-result run, without fabricating coverage or weakening the Bratislava/remote hard gate.",
+  "trigger": {
+    "statuses": ["blocked", "limited"],
+    "zeroResultAnomaly": true,
+    "minimumHistoricalUsefulHits": 1
+  },
+  "fallbackOrder": [
+    "direct-company-careers",
+    "independent-job-board",
+    "search-index-to-canonical-detail",
+    "public-community-index"
+  ],
+  "rules": {
+    "neverMarkBlockedSourceAsCheckedSuccessfully": true,
+    "neverInventHits": true,
+    "mirrorDoesNotCountAsIndependentSource": true,
+    "canonicalDetailRequiredBeforePromotion": true,
+    "locationEligibilityRequiredBeforePromotion": ["ba-area", "remote-ok"],
+    "unknownRemotePolicy": "quarantine",
+    "distantOnsiteOrRegularHybrid": "reject-distance",
+    "preserveExistingLiveJobsOnTransientFailure": true
+  },
+  "audit": {
+    "recordOriginalSourceStatus": true,
+    "recordFallbackFamiliesAttempted": true,
+    "recordVerifiedFallbackHits": true,
+    "recordZeroVerifiedHitsExplicitly": true
+  },
+  "safety": {
+    "mutatesJobsData": false,
+    "mutatesCRM": false,
+    "mutatesUI": false,
+    "mutatesBaseline": false,
+    "preservesStableIds": true,
+    "failClosed": true
+  }
+}
