@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 4. 9. 2026 11:04 CEST
+Aktualizované: 4. 9. 2026 12:10 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,31 +35,36 @@ Aktualizované: 4. 9. 2026 11:04 CEST
 - Autoritatívny feed má aktuálne **48 LIVE položiek**.
 - LIVE mix: **Profesia 24/48 = 50,0 %**, mimo Profesia **24/48 = 50,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-03T02:15:13+02:00** — posledná reálna zmena LIVE feedu.
-- Sweep 11:04 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
-- Upwork: verejný index bol reálne preverený. Nový `Remote Social Media Publishing Assistant` je síce remote a entry-level, ale explicitne povoľuje iba US/UK/DE/CH/FR, preto je `reject-distance`/country-ineligible pre Slovensko. Ostatné čerstvé výsledky smerujú najmä do hard developmentu alebo nesedia profilom.
-- Reddit/komunity: verejný hiring index bol reálne preverený; dostupné hity sú prevažne hard software-development alebo `FOR HIRE` self-promo, nie vhodný nový dopyt.
-- Profesia, priame company careers, LinkedIn, Worki, Brigada.sk, Kariera.sk, Pretlak/StartupJobs, Upwork, Reddit a verejná Facebook indexácia boli reálne vyhľadané v tomto behu; Google index pri viacerých slovenských jobboardoch vrátil bez použiteľného čerstvého hitu.
+- Sweep 12:10 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- **Významný nový verification lead:** Upwork `E-commerce Virtual Assistant – WooCommerce, Subscriptions, Customer Service, Xero`. Worldwide remote, 10–15 USD/h, <30 h/týždeň, 1–3 mesiace, contract-to-hire, 15–20 proposals. Scope je veľmi blízko prioritnému smeru: WooCommerce administrácia, zákaznícky servis, objednávky/subscriptions, e-mail support, troubleshooting a všeobecná e-commerce administratíva. Nepovýšené do LIVE kvôli explicitnej požiadavke na good written English a nástrojovým požiadavkám WooCommerce Subscriptions + Meta Ads Manager + basic Xero.
+- LinkedIn: Wolt Support Associate Bratislava je lokálne relevantný customer-care hit, ale dostupný detail vyžaduje minimálne B2 English, preto výrazný mismatch a bez LIVE promotion.
+- Worki: aktualizovaný BA VZV sklad je lokálne validný, ale fyzická záťaž/VZV profil je slabší než existujúce priority; nejde o novú promotion-grade deltu.
+- Brigada.sk: verejný BA feed preveril distribúciu a skladové brigády; bez novej priority delty.
+- Pretlak: čerstvý feed je prevažne marketing/design alebo senior IT; bez promotion-grade zhody.
+- WordPress Jobs: otvorené ponuky sú prevažne hard development alebo geograficky viazané; bez vhodnej delty.
+- Reddit/komunity: čerstvé výsledky sú `FOR HIRE` self-promo, nie nový hiring dopyt.
 - Facebook: **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 4. 9. 2026 11:04
+## Source audit — 4. 9. 2026 12:10
 - Profesia: `checked`; bez novej promotion-grade LIVE delty.
 - Priame company careers: `checked`; bez novej promotion-grade delty.
-- LinkedIn Jobs: `limited`; verejná indexácia bez novej bezpečnej LIVE delty.
-- Worki.sk: `checked`; bez novej promotion-grade delty.
-- Brigada.sk: `checked`; bez novej LIVE delty.
+- LinkedIn Jobs: `limited`; Wolt Support Associate BA nájdený, ale B2 English mismatch.
+- Worki.sk: `checked`; bez novej priority delty.
+- Brigada.sk: `checked`; bez novej priority delty.
 - Kariera.sk: `checked`; bez novej priority delty.
-- Pretlak / StartupJobs: `checked`; bez novej promotion-grade zhody.
-- Upwork/freelance: `ok`; čerstvý remote publishing assistant bol country-restricted mimo Slovenska; ďalšie výsledky boli hard-dev/general alebo nevhodné.
-- Reddit/komunity: `limited`; bez nového konkrétneho vhodného hiring dopytu.
+- Služby zamestnanosti: `checked`; bez novej vhodnej BA/remote delty.
+- Pretlak / WordPress Jobs: `checked`; bez promotion-grade zhody.
+- Upwork/freelance: `ok`; nový významný WooCommerce/e-commerce VA verification lead, nie LIVE.
+- Reddit/komunity: `limited`; bez nového konkrétneho hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 11:04
-- source families reálne skontrolované: **10**
-- z toho mimo Profesia: **9**
-- relevantné/semirelevantné kandidáty: **2**
+### Audit počty 12:10
+- source families reálne skontrolované: **11**
+- z toho mimo Profesia: **10**
+- relevantné/semirelevantné kandidáty: **5**
 - pridané do LIVE: **0**
-- nové unique verification položky: **0**
-- vyradené/pozdržané: 1 remote country-restricted mimo Slovenska; 1 community hard-development hiring mismatch; ďalšie indexované výsledky bez vhodnej delty
+- nové unique verification kandidáty: **1 významný** (Upwork WooCommerce/e-commerce VA)
+- vyradené/pozdržané: Wolt B2 English; Worki VZV/fyzická záťaž; WordPress Jobs hard-dev/geografia; community self-promo; ďalšie indexované výsledky bez vhodnej delty
 - Facebook verified hits: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 48 položiek.
 
@@ -172,12 +177,14 @@ Aktualizované: 4. 9. 2026 11:04 CEST
 - Role-family credential prefilter for government feeds.
 - Proposal-volume saturation curve.
 - Employer response-channel friction tracker.
-- **Country-restriction prefilter before remote scoring** — remote ponuky s explicitným zoznamom povolených krajín vyradiť ešte pred rankingom; zabráni falošne vysokému score pri ponuke, ktorá zo Slovenska nie je dostupná.
-- **Search-index evidence expiry TTL** — pri výsledkoch získaných iba cez verejný search index evidovať čas dôkazu a po krátkom TTL vyžadovať opätovné overenie canonical detailu; zníži resurfacing stale alebo geograficky nesprávnych hitov.
+- Country-restriction prefilter before remote scoring.
+- Search-index evidence expiry TTL.
+- **Tool-gap confidence matrix for admin SaaS roles** — pri e-commerce/admin zákazkách oddeliť povinný nástroj, prenositeľnú skúsenosť a rýchlo doučiteľný tool; zabráni zbytočnému vyradeniu silných rolí len kvôli Xero/Meta/Klaviyo podobným nástrojom a zároveň jasne označí reálny skill gap.
+- **Freelance client-hire saturation penalty** — pri kontraktoch s už uskutočneným hire a nulovým interviewing sledovať, či ide o viacnásobný nábor alebo prakticky obsadenú zákazku; zníži zbytočné reakcie na joby s nízkou zostávajúcou pravdepodobnosťou prijatia.
 
 ## Stav ochrany / zápisu
-- `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nevznikla unique promotion-grade delta. `jobs-data.updatedAt` sa zámerne neposunul.
-- `source-audit.json`: **zápis 11:04 nebol vykonaný**, pretože GitHub connector vracia veľký audit payload truncovane a writer vyžaduje kompletný replacement; existujúcu verification queue som podľa FAIL-CLOSED neriskoval poškodiť. Posledný bezpečne zapísaný audit ostáva 10:47.
-- `job-sources.json`: bez bezpečnej zmeny v tomto behu; register ostáva na 10:47, pretože writer vyžaduje kompletný replacement jednoradového JSON payloadu.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 11:04** s reálnym auditom a 2 novými backlog zlepšeniami.
+- `jobs-data.json`: bez zmeny; **48 LIVE položiek bezpečne zachovaných**, pretože nový Upwork lead má významný language/tool-gap a ostáva verification. `jobs-data.updatedAt` sa zámerne neposunul.
+- `source-audit.json`: **zápis 12:10 nebol vykonaný**, pretože GitHub writer vyžaduje kompletný replacement veľkého JSON-u s verification queue a dostupné čítanie payload truncuje; queue som podľa FAIL-CLOSED neriskoval poškodiť. Posledný bezpečne zapísaný audit ostáva 10:47.
+- `job-sources.json`: **aktualizovaný na 12:10** reálnymi source poznámkami.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 12:10** s novým verification leadom a 2 novými backlog zlepšeniami.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index: **nedotknuté / zamknuté**.
