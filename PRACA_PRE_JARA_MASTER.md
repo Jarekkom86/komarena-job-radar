@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 4. 9. 2026 21:38 CEST
+Aktualizované: 4. 9. 2026 22:01 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,38 +35,36 @@ Aktualizované: 4. 9. 2026 21:38 CEST
 - Autoritatívny feed má **49 LIVE položiek**.
 - LIVE mix: **Profesia 24/49 = 49,0 %**, mimo Profesia **25/49 = 51,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-04T16:16:38+02:00**.
-- Sweep 21:38 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Sweep 22:01 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
 
-### Čerstvé zistenia 21:38
-- **Upwork – Full-Time Virtual Assistant, Operations**: Worldwide remote, e-commerce orders/fulfillment, data entry, checklisty a customer-service tickety. Obsahovo relevantné, ale vyžaduje **strong written English** a extrémny režim **12 h denne / 6 dní týždenne**; bez promotion.
-- **Upwork – Full-Time Executive Assistant / SMM Generalist**: Worldwide remote, 1 500 USD/mes., 5–10 proposals, klient s 31k USD spend a 30 hires. Hlavný blocker: **video editing je mandatory** a prihláška vyžaduje Loom video; bez promotion.
-- **Upwork – Virtual Assistant Customer Support & Communications**: Worldwide remote e-commerce support, ale strong written/spoken English, denné telefonáty a odmena len 125 USD/týždeň; bez promotion.
-- **Upwork – Full-Time Virtual Assistant**: Worldwide remote admin scope, ale iba 200 USD/mes. základ; value gate.
-- **Upwork – Admin and Quotation Assistant**: Worldwide remote, flexibilná lokalita, ale 20–50 proposals a nejasný workload; bez promotion.
-- **Reddit**: čerstvé výsledky sú prevažne `FOR HIRE` WordPress/WooCommerce self-promo, nie dopyty zamestnávateľov.
+### Čerstvé zistenia 22:01
+- **Upwork – Virtual Assistant – Operations & Campaign Support**: Worldwide remote, 5–7 USD/h, menej než 30 h/týždeň. Obsahovo admin/operations fit, ale vyžaduje strong written/spoken English a dostupnosť počas U.S. working hours; bez promotion.
+- **Upwork – Digital Marketing Virtual Assistant**: Worldwide remote, čerstvý remote admin/CRM/email-marketing scope, ale explicitne excellent written/verbal English a 2+ roky praxe; bez promotion.
+- **Upwork – WordPress / Elementor Web Designer & Support Specialist**: Worldwide remote, WordPress maintenance/support/troubleshooting, ale hard support scope zahŕňa hosting, DNS, caching, emergency tickets a vyššiu samostatnosť; bez promotion.
+- **Upwork – WordPress & Shopify VA/Web Developer**: Worldwide remote, ale 8 h denne / 6 dní týždenne, good written/verbal English a HTML/CSS/Shopify požiadavky pri iba 100 USD fixed; value/workload gate.
+- **Reddit**: verejné výsledky sú prevažne `FOR HIRE` WordPress/WooCommerce self-promo, nie hiring dopyty.
 - **Facebook**: **0 verified hits / limited**; bez konkrétneho verejne overiteľného postu sa nič nevytvára.
 
-## Source audit — 4. 9. 2026 21:38
+## Source audit — 4. 9. 2026 22:01
 - source families reálne skontrolované: **11**
 - mimo Profesia: **10**
 - Profesia: `checked`; bez novej promotion-grade delty.
-- Priame company careers: `checked`; bez novej unique promotion-grade delty.
+- Priame company careers: `checked`; Alza/Telekom discovery bez novej unique promotion-grade delty.
 - LinkedIn Jobs: `limited`; verejná indexácia preverená, bez promotion delty.
 - Worki.sk: `checked`; bez novej vhodnej delty.
 - Brigada.sk: `checked`; bez novej vhodnej priority delty.
-- Práca za rohom: `checked`; bez novej vhodnej delty.
 - Kariera.sk: `checked`; bez novej bezpečnej promotion-grade zhody.
 - Pretlak + StartupJobs: `checked`; bez promotion-grade zhody.
-- Upwork/freelance: `ok`; viac čerstvých remote kandidátov, 0 LIVE promotion pre language/workload/budget/application-friction riziká.
+- Upwork/freelance: `ok`; viac remote výsledkov, 0 LIVE promotion pre language/workload/budget/hard-scope riziká.
 - Reddit/komunity: `limited`; bez nového konkrétneho hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 21:38
+### Audit počty 22:01
 - pridané do LIVE: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 49 položiek
 - Facebook verified hits: **0**
 - Upwork relevantné hity: **8**, LIVE promotion **0**
-- vyradené/karanténa: jazyk/workload **3**, nízky budget/trust/application friction **3**, duplicita/resurfacing **2**, lokalita **0**
+- vyradené/karanténa: jazyk/workload **4**, nízky budget/value **2**, hard scope **1**, duplicita/resurfacing **1**, lokalita **0**
 - verification queue: **56** položiek; bez automatického mazania
 
 ## Rozvojový backlog
@@ -196,12 +194,14 @@ Aktualizované: 4. 9. 2026 21:38 CEST
 - Contact-path validity verifier.
 - Freelance payment-verification trust signal.
 - Ultra-new client account quarantine.
-- **Mandatory application-artifact readiness score** — pred notifikáciou alebo promotion vyhodnotiť povinné Loom/video, portfólio, case study, test alebo referencie; lead s vysokou obsahovou zhodou, ale nepripraveným povinným artefaktom dostane nižšiu prioritu, aby sa neplytvalo časom na nereálnu okamžitú reakciu.
-- **Full-time monthly-budget hourly-equivalent sanity gate** — pri remote rolách s mesačným/fixed budgetom a explicitným pracovným rozsahom prepočítať efektívnu hodinovú odmenu; extrémne nízky prepočet pri 40–72 h/týždeň automaticky karanténovať aj keď je scope e-commerce/admin relevantný.
+- Mandatory application-artifact readiness score.
+- Full-time monthly-budget hourly-equivalent sanity gate.
+- **U.S.-hours overlap feasibility score** — pri remote ponukách oddeliť všeobecný timezone overlap od explicitnej dostupnosti v U.S. working hours; pri A2 angličtine a rodinnom režime penalizovať leady, ktoré vyžadujú pravidelnú večernú/nočnú dostupnosť, aj keď sú formálne Worldwide remote.
+- **Support escalation depth classifier** — rozlíšiť bežnú WordPress administráciu od rolí, kde sa očakáva samostatná diagnostika DNS/hostingu/cache/production incidentov a 15-minútové emergency SLA; vyššia technická hĺbka automaticky zníži ranking bez toho, aby sa celá WordPress kategória nesprávne zahodila.
 
 ## Stav ochrany / zápisu
 - `jobs-data.json`: bez zmeny; **49 LIVE položiek bezpečne zachovaných**. `jobs-data.updatedAt` sa zámerne neposunul.
-- `job-sources.json`: **aktualizovaný na 21:38** po reálnom source sweep-e.
-- `source-audit.json`: **aktualizovaný na 21:38**, verification queue fail-closed zachovaná.
-- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 21:38** vrátane 2 nových backlog zlepšení.
+- `job-sources.json`: **aktualizovaný na 22:01** po reálnom source sweep-e.
+- `source-audit.json`: **aktualizovaný na 22:01**, verification queue fail-closed zachovaná.
+- `PRACA_PRE_JARA_MASTER.md`: **aktualizovaný na 22:01** vrátane 2 nových backlog zlepšení.
 - `jobs-data-nonprof.json`, `baseline-jobs.json`, MASTER UI/renderery/index: **nedotknuté / zamknuté**.
