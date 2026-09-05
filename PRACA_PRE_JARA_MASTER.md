@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 06:30 CEST
+Aktualizované: 5. 9. 2026 07:32 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -33,41 +33,40 @@ Aktualizované: 5. 9. 2026 06:30 CEST
 - Agregátor/repost nesmie prebiť priamy firemný zdroj.
 
 ## Aktuálny stav LIVE
-- Autoritatívny feed má **49 LIVE položiek**.
-- LIVE mix: **Profesia 24/49 = 49,0 %**, mimo Profesia **25/49 = 51,0 %**.
-- `jobs-data.json.updatedAt`: **2026-09-04T16:16:38+02:00**.
-- MamaTataJojo zostáva promotion-ready a 5. 9. 2026 06:30 bol znovu potvrdený ako aktívny do 2. 10. 2026. Bezpečný LIVE ingest stále čaká na kompletný replacement autoritatívneho JSON bez straty existujúcich 49 položiek.
+- Autoritatívny feed má **50 LIVE položiek**.
+- LIVE mix: **Profesia 24/50 = 48,0 %**, mimo Profesia **26/50 = 52,0 %**.
+- `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
+- **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky** bol po opakovanom canonical overení bezpečne povýšený z verification queue do LIVE. Pred zápisom sa použil aktuálny blob SHA a po zápise Git diff ukázal iba zmenu `updatedAt` a pridanie jednej položky; pôvodný feed sa nestratil.
 
-### Čerstvé zistenia 06:30
+### Čerstvé zistenia 07:32
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, tech/creative (Pretlak + StartupJobs), Upwork/freelance, Reddit/komunity a Facebook public index.
-- **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**: canonical detail znovu potvrdený 5. 9. 2026; zverejnené 4. 9. 2026, koniec ponuky 2. 10. 2026, 1 750 €/mes., plný úväzok na neurčito, jednozmenná prevádzka. Náplň: zakladanie, triedenie a archivácia zdravotných záznamov, skenovanie lekárskych správ, podklady pre poisťovne, tlačivá a korešpondencia. Požadované základné vzdelanie a vodičák B; cudzí jazyk nie je uvedený. Lokalita Malacky = `ba-area`. Stav **promotion-ready, score 94**.
-- **LinkedIn**: Foxelli e-commerce support remote je verejne indexovaný, ale ide o support + sales a pracovné prostredie je jazykovo náročnejšie; SupportYourApp remote technický/customer support explicitne vyžaduje fluent English. Bez promotion.
-- **Brigada.sk**: čerstvý Manipulačný pracovník v Divadle P. O. Hviezdoslava je BA a 8 €/h, ale je fyzicky náročný a mimo prioritného profilu; bez promotion.
-- **Upwork**: Virtual Assistant – Operations & Campaign Support je Worldwide remote a 5–7 USD/h, ale vyžaduje strong written and spoken English a dostupnosť počas US pracovného času; bez promotion. Ďalšie čerstvé WordPress/WooCommerce výsledky sú hard-development alebo majú nízku efektívnu sadzbu.
-- **Kariera/Zoznam**: MamaTataJojo zostáva najsilnejšia čerstvá administratívna zhoda v Malackách; ostatné nové BA/okolie administratívne výsledky neprebíjajú existujúce priority.
-- **Reddit**: bez nového verejne overiteľného hiring dopytu vhodného pre profil.
+- **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**: canonical detail potvrdený 5. 9. 2026; zverejnené 4. 9. 2026, koniec ponuky 2. 10. 2026, 1 750 €/mes., plný úväzok na neurčito, jednozmenná prevádzka. Náplň: zakladanie, triedenie a archivácia zdravotných záznamov, skenovanie lekárskych správ, podklady pre poisťovne, tlačivá a korešpondencia. Požadované základné vzdelanie a vodičák B; cudzí jazyk nie je uvedený. Lokalita Malacky = `ba-area`. Stav **LIVE, score 94**.
+- **LinkedIn**: verejná indexácia vrátila najmä hard-development/content-heavy alebo staršie/neaktívne výsledky; bez promotion.
+- **Worki + Brigada.sk**: BA/remote discovery preverené, bez novej vhodnej promotion-grade delty.
+- **Pretlak / StartupJobs**: bez novej vhodnej promotion-grade zhody.
+- **Upwork**: WooCommerce Assistant a Product Listing/Ecommerce Management boli duplicates existujúcich LIVE/verification záznamov. Nový E-commerce Virtual Assistant mal relevantnú náplň produktov, objednávok a customer supportu, ale verejný index neposkytol dostatočný dôkaz o Slovakia-compatible remote/locality a odmene; preto bez promotion naslepo.
+- **Reddit**: nájdené výsledky boli FOR HIRE, nie konkrétne hiring dopyty; 0 verified hiring hits.
 - **Facebook public index**: preverený; **0 verified hits / limited**. Autentizovaný Nexus/local ingestion ostáva backlog, automat ho nespúšťa.
 
-## Source audit — 5. 9. 2026 06:30
-- Profesia: `checked`; čerstvý BA/remote discovery bez novej promotion-grade delty.
-- Priame company careers: `checked`; verejné kariérne vyhľadávanie preverené, bez novej unique promotion-grade delty.
-- LinkedIn Jobs: `limited`; Foxelli/support výsledky verejne indexované, ale sales/jazykové požiadavky znižujú fit.
+## Source audit — 5. 9. 2026 07:32
+- Profesia: `checked`; bez novej unique promotion-grade delty.
+- Priame company careers: `checked`; bez novej unique promotion-grade delty.
+- LinkedIn Jobs: `limited`; hard-dev/content-heavy alebo staré výsledky, bez promotion.
 - Worki: `checked`; bez novej vhodnej delty.
-- Brigada.sk: `ok`; čerstvý BA hit nájdený, ale fyzicky náročný a mimo prioritného profilu.
-- Kariera/Zoznam: `ok`; MamaTataJojo znovu potvrdený ako aktívny do 2.10.2026 a promotion-ready.
+- Brigada.sk: `checked`; bez nového vhodného promotion-grade hitu.
+- Kariera/Zoznam: `ok`; MamaTataJojo canonical potvrdený a **1 pridaný do LIVE**.
 - Pretlak / StartupJobs: `checked`; bez novej vhodnej promotion-grade zhody.
-- Upwork/freelance: `ok`; nové remote výsledky overené, no angličtina/nízka sadzba/hard-dev scope blokujú promotion.
+- Upwork/freelance: `limited`; 5 relevantných indexovaných výsledkov, 2 duplicity, 1 jazykový/skill mismatch, 1 lokalitne neoverený; bez ďalšej promotion.
 - Reddit/komunity: `limited`, 0 verified hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 06:30
-- významné kandidáty znovu overené: **1** (MamaTataJojo, bez zmeny promotion-ready stavu)
-- nové vhodné LIVE promotion: **0**
-- LIVE feed delta: **0**, zachovaných 49 položiek
+### Audit počty 07:32
+- nové vhodné LIVE promotion: **1**
+- LIVE feed delta: **+1**, 49 → **50**
+- verification pending: **57** + 1 historický promoted záznam ponechaný v audit trail
 - Facebook verified hits: **0**
-- `job-sources.json`: aktualizovať na 06:30
-- `source-audit.json`: zachovať kompletnú verification queue; zapisovať iba po bezpečnom replacement-e
-- `jobs-data.json`: bez zmeny, kým nie je bezpečne vykonaný kompletný replacement s promotion-ready kandidátom
+- LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
+- zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -134,7 +133,9 @@ Aktualizované: 5. 9. 2026 06:30 CEST
 - Verification queue source-saturation guard.
 - ÚPSVR mirror canonical-link resolver.
 - Segmented large-payload reconstruction checksum.
-- **Remote-sales intensity classifier** — pri home-office ponukách automaticky odlíšiť čistý customer care/back-office od outbound cold-calling/telemarketingu a znížiť prioritu rolám, kde je hlavný zdroj príjmu výkonový predaj.
-- **Promotion-ready transactional writer** — pri povyšovaní jednej položky najprv zrekonštruovať a validovať celý `jobs-data.json`, overiť počet existujúcich ID, duplicity, source mix a kategórie, potom vykonať jeden atomický replacement; pri akejkoľvek odchýlke zápis zrušiť.
-- **Result-page pagination coverage meter** — pri každom source family evidovať, koľko strán/výsledkov bolo reálne prehľadaných a či search skončil kvôli vyčerpaniu výsledkov alebo limitu indexácie; znižuje falošný pocit coverage pri zdrojoch, ktoré vracajú iba prvú stránku.
-- **Structured-data canonical fallback extractor** — ak viditeľný detail ponuky chýba alebo je dynamicky blokovaný, skúsiť z verejného JSON-LD/JobPosting načítať canonical URL, dátum, lokalitu, remote flag a expiry; promotion je povolený iba ak sa údaje zhodujú s verejným detailom alebo dôveryhodným primárnym zdrojom.
+- Remote-sales intensity classifier.
+- Promotion-ready transactional writer.
+- Result-page pagination coverage meter.
+- Structured-data canonical fallback extractor.
+- **Field-level provenance map** — pri každej LIVE položke evidovať, ktorý konkrétny zdroj a timestamp dokazujú lokalitu/remote režim, odmenu, jazyk, deadline a kvalifikačné požiadavky; pri konflikte aktualizovať iba pole s lepším primárnym dôkazom namiesto prepisovania celej položky podľa slabšieho mirroru.
+- **Consecutive canonical-failure stale counter** — pre rotujúcu vzorku LIVE URL držať počet po sebe idúcich zlyhaní canonical overenia; položku iba označiť na revíziu až po minimálne dvoch nezávislých zlyhaniach a nikdy ju automaticky nemažať. Znižuje false-positive expiráciu a rešpektuje fail-closed pravidlo.
