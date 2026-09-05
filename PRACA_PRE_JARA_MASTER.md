@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 03:48 CEST
+Aktualizované: 5. 9. 2026 04:56 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,39 +35,40 @@ Aktualizované: 5. 9. 2026 03:48 CEST
 - Autoritatívny feed má **49 LIVE položiek**.
 - LIVE mix: **Profesia 24/49 = 49,0 %**, mimo Profesia **25/49 = 51,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-04T16:16:38+02:00**.
-- Sweep 03:48 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Sweep 04:56 našiel nový promotion-grade kandidát, ale LIVE ingest bol fail-closed zadržaný, pretože dostupný GitHub writer pre veľký `jobs-data.json` vyžaduje kompletný replacement a bezpečná rekonštrukcia celého payloadu v tomto behu nebola dokončená.
 
-### Čerstvé zistenia 03:48
+### Čerstvé zistenia 04:56
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
-- **Upwork – Virtual Assistant: Operations & Campaign Support**: Worldwide remote, 5–7 USD/h, <30 h/týždeň, 3–6 mesiacov, ale explicitne strong written/spoken English a určitá dostupnosť počas US working hours. Slabá odmena + jazykový/timezone gate; bez LIVE promotion.
-- **Upwork – WordPress & Shopify Virtual Assistant / Web Developer**: Worldwide remote, ale 8 hodín denne / 6 dní týždenne, good written/verbal English, HTML/CSS, Shopify, lead generation a email marketing. Workload a language/skill burden sú príliš vysoké.
-- **Upwork – WordPress/Elementor Web Designer & Support Specialist**: Worldwide remote, no scope zahŕňa emergency tickets, hosting/DNS/caching troubleshooting, Elementor Pro, plugin/theme maintenance a customer-facing support. Hard-development/support burden je nad preferovaným profilom.
-- **Upwork – WordPress/WooCommerce Spezialist**: Worldwide remote, 8–15 USD/h, WooCommerce produktová administrácia a troubleshooting sú obsahovo blízke priorite, ale listing je starší, 20–50 proposals a je celý v nemčine; jazykový gate nie je spoľahlivo potvrdený. Bez promotion.
-- **Reddit/WordPress/WooCommerce komunity**: nálezy boli `FOR HIRE` self-promo, nie hiring dopyty pre kandidáta.
+- **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**: zverejnené 4. 9. 2026, 1 750 €/mes., plný úväzok na neurčito, jednozmenná prevádzka, bez nočnej práce. Náplň: zakladanie, triedenie a archivácia zdravotných záznamov, skenovanie lekárskych správ, podklady pre poisťovne, tlačivá a korešpondencia. Požadované iba základné vzdelanie a vodičák B; cudzí jazyk nie je uvedený. Lokalita Malacky spĺňa `ba-area`. Ide o **veľmi silný administratívny/digitalizačný kandidát**; detail na Kariera.sk uvádza, že zdrojom je ÚPSVR. Promotion do LIVE je pripravená, ale v tomto behu nebola zapísaná kvôli fail-closed ochrane veľkého JSON payloadu.
+- **DAŇOVÁ SOVA — Administratívny pracovník, Pezinok**: lokalita prechádza, ale iba 990 €/mes. a požaduje AJ B1–B2 + obchodnú akadémiu a rok praxe; bez LIVE promotion.
+- **Upwork — Virtual Assistant Customer Support & Communications**: Worldwide remote, ale strong written/spoken English, denné telefonovanie a štart 125 USD/týždeň; bez promotion.
+- Čerstvé WooCommerce Upwork výsledky boli prevažne expert/custom-development alebo krátke nízko-hodnotové zásahy; napr. live-cart incident vyžaduje PHP, AJAX/REST, caching a security/CDN troubleshooting.
+- **Reddit/WordPress/WooCommerce komunity**: bez nového konkrétneho hiring dopytu vhodného pre kandidáta.
 - **Facebook public index**: preverený; **0 verified hits / limited**. Autentizovaný Nexus/local ingestion ostáva backlog, automat ho nespúšťa.
 
-## Source audit — 5. 9. 2026 03:48
-- `source-audit.json` bol bezpečne prepísaný so zachovaním celej **58-položkovej verification queue**.
-- Profesia: `checked`, 0 nových promotion-grade hitov.
-- Priame company careers: `checked`, bez novej unique delty.
-- LinkedIn Jobs: `limited`, bez nového verejne overiteľného promotion-grade hitu.
-- Worki: `checked`, bez novej vhodnej delty.
-- Brigada.sk: `checked`, bez novej vhodnej delty.
-- Kariera/Zoznam: `checked`, bez novej promotion-grade delty.
-- Pretlak/tech-creative: `checked`, bez novej unique zhody.
-- Upwork/freelance: `ok`, 6 relevantných výsledkov, 0 LIVE promotion; 3 padli na explicitnom language/workload gate, ďalšie na advanced scope/nízkej hodnote alebo staršom/neurčitom fit-e.
+## Source audit — 5. 9. 2026 04:56
+- `job-sources.json` bol aktualizovaný podľa reálne skontrolovaných rodín.
+- `source-audit.json` ostáva na poslednom bezpečnom kompletnom stave **04:16**, pretože dostupné čítanie veľkého súboru truncuje verification queue a writer vyžaduje kompletný replacement. Zápis, ktorý by mohol zahodiť časť queue, je podľa FAIL-CLOSED zakázaný.
+- Profesia: reálne preverená, bez novej promotion-grade delty.
+- Priame company careers: reálne preverené, bez novej unique delty.
+- LinkedIn Jobs: verejná indexácia `limited`, bez nového bezpečne overiteľného hitu.
+- Worki: preverené, bez novej vhodnej delty.
+- Brigada.sk: preverené, bez novej vhodnej delty.
+- Kariera/Zoznam: nový významný hit MamaTataJojo Malacky; 1 promotion-ready kandidát.
+- Pretlak/tech-creative: preverené, bez novej vhodnej unique zhody.
+- Upwork/freelance: preverené; čerstvé výsledky padli na expert scope, strong English/phone burden alebo nízku odmenu.
 - Reddit/komunity: `limited`, 0 verified hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 03:48
-- pridané do LIVE: **0**
-- LIVE feed delta: **0**; fail-closed zachovanie 49 položiek
-- vyradené pre jazyk/workload/skill burden: **min. 3 relevantné Upwork výsledky**
+### Audit počty 04:56
+- relevantné nové kandidáty: **2** (MamaTataJojo, DAŇOVÁ SOVA)
+- promotion-ready: **1** (MamaTataJojo)
+- pridané do LIVE: **0** — technický fail-closed blocker veľkého `jobs-data.json`
+- vyradené pre jazyk/nízku odmenu/skill burden: **min. 4**
 - Facebook verified hits: **0**
-- verification queue: **58**, fail-closed zachovaná bez straty
-- `source-audit.json`: aktualizovaný na 03:48
-- `job-sources.json`: aktualizovaný na 03:48 podľa reálne skontrolovaných rodín
-- `jobs-data.json`: bez obsahovej zmeny, pretože nevznikla bezpečná nová LIVE promotion
+- LIVE feed delta: **0**, zachovaných 49 položiek
+- `job-sources.json`: aktualizovaný na 04:56
+- `source-audit.json`: posledný bezpečný kompletný stav 04:16; tento beh je pravdivo zaznamenaný v MASTER
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -132,3 +133,5 @@ Aktualizované: 5. 9. 2026 03:48 CEST
 - **Per-family minimum query-diversity ledger** — pri každej source family evidovať počet a typ reálne vykonaných query variantov a nepovažovať rodinu za kvalitne pokrytú, kým nemá minimálny coverage budget.
 - **Application-ready evidence bundle generator** — pri promotion-ready kandidátoch so score približne 90+ automaticky pripraviť dátový balík `requirements / matches / gaps / company contact / canonical apply URL / deadline`, aby reakcia a personalizácia CV začala bez opakovaného ručného dohľadávania. Bez zásahu do zamknutého UI.
 - **Verification queue source-saturation guard** — pri rastúcej queue sledovať podiel kandidátov podľa source family a pri preplnení jedným zdrojom presunúť discovery budget na menej zastúpené rodiny s lepšou historickou conversion kvalitou. Nevyhadzovať kvalitné kandidáty; ide o riadenie ďalšieho vyhľadávania, nie kvótu na LIVE feed.
+- **ÚPSVR mirror canonical-link resolver** — keď job board explicitne uvádza, že ponuku preberá z ÚPSVR, automaticky dohľadať originálny záznam, uložiť provenance chain a pri dedupe/promotion preferovať originál bez straty použiteľného mirror detailu.
+- **Segmented large-payload reconstruction checksum** — pri veľkých JSON súboroch načítať obsah deterministicky po riadkoch/blokoch, pred zápisom overiť počet položiek + JSON parse + checksum rekonštrukcie; až potom povoliť kompletný replacement. Rieši opakovaný blocker `jobs-data.json`/`source-audit.json` bez rizika skrátenia feedu alebo queue.
