@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 02:13 CEST
+Aktualizované: 5. 9. 2026 03:48 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,40 +35,39 @@ Aktualizované: 5. 9. 2026 02:13 CEST
 - Autoritatívny feed má **49 LIVE položiek**.
 - LIVE mix: **Profesia 24/49 = 49,0 %**, mimo Profesia **25/49 = 51,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-04T16:16:38+02:00**.
-- Čerstvý sweep nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
+- Sweep 03:48 nepriniesol nový bezpečný promotion-grade LIVE ingest; existujúce aktívne položky zostali fail-closed zachované.
 
-### Čerstvé zistenia 02:12–02:13
-- **Upwork – AI-Native Virtual Assistant pre automation agency**: silný AI/automation/admin fit bez požiadavky na titul či roky praxe, ale povinná dostupnosť **8:00–20:00 Pacific Time pondelok–sobota** a iba **1 000 USD/mes.** vytvárajú neprijateľný časovo-odmeňovací profil. Ostáva iba vo verification queue, nie LIVE.
-- **Upwork – WooCommerce Assistant**: verejný index ho zobrazil ako relevantný WooCommerce management lead, ale canonical detail už hlási **job no longer available**. Správne vyradené ako neaktívne; search-index hit sa nepočíta ako živá ponuka.
-- **Upwork – E-commerce VA (WooCommerce, Subscriptions, Customer Service, Xero)**: Worldwide remote, ale je už evidovaný vo verification queue; bez duplicate promotion.
-- **Profesia**: nový indexovaný e-shop výsledok bol mimo BA/okolia (Nitra), preto hard `reject-distance`.
-- **LinkedIn**: verejná indexácia nepriniesla nový bezpečný BA/remote promotion-grade hit; coverage bez loginu ostáva limited.
-- **Reddit/WordPress/WooCommerce komunity**: čerstvé nálezy boli `FOR HIRE` self-promo, nie hiring dopyty pre kandidáta.
-- **Facebook public index**: preverený; **0 verified hits / limited**.
+### Čerstvé zistenia 03:48
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
+- **Upwork – Virtual Assistant: Operations & Campaign Support**: Worldwide remote, 5–7 USD/h, <30 h/týždeň, 3–6 mesiacov, ale explicitne strong written/spoken English a určitá dostupnosť počas US working hours. Slabá odmena + jazykový/timezone gate; bez LIVE promotion.
+- **Upwork – WordPress & Shopify Virtual Assistant / Web Developer**: Worldwide remote, ale 8 hodín denne / 6 dní týždenne, good written/verbal English, HTML/CSS, Shopify, lead generation a email marketing. Workload a language/skill burden sú príliš vysoké.
+- **Upwork – WordPress/Elementor Web Designer & Support Specialist**: Worldwide remote, no scope zahŕňa emergency tickets, hosting/DNS/caching troubleshooting, Elementor Pro, plugin/theme maintenance a customer-facing support. Hard-development/support burden je nad preferovaným profilom.
+- **Upwork – WordPress/WooCommerce Spezialist**: Worldwide remote, 8–15 USD/h, WooCommerce produktová administrácia a troubleshooting sú obsahovo blízke priorite, ale listing je starší, 20–50 proposals a je celý v nemčine; jazykový gate nie je spoľahlivo potvrdený. Bez promotion.
+- **Reddit/WordPress/WooCommerce komunity**: nálezy boli `FOR HIRE` self-promo, nie hiring dopyty pre kandidáta.
+- **Facebook public index**: preverený; **0 verified hits / limited**. Autentizovaný Nexus/local ingestion ostáva backlog, automat ho nespúšťa.
 
-## Source audit — 5. 9. 2026 02:12–02:13
-- posledný kompletný pravdivý audit v `source-audit.json`: **12 source families**, z toho **11 mimo Profesia**; následný core recheck preveril 10 rodín bez novej LIVE delty.
-- Profesia: `checked`; bez novej promotion-grade BA/remote delty, mimo-lokalitný e-shop hit vyradený.
-- Priame company careers: `checked`; existujúce silné LIVE company-source roly zostávajú aktívne bez významnej zmeny.
-- LinkedIn Jobs: `limited`; prevažne staré/neaktívne alebo jazykovo nevhodné support roly, bez novej promotion.
-- Worki.sk: `checked`; bez novej vhodnej delty.
-- Brigada.sk: `checked`; bez novej vhodnej priority delty.
-- Práca za rohom: `checked`; bez novej promotion-grade delty.
-- Pretlak/tech-creative: `checked`; Alesa Office manager/asistent je už evidovaný verification kandidát, bez novej unique delty.
-- Kariera/Zoznam: `checked`; bez novej promotion-grade delty nad existujúcu queue.
-- StartupJobs: `checked`; nové AI výsledky boli senior/hard-tech alebo language mismatch, Medevio BDR je už v queue.
-- Upwork/freelance: `ok`; nový AI-native VA pridaný iba do verification, WooCommerce Assistant canonical neaktívny, ďalšie výsledky duplicate/hard-dev/low-value.
-- Reddit/komunity: `limited`; 0 verified hiring hits z čerstvého core rechecku.
+## Source audit — 5. 9. 2026 03:48
+- `source-audit.json` bol bezpečne prepísaný so zachovaním celej **58-položkovej verification queue**.
+- Profesia: `checked`, 0 nových promotion-grade hitov.
+- Priame company careers: `checked`, bez novej unique delty.
+- LinkedIn Jobs: `limited`, bez nového verejne overiteľného promotion-grade hitu.
+- Worki: `checked`, bez novej vhodnej delty.
+- Brigada.sk: `checked`, bez novej vhodnej delty.
+- Kariera/Zoznam: `checked`, bez novej promotion-grade delty.
+- Pretlak/tech-creative: `checked`, bez novej unique zhody.
+- Upwork/freelance: `ok`, 6 relevantných výsledkov, 0 LIVE promotion; 3 padli na explicitnom language/workload gate, ďalšie na advanced scope/nízkej hodnote alebo staršom/neurčitom fit-e.
+- Reddit/komunity: `limited`, 0 verified hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 02:12–02:13
+### Audit počty 03:48
 - pridané do LIVE: **0**
 - LIVE feed delta: **0**; fail-closed zachovanie 49 položiek
+- vyradené pre jazyk/workload/skill burden: **min. 3 relevantné Upwork výsledky**
 - Facebook verified hits: **0**
-- verification queue: **58**, fail-closed zachovaná; posledný kompletný audit pridal 1 nový verification kandidát (AI-Native VA), nie LIVE.
-- `source-audit.json`: čerstvý kompletný audit 02:12 so zachovaním verification queue; novší stale-SHA overwrite bol odmietnutý a nebol použitý na prepis novšieho stavu.
-- `job-sources.json`: aktualizovaný na 02:13 podľa čerstvého core rechecku.
-- `jobs-data.json`: bez obsahovej zmeny, pretože nevznikla bezpečná nová LIVE promotion.
+- verification queue: **58**, fail-closed zachovaná bez straty
+- `source-audit.json`: aktualizovaný na 03:48
+- `job-sources.json`: aktualizovaný na 03:48 podľa reálne skontrolovaných rodín
+- `jobs-data.json`: bez obsahovej zmeny, pretože nevznikla bezpečná nová LIVE promotion
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -129,5 +128,7 @@ Aktualizované: 5. 9. 2026 02:13 CEST
 - New-client fixed-price risk × effort gate.
 - Workload sustainability gate.
 - Effective hourly compensation normalizer.
-- **Concurrent-run optimistic-lock merge guard** — pred každým zápisom audit/source JSON overiť, či sa SHA od načítania nezmenilo; pri `409` automaticky znovu načítať novší súbor, zachovať novšie queue položky a merge-nuť iba čerstvú deltu namiesto riskantného overwrite. Rieši reálne riziko prekrývajúcich sa hodinových behov a chráni verification queue pred stratou.
-- **Per-family minimum query-diversity ledger** — pri každej source family evidovať počet a typ reálne vykonaných query variantov (napr. exact-role, adjacent-role, location/remote variant) a nepovažovať rodinu za kvalitne pokrytú, kým nemá minimálny coverage budget. Znižuje falošné `checked` pri jedinom úzkom dotaze a zvyšuje discovery recall bez zásahu do UI.
+- **Concurrent-run optimistic-lock merge guard** — pred každým zápisom audit/source JSON overiť, či sa SHA od načítania nezmenilo; pri `409` automaticky znovu načítať novší súbor, zachovať novšie queue položky a merge-nuť iba čerstvú deltu namiesto riskantného overwrite.
+- **Per-family minimum query-diversity ledger** — pri každej source family evidovať počet a typ reálne vykonaných query variantov a nepovažovať rodinu za kvalitne pokrytú, kým nemá minimálny coverage budget.
+- **Application-ready evidence bundle generator** — pri promotion-ready kandidátoch so score približne 90+ automaticky pripraviť dátový balík `requirements / matches / gaps / company contact / canonical apply URL / deadline`, aby reakcia a personalizácia CV začala bez opakovaného ručného dohľadávania. Bez zásahu do zamknutého UI.
+- **Verification queue source-saturation guard** — pri rastúcej queue sledovať podiel kandidátov podľa source family a pri preplnení jedným zdrojom presunúť discovery budget na menej zastúpené rodiny s lepšou historickou conversion kvalitou. Nevyhadzovať kvalitné kandidáty; ide o riadenie ďalšieho vyhľadávania, nie kvótu na LIVE feed.
