@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 08:24 CEST
+Aktualizované: 5. 9. 2026 09:11 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,37 +38,38 @@ Aktualizované: 5. 9. 2026 08:24 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 08:24
+### Čerstvé zistenia 09:11
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, tech/creative (Pretlak + StartupJobs), Upwork/freelance, Reddit/komunity a Facebook public index.
-- **Welo Data / Welocalize — Ads Quality Rater - Slovak (Slovakia)**: priama firemná career stránka, **remote/work from home zo Slovenska**, task-based odmena približne **8 USD/h**. Náplň je hodnotenie internetových reklám a relevance výsledkov; pracuje sa so slovenčinou aj angličtinou. Lokalita jednoznačne `remote-ok`, ale požadovaná úroveň angličtiny nie je explicitne uvedená, preto nejde automaticky do LIVE a ostáva ako verification lead.
-- **Welo Data — Generative AI Analyst | Slovak (Slovakia)**: priama remote freelance rola pre Slovensko za **12,10 USD/h**, ale canonical detail vyžaduje **strong written communication skills in English**. Pre aktuálny profil je to výrazný jazykový mismatch a bez LIVE promotion.
-- **Upwork**: nové WordPress/WooCommerce výsledky boli prevažne hard-development/expert scope (custom PHP/Gutenberg, PHP fatal + AJAX/REST, full build) alebo mali veľmi nízky fixed budget; bez bezpečnej promotion.
-- **LinkedIn**: verejná indexácia preverená, bez novej vhodnej promotion-grade delty; coverage bez loginu ostáva limited.
-- **Worki + Brigada.sk + Kariera/Zoznam**: reálne preverené; bez novej unique promotion-grade delty.
-- **Pretlak / StartupJobs**: bez novej vhodnej promotion-grade zhody.
-- **Reddit**: čerstvý výsledok bol FOR HIRE, nie konkrétny hiring dopyt; 0 verified hiring hits.
-- **Facebook public index**: preverený; **0 verified hits / limited**. Autentizovaný Nexus/local ingestion ostáva backlog, automat ho nespúšťa.
+- **BeiT Technologie — Administrativně-ekonomický specialista (Junior/Medior)**: StartupJobs, 26–44 tis. Kč/mes., 30–40 h/týždeň, full-time/part-time, IČO, 100 % remote. Náplň: párovanie platieb, faktúry, dáta v internom systéme, zákaznícka podpora, Excel a základné účtovníctvo. Inzerát uvádza „pracuj odkiaľkoľvek“, ale neuvádza explicitne, že akceptuje slovenskú SZČO / výkon zo Slovenska; preto **`locationEligibility: unknown`**, bez LIVE promotion do overenia. Ďalším faktorom je požiadavka istej komunikácie v češtine po e-maile a telefóne.
+- **Alza careers**: AlzaBox Špecialista Bratislava je stále priamo viditeľný a už je LIVE; nové zobrazené Bernolákovo roly neprebíjajú jeho fit.
+- **Websupport Customer Success Advisor**: priama kariérna stránka zostáva aktívna; už je vo verification pre smeny/jazyk, bez novej delty.
+- **Worki**: Nutra Group home-office call-centre bolo aktualizované 4.9.2026, ale ide o výrazný telefonický predaj na živnosť, preto bez promotion.
+- **StartupJobs**: staršie 100 % remote customer-support/back-office výsledky označené ako expired sa nepovažovali za kandidátov. Medevio BDR zostáva outbound sales a už je evidované.
+- **Upwork**: Website & SEO Management 2026 a WooCommerce/Xero VA sú už vo verification; ďalšie zobrazené WooCommerce full-build roly sú expert/dev scope alebo slabý fixed-budget fit.
+- **LinkedIn**: verejná indexácia preverená; EEA remote web výsledky bez dostatočného SK-remote/freshness dôkazu alebo už neaktívne.
+- **Facebook public index**: **0 verified hits / limited**. Autentizovaný Nexus/local ingestion zostáva backlog, automat ho nespúšťa.
 
-## Source audit — 5. 9. 2026 08:24
+## Source audit — 5. 9. 2026 09:11
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `ok`; 2 relevantné Welo Slovakia-remote kandidáty, 0 LIVE, 1 verification pre nejasnú úroveň angličtiny, 1 jazykový mismatch.
-- LinkedIn Jobs: `limited`; bez novej vhodnej promotion-grade delty.
-- Worki: `checked`; bez novej vhodnej delty.
+- Priame company careers: `checked`; Websupport/Alza/Telekom reálne preverené, bez novej unique promotion.
+- LinkedIn Jobs: `limited`; bez novej bezpečnej LIVE delty.
+- Worki: `ok`; 1 relevantný remote call-centre hit, vyradený z promotion pre sales/phone scope.
 - Brigada.sk: `checked`; bez nového vhodného promotion-grade hitu.
 - Kariera/Zoznam: `checked`; bez novej vhodnej unique promotion-grade delty.
-- Pretlak / StartupJobs: `checked`; bez novej vhodnej promotion-grade zhody.
-- Upwork/freelance: `limited`; čerstvé výsledky boli prevažne hard-dev/expert alebo nízko platené; bez LIVE promotion.
+- Pretlak / StartupJobs: `ok`; 1 nový významný kandidát BeiT, ale remote-from-Slovakia eligibility nie je explicitne potvrdená, preto `unknown`.
+- Upwork/freelance: `limited`; existujúce verification kandidáty potvrdené, bez novej LIVE promotion.
 - Reddit/komunity: `limited`, 0 verified hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 08:24
+### Audit počty 09:11
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- významný nový verification lead: **1** (Welo Ads Quality Rater - Slovak)
-- explicitný jazykový mismatch: **1** (Welo Generative AI Analyst - strong written English)
+- nový významný verification kandidát: **1** (BeiT Technologie, location `unknown`)
+- rejected/held pre lokalitnú neistotu: **1**
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
+- technický stav: `job-sources.json` a MASTER aktualizované; `source-audit.json` zostal v tomto behu fail-closed, pretože dostupný GitHub write interface vyžaduje kompletný replacement veľkého súboru a nie je k dispozícii bezpečný čiastkový patch bez rekonštrukcie celej verification queue.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -140,6 +141,8 @@ Aktualizované: 5. 9. 2026 08:24 CEST
 - Result-page pagination coverage meter.
 - Structured-data canonical fallback extractor.
 - **Field-level provenance map** — pri každej LIVE položke evidovať, ktorý konkrétny zdroj a timestamp dokazujú lokalitu/remote režim, odmenu, jazyk, deadline a kvalifikačné požiadavky; pri konflikte aktualizovať iba pole s lepším primárnym dôkazom namiesto prepisovania celej položky podľa slabšieho mirroru.
-- **Consecutive canonical-failure stale counter** — pre rotujúcu vzorku LIVE URL držať počet po sebe idúcich zlyhaní canonical overenia; položku iba označiť na revíziu až po minimálne dvoch nezávislých zlyhaniach a nikdy ju automaticky nemažať. Znižuje false-positive expiráciu a rešpektuje fail-closed pravidlo.
-- **English task-type comprehension probe** — pri rolách bez formálnej CEFR úrovne rozlíšiť, či je angličtina iba pasívne čítanie/labeling, písomná tvorba alebo telefonická komunikácia. Zníži zbytočné vyradenie rolí, ktoré môžu byť reálne zvládnuteľné s A2, a zároveň nezľahčí jazykový hard gate.
-- **Remote microtask income stability score** — pri task-based AI/data rolách evidovať garantované hodiny, dostupnosť taskov, pay-per-task vs. hodinovú sadzbu a historickú stabilitu projektu. Oddelí použiteľnú vedľajšiu prácu od ponúk, kde nominálna hodinová sadzba neznamená reálny mesačný príjem.
+- **Consecutive canonical-failure stale counter** — pre rotujúcu vzorku LIVE URL držať počet po sebe idúcich zlyhaní canonical overenia; položku iba označiť na revíziu až po minimálne dvoch nezávislých zlyhaniach a nikdy ju automaticky nemažať.
+- **English task-type comprehension probe** — pri rolách bez formálnej CEFR úrovne rozlíšiť, či je angličtina iba pasívne čítanie/labeling, písomná tvorba alebo telefonická komunikácia.
+- **Remote microtask income stability score** — pri task-based AI/data rolách evidovať garantované hodiny, dostupnosť taskov, pay-per-task vs. hodinovú sadzbu a historickú stabilitu projektu.
+- **Cross-border remote contract eligibility verifier** — pri českých/EÚ „100 % remote“ ponukách automaticky hľadať dôkaz, či firma akceptuje slovenskú SZČO/živnosť alebo zamestnanca zo Slovenska. Bez explicitného dôkazu nechať `locationEligibility: unknown`; tým sa odstráni najčastejší falošne pozitívny remote signál.
+- **Phone-language burden score for CZ/SK roles** — odlíšiť pasívnu češtinu/slovenčinu od každodennej telefonickej komunikácie a zákazníckych eskalácií. Pri cezhraničných admin/support rolách tak ranking presnejšie zohľadní reálnu jazykovú záťaž bez zbytočného hard-gate vyradenia.
