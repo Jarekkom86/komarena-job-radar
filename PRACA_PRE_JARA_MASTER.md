@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 22:25 CEST
+Aktualizované: 5. 9. 2026 23:40 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,28 +38,29 @@ Aktualizované: 5. 9. 2026 22:25 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 22:25
+### Čerstvé zistenia 23:40
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam + ÚPSVR, Pretlak/StartupJobs/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- **Dotypos SK — Pracovník kontaktného centra**, Bratislava-Ružinov, 1 500 EUR/mes., nástup ihneď a pracovný pomer na neurčito: obsahovo dobrý customer-support/reklamácie fit, ale canonical ÚPSVR detail vyžaduje AJ B1–B2, aspoň 2 roky praxe a pokročilé Word/Excel/PowerPoint/Outlook. Preto bez LIVE promotion.
-- WordPress Jobs má aktuálne 8 otvorených pozícií, no relevantné čerstvé roly sú prevažne senior/hard-development a zahŕňajú custom themes, PHP/JS, server management, API, Git a performance ops; pre aktuálny profil sú mimo preferovaného non-hard-dev scope.
-- Upwork verejný WordPress e-commerce index ukázal čerstvý 750 USD intermediate projekt na nový 7–9 stranový marketingový web. Ide o full-build scope, nie maintenance/admin, preto bez promotion.
-- Reddit r/wordpressjobs obsahuje čerstvý verejne indexovaný post „I'm looking for a website creator“, ale bez dostatočne overeného budgetu, scope a remote eligibility na zaradenie do LIVE.
-- Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nezapisuje ako hit; autentizovaný Nexus/local ingestion zostáva backlog.
+- Priamy Telekom careers detail stále potvrdzuje **Špecialista/Špecialistka podpory zákazníkov — Bratislava / čiastočný home office**. Ponuka je už LIVE, preto ide iba o canonical freshness refresh a `rejectedDuplicate: 1`, nie nový prírastok.
+- WordPress Jobs aktuálne uvádza **8 otvorených pozícií a 13 % remote-friendly**. Najčerstvejšie relevantné roly sú prevažne custom PHP/theme/plugin, performance/server alebo geograficky viazané; bez bezpečnej SK-remote promotion.
+- Upwork verejný index ukázal čerstvé Worldwide remote mikro-zákazky: Elementor fix **50 USD** s contract-to-hire, WordPress fix **5 USD**, small task **10 USD** a small-business build **120 USD**. Lokalita prechádza, ale nízky fixed-budget ROI alebo development scope nedosahujú LIVE threshold.
+- Kariera/Zoznam a ÚPSVR boli reálne preverené; verejný BA index má čerstvé administratívne/marketingové výsledky a lokálne zásielkové/customer-service roly, ale bez kandidáta, ktorý by po fit/compensation gate prekonal aktuálny feed.
+- Reddit/WordPress communities: v tomto behu bez nového konkrétneho verejne overiteľného hiring leadu s dostatočným scope, budgetom a remote/BA dôkazom.
+- Facebook public index: **0 verified hits / limited**. WordPress Slovensko, WooCommerce SK+CZ a Práca/brigády Bratislava a okolie boli vyhľadané; bez konkrétneho verejného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 5. 9. 2026 22:25
+## Source audit — 5. 9. 2026 23:40
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `checked`; bez novej vhodnej unique delty.
+- Priame company careers: `ok`; 1 relevantný canonical refresh, ale už existujúci LIVE Telekom job → duplicate, nie nový prírastok.
 - LinkedIn Jobs: `limited`; bez novej vhodnej unique delty, coverage bez loginu zostáva čiastočná.
 - Worki: `checked`; bez nového promotion-grade hitu.
 - Brigada.sk: `checked`; bez nového promotion-grade hitu.
-- Kariera/Zoznam + ÚPSVR: `ok`; 1 relevantný canonical hit (Dotypos), bez LIVE promotion pre jazyk/practice/tool burden.
-- Tech/creative: `checked`; 1 relevantný WordPress Jobs result family, ale hard-development scope, bez bezpečnej promotion.
-- Upwork/freelance: `ok`; 1 čerstvý relevantný WordPress full-build result, bez promotion.
-- Reddit/komunity: `limited`; 1 verejne indexovaný hiring post, ale bez dostatočného verification dôkazu pre LIVE.
+- Kariera/Zoznam + ÚPSVR: `ok`; lokálne relevantné výsledky existujú, bez novej LIVE promotion po fit/compensation gate.
+- Tech/creative: `ok`; WordPress Jobs 8 open / 13 % remote-friendly, relevantné čerstvé roly prevažne hard-development alebo geo-bound.
+- Upwork/freelance: `ok`; 4 čerstvé relevantné Worldwide remote WordPress mikro-zákazky, všetky bez promotion pre nízky ROI alebo scope burden.
+- Reddit/komunity: `limited`; 0 nových overených hiring leadov v tomto behu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 22:25
+### Audit počty 23:40
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - nové unique významné verification kandidáty: **0**
@@ -168,5 +169,7 @@ Aktualizované: 5. 9. 2026 22:25 CEST
 - Micro-project interview-pressure gate.
 - Cross-platform e-commerce skill-gap weight.
 - Fixed-budget scope ambiguity blocker.
-- **Requirement burden composite score** — zjednotiť jazyk, roky praxe, formálne vzdelanie, povinné nástroje a špecializované skills do jedného vysvetliteľného `requirementBurden` skóre. Cieľ: rýchlejšie odlíšiť lokálne „dobré na papieri“ ponuky typu Dotypos od reálne vysokej šance na prijatie bez toho, aby sa každý faktor ručne posudzoval izolovane.
-- **Community lead evidence completeness gate** — pre Reddit/Facebook/WordPress community post vyžadovať pred promotion minimálne konkrétny zadávateľ/post, scope, odmenu alebo spôsob dohody, dátum, priamy link a explicitný dôkaz BA alebo remote eligibility. Ak niektorý kritický prvok chýba, lead ostane `unknown/verification` a Source Radar ho nesmie vykazovať ako overenú pracovnú ponuku.
+- **Requirement burden composite score** — zjednotiť jazyk, roky praxe, formálne vzdelanie, povinné nástroje a špecializované skills do jedného vysvetliteľného `requirementBurden` skóre.
+- **Community lead evidence completeness gate** — pre Reddit/Facebook/WordPress community post vyžadovať pred promotion minimálne konkrétny zadávateľ/post, scope, odmenu alebo spôsob dohody, dátum, priamy link a explicitný dôkaz BA alebo remote eligibility.
+- **Freelance bid-cost ROI estimator** — pred alertom odhadnúť náklady na podanie ponuky (Connects/bid effort), konkurenciu a očakávanú hodnotu zákazky; mikro-zákazky s negatívnym očakávaným ROI potlačiť bez zahlcovania verification queue.
+- **Canonical active-state revalidation sampler** — pri každom behu znovu overiť malú rotujúcu vzorku TOP LIVE priamych/canonical linkov a evidovať `activeConfirmedAt`; jeden dočasný výpadok nesmie mazať položku, ale opakované canonical zlyhania ju pošlú na manuálnu revíziu.
