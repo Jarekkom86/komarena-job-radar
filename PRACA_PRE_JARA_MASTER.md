@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 04:56 CEST
+Aktualizované: 5. 9. 2026 05:27 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -36,40 +36,39 @@ Aktualizované: 5. 9. 2026 04:56 CEST
 - Autoritatívny feed má **49 LIVE položiek**.
 - LIVE mix: **Profesia 24/49 = 49,0 %**, mimo Profesia **25/49 = 51,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-04T16:16:38+02:00**.
-- Sweep 04:56 našiel a znovu overil promotion-ready kandidáta, ale LIVE ingest bol fail-closed zadržaný, pretože dostupný GitHub writer pre veľký `jobs-data.json` vyžaduje kompletný replacement a bezpečná rekonštrukcia celého payloadu v tomto behu nebola dokončená.
+- MamaTataJojo zostáva promotion-ready a 5. 9. 2026 05:27 bol znovu potvrdený ako aktívny do 2. 10. 2026. Bezpečný LIVE ingest čaká na kompletný replacement autoritatívneho JSON bez straty existujúcich 49 položiek.
 
-### Čerstvé zistenia 04:56
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
-- **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**: zverejnené 4. 9. 2026, 1 750 €/mes., plný úväzok na neurčito, jednozmenná prevádzka, bez nočnej práce. Náplň: zakladanie, triedenie a archivácia zdravotných záznamov, skenovanie lekárskych správ, podklady pre poisťovne, tlačivá a korešpondencia. Požadované iba základné vzdelanie a vodičák B; cudzí jazyk nie je uvedený. Lokalita Malacky spĺňa `ba-area`. Ide o **veľmi silný administratívny/digitalizačný kandidát**. V `source-audit.json` bol opravený z neplatného `ba-area-conditional` na `ba-area`, status na `promotion-ready` a provisional score na 94. Detail na Kariera.sk uvádza, že zdrojom je ÚPSVR.
-- **DAŇOVÁ SOVA — Administratívny pracovník, Pezinok**: lokalita prechádza, ale iba 990 €/mes. a požaduje AJ B1–B2 + obchodnú akadémiu a rok praxe; bez LIVE promotion.
-- **Upwork — Virtual Assistant Customer Support & Communications**: Worldwide remote, ale strong written/spoken English, denné telefonovanie a štart 125 USD/týždeň; bez promotion.
-- Čerstvé WooCommerce Upwork výsledky boli prevažne expert/custom-development alebo krátke nízko-hodnotové zásahy; napr. live-cart incident vyžaduje PHP, AJAX/REST, caching a security/CDN troubleshooting.
-- **Reddit/WordPress/WooCommerce komunity**: bez nového konkrétneho hiring dopytu vhodného pre kandidáta.
+### Čerstvé zistenia 05:27
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/tech-creative + WordPress Jobs, Upwork/freelance, Reddit/komunity a Facebook public index.
+- **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**: znovu potvrdené 5. 9. 2026; zverejnené 4. 9. 2026, koniec ponuky 2. 10. 2026, 1 750 €/mes., plný úväzok na neurčito, jednozmenná prevádzka. Náplň: zakladanie, triedenie a archivácia zdravotných záznamov, skenovanie lekárskych správ, podklady pre poisťovne, tlačivá a korešpondencia. Požadované základné vzdelanie a vodičák B; cudzí jazyk nie je uvedený. Lokalita Malacky = `ba-area`. Stav zostáva **promotion-ready, score 94**.
+- **1plus1 / SPP — operátor kontaktného centra, Home Office**: ponuka je reálne remote-ok zo Slovenska, 1 200–2 500 €/mes. na živnosť a nástup ihneď, ale jadrom je outbound obvolávanie zákazníkov a predaj produktov SPP. Zaradené iba ako nízko-prioritný discovery hit, nie LIVE promotion.
+- **Power AS — Klientský online pracovník/pracovníčka**: 100 % home-office, od 1 500 €/mes., ale role sa po skúšobnej dobe posúva do získavania firemných zákazníkov/vedenia tímu; predajný charakter znižuje fit. Bez promotion.
+- **Slovak Telekom careers**: priamy výpis potvrdený; existujúci customer-support kandidát zostáva LIVE. Čerstvo indexované DevOps/network roly sú hard-development/network a mimo profilu.
+- **WordPress Jobs**: aktuálne 8 otvorených pozícií; prevažujú onsite USA/India/Saudi alebo developer/performance scope. Bez vhodného remote-ok admin/support hitu.
+- **Upwork**: WooCommerce/WordPress/VA discovery preverené; najbližší e-commerce VA kandidát je už vo verification queue a vyžaduje WooCommerce Subscriptions, strong written English, Meta Ads a Xero. Nové WooCommerce výsledky sú prevažne expert development; bez LIVE promotion.
+- **Reddit**: verejne indexované výsledky boli self-promo `[for hire]`, nie konkrétne hiring dopyty; 0 verified hiring hits.
 - **Facebook public index**: preverený; **0 verified hits / limited**. Autentizovaný Nexus/local ingestion ostáva backlog, automat ho nespúšťa.
 
-## Source audit — 5. 9. 2026 04:56
-- `source-audit.json` bol **bezpečne aktualizovaný na 04:56 so zachovaním celej 58-položkovej verification queue**.
-- Profesia: `checked`, bez novej promotion-grade delty.
-- Priame company careers: `checked`, bez novej unique delty.
-- LinkedIn Jobs: `limited`, bez nového verejne overiteľného promotion-grade hitu.
-- Worki: `checked`, bez novej vhodnej delty.
-- Brigada.sk: `checked`, bez novej vhodnej delty.
-- Kariera/Zoznam: `ok`; MamaTataJojo Malacky znovu overený a povýšený na `promotion-ready`.
-- Pretlak/tech-creative: `checked`, bez novej suitable unique zhody.
-- Upwork/freelance: `ok`; čerstvé výsledky padli najmä na expert scope, strong-English/phone burden alebo nízku odmenu.
+## Source audit — 5. 9. 2026 05:27
+- Profesia: `ok/checked`; nový SPP home-office hit je verifikovaný, ale nízko-prioritný pre outbound sales charakter; bez LIVE promotion.
+- Priame company careers: `ok`; Telekom careers reálne načítané, existujúci support LIVE potvrdený, nové hard-tech roly vyradené profilom.
+- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez vhodného nového non-hard-dev promotion hitu.
+- Worki: `checked`; bez novej vhodnej delty.
+- Brigada.sk: `checked`; bez nového vhodného verifikovaného BA/remote hitu.
+- Kariera/Zoznam: `ok`; MamaTataJojo znovu potvrdený ako aktívny do 2.10.2026 a promotion-ready.
+- Pretlak / WordPress Jobs: `checked`; bez novej vhodnej promotion-grade zhody.
+- Upwork/freelance: `ok`; bez novej promotion-grade delty.
 - Reddit/komunity: `limited`, 0 verified hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
-- Opravený bol aj starší neplatný `ba-area-conditional` pri GLS Malacky na platný `ba-area`; commute zostáva ranking faktor, nie lokalitný hard gate.
 
-### Audit počty 04:56
-- významne zmenené prioritné kandidáty: **1** (MamaTataJojo → promotion-ready)
-- pridané do LIVE: **0** — technický fail-closed blocker veľkého `jobs-data.json`
+### Audit počty 05:27
+- významné kandidáty znovu overené: **1** (MamaTataJojo, bez zmeny promotion-ready stavu)
+- nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zachovaných 49 položiek
-- verification queue: **58**, zachovaná bez straty
 - Facebook verified hits: **0**
-- `job-sources.json`: aktualizovaný na 04:56
-- `source-audit.json`: aktualizovaný na 04:56
-- `jobs-data.json`: zatiaľ bez zmeny; promotion-ready kandidát čaká iba na bezpečný kompletný replacement
+- `job-sources.json`: aktualizovaný na 05:27
+- `source-audit.json`: musí zachovať kompletnú verification queue; zapisovať iba po bezpečnom replacement-e
+- `jobs-data.json`: bez zmeny, kým nie je bezpečne vykonaný kompletný replacement s promotion-ready kandidátom
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -130,9 +129,11 @@ Aktualizované: 5. 9. 2026 04:56 CEST
 - New-client fixed-price risk × effort gate.
 - Workload sustainability gate.
 - Effective hourly compensation normalizer.
-- **Concurrent-run optimistic-lock merge guard** — pred každým zápisom audit/source JSON overiť, či sa SHA od načítania nezmenilo; pri `409` automaticky znovu načítať novší súbor, zachovať novšie queue položky a merge-nuť iba čerstvú deltu namiesto riskantného overwrite.
-- **Per-family minimum query-diversity ledger** — pri každej source family evidovať počet a typ reálne vykonaných query variantov a nepovažovať rodinu za kvalitne pokrytú, kým nemá minimálny coverage budget.
-- **Application-ready evidence bundle generator** — pri promotion-ready kandidátoch so score približne 90+ automaticky pripraviť dátový balík `requirements / matches / gaps / company contact / canonical apply URL / deadline`, aby reakcia a personalizácia CV začala bez opakovaného ručného dohľadávania. Bez zásahu do zamknutého UI.
-- **Verification queue source-saturation guard** — pri rastúcej queue sledovať podiel kandidátov podľa source family a pri preplnení jedným zdrojom presunúť discovery budget na menej zastúpené rodiny s lepšou historickou conversion kvalitou. Nevyhadzovať kvalitné kandidáty; ide o riadenie ďalšieho vyhľadávania, nie kvótu na LIVE feed.
-- **ÚPSVR mirror canonical-link resolver** — keď job board explicitne uvádza, že ponuku preberá z ÚPSVR, automaticky dohľadať originálny záznam, uložiť provenance chain a pri dedupe/promotion preferovať originál bez straty použiteľného mirror detailu.
-- **Segmented large-payload reconstruction checksum** — pri veľkých JSON súboroch načítať obsah deterministicky po riadkoch/blokoch, pred zápisom overiť počet položiek + JSON parse + checksum rekonštrukcie; až potom povoliť kompletný replacement. Rieši opakovaný blocker `jobs-data.json`/`source-audit.json` bez rizika skrátenia feedu alebo queue.
+- Concurrent-run optimistic-lock merge guard.
+- Per-family minimum query-diversity ledger.
+- Application-ready evidence bundle generator.
+- Verification queue source-saturation guard.
+- ÚPSVR mirror canonical-link resolver.
+- Segmented large-payload reconstruction checksum.
+- **Remote-sales intensity classifier** — pri home-office ponukách automaticky odlíšiť čistý customer care/back-office od outbound cold-calling/telemarketingu a znížiť prioritu rolám, kde je hlavný zdroj príjmu výkonový predaj. Zabraňuje tomu, aby označenie „100 % home office“ umelo prehlušilo slabý funkčný fit.
+- **Promotion-ready transactional writer** — pri povyšovaní jednej položky najprv zrekonštruovať a validovať celý `jobs-data.json`, overiť počet existujúcich ID, duplicity, source mix a kategórie, potom vykonať jeden atomický replacement; pri akejkoľvek odchýlke zápis zrušiť. Rieši opakovaný stav, keď kvalitný kandidát zostáva v queue iba kvôli bezpečnosti veľkého payloadu.
