@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 13:08 CEST
+Aktualizované: 5. 9. 2026 14:29 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,34 +38,34 @@ Aktualizované: 5. 9. 2026 13:08 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 13:08
+### Čerstvé zistenia 14:29
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam + ÚPSVR mirror, tech/creative (Pretlak + StartupJobs + WordPress Jobs), Upwork/freelance, Reddit/komunity a Facebook public index.
-- **Bolder Slovakia — Administrátor/ka korporátnej agendy, Bratislava**, 1 600 EUR/mes., je lokálne `ba-area`, ale vyžaduje VŠ I. stupňa, minimálne 2 roky relevantnej praxe, pokročilé Office a angličtinu C1 slovom aj písmom. Pre profil ide o výrazný language/qualification mismatch; **nepovýšiť do LIVE**.
-- Kariera/Zoznam naďalej vracia čerstvé BA výsledky; bez kandidáta, ktorý by po fit, jazyku a workload gate prekonal existujúce LIVE priority.
+- Kariera/Zoznam dnes zobrazuje čerstvé BA administratívne výsledky vrátane **MADWIRE – Marketingový manažér, Bratislava, 1 700 EUR** a **Grafton – ADMIN ANALYST, Bratislava, 1 000–1 200 EUR**. Prvý je mimo prioritného profilu a druhý má slabší pomer fit/odmena; **bez LIVE promotion**.
+- Upwork verejný Slovak feed uvádza **59 Slovakian jobs**; čerstvo indexované príklady sú prevažne UGC, cold calling, kuriérsky research, audio/transcription alebo mikroúlohy. Bez nového WordPress/WooCommerce/admin kandidáta s dostatočným ROI na promotion.
 - LinkedIn verejná indexácia ostáva `limited`; bez bezpečného nového SK/BA promotion kandidáta.
 - Worki a Brigada.sk reálne preverené; bez nového promotion-grade hitu.
-- Pretlak/StartupJobs/WordPress Jobs preverené; BeiT zostáva cross-border remote `unknown`, ostatné výsledky sú skill mismatch alebo bez dostatočného remote dôkazu.
-- Upwork/freelance verejná indexácia v tomto behu nepriniesla nový detail s dostatočným fit/ROI na LIVE promotion.
+- Pretlak/StartupJobs/WordPress Jobs preverené; BeiT zostáva cross-border remote `unknown`, ostatné výsledky bez dostatočného fitu alebo remote dôkazu.
 - Reddit/WordPress/WooCommerce komunity: **0 verified konkrétnych hiring dopytov**, coverage `limited`.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nezapisuje ako hit; autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 5. 9. 2026 13:08
+## Source audit — 5. 9. 2026 14:29
 - Profesia: `checked`; bez novej unique promotion-grade delty.
 - Priame company careers: `checked`; bez novej vhodnej unique LIVE delty.
 - LinkedIn Jobs: `limited`; verejná indexácia preverená, bez bezpečného nového SK/BA promotion kandidáta.
 - Worki: `checked`; bez nového promotion-grade hitu.
 - Brigada.sk: `checked`; bez nového promotion-grade hitu.
-- Kariera/Zoznam + ÚPSVR mirror: `ok`; Bolder Bratislava dostupný, ale vyradený pre AJ C1 + VŠ + relevantnú prax.
+- Kariera/Zoznam + ÚPSVR mirror: `ok`; čerstvé BA administratívne výsledky dostupné, ale bez promotion po fit/pay gate.
 - Pretlak / StartupJobs / WordPress Jobs: `checked`; bez novej vhodnej promotion-grade zhody.
-- Upwork/freelance: `checked`; bez novej bezpečnej promotion-grade delty.
+- Upwork/freelance: `ok`; Slovak feed verejne dostupný, 59 jobs, ale bez novej bezpečnej promotion-grade delty.
 - Reddit/komunity: `limited`, 0 verified hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 13:08
+### Audit počty 14:29
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - nové unique významné verification kandidáty: **0**
-- Kariera/ÚPSVR relevantné kandidáty: **1+**, Bolder vyradený pre language/qualification mismatch
+- Kariera/Zoznam relevantné čerstvé BA kandidáty: **2+**, ale bez promotion po fit/pay gate
+- Upwork Slovak verejný feed: **59 jobs** indexovaných; bez novej promotion-grade zhody v prioritných smeroch
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
@@ -152,5 +152,7 @@ Aktualizované: 5. 9. 2026 13:08 CEST
 - Maintenance-vs-development scope classifier.
 - Same-day low-fit suppression ledger.
 - Freelance scope-to-evidence matcher.
-- **Qualification-stack early reject cache** — pri rolách, kde sa naraz objaví VŠ + povinná prax + B2/C1 jazyk, uložiť deterministický reject fingerprint a v ďalších behoch kandidáta znovu neotvárať, kým sa canonical požiadavky nezmenia; šetrí opakované overovanie nízko-pravdepodobných rolí.
-- **Source-detail evidence completeness counter** — pri každom source family evidovať podiel výsledkov, pri ktorých sa podarilo otvoriť konkrétny detail s lokalitou, jazykom, mzdou a dátumom; umožní odlíšiť reálne nízku ponuku od slabej indexácie a cielene meniť query stratégiu.
+- Qualification-stack early reject cache.
+- Source-detail evidence completeness counter.
+- **Negative-result query coverage hash** — pri source family bez hitu ukladať hash kombinácie query + lokalita + kategória + čas behu, aby sa dalo odlíšiť reálne nulové pokrytie od opakovania rovnakého úzkeho dotazu a automat mohol cielene rozšíriť ďalší sweep.
+- **Remote-work jurisdiction evidence cache** — pri zahraničných remote rolách ukladať explicitný dôkaz, či firma povoľuje výkon práce zo Slovenska (employment/contractor/EU-wide/worldwide); kým dôkaz chýba, držať `locationEligibility: unknown` a neplytvať opakovaným manuálnym overovaním bez zmeny canonical detailu.
