@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 18:49 CEST
+Aktualizované: 5. 9. 2026 19:56 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,37 +38,38 @@ Aktualizované: 5. 9. 2026 18:49 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 18:49
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, tech/creative vrátane WordPress Jobs, Upwork/freelance, Reddit/komunity a Facebook public index.
-- **Žiadna nová bezpečná LIVE promotion ani nová unique verification položka.** LIVE feed zostáva 50.
-- Priamy firemný hit **DHL — HR Operations Specialist, Bratislava** je na canonical DHL detaile už označený ako nevypísaný; indexovaný výsledok je stale a bol vyradený ako inactive.
-- Verejne indexovaný Upwork **WooCommerce Assistant** sa pri canonical otvorení zobrazil ako **no longer available**; nevstupuje do verification ani LIVE.
-- WordPress Jobs aktuálne uvádza 8 otvorených pozícií. Remote **Senior WordPress Developer — Pangolin Marketing** vyžaduje custom theme development, PHP/HTML/CSS/JS, server management, DNS/SSH, API, Git, performance stack a ďalšie hard-development požiadavky; podľa profilu ide o výrazný skill mismatch, nie vhodnú promotion.
-- Kariera/Zoznam verejne vrátila Production Engineer v Moldave nad Bodvou; ide o vzdialený onsite mimo hard gate, preto `reject-distance` a bez zápisu do aktívneho feedu.
-- Reddit/WordPress verejná indexácia vrátila čerstvé **FOR HIRE** príspevky, nie konkrétny hiring dopyt; 0 verified hiring hits.
+### Čerstvé zistenia 19:56
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, tech/creative vrátane StartupJobs/WordPress discovery, Upwork/freelance, Reddit/komunity a Facebook public index.
+- **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50.
+- Nový významný verification kandidát: **Upwork — Improve & Maintain a WordPress Site**, Worldwide remote, Intermediate, **15–30 USD/h**, menej než 30 h/týždeň, existing-site updates + pravidelná maintenance a contract-to-hire. Je to veľmi dobrý fit na prioritu #1 bez full-build požiadavky. Do LIVE zatiaľ nejde pre **50+ proposals**, anglickú pracovnú komunikáciu a menšiu klientsku históriu (164 USD spend, 2 hires).
+- LinkedIn public index vrátil Twine freelance web maintenance, ale detail už uvádza **No longer accepting applications**; `rejectedInactive: 1`.
+- Worki vrátil Shield-Sk Administrátor e-shopu / zákaznícka podpora v Ružinove, ale detail je už **obsadený alebo zrušený**; `rejectedInactive: 1`.
+- StartupJobs znovu vrátil Medevio BDR SK 100% Remote, ale kandidát je už vo verification queue; `rejectedDuplicate: 1` na úrovni source auditu.
+- Kariera/Zoznam vrátila čerstvý MADWIRE Marketingový manažér Bratislava za 1 700 EUR, ale ide o marketingový manažment mimo prioritného admin/web-support fitu; bez promotion.
+- Reddit/WordPress verejná indexácia vrátila čerstvý **FOR HIRE** príspevok, nie konkrétny hiring dopyt; 0 verified hiring hits.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nezapisuje ako hit; autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 5. 9. 2026 18:49
+## Source audit — 5. 9. 2026 19:56
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `checked`; 1 stale indexed hit (DHL HR Operations Specialist), canonical detail už inactive → `rejectedInactive: 1`.
-- LinkedIn Jobs: `limited`; bez novej overiteľnej promotion-grade delty.
-- Worki: `checked`; bez nového promotion-grade hitu.
+- Priame company careers: `checked`; bez novej vhodnej unique BA/remote promotion-grade delty.
+- LinkedIn Jobs: `limited`; 1 verejne čitateľný maintenance hit už neprijíma žiadosti → `rejectedInactive: 1`.
+- Worki: `checked`; 1 e-shop admin hit už obsadený/zrušený → `rejectedInactive: 1`.
 - Brigada.sk: `checked`; bez nového promotion-grade hitu.
-- Kariera/Zoznam: `checked`; 1 vzdialený onsite hit → `rejectedLocation: 1`, bez BA/remote promotion.
-- Tech/creative: `ok`; WordPress Jobs má otvorené výsledky, ale remote Pangolin Senior WP je hard-dev mismatch.
-- Upwork/freelance: `checked`; 1 relevantný indexovaný WooCommerce hit bol canonical inactive → `rejectedInactive: 1`.
-- Reddit/komunity: `limited`; 0 verified hiring hits, iba FOR HIRE príspevky.
+- Kariera/Zoznam: `checked`; 1 čerstvý BA marketingový hit, ale mimo prioritného fitu; bez promotion.
+- Tech/creative: `checked`; Medevio BDR SK remote je už v queue → `rejectedDuplicate: 1`.
+- Upwork/freelance: `ok`; 4 relevantné výsledky preverené, **1 nový verification kandidát** — Improve & Maintain a WordPress Site.
+- Reddit/komunity: `limited`; 0 verified hiring hits, iba FOR HIRE príspevok.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 18:49
+### Audit počty 19:56
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- nové unique významné verification kandidáty: **0**
-- verification queue: **59 položiek**, zachovaná bez straty
+- nové unique významné verification kandidáty: **1**
+- verification queue: **60 položiek**, pôvodných 59 zachovaných + 1 nový kandidát
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: úspešne aktualizovaný kompletným replacementom pri zachovaní 59-položkovej verification queue.
+- `source-audit.json`: úspešne aktualizovaný pri zachovaní pôvodnej queue a pridaní 1 novej položky.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -161,5 +162,7 @@ Aktualizované: 5. 9. 2026 18:49 CEST
 - Same-day duplicate promotion shield.
 - Remote full-time compensation floor by contract type.
 - Adjacent-skill requirement bridge.
-- **Expired canonical tombstone cache** — ak primárny detail explicitne povie `no longer available` / `position not advertised`, uložiť canonical URL + timestamp + dôvod expirácie a na 24–72 hodín potlačiť stale indexové/mirror výsledky bez opakovaného ručného overovania. Rieši dnešné DHL a Upwork ghost výsledky a šetrí opakované hodinové kontroly.
+- **Expired canonical tombstone cache** — ak primárny detail explicitne povie `no longer available` / `position not advertised`, uložiť canonical URL + timestamp + dôvod expirácie a na 24–72 hodín potlačiť stale indexové/mirror výsledky bez opakovaného ručného overovania. Rieši ghost výsledky a šetrí opakované hodinové kontroly.
 - **Search-result provenance counter** — pre každý source-family audit ukladať minimálne `queriesRun`, `resultsReturned`, `detailsOpened`, `verifiedActive`, `verifiedInactive`, `verifiedRejectedLocation` a recency okno. Umožní rozlíšiť skutočný nulový výsledok od slabej indexácie alebo zlyhaného query a zvýši dôveryhodnosť Source Radaru bez zásahu do UI.
+- **Contract-to-hire conversion value score** — pri freelance výsledkoch samostatne zvýhodniť existujúci web/maintenance scope s primeranou hodinovou sadzbou a contract-to-hire možnosťou, ale až po penalizácii konkurencie, jazykového burdenu a klientského risku. Pomôže odlíšiť dnešný kvalitný maintenance lead od jednorazových full-build zákaziek.
+- **Maintenance client continuity score** — hodnotiť pravdepodobnosť opakovanej práce podľa typu scope (regular maintenance vs. one-off), klientských hires/spendu, aktivity a contract-to-hire signálu. Cieľom je prioritizovať zákazky s reálnou šancou stať sa stabilným mesačným príjmom namiesto jednorazových opráv.
