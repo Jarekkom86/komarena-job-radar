@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "policy": "rejection-feedback-loop",
+  "version": "1.0.0",
+  "purpose": "Reduce repeated sourcing noise without shrinking source diversity or weakening the Bratislava/remote hard gate.",
+  "rules": {
+    "recordOnlyVerifiedRejections": true,
+    "reasonCodes": [
+      "reject-distance",
+      "remote-eligibility-unknown",
+      "duplicate-canonical",
+      "inactive-or-expired",
+      "hard-qualification",
+      "language-hard-gate",
+      "hard-development-mismatch",
+      "driver-license-or-tachograph-mismatch",
+      "not-hiring-community-post",
+      "insufficient-primary-evidence"
+    ],
+    "learningWindowDays": 14,
+    "queryPenaltyThreshold": 3,
+    "neverDisableSourceFamily": true,
+    "minimumExplorationQueriesPerFamilyPerRun": 1,
+    "facebookRule": "Blocked or limited public indexing is access evidence only; never synthesize hits or infer offers.",
+    "locationRule": "Distance and remote failures remain hard eligibility outcomes and can never be offset by score, pay, freshness, or source scarcity.",
+    "dedupeRule": "Canonical duplicates count as noise for query tuning but must not alter stable LIVE IDs or user CRM state.",
+    "failClosed": true
+  },
+  "outputs": {
+    "perQuery": ["queryFingerprint", "sourceFamily", "checkedAt", "candidateCount", "acceptedCount", "rejectionReasonCounts"],
+    "action": "Down-rank repeatedly noisy query variants while preserving at least one exploration query for every required source family."
+  },
+  "protected": ["locked UI", "renderers", "baseline-jobs.json", "jobs-data-nonprof.json", "stable IDs", "CRM/user edits", "source audit truthfulness"]
+}
