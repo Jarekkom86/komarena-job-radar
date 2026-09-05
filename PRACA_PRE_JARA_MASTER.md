@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 16:06 CEST
+Aktualizované: 5. 9. 2026 17:10 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,40 +38,36 @@ Aktualizované: 5. 9. 2026 16:06 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 16:06
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, tech/creative (Pretlak), Upwork/freelance, Reddit/komunity a Facebook public index.
-- Kariera/Zoznam dnes ukazuje **Executive Support Specialist, Bratislava, 1 500–1 600 EUR**, ale ide o už evidovaný verification kandidát s AJ B2, preto bez LIVE promotion. Dnešný skladový pracovník Bratislava za 1 273 EUR je lokálne platný, ale fyzická trojzmenná práca a slabší plat neprechádzajú rankingom.
-- Slovak Telekom direct careers potvrdzuje existujúci **Špecialista/Špecialistka podpory zákazníkov** v Bratislave s čiastočným home office; ide o už existujúcu LIVE položku, nie novú deltu.
-- Telekom má aj Junior DevOps za 2 000 EUR, ale scope je software engineering/DevOps/cloud a nesedí na hard-development gate.
-- Alza direct careers potvrdzuje existujúci AlzaBox Špecialista v Bratislave a technika automatizácie v Bernolákove; prvý je už LIVE, druhý vyžaduje technickejší automation scope a nebol promotionovaný.
-- LinkedIn verejná indexácia je `limited`; čerstvý INFUSE B2B Content Writer remote contract nie je prioritný web/admin/support fit.
-- Worki, Brigada.sk a Pretlak boli reálne preverené bez novej promotion-grade delty.
-- Upwork/freelance discovery bolo reálne preverené; bez novej bezpečnej WordPress/WooCommerce/admin delty lepšej než existujúca verification queue.
+### Čerstvé zistenia 17:10
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, tech/creative (Pretlak/StartupJobs discovery), Upwork/freelance, Reddit/komunity a Facebook public index.
+- Nová významná verification delta: **Foxelli Group — Assistant Brand Manager (crochet and knit brand) | DTC E-commerce | 100% Remote EU**. Originálny LinkedIn company post bol dnes verejne indexovaný pre Bratislavu a označuje rolu ako entry-level a 100 % remote. Náplň má silný prienik e-commerce, produktovej administratívy, customer feedback/support, marketingovej podpory, Shopify, Google Sheets, Claude a AI. Odmena je však len **do 1 000 EUR po zdanení** na full-time freelance kontrakt a pracovné prostredie je anglické; crochet/knitting je silná výhoda. Preto `locationEligibility: remote-ok`, ale iba verification, nie LIVE.
+- Upwork/freelance discovery bolo reálne preverené. Verejný slovenský index stále uvádza **59 zákaziek**, bez novej promotion-grade WordPress/WooCommerce/admin delty lepšej než existujúca verification queue.
+- Kariera/Zoznam dnes poskytla čerstvé BA/admin/vodič výsledky, ale po language/pay/fit/dedupe gate nevznikla nová bezpečná unique LIVE promotion.
+- Worki, Brigada.sk a Pretlak/tech-creative boli reálne preverené bez novej promotion-grade delty.
 - Reddit/WordPress komunita bola verejne preverená; bez nového konkrétneho hiring dopytu s dostatočným scope/budget dôkazom.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nezapisuje ako hit; autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 5. 9. 2026 16:06
+## Source audit — 5. 9. 2026 17:10
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `ok`; Telekom/Alza verejne dostupné, relevantné výsledky existujú, ale nové výsledky sú už LIVE/duplicitné alebo mimo skill gate.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez bezpečného nového SK/BA promotion kandidáta.
+- Priame company careers: `checked`; bez novej unique LIVE promotion. Foxelli novinka prišla cez originálny LinkedIn company post; priamy Ashby detail nebol v tomto behu verejne indexovaný.
+- LinkedIn Jobs: `limited`; **1 relevantný nový hit**, Foxelli Assistant Brand Manager, pridaný do verification; bez LIVE promotion.
 - Worki: `checked`; bez nového promotion-grade hitu.
 - Brigada.sk: `checked`; bez nového promotion-grade hitu.
-- Kariera/Zoznam: `ok`; čerstvé BA výsledky dostupné, ale bez promotion po language/pay/fit gate.
+- Kariera/Zoznam: `ok`; čerstvé BA výsledky dostupné, ale bez promotion po language/pay/fit/dedupe gate.
 - Pretlak / tech-creative: `checked`; bez novej vhodnej promotion-grade zhody.
-- Upwork/freelance: `checked`; preverené, bez novej promotion-grade delty v prioritných smeroch.
+- Upwork/freelance: `ok`; verejný index dostupný, bez novej promotion-grade delty.
 - Reddit/komunity: `limited`; 0 promotion-grade verified hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 16:06
+### Audit počty 17:10
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- nové unique významné verification kandidáty: **0**
-- Kariera/Zoznam relevantné čerstvé BA kandidáty: **2+**, bez promotion po language/pay/fit gate
-- company careers relevantné potvrdené výsledky: **3+**, nové unique promotion **0**
+- nové unique významné verification kandidáty: **1** — Foxelli Assistant Brand Manager
+- verification queue: **59 položiek** po bezpečnom zachovaní pôvodných 58 + 1 nová
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: konektor ho vie kompletne prečítať cez response resource a verification queue má 58 položiek. Write API však vyžaduje kompletný replacement jedným payloadom; pri tomto behu sa audit nepodarilo bezpečne prepísať bez rizika poškodenia queue, preto zostáva FAIL-CLOSED. Potrebný je bezpečný patch/transaction writer.
+- `source-audit.json`: **úspešne zapísaný** cez kompletný replacement s kontrolou pôvodného SHA; pôvodných 58 verification položiek bolo zachovaných a pridaná presne 1 nová. Predchádzajúci blocker veľkého auditného zápisu je v tomto behu prakticky prekonaný.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -160,5 +156,7 @@ Aktualizované: 5. 9. 2026 16:06 CEST
 - Remote-work jurisdiction evidence cache.
 - Public hiring scope sufficiency gate.
 - Local low-pay opportunity suppression floor.
-- **Atomic audit queue patch writer** — umožniť meniť iba `runSummary`, `sources`, `liveMix` a `writeStatus` bez serializácie celej 58-položkovej verification queue; zápis musí pred commitom overiť pôvodný SHA a počet/ID queue položiek, aby audit prestal zlyhávať na veľkom replacement payloadu.
-- **Same-day duplicate promotion shield** — ukladať canonical URL + normalized title/company fingerprint nových výsledkov na 24 hodín a pri opakovaných hodinových behoch okamžite rozlíšiť „nový hit“ od už LIVE/verification kandidáta; zníži opakované overovanie Telekom/Alza/Grafton a uvoľní čas pre non-Profesia discovery.
+- **Atomic audit queue patch writer** — umožniť meniť iba `runSummary`, `sources`, `liveMix` a `writeStatus` bez serializácie celej verification queue; zápis musí pred commitom overiť pôvodný SHA a počet/ID queue položiek.
+- **Same-day duplicate promotion shield** — ukladať canonical URL + normalized title/company fingerprint nových výsledkov na 24 hodín a pri opakovaných hodinových behoch okamžite rozlíšiť nový hit od už LIVE/verification kandidáta.
+- **Remote full-time compensation floor by contract type** — pri full-time freelance/contract remote rolách vypočítať efektívny mesačný čistý ekvivalent a automaticky znížiť prioritu pod konfigurovateľným minimom; výnimka iba pre strategický skill-building alebo reálne part-time roly. Rieši prípady Foxelli 800–1 000 EUR full-time, ktoré vyzerajú obsahovo silno, ale ekonomicky nedávajú zmysel.
+- **Adjacent-skill requirement bridge** — pri e-commerce/CMS rolách rozlišovať povinný skill od prenositeľnej susednej skúsenosti (napr. Shopify vs WooCommerce, Asana vs iné task systémy, Claude vs ChatGPT) a zvýšiť confidence iba vtedy, keď detail neoznačuje konkrétnu platformu ako hard requirement. Zníži zbytočné vyradzovanie junior/entry-level rolí a zároveň nepretlačí hard skill gap.
