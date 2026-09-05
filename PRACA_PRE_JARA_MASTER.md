@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 14:29 CEST
+Aktualizované: 5. 9. 2026 15:08 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,38 +38,39 @@ Aktualizované: 5. 9. 2026 14:29 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 14:29
+### Čerstvé zistenia 15:08
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam + ÚPSVR mirror, tech/creative (Pretlak + StartupJobs + WordPress Jobs), Upwork/freelance, Reddit/komunity a Facebook public index.
-- Kariera/Zoznam dnes zobrazuje čerstvé BA administratívne výsledky vrátane **MADWIRE – Marketingový manažér, Bratislava, 1 700 EUR** a **Grafton – ADMIN ANALYST, Bratislava, 1 000–1 200 EUR**. Prvý je mimo prioritného profilu a druhý má slabší pomer fit/odmena; **bez LIVE promotion**.
-- Upwork verejný Slovak feed uvádza **59 Slovakian jobs**; čerstvo indexované príklady sú prevažne UGC, cold calling, kuriérsky research, audio/transcription alebo mikroúlohy. Bez nového WordPress/WooCommerce/admin kandidáta s dostatočným ROI na promotion.
+- Kariera/Zoznam má čerstvé BA/okolie výsledky; **DAŇOVÁ SOVA – Administratívny pracovník, Pezinok, od 990 EUR** prechádza lokalitou, ale neprešiel pay/priority gate. Ďalšie dnešné BA výsledky nevytvorili lepšiu promotion-grade zhodu.
+- Upwork verejný Slovak feed stále uvádza **59 open Slovakian remote jobs**; bez novej WordPress/WooCommerce/admin zákazky s dostatočným fit/ROI na promotion.
+- Reddit r/wordpressjobs verejne indexuje nový všeobecný dopyt **„I'm looking for a website creator“**, ale bez dostatočného verejného scope, budgetu a kvalifikačných podmienok; zostáva iba discovery signal, nie Job Radar hit.
 - LinkedIn verejná indexácia ostáva `limited`; bez bezpečného nového SK/BA promotion kandidáta.
 - Worki a Brigada.sk reálne preverené; bez nového promotion-grade hitu.
-- Pretlak/StartupJobs/WordPress Jobs preverené; BeiT zostáva cross-border remote `unknown`, ostatné výsledky bez dostatočného fitu alebo remote dôkazu.
-- Reddit/WordPress/WooCommerce komunity: **0 verified konkrétnych hiring dopytov**, coverage `limited`.
+- Pretlak/StartupJobs/WordPress Jobs preverené; bez novej bezpečnej promotion-grade zhody.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nezapisuje ako hit; autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 5. 9. 2026 14:29
+## Source audit — 5. 9. 2026 15:08
 - Profesia: `checked`; bez novej unique promotion-grade delty.
 - Priame company careers: `checked`; bez novej vhodnej unique LIVE delty.
 - LinkedIn Jobs: `limited`; verejná indexácia preverená, bez bezpečného nového SK/BA promotion kandidáta.
 - Worki: `checked`; bez nového promotion-grade hitu.
 - Brigada.sk: `checked`; bez nového promotion-grade hitu.
-- Kariera/Zoznam + ÚPSVR mirror: `ok`; čerstvé BA administratívne výsledky dostupné, ale bez promotion po fit/pay gate.
+- Kariera/Zoznam + ÚPSVR mirror: `ok`; čerstvé BA/okolie výsledky dostupné, ale bez promotion po fit/pay gate.
 - Pretlak / StartupJobs / WordPress Jobs: `checked`; bez novej vhodnej promotion-grade zhody.
 - Upwork/freelance: `ok`; Slovak feed verejne dostupný, 59 jobs, ale bez novej bezpečnej promotion-grade delty.
-- Reddit/komunity: `limited`, 0 verified hiring hits.
+- Reddit/komunity: `limited`; 1 nový všeobecný hiring signal, 0 promotion-grade verified hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 14:29
+### Audit počty 15:08
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - nové unique významné verification kandidáty: **0**
-- Kariera/Zoznam relevantné čerstvé BA kandidáty: **2+**, ale bez promotion po fit/pay gate
+- Kariera/Zoznam relevantné čerstvé BA/okolie kandidáty: **1+**, bez promotion po fit/pay gate
 - Upwork Slovak verejný feed: **59 jobs** indexovaných; bez novej promotion-grade zhody v prioritných smeroch
+- Reddit public hiring signals: **1**, promotion-grade **0**
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: **FAIL-CLOSED bez zápisu v tomto behu** — dostupný GitHub connector stále vracia veľký existujúci súbor truncovaný uprostred 58-položkovej verification queue; kompletný replacement by mohol queue poškodiť. Audit vyššie je pravdivý záznam tohto behu, dátový audit zostáva na poslednom bezpečnom stave.
+- `source-audit.json`: aktuálny veľký audit má 58-položkovú verification queue; dostupný konektor vie celý obsah prečítať segmentovane, ale write API vyžaduje kompletný replacement. Kým sa bezpečne neprevedie celá queue bez jedinej straty, platí FAIL-CLOSED a audit sa nesmie skrátiť.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -154,5 +155,7 @@ Aktualizované: 5. 9. 2026 14:29 CEST
 - Freelance scope-to-evidence matcher.
 - Qualification-stack early reject cache.
 - Source-detail evidence completeness counter.
-- **Negative-result query coverage hash** — pri source family bez hitu ukladať hash kombinácie query + lokalita + kategória + čas behu, aby sa dalo odlíšiť reálne nulové pokrytie od opakovania rovnakého úzkeho dotazu a automat mohol cielene rozšíriť ďalší sweep.
-- **Remote-work jurisdiction evidence cache** — pri zahraničných remote rolách ukladať explicitný dôkaz, či firma povoľuje výkon práce zo Slovenska (employment/contractor/EU-wide/worldwide); kým dôkaz chýba, držať `locationEligibility: unknown` a neplytvať opakovaným manuálnym overovaním bez zmeny canonical detailu.
+- Negative-result query coverage hash.
+- Remote-work jurisdiction evidence cache.
+- **Public hiring scope sufficiency gate** — komunitný alebo sociálny dopyt sa nesmie dostať do verification/LIVE len na základe titulku „hľadám webára“; vyžadovať minimálne scope + odmenu/budget alebo kontakt + jasný remote/lokalitný dôkaz, čím sa odstránia low-information leady a šetrí čas pri manuálnom overovaní.
+- **Local low-pay opportunity suppression floor** — pri BA/okolie admin/back-office rolách pod nastaveným mzdovým prahom automaticky znížiť discovery prioritu, ak zároveň nejde o veľmi silný kariérny most, krátku brigádu s vysokou hodinovkou alebo výrazný web/IT skill-match; znižuje zahltenie feedu slabými lokálnymi ponukami.
