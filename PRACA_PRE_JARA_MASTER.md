@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 15:08 CEST
+Aktualizované: 5. 9. 2026 16:06 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,39 +38,40 @@ Aktualizované: 5. 9. 2026 15:08 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 15:08
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam + ÚPSVR mirror, tech/creative (Pretlak + StartupJobs + WordPress Jobs), Upwork/freelance, Reddit/komunity a Facebook public index.
-- Kariera/Zoznam má čerstvé BA/okolie výsledky; **DAŇOVÁ SOVA – Administratívny pracovník, Pezinok, od 990 EUR** prechádza lokalitou, ale neprešiel pay/priority gate. Ďalšie dnešné BA výsledky nevytvorili lepšiu promotion-grade zhodu.
-- Upwork verejný Slovak feed stále uvádza **59 open Slovakian remote jobs**; bez novej WordPress/WooCommerce/admin zákazky s dostatočným fit/ROI na promotion.
-- Reddit r/wordpressjobs verejne indexuje nový všeobecný dopyt **„I'm looking for a website creator“**, ale bez dostatočného verejného scope, budgetu a kvalifikačných podmienok; zostáva iba discovery signal, nie Job Radar hit.
-- LinkedIn verejná indexácia ostáva `limited`; bez bezpečného nového SK/BA promotion kandidáta.
-- Worki a Brigada.sk reálne preverené; bez nového promotion-grade hitu.
-- Pretlak/StartupJobs/WordPress Jobs preverené; bez novej bezpečnej promotion-grade zhody.
+### Čerstvé zistenia 16:06
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, tech/creative (Pretlak), Upwork/freelance, Reddit/komunity a Facebook public index.
+- Kariera/Zoznam dnes ukazuje **Executive Support Specialist, Bratislava, 1 500–1 600 EUR**, ale ide o už evidovaný verification kandidát s AJ B2, preto bez LIVE promotion. Dnešný skladový pracovník Bratislava za 1 273 EUR je lokálne platný, ale fyzická trojzmenná práca a slabší plat neprechádzajú rankingom.
+- Slovak Telekom direct careers potvrdzuje existujúci **Špecialista/Špecialistka podpory zákazníkov** v Bratislave s čiastočným home office; ide o už existujúcu LIVE položku, nie novú deltu.
+- Telekom má aj Junior DevOps za 2 000 EUR, ale scope je software engineering/DevOps/cloud a nesedí na hard-development gate.
+- Alza direct careers potvrdzuje existujúci AlzaBox Špecialista v Bratislave a technika automatizácie v Bernolákove; prvý je už LIVE, druhý vyžaduje technickejší automation scope a nebol promotionovaný.
+- LinkedIn verejná indexácia je `limited`; čerstvý INFUSE B2B Content Writer remote contract nie je prioritný web/admin/support fit.
+- Worki, Brigada.sk a Pretlak boli reálne preverené bez novej promotion-grade delty.
+- Upwork/freelance discovery bolo reálne preverené; bez novej bezpečnej WordPress/WooCommerce/admin delty lepšej než existujúca verification queue.
+- Reddit/WordPress komunita bola verejne preverená; bez nového konkrétneho hiring dopytu s dostatočným scope/budget dôkazom.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nezapisuje ako hit; autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 5. 9. 2026 15:08
+## Source audit — 5. 9. 2026 16:06
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `checked`; bez novej vhodnej unique LIVE delty.
+- Priame company careers: `ok`; Telekom/Alza verejne dostupné, relevantné výsledky existujú, ale nové výsledky sú už LIVE/duplicitné alebo mimo skill gate.
 - LinkedIn Jobs: `limited`; verejná indexácia preverená, bez bezpečného nového SK/BA promotion kandidáta.
 - Worki: `checked`; bez nového promotion-grade hitu.
 - Brigada.sk: `checked`; bez nového promotion-grade hitu.
-- Kariera/Zoznam + ÚPSVR mirror: `ok`; čerstvé BA/okolie výsledky dostupné, ale bez promotion po fit/pay gate.
-- Pretlak / StartupJobs / WordPress Jobs: `checked`; bez novej vhodnej promotion-grade zhody.
-- Upwork/freelance: `ok`; Slovak feed verejne dostupný, 59 jobs, ale bez novej bezpečnej promotion-grade delty.
-- Reddit/komunity: `limited`; 1 nový všeobecný hiring signal, 0 promotion-grade verified hits.
+- Kariera/Zoznam: `ok`; čerstvé BA výsledky dostupné, ale bez promotion po language/pay/fit gate.
+- Pretlak / tech-creative: `checked`; bez novej vhodnej promotion-grade zhody.
+- Upwork/freelance: `checked`; preverené, bez novej promotion-grade delty v prioritných smeroch.
+- Reddit/komunity: `limited`; 0 promotion-grade verified hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 15:08
+### Audit počty 16:06
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - nové unique významné verification kandidáty: **0**
-- Kariera/Zoznam relevantné čerstvé BA/okolie kandidáty: **1+**, bez promotion po fit/pay gate
-- Upwork Slovak verejný feed: **59 jobs** indexovaných; bez novej promotion-grade zhody v prioritných smeroch
-- Reddit public hiring signals: **1**, promotion-grade **0**
+- Kariera/Zoznam relevantné čerstvé BA kandidáty: **2+**, bez promotion po language/pay/fit gate
+- company careers relevantné potvrdené výsledky: **3+**, nové unique promotion **0**
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: aktuálny veľký audit má 58-položkovú verification queue; dostupný konektor vie celý obsah prečítať segmentovane, ale write API vyžaduje kompletný replacement. Kým sa bezpečne neprevedie celá queue bez jedinej straty, platí FAIL-CLOSED a audit sa nesmie skrátiť.
+- `source-audit.json`: konektor ho vie kompletne prečítať cez response resource a verification queue má 58 položiek. Write API však vyžaduje kompletný replacement jedným payloadom; pri tomto behu sa audit nepodarilo bezpečne prepísať bez rizika poškodenia queue, preto zostáva FAIL-CLOSED. Potrebný je bezpečný patch/transaction writer.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -157,5 +158,7 @@ Aktualizované: 5. 9. 2026 15:08 CEST
 - Source-detail evidence completeness counter.
 - Negative-result query coverage hash.
 - Remote-work jurisdiction evidence cache.
-- **Public hiring scope sufficiency gate** — komunitný alebo sociálny dopyt sa nesmie dostať do verification/LIVE len na základe titulku „hľadám webára“; vyžadovať minimálne scope + odmenu/budget alebo kontakt + jasný remote/lokalitný dôkaz, čím sa odstránia low-information leady a šetrí čas pri manuálnom overovaní.
-- **Local low-pay opportunity suppression floor** — pri BA/okolie admin/back-office rolách pod nastaveným mzdovým prahom automaticky znížiť discovery prioritu, ak zároveň nejde o veľmi silný kariérny most, krátku brigádu s vysokou hodinovkou alebo výrazný web/IT skill-match; znižuje zahltenie feedu slabými lokálnymi ponukami.
+- Public hiring scope sufficiency gate.
+- Local low-pay opportunity suppression floor.
+- **Atomic audit queue patch writer** — umožniť meniť iba `runSummary`, `sources`, `liveMix` a `writeStatus` bez serializácie celej 58-položkovej verification queue; zápis musí pred commitom overiť pôvodný SHA a počet/ID queue položiek, aby audit prestal zlyhávať na veľkom replacement payloadu.
+- **Same-day duplicate promotion shield** — ukladať canonical URL + normalized title/company fingerprint nových výsledkov na 24 hodín a pri opakovaných hodinových behoch okamžite rozlíšiť „nový hit“ od už LIVE/verification kandidáta; zníži opakované overovanie Telekom/Alza/Grafton a uvoľní čas pre non-Profesia discovery.
