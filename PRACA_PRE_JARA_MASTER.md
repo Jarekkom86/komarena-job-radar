@@ -23,6 +23,7 @@ Aktualizované: 5. 9. 2026 04:56 CEST
 - Mimo BA onsite alebo pravidelný hybrid do vzdialeného mesta = `reject-distance`.
 - Nejasná lokalita/remote politika = `locationEligibility: unknown`; najprv overiť, nie odporúčať.
 - Nové položky evidujú `locationEligibility` a `locationReason`.
+- **Malacky sú explicitne povolené `ba-area`**. Čas dojazdu môže znížiť ranking, ale nesmie meniť lokalitný enum na neplatný medzistav.
 
 ### Negatívne filtre
 - AJ A2 preferovaná; B1 mierny/stredný mínus; B2/C1 výrazný mínus.
@@ -35,11 +36,11 @@ Aktualizované: 5. 9. 2026 04:56 CEST
 - Autoritatívny feed má **49 LIVE položiek**.
 - LIVE mix: **Profesia 24/49 = 49,0 %**, mimo Profesia **25/49 = 51,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-04T16:16:38+02:00**.
-- Sweep 04:56 našiel nový promotion-grade kandidát, ale LIVE ingest bol fail-closed zadržaný, pretože dostupný GitHub writer pre veľký `jobs-data.json` vyžaduje kompletný replacement a bezpečná rekonštrukcia celého payloadu v tomto behu nebola dokončená.
+- Sweep 04:56 našiel a znovu overil promotion-ready kandidáta, ale LIVE ingest bol fail-closed zadržaný, pretože dostupný GitHub writer pre veľký `jobs-data.json` vyžaduje kompletný replacement a bezpečná rekonštrukcia celého payloadu v tomto behu nebola dokončená.
 
 ### Čerstvé zistenia 04:56
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
-- **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**: zverejnené 4. 9. 2026, 1 750 €/mes., plný úväzok na neurčito, jednozmenná prevádzka, bez nočnej práce. Náplň: zakladanie, triedenie a archivácia zdravotných záznamov, skenovanie lekárskych správ, podklady pre poisťovne, tlačivá a korešpondencia. Požadované iba základné vzdelanie a vodičák B; cudzí jazyk nie je uvedený. Lokalita Malacky spĺňa `ba-area`. Ide o **veľmi silný administratívny/digitalizačný kandidát**; detail na Kariera.sk uvádza, že zdrojom je ÚPSVR. Promotion do LIVE je pripravená, ale v tomto behu nebola zapísaná kvôli fail-closed ochrane veľkého JSON payloadu.
+- **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**: zverejnené 4. 9. 2026, 1 750 €/mes., plný úväzok na neurčito, jednozmenná prevádzka, bez nočnej práce. Náplň: zakladanie, triedenie a archivácia zdravotných záznamov, skenovanie lekárskych správ, podklady pre poisťovne, tlačivá a korešpondencia. Požadované iba základné vzdelanie a vodičák B; cudzí jazyk nie je uvedený. Lokalita Malacky spĺňa `ba-area`. Ide o **veľmi silný administratívny/digitalizačný kandidát**. V `source-audit.json` bol opravený z neplatného `ba-area-conditional` na `ba-area`, status na `promotion-ready` a provisional score na 94. Detail na Kariera.sk uvádza, že zdrojom je ÚPSVR.
 - **DAŇOVÁ SOVA — Administratívny pracovník, Pezinok**: lokalita prechádza, ale iba 990 €/mes. a požaduje AJ B1–B2 + obchodnú akadémiu a rok praxe; bez LIVE promotion.
 - **Upwork — Virtual Assistant Customer Support & Communications**: Worldwide remote, ale strong written/spoken English, denné telefonovanie a štart 125 USD/týždeň; bez promotion.
 - Čerstvé WooCommerce Upwork výsledky boli prevažne expert/custom-development alebo krátke nízko-hodnotové zásahy; napr. live-cart incident vyžaduje PHP, AJAX/REST, caching a security/CDN troubleshooting.
@@ -47,28 +48,28 @@ Aktualizované: 5. 9. 2026 04:56 CEST
 - **Facebook public index**: preverený; **0 verified hits / limited**. Autentizovaný Nexus/local ingestion ostáva backlog, automat ho nespúšťa.
 
 ## Source audit — 5. 9. 2026 04:56
-- `job-sources.json` bol aktualizovaný podľa reálne skontrolovaných rodín.
-- `source-audit.json` ostáva na poslednom bezpečnom kompletnom stave **04:16**, pretože dostupné čítanie veľkého súboru truncuje verification queue a writer vyžaduje kompletný replacement. Zápis, ktorý by mohol zahodiť časť queue, je podľa FAIL-CLOSED zakázaný.
-- Profesia: reálne preverená, bez novej promotion-grade delty.
-- Priame company careers: reálne preverené, bez novej unique delty.
-- LinkedIn Jobs: verejná indexácia `limited`, bez nového bezpečne overiteľného hitu.
-- Worki: preverené, bez novej vhodnej delty.
-- Brigada.sk: preverené, bez novej vhodnej delty.
-- Kariera/Zoznam: nový významný hit MamaTataJojo Malacky; 1 promotion-ready kandidát.
-- Pretlak/tech-creative: preverené, bez novej vhodnej unique zhody.
-- Upwork/freelance: preverené; čerstvé výsledky padli na expert scope, strong English/phone burden alebo nízku odmenu.
+- `source-audit.json` bol **bezpečne aktualizovaný na 04:56 so zachovaním celej 58-položkovej verification queue**.
+- Profesia: `checked`, bez novej promotion-grade delty.
+- Priame company careers: `checked`, bez novej unique delty.
+- LinkedIn Jobs: `limited`, bez nového verejne overiteľného promotion-grade hitu.
+- Worki: `checked`, bez novej vhodnej delty.
+- Brigada.sk: `checked`, bez novej vhodnej delty.
+- Kariera/Zoznam: `ok`; MamaTataJojo Malacky znovu overený a povýšený na `promotion-ready`.
+- Pretlak/tech-creative: `checked`, bez novej suitable unique zhody.
+- Upwork/freelance: `ok`; čerstvé výsledky padli najmä na expert scope, strong-English/phone burden alebo nízku odmenu.
 - Reddit/komunity: `limited`, 0 verified hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
+- Opravený bol aj starší neplatný `ba-area-conditional` pri GLS Malacky na platný `ba-area`; commute zostáva ranking faktor, nie lokalitný hard gate.
 
 ### Audit počty 04:56
-- relevantné nové kandidáty: **2** (MamaTataJojo, DAŇOVÁ SOVA)
-- promotion-ready: **1** (MamaTataJojo)
+- významne zmenené prioritné kandidáty: **1** (MamaTataJojo → promotion-ready)
 - pridané do LIVE: **0** — technický fail-closed blocker veľkého `jobs-data.json`
-- vyradené pre jazyk/nízku odmenu/skill burden: **min. 4**
-- Facebook verified hits: **0**
 - LIVE feed delta: **0**, zachovaných 49 položiek
+- verification queue: **58**, zachovaná bez straty
+- Facebook verified hits: **0**
 - `job-sources.json`: aktualizovaný na 04:56
-- `source-audit.json`: posledný bezpečný kompletný stav 04:16; tento beh je pravdivo zaznamenaný v MASTER
+- `source-audit.json`: aktualizovaný na 04:56
+- `jobs-data.json`: zatiaľ bez zmeny; promotion-ready kandidát čaká iba na bezpečný kompletný replacement
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
