@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 21:38 CEST
+Aktualizované: 5. 9. 2026 22:25 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,37 +38,36 @@ Aktualizované: 5. 9. 2026 21:38 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 21:38
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/StartupJobs/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
-- **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50.
-- Nový Upwork kandidát **E-Commerce Operations & Admin VA** je Worldwide remote, ongoing a contract-to-hire. Scope je veľmi relevantný: WooCommerce backend, produktové listingy, ceny, sklad, objednávkové dáta, Excel/Google Sheets a aktualizácie webových bannerov. Ponuka má však iba **250 USD fixed-price**, 20–50 proposals a vyžaduje pokročilejší Excel (VLOOKUP/pivot tables) aj skúsenosť so Shopee/Lazada. Preto ide iba do verification, nie do LIVE.
-- Upwork **WooCommerce Assistant**, ktorý sa objavil vo verejnom indexe, má na canonical detaile stav **no longer available**. Nezapisuje sa do LIVE ani verification; evidovať ako príklad stale-index výsledku.
-- Existujúci **Virtual Assistant - Ongoing - Product Listing / Ecommerce Management** zostáva aktívny Worldwide remote, WooCommerce/eBay/Amazon/Facebook Marketplace, ale len **3–6 USD/h** a 20–50 proposals; bez promotion.
-- Priamy Websupport detail potvrdzuje, že **Customer Success Advisor** v Bratislave je stále aktívny. Je už vo verification queue; silný web/hosting/support fit, no 1 260 EUR + variabilná zložka a zmeny/komunikačný burden držia rolu mimo LIVE.
-- Kariera/Zoznam, Worki, Brigada.sk, Služby zamestnanosti, Pretlak/StartupJobs/WordPress a LinkedIn verejná indexácia nepriniesli novú vhodnú unique promotion-grade deltu.
+### Čerstvé zistenia 22:25
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam + ÚPSVR, Pretlak/StartupJobs/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
+- **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
+- **Dotypos SK — Pracovník kontaktného centra**, Bratislava-Ružinov, 1 500 EUR/mes., nástup ihneď a pracovný pomer na neurčito: obsahovo dobrý customer-support/reklamácie fit, ale canonical ÚPSVR detail vyžaduje AJ B1–B2, aspoň 2 roky praxe a pokročilé Word/Excel/PowerPoint/Outlook. Preto bez LIVE promotion.
+- WordPress Jobs má aktuálne 8 otvorených pozícií, no relevantné čerstvé roly sú prevažne senior/hard-development a zahŕňajú custom themes, PHP/JS, server management, API, Git a performance ops; pre aktuálny profil sú mimo preferovaného non-hard-dev scope.
+- Upwork verejný WordPress e-commerce index ukázal čerstvý 750 USD intermediate projekt na nový 7–9 stranový marketingový web. Ide o full-build scope, nie maintenance/admin, preto bez promotion.
+- Reddit r/wordpressjobs obsahuje čerstvý verejne indexovaný post „I'm looking for a website creator“, ale bez dostatočne overeného budgetu, scope a remote eligibility na zaradenie do LIVE.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nezapisuje ako hit; autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 5. 9. 2026 21:38
+## Source audit — 5. 9. 2026 22:25
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `ok`; Websupport Customer Success Advisor je potvrdený aktívny existing verification kandidát, bez novej unique promotion.
+- Priame company careers: `checked`; bez novej vhodnej unique delty.
 - LinkedIn Jobs: `limited`; bez novej vhodnej unique delty, coverage bez loginu zostáva čiastočná.
 - Worki: `checked`; bez nového promotion-grade hitu.
 - Brigada.sk: `checked`; bez nového promotion-grade hitu.
-- Kariera/Zoznam: `checked`; bez novej vhodnej unique promotion-grade delty.
-- Tech/creative: `checked`; Pretlak/StartupJobs/WordPress discovery bez bezpečnej SK-remote/BA promotion.
-- Upwork/freelance: `ok`; 3 relevantné výsledky preverené, 1 nový verification kandidát, 1 inactive canonical a 1 duplicate existing verification; bez LIVE promotion.
-- Reddit/komunity: `limited`; 0 nových verified hiring hits.
+- Kariera/Zoznam + ÚPSVR: `ok`; 1 relevantný canonical hit (Dotypos), bez LIVE promotion pre jazyk/practice/tool burden.
+- Tech/creative: `checked`; 1 relevantný WordPress Jobs result family, ale hard-development scope, bez bezpečnej promotion.
+- Upwork/freelance: `ok`; 1 čerstvý relevantný WordPress full-build result, bez promotion.
+- Reddit/komunity: `limited`; 1 verejne indexovaný hiring post, ale bez dostatočného verification dôkazu pre LIVE.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 21:38
+### Audit počty 22:25
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- nové unique významné verification kandidáty: **1**
+- nové unique významné verification kandidáty: **0**
 - verification queue: **61 položiek**, zachovaná bez straty
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: úspešne aktualizovaný pri zachovaní pôvodnej queue a pridaní 1 nového kandidáta.
+- `source-audit.json`: úspešne aktualizovaný a verification queue zachovaná na 61 položkách.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -161,11 +160,13 @@ Aktualizované: 5. 9. 2026 21:38 CEST
 - Same-day duplicate promotion shield.
 - Remote full-time compensation floor by contract type.
 - Adjacent-skill requirement bridge.
-- **Expired canonical tombstone cache** — ak primárny detail explicitne povie `no longer available` / `position not advertised`, uložiť canonical URL + timestamp + dôvod expirácie a na 24–72 hodín potlačiť stale indexové/mirror výsledky bez opakovaného ručného overovania. Rieši ghost výsledky a šetrí opakované hodinové kontroly.
-- **Search-result provenance counter** — pre každý source-family audit ukladať minimálne `queriesRun`, `resultsReturned`, `detailsOpened`, `verifiedActive`, `verifiedInactive`, `verifiedRejectedLocation` a recency okno. Umožní rozlíšiť skutočný nulový výsledok od slabej indexácie alebo zlyhaného query a zvýši dôveryhodnosť Source Radaru bez zásahu do UI.
-- **Contract-to-hire conversion value score** — pri freelance výsledkoch samostatne zvýhodniť existujúci web/maintenance scope s primeranou hodinovou sadzbou a contract-to-hire možnosťou, ale až po penalizácii konkurencie, jazykového burdenu a klientského risku. Pomôže odlíšiť kvalitný maintenance lead od jednorazových full-build zákaziek.
-- **Maintenance client continuity score** — hodnotiť pravdepodobnosť opakovanej práce podľa typu scope (regular maintenance vs. one-off), klientských hires/spendu, aktivity a contract-to-hire signálu. Cieľom je prioritizovať zákazky s reálnou šancou stať sa stabilným mesačným príjmom namiesto jednorazových opráv.
-- **Duplicate verification enrichment instead of queue growth** — ak nový sweep nájde tú istú položku, nepočítať ju ako nový kandidát, ale doplniť fresh evidence (odmena, proposals, deadline, klientská aktivita, jazykový burden). Znižuje nafukovanie verification queue a zároveň zachováva čerstvosť rozhodovacích dát.
-- **Micro-project interview-pressure gate** — pri krátkych fixed-price zákazkách kombinovať budget, počet proposals/interviewing, požadované proof-of-work a odhad času. Ak je odmena nízka a klient už aktívne interviewuje viac ľudí, automaticky znížiť application ROI a šetriť čas na lepšie leady.
-- **Cross-platform e-commerce skill-gap weight** — pri e-commerce VA rolách oddeľovať core fit (WooCommerce, produkty, sklad, objednávky, customer support) od platform-specific gapov typu Shopee/Lazada/Amazon Seller Central. Nedovoliť, aby jeden nepriamy nástroj automaticky zabil silný core fit, ale zároveň explicitne penalizovať počet a povinnosť týchto platforiem.
-- **Fixed-budget scope ambiguity blocker** — pri fixed-price freelance rolách bez jasného počtu produktov/hodín/deliverables nepovýšiť kandidáta do LIVE ani pri silnom obsahovom fite, kým sa neodhadne minimálna efektívna hodinová sadzba. Zabraňuje tomu, aby 250 USD ongoing projekt vyzeral lepšie než reálne je.
+- Expired canonical tombstone cache.
+- Search-result provenance counter.
+- Contract-to-hire conversion value score.
+- Maintenance client continuity score.
+- Duplicate verification enrichment instead of queue growth.
+- Micro-project interview-pressure gate.
+- Cross-platform e-commerce skill-gap weight.
+- Fixed-budget scope ambiguity blocker.
+- **Requirement burden composite score** — zjednotiť jazyk, roky praxe, formálne vzdelanie, povinné nástroje a špecializované skills do jedného vysvetliteľného `requirementBurden` skóre. Cieľ: rýchlejšie odlíšiť lokálne „dobré na papieri“ ponuky typu Dotypos od reálne vysokej šance na prijatie bez toho, aby sa každý faktor ručne posudzoval izolovane.
+- **Community lead evidence completeness gate** — pre Reddit/Facebook/WordPress community post vyžadovať pred promotion minimálne konkrétny zadávateľ/post, scope, odmenu alebo spôsob dohody, dátum, priamy link a explicitný dôkaz BA alebo remote eligibility. Ak niektorý kritický prvok chýba, lead ostane `unknown/verification` a Source Radar ho nesmie vykazovať ako overenú pracovnú ponuku.
