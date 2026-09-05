@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 23:40 CEST
+Aktualizované: 6. 9. 2026 00:18 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,29 +38,28 @@ Aktualizované: 5. 9. 2026 23:40 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 23:40
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam + ÚPSVR, Pretlak/StartupJobs/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
+### Čerstvé zistenia 00:18
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam + slovenský verejný pracovný discovery, Pretlak/StartupJobs/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- Priamy Telekom careers detail stále potvrdzuje **Špecialista/Špecialistka podpory zákazníkov — Bratislava / čiastočný home office**. Ponuka je už LIVE, preto ide iba o canonical freshness refresh a `rejectedDuplicate: 1`, nie nový prírastok.
-- WordPress Jobs aktuálne uvádza **8 otvorených pozícií a 13 % remote-friendly**. Najčerstvejšie relevantné roly sú prevažne custom PHP/theme/plugin, performance/server alebo geograficky viazané; bez bezpečnej SK-remote promotion.
-- Upwork verejný index ukázal čerstvé Worldwide remote mikro-zákazky: Elementor fix **50 USD** s contract-to-hire, WordPress fix **5 USD**, small task **10 USD** a small-business build **120 USD**. Lokalita prechádza, ale nízky fixed-budget ROI alebo development scope nedosahujú LIVE threshold.
-- Kariera/Zoznam a ÚPSVR boli reálne preverené; verejný BA index má čerstvé administratívne/marketingové výsledky a lokálne zásielkové/customer-service roly, ale bez kandidáta, ktorý by po fit/compensation gate prekonal aktuálny feed.
-- Reddit/WordPress communities: v tomto behu bez nového konkrétneho verejne overiteľného hiring leadu s dostatočným scope, budgetom a remote/BA dôkazom.
+- Upwork znovu potvrdil **Website & SEO Management 2026** — Worldwide remote, WooCommerce maintenance/SEO, 15–30 USD/h, menej než 30 h/týždeň, 6+ mesiacov. Kandidát je už vo verification queue, preto sa nezapisuje duplicitne. Požaduje preukázateľnú WooCommerce prax, reporting a anglický onboarding.
+- Ďalšie čerstvé Upwork výsledky boli najmä WordPress/Elementor mikro-fixy za 5–75 USD, 5 USD WooCommerce build alebo full-time operations za 600 USD; neprešli ROI, hard-skill alebo workload gate.
+- Priamy Telekom careers detail stále potvrdzuje už LIVE customer-support rolu v Bratislave s čiastočným HO. Zároveň sa objavil Junior DevOps za 2 000 EUR v Bratislave, ale cloud/DevOps/development jadro je mimo ranking profilu.
+- Reddit/WordPress communities: čerstvý WordPress/WooCommerce príspevok bol **FOR HIRE**, nie dopyt zamestnávateľa; preto 0 hiring hitov.
 - Facebook public index: **0 verified hits / limited**. WordPress Slovensko, WooCommerce SK+CZ a Práca/brigády Bratislava a okolie boli vyhľadané; bez konkrétneho verejného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 5. 9. 2026 23:40
+## Source audit — 6. 9. 2026 00:18
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `ok`; 1 relevantný canonical refresh, ale už existujúci LIVE Telekom job → duplicate, nie nový prírastok.
+- Priame company careers: `ok`; 1 relevantný canonical refresh už LIVE → duplicate; Junior DevOps bol filtrovaný pre hard-development mismatch.
 - LinkedIn Jobs: `limited`; bez novej vhodnej unique delty, coverage bez loginu zostáva čiastočná.
 - Worki: `checked`; bez nového promotion-grade hitu.
 - Brigada.sk: `checked`; bez nového promotion-grade hitu.
-- Kariera/Zoznam + ÚPSVR: `ok`; lokálne relevantné výsledky existujú, bez novej LIVE promotion po fit/compensation gate.
-- Tech/creative: `ok`; WordPress Jobs 8 open / 13 % remote-friendly, relevantné čerstvé roly prevažne hard-development alebo geo-bound.
-- Upwork/freelance: `ok`; 4 čerstvé relevantné Worldwide remote WordPress mikro-zákazky, všetky bez promotion pre nízky ROI alebo scope burden.
+- Kariera/Zoznam + slovenský verejný pracovný discovery: `checked`; bez novej vhodnej promotion-grade delty.
+- Tech/creative: `checked`; bez novej bezpečnej SK-remote maintenance/admin promotion.
+- Upwork/freelance: `ok`; 6 relevantných výsledkov, 1 rediscovery existujúceho verification kandidáta, bez novej LIVE promotion.
 - Reddit/komunity: `limited`; 0 nových overených hiring leadov v tomto behu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 23:40
+### Audit počty 00:18
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - nové unique významné verification kandidáty: **0**
@@ -169,7 +168,9 @@ Aktualizované: 5. 9. 2026 23:40 CEST
 - Micro-project interview-pressure gate.
 - Cross-platform e-commerce skill-gap weight.
 - Fixed-budget scope ambiguity blocker.
-- **Requirement burden composite score** — zjednotiť jazyk, roky praxe, formálne vzdelanie, povinné nástroje a špecializované skills do jedného vysvetliteľného `requirementBurden` skóre.
-- **Community lead evidence completeness gate** — pre Reddit/Facebook/WordPress community post vyžadovať pred promotion minimálne konkrétny zadávateľ/post, scope, odmenu alebo spôsob dohody, dátum, priamy link a explicitný dôkaz BA alebo remote eligibility.
-- **Freelance bid-cost ROI estimator** — pred alertom odhadnúť náklady na podanie ponuky (Connects/bid effort), konkurenciu a očakávanú hodnotu zákazky; mikro-zákazky s negatívnym očakávaným ROI potlačiť bez zahlcovania verification queue.
-- **Canonical active-state revalidation sampler** — pri každom behu znovu overiť malú rotujúcu vzorku TOP LIVE priamych/canonical linkov a evidovať `activeConfirmedAt`; jeden dočasný výpadok nesmie mazať položku, ale opakované canonical zlyhania ju pošlú na manuálnu revíziu.
+- Requirement burden composite score.
+- Community lead evidence completeness gate.
+- Freelance bid-cost ROI estimator.
+- Canonical active-state revalidation sampler.
+- **Upwork placeholder-budget detector** — rozlíšiť skutočný fixed budget od placeholderu typu 5 USD pri dlhodobej/contract-to-hire zákazke; rozhodovať podľa popisu, duration, klientského spendu a explicitnej možnosti dohodnúť hodinovú/mesačnú sadzbu.
+- **Verification rediscovery timestamp ledger** — pri znovunájdení existujúceho verification kandidáta zapísať `revalidatedAt`/source freshness bez rastu queue a bez falošného hlásenia „nová ponuka“; tým sa zlepší freshness aj dedupe audit.
