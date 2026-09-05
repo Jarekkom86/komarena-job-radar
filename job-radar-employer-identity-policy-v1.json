@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "policy": "employer-identity-collision-guard",
+  "version": "1.0.0",
+  "purpose": "Prevent incorrect cross-board dedupe, reputation/contact enrichment, or application routing when employers have similar names or staffing intermediaries.",
+  "identityEvidencePriority": [
+    "canonical employer career page or canonical listing employer ID",
+    "legal company identifier (ICO/VAT/company registry identifier) when publicly present in the listing",
+    "verified employer domain",
+    "canonical listing structured data",
+    "job-board employer profile",
+    "normalized display name"
+  ],
+  "rules": {
+    "nameOnlyMergeForbidden": true,
+    "staffingAgencyDistinctFromEndEmployer": true,
+    "minimumIndependentIdentitySignalsForCrossBoardMerge": 2,
+    "conflictOutcome": "identity-unknown",
+    "identityUnknownPromotion": "allowed only as a standalone candidate after normal BA/remote eligibility verification; never merge employer-level metadata from another identity",
+    "preserveStableJobIds": true,
+    "preserveCRM": true,
+    "locationRule": "Employer identity confidence cannot override locationEligibility. Only ba-area or verified remote-ok can be recommended.",
+    "remoteRule": "Remote eligibility must be evidenced by the job listing/canonical source, not inferred from another vacancy at the same employer.",
+    "failClosed": true
+  },
+  "protectedFields": ["locationEligibility", "locationReason", "sourceTrust", "verifiedAt", "scoreConfidence", "canonical URL", "user CRM/edit data"],
+  "expectedBenefit": "Avoid false duplicate suppression and prevent copying salary, remote policy, contacts, or requirements between unrelated or intermediary employer records."
+}
