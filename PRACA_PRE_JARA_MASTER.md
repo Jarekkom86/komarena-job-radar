@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 12:36 CEST
+Aktualizované: 5. 9. 2026 13:08 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,39 +38,38 @@ Aktualizované: 5. 9. 2026 12:36 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 12:36
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, tech/creative (Pretlak + StartupJobs), Upwork/freelance, Reddit/komunity a Facebook public index.
-- **Kariera/Zoznam — Skladový pracovník Bratislava, EPF Group**, zverejnené 5. 9. 2026: `ba-area`, 1 273 EUR/mes. základ + príplatky, práca v stoji a v tempe, fyzická manipulácia a trojzmenná prevádzka. Lokalita prechádza, ale fit/odmena/fyzická záťaž sú slabé; **nepovýšiť do LIVE**.
-- Kariera zároveň ukazuje čerstvé BA logistické/brigádnické výsledky (Slovenská pošta a ďalšie), ale bez kandidáta, ktorý by zodpovedal prioritám lepšie než existujúci LIVE feed.
-- **Upwork WordPress/WooCommerce** má nové výsledky z posledných ~12–17 h, ale ide prevažne o intermediate/expert full-build, dizajn alebo hard-development; WooCommerce Data Entry za 35 USD je slabý fixed-price ROI. Bez bezpečnej LIVE promotion.
-- **StartupJobs — BeiT Technologie Administrativně-ekonomický specialista** zostáva atraktívny 100 % remote admin/support kandidát, ale verejný detail stále nepreukazuje explicitnú možnosť cezhraničnej spolupráce zo Slovenska; `locationEligibility: unknown` zostáva správne.
-- **Pretlak — ui42 Medior PPC** je Bratislava/hybrid a 1 500–2 000 EUR, ale vyžaduje samostatnú PPC expertízu; mimo vhodného skill profilu.
-- LinkedIn verejná indexácia stále vracia EEA web-maintenance výsledky bez dostatočného SK-remote/freshness dôkazu; coverage `limited`.
-- Reddit/WordPress/WooCommerce komunity: 0 verified konkrétnych hiring dopytov; coverage `limited`.
+### Čerstvé zistenia 13:08
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam + ÚPSVR mirror, tech/creative (Pretlak + StartupJobs + WordPress Jobs), Upwork/freelance, Reddit/komunity a Facebook public index.
+- **Bolder Slovakia — Administrátor/ka korporátnej agendy, Bratislava**, 1 600 EUR/mes., je lokálne `ba-area`, ale vyžaduje VŠ I. stupňa, minimálne 2 roky relevantnej praxe, pokročilé Office a angličtinu C1 slovom aj písmom. Pre profil ide o výrazný language/qualification mismatch; **nepovýšiť do LIVE**.
+- Kariera/Zoznam naďalej vracia čerstvé BA výsledky; bez kandidáta, ktorý by po fit, jazyku a workload gate prekonal existujúce LIVE priority.
+- LinkedIn verejná indexácia ostáva `limited`; bez bezpečného nového SK/BA promotion kandidáta.
+- Worki a Brigada.sk reálne preverené; bez nového promotion-grade hitu.
+- Pretlak/StartupJobs/WordPress Jobs preverené; BeiT zostáva cross-border remote `unknown`, ostatné výsledky sú skill mismatch alebo bez dostatočného remote dôkazu.
+- Upwork/freelance verejná indexácia v tomto behu nepriniesla nový detail s dostatočným fit/ROI na LIVE promotion.
+- Reddit/WordPress/WooCommerce komunity: **0 verified konkrétnych hiring dopytov**, coverage `limited`.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nezapisuje ako hit; autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 5. 9. 2026 12:36
+## Source audit — 5. 9. 2026 13:08
 - Profesia: `checked`; bez novej unique promotion-grade delty.
 - Priame company careers: `checked`; bez novej vhodnej unique LIVE delty.
 - LinkedIn Jobs: `limited`; verejná indexácia preverená, bez bezpečného nového SK/BA promotion kandidáta.
 - Worki: `checked`; bez nového promotion-grade hitu.
 - Brigada.sk: `checked`; bez nového promotion-grade hitu.
-- Kariera/Zoznam: `ok`; čerstvé BA výsledky dostupné, vrátane skladu z 5. 9., ale bez vhodnej promotion po fit/fyzickej záťaži/odmene.
-- Pretlak / StartupJobs: `ok`; relevantné výsledky dostupné, ale ui42 je skill mismatch a BeiT zostáva cross-border remote `unknown`.
-- Upwork/freelance: `ok`; viac čerstvých WordPress/WooCommerce výsledkov, ale hard-development/dizajn/nízky ROI; 0 LIVE promotion.
+- Kariera/Zoznam + ÚPSVR mirror: `ok`; Bolder Bratislava dostupný, ale vyradený pre AJ C1 + VŠ + relevantnú prax.
+- Pretlak / StartupJobs / WordPress Jobs: `checked`; bez novej vhodnej promotion-grade zhody.
+- Upwork/freelance: `checked`; bez novej bezpečnej promotion-grade delty.
 - Reddit/komunity: `limited`, 0 verified hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 12:36
+### Audit počty 13:08
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - nové unique významné verification kandidáty: **0**
-- čerstvé Kariera kandidáty preverené: **5+**, vyradené z LIVE pre fit/fyzickú záťaž/odmenu alebo nižšiu prioritu
-- čerstvé Upwork WordPress/WooCommerce výsledky preverené: **8+**, bez bezpečnej promotion
+- Kariera/ÚPSVR relevantné kandidáty: **1+**, Bolder vyradený pre language/qualification mismatch
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: **FAIL-CLOSED bez zápisu v tomto behu**, pretože dostupný GitHub connector vracia veľký existujúci súbor truncovaný uprostred 58-položkovej verification queue; kompletný replacement by mohol queue poškodiť. Audit vyššie je pravdivý záznam tohto behu, ale dátový audit zostáva na poslednom bezpečnom stave.
+- `source-audit.json`: **FAIL-CLOSED bez zápisu v tomto behu** — dostupný GitHub connector stále vracia veľký existujúci súbor truncovaný uprostred 58-položkovej verification queue; kompletný replacement by mohol queue poškodiť. Audit vyššie je pravdivý záznam tohto behu, dátový audit zostáva na poslednom bezpečnom stave.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -151,5 +150,7 @@ Aktualizované: 5. 9. 2026 12:36 CEST
 - Published-vs-crawled freshness provenance.
 - Freelance microtask minimum-value gate.
 - Maintenance-vs-development scope classifier.
-- **Same-day low-fit suppression ledger** — pri čerstvých ponukách z dnešného dňa evidovať dôvod, prečo sa neoplati ich znovu preverovať v každom hodinovom behu (fyzická záťaž, zmeny, nízka odmena, hard skill mismatch); zníži opakovanú prácu bez skrytia budúcich material changes.
-- **Freelance scope-to-evidence matcher** — porovnať každý freelance scope s konkrétnymi doložiteľnými referenciami/skill evidence a oddeliť administráciu WooCommerce/WordPress od zásahov vyžadujúcich PHP/API/custom theme/plugin; zvýši presnosť promotion rozhodnutia a reply probability.
+- Same-day low-fit suppression ledger.
+- Freelance scope-to-evidence matcher.
+- **Qualification-stack early reject cache** — pri rolách, kde sa naraz objaví VŠ + povinná prax + B2/C1 jazyk, uložiť deterministický reject fingerprint a v ďalších behoch kandidáta znovu neotvárať, kým sa canonical požiadavky nezmenia; šetrí opakované overovanie nízko-pravdepodobných rolí.
+- **Source-detail evidence completeness counter** — pri každom source family evidovať podiel výsledkov, pri ktorých sa podarilo otvoriť konkrétny detail s lokalitou, jazykom, mzdou a dátumom; umožní odlíšiť reálne nízku ponuku od slabej indexácie a cielene meniť query stratégiu.
