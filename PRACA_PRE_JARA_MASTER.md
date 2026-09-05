@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 05:27 CEST
+Aktualizované: 5. 9. 2026 06:30 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -36,38 +36,37 @@ Aktualizované: 5. 9. 2026 05:27 CEST
 - Autoritatívny feed má **49 LIVE položiek**.
 - LIVE mix: **Profesia 24/49 = 49,0 %**, mimo Profesia **25/49 = 51,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-04T16:16:38+02:00**.
-- MamaTataJojo zostáva promotion-ready a 5. 9. 2026 05:27 bol znovu potvrdený ako aktívny do 2. 10. 2026. Bezpečný LIVE ingest čaká na kompletný replacement autoritatívneho JSON bez straty existujúcich 49 položiek.
+- MamaTataJojo zostáva promotion-ready a 5. 9. 2026 06:30 bol znovu potvrdený ako aktívny do 2. 10. 2026. Bezpečný LIVE ingest stále čaká na kompletný replacement autoritatívneho JSON bez straty existujúcich 49 položiek.
 
-### Čerstvé zistenia 05:27
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/tech-creative + WordPress Jobs, Upwork/freelance, Reddit/komunity a Facebook public index.
-- **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**: znovu potvrdené 5. 9. 2026; zverejnené 4. 9. 2026, koniec ponuky 2. 10. 2026, 1 750 €/mes., plný úväzok na neurčito, jednozmenná prevádzka. Náplň: zakladanie, triedenie a archivácia zdravotných záznamov, skenovanie lekárskych správ, podklady pre poisťovne, tlačivá a korešpondencia. Požadované základné vzdelanie a vodičák B; cudzí jazyk nie je uvedený. Lokalita Malacky = `ba-area`. Stav zostáva **promotion-ready, score 94**.
-- **1plus1 / SPP — operátor kontaktného centra, Home Office**: ponuka je reálne remote-ok zo Slovenska, 1 200–2 500 €/mes. na živnosť a nástup ihneď, ale jadrom je outbound obvolávanie zákazníkov a predaj produktov SPP. Zaradené iba ako nízko-prioritný discovery hit, nie LIVE promotion.
-- **Power AS — Klientský online pracovník/pracovníčka**: 100 % home-office, od 1 500 €/mes., ale role sa po skúšobnej dobe posúva do získavania firemných zákazníkov/vedenia tímu; predajný charakter znižuje fit. Bez promotion.
-- **Slovak Telekom careers**: priamy výpis potvrdený; existujúci customer-support kandidát zostáva LIVE. Čerstvo indexované DevOps/network roly sú hard-development/network a mimo profilu.
-- **WordPress Jobs**: aktuálne 8 otvorených pozícií; prevažujú onsite USA/India/Saudi alebo developer/performance scope. Bez vhodného remote-ok admin/support hitu.
-- **Upwork**: WooCommerce/WordPress/VA discovery preverené; najbližší e-commerce VA kandidát je už vo verification queue a vyžaduje WooCommerce Subscriptions, strong written English, Meta Ads a Xero. Nové WooCommerce výsledky sú prevažne expert development; bez LIVE promotion.
-- **Reddit**: verejne indexované výsledky boli self-promo `[for hire]`, nie konkrétne hiring dopyty; 0 verified hiring hits.
+### Čerstvé zistenia 06:30
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, tech/creative (Pretlak + StartupJobs), Upwork/freelance, Reddit/komunity a Facebook public index.
+- **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**: canonical detail znovu potvrdený 5. 9. 2026; zverejnené 4. 9. 2026, koniec ponuky 2. 10. 2026, 1 750 €/mes., plný úväzok na neurčito, jednozmenná prevádzka. Náplň: zakladanie, triedenie a archivácia zdravotných záznamov, skenovanie lekárskych správ, podklady pre poisťovne, tlačivá a korešpondencia. Požadované základné vzdelanie a vodičák B; cudzí jazyk nie je uvedený. Lokalita Malacky = `ba-area`. Stav **promotion-ready, score 94**.
+- **LinkedIn**: Foxelli e-commerce support remote je verejne indexovaný, ale ide o support + sales a pracovné prostredie je jazykovo náročnejšie; SupportYourApp remote technický/customer support explicitne vyžaduje fluent English. Bez promotion.
+- **Brigada.sk**: čerstvý Manipulačný pracovník v Divadle P. O. Hviezdoslava je BA a 8 €/h, ale je fyzicky náročný a mimo prioritného profilu; bez promotion.
+- **Upwork**: Virtual Assistant – Operations & Campaign Support je Worldwide remote a 5–7 USD/h, ale vyžaduje strong written and spoken English a dostupnosť počas US pracovného času; bez promotion. Ďalšie čerstvé WordPress/WooCommerce výsledky sú hard-development alebo majú nízku efektívnu sadzbu.
+- **Kariera/Zoznam**: MamaTataJojo zostáva najsilnejšia čerstvá administratívna zhoda v Malackách; ostatné nové BA/okolie administratívne výsledky neprebíjajú existujúce priority.
+- **Reddit**: bez nového verejne overiteľného hiring dopytu vhodného pre profil.
 - **Facebook public index**: preverený; **0 verified hits / limited**. Autentizovaný Nexus/local ingestion ostáva backlog, automat ho nespúšťa.
 
-## Source audit — 5. 9. 2026 05:27
-- Profesia: `ok/checked`; nový SPP home-office hit je verifikovaný, ale nízko-prioritný pre outbound sales charakter; bez LIVE promotion.
-- Priame company careers: `ok`; Telekom careers reálne načítané, existujúci support LIVE potvrdený, nové hard-tech roly vyradené profilom.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez vhodného nového non-hard-dev promotion hitu.
+## Source audit — 5. 9. 2026 06:30
+- Profesia: `checked`; čerstvý BA/remote discovery bez novej promotion-grade delty.
+- Priame company careers: `checked`; verejné kariérne vyhľadávanie preverené, bez novej unique promotion-grade delty.
+- LinkedIn Jobs: `limited`; Foxelli/support výsledky verejne indexované, ale sales/jazykové požiadavky znižujú fit.
 - Worki: `checked`; bez novej vhodnej delty.
-- Brigada.sk: `checked`; bez nového vhodného verifikovaného BA/remote hitu.
+- Brigada.sk: `ok`; čerstvý BA hit nájdený, ale fyzicky náročný a mimo prioritného profilu.
 - Kariera/Zoznam: `ok`; MamaTataJojo znovu potvrdený ako aktívny do 2.10.2026 a promotion-ready.
-- Pretlak / WordPress Jobs: `checked`; bez novej vhodnej promotion-grade zhody.
-- Upwork/freelance: `ok`; bez novej promotion-grade delty.
+- Pretlak / StartupJobs: `checked`; bez novej vhodnej promotion-grade zhody.
+- Upwork/freelance: `ok`; nové remote výsledky overené, no angličtina/nízka sadzba/hard-dev scope blokujú promotion.
 - Reddit/komunity: `limited`, 0 verified hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 05:27
+### Audit počty 06:30
 - významné kandidáty znovu overené: **1** (MamaTataJojo, bez zmeny promotion-ready stavu)
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zachovaných 49 položiek
 - Facebook verified hits: **0**
-- `job-sources.json`: aktualizovaný na 05:27
-- `source-audit.json`: musí zachovať kompletnú verification queue; zapisovať iba po bezpečnom replacement-e
+- `job-sources.json`: aktualizovať na 06:30
+- `source-audit.json`: zachovať kompletnú verification queue; zapisovať iba po bezpečnom replacement-e
 - `jobs-data.json`: bez zmeny, kým nie je bezpečne vykonaný kompletný replacement s promotion-ready kandidátom
 
 ## Rozvojový backlog
@@ -135,5 +134,7 @@ Aktualizované: 5. 9. 2026 05:27 CEST
 - Verification queue source-saturation guard.
 - ÚPSVR mirror canonical-link resolver.
 - Segmented large-payload reconstruction checksum.
-- **Remote-sales intensity classifier** — pri home-office ponukách automaticky odlíšiť čistý customer care/back-office od outbound cold-calling/telemarketingu a znížiť prioritu rolám, kde je hlavný zdroj príjmu výkonový predaj. Zabraňuje tomu, aby označenie „100 % home office“ umelo prehlušilo slabý funkčný fit.
-- **Promotion-ready transactional writer** — pri povyšovaní jednej položky najprv zrekonštruovať a validovať celý `jobs-data.json`, overiť počet existujúcich ID, duplicity, source mix a kategórie, potom vykonať jeden atomický replacement; pri akejkoľvek odchýlke zápis zrušiť. Rieši opakovaný stav, keď kvalitný kandidát zostáva v queue iba kvôli bezpečnosti veľkého payloadu.
+- **Remote-sales intensity classifier** — pri home-office ponukách automaticky odlíšiť čistý customer care/back-office od outbound cold-calling/telemarketingu a znížiť prioritu rolám, kde je hlavný zdroj príjmu výkonový predaj.
+- **Promotion-ready transactional writer** — pri povyšovaní jednej položky najprv zrekonštruovať a validovať celý `jobs-data.json`, overiť počet existujúcich ID, duplicity, source mix a kategórie, potom vykonať jeden atomický replacement; pri akejkoľvek odchýlke zápis zrušiť.
+- **Result-page pagination coverage meter** — pri každom source family evidovať, koľko strán/výsledkov bolo reálne prehľadaných a či search skončil kvôli vyčerpaniu výsledkov alebo limitu indexácie; znižuje falošný pocit coverage pri zdrojoch, ktoré vracajú iba prvú stránku.
+- **Structured-data canonical fallback extractor** — ak viditeľný detail ponuky chýba alebo je dynamicky blokovaný, skúsiť z verejného JSON-LD/JobPosting načítať canonical URL, dátum, lokalitu, remote flag a expiry; promotion je povolený iba ak sa údaje zhodujú s verejným detailom alebo dôveryhodným primárnym zdrojom.
