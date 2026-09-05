@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 5. 9. 2026 17:10 CEST
+Aktualizované: 5. 9. 2026 18:49 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,36 +38,37 @@ Aktualizované: 5. 9. 2026 17:10 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 17:10
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, tech/creative (Pretlak/StartupJobs discovery), Upwork/freelance, Reddit/komunity a Facebook public index.
-- Nová významná verification delta: **Foxelli Group — Assistant Brand Manager (crochet and knit brand) | DTC E-commerce | 100% Remote EU**. Originálny LinkedIn company post bol dnes verejne indexovaný pre Bratislavu a označuje rolu ako entry-level a 100 % remote. Náplň má silný prienik e-commerce, produktovej administratívy, customer feedback/support, marketingovej podpory, Shopify, Google Sheets, Claude a AI. Odmena je však len **do 1 000 EUR po zdanení** na full-time freelance kontrakt a pracovné prostredie je anglické; crochet/knitting je silná výhoda. Preto `locationEligibility: remote-ok`, ale iba verification, nie LIVE.
-- Upwork/freelance discovery bolo reálne preverené. Verejný slovenský index stále uvádza **59 zákaziek**, bez novej promotion-grade WordPress/WooCommerce/admin delty lepšej než existujúca verification queue.
-- Kariera/Zoznam dnes poskytla čerstvé BA/admin/vodič výsledky, ale po language/pay/fit/dedupe gate nevznikla nová bezpečná unique LIVE promotion.
-- Worki, Brigada.sk a Pretlak/tech-creative boli reálne preverené bez novej promotion-grade delty.
-- Reddit/WordPress komunita bola verejne preverená; bez nového konkrétneho hiring dopytu s dostatočným scope/budget dôkazom.
+### Čerstvé zistenia 18:49
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, tech/creative vrátane WordPress Jobs, Upwork/freelance, Reddit/komunity a Facebook public index.
+- **Žiadna nová bezpečná LIVE promotion ani nová unique verification položka.** LIVE feed zostáva 50.
+- Priamy firemný hit **DHL — HR Operations Specialist, Bratislava** je na canonical DHL detaile už označený ako nevypísaný; indexovaný výsledok je stale a bol vyradený ako inactive.
+- Verejne indexovaný Upwork **WooCommerce Assistant** sa pri canonical otvorení zobrazil ako **no longer available**; nevstupuje do verification ani LIVE.
+- WordPress Jobs aktuálne uvádza 8 otvorených pozícií. Remote **Senior WordPress Developer — Pangolin Marketing** vyžaduje custom theme development, PHP/HTML/CSS/JS, server management, DNS/SSH, API, Git, performance stack a ďalšie hard-development požiadavky; podľa profilu ide o výrazný skill mismatch, nie vhodnú promotion.
+- Kariera/Zoznam verejne vrátila Production Engineer v Moldave nad Bodvou; ide o vzdialený onsite mimo hard gate, preto `reject-distance` a bez zápisu do aktívneho feedu.
+- Reddit/WordPress verejná indexácia vrátila čerstvé **FOR HIRE** príspevky, nie konkrétny hiring dopyt; 0 verified hiring hits.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nezapisuje ako hit; autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 5. 9. 2026 17:10
+## Source audit — 5. 9. 2026 18:49
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `checked`; bez novej unique LIVE promotion. Foxelli novinka prišla cez originálny LinkedIn company post; priamy Ashby detail nebol v tomto behu verejne indexovaný.
-- LinkedIn Jobs: `limited`; **1 relevantný nový hit**, Foxelli Assistant Brand Manager, pridaný do verification; bez LIVE promotion.
+- Priame company careers: `checked`; 1 stale indexed hit (DHL HR Operations Specialist), canonical detail už inactive → `rejectedInactive: 1`.
+- LinkedIn Jobs: `limited`; bez novej overiteľnej promotion-grade delty.
 - Worki: `checked`; bez nového promotion-grade hitu.
 - Brigada.sk: `checked`; bez nového promotion-grade hitu.
-- Kariera/Zoznam: `ok`; čerstvé BA výsledky dostupné, ale bez promotion po language/pay/fit/dedupe gate.
-- Pretlak / tech-creative: `checked`; bez novej vhodnej promotion-grade zhody.
-- Upwork/freelance: `ok`; verejný index dostupný, bez novej promotion-grade delty.
-- Reddit/komunity: `limited`; 0 promotion-grade verified hiring hits.
+- Kariera/Zoznam: `checked`; 1 vzdialený onsite hit → `rejectedLocation: 1`, bez BA/remote promotion.
+- Tech/creative: `ok`; WordPress Jobs má otvorené výsledky, ale remote Pangolin Senior WP je hard-dev mismatch.
+- Upwork/freelance: `checked`; 1 relevantný indexovaný WooCommerce hit bol canonical inactive → `rejectedInactive: 1`.
+- Reddit/komunity: `limited`; 0 verified hiring hits, iba FOR HIRE príspevky.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 17:10
+### Audit počty 18:49
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- nové unique významné verification kandidáty: **1** — Foxelli Assistant Brand Manager
-- verification queue: **59 položiek** po bezpečnom zachovaní pôvodných 58 + 1 nová
+- nové unique významné verification kandidáty: **0**
+- verification queue: **59 položiek**, zachovaná bez straty
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: **úspešne zapísaný** cez kompletný replacement s kontrolou pôvodného SHA; pôvodných 58 verification položiek bolo zachovaných a pridaná presne 1 nová. Predchádzajúci blocker veľkého auditného zápisu je v tomto behu prakticky prekonaný.
+- `source-audit.json`: úspešne aktualizovaný kompletným replacementom pri zachovaní 59-položkovej verification queue.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -156,7 +157,9 @@ Aktualizované: 5. 9. 2026 17:10 CEST
 - Remote-work jurisdiction evidence cache.
 - Public hiring scope sufficiency gate.
 - Local low-pay opportunity suppression floor.
-- **Atomic audit queue patch writer** — umožniť meniť iba `runSummary`, `sources`, `liveMix` a `writeStatus` bez serializácie celej verification queue; zápis musí pred commitom overiť pôvodný SHA a počet/ID queue položiek.
-- **Same-day duplicate promotion shield** — ukladať canonical URL + normalized title/company fingerprint nových výsledkov na 24 hodín a pri opakovaných hodinových behoch okamžite rozlíšiť nový hit od už LIVE/verification kandidáta.
-- **Remote full-time compensation floor by contract type** — pri full-time freelance/contract remote rolách vypočítať efektívny mesačný čistý ekvivalent a automaticky znížiť prioritu pod konfigurovateľným minimom; výnimka iba pre strategický skill-building alebo reálne part-time roly. Rieši prípady Foxelli 800–1 000 EUR full-time, ktoré vyzerajú obsahovo silno, ale ekonomicky nedávajú zmysel.
-- **Adjacent-skill requirement bridge** — pri e-commerce/CMS rolách rozlišovať povinný skill od prenositeľnej susednej skúsenosti (napr. Shopify vs WooCommerce, Asana vs iné task systémy, Claude vs ChatGPT) a zvýšiť confidence iba vtedy, keď detail neoznačuje konkrétnu platformu ako hard requirement. Zníži zbytočné vyradzovanie junior/entry-level rolí a zároveň nepretlačí hard skill gap.
+- Atomic audit queue patch writer.
+- Same-day duplicate promotion shield.
+- Remote full-time compensation floor by contract type.
+- Adjacent-skill requirement bridge.
+- **Expired canonical tombstone cache** — ak primárny detail explicitne povie `no longer available` / `position not advertised`, uložiť canonical URL + timestamp + dôvod expirácie a na 24–72 hodín potlačiť stale indexové/mirror výsledky bez opakovaného ručného overovania. Rieši dnešné DHL a Upwork ghost výsledky a šetrí opakované hodinové kontroly.
+- **Search-result provenance counter** — pre každý source-family audit ukladať minimálne `queriesRun`, `resultsReturned`, `detailsOpened`, `verifiedActive`, `verifiedInactive`, `verifiedRejectedLocation` a recency okno. Umožní rozlíšiť skutočný nulový výsledok od slabej indexácie alebo zlyhaného query a zvýši dôveryhodnosť Source Radaru bez zásahu do UI.
