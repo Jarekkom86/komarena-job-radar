@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 6. 9. 2026 00:18 CEST
+Aktualizované: 6. 9. 2026 01:19 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,28 +38,26 @@ Aktualizované: 6. 9. 2026 00:18 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 00:18
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam + slovenský verejný pracovný discovery, Pretlak/StartupJobs/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
+### Čerstvé zistenia 01:19
+- Reálne preverených **9 source families**, z toho **8 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Pretlak/WordPress Jobs tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- Upwork znovu potvrdil **Website & SEO Management 2026** — Worldwide remote, WooCommerce maintenance/SEO, 15–30 USD/h, menej než 30 h/týždeň, 6+ mesiacov. Kandidát je už vo verification queue, preto sa nezapisuje duplicitne. Požaduje preukázateľnú WooCommerce prax, reporting a anglický onboarding.
-- Ďalšie čerstvé Upwork výsledky boli najmä WordPress/Elementor mikro-fixy za 5–75 USD, 5 USD WooCommerce build alebo full-time operations za 600 USD; neprešli ROI, hard-skill alebo workload gate.
-- Priamy Telekom careers detail stále potvrdzuje už LIVE customer-support rolu v Bratislave s čiastočným HO. Zároveň sa objavil Junior DevOps za 2 000 EUR v Bratislave, ale cloud/DevOps/development jadro je mimo ranking profilu.
-- Reddit/WordPress communities: čerstvý WordPress/WooCommerce príspevok bol **FOR HIRE**, nie dopyt zamestnávateľa; preto 0 hiring hitov.
-- Facebook public index: **0 verified hits / limited**. WordPress Slovensko, WooCommerce SK+CZ a Práca/brigády Bratislava a okolie boli vyhľadané; bez konkrétneho verejného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
+- LinkedIn verejný index našiel **Wolt – Support Associate (Part Time), Bratislava**. Lokalita prechádza, ale ponuka explicitne vyžaduje **angličtinu minimálne B2** a zmeny večer/víkend, preto sa nezaradila do LIVE.
+- Upwork priniesol viac WordPress/WooCommerce maintenance kandidátov, ale bez dostatočne silného nového promotion-grade hitu: webmaster 5–15 USD/h vyžaduje fluent English a US business hours; small-agency maintenance 5–9 USD/h má PHP/hosting/DNS scope; WooCommerce custom-code maintenance 3–5 USD/h je Expert; viac mikroprojektov má iba 10–150 USD fixed. Ongoing WooCommerce maintenance za približne 65 USD/mesiac má 20–50 proposals a slabú efektívnu hodnotu.
+- Reddit/WordPress communities: nájdené hiring posty boli staršie, US-only alebo s fluent English + hard PHP/MySQL požiadavkami; 0 nových vhodných hiring leadov.
+- Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 6. 9. 2026 00:18
+## Source audit — 6. 9. 2026 01:19
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `ok`; 1 relevantný canonical refresh už LIVE → duplicate; Junior DevOps bol filtrovaný pre hard-development mismatch.
-- LinkedIn Jobs: `limited`; bez novej vhodnej unique delty, coverage bez loginu zostáva čiastočná.
+- Priame company careers: `checked`; bez novej vhodnej unique promotion-grade delty.
+- LinkedIn Jobs: `limited`; 1 lokálne relevantný hit (Wolt Support Associate), vyradený pre explicitnú AJ B2 + zmenový režim; coverage bez loginu zostáva čiastočná.
 - Worki: `checked`; bez nového promotion-grade hitu.
-- Brigada.sk: `checked`; bez nového promotion-grade hitu.
-- Kariera/Zoznam + slovenský verejný pracovný discovery: `checked`; bez novej vhodnej promotion-grade delty.
-- Tech/creative: `checked`; bez novej bezpečnej SK-remote maintenance/admin promotion.
-- Upwork/freelance: `ok`; 6 relevantných výsledkov, 1 rediscovery existujúceho verification kandidáta, bez novej LIVE promotion.
-- Reddit/komunity: `limited`; 0 nových overených hiring leadov v tomto behu.
+- Kariera/Zoznam: `checked`; bez novej vhodnej promotion-grade delty.
+- Tech/creative: `checked`; Pretlak + WordPress Jobs bez novej bezpečnej SK-remote maintenance/admin promotion.
+- Upwork/freelance: `ok`; 8 relevantných/čiastočne relevantných výsledkov, ale bez novej bezpečnej LIVE promotion a bez rastu verification queue.
+- Reddit/komunity: `limited`; 0 nových overených vhodných hiring leadov.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 00:18
+### Audit počty 01:19
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - nové unique významné verification kandidáty: **0**
@@ -172,5 +170,7 @@ Aktualizované: 6. 9. 2026 00:18 CEST
 - Community lead evidence completeness gate.
 - Freelance bid-cost ROI estimator.
 - Canonical active-state revalidation sampler.
-- **Upwork placeholder-budget detector** — rozlíšiť skutočný fixed budget od placeholderu typu 5 USD pri dlhodobej/contract-to-hire zákazke; rozhodovať podľa popisu, duration, klientského spendu a explicitnej možnosti dohodnúť hodinovú/mesačnú sadzbu.
-- **Verification rediscovery timestamp ledger** — pri znovunájdení existujúceho verification kandidáta zapísať `revalidatedAt`/source freshness bez rastu queue a bez falošného hlásenia „nová ponuka“; tým sa zlepší freshness aj dedupe audit.
+- Upwork placeholder-budget detector.
+- Verification rediscovery timestamp ledger.
+- **Ranking-track query coverage matrix** — pri každom behu evidovať, či discovery dotaz reálne pokryl každý hlavný track (web/e-shop, tech/support, admin, driver, logistics) aspoň v relevantných source families; odhalí tiché coverage diery aj pri formálne splnenom počte zdrojov.
+- **Search-index lag score per source family** — počítať rozdiel medzi `publishedAt`, `crawledAt` a časom auditu; zdroje, ktoré pravidelne vracajú staré výsledky ako „čerstvé“, automaticky znížiť v discovery priorite bez penalizácie kvalitných canonical ponúk.
