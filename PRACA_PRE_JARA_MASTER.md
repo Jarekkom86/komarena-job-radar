@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 6. 9. 2026 23:21 CEST
+Aktualizované: 7. 9. 2026 00:11 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,39 +38,39 @@ Aktualizované: 6. 9. 2026 23:21 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 23:21
+### Čerstvé zistenia 00:11
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- WordPress Jobs aktuálne uvádza **11 otvorených pozícií**. Čerstvý **WPMU DEV WordPress Support Specialist** je síce globálne remote, ale vyžaduje fluent English, PHP, MySQL, HTML/CSS, WordPress hooks/filters a 40 h/týždeň; podľa jazykového a hard-skill gate nejde do LIVE ani verification promotion review.
-- Priame firemné careers boli reálne preverené. **Websupport Customer Success Advisor** v Bratislave je stále aktívny a už je evidovaný vo verification; nejde o nový unique lead.
-- Upwork verejný index vrátil WordPress/WooCommerce maintenance a troubleshooting výsledky, ale najrelevantnejšie boli rediscovery už evidovaných kandidátov. Queue preto nerástla.
-- Reddit verejný index ukázal najmä `FOR HIRE` príspevky, nie nové konkrétne hiring dopyty; 0 verified hiring hits.
+- Nový **Upwork – WordPress Developer Needed for Small Fixes**: Worldwide remote, 75 USD fixed, established client (~14k USD spend, 16 hires, 1 465 hodín), scope sú malé WordPress opravy, theme/plugin issues, layout/mobile QA a PHP warnings/errors. Lokalita je `remote-ok`, ale Expert label, PHP troubleshooting, 20–50 proposals a nízky fixed budget ho držia iba vo verification; provisional score 89.
+- **WooCommerce Website Development** za 400 USD je znovu nájdený, ale už je evidovaný vo verification, preto nevznikla duplicita.
+- WordPress Jobs aktuálne uvádza **11 otvorených pozícií**. WPMU DEV WordPress Support Specialist je globálne remote, ale vyžaduje fluent English, PHP, MySQL, HTML/CSS a 40 h/týždeň; hard mismatch.
+- LinkedIn public index ukázal **DHL Tímlíder v sklade – Senec** (B1 AJ, VZV, 2-zmenná prevádzka) a starší **KLARSTEIN Junior Marketplace Admin** už neprijíma žiadosti. Bez promotion.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 6. 9. 2026 23:21
+## Source audit — 7. 9. 2026 00:11
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `ok`; 1 relevantný aktívny výsledok (Websupport), ale už evidovaný; 0 pridaných.
-- LinkedIn Jobs: `limited`; bez novej suitable unique BA/remote delty.
+- Priame company careers: `checked`; Telekom/Alza/Websupport a verejne indexované company careers preverené, bez novej suitable unique delty.
+- LinkedIn Jobs: `limited`; 2 konkrétne výsledky, 1 inactive; DHL Senec nízky fit pre VZV/B1/2-zmeny, KLARSTEIN inactive.
 - Worki: `checked`; bez novej vhodnej unique delty.
 - Kariera/Zoznam: `checked`; bez novej suitable unique promotion-grade BA delty.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
 - Tech/creative: `ok`; 1 relevantný remote WordPress support výsledok, vyradený pre fluent English + hard PHP/MySQL stack; 0 pridaných.
-- Upwork/freelance: `ok`; relevantná maintenance rediscovery, 1 duplicate/už evidovaný, 0 nových verification prírastkov, 0 LIVE promotion.
-- Reddit/komunity: `limited`; čerstvé viditeľné výsledky sú prevažne FOR HIRE, bez nového konkrétneho hiring dopytu.
+- Upwork/freelance: `ok`; 2 relevantné výsledky, 1 duplicate a 1 nový verification kandidát; 0 LIVE promotion.
+- Reddit/komunity: `limited`; bez nového konkrétneho hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 23:21
+### Audit počty 00:11
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- nové unique významné verification kandidáty: **0**
-- verification queue: **69 položiek**, zachovaná bez straty
-- company-career relevantné hity: **1**, duplicate/už evidovaný
+- nové unique verification kandidáty: **1**
+- verification queue: **69 → 70 položiek**, zachovaná bez straty
+- LinkedIn relevantné/indexované výsledky: **2**, z toho 1 inactive
 - tech/creative relevantné hity: **1**, vyradený pre jazyk/hard-skill mismatch
-- freelance relevantné hity: **1 rediscovery**, duplicate/už evidovaný
+- freelance relevantné hity: **2**, 1 duplicate + 1 nový verification
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: úspešne aktualizovaný; queue 69.
+- `source-audit.json`: úspešne aktualizovaný; queue 70.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -177,35 +177,37 @@ Aktualizované: 6. 9. 2026 23:21 CEST
 - Canonical active-state revalidation sampler.
 - Upwork placeholder-budget detector.
 - Verification rediscovery timestamp ledger.
-- **Ranking-track query coverage matrix** — pri každom behu evidovať, či discovery dotaz reálne pokryl každý hlavný track (web/e-shop, tech/support, admin, driver, logistics) aspoň v relevantných source families; odhalí tiché coverage diery aj pri formálne splnenom počte zdrojov.
-- **Search-index lag score per source family** — počítať rozdiel medzi `publishedAt`, `crawledAt` a časom auditu; zdroje, ktoré pravidelne vracajú staré výsledky ako „čerstvé“, automaticky znížiť v discovery priorite bez penalizácie kvalitných canonical ponúk.
-- **Verification rediscovery metadata refresher** — ak sa už evidovaný kandidát znovu objaví, neklonovať ho; aktualizovať `lastSeenAt`, aktuálnu cenu/sadzbu, proposal count, client-view a active-state, aby sa promotion rozhodovalo z čerstvých dát bez rastu queue.
-- **Freelance proposal-velocity estimator** — z veku inzerátu a intervalového proposal count odhadovať tempo konkurencie (proposals/hour) a penalizovať iba rýchlo saturované zákazky; odlíši 20–50 proposals za pár hodín od rovnakého počtu po niekoľkých dňoch.
-- **Store-build scope decomposition score** — pri WooCommerce/Shopify full-build zákazkách automaticky rozdeliť scope na katalóg, checkout/payments, shipping, analytics, policy/content a custom-code vrstvu; promotion zablokovať len vtedy, keď neoverená hard-dev časť presiahne bezpečný limit, namiesto plošného penalizovania každého full-store projektu.
-- **Freelance client maturity confidence** — kombinovať vek klientského účtu, spend, hires, aktívne kontrakty a interview/view activity do jedného confidence signálu; nový klient bez histórie dostane vyššiu rizikovú prirážku, no kvalitný scope nebude automaticky potlačený len kvôli nulovému spendu.
-- **Rediscovery freshness promotion trigger** — pri opakovanom nájdení už evidovaného kandidáta automaticky porovnať proposal count, interview activity, cenu, active-state a deadline; ak sa podmienky zlepšia alebo sa blíži uzávierka, kandidáta znovu zaradiť do promotion review bez tvorby duplicity.
-- **Community lead minimum-evidence schema** — pre Reddit/Facebook/komunitné leady vyžadovať minimálne konkrétny hiring intent, scope, kontakt alebo aplikačný link a aspoň jeden z údajov budget/deadline/location; tým sa znížia falošne pozitívne „hity“ z všeobecných diskusií a FOR HIRE postov.
-- **Inactive-hit early discard cache** — pri zdrojoch ako LinkedIn/Twine ukladať hash už potvrdených `no longer accepting applications`/expired výsledkov a pri ďalšom sweep-e ich vyradiť ešte pred detailným rankingom; zníži opakované prehľadávanie mŕtvych indexovaných ponúk.
-- **Maintenance-fit evidence score** — pri WordPress maintenance zákazkách oddelene skórovať content/admin, updates/backups, troubleshooting, staging/deploy a hard-dev vrstvy; umožní rýchlejšie nájsť ľahší maintenance scope, ktorý je reálne vhodný bez senior PHP/server skillov.
-- **Graduate-friendly direct-company watchlist** — samostatne sledovať priame firemné roly označené „vhodné aj pre absolventov“ a zvýšiť ich discovery prioritu v admin/tech/support trackoch bez toho, aby sa obchádzal language alebo hard-skill gate.
-- **AI-enabled task-fit bonus with hard-skill ceiling** — evidovať explicitné každodenné využitie AI/Claude/automation nástrojov ako pozitívny fit signál pre Jara, ale nikdy ním nekompenzovať povinnú B2/C1 angličtinu, hard development alebo špecializovanú kvalifikáciu.
-- **Source-query semantic drift monitor** — porovnávať zamýšľanú lokalitu/kategóriu discovery dotazu s reálnym rozdelením vrátených výsledkov; ak vyhľadávač začne vracať inú lokalitu alebo profesijnú kategóriu, family označiť ako degraded/limited a nevydávať to za plné pokrytie.
-- **Low-yield source adaptive query rotator** — po opakovaných behoch bez novej unique delty automaticky rotovať bezpečné synonymá a podkategórie (napr. e-shop admin, CMS content, reklamácie, service desk, vodič B) v rámci rovnakej source family; zvyšuje coverage bez pridávania slabých výsledkov do feedu.
-- **Micro-fix proof-of-skill mapper** — pri malých WordPress opravách automaticky mapovať konkrétne tasky (layout, responsive, plugin issue, Elementor) na existujúce dôkazy praxe/portfólio; zrýchli rozhodnutie, či má zmysel reagovať na entry-level microjob bez hard-dev scope.
-- **Low-history client escrow-risk flag** — pri fixed-price freelance ponukách kombinovať client spend, hires, vek účtu a budget s rizikom nejasného scope; kandidát s veľmi slabou históriou zostane vo verification aj pri vysokom fit score, kým sa nepotvrdí rozumný milestone/escrow setup.
-- **Public-index country-restriction prefilter** — ešte pred rankingom odhaliť roly označené ako „remote“, ktorých detail zároveň povoľuje prácu iba z konkrétnej cudzej krajiny; okamžite ich označiť `reject-distance` a neplytvať verification kapacitou.
-- **Freelance starter-budget vs continuation-value split** — pri zákazkách typu malý landing page/fix + následná maintenance oddelene hodnotiť počiatočný fixed budget a realistickú hodnotu pokračovania; zabráni tomu, aby lacný trial task skreslil celý dlhodobý opportunity score.
-- **Shift-window timezone normalizer** — pre remote roly previesť publikované UTC/US pracovné okná na Europe/Bratislava a vypočítať reálny večerný/nočný/víkendový burden; zrýchli vyradenie rolí, ktoré vyzerajú remote-friendly, ale prakticky majú neudržateľné časové zmeny.
-- **Hard-dev contamination ratio for maintenance roles** — pri ponukách označených maintenance/support vypočítať podiel požiadaviek na custom PHP/MySQL/plugin dev/Git/server/DNS oproti bežným updates, content/admin a troubleshooting úlohám; zabráni promotion rolí, ktoré sa marketingovo tvária ako maintenance, ale reálne sú senior development.
-- **Fixed-price microproject effective-hour ceiling** — z budgetu a minimálnej prijateľnej efektívnej sadzby odvodiť maximálny bezpečný čas na realizáciu; ak scope podľa dôkazov presiahne tento čas, microjob automaticky nepromovať ani pri vysokom skill fite.
-- **Client interview saturation gate** — pri freelance ponukách kombinovať pomer `interviewing/proposals`, už uskutočnené hires a čas od publikovania; neskorú prihlášku s vysokou interview saturáciou potlačiť, aby sa neplytvalo časom a connectmi na prakticky obsadenú zákazku.
-- **Expert-label vs task-scope contradiction detector** — porovnať platformové `Experience Level: Expert` s reálnym task scope; jednoduchú maintenance/admin rolu neodmietnuť iba pre label, ale vyžadovať dôkaz, že hard-dev burden je nízky a portfólio tasky pokrýva.
-- **Audit-to-source-registry consistency checker** — po každom behu porovnať `source-audit.json` a `job-sources.json` podľa času auditu, kontrolovaných families, statusov a hitov; pri rozdiele zablokovať označenie auditu ako fresh, aby Source Radar neukazoval staršie alebo rozporné pokrytie.
-- **Inactive-detail sibling-result isolation** — keď canonical detail je expired/obsadený, podobné aktívne ponuky z bočného panelu alebo related-jobs sekcie nesmú zdediť jeho názov, lokalitu ani stav; každý sibling musí mať vlastný canonical proof pred zaradením do verification.
-- **Rediscovery-only run compression** — ak beh neprinesie žiadny nový unique kandidát a všetky relevantné hity sú duplicate/inactive/low-value, uložiť iba freshness, delta počty a zmenené source statusy bez rastu verification queue; šetrí zápisy a znižuje riziko poškodenia veľkých dátových súborov.
-- **Discovery-to-persistence reconciliation ledger** — po každom behu porovnať všetky unique kandidáty označené ako významné s tým, čo sa reálne zapísalo do `jobs-data.json`/`source-audit.json`; nepersistovaný lead automaticky zaradiť do recovery fronty nasledujúceho behu, aby sa už neopakovala strata medzi discovery a zápisom.
-- **Portfolio-ready maintenance response pack** — pri WordPress/Elementor maintenance leadoch automaticky zložiť krátky dôkazový balík z relevantných skúseností (content edits, responsive fixes, plugin troubleshooting, backup/staging) a odhadnúť čas prípravy reakcie; zrýchli odpoveď na silné leady bez automatického odosielania.
-- **Budget-period ambiguity detector** — pri long-term/fixed-price freelance roliach rozlíšiť, či zobrazený budget znamená mesačnú odmenu, prvý milestone alebo celý kontrakt; kým obdobie nie je explicitné, nepoužiť sumu ako čistú mesačnú hodnotu ani kandidáta automaticky nepromovať.
-- **Theme-builder portability score** — pri Divi/Elementor/Gutenberg/WPBakery zákazkách mapovať spoločné zručnosti (layout, responsive, content, forms, CSS) a oddeliť ich od builder-specific know-how; umožní realisticky ohodnotiť prenositeľnosť skúseností bez tvrdenia, že konkrétny builder už bol používaný.
-- **Rejected-skill fingerprint cache** — pri opakovane sa objavujúcich remote WordPress support roliach ukladať hash explicitných hard mismatchov (napr. fluent English + PHP/MySQL + 40 h); pri ďalšom behu kandidáta rýchlo rozpoznať ako nezmenený reject bez opakovaného hlbokého hodnotenia.
-- **Rediscovery-only source write minimizer** — keď nový beh neprinesie unique kandidáta ani materiálnu zmenu, aktualizovať len audit freshness/source evidence a MASTER backlog bez prepisovania `jobs-data.json`; znižuje počet write operácií a riziko konfliktov pri hodinových behoch.
+- Ranking-track query coverage matrix.
+- Search-index lag score per source family.
+- Verification rediscovery metadata refresher.
+- Freelance proposal-velocity estimator.
+- Store-build scope decomposition score.
+- Freelance client maturity confidence.
+- Rediscovery freshness promotion trigger.
+- Community lead minimum-evidence schema.
+- Inactive-hit early discard cache.
+- Maintenance-fit evidence score.
+- Graduate-friendly direct-company watchlist.
+- AI-enabled task-fit bonus with hard-skill ceiling.
+- Source-query semantic drift monitor.
+- Low-yield source adaptive query rotator.
+- Micro-fix proof-of-skill mapper.
+- Low-history client escrow-risk flag.
+- Public-index country-restriction prefilter.
+- Freelance starter-budget vs continuation-value split.
+- Shift-window timezone normalizer.
+- Hard-dev contamination ratio for maintenance roles.
+- Fixed-price microproject effective-hour ceiling.
+- Client interview saturation gate.
+- Expert-label vs task-scope contradiction detector.
+- Audit-to-source-registry consistency checker.
+- Inactive-detail sibling-result isolation.
+- Rediscovery-only run compression.
+- Discovery-to-persistence reconciliation ledger.
+- Portfolio-ready maintenance response pack.
+- Budget-period ambiguity detector.
+- Theme-builder portability score.
+- Rejected-skill fingerprint cache.
+- Rediscovery-only source write minimizer.
+- **Established-client microjob trust bonus with budget floor** — pri malých WordPress fixoch oddeliť dôveryhodnosť klienta (spend, hires, hours) od ekonomickej atraktivity tasku; silná história môže zvýšiť šancu úspešného kontraktu, ale nikdy nesmie sama prekonať minimálny effective-rate/budget floor.
+- **Skill-exposure cap for PHP-warning fixes** — pri microfix zákazkách automaticky rozlíšiť diagnostiku bežných warningov/plugin konfliktov od custom PHP developmentu; promotion povoliť iba ak požadovaná kódová vrstva zostane pod bezpečným skill-exposure limitom a existuje rollback/backup cesta.
