@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "policy": "field-evidence-ttl-v1",
+  "purpose": "Prevent a recently verified job from being treated as fully fresh when critical fields were only inferred or verified earlier.",
+  "hardLocationRule": "Only ba-area or verified remote-ok may be recommended. Unknown or stale remote/location evidence fails closed.",
+  "fields": {
+    "activeState": {"ttlHours": 24, "onExpired": "reverify-before-apply-first"},
+    "locationEligibility": {"ttlHours": 168, "onExpired": "unknown-until-reverified"},
+    "remotePolicy": {"ttlHours": 72, "onExpired": "unknown-until-reverified"},
+    "applicationChannel": {"ttlHours": 24, "onExpired": "reverify-before-apply-first"},
+    "compensation": {"ttlHours": 168, "onExpired": "retain-value-mark-stale"},
+    "hardRequirements": {"ttlHours": 168, "onExpired": "reverify-before-promotion"}
+  },
+  "evidenceRules": [
+    "Store fieldVerifiedAt independently from job-level verifiedAt when enrichment is available.",
+    "A fresh job-level verifiedAt must not refresh fields that were not actually checked.",
+    "Canonical/direct-company evidence outranks search snippets and mirrors.",
+    "If location or remote evidence expires, never silently preserve remote-ok; quarantine until reverified.",
+    "Temporary source failure must not delete an existing LIVE record; it only prevents priority escalation."
+  ],
+  "compatibility": {
+    "lockedUi": "unchanged",
+    "crm": "unchanged",
+    "baseline": "unchanged",
+    "stableIds": "unchanged",
+    "canonicalDedupe": "unchanged",
+    "sourceAudit": "unchanged",
+    "existingJobs": "no destructive migration required"
+  }
+}
