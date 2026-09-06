@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 6. 9. 2026 19:16 CEST
+Aktualizované: 6. 9. 2026 20:21 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,39 +38,38 @@ Aktualizované: 6. 9. 2026 19:16 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 19:16
+### Čerstvé zistenia 20:21
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/StartupJobs/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- Upwork priniesol čerstvé WordPress/WooCommerce výsledky, ale najrelevantnejší **WooCommerce Website Development** je rediscovery už evidovaného verification kandidáta. **WordPress Website Designers Needed** je Worldwide remote, ale iba 10 USD fixed, complex/intermediate a už 16 interviewing; nepovažuje sa za hodnotný nový verification prírastok.
-- LinkedIn/Twine priniesol **Freelance Web Developer – Restaurant Site Maintenance**, ale canonical detail uvádza `No longer accepting applications`; navyše ide o custom-built systém bez WordPress/Shopify a vyžaduje HTML/CSS/JS/backend frameworky. Vyradené ako inactive + hard-dev mismatch.
-- Worki kamerový technik Bratislava bol canonical už obsadený/strhnutý. Podobné aktívne technické výsledky boli viditeľné, ale bez lepšej unique zhody než existujúci feed.
-- Kariera/Zoznam mala čerstvé BA administratívne a skladové výsledky; Executive Support Specialist je už evidovaný a nový skladník/manipulant je 3-zmenný, nízko prioritný track bez promotion.
-- Reddit verejná indexácia nepriniesla nový konkrétny vhodný hiring dopyt.
+- Do verification bol doplnený predtým objavený, ale ešte nepersistovaný **WordPress/Elementor Website Maintenance for 5 Business Sites (Ongoing, Part-Time)** z Upworku: Worldwide remote, 15–20 USD/h, približne 15–20 h/týždeň, 6+ mesiacov, obsah/design edits a malé opravy na piatich WordPress/Elementor weboch, heavy coding nie je required. Klient má 7,7k USD spend, 35 hires a 733 hodín. Silný fit, ale 50+ proposals drží kandidáta mimo LIVE.
+- Upwork zároveň ukázal **WordPress Developer Needed** za 15–35 USD/h, Worldwide remote, 6+ mesiacov; PHP je však mandatory a scope je development-heavy, preto bez promotion.
+- Reddit verejná indexácia ukázala hiring WordPress Developer 70–80 USD/h, ale explicitne **US-only**; vyradené `reject-distance`.
+- Profesia, firemné careers, LinkedIn, Worki, Kariera, Brigada.sk a tech/creative family nepriniesli novú unique promotion-grade deltu.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 6. 9. 2026 19:16
+## Source audit — 6. 9. 2026 20:21
 - Profesia: `checked`; bez novej unique promotion-grade delty.
 - Priame company careers: `checked`; reálne preverené, bez novej suitable unique promotion-grade delty.
-- LinkedIn Jobs: `limited`; 1 viditeľný maintenance hit, ale inactive + hard-dev mismatch, 0 eligible.
-- Worki: `checked`; 1 relevantný technický detail, ale canonical inactive/obsadený.
-- Kariera/Zoznam: `ok`; 2 relevantné BA výsledky, z toho 1 už evidovaný duplicate; bez promotion.
+- LinkedIn Jobs: `limited`; bez novej suitable unique delty; public coverage bez loginu je čiastočná.
+- Worki: `checked`; bez novej vhodnej unique delty.
+- Kariera/Zoznam: `checked`; bez novej vhodnej unique BA/remote delty.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
 - Tech/creative: `checked`; bez novej suitable unique promotion-grade delty.
-- Upwork/freelance: `ok`; 3 relevantné výsledky, 2 rediscovery a 1 extrémne nízko-hodnotový nový listing; 0 verification prírastkov, 0 LIVE promotion.
-- Reddit/komunity: `limited`; bez nového konkrétneho vhodného hiring dopytu.
+- Upwork/freelance: `ok`; 4 relevantné výsledky, 1 nový verification prírastok, 1 rediscovery a ďalšie development-heavy/low-value výsledky; 0 LIVE promotion.
+- Reddit/komunity: `limited`; 1 viditeľný hiring hit, ale US-only → `reject-distance`.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 19:16
+### Audit počty 20:21
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- nové unique významné verification kandidáty: **0**
-- verification queue: **67 položiek**, zachovaná bez straty
-- freelance relevantné hity: **3**, z toho 2 rediscovery a 1 nízko-hodnotový reject
-- inactive relevantné hity: **2** (LinkedIn/Twine 1, Worki 1)
+- nové unique významné verification kandidáty: **1**
+- verification queue: **68 položiek**, zachovaná bez straty
+- freelance relevantné hity: **4**, z toho 1 verification prírastok
+- lokalitne vyradené community hity: **1**
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: úspešne aktualizovaný; queue ostáva 67.
+- `source-audit.json`: úspešne aktualizovaný; queue 68.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -203,3 +202,5 @@ Aktualizované: 6. 9. 2026 19:16 CEST
 - **Audit-to-source-registry consistency checker** — po každom behu porovnať `source-audit.json` a `job-sources.json` podľa času auditu, kontrolovaných families, statusov a hitov; pri rozdiele zablokovať označenie auditu ako fresh, aby Source Radar neukazoval staršie alebo rozporné pokrytie.
 - **Inactive-detail sibling-result isolation** — keď canonical detail je expired/obsadený, podobné aktívne ponuky z bočného panelu alebo related-jobs sekcie nesmú zdediť jeho názov, lokalitu ani stav; každý sibling musí mať vlastný canonical proof pred zaradením do verification.
 - **Rediscovery-only run compression** — ak beh neprinesie žiadny nový unique kandidát a všetky relevantné hity sú duplicate/inactive/low-value, uložiť iba freshness, delta počty a zmenené source statusy bez rastu verification queue; šetrí zápisy a znižuje riziko poškodenia veľkých dátových súborov.
+- **Discovery-to-persistence reconciliation ledger** — po každom behu porovnať všetky unique kandidáty označené ako významné s tým, čo sa reálne zapísalo do `jobs-data.json`/`source-audit.json`; nepersistovaný lead automaticky zaradiť do recovery fronty nasledujúceho behu, aby sa už neopakovala strata medzi discovery a zápisom.
+- **Portfolio-ready maintenance response pack** — pri WordPress/Elementor maintenance leadoch automaticky zložiť krátky dôkazový balík z relevantných skúseností (content edits, responsive fixes, plugin troubleshooting, backup/staging) a odhadnúť čas prípravy reakcie; zrýchli odpoveď na silné leady bez automatického odosielania.
