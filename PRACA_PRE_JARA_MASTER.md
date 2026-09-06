@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 6. 9. 2026 09:01 CEST
+Aktualizované: 6. 9. 2026 12:07 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,37 +38,39 @@ Aktualizované: 6. 9. 2026 09:01 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 09:01
+### Čerstvé zistenia 12:07
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- Nový významný verification kandidát: **Upwork — WordPress Website Fixes and Customization**, Worldwide remote, **100 USD fixed**, entry-level, contract-to-hire; scope sú menšie opravy existujúceho WordPress webu, layout/responsive/plugin fixes. Promotion brzdí 20–50 proposals a slabá klientská história (15 USD spend, 1 hire).
-- Reddit verejná indexácia priniesla hiring WordPress Developer 70–80 USD/h, ale je explicitne **US-only**, preto `reject-distance`/country restriction a nie je vhodný pre Slovensko.
-- Profesia, company careers, Worki, Kariera, Brigada.sk a Pretlak/WordPress Jobs boli reálne preverené bez novej unique promotion-grade delty.
-- LinkedIn verejná indexácia bola reálne prehľadaná, bez novej unique promotion-grade delty; coverage bez loginu ostáva limited.
+- Nový verification kandidát: **Upwork — WordPress Landing Page Creation & Ongoing Support**, Worldwide remote, ongoing project + contract-to-hire. Scope je landing page na existujúcom WordPress webe a následná maintenance/updates/troubleshooting. Promotion brzdí iba **50 USD fixed**, expert level, 20–50 proposals a nový klient bez verejnej histórie.
+- LinkedIn verejná indexácia vrátila customer-support rolu označenú pri Bratislave, ale detail explicitne uvádza **remote iba v Portugalsku a prácu z inej krajiny nepovoľuje**; hard locality gate ju vyradil.
+- Worki reálne vrátil čerstvé BA výsledky (retail/sklad) a už evidovaný HEATING PRO; bez novej lepšej zhody pre prioritné tracky.
+- Kariera/Zoznam vrátila čerstvé BA marketing/PPC výsledky, ale bez vhodnejšej zhody než existujúce LIVE/verification kandidáty.
+- Reddit verejná indexácia znovu potvrdila WordPress hiring 70–80 USD/h ako **US-only**, preto neprípustný pre Slovensko.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 6. 9. 2026 09:01
+## Source audit — 6. 9. 2026 12:07
 - Profesia: `checked`; bez novej unique promotion-grade delty.
 - Priame company careers: `checked`; bez novej suitable unique promotion-grade delty.
-- LinkedIn Jobs: `limited`; bez novej unique promotion-grade delty.
-- Worki: `checked`; bez novej vhodnej delty.
+- LinkedIn Jobs: `limited`; 1 relevantný remote-label hit vyradený pre explicitnú country restriction (Portugal only), starý WordPress hit inactive.
+- Worki: `checked`; čerstvé výsledky preverené, bez novej vhodnej delty.
 - Kariera/Zoznam: `checked`; bez novej suitable unique LIVE delty.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
 - Tech/creative: `checked`; bez novej suitable unique promotion-grade zhody.
-- Upwork/freelance: `ok`; 1 nový významný WordPress fixes/customization kandidát pridaný do verification.
+- Upwork/freelance: `ok`; 1 nový WordPress landing-page + maintenance kandidát pridaný do verification, 1 rediscovery deduplikovaný.
 - Reddit/komunity: `limited`; 1 hiring hit vyradený pre US-only lokalitu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 09:01
+### Audit počty 12:07
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - nové unique významné verification kandidáty: **1**
-- verification queue: **63 položiek**, zachovaná bez straty
-- vyradené pre lokalitu: **1** (Reddit US-only)
+- verification queue: **64 položiek**, zachovaná bez straty
+- vyradené pre lokalitu: **2** (LinkedIn Portugal-only + Reddit US-only)
+- vyradené ako duplicita/rediscovery: **1** (Upwork WordPress fixes/customization)
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: úspešne aktualizovaný; queue 62 → 63.
+- `source-audit.json`: úspešne aktualizovaný; queue 63 → 64.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -191,3 +193,5 @@ Aktualizované: 6. 9. 2026 09:01 CEST
 - **Low-yield source adaptive query rotator** — po opakovaných behoch bez novej unique delty automaticky rotovať bezpečné synonymá a podkategórie (napr. e-shop admin, CMS content, reklamácie, service desk, vodič B) v rámci rovnakej source family; zvyšuje coverage bez pridávania slabých výsledkov do feedu.
 - **Micro-fix proof-of-skill mapper** — pri malých WordPress opravách automaticky mapovať konkrétne tasky (layout, responsive, plugin issue, Elementor) na existujúce dôkazy praxe/portfólio; zrýchli rozhodnutie, či má zmysel reagovať na entry-level microjob bez hard-dev scope.
 - **Low-history client escrow-risk flag** — pri fixed-price freelance ponukách kombinovať client spend, hires, vek účtu a budget s rizikom nejasného scope; kandidát s veľmi slabou históriou zostane vo verification aj pri vysokom fit score, kým sa nepotvrdí rozumný milestone/escrow setup.
+- **Public-index country-restriction prefilter** — ešte pred rankingom odhaliť roly označené ako „remote“, ktorých detail zároveň povoľuje prácu iba z konkrétnej cudzej krajiny; okamžite ich označiť `reject-distance` a neplytvať verification kapacitou.
+- **Freelance starter-budget vs continuation-value split** — pri zákazkách typu malý landing page/fix + následná maintenance oddelene hodnotiť počiatočný fixed budget a realistickú hodnotu pokračovania; zabráni tomu, aby lacný trial task skreslil celý dlhodobý opportunity score.
