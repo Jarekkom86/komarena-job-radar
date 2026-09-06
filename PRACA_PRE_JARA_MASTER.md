@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 6. 9. 2026 06:54 CEST
+Aktualizované: 6. 9. 2026 08:04 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,29 +38,29 @@ Aktualizované: 6. 9. 2026 06:54 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 06:54
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress Jobs tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
+### Čerstvé zistenia 08:04
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- Priame Telekom careers priniesli nový **Junior Business Analytik/Analytička**, Bajkalská 28 Bratislava, od **1 700 EUR/mes. + 15 % ročný bonus**, vhodné aj pre absolventov, s reportingom, KPI a reálnym používaním AI. Explicitná **AJ B2** je však podľa profilu výrazný mínus, preto bez LIVE promotion.
-- WordPress Jobs aktuálne uvádza **11 otvorených pozícií**. Dve nové WPMU DEV support roly z 5.9. sú remote, ale **WordPress Sales Support Specialist** vyžaduje proficient/high-level písomnú aj ústnu angličtinu a víkendové/nočné UTC zmeny; **WordPress Support Specialist** vyžaduje fluent English plus PHP, CSS, MySQL a HTML. Obe boli vyradené z LIVE pre language/hard-skill burden.
-- Upwork WordPress/WooCommerce maintenance discovery priniesol ongoing maintenance zákazku s približne 65 USD fixed / cca CHF 60 mesačne pre basic maintenance; ide o nízku hodnotu/rediscovery bez novej promotion-grade delty.
+- Priame company-career discovery zachytilo **J&J Executive Assistant, Bratislava**, ale explicitná fluent English požiadavka je výrazný jazykový mismatch, preto bez promotion.
+- Kariera/Zoznam verejný BA index a administratívne listingy boli preverené; bez novej vhodnej unique LIVE delty.
+- Upwork priniesol **WordPress & WooCommerce Specialist for Ongoing Website Maintenance**, Worldwide remote, 65 USD fixed, približne CHF 60 mesačne za basic maintenance, 20–50 proposals. Scope je obsahovo vhodný, ale ekonomicky slabý a ide o rediscovery/low-value lead, preto bez LIVE promotion.
 - LinkedIn verejná indexácia bola reálne prehľadaná, bez novej unique promotion-grade delty; coverage bez loginu ostáva limited.
 - Reddit verejná indexácia nepriniesla nový konkrétny hiring lead s dostatočným scope/budget evidence.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 6. 9. 2026 06:54
+## Source audit — 6. 9. 2026 08:04
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `ok`; 1 nový relevantný kandidát (Telekom Junior Business Analytik), vyradený z LIVE pre explicitnú AJ B2.
+- Priame company careers: `ok`; 1 relevantný administratívny hit, vyradený pre fluent English.
 - LinkedIn Jobs: `limited`; bez novej unique promotion-grade delty.
 - Worki: `checked`; bez novej vhodnej delty.
 - Kariera/Zoznam: `checked`; bez novej suitable unique LIVE delty.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
-- Tech/creative: `ok`; 2 nové WPMU DEV support hity, oba mimo LIVE pre silnú angličtinu, jeden navyše pre hard PHP/MySQL/HTML/CSS scope.
-- Upwork/freelance: `ok`; 1 relevantný maintenance rediscovery/low-value hit, bez LIVE promotion.
+- Tech/creative: `checked`; bez novej suitable unique promotion-grade zhody.
+- Upwork/freelance: `ok`; 1 low-value WordPress/WooCommerce maintenance hit, bez LIVE promotion.
 - Reddit/komunity: `limited`; bez nového promotion-grade hiring leadu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 06:54
+### Audit počty 08:04
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - nové unique významné verification kandidáty: **0**
@@ -187,3 +187,5 @@ Aktualizované: 6. 9. 2026 06:54 CEST
 - **Maintenance-fit evidence score** — pri WordPress maintenance zákazkách oddelene skórovať content/admin, updates/backups, troubleshooting, staging/deploy a hard-dev vrstvy; umožní rýchlejšie nájsť ľahší maintenance scope, ktorý je reálne vhodný bez senior PHP/server skillov.
 - **Graduate-friendly direct-company watchlist** — samostatne sledovať priame firemné roly označené „vhodné aj pre absolventov“ a zvýšiť ich discovery prioritu v admin/tech/support trackoch bez toho, aby sa obchádzal language alebo hard-skill gate.
 - **AI-enabled task-fit bonus with hard-skill ceiling** — evidovať explicitné každodenné využitie AI/Claude/automation nástrojov ako pozitívny fit signál pre Jara, ale nikdy ním nekompenzovať povinnú B2/C1 angličtinu, hard development alebo špecializovanú kvalifikáciu.
+- **Source-query semantic drift monitor** — porovnávať zamýšľanú lokalitu/kategóriu discovery dotazu s reálnym rozdelením vrátených výsledkov; ak vyhľadávač začne vracať napr. Košice pri BA dotaze alebo inú profesijnú kategóriu, family označiť ako degraded/limited a nevydávať to za plné pokrytie.
+- **Low-yield source adaptive query rotator** — po opakovaných behoch bez novej unique delty automaticky rotovať bezpečné synonymá a podkategórie (napr. e-shop admin, CMS content, reklamácie, service desk, vodič B) v rámci rovnakej source family; zvyšuje coverage bez pridávania slabých výsledkov do feedu.
