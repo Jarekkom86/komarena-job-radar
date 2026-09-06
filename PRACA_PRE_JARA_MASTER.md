@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 6. 9. 2026 05:28 CEST
+Aktualizované: 6. 9. 2026 06:54 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,28 +38,29 @@ Aktualizované: 6. 9. 2026 05:28 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 05:28
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress Jobs tech-creative, Upwork/freelance vrátane Twine, Reddit/komunity a Facebook public index.
+### Čerstvé zistenia 06:54
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress Jobs tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- WordPress Jobs aktuálne uvádza 8 otvorených pozícií; maintenance relevantné roly sú prevažne senior/hard-dev alebo geograficky nevhodné pre slovenský remote hard gate.
-- Upwork ukazuje viac ongoing WordPress/WooCommerce maintenance výsledkov, vrátane existujúcich site-maintenance a Elementor maintenance scope, ale bez novej unique promotion-grade delty oproti verification queue.
-- LinkedIn/Twine priniesol nový indexovaný **Freelance Web Developer – Restaurant Site Maintenance**, ale ponuka už neprijíma prihlášky a vyžaduje custom web development bez CMS, preto bola vyradená pre neaktivitu + hard-dev mismatch.
-- Reddit verejná indexácia obsahuje prevažne `FOR HIRE` posty; všeobecný website-creator dopyt stále nemá dostatočný scope/budget evidence.
+- Priame Telekom careers priniesli nový **Junior Business Analytik/Analytička**, Bajkalská 28 Bratislava, od **1 700 EUR/mes. + 15 % ročný bonus**, vhodné aj pre absolventov, s reportingom, KPI a reálnym používaním AI. Explicitná **AJ B2** je však podľa profilu výrazný mínus, preto bez LIVE promotion.
+- WordPress Jobs aktuálne uvádza **11 otvorených pozícií**. Dve nové WPMU DEV support roly z 5.9. sú remote, ale **WordPress Sales Support Specialist** vyžaduje proficient/high-level písomnú aj ústnu angličtinu a víkendové/nočné UTC zmeny; **WordPress Support Specialist** vyžaduje fluent English plus PHP, CSS, MySQL a HTML. Obe boli vyradené z LIVE pre language/hard-skill burden.
+- Upwork WordPress/WooCommerce maintenance discovery priniesol ongoing maintenance zákazku s približne 65 USD fixed / cca CHF 60 mesačne pre basic maintenance; ide o nízku hodnotu/rediscovery bez novej promotion-grade delty.
+- LinkedIn verejná indexácia bola reálne prehľadaná, bez novej unique promotion-grade delty; coverage bez loginu ostáva limited.
+- Reddit verejná indexácia nepriniesla nový konkrétny hiring lead s dostatočným scope/budget evidence.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 6. 9. 2026 05:28
+## Source audit — 6. 9. 2026 06:54
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `checked`; bez novej vhodnej unique delty.
-- LinkedIn Jobs: `limited`; 1 nový indexovaný Twine hit bol neaktívny a custom-code hard-dev, bez promotion.
+- Priame company careers: `ok`; 1 nový relevantný kandidát (Telekom Junior Business Analytik), vyradený z LIVE pre explicitnú AJ B2.
+- LinkedIn Jobs: `limited`; bez novej unique promotion-grade delty.
 - Worki: `checked`; bez novej vhodnej delty.
 - Kariera/Zoznam: `checked`; bez novej suitable unique LIVE delty.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
-- Tech/creative: `ok`; WordPress Jobs má 8 otvorených pozícií, no relevantný maintenance smer je senior/hard-dev alebo geograficky nevhodný.
-- Upwork/freelance: `ok`; 6 relevantných indexovaných výsledkov, prevažne rediscovery/insufficient promotion evidence, bez LIVE promotion.
-- Reddit/komunity: `limited`; bez promotion-grade hiring leadu.
+- Tech/creative: `ok`; 2 nové WPMU DEV support hity, oba mimo LIVE pre silnú angličtinu, jeden navyše pre hard PHP/MySQL/HTML/CSS scope.
+- Upwork/freelance: `ok`; 1 relevantný maintenance rediscovery/low-value hit, bez LIVE promotion.
+- Reddit/komunity: `limited`; bez nového promotion-grade hiring leadu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 05:28
+### Audit počty 06:54
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - nové unique významné verification kandidáty: **0**
@@ -184,3 +185,5 @@ Aktualizované: 6. 9. 2026 05:28 CEST
 - **Community lead minimum-evidence schema** — pre Reddit/Facebook/komunitné leady vyžadovať minimálne konkrétny hiring intent, scope, kontakt alebo aplikačný link a aspoň jeden z údajov budget/deadline/location; tým sa znížia falošne pozitívne „hity“ z všeobecných diskusií a FOR HIRE postov.
 - **Inactive-hit early discard cache** — pri zdrojoch ako LinkedIn/Twine ukladať hash už potvrdených `no longer accepting applications`/expired výsledkov a pri ďalšom sweep-e ich vyradiť ešte pred detailným rankingom; zníži opakované prehľadávanie mŕtvych indexovaných ponúk.
 - **Maintenance-fit evidence score** — pri WordPress maintenance zákazkách oddelene skórovať content/admin, updates/backups, troubleshooting, staging/deploy a hard-dev vrstvy; umožní rýchlejšie nájsť ľahší maintenance scope, ktorý je reálne vhodný bez senior PHP/server skillov.
+- **Graduate-friendly direct-company watchlist** — samostatne sledovať priame firemné roly označené „vhodné aj pre absolventov“ a zvýšiť ich discovery prioritu v admin/tech/support trackoch bez toho, aby sa obchádzal language alebo hard-skill gate.
+- **AI-enabled task-fit bonus with hard-skill ceiling** — evidovať explicitné každodenné využitie AI/Claude/automation nástrojov ako pozitívny fit signál pre Jara, ale nikdy ním nekompenzovať povinnú B2/C1 angličtinu, hard development alebo špecializovanú kvalifikáciu.
