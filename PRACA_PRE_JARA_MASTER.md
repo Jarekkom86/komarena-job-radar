@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 6. 9. 2026 02:36 CEST
+Aktualizované: 6. 9. 2026 03:16 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,38 +38,36 @@ Aktualizované: 6. 9. 2026 02:36 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 02:36
+### Čerstvé zistenia 03:16
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress Jobs tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- Upwork znovu potvrdil existujúci verification kandidát **Website & SEO Management 2026**: Worldwide remote, WooCommerce/product listings/plugin maintenance/on-page SEO/store upkeep, 15–30 USD/h, menej než 30 h/týždeň a 6+ mesiacov. Nejde o nový unique kandidát, preto queue nerástla.
-- Čerstvé Upwork WordPress výsledky mimo existujúcej queue boli prevažne slabšie: **WordPress Website Fixes and Customization** za 100 USD je entry-level a contract-to-hire, ale klient má iba 15 USD historický spend a 20–50 proposals; ďalšie výsledky boli 5 USD mikroprojekty alebo Expert/Elementor/PHP scope. Bez bezpečnej LIVE promotion.
-- Brigada.sk verejný widget potvrdil **brigádu na oddelení distribúcie v Bratislave za 7 EUR/h** (25.8.–24.9.2026). Lokalita prechádza, ale pay/ranking je príliš nízky na aktívne odporúčanie.
-- Worki: starší veľmi relevantný e-shop admin Top4Mobile je už obsadený/zrušený; aktuálny skladový hit v Bratislave za 1 273 EUR je nízky fit/pay.
-- Priame company careers: Foxelli Assistant Brand Manager ostáva aktívny 100 % Remote EU so Slovenskom medzi oprávnenými krajinami, ale už je vo verification a nízka full-time freelance odmena + anglické prostredie bránia LIVE promotion.
-- Reddit/WordPress communities: dnešný post bol freelancer self-promo, nie hiring lead; staršie hiring posty sú US-only. 0 nových vhodných hiring leadov.
+- Nový významný verification kandidát: **Upwork — WooCommerce Website Development**. Worldwide remote, intermediate, **400 USD fixed** (client budget 300–500 EUR), WordPress + WooCommerce, 5–10 produktov, checkout, platby, PostNL/shipping, sklad, zľavy a basic analytics. Silný e-commerce fit, ale ide o kompletný store build; 20–50 proposals a nový klientský účet bez histórie znižujú application ROI. Preto `remote-ok`, provisional score 88, verification — nie LIVE.
+- WordPress Jobs stále uvádza **11 otvorených pozícií / 27 % remote-friendly**, bez novej bezpečnej SK-remote maintenance/admin promotion.
+- LinkedIn public index ukázal Twine maintenance výsledok pre EEA, ale nepreukazuje reálnu vykonateľnosť zo Slovenska bez väzby na vzdialené pracovisko; nebol zaradený.
+- Kariera/Zoznam ukazuje nové BA marketing/IKT predajné výsledky, ale mimo preferovaného ranking profilu.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 6. 9. 2026 02:36
+## Source audit — 6. 9. 2026 03:16
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `ok`; 1 relevantný rediscovery hit (Foxelli), už vo verification; bez novej unique promotion.
-- LinkedIn Jobs: `limited`; verejný index reálne prehľadaný, bez nového overiteľného vhodného hitu.
-- Worki: `checked`; relevantný e-shop admin je inactive, čerstvý skladový hit nízky fit/pay; bez promotion.
-- Kariera/Zoznam: `checked`; bez novej vhodnej promotion-grade delty.
-- Brigada.sk: `ok`; 1 BA distribučný hit za 7 EUR/h, bez promotion pre nízku hodnotu.
-- Tech/creative: `checked`; Pretlak + WordPress Jobs bez novej bezpečnej SK-remote maintenance/admin promotion.
-- Upwork/freelance: `ok`; viac aktuálnych WP/WooCommerce výsledkov, ale najlepší 15–30 USD/h ongoing kandidát je už v existujúcej verification queue; bez novej unique promotion.
+- Priame company careers: `checked`; verejne indexované Ashby/Lever zdroje preverené, bez novej vhodnej unique delty.
+- LinkedIn Jobs: `limited`; 1 výsledok preverovaný, ale bez preukázaného Slovakia-remote režimu; bez promotion.
+- Worki: `checked`; bez novej vhodnej delty.
+- Kariera/Zoznam: `ok`; 2 aktívne BA marketing/IKT predajné hity, ale mimo ranking profilu; bez promotion.
+- Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
+- Tech/creative: `ok`; WordPress Jobs 11 open / 27 % remote-friendly, bez novej vhodnej promotion.
+- Upwork/freelance: `ok`; 7 relevantných výsledkov, 1 nový významný verification kandidát, 3 rediscovery/duplicates, bez LIVE promotion.
 - Reddit/komunity: `limited`; 0 nových overených vhodných hiring leadov.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 02:36
+### Audit počty 03:16
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- nové unique významné verification kandidáty: **0**
-- verification queue: **61 položiek**, zachovaná bez straty
+- nové unique významné verification kandidáty: **1**
+- verification queue: **62 položiek**, zachovaná bez straty
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: úspešne aktualizovaný; audit rozšírený na 10 rodín a verification queue zachovaná na 61 položkách.
+- `source-audit.json`: úspešne aktualizovaný; queue zachovaná a rozšírená 61 → 62.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -180,3 +178,5 @@ Aktualizované: 6. 9. 2026 02:36 CEST
 - **Search-index lag score per source family** — počítať rozdiel medzi `publishedAt`, `crawledAt` a časom auditu; zdroje, ktoré pravidelne vracajú staré výsledky ako „čerstvé“, automaticky znížiť v discovery priorite bez penalizácie kvalitných canonical ponúk.
 - **Verification rediscovery metadata refresher** — ak sa už evidovaný kandidát znovu objaví, neklonovať ho; aktualizovať `lastSeenAt`, aktuálnu cenu/sadzbu, proposal count, client-view a active-state, aby sa promotion rozhodovalo z čerstvých dát bez rastu queue.
 - **Freelance proposal-velocity estimator** — z veku inzerátu a intervalového proposal count odhadovať tempo konkurencie (proposals/hour) a penalizovať iba rýchlo saturované zákazky; odlíši 20–50 proposals za pár hodín od rovnakého počtu po niekoľkých dňoch.
+- **Store-build scope decomposition score** — pri WooCommerce/Shopify full-build zákazkách automaticky rozdeliť scope na katalóg, checkout/payments, shipping, analytics, policy/content a custom-code vrstvu; promotion zablokovať len vtedy, keď neoverená hard-dev časť presiahne bezpečný limit, namiesto plošného penalizovania každého full-store projektu.
+- **Freelance client maturity confidence** — kombinovať vek klientského účtu, spend, hires, aktívne kontrakty a interview/view activity do jedného confidence signálu; nový klient bez histórie dostane vyššiu rizikovú prirážku, no kvalitný scope nebude automaticky potlačený len kvôli nulovému spendu.
