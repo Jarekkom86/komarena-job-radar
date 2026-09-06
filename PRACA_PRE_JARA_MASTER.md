@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 6. 9. 2026 03:16 CEST
+Aktualizované: 6. 9. 2026 04:52 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,36 +38,36 @@ Aktualizované: 6. 9. 2026 03:16 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 03:16
+### Čerstvé zistenia 04:52
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress Jobs tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- Nový významný verification kandidát: **Upwork — WooCommerce Website Development**. Worldwide remote, intermediate, **400 USD fixed** (client budget 300–500 EUR), WordPress + WooCommerce, 5–10 produktov, checkout, platby, PostNL/shipping, sklad, zľavy a basic analytics. Silný e-commerce fit, ale ide o kompletný store build; 20–50 proposals a nový klientský účet bez histórie znižujú application ROI. Preto `remote-ok`, provisional score 88, verification — nie LIVE.
-- WordPress Jobs stále uvádza **11 otvorených pozícií / 27 % remote-friendly**, bez novej bezpečnej SK-remote maintenance/admin promotion.
-- LinkedIn public index ukázal Twine maintenance výsledok pre EEA, ale nepreukazuje reálnu vykonateľnosť zo Slovenska bez väzby na vzdialené pracovisko; nebol zaradený.
-- Kariera/Zoznam ukazuje nové BA marketing/IKT predajné výsledky, ale mimo preferovaného ranking profilu.
+- Upwork znovu ukázal **Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support**: Worldwide remote, 5–10 h/týždeň, 6–10 USD/h, 6+ mesiacov, WordPress/Elementor, bežné úpravy webov, plugin updates, formuláre, jednoduché integrácie, email marketing a AI nástroje. Ide o vysoký obsahový fit, ale kandidát už je vo verification; nevznikol duplicate ani LIVE promotion.
+- Ďalšie Upwork WordPress/WooCommerce maintenance a WooCommerce data-entry hity boli rediscovery už evidovaných kandidátov; neboli klonované.
+- LinkedIn public index priniesol nové BA/EEA výsledky, ale boli mimo ranking profilu, neaktívne alebo bez preukázaného Slovakia-remote režimu.
+- Reddit verejná indexácia obsahovala prevažne `FOR HIRE` posty a jeden všeobecný website-creator dopyt bez dostatočného scope/budget evidence; bez verification promotion.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 6. 9. 2026 03:16
+## Source audit — 6. 9. 2026 04:52
 - Profesia: `checked`; bez novej unique promotion-grade delty.
 - Priame company careers: `checked`; verejne indexované Ashby/Lever zdroje preverené, bez novej vhodnej unique delty.
-- LinkedIn Jobs: `limited`; 1 výsledok preverovaný, ale bez preukázaného Slovakia-remote režimu; bez promotion.
+- LinkedIn Jobs: `limited`; 3 indexované výsledky posúdené, bez bezpečnej promotion.
 - Worki: `checked`; bez novej vhodnej delty.
-- Kariera/Zoznam: `ok`; 2 aktívne BA marketing/IKT predajné hity, ale mimo ranking profilu; bez promotion.
+- Kariera/Zoznam: `ok`; čerstvé výsledky mimo preferovaného ranking profilu alebo už evidované.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
-- Tech/creative: `ok`; WordPress Jobs 11 open / 27 % remote-friendly, bez novej vhodnej promotion.
-- Upwork/freelance: `ok`; 7 relevantných výsledkov, 1 nový významný verification kandidát, 3 rediscovery/duplicates, bez LIVE promotion.
-- Reddit/komunity: `limited`; 0 nových overených vhodných hiring leadov.
+- Tech/creative: `checked`; bez novej vhodnej unique promotion-grade zhody.
+- Upwork/freelance: `ok`; 5 relevantných výsledkov, 4 rediscovery/duplicates, 0 nových verification kandidátov, bez LIVE promotion.
+- Reddit/komunity: `limited`; 1 všeobecný hiring dopyt bez dostatočného evidence balíka, bez promotion.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 03:16
+### Audit počty 04:52
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- nové unique významné verification kandidáty: **1**
-- verification queue: **62 položiek**, zachovaná bez straty
+- nové unique významné verification kandidáty: **0**
+- verification queue: **62 položiek**, zachovaná bez straty a bez duplicitného rastu
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: úspešne aktualizovaný; queue zachovaná a rozšírená 61 → 62.
+- `source-audit.json`: úspešne aktualizovaný; queue zachovaná na 62.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -180,3 +180,5 @@ Aktualizované: 6. 9. 2026 03:16 CEST
 - **Freelance proposal-velocity estimator** — z veku inzerátu a intervalového proposal count odhadovať tempo konkurencie (proposals/hour) a penalizovať iba rýchlo saturované zákazky; odlíši 20–50 proposals za pár hodín od rovnakého počtu po niekoľkých dňoch.
 - **Store-build scope decomposition score** — pri WooCommerce/Shopify full-build zákazkách automaticky rozdeliť scope na katalóg, checkout/payments, shipping, analytics, policy/content a custom-code vrstvu; promotion zablokovať len vtedy, keď neoverená hard-dev časť presiahne bezpečný limit, namiesto plošného penalizovania každého full-store projektu.
 - **Freelance client maturity confidence** — kombinovať vek klientského účtu, spend, hires, aktívne kontrakty a interview/view activity do jedného confidence signálu; nový klient bez histórie dostane vyššiu rizikovú prirážku, no kvalitný scope nebude automaticky potlačený len kvôli nulovému spendu.
+- **Rediscovery freshness promotion trigger** — pri opakovanom nájdení už evidovaného kandidáta automaticky porovnať proposal count, interview activity, cenu, active-state a deadline; ak sa podmienky zlepšia alebo sa blíži uzávierka, kandidáta znovu zaradiť do promotion review bez tvorby duplicity.
+- **Community lead minimum-evidence schema** — pre Reddit/Facebook/komunitné leady vyžadovať minimálne konkrétny hiring intent, scope, kontakt alebo aplikačný link a aspoň jeden z údajov budget/deadline/location; tým sa znížia falošne pozitívne „hity“ z všeobecných diskusií a FOR HIRE postov.
