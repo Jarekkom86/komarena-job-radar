@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 6. 9. 2026 14:53 CEST
+Aktualizované: 6. 9. 2026 18:54 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,39 +38,39 @@ Aktualizované: 6. 9. 2026 14:53 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 14:53
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
+### Čerstvé zistenia 18:54
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/StartupJobs/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- Upwork priniesol dva nové, veľmi presné microjob fit-y na existujúce weby. **Wordpress Elementor Expert**: Worldwide remote, 50 USD fixed, 5–10 proposals, contract-to-hire, jednoduché layout/content/form zmeny. **WooCommerce Developer Needed to Improve Product Page Layout**: Worldwide remote, 60 USD fixed, 10–15 proposals, existujúci shop, layout/responsive/CSS fixes bez full buildu. Oba sú pridané do verification, nie LIVE, pretože nízky fixed budget a čerství klienti znižujú ROI a spoľahlivosť.
-- WordPress Jobs stále uvádza 11 otvorených pozícií. WPMU DEV WordPress Sales Support Specialist z 5.9.2026 zostáva language/sales/shift mismatch; druhý WPMU DEV Support Specialist je PHP/HTML/CSS/MySQL-heavy.
-- Pretlak nemá novú suitable unique promotion-grade deltu; aktuálne marketingové role sú skôr mid/senior a mimo hlavného ranking profilu.
-- Kariera/Zoznam search pri BA dotaze vrátil aj geograficky odchýlené výsledky, preto source zostáva skontrolovaný, ale semantic drift sa nesmie zameniť za relevantný BA hit.
-- Reddit verejná indexácia vrátila čerstvý FOR HIRE príspevok uchádzača, nie konkrétny hiring dopyt vhodný na ingestion.
+- Upwork priniesol nový Worldwide remote kandidát **Wordpress developer, ongoing wordpress support**: 1 000 USD fixed, Expert, complex project, 50+ proposals, 1 hire. Scope kombinuje tvorbu WordPress webov a ongoing support. Kandidát je pridaný do verification, nie LIVE, pretože expert-level/complex scope a vysoká konkurencia sú výrazné riziká.
+- Profesia mala čerstvé Bratislavské výsledky vrátane brigád/predaja a IT kategórií, ale nič nové neprešlo prioritným fitom a hard gateom.
+- Kariera/Zoznam vrátila čerstvé BA marketing/obchod výsledky, no bez lepšej zhody než existujúci feed.
+- Worki, Práca za rohom a Brigada.sk boli reálne preverené; bez novej suitable unique promotion-grade delty.
+- Tech/creative family (Pretlak/StartupJobs/WordPress Jobs) bola preverená; bez novej A2-friendly non-hard-dev promotion.
+- Reddit verejná indexácia nepriniesla nový konkrétny vhodný hiring dopyt.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 6. 9. 2026 14:53
+## Source audit — 6. 9. 2026 18:54
 - Profesia: `checked`; bez novej unique promotion-grade delty.
 - Priame company careers: `checked`; reálne preverené, bez novej suitable unique promotion-grade delty.
 - LinkedIn Jobs: `limited`; verejná indexácia preverená, bez novej vhodnej BA/Slovakia-remote delty.
 - Worki: `checked`; bez novej vhodnej unique delty pre prioritné tracky.
-- Kariera/Zoznam: `checked`; verejný index preverený, ale časť výsledkov driftovala mimo BA; bez novej suitable unique LIVE delty.
+- Kariera/Zoznam: `ok`; 2 viditeľné nové BA marketing/obchod výsledky, bez promotion po ranking kontrole.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
-- Tech/creative: `ok`; 2 relevantné WPMU DEV WordPress support výsledky, ale jeden language/sales/shift mismatch a druhý hard-tech mismatch.
-- Upwork/freelance: `ok`; **2 nové unique verification kandidáty**, bez LIVE promotion.
-- Reddit/komunity: `limited`; čerstvý výsledok bol FOR HIRE, nie hiring dopyt.
+- Tech/creative: `checked`; bez novej suitable unique promotion-grade delty.
+- Upwork/freelance: `ok`; **1 nový unique verification kandidát**, bez LIVE promotion.
+- Reddit/komunity: `limited`; bez nového konkrétneho vhodného hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 14:53
+### Audit počty 18:54
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- nové unique významné verification kandidáty: **2**
-- verification queue: **66 položiek**, zachovaná bez straty
-- tech/creative relevantné hity: **2**, bez promotion
-- freelance relevantné hity: **2**, oba pridané do verification
+- nové unique významné verification kandidáty: **1**
+- verification queue: **67 položiek**, zachovaná bez straty
+- freelance relevantné hity: **1**, pridaný do verification
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: úspešne aktualizovaný; queue 66.
+- `source-audit.json`: úspešne aktualizovaný; queue 67.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -199,3 +199,5 @@ Aktualizované: 6. 9. 2026 14:53 CEST
 - **Hard-dev contamination ratio for maintenance roles** — pri ponukách označených maintenance/support vypočítať podiel požiadaviek na custom PHP/MySQL/plugin dev/Git/server/DNS oproti bežným updates, content/admin a troubleshooting úlohám; zabráni promotion rolí, ktoré sa marketingovo tvária ako maintenance, ale reálne sú senior development.
 - **Fixed-price microproject effective-hour ceiling** — z budgetu a minimálnej prijateľnej efektívnej sadzby odvodiť maximálny bezpečný čas na realizáciu; ak scope podľa dôkazov presiahne tento čas, microjob automaticky nepromovať ani pri vysokom skill fite.
 - **Client interview saturation gate** — pri freelance ponukách kombinovať pomer `interviewing/proposals`, už uskutočnené hires a čas od publikovania; neskorú prihlášku s vysokou interview saturáciou potlačiť, aby sa neplytvalo časom a connectmi na prakticky obsadenú zákazku.
+- **Expert-label vs task-scope contradiction detector** — porovnať platformové `Experience Level: Expert` s reálnym task scope; jednoduchú maintenance/admin rolu neodmietnuť iba pre label, ale vyžadovať dôkaz, že hard-dev burden je nízky a portfólio tasky pokrýva.
+- **Audit-to-source-registry consistency checker** — po každom behu porovnať `source-audit.json` a `job-sources.json` podľa času auditu, kontrolovaných families, statusov a hitov; pri rozdiele zablokovať označenie auditu ako fresh, aby Source Radar neukazoval staršie alebo rozporné pokrytie.
