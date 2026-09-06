@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 7. 9. 2026 00:11 CEST
+Aktualizované: 7. 9. 2026 00:59 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,39 +38,35 @@ Aktualizované: 7. 9. 2026 00:11 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 00:11
+### Čerstvé zistenia 00:59
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- Nový **Upwork – WordPress Developer Needed for Small Fixes**: Worldwide remote, 75 USD fixed, established client (~14k USD spend, 16 hires, 1 465 hodín), scope sú malé WordPress opravy, theme/plugin issues, layout/mobile QA a PHP warnings/errors. Lokalita je `remote-ok`, ale Expert label, PHP troubleshooting, 20–50 proposals a nízky fixed budget ho držia iba vo verification; provisional score 89.
-- **WooCommerce Website Development** za 400 USD je znovu nájdený, ale už je evidovaný vo verification, preto nevznikla duplicita.
-- WordPress Jobs aktuálne uvádza **11 otvorených pozícií**. WPMU DEV WordPress Support Specialist je globálne remote, ale vyžaduje fluent English, PHP, MySQL, HTML/CSS a 40 h/týždeň; hard mismatch.
-- LinkedIn public index ukázal **DHL Tímlíder v sklade – Senec** (B1 AJ, VZV, 2-zmenná prevádzka) a starší **KLARSTEIN Junior Marketplace Admin** už neprijíma žiadosti. Bez promotion.
+- Upwork sweep znovu našiel verejne indexované WordPress maintenance/fix roly, ale čerstvé výsledky boli buď už evidované vo verification, staršie, nízko platené, s vysokou konkurenciou alebo s hard English/PHP požiadavkami. Bez unique LIVE promotion.
+- Reddit public index vrátil WordPress hiring príspevky, ale relevantný hiring je explicitne **US-only**, preto `reject-distance`/country restriction a 0 vhodných nových kandidátov pre Slovensko.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 7. 9. 2026 00:11
+## Source audit — 7. 9. 2026 00:59
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `checked`; Telekom/Alza/Websupport a verejne indexované company careers preverené, bez novej suitable unique delty.
-- LinkedIn Jobs: `limited`; 2 konkrétne výsledky, 1 inactive; DHL Senec nízky fit pre VZV/B1/2-zmeny, KLARSTEIN inactive.
+- Priame company careers: `checked`; bez novej suitable unique delty.
+- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez novej vhodnej unique promotion.
 - Worki: `checked`; bez novej vhodnej unique delty.
 - Kariera/Zoznam: `checked`; bez novej suitable unique promotion-grade BA delty.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
-- Tech/creative: `ok`; 1 relevantný remote WordPress support výsledok, vyradený pre fluent English + hard PHP/MySQL stack; 0 pridaných.
-- Upwork/freelance: `ok`; 2 relevantné výsledky, 1 duplicate a 1 nový verification kandidát; 0 LIVE promotion.
-- Reddit/komunity: `limited`; bez nového konkrétneho hiring dopytu.
+- Tech/creative: `checked`; bez novej A2-friendly promotion-grade zhody.
+- Upwork/freelance: `checked`; verejne indexované WordPress/WooCommerce maintenance výsledky sú staršie/už evidované alebo majú language/hard-skill/low-rate/competition blocker; 0 LIVE promotion.
+- Reddit/komunity: `limited`; zobrazený hiring je US-only alebo starší, bez nového vhodného dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 00:11
+### Audit počty 00:59
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- nové unique verification kandidáty: **1**
-- verification queue: **69 → 70 položiek**, zachovaná bez straty
-- LinkedIn relevantné/indexované výsledky: **2**, z toho 1 inactive
-- tech/creative relevantné hity: **1**, vyradený pre jazyk/hard-skill mismatch
-- freelance relevantné hity: **2**, 1 duplicate + 1 nový verification
+- nové unique verification kandidáty: **0**
+- verification queue: **70 položiek**, bez straty
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: úspešne aktualizovaný; queue 70.
+- `job-sources.json`: aktualizovaný na 00:59
+- `source-audit.json`: zápis v tomto behu zostáva blokovaný bezpečným full-file preservation gateom; starý audit 00:11 ostáva autoritatívny, kým nebude možné vykonať lossless replacement.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -211,3 +207,5 @@ Aktualizované: 7. 9. 2026 00:11 CEST
 - Rediscovery-only source write minimizer.
 - **Established-client microjob trust bonus with budget floor** — pri malých WordPress fixoch oddeliť dôveryhodnosť klienta (spend, hires, hours) od ekonomickej atraktivity tasku; silná história môže zvýšiť šancu úspešného kontraktu, ale nikdy nesmie sama prekonať minimálny effective-rate/budget floor.
 - **Skill-exposure cap for PHP-warning fixes** — pri microfix zákazkách automaticky rozlíšiť diagnostiku bežných warningov/plugin konfliktov od custom PHP developmentu; promotion povoliť iba ak požadovaná kódová vrstva zostane pod bezpečným skill-exposure limitom a existuje rollback/backup cesta.
+- **Source-audit lossless patch precondition** — pred každým zápisom `source-audit.json` vypočítať očakávaný počet verification položiek + checksum identifikátorov a zápis povoliť iba pri 100 % zhode; rieši aktuálne riziko full-file replacementu bez atomického patchu.
+- **Rediscovered-result no-op classifier** — výsledky, ktoré sú už vo verification/LIVE a nezmenili budget, activity, location alebo requirements, označiť ako no-op bez ďalšieho rastu queue; znižuje šum a zbytočné zápisy pri hodinových behoch.
