@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "policy": "application-channel-resolver-v1",
+  "purpose": "Reduce time lost on strong jobs with weak or fragile apply paths by resolving the safest canonical response channel before application preparation.",
+  "hardLocationRule": "Resolver runs only after ba-area or verified remote-ok eligibility. It can never rescue reject-distance or unknown location eligibility.",
+  "channelPriority": [
+    "canonical-company-apply",
+    "canonical-jobboard-apply",
+    "named-recruiter-or-hiring-contact-from-canonical-source",
+    "verified-company-career-contact",
+    "verified-platform-apply"
+  ],
+  "rules": [
+    "Never invent an email address, phone number, recruiter, Facebook contact, or application URL.",
+    "Do not scrape or expose private contact data; use only contact details intentionally published with the vacancy or official career channel.",
+    "If the primary apply link fails, attempt a canonical-source fallback before marking the job non-actionable.",
+    "A generic company homepage is not an application channel unless the vacancy explicitly directs applicants there.",
+    "Mirror/repost contact data cannot override a working canonical application route.",
+    "Store applicationChannelType, applicationChannelUrlOrContact, channelVerifiedAt, and channelConfidence when available.",
+    "If no verified channel exists, keep the job LIVE only if fail-closed retention permits it, but block APPLY-FIRST escalation until resolved."
+  ],
+  "outcomes": {
+    "apply-ready": "At least one verified canonical response channel exists.",
+    "fallback-ready": "Primary route failed but a verified official fallback exists.",
+    "channel-unknown": "No verified response route; requires verification before priority escalation.",
+    "inactive": "Canonical vacancy is closed or explicitly no longer accepting applications."
+  },
+  "compatibility": {
+    "lockedUi": "unchanged",
+    "crm": "unchanged",
+    "baseline": "unchanged",
+    "stableIds": "unchanged",
+    "canonicalDedupe": "unchanged",
+    "sourceAudit": "unchanged",
+    "existingJobs": "no destructive migration required"
+  }
+}
