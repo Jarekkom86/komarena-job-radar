@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 6. 9. 2026 04:52 CEST
+Aktualizované: 6. 9. 2026 05:28 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,28 +38,28 @@ Aktualizované: 6. 9. 2026 04:52 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 04:52
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress Jobs tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
+### Čerstvé zistenia 05:28
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress Jobs tech-creative, Upwork/freelance vrátane Twine, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- Upwork znovu ukázal **Tech-Savvy Virtual Assistant – WordPress Website Management & Digital Marketing Support**: Worldwide remote, 5–10 h/týždeň, 6–10 USD/h, 6+ mesiacov, WordPress/Elementor, bežné úpravy webov, plugin updates, formuláre, jednoduché integrácie, email marketing a AI nástroje. Ide o vysoký obsahový fit, ale kandidát už je vo verification; nevznikol duplicate ani LIVE promotion.
-- Ďalšie Upwork WordPress/WooCommerce maintenance a WooCommerce data-entry hity boli rediscovery už evidovaných kandidátov; neboli klonované.
-- LinkedIn public index priniesol nové BA/EEA výsledky, ale boli mimo ranking profilu, neaktívne alebo bez preukázaného Slovakia-remote režimu.
-- Reddit verejná indexácia obsahovala prevažne `FOR HIRE` posty a jeden všeobecný website-creator dopyt bez dostatočného scope/budget evidence; bez verification promotion.
+- WordPress Jobs aktuálne uvádza 8 otvorených pozícií; maintenance relevantné roly sú prevažne senior/hard-dev alebo geograficky nevhodné pre slovenský remote hard gate.
+- Upwork ukazuje viac ongoing WordPress/WooCommerce maintenance výsledkov, vrátane existujúcich site-maintenance a Elementor maintenance scope, ale bez novej unique promotion-grade delty oproti verification queue.
+- LinkedIn/Twine priniesol nový indexovaný **Freelance Web Developer – Restaurant Site Maintenance**, ale ponuka už neprijíma prihlášky a vyžaduje custom web development bez CMS, preto bola vyradená pre neaktivitu + hard-dev mismatch.
+- Reddit verejná indexácia obsahuje prevažne `FOR HIRE` posty; všeobecný website-creator dopyt stále nemá dostatočný scope/budget evidence.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 6. 9. 2026 04:52
+## Source audit — 6. 9. 2026 05:28
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `checked`; verejne indexované Ashby/Lever zdroje preverené, bez novej vhodnej unique delty.
-- LinkedIn Jobs: `limited`; 3 indexované výsledky posúdené, bez bezpečnej promotion.
+- Priame company careers: `checked`; bez novej vhodnej unique delty.
+- LinkedIn Jobs: `limited`; 1 nový indexovaný Twine hit bol neaktívny a custom-code hard-dev, bez promotion.
 - Worki: `checked`; bez novej vhodnej delty.
-- Kariera/Zoznam: `ok`; čerstvé výsledky mimo preferovaného ranking profilu alebo už evidované.
+- Kariera/Zoznam: `checked`; bez novej suitable unique LIVE delty.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
-- Tech/creative: `checked`; bez novej vhodnej unique promotion-grade zhody.
-- Upwork/freelance: `ok`; 5 relevantných výsledkov, 4 rediscovery/duplicates, 0 nových verification kandidátov, bez LIVE promotion.
-- Reddit/komunity: `limited`; 1 všeobecný hiring dopyt bez dostatočného evidence balíka, bez promotion.
+- Tech/creative: `ok`; WordPress Jobs má 8 otvorených pozícií, no relevantný maintenance smer je senior/hard-dev alebo geograficky nevhodný.
+- Upwork/freelance: `ok`; 6 relevantných indexovaných výsledkov, prevažne rediscovery/insufficient promotion evidence, bez LIVE promotion.
+- Reddit/komunity: `limited`; bez promotion-grade hiring leadu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 04:52
+### Audit počty 05:28
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - nové unique významné verification kandidáty: **0**
@@ -182,3 +182,5 @@ Aktualizované: 6. 9. 2026 04:52 CEST
 - **Freelance client maturity confidence** — kombinovať vek klientského účtu, spend, hires, aktívne kontrakty a interview/view activity do jedného confidence signálu; nový klient bez histórie dostane vyššiu rizikovú prirážku, no kvalitný scope nebude automaticky potlačený len kvôli nulovému spendu.
 - **Rediscovery freshness promotion trigger** — pri opakovanom nájdení už evidovaného kandidáta automaticky porovnať proposal count, interview activity, cenu, active-state a deadline; ak sa podmienky zlepšia alebo sa blíži uzávierka, kandidáta znovu zaradiť do promotion review bez tvorby duplicity.
 - **Community lead minimum-evidence schema** — pre Reddit/Facebook/komunitné leady vyžadovať minimálne konkrétny hiring intent, scope, kontakt alebo aplikačný link a aspoň jeden z údajov budget/deadline/location; tým sa znížia falošne pozitívne „hity“ z všeobecných diskusií a FOR HIRE postov.
+- **Inactive-hit early discard cache** — pri zdrojoch ako LinkedIn/Twine ukladať hash už potvrdených `no longer accepting applications`/expired výsledkov a pri ďalšom sweep-e ich vyradiť ešte pred detailným rankingom; zníži opakované prehľadávanie mŕtvych indexovaných ponúk.
+- **Maintenance-fit evidence score** — pri WordPress maintenance zákazkách oddelene skórovať content/admin, updates/backups, troubleshooting, staging/deploy a hard-dev vrstvy; umožní rýchlejšie nájsť ľahší maintenance scope, ktorý je reálne vhodný bez senior PHP/server skillov.
