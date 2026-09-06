@@ -1,131 +1,30 @@
-(()=>{
-'use strict';
-
-const FILTER_KEY='pracaPreJaraFilters-v65';
-const FILTER_IDS=['q','origin','track','sourceFilter','eng','min','sort'];
-const DEFAULTS={q:'',origin:'all',track:'all',sourceFilter:'all',eng:'all',min:'0',sort:'score',quick:'all'};
-const $=id=>document.getElementById(id);
-const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-
-function installStyles(){
-  if($('v65EnhanceStyle'))return;
-  const style=document.createElement('style');
-  style.id='v65EnhanceStyle';
-  style.textContent=`
-  .focus65{margin:13px 0;background:linear-gradient(135deg,#112a31,#0a171c);border:1px solid #35616b;border-radius:18px;padding:14px;box-shadow:0 16px 42px #0003}
-  .focus65-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin-bottom:10px}
-  .focus65 h2{margin:0;font-size:18px;letter-spacing:-.02em}.focus65 p{margin:3px 0 0;color:#8fa6a9;font-size:12px}
-  .focus65-count{border:1px solid #2f705d;color:#8ff0c6;background:#10251f;border-radius:999px;padding:6px 10px;font-size:11px;font-weight:900;white-space:nowrap}
-  .focus65-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.focus65-item{background:#09171c;border:1px solid #294952;border-radius:13px;padding:11px;min-width:0}
-  .focus65-top{display:flex;gap:8px;align-items:flex-start}.focus65-score{flex:0 0 auto;min-width:47px;text-align:center;background:#102824;border:1px solid #2d665f;color:#9ff2df;border-radius:10px;padding:6px 7px;font-size:20px;font-weight:950;line-height:1}
-  .focus65-title{font-weight:900;line-height:1.2}.focus65-company{color:#8fa6a9;font-size:11px;margin-top:3px}.focus65-actions{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:9px}
-  .focus65-actions button{border:1px solid #31515a;background:#13232a;color:#eef8f7;border-radius:8px;padding:8px;font-weight:850;cursor:pointer}.focus65-actions .go{background:linear-gradient(90deg,#00aaa7,#58d6bd);color:#021313;border:0}
-  .focus65-empty{color:#8fa6a9;padding:8px 2px}.filter65{margin-left:auto;display:flex;align-items:center;gap:7px}.filter65-badge{border:1px solid #31515a;border-radius:999px;padding:6px 9px;color:#bdd0d1;font-size:11px;font-weight:850}.filter65-badge.on{border-color:#68e5d0;color:#9ff2df;background:#102824}
-  .tools #resetFilters65{background:#14242a}.mobileDock65{display:none}
-  @media(max-width:760px){
-    body{padding-bottom:70px}.focus65-head{flex-direction:column}.focus65-grid{grid-template-columns:1fr}.focus65-item{padding:10px}.filter65{width:100%;margin-left:0;justify-content:space-between}
-    .mobileDock65{position:fixed;display:grid;grid-template-columns:repeat(5,1fr);left:8px;right:8px;bottom:8px;z-index:80;background:#071014f2;backdrop-filter:blur(14px);border:1px solid #31515a;border-radius:15px;padding:6px;box-shadow:0 10px 40px #0009}
-    .mobileDock65 button{min-width:0;border:0;background:transparent;color:#a9bcbe;border-radius:9px;padding:7px 3px;font-size:9px;font-weight:850;line-height:1.15}.mobileDock65 button.on{background:#123039;color:#9ff2df}.mobileDock65 b{display:block;font-size:16px;margin-bottom:2px}
-  }`;
-  document.head.appendChild(style);
-}
-
-function ensureUi(){
-  installStyles();
-  const toolbar=document.querySelector('.toolbar');
-  if(toolbar&&!$('focus65')){
-    toolbar.insertAdjacentHTML('beforebegin',`<section class="focus65" id="focus65" aria-live="polite"><div class="focus65-head"><div><h2>🎯 Dnešný fokus</h2><p>Tri najlepšie aktuálne ponuky podľa zvolených filtrov. Rýchlo otvoríš detail alebo ich posunieš do „Mám záujem“.</p></div><div class="focus65-count" id="focus65Count">0 priorít</div></div><div class="focus65-grid" id="focus65Grid"><div class="focus65-empty">Načítavam priority…</div></div></section>`);
-  }
-  const tools=document.querySelector('.tools');
-  if(tools&&!$('resetFilters65')){
-    const group=document.createElement('div');
-    group.className='filter65';
-    group.innerHTML='<span class="filter65-badge" id="filterCount65">Filtre: 0</span><button id="resetFilters65" type="button">Vyčistiť filtre</button>';
-    tools.appendChild(group);
-    $('resetFilters65').addEventListener('click',resetFilters);
-  }
-  if(!$('mobileDock65')){
-    const nav=document.createElement('nav');
-    nav.className='mobileDock65';nav.id='mobileDock65';nav.setAttribute('aria-label','Rýchle mobilné filtre');
-    nav.innerHTML='<button data-dock="all"><b>⌂</b>Všetko</button><button data-dock="today"><b>🔥</b>Dnes</button><button data-dock="top"><b>🎯</b>Top</button><button data-dock="pipe"><b>✓</b>Riešim</button><button data-dock="filters"><b>☷</b>Filtre</button>';
-    document.body.appendChild(nav);
-    nav.addEventListener('click',e=>{
-      const b=e.target.closest('button[data-dock]');if(!b)return;
-      const k=b.dataset.dock;
-      if(k==='filters'){document.querySelector('.toolbar')?.scrollIntoView({behavior:'smooth',block:'start'});return;}
-      document.querySelector(`[data-qk="${k}"]`)?.click();
-      setTimeout(()=>document.querySelector('.status')?.scrollIntoView({behavior:'smooth',block:'start'}),40);
-    });
-  }
-}
-
-function getQuick(){return document.querySelector('.quick [data-qk].on')?.dataset.qk||'all';}
-
-function saveFilters(){
-  const data={};
-  FILTER_IDS.forEach(id=>{const el=$(id);if(el)data[id]=el.value;});
-  data.quick=getQuick();
-  try{localStorage.setItem(FILTER_KEY,JSON.stringify(data));}catch{}
-  updateFilterStatus();
-}
-
-function applySavedFilters(){
-  let saved={};try{saved=JSON.parse(localStorage.getItem(FILTER_KEY)||'{}')||{};}catch{}
-  FILTER_IDS.forEach(id=>{const el=$(id);if(el&&saved[id]!==undefined)el.value=saved[id];});
-  const q=saved.quick||'all';
-  if(q!=='all')document.querySelector(`.quick [data-qk="${q}"]`)?.click();
-  FILTER_IDS.forEach(id=>{const el=$(id);if(!el)return;el.dispatchEvent(new Event(id==='q'?'input':'change',{bubbles:true}));});
-  updateFilterStatus();
-}
-
-function resetFilters(){
-  FILTER_IDS.forEach(id=>{const el=$(id);if(!el)return;el.value=DEFAULTS[id];el.dispatchEvent(new Event(id==='q'?'input':'change',{bubbles:true}));});
-  document.querySelector('.quick [data-qk="all"]')?.click();
-  try{localStorage.removeItem(FILTER_KEY);}catch{}
-  updateFilterStatus();
-}
-
-function updateFilterStatus(){
-  let count=0;
-  FILTER_IDS.forEach(id=>{const el=$(id);if(el&&String(el.value)!==String(DEFAULTS[id]))count++;});
-  const quick=getQuick();if(quick!=='all')count++;
-  const badge=$('filterCount65');if(badge){badge.textContent='Filtre: '+count;badge.classList.toggle('on',count>0);}
-  document.querySelectorAll('#mobileDock65 [data-dock]').forEach(b=>b.classList.toggle('on',b.dataset.dock===quick));
-}
-
-function scoreOf(card){return Number(card.querySelector('.score b')?.textContent||0)||0;}
-function updateFocus(){
-  const box=$('focus65Grid'),count=$('focus65Count'),grid=$('grid');if(!box||!grid)return;
-  const cards=[...grid.querySelectorAll('.card')].sort((a,b)=>scoreOf(b)-scoreOf(a)).slice(0,3);
-  if(count)count.textContent=cards.length+(cards.length===1?' priorita':' priority');
-  if(!cards.length){box.innerHTML='<div class="focus65-empty">Pre aktuálny filter nie je žiadna priorita. Skús vyčistiť filtre.</div>';return;}
-  box.innerHTML=cards.map((c,i)=>{
-    const id=c.dataset.id||'';const title=c.querySelector('h3')?.textContent.trim()||'Ponuka';const company=c.querySelector('.company')?.textContent.trim()||'';const score=scoreOf(c);
-    return `<article class="focus65-item" data-focus-card="${esc(id)}"><div class="focus65-top"><div class="focus65-score">${score}</div><div><div class="focus65-title">${i+1}. ${esc(title)}</div><div class="focus65-company">${esc(company)}</div></div></div><div class="focus65-actions"><button type="button" data-focus-interest="${esc(id)}">☆ Mám záujem</button><button type="button" class="go" data-focus-open="${esc(id)}">Otvoriť →</button></div></article>`;
-  }).join('');
-}
-
-function bindFocus(){
-  const panel=$('focus65');if(!panel||panel.dataset.bound)return;panel.dataset.bound='1';
-  panel.addEventListener('click',e=>{
-    const open=e.target.closest('[data-focus-open]');
-    if(open){const card=document.querySelector(`#grid .card[data-id="${CSS.escape(open.dataset.focusOpen)}"]`);card?.querySelector('[data-a="open"]')?.click();return;}
-    const interest=e.target.closest('[data-focus-interest]');
-    if(interest){const card=document.querySelector(`#grid .card[data-id="${CSS.escape(interest.dataset.focusInterest)}"]`);const select=card?.querySelector('select[data-a="status"]');if(select){select.value='zaujem';select.dispatchEvent(new Event('change',{bubbles:true}));}}
-  });
-}
-
-function bindPersistence(){
-  FILTER_IDS.forEach(id=>{const el=$(id);if(!el||el.dataset.v65Persist)return;el.dataset.v65Persist='1';el.addEventListener(id==='q'?'input':'change',saveFilters);});
-  document.querySelectorAll('.quick [data-qk]').forEach(b=>{if(b.dataset.v65Persist)return;b.dataset.v65Persist='1';b.addEventListener('click',()=>setTimeout(saveFilters,0));});
-}
-
-function init(){
-  ensureUi();bindFocus();bindPersistence();applySavedFilters();
-  const grid=$('grid');if(grid){new MutationObserver(()=>{updateFocus();updateFilterStatus();}).observe(grid,{childList:true});}
-  updateFocus();updateFilterStatus();
-  setTimeout(()=>{updateFocus();updateFilterStatus();},900);
-}
-
+(()=>{'use strict';
+const $=id=>document.getElementById(id),N=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''),E=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const CRM='pracaPreJaraCRM-v3',FK='pracaPreJaraFilters-v66',F=['q','origin','track','sourceFilter','eng','min','sort'];let active=null;
+const EV={
+ warehouse:['Sklad, zásoby a inventúry',1],orders:['Objednávky a výdaj',1],logistics:['Logistika a prevádzka',1],driver:['Vodičský preukaz B',1],technical:['Technická diagnostika',1],customer:['Reklamácie a zákazník',1],operations:['Operations / organizácia práce',1],admin:['Administratíva a systémy',1],leadership:['Vedenie tímu',1],web:['WordPress / WooCommerce',1],ecommerce:['E-commerce administrácia',1],iot:['Smart Home / IoT',1],purchasing:['Objednávky a zásobová operatíva',.75]
+};
+const R=[
+ ['warehouse','sklad / zásoby / inventúry',/\bsklad|warehouse|logistik|inventur|nasklad|expedic|prijem tovar|vydaj tovar|zasob/],['orders','objednávky / výdaj',/objednav|vyzdvih|vydaj objed|order/],['driver','rozvoz / vodič',/rozvoz|vodic|driver|kurier|doruc|sofer/],['purchasing','nákup / zásobovanie',/\bnakup|procurement|dodavatel|zasobovan/],['technical','technická práca / diagnostika',/technick|diagnost|servis|oprava|udrzb|troubleshoot/],['customer','zákazník / reklamácie',/zakazn|klient|customer|reklamac|komunikac/],['operations','prevádzka / operatíva',/prevadzk|operativ|operations|proces|kpi|report/],['admin','administratíva / evidencia',/administr|office|evidenc|doklad|excel|back.?office/],['leadership','vedenie tímu',/veden.*timu|manager|manazer|team lead|supervisor/],['web','WordPress / web',/wordpress|woocommerce|\bweb\b|cms|shoptet|shopify/],['ecommerce','e-commerce / produkty',/e.?commerce|e-shop|eshop|produkt.*kategor/],['iot','Smart Home / IoT',/smart home|\biot\b|home assistant|esphome|zigbee|matter/]
+];
+const MAP={warehouse:['warehouse','logistics'],orders:['orders'],driver:['driver'],purchasing:['purchasing'],technical:['technical'],customer:['customer'],operations:['operations'],admin:['admin'],leadership:['leadership'],web:['web'],ecommerce:['ecommerce'],iot:['iot']};
+const HG=[['VZV / preukaz obsluhy',/\bvzv\b|vysokozdviz|preukaz.*obsluh/],['elektrotechnická vyhláška',/508\/2009|§\s?2[1-4]|vyhlaska.*elektro/],['vodičské oprávnenie C/C+E',/\bc\+e\b|tachograf/],['angličtina B2/C1',/\bb2\b|\bc1\b|fluent english|komunikativ.*anglict/],['špecializovaná HVAC kvalifikácia',/kurena|vykuro|hvac|plynar|instalater|vodar/]];
+function job(card){let cp=(card.querySelector('.company')?.textContent||'').split('•').map(x=>x.trim()),facts={};card.querySelectorAll('.fact').forEach(x=>facts[N(x.querySelector('span')?.textContent)]=x.querySelector('b')?.textContent||'');return{id:card.dataset.id||'',title:card.querySelector('h3')?.textContent.trim()||'',company:cp.shift()||'',location:cp.join(' • '),desc:card.querySelector('.desc')?.textContent.trim()||'',score:+(card.querySelector('.score b')?.textContent||0),card};}
+function analyse(j){let t=N(j.title),a=N(j.title+' '+j.desc),req=R.filter(x=>x[2].test(t)||x[2].test(a)).map(x=>({key:x[0],label:x[1],w:x[2].test(t)?3:1})).sort((x,y)=>y.w-x.w).slice(0,6);let ev=req.map(r=>{let k=(MAP[r.key]||[])[0];return k&&EV[k]?{r,k,label:EV[k][0],s:EV[k][1]}:null}).filter(Boolean),hard=HG.filter(x=>x[1].test(a)).map(x=>x[0]);let direct=ev.filter(x=>x.s>=.95).length,part=ev.length-direct,hr=64+Math.round((direct+part*.65)/Math.max(1,req.length)*28)-hard.length*8+(j.company?3:0)+(j.title?2:0);hr=Math.max(35,Math.min(96,hr));let warn=hard.map(x=>'Overiť hard požiadavku: '+x+'.');ev.filter(x=>x.s<.95).forEach(x=>warn.push(x.r.label+': iba čiastočná zhoda — netvrdím nákupnú špecializáciu.'));if(req.some(x=>x.key==='technical')&&!req.some(x=>x.key==='iot'))warn.push('IoT nepoužívam ako hlavný argument iba preto, že pozícia je technická.');return{req,ev,hard,hr,warn};}
+function top(a,n=5){let out=[],seen=new Set;for(let x of a.ev){if(!seen.has(x.k)){seen.add(x.k);out.push(x);}}for(let k of ['operations','customer','admin','driver'])if(out.length<n&&!seen.has(k)){seen.add(k);out.push({k,label:EV[k][0],s:1});}return out.slice(0,n);}
+function phrase(a){let H={warehouse:'skladu',orders:'objednávok a výdaja',driver:'rozvozu',purchasing:'nákupu',technical:'technickej práce',customer:'komunikácie so zákazníkmi',operations:'prevádzkovej operatívy',admin:'administratívy',leadership:'vedenia tímu',web:'práce s webom',ecommerce:'e-commerce administratívy',iot:'Smart Home/IoT'},x=a.req.slice(0,4).map(r=>H[r.key]||r.label);return x.length<2?(x[0]||'praktickej náplne pozície'):x.slice(0,-1).join(', ')+' a '+x.at(-1);}
+function reaction(j,short=false){let a=analyse(j),k=new Set(a.req.map(x=>x.key)),p=[];if(k.has('warehouse')||k.has('orders')||k.has('purchasing'))p.push('V doterajšej praxi som pracoval so skladovým hospodárstvom, zásobami, inventúrami, objednávkami a prevádzkovou administratívou. Mám skúsenosť aj so spoluprácou s logistikou a internými tímami.');if(k.has('technical'))p.push('Aktuálne sa venujem servisnej a reklamačnej práci, kde riešim technickú diagnostiku, komunikáciu so zákazníkom a kontrolu výslednej funkčnosti.');if(k.has('driver'))p.push('Som aktívny vodič skupiny B, zvyknutý pracovať samostatne, presne a operatívne riešiť situácie počas dňa.');if(k.has('admin')&&!p.some(x=>x.includes('administratívou')))p.push('Mám skúsenosti s administratívou, evidenciou, reportingom a prácou v interných systémoch a Microsoft Office.');if(k.has('web')||k.has('ecommerce'))p.push('Prakticky pracujem aj s WordPress/WooCommerce, správou webu, produktových podkladov a e-commerce administráciou.');if(k.has('iot'))p.push('V technickej oblasti mám praktickú skúsenosť so Smart Home/IoT a Home Assistantom; pri riešení problémov postupujem od diagnostiky po kontrolu výsledku.');if(!p.length)p.push('Prinášam dlhoročnú prevádzkovú a zákaznícku prax, samostatnosť, organizáciu práce a schopnosť systematicky riešiť problémy.');let c=String(j.company||'').replace(/[.\s]+$/,''),intro=`Dobrý deň,\n\nreagujem na ponuku „${j.title}“${c?' v spoločnosti '+c:''}.\n\nPozícia ma zaujala kombináciou ${phrase(a)}.`;if(short)return intro+'\n\n'+p.slice(0,2).join('\n\n')+'\n\nRád si s Vami prejdem podrobnosti osobne alebo telefonicky.\n\nS pozdravom\nJaroslav Koman';return intro+'\n\n'+p.join('\n\n')+'\n\nPre túto pozíciu viem ponúknuť najmä:\n- '+top(a,4).map(x=>x.label).join('\n- ')+'\n\nRád si s Vami prejdem podrobnosti osobne alebo telefonicky.\n\nS pozdravom\nJaroslav Koman';}
+function cv(j){let a=analyse(j),k=new Set(a.req.map(x=>x.key)),h=k.has('warehouse')||k.has('driver')||k.has('purchasing')?'TECHNICKÁ PREVÁDZKA | SKLAD | LOGISTIKA':k.has('technical')?'TECHNICKÁ PODPORA | DIAGNOSTIKA | ZÁKAZNÍCKY SERVIS':k.has('admin')?'ADMINISTRATÍVA | OPERATIONS | ZÁKAZNÍCKA PODPORA':k.has('web')||k.has('ecommerce')?'WORDPRESS | WOOCOMMERCE | E-COMMERCE OPERATIONS':'PREVÁDZKA | ZÁKAZNÍCKY SERVIS | OPERATIONS',prof=k.has('warehouse')||k.has('driver')||k.has('purchasing')?'Prevádzkovo a technicky orientovaný profesionál s dlhoročnou praxou v retaile a každodennej operatíve. Prakticky som pracoval so skladovým hospodárstvom, inventúrami, objednávkami, logistikou, zákazníckym servisom a reklamáciami. Aktuálne sa venujem servisnej a reklamačnej práci s dôrazom na diagnostiku, presnosť a kontrolu výsledku.':k.has('technical')?'Technicky a zákaznícky orientovaný servisný pracovník so skúsenosťami s diagnostikou, reklamáciami, evidenciou prípadov a podporou zákazníkov. Pri probléme systematicky zisťujem príčinu, navrhujem ďalší krok a výsledok overujem.':'Systémovo a klientsky orientovaný profesionál s dlhoročnou praxou v prevádzke, administratíve, reportingu, evidencii a koordinácii tímov.';let pr=[];if(k.has('technical')||k.has('iot'))pr.push('• Aktuálna servisná a reklamačná prax — diagnostika, evidencia, komunikácia a kontrola funkčnosti.');if(k.has('warehouse')||k.has('orders')||k.has('purchasing')||k.has('driver'))pr.push('• Prevádzkový manažment a retail — sklad, inventúry, objednávky, naskladnenie, logistika a operatíva.');if(k.has('admin')||k.has('operations')||k.has('customer'))pr.push('• Klientska a administratívna prax — interné systémy, evidencia, reporting a riešenie požiadaviek.');if(k.has('web')||k.has('ecommerce'))pr.push('• Digitálne projekty — WordPress/WooCommerce, správa webu a e-commerce administrácia.');return`Bc. JAROSLAV KOMAN\n${h}\nCielené na pozíciu: ${j.title}\n\nPROFIL\n${prof}\n\nKĽÚČOVÉ ZRUČNOSTI\n• ${top(a,6).map(x=>x.label).join('\n• ')}\n\nRELEVANTNÁ PRAX\n${pr.join('\n')}\n\nĎALŠIE\n• Vodičský preukaz B\n• Microsoft Office a interné systémy\n• Angličtina: základná úroveň A1–A2\n\nPoznámka: finálny PDF použije schválenú hlavičku, fotografiu a kontaktné údaje z MASTER CV; Job Radar personalizuje iba obsah.`;}
+function printCv(j){let a=analyse(j),txt=cv(j),s=txt.split('\n\n'),sec=n=>s.find(x=>x.startsWith(n))?.split('\n').slice(1)||[];return`<!doctype html><html lang="sk"><meta charset="utf-8"><title>CV</title><style>@page{size:A4;margin:14mm}body{font:10.5pt/1.45 Arial;color:#17323a}.top{border-bottom:3px solid #00979d;padding-bottom:10px}.n{font-size:25pt;font-weight:800}.r{color:#007c82;font-weight:800}.s{margin:13px 0}.s h2{font-size:9pt;letter-spacing:.12em;color:#007c82}.skill{display:inline-block;border:1px solid #d5e5e7;border-radius:7px;padding:5px 8px;margin:3px}.note{font-size:8pt;color:#687d82;background:#f3f8f8;padding:8px}@media print{.note{display:none}}</style><body><div class="top"><div class="n">Bc. JAROSLAV KOMAN</div><div class="r">${E(txt.split('\n')[1])}</div><small>${E(txt.split('\n')[2])}</small></div><p class="note">Kontakty a fotografia zostávajú v schválenej MASTER hlavičke; verejný Job Radar ich nepridáva do repozitára.</p><div class="s"><h2>PROFIL</h2><p>${E(sec('PROFIL').join(' '))}</p></div><div class="s"><h2>KĽÚČOVÉ ZRUČNOSTI</h2>${top(a,6).map(x=>`<span class="skill">${E(x.label)}</span>`).join('')}</div><div class="s"><h2>RELEVANTNÁ PRAX</h2>${sec('RELEVANTNÁ PRAX').map(x=>`<p>${E(x)}</p>`).join('')}</div><div class="s"><h2>ĎALŠIE</h2><p>Vodičský preukaz B • Microsoft Office a interné systémy • Angličtina A1–A2</p></div></body></html>`;}
+function css(){let s=document.createElement('style');s.textContent=`.kaB{display:flex;gap:12px;align-items:center}.kaB img{width:88px;height:61px;object-fit:cover;border:1px solid #315b64;border-radius:12px}.kaW b{color:#68e5d0;letter-spacing:.08em}.kaW small{display:block;color:#8fa6a9;letter-spacing:.14em;font-size:9px}.kaHR{grid-column:1/-1;display:grid;grid-template-columns:130px 1fr 1fr;gap:9px;background:#0b191e;border:1px solid #315862;border-radius:11px;padding:10px}.kaHR strong{font-size:32px;color:#8ff0c6}.kaHR ul{margin:4px 0;padding-left:17px;font-size:11px}.kaWhy{font-size:10px;color:#9db2b5;border:1px solid #24434c;background:#0b191e;padding:7px;border-radius:8px;margin-bottom:8px}.kaWhy b{color:#93efda}.kaWhy i{color:#ffd166}.modal button:focus-visible,.modal textarea:focus-visible,.toolbar input:focus-visible,.toolbar select:focus-visible,.card button:focus-visible,.card a:focus-visible,.card select:focus-visible{outline:3px solid #68e5d066;outline-offset:2px}.kaPrint{background:linear-gradient(90deg,#00aaa7,#58d6bd)!important;color:#021313!important;border:0!important}.modal .box{max-height:calc(100vh - 32px);display:flex;flex-direction:column}.modal .body{overflow:auto}.kaLock{overflow:hidden}@media(max-width:760px){.kaHR{grid-template-columns:1fr}.modal{padding:8px}.modal .head{position:sticky;top:0;background:#0d191f;z-index:3}.build textarea{min-height:210px}.kaB img{width:72px;height:50px}}`;document.head.appendChild(s);}
+function brand(){let h=document.querySelector('.top>div:first-child');if(h)h.innerHTML='<div class="kaB"><img src="komarena-job-radar-jr-master.webp?v=6600" alt="KomArena Job Radar JR logo"><div class="kaW"><div class="brand">KomArena <b>JOB RADAR</b></div><small>PRÍLEŽITOSTI V REÁLNOM ČASE</small><div class="micro">PRÁCA PRE JARA • MASTER v6.6</div></div></div>';document.title='KomArena Job Radar — MASTER v6.6';}
+function hr(j){let a=analyse(j),p=$('kaHR');if(!p)return;p.innerHTML=`<div><strong>${a.hr}</strong><br><small>HR pripravenosť /100</small></div><div><b>Prečo sedí</b><ul>${a.ev.slice(0,5).map(x=>`<li>${E(x.r.label)} → ${E(x.label)}${x.s<.95?' (čiastočne)':''}</li>`).join('')}</ul></div><div><b>Kontrola rizík</b><ul>${(a.warn.length?a.warn:['Bez zjavného hard-gap signálu.']).slice(0,4).map(x=>`<li>${E(x)}</li>`).join('')}</ul></div>`;}
+function modal(){let m=$('reactModal');if(!m)return;m.setAttribute('role','dialog');m.setAttribute('aria-modal','true');let b=m.querySelector('.body.build');if(b&&!$('kaHR'))b.insertAdjacentHTML('afterbegin','<section class="kaHR" id="kaHR" aria-live="polite"></section>');let pt=[...m.querySelectorAll('h3')].find(x=>x.textContent.includes('Personalizované CV'));if(pt)pt.textContent='Cielený obsah CV — MASTER';if($('print')){$('print').textContent='Tlač / uložiť PDF';$('print').classList.add('kaPrint')}if($('download'))$('download').textContent='Technický HTML';let ma=$('reaction')?.nextElementSibling;if(ma&&!$('prep66'))ma.insertAdjacentHTML('beforeend','<button id="prep66" type="button">✓ Reakcia pripravená</button>');}
+function openApp(j){active=j;$('rt').textContent='Reakcia: '+j.title;$('reaction').value=reaction(j);$('cv').value=cv(j);let a=analyse(j);$('reasons').innerHTML=top(a,6).map(x=>`<div>${E(x.label)}</div>`).join('');hr(j);$('reactModal').classList.add('show');document.body.classList.add('kaLock');setTimeout(()=>$('reaction').focus(),20);}
+function workflow(card){let s=card.querySelector('select[data-a="status"]');if(!s)return null;let add=(v,l,b)=>{if([...s.options].some(o=>o.value===v))return;let o=new Option(l,v),r=[...s.options].find(o=>o.value===b);r?s.insertBefore(o,r):s.add(o)};add('pripravena','Reakcia pripravená','reagovane');add('odpoved','Odpoveď od firmy','pohovor');let r=[...s.options].find(o=>o.value==='reagovane');if(r)r.textContent='Odoslaná';let db={};try{db=JSON.parse(localStorage.getItem(CRM)||'{}')}catch{}if(['pripravena','odpoved'].includes(db[card.dataset.id]?.status))s.value=db[card.dataset.id].status;s.setAttribute('aria-label','Stav ponuky');return s;}
+function patch(){document.querySelectorAll('#grid .card').forEach(c=>{workflow(c);c.querySelector('.note')?.setAttribute('aria-label','Poznámka ku ponuke');if(!c.querySelector('.kaWhy')){let j=job(c),a=analyse(j),d=document.createElement('div');d.className='kaWhy';d.innerHTML='<b>Prečo '+a.hr+'/100:</b> '+E(a.ev.slice(0,3).map(x=>x.label).join(' • ')||'všeobecná zhoda')+(a.hard[0]?' <i>⚠ overiť: '+E(a.hard[0])+'</i>':'');c.querySelector('.scoreRow')?.insertAdjacentElement('afterend',d)}});focusFix();}
+function focusFix(){let g=$('focus65Grid');if(!g)return;let cs=[...document.querySelectorAll('#grid .card')].filter(c=>!c.classList.contains('sourceHidden')&&getComputedStyle(c).display!=='none').sort((a,b)=>(+(b.querySelector('.score b')?.textContent||0))-(+(a.querySelector('.score b')?.textContent||0))).slice(0,3);let n=$('focus65Count');if(n)n.textContent=cs.length+' priority';g.innerHTML=cs.length?cs.map((c,i)=>`<article class="focus65-item"><div class="focus65-top"><div class="focus65-score">${c.querySelector('.score b')?.textContent||0}</div><div><div class="focus65-title">${i+1}. ${E(c.querySelector('h3')?.textContent)}</div><div class="focus65-company">${E(c.querySelector('.company')?.textContent)}</div></div></div><div class="focus65-actions"><button data-f="${E(c.dataset.id)}">☆ Mám záujem</button><button class="go" data-o="${E(c.dataset.id)}">Otvoriť →</button></div></article>`).join(''):'<div class="focus65-empty">Pre aktuálny filter nie je priorita.</div>';}
+function persistence(){let save=()=>{let x={};F.forEach(id=>{if($(id))x[id]=$(id).value});x.quick=document.querySelector('[data-qk].on')?.dataset.qk||'all';localStorage.setItem(FK,JSON.stringify(x))};let x={};try{x=JSON.parse(localStorage.getItem(FK)||'{}')}catch{}F.forEach(id=>{let e=$(id);if(!e)return;if(x[id]!=null)e.value=x[id];e.addEventListener(id==='q'?'input':'change',()=>{save();setTimeout(focusFix,20)})});document.querySelectorAll('[data-qk]').forEach(b=>b.addEventListener('click',()=>setTimeout(save,0)));if(x.quick&&x.quick!=='all')document.querySelector(`[data-qk="${x.quick}"]`)?.click();}
+function init(){css();brand();modal();persistence();let g=$('grid');if(g){g.addEventListener('click',e=>{let b=e.target.closest('[data-a="react"]');if(!b)return;let c=b.closest('.card');if(!c)return;e.preventDefault();e.stopImmediatePropagation();openApp(job(c))},true);new MutationObserver(patch).observe(g,{childList:true});}if($('short'))$('short').onclick=()=>{if(active)$('reaction').value=reaction(active,true)};if($('print'))$('print').onclick=()=>{if(!active)return;let w=open('','_blank','noopener,noreferrer');if(w){w.document.write(printCv(active));w.document.close();setTimeout(()=>w.print(),80)}};if($('download'))$('download').onclick=()=>{if(!active)return;let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([printCv(active)],{type:'text/html'}));a.download='CV-cieleny-obsah.html';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)};if($('prep66'))$('prep66').onclick=()=>{if(!active)return;let s=workflow(active.card);if(s){s.value='pripravena';s.dispatchEvent(new Event('change',{bubbles:true}))}};document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelector('.modal.show')?.classList.remove('show');document.body.classList.remove('kaLock')}});document.querySelectorAll('.modal').forEach(m=>m.addEventListener('click',e=>{if(e.target===m){m.classList.remove('show');document.body.classList.remove('kaLock')}}));document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',()=>document.body.classList.remove('kaLock')));$('sourceFilter')?.addEventListener('change',()=>setTimeout(focusFix,20));$('focus65')?.addEventListener('click',e=>{let id=e.target.dataset.o||e.target.dataset.f;if(!id)return;let c=document.querySelector(`#grid .card[data-id="${CSS.escape(id)}"]`);if(e.target.dataset.o)c?.querySelector('[data-a="open"]')?.click();else{let s=workflow(c);if(s){s.value='zaujem';s.dispatchEvent(new Event('change',{bubbles:true}))}}});patch();setTimeout(patch,700);window.__KA_JOBRADAR_V66={analyse,reaction,cv};}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
