@@ -21,3 +21,4 @@ const nativeFetch=window.fetch.bind(window);window.fetch=async(input,init)=>{con
 window.addEventListener('ka-source-audit-updated',e=>{S.auditUpdatedAt=e.detail?.updatedAt||S.auditUpdatedAt;renderSourceRadar()});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',wire);else wire();setInterval(renderSourceRadar,60000);
 })();
+(()=>{if(document.querySelector('script[data-ka-apply-v1]'))return;const s=document.createElement('script');s.dataset.kaApplyV1='1';s.src='job-radar-apply-v1.js?v=6700';s.async=false;document.head.appendChild(s)})();
