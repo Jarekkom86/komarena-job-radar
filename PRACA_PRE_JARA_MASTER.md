@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 6. 9. 2026 13:11 CEST
+Aktualizované: 6. 9. 2026 14:53 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,39 +38,39 @@ Aktualizované: 6. 9. 2026 13:11 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 13:11
+### Čerstvé zistenia 14:53
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- WordPress Jobs aktuálne uvádza 11 otvorených pozícií. Čerstvý **WPMU DEV WordPress Sales Support Specialist** z 5.9.2026 je obsahovo zaujímavý (WordPress, customer support, data entry, Google Sheets), ale vyžaduje proficient English, min. 1 rok Sales Support, Zoom/sales komunikáciu a víkendové večerné/nočné UTC zmeny; preto nejde do LIVE.
-- Druhý čerstvý WPMU DEV WordPress Support Specialist je PHP/HTML/CSS/MySQL-heavy a presahuje bezpečný non-hard-dev profil.
-- Upwork priniesol **WordPress Developer / Webmaster – Development, Fixes & Ongoing Maintenance**, Worldwide remote a contract-to-hire. Scope zahŕňa maintenance a troubleshooting, ale aj custom PHP, MySQL, plugin development, Git, DNS/SSL a migrations; sadzba iba 5–12 USD/h, >30 h/týždeň a 50+ proposals. Bez promotion a bez nafukovania verification queue.
-- Alza direct careers stále potvrdzuje Bernolákovo/Bratislava roly vrátane AlzaBox Špecialistu a Technik automatizácie; bez novej unique delty oproti evidovanému trhu.
-- Reddit verejná indexácia vrátila čerstvé FOR HIRE príspevky uchádzačov, nie konkrétne hiring dopyty vhodné na ingestion.
+- Upwork priniesol dva nové, veľmi presné microjob fit-y na existujúce weby. **Wordpress Elementor Expert**: Worldwide remote, 50 USD fixed, 5–10 proposals, contract-to-hire, jednoduché layout/content/form zmeny. **WooCommerce Developer Needed to Improve Product Page Layout**: Worldwide remote, 60 USD fixed, 10–15 proposals, existujúci shop, layout/responsive/CSS fixes bez full buildu. Oba sú pridané do verification, nie LIVE, pretože nízky fixed budget a čerství klienti znižujú ROI a spoľahlivosť.
+- WordPress Jobs stále uvádza 11 otvorených pozícií. WPMU DEV WordPress Sales Support Specialist z 5.9.2026 zostáva language/sales/shift mismatch; druhý WPMU DEV Support Specialist je PHP/HTML/CSS/MySQL-heavy.
+- Pretlak nemá novú suitable unique promotion-grade deltu; aktuálne marketingové role sú skôr mid/senior a mimo hlavného ranking profilu.
+- Kariera/Zoznam search pri BA dotaze vrátil aj geograficky odchýlené výsledky, preto source zostáva skontrolovaný, ale semantic drift sa nesmie zameniť za relevantný BA hit.
+- Reddit verejná indexácia vrátila čerstvý FOR HIRE príspevok uchádzača, nie konkrétny hiring dopyt vhodný na ingestion.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 6. 9. 2026 13:11
+## Source audit — 6. 9. 2026 14:53
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `checked`; Alza + Telekom a ďalšie priame careers reálne preverené, bez novej suitable unique promotion-grade delty.
+- Priame company careers: `checked`; reálne preverené, bez novej suitable unique promotion-grade delty.
 - LinkedIn Jobs: `limited`; verejná indexácia preverená, bez novej vhodnej BA/Slovakia-remote delty.
 - Worki: `checked`; bez novej vhodnej unique delty pre prioritné tracky.
-- Kariera/Zoznam: `checked`; BA admin/driver/sklad index preverený, bez novej suitable unique LIVE delty.
+- Kariera/Zoznam: `checked`; verejný index preverený, ale časť výsledkov driftovala mimo BA; bez novej suitable unique LIVE delty.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
 - Tech/creative: `ok`; 2 relevantné WPMU DEV WordPress support výsledky, ale jeden language/sales/shift mismatch a druhý hard-tech mismatch.
-- Upwork/freelance: `ok`; nový Worldwide webmaster/maintenance lead preverovaný, ale nízka sadzba + hard-dev scope + 50+ proposals; 1 maintenance rediscovery deduplikovaný.
-- Reddit/komunity: `limited`; čerstvé výsledky boli FOR HIRE, nie hiring dopyty.
+- Upwork/freelance: `ok`; **2 nové unique verification kandidáty**, bez LIVE promotion.
+- Reddit/komunity: `limited`; čerstvý výsledok bol FOR HIRE, nie hiring dopyt.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 13:11
+### Audit počty 14:53
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- nové unique významné verification kandidáty: **0**
-- verification queue: **64 položiek**, zachovaná bez straty
+- nové unique významné verification kandidáty: **2**
+- verification queue: **66 položiek**, zachovaná bez straty
 - tech/creative relevantné hity: **2**, bez promotion
-- freelance relevantné hity: **2**, z toho **1 rediscovery**
+- freelance relevantné hity: **2**, oba pridané do verification
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: úspešne aktualizovaný; queue zostáva 64.
+- `source-audit.json`: úspešne aktualizovaný; queue 66.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -197,3 +197,5 @@ Aktualizované: 6. 9. 2026 13:11 CEST
 - **Freelance starter-budget vs continuation-value split** — pri zákazkách typu malý landing page/fix + následná maintenance oddelene hodnotiť počiatočný fixed budget a realistickú hodnotu pokračovania; zabráni tomu, aby lacný trial task skreslil celý dlhodobý opportunity score.
 - **Shift-window timezone normalizer** — pre remote roly previesť publikované UTC/US pracovné okná na Europe/Bratislava a vypočítať reálny večerný/nočný/víkendový burden; zrýchli vyradenie rolí, ktoré vyzerajú remote-friendly, ale prakticky majú neudržateľné časové zmeny.
 - **Hard-dev contamination ratio for maintenance roles** — pri ponukách označených maintenance/support vypočítať podiel požiadaviek na custom PHP/MySQL/plugin dev/Git/server/DNS oproti bežným updates, content/admin a troubleshooting úlohám; zabráni promotion rolí, ktoré sa marketingovo tvária ako maintenance, ale reálne sú senior development.
+- **Fixed-price microproject effective-hour ceiling** — z budgetu a minimálnej prijateľnej efektívnej sadzby odvodiť maximálny bezpečný čas na realizáciu; ak scope podľa dôkazov presiahne tento čas, microjob automaticky nepromovať ani pri vysokom skill fite.
+- **Client interview saturation gate** — pri freelance ponukách kombinovať pomer `interviewing/proposals`, už uskutočnené hires a čas od publikovania; neskorú prihlášku s vysokou interview saturáciou potlačiť, aby sa neplytvalo časom a connectmi na prakticky obsadenú zákazku.
