@@ -9,6 +9,8 @@ const $=id=>document.getElementById(id);
 const norm=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let activeJob=null;
+let customPipe=false;
+const PIPE_STATUSES=new Set(['zaujem','pripravena','reagovane','odpoved','pohovor','prijate']);
 
 const EVIDENCE={
   warehouse:{label:'Sklad, zásoby a inventúry',confidence:1},
@@ -56,7 +58,7 @@ function installStyles(){
   .kaBrand{display:flex;gap:12px;align-items:center}.kaBrand img{width:92px;height:64px;object-fit:cover;border:1px solid #315b64;border-radius:12px;box-shadow:0 10px 30px #0005}.kaBrandWord b{color:#68e5d0;letter-spacing:.06em}.kaBrandWord small{display:block;color:#8fa6a9;letter-spacing:.14em;font-size:9px;margin-top:2px}
   .focus65{margin:13px 0;background:linear-gradient(135deg,#112a31,#0a171c);border:1px solid #35616b;border-radius:18px;padding:14px;box-shadow:0 16px 42px #0003}.focus65-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin-bottom:10px}.focus65 h2{margin:0;font-size:18px}.focus65 p{margin:3px 0 0;color:#8fa6a9;font-size:12px}.focus65-count{border:1px solid #2f705d;color:#8ff0c6;background:#10251f;border-radius:999px;padding:6px 10px;font-size:11px;font-weight:900;white-space:nowrap}.focus65-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.focus65-item{background:#09171c;border:1px solid #294952;border-radius:13px;padding:11px;min-width:0}.focus65-top{display:flex;gap:8px}.focus65-score{flex:0 0 auto;min-width:47px;text-align:center;background:#102824;border:1px solid #2d665f;color:#9ff2df;border-radius:10px;padding:6px;font-size:20px;font-weight:950;line-height:1}.focus65-title{font-weight:900;line-height:1.2}.focus65-company{color:#8fa6a9;font-size:11px;margin-top:3px}.focus65-actions{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:9px}.focus65-actions button{border:1px solid #31515a;background:#13232a;color:#eef8f7;border-radius:8px;padding:8px;font-weight:850;cursor:pointer}.focus65-actions .go{background:linear-gradient(90deg,#00aaa7,#58d6bd);color:#021313;border:0}.focus65-empty{color:#8fa6a9;padding:8px 2px}
   .filter65{margin-left:auto;display:flex;align-items:center;gap:7px}.filter65-badge{border:1px solid #31515a;border-radius:999px;padding:6px 9px;color:#bdd0d1;font-size:11px;font-weight:850}.filter65-badge.on{border-color:#68e5d0;color:#9ff2df;background:#102824}.tools #resetFilters65{background:#14242a}
-  .kaWhy{font-size:10px;color:#9db2b5;border:1px solid #24434c;background:#0b191e;padding:7px;border-radius:8px;margin:0 0 8px}.kaWhy b{color:#93efda}.kaWhy i{color:#ffd166;font-style:normal}.kaHR{grid-column:1/-1;display:grid;grid-template-columns:130px 1fr 1fr;gap:9px;background:#0b191e;border:1px solid #315862;border-radius:11px;padding:10px}.kaHR strong{font-size:32px;color:#8ff0c6}.kaHR ul{margin:4px 0;padding-left:17px;font-size:11px}.kaPrint{background:linear-gradient(90deg,#00aaa7,#58d6bd)!important;color:#021313!important;border:0!important}.modal button:focus-visible,.modal textarea:focus-visible,.toolbar input:focus-visible,.toolbar select:focus-visible,.card button:focus-visible,.card a:focus-visible,.card select:focus-visible{outline:3px solid #68e5d066;outline-offset:2px}.modal .box{max-height:calc(100vh - 32px);display:flex;flex-direction:column}.modal .body{overflow:auto}.kaLock{overflow:hidden}.mobileDock65{display:none}
+  .kaWhy{font-size:10px;color:#9db2b5;border:1px solid #24434c;background:#0b191e;padding:7px;border-radius:8px;margin:0 0 8px}.kaWhy b{color:#93efda}.kaWhy i{color:#ffd166;font-style:normal}.kaHR{grid-column:1/-1;display:grid;grid-template-columns:130px 1fr 1fr;gap:9px;background:#0b191e;border:1px solid #315862;border-radius:11px;padding:10px}.kaHR strong{font-size:32px;color:#8ff0c6}.kaHR ul{margin:4px 0;padding-left:17px;font-size:11px}.kaPrint{background:linear-gradient(90deg,#00aaa7,#58d6bd)!important;color:#021313!important;border:0!important}.modal button:focus-visible,.modal textarea:focus-visible,.toolbar input:focus-visible,.toolbar select:focus-visible,.card button:focus-visible,.card a:focus-visible,.card select:focus-visible{outline:3px solid #68e5d066;outline-offset:2px}.modal .box{max-height:calc(100vh - 32px);display:flex;flex-direction:column}.modal .body{overflow:auto}.kaLock{overflow:hidden}.pipe66Hidden{display:none!important}.mobileDock65{display:none}
   @media(max-width:760px){body{padding-bottom:70px}.kaBrand img{width:76px;height:53px}.focus65-head{flex-direction:column}.focus65-grid{grid-template-columns:1fr}.filter65{width:100%;margin-left:0;justify-content:space-between}.kaHR{grid-template-columns:1fr}.modal{padding:8px}.modal .head{position:sticky;top:0;background:#0d191f;z-index:3}.build textarea{min-height:210px}.mobileDock65{position:fixed;display:grid;grid-template-columns:repeat(5,1fr);left:8px;right:8px;bottom:8px;z-index:80;background:#071014f2;backdrop-filter:blur(14px);border:1px solid #31515a;border-radius:15px;padding:6px;box-shadow:0 10px 40px #0009}.mobileDock65 button{min-width:0;border:0;background:transparent;color:#a9bcbe;border-radius:9px;padding:7px 3px;font-size:9px;font-weight:850;line-height:1.15}.mobileDock65 button.on{background:#123039;color:#9ff2df}.mobileDock65 b{display:block;font-size:16px;margin-bottom:2px}}
   `;
   document.head.appendChild(style);
@@ -94,7 +96,7 @@ function analyse(j){
   const ev=req.map(r=>EVIDENCE[r.key]?{req:r,key:r.key,label:EVIDENCE[r.key].label,confidence:EVIDENCE[r.key].confidence}:null).filter(Boolean);
   const hard=HARD_GAPS.filter(x=>x[1].test(all)).map(x=>x[0]);
   const direct=ev.filter(x=>x.confidence>=.95).length,partial=ev.length-direct;
-  let hr=64+Math.round((direct+partial*.65)/Math.max(1,req.length)*28)-hard.length*8+(j.company?3:0)+(j.title?2:0);hr=Math.max(35,Math.min(96,hr));
+  let hr=64+Math.round((direct+partial*.65)/Math.max(1,req.length)*28)-hard.length*8+(j.company?3:0)+(j.title?2:0);hr=Math.max(35,Math.min(96,hr));if(hard.length)hr=Math.min(hr,68);
   const warnings=hard.map(x=>'Overiť hard požiadavku: '+x+'.');
   ev.filter(x=>x.confidence<.95).forEach(x=>warnings.push(x.req.label+': iba čiastočná zhoda — netvrdím nákupnú špecializáciu.'));
   if(req.some(x=>x.key==='technical')&&!req.some(x=>x.key==='iot'))warnings.push('IoT nepoužívam ako hlavný argument iba preto, že pozícia je technická.');
@@ -130,8 +132,8 @@ function buildReaction(j,short=false){
 
 function buildCv(j){
   const a=analyse(j),k=new Set(a.req.map(x=>x.key));
-  const heading=(k.has('warehouse')||k.has('driver')||k.has('purchasing'))?'TECHNICKÁ PREVÁDZKA | SKLAD | LOGISTIKA':k.has('technical')?'TECHNICKÁ PODPORA | DIAGNOSTIKA | ZÁKAZNÍCKY SERVIS':k.has('admin')?'ADMINISTRATÍVA | OPERATIONS | ZÁKAZNÍCKA PODPORA':(k.has('web')||k.has('ecommerce'))?'WORDPRESS | WOOCOMMERCE | E-COMMERCE OPERATIONS':'PREVÁDZKA | ZÁKAZNÍCKY SERVIS | OPERATIONS';
-  const profile=(k.has('warehouse')||k.has('driver')||k.has('purchasing'))?'Prevádzkovo a technicky orientovaný profesionál s dlhoročnou praxou v retaile a každodennej operatíve. Prakticky som pracoval so skladovým hospodárstvom, inventúrami, objednávkami, logistikou, zákazníckym servisom a reklamáciami. Aktuálne sa venujem servisnej a reklamačnej práci s dôrazom na diagnostiku, presnosť a kontrolu výsledku.':k.has('technical')?'Technicky a zákaznícky orientovaný servisný pracovník so skúsenosťami s diagnostikou, reklamáciami, evidenciou prípadov a podporou zákazníkov. Pri probléme systematicky zisťujem príčinu, navrhujem ďalší krok a výsledok overujem.':'Systémovo a klientsky orientovaný profesionál s dlhoročnou praxou v prevádzke, administratíve, reportingu, evidencii a koordinácii tímov.';
+  const heading=(k.has('web')||k.has('ecommerce'))?'WORDPRESS | WOOCOMMERCE | E-COMMERCE OPERATIONS':(k.has('driver')&&!k.has('warehouse')&&!k.has('purchasing'))?'VODIČ B | LOGISTIKA | OPERATÍVA':(k.has('warehouse')||k.has('purchasing'))?'TECHNICKÁ PREVÁDZKA | SKLAD | LOGISTIKA':k.has('technical')?'TECHNICKÁ PODPORA | DIAGNOSTIKA | ZÁKAZNÍCKY SERVIS':k.has('admin')?'ADMINISTRATÍVA | OPERATIONS | ZÁKAZNÍCKA PODPORA':'PREVÁDZKA | ZÁKAZNÍCKY SERVIS | OPERATIONS';
+  const profile=(k.has('web')||k.has('ecommerce'))?'Digitálne a prevádzkovo orientovaný profesionál s praktickou skúsenosťou so správou WordPress/WooCommerce, produktových podkladov, webového obsahu a e-commerce administrácie. Silné zázemie mám aj v zákazníckej komunikácii, administratíve, evidencii a každodennej operatíve.':(k.has('driver')&&!k.has('warehouse')&&!k.has('purchasing'))?'Prevádzkovo orientovaný profesionál a aktívny vodič skupiny B so skúsenosťami so zákazníckym servisom, logistikou a samostatným riešením operatívnych situácií. Dlhoročná retailová prax ma naučila pracovať presne, dodržiavať procesy a koordinovať úlohy v časovom tlaku.':(k.has('warehouse')||k.has('purchasing'))?'Prevádzkovo a technicky orientovaný profesionál s dlhoročnou praxou v retaile a každodennej operatíve. Prakticky som pracoval so skladovým hospodárstvom, inventúrami, objednávkami, logistikou, zákazníckym servisom a reklamáciami. Aktuálne sa venujem servisnej a reklamačnej práci s dôrazom na diagnostiku, presnosť a kontrolu výsledku.':k.has('technical')?'Technicky a zákaznícky orientovaný servisný pracovník so skúsenosťami s diagnostikou, reklamáciami, evidenciou prípadov a podporou zákazníkov. Pri probléme systematicky zisťujem príčinu, navrhujem ďalší krok a výsledok overujem.':'Systémovo a klientsky orientovaný profesionál s dlhoročnou praxou v prevádzke, administratíve, reportingu, evidencii a koordinácii tímov.';
   const exp=[];
   if(k.has('technical')||k.has('iot'))exp.push('• Aktuálna servisná a reklamačná prax — diagnostika, evidencia, komunikácia a kontrola funkčnosti.');
   if(k.has('warehouse')||k.has('orders')||k.has('purchasing')||k.has('driver'))exp.push('• Prevádzkový manažment a retail — sklad, inventúry, objednávky, naskladnenie, logistika a operatíva.');
@@ -194,6 +196,46 @@ function updateFocus(){
   box.innerHTML=cards.map((c,i)=>`<article class="focus65-item"><div class="focus65-top"><div class="focus65-score">${Number(c.querySelector('.score b')?.textContent||0)||0}</div><div><div class="focus65-title">${i+1}. ${esc(c.querySelector('h3')?.textContent)}</div><div class="focus65-company">${esc(c.querySelector('.company')?.textContent)}</div></div></div><div class="focus65-actions"><button type="button" data-focus-interest="${esc(c.dataset.id)}">☆ Mám záujem</button><button type="button" class="go" data-focus-open="${esc(c.dataset.id)}">Otvoriť →</button></div></article>`).join('');
 }
 
+function syncPipeMetric(){
+  const el=$('pipe');if(!el)return;
+  let db={};try{db=JSON.parse(localStorage.getItem(CRM_KEY)||'{}');}catch{}
+  const n=Object.values(db).filter(x=>x&&!x.removed&&PIPE_STATUSES.has(x.status)).length;
+  const core=Number(el.textContent||0)||0;
+  el.textContent=Math.max(core,n);
+}
+
+function applyPipeView(){
+  if(!customPipe)return;
+  let visible=0;
+  document.querySelectorAll('#grid .card').forEach(card=>{
+    const status=workflow(card)?.value||'nova';
+    const show=PIPE_STATUSES.has(status);
+    card.classList.toggle('pipe66Hidden',!show);
+    if(show&&!card.classList.contains('sourceHidden'))visible++;
+  });
+  document.querySelectorAll('[data-qk]').forEach(n=>n.classList.toggle('on',n.dataset.qk==='pipe'));
+  if($('result'))$('result').textContent=visible+' výsledkov v stave Riešim';
+  syncPipeMetric();
+  updateFocus();
+}
+
+function installPipeOverride(){
+  document.addEventListener('click',e=>{
+    const target=e.target.closest?.('[data-qk]');
+    if(!target)return;
+    if(target.dataset.qk==='pipe'){
+      e.preventDefault();e.stopImmediatePropagation();
+      customPipe=true;
+      const all=document.querySelector('.quick [data-qk="all"]');
+      all?.click();
+      setTimeout(()=>{customPipe=true;applyPipeView();saveFilters();},35);
+    }else if(customPipe){
+      customPipe=false;
+      document.querySelectorAll('#grid .card.pipe66Hidden').forEach(c=>c.classList.remove('pipe66Hidden'));
+    }
+  },true);
+}
+
 function bindUi(){
   FILTER_IDS.forEach(id=>{const el=$(id);if(!el||el.dataset.v66Persist)return;el.dataset.v66Persist='1';el.addEventListener(id==='q'?'input':'change',()=>{saveFilters();setTimeout(updateFocus,30);});});
   document.querySelectorAll('.quick [data-qk]').forEach(b=>{if(b.dataset.v66Persist)return;b.dataset.v66Persist='1';b.addEventListener('click',()=>setTimeout(()=>{saveFilters();updateFocus();},30));});
@@ -202,10 +244,10 @@ function bindUi(){
 }
 
 function init(){
-  installStyles();installBrand();ensureUi();enhanceModal();bindUi();applySavedFilters();
+  installStyles();installBrand();ensureUi();enhanceModal();installPipeOverride();bindUi();applySavedFilters();
   const grid=$('grid');if(grid){
     grid.addEventListener('click',e=>{const b=e.target.closest('[data-a="react"]');if(!b)return;const card=b.closest('.card');if(!card)return;e.preventDefault();e.stopImmediatePropagation();openApplication(cardJob(card));},true);
-    new MutationObserver(()=>setTimeout(()=>{updateCards();updateFocus();updateFilterStatus();},30)).observe(grid,{childList:true});
+    new MutationObserver(()=>setTimeout(()=>{updateCards();if(customPipe)applyPipeView();else updateFocus();updateFilterStatus();syncPipeMetric();},30)).observe(grid,{childList:true});
   }
   if($('short'))$('short').onclick=()=>{if(activeJob)$('reaction').value=buildReaction(activeJob,true);};
   if($('print'))$('print').onclick=()=>{if(!activeJob)return;const w=open('','_blank','noopener,noreferrer');if(w){w.document.write(printCv(activeJob));w.document.close();setTimeout(()=>w.print(),80);}};
@@ -214,7 +256,7 @@ function init(){
   document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelector('.modal.show')?.classList.remove('show');document.body.classList.remove('kaLock');}});
   document.querySelectorAll('.modal').forEach(m=>m.addEventListener('click',e=>{if(e.target===m){m.classList.remove('show');document.body.classList.remove('kaLock');}}));
   document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',()=>document.body.classList.remove('kaLock')));
-  updateCards();updateFocus();updateFilterStatus();setTimeout(()=>{updateCards();updateFocus();},900);
+  updateCards();updateFocus();updateFilterStatus();syncPipeMetric();setTimeout(()=>{updateCards();if(customPipe)applyPipeView();else updateFocus();syncPipeMetric();},900);
   window.__KA_JOBRADAR_V66={analyse,buildReaction,buildCv};
 }
 
