@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 6. 9. 2026 18:54 CEST
+Aktualizované: 6. 9. 2026 19:16 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,39 +38,39 @@ Aktualizované: 6. 9. 2026 18:54 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 18:54
+### Čerstvé zistenia 19:16
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/StartupJobs/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- Upwork priniesol nový Worldwide remote kandidát **Wordpress developer, ongoing wordpress support**: 1 000 USD fixed, Expert, complex project, 50+ proposals, 1 hire. Scope kombinuje tvorbu WordPress webov a ongoing support. Kandidát je pridaný do verification, nie LIVE, pretože expert-level/complex scope a vysoká konkurencia sú výrazné riziká.
-- Profesia mala čerstvé Bratislavské výsledky vrátane brigád/predaja a IT kategórií, ale nič nové neprešlo prioritným fitom a hard gateom.
-- Kariera/Zoznam vrátila čerstvé BA marketing/obchod výsledky, no bez lepšej zhody než existujúci feed.
-- Worki, Práca za rohom a Brigada.sk boli reálne preverené; bez novej suitable unique promotion-grade delty.
-- Tech/creative family (Pretlak/StartupJobs/WordPress Jobs) bola preverená; bez novej A2-friendly non-hard-dev promotion.
+- Upwork priniesol čerstvé WordPress/WooCommerce výsledky, ale najrelevantnejší **WooCommerce Website Development** je rediscovery už evidovaného verification kandidáta. **WordPress Website Designers Needed** je Worldwide remote, ale iba 10 USD fixed, complex/intermediate a už 16 interviewing; nepovažuje sa za hodnotný nový verification prírastok.
+- LinkedIn/Twine priniesol **Freelance Web Developer – Restaurant Site Maintenance**, ale canonical detail uvádza `No longer accepting applications`; navyše ide o custom-built systém bez WordPress/Shopify a vyžaduje HTML/CSS/JS/backend frameworky. Vyradené ako inactive + hard-dev mismatch.
+- Worki kamerový technik Bratislava bol canonical už obsadený/strhnutý. Podobné aktívne technické výsledky boli viditeľné, ale bez lepšej unique zhody než existujúci feed.
+- Kariera/Zoznam mala čerstvé BA administratívne a skladové výsledky; Executive Support Specialist je už evidovaný a nový skladník/manipulant je 3-zmenný, nízko prioritný track bez promotion.
 - Reddit verejná indexácia nepriniesla nový konkrétny vhodný hiring dopyt.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 6. 9. 2026 18:54
+## Source audit — 6. 9. 2026 19:16
 - Profesia: `checked`; bez novej unique promotion-grade delty.
 - Priame company careers: `checked`; reálne preverené, bez novej suitable unique promotion-grade delty.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez novej vhodnej BA/Slovakia-remote delty.
-- Worki: `checked`; bez novej vhodnej unique delty pre prioritné tracky.
-- Kariera/Zoznam: `ok`; 2 viditeľné nové BA marketing/obchod výsledky, bez promotion po ranking kontrole.
+- LinkedIn Jobs: `limited`; 1 viditeľný maintenance hit, ale inactive + hard-dev mismatch, 0 eligible.
+- Worki: `checked`; 1 relevantný technický detail, ale canonical inactive/obsadený.
+- Kariera/Zoznam: `ok`; 2 relevantné BA výsledky, z toho 1 už evidovaný duplicate; bez promotion.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
 - Tech/creative: `checked`; bez novej suitable unique promotion-grade delty.
-- Upwork/freelance: `ok`; **1 nový unique verification kandidát**, bez LIVE promotion.
+- Upwork/freelance: `ok`; 3 relevantné výsledky, 2 rediscovery a 1 extrémne nízko-hodnotový nový listing; 0 verification prírastkov, 0 LIVE promotion.
 - Reddit/komunity: `limited`; bez nového konkrétneho vhodného hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 18:54
+### Audit počty 19:16
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- nové unique významné verification kandidáty: **1**
+- nové unique významné verification kandidáty: **0**
 - verification queue: **67 položiek**, zachovaná bez straty
-- freelance relevantné hity: **1**, pridaný do verification
+- freelance relevantné hity: **3**, z toho 2 rediscovery a 1 nízko-hodnotový reject
+- inactive relevantné hity: **2** (LinkedIn/Twine 1, Worki 1)
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: úspešne aktualizovaný; queue 67.
+- `source-audit.json`: úspešne aktualizovaný; queue ostáva 67.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -201,3 +201,5 @@ Aktualizované: 6. 9. 2026 18:54 CEST
 - **Client interview saturation gate** — pri freelance ponukách kombinovať pomer `interviewing/proposals`, už uskutočnené hires a čas od publikovania; neskorú prihlášku s vysokou interview saturáciou potlačiť, aby sa neplytvalo časom a connectmi na prakticky obsadenú zákazku.
 - **Expert-label vs task-scope contradiction detector** — porovnať platformové `Experience Level: Expert` s reálnym task scope; jednoduchú maintenance/admin rolu neodmietnuť iba pre label, ale vyžadovať dôkaz, že hard-dev burden je nízky a portfólio tasky pokrýva.
 - **Audit-to-source-registry consistency checker** — po každom behu porovnať `source-audit.json` a `job-sources.json` podľa času auditu, kontrolovaných families, statusov a hitov; pri rozdiele zablokovať označenie auditu ako fresh, aby Source Radar neukazoval staršie alebo rozporné pokrytie.
+- **Inactive-detail sibling-result isolation** — keď canonical detail je expired/obsadený, podobné aktívne ponuky z bočného panelu alebo related-jobs sekcie nesmú zdediť jeho názov, lokalitu ani stav; každý sibling musí mať vlastný canonical proof pred zaradením do verification.
+- **Rediscovery-only run compression** — ak beh neprinesie žiadny nový unique kandidát a všetky relevantné hity sú duplicate/inactive/low-value, uložiť iba freshness, delta počty a zmenené source statusy bez rastu verification queue; šetrí zápisy a znižuje riziko poškodenia veľkých dátových súborov.
