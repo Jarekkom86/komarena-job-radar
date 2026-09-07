@@ -1,0 +1,51 @@
+{
+  "policyVersion": 1,
+  "name": "Contactability Readiness",
+  "status": "active-policy",
+  "goal": "Save application time by determining whether an eligible high-value job has enough verified public contact/application evidence for an immediate, personalized response.",
+  "precondition": {
+    "locationEligibilityMustBeOneOf": ["ba-area", "remote-ok"],
+    "unknownLocationOrRemote": "quarantine",
+    "rejectDistance": "reject",
+    "locationGateCanNeverBeOverriddenByReadiness": true
+  },
+  "signals": {
+    "verifiedDirectApply": 4,
+    "namedRecruiterOnCanonicalListing": 3,
+    "verifiedPublicRoleSpecificEmailOrPhone": 3,
+    "officialCompanyCareerContact": 2,
+    "canonicalListingActiveWithin24h": 2,
+    "genericContactFormOnly": 0,
+    "mirrorOnlyContact": -2,
+    "unverifiedOrInferredContact": -99
+  },
+  "classes": {
+    "ready-now": "score >= 5 and canonical listing active",
+    "ready-with-generic-route": "score 2..4 and canonical listing active",
+    "verify-contact": "score <= 1 or canonical/contact evidence incomplete",
+    "blocked": "inactive listing, invalid apply route, inferred contact, or failed location gate"
+  },
+  "rules": {
+    "neverInventEmailPhoneRecruiter": true,
+    "neverDeriveEmailPattern": true,
+    "preferRoleSpecificPublicContact": true,
+    "preserveApplicationChannelResolver": true,
+    "doNotAutoSend": true,
+    "doNotChangeMatchScore": true,
+    "useAsTieBreakerAfterEligibilityAndFit": true
+  },
+  "requiredEvidence": ["canonicalUrl", "verifiedAt", "contactSourceUrl", "contactVerifiedAt", "applicationRouteState"],
+  "privacy": {
+    "publicProfessionalContactOnly": true,
+    "noPrivateOrScrapedPersonalData": true
+  },
+  "safety": {
+    "touchLockedUi": false,
+    "touchCrm": false,
+    "touchBaseline": false,
+    "rewriteExistingJobs": false,
+    "preserveStableIds": true,
+    "failClosed": true
+  },
+  "expectedBenefit": "Among equally strong BA/verified-remote jobs, prioritize the one that can be acted on immediately with a verified direct route, reducing manual contact hunting and shortening time-to-application without changing core fit scoring."
+}
