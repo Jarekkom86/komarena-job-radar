@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 7. 9. 2026 21:21 CEST
+Aktualizované: 7. 9. 2026 22:17 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -39,41 +39,43 @@ Aktualizované: 7. 9. 2026 21:21 CEST
 - Posledná persisted LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 - Promotion-ready z predchádzajúcich behov: **BeiT Technologie — Administrativně-ekonomický specialista (Junior/Medior), 100 % remote** a **SAV — Asistent/ka riaditeľa**; pred LIVE zápisom vyžadujú fresh canonical recheck a bezpečný lossless write.
 
-### Čerstvé zistenia 21:21
+### Čerstvé zistenia 22:17
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk/Práca za rohom/Služby zamestnanosti, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.**
-- Upwork: nový dnešný **Ecommerce VA Needed: SEO & Bulk Product Upload Expert for Shopify, Etsy & WooCommerce** je Worldwide remote a má iba 5–10 proposals, ale budget je **15 USD fixed-price**, level `Expert` a scope vyžaduje proven Shopify + Etsy + WooCommerce, bulk CSV/Excel a e-commerce SEO. Lokalita prechádza ako `remote-ok`, no value/skill-burden gate ho správne vyradí z LIVE.
-- Upwork: **WordPress Product Image Upload** zostáva obsahovo lepší fit (Worldwide remote, 10–20 USD/h, entry level), ale 50+ proposals a už existujúci verification záznam znamenajú rediscovery bez novej queue delty.
-- Kariera/Zoznam: čerstvý **Executive Support Specialist** Bratislava 1 500–1 600 EUR je už známy verification kandidát a ostáva na B2 language hold; ďalšie aktuálne BA admin výsledky sú slabšie.
-- LinkedIn: restaurant-site maintenance výsledok je explicitne `No longer accepting applications` a zároveň má hard web/backend presah; neaktívny reject.
-- WordPress Jobs má **11 open positions**. WPMU DEV support je síce remote, ale vyžaduje fluent English a PHP/HTML/CSS/MySQL; hard language/skill mismatch.
+- Služby zamestnanosti / Práca za rohom / Kariera: **DEV-HA GLOBAL — Operátor zákazníckej podpory**, Nobelova, Bratislava-Nové Mesto, je canonical lokálny `ba-area`, 1 000 EUR/mes., TPP na neurčito, nástup 1. 9. 2026. Ponuka však vyžaduje VŠ I. stupňa a mzdovo je výrazne pod silnejšími existujúcimi LIVE podporami, preto bez promotion.
+- Kariera: **DENIMA — Všeobecný administratívny pracovník**, Bratislava, 970 EUR/mes., je lokálne eligible, ale obsahuje telefonickú komunikáciu s obchodnými partnermi v angličtine, ukrajinčine, ruštine a turečtine; language mismatch, bez promotion.
+- Grafton **ADMIN ANALYST** sa ukázal ako starší/archívny listing s VŠ II. stupňa a angličtinou; nepovažovať za čerstvú promotion.
+- LinkedIn: nové remote support výsledky TalentPop vyžadujú fluent German + English; SupportYourApp Slovak remote vyžaduje English B2. Lokalita môže byť `remote-ok`, jazykový hard/strong penalty ich blokuje.
+- WordPress Jobs má stále **11 open positions**. WPMU DEV support je remote, ale technická rola vyžaduje fluent English + PHP/HTML/CSS/MySQL; hard language/skill mismatch.
+- Upwork **WordPress Product Image Upload** zostáva najlepší rediscovery z freelance vetvy: Worldwide remote, 10–20 USD/h, entry level, WordPress/WooCommerce; 50+ proposals a už existujúci verification záznam = bez novej queue delty a bez LIVE promotion.
+- Worki: známy Shield-Sk e-shop admin detail je už explicitne obsadený/zrušený; inactive reject.
 - Reddit/komunity: čerstvé výsledky sú `FOR HIRE`, nie employer hiring; **0 vhodných verified hiring hits**.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nevykazuje ako hit.
 
-## Source audit — 7. 9. 2026 21:21
+## Source audit — 7. 9. 2026 22:17
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `checked`; verejne dostupné priame careers preverené, bez novej unique promotion-grade delty.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, 1 neaktívny/hard-dev výsledok, 0 promotion.
-- Worki: `checked`; bez novej vhodnej unique LIVE delty.
-- Kariera/Zoznam: `ok`; relevantný BA admin rediscovery, 0 nových promotions.
-- Brigada.sk / Práca za rohom / Služby zamestnanosti: `checked`; bez novej unique promotion-grade delty.
+- Priame company careers: `checked`; Telekom a ďalšie priame careers preverené, bez novej unique promotion-grade delty.
+- LinkedIn Jobs: `limited`; verejná indexácia preverená, remote support hity majú German+English alebo English B2 mismatch; 0 promotion.
+- Worki: `checked`; Shield-Sk e-shop admin je obsadený/zrušený, bez novej vhodnej unique LIVE delty.
+- Kariera/Zoznam: `ok`; DEV-HA GLOBAL a DENIMA reálne overené, ale nízka odmena/qualification alebo language burden; 0 promotion.
+- Brigada.sk / Práca za rohom / Služby zamestnanosti: `ok`; DEV-HA canonical hit overený na Službách zamestnanosti, ale bez promotion.
 - Tech/creative: `ok`; WordPress Jobs/Pretlak/StartupJobs preverené; WPMU DEV language/technical reject.
-- Freelance/Upwork: `ok`; nový remote e-commerce hit overený, ale 15 USD fixed-price + Expert/multi-platform/SEO scope = reject; 0 LIVE promotion.
+- Freelance/Upwork: `ok`; WordPress Product Image Upload rediscovery, 50+ proposals; 0 LIVE promotion a 0 novej queue delty.
 - Reddit/komunity: `limited`; 0 verified employer hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 21:21
+### Audit počty 22:17
 - nové promotion-ready LIVE kandidáty: **0**
 - persisted LIVE feed delta: **0**, zostáva **50**
 - nové unique verification kandidáty: **0**
-- nový relevantný non-LIVE discovery: **Upwork Ecommerce VA – Shopify/Etsy/WooCommerce**, vyradené pre extrémne nízky fixed budget a expert multi-platform scope
-- inactive/skill reject: **LinkedIn/Twine restaurant-site maintenance**
-- language/skill hold: **WPMU DEV fluent English + PHP/HTML/CSS/MySQL; Kariera Executive Support Specialist B2**
+- nové relevantné non-LIVE discovery: **DEV-HA GLOBAL — Operátor zákazníckej podpory**, vyradené z promotion pre 1 000 EUR a VŠ I. stupňa; **DENIMA — všeobecná administratíva**, language mismatch
+- inactive reject: **Shield-Sk e-shop admin**
+- language/skill holds: **TalentPop fluent German+English; SupportYourApp English B2; WPMU DEV fluent English + PHP/HTML/CSS/MySQL**
 - Facebook verified hits: **0**
 - persisted LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 21:21, commit `7c4de870827b4f1181de487c1cf3f9dcf1c46f0a`
-- `source-audit.json`: čerstvý audit sa nepodarilo bezpečne persisted zapísať; konektor poskytuje iba full-file replacement a aktuálny obsah obsahuje 72-položkovú verification queue. FAIL-CLOSED zabránil neúplnej rekonštrukcii alebo strate queue. Posledný lossless persisted audit preto zostáva na 13:31.
+- `job-sources.json`: aktualizovaný na 22:17, commit `843bce8398db3d35470be16c5a706ba069f91f41`
+- `source-audit.json`: čerstvý audit sa opäť nepodarilo bezpečne persisted zapísať; konektor poskytuje iba full-file replacement a aktuálny obsah obsahuje 72-položkovú verification queue. FAIL-CLOSED zabránil neúplnej rekonštrukcii alebo strate queue. Posledný lossless persisted audit zostáva na 13:31.
 - `jobs-data.json`: bez zmeny; nevznikla nová bezpečná LIVE promotion.
 
 ## Rozvojový backlog
@@ -218,17 +220,5 @@ Aktualizované: 7. 9. 2026 21:21 CEST
 - Source-audit lossless patch precondition.
 - Rediscovered-result no-op classifier.
 - Platform application-cost payback estimator.
-- Troubleshooting-scope evidence ladder.
-- Freelance client-history confidence band.
-- Catalogue-work unit-cost estimator.
-- Verification persistence debt counter.
-- Listing-city vs actual-workplace disambiguator.
-- Accounting-light vs professional-accounting scope classifier.
-- Run-scoped source evidence digest.
-- Verification blocker coverage report.
-- Source-audit freshness skew alarm.
-- Promotion-ready canonical recheck scheduler.
-- **Remote sales load × schedule penalty** — samostatne boduje kombináciu intenzívneho telefonického predaja, dvojzmennej prevádzky a víkendov; zabráni tomu, aby čistý `remote-ok` signál umelo vytlačil sales-heavy call-centre rolu nad kvalitnejší back-office/support fit.
-- **Source-audit queue snapshot sidecar checksum** — pred každým full-file audit replacementom overí počet queue položiek, stabilné ID a hash serializovaného snapshotu; write sa povolí iba pri 1:1 zachovaní queue, čím sa odstráni persistence blocker bez zásahu do zamknutého UI.
-- **Fixed-price scope-to-budget hard floor** — pri freelance zákazke vypočíta minimálny realistický čas z počtu platforiem, katalógových operácií, SEO krokov a QA; ak fixed budget nedosiahne ani minimálnu efektívnu hodinovku, kandidát sa zahodí ešte pred verification queue. Dnešný 15 USD Shopify/Etsy/WooCommerce hit je presný príklad.
-- **Cross-platform proof burden gate** — rozlišuje jednoduchú administráciu jedného CMS od požiadavky na preukázanú prax naprieč Shopify/Etsy/WooCommerce + SEO/CSV. Znižuje false-positive skóre pri ponukách, ktoré znejú administratívne, ale v skutočnosti vyžadujú širšie portfólio dôkazov.
+- **Qualification-cost floor:** automaticky znížiť prioritu lokálnych rolí, kde povinné formálne vzdelanie/prerekvizity sú neúmerné ponúkanej mzde a existujú lepšie alternatívy v rovnakom tracku.
+- **Audit-persistence lag watchdog:** merať rozdiel medzi `job-sources.lastAuditAt` a `source-audit.updatedAt`; pri prekročení SLA označiť audit ako stale a blokovať tvrdenie, že source audit je čerstvo persisted.
