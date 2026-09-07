@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 7. 9. 2026 00:59 CEST
+Aktualizované: 7. 9. 2026 02:02 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,14 +38,15 @@ Aktualizované: 7. 9. 2026 00:59 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 00:59
+### Čerstvé zistenia 02:02
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- Upwork sweep znovu našiel verejne indexované WordPress maintenance/fix roly, ale čerstvé výsledky boli buď už evidované vo verification, staršie, nízko platené, s vysokou konkurenciou alebo s hard English/PHP požiadavkami. Bez unique LIVE promotion.
-- Reddit public index vrátil WordPress hiring príspevky, ale relevantný hiring je explicitne **US-only**, preto `reject-distance`/country restriction a 0 vhodných nových kandidátov pre Slovensko.
+- Upwork má nový Worldwide projekt **WordPress / Elementor / Woo Development / Website Redevelopment**. Nie je to ground-up build, ale vyžaduje preukázané WordPress + Elementor + WooCommerce + ACF skúsenosti, porovnateľné portfólio a má 50+ proposals; preto bez LIVE promotion.
+- Dve ďalšie WordPress maintenance ponuky s veľmi dobrým obsahovým fitom sú explicitne **U.S. located freelancers only**, preto ich tvrdý lokalitný gate vyradil napriek remote označeniu.
+- Kariera/Zoznam verejný index ukázal čerstvé BA výsledky, ale bez novej promotion-grade zhody po rankingu.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 7. 9. 2026 00:59
+## Source audit — 7. 9. 2026 02:02
 - Profesia: `checked`; bez novej unique promotion-grade delty.
 - Priame company careers: `checked`; bez novej suitable unique delty.
 - LinkedIn Jobs: `limited`; verejná indexácia preverená, bez novej vhodnej unique promotion.
@@ -53,20 +54,21 @@ Aktualizované: 7. 9. 2026 00:59 CEST
 - Kariera/Zoznam: `checked`; bez novej suitable unique promotion-grade BA delty.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
 - Tech/creative: `checked`; bez novej A2-friendly promotion-grade zhody.
-- Upwork/freelance: `checked`; verejne indexované WordPress/WooCommerce maintenance výsledky sú staršie/už evidované alebo majú language/hard-skill/low-rate/competition blocker; 0 LIVE promotion.
-- Reddit/komunity: `limited`; zobrazený hiring je US-only alebo starší, bez nového vhodného dopytu.
+- Upwork/freelance: `ok`; 3 relevantné detailne preverené výsledky — 1 Worldwide kandidát vyradený pre ACF/portfolio/50+ proposals a 2 U.S.-only vyradené lokalitným gateom; 0 LIVE promotion.
+- Reddit/komunity: `limited`; bez nového vhodného konkrétneho hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 00:59
+### Audit počty 02:02
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - nové unique verification kandidáty: **0**
 - verification queue: **70 položiek**, bez straty
+- freelance relevant hits: **3**, z toho 2 vyradené lokalitou a 1 skill/competition fitom
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 00:59
-- `source-audit.json`: zápis v tomto behu zostáva blokovaný bezpečným full-file preservation gateom; starý audit 00:11 ostáva autoritatívny, kým nebude možné vykonať lossless replacement.
+- `job-sources.json`: aktualizovaný na 02:02
+- `jobs-data.json`: bez zmeny; nevznikla bezpečná LIVE promotion
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -209,3 +211,5 @@ Aktualizované: 7. 9. 2026 00:59 CEST
 - **Skill-exposure cap for PHP-warning fixes** — pri microfix zákazkách automaticky rozlíšiť diagnostiku bežných warningov/plugin konfliktov od custom PHP developmentu; promotion povoliť iba ak požadovaná kódová vrstva zostane pod bezpečným skill-exposure limitom a existuje rollback/backup cesta.
 - **Source-audit lossless patch precondition** — pred každým zápisom `source-audit.json` vypočítať očakávaný počet verification položiek + checksum identifikátorov a zápis povoliť iba pri 100 % zhode; rieši aktuálne riziko full-file replacementu bez atomického patchu.
 - **Rediscovered-result no-op classifier** — výsledky, ktoré sú už vo verification/LIVE a nezmenili budget, activity, location alebo requirements, označiť ako no-op bez ďalšieho rastu queue; znižuje šum a zbytočné zápisy pri hodinových behoch.
+- **Platform application-cost payback estimator** — ku každému freelance leadu počítať očakávanú návratnosť po odrátaní platformových poplatkov, connect/bid nákladov, odhadovaného času na proposal a pravdepodobnosti úspechu; pomôže neplytvať časom na ekonomicky slabé microjoby.
+- **No-delta source escalation policy** — ak source family po viacerých po sebe idúcich behoch neprinesie žiadnu novú unique deltu, automaticky rotovať dotazy, meniť podkategórie/pagináciu a až potom označiť rodinu za nízkovýnosnú; zvyšuje coverage bez falošného reportovania úspechu.
