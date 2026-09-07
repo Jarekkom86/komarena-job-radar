@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 7. 9. 2026 13:31 CEST
+Aktualizované: 7. 9. 2026 15:00 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,42 +38,38 @@ Aktualizované: 7. 9. 2026 13:31 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 13:31
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork/Twine, Reddit/komunity a Facebook public index.
-- **Žiadna nová bezpečná LIVE promotion ani nový unique verification add.** LIVE feed zostáva 50 a verification queue zostáva 72.
-- LinkedIn/Twine priniesol verejne indexovaný `Freelance Web Developer – Restaurant Site Maintenance`, ale canonical stránka explicitne uvádza **No longer accepting applications**. Zároveň ide o custom-built web bez WordPress/Shopify a vyžaduje HTML/CSS/JavaScript + backend frameworks, preto je to inactive + hard-dev reject, nie kandidát.
-- Kariera/Zoznam znovu ukázala `Executive Support Specialist` v Bratislave za 1 500–1 600 EUR/mes.; ide o už evidovaný verification záznam a AJ B2 ostáva výrazný language hold, takže bez novej delty.
-- WordPress Jobs stále uvádza **11 open positions**. WPMU DEV Sales Support a Technical Support sú remote, ale jazykový/technický gate sa nemení.
-- Upwork `WordPress Product Image Upload` zostáva high-fit verification: Worldwide remote, 10–20 USD/h, ale 50+ proposals a 1 hire. `WooCommerce Product Upload Expert Needed – 50 Products` je Worldwide remote, ale 50 USD fixed, 20–50 proposals a už 1 hire znamenajú slabú efektívnu hodnotu.
+### Čerstvé zistenia 15:00
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
+- **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50.
+- Nový unique verification kandidát: `WordPress / Elementor Expert Needed for Website Design Adjustments & Troubleshooting` na Upwork. Worldwide remote, intermediate, 1–3 mesiace, menej než 30 h/týždeň, odhadovaný budget 200–300 USD, 20–50 proposals, 0 interviewing. Scope je WordPress/Elementor design adjustments a troubleshooting; bez explicitného PHP/MySQL hard gate. Klientský účet je nový z 15.5.2026, 100 USD spend, 1 hire/1 active, preto bez automatickej LIVE promotion.
+- Upwork `WordPress Product Image Upload` zostáva high-fit verification: Worldwide remote, 10–20 USD/h, ale 50+ proposals a 1 hire.
+- Worki/Kariera/Brigada/Pretlak/StartupJobs/WordPress Jobs/LinkedIn public discovery nepriniesli novú vhodnú unique LIVE deltu.
 - Reddit/komunity: bez nového verejne overiteľného hiring dopytu vhodného pre profil.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 7. 9. 2026 13:31
+## Source audit — 7. 9. 2026 15:00
 - Profesia: `checked`; bez novej unique promotion-grade delty.
 - Priame company careers: `checked`; bez novej vhodnej unique BA/remote promotion-grade delty.
-- LinkedIn Jobs: `limited`; 1 verejne overený hit, ale inactive + custom-web hard-dev reject; 0 promotion.
+- LinkedIn Jobs: `limited`; bez novej vhodnej unique delty.
 - Worki: `checked`; bez novej vhodnej unique delty.
-- Kariera/Zoznam: `checked`; 1 rediscovery duplicate s AJ B2 hold; 0 promotion.
+- Kariera/Zoznam: `checked`; bez novej suitable unique delty.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
-- Tech/creative: `ok`; WordPress Jobs 11 otvorených rolí, 2 relevantné support pozície vyradené pre language/technical gate; Pretlak/StartupJobs bez vhodnej unique delty.
-- Freelance: `ok`; 3 relevantné výsledky preverené, 2 rediscovery/low-value, 0 nový verification add a 0 LIVE promotion.
+- Tech/creative: `checked`; Pretlak/StartupJobs/WordPress Jobs bez novej vhodnej non-hard-dev promotion.
+- Freelance/Upwork: `ok`; 1 nový unique verification kandidát, 0 LIVE promotion.
 - Reddit/komunity: `limited`; bez nového vhodného verejne overiteľného hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 13:31
+### Audit počty 15:00
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- nové unique verification kandidáty: **0**
-- verification queue: **72 položiek**, bez straty
-- LinkedIn/Twine: **1 hit**, `rejectedInactive: 1`
-- Kariera: **1 rediscovery**, `rejectedLanguage: 1`, `rejectedDuplicate: 1`
-- Upwork/freelance relevant reviewed hits: **3**, 0 nový add
-- WordPress Jobs relevant support hits: **2**, oba language/skill reject
+- nové unique verification kandidáty: **1**
+- verification queue: cieľ **73 položiek** po bezpečnom source-audit zápise
+- Upwork/freelance: **1 nový unique verification add**, 0 LIVE promotion
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 13:31
-- `source-audit.json`: aktualizovaný na 13:31, verification queue zachovaná na 72
+- `job-sources.json`: aktualizovaný na 15:00
+- `source-audit.json`: čaká na bezpečný lossless zápis; aktuálny veľký verification payload sa nesmie prepísať bez úplnej rekonštrukcie
 - `jobs-data.json`: bez zmeny; nevznikla bezpečná LIVE promotion
 
 ## Rozvojový backlog
@@ -218,18 +214,5 @@ Aktualizované: 7. 9. 2026 13:31 CEST
 - Source-audit lossless patch precondition.
 - Rediscovered-result no-op classifier.
 - Platform application-cost payback estimator.
-- No-delta source escalation policy.
-- **Inactive-result canonical tombstone propagation** — keď canonical detail explicitne uvádza „no longer accepting applications“, uložiť tombstone fingerprint a pri ďalších behoch automaticky potlačiť všetky mirror/sibling index výsledky tej istej pozície; šetrí opakované otváranie neaktívnych leadov a znižuje false freshness.
-- **Skill-ceiling early abort for custom-web maintenance** — pri maintenance leadroch bez CMS najprv vyhodnotiť podiel backend/custom-framework požiadaviek; ak prekročí bezpečný hard-dev limit, audit má skončiť po canonical overení bez drahého detailného rankingu a bez rastu verification queue.
-- **Disjunctive language alternative parser** — rozoznať požiadavky typu „plynulá angličtina ALEBO nemčina“ od kumulatívnych požiadaviek a osobitne vyhodnotiť, či aspoň jedna jazyková alternatíva sedí profilu; zabráni chybnému dvojitému language penalty a zrýchli canonical screening.
-- **Multi-location role cluster + nearest-branch selector** — zoskupiť rovnakú rolu firmy publikovanú pre viac pobočiek/lokalít, zachovať jeden canonical cluster a pre ranking automaticky preferovať najbližšiu BA-area variantu; znižuje duplicitné verification záznamy a zlepšuje praktický commute fit.
-- **Infrastructure-troubleshooting scope gate** — pri WordPress/WooCommerce leadroch oddeliť bežnú CMS údržbu od DNS/SSL/WAF/CDN/server/security diagnostiky a automaticky znížiť promotion confidence, ak infra vrstva prekročí preukázaný skill ceiling; chráni pred zákazkami, ktoré navonok vyzerajú ako WordPress maintenance, ale reálne sú DevOps/security incident.
-- **Milestone-first feasibility scorer** — pri fixed-price zákazkách vyhodnotiť prvý platený milestone samostatne od celého projektu (scope, riziko, dôkaz skúsenosti, efektívna hodinovka a rollback riziko); umožní rýchlo rozlíšiť zákazky, kde je prvý krok bezpečne zvládnuteľný, od projektov s atraktívnym celkovým budgetom, ale neprimerane rizikovým vstupným milestone.
-- **Canonical-detail insufficiency quarantine** — ak verejný index ukáže čerstvú rolu, ale nie je dostupný canonical detail s minimálnou sadou `location + remote mode + language + core requirements + active state`, výsledok sa nesmie tváriť ako plnohodnotný verification kandidát; uloží sa len discovery fingerprint s TTL a opätovným pokusom.
-- **Microjob value-collapse detector** — pri freelance ponukách automaticky kombinovať fixed budget, explicitný deadline/časový tlak, počet proposals/interviews a požadovaný seniority label; ak efektívna hodnota padne pod nastavený prah, lead sa ukončí už v discovery fáze bez ďalšieho detailného rankingu.
-- **Rediscovery age-vs-competition decay** — pri leadroch, ktoré sa objavujú opakovane bez zmeny scope, automaticky znižovať prioritu podľa veku listingu a rastu proposals/interviews; zabráni tomu, aby starší high-fit freelance lead opakovane zaberali discovery kapacitu bez rastúcej šance na úspech.
-- **Source-family evidence budget allocator** — po každom behu prerozdeliť nasledujúci discovery budget podľa úspešnosti source family: viac dotazov zdrojom s čerstvými promotion/verification hitmi, menej opakovaným zero-yield rodinám, pri zachovaní povinného minima 8 families / 5 non-Profesia; zvyšuje coverage bez porušenia diverzity.
-- **Multi-hire residual-opportunity classifier** — pri freelance leadroch, kde už `Hires > 0`, rozlíšiť či je zákazka fakticky obsadená alebo klient stále naberá viac ľudí/udržiava ongoing kapacitu; kombinovať počet hires, aktívne kontrakty, text scope, posledné zobrazenie a počet openings. Zníži falošné vyradenie silných leadov aj zbytočné reakcie na už uzavretú potrebu.
-- **Task-reversibility promotion threshold** — rozdeliť zásahy podľa blast-radius: reverzibilné CMS/admin úlohy (produktové obrázky, alt text, obsah, kategórie) môžu mať nižší verification burden, zatiaľ čo DNS, platby, produkčný deployment, security alebo databázové zásahy vyžadujú vyššiu dôkazovú latku. Zrýchli promotion bezpečných praktických zákaziek bez znižovania fail-closed ochrany.
-- **Canonical closed-state suppressor across source families** — ak primary/canonical detail jednoznačne potvrdí uzavretú ponuku, uložiť canonical URL + title/company fingerprint a počas TTL ho uplatniť aj na LinkedIn/Twine/jobboard rediscovery; zníži opakované otváranie už uzavretých zákaziek a šetrí discovery budget.
-- **Rediscovery requirement-delta trigger** — pri už evidovanom verification kandidátovi porovnať nový canonical snapshot s posledným snapshotom a znovu ho plne rankovať iba pri materiálnej zmene: jazyk, odmena, remote režim, scope, počet hires/proposals alebo active state. No-change rediscovery ostane lacný no-op bez rastu queue.
+- **Troubleshooting-scope evidence ladder** — rozlíšiť vizuálny/Elementor troubleshooting od plugin/PHP/server zásahov ešte pred promotion, aby sa maintenance projekty nepenalizovali rovnako ako hard-dev incidenty.
+- **Freelance client-history confidence band** — explicitne kombinovať vek účtu, spend, hires, active contracts a proposal pressure do jedného confidence pásma pre rýchlejšie rozhodnutie APPLY / VERIFY / SKIP.
