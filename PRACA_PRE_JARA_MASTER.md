@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 7. 9. 2026 03:11 CEST
+Aktualizované: 7. 9. 2026 06:13 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,38 +38,41 @@ Aktualizované: 7. 9. 2026 03:11 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 03:11
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress tech-creative, freelance/Upwork/Twine, Reddit/komunity a Facebook public index.
+### Čerstvé zistenia 06:13
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- LinkedIn verejný index našiel konkrétny **Twine – Freelance Web Developer – Restaurant Site Maintenance** pre EEA s možným long-term remote engagement, ale detail už uvádza **No longer accepting applications**. Navyše ide o custom-built web bez WordPress/Shopify a vyžaduje HTML/CSS/JavaScript + backend frameworks; preto rejectInactive a hard-skill mismatch, bez verification/LIVE promotion.
-- WordPress Jobs má aktuálne **11 otvorených pozícií**. Remote WPMU DEV support rola vyžaduje fluent English a PHP/MySQL/HTML/CSS, teda language + hard-skill mismatch pre aktuálny profil; senior maintenance role ostávajú nad bezpečným skill ceilingom.
-- Worki, Kariera/Zoznam, Brigada.sk a Profesia boli reálne prehľadané bez novej unique promotion-grade BA/remote zhody.
+- Priamy Lidl careers canonical potvrdil **Referent oddelenia Účtovania tovaru, Bratislava, 1 650 EUR**. Obsahovo ide o administratívu/faktúry/ERP a lokalita prechádza, ale požiadavka je plynulá angličtina alebo nemčina; pre aktuálny jazykový profil preto nejde do LIVE.
+- WordPress Jobs má aktuálne **11 otvorených pozícií**. Remote WPMU DEV support vyžaduje fluent English a PHP/MySQL/HTML/CSS, teda language + hard-skill mismatch.
+- Upwork priniesol čerstvý **WordPress Website Developer Needed**, Worldwide remote, intermediate, 10–15 proposals, ale len 50 USD fixed a nový klient bez histórie; nízka hodnota a short full-build scope, preto bez LIVE a bez rastu verification queue.
+- Worki, Brigada.sk, Pretlak a StartupJobs boli reálne prehľadané bez novej suitable unique delty.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 7. 9. 2026 03:11
+## Source audit — 7. 9. 2026 06:13
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `checked`; bez novej suitable unique delty.
-- LinkedIn Jobs: `limited`; 1 konkrétny Twine maintenance hit, 1 rejectedInactive, 0 promotion.
+- Priame company careers: `ok`; 1 relevantný Lidl hit, 1 rejectedLanguage, 0 promotion.
+- LinkedIn Jobs: `limited`; bez novej suitable unique BA/remote delty.
 - Worki: `checked`; bez novej vhodnej unique delty.
-- Kariera/Zoznam: `checked`; bez novej suitable unique promotion-grade BA delty.
+- Kariera/Zoznam: `ok`; 1 relevantný Lidl mirror/canonical-confirmed hit, 1 rejectedLanguage, 0 promotion.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
-- Tech/creative: `ok`; WordPress Jobs 11 open positions, 1 language/hard-skill reject a 1 rediscovered senior/known no-op, 0 LIVE promotion.
-- Freelance: `checked`; bez novej unique Worldwide WordPress/WooCommerce promotion-grade delty; Twine hit bol inactive.
+- Tech/creative: `ok`; WordPress Jobs 11 open positions, 1 language/hard-skill reject, 0 LIVE promotion.
+- Freelance: `ok`; 1 čerstvý relevantný Upwork hit, ale 50 USD/new-client/short-build value gate; 0 promotion.
 - Reddit/komunity: `limited`; bez nového vhodného konkrétneho hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 03:11
+### Audit počty 06:13
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - nové unique verification kandidáty: **0**
 - verification queue: **70 položiek**, bez straty
-- LinkedIn relevant hits: **1**, z toho 1 rejectedInactive
-- WordPress Jobs relevant reviewed hits: **2**, z toho 1 language/hard-skill reject a 1 duplicate/known no-op
+- company-careers relevant hits: **1**, z toho 1 rejectedLanguage
+- Kariera relevant hits: **1**, z toho 1 rejectedLanguage
+- WordPress Jobs relevant reviewed hits: **1**, language/hard-skill reject
+- Upwork relevant hits: **1**, value-gate no-op
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 03:11
-- `source-audit.json`: aktualizovaný na 03:11, verification queue zachovaná na 70
+- `job-sources.json`: aktualizovaný na 06:13
+- `source-audit.json`: aktualizovaný na 06:13, verification queue zachovaná na 70
 - `jobs-data.json`: bez zmeny; nevznikla bezpečná LIVE promotion
 
 ## Rozvojový backlog
@@ -217,3 +220,5 @@ Aktualizované: 7. 9. 2026 03:11 CEST
 - No-delta source escalation policy.
 - **Inactive-result canonical tombstone propagation** — keď canonical detail explicitne uvádza „no longer accepting applications“, uložiť tombstone fingerprint a pri ďalších behoch automaticky potlačiť všetky mirror/sibling index výsledky tej istej pozície; šetrí opakované otváranie neaktívnych leadov a znižuje false freshness.
 - **Skill-ceiling early abort for custom-web maintenance** — pri maintenance leadroch bez CMS najprv vyhodnotiť podiel backend/custom-framework požiadaviek; ak prekročí bezpečný hard-dev limit, audit má skončiť po canonical overení bez drahého detailného rankingu a bez rastu verification queue.
+- **Disjunctive language alternative parser** — rozoznať požiadavky typu „plynulá angličtina ALEBO nemčina“ od kumulatívnych požiadaviek a osobitne vyhodnotiť, či aspoň jedna jazyková alternatíva sedí profilu; zabráni chybnému dvojitému language penalty a zrýchli canonical screening.
+- **Multi-location role cluster + nearest-branch selector** — zoskupiť rovnakú rolu firmy publikovanú pre viac pobočiek/lokalít, zachovať jeden canonical cluster a pre ranking automaticky preferovať najbližšiu BA-area variantu; znižuje duplicitné verification záznamy a zlepšuje praktický commute fit.
