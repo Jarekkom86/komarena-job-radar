@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 7. 9. 2026 15:00 CEST
+Aktualizované: 7. 9. 2026 15:43 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,37 +38,39 @@ Aktualizované: 7. 9. 2026 15:00 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 15:00
+### Čerstvé zistenia 15:43
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50.
-- Nový unique verification kandidát: `WordPress / Elementor Expert Needed for Website Design Adjustments & Troubleshooting` na Upwork. Worldwide remote, intermediate, 1–3 mesiace, menej než 30 h/týždeň, odhadovaný budget 200–300 USD, 20–50 proposals, 0 interviewing. Scope je WordPress/Elementor design adjustments a troubleshooting; bez explicitného PHP/MySQL hard gate. Klientský účet je nový z 15.5.2026, 100 USD spend, 1 hire/1 active, preto bez automatickej LIVE promotion.
-- Upwork `WordPress Product Image Upload` zostáva high-fit verification: Worldwide remote, 10–20 USD/h, ale 50+ proposals a 1 hire.
-- Worki/Kariera/Brigada/Pretlak/StartupJobs/WordPress Jobs/LinkedIn public discovery nepriniesli novú vhodnú unique LIVE deltu.
+- Nový unique verification kandidát: `Product Image Research & Preparation Specialist – WooCommerce Skincare Store` na Upwork. Worldwide remote, ongoing project, intermediate, 100 USD fixed. Scope: 100+ WooCommerce produktov, stovky obrázkov, produkt/image matching, Google Sheets, resize/crop na 1600×1600, dedupe a finálne QA. Obsahovo veľmi silný e-commerce fit a bez hard developmentu, ale fixný budget 100 USD je nízky vzhľadom na rozsah; preto bez automatickej LIVE promotion.
+- Upwork `Data Entry Specialist for WooCommerce` bol tiež preverený: Worldwide remote, WordPress/WooCommerce + Excel/CSV, 35 USD fixed, 20–50 proposals; vhodný obsahovo, ale nízka hodnota a proposal pressure, preto bez promotion.
+- Predošlý pending verification kandidát `WordPress / Elementor Expert Needed for Website Design Adjustments & Troubleshooting` stále čaká na lossless persistence do `source-audit.json`.
+- Kariera priniesla čerstvé BA výsledky, ale žiadny neprekonal aktuálny ranking profil na bezpečnú LIVE promotion.
+- WordPress Jobs stále uvádza 11 otvorených pozícií; aktuálny WPMU DEV support vyžaduje PHP/HTML/CSS/MySQL a presahuje hard-skill ceiling.
 - Reddit/komunity: bez nového verejne overiteľného hiring dopytu vhodného pre profil.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 7. 9. 2026 15:00
+## Source audit — 7. 9. 2026 15:43
 - Profesia: `checked`; bez novej unique promotion-grade delty.
 - Priame company careers: `checked`; bez novej vhodnej unique BA/remote promotion-grade delty.
 - LinkedIn Jobs: `limited`; bez novej vhodnej unique delty.
 - Worki: `checked`; bez novej vhodnej unique delty.
-- Kariera/Zoznam: `checked`; bez novej suitable unique delty.
+- Kariera/Zoznam: `checked`; nové BA výsledky, ale bez suitable unique LIVE delty.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
-- Tech/creative: `checked`; Pretlak/StartupJobs/WordPress Jobs bez novej vhodnej non-hard-dev promotion.
-- Freelance/Upwork: `ok`; 1 nový unique verification kandidát, 0 LIVE promotion.
+- Tech/creative: `ok`; WordPress Jobs má 11 otvorených pozícií, ale relevantný support hit je language/technical mismatch.
+- Freelance/Upwork: `ok`; 1 nový unique verification kandidát, ďalší low-value WooCommerce data-entry hit; 0 LIVE promotion.
 - Reddit/komunity: `limited`; bez nového vhodného verejne overiteľného hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 15:00
+### Audit počty 15:43
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- nové unique verification kandidáty: **1**
-- verification queue: cieľ **73 položiek** po bezpečnom source-audit zápise
-- Upwork/freelance: **1 nový unique verification add**, 0 LIVE promotion
+- nové unique verification kandidáty v tomto behu: **1**
+- verification queue: aktuálne persisted **72**, cieľ **74 položiek** po bezpečnom source-audit zápise dvoch pending unique kandidátov
+- Upwork/freelance: **1 nový unique verification add pending**, 0 LIVE promotion
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 15:00
+- `job-sources.json`: aktualizovaný na 15:43
 - `source-audit.json`: čaká na bezpečný lossless zápis; aktuálny veľký verification payload sa nesmie prepísať bez úplnej rekonštrukcie
 - `jobs-data.json`: bez zmeny; nevznikla bezpečná LIVE promotion
 
@@ -214,5 +216,7 @@ Aktualizované: 7. 9. 2026 15:00 CEST
 - Source-audit lossless patch precondition.
 - Rediscovered-result no-op classifier.
 - Platform application-cost payback estimator.
-- **Troubleshooting-scope evidence ladder** — rozlíšiť vizuálny/Elementor troubleshooting od plugin/PHP/server zásahov ešte pred promotion, aby sa maintenance projekty nepenalizovali rovnako ako hard-dev incidenty.
-- **Freelance client-history confidence band** — explicitne kombinovať vek účtu, spend, hires, active contracts a proposal pressure do jedného confidence pásma pre rýchlejšie rozhodnutie APPLY / VERIFY / SKIP.
+- Troubleshooting-scope evidence ladder.
+- Freelance client-history confidence band.
+- **Catalogue-work unit-cost estimator** — prepočíta fixed-price e-commerce zákazky na odhad EUR/USD za produkt a za obrázok podľa deklarovaného objemu; nízke jednotkové sadzby automaticky držať vo VERIFY/SKIP aj pri vysokej skill zhode.
+- **Verification persistence debt counter** — explicitne počíta unique kandidátov nájdených v discovery, ktorí ešte nie sú lossless zapísaní v `source-audit.json`; pri dlhu >0 zvýši prioritu bezpečného audit merge pred ďalším rastom queue.
