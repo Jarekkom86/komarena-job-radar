@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 7. 9. 2026 02:02 CEST
+Aktualizované: 7. 9. 2026 03:11 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,36 +38,38 @@ Aktualizované: 7. 9. 2026 02:02 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 02:02
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress tech-creative, Upwork/freelance, Reddit/komunity a Facebook public index.
+### Čerstvé zistenia 03:11
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/WordPress tech-creative, freelance/Upwork/Twine, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- Upwork má nový Worldwide projekt **WordPress / Elementor / Woo Development / Website Redevelopment**. Nie je to ground-up build, ale vyžaduje preukázané WordPress + Elementor + WooCommerce + ACF skúsenosti, porovnateľné portfólio a má 50+ proposals; preto bez LIVE promotion.
-- Dve ďalšie WordPress maintenance ponuky s veľmi dobrým obsahovým fitom sú explicitne **U.S. located freelancers only**, preto ich tvrdý lokalitný gate vyradil napriek remote označeniu.
-- Kariera/Zoznam verejný index ukázal čerstvé BA výsledky, ale bez novej promotion-grade zhody po rankingu.
+- LinkedIn verejný index našiel konkrétny **Twine – Freelance Web Developer – Restaurant Site Maintenance** pre EEA s možným long-term remote engagement, ale detail už uvádza **No longer accepting applications**. Navyše ide o custom-built web bez WordPress/Shopify a vyžaduje HTML/CSS/JavaScript + backend frameworks; preto rejectInactive a hard-skill mismatch, bez verification/LIVE promotion.
+- WordPress Jobs má aktuálne **11 otvorených pozícií**. Remote WPMU DEV support rola vyžaduje fluent English a PHP/MySQL/HTML/CSS, teda language + hard-skill mismatch pre aktuálny profil; senior maintenance role ostávajú nad bezpečným skill ceilingom.
+- Worki, Kariera/Zoznam, Brigada.sk a Profesia boli reálne prehľadané bez novej unique promotion-grade BA/remote zhody.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 7. 9. 2026 02:02
+## Source audit — 7. 9. 2026 03:11
 - Profesia: `checked`; bez novej unique promotion-grade delty.
 - Priame company careers: `checked`; bez novej suitable unique delty.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez novej vhodnej unique promotion.
+- LinkedIn Jobs: `limited`; 1 konkrétny Twine maintenance hit, 1 rejectedInactive, 0 promotion.
 - Worki: `checked`; bez novej vhodnej unique delty.
 - Kariera/Zoznam: `checked`; bez novej suitable unique promotion-grade BA delty.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
-- Tech/creative: `checked`; bez novej A2-friendly promotion-grade zhody.
-- Upwork/freelance: `ok`; 3 relevantné detailne preverené výsledky — 1 Worldwide kandidát vyradený pre ACF/portfolio/50+ proposals a 2 U.S.-only vyradené lokalitným gateom; 0 LIVE promotion.
+- Tech/creative: `ok`; WordPress Jobs 11 open positions, 1 language/hard-skill reject a 1 rediscovered senior/known no-op, 0 LIVE promotion.
+- Freelance: `checked`; bez novej unique Worldwide WordPress/WooCommerce promotion-grade delty; Twine hit bol inactive.
 - Reddit/komunity: `limited`; bez nového vhodného konkrétneho hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 02:02
+### Audit počty 03:11
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - nové unique verification kandidáty: **0**
 - verification queue: **70 položiek**, bez straty
-- freelance relevant hits: **3**, z toho 2 vyradené lokalitou a 1 skill/competition fitom
+- LinkedIn relevant hits: **1**, z toho 1 rejectedInactive
+- WordPress Jobs relevant reviewed hits: **2**, z toho 1 language/hard-skill reject a 1 duplicate/known no-op
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 02:02
+- `job-sources.json`: aktualizovaný na 03:11
+- `source-audit.json`: aktualizovaný na 03:11, verification queue zachovaná na 70
 - `jobs-data.json`: bez zmeny; nevznikla bezpečná LIVE promotion
 
 ## Rozvojový backlog
@@ -207,9 +209,11 @@ Aktualizované: 7. 9. 2026 02:02 CEST
 - Theme-builder portability score.
 - Rejected-skill fingerprint cache.
 - Rediscovery-only source write minimizer.
-- **Established-client microjob trust bonus with budget floor** — pri malých WordPress fixoch oddeliť dôveryhodnosť klienta (spend, hires, hours) od ekonomickej atraktivity tasku; silná história môže zvýšiť šancu úspešného kontraktu, ale nikdy nesmie sama prekonať minimálny effective-rate/budget floor.
-- **Skill-exposure cap for PHP-warning fixes** — pri microfix zákazkách automaticky rozlíšiť diagnostiku bežných warningov/plugin konfliktov od custom PHP developmentu; promotion povoliť iba ak požadovaná kódová vrstva zostane pod bezpečným skill-exposure limitom a existuje rollback/backup cesta.
-- **Source-audit lossless patch precondition** — pred každým zápisom `source-audit.json` vypočítať očakávaný počet verification položiek + checksum identifikátorov a zápis povoliť iba pri 100 % zhode; rieši aktuálne riziko full-file replacementu bez atomického patchu.
-- **Rediscovered-result no-op classifier** — výsledky, ktoré sú už vo verification/LIVE a nezmenili budget, activity, location alebo requirements, označiť ako no-op bez ďalšieho rastu queue; znižuje šum a zbytočné zápisy pri hodinových behoch.
-- **Platform application-cost payback estimator** — ku každému freelance leadu počítať očakávanú návratnosť po odrátaní platformových poplatkov, connect/bid nákladov, odhadovaného času na proposal a pravdepodobnosti úspechu; pomôže neplytvať časom na ekonomicky slabé microjoby.
-- **No-delta source escalation policy** — ak source family po viacerých po sebe idúcich behoch neprinesie žiadnu novú unique deltu, automaticky rotovať dotazy, meniť podkategórie/pagináciu a až potom označiť rodinu za nízkovýnosnú; zvyšuje coverage bez falošného reportovania úspechu.
+- Established-client microjob trust bonus with budget floor.
+- Skill-exposure cap for PHP-warning fixes.
+- Source-audit lossless patch precondition.
+- Rediscovered-result no-op classifier.
+- Platform application-cost payback estimator.
+- No-delta source escalation policy.
+- **Inactive-result canonical tombstone propagation** — keď canonical detail explicitne uvádza „no longer accepting applications“, uložiť tombstone fingerprint a pri ďalších behoch automaticky potlačiť všetky mirror/sibling index výsledky tej istej pozície; šetrí opakované otváranie neaktívnych leadov a znižuje false freshness.
+- **Skill-ceiling early abort for custom-web maintenance** — pri maintenance leadroch bez CMS najprv vyhodnotiť podiel backend/custom-framework požiadaviek; ak prekročí bezpečný hard-dev limit, audit má skončiť po canonical overení bez drahého detailného rankingu a bez rastu verification queue.
