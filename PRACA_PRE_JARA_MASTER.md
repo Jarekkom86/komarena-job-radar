@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 7. 9. 2026 22:17 CEST
+Aktualizované: 7. 9. 2026 23:38 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -33,50 +33,48 @@ Aktualizované: 7. 9. 2026 22:17 CEST
 - Agregátor/repost nesmie prebiť priamy firemný zdroj.
 
 ## Aktuálny stav LIVE
-- Autoritatívny feed má **50 LIVE položiek**; v tomto behu nebol `jobs-data.json` prepísaný, pretože nevznikla nová bezpečná LIVE promotion.
+- Autoritatívny feed má **50 LIVE položiek**; v tomto behu nebol `jobs-data.json` prepísaný, pretože konektor ponúka iba full-file replacement a bezpečný lossless merge veľkého LIVE payloadu nebol v tomto behu garantovaný.
 - LIVE mix: **Profesia 24/50 = 48,0 %**, mimo Profesia **26/50 = 52,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná persisted LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
+- **Nový promotion-ready kandidát:** NAY a.s. — Reklamačný/á technik/čka, Centrálny sklad Senec. Publikované 7. 9. 2026, ASAP, 840–1 200 EUR/mes. (garantovaný minimálny nárok 1 031 EUR), reklamácie + procesy + práca s tovarom, SŠ s maturitou, prax sklad/logistika iba výhoda, základné PC, vhodné aj pre absolventov; `locationEligibility: ba-area`. Čaká na lossless LIVE write.
+- **Nový silný flexibilný kandidát:** DHL Group — administratívna podpora transportného tímu, Senec, 4 h denne, 804,50 EUR + 10 % mesačný bonus, sken faktúr, archivácia, dokumentácia dodávateľov, pošta a kompletizácia dokumentov; zmluva do februára 2027. `locationEligibility: ba-area`. Kandidát je vhodný najmä ako časovo flexibilný príjem, nie ako hlavný plný príjem.
 - Promotion-ready z predchádzajúcich behov: **BeiT Technologie — Administrativně-ekonomický specialista (Junior/Medior), 100 % remote** a **SAV — Asistent/ka riaditeľa**; pred LIVE zápisom vyžadujú fresh canonical recheck a bezpečný lossless write.
 
-### Čerstvé zistenia 22:17
+### Čerstvé zistenia 23:38
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk/Práca za rohom/Služby zamestnanosti, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
-- **Žiadna nová bezpečná LIVE promotion.**
-- Služby zamestnanosti / Práca za rohom / Kariera: **DEV-HA GLOBAL — Operátor zákazníckej podpory**, Nobelova, Bratislava-Nové Mesto, je canonical lokálny `ba-area`, 1 000 EUR/mes., TPP na neurčito, nástup 1. 9. 2026. Ponuka však vyžaduje VŠ I. stupňa a mzdovo je výrazne pod silnejšími existujúcimi LIVE podporami, preto bez promotion.
-- Kariera: **DENIMA — Všeobecný administratívny pracovník**, Bratislava, 970 EUR/mes., je lokálne eligible, ale obsahuje telefonickú komunikáciu s obchodnými partnermi v angličtine, ukrajinčine, ruštine a turečtine; language mismatch, bez promotion.
-- Grafton **ADMIN ANALYST** sa ukázal ako starší/archívny listing s VŠ II. stupňa a angličtinou; nepovažovať za čerstvú promotion.
-- LinkedIn: nové remote support výsledky TalentPop vyžadujú fluent German + English; SupportYourApp Slovak remote vyžaduje English B2. Lokalita môže byť `remote-ok`, jazykový hard/strong penalty ich blokuje.
-- WordPress Jobs má stále **11 open positions**. WPMU DEV support je remote, ale technická rola vyžaduje fluent English + PHP/HTML/CSS/MySQL; hard language/skill mismatch.
-- Upwork **WordPress Product Image Upload** zostáva najlepší rediscovery z freelance vetvy: Worldwide remote, 10–20 USD/h, entry level, WordPress/WooCommerce; 50+ proposals a už existujúci verification záznam = bez novej queue delty a bez LIVE promotion.
-- Worki: známy Shield-Sk e-shop admin detail je už explicitne obsadený/zrušený; inactive reject.
-- Reddit/komunity: čerstvé výsledky sú `FOR HIRE`, nie employer hiring; **0 vhodných verified hiring hits**.
+- **NAY Reklamačný technik Senec** je nový významný promotion-ready hit. Priamy NAY career index potvrdzuje 4 otvorené pozície v Senci, ale verejne indexovaný canonical detail konkrétnej reklamačnej pozície bol dostupný cez Profesia/Kariera; preto sa zatiaľ používa overený jobboard detail a direct-career preference ostáva otvorená na ďalší canonical recheck.
+- **DHL administratívna podpora Senec** je nový silný part-time hit: 4 h denne, skenovanie schválených dopravcovských faktúr, archivácia, založenie dodávateľov, kontrola mapovania, pošta a kompletizácia dokumentácie. Veľmi dobrý administratívny/digitalizačný fit, ale ide o skrátený úväzok do 02/2027.
+- Profesia čerstvo ukazuje aj ďalšie lokálne logistické/admin výsledky v Senci (DSV admin 1 400–1 500 EUR, Quehenberger admin logistiky 1 500 EUR, Dráčik administratívno-skladový pracovník 1 200 EUR); neboli automaticky povýšené bez detailného canonical requirement checku.
+- Kariera: Dotypos SK — pracovník kontaktného centra, Bratislava, od 1 500 EUR/mes. ostáva relevantný lokálny kandidát na detailný recheck; CCI Slovakia 1 330 EUR je slabší value fit.
+- Práca za rohom: Naturzon e-shop admin/support je obsahovo veľmi silný, ale pracovisko Poprad a bez overeného true remote režimu = `reject-distance`; do LIVE nesmie.
+- LinkedIn verejná indexácia: remote/EEA web výsledky sú prevažne hard-development alebo staré/inactive; bez bezpečnej promotion-grade delty.
+- Upwork: WordPress Product Image Upload zostáva high-fit verification rediscovery (Worldwide, 10–20 USD/h, entry level), ale 50+ proposals. WooCommerce 50-product upload za 50 USD má 1 hire a slabý effective-rate/value profil.
+- Reddit/komunity: čerstvé výsledky sú prevažne `FOR HIRE`, nie employer hiring; 0 vhodných verified hiring hits.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nevykazuje ako hit.
 
-## Source audit — 7. 9. 2026 22:17
-- Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `checked`; Telekom a ďalšie priame careers preverené, bez novej unique promotion-grade delty.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, remote support hity majú German+English alebo English B2 mismatch; 0 promotion.
-- Worki: `checked`; Shield-Sk e-shop admin je obsadený/zrušený, bez novej vhodnej unique LIVE delty.
-- Kariera/Zoznam: `ok`; DEV-HA GLOBAL a DENIMA reálne overené, ale nízka odmena/qualification alebo language burden; 0 promotion.
-- Brigada.sk / Práca za rohom / Služby zamestnanosti: `ok`; DEV-HA canonical hit overený na Službách zamestnanosti, ale bez promotion.
-- Tech/creative: `ok`; WordPress Jobs/Pretlak/StartupJobs preverené; WPMU DEV language/technical reject.
-- Freelance/Upwork: `ok`; WordPress Product Image Upload rediscovery, 50+ proposals; 0 LIVE promotion a 0 novej queue delty.
+## Source audit — 7. 9. 2026 23:38
+- Profesia: `ok`; nové relevantné hity NAY reklamačný technik Senec a DHL admin podpora Senec; NAY promotion-ready, DHL silný part-time kandidát.
+- Priame company careers: `ok`; NAY career index reálne preverený a potvrdzuje otvorené Senec pozície, konkrétny reklamačný detail nebol verejne indexovaný ako direct canonical; Telekom careers tiež preverené.
+- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez novej non-hard-dev promotion-grade delty.
+- Worki: `checked`; bez novej vhodnej unique LIVE delty; starý Shield-Sk e-shop admin je inactive.
+- Kariera/Zoznam: `ok`; NAY reklamačný technik Senec detail overený aj cez Kariera, Dotypos BA rediscovery; bez ďalšej promotion.
+- Brigada.sk / Práca za rohom / Služby zamestnanosti: `checked`; Naturzon Poprad je distance reject, bez nového eligible promotion-grade hitu.
+- Tech/creative: `checked`; Pretlak/StartupJobs/WordPress Jobs preverené, bez novej vhodnej non-hard-dev delty.
+- Freelance/Upwork: `ok`; high-fit WordPress Product Image Upload rediscovery, ale 50+ proposals; WooCommerce 50-product upload low effective value.
 - Reddit/komunity: `limited`; 0 verified employer hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 22:17
-- nové promotion-ready LIVE kandidáty: **0**
-- persisted LIVE feed delta: **0**, zostáva **50**
-- nové unique verification kandidáty: **0**
-- nové relevantné non-LIVE discovery: **DEV-HA GLOBAL — Operátor zákazníckej podpory**, vyradené z promotion pre 1 000 EUR a VŠ I. stupňa; **DENIMA — všeobecná administratíva**, language mismatch
-- inactive reject: **Shield-Sk e-shop admin**
-- language/skill holds: **TalentPop fluent German+English; SupportYourApp English B2; WPMU DEV fluent English + PHP/HTML/CSS/MySQL**
+### Audit počty 23:38
+- nové promotion-ready kandidáty: **1 — NAY Reklamačný technik Senec**
+- nové silné part-time kandidáty: **1 — DHL admin podpora Senec**
+- persisted LIVE feed delta: **0**, zostáva **50**; lossless full-file write nebol garantovaný
+- location rejects: minimálne **1 relevantný e-shop hit — Naturzon Poprad**, onsite mimo BA bez true remote dôkazu
+- duplicate/rediscovery: Upwork WordPress Product Image Upload; Dotypos/CCI BA customer-support discovery
 - Facebook verified hits: **0**
 - persisted LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 22:17, commit `843bce8398db3d35470be16c5a706ba069f91f41`
-- `source-audit.json`: čerstvý audit sa opäť nepodarilo bezpečne persisted zapísať; konektor poskytuje iba full-file replacement a aktuálny obsah obsahuje 72-položkovú verification queue. FAIL-CLOSED zabránil neúplnej rekonštrukcii alebo strate queue. Posledný lossless persisted audit zostáva na 13:31.
-- `jobs-data.json`: bez zmeny; nevznikla nová bezpečná LIVE promotion.
+- `source-audit.json`: persisted audit je stále starší, pretože konektor umožňuje iba full-file replacement a súbor obsahuje 72-položkovú verification queue; FAIL-CLOSED zakazuje stratu queue.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -218,7 +216,5 @@ Aktualizované: 7. 9. 2026 22:17 CEST
 - Established-client microjob trust bonus with budget floor.
 - Skill-exposure cap for PHP-warning fixes.
 - Source-audit lossless patch precondition.
-- Rediscovered-result no-op classifier.
-- Platform application-cost payback estimator.
-- **Qualification-cost floor:** automaticky znížiť prioritu lokálnych rolí, kde povinné formálne vzdelanie/prerekvizity sú neúmerné ponúkanej mzde a existujú lepšie alternatívy v rovnakom tracku.
-- **Audit-persistence lag watchdog:** merať rozdiel medzi `job-sources.lastAuditAt` a `source-audit.updatedAt`; pri prekročení SLA označiť audit ako stale a blokovať tvrdenie, že source audit je čerstvo persisted.
+- **Part-time effective-hourly comparator** — porovná 4h/6h/8h role podľa efektívnej hodinovej hodnoty, stability a času na dochádzku, aby krátky úväzok nevyzeral umelo slabo iba pre nízky mesačný súčet.
+- **Claims/reklamácie experience-transfer score** — zvýhodní roly, kde sa existujúca reklamačná/servisná prax prenáša priamo aj bez formálneho technického certifikátu; zároveň oddelí administratívne reklamácie od fyzicky ťažkého skladu.
