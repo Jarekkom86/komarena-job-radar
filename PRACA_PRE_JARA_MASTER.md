@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 7. 9. 2026 20:23 CEST
+Aktualizované: 7. 9. 2026 21:21 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -39,39 +39,41 @@ Aktualizované: 7. 9. 2026 20:23 CEST
 - Posledná persisted LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 - Promotion-ready z predchádzajúcich behov: **BeiT Technologie — Administrativně-ekonomický specialista (Junior/Medior), 100 % remote** a **SAV — Asistent/ka riaditeľa**; pred LIVE zápisom vyžadujú fresh canonical recheck a bezpečný lossless write.
 
-### Čerstvé zistenia 20:23
+### Čerstvé zistenia 21:21
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk/Práca za rohom/Služby zamestnanosti, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.**
-- Worki: **Nutra Group LTD — Operátor call centra, slovenský jazyk** je stále verejne aktívny, `Home office`, živnosť, 1 200–2 500 EUR/mes., bez požiadavky na prax a bez cudzieho jazyka. Lokalita prechádza ako `remote-ok`, ale ide o dvojzmenný režim a aktívny predaj z teplej databázy, preto zostáva mimo LIVE TOP výberu.
-- Služby zamestnanosti: nové BA IT/support hity sú prevažne Linux/server/DevOps alebo vyžadujú technický stack nad bezpečný non-hard-dev profil; bez promotion.
-- WordPress Jobs má stále **11 open positions**. WPMU DEV support je remote, ale fluent English a technická rola vyžaduje PHP/HTML/CSS/MySQL; hard language/skill mismatch.
-- Upwork verejný index stále ukazuje WooCommerce/product-upload zákazky, ale bez novej unique promotion-grade delty nad existujúcu verification queue.
-- Reddit/komunity: nové výsledky boli `FOR HIRE`, nie employer hiring; **0 vhodných verified hiring hits**.
+- Upwork: nový dnešný **Ecommerce VA Needed: SEO & Bulk Product Upload Expert for Shopify, Etsy & WooCommerce** je Worldwide remote a má iba 5–10 proposals, ale budget je **15 USD fixed-price**, level `Expert` a scope vyžaduje proven Shopify + Etsy + WooCommerce, bulk CSV/Excel a e-commerce SEO. Lokalita prechádza ako `remote-ok`, no value/skill-burden gate ho správne vyradí z LIVE.
+- Upwork: **WordPress Product Image Upload** zostáva obsahovo lepší fit (Worldwide remote, 10–20 USD/h, entry level), ale 50+ proposals a už existujúci verification záznam znamenajú rediscovery bez novej queue delty.
+- Kariera/Zoznam: čerstvý **Executive Support Specialist** Bratislava 1 500–1 600 EUR je už známy verification kandidát a ostáva na B2 language hold; ďalšie aktuálne BA admin výsledky sú slabšie.
+- LinkedIn: restaurant-site maintenance výsledok je explicitne `No longer accepting applications` a zároveň má hard web/backend presah; neaktívny reject.
+- WordPress Jobs má **11 open positions**. WPMU DEV support je síce remote, ale vyžaduje fluent English a PHP/HTML/CSS/MySQL; hard language/skill mismatch.
+- Reddit/komunity: čerstvé výsledky sú `FOR HIRE`, nie employer hiring; **0 vhodných verified hiring hits**.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nevykazuje ako hit.
 
-## Source audit — 7. 9. 2026 20:23
+## Source audit — 7. 9. 2026 21:21
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `checked`; Telekom/Alza/Hilti a ďalšie indexované careers preverené, bez novej unique promotion-grade delty.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez novej vhodnej unique delty.
-- Worki: `ok`; relevantný remote call-centre hit overený, ale sales/shift penalty, 0 LIVE promotion.
-- Kariera/Zoznam: `checked`; BA discovery preverené, bez vhodnej LIVE promotion.
-- Brigada.sk / Práca za rohom / Služby zamestnanosti: `checked`; bez novej unique promotion-grade delty; ÚPSVR IT hity prevažne hard-stack mismatch.
+- Priame company careers: `checked`; verejne dostupné priame careers preverené, bez novej unique promotion-grade delty.
+- LinkedIn Jobs: `limited`; verejná indexácia preverená, 1 neaktívny/hard-dev výsledok, 0 promotion.
+- Worki: `checked`; bez novej vhodnej unique LIVE delty.
+- Kariera/Zoznam: `ok`; relevantný BA admin rediscovery, 0 nových promotions.
+- Brigada.sk / Práca za rohom / Služby zamestnanosti: `checked`; bez novej unique promotion-grade delty.
 - Tech/creative: `ok`; WordPress Jobs/Pretlak/StartupJobs preverené; WPMU DEV language/technical reject.
-- Freelance/Upwork: `ok`; verejný product-upload/WooCommerce discovery preverený, bez novej unique LIVE promotion.
+- Freelance/Upwork: `ok`; nový remote e-commerce hit overený, ale 15 USD fixed-price + Expert/multi-platform/SEO scope = reject; 0 LIVE promotion.
 - Reddit/komunity: `limited`; 0 verified employer hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 20:23
+### Audit počty 21:21
 - nové promotion-ready LIVE kandidáty: **0**
 - persisted LIVE feed delta: **0**, zostáva **50**
 - nové unique verification kandidáty: **0**
-- relevantný non-LIVE discovery: **Nutra Group LTD — remote call centrum/predaj, Worki**
-- language/skill hold: **WPMU DEV fluent English + PHP/HTML/CSS/MySQL; ÚPSVR Linux/server/DevOps hity**
+- nový relevantný non-LIVE discovery: **Upwork Ecommerce VA – Shopify/Etsy/WooCommerce**, vyradené pre extrémne nízky fixed budget a expert multi-platform scope
+- inactive/skill reject: **LinkedIn/Twine restaurant-site maintenance**
+- language/skill hold: **WPMU DEV fluent English + PHP/HTML/CSS/MySQL; Kariera Executive Support Specialist B2**
 - Facebook verified hits: **0**
 - persisted LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 20:23
-- `source-audit.json`: čerstvý audit sa nepodarilo bezpečne persisted zapísať; konektor poskytuje iba full-file replacement a verification queue má 72 položiek. FAIL-CLOSED zabránil strate queue. Aktuálny audit JSON preto zostáva na poslednom lossless persisted stave 13:31.
+- `job-sources.json`: aktualizovaný na 21:21, commit `7c4de870827b4f1181de487c1cf3f9dcf1c46f0a`
+- `source-audit.json`: čerstvý audit sa nepodarilo bezpečne persisted zapísať; konektor poskytuje iba full-file replacement a aktuálny obsah obsahuje 72-položkovú verification queue. FAIL-CLOSED zabránil neúplnej rekonštrukcii alebo strate queue. Posledný lossless persisted audit preto zostáva na 13:31.
 - `jobs-data.json`: bez zmeny; nevznikla nová bezpečná LIVE promotion.
 
 ## Rozvojový backlog
@@ -227,4 +229,6 @@ Aktualizované: 7. 9. 2026 20:23 CEST
 - Source-audit freshness skew alarm.
 - Promotion-ready canonical recheck scheduler.
 - **Remote sales load × schedule penalty** — samostatne boduje kombináciu intenzívneho telefonického predaja, dvojzmennej prevádzky a víkendov; zabráni tomu, aby čistý `remote-ok` signál umelo vytlačil sales-heavy call-centre rolu nad kvalitnejší back-office/support fit.
-- **Source-audit queue snapshot sidecar checksum** — pred každým full-file audit replacementom overí počet queue položiek, stabilné ID a hash serializovaného snapshotu; write sa povolí iba pri 1:1 zachovaní queue, čím sa odstráni dnešný persistence blocker bez zásahu do zamknutého UI.
+- **Source-audit queue snapshot sidecar checksum** — pred každým full-file audit replacementom overí počet queue položiek, stabilné ID a hash serializovaného snapshotu; write sa povolí iba pri 1:1 zachovaní queue, čím sa odstráni persistence blocker bez zásahu do zamknutého UI.
+- **Fixed-price scope-to-budget hard floor** — pri freelance zákazke vypočíta minimálny realistický čas z počtu platforiem, katalógových operácií, SEO krokov a QA; ak fixed budget nedosiahne ani minimálnu efektívnu hodinovku, kandidát sa zahodí ešte pred verification queue. Dnešný 15 USD Shopify/Etsy/WooCommerce hit je presný príklad.
+- **Cross-platform proof burden gate** — rozlišuje jednoduchú administráciu jedného CMS od požiadavky na preukázanú prax naprieč Shopify/Etsy/WooCommerce + SEO/CSV. Znižuje false-positive skóre pri ponukách, ktoré znejú administratívne, ale v skutočnosti vyžadujú širšie portfólio dôkazov.
