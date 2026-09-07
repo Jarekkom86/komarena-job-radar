@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 7. 9. 2026 17:50 CEST
+Aktualizované: 7. 9. 2026 18:54 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -39,39 +39,37 @@ Aktualizované: 7. 9. 2026 17:50 CEST
 - Posledná persisted LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 - Promotion-ready z predchádzajúceho behu: **BeiT Technologie — Administrativně-ekonomický specialista (Junior/Medior), 100 % remote**. Stále nebol zapísaný do LIVE, pretože bezpečný lossless update veľkého `jobs-data.json` nebol v tomto behu vykonaný.
 
-### Čerstvé zistenia 17:50
+### Čerstvé zistenia 18:54
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk/Práca za rohom, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
-- **Fusakle / Eric SK — Office asistent/ka – e-shop & retail podpora** je stále veľmi dobrý obsahový fit: e-shop, zákaznícky servis, administratíva, BA-Dúbravka, Po–Pi približne 9:00–15:00, nástup v septembri. Ostáva vo verification queue, pretože ide o sezónnu spoluprácu približne do konca decembra/januára a odmena je iba 7 EUR/h; nejde o novú deltu ani dôvod obísť ranking floor.
-- **pabi — Asistentka riaditeľa, Bratislava** je čerstvá BA administratíva za 1 500 EUR/mes., ale mirror uvádza AJ mierne pokročilú/B1 a ide o všeobecnú executive administratívu; bez LIVE promotion.
-- **IZY VAPE — Back Office & Operations Coordinator – e-commerce | Remote** zostáva veľmi silná e-commerce/admin zhoda, ale je to rediscovery už evidovaného verification kandidáta; bez duplicity.
-- WordPress Jobs má stále **11 open positions**. WPMU DEV support je síce remote, ale vyžaduje fluent English a technická support rola PHP/HTML/CSS/MySQL; hard language/skill mismatch.
-- Upwork WooCommerce/Product Upload discovery prinieslo iba rediscovery už evidovaných verification kandidátov; bez novej unique promotion-grade delty.
+- **Žiadna nová bezpečná LIVE promotion**. WooCommerce Data Entry za 35 USD je rediscovery už evidovaného verification kandidáta; full-build Shopify/WordPress hity sú scope/experience mismatch alebo príliš nízky budget.
+- WordPress Jobs má stále **11 open positions**. WPMU DEV support je remote, ale fluent English a technická rola vyžaduje PHP/HTML/CSS/MySQL; hard language/skill mismatch.
+- Kariera discovery prinieslo AI/LLM technical-sales výsledok v Bratislave, ale ide o obchodnú rolu mimo prioritného non-hard-dev support/admin jadra; bez promotion.
 - Reddit/komunity: 0 vhodných verejne overiteľných employer hiring hits.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nevykazuje ako hit.
 
-## Source audit — 7. 9. 2026 17:50
-- Profesia: `checked`; pabi Asistentka riaditeľa je čerstvý hit, ale B1/general-admin hold; 0 added.
+## Source audit — 7. 9. 2026 18:54
+- Profesia: `checked`; bez novej unique promotion-grade delty.
 - Priame company careers: `checked`; bez novej unique promotion-grade delty.
 - LinkedIn Jobs: `limited`; verejná indexácia preverená, bez novej vhodnej unique delty.
 - Worki: `checked`; bez novej vhodnej unique delty.
-- Kariera/Zoznam: `checked`; BA admin discovery preverené, bez novej unique promotion.
-- Brigada.sk / Práca za rohom: `ok`; Fusakle high-fit brigáda je rediscovery verification, IZY VAPE rediscovery verification; 0 added.
-- Tech/creative: `checked`; StartupJobs/WordPress Jobs/Pretlak preverené; BeiT ostáva predchádzajúci promotion-ready kandidát, WPMU DEV language/technical reject.
-- Freelance/Upwork: `ok`; relevantné WooCommerce/Product Upload hity preverené, ale iba rediscovery verification; 0 LIVE promotion.
+- Kariera/Zoznam: `checked`; BA admin/AI discovery preverené, bez vhodnej LIVE promotion.
+- Brigada.sk / Práca za rohom: `checked`; bez novej unique promotion-grade delty.
+- Tech/creative: `ok`; WordPress Jobs/Pretlak/StartupJobs preverené; WPMU DEV language/technical reject.
+- Freelance/Upwork: `ok`; WooCommerce Data Entry rediscovery verification; ďalšie výsledky full-build/expert/low-budget, 0 LIVE promotion.
 - Reddit/komunity: `limited`; 0 verified employer hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 17:50
+### Audit počty 18:54
 - nové promotion-ready LIVE kandidáty: **0**
 - persisted LIVE feed delta: **0**, zostáva **50**
 - nové unique verification kandidáty: **0**
-- rediscovery relevantných verification kandidátov: **Fusakle, IZY VAPE, Upwork Product Upload/WooCommerce**
-- language/skill hold: **pabi B1; WPMU DEV fluent English + PHP/HTML/CSS/MySQL**
+- rediscovery relevantných verification kandidátov: **Upwork Data Entry Specialist for WooCommerce**
+- language/skill hold: **WPMU DEV fluent English + PHP/HTML/CSS/MySQL**
 - Facebook verified hits: **0**
 - persisted LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 17:50
-- `source-audit.json`: nový audit nebol bezpečne persisted, pretože dostupný GitHub write je full-file replacement veľkého 72-položkového queue payloadu; FAIL-CLOSED zakazuje riskovať stratu queue. Aktuálny audit JSON preto zostáva na poslednom lossless persisted stave.
+- `job-sources.json`: aktualizovaný na 18:54
+- `source-audit.json`: nový audit sa nepodarilo bezpečne persisted zapísať; GitHub konektor poskytuje iba full-file replacement a verification queue má 72 položiek. FAIL-CLOSED zabránil strate queue. Aktuálny audit JSON preto zostáva na poslednom lossless persisted stave 13:31.
 - `jobs-data.json`: bez zmeny; nevznikla nová bezpečná LIVE promotion.
 
 ## Rozvojový backlog
@@ -222,5 +220,7 @@ Aktualizované: 7. 9. 2026 17:50 CEST
 - Verification persistence debt counter.
 - Listing-city vs actual-workplace disambiguator.
 - Accounting-light vs professional-accounting scope classifier.
-- **Run-scoped source evidence digest** — po každom behu uložiť malý normalizovaný digest source family, query archetype, status, hit/added/reject counts a canonical URL fingerprinty; umožní pravdivé audity bez potreby prepisovať celý verification queue a zníži riziko full-file write konfliktov.
-- **Verification blocker coverage report** — pri každom verification kandidátovi agregovať konkrétny blocker (`language`, `pay`, `competition`, `skill`, `location`, `inactive`, `scope`) a pravidelne ukázať, ktoré blokery najčastejšie bránia LIVE promotion; pomôže cielene meniť discovery dotazy namiesto ďalšieho hromadenia podobných kandidátov.
+- Run-scoped source evidence digest.
+- Verification blocker coverage report.
+- **Source-audit freshness skew alarm** — porovnáva `job-sources.lastAuditAt`, MASTER timestamp a `source-audit.updatedAt`; ak audit zaostáva o viac než jeden úspešný source sweep, označí persistence debt ako technickú chybu namiesto predstierania čerstvosti.
+- **Promotion-ready canonical recheck scheduler** — promotion-ready kandidátov (napr. BeiT/SAV) prioritne revaliduje pred ďalším širokým discovery sweepom, aby sa dobré kandidáty nehromadili v queue len preto, že nový beh stále hľadá ďalšie výsledky.
