@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 7. 9. 2026 06:13 CEST
+Aktualizované: 7. 9. 2026 07:20 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,41 +38,39 @@ Aktualizované: 7. 9. 2026 06:13 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 06:13
+### Čerstvé zistenia 07:20
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- Priamy Lidl careers canonical potvrdil **Referent oddelenia Účtovania tovaru, Bratislava, 1 650 EUR**. Obsahovo ide o administratívu/faktúry/ERP a lokalita prechádza, ale požiadavka je plynulá angličtina alebo nemčina; pre aktuálny jazykový profil preto nejde do LIVE.
-- WordPress Jobs má aktuálne **11 otvorených pozícií**. Remote WPMU DEV support vyžaduje fluent English a PHP/MySQL/HTML/CSS, teda language + hard-skill mismatch.
-- Upwork priniesol čerstvý **WordPress Website Developer Needed**, Worldwide remote, intermediate, 10–15 proposals, ale len 50 USD fixed a nový klient bez histórie; nízka hodnota a short full-build scope, preto bez LIVE a bez rastu verification queue.
-- Worki, Brigada.sk, Pretlak a StartupJobs boli reálne prehľadané bez novej suitable unique delty.
+- WordPress Jobs má aktuálne **11 otvorených pozícií**. Remote WPMU DEV support je globálny, ale vyžaduje fluent English, PHP/MySQL/HTML/CSS, full-time 40 h a večerný UTC shift; language + hard-skill mismatch.
+- Upwork priniesol nový **WordPress Developer Needed – B2B, Export & E-Commerce Website Update**, Worldwide remote, budget do **1 000 USD**. Ide o existujúci WordPress web a WooCommerce/B2B update, ale prvý milestone vyžaduje GoDaddy/server, DNS/SSL, firewall/WAF, CDN/cache, geo/IP blocking, security a international-access diagnostiku. Kandidát bol preto pridaný iba do verification s `remote-ok`, nie do LIVE.
+- Upwork zároveň priniesol 20 USD/3h WordPress dokončenie a 50 USD urgent WooCommerce/PHP/AJAX bugfix; oba boli potlačené value/skill gateom.
+- Worki, Brigada.sk, Pretlak, StartupJobs, Profesia a Kariera boli reálne prehľadané bez novej suitable unique LIVE delty.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 7. 9. 2026 06:13
+## Source audit — 7. 9. 2026 07:20
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `ok`; 1 relevantný Lidl hit, 1 rejectedLanguage, 0 promotion.
+- Priame company careers: `checked`; bez novej vhodnej unique BA/remote promotion-grade delty.
 - LinkedIn Jobs: `limited`; bez novej suitable unique BA/remote delty.
 - Worki: `checked`; bez novej vhodnej unique delty.
-- Kariera/Zoznam: `ok`; 1 relevantný Lidl mirror/canonical-confirmed hit, 1 rejectedLanguage, 0 promotion.
+- Kariera/Zoznam: `checked`; bez novej suitable unique delty.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
 - Tech/creative: `ok`; WordPress Jobs 11 open positions, 1 language/hard-skill reject, 0 LIVE promotion.
-- Freelance: `ok`; 1 čerstvý relevantný Upwork hit, ale 50 USD/new-client/short-build value gate; 0 promotion.
+- Freelance: `ok`; 3 relevantné čerstvé hity, 1 nový verification kandidát, 0 LIVE promotion; dva ďalšie value/skill rejects.
 - Reddit/komunity: `limited`; bez nového vhodného konkrétneho hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 06:13
+### Audit počty 07:20
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- nové unique verification kandidáty: **0**
-- verification queue: **70 položiek**, bez straty
-- company-careers relevant hits: **1**, z toho 1 rejectedLanguage
-- Kariera relevant hits: **1**, z toho 1 rejectedLanguage
-- WordPress Jobs relevant reviewed hits: **1**, language/hard-skill reject
-- Upwork relevant hits: **1**, value-gate no-op
+- nové unique verification kandidáty: **1**
+- verification queue: **71 položiek**, bez straty
+- tech/creative relevant reviewed hits: **1**, language/hard-skill reject
+- Upwork relevant hits: **3**, z toho 1 verification add a 2 value/skill rejects
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 06:13
-- `source-audit.json`: aktualizovaný na 06:13, verification queue zachovaná na 70
+- `job-sources.json`: aktualizovaný na 07:20
+- `source-audit.json`: aktualizovaný na 07:20, verification queue zachovaná a rozšírená na 71
 - `jobs-data.json`: bez zmeny; nevznikla bezpečná LIVE promotion
 
 ## Rozvojový backlog
@@ -222,3 +220,5 @@ Aktualizované: 7. 9. 2026 06:13 CEST
 - **Skill-ceiling early abort for custom-web maintenance** — pri maintenance leadroch bez CMS najprv vyhodnotiť podiel backend/custom-framework požiadaviek; ak prekročí bezpečný hard-dev limit, audit má skončiť po canonical overení bez drahého detailného rankingu a bez rastu verification queue.
 - **Disjunctive language alternative parser** — rozoznať požiadavky typu „plynulá angličtina ALEBO nemčina“ od kumulatívnych požiadaviek a osobitne vyhodnotiť, či aspoň jedna jazyková alternatíva sedí profilu; zabráni chybnému dvojitému language penalty a zrýchli canonical screening.
 - **Multi-location role cluster + nearest-branch selector** — zoskupiť rovnakú rolu firmy publikovanú pre viac pobočiek/lokalít, zachovať jeden canonical cluster a pre ranking automaticky preferovať najbližšiu BA-area variantu; znižuje duplicitné verification záznamy a zlepšuje praktický commute fit.
+- **Infrastructure-troubleshooting scope gate** — pri WordPress/WooCommerce leadroch oddeliť bežnú CMS údržbu od DNS/SSL/WAF/CDN/server/security diagnostiky a automaticky znížiť promotion confidence, ak infra vrstva prekročí preukázaný skill ceiling; chráni pred zákazkami, ktoré navonok vyzerajú ako WordPress maintenance, ale reálne sú DevOps/security incident.
+- **Milestone-first feasibility scorer** — pri fixed-price zákazkách vyhodnotiť prvý platený milestone samostatne od celého projektu (scope, riziko, dôkaz skúsenosti, efektívna hodinovka a rollback riziko); umožní rýchlo rozlíšiť zákazky, kde je prvý krok bezpečne zvládnuteľný, od projektov s atraktívnym celkovým budgetom, ale neprimerane rizikovým vstupným milestone.
