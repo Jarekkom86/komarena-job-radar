@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 7. 9. 2026 15:43 CEST
+Aktualizované: 7. 9. 2026 16:17 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -33,46 +33,44 @@ Aktualizované: 7. 9. 2026 15:43 CEST
 - Agregátor/repost nesmie prebiť priamy firemný zdroj.
 
 ## Aktuálny stav LIVE
-- Autoritatívny feed má **50 LIVE položiek**.
-- LIVE mix: **Profesia 24/50 = 48,0 %**, mimo Profesia **26/50 = 52,0 %**.
+- Autoritatívny feed má **50 LIVE položiek**; v tomto behu nebol `jobs-data.json` prepísaný, pretože dostupný GitHub zápis je full-file replacement a fail-closed nepovoľuje ručne rekonštruovať veľký 50-položkový payload pri riziku straty existujúcej položky.
+- LIVE mix pred pending promotion: **Profesia 24/50 = 48,0 %**, mimo Profesia **26/50 = 52,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
-- Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
+- Posledná persisted LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
+- **Promotion-ready pending:** BeiT Technologie — `Administrativně-ekonomický specialista (Junior/Medior) — remote`, StartupJobs. Po bezpečnom zápise by feed bol 51 položiek a mix približne Profesia 47,1 % / non-Profesia 52,9 %.
 
-### Čerstvé zistenia 15:43
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
-- **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50.
-- Nový unique verification kandidát: `Product Image Research & Preparation Specialist – WooCommerce Skincare Store` na Upwork. Worldwide remote, ongoing project, intermediate, 100 USD fixed. Scope: 100+ WooCommerce produktov, stovky obrázkov, produkt/image matching, Google Sheets, resize/crop na 1600×1600, dedupe a finálne QA. Obsahovo veľmi silný e-commerce fit a bez hard developmentu, ale fixný budget 100 USD je nízky vzhľadom na rozsah; preto bez automatickej LIVE promotion.
-- Upwork `Data Entry Specialist for WooCommerce` bol tiež preverený: Worldwide remote, WordPress/WooCommerce + Excel/CSV, 35 USD fixed, 20–50 proposals; vhodný obsahovo, ale nízka hodnota a proposal pressure, preto bez promotion.
-- Predošlý pending verification kandidát `WordPress / Elementor Expert Needed for Website Design Adjustments & Troubleshooting` stále čaká na lossless persistence do `source-audit.json`.
-- Kariera priniesla čerstvé BA výsledky, ale žiadny neprekonal aktuálny ranking profil na bezpečnú LIVE promotion.
-- WordPress Jobs stále uvádza 11 otvorených pozícií; aktuálny WPMU DEV support vyžaduje PHP/HTML/CSS/MySQL a presahuje hard-skill ceiling.
-- Reddit/komunity: bez nového verejne overiteľného hiring dopytu vhodného pre profil.
+### Čerstvé zistenia 16:17
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk/Práca za rohom, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
+- **Najsilnejšia nová unique zhoda: BeiT Technologie — Administrativně-ekonomický specialista (Junior/Medior) — remote.** StartupJobs uvádza 26–44 tis. Kč mesačne, full-time alebo part-time, spoluprácu na IČO 30–40 h/týždeň a explicitne 100 % remote / home office „pracuj odkudkoliv“. Náplň je správa platieb, fakturačné a účtovné podklady, evidencia dát a zákaznícka podpora e-mailom aj telefonicky. Angličtina nie je uvedená; požadovaná je istá čeština, administratívna skúsenosť, základná orientácia v účtovníctve a Excel/online nástrojoch. Online onboarding a absencia povinného onsite dojazdu spĺňajú `remote-ok` hard gate. Kandidát je pripravený na LIVE promotion, ale samotný `jobs-data.json` zostal fail-closed, kým nebude možné vykonať bezpečný lossless patch.
+- Priame company careers: Slovak Telekom BA customer-support rola zostáva aktívna, ale je už LIVE; dedupe, bez novej promotion.
+- LinkedIn public index: SupportYourApp remote support hity boli reálne preverené; Czech+English support vyžaduje B2 English a T3 support vyžaduje fluent English + vyšší technický tier, preto bez promotion.
+- Upwork: WooCommerce `Data Entry Specialist` 35 USD fixed je rediscovery/low-value; ďalšie maintenance hity majú hard PHP/custom-code, fluent English alebo veľmi slabú sadzbu. Bez novej bezpečnej LIVE promotion.
+- Reddit/komunity: čerstvé nálezy sú `[FOR HIRE]` ponuky freelancerov, nie employer hiring dopyty; 0 vhodných verified hiring hits.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 7. 9. 2026 15:43
-- Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `checked`; bez novej vhodnej unique BA/remote promotion-grade delty.
-- LinkedIn Jobs: `limited`; bez novej vhodnej unique delty.
+## Source audit — 7. 9. 2026 16:17
+- Profesia: `checked`; fresh BA/remote discovery, bez novej unique promotion-grade delty.
+- Priame company careers: `ok`; Telekom BA support aktívny, ale už LIVE → duplicate/rediscovery.
+- LinkedIn Jobs: `limited`; SupportYourApp remote hity reálne dostupné, ale B2/fluent English alebo T3 skill mismatch.
 - Worki: `checked`; bez novej vhodnej unique delty.
-- Kariera/Zoznam: `checked`; nové BA výsledky, ale bez suitable unique LIVE delty.
-- Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
-- Tech/creative: `ok`; WordPress Jobs má 11 otvorených pozícií, ale relevantný support hit je language/technical mismatch.
-- Freelance/Upwork: `ok`; 1 nový unique verification kandidát, ďalší low-value WooCommerce data-entry hit; 0 LIVE promotion.
-- Reddit/komunity: `limited`; bez nového vhodného verejne overiteľného hiring dopytu.
+- Kariera/Zoznam: `checked`; bez suitable unique LIVE delty.
+- Brigada.sk / Práca za rohom: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
+- Tech/creative: `ok`; **1 nový unique promotion-ready hit BeiT/StartupJobs**, plus Pretlak rediscovery; WordPress Jobs support je language/technical mismatch.
+- Freelance/Upwork: `ok`; relevantné WordPress/WooCommerce hity preverené, ale low-value/hard-dev/English/competition blokery; 0 LIVE promotion.
+- Reddit/komunity: `limited`; 0 employer hiring hits, čerstvé výsledky sú [FOR HIRE].
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 15:43
-- nové vhodné LIVE promotion: **0**
-- LIVE feed delta: **0**, zostáva **50**
-- nové unique verification kandidáty v tomto behu: **1**
-- verification queue: aktuálne persisted **72**, cieľ **74 položiek** po bezpečnom source-audit zápise dvoch pending unique kandidátov
-- Upwork/freelance: **1 nový unique verification add pending**, 0 LIVE promotion
+### Audit počty 16:17
+- nové promotion-ready LIVE kandidáty: **1 (BeiT Technologie / StartupJobs)**
+- persisted LIVE feed delta: **0**, zostáva **50** z dôvodu fail-closed full-file write rizika
+- po bezpečnej promotion očakávaný feed: **51**
+- nové unique verification kandidáty v tomto behu: **0**; BeiT je promotion-ready, nie low-confidence verification
 - Facebook verified hits: **0**
-- LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
+- persisted LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**; po BeiT približne **47,1 % / 52,9 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 15:43
-- `source-audit.json`: čaká na bezpečný lossless zápis; aktuálny veľký verification payload sa nesmie prepísať bez úplnej rekonštrukcie
-- `jobs-data.json`: bez zmeny; nevznikla bezpečná LIVE promotion
+- `job-sources.json`: aktualizovaný na 16:17
+- `source-audit.json`: aktuálny veľký queue payload zostal fail-closed; nový run audit je zaznamenaný v MASTER a registri zdrojov, ale audit JSON sa nesmie prepísať neúplnou rekonštrukciou
+- `jobs-data.json`: bez zmeny; BeiT čaká na lossless promotion write
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -218,5 +216,7 @@ Aktualizované: 7. 9. 2026 15:43 CEST
 - Platform application-cost payback estimator.
 - Troubleshooting-scope evidence ladder.
 - Freelance client-history confidence band.
-- **Catalogue-work unit-cost estimator** — prepočíta fixed-price e-commerce zákazky na odhad EUR/USD za produkt a za obrázok podľa deklarovaného objemu; nízke jednotkové sadzby automaticky držať vo VERIFY/SKIP aj pri vysokej skill zhode.
-- **Verification persistence debt counter** — explicitne počíta unique kandidátov nájdených v discovery, ktorí ešte nie sú lossless zapísaní v `source-audit.json`; pri dlhu >0 zvýši prioritu bezpečného audit merge pred ďalším rastom queue.
+- Catalogue-work unit-cost estimator.
+- Verification persistence debt counter.
+- **Listing-city vs actual-workplace disambiguator** — pri remote ponukách oddeliť mesto z metadát jobboardu (napr. Praha) od skutočného pracoviska v canonical texte; explicitné „100 % remote / pracuj odkudkoliv“ má zabrániť falošnému `reject-distance`, ale iba ak zároveň chýba onsite povinnosť.
+- **Accounting-light vs professional-accounting scope classifier** — rozlíšiť bežné párovanie platieb, fakturačné podklady a evidenciu od zodpovednosti za účtovníctvo/dane/uzávierky; zlepší ranking administratívnych rolí bez nesprávneho penalizovania ľahkej ekonomickej agendy.
