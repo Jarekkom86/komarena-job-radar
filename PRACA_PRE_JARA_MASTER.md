@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 7. 9. 2026 18:54 CEST
+Aktualizované: 7. 9. 2026 20:23 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -37,39 +37,41 @@ Aktualizované: 7. 9. 2026 18:54 CEST
 - LIVE mix: **Profesia 24/50 = 48,0 %**, mimo Profesia **26/50 = 52,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná persisted LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
-- Promotion-ready z predchádzajúceho behu: **BeiT Technologie — Administrativně-ekonomický specialista (Junior/Medior), 100 % remote**. Stále nebol zapísaný do LIVE, pretože bezpečný lossless update veľkého `jobs-data.json` nebol v tomto behu vykonaný.
+- Promotion-ready z predchádzajúcich behov: **BeiT Technologie — Administrativně-ekonomický specialista (Junior/Medior), 100 % remote** a **SAV — Asistent/ka riaditeľa**; pred LIVE zápisom vyžadujú fresh canonical recheck a bezpečný lossless write.
 
-### Čerstvé zistenia 18:54
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk/Práca za rohom, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
-- **Žiadna nová bezpečná LIVE promotion**. WooCommerce Data Entry za 35 USD je rediscovery už evidovaného verification kandidáta; full-build Shopify/WordPress hity sú scope/experience mismatch alebo príliš nízky budget.
+### Čerstvé zistenia 20:23
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk/Práca za rohom/Služby zamestnanosti, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
+- **Žiadna nová bezpečná LIVE promotion.**
+- Worki: **Nutra Group LTD — Operátor call centra, slovenský jazyk** je stále verejne aktívny, `Home office`, živnosť, 1 200–2 500 EUR/mes., bez požiadavky na prax a bez cudzieho jazyka. Lokalita prechádza ako `remote-ok`, ale ide o dvojzmenný režim a aktívny predaj z teplej databázy, preto zostáva mimo LIVE TOP výberu.
+- Služby zamestnanosti: nové BA IT/support hity sú prevažne Linux/server/DevOps alebo vyžadujú technický stack nad bezpečný non-hard-dev profil; bez promotion.
 - WordPress Jobs má stále **11 open positions**. WPMU DEV support je remote, ale fluent English a technická rola vyžaduje PHP/HTML/CSS/MySQL; hard language/skill mismatch.
-- Kariera discovery prinieslo AI/LLM technical-sales výsledok v Bratislave, ale ide o obchodnú rolu mimo prioritného non-hard-dev support/admin jadra; bez promotion.
-- Reddit/komunity: 0 vhodných verejne overiteľných employer hiring hits.
+- Upwork verejný index stále ukazuje WooCommerce/product-upload zákazky, ale bez novej unique promotion-grade delty nad existujúcu verification queue.
+- Reddit/komunity: nové výsledky boli `FOR HIRE`, nie employer hiring; **0 vhodných verified hiring hits**.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nevykazuje ako hit.
 
-## Source audit — 7. 9. 2026 18:54
+## Source audit — 7. 9. 2026 20:23
 - Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `checked`; bez novej unique promotion-grade delty.
+- Priame company careers: `checked`; Telekom/Alza/Hilti a ďalšie indexované careers preverené, bez novej unique promotion-grade delty.
 - LinkedIn Jobs: `limited`; verejná indexácia preverená, bez novej vhodnej unique delty.
-- Worki: `checked`; bez novej vhodnej unique delty.
-- Kariera/Zoznam: `checked`; BA admin/AI discovery preverené, bez vhodnej LIVE promotion.
-- Brigada.sk / Práca za rohom: `checked`; bez novej unique promotion-grade delty.
+- Worki: `ok`; relevantný remote call-centre hit overený, ale sales/shift penalty, 0 LIVE promotion.
+- Kariera/Zoznam: `checked`; BA discovery preverené, bez vhodnej LIVE promotion.
+- Brigada.sk / Práca za rohom / Služby zamestnanosti: `checked`; bez novej unique promotion-grade delty; ÚPSVR IT hity prevažne hard-stack mismatch.
 - Tech/creative: `ok`; WordPress Jobs/Pretlak/StartupJobs preverené; WPMU DEV language/technical reject.
-- Freelance/Upwork: `ok`; WooCommerce Data Entry rediscovery verification; ďalšie výsledky full-build/expert/low-budget, 0 LIVE promotion.
+- Freelance/Upwork: `ok`; verejný product-upload/WooCommerce discovery preverený, bez novej unique LIVE promotion.
 - Reddit/komunity: `limited`; 0 verified employer hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 18:54
+### Audit počty 20:23
 - nové promotion-ready LIVE kandidáty: **0**
 - persisted LIVE feed delta: **0**, zostáva **50**
 - nové unique verification kandidáty: **0**
-- rediscovery relevantných verification kandidátov: **Upwork Data Entry Specialist for WooCommerce**
-- language/skill hold: **WPMU DEV fluent English + PHP/HTML/CSS/MySQL**
+- relevantný non-LIVE discovery: **Nutra Group LTD — remote call centrum/predaj, Worki**
+- language/skill hold: **WPMU DEV fluent English + PHP/HTML/CSS/MySQL; ÚPSVR Linux/server/DevOps hity**
 - Facebook verified hits: **0**
 - persisted LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 18:54
-- `source-audit.json`: nový audit sa nepodarilo bezpečne persisted zapísať; GitHub konektor poskytuje iba full-file replacement a verification queue má 72 položiek. FAIL-CLOSED zabránil strate queue. Aktuálny audit JSON preto zostáva na poslednom lossless persisted stave 13:31.
+- `job-sources.json`: aktualizovaný na 20:23
+- `source-audit.json`: čerstvý audit sa nepodarilo bezpečne persisted zapísať; konektor poskytuje iba full-file replacement a verification queue má 72 položiek. FAIL-CLOSED zabránil strate queue. Aktuálny audit JSON preto zostáva na poslednom lossless persisted stave 13:31.
 - `jobs-data.json`: bez zmeny; nevznikla nová bezpečná LIVE promotion.
 
 ## Rozvojový backlog
@@ -222,5 +224,7 @@ Aktualizované: 7. 9. 2026 18:54 CEST
 - Accounting-light vs professional-accounting scope classifier.
 - Run-scoped source evidence digest.
 - Verification blocker coverage report.
-- **Source-audit freshness skew alarm** — porovnáva `job-sources.lastAuditAt`, MASTER timestamp a `source-audit.updatedAt`; ak audit zaostáva o viac než jeden úspešný source sweep, označí persistence debt ako technickú chybu namiesto predstierania čerstvosti.
-- **Promotion-ready canonical recheck scheduler** — promotion-ready kandidátov (napr. BeiT/SAV) prioritne revaliduje pred ďalším širokým discovery sweepom, aby sa dobré kandidáty nehromadili v queue len preto, že nový beh stále hľadá ďalšie výsledky.
+- Source-audit freshness skew alarm.
+- Promotion-ready canonical recheck scheduler.
+- **Remote sales load × schedule penalty** — samostatne boduje kombináciu intenzívneho telefonického predaja, dvojzmennej prevádzky a víkendov; zabráni tomu, aby čistý `remote-ok` signál umelo vytlačil sales-heavy call-centre rolu nad kvalitnejší back-office/support fit.
+- **Source-audit queue snapshot sidecar checksum** — pred každým full-file audit replacementom overí počet queue položiek, stabilné ID a hash serializovaného snapshotu; write sa povolí iba pri 1:1 zachovaní queue, čím sa odstráni dnešný persistence blocker bez zásahu do zamknutého UI.
