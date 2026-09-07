@@ -1,0 +1,44 @@
+{
+  "policyVersion": 1,
+  "name": "Direct Career ATS Delta Sourcing",
+  "status": "active-policy",
+  "goal": "Increase non-Profesia coverage by detecting new roles directly on employer career/ATS surfaces before relying on mirrors or aggregators.",
+  "scope": {
+    "allowedSurfaces": ["official-company-careers", "official-ats-job-detail", "official-ats-job-list"],
+    "examplesOfAtsFamilies": ["Greenhouse", "Lever", "Workday", "Teamtailor", "SmartRecruiters", "Recruitee", "SuccessFactors"],
+    "publicOnly": true
+  },
+  "locationGate": {
+    "mode": "hard-fail-closed",
+    "allow": ["ba-area", "remote-ok"],
+    "reject": ["reject-distance"],
+    "quarantine": ["unknown"],
+    "remoteRule": "Remote must be evidenced as primarily performable from Slovakia without regular commuting to a distant city.",
+    "neverInferRemoteFromEmployer": true
+  },
+  "discovery": {
+    "fingerprintFields": ["employerIdentity", "atsJobId", "canonicalUrl", "title", "locationText"],
+    "deltaOnly": true,
+    "unchangedListingsBecomeNoOp": true,
+    "newOrMateriallyChangedOnlyProceedToVerification": true,
+    "materialChanges": ["new-listing", "location-change", "remote-policy-change", "requirements-change", "compensation-change", "application-state-change"]
+  },
+  "canonicalAndDedupe": {
+    "preferOfficialEmployerOrAtsCanonical": true,
+    "mirrorNeverCreatesIndependentJob": true,
+    "preserveStableIds": true,
+    "canonicalDedupeRequiredBeforePromotion": true
+  },
+  "evidence": {
+    "requiredForPromotion": ["canonicalUrl", "sourceTrust", "verifiedAt", "scoreConfidence", "locationEligibility", "locationReason"],
+    "blockedOrUnavailable": "record truthfully; do not fabricate coverage or hits"
+  },
+  "safety": {
+    "touchLockedUi": false,
+    "touchCrm": false,
+    "touchBaseline": false,
+    "rewriteExistingJobs": false,
+    "failClosed": true
+  },
+  "expectedBenefit": "Earlier discovery of direct-company BA/Slovakia-remote openings, better source diversity, fewer stale mirror hits, and less repeated parsing of unchanged career pages."
+}
