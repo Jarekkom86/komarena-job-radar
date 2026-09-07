@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 7. 9. 2026 11:56 CEST
+Aktualizované: 7. 9. 2026 12:32 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,41 +38,41 @@ Aktualizované: 7. 9. 2026 11:56 CEST
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná bezpečná LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 
-### Čerstvé zistenia 11:56
+### Čerstvé zistenia 12:32
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
 - **Žiadna nová bezpečná LIVE promotion.** LIVE feed zostáva 50 a fail-closed ochrana ostala zachovaná.
-- Upwork: `WooCommerce Website Development` je Worldwide remote, 400 USD fixed / klient uvádza 300–500 EUR, WordPress + WooCommerce, 5–10 produktov, cart/checkout, platby, PostNL, sklad, zľavy a analytics. Listing má 20–50 proposals a nový klientský účet; lead už bol v verification queue, takže bez duplicity.
-- Ďalšie čerstvé Upwork WordPress/WooCommerce výsledky boli buď low-value microjoby, alebo full-build/hard-dev scope nad bezpečný skill ceiling.
+- **Nový výrazný verification kandidát:** `WordPress Product Image Upload` na Upwork — Worldwide remote, entry-level, 10–20 USD/h. Náplň je priamo WooCommerce produktová administrácia: správne produktové obrázky, featured/gallery images, priradenie obrázkov k produktom, alt text a kontrola live zobrazenia. Klient má približne 48k USD spend, 24 hires a 1 228 hodín. Listing už má 50+ proposals a 1 hire, preto ostáva verification a nejde automaticky do LIVE.
+- Ďalší čerstvý Upwork lead `WordPress / Elementor Expert Needed for Website Design Adjustments & Troubleshooting` je Worldwide remote a obsahovo relevantný, ale 20–50 proposals a menšia klientská história znižujú prioritu.
 - WordPress Jobs má 11 otvorených rolí. WPMU DEV Sales Support je remote, ale vyžaduje proficient English; Technical Support vyžaduje fluent English plus PHP, HTML, CSS a MySQL. Bez promotion.
-- Kariera/Zoznam, Worki, Brigada.sk, Pretlak/StartupJobs, priame careers a LinkedIn nepriniesli novú promotion-grade deltu vhodnú pre hard lokalitný gate a ranking profil.
+- Kariera/Zoznam priniesla čerstvý vzdialený onsite výsledok, ktorý bol vyradený hard lokalitným gateom; Worki, Brigada.sk, Pretlak/StartupJobs, priame careers a LinkedIn nepriniesli novú promotion-grade BA/remote deltu.
 - Reddit/komunity: bez nového verejne overiteľného hiring dopytu vhodného pre profil.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nevykazuje ako hit. Autentizovaný Nexus/local ingestion zostáva backlog.
 
-## Source audit — 7. 9. 2026 11:56
+## Source audit — 7. 9. 2026 12:32
 - Profesia: `checked`; bez novej unique promotion-grade delty.
 - Priame company careers: `checked`; bez novej vhodnej unique BA/remote promotion-grade delty.
 - LinkedIn Jobs: `limited`; verejná indexácia bez novej bezpečne overiteľnej delty.
 - Worki: `checked`; bez novej vhodnej unique delty.
-- Kariera/Zoznam: `ok`; 2 dnešné indexované BA výsledky, ale mimo prioritného profilu/slabé; 0 promotion.
+- Kariera/Zoznam: `checked`; čerstvý vzdialený onsite výsledok vyradený pre lokalitu; 0 promotion.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote admin/web/support brigády.
 - Tech/creative: `ok`; WordPress Jobs 11 otvorených rolí, 2 relevantné support pozície vyradené pre language/technical gate; Pretlak/StartupJobs bez vhodnej unique delty.
-- Freelance: `ok`; 6 čerstvých/relevantných hľadaných výsledkov, 2 rediscovery duplicates, ostatné value/scope rejects; 0 nový verification add a 0 LIVE promotion.
+- Freelance: `ok`; 8 relevantných výsledkov preverených, 1 nový unique verification add, 1 rediscovery duplicate, 0 LIVE promotion.
 - Reddit/komunity: `limited`; bez nového vhodného verejne overiteľného hiring dopytu.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 11:56
+### Audit počty 12:32
 - nové vhodné LIVE promotion: **0**
 - LIVE feed delta: **0**, zostáva **50**
-- nové unique verification kandidáty: **0**
-- verification queue: **71 položiek**, bez straty
-- Kariera relevant reviewed hits: **2**, 0 promotion
-- Upwork relevant hits: **6**, 2 queue duplicates, ostatné value/scope rejects
+- nové unique verification kandidáty: **1**
+- verification queue: **72 položiek**, bez straty
+- Upwork relevant reviewed hits: **8**, 1 nový verification add, 1 rediscovery duplicate, ostatné scope/value/competition rejects
 - WordPress Jobs relevant support hits: **2**, oba language/skill reject
+- lokalitné rejecty: **min. 1** vzdialený onsite výsledok
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 11:56
-- `source-audit.json`: aktualizovaný na 11:56, verification queue zachovaná na 71
+- `job-sources.json`: aktualizovaný na 12:32
+- `source-audit.json`: aktualizovaný na 12:32, verification queue zachovaná a rozšírená na 72
 - `jobs-data.json`: bez zmeny; nevznikla bezpečná LIVE promotion
 
 ## Rozvojový backlog
@@ -228,3 +228,5 @@ Aktualizované: 7. 9. 2026 11:56 CEST
 - **Microjob value-collapse detector** — pri freelance ponukách automaticky kombinovať fixed budget, explicitný deadline/časový tlak, počet proposals/interviews a požadovaný seniority label; ak efektívna hodnota padne pod nastavený prah, lead sa ukončí už v discovery fáze bez ďalšieho detailného rankingu.
 - **Rediscovery age-vs-competition decay** — pri leadroch, ktoré sa objavujú opakovane bez zmeny scope, automaticky znižovať prioritu podľa veku listingu a rastu proposals/interviews; zabráni tomu, aby starší high-fit freelance lead opakovane zaberali discovery kapacitu bez rastúcej šance na úspech.
 - **Source-family evidence budget allocator** — po každom behu prerozdeliť nasledujúci discovery budget podľa úspešnosti source family: viac dotazov zdrojom s čerstvými promotion/verification hitmi, menej opakovaným zero-yield rodinám, pri zachovaní povinného minima 8 families / 5 non-Profesia; zvyšuje coverage bez porušenia diverzity.
+- **Multi-hire residual-opportunity classifier** — pri freelance leadroch, kde už `Hires > 0`, rozlíšiť či je zákazka fakticky obsadená alebo klient stále naberá viac ľudí/udržiava ongoing kapacitu; kombinovať počet hires, aktívne kontrakty, text scope, posledné zobrazenie a počet openings. Zníži falošné vyradenie silných leadov aj zbytočné reakcie na už uzavretú potrebu.
+- **Task-reversibility promotion threshold** — rozdeliť zásahy podľa blast-radius: reverzibilné CMS/admin úlohy (produktové obrázky, alt text, obsah, kategórie) môžu mať nižší verification burden, zatiaľ čo DNS, platby, produkčný deployment, security alebo databázové zásahy vyžadujú vyššiu dôkazovú latku. Zrýchli promotion bezpečných praktických zákaziek bez znižovania fail-closed ochrany.
