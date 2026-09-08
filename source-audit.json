@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-08T23:38:09+02:00",
+  "updatedAt": "2026-09-09T00:32:28+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
@@ -11,44 +11,44 @@
     "liveProfesiaPct": 48.0,
     "liveNonProfesiaPct": 52.0,
     "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Full diversity sweep on 8.9.2026 23:38 CEST. No new unique promotion-grade item passed ranking, locality and evidence gates. LinkedIn surfaced Staffino Technical Support Specialist / Project Coordinator in Bratislava Metropolitan Area, but the listing is about 7 months old and requires 2–4 years of IT/SaaS support experience; it remains verification-only. ESET Customer Support Specialist in Bratislava is entry-level and locally eligible, but asks for good active English, ideally B2, so it was rejected by the language ranking. Worki again exposed Shield-Sk e-shop support only as an inactive/cancelled vacancy. Reddit public results included a US-only WordPress hiring post, rejected by locality, while Facebook public index yielded 0 verified hiring posts. Existing 50 LIVE items are preserved fail-closed."
+    "note": "Full diversity sweep on 9.9.2026 00:32 CEST. No new unique promotion-grade item passed ranking, locality and evidence gates. 3MON Office Manager/Executive Support in Bratislava is a strong admin/e-shop/AI thematic match, but canonical Profesia requires 3 years of similar experience plus advanced Word/Excel, so it remains verification-only. Volkswagen Group Services Internal Tech Agent/IT Specialist is locally eligible but broader professional IT scope and only up to 20% remote lower fit. LinkedIn Wolt Support Associate is Bratislava but student-only part-time, shift-heavy and requires English B2. SOITRON IT Support requires English B2. Reddit hiring results were US-only or stale/hard-dev. Facebook public index yielded 0 verified hiring posts. Existing 50 LIVE items are preserved fail-closed."
   },
   "sources": [
     {
       "name": "Profesia",
       "family": "profesia",
       "status": "ok",
-      "hits": 1,
+      "hits": 2,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Reálne vyhľadané 8.9.2026 23:38 pre BA/okolie a remote prioritné tracky. ESET Customer Support Specialist, Bratislava, od 1 250 EUR, je entry-level a lokálne eligible, ale vyžaduje aktívnu angličtinu ideálne B2; bez LIVE promotion."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 0},
+      "note": "Reálne vyhľadané 9.9.2026 00:32 pre BA/okolie a remote prioritné tracky. 3MON Office Manager/Executive Support, Bratislava, od 1 650 EUR, spracovanie e-shop objednávok + administratíva + AI tools fit, ale canonical vyžaduje 3 roky podobnej praxe a pokročilý Excel/Word; verification-only. SOITRON IT Support BA vyžaduje AJ B2; reject language."
     },
     {
       "name": "Priame firemné career stránky",
       "family": "company-careers",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Priame company-career discovery bolo reálne vyhľadané pre Bratislava technical support, customer support, e-commerce a service role; bez novej overiteľnej promotion-grade delty. Pri Staffino nebol nájdený použiteľný direct career detail, preto canonical promotion nebola povolená."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 0},
+      "note": "Priame company-career discovery reálne preverené. Volkswagen Group Services Internal Tech. Agent/IT Specialist, Bratislava, posted 22.8.2026, up to 20% remote; lokálne eligible, ale professional IT scope zahŕňa network/OS/cybersecurity/scripting a je nad preferovanou non-hard-dev úrovňou. 3MON direct corporate web potvrdzuje centrálu Kopčianska 94B Bratislava, no pracovný listing je canonical na Profesia."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
       "status": "limited",
-      "hits": 2,
+      "hits": 3,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 1},
-      "note": "Verejný LinkedIn Jobs index bol reálne vyhľadaný. Staffino Technical Support Specialist / Project Coordinator je BA hybrid, ale približne 7 mesiacov starý a vyžaduje 2–4 roky IT/SaaS support praxe; verification-only. ESET Customer Support Specialist je BA entry-level, ale English ideally B2 = výrazný jazykový mínus. Verejná indexácia je čiastočná."
+      "rejected": {"language": 2, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 1, "eligibility": 1},
+      "note": "Verejný LinkedIn index reálne vyhľadaný. Wolt Support Associate Part Time je BA, ale študentská rola, zmeny večer/víkendy a AJ min. B2. SupportYourApp remote support vyžaduje C1/fluent English. Staffino zostáva cca 7 mesiacov starý a vyžaduje 2–4 roky IT/SaaS supportu. Coverage limited."
     },
     {
       "name": "Worki.sk",
       "family": "worki",
-      "status": "ok",
-      "hits": 1,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 1, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne vyhľadané BA/remote e-shop, administratíva, technická podpora, vodič a sklad. Shield-Sk Administrátor e-shopu / zákaznícka podpora, Bratislava-Ružinov, zostáva canonical inactive: miesto už bolo obsadené alebo zrušené."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne vyhľadané BA/remote e-shop, administratíva, technická podpora, vodič a sklad; tento sweep nepriniesol nový unique promotion-grade hit. Predchádzajúci Shield-Sk canonical zostáva inactive."
     },
     {
       "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
@@ -84,7 +84,7 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "budget": 0, "ranking": 0},
-      "note": "Upwork public discovery bolo reálne vyhľadané pre fresh Worldwide remote WordPress/WooCommerce/VA scope; tento beh nepriniesol nový verejne indexovaný unique hit nad existujúci verification inventár."
+      "note": "Upwork public discovery reálne vyhľadané pre fresh Worldwide remote WordPress/WooCommerce/VA scope; bez nového verejne indexovaného unique hitu nad existujúci verification inventár."
     },
     {
       "name": "Reddit / WordPress / WooCommerce komunity",
@@ -93,7 +93,7 @@
       "hits": 1,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1},
-      "note": "Verejne indexované komunity reálne vyhľadané. Konkrétny hiring WordPress developer post bol remote iba pre ľudí aktuálne v USA a navyše hard-dev; reject-distance + skill. Ďalšie výsledky boli FOR HIRE alebo staršie."
+      "note": "Verejne indexované komunity reálne vyhľadané. Konkrétne r/wordpressjobs hiring výsledky sú US-only a hard-dev alebo staré; najnovšie vhodné non-dev výsledky sa nepotvrdili. Reject-distance + skill."
     },
     {
       "name": "Facebook verejný index",
