@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 8. 9. 2026 04:51 CEST
+Aktualizované: 8. 9. 2026 05:51 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -40,40 +40,40 @@ Aktualizované: 8. 9. 2026 04:51 CEST
 - Promotion-ready: **NAY a.s. — Reklamačný/á technik/čka, Centrálny sklad Senec**; publ. 7. 9. 2026, ASAP, reklamácie + procesy + práca s tovarom, `locationEligibility: ba-area`.
 - Silný flexibilný kandidát: **DHL Group — administratívna podpora transportného tímu, Senec**, 4 h denne, 804,50 EUR + 10 % mesačný bonus; `locationEligibility: ba-area`.
 - Promotion-ready z predchádzajúcich behov: **BeiT Technologie — Administrativně-ekonomický specialista (Junior/Medior), 100 % remote** a **SAV — Asistent/ka riaditeľa**; pred LIVE zápisom vyžadujú fresh canonical recheck.
+- Nový silný verification kandidát: **NASES — Operátor/operátorka Ústredného kontaktného centra**, Bratislava, od 1 500 EUR, pružný režim 8–16/9–17, vhodné pre absolventa; technicko-zákaznícka podpora slovensko.sk a e-schránok. `locationEligibility: ba-area`. Mínus: AJ B1 a vyššie Office nároky.
+- Nový sekundárny verification kandidát: **Prvá stavebná sporiteľňa — Spracovateľ/Spracovateľka služieb pre klientov – Call centrum**, Bajkalská 28, Bratislava, 1 500–1 700 EUR, občasný HO. `locationEligibility: ba-area`. Mínus: profil ponuky uvádza 2 roky bankovníctvo/financie.
 
-### Čerstvé zistenia 04:51
+### Čerstvé zistenia 05:51
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
-- Nevznikla nová promotion-grade LIVE ponuka ani nový verification kandidát, ktorý by prekonal existujúcu queue.
-- LinkedIn/SupportYourApp: **Slovak Customer Support Consultant — Slovakia remotely** je plne remote, ale explicitne vyžaduje **English B2**, preto ostáva mimo promotion podľa jazykového profilu.
-- Kariera/Zoznam: **GREEN RECYCLING — skladník/vodič VZV, Bratislava** je lokalitne `ba-area`, ale fyzická skladová práca + VZV sú slabší fit, bez promotion.
-- Pretlak: **Seesame — Junior Account Manager | Brand & Lifestyle**, Bratislava, junior, 1 300–1 500 EUR, je lokálny a organizačne použiteľný, ale jadro je PR/marketing/account scope; neprekonáva prioritné e-commerce/admin/support roly.
-- StartupJobs: **CDN77 Customer Care** je onsite Praha = `reject-distance`; **Aukro Account Manager HU** je remote, ale maďarský market/language scope je výrazný mismatch.
-- Upwork: **AI Blog Post VA for WordPress (120 articles)** je Worldwide remote a entry-level, ale rozpočet **30 USD fixed za 120 článkov mesačne** je pod value floor. WooCommerce Product Listing 10–30 USD/h a WordPress Product Image Upload ostávajú rediscovery verification kandidáti.
-- Reddit/komunity: 0 eligible verified employer hits pre Slovensko.
+- **NASES** je najlepší nový lokálny výsledok tohto behu: zákaznícka/technická podpora verejných e-služieb, Bratislava, od 1 500 EUR, vhodné aj pre absolventa. AJ B1 je len mierny/stredný mínus, preto ide do verification, nie priamo LIVE.
+- **PSS Call centrum** je lokálne a finančne lepšie (1 500–1 700 EUR + občasný HO), ale explicitný údaj o 2 rokoch bankovníctva/financií znižuje istotu zhody; verification pred promotion.
+- LinkedIn: **EUROWAG — Office Coordinator, Bratislava** je obsahovo relevantný admin hit, ale vyžaduje fluent English, preto bez promotion.
+- Upwork: **WooCommerce Product Listing & Upload Specialist** 10–30 USD/h, 50–75 produktov je rediscovery existujúceho verification kandidáta; 20–50 proposals, 5 interviewing a preferovaná holandčina držia kandidáta mimo LIVE.
+- Reddit/komunity: nájdené výsledky boli FOR HIRE alebo US-only hard-dev; 0 eligible verified employer hits pre Slovensko.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nevykazuje ako hit.
 
-## Source audit — 8. 9. 2026 04:51
-- Profesia: `checked`; bez novej unique promotion-grade delty.
-- Priame company careers: `checked`; bez novej vhodnej unique BA/remote delty.
-- LinkedIn Jobs: `limited`; SupportYourApp remote hit overený, ale English B2 = language reject.
+## Source audit — 8. 9. 2026 05:51
+- Profesia: `ok`; NASES + PSS sú relevantné lokálne hity, 0 LIVE promotions, NASES/PSS smerujú do verification.
+- Priame company careers: `checked`; bez novej vhodnej unique BA/remote promotion-grade delty.
+- LinkedIn Jobs: `limited`; EUROWAG Office Coordinator je relevantný lokálny hit, ale fluent English = language reject; coverage bez loginu je čiastočná.
 - Worki: `checked`; bez novej vhodnej unique LIVE delty.
-- Kariera/Zoznam: `ok`; čerstvý GREEN RECYCLING BA hit, bez promotion pre fyzickú záťaž/VZV.
+- Kariera/Zoznam: `checked`; bez novej unique promotion-grade BA/remote delty.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote WordPress/admin/support brigády.
-- Tech/creative: `ok`; Pretlak/StartupJobs/WordPress Jobs preverené, lokálne/remote hity existujú, ale neprešli rankingom alebo lokalitou/jazykom.
-- Freelance/Upwork: `ok`; rediscovery existujúcich WooCommerce/WordPress kandidátov + nový extrémne nízko platený AI Blog VA, bez LIVE promotion.
+- Tech/creative: `checked`; Pretlak/StartupJobs/WordPress Jobs preverené bez novej promotion-grade delty.
+- Freelance/Upwork: `ok`; rediscovery existujúceho WooCommerce Product Listing kandidáta, bez novej unique LIVE promotion.
 - Reddit/komunity: `limited`; 0 eligible verified employer hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 04:51
+### Audit počty 05:51
 - nové LIVE promotions: **0**
-- nové unique verification kandidáty: **0**
-- verification queue: **73** (bez zámerného orezania)
+- nové silné verification kandidáty: **2** (NASES, PSS)
+- persisted verification queue pred týmto behom: **73**
 - persisted LIVE feed delta: **0**, zostáva **50**
 - Facebook verified hits: **0**
 - persisted LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
 - `job-sources.json`: aktualizovaný na tento beh.
-- `source-audit.json`: musí zostať lossless; ak nemožno zaručiť zachovanie celej 73-položkovej queue pri full-file replacement, zápis sa fail-closed nevykoná.
+- `source-audit.json`: lossless zápis je povinný; queue sa nesmie orezávať ani rekonštruovať z neúplného payloadu.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -221,3 +221,5 @@ Aktualizované: 8. 9. 2026 04:51 CEST
 - Trial-batch payment-risk gate.
 - **Search-engine zero-result confidence calibration** — pri nulovom výsledku rozlíši skutočne prázdny zdroj od slabej verejnej indexácie podľa historickej výťažnosti, freshness a dostupnosti detailov; znižuje falošný pocit úplného coverage.
 - **Reject-reason drift detector** — sleduje zmenu podielu `language`, `location`, `qualification`, `pay/value`, `duplicate` a `inactive` rejectov medzi behmi; upozorní, keď sa discovery zacyklí na nevhodnom type kandidátov a treba zmeniť query stratégiu.
+- **Contact-channel load profile** — z detailu ponuky odhadne podiel telefón/chat/e-mail/social a prevádzkové okná; penalizuje telefonicky ťažké alebo 7-dňové support roly oproti pokojnejšiemu back-office bez toho, aby ich chybne vyradil lokalitou.
+- **Public-sector compensation context normalizer** — pri ponukách viazaných na zákonné tabuľky rozlíši verejne uvedený nástupný základ, tarifný rámec a možné príplatky/odmeny, aby ranking neporovnával neporovnateľné mzdové údaje.
