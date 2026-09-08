@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 8. 9. 2026 17:11 CEST
+Aktualizované: 8. 9. 2026 21:52 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -44,40 +44,34 @@ Aktualizované: 8. 9. 2026 17:11 CEST
 - Promotion-ready z predchádzajúcich behov: **BeiT Technologie — Administrativně-ekonomický specialista (Junior/Medior), 100 % remote** a **SAV — Asistent/ka riaditeľa**; pred LIVE zápisom vyžadujú fresh canonical recheck.
 - Silný verification kandidát: **NASES — Operátor/operátorka Ústredného kontaktného centra**, Bratislava, od 1 500 EUR, pružný režim 8–16/9–17, vhodné pre absolventa; `locationEligibility: ba-area`. Mínus: AJ B1 a vyššie Office nároky.
 - Verification kandidát: **Dotypos SK — Technický support**, Bratislava, 1 200 EUR, TPP na neurčito, vhodné pre absolventa, support + terénne inštalácie + pred/popo-predajný servis; `locationEligibility: ba-area`. Ponuka je aktívna do 30. 9. 2026. Mínus: explicitná AJ B1/B2 a požiadavky na Android/IT prehľad.
+- Nový verification kandidát 21:52: **LJ Stav s. r. o. — Administratívny/a pracovník/čka, obchodný/á referent/ka**, Stupava, 1 300 EUR/mes., vhodné aj pre absolventa, bez cudzieho jazyka v canonical detaile, objednávky + cenové ponuky + zákazníci + technické/logické myslenie. `locationEligibility: ba-area`. Nepromovaný pre vyšší osobný/predajný kontakt a nižšiu odmenu oproti silnejším LIVE admin rolám.
+- Supplemental verification: **FEIM - SK — Obchodný špecialista pre e-shop a predaj svietidiel**, Malacky, 1 100–1 300 EUR/mes.; e-shop/order/customer-service fit, ale stredne pokročilá AJ a aktívny retail predaj znižujú ranking.
 
-### Čerstvé zistenia 12:37
+## Source audit — 8. 9. 2026 21:52
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam/ÚPSVR, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
-- LinkedIn: **Wealth Effect Management — Back Office Specialist**, Bratislava, od 2 000 EUR bol relevantný, ale detail explicitne uvádza **No longer accepting applications**, preto vyradený ako neaktívny.
-- Kariera: **Lidl — Junior konzultant oddelenia Facility Manažment**, Bratislava, 2 000 EUR, aktívny 8.9.2026. Obsahovo je technicko-facility relevantný, ale vyžaduje predchádzajúcu projektovú prax a plynulú angličtinu alebo nemčinu, preto nejde do LIVE.
-- Kariera: **DAŇOVÁ SOVA — Administratívny pracovník**, Pezinok, od 990 EUR je lokalitne eligible, ale verejný detail sa pri canonical otvorení nevrátil korektne; zostáva `unknown`/verification, nie LIVE.
-- StartupJobs: **Elasticr Technologie — IT Support Specialist L2**, 42–52 tis. Kč, Havlíčkův Brod, e-commerce/support. Verejný detail uvádza Remote/On-site/Hybrid, ale nepreukazuje vykonateľnosť prevažne zo Slovenska bez pravidelného dochádzania; navyše L2 incident/support požiadavky sú vyšší skill burden. `locationEligibility: unknown`, 0 promotion.
-- Upwork: nové Worldwide remote WordPress/WooCommerce hity boli podhodnotené alebo skill-heavy. Ecommerce VA Shopify/Etsy/WooCommerce má 15 USD fixed-price, Expert level a good written English; Dental Elementor build 15 USD fixed-price; WooCommerce UX/checkout optimalizácia 20 USD a vyžaduje PHP/JS. 0 promotion.
-- Reddit/komunity: 0 eligible verified hiring hitov.
-- Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nevykazuje ako hit.
+- Profesia: `ok`; 1 nový relevantný canonical kandidát — LJ Stav, Stupava, 1 300 EUR, absolvent-friendly, bez jazykového gate; 0 LIVE promotion pre ranking/value dôvody.
+- Priame company careers: `ok`; Carrier/Viessmann Servisní poradce je čerstvý, ale Chrášťany pri Prahe = `reject-distance`; Tesla Account Manager Bratislava je mimo prioritného rankingu.
+- LinkedIn Jobs: `checked`; 0 novej verejne overiteľnej unique promotion-grade delty.
+- Worki: `checked`; 0 novej suitable unique delty.
+- Kariera/Zoznam/ÚPSVR: `checked`; 0 novej canonical promotion-grade delty.
+- Brigada.sk: `checked`; 0 nových vhodných BA hitov.
+- Pretlak/StartupJobs/WordPress Jobs: `checked`; 0 novej overiteľnej non-hard-dev promotion-grade delty.
+- Upwork/freelance: `ok`; čerstvé Worldwide WordPress/WooCommerce výsledky boli 10–100 USD fixed alebo hard-dev/Expert scope. USA-only VA bola vyradená lokalitným/jurisdiction gateom. 0 promotion.
+- Reddit/komunity: `limited`; výsledky boli FOR HIRE alebo staršie US-only developer ponuky; 0 eligible verified hiring hitov.
+- Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom.
+- Supplemental Práca za rohom discovery: FEIM-SK e-shop sales Malacky, 1 100–1 300 EUR, no promotion pre AJ + aktívny predaj + nízky fix.
 
-## Source audit — 8. 9. 2026 12:37
-- Profesia: `checked`; 0 nových unique promotion-grade hitov.
-- Priame company careers: `checked`; 0 novej unique promotion-grade BA/remote delty.
-- LinkedIn Jobs: `limited`; 1 relevantný hit, 0 pridaných, 1 vyradený ako neaktívny.
-- Worki: `checked`; 0 pridaných, 1 indexovaný výsledok mimo lokalitného gate.
-- Kariera/Zoznam/ÚPSVR: `ok`; 2 relevantné kandidáty, 0 pridaných pre jazyk/skill/canonical uncertainty.
-- Brigada.sk: `checked`; 0 nových vhodných hitov.
-- Tech/creative: `ok`; 1 relevantný Elasticr L2 hit, 0 pridaných pre neoverený remote zo Slovenska + vyšší L2 skill burden.
-- Freelance/Upwork: `ok`; 5 relevantných čerstvých/rediscovery kandidátov, 0 pridaných pre nízky fixed-price budget, jazyk alebo hard-skill burden.
-- Reddit/komunity: `limited`; 0 verified hiring hitov.
-- Facebook public index: `limited`; **0 verified hits**.
-
-### Audit počty 12:37
+### Audit počty 21:52
 - source families checked: **10**
 - nové LIVE promotions: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
-- vyradené/pozastavené: language **2**, inactive **1**, skill **5**, duplicate/rediscovery **1**, location/remote-gate **2**, canonical uncertainty **1**
+- nové relevantné verification kandidáty: **2** (LJ Stav canonical; FEIM-SK supplemental)
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 12:37.
-- `source-audit.json`: aktualizovaný lossless na 12:37.
-- `jobs-data.json`: bez zmeny, pretože neexistovala promotion-grade unique delta.
+- `job-sources.json`: aktualizovaný na 21:52.
+- `source-audit.json`: aktualizovaný na 21:52.
+- `jobs-data.json`: bez zmeny, pretože neexistovala nová promotion-grade unique delta.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -225,61 +219,15 @@ Aktualizované: 8. 9. 2026 17:11 CEST
 - Trial-batch payment-risk gate.
 - **DIY-project evidence pack generator** — z existujúcich ESP/Home Assistant/elektronických projektov automaticky vytvoriť krátky dôkazový balík vhodný k technickým e-shop rolám ako Techfun, aby sa zvýšila úspešnosť reakcie bez preháňania skúseností.
 - **Electronics role code-depth limiter** — oddeliť základné Arduino/ESP/C/Python požiadavky od skutočného embedded hard-developmentu; zabrániť zbytočnému vyradeniu rolí, kde firma akceptuje hobby/DIY prax a zaškolenie.
-- **Stale-but-active vacancy recovery score** — pri staršej, ale canonical aktívnej ponuke odlíšiť reálne stále otvorené miesto od indexového odpadu; kombinovať explicitný closing date, response availability a posledné canonical overenie, aby sa neopomínali stále použiteľné role ako Dotypos.
-- **Language-requirement ambiguity resolver** — keď zdroj naraz uvádza B1 aj B2 alebo textovo „mierne pokročilý“, uložiť presnú evidenciu konfliktu a znížiť confidence namiesto automatického hard rejectu; šetrí manuálne overovanie a zlepšuje ranking pri hraničných support rolách.
-- **Canonical-open failure quarantine** — ak listing existuje vo výsledkoch, ale detail presmeruje na generický zoznam alebo vráti neúplný canonical obsah, položku automaticky držať v `unknown` a opakovane overiť z primárneho zdroja; zabráni false-positive LIVE promotion.
-- **Remote-from-Slovakia proof gate for CZ roles** — pri českých `Remote/Hybrid` ponukách vyžadovať explicitný dôkaz práce zo Slovenska alebo cezhraničného kontraktu; bez neho automaticky `locationEligibility: unknown`, čím sa eliminuje zbytočné manuálne preverovanie vzdialených hybridov.
-- **Canonical compensation recency validator** — pri rediscovery porovnať aktuálnu mzdu z canonical detailu s uloženou hodnotou a pri zmene vytvoriť material-change event; zabráni tomu, aby LIVE feed zobrazoval starú odmenu po úprave inzerátu.
-- **Promotion-ready persistence debt tracker** — evidovať kandidátov, ktorí už prešli rankingom a canonical overením, ale neboli zapísaní do `jobs-data.json` pre technický fail-closed limit; prioritne ich rechecknúť a bezpečne dopersistovať v prvom behu s lossless zápisom.
-- **Compensation certainty splitter** — ukladať osobitne garantovaný fix, podmienenú variabilnú zložku, provízie a maximá; ranking počítať primárne z garantovaného minima, aby marketingové „až X €“ neprebíjalo stabilnejšiu ponuku.
+- **Stale-but-active vacancy recovery score** — pri staršej, ale canonical aktívnej ponuke odlíšiť reálne stále otvorené miesto od indexového odpadu; kombinovať explicitný closing date, response availability a posledné canonical overenie.
+- **Language-requirement ambiguity resolver** — keď zdroj naraz uvádza B1 aj B2 alebo textovo „mierne pokročilý“, uložiť presnú evidenciu konfliktu a znížiť confidence namiesto automatického hard rejectu.
+- **Canonical-open failure quarantine** — ak listing existuje vo výsledkoch, ale detail presmeruje na generický zoznam alebo vráti neúplný canonical obsah, položku automaticky držať v `unknown` a opakovane overiť z primárneho zdroja.
+- **Remote-from-Slovakia proof gate for CZ roles** — pri českých `Remote/Hybrid` ponukách vyžadovať explicitný dôkaz práce zo Slovenska alebo cezhraničného kontraktu; bez neho automaticky `locationEligibility: unknown`.
+- **Canonical compensation recency validator** — pri rediscovery porovnať aktuálnu mzdu z canonical detailu s uloženou hodnotou a pri zmene vytvoriť material-change event.
+- **Promotion-ready persistence debt tracker** — evidovať kandidátov, ktorí už prešli rankingom a canonical overením, ale neboli zapísaní do `jobs-data.json` pre technický fail-closed limit.
+- **Compensation certainty splitter** — ukladať osobitne garantovaný fix, podmienenú variabilnú zložku, provízie a maximá; ranking počítať primárne z garantovaného minima.
 - **Support-level scope detector** — z náplne a požadovaných nástrojov klasifikovať L1/L2/L3 aj vtedy, keď titul pozície senioritu zatajuje; L2/L3 s AD/Windows Server/SQL/Splunk/PowerShell penalizovať skôr než sa minie čas na manuálne overovanie.
-- **BA commute-window reliability score** — pri lokálnych BA/okolie rolách kombinovať začiatok/koniec zmeny, typický dopravný režim a lokalitu pracoviska do samostatného commute rizika; hard gate ostáva nezmenený, ale ranking lepšie odlíši prakticky udržateľné dochádzanie od hraničných zmien.
-- **Canonical recheck TTL by source class** — nastaviť rozdielne intervaly opätovného overenia podľa typu zdroja (direct company/jobboard/freelance/community), aby sa čerstvé krátkožijúce ponuky kontrolovali častejšie a stabilné careers zbytočne nezaťažovali discovery.
-
-## Source audit — 8. 9. 2026 15:10
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**.
-- Profesia: `ok`; **Techfun** revalidated active, Bratislava-Petržalka, 1 800–2 200 EUR, publ. 7.9.2026; ide o rediscovery už evidovaného promotion-ready kandidáta, nie nový unique hit.
-- Priame company careers: `ok`; nový Slovak Telekom Senior controlling v Bratislave je aktívny, ale mimo cieľového rankingu.
-- LinkedIn Jobs: `limited`; AgentFire Junior Web Designer je remote EEA, ale **No longer accepting applications**.
-- Worki: `checked`; 0 novej unique promotion-grade delty.
-- Kariera/Zoznam/ÚPSVR: `checked`; 0 novej canonical promotion-grade delty.
-- Brigada.sk: `checked`; 0 nových vhodných hitov.
-- Pretlak/StartupJobs/WordPress Jobs: `checked`; WordPress Jobs aktuálne vracia najmä PHP/HTML/CSS/MySQL support alebo senior developer scope.
-- Upwork/freelance: `ok`; WooCommerce Assistant detail je už neaktívny; ďalšie čerstvé výsledky sú prevažne build/developer alebo nízkorozpočtové.
-- Reddit/komunity: `limited`; 0 verified hiring hitov.
-- Facebook public index: `limited`; **0 verified hits** a žiadny konkrétny verejne overiteľný post s priamym linkom.
-- LIVE feed delta: **0**, zostáva **50**; Profesia **48,0 %**, non-Profesia **52,0 %**.
-- `job-sources.json` a `source-audit.json` aktualizované na 15:10; `jobs-data.json` ponechaný bez zmeny fail-closed.
-- Zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**.
-
-## Source audit — 8. 9. 2026 16:50
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**.
-- Profesia: `checked`; 0 novej unique promotion-grade canonical delty.
-- Priame company careers: `checked`; Hemmersbach public career index priniesol iba proactive application, nie konkrétnu novú BA rolu.
-- LinkedIn Jobs: `limited`; 4 relevantné BA support hity, 0 promotion. Sharp Brains L1 = 1–3 roky desktop support + AD/networking; Global Blue = L2/L3 + PowerShell/SQL/Splunk + strong English; Wolt = student-only + English B2; Nexcess = Linux/terminal/networking.
-- Worki: `ok`; Shield-Sk Administrátor e-shopu / zákaznícka podpora v Ružinove je obsahovo veľmi relevantný, ale explicitne obsadený/zrušený.
-- Kariera/Zoznam/ÚPSVR: `ok`; Metrohm IT Support Specialist, Bratislava, 1 800 EUR je aktívny do 11.10.2026, ale vyžaduje VŠ I. stupňa, aspoň 1 rok praxe a AJ B1/B2; 0 promotion.
-- Brigada.sk: `ok`; Alpha Turbo promoter v Bratislave od 8.9.2026 je explicitne pre študentov 20–25 rokov a mimo prioritného rankingu.
-- Pretlak/StartupJobs/WordPress Jobs: `checked`; 0 novej overiteľnej non-hard-dev promotion-grade delty.
-- Upwork/freelance: `ok`; relevantné Worldwide remote WooCommerce/WordPress hity sú staršie, low-budget, language-risk alebo rediscovery; 0 promotion.
-- Reddit/komunity: `limited`; 0 eligible verified hiring hitov.
-- Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom.
-- LIVE feed delta: **0**, zostáva **50**; Profesia **48,0 %**, non-Profesia **52,0 %**.
-- `job-sources.json` a `source-audit.json` aktualizované na 16:50; `jobs-data.json` ponechaný bez zmeny fail-closed.
-- Zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**.
-
-## Source audit — 8. 9. 2026 17:11
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**.
-- Profesia: `checked`; 0 novej unique promotion-grade canonical delty.
-- Priame company careers: `ok`; Slovak Telekom, NAY a Hemmersbach boli reálne preverené. Telekom Žilina customer centre je `reject-distance`; senior controlling Bratislava je mimo rankingu; NAY Senec hity sú sklad/VZV s vysokou fyzickou a zmenovou záťažou.
-- LinkedIn Jobs: `limited`; SupportYourApp remote Technical Support Consultant je lokalitne remote-ok/BA, ale explicitné **Fluent English** je hard jazykový mismatch. 0 promotion.
-- Worki: `checked`; 0 novej vhodnej unique delty.
-- Kariera/Zoznam/ÚPSVR: `checked`; 0 novej canonical promotion-grade delty.
-- Brigada.sk: `checked`; 0 nových vhodných BA hitov.
-- Pretlak/StartupJobs/WordPress Jobs: `checked`; 0 novej overiteľnej non-hard-dev promotion-grade delty.
-- Upwork/freelance: `ok`; 5 relevantných Worldwide remote e-commerce/WordPress VA výsledkov, ale približne 3–8 USD/h alebo nízky fixed budget, často 20–50 až 50+ proposals; WordPress/Elementor support navyše zahŕňa hosting/DNS/caching a urgent helpdesk. 0 promotion.
-- Reddit/komunity: `limited`; verejné výsledky boli najmä FOR HIRE alebo staré/US-only developer ponuky; 0 eligible verified hiring hitov.
-- Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom.
-- LIVE feed delta: **0**, zostáva **50**; Profesia **48,0 %**, non-Profesia **52,0 %**.
-- `job-sources.json` a `source-audit.json` aktualizované na 17:11; `jobs-data.json` ponechaný bez zmeny fail-closed.
-- Zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**.
+- **BA commute-window reliability score** — pri lokálnych BA/okolie rolách kombinovať začiatok/koniec zmeny, typický dopravný režim a lokalitu pracoviska do samostatného commute rizika.
+- **Canonical recheck TTL by source class** — nastaviť rozdielne intervaly opätovného overenia podľa typu zdroja (direct company/jobboard/freelance/community).
+- **Customer-contact channel burden score** — rozlíšiť podiel osobného pultového kontaktu, telefónu, e-mailu a chatu; penalizovať roly, ktoré sa tvária ako administratíva, ale reálne sú prevažne retail/predaj/customer-facing.
+- **BA-area salary-to-commute opportunity-cost score** — kombinovať garantovaný fix, počet onsite dní a odhad dochádzania; pomôže odlíšiť lokálne eligible, ale ekonomicky slabšie ponuky od prakticky výhodnejších alternatív bez zmeny hard lokalitného gate.
