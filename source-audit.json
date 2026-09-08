@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-08T11:14:46+02:00",
+  "updatedAt": "2026-09-08T12:37:08+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
@@ -11,7 +11,7 @@
     "liveProfesiaPct": 48.0,
     "liveNonProfesiaPct": 52.0,
     "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Full diversity sweep on 8.9.2026 11:14 CEST. No promotion-grade unique delta was added. Existing LIVE items are preserved fail-closed."
+    "note": "Full diversity sweep on 8.9.2026 12:37 CEST. No promotion-grade unique delta was added. Existing LIVE items are preserved fail-closed."
   },
   "sources": [
     {
@@ -21,7 +21,7 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne vyhľadané 8.9.2026 11:14 pre BA/okolie a remote; bez novej overiteľnej unique promotion-grade delty v tomto behu."
+      "note": "Reálne vyhľadané 8.9.2026 12:37 pre BA/okolie a remote; bez novej overiteľnej unique promotion-grade delty v tomto behu."
     },
     {
       "name": "Priame firemné career stránky",
@@ -29,8 +29,8 @@
       "status": "checked",
       "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 2, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne preverené; indexované DHL Bratislava roly po otvorení hlásili, že už nie sú vypísané."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Priame career discovery bolo reálne preverené; bez novej unique promotion-grade BA/remote delty."
     },
     {
       "name": "LinkedIn Jobs",
@@ -38,8 +38,8 @@
       "status": "limited",
       "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
-      "note": "Verejný index našiel Sharp Brains L1 Desktop Support v Bratislave; onsite lokalita prechádza, ale 1–3 roky desktop supportu, AD a sieťové požiadavky znižujú fit. Coverage bez loginu je čiastočná."
+      "rejected": {"language": 0, "inactive": 1, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Verejný index našiel Wealth Effect Management – Back Office Specialist, Bratislava, od 2 000 EUR; detail však uvádza No longer accepting applications. Coverage bez loginu je čiastočná."
     },
     {
       "name": "Worki.sk",
@@ -47,17 +47,17 @@
       "status": "checked",
       "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne vyhľadané BA admin/support/e-shop/technické smery; bez novej promotion-grade delty."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 0},
+      "note": "Reálne vyhľadané; indexovaný výsledok bol mimo BA-area a nešlo o potvrdený remote zo Slovenska. Bez LIVE delty."
     },
     {
       "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
       "family": "kariera",
       "status": "ok",
-      "hits": 1,
+      "hits": 2,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Dotypos SK – Technický support je aktívny v Bratislave do 30.9.2026 a vhodný pre absolventa, ale explicitne uvádza angličtinu B1/B2; zostáva verification kandidát, nie LIVE promotion."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
+      "note": "DAŇOVÁ SOVA – Administratívny pracovník, Pezinok je lokalitne eligible, ale detail z verejného indexu sa nepodarilo canonical overiť. Lidl – Junior konzultant Facility Management, Bratislava, 2 000 EUR je aktívny 8.9.2026, ale vyžaduje plynulú AJ alebo NJ a predchádzajúcu projektovú prax; 0 promotion."
     },
     {
       "name": "Brigada.sk",
@@ -71,11 +71,11 @@
     {
       "name": "Pretlak / StartupJobs / WordPress Jobs",
       "family": "tech-creative",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne prehľadané non-hard-dev WordPress/e-commerce/support smery; bez novej eligible promotion-grade delty."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1},
+      "note": "Elasticr Technologie – IT Support Specialist L2 je čerstvý e-commerce/support hit, ale hlavné pracovisko je Havlíčkův Brod a verejný detail nepreukazuje remote zo Slovenska bez pravidelného dochádzania; navyše ide o L2 incident/support skill burden. Neprešiel hard gateom do LIVE."
     },
     {
       "name": "Upwork / freelance",
@@ -83,8 +83,8 @@
       "status": "ok",
       "hits": 5,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 2, "location": 0, "skill": 2},
-      "note": "Reálne preverené WooCommerce/product admin/VA výsledky. Online Store Assistant je Worldwide remote, ale 50+ proposals a bez transparentnej odmeny; ďalšie hity sú low-budget alebo vyžadujú silnejší multi-platform/English skill stack."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 3},
+      "note": "Reálne preverené Worldwide remote WordPress/WooCommerce hity. Ecommerce VA pre Shopify/Etsy/WooCommerce má iba 15 USD fixed-price, Expert label a good written English. Dental Elementor build má 15 USD fixed-price; WooCommerce UX/checkout optimalizácia 20 USD a vyžaduje PHP/JS. Bez promotion-grade hodnoty."
     },
     {
       "name": "Reddit / WordPress / WooCommerce komunity",
