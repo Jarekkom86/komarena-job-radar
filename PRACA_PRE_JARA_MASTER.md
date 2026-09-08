@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 8. 9. 2026 15:10 CEST
+Aktualizované: 8. 9. 2026 16:50 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -231,6 +231,8 @@ Aktualizované: 8. 9. 2026 15:10 CEST
 - **Remote-from-Slovakia proof gate for CZ roles** — pri českých `Remote/Hybrid` ponukách vyžadovať explicitný dôkaz práce zo Slovenska alebo cezhraničného kontraktu; bez neho automaticky `locationEligibility: unknown`, čím sa eliminuje zbytočné manuálne preverovanie vzdialených hybridov.
 - **Canonical compensation recency validator** — pri rediscovery porovnať aktuálnu mzdu z canonical detailu s uloženou hodnotou a pri zmene vytvoriť material-change event; zabráni tomu, aby LIVE feed zobrazoval starú odmenu po úprave inzerátu.
 - **Promotion-ready persistence debt tracker** — evidovať kandidátov, ktorí už prešli rankingom a canonical overením, ale neboli zapísaní do `jobs-data.json` pre technický fail-closed limit; prioritne ich rechecknúť a bezpečne dopersistovať v prvom behu s lossless zápisom.
+- **Compensation certainty splitter** — ukladať osobitne garantovaný fix, podmienenú variabilnú zložku, provízie a maximá; ranking počítať primárne z garantovaného minima, aby marketingové „až X €“ neprebíjalo stabilnejšiu ponuku.
+- **Support-level scope detector** — z náplne a požadovaných nástrojov klasifikovať L1/L2/L3 aj vtedy, keď titul pozície senioritu zatajuje; L2/L3 s AD/Windows Server/SQL/Splunk/PowerShell penalizovať skôr než sa minie čas na manuálne overovanie.
 
 ## Source audit — 8. 9. 2026 15:10
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**.
@@ -246,4 +248,20 @@ Aktualizované: 8. 9. 2026 15:10 CEST
 - Facebook public index: `limited`; **0 verified hits** a žiadny konkrétny verejne overiteľný post s priamym linkom.
 - LIVE feed delta: **0**, zostáva **50**; Profesia **48,0 %**, non-Profesia **52,0 %**.
 - `job-sources.json` a `source-audit.json` aktualizované na 15:10; `jobs-data.json` ponechaný bez zmeny fail-closed.
+- Zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**.
+
+## Source audit — 8. 9. 2026 16:50
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**.
+- Profesia: `checked`; 0 novej unique promotion-grade canonical delty.
+- Priame company careers: `checked`; Hemmersbach public career index priniesol iba proactive application, nie konkrétnu novú BA rolu.
+- LinkedIn Jobs: `limited`; 4 relevantné BA support hity, 0 promotion. Sharp Brains L1 = 1–3 roky desktop support + AD/networking; Global Blue = L2/L3 + PowerShell/SQL/Splunk + strong English; Wolt = student-only + English B2; Nexcess = Linux/terminal/networking.
+- Worki: `ok`; Shield-Sk Administrátor e-shopu / zákaznícka podpora v Ružinove je obsahovo veľmi relevantný, ale explicitne obsadený/zrušený.
+- Kariera/Zoznam/ÚPSVR: `ok`; Metrohm IT Support Specialist, Bratislava, 1 800 EUR je aktívny do 11.10.2026, ale vyžaduje VŠ I. stupňa, aspoň 1 rok praxe a AJ B1/B2; 0 promotion.
+- Brigada.sk: `ok`; Alpha Turbo promoter v Bratislave od 8.9.2026 je explicitne pre študentov 20–25 rokov a mimo prioritného rankingu.
+- Pretlak/StartupJobs/WordPress Jobs: `checked`; 0 novej overiteľnej non-hard-dev promotion-grade delty.
+- Upwork/freelance: `ok`; relevantné Worldwide remote WooCommerce/WordPress hity sú staršie, low-budget, language-risk alebo rediscovery; 0 promotion.
+- Reddit/komunity: `limited`; 0 eligible verified hiring hitov.
+- Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom.
+- LIVE feed delta: **0**, zostáva **50**; Profesia **48,0 %**, non-Profesia **52,0 %**.
+- `job-sources.json` a `source-audit.json` aktualizované na 16:50; `jobs-data.json` ponechaný bez zmeny fail-closed.
 - Zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**.
