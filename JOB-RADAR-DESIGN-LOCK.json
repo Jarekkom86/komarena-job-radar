@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "lockedAt": "2026-09-08T09:15:00+02:00",
+  "designVersion": "MASTER-v6.6",
+  "rule": "Do not modify locked visual files without explicit user approval for a design change.",
+  "lockedFiles": {
+    "komarena-job-radar-v6.5.html": "18fd009f1f9f041a207b067c5dcc0661f1647199",
+    "job-radar-v6.css": "5157753d3525a99191e78374f7a074315bf7809a",
+    "job-radar-v6.5-enhance.js": "fbb56af1213723b68deb9dc6ffc9e4c9de7fd80d",
+    "komarena-job-radar-jr-master.webp": "ded775849800577277c4581ee5c30db6e43bba54"
+  },
+  "normallyEditableWithoutDesignApproval": [
+    "jobs-data.json",
+    "jobs-data-nonprof.json",
+    "source-audit.json",
+    "job-sources.json",
+    "baseline-jobs.json",
+    "job-radar-feed-merge-v1.js",
+    "job-radar-source-layer-v1.js",
+    "job-radar-source-audit-v1.js",
+    "job-radar-apply-v1.js",
+    "JOB-RADAR-CHANGELOG.md"
+  ],
+  "requiredBeforePromotion": [
+    "locked file hashes unchanged unless explicitly approved",
+    "feed loads or falls back safely",
+    "CRM/localStorage compatibility preserved",
+    "source freshness is truthful",
+    "at least three useful daily improvements are documented"
+  ]
+}
