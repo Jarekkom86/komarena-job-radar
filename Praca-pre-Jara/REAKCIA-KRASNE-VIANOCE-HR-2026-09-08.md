@@ -6,19 +6,28 @@ Odmena: 9 EUR/h brutto
 Forma: dohoda/brigáda, podľa ponuky aj ďalšie formy spolupráce
 Stav: CV a reakcia pripravené, čaká na odoslanie/schválenie
 
-## MASTER CV zdroj
-Použitý bol aktuálny KomArena Job Radar MASTER generátor `job-radar-apply-v1.js`, verzia 6.7, nie starý Google Drive CV.
-MASTER obsahuje aktuálnu prax od 06/2025 ako Servisný a reklamačný technik Smart Home (SZČO) a modro-tyrkysový dvojstranový layout.
+## AUTHORITATÍVNY MASTER CV
+Jediný povolený MASTER je:
+`Praca-pre-Jara/CV-MASTER/Jaroslav_Koman_CV_MASTER_2026.pdf`
 
-## Personalizácia pre HR
-Bez vymýšľania HR praxe. Zvýraznené sú iba reálne skúsenosti:
-- vedenie a koordinácia tímov,
+Tento MASTER má bielo-modro-tyrkysový dvojstranový layout, fotku vpravo hore, kontakt `jaroslav@komarena.sk` a aktuálnu prax od 06/2025 ako `SZČO / Freelancer - webové, Smart Home a digitálne projekty`.
+
+Staré Google Drive CV a staršie generované MASTER varianty sa pre nové reakcie nepoužívajú.
+
+## Personalizované HR CV
+Finálny súbor vytvorený z autoritatívneho MASTERU:
+- `Jaroslav_Koman_CV_HR_Specialista_Krasne_Vianoce_MASTER_2026.pdf`
+- `Jaroslav_Koman_CV_HR_Specialista_Krasne_Vianoce_MASTER_2026.docx`
+
+Personalizácia nemení dizajn MASTERU. Zvýrazňuje iba pravdivé relevantné skúsenosti:
+- vedenie a koordinácia tímov približne do 20 ľudí,
 - zaúčanie nových zamestnancov,
-- poskytovanie spätnej väzby,
+- koučovanie a spätná väzba,
 - administratíva a evidencia,
 - KPI/reporting a kontrola výsledkov,
 - riešenie operatívnych a neštandardných situácií,
-- komunikácia s klientmi, zamestnancami a internými oddeleniami.
+- spolupráca s logistikou, procesným oddelením, IT a ďalšími internými tímami,
+- profesionálna komunikácia a organizácia práce.
 
 ## Reakcia
 Dobrý deň,
@@ -34,10 +43,11 @@ O ponuku mám záujem a rád sa osobne stretnem a predstavím svoje skúsenosti 
 S pozdravom
 Bc. Jaroslav Koman
 +421 908 336 947
-jaro.komanml@gmail.com
+jaroslav@komarena.sk
 
-## Artefakty
-- `CV_Jaroslav_Koman_HR_Krasne_Vianoce_JOBRADAR_MASTER.pdf`
-- `CV_Jaroslav_Koman_HR_Krasne_Vianoce_JOBRADAR_MASTER.docx`
-
-Poznámka: binárne CV súbory boli vytvorené v konverzácii; tento Markdown je centrálny Job Radar záznam obsahu a stavu.
+## Stav QA
+- 2 strany
+- fotka prevzatá priamo z MASTER CV
+- vizuál skontrolovaný po renderovaní oboch strán
+- bez vymyslenej HR praxe
+- pripravené na odoslanie po schválení používateľom
