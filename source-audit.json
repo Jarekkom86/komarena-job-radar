@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-08T20:52:14+02:00",
+  "updatedAt": "2026-09-08T21:52:16+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
@@ -11,7 +11,7 @@
     "liveProfesiaPct": 48.0,
     "liveNonProfesiaPct": 52.0,
     "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Full diversity sweep on 8.9.2026 20:52 CEST. No new unique promotion-grade item passed ranking and evidence gates. Fresh Profesia discovery found DHL Group IT Support in Bratislava at 2,000-2,200 EUR/month, but mandatory active English B2 plus broader IT/server support requirements are a material mismatch. LinkedIn public index returned Wolt Support Associate with English B2 and Sharp Brains onsite L1 with 1-3 years desktop-support requirements. Worki rediscovery was inactive. Kariera returned Grafton L1 complaints/support at 2,000 EUR, but requires technical university degree, similar experience and English B1. Upwork returned several Worldwide remote admin/e-commerce jobs, but low/ambiguous fixed budgets, country restrictions, competition or workload/skill burden kept them out of LIVE. Reddit yielded no fresh eligible hiring lead and Facebook public index yielded 0 verified hiring posts. Existing 50 LIVE items are preserved fail-closed."
+    "note": "Full diversity sweep on 8.9.2026 21:52 CEST. No new unique promotion-grade item passed ranking and evidence gates. Profesia canonical discovery found LJ Stav Administrativny/a pracovnik/cka, obchodny/a referent/ka in Stupava, 1,300 EUR/month, graduate-friendly and without a foreign-language requirement, but the role is strongly counter/customer/sales oriented and its compensation is below stronger current LIVE admin options, so it remains a verification candidate rather than a LIVE promotion. Supplemental public-index discovery found FEIM-SK e-shop sales specialist in Malacky, 1,100-1,300 EUR/month, but intermediate English and active retail sales materially reduce fit. Upwork produced fresh Worldwide WordPress/WooCommerce jobs, but the best new items were either hard-development scope or low fixed budgets (10-100 USD). Reddit yielded no eligible fresh hiring lead and Facebook public index yielded 0 verified hiring posts. Existing 50 LIVE items are preserved fail-closed."
   },
   "sources": [
     {
@@ -20,26 +20,26 @@
       "status": "ok",
       "hits": 1,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
-      "note": "Reálne vyhľadané 8.9.2026 20:52 pre BA/okolie a remote prioritné tracky. Fresh DHL Group IT Support, Bratislava, 2 000-2 200 EUR/mes. je lokalitne ba-area, ale vyžaduje aktívnu AJ B2, IT troubleshooting, HW/SW, základy serverov a občas emergency podporu mimo pracovného času; 0 LIVE promotion."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 1},
+      "note": "Reálne vyhľadané 8.9.2026 21:52 pre BA/okolie a remote prioritné tracky. LJ Stav, Stupava, 1 300 EUR/mes., administratíva + objednávky + zákazníci, vhodné aj pre absolventa a bez cudzieho jazyka. Lokalita ba-area. Pre silný osobný/predajný komponent a nižšiu odmenu oproti existujúcim LIVE admin možnostiam ostáva verification; 0 LIVE promotion."
     },
     {
       "name": "Priame firemné career stránky",
       "family": "company-careers",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 2,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Priame company-career discovery pre Bratislavu/remote technical support, e-commerce a customer support bolo reálne vyhľadané; bez novej canonical promotion-grade delty. DHL canonical career výsledok pre dnešnú BA pozíciu sa vo verejnom indexe nepodarilo potvrdiť, preto canonical Profesia detail ostáva evidenčný zdroj tohto hitu."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1},
+      "note": "Priame company-career discovery reálne vyhľadané. Carrier/Viessmann Servisni poradce bol čerstvý 8.9.2026, ale pracovisko Chrášťany pri Prahe = reject-distance. Tesla Account Manager Slovakia je Bratislava, ale ide o sales/account-management scope mimo prioritného Job Radar rankingu."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
-      "status": "ok",
-      "hits": 2,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
-      "note": "Verejný index reálne vyhľadaný. Wolt Support Associate Part Time Bratislava vyžaduje English B2 a večerné/víkendové zmeny. Sharp Brains Information Technology Support Engineer je onsite Bratislava B2B/freelance, ale žiada 1-3 roky desktop support, AD a networking. 0 promotion."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Verejný LinkedIn Jobs index bol reálne vyhľadaný pre Bratislava technical support, e-commerce, WordPress a customer support; bez novej verejne overiteľnej unique promotion-grade delty."
     },
     {
       "name": "Worki.sk",
@@ -47,17 +47,17 @@
       "status": "checked",
       "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 1, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne preverené BA/remote e-shop, administratíva a technická podpora. Administrátor e-shopu / zákaznícka podpora Shield-Sk v Ružinove bol indexovaný, ale canonical detail uvádza obsadené alebo zrušené miesto; 0 aktívnych vhodných hitov."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne vyhľadané BA/remote e-shop, administratíva, technická podpora, vodič a sklad; bez novej suitable unique delty."
     },
     {
       "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
       "family": "kariera",
-      "status": "ok",
-      "hits": 1,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
-      "note": "Reálne preverené Bratislava/okolie e-shop, administratíva a technická podpora. Grafton Analytik zákazníckych sťažností, Bratislava, 2 000 EUR, obsahuje L1 ticket/support prienik, ale vyžaduje technickú VŠ I. stupňa, prax na podobnej pozícii a AJ B1; 0 promotion."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne vyhľadané Bratislava/okolie e-shop, administratíva, technická podpora a logistika; bez novej canonical promotion-grade delty."
     },
     {
       "name": "Brigada.sk",
@@ -83,8 +83,8 @@
       "status": "ok",
       "hits": 5,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 2, "skill": 1, "budget": 3},
-      "note": "Worldwide remote admin/e-commerce discovery reálne vyhľadané. E-Commerce Operations & Admin VA za 250 USD fixed má WooCommerce backend, ale aj Shopee/Lazada, pokročilejší Excel a nejasný rozsah. WooCommerce Data Entry je iba 35 USD fixed. AI WordPress 120 článkov je 30 USD fixed. Dva VA výsledky majú USA-only požiadavku napriek Worldwide štítku; ďalšie sú low-budget alebo workload-risk. 0 LIVE promotion."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 4, "budget": 4},
+      "note": "Fresh Worldwide remote WordPress/WooCommerce discovery reálne vyhľadané. WordPress plugin maintenance 10 USD fixed is Expert scope; WooCommerce mobile/speed/checkout 20 USD requires PHP/JS; full WooCommerce build 70 USD is Expert/full-stack; fashion landing-page refresh 100 USD is intermediate design/development with portfolio pressure; a general VA result is USA-only despite remote labeling. 0 LIVE promotion."
     },
     {
       "name": "Reddit / WordPress / WooCommerce komunity",
@@ -92,8 +92,8 @@
       "status": "limited",
       "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
-      "note": "Verejne indexované komunity reálne vyhľadané. Výsledok bol starší FOR HIRE WordPress developer, nie hiring dopyt; 0 eligible fresh hiring hitov."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1},
+      "note": "Verejne indexované komunity reálne vyhľadané. Čerstvé výsledky boli FOR HIRE alebo staršie US-only developer ponuky; 0 eligible fresh hiring hitov."
     },
     {
       "name": "Facebook verejný index",
