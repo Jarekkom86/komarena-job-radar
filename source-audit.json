@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-08T16:50:23+02:00",
+  "updatedAt": "2026-09-08T17:11:48+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
@@ -11,7 +11,7 @@
     "liveProfesiaPct": 48.0,
     "liveNonProfesiaPct": 52.0,
     "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Full diversity sweep on 8.9.2026 16:50 CEST. No new unique promotion-grade item passed ranking and evidence gates. LinkedIn produced Bratislava support candidates, but Sharp Brains requires 1–3 years desktop support plus Active Directory/networking, Global Blue is L2/L3 with PowerShell/SQL/Splunk and strong English, and Wolt requires student eligibility plus English B2. Worki returned an e-shop admin match that is explicitly filled/cancelled. Existing 50 LIVE items are preserved fail-closed."
+    "note": "Full diversity sweep on 8.9.2026 17:11 CEST. No new unique promotion-grade item passed ranking and evidence gates. Direct company search rediscovered out-of-area Telekom Žilina and senior controlling in Bratislava; neither is a suitable new promotion. LinkedIn public index returned SupportYourApp remote technical support, but fluent English is a hard language mismatch. Upwork produced several Worldwide e-commerce/WordPress VA hits, but they were older, low-budget, high-competition or technically demanding. Existing 50 LIVE items are preserved fail-closed."
   },
   "sources": [
     {
@@ -21,52 +21,52 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne vyhľadané 8.9.2026 16:50 pre BA/okolie a remote prioritné tracky; verejný index v tomto behu nevrátil novú unique promotion-grade canonical deltu."
+      "note": "Reálne vyhľadané 8.9.2026 17:11 pre BA/okolie a remote prioritné tracky; 0 novej unique promotion-grade canonical delty."
     },
     {
       "name": "Priame firemné career stránky",
       "family": "company-careers",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 3,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne preverené priame careers pre Bratislavu/remote. Hemmersbach verejný career index poskytol iba proactive application, nie konkrétnu novú BA rolu vhodnú na promotion."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 1, "skill": 1},
+      "note": "Reálne preverené priame careers Slovak Telekom, NAY a Hemmersbach. Telekom Žilina customer centre je mimo hard locality gate; senior controlling Bratislava je mimo cieľového rankingu/seniority. NAY Senec vrátil skladové/VZV role s fyzickou a zmenovou záťažou, bez novej promotion."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
       "status": "limited",
-      "hits": 4,
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 3},
-      "note": "Verejný index reálne vyhľadaný. Sharp Brains DSS L1 je onsite Bratislava/B2B, ale žiada 1–3 roky desktop supportu, Active Directory a sieťové základy. Global Blue Application Support je L2/L3 s PowerShell/SQL/Splunk, Windows Server a strong English. Wolt part-time support vyžaduje študentský status a English B2. Nexcess vyžaduje Linux/terminal/networking. Coverage bez loginu zostáva čiastočná."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Verejný index reálne vyhľadaný. SupportYourApp Technical Support Consultant je remote/Bratislava, ale explicitne vyžaduje fluent English, preto výrazný jazykový mismatch. Coverage bez loginu zostáva čiastočná."
     },
     {
       "name": "Worki.sk",
       "family": "worki",
-      "status": "ok",
-      "hits": 1,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 1, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne preverené BA/remote admin, support a e-shop výsledky. Shield-Sk Administrátor e-shopu / zákaznícka podpora v Ružinove je obsahovo veľmi relevantný, ale detail explicitne uvádza, že miesto už bolo obsadené alebo zrušené."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne preverené BA/remote admin, support a e-shop výsledky; 0 novej vhodnej unique delty."
     },
     {
       "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
       "family": "kariera",
-      "status": "ok",
-      "hits": 2,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 2, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
-      "note": "Reálne preverené čerstvé Bratislava support/admin výsledky. Metrohm IT Support Specialist je BA a 1 800 EUR, ale vyžaduje VŠ I. stupňa, aspoň rok praxe a angličtinu B1/B2. Ďalšie zákaznícke support výsledky majú jazykové alebo profilové bariéry; 0 promotion."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne preverené Bratislava/okolie support, admin a e-shop výsledky; 0 novej canonical promotion-grade delty."
     },
     {
       "name": "Brigada.sk",
       "family": "brigada-sk",
-      "status": "ok",
-      "hits": 1,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
-      "note": "Reálne vyhľadané Bratislava brigády. Alpha Turbo promoter je čerstvý BA hit, ale je explicitne určený študentom 20–25 rokov a ide o terénny promo/predaj mimo prioritného rankingu."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne vyhľadané Bratislava brigády a administratívne/technické smery; bez nového vhodného hitu."
     },
     {
       "name": "Pretlak / StartupJobs / WordPress Jobs",
@@ -81,10 +81,10 @@
       "name": "Upwork / freelance",
       "family": "freelance",
       "status": "ok",
-      "hits": 6,
+      "hits": 5,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 2, "location": 0, "skill": 3},
-      "note": "Reálne preverené Worldwide remote WordPress/WooCommerce/VA výsledky. Najlepší nový-indexovaný smer zahŕňa WooCommerce product listing 10–30 USD/h, ale ide o starší 2-týždňový hit s 20–50 proposals a preferovanou holandčinou; ďalšie výsledky sú nízkorozpočtové, staršie alebo už evidované rediscovery. 0 promotion."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 3},
+      "note": "Reálne preverené Worldwide remote WordPress/WooCommerce/e-commerce VA výsledky. Product-listing/customer-support hity sú približne 3–8 USD/h alebo veľmi nízky fixed budget, často 20–50 až 50+ proposals. WordPress/Elementor support zahŕňa hosting, DNS, caching a urgent customer tickets, teda vyšší technický a komunikačný burden. 0 promotion."
     },
     {
       "name": "Reddit / WordPress / WooCommerce komunity",
@@ -93,7 +93,7 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Verejne indexované komunity boli reálne vyhľadané; 0 konkrétnych eligible hiring dopytov s dostatočnou verejnou evidenciou."
+      "note": "Verejne indexované komunity boli reálne vyhľadané; výsledky boli prevažne FOR HIRE alebo staré/US-only developer ponuky. 0 eligible verified hiring dopytov."
     },
     {
       "name": "Facebook verejný index",
