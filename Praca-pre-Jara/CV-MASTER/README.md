@@ -9,13 +9,14 @@ Tento PDF je od 2026-09-08 **jediný autoritatívny MASTER CV** pre KomArena Job
 ## Povinné pravidlá
 
 1. Každé nové personalizované CV musí vychádzať z tohto MASTER CV.
-2. Zachovať jeho vizuálny štýl, dvojstranovú štruktúru, typografickú hierarchiu, tabuľky, fotografiu a celkový profesionálny vzhľad.
-3. Meniť iba obsah relevantný ku konkrétnej pracovnej ponuke: titulok, profil, zhoda s pozíciou, kľúčové zručnosti a formuláciu relevantnej praxe.
-4. Nevymýšľať skúsenosti, kvalifikácie, jazyky ani pracovné výsledky.
-5. Aktuálny kontakt z MASTER CV: `jaroslav@komarena.sk`, telefón `+421 908 336 947`, lokalita `Miloslavov / Bratislava`.
-6. Aktuálnu činnosť uvádzať v súlade s MASTER CV ako `SZČO / Freelancer - webové, Smart Home a digitálne projekty`, pokiaľ konkrétna ponuka nevyžaduje užšiu pravdivú formuláciu.
-7. Staršie Google Drive CV a predchádzajúce generované CV nie sú MASTER a nesmú prebiť tento súbor.
-8. Ak sa Job Radar CV generátor obsahovo alebo vizuálne odlišuje od tohto PDF, za správny sa považuje tento PDF a generátor treba zosynchronizovať podľa neho.
+2. Zachovať jeho vizuálny štýl, typografickú hierarchiu, tabuľky, fotografiu a celkový profesionálny vzhľad.
+3. **Predvolene držať personalizované CV na jednej strane A4.** Skracovať profil, duplicity a menej relevantnú staršiu prax tak, aby zostala čitateľnosť a najsilnejšie argumenty pre danú pozíciu. Dve strany použiť iba výnimočne, ak by jedna strana odstránila dôležitú relevantnú prax alebo zhoršila čitateľnosť.
+4. Meniť iba obsah relevantný ku konkrétnej pracovnej ponuke: titulok, profil, zhoda s pozíciou, kľúčové zručnosti a formuláciu relevantnej praxe.
+5. Nevymýšľať skúsenosti, kvalifikácie, jazyky ani pracovné výsledky.
+6. Aktuálny kontakt z MASTER CV: `jaroslav@komarena.sk`, telefón `+421 908 336 947`, lokalita `Miloslavov / Bratislava`.
+7. Aktuálnu činnosť uvádzať v súlade s MASTER CV ako `SZČO / Freelancer - webové, Smart Home a digitálne projekty`, pokiaľ konkrétna ponuka nevyžaduje užšiu pravdivú formuláciu.
+8. Staršie Google Drive CV a predchádzajúce generované CV nie sú MASTER a nesmú prebiť tento súbor.
+9. Ak sa Job Radar CV generátor obsahovo alebo vizuálne odlišuje od tohto PDF, za správny sa považuje tento PDF a generátor treba zosynchronizovať podľa neho.
 
 ## Vzor obsahu MASTER
 
