@@ -42,6 +42,16 @@
 - Zdroj: https://www.profesia.sk/praca/toyota-material-handling-slovensko/O5267717
 - Verdikt: **B — veľmi zaujímavý technický kontakt; opýtať sa na interné školenie vs. riadny preukaz.**
 
+## Overený benchmark mimo BA — presne požadovaný model
+
+### V I K O spol. s r.o. — Považská Bystrica
+- Druh pracovného pomeru: **plný úväzok / na dohodu (brigády) / živnosť**.
+- Mzda v inzeráte: **8,59–9,73 €/h brutto**.
+- Práca zahŕňa manipuláciu s materiálom a VZV.
+- Firma výslovne uvádza: **školenie na VZV, viazanie bremien, práce vo výškach a so žeriavom zabezpečíme**.
+- Zdroj: https://www.profesia.sk/praca/v-i-k-o/O3712203
+- Verdikt: **A+ model**, ktorý hľadáme: brigádna/dohodárska spolupráca + viacero kvalifikácií cez firmu. Lokalita je však mimo cieľového regiónu, preto slúži ako benchmark a dôkaz, že takýto model na trhu existuje.
+
 ## Ďalšie zistenia
 
 ### PROPLUSCO — iné oprávnenia na náklady zamestnávateľa
@@ -52,6 +62,10 @@ Zdroj: https://www.profesia.sk/praca/proplusco/O5307505
 Pri skladníckej pozícii bolo uvedené, že skúsenosti s VZV alebo mostovým žeriavom sú výhodou, nie podmienkou, a zamestnávateľ v prípade potreby zabezpečí odborné školenie a uhradí náklady na potrebné oprávnenia.
 Zdroj: https://www.profesia.sk/praca/talent-solutions/O5305272
 Poznámka: konkrétna ponuka nebola overená ako brigáda v Bratislave, preto ju zatiaľ nehodnotiť ako priamy BA brigádny lead.
+
+### Grafton — historický precedens vystavenia VZV preukazu cez zamestnávateľa
+Grafton má archivovanú pozíciu, kde firma zabezpečovala školenie na VZV a **vystavenie preukazu**. Nie je to aktuálny BA brigádny lead, ale potvrdzuje, že cez agentúrne nábory sa dá dostať aj k riadnemu preukazu.
+Zdroj: https://www.grafton.sk/sk/jobs/operator-vyroby-12h-zmeny-bez-nocnych-nastup-priamo-do-interneho-stavu-firmy
 
 ## Rozlišovanie, ktoré treba pri telefonáte vždy potvrdiť
 Pýtať sa presne:
@@ -69,6 +83,7 @@ Pýtať sa presne:
 2. **MAXIN'S** — ak brigádny model nevýjde, najistejšia cesta k VZV od nuly.
 3. **Toyota Material Handling Slovensko** — technická brigáda + potenciál reálneho školenia.
 4. **P. J. Servis** — overiť, či vedia brigádnika bez preukazu zaradiť a preukaz zabezpečiť.
+5. **V I K O** — benchmark pre model brigáda + viac kvalifikácií; relevantné iba ak by bola prijateľná vzdialenejšia lokalita.
 
 ## Strategický záver
 Ak agentúra ponúkne iba interné zaškolenie alebo viazanosť, ktorá nedáva zmysel, ekonomicky môže byť lepšie zaplatiť si vlastný široký VZV/retrak kurz a potom cieliť na brigády približne 8,25–10+ €/h. Ak agentúra dá riadny preukaz bez veľkej viazanosti, využitie firemného školenia je výhodnejšie.
