@@ -69,3 +69,14 @@ Ak live feed zlyhá, radar sa nesmie tváriť ako prázdny bez vysvetlenia. Pref
 
 Canonical repository je `Jarekkom86/komarena-job-radar`.
 Starý názov `Jarekkom86/dochadzka-pro-sk` sa nesmie používať pre nové assety alebo dátové URL.
+
+## 8. FRESH-FIRST poradie
+
+Predvolené zobrazenie LIVE ponúk musí vždy dávať navrch najčerstvejšie reálne overené ponuky.
+
+Poradie pri predvolenom sortovaní:
+1. novší `verifiedAt`,
+2. pri rovnakom overení vyšší KomArena Match,
+3. staršie overené ponuky až pod nimi.
+
+Ponuka sa nesmie dostať navrch iba preto, že má vysoké score, ak bola overená skôr než novšia vhodná ponuka. Explicitné používateľské sorty ako hviezdičky, naposledy pozerané alebo neprečítané majú zostať rešpektované.
