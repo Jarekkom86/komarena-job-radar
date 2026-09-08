@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 8. 9. 2026 07:15 CEST
+Aktualizované: 8. 9. 2026 08:39 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -33,46 +33,49 @@ Aktualizované: 8. 9. 2026 07:15 CEST
 - Agregátor/repost nesmie prebiť priamy firemný zdroj.
 
 ## Aktuálny stav LIVE
-- Autoritatívny feed má **50 LIVE položiek**; v tomto behu nebol `jobs-data.json` menený, pretože nevznikla bezpečná nová LIVE promotion.
+- Autoritatívny feed má **50 LIVE položiek**; v tomto behu nebol `jobs-data.json` menený, pretože konektor neposkytuje bezpečný partial patch a úplný payload sa pri čítaní skracuje. FAIL-CLOSED zabránil riziku straty existujúcich položiek.
 - LIVE mix: **Profesia 24/50 = 48,0 %**, mimo Profesia **26/50 = 52,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná persisted LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
+- **NOVÝ promotion-ready TOP kandidát: Techfun s. r. o. — Elektro-technický špecialista pre e-shop**, Kopčianska 92A, Petržalka, 1 800–2 200 EUR/mes., Po–Pi onsite. Kombinuje odborné poradenstvo, e-mailovú/telefonickú technickú podporu, testovanie a zaraďovanie produktov, Arduino/ESP/Raspberry, reklamácie, návody, blog a produktové popisy. Angličtina je len základná; firma uvádza, že potrebné veci doučí. `locationEligibility: ba-area`. Riziko: vyžaduje aspoň základnú skúsenosť s C/C++ alebo Python a schopnosť čítať datasheety; nejde však o čistý hard-development profil.
+- Silný promotion-ready kandidát: **ReMar Slovakia — Administratívny pracovník / pracovníčka e-shopu – objednávky a zákaznícky servis**, Panónska cesta 4, Petržalka, 1 200 EUR + 200 EUR variabilne po skúšobnej dobe, Po–Pi 9:30–18:00. `locationEligibility: ba-area`.
 - Promotion-ready: **NAY a.s. — Reklamačný/á technik/čka, Centrálny sklad Senec**; publ. 7. 9. 2026, ASAP, reklamácie + procesy + práca s tovarom, `locationEligibility: ba-area`.
 - Silný flexibilný kandidát: **DHL Group — administratívna podpora transportného tímu, Senec**, 4 h denne, 804,50 EUR + 10 % mesačný bonus; `locationEligibility: ba-area`.
 - Promotion-ready z predchádzajúcich behov: **BeiT Technologie — Administrativně-ekonomický specialista (Junior/Medior), 100 % remote** a **SAV — Asistent/ka riaditeľa**; pred LIVE zápisom vyžadujú fresh canonical recheck.
 - Silný verification kandidát: **NASES — Operátor/operátorka Ústredného kontaktného centra**, Bratislava, od 1 500 EUR, pružný režim 8–16/9–17, vhodné pre absolventa; technicko-zákaznícka podpora slovensko.sk a e-schránok. `locationEligibility: ba-area`. Mínus: AJ B1 a vyššie Office nároky.
-- Sekundárny verification kandidát: **Prvá stavebná sporiteľňa — Spracovateľ/Spracovateľka služieb pre klientov – Call centrum**, Bajkalská 28, Bratislava, 1 500–1 700 EUR, občasný HO. `locationEligibility: ba-area`. Mínus: profil ponuky uvádza 2 roky bankovníctvo/financie.
 
-### Čerstvé zistenia 07:15
+### Čerstvé zistenia 08:39
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
-- **WordPress Jobs / WPMU DEV — WordPress Sales Support Specialist** je globálne remote a obsahovo sedí na WordPress + customer support + data entry, ale vyžaduje vysokú písomnú aj verbálnu angličtinu, aspoň 1 rok sales support, Zoom/sales komunikáciu a pracovné okná 15:00–23:00 alebo 22:00–06:00 UTC. Podľa ranking profilu ide o language/schedule reject, nie LIVE kandidáta.
-- **Worki — Pomocný pracovník na stavbe, Bratislava a okolie** bol 8. 9. aktualizovaný; lokalita prechádza a nástup je ihneď, ale rola je výrazne fyzická a mimo prioritného smeru, preto bez promotion.
-- Upwork: čerstvé WooCommerce/product-listing a QA výsledky sú prevažne multi-platform expert, hard-dev/automation alebo low-value; bez novej unique promotion-grade delty.
+- **Techfun — Elektro-technický špecialista pre e-shop** je dnes čerstvý veľmi silný kandidát: Petržalka, 1 800–2 200 EUR, základná AJ, e-shop + ESP/Arduino/Raspberry + technická podpora + reklamácie + produktový obsah. Práca za rohom je Profesia mirror a nepočíta sa ako nezávislý source hit.
+- **ReMar Slovakia — e-shop objednávky a zákaznícky servis** bol znovu canonical potvrdený ako aktívny; ide o rediscovery, nie nový source-family hit.
+- LinkedIn verejný index ukázal WordPress developer rolu v Bratislave, ale engineering/hard-dev charakter ju podľa ranking profilu penalizuje.
+- Worki Bratislava discovery prinieslo najmä sales/servis role bez lepšej zhody než aktuálny feed.
+- Upwork nový Ecommerce VA pre Shopify/Etsy/WooCommerce je Worldwide remote, ale iba 15 USD fixed-price a Expert scope; bez promotion.
 - Reddit/komunity: 0 eligible verified employer hits pre Slovensko.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nevykazuje ako hit.
 
-## Source audit — 8. 9. 2026 07:15
-- Profesia: `checked`; bez novej unique promotion-grade delty.
+## Source audit — 8. 9. 2026 08:39
+- Profesia: `ok`; nový relevantný hit Techfun, 0 persisted LIVE promotions z dôvodu fail-closed persistence blockeru; ReMar rediscovery.
 - Priame company careers: `checked`; bez novej vhodnej unique BA/remote promotion-grade delty.
-- LinkedIn Jobs: `limited`; bez novej vhodnej BA/remote non-hard-dev delty, coverage bez loginu čiastočná.
-- Worki: `ok`; 1 relevantný lokalitne eligible hit, ale fyzicky ťažký a mimo priorít; 0 LIVE promotions.
-- Kariera/Zoznam: `checked`; bez novej unique promotion-grade BA/remote delty.
+- LinkedIn Jobs: `limited`; verejná indexácia preverená, WordPress developer je hard-dev/engineering mismatch.
+- Worki: `checked`; bez novej vhodnej unique promotion-grade delty.
+- Kariera/Zoznam: `checked`; Pezinok admin výsledok existuje, ale nízka mzda a slabšia zhoda než LIVE/verification priority.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote WordPress/admin/support brigády.
-- Tech/creative: `ok`; WPMU DEV WordPress Sales Support je remote, ale vyradený pre vysokú angličtinu + sales/schedule burden.
-- Freelance/Upwork: `ok`; 2 relevantné/nearby výsledky, 1 rediscovery, bez novej unique LIVE promotion.
+- Tech/creative: `checked`; bez novej vhodnej non-hard-dev promotion-grade delty.
+- Freelance/Upwork: `ok`; nový Ecommerce VA je low-budget Expert scope, 0 promotion.
 - Reddit/komunity: `limited`; 0 eligible verified employer hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 07:15
-- nové LIVE promotions: **0**
-- nové verification kandidáty: **0**
-- persisted verification queue: **73**
+### Audit počty 08:39
+- nové promotion-ready kandidáty: **1 (Techfun)**
+- persisted nové LIVE promotions: **0**
+- persisted verification queue: **73** (nezmenená; source-audit write nebol vykonaný bez bezpečného lossless payloadu)
 - persisted LIVE feed delta: **0**, zostáva **50**
 - Facebook verified hits: **0**
 - persisted LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
 - `job-sources.json`: aktualizovaný na tento beh.
-- `source-audit.json`: aktualizovaný lossless; queue zachovaná na 73 položkách.
+- `source-audit.json`: **nezapísaný**, pretože konektor v tomto behu vracia veľký verification payload skrátený a umožňuje iba full-file replacement; FAIL-CLOSED zabránil strate queue.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -218,9 +221,5 @@ Aktualizované: 8. 9. 2026 07:15 CEST
 - Claims/reklamácie experience-transfer score.
 - Preferred-language vs mandatory-language classifier.
 - Trial-batch payment-risk gate.
-- **Search-engine zero-result confidence calibration** — pri nulovom výsledku rozlíši skutočne prázdny zdroj od slabej verejnej indexácie podľa historickej výťažnosti, freshness a dostupnosti detailov; znižuje falošný pocit úplného coverage.
-- **Reject-reason drift detector** — sleduje zmenu podielu `language`, `location`, `qualification`, `pay/value`, `duplicate` a `inactive` rejectov medzi behmi; upozorní, keď sa discovery zacyklí na nevhodnom type kandidátov a treba zmeniť query stratégiu.
-- **Contact-channel load profile** — z detailu ponuky odhadne podiel telefón/chat/e-mail/social a prevádzkové okná; penalizuje telefonicky ťažké alebo 7-dňové support roly oproti pokojnejšiemu back-office bez toho, aby ich chybne vyradil lokalitou.
-- **Public-sector compensation context normalizer** — pri ponukách viazaných na zákonné tabuľky rozlíši verejne uvedený nástupný základ, tarifný rámec a možné príplatky/odmeny, aby ranking neporovnával neporovnateľné mzdové údaje.
-- **Shift-window fatigue penalty** — prepočítava remote pracovné okná do Europe/Bratislava a penalizuje roly, ktoré sú síce formálne remote-ok, ale prakticky vyžadujú pravidelné nočné zmeny alebo dlhodobý posun cirkadiánneho režimu.
-- **Physical-load contradiction guard** — pri rolách s dobrým platom/lokalitou, ale výraznou manuálnou záťažou zablokuje falošne vysoké skóre z administratívnych alebo logistických kľúčových slov; fyzická náplň sa stane samostatným dôkazným faktorom, nie iba poznámkou.
+- **DIY-project evidence pack generator** — z existujúcich ESP/Home Assistant/elektronických projektov automaticky vytvoriť krátky dôkazový balík vhodný k technickým e-shop rolám ako Techfun, aby sa zvýšila úspešnosť reakcie bez preháňania skúseností.
+- **Electronics role code-depth limiter** — oddeliť základné Arduino/ESP/C/Python požiadavky od skutočného embedded hard-developmentu; zabrániť zbytočnému vyradeniu rolí, kde firma akceptuje hobby/DIY prax a zaškolenie.
