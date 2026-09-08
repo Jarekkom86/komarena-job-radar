@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "policy": "applied-state-suppression",
+  "purpose": "Prevent already-contacted/applied jobs from resurfacing as fresh sourcing wins or consuming verification priority while preserving CRM/user state.",
+  "locationGate": {
+    "requiredBeforeAnyRecommendation": true,
+    "allowed": ["ba-area", "remote-ok"],
+    "unknownAction": "quarantine",
+    "rejectDistanceAction": "reject"
+  },
+  "crmSafety": {
+    "readOnly": true,
+    "neverOverwriteUserEdits": true,
+    "preserveStableId": true,
+    "preserveCanonicalDedupe": true
+  },
+  "states": {
+    "applied": {"suppressFromFreshDiscovery": true, "suppressFromPromotionQueue": true, "allowMaterialChangeReview": true},
+    "contacted": {"suppressFromFreshDiscovery": true, "suppressFromPromotionQueue": true, "allowMaterialChangeReview": true},
+    "interview": {"suppressFromFreshDiscovery": true, "suppressFromPromotionQueue": true, "allowMaterialChangeReview": true},
+    "rejectedByEmployer": {"suppressFromFreshDiscovery": true, "suppressFromPromotionQueue": true, "allowMaterialChangeReview": false},
+    "withdrawn": {"suppressFromFreshDiscovery": true, "suppressFromPromotionQueue": true, "allowMaterialChangeReview": false}
+  },
+  "matching": {
+    "primary": "stableId",
+    "fallback": ["canonicalUrl", "canonicalFingerprint"],
+    "neverMatchOnEmployerNameAlone": true
+  },
+  "materialChangeExceptions": ["new_role_id", "materially_changed_scope", "materially_changed_compensation", "materially_changed_remote_policy"],
+  "metrics": ["suppressedRediscoveries", "verificationMinutesSaved", "materialChangeReopens"]
+}
