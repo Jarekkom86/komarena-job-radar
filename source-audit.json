@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-09T00:32:28+02:00",
+  "updatedAt": "2026-09-09T01:12:12+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
@@ -11,17 +11,17 @@
     "liveProfesiaPct": 48.0,
     "liveNonProfesiaPct": 52.0,
     "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Full diversity sweep on 9.9.2026 00:32 CEST. No new unique promotion-grade item passed ranking, locality and evidence gates. 3MON Office Manager/Executive Support in Bratislava is a strong admin/e-shop/AI thematic match, but canonical Profesia requires 3 years of similar experience plus advanced Word/Excel, so it remains verification-only. Volkswagen Group Services Internal Tech Agent/IT Specialist is locally eligible but broader professional IT scope and only up to 20% remote lower fit. LinkedIn Wolt Support Associate is Bratislava but student-only part-time, shift-heavy and requires English B2. SOITRON IT Support requires English B2. Reddit hiring results were US-only or stale/hard-dev. Facebook public index yielded 0 verified hiring posts. Existing 50 LIVE items are preserved fail-closed."
+    "note": "Full diversity sweep on 9.9.2026 01:12 CEST. No new unique promotion-grade item passed ranking, locality, language, skill and economic-value gates, so the 50-item LIVE feed is preserved fail-closed. Fresh Upwork public-index hits included a Worldwide WordPress plugin maintenance task posted about 1 hour before discovery, but it is expert-level and only 10 USD fixed; other fresh VA/e-commerce hits were rejected for USA-only/Spanish eligibility, excellent English plus cold calling, extreme schedule burden, low fixed-price economics or hard-development scope. Direct-company discovery found Webikon remote web development, but the role requires a modern PHP stack and is senior/hard-development. Reddit public hiring remains US-only/stale hard-dev. Facebook public index produced 0 verified hiring posts."
   },
   "sources": [
     {
       "name": "Profesia",
       "family": "profesia",
-      "status": "ok",
-      "hits": 2,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 0},
-      "note": "Reálne vyhľadané 9.9.2026 00:32 pre BA/okolie a remote prioritné tracky. 3MON Office Manager/Executive Support, Bratislava, od 1 650 EUR, spracovanie e-shop objednávok + administratíva + AI tools fit, ale canonical vyžaduje 3 roky podobnej praxe a pokročilý Excel/Word; verification-only. SOITRON IT Support BA vyžaduje AJ B2; reject language."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Reálne vyhľadané 9.9.2026 01:12 pre BA/okolie a remote prioritné tracky; tento sweep nepriniesol nový unique promotion-grade canonical hit nad existujúci verification/LIVE inventár."
     },
     {
       "name": "Priame firemné career stránky",
@@ -30,16 +30,16 @@
       "hits": 1,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 0},
-      "note": "Priame company-career discovery reálne preverené. Volkswagen Group Services Internal Tech. Agent/IT Specialist, Bratislava, posted 22.8.2026, up to 20% remote; lokálne eligible, ale professional IT scope zahŕňa network/OS/cybersecurity/scripting a je nad preferovanou non-hard-dev úrovňou. 3MON direct corporate web potvrdzuje centrálu Kopčianska 94B Bratislava, no pracovný listing je canonical na Profesia."
+      "note": "Direct-company discovery reálne preverené. Webikon ponúka Remote web developer 2 500–3 500 EUR na faktúru, ale ide o senior/hard-development rolu s moderným PHP stackom, frontend templatingom a testami; reject skill podľa profilu."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
       "status": "limited",
-      "hits": 3,
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 2, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 1, "eligibility": 1},
-      "note": "Verejný LinkedIn index reálne vyhľadaný. Wolt Support Associate Part Time je BA, ale študentská rola, zmeny večer/víkendy a AJ min. B2. SupportYourApp remote support vyžaduje C1/fluent English. Staffino zostáva cca 7 mesiacov starý a vyžaduje 2–4 roky IT/SaaS supportu. Coverage limited."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Verejný LinkedIn index bol reálne vyhľadaný pre Bratislava/remote support, e-commerce a WordPress; v tomto sweep-e sa nepotvrdil nový konkrétny promotion-grade unique hit. Coverage zostáva limited kvôli verejnej indexácii."
     },
     {
       "name": "Worki.sk",
@@ -48,7 +48,7 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne vyhľadané BA/remote e-shop, administratíva, technická podpora, vodič a sklad; tento sweep nepriniesol nový unique promotion-grade hit. Predchádzajúci Shield-Sk canonical zostáva inactive."
+      "note": "Reálne vyhľadané BA/remote e-shop, administratíva, technická podpora, vodič a sklad; bez nového vhodného unique hitu."
     },
     {
       "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
@@ -80,11 +80,11 @@
     {
       "name": "Upwork / freelance",
       "family": "freelance",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 7,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "budget": 0, "ranking": 0},
-      "note": "Upwork public discovery reálne vyhľadané pre fresh Worldwide remote WordPress/WooCommerce/VA scope; bez nového verejne indexovaného unique hitu nad existujúci verification inventár."
+      "rejected": {"language": 2, "inactive": 0, "duplicate": 1, "location": 2, "skill": 2, "budget": 5, "ranking": 1},
+      "note": "Fresh public discovery reálne vykonané. WordPress Plugin Update & Maintenance Expert: Worldwide, posted ~1h, ale expert scope a 10 USD fixed = reject skill/budget. WooCommerce Website Creation 70 USD fixed = hard-dev + low budget. Full-Time VA Operations 600 USD fixed vyžaduje 12 h/deň, 6 dní/týždeň a strong written English. Website-sales VA vyžaduje excellent spoken/written English + denný cold calling v US hours. USA-only a Spanish-only VA hity reject eligibility/location. AI Blog Post VA 30 USD/120 článkov je už evidovaný verification low-pay hit, nie nový unique promotion."
     },
     {
       "name": "Reddit / WordPress / WooCommerce komunity",
@@ -93,7 +93,7 @@
       "hits": 1,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1},
-      "note": "Verejne indexované komunity reálne vyhľadané. Konkrétne r/wordpressjobs hiring výsledky sú US-only a hard-dev alebo staré; najnovšie vhodné non-dev výsledky sa nepotvrdili. Reject-distance + skill."
+      "note": "Verejne indexované komunity reálne vyhľadané. Konkrétny r/wordpressjobs hiring výsledok je US-only, starší a hard-dev (PHP/JS/API); reject-distance + skill. Iné čerstvé výsledky boli for-hire ponuky, nie hiring dopyty."
     },
     {
       "name": "Facebook verejný index",
