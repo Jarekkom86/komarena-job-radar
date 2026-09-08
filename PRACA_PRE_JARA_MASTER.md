@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 8. 9. 2026 12:37 CEST
+Aktualizované: 8. 9. 2026 15:10 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -229,3 +229,21 @@ Aktualizované: 8. 9. 2026 12:37 CEST
 - **Language-requirement ambiguity resolver** — keď zdroj naraz uvádza B1 aj B2 alebo textovo „mierne pokročilý“, uložiť presnú evidenciu konfliktu a znížiť confidence namiesto automatického hard rejectu; šetrí manuálne overovanie a zlepšuje ranking pri hraničných support rolách.
 - **Canonical-open failure quarantine** — ak listing existuje vo výsledkoch, ale detail presmeruje na generický zoznam alebo vráti neúplný canonical obsah, položku automaticky držať v `unknown` a opakovane overiť z primárneho zdroja; zabráni false-positive LIVE promotion.
 - **Remote-from-Slovakia proof gate for CZ roles** — pri českých `Remote/Hybrid` ponukách vyžadovať explicitný dôkaz práce zo Slovenska alebo cezhraničného kontraktu; bez neho automaticky `locationEligibility: unknown`, čím sa eliminuje zbytočné manuálne preverovanie vzdialených hybridov.
+- **Canonical compensation recency validator** — pri rediscovery porovnať aktuálnu mzdu z canonical detailu s uloženou hodnotou a pri zmene vytvoriť material-change event; zabráni tomu, aby LIVE feed zobrazoval starú odmenu po úprave inzerátu.
+- **Promotion-ready persistence debt tracker** — evidovať kandidátov, ktorí už prešli rankingom a canonical overením, ale neboli zapísaní do `jobs-data.json` pre technický fail-closed limit; prioritne ich rechecknúť a bezpečne dopersistovať v prvom behu s lossless zápisom.
+
+## Source audit — 8. 9. 2026 15:10
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**.
+- Profesia: `ok`; **Techfun** revalidated active, Bratislava-Petržalka, 1 800–2 200 EUR, publ. 7.9.2026; ide o rediscovery už evidovaného promotion-ready kandidáta, nie nový unique hit.
+- Priame company careers: `ok`; nový Slovak Telekom Senior controlling v Bratislave je aktívny, ale mimo cieľového rankingu.
+- LinkedIn Jobs: `limited`; AgentFire Junior Web Designer je remote EEA, ale **No longer accepting applications**.
+- Worki: `checked`; 0 novej unique promotion-grade delty.
+- Kariera/Zoznam/ÚPSVR: `checked`; 0 novej canonical promotion-grade delty.
+- Brigada.sk: `checked`; 0 nových vhodných hitov.
+- Pretlak/StartupJobs/WordPress Jobs: `checked`; WordPress Jobs aktuálne vracia najmä PHP/HTML/CSS/MySQL support alebo senior developer scope.
+- Upwork/freelance: `ok`; WooCommerce Assistant detail je už neaktívny; ďalšie čerstvé výsledky sú prevažne build/developer alebo nízkorozpočtové.
+- Reddit/komunity: `limited`; 0 verified hiring hitov.
+- Facebook public index: `limited`; **0 verified hits** a žiadny konkrétny verejne overiteľný post s priamym linkom.
+- LIVE feed delta: **0**, zostáva **50**; Profesia **48,0 %**, non-Profesia **52,0 %**.
+- `job-sources.json` a `source-audit.json` aktualizované na 15:10; `jobs-data.json` ponechaný bez zmeny fail-closed.
+- Zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**.
