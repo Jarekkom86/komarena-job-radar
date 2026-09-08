@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-08T22:17:25+02:00",
+  "updatedAt": "2026-09-08T23:38:09+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
@@ -11,17 +11,17 @@
     "liveProfesiaPct": 48.0,
     "liveNonProfesiaPct": 52.0,
     "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Full diversity sweep on 8.9.2026 22:17 CEST. No new unique promotion-grade item passed ranking, locality and evidence gates. Profesia/company/LinkedIn and Slovak-board searches produced no stronger eligible delta than current LIVE/verification inventory. Worki surfaced Shield-Sk Administrátor e-shopu / zákaznícka podpora in Bratislava-Ružinov, but canonical detail explicitly says the vacancy is already filled/cancelled, so it was rejected inactive. Upwork returned several remote WordPress/admin candidates; the freshest strong-fit item is AI Blog Post VA for WordPress (Worldwide, entry level), but 120 articles/month for 30 USD fixed is far below a viable compensation floor. A 6-hour-old Content Management & Project Coordination role is remote worldwide but requires headless CMS experience plus good spoken/written English and Adobe/InDesign/Illustrator, creating a high skill/language burden. Reddit yielded no eligible fresh hiring lead and Facebook public index yielded 0 verified hiring posts. Existing 50 LIVE items are preserved fail-closed."
+    "note": "Full diversity sweep on 8.9.2026 23:38 CEST. No new unique promotion-grade item passed ranking, locality and evidence gates. LinkedIn surfaced Staffino Technical Support Specialist / Project Coordinator in Bratislava Metropolitan Area, but the listing is about 7 months old and requires 2–4 years of IT/SaaS support experience; it remains verification-only. ESET Customer Support Specialist in Bratislava is entry-level and locally eligible, but asks for good active English, ideally B2, so it was rejected by the language ranking. Worki again exposed Shield-Sk e-shop support only as an inactive/cancelled vacancy. Reddit public results included a US-only WordPress hiring post, rejected by locality, while Facebook public index yielded 0 verified hiring posts. Existing 50 LIVE items are preserved fail-closed."
   },
   "sources": [
     {
       "name": "Profesia",
       "family": "profesia",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Reálne vyhľadané 8.9.2026 22:17 pre BA/okolie a remote prioritné tracky; bez novej unique promotion-grade delty oproti existujúcemu LIVE/verification inventáru."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Reálne vyhľadané 8.9.2026 23:38 pre BA/okolie a remote prioritné tracky. ESET Customer Support Specialist, Bratislava, od 1 250 EUR, je entry-level a lokálne eligible, ale vyžaduje aktívnu angličtinu ideálne B2; bez LIVE promotion."
     },
     {
       "name": "Priame firemné career stránky",
@@ -30,16 +30,16 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Priame company-career discovery bolo reálne vyhľadané pre Bratislava technical support, customer support, e-commerce a service role; bez novej overiteľnej promotion-grade delty."
+      "note": "Priame company-career discovery bolo reálne vyhľadané pre Bratislava technical support, customer support, e-commerce a service role; bez novej overiteľnej promotion-grade delty. Pri Staffino nebol nájdený použiteľný direct career detail, preto canonical promotion nebola povolená."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
       "status": "limited",
-      "hits": 0,
+      "hits": 2,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Verejný LinkedIn Jobs index bol reálne vyhľadaný pre Bratislava support/e-commerce/admin; bez novej verejne overiteľnej unique promotion-grade delty. Verejná indexácia je čiastočná."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 1},
+      "note": "Verejný LinkedIn Jobs index bol reálne vyhľadaný. Staffino Technical Support Specialist / Project Coordinator je BA hybrid, ale približne 7 mesiacov starý a vyžaduje 2–4 roky IT/SaaS support praxe; verification-only. ESET Customer Support Specialist je BA entry-level, ale English ideally B2 = výrazný jazykový mínus. Verejná indexácia je čiastočná."
     },
     {
       "name": "Worki.sk",
@@ -48,7 +48,7 @@
       "hits": 1,
       "added": 0,
       "rejected": {"language": 0, "inactive": 1, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne vyhľadané BA/remote e-shop, administratíva, technická podpora, vodič a sklad. Shield-Sk Administrátor e-shopu / zákaznícka podpora, Bratislava-Ružinov, bol relevantný obsahovo, ale canonical detail explicitne uvádza, že miesto už bolo obsadené alebo zrušené; reject inactive."
+      "note": "Reálne vyhľadané BA/remote e-shop, administratíva, technická podpora, vodič a sklad. Shield-Sk Administrátor e-shopu / zákaznícka podpora, Bratislava-Ružinov, zostáva canonical inactive: miesto už bolo obsadené alebo zrušené."
     },
     {
       "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
@@ -80,20 +80,20 @@
     {
       "name": "Upwork / freelance",
       "family": "freelance",
-      "status": "ok",
-      "hits": 5,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 2, "inactive": 0, "duplicate": 0, "location": 0, "skill": 2, "budget": 4, "ranking": 1},
-      "note": "Reálne vyhľadané fresh Worldwide remote WordPress/admin kandidáty. AI Blog Post VA for WordPress: 120 článkov/mesiac za 30 USD fixed = reject budget napriek entry-level a výbornému tematickému fitu. Content Management & Project Coordination: 6 hodín staré, Worldwide remote, ale headless CMS required + good written/spoken English + Adobe/InDesign/Illustrator = vysoký skill/language burden. Mailchimp/Canva/WordPress VA a Operations/Campaign VA sú remote-ok, ale vyššia angličtina/tool burden a slabšie value; WordPress blog formatting 5 USD/post je pod ekonomickým floorom. 0 LIVE promotion."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "budget": 0, "ranking": 0},
+      "note": "Upwork public discovery bolo reálne vyhľadané pre fresh Worldwide remote WordPress/WooCommerce/VA scope; tento beh nepriniesol nový verejne indexovaný unique hit nad existujúci verification inventár."
     },
     {
       "name": "Reddit / WordPress / WooCommerce komunity",
       "family": "community",
       "status": "limited",
-      "hits": 0,
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 1, "duplicate": 0, "location": 0, "skill": 1},
-      "note": "Verejne indexované komunity reálne vyhľadané. Zobrazené výsledky boli FOR HIRE alebo staré/nevhodné developer hiring posty; 0 eligible fresh hiring hitov."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1},
+      "note": "Verejne indexované komunity reálne vyhľadané. Konkrétny hiring WordPress developer post bol remote iba pre ľudí aktuálne v USA a navyše hard-dev; reject-distance + skill. Ďalšie výsledky boli FOR HIRE alebo staršie."
     },
     {
       "name": "Facebook verejný index",
