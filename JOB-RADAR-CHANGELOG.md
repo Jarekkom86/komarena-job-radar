@@ -1,5 +1,28 @@
 # KomArena Job Radar — CHANGELOG
 
+## 2026-09-08 — TRUE FRESH refresh 09:29
+
+### 9. Reálne čerstvé ponuky, nie iba nový timestamp
+- Pridaný `jobs-fresh-delta.json` s verejne overenými aktuálnymi ponukami z rána 8.9.2026.
+- Do fresh vrstvy boli zaradené: Henkel `Analyst Application Support`, Riešenia `Digital Account Manager`, aktuálne potvrdený Slovak Telekom support a NAY Elektrošpecialista.
+- Každá položka má vlastný `verifiedAt`; čerstvosť sa teda viaže na reálne overenie ponuky, nie na umelé prepísanie hlavného feedu.
+
+### 10. Feed merge používa fresh delta
+- `job-radar-feed-merge-v1.js` teraz spája hlavný LIVE feed + non-Profesia feed + `jobs-fresh-delta.json`.
+- Pri rovnakej firme a názve vyhrá pri rovnakej kvalite zdroja novšie reálne overenie.
+- Feed vystavuje `verificationUpdatedAt` a počet fresh položiek cez `feedParts.fresh` / `JobRadarFeedHealth.freshJobs`.
+
+### 11. Fresh source audit
+- Pridaný `source-audit-live.json` s reálnou kontrolou zdrojov o 09:29.
+- `job-radar-source-audit-v1.js` načíta najprv fresh audit a až potom legacy audit; pri výpadku ostáva cache fallback.
+- Audit explicitne rozlišuje Profesia, konkrétne firemné ponuky a limited LinkedIn public coverage.
+
+### MASTER DESIGN LOCK — kontrola
+- Nebol upravený žiadny zamknutý vizuálny súbor: `komarena-job-radar-v6.5.html`, `job-radar-v6.css`, `job-radar-v6.5-enhance.js`, `komarena-job-radar-jr-master.webp`.
+- Funkčný refresh prebehol iba cez dátové a feed/audit vrstvy.
+
+---
+
 ## 2026-09-08 — screenshot stability pass
 
 ### 6. Operational freshness ≠ vek poslednej zmeny obsahu
