@@ -1,45 +1,109 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-08T10:04:00+02:00",
+  "updatedAt": "2026-09-08T11:14:46+02:00",
   "runSummary": {
-    "familiesChecked": 4,
-    "freshPromoted": 8,
+    "familiesChecked": 10,
+    "freshPromoted": 0,
     "freshnessWindowHours": 48,
+    "liveFeedCount": 50,
+    "liveProfesiaCount": 24,
+    "liveNonProfesiaCount": 26,
+    "liveProfesiaPct": 48.0,
+    "liveNonProfesiaPct": 52.0,
     "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Focused refresh on 8.9.2026 verified current Bratislava/BA-region and suitable remote offers. Stale records remain quarantined until re-verified; timestamp-only updates are not counted as fresh jobs."
+    "note": "Full diversity sweep on 8.9.2026 11:14 CEST. No promotion-grade unique delta was added. Existing LIVE items are preserved fail-closed."
   },
   "sources": [
     {
       "name": "Profesia",
       "family": "profesia",
-      "status": "ok",
-      "hits": 6,
-      "added": 5,
-      "note": "Reálne preverené 8.9.2026 o 10:04. Potvrdené aktuálne BA/remote ponuky vrátane finby administratívy, INDEX archívu, Proveon telepráce, A&A remote a Henkel application support; nevhodné hard-gate ponuky sa nepromujú."
-    },
-    {
-      "name": "Kariera.sk / priame firemné ponuky",
-      "family": "company-careers",
-      "status": "ok",
-      "hits": 3,
-      "added": 3,
-      "note": "Reálne preverené 8.9.2026 o 10:04. Potvrdené Slovak Telekom B2B support, Lidl Junior Facility a NAY reklamačný technik."
-    },
-    {
-      "name": "LinkedIn Jobs / company posts",
-      "family": "linkedin",
-      "status": "limited",
-      "hits": 0,
-      "added": 0,
-      "note": "V tomto focused refreshe nebol použitý ako promotion source; verejné pokrytie bez loginu zostáva obmedzené."
-    },
-    {
-      "name": "Ostatné portály / komunity / freelance",
-      "family": "other",
       "status": "checked",
       "hits": 0,
       "added": 0,
-      "note": "V tomto cykle nebola nájdená nová promotion-grade ponuka lepšia než čerstvé Profesia/Kariera výsledky. Ďalší hodinový refresh ich znovu preverí."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne vyhľadané 8.9.2026 11:14 pre BA/okolie a remote; bez novej overiteľnej unique promotion-grade delty v tomto behu."
+    },
+    {
+      "name": "Priame firemné career stránky",
+      "family": "company-careers",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "rejected": {"language": 0, "inactive": 2, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne preverené; indexované DHL Bratislava roly po otvorení hlásili, že už nie sú vypísané."
+    },
+    {
+      "name": "LinkedIn Jobs",
+      "family": "linkedin",
+      "status": "limited",
+      "hits": 1,
+      "added": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
+      "note": "Verejný index našiel Sharp Brains L1 Desktop Support v Bratislave; onsite lokalita prechádza, ale 1–3 roky desktop supportu, AD a sieťové požiadavky znižujú fit. Coverage bez loginu je čiastočná."
+    },
+    {
+      "name": "Worki.sk",
+      "family": "worki",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne vyhľadané BA admin/support/e-shop/technické smery; bez novej promotion-grade delty."
+    },
+    {
+      "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
+      "family": "kariera",
+      "status": "ok",
+      "hits": 1,
+      "added": 0,
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Dotypos SK – Technický support je aktívny v Bratislave do 30.9.2026 a vhodný pre absolventa, ale explicitne uvádza angličtinu B1/B2; zostáva verification kandidát, nie LIVE promotion."
+    },
+    {
+      "name": "Brigada.sk",
+      "family": "brigada-sk",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne vyhľadané Bratislava admin/e-shop/support/kuriér; bez vhodného nového hitu."
+    },
+    {
+      "name": "Pretlak / StartupJobs / WordPress Jobs",
+      "family": "tech-creative",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne prehľadané non-hard-dev WordPress/e-commerce/support smery; bez novej eligible promotion-grade delty."
+    },
+    {
+      "name": "Upwork / freelance",
+      "family": "freelance",
+      "status": "ok",
+      "hits": 5,
+      "added": 0,
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 2, "location": 0, "skill": 2},
+      "note": "Reálne preverené WooCommerce/product admin/VA výsledky. Online Store Assistant je Worldwide remote, ale 50+ proposals a bez transparentnej odmeny; ďalšie hity sú low-budget alebo vyžadujú silnejší multi-platform/English skill stack."
+    },
+    {
+      "name": "Reddit / WordPress / WooCommerce komunity",
+      "family": "community",
+      "status": "limited",
+      "hits": 0,
+      "added": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Verejne indexované komunity boli vyhľadané; 0 konkrétnych eligible hiring postov s dostatočným dôkazom."
+    },
+    {
+      "name": "Facebook verejný index",
+      "family": "facebook",
+      "status": "limited",
+      "hits": 0,
+      "verifiedHits": 0,
+      "added": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "WordPress Slovensko, WooCommerce Komunita SK+CZ a BA pracovné skupiny boli verejne vyhľadané. Žiadny konkrétny verejne overiteľný hiring post s priamym linkom; 0 verified hits. Autentizovaný Nexus/local ingestion ostáva backlog."
     }
   ]
 }
