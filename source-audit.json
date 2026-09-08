@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-08T17:11:48+02:00",
+  "updatedAt": "2026-09-08T18:52:59+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
@@ -11,7 +11,7 @@
     "liveProfesiaPct": 48.0,
     "liveNonProfesiaPct": 52.0,
     "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Full diversity sweep on 8.9.2026 17:11 CEST. No new unique promotion-grade item passed ranking and evidence gates. Direct company search rediscovered out-of-area Telekom Žilina and senior controlling in Bratislava; neither is a suitable new promotion. LinkedIn public index returned SupportYourApp remote technical support, but fluent English is a hard language mismatch. Upwork produced several Worldwide e-commerce/WordPress VA hits, but they were older, low-budget, high-competition or technically demanding. Existing 50 LIVE items are preserved fail-closed."
+    "note": "Full diversity sweep on 8.9.2026 18:52 CEST. No new unique promotion-grade item passed ranking and evidence gates. LinkedIn public index returned Nexcess Technical Support Engineer in Bratislava (EUR 1300-2000, remote from Bratislava), but the role explicitly requires deep Internet/network understanding plus Linux terminal work, which triggers the hard-skill penalty. SupportYourApp remote technical support requires at least C1 English. Reddit returned a concrete remote WordPress/WooCommerce content-assistant hiring post, but it was published 19.7.2026 and requires good written English, so it was treated as an older verification/community lead rather than a fresh LIVE promotion. Existing 50 LIVE items are preserved fail-closed."
   },
   "sources": [
     {
@@ -21,25 +21,25 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne vyhľadané 8.9.2026 17:11 pre BA/okolie a remote prioritné tracky; 0 novej unique promotion-grade canonical delty."
+      "note": "Reálne vyhľadané 8.9.2026 18:52 pre BA/okolie a remote prioritné tracky; 0 novej unique promotion-grade canonical delty."
     },
     {
       "name": "Priame firemné career stránky",
       "family": "company-careers",
-      "status": "ok",
-      "hits": 3,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 1, "skill": 1},
-      "note": "Reálne preverené priame careers Slovak Telekom, NAY a Hemmersbach. Telekom Žilina customer centre je mimo hard locality gate; senior controlling Bratislava je mimo cieľového rankingu/seniority. NAY Senec vrátil skladové/VZV role s fyzickou a zmenovou záťažou, bez novej promotion."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne vyhľadané priame company-career výsledky pre Bratislavu/remote technical support a e-commerce/customer support; v tomto verejnom behu nevznikla nová canonical promotion-grade delta."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
-      "status": "limited",
-      "hits": 1,
+      "status": "ok",
+      "hits": 3,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Verejný index reálne vyhľadaný. SupportYourApp Technical Support Consultant je remote/Bratislava, ale explicitne vyžaduje fluent English, preto výrazný jazykový mismatch. Coverage bez loginu zostáva čiastočná."
+      "rejected": {"language": 2, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
+      "note": "Verejný index reálne vyhľadaný. Nexcess Technical Support Engineer je Bratislava/remote a entry-level, ale vyžaduje deep Internet/network understanding a Linux terminal. SupportYourApp remote support vyžaduje fluent/C1 English. Marlink Support Engineer je NOC/network-support smer s vyšším technickým burdenom. 0 LIVE promotion."
     },
     {
       "name": "Worki.sk",
@@ -48,7 +48,7 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne preverené BA/remote admin, support a e-shop výsledky; 0 novej vhodnej unique delty."
+      "note": "Reálne preverené BA/remote e-shop, administratíva a technická podpora; 0 novej vhodnej unique delty."
     },
     {
       "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
@@ -57,7 +57,7 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne preverené Bratislava/okolie support, admin a e-shop výsledky; 0 novej canonical promotion-grade delty."
+      "note": "Reálne preverené Bratislava/okolie e-shop, administratíva a technická podpora; 0 novej canonical promotion-grade delty."
     },
     {
       "name": "Brigada.sk",
@@ -66,7 +66,7 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne vyhľadané Bratislava brigády a administratívne/technické smery; bez nového vhodného hitu."
+      "note": "Reálne vyhľadané Bratislava administratívne, e-shop a technické brigády; bez nového vhodného unique hitu."
     },
     {
       "name": "Pretlak / StartupJobs / WordPress Jobs",
@@ -80,20 +80,20 @@
     {
       "name": "Upwork / freelance",
       "family": "freelance",
-      "status": "ok",
-      "hits": 5,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 3},
-      "note": "Reálne preverené Worldwide remote WordPress/WooCommerce/e-commerce VA výsledky. Product-listing/customer-support hity sú približne 3–8 USD/h alebo veľmi nízky fixed budget, často 20–50 až 50+ proposals. WordPress/Elementor support zahŕňa hosting, DNS, caching a urgent customer tickets, teda vyšší technický a komunikačný burden. 0 promotion."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Upwork Worldwide remote WooCommerce/WordPress discovery bolo reálne vyhľadané; v aktuálnom indexe sa neobjavila nová overiteľná promotion-grade zákazka nad existujúce verification kandidáty."
     },
     {
       "name": "Reddit / WordPress / WooCommerce komunity",
       "family": "community",
-      "status": "limited",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Verejne indexované komunity boli reálne vyhľadané; výsledky boli prevažne FOR HIRE alebo staré/US-only developer ponuky. 0 eligible verified hiring dopytov."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Verejne indexované komunity reálne vyhľadané. Konkrétny hiring post Remote WordPress/WooCommerce Content Assistant je worldwide-style remote a taskovo veľmi relevantný, ale bol publikovaný 19.7.2026 a vyžaduje good written English; evidovaný iba ako starší verification/community lead, nie fresh LIVE promotion."
     },
     {
       "name": "Facebook verejný index",
@@ -103,7 +103,7 @@
       "verifiedHits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "WordPress Slovensko, WooCommerce Komunita SK+CZ a BA pracovné skupiny boli verejne vyhľadané. Žiadny konkrétny verejne overiteľný hiring post s priamym linkom; 0 verified hits. Autentizovaný Nexus/local ingestion ostáva backlog."
+      "note": "WordPress Slovensko, WooCommerce Komunita SK+CZ a Bratislava job/brigáda skupiny boli verejne vyhľadané. Žiadny konkrétny verejne overiteľný hiring post s priamym linkom; 0 verified hits. Autentizovaný Nexus/local ingestion ostáva backlog."
     }
   ]
 }
