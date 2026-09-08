@@ -1,5 +1,28 @@
 # KomArena Job Radar — CHANGELOG
 
+## 2026-09-08 — screenshot stability pass
+
+### 6. Operational freshness ≠ vek poslednej zmeny obsahu
+- Opravený stav zo screenshotu, kde sa zobrazovalo `LIVE feed: 3 d` ako problém napriek tomu, že source audit prebehol dnes.
+- Radar teraz rozlišuje `LIVE obsah` (kedy sa naposledy reálne zmenil zoznam) a `overenie zdrojov` (kedy boli zdroje naposledy skontrolované).
+- Ak audit prebehol a nenašiel novú vhodnú promotion-grade deltu, starší obsah sa už automaticky netvári ako pokazený feed.
+
+### 7. Audit cache / self-recovery
+- `job-radar-source-audit-v1.js` si ukladá posledný úspešný source audit do localStorage.
+- Pri dočasnom výpadku GitHub/RawGitHack sa zobrazí posledná uložená kontrola namiesto prázdneho alebo rozbitého Source Audit panelu.
+- Stav cache sa propaguje do source health diagnostiky, takže fallback nie je skrytý.
+
+### 8. Pravdivejšie health pravidlá + ochrana času
+- UI upozorňuje na skutočne zastarané operačné pokrytie zdrojov, nie iba na to, že sa niekoľko hodín nezmenil obsah feedu.
+- Pri čerstvom audite a nulovej vhodnej delte sa zobrazí stav `Zdroje overené • LIVE obsah bez novej vhodnej delty`.
+- Pridaná kontrola chybných/budúcich timestampov a samostatná detekcia starého obsahu bez čerstvého auditu.
+
+### MASTER DESIGN LOCK — kontrola
+- Nebol upravený žiadny zamknutý vizuálny súbor: `komarena-job-radar-v6.5.html`, `job-radar-v6.css`, `job-radar-v6.5-enhance.js`, `komarena-job-radar-jr-master.webp`.
+- Zmeny sú iba vo funkčných vrstvách `job-radar-source-layer-v1.js` a `job-radar-source-audit-v1.js`.
+
+---
+
 ## 2026-09-08
 
 ### 1. Legacy v6.4 URL → canonical repository
@@ -15,7 +38,7 @@
 ### 3. Pravdivá čerstvosť dát
 - Zdrojový radar už nezlieva čas LIVE feedu a čas source auditu do jednej „najčerstvejšej“ hodnoty.
 - Samostatne zobrazuje vek LIVE ponúk a vek auditu zdrojov.
-- Upozorní, ak sú LIVE dáta staršie než 2 hodiny alebo audit starší než 60 minút.
+- Pôvodný prísny warning iba podľa veku obsahu bol následne v screenshot stability passe nahradený operačným freshness modelom.
 - Upozorní aj pri cache/baseline fallback režime.
 
 ### 4. MASTER DESIGN LOCK
