@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-08T12:37:08+02:00",
+  "updatedAt": "2026-09-08T13:47:03+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
@@ -11,7 +11,7 @@
     "liveProfesiaPct": 48.0,
     "liveNonProfesiaPct": 52.0,
     "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Full diversity sweep on 8.9.2026 12:37 CEST. No promotion-grade unique delta was added. Existing LIVE items are preserved fail-closed."
+    "note": "Full diversity sweep on 8.9.2026 13:47 CEST. Fresh Hemmersbach Onsite Technician L1 Bratislava was verified against the direct company career page, but remains verification-only because of the 18-month IT/equivalent and hardware/network support burden and missing compensation. Existing LIVE items are preserved fail-closed."
   },
   "sources": [
     {
@@ -21,25 +21,25 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne vyhľadané 8.9.2026 12:37 pre BA/okolie a remote; bez novej overiteľnej unique promotion-grade delty v tomto behu."
+      "note": "Reálne vyhľadané 8.9.2026 13:47 pre BA/okolie a remote; bez novej overiteľnej unique promotion-grade delty."
     },
     {
       "name": "Priame firemné career stránky",
       "family": "company-careers",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Priame career discovery bolo reálne preverené; bez novej unique promotion-grade BA/remote delty."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
+      "note": "Hemmersbach Careers canonical: Onsite Technician L1 Bratislava je aktívny. Náplň desktop/local-remote support, inbound calls, HW/SW/app troubleshooting a ticketing. Lokalita ba-area. Verification-only: 18 mesiacov IT praxe alebo ekvivalent, OS/apps/HW troubleshooting a širší field-support profil; mzda v detaile chýba."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
       "status": "limited",
-      "hits": 1,
+      "hits": 2,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 1, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Verejný index našiel Wealth Effect Management – Back Office Specialist, Bratislava, od 2 000 EUR; detail však uvádza No longer accepting applications. Coverage bez loginu je čiastočná."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0},
+      "note": "Verejný index našiel čerstvý Hemmersbach Onsite Technician L1 Bratislava (mirror direct company canonical) a Henkel International Team Assistant Bratislava. Hemmersbach sa deduplikuje na priamy firemný zdroj; Henkel vyžaduje English C1 a min. 2 roky executive/admin praxe. Coverage bez loginu je čiastočná."
     },
     {
       "name": "Worki.sk",
@@ -47,17 +47,17 @@
       "status": "checked",
       "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 0},
-      "note": "Reálne vyhľadané; indexovaný výsledok bol mimo BA-area a nešlo o potvrdený remote zo Slovenska. Bez LIVE delty."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne vyhľadané BA/okolie; bez novej vhodnej unique promotion-grade delty."
     },
     {
       "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
       "family": "kariera",
-      "status": "ok",
-      "hits": 2,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
-      "note": "DAŇOVÁ SOVA – Administratívny pracovník, Pezinok je lokalitne eligible, ale detail z verejného indexu sa nepodarilo canonical overiť. Lidl – Junior konzultant Facility Management, Bratislava, 2 000 EUR je aktívny 8.9.2026, ale vyžaduje plynulú AJ alebo NJ a predchádzajúcu projektovú prax; 0 promotion."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne preverené čerstvé Bratislava výsledky; bez novej ponuky, ktorá by prešla rankingom a canonical verification do LIVE."
     },
     {
       "name": "Brigada.sk",
@@ -72,19 +72,19 @@
       "name": "Pretlak / StartupJobs / WordPress Jobs",
       "family": "tech-creative",
       "status": "ok",
-      "hits": 1,
+      "hits": 2,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1},
-      "note": "Elasticr Technologie – IT Support Specialist L2 je čerstvý e-commerce/support hit, ale hlavné pracovisko je Havlíčkův Brod a verejný detail nepreukazuje remote zo Slovenska bez pravidelného dochádzania; navyše ide o L2 incident/support skill burden. Neprešiel hard gateom do LIVE."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 2},
+      "note": "WordPress Jobs bolo priamo preverené. WPMU DEV Support Specialist je globálne remote, ale vyžaduje fluent English, 2+ roky WordPress a PHP/CSS/MySQL/HTML plus 16:00–00:00 UTC a víkendy; Sales Support varianta zostáva jazykovo/režimovo nevhodná. Bez promotion."
     },
     {
       "name": "Upwork / freelance",
       "family": "freelance",
       "status": "ok",
-      "hits": 5,
+      "hits": 6,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 3},
-      "note": "Reálne preverené Worldwide remote WordPress/WooCommerce hity. Ecommerce VA pre Shopify/Etsy/WooCommerce má iba 15 USD fixed-price, Expert label a good written English. Dental Elementor build má 15 USD fixed-price; WooCommerce UX/checkout optimalizácia 20 USD a vyžaduje PHP/JS. Bez promotion-grade hodnoty."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 4},
+      "note": "Reálne preverené Worldwide remote WordPress/WooCommerce hity. Ecommerce VA pre Shopify/Etsy/WooCommerce je obsahovo relevantný, má len 5–10 proposals a 1 interview, ale iba 15 USD fixed-price, Expert label, proven multi-platform/SEO skúsenosti a good written English. Ďalšie čerstvé hity sú full-build, checkout/payment, technical SEO alebo PHP/JS-heavy. Bez promotion-grade hodnoty."
     },
     {
       "name": "Reddit / WordPress / WooCommerce komunity",
