@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-08T14:38:27+02:00",
+  "updatedAt": "2026-09-08T15:10:26+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
@@ -11,44 +11,44 @@
     "liveProfesiaPct": 48.0,
     "liveNonProfesiaPct": 52.0,
     "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Full diversity sweep on 8.9.2026 14:38 CEST. Newly rediscovered Worki Nutra Group LTD remote Slovak call-centre role is active and remote-ok but was originally published 11.3.2026, is strongly sales/phone based and two-shift, so it remains verification-only. Fresh Upwork e-commerce VA hits were below value/skill/language thresholds. Existing LIVE items are preserved fail-closed."
+    "note": "Full diversity sweep on 8.9.2026 15:10 CEST. Techfun e-shop/ESP role was revalidated as fresh and highly relevant but is a rediscovery of an already promotion-ready candidate, so no new LIVE delta was forced. LinkedIn AgentFire Junior Web Designer is inactive. Upwork WooCommerce Assistant detail is no longer available. Existing LIVE items are preserved fail-closed."
   },
   "sources": [
     {
       "name": "Profesia",
       "family": "profesia",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne vyhľadané 8.9.2026 14:38 pre BA/okolie a remote; bez novej overiteľnej unique promotion-grade delty."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0},
+      "note": "Reálne vyhľadané 8.9.2026 15:10 pre BA/okolie a remote. Techfun — Elektro-technický špecialista pre e-shop, Bratislava-Petržalka, 1 800–2 200 EUR, zverejnené 7.9.2026 — canonical Profesia detail je aktívny. Rediscovery už evidovaného promotion-ready kandidáta; 0 novej unique LIVE delty."
     },
     {
       "name": "Priame firemné career stránky",
       "family": "company-careers",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne prehľadané priame firemné careers pre Bratislavu/remote; bez novej unique promotion-grade delty."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
+      "note": "Reálne prehľadané priame firemné careers pre Bratislavu/remote. Slovak Telekom má nový Senior špecialista/špecialistka controllingu v Bratislave, ale ide o senior finančno-controlling profil mimo cieľového rankingu. 0 promotion."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
       "status": "limited",
-      "hits": 0,
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Verejný index bol reálne vyhľadaný; bez nového konkrétneho promotion-grade hitu. Coverage bez loginu zostáva čiastočná."
+      "rejected": {"language": 0, "inactive": 1, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Verejný index bol reálne vyhľadaný. AgentFire Junior Web Designer je fully remote v EEA, ale detail explicitne uvádza No longer accepting applications; vyradené ako inactive. Coverage bez loginu zostáva čiastočná."
     },
     {
       "name": "Worki.sk",
       "family": "worki",
-      "status": "ok",
-      "hits": 1,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
-      "note": "Nutra Group LTD — Operátor call centra, Home office, živnosť, 1 200–2 500 EUR/mes., bez praxe, slovenčina C1/C2. Canonical detail potvrdzuje prácu na diaľku odkiaľkoľvek a aktuálny listing je stále obnovovaný. locationEligibility=remote-ok. Verification-only: pôvodne publikované 11.3.2026, silný aktívny telefonický predaj, provízna zložka a dvojzmenný režim."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne preverené BA/remote admin, support, e-shop, vodič a sklad výsledky; bez novej vhodnej unique promotion-grade delty."
     },
     {
       "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
@@ -57,7 +57,7 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne preverené čerstvé Bratislava výsledky; bez novej ponuky, ktorá by prešla rankingom a canonical verification do LIVE."
+      "note": "Reálne preverené čerstvé Bratislava výsledky; nové indexované výsledky boli mimo prioritného rankingu alebo bez lepšej canonical delty. 0 promotion."
     },
     {
       "name": "Brigada.sk",
@@ -75,16 +75,16 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Tech/creative vetva bola reálne vyhľadaná; bez novej vhodnej non-hard-dev promotion-grade delty."
+      "note": "Tech/creative vetva bola reálne vyhľadaná. WordPress Jobs vracia najmä support/developer roly s PHP/HTML/CSS/MySQL alebo senior hard-dev nárokmi; bez novej vhodnej non-hard-dev promotion-grade delty."
     },
     {
       "name": "Upwork / freelance",
       "family": "freelance",
       "status": "ok",
-      "hits": 5,
+      "hits": 2,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 4},
-      "note": "Reálne preverené Worldwide remote WordPress/WooCommerce hity. Ecommerce VA pre Shopify/Etsy/WooCommerce je fresh, 5–10 proposals a 1 interview, ale iba 15 USD fixed-price, Expert label, proven multi-platform/SEO skúsenosti a good written English. Ďalšie hity sú nízkorozpočtové alebo build/technical-scope. Bez promotion."
+      "rejected": {"language": 0, "inactive": 1, "duplicate": 0, "location": 0, "skill": 1},
+      "note": "Reálne preverené Worldwide remote WordPress/WooCommerce výsledky. WooCommerce Assistant detail je už no longer available. Ďalšie čerstvé výsledky sú prevažne build/developer scope alebo nízkorozpočtové; 0 promotion."
     },
     {
       "name": "Reddit / WordPress / WooCommerce komunity",
@@ -93,7 +93,7 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Verejne indexované komunity boli reálne vyhľadané; 0 konkrétnych eligible hiring postov s dostatočným dôkazom."
+      "note": "Verejne indexované komunity boli reálne vyhľadané; výsledky boli najmä FOR HIRE ponuky freelancerov, nie konkrétne eligible hiring dopyty. 0 verified hiring hitov."
     },
     {
       "name": "Facebook verejný index",
