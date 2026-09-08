@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-08T09:29:22+02:00",
+  "runSummary": {
+    "familiesChecked": 6,
+    "newActiveJobs": 4,
+    "freshnessStatus": "fresh-live-delta",
+    "note": "Reálny verejný refresh 8.9.2026 ráno. Profesia Bratislava ukazovala ponuky pridané pred minútami až hodinami; overené konkrétne detaily Henkel Application Support, Riešenia Digital Account Manager, Slovak Telekom support a NAY Elektrošpecialista."
+  },
+  "sources": [
+    {
+      "name": "Profesia – Bratislava",
+      "family": "profesia",
+      "status": "ok",
+      "hits": 2,
+      "added": 2,
+      "note": "Reálne preverené 8.9.2026 09:29. Aktuálny zoznam obsahoval ponuky staré len minúty/hodiny; do fresh delta boli zaradené Henkel Application Support a Riešenia Digital Account Manager."
+    },
+    {
+      "name": "HENKEL SLOVENSKO",
+      "family": "company-careers",
+      "status": "ok",
+      "hits": 1,
+      "added": 1,
+      "note": "Analyst Application Support, Bratislava + občasný home office, 1 600–1 800 €, aktuálne overené 8.9.2026."
+    },
+    {
+      "name": "Riešenia, spol. s r.o.",
+      "family": "company-careers",
+      "status": "ok",
+      "hits": 1,
+      "added": 1,
+      "note": "Digital Account Manager, Bratislava + občasný home office, 2 000–2 500 €, aktuálne overené 8.9.2026."
+    },
+    {
+      "name": "Slovak Telekom",
+      "family": "company-careers",
+      "status": "ok",
+      "hits": 1,
+      "added": 0,
+      "note": "Špecialista/Špecialistka podpory zákazníkov na Bajkalskej bol verejne potvrdený ako aktuálny 8.9.2026; fresh delta obnovuje jeho verifikačný stav."
+    },
+    {
+      "name": "NAY",
+      "family": "company-careers",
+      "status": "ok",
+      "hits": 1,
+      "added": 1,
+      "note": "Elektrošpecialista/ka Bratislava Tuhovská, priemerne 1 550 €, verejne dostupná ponuka potvrdená 8.9.2026."
+    },
+    {
+      "name": "LinkedIn public index",
+      "family": "linkedin",
+      "status": "limited",
+      "hits": 1,
+      "added": 0,
+      "note": "Verejná indexácia bola preverená; nájdená e-commerce rola Lunys, ale nebola zaradená do fresh delta bez ďalšieho overenia aktuálnosti a hard požiadaviek. Coverage bez loginu ostáva limited."
+    }
+  ]
+}
