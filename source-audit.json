@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-08T15:10:26+02:00",
+  "updatedAt": "2026-09-08T16:50:23+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
@@ -11,62 +11,62 @@
     "liveProfesiaPct": 48.0,
     "liveNonProfesiaPct": 52.0,
     "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Full diversity sweep on 8.9.2026 15:10 CEST. Techfun e-shop/ESP role was revalidated as fresh and highly relevant but is a rediscovery of an already promotion-ready candidate, so no new LIVE delta was forced. LinkedIn AgentFire Junior Web Designer is inactive. Upwork WooCommerce Assistant detail is no longer available. Existing LIVE items are preserved fail-closed."
+    "note": "Full diversity sweep on 8.9.2026 16:50 CEST. No new unique promotion-grade item passed ranking and evidence gates. LinkedIn produced Bratislava support candidates, but Sharp Brains requires 1–3 years desktop support plus Active Directory/networking, Global Blue is L2/L3 with PowerShell/SQL/Splunk and strong English, and Wolt requires student eligibility plus English B2. Worki returned an e-shop admin match that is explicitly filled/cancelled. Existing 50 LIVE items are preserved fail-closed."
   },
   "sources": [
     {
       "name": "Profesia",
       "family": "profesia",
-      "status": "ok",
-      "hits": 1,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0},
-      "note": "Reálne vyhľadané 8.9.2026 15:10 pre BA/okolie a remote. Techfun — Elektro-technický špecialista pre e-shop, Bratislava-Petržalka, 1 800–2 200 EUR, zverejnené 7.9.2026 — canonical Profesia detail je aktívny. Rediscovery už evidovaného promotion-ready kandidáta; 0 novej unique LIVE delty."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne vyhľadané 8.9.2026 16:50 pre BA/okolie a remote prioritné tracky; verejný index v tomto behu nevrátil novú unique promotion-grade canonical deltu."
     },
     {
       "name": "Priame firemné career stránky",
       "family": "company-careers",
-      "status": "ok",
-      "hits": 1,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
-      "note": "Reálne prehľadané priame firemné careers pre Bratislavu/remote. Slovak Telekom má nový Senior špecialista/špecialistka controllingu v Bratislave, ale ide o senior finančno-controlling profil mimo cieľového rankingu. 0 promotion."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne preverené priame careers pre Bratislavu/remote. Hemmersbach verejný career index poskytol iba proactive application, nie konkrétnu novú BA rolu vhodnú na promotion."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
       "status": "limited",
-      "hits": 1,
+      "hits": 4,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 1, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Verejný index bol reálne vyhľadaný. AgentFire Junior Web Designer je fully remote v EEA, ale detail explicitne uvádza No longer accepting applications; vyradené ako inactive. Coverage bez loginu zostáva čiastočná."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 3},
+      "note": "Verejný index reálne vyhľadaný. Sharp Brains DSS L1 je onsite Bratislava/B2B, ale žiada 1–3 roky desktop supportu, Active Directory a sieťové základy. Global Blue Application Support je L2/L3 s PowerShell/SQL/Splunk, Windows Server a strong English. Wolt part-time support vyžaduje študentský status a English B2. Nexcess vyžaduje Linux/terminal/networking. Coverage bez loginu zostáva čiastočná."
     },
     {
       "name": "Worki.sk",
       "family": "worki",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne preverené BA/remote admin, support, e-shop, vodič a sklad výsledky; bez novej vhodnej unique promotion-grade delty."
+      "rejected": {"language": 0, "inactive": 1, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Reálne preverené BA/remote admin, support a e-shop výsledky. Shield-Sk Administrátor e-shopu / zákaznícka podpora v Ružinove je obsahovo veľmi relevantný, ale detail explicitne uvádza, že miesto už bolo obsadené alebo zrušené."
     },
     {
       "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
       "family": "kariera",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 2,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne preverené čerstvé Bratislava výsledky; nové indexované výsledky boli mimo prioritného rankingu alebo bez lepšej canonical delty. 0 promotion."
+      "rejected": {"language": 2, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
+      "note": "Reálne preverené čerstvé Bratislava support/admin výsledky. Metrohm IT Support Specialist je BA a 1 800 EUR, ale vyžaduje VŠ I. stupňa, aspoň rok praxe a angličtinu B1/B2. Ďalšie zákaznícke support výsledky majú jazykové alebo profilové bariéry; 0 promotion."
     },
     {
       "name": "Brigada.sk",
       "family": "brigada-sk",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne vyhľadané Bratislava admin/e-shop/support/kuriér/sklad; bez vhodného nového hitu."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1},
+      "note": "Reálne vyhľadané Bratislava brigády. Alpha Turbo promoter je čerstvý BA hit, ale je explicitne určený študentom 20–25 rokov a ide o terénny promo/predaj mimo prioritného rankingu."
     },
     {
       "name": "Pretlak / StartupJobs / WordPress Jobs",
@@ -75,16 +75,16 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Tech/creative vetva bola reálne vyhľadaná. WordPress Jobs vracia najmä support/developer roly s PHP/HTML/CSS/MySQL alebo senior hard-dev nárokmi; bez novej vhodnej non-hard-dev promotion-grade delty."
+      "note": "Pretlak, StartupJobs a WordPress Jobs boli reálne vyhľadané pre WordPress/WooCommerce/content/support a remote; bez novej overiteľnej non-hard-dev promotion-grade delty."
     },
     {
       "name": "Upwork / freelance",
       "family": "freelance",
       "status": "ok",
-      "hits": 2,
+      "hits": 6,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 1, "duplicate": 0, "location": 0, "skill": 1},
-      "note": "Reálne preverené Worldwide remote WordPress/WooCommerce výsledky. WooCommerce Assistant detail je už no longer available. Ďalšie čerstvé výsledky sú prevažne build/developer scope alebo nízkorozpočtové; 0 promotion."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 2, "location": 0, "skill": 3},
+      "note": "Reálne preverené Worldwide remote WordPress/WooCommerce/VA výsledky. Najlepší nový-indexovaný smer zahŕňa WooCommerce product listing 10–30 USD/h, ale ide o starší 2-týždňový hit s 20–50 proposals a preferovanou holandčinou; ďalšie výsledky sú nízkorozpočtové, staršie alebo už evidované rediscovery. 0 promotion."
     },
     {
       "name": "Reddit / WordPress / WooCommerce komunity",
@@ -93,7 +93,7 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Verejne indexované komunity boli reálne vyhľadané; výsledky boli najmä FOR HIRE ponuky freelancerov, nie konkrétne eligible hiring dopyty. 0 verified hiring hitov."
+      "note": "Verejne indexované komunity boli reálne vyhľadané; 0 konkrétnych eligible hiring dopytov s dostatočnou verejnou evidenciou."
     },
     {
       "name": "Facebook verejný index",
