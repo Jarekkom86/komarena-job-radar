@@ -1,7 +1,7 @@
 (()=>{
 'use strict';
 const $=id=>document.getElementById(id);
-const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[c]));
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const label={ok:'✓ OK',checked:'○ SKONTROLOVANÉ',blocked:'⚠ BLOKOVANÉ',limited:'◐ OBMEDZENÉ'};
 const CACHE_KEY='komarenaJobRadarSourceAudit:v1';
 
