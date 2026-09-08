@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 8. 9. 2026 23:38 CEST
+Aktualizované: 9. 9. 2026 00:32 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -46,38 +46,40 @@ Aktualizované: 8. 9. 2026 23:38 CEST
 - Verification kandidát: **Dotypos SK — Technický support**, Bratislava, 1 200 EUR, TPP na neurčito, vhodné pre absolventa, support + terénne inštalácie + pred/popo-predajný servis; `locationEligibility: ba-area`. Ponuka je aktívna do 30. 9. 2026. Mínus: explicitná AJ B1/B2 a požiadavky na Android/IT prehľad.
 - Verification kandidát: **LJ Stav s. r. o. — Administratívny/a pracovník/čka, obchodný/á referent/ka**, Stupava, 1 300 EUR/mes., vhodné aj pre absolventa, bez cudzieho jazyka v canonical detaile, objednávky + cenové ponuky + zákazníci + technické/logické myslenie. `locationEligibility: ba-area`. Nepromovaný pre vyšší osobný/predajný kontakt a nižšiu odmenu oproti silnejším LIVE admin rolám.
 - Supplemental verification: **FEIM - SK — Obchodný špecialista pre e-shop a predaj svietidiel**, Malacky, 1 100–1 300 EUR/mes.; e-shop/order/customer-service fit, ale stredne pokročilá AJ a aktívny retail predaj znižujú ranking.
-- Verification kandidát z 23:38: **Staffino — Technical Support Specialist / Project Coordinator (IT / SaaS)**, Bratislava Metropolitan Area, hybrid. Náplň je kvalitný prienik L1/L2 supportu, ticketingu, koordinácie a komunikácie so SaaS klientom; `locationEligibility: ba-area`. Bez promotion, pretože verejný listing je približne 7 mesiacov starý, požaduje 2–4 roky IT/SaaS support praxe a nebol nájdený dostatočný direct-company canonical detail na čerstvé potvrdenie aktivity.
-- Jazykový reject z 23:38: **ESET — Customer Support Specialist (m/f/n)**, Bratislava, od 1 250 EUR, entry-level a vhodné aj pre absolventa, ale explicitne žiada aktívnu angličtinu ideálne B2; podľa aktuálneho ranking profilu bez LIVE promotion.
+- Verification kandidát: **Staffino — Technical Support Specialist / Project Coordinator (IT / SaaS)**, Bratislava Metropolitan Area, hybrid. Náplň je kvalitný prienik L1/L2 supportu, ticketingu, koordinácie a komunikácie so SaaS klientom; `locationEligibility: ba-area`. Bez promotion, pretože verejný listing je približne 7 mesiacov starý, požaduje 2–4 roky IT/SaaS support praxe a nebol nájdený dostatočný direct-company canonical detail na čerstvé potvrdenie aktivity.
+- **Nový verification kandidát 9.9. 00:32: 3MON, s.r.o. — Office Manager/ka & Executive Support pre CEO**, Bratislava, od 1 650 EUR/mes., Po–Pi 8:00–16:30 (piatok možný koniec 15:00), nástup 1.10.2026. Silný prienik administratívy, spracovania e-shop objednávok, pokladne/skladu, zákazníckej komunikácie a AI nástrojov ChatGPT/Copilot. `locationEligibility: ba-area`; firemná centrála je Kopčianska 94B. Canonical uvádza slovenčinu C2 **alebo** AJ B2 a textovo komunikatívnu AJ iba ako výhodu, takže jazyk nie je čistý hard reject. Bez LIVE promotion pre povinné 3 roky podobnej praxe a pokročilý Word/Excel.
+- Jazykový reject: **SOITRON — IT Support Specialist**, Bratislava, 1 600 EUR/mes.; explicitná AJ B2 + technickejší IT scope, bez promotion.
+- LinkedIn reject: **Wolt — Support Associate (Part Time)**, Bratislava; študentská part-time rola, zmeny aj večer/víkendy a AJ min. B2, bez promotion.
+- Direct-company verification/reject: **Volkswagen Group Services — Internal Tech. Agent/IT Specialist**, Bratislava, full-time, fixed-term, remote do 20 %, posted 22.8.2026; lokálne eligible, ale professional IT scope zahŕňa network/OS/cybersecurity/scripting a je nad preferovanou non-hard-dev úrovňou.
 - Nový freelance verification z 22:17: **Upwork — AI Blog Post VA for WordPress**, Worldwide remote, entry level, WordPress + AI content, ale **120 článkov/mesiac za 30 USD fixed**. `locationEligibility: remote-ok`; tematicky silný fit, ekonomicky neakceptovateľný, preto bez LIVE promotion.
 - Nový freelance verification z 22:17: **Upwork — Virtual Assistant | Content Management & Project Coordination**, Worldwide remote, publikované približne 6 hodín pred kontrolou. Náplň: CMS Contentful, PDF/Word, screenshoty/bug reporting, SharePoint/Teams/Asana a koordinácia. Mínusy: povinná skúsenosť s headless CMS, good spoken/written English a Adobe/InDesign/Illustrator; bez promotion.
 - Worki rediscovery: **Shield-Sk — Administrátor e-shopu / zákaznícka podpora**, Bratislava-Ružinov, bol obsahovo silný, ale canonical detail explicitne uvádza, že miesto už bolo obsadené alebo zrušené; `inactive`, nepridávať.
 
-## Source audit — 8. 9. 2026 23:38
+## Source audit — 9. 9. 2026 00:32
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam/ÚPSVR, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
-- Profesia: `ok`; 1 relevantný ESET support hit, 0 promotion, reject `language` pre ideálne B2.
-- Priame company careers: `checked`; 0 novej overiteľnej promotion-grade delty; Staffino direct canonical detail sa nepodarilo nájsť.
-- LinkedIn Jobs: `limited`; 2 relevantné hity, 0 promotion. Staffino = verification-only pre vek listingu + 2–4 roky support praxe; ESET = jazykový reject B2.
-- Worki: `ok`; Shield-Sk e-shop admin BA bol relevantný, ale canonical detail = obsadené/zrušené, reject `inactive`.
+- Profesia: `ok`; 2 relevantné hity, 0 promotion. 3MON = verification-only pre 3 roky podobnej praxe + advanced Office; SOITRON = reject `language` pre AJ B2.
+- Priame company careers: `ok`; 1 relevantný Volkswagen Group Services hit, 0 promotion pre vyšší professional IT skill burden. 3MON corporate web potvrdzuje lokálnu BA centrálu, pracovný canonical je Profesia.
+- LinkedIn Jobs: `limited`; 3 relevantné hity, 0 promotion. Wolt = student-only + AJ B2 + shift burden; SupportYourApp = C1/fluent English; Staffino = starý listing + 2–4 roky support praxe.
+- Worki: `checked`; 0 novej vhodnej unique delty; Shield-Sk zostáva inactive z predchádzajúceho canonical auditu.
 - Kariera/Zoznam/ÚPSVR: `checked`; 0 novej canonical promotion-grade delty.
 - Brigada.sk: `checked`; 0 nových vhodných BA hitov.
 - Pretlak/StartupJobs/WordPress Jobs: `checked`; 0 novej overiteľnej non-hard-dev promotion-grade delty.
 - Upwork/freelance: `checked`; fresh Worldwide WordPress/WooCommerce/VA discovery prebehla, bez nového verejne indexovaného unique hitu nad existujúci verification inventár.
-- Reddit/komunity: `limited`; 1 konkrétny hiring WordPress developer post bol remote iba pre USA a hard-dev, reject `location` + `skill`; ostatné výsledky FOR HIRE/staršie.
+- Reddit/komunity: `limited`; verejné hiring výsledky boli US-only/hard-dev alebo staré; 1 explicitný locality+skill reject.
 - Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom.
 
-### Audit počty 23:38
+### Audit počty 00:32
 - source families checked: **10**
 - nové LIVE promotions: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
-- nové relevantné verification kandidáty: **1 Staffino**
-- explicitne vyradené pre jazyk: **1 ESET**
-- explicitne vyradené inactive: **1 Worki**
+- nové relevantné verification kandidáty: **3MON + Volkswagen Group Services**
+- explicitne vyradené pre jazyk/eligibility: **SOITRON, Wolt, SupportYourApp**
 - komunitný reject pre lokalitu/skill: **1 Reddit US-only hard-dev**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 23:38.
-- `source-audit.json`: aktualizovaný na 23:38.
+- `job-sources.json`: aktualizovaný na 00:32.
+- `source-audit.json`: aktualizovaný na 00:32.
 - `jobs-data.json`: bez zmeny, pretože neexistovala nová promotion-grade unique delta.
 
 ## Rozvojový backlog
@@ -242,3 +244,5 @@ Aktualizované: 8. 9. 2026 23:38 CEST
 - **Application follow-up SLA planner** — po odoslaní reakcie evidovať dátum, source family, closing date a dostupný recruiter/contact channel a odporučiť vhodné follow-up okno; zabrániť duplicitnému alebo príliš skorému urgovaniu a zvýšiť šancu na odpoveď.
 - **Salary-missing candidate quarantine** — ak relevantný kandidát nemá verejne overiteľnú garantovanú mzdu, nepovýšiť ho automaticky do LIVE bez salary enrichmentu alebo výnimočne silného fitu; znižuje počet časovo drahých reakcií na ekonomicky nejasné roly.
 - **Apply-path liveness verifier** — pred LIVE promotion overiť, že canonical apply tlačidlo/formulár stále prijíma reakcie a nevedie na closed/no-longer-accepting stav; chráni pred aktívne vyzerajúcimi, ale prakticky nereagovateľnými listingami.
+- **Requirement-or-advantage contradiction resolver** — pri listingoch, kde štruktúrované pole uvádza napr. AJ B2, ale text ju označuje iba ako výhodu alebo alternatívu k slovenčine, ukladať oba dôkazy a neposielať kandidáta do hard rejectu bez manuálneho/confidence rozhodnutia; priamo rieši 3MON typ konfliktu.
+- **Similar-experience transfer mapper** — pri požiadavke „3 roky na podobnej pozícii“ rozložiť povinnosti na konkrétne prenositeľné bloky (reklamácie, objednávky, zákaznícka komunikácia, evidencia, e-shop, dokumentácia) a vypočítať evidence-backed ekvivalent namiesto binárneho seniority rejectu.
