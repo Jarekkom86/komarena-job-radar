@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 8. 9. 2026 21:52 CEST
+Aktualizované: 8. 9. 2026 22:17 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -44,33 +44,36 @@ Aktualizované: 8. 9. 2026 21:52 CEST
 - Promotion-ready z predchádzajúcich behov: **BeiT Technologie — Administrativně-ekonomický specialista (Junior/Medior), 100 % remote** a **SAV — Asistent/ka riaditeľa**; pred LIVE zápisom vyžadujú fresh canonical recheck.
 - Silný verification kandidát: **NASES — Operátor/operátorka Ústredného kontaktného centra**, Bratislava, od 1 500 EUR, pružný režim 8–16/9–17, vhodné pre absolventa; `locationEligibility: ba-area`. Mínus: AJ B1 a vyššie Office nároky.
 - Verification kandidát: **Dotypos SK — Technický support**, Bratislava, 1 200 EUR, TPP na neurčito, vhodné pre absolventa, support + terénne inštalácie + pred/popo-predajný servis; `locationEligibility: ba-area`. Ponuka je aktívna do 30. 9. 2026. Mínus: explicitná AJ B1/B2 a požiadavky na Android/IT prehľad.
-- Nový verification kandidát 21:52: **LJ Stav s. r. o. — Administratívny/a pracovník/čka, obchodný/á referent/ka**, Stupava, 1 300 EUR/mes., vhodné aj pre absolventa, bez cudzieho jazyka v canonical detaile, objednávky + cenové ponuky + zákazníci + technické/logické myslenie. `locationEligibility: ba-area`. Nepromovaný pre vyšší osobný/predajný kontakt a nižšiu odmenu oproti silnejším LIVE admin rolám.
+- Verification kandidát: **LJ Stav s. r. o. — Administratívny/a pracovník/čka, obchodný/á referent/ka**, Stupava, 1 300 EUR/mes., vhodné aj pre absolventa, bez cudzieho jazyka v canonical detaile, objednávky + cenové ponuky + zákazníci + technické/logické myslenie. `locationEligibility: ba-area`. Nepromovaný pre vyšší osobný/predajný kontakt a nižšiu odmenu oproti silnejším LIVE admin rolám.
 - Supplemental verification: **FEIM - SK — Obchodný špecialista pre e-shop a predaj svietidiel**, Malacky, 1 100–1 300 EUR/mes.; e-shop/order/customer-service fit, ale stredne pokročilá AJ a aktívny retail predaj znižujú ranking.
+- Nový freelance verification z 22:17: **Upwork — AI Blog Post VA for WordPress**, Worldwide remote, entry level, WordPress + AI content, ale **120 článkov/mesiac za 30 USD fixed**. `locationEligibility: remote-ok`; tematicky silný fit, ekonomicky neakceptovateľný, preto bez LIVE promotion.
+- Nový freelance verification z 22:17: **Upwork — Virtual Assistant | Content Management & Project Coordination**, Worldwide remote, publikované približne 6 hodín pred kontrolou. Náplň: CMS Contentful, PDF/Word, screenshoty/bug reporting, SharePoint/Teams/Asana a koordinácia. Mínusy: povinná skúsenosť s headless CMS, good spoken/written English a Adobe/InDesign/Illustrator; bez promotion.
+- Worki rediscovery: **Shield-Sk — Administrátor e-shopu / zákaznícka podpora**, Bratislava-Ružinov, bol obsahovo silný, ale canonical detail explicitne uvádza, že miesto už bolo obsadené alebo zrušené; `inactive`, nepridávať.
 
-## Source audit — 8. 9. 2026 21:52
+## Source audit — 8. 9. 2026 22:17
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam/ÚPSVR, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
-- Profesia: `ok`; 1 nový relevantný canonical kandidát — LJ Stav, Stupava, 1 300 EUR, absolvent-friendly, bez jazykového gate; 0 LIVE promotion pre ranking/value dôvody.
-- Priame company careers: `ok`; Carrier/Viessmann Servisní poradce je čerstvý, ale Chrášťany pri Prahe = `reject-distance`; Tesla Account Manager Bratislava je mimo prioritného rankingu.
-- LinkedIn Jobs: `checked`; 0 novej verejne overiteľnej unique promotion-grade delty.
-- Worki: `checked`; 0 novej suitable unique delty.
+- Profesia: `checked`; bez novej unique promotion-grade delty oproti existujúcemu LIVE/verification inventáru.
+- Priame company careers: `checked`; 0 novej overiteľnej promotion-grade delty.
+- LinkedIn Jobs: `limited`; verejný index preverený, 0 novej verejne overiteľnej unique promotion-grade delty.
+- Worki: `ok`; Shield-Sk e-shop admin BA bol relevantný, ale canonical detail = obsadené/zrušené, reject `inactive`.
 - Kariera/Zoznam/ÚPSVR: `checked`; 0 novej canonical promotion-grade delty.
 - Brigada.sk: `checked`; 0 nových vhodných BA hitov.
 - Pretlak/StartupJobs/WordPress Jobs: `checked`; 0 novej overiteľnej non-hard-dev promotion-grade delty.
-- Upwork/freelance: `ok`; čerstvé Worldwide WordPress/WooCommerce výsledky boli 10–100 USD fixed alebo hard-dev/Expert scope. USA-only VA bola vyradená lokalitným/jurisdiction gateom. 0 promotion.
-- Reddit/komunity: `limited`; výsledky boli FOR HIRE alebo staršie US-only developer ponuky; 0 eligible verified hiring hitov.
+- Upwork/freelance: `ok`; 5 relevantných kandidátov, 0 promotion. Najsilnejší tematický hit AI Blog Post VA for WordPress je pod ekonomickým floorom (30 USD za 120 článkov/mesiac). Najčerstvejší Content Management & Project Coordination je remote-ok, ale skill/language burden je príliš vysoký.
+- Reddit/komunity: `limited`; výsledky boli FOR HIRE alebo staré/nevhodné developer hiring posty; 0 eligible fresh hiring hitov.
 - Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom.
-- Supplemental Práca za rohom discovery: FEIM-SK e-shop sales Malacky, 1 100–1 300 EUR, no promotion pre AJ + aktívny predaj + nízky fix.
 
-### Audit počty 21:52
+### Audit počty 22:17
 - source families checked: **10**
 - nové LIVE promotions: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
-- nové relevantné verification kandidáty: **2** (LJ Stav canonical; FEIM-SK supplemental)
+- nové relevantné verification kandidáty: **2 Upwork**
+- explicitne vyradené inactive: **1 Worki**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 21:52.
-- `source-audit.json`: aktualizovaný na 21:52.
+- `job-sources.json`: aktualizovaný na 22:17.
+- `source-audit.json`: aktualizovaný na 22:17.
 - `jobs-data.json`: bez zmeny, pretože neexistovala nová promotion-grade unique delta.
 
 ## Rozvojový backlog
@@ -231,3 +234,5 @@ Aktualizované: 8. 9. 2026 21:52 CEST
 - **Canonical recheck TTL by source class** — nastaviť rozdielne intervaly opätovného overenia podľa typu zdroja (direct company/jobboard/freelance/community).
 - **Customer-contact channel burden score** — rozlíšiť podiel osobného pultového kontaktu, telefónu, e-mailu a chatu; penalizovať roly, ktoré sa tvária ako administratíva, ale reálne sú prevažne retail/predaj/customer-facing.
 - **BA-area salary-to-commute opportunity-cost score** — kombinovať garantovaný fix, počet onsite dní a odhad dochádzania; pomôže odlíšiť lokálne eligible, ale ekonomicky slabšie ponuky od prakticky výhodnejších alternatív bez zmeny hard lokalitného gate.
+- **Canonical job-description semantic diff** — pri každom canonical rechecku porovnať významové zmeny v požiadavkách, lokalite/remote režime, mzde, deadline a náplni; material change automaticky spustí nové locality/ranking vyhodnotenie namiesto slepého rediscovery.
+- **Application follow-up SLA planner** — po odoslaní reakcie evidovať dátum, source family, closing date a dostupný recruiter/contact channel a odporučiť vhodné follow-up okno; zabrániť duplicitnému alebo príliš skorému urgovaniu a zvýšiť šancu na odpoveď.
