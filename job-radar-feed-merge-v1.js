@@ -1,7 +1,7 @@
 (()=>{
 'use strict';
-const BASE='https://raw.githack.com/Jarekkom86/komarena-job-radar/main/';
-const CACHE='komarenaJobRadarFeed:v3:';
+const BASE='https://raw.githubusercontent.com/Jarekkom86/komarena-job-radar/main/';
+const CACHE='komarenaJobRadarFeed:v4:';
 const nativeFetch=window.fetch.bind(window);
 const canon=u=>{try{const x=new URL(u,location.href);['utm_source','utm_medium','utm_campaign','search_id','ref','trk'].forEach(k=>x.searchParams.delete(k));x.hash='';return x.origin+x.pathname+(x.searchParams.toString()?'?'+x.searchParams.toString():'')}catch{return String(u||'').split('#')[0].split('?')[0]}};
 const norm=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
@@ -16,7 +16,7 @@ function readCache(name){try{return JSON.parse(localStorage.getItem(CACHE+name)|
 async function getJson(name,required=false){
   const url=BASE+name+'?t='+Date.now();
   try{
-    const r=await nativeFetch(url,{cache:'no-store'});
+    const r=await nativeFetch(url,{cache:'no-store',headers:{'Accept':'application/json'}});
     if(!r.ok)throw new Error(name+' '+r.status);
     const data=await r.json();writeCache(name,data);return {data,mode:'live'};
   }catch(err){
@@ -28,7 +28,7 @@ async function getJson(name,required=false){
 }
 async function baseline(){
   try{
-    const r=await nativeFetch(BASE+'baseline-jobs.json?t='+Date.now(),{cache:'no-store'});
+    const r=await nativeFetch(BASE+'baseline-jobs.json?t='+Date.now(),{cache:'no-store',headers:{'Accept':'application/json'}});
     if(!r.ok)throw new Error('baseline '+r.status);
     const data=await r.json();writeCache('baseline-jobs.json',data);return {data,mode:'baseline'};
   }catch(err){
