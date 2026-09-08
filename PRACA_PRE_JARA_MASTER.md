@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 8. 9. 2026 00:48 CEST
+Aktualizované: 8. 9. 2026 04:51 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -41,36 +41,39 @@ Aktualizované: 8. 9. 2026 00:48 CEST
 - Silný flexibilný kandidát: **DHL Group — administratívna podpora transportného tímu, Senec**, 4 h denne, 804,50 EUR + 10 % mesačný bonus; `locationEligibility: ba-area`.
 - Promotion-ready z predchádzajúcich behov: **BeiT Technologie — Administrativně-ekonomický specialista (Junior/Medior), 100 % remote** a **SAV — Asistent/ka riaditeľa**; pred LIVE zápisom vyžadujú fresh canonical recheck.
 
-### Čerstvé zistenia 00:48
+### Čerstvé zistenia 04:51
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
-- **Nový unique verification kandidát:** Upwork — **WooCommerce Product Listing & Upload Specialist**. Worldwide remote, 10–30 USD/h, <30 h/týždeň, 1–3 mesiace, 50–75 produktov, obrázky, variácie, kategórie a popisy. `locationEligibility: remote-ok`.
-- Holandčina je iba preferovaná, nie explicitný hard gate; klient pripúšťa použitie ChatGPT pre holandské texty. Zároveň je už 20–50 proposals a 5 interviewing, preto bez LIVE promotion.
-- Upwork **WordPress Product Image Upload** ostáva high-fit rediscovery: Worldwide remote, entry level, 10–20 USD/h, ale 50+ proposals.
-- Reddit/komunity: výsledky boli prevažne `FOR HIRE` alebo US-only hard-development hiring; 0 eligible verified employer hits.
+- Nevznikla nová promotion-grade LIVE ponuka ani nový verification kandidát, ktorý by prekonal existujúcu queue.
+- LinkedIn/SupportYourApp: **Slovak Customer Support Consultant — Slovakia remotely** je plne remote, ale explicitne vyžaduje **English B2**, preto ostáva mimo promotion podľa jazykového profilu.
+- Kariera/Zoznam: **GREEN RECYCLING — skladník/vodič VZV, Bratislava** je lokalitne `ba-area`, ale fyzická skladová práca + VZV sú slabší fit, bez promotion.
+- Pretlak: **Seesame — Junior Account Manager | Brand & Lifestyle**, Bratislava, junior, 1 300–1 500 EUR, je lokálny a organizačne použiteľný, ale jadro je PR/marketing/account scope; neprekonáva prioritné e-commerce/admin/support roly.
+- StartupJobs: **CDN77 Customer Care** je onsite Praha = `reject-distance`; **Aukro Account Manager HU** je remote, ale maďarský market/language scope je výrazný mismatch.
+- Upwork: **AI Blog Post VA for WordPress (120 articles)** je Worldwide remote a entry-level, ale rozpočet **30 USD fixed za 120 článkov mesačne** je pod value floor. WooCommerce Product Listing 10–30 USD/h a WordPress Product Image Upload ostávajú rediscovery verification kandidáti.
+- Reddit/komunity: 0 eligible verified employer hits pre Slovensko.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nevykazuje ako hit.
-- Predchádzajúci technický blocker full-file replacementu `source-audit.json` je odstránený: audit bol lossless prepísaný so zachovaním pôvodnej queue a rozšírený z 72 na **73 verification položiek**.
 
-## Source audit — 8. 9. 2026 00:48
+## Source audit — 8. 9. 2026 04:51
 - Profesia: `checked`; bez novej unique promotion-grade delty.
 - Priame company careers: `checked`; bez novej vhodnej unique BA/remote delty.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, bez novej vhodnej non-hard-dev delty.
+- LinkedIn Jobs: `limited`; SupportYourApp remote hit overený, ale English B2 = language reject.
 - Worki: `checked`; bez novej vhodnej unique LIVE delty.
-- Kariera/Zoznam: `checked`; bez novej unique promotion-grade delty.
+- Kariera/Zoznam: `ok`; čerstvý GREEN RECYCLING BA hit, bez promotion pre fyzickú záťaž/VZV.
 - Brigada.sk: `checked`; bez novej vhodnej BA/remote WordPress/admin/support brigády.
-- Tech/creative: `checked`; Pretlak/StartupJobs/WordPress Jobs preverené, bez novej vhodnej non-hard-dev delty.
-- Freelance/Upwork: `ok`; 1 nový unique verification kandidát — WooCommerce Product Listing & Upload Specialist; 2 rediscovery/nižšie-hodnotné hity bez LIVE promotion.
+- Tech/creative: `ok`; Pretlak/StartupJobs/WordPress Jobs preverené, lokálne/remote hity existujú, ale neprešli rankingom alebo lokalitou/jazykom.
+- Freelance/Upwork: `ok`; rediscovery existujúcich WooCommerce/WordPress kandidátov + nový extrémne nízko platený AI Blog VA, bez LIVE promotion.
 - Reddit/komunity: `limited`; 0 eligible verified employer hiring hits.
 - Facebook public index: `limited`, **0 verified hits**.
 
-### Audit počty 00:48
+### Audit počty 04:51
 - nové LIVE promotions: **0**
-- nové unique verification kandidáty: **1**
-- verification queue: **73**
+- nové unique verification kandidáty: **0**
+- verification queue: **73** (bez zámerného orezania)
 - persisted LIVE feed delta: **0**, zostáva **50**
 - Facebook verified hits: **0**
 - persisted LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `source-audit.json`: úspešne aktualizovaný lossless; predošlý persistence blocker odstránený.
+- `job-sources.json`: aktualizovaný na tento beh.
+- `source-audit.json`: musí zostať lossless; ak nemožno zaručiť zachovanie celej 73-položkovej queue pri full-file replacement, zápis sa fail-closed nevykoná.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -212,7 +215,9 @@ Aktualizované: 8. 9. 2026 00:48 CEST
 - Established-client microjob trust bonus with budget floor.
 - Skill-exposure cap for PHP-warning fixes.
 - Source-audit lossless patch precondition.
-- **Part-time effective-hourly comparator** — porovná 4h/6h/8h role podľa efektívnej hodinovej hodnoty, stability a času na dochádzku, aby krátky úväzok nevyzeral umelo slabo iba pre nízky mesačný súčet.
-- **Claims/reklamácie experience-transfer score** — zvýhodní roly, kde sa existujúca reklamačná/servisná prax prenáša priamo aj bez formálneho technického certifikátu; zároveň oddelí administratívne reklamácie od fyzicky ťažkého skladu.
-- **Preferred-language vs mandatory-language classifier** — odlíši jazyk uvedený iba ako preferencia od skutočného hard gateu a zohľadní, či zadávateľ explicitne povoľuje AI/prekladový workflow; zníži falošné language rejecty pri freelance zákazkách.
-- **Trial-batch payment-risk gate** — pri zákazkách s testovacou dávkou (napr. 5 test produktov) overí, či je skúška platená, aký je maximálny neplatený effort a či test reálne vedie k väčšiemu kontraktu; chráni čas pred neplateným sample workom.
+- Part-time effective-hourly comparator.
+- Claims/reklamácie experience-transfer score.
+- Preferred-language vs mandatory-language classifier.
+- Trial-batch payment-risk gate.
+- **Search-engine zero-result confidence calibration** — pri nulovom výsledku rozlíši skutočne prázdny zdroj od slabej verejnej indexácie podľa historickej výťažnosti, freshness a dostupnosti detailov; znižuje falošný pocit úplného coverage.
+- **Reject-reason drift detector** — sleduje zmenu podielu `language`, `location`, `qualification`, `pay/value`, `duplicate` a `inactive` rejectov medzi behmi; upozorní, keď sa discovery zacyklí na nevhodnom type kandidátov a treba zmeniť query stratégiu.
