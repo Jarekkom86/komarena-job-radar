@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 8. 9. 2026 08:39 CEST
+Aktualizované: 8. 9. 2026 11:14 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -33,49 +33,50 @@ Aktualizované: 8. 9. 2026 08:39 CEST
 - Agregátor/repost nesmie prebiť priamy firemný zdroj.
 
 ## Aktuálny stav LIVE
-- Autoritatívny feed má **50 LIVE položiek**; v tomto behu nebol `jobs-data.json` menený, pretože konektor neposkytuje bezpečný partial patch a úplný payload sa pri čítaní skracuje. FAIL-CLOSED zabránil riziku straty existujúcich položiek.
+- Autoritatívny feed zostáva na **50 LIVE položkách**; tento beh nepridal novú promotion-grade unique položku, preto `jobs-data.json` zostal bez zmeny.
 - LIVE mix: **Profesia 24/50 = 48,0 %**, mimo Profesia **26/50 = 52,0 %**.
 - `jobs-data.json.updatedAt`: **2026-09-05T07:32:41+02:00**.
 - Posledná persisted LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
-- **NOVÝ promotion-ready TOP kandidát: Techfun s. r. o. — Elektro-technický špecialista pre e-shop**, Kopčianska 92A, Petržalka, 1 800–2 200 EUR/mes., Po–Pi onsite. Kombinuje odborné poradenstvo, e-mailovú/telefonickú technickú podporu, testovanie a zaraďovanie produktov, Arduino/ESP/Raspberry, reklamácie, návody, blog a produktové popisy. Angličtina je len základná; firma uvádza, že potrebné veci doučí. `locationEligibility: ba-area`. Riziko: vyžaduje aspoň základnú skúsenosť s C/C++ alebo Python a schopnosť čítať datasheety; nejde však o čistý hard-development profil.
+- **Promotion-ready TOP kandidát: Techfun s. r. o. — Elektro-technický špecialista pre e-shop**, Kopčianska 92A, Petržalka, 1 800–2 200 EUR/mes., Po–Pi onsite. Kombinuje odborné poradenstvo, e-mailovú/telefonickú technickú podporu, testovanie a zaraďovanie produktov, Arduino/ESP/Raspberry, reklamácie, návody, blog a produktové popisy. Angličtina je len základná; firma uvádza, že potrebné veci doučí. `locationEligibility: ba-area`. Riziko: aspoň základná skúsenosť s C/C++ alebo Python a datasheetmi.
 - Silný promotion-ready kandidát: **ReMar Slovakia — Administratívny pracovník / pracovníčka e-shopu – objednávky a zákaznícky servis**, Panónska cesta 4, Petržalka, 1 200 EUR + 200 EUR variabilne po skúšobnej dobe, Po–Pi 9:30–18:00. `locationEligibility: ba-area`.
 - Promotion-ready: **NAY a.s. — Reklamačný/á technik/čka, Centrálny sklad Senec**; publ. 7. 9. 2026, ASAP, reklamácie + procesy + práca s tovarom, `locationEligibility: ba-area`.
 - Silný flexibilný kandidát: **DHL Group — administratívna podpora transportného tímu, Senec**, 4 h denne, 804,50 EUR + 10 % mesačný bonus; `locationEligibility: ba-area`.
 - Promotion-ready z predchádzajúcich behov: **BeiT Technologie — Administrativně-ekonomický specialista (Junior/Medior), 100 % remote** a **SAV — Asistent/ka riaditeľa**; pred LIVE zápisom vyžadujú fresh canonical recheck.
-- Silný verification kandidát: **NASES — Operátor/operátorka Ústredného kontaktného centra**, Bratislava, od 1 500 EUR, pružný režim 8–16/9–17, vhodné pre absolventa; technicko-zákaznícka podpora slovensko.sk a e-schránok. `locationEligibility: ba-area`. Mínus: AJ B1 a vyššie Office nároky.
+- Silný verification kandidát: **NASES — Operátor/operátorka Ústredného kontaktného centra**, Bratislava, od 1 500 EUR, pružný režim 8–16/9–17, vhodné pre absolventa; `locationEligibility: ba-area`. Mínus: AJ B1 a vyššie Office nároky.
+- Nový verification kandidát tohto behu: **Dotypos SK — Technický support**, Bratislava, 1 200 EUR, TPP na neurčito, vhodné pre absolventa, support + terénne inštalácie + pred/popo-predajný servis; `locationEligibility: ba-area`. Ponuka je aktívna do 30. 9. 2026. Mínus: explicitná AJ B1/B2 a požiadavky na Android/IT prehľad, preto 0 LIVE promotion.
 
-### Čerstvé zistenia 08:39
-- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
-- **Techfun — Elektro-technický špecialista pre e-shop** je dnes čerstvý veľmi silný kandidát: Petržalka, 1 800–2 200 EUR, základná AJ, e-shop + ESP/Arduino/Raspberry + technická podpora + reklamácie + produktový obsah. Práca za rohom je Profesia mirror a nepočíta sa ako nezávislý source hit.
-- **ReMar Slovakia — e-shop objednávky a zákaznícky servis** bol znovu canonical potvrdený ako aktívny; ide o rediscovery, nie nový source-family hit.
-- LinkedIn verejný index ukázal WordPress developer rolu v Bratislave, ale engineering/hard-dev charakter ju podľa ranking profilu penalizuje.
-- Worki Bratislava discovery prinieslo najmä sales/servis role bez lepšej zhody než aktuálny feed.
-- Upwork nový Ecommerce VA pre Shopify/Etsy/WooCommerce je Worldwide remote, ale iba 15 USD fixed-price a Expert scope; bez promotion.
-- Reddit/komunity: 0 eligible verified employer hits pre Slovensko.
+### Čerstvé zistenia 11:14
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam/ÚPSVR, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
+- **Dotypos SK — Technický support** je aktívny BA-area kandidát, ale B1/B2 English ho drží vo verification.
+- LinkedIn verejný index našiel **Sharp Brains — L1 Desktop Support** v Bratislave; lokalita prechádza, ale 1–3 roky desktop supportu, Active Directory a networking requirements sú slabší fit.
+- Priame DHL careers: dve indexované BA roly boli po otvorení označené ako už nevypísané; vyradené pre neaktivitu.
+- Upwork: viac WooCommerce/product admin/VA hitov, ale bez promotion — buď 50+ proposals bez transparentnej odmeny, low-budget alebo vyšší multi-platform/English skill burden.
+- Reddit/komunity: 0 eligible verified hiring hitov.
 - Facebook public index: **0 verified hits / limited**. Bez konkrétneho verejného postu a priameho linku sa nič nevykazuje ako hit.
 
-## Source audit — 8. 9. 2026 08:39
-- Profesia: `ok`; nový relevantný hit Techfun, 0 persisted LIVE promotions z dôvodu fail-closed persistence blockeru; ReMar rediscovery.
-- Priame company careers: `checked`; bez novej vhodnej unique BA/remote promotion-grade delty.
-- LinkedIn Jobs: `limited`; verejná indexácia preverená, WordPress developer je hard-dev/engineering mismatch.
-- Worki: `checked`; bez novej vhodnej unique promotion-grade delty.
-- Kariera/Zoznam: `checked`; Pezinok admin výsledok existuje, ale nízka mzda a slabšia zhoda než LIVE/verification priority.
-- Brigada.sk: `checked`; bez novej vhodnej BA/remote WordPress/admin/support brigády.
-- Tech/creative: `checked`; bez novej vhodnej non-hard-dev promotion-grade delty.
-- Freelance/Upwork: `ok`; nový Ecommerce VA je low-budget Expert scope, 0 promotion.
-- Reddit/komunity: `limited`; 0 eligible verified employer hiring hits.
-- Facebook public index: `limited`, **0 verified hits**.
+## Source audit — 8. 9. 2026 11:14
+- Profesia: `checked`; 0 nových unique promotion-grade hitov.
+- Priame company careers: `checked`; 2 indexované DHL roly vyradené ako neaktívne.
+- LinkedIn Jobs: `limited`; 1 relevantný hit, 0 pridaných, skill mismatch.
+- Worki: `checked`; 0 nových vhodných hitov.
+- Kariera/Zoznam/ÚPSVR: `ok`; 1 relevantný Dotypos hit, 0 pridaných pre AJ B1/B2.
+- Brigada.sk: `checked`; 0 nových vhodných hitov.
+- Tech/creative: `checked`; 0 nových vhodných non-hard-dev hitov.
+- Freelance/Upwork: `ok`; 5 relevantných kandidátov, 0 pridaných pre konkurenciu/odmenu/skill burden/duplicitné rediscovery.
+- Reddit/komunity: `limited`; 0 verified hiring hitov.
+- Facebook public index: `limited`; **0 verified hits**.
 
-### Audit počty 08:39
-- nové promotion-ready kandidáty: **1 (Techfun)**
-- persisted nové LIVE promotions: **0**
-- persisted verification queue: **73** (nezmenená; source-audit write nebol vykonaný bez bezpečného lossless payloadu)
-- persisted LIVE feed delta: **0**, zostáva **50**
+### Audit počty 11:14
+- source families checked: **10**
+- nové LIVE promotions: **0**
+- LIVE feed delta: **0**, zostáva **50**
 - Facebook verified hits: **0**
-- persisted LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
+- LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
+- vyradené: language **2**, inactive **2**, skill **3**, duplicate/rediscovery **2**, location **0**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na tento beh.
-- `source-audit.json`: **nezapísaný**, pretože konektor v tomto behu vracia veľký verification payload skrátený a umožňuje iba full-file replacement; FAIL-CLOSED zabránil strate queue.
+- `job-sources.json`: aktualizovaný na 11:14.
+- `source-audit.json`: aktualizovaný lossless na 11:14.
+- `jobs-data.json`: bez zmeny, pretože neexistovala promotion-grade unique delta.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -223,3 +224,5 @@ Aktualizované: 8. 9. 2026 08:39 CEST
 - Trial-batch payment-risk gate.
 - **DIY-project evidence pack generator** — z existujúcich ESP/Home Assistant/elektronických projektov automaticky vytvoriť krátky dôkazový balík vhodný k technickým e-shop rolám ako Techfun, aby sa zvýšila úspešnosť reakcie bez preháňania skúseností.
 - **Electronics role code-depth limiter** — oddeliť základné Arduino/ESP/C/Python požiadavky od skutočného embedded hard-developmentu; zabrániť zbytočnému vyradeniu rolí, kde firma akceptuje hobby/DIY prax a zaškolenie.
+- **Stale-but-active vacancy recovery score** — pri staršej, ale canonical aktívnej ponuke odlíšiť reálne stále otvorené miesto od indexového odpadu; kombinovať explicitný closing date, response availability a posledné canonical overenie, aby sa neopomínali stále použiteľné role ako Dotypos.
+- **Language-requirement ambiguity resolver** — keď zdroj naraz uvádza B1 aj B2 alebo textovo „mierne pokročilý“, uložiť presnú evidenciu konfliktu a znížiť confidence namiesto automatického hard rejectu; šetrí manuálne overovanie a zlepšuje ranking pri hraničných support rolách.
