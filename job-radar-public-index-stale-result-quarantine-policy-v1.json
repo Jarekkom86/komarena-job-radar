@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "policy": "public-index-stale-result-quarantine",
+  "purpose": "Stop stale search-index and public-community snippets from entering LIVE or inflating source coverage when the canonical vacancy cannot be freshly verified.",
+  "locationGate": {
+    "hardGate": true,
+    "allowed": ["ba-area", "remote-ok"],
+    "unknownAction": "quarantine",
+    "distantHybridAction": "reject-distance",
+    "remoteRequiresSlovakiaEvidence": true
+  },
+  "evidenceRules": {
+    "indexSnippetIsDiscoveryOnly": true,
+    "canonicalDetailRequiredForPromotion": true,
+    "canonicalActiveStateRequired": true,
+    "preserveSourceTrust": true,
+    "preserveVerifiedAt": true,
+    "preserveScoreConfidence": true,
+    "facebookBlockedOrLimitedMustRemainTruthful": true,
+    "neverCountUnverifiedFacebookSnippetAsHit": true
+  },
+  "quarantineTriggers": [
+    "canonical_404_or_410",
+    "canonical_redirects_to_generic_careers",
+    "canonical_missing_and_snippet_age_unknown",
+    "snippet_and_canonical_location_conflict",
+    "snippet_claims_remote_but_canonical_remote_policy_unverified",
+    "index_result_older_than_canonical_or_known_expiry"
+  ],
+  "recovery": {
+    "recheckPrimarySource": true,
+    "allowIndependentOfficialCareerSource": true,
+    "mirrorCannotPromoteWithoutCanonicalEvidence": true
+  },
+  "dedupeSafety": {
+    "preserveStableIds": true,
+    "canonicalDedupeRequired": true,
+    "doNotDeleteExistingLiveOnTransientFailure": true
+  },
+  "metrics": ["staleIndexQuarantines", "falseFreshnessPrevented", "canonicalRecoveries"]
+}
