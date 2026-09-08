@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 8. 9. 2026 16:50 CEST
+Aktualizované: 8. 9. 2026 17:11 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -233,6 +233,8 @@ Aktualizované: 8. 9. 2026 16:50 CEST
 - **Promotion-ready persistence debt tracker** — evidovať kandidátov, ktorí už prešli rankingom a canonical overením, ale neboli zapísaní do `jobs-data.json` pre technický fail-closed limit; prioritne ich rechecknúť a bezpečne dopersistovať v prvom behu s lossless zápisom.
 - **Compensation certainty splitter** — ukladať osobitne garantovaný fix, podmienenú variabilnú zložku, provízie a maximá; ranking počítať primárne z garantovaného minima, aby marketingové „až X €“ neprebíjalo stabilnejšiu ponuku.
 - **Support-level scope detector** — z náplne a požadovaných nástrojov klasifikovať L1/L2/L3 aj vtedy, keď titul pozície senioritu zatajuje; L2/L3 s AD/Windows Server/SQL/Splunk/PowerShell penalizovať skôr než sa minie čas na manuálne overovanie.
+- **BA commute-window reliability score** — pri lokálnych BA/okolie rolách kombinovať začiatok/koniec zmeny, typický dopravný režim a lokalitu pracoviska do samostatného commute rizika; hard gate ostáva nezmenený, ale ranking lepšie odlíši prakticky udržateľné dochádzanie od hraničných zmien.
+- **Canonical recheck TTL by source class** — nastaviť rozdielne intervaly opätovného overenia podľa typu zdroja (direct company/jobboard/freelance/community), aby sa čerstvé krátkožijúce ponuky kontrolovali častejšie a stabilné careers zbytočne nezaťažovali discovery.
 
 ## Source audit — 8. 9. 2026 15:10
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**.
@@ -264,4 +266,20 @@ Aktualizované: 8. 9. 2026 16:50 CEST
 - Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom.
 - LIVE feed delta: **0**, zostáva **50**; Profesia **48,0 %**, non-Profesia **52,0 %**.
 - `job-sources.json` a `source-audit.json` aktualizované na 16:50; `jobs-data.json` ponechaný bez zmeny fail-closed.
+- Zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**.
+
+## Source audit — 8. 9. 2026 17:11
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**.
+- Profesia: `checked`; 0 novej unique promotion-grade canonical delty.
+- Priame company careers: `ok`; Slovak Telekom, NAY a Hemmersbach boli reálne preverené. Telekom Žilina customer centre je `reject-distance`; senior controlling Bratislava je mimo rankingu; NAY Senec hity sú sklad/VZV s vysokou fyzickou a zmenovou záťažou.
+- LinkedIn Jobs: `limited`; SupportYourApp remote Technical Support Consultant je lokalitne remote-ok/BA, ale explicitné **Fluent English** je hard jazykový mismatch. 0 promotion.
+- Worki: `checked`; 0 novej vhodnej unique delty.
+- Kariera/Zoznam/ÚPSVR: `checked`; 0 novej canonical promotion-grade delty.
+- Brigada.sk: `checked`; 0 nových vhodných BA hitov.
+- Pretlak/StartupJobs/WordPress Jobs: `checked`; 0 novej overiteľnej non-hard-dev promotion-grade delty.
+- Upwork/freelance: `ok`; 5 relevantných Worldwide remote e-commerce/WordPress VA výsledkov, ale približne 3–8 USD/h alebo nízky fixed budget, často 20–50 až 50+ proposals; WordPress/Elementor support navyše zahŕňa hosting/DNS/caching a urgent helpdesk. 0 promotion.
+- Reddit/komunity: `limited`; verejné výsledky boli najmä FOR HIRE alebo staré/US-only developer ponuky; 0 eligible verified hiring hitov.
+- Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom.
+- LIVE feed delta: **0**, zostáva **50**; Profesia **48,0 %**, non-Profesia **52,0 %**.
+- `job-sources.json` a `source-audit.json` aktualizované na 17:11; `jobs-data.json` ponechaný bez zmeny fail-closed.
 - Zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**.
