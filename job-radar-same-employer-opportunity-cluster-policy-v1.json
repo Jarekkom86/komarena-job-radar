@@ -1,0 +1,32 @@
+{
+  "policyVersion": "1.0",
+  "name": "same-employer-opportunity-cluster-prioritizer",
+  "purpose": "Reduce duplicate application effort when one employer has multiple simultaneous eligible vacancies, without changing eligibility, stable IDs, CRM state or canonical dedupe.",
+  "hardPreconditions": {
+    "locationEligibility": ["ba-area", "remote-ok"],
+    "remoteRule": "remote-ok requires explicit evidence that work can be performed primarily from Slovakia without regular distant commuting",
+    "unknownLocationAction": "exclude-from-cluster-and-quarantine",
+    "rejectDistanceAction": "exclude"
+  },
+  "employerIdentity": {
+    "rule": "cluster only when canonical employer identity is high-confidence; staffing agency and end-client remain distinct unless explicitly proven identical",
+    "minimumIdentitySignals": 2
+  },
+  "clusterKey": ["canonicalEmployerIdentity", "activeWindow"],
+  "prioritization": {
+    "maxRecommendedApplicationsPerEmployer": 2,
+    "primaryOrder": ["locationEligibility", "scoreConfidence", "matchScore", "verifiedAt", "applicationReadiness"],
+    "preserveAllJobs": true,
+    "lowerRankedAction": "retain-live-or-verification-state; suppress duplicate application urgency only"
+  },
+  "materialChangeReopen": ["roleScope", "compensation", "workMode", "locationEligibility", "requirements", "applicationChannel"],
+  "safety": {
+    "mutateJobsData": false,
+    "mutateCRM": false,
+    "mutateStableIds": false,
+    "mutateSourceAudit": false,
+    "mutateBaseline": false,
+    "mutateUI": false,
+    "failClosed": true
+  }
+}
