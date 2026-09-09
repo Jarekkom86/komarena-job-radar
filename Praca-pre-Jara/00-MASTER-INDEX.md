@@ -11,14 +11,17 @@ Všetko, čo sa týka práce, brigád, pracovných ponúk, pracovných agentúr,
 Tento priečinok je **single source of truth** pre pracovnú agendu a KomArena Job Radar.
 
 ## MASTER CV — AUTORITATÍVNY ZDROJ
-- **Autoritatívny PDF:** `CV-MASTER/Jaroslav_Koman_CV_MASTER_2026.pdf`
+- **Autoritatívny všeobecný PDF:** `CV-MASTER/Jaroslav_Koman_CV_MASTER_2026.pdf`
 - **Pravidlá:** `CV-MASTER/README.md`
-- Tento PDF je jediný MASTER pre všetky ďalšie personalizované CV.
-- Zachovať vizuál, dvojstranovú štruktúru, fotografiu, typografiu a profesionálny layout; meniť iba obsah relevantný ku konkrétnej ponuke.
+- **Kuriér / vodič B ROLE MASTER:** `CV-MASTER/KURIER-VODIC-B-MASTER-2026.md`
+- Všeobecný PDF je základný MASTER; schválený ROLE MASTER sa použije ako prvá voľba pre zodpovedajúci typ pozície.
+- Kuriérsky ROLE MASTER platí od 2026-09-09 pre kuriér, vodič B, rozvoz zásielok, boxy a logistický rozvoz.
+- Pri kuriérskych reakciách sa nesmie používať starý Košík.sk variant ako univerzálne CV pre inú firmu.
+- Zachovať vizuál, fotografiu, typografiu a profesionálny layout; meniť iba obsah relevantný ku konkrétnej ponuke.
 - Aktuálny e-mail z MASTER CV: `jaroslav@komarena.sk`.
 - Aktuálna činnosť v MASTER CV: `SZČO / Freelancer - webové, Smart Home a digitálne projekty`.
 - Staršie Google Drive CV ani staršie konverzačné CV nie sú MASTER.
-- Ak sa Job Radar CV generátor odlišuje od MASTER PDF, správny je MASTER PDF a generátor treba zosynchronizovať podľa neho.
+- Ak sa Job Radar CV generátor odlišuje od MASTER zdroja, správny je MASTER a generátor treba zosynchronizovať podľa neho.
 
 ## Priorita pri hľadaní
 1. Nástup ihneď / nasledujúci deň.
@@ -37,8 +40,9 @@ Tento priečinok je **single source of truth** pre pracovnú agendu a KomArena J
 - Súbežne sledovať: stavebné stroje, plošiny, práce vo výškach, viazač bremien, žeriavnik a ďalšie krátke kvalifikácie s vysokým ROI.
 
 ## Súbory
-- `CV-MASTER/Jaroslav_Koman_CV_MASTER_2026.pdf` — autoritatívny MASTER CV.
-- `CV-MASTER/README.md` — záväzné pravidlá pre personalizáciu CV.
+- `CV-MASTER/Jaroslav_Koman_CV_MASTER_2026.pdf` — autoritatívny všeobecný MASTER CV.
+- `CV-MASTER/KURIER-VODIC-B-MASTER-2026.md` — autoritatívny ROLE MASTER pre kuriér / vodič B.
+- `CV-MASTER/README.md` — záväzné pravidlá pre MASTER a personalizáciu CV.
 - `UPDATE-2026-08-26-1121.md` — starší pracovný update.
 - `VZV-BRIGADY-A-AGENTURY-2026-09-08.md` — aktuálny prieskum VZV, agentúr a brigád.
 
