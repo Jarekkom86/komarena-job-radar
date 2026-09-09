@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 9. 9. 2026 10:53 CEST
+Aktualizované: 9. 9. 2026 11:45 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -72,29 +72,31 @@ Aktualizované: 9. 9. 2026 10:53 CEST
 - Fresh freelance rejects 9.9. 08:42: Upwork Elementor/PHP 15 USD fixed, Expert plugin maintenance 10 USD fixed, WooCommerce full build 70 USD Expert a ďalšie low-budget/strong-English/country-restricted VA výsledky; bez promotion.
 - Fresh freelance verification 9.9. 10:53: **Upwork — E-Commerce Operations & Admin VA**, Worldwide remote, WooCommerce/product listings/data entry, 250 USD fixed, 15–20 proposals. Bez LIVE promotion pre pokročilý Excel/VLOOKUP/pivot burden a neistý efektívny hodinový výnos.
 - Fresh tech/creative rejects 9.9. 10:53: **Stretchfit — Creative Strategist**, Bratislava/remote/hybrid, 2 300–3 000 EUR, ale Mid/Senior creative-strategy scope; **Aukro — Account Manager HU**, remote/hybrid, ale maďarský trh a jazykovo-obchodný burden mimo profilu.
+- Fresh duplicate 9.9. 11:45: **Slovak Telekom — Špecialista/Špecialistka podpory zákazníkov**, Bajkalská 28, Bratislava, sa objavil na Kariera.sk s dátumom 9. 9. 2026. Je to mirror existujúcej LIVE canonical firemnej ponuky, preto sa nový job nevytvoril a stabilné ID ostalo zachované.
+- Fresh freelance rejects 9.9. 11:45: Upwork **Expert WordPress Developer Needed for Custom WooCommerce E-Commerce Website**, 300 USD fixed, Expert/custom PHP+JS scope; a **WooCommerce Developer Needed to Improve Product Page Layout**, 60 USD fixed, development-heavy. Bez LIVE promotion.
 
-## Source audit — 9. 9. 2026 10:53
+## Source audit — 9. 9. 2026 11:45
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam/ÚPSVR, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
-- Profesia: `ok`; 1 relevantný rediscovery hit, **0 LIVE promotion** — Tatra Supercompute L1 Service Desk je lokálne vhodný, ale AJ B2 + anglické CV + 24/7 onsite trojzmennosť sú výrazný mismatch.
+- Profesia: `checked`; 0 nových konkrétnych unique promotion-grade public-index výsledkov.
 - Priame company careers: `checked`; 0 novej canonical promotion-grade delty.
-- LinkedIn Jobs: `ok`; Wolt Support Associate Part Time resurfaced, ale student/shift-heavy support je pod preferovaným fitom; 0 promotion.
-- Worki: `ok`; Shield-Sk e-shop admin je canonical inactive a staršia STU part-time administratíva je low-value; 0 promotion.
-- Kariera/Zoznam/ÚPSVR: `ok`; 4 relevantné/adjacent BA support výsledky, ale známe mirrory alebo language/ranking mismatch; 0 promotion.
+- LinkedIn Jobs: `ok`; 2 relevantné/adjacent výsledky, vrátane Wolt Support Associate Part Time; 0 promotion.
+- Worki: `ok`; Shield-Sk e-shop admin je canonical inactive, Läderach retail assistant je BA-local ale pod target rankingom; 0 promotion.
+- Kariera/Zoznam/ÚPSVR: `ok`; 3 relevantné/adjacent BA výsledky, same-day Telekom je mirror existujúcej LIVE canonical firemnej ponuky; 0 unique promotion.
 - Brigada.sk: `checked`; 0 novej konkrétnej vhodnej verejne indexovanej ponuky.
-- Pretlak/StartupJobs/WordPress Jobs: `ok`; 2 adjacent hity, ale Creative Strategist je Mid/Senior mimo profilu a Aukro HU je jazykovo/obchodne mimo; 0 promotion.
-- Upwork/freelance: `ok`; 8 relevantných/adjacent hitov. Najlepší operational hit bol E-Commerce Operations & Admin VA za 250 USD fixed, no pokročilý Excel a neistý effective rate; ostatné výsledky boli microbudget alebo Expert/hard-development; 0 promotion.
-- Reddit/komunity: `limited`; fresh výsledky boli FOR HIRE poskytovatelia, nie konkrétne hiring dopyty; 0 verified vhodných hiring hits.
+- Pretlak/StartupJobs/WordPress Jobs: `ok`; 2 adjacent hity, ale Aukro HU je jazykovo/obchodne mimo a Java/React je hard-dev; 0 promotion.
+- Upwork/freelance: `ok`; 2 relevantné WooCommerce hity, oba development-heavy/nevýhodné fixed-budget; 0 promotion.
+- Reddit/komunity: `limited`; fresh výsledok bol diskusia o automatizovanom hľadaní práce v Bratislave, nie hiring dopyt; 0 verified suitable hiring hits.
 - Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog.
 
-### Audit počty 10:53
+### Audit počty 11:45
 - source families checked: **10**
 - nové LIVE promotions: **0**
 - LIVE feed delta: **0**, zostáva **51**
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **49,0 %**, non-Profesia **51,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 10:53.
-- `source-audit.json`: aktualizovaný na 10:53.
+- `job-sources.json`: aktualizovaný na 11:45.
+- `source-audit.json`: aktualizovaný na 11:45.
 - `jobs-data.json`: bez zmeny; nebol nový promotion-grade unique hit.
 
 ## Rozvojový backlog
@@ -267,3 +269,5 @@ Aktualizované: 9. 9. 2026 10:53 CEST
 - **Search-to-zero evidence receipt** — pre každú source family s nulovým hitom uložiť hash/query-set + timestamp posledného reálneho vyhľadania; Source Radar tak vie rozlíšiť pravdivé „checked, 0“ od zdroja, ktorý sa v behu vôbec nekontroloval.
 - **Application-channel reachability monitor** — pri TOP rolách evidovať, či je reakcia možná cez priamy e-mail, firemný formulár, jobboard profil alebo iba login-wall; penalizovať nefunkčný/uzavretý response kanál a pred odoslaním znovu overiť jeho dostupnosť.
 - **Freelance client hire-rate normalization** — pri Upwork/freelance dopytoch kombinovať počet historických hires, aktívnych kontraktov, spend a pomer interview→hire; rozlíšiť reálne najímajúceho klienta od účtu, ktorý síce publikuje veľa jobov, ale má nízku konverziu do platených spoluprác.
+- **Canonical-mirror publication-date conflict resolver** — ak mirror/jobboard zverejní rovnakú pozíciu s novším dátumom než canonical firemná stránka, uložiť mirror dátum iba ako rediscovery/repost signál a nezvyšovať freshness prioritu bez zmeny canonical obsahu.
+- **Search-result-to-LIVE duplicate confidence gate** — pred pridaním kandidáta porovnať normalizovaný title+company+workplace s LIVE feedom a pri pravdepodobnom mirrore vyžadovať nový materiálny fakt; šetrí čas a chráni stabilné ID pred paralelnými záznamami.
