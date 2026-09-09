@@ -11,17 +11,17 @@
     "liveProfesiaPct": 48.0,
     "liveNonProfesiaPct": 52.0,
     "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Full diversity sweep on 9.9.2026 04:07 CEST. No new unique candidate passed all locality, ranking, language, activity and source-quality gates. LinkedIn public index resurfaced Foxelli Crochet Customer Support Agent as 100% remote and explicitly eligible from Slovakia, but it is already known and remains unattractive at up to 800 EUR after taxes with phone/sales duties. Upwork produced fresh/publicly indexed WordPress, Shopify and e-commerce VA listings, but current hits were either economically weak, English-heavy, highly competitive or older than the preferred freshness window. Existing 50-item LIVE feed was preserved fail-closed. Facebook public index produced 0 verified hiring posts."
+    "note": "Full diversity sweep on 9.9.2026 04:07 CEST. Techfun Elektro-technický špecialista pre e-shop was freshly reverified on the canonical Profesia listing: Bratislava-Petržalka, immediate start, 1 800–2 200 EUR, basic English, Arduino/ESP/Raspberry, product testing, technical support, complaints and content. It remains promotion-ready but could not be appended to jobs-data.json safely because the connector returns the large file truncated while write is full-file replacement only; FAIL-CLOSED therefore preserved all 50 LIVE records. LinkedIn resurfaced Foxelli remote support but low pay/phone-sales/USA-shift burden keeps it out. Upwork hits were economically weak or skill/English-heavy. Facebook public index produced 0 verified hiring posts."
   },
   "sources": [
     {
       "name": "Profesia",
       "family": "profesia",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Reálne vyhľadané 9.9.2026 04:07 pre BA/okolie a remote prioritné tracky; bez novej verejne overiteľnej unique promotion-grade delty."
+      "note": "Techfun s. r. o. — Elektro-technický špecialista pre e-shop freshly canonical-reverified: Kopčianska 92A Bratislava-Petržalka, 1 800–2 200 EUR, immediate start, basic English, Arduino/ESP/Raspberry + technical support + product/content/reklamácie. locationEligibility=ba-area. Promotion-ready; not persisted only because lossless jobs-data.json replacement is unavailable from the truncated connector payload."
     },
     {
       "name": "Priame firemné career stránky",
