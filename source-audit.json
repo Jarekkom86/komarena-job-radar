@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-09T06:35:10+02:00",
+  "updatedAt": "2026-09-09T07:03:40+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
@@ -10,18 +10,18 @@
     "liveNonProfesiaCount": 26,
     "liveProfesiaPct": 49.0,
     "liveNonProfesiaPct": 51.0,
-    "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Full diversity sweep on 9.9.2026 06:35 CEST. No new promotion-grade unique offer cleared the BA/remote hard gate plus ranking/value gates. Profesia, direct-company careers, LinkedIn public index, Worki, Kariera/Zoznam, Brigada.sk, tech/creative sources, freelance sources, public communities and Facebook public index were genuinely searched. Upwork surfaced fresh WordPress/WooCommerce work, but the newest items were low fixed-price or expert/hard-development scope. Facebook yielded 0 verified hiring posts. Existing LIVE feed remains fail-closed at 51 items."
+    "stalePolicy": "Existing active items are fail-closed and are not removed merely because a new sweep does not rediscover them.",
+    "note": "Full diversity sweep on 9.9.2026 07:03 CEST. No new promotion-grade unique offer cleared the BA/remote hard gate plus ranking/value gates. Profesia, direct-company careers, LinkedIn public index, Worki, Kariera/Zoznam, Brigada.sk, tech/creative sources, freelance sources, public communities and Facebook public index were genuinely searched. ČSOB IT Service Desk was freshly resurfaced on LinkedIn but is already LIVE under the canonical Profesia ID, so it was treated as a duplicate enrichment rather than a new item. StartupJobs surfaced Elasticr L2 support in Havlíčkův Brod, but the listing does not prove Slovakia-home remote eligibility and is technically above preferred scope. Upwork produced fresh worldwide WordPress/VA jobs, but they were low fixed-price, expert/hard-development, strong-English, country-restricted or high-competition. Facebook yielded 0 verified hiring posts. Existing LIVE feed remains fail-closed at 51 items."
   },
   "sources": [
     {
       "name": "Profesia",
       "family": "profesia",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Bratislava/okolie WordPress, e-shop, administration and technical-support discovery genuinely searched; no new unique promotion-grade delta beyond already-LIVE Techfun."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Bratislava/okolie WordPress, e-shop, administration and technical-support discovery genuinely searched. ČSOB IT Service Desk remained publicly active but is already present in LIVE as profesia-csob-it-service-desk-5350972; no new unique promotion-grade delta."
     },
     {
       "name": "Priame firemné career stránky",
@@ -30,25 +30,25 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Direct company-career discovery genuinely searched for Bratislava technical/customer support and related roles; no new canonical promotion-grade delta."
+      "note": "Direct company-career discovery genuinely searched for Bratislava technical/customer support and e-commerce/admin roles; no new canonical promotion-grade delta."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
-      "status": "limited",
-      "hits": 0,
+      "status": "ok",
+      "hits": 2,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Public LinkedIn index genuinely searched for Bratislava WordPress/WooCommerce/technical-support roles. No new publicly verifiable suitable hit; public-index coverage remains limited."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "ranking": 1},
+      "note": "Public LinkedIn index genuinely searched. ČSOB IT Service Desk resurfaced as a very fresh LinkedIn company post but duplicates the canonical LIVE Profesia item. Wolt Support Associate Bratislava was also visible but requires English B2 and student/shift availability, so no promotion."
     },
     {
       "name": "Worki.sk",
       "family": "worki",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Bratislava e-shop/admin/support/driver/logistics discovery genuinely searched; no new active unique promotion-grade delta."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Bratislava admin/support/driver/logistics discovery genuinely searched. HEATING PRO technical warehouse/driver role resurfaced and is already LIVE; no new unique promotion-grade delta."
     },
     {
       "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
@@ -66,16 +66,16 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Bratislava administration/warehouse/driver brigades genuinely searched; no new suitable publicly verifiable hit."
+      "note": "Bratislava administration/e-shop/support/driver brigades genuinely searched; no new suitable publicly verifiable hit."
     },
     {
       "name": "Pretlak / StartupJobs / WordPress Jobs",
       "family": "tech-creative",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Pretlak, StartupJobs and WordPress-oriented discovery genuinely searched for BA/remote non-hard-dev work; no new suitable promotion-grade result."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1, "ranking": 1},
+      "note": "Tech/creative discovery genuinely searched. StartupJobs surfaced Elasticr IT Support Specialist L2, 42–52k CZK, Havlíčkův Brod with Remote/On-site/Hybrid label. Because the public detail does not prove that the role can be performed predominantly from Slovakia without regular Czech commuting, locationEligibility is unknown/reject for active promotion; L2 incident-analysis scope is also above preferred level."
     },
     {
       "name": "Upwork / freelance",
@@ -83,8 +83,8 @@
       "status": "ok",
       "hits": 5,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 3, "budget": 5, "ranking": 5, "competition": 3},
-      "note": "Worldwide WordPress/WooCommerce/VA discovery genuinely executed. Fresh examples included WordPress Plugin Update & Maintenance Expert at 10 USD fixed (expert/hard-skill), WooCommerce Website Creation at 70 USD fixed (expert scope), AI Blog Post VA at 30 USD for 120 articles, and low-value WordPress/WooCommerce fixed-price development. None cleared value + skill + competition gates."
+      "rejected": {"language": 2, "inactive": 0, "duplicate": 0, "location": 1, "skill": 3, "budget": 4, "ranking": 5, "competition": 3},
+      "note": "Worldwide WordPress/WooCommerce/VA discovery genuinely executed. Fresh WordPress Plugin Update & Maintenance Expert was 10 USD fixed and Expert; AI Blog Post VA was 30 USD for 120 articles; WordPress/WooCommerce developer jobs were very low fixed-price/hard-development; VA jobs were Spanish/USA-restricted or required excellent English/cold calling. None cleared value + skill + language + location gates."
     },
     {
       "name": "Reddit / WordPress / WooCommerce komunity",
@@ -92,8 +92,8 @@
       "status": "limited",
       "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1, "ranking": 0},
-      "note": "Publicly indexed communities genuinely searched. Visible fresh WordPress results were FOR HIRE provider posts; a hiring post was US-only and hard-development. 0 verified suitable hiring hits."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 0},
+      "note": "Publicly indexed communities genuinely searched. Fresh visible WordPress/WooCommerce posts were FOR HIRE provider advertisements rather than hiring demand; 0 verified suitable hiring hits."
     },
     {
       "name": "Facebook verejný index",
@@ -103,7 +103,7 @@
       "verifiedHits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "WordPress Slovensko, WooCommerce Komunita SK+CZ and Bratislava job/brigade public-index discovery genuinely searched. No concrete publicly verifiable hiring post with a direct link; 0 verified hits. Authenticated Nexus/local ingestion remains backlog."
+      "note": "WordPress Slovensko, WooCommerce Komunita SK+CZ and Bratislava job/brigade public-index discovery genuinely searched. No concrete publicly verifiable hiring post with a direct link; 0 verified hits. Authenticated Nexus/local ingestion remains backlog and was not started automatically."
     }
   ]
 }
