@@ -1,0 +1,33 @@
+{
+  "policyVersion": "1.0",
+  "name": "source-audit-consistency-checker",
+  "purpose": "Prevent sourcing coverage metrics from overstating real coverage when job-sources, source-audit and persisted candidates disagree.",
+  "checks": [
+    "every checked source family has a source-audit record with checkedAt/status",
+    "verified hit counts require a canonical or directly verifiable public detail",
+    "promotion counts reconcile to persisted stable IDs or an explicit promotion-ready debt record",
+    "non-Profesia percentage is computed from canonical source family rather than mirrors",
+    "Facebook blocked/limited status can never be converted to verified coverage without a directly verifiable public hiring post",
+    "location-eligible hit counts include only ba-area or remote-ok; unknown and reject-distance are excluded"
+  ],
+  "mismatchAction": {
+    "coverageMetrics": "mark-untrusted",
+    "promotion": "fail-closed",
+    "existingLiveJobs": "preserve",
+    "audit": "emit-reconciliation-required"
+  },
+  "sourceDiversity": {
+    "standingGoal": true,
+    "families": ["Profesia", "direct-company", "LinkedIn", "Worki", "Brigada.sk", "Pretlak", "Slovak-jobboards", "freelance", "public-communities", "Facebook-public-index"],
+    "rule": "A blocked or zero-yield family remains visible in the audit and is not silently counted as successful coverage."
+  },
+  "safety": {
+    "mutateJobsData": false,
+    "mutateCRM": false,
+    "mutateStableIds": false,
+    "mutateSourceAudit": false,
+    "mutateBaseline": false,
+    "mutateUI": false,
+    "failClosed": true
+  }
+}
