@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 9. 9. 2026 12:47 CEST
+Aktualizované: 9. 9. 2026 22:06 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -76,6 +76,9 @@ Aktualizované: 9. 9. 2026 12:47 CEST
 - Fresh freelance rejects 9.9. 11:45: Upwork **Expert WordPress Developer Needed for Custom WooCommerce E-Commerce Website**, 300 USD fixed, Expert/custom PHP+JS scope; a **WooCommerce Developer Needed to Improve Product Page Layout**, 60 USD fixed, development-heavy. Bez LIVE promotion.
 - Fresh direct-company reject 9.9. 12:47: **Alza.sk — HR Specialist pre logistiku**, Bernolákovo, od 1 700 EUR/mes., plný úväzok. Lokalita spĺňa `ba-area`, no canonical detail explicitne vyžaduje dennú komunikáciu v angličtine a tlmočenie zahraničným zamestnancom na úradoch; bez LIVE promotion pre jazykový burden.
 - Fresh Brigada.sk rejects 9.9. 12:47: **Toyota Financial Services Slovakia — Administratívna pomoc na účtovnom oddelení**, Bratislava, 7 EUR/h, je explicitne student-only. **ea1 — Junior účtovník**, Bratislava, povoľuje viac foriem spolupráce, ale vyžaduje študenta alebo ukončenú OA/EU a verejný detail neuvádza numerickú odmenu; bez LIVE promotion.
+- Fresh duplicate 9.9. 22:06: **Slovak Telekom — Špecialista/Špecialistka podpory zákazníkov**, Bajkalská 28, Bratislava, sa znovu objavil ako same-day Kariera mirror. Priama T-Mobile kariéra potvrdzuje canonical; stabilné LIVE ID sa nemení a mirror sa nepridáva.
+- Fresh LinkedIn rejects 9.9. 22:06: **SupportYourApp — Technical Support Consultant** vyžaduje C1/fluent English; **Marlink — Support Engineer** vyžaduje B2 English a telecom/networking background. Bez promotion.
+- Fresh freelance rejects 9.9. 22:06: Upwork **Expert WordPress Developer Needed for Custom WooCommerce E-Commerce Website** 300 USD fixed/Expert, **WordPress & WooCommerce Mobile UX, Speed and Checkout Optimization** 20 USD fixed a **WooCommerce Website Development** 70 USD fixed/Expert. Všetky sú development-heavy alebo ekonomicky slabé.
 
 ## Source audit — 9. 9. 2026 11:45
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam/ÚPSVR, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
@@ -123,6 +126,30 @@ Aktualizované: 9. 9. 2026 12:47 CEST
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
 - `job-sources.json`: aktualizovaný na 12:47; pridaný samostatný registry entry pre Alza.sk Kariéra.
 - `source-audit.json`: aktualizovaný na 12:47.
+- `jobs-data.json`: bez zmeny; nebol nový promotion-grade unique hit.
+
+## Source audit — 9. 9. 2026 22:06
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam/ÚPSVR, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
+- Profesia: `checked`; 0 nových unique promotion-grade výsledkov.
+- Priame company careers: `ok`; Slovak Telekom canonical support ostáva priamo dostupný; same-day Kariera listing je mirror, 0 unique promotion.
+- LinkedIn Jobs: `ok`; SupportYourApp C1/fluent-English reject a Marlink B2 + networking/telecom reject; 0 promotion.
+- Worki: `ok`; Shield-Sk e-shop admin je explicitne obsadený/zrušený; 0 promotion.
+- Kariera/Zoznam/ÚPSVR: `ok`; same-day Telekom support je duplicate mirror; DENIMA vyžaduje multilingual phone communication; ostatné generic BA admin výsledky sú pod rankingom; 0 unique promotion.
+- Brigada.sk: `checked`; discovery reálne vykonané, 0 nových konkrétnych vhodných public-index hitov.
+- Pretlak/StartupJobs/WordPress Jobs: `ok`; Stretchfit Creative Strategist je BA/remote/hybrid, ale Mid/Senior creative mismatch; 0 promotion.
+- Upwork/freelance: `ok`; 3 relevantné WordPress/WooCommerce hity, všetky development-heavy alebo ekonomicky slabé fixed-price; 0 promotion.
+- Reddit/komunity: `limited`; 0 vhodných konkrétnych hiring leadov.
+- Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog.
+
+### Audit počty 22:06
+- source families checked: **10**
+- nové LIVE promotions: **0**
+- LIVE feed delta: **0**, zostáva **51**
+- Facebook verified hits: **0**
+- LIVE mix: Profesia **49,0 %**, non-Profesia **51,0 %**
+- zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
+- `job-sources.json`: aktualizovaný na 22:06.
+- `source-audit.json`: aktualizovaný na 22:06.
 - `jobs-data.json`: bez zmeny; nebol nový promotion-grade unique hit.
 
 ## Rozvojový backlog
@@ -218,84 +245,5 @@ Aktualizované: 9. 9. 2026 12:47 CEST
 - Adjacent-skill requirement bridge.
 - Expired canonical tombstone cache.
 - Search-result provenance counter.
-- Contract-to-hire conversion value score.
-- Maintenance client continuity score.
-- Duplicate verification enrichment instead of queue growth.
-- Micro-project interview-pressure gate.
-- Cross-platform e-commerce skill-gap weight.
-- Fixed-budget scope ambiguity blocker.
-- Requirement burden composite score.
-- Community lead evidence completeness gate.
-- Freelance bid-cost ROI estimator.
-- Canonical active-state revalidation sampler.
-- Upwork placeholder-budget detector.
-- Verification rediscovery timestamp ledger.
-- Ranking-track query coverage matrix.
-- Search-index lag score per source family.
-- Verification rediscovery metadata refresher.
-- Freelance proposal-velocity estimator.
-- Store-build scope decomposition score.
-- Freelance client maturity confidence.
-- Rediscovery freshness promotion trigger.
-- Community lead minimum-evidence schema.
-- Inactive-hit early discard cache.
-- Maintenance-fit evidence score.
-- Graduate-friendly direct-company watchlist.
-- AI-enabled task-fit bonus with hard-skill ceiling.
-- Source-query semantic drift monitor.
-- Low-yield source adaptive query rotator.
-- Micro-fix proof-of-skill mapper.
-- Low-history client escrow-risk flag.
-- Public-index country-restriction prefilter.
-- Freelance starter-budget vs continuation-value split.
-- Shift-window timezone normalizer.
-- Hard-dev contamination ratio for maintenance roles.
-- Fixed-price microproject effective-hour ceiling.
-- Client interview saturation gate.
-- Expert-label vs task-scope contradiction detector.
-- Audit-to-source-registry consistency checker.
-- Inactive-detail sibling-result isolation.
-- Rediscovery-only run compression.
-- Discovery-to-persistence reconciliation ledger.
-- Portfolio-ready maintenance response pack.
-- Budget-period ambiguity detector.
-- Theme-builder portability score.
-- Rejected-skill fingerprint cache.
-- Rediscovery-only source write minimizer.
-- Established-client microjob trust bonus with budget floor.
-- Skill-exposure cap for PHP-warning fixes.
-- Source-audit lossless patch precondition.
-- Part-time effective-hourly comparator.
-- Claims/reklamácie experience-transfer score.
-- Preferred-language vs mandatory-language classifier.
-- Trial-batch payment-risk gate.
-- **DIY-project evidence pack generator** — z existujúcich ESP/Home Assistant/elektronických projektov automaticky vytvoriť krátky dôkazový balík vhodný k technickým e-shop rolám ako Techfun, aby sa zvýšila úspešnosť reakcie bez preháňania skúseností.
-- **Electronics role code-depth limiter** — oddeliť základné Arduino/ESP/C/Python požiadavky od skutočného embedded hard-developmentu; zabrániť zbytočnému vyradeniu rolí, kde firma akceptuje hobby/DIY prax a zaškolenie.
-- **Stale-but-active vacancy recovery score** — pri staršej, ale canonical aktívnej ponuke odlíšiť reálne stále otvorené miesto od indexového odpadu; kombinovať explicitný closing date, response availability a posledné canonical overenie.
-- **Language-requirement ambiguity resolver** — keď zdroj naraz uvádza B1 aj B2 alebo textovo „mierne pokročilý“, uložiť presnú evidenciu konfliktu a znížiť confidence namiesto automatického hard rejectu.
-- **Canonical-open failure quarantine** — ak listing existuje vo výsledkoch, ale detail presmeruje na generický zoznam alebo vráti neúplný canonical obsah, položku automaticky držať v `unknown` a opakovane overiť z primárneho zdroja.
-- **Remote-from-Slovakia proof gate for CZ roles** — pri českých `Remote/Hybrid` ponukách vyžadovať explicitný dôkaz práce zo Slovenska alebo cezhraničného kontraktu; bez neho automaticky `locationEligibility: unknown`.
-- **Canonical compensation recency validator** — pri rediscovery porovnať aktuálnu mzdu z canonical detailu s uloženou hodnotou a pri zmene vytvoriť material-change event.
-- **Promotion-ready persistence debt tracker** — evidovať kandidátov, ktorí už prešli rankingom a canonical overením, ale neboli zapísaní do `jobs-data.json` pre technický fail-closed limit.
-- **Compensation certainty splitter** — ukladať osobitne garantovaný fix, podmienenú variabilnú zložku, provízie a maximá; ranking počítať primárne z garantovaného minima.
-- **Support-level scope detector** — z náplne a požadovaných nástrojov klasifikovať L1/L2/L3 aj vtedy, keď titul pozície senioritu zatajuje; L2/L3 s AD/Windows Server/SQL/Splunk/PowerShell penalizovať skôr než sa minie čas na manuálne overovanie.
-- **BA commute-window reliability score** — pri lokálnych BA/okolie rolách kombinovať začiatok/koniec zmeny, typický dopravný režim a lokalitu pracoviska do samostatného commute rizika.
-- **Canonical recheck TTL by source class** — nastaviť rozdielne intervaly opätovného overenia podľa typu zdroja (direct company/jobboard/freelance/community).
-- **Freelance low-budget duplicate suppression** — ak sa rovnaký typ extrémne lacnej WordPress/VA zákazky opakuje v krátkom okne, evidovať ju iba v audite a nezahlcovať verification queue; nový záznam vytvoriť len pri podstatne lepšom budgete, client trust alebo scope.
-- **Direct-career seniority contamination guard** — pri firemných career searchoch oddeliť junior/support/admin roly od senior developer výsledkov už vo fáze discovery, aby hard-dev hity nezvyšovali falošnú coverage úspešnosť source family.
-- **Financial-services recruitment-model transparency gate** — pri administratívnych rolách vo finančnom/obchodnom prostredí pred odporúčaním overiť, či nejde o skrytý provízny predaj, nábor do siete alebo výkonovo podmienenú odmenu; uložiť dôkaz a reálny garantovaný základ.
-- **Contract-form eligibility resolver** — pri ponukách s viacerými formami spolupráce rozlíšiť študentskú brigádnickú dohodu od bežnej dohody/TPP/živnosti a potvrdiť, že aspoň jedna forma je pre uchádzača reálne použiteľná; zabrániť falošne vysokému matchu zo student-only ponuky.
-- **B2 near-miss ROI tracker** — pri inak silných rolách vyradených primárne pre AJ B2 evidovať počet, mzdu, track a stratenú príležitosť; mesačne vyhodnotiť, či cielené zlepšenie angličtiny prináša dostatočný pracovný a príjmový ROI.
-- **Same-employer opportunity cluster prioritizer** — pri viacerých súčasne otvorených rolách jedného zamestnávateľa vytvoriť cluster a odporučiť iba najlepšiu 1–2 zhody, aby sa neplytvalo časom a neposielali sa nekoherentné paralelné reakcie.
-- **Stable-ID preservation precommit gate** — pred každým full-file zápisom porovnať množinu existujúcich aktívnych ID s navrhovanou verziou; neplánované odstránenie alebo prečíslovanie čo i len jedného ID automaticky zablokuje commit, pokiaľ neexistuje explicitný tombstone/dedupe dôvod.
-- **Primary-contact freshness SLA** — pri TOP ponukách viesť samostatný timestamp posledného overenia kontaktného mena, e-mailu a telefónu; pred reakciou znovu overiť kontakt, ak je starší než definovaný limit, aby sa neposielala kvalitná reakcia na neaktuálny kontakt.
-- **Repost-age reset guard** — pri čerstvom LinkedIn/company repost-e už známej ponuky uchovať pôvodný `publishedAt`/first-seen canonical dátum a samostatne evidovať `repostedAt`; zabrániť tomu, aby repost umelo dostal prioritu `<24h` ako úplne nová ponuka.
-- **Duplicate enrichment merge ledger** — keď nový zdroj nájde už LIVE title+company, nezakladať nový job, ale uložiť ktoré nové fakty boli potvrdené alebo zmenené (HO, jazyk, mzda, kontakt, seniorita) a zvýšiť verification confidence iba pri skutočnom dôkazovom prínose.
-- **Shift-pattern hard-burden classifier** — pri technickom supporte odlíšiť bežné pracovné zmeny od nepretržitej 24/7 trojzmennej prevádzky a zaviesť samostatnú výraznú penalizáciu ešte pred manuálnym review; šetrí čas pri roliach, ktoré sú technicky zaujímavé, ale režimovo nevhodné.
-- **Search-to-zero evidence receipt** — pre každú source family s nulovým hitom uložiť hash/query-set + timestamp posledného reálneho vyhľadania; Source Radar tak vie rozlíšiť pravdivé „checked, 0“ od zdroja, ktorý sa v behu vôbec nekontroloval.
-- **Application-channel reachability monitor** — pri TOP rolách evidovať, či je reakcia možná cez priamy e-mail, firemný formulár, jobboard profil alebo iba login-wall; penalizovať nefunkčný/uzavretý response kanál a pred odoslaním znovu overiť jeho dostupnosť.
-- **Freelance client hire-rate normalization** — pri Upwork/freelance dopytoch kombinovať počet historických hires, aktívnych kontraktov, spend a pomer interview→hire; rozlíšiť reálne najímajúceho klienta od účtu, ktorý síce publikuje veľa jobov, ale má nízku konverziu do platených spoluprác.
-- **Canonical-mirror publication-date conflict resolver** — ak mirror/jobboard zverejní rovnakú pozíciu s novším dátumom než canonical firemná stránka, uložiť mirror dátum iba ako rediscovery/repost signál a nezvyšovať freshness prioritu bez zmeny canonical obsahu.
-- **Search-result-to-LIVE duplicate confidence gate** — pred pridaním kandidáta porovnať normalizovaný title+company+workplace s LIVE feedom a pri pravdepodobnom mirrore vyžadovať nový materiálny fakt; šetrí čas a chráni stabilné ID pred paralelnými záznamami.
-- **Qualification OR-branch evidence resolver** — pri formuláciách typu „študent, prípadne ukončená OA/EU“ rozložiť každú alternatívnu kvalifikačnú vetvu osobitne a kandidáta vyradiť až vtedy, keď zlyhajú všetky prípustné vetvy; zároveň uložiť presný dôkaz, ktorá vetva bola alebo nebola splnená.
-- **Missing-compensation verification hold** — pri inak relevantnej brigáde alebo zákazke, ktorej canonical detail neobsahuje numerickú odmenu, nevytvoriť LIVE promotion iba podľa názvu/útržku; zaradiť ju do krátkej verification queue a vyžiadať/overiť odmenu skôr, než sa minie čas na reakciu.
+- Recruiter-channel actionability score: hodnotiť priamy kontakt na recruitera, dostupnosť e-mailu/telefónu a počet krokov apply flow; pri rovnakej kvalite posunúť vyššie ponuky, na ktoré sa dá reagovať rýchlo a priamo.
+- Morning-route compatibility classifier: z pracovného času, lokality a typu dochádzania odhadnúť, či rola reálne podporuje režim „ráno vyraziť – poobede doma“; použiť ako sekundárne poradie až po hard lokalitnom gate.
