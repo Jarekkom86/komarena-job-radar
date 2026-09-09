@@ -1,5 +1,46 @@
 # KomArena Job Radar — CHANGELOG
 
+## 2026-09-09 — morning source verification + feed hardening
+
+### 1. Reálny source audit a nová promotion-grade ponuka
+- Znova prehľadané verejné zdroje pre Bratislavu/BA okolie a vhodné remote roly: Profesia customer support/admin, Senec admin/logistics, Kariera/Zoznam, verejný LinkedIn index a pomocné agregované detaily iba na kontrolu požiadaviek.
+- Nová high-confidence LIVE ponuka: `Pracovník*čka kontaktného centra IKEA – popredajný servis` (Profesia ID 5354960), Bratislava/čiastočne z domu, od 1 260 €, angličtina iba výhodou, prax nie je nutná.
+- Priamo znovu otvorené a potvrdené existujúce LIVE položky Slovak Telekom B2B back office a finby reception/admin. Ich `verifiedAt` bol obnovený len preto, že detail bol reálne skontrolovaný.
+- Bookio nebolo promované kvôli explicitnému B2 English hard gate; DHL 4h transport admin kvôli B1 English hard gate; SuperFaktura ostáva `needs-confirmation`, nie high-confidence promotion.
+
+### 2. Pravdivé oddelenie content age vs. verification age
+- `job-radar-feed-merge-v1.js` teraz vystavuje samostatné `contentUpdatedAt`, `verificationUpdatedAt` a `sourceVerificationAt`.
+- `verificationUpdatedAt` sa počíta z reálneho `verifiedAt` LIVE položiek, nie z času zápisu JSON súboru.
+- Health vrstva obsahuje `latestJobVerifiedAt`, `latestJobPublishedAt`, `freshContentUpdatedAt` a `freshSourceVerificationAt`, takže nový timestamp súboru už nemôže predstierať čerstvé ponuky.
+
+### 3. Fail-closed LIVE eligibility + link-health gate
+- LIVE merge teraz karantenizuje položky so `status=inactive/expired`, `promotionEligible=false`, známym `linkStatus=broken/inactive/expired/404/410`, chýbajúcim `verifiedAt`, budúcim chybným timestampom alebo overením starším ako 48 hodín.
+- Pridané diagnostické počty dôvodov karantény (`stale`, `ineligible`, `link`, `unverified`, `status`, `future-verification`).
+- Tým sa znižuje riziko, že neaktívna alebo iba historicky nájdená ponuka zostane medzi LIVE kartami.
+
+### 4. Freshness-aware deduplikácia
+- Pri duplicitách rovnakej URL alebo firma+názov teraz vyhrá novšie reálne overenie; až pri rovnakom `verifiedAt` rozhoduje kvalita/autorita zdroja.
+- Dôvod: starší firemný alebo agregovaný záznam už nemôže prebiť čerstvejšiu verifikáciu tej istej ponuky len kvôli typu zdroja.
+
+### 5. Source audit je dôkazový, nie timestampový
+- `source-audit.json` bol prepísaný výsledkom reálneho ranného follow-up auditu a obsahuje konkrétne promoted/reverified/rejected výsledky a dôvody.
+- Audit explicitne rozlišuje zmenu obsahu od času kontroly zdrojov.
+
+### Kontroly / regresia
+- CRM/localStorage kľúče a dátové rozhranie `jobs` zostali nezmenené; nové polia sú aditívne a spätne kompatibilné.
+- Fallback poradie live → cache → baseline zostalo zachované.
+- JSON dátové súbory boli zapísané cez GitHub contents API a následne znovu načítané z repozitára; JS bol znovu načítaný z nového blobu na kontrolu presného uloženého obsahu.
+- Žiadny zamknutý vizuálny súbor nebol upravený.
+
+### MASTER DESIGN LOCK — overenie hashov
+- `komarena-job-radar-v6.5.html`: `18fd009f1f9f041a207b067c5dcc0661f1647199` — zhodný s lockom.
+- `job-radar-v6.css`: `5157753d3525a99191e78374f7a074315bf7809a` — zhodný s lockom.
+- `job-radar-v6.5-enhance.js`: `fbb56af1213723b68deb9dc6ffc9e4c9de7fd80d` — zhodný s lockom.
+- `komarena-job-radar-jr-master.webp`: `ded775849800577277c4581ee5c30db6e43bba54` — zhodný s lockom.
+- MASTER dizajn bol zachovaný bez zmeny fingerprintu.
+
+---
+
 ## 2026-09-08 — TRUE FRESH refresh 09:29
 
 ### 9. Reálne čerstvé ponuky, nie iba nový timestamp
