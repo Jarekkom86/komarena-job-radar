@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-09T02:23:35+02:00",
+  "updatedAt": "2026-09-09T03:41:02+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
@@ -11,53 +11,53 @@
     "liveProfesiaPct": 48.0,
     "liveNonProfesiaPct": 52.0,
     "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Full diversity sweep on 9.9.2026 02:23 CEST. A strong new Worki candidate (RM Biznis servis — manažer servisu klientov, Bratislava/mostly online, 10–15 EUR/h, no experience requirement, no foreign-language requirement) passed locality and ranking discovery gates but was not persisted to jobs-data.json because the connector exposes the large feed only through full-file replacement and a lossless reconstruction was not completed in this run. Existing 50-item LIVE feed was preserved fail-closed. Facebook public index produced 0 verified hiring posts."
+    "note": "Full diversity sweep on 9.9.2026 03:41 CEST. No new unique candidate passed all locality, ranking, language, activity and source-quality gates. Direct Slovak Telekom discovery found Junior Business Analytik/Analytička in Bratislava (graduate-friendly, AI/reporting, 1 700 EUR + 15% bonus), but explicit English B2 is a strong profile mismatch, so it was not promoted. Upwork produced multiple fresh worldwide e-commerce/VA hits, but the newest fixed-price offers were economically weak; the stronger 15–30 USD/h WooCommerce management listing was older and already had 20–50 proposals. Existing 50-item LIVE feed was preserved fail-closed. Facebook public index produced 0 verified hiring posts."
   },
   "sources": [
     {
       "name": "Profesia",
       "family": "profesia",
-      "status": "ok",
-      "hits": 1,
-      "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 0},
-      "note": "Reálne vyhľadané 9.9.2026 02:23 pre BA/okolie a remote prioritné tracky. Tatra Supercompute IT Service Desk pre AI dátové centrum je lokálne relevantný, ale technickejší scope vyžaduje ďalšie skill overenie; bez LIVE promotion."
-    },
-    {
-      "name": "Priame firemné career stránky",
-      "family": "company-careers",
       "status": "checked",
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Priame firemné careers boli reálne prehľadané pre BA/remote IT support, e-commerce a administratívu; bez novej konkrétnej promotion-grade unique ponuky."
+      "note": "Reálne vyhľadané 9.9.2026 03:41 pre BA/okolie a remote prioritné tracky; bez novej verejne overiteľnej unique promotion-grade delty v tomto behu."
+    },
+    {
+      "name": "Priame firemné career stránky",
+      "family": "company-careers",
+      "status": "ok",
+      "hits": 2,
+      "added": 0,
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 0},
+      "note": "Slovak Telekom careers reálne preverené. Junior Business Analytik/Analytička: Bratislava, vhodné pre absolventov, od 1 700 EUR + 15% bonus, Excel/reporting/AI, ale explicitná AJ B2; bez promotion. Špecialista privátnych cloudových riešení je lokálne eligible, ale hard-skill/seniority mismatch."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
       "status": "limited",
-      "hits": 2,
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 2, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 0},
-      "note": "Verejný LinkedIn index bol reálne vyhľadaný. Marlink Support Engineer vyžaduje AJ B2 a networking/telecom background; CPM customer-service výsledky vyžadujú ďalšie cudzie jazyky. Coverage limited verejnou indexáciou."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Verejný LinkedIn index bol reálne vyhľadaný pre Bratislava e-commerce/admin/technical-support tracky; bez novej konkrétnej unique promotion-grade delty. Coverage je limited verejnou indexáciou."
     },
     {
       "name": "Worki.sk",
       "family": "worki",
-      "status": "ok",
-      "hits": 2,
+      "status": "checked",
+      "hits": 1,
       "added": 0,
       "rejected": {"language": 0, "inactive": 1, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Nový silný kandidát RM Biznis servis — manažer servisu klientov, Bratislava, väčšina práce online, občasná prítomnosť v BA, 10–15 EUR/h, pružný čas, bez praxe a bez cudzieho jazyka. locationEligibility=ba-area. Shield-Sk e-shop admin je canonical inactive. Kandidát RM Biznis servis nebol zapísaný do LIVE pre persistence debt, nie pre ranking gate."
+      "note": "E-shop/admin/support discovery reálne preverené. Shield-Sk — Administrátor e-shopu / zákaznícka podpora stále explicitne uvádza obsadené alebo zrušené; RM Biznis servis už existuje v LIVE feed-e. Bez novej active unique delty."
     },
     {
       "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
       "family": "kariera",
       "status": "ok",
-      "hits": 1,
+      "hits": 3,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 0},
-      "note": "Analytik zákazníckych sťažností, Bratislava, 2 000 EUR: L1 technická podpora a HO po zaškolení, ale explicitná AJ B1, VŠ I. stupňa v technickom odbore a prax na podobnej pozícii; bez promotion."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "ranking": 1},
+      "note": "Bratislava customer-support/admin/technik kategórie reálne preverené. Dotypos Technical Support je už evidovaný vo verification; technická zákaznícka podpora s nemčinou je jazykový reject; ďalšie všeobecné customer-care/admin výsledky nemali lepší promotion-grade profil."
     },
     {
       "name": "Brigada.sk",
@@ -65,26 +65,26 @@
       "status": "checked",
       "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
       "note": "Reálne vyhľadané Bratislava administratíva, e-shop, support, vodič a sklad; bez nového verejne overiteľného vhodného hitu."
     },
     {
       "name": "Pretlak / StartupJobs / WordPress Jobs",
       "family": "tech-creative",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Pretlak, StartupJobs a WordPress Jobs boli reálne vyhľadané pre WordPress/WooCommerce/content/support a remote; bez novej non-hard-dev promotion-grade delty."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 1},
+      "note": "Pretlak, StartupJobs a WordPress Jobs boli reálne vyhľadané. Staffino Product Manager Bratislava 4 500 EUR je Senior/Expert s výrazne vyššou zodpovednosťou než preferovaný non-hard-dev/admin/support profil; bez promotion."
     },
     {
       "name": "Upwork / freelance",
       "family": "freelance",
       "status": "ok",
-      "hits": 7,
+      "hits": 9,
       "added": 0,
-      "rejected": {"language": 2, "inactive": 0, "duplicate": 1, "location": 0, "skill": 1, "budget": 5, "ranking": 1},
-      "note": "Worldwide WooCommerce/WordPress discovery reálne vykonané. Fresh WordPress product-image upload je 10–20 USD/h, ale už 50+ proposals. WooCommerce 50 products je 50 USD fixed; AI blog VA 30 USD/120 článkov a ďalšie VA listingy majú nízky budget alebo vysokú konkurenciu. Bez promotion."
+      "rejected": {"language": 2, "inactive": 0, "duplicate": 1, "location": 0, "skill": 2, "budget": 7, "ranking": 2},
+      "note": "Worldwide WooCommerce/WordPress/Shopify/e-commerce VA discovery reálne vykonané. Čerstvé Shopify/WooCommerce fixed-price ponuky boli približne 5–36 USD a neprešli ekonomickým gateom; WooCommerce Website & SEO Management 2026 ponúka 15–30 USD/h a dlhodobý scope, ale je starší, vyžaduje širší toolset a má 20–50 proposals. Bez promotion."
     },
     {
       "name": "Reddit / WordPress / WooCommerce komunity",
@@ -92,8 +92,8 @@
       "status": "limited",
       "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Verejne indexované komunity boli reálne vyhľadané. Čerstvé výsledky boli for-hire ponuky dodávateľov, nie konkrétne hiring dopyty; 0 verified hiring hits."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Verejne indexované komunity boli reálne vyhľadané. Čerstvé WordPress/WooCommerce výsledky boli FOR HIRE ponuky dodávateľov, nie konkrétne hiring dopyty; 0 verified hiring hits."
     },
     {
       "name": "Facebook verejný index",
@@ -102,7 +102,7 @@
       "hits": 0,
       "verifiedHits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
       "note": "WordPress Slovensko, WooCommerce Komunita SK+CZ a Bratislava job/brigáda verejný index boli reálne vyhľadané. Žiadny konkrétny verejne overiteľný hiring post s priamym linkom; 0 verified hits. Autentizovaný Nexus/local ingestion ostáva backlog."
     }
   ]
