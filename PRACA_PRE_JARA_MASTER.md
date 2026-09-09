@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 9. 9. 2026 07:03 CEST
+Aktualizované: 9. 9. 2026 08:42 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -68,30 +68,31 @@ Aktualizované: 9. 9. 2026 07:03 CEST
 - Pretlak reject 9.9. 05:21: **Stretchfit — Creative Strategist**, 2 300–3 000 EUR; Mid/Senior creative-advertising scope mimo cieľového profilu.
 - Fresh tech/creative reject 9.9. 07:03: **Elasticr Technologie — IT Support Specialist L2**, Havlíčkův Brod, 42–52 tis. Kč, Remote/On-site/Hybrid. Bez LIVE promotion: verejný detail nepreukazuje, že remote možno vykonávať prevažne zo Slovenska bez pravidelného dochádzania; L2 incident/root-cause support je navyše nad preferovanou úrovňou.
 - Fresh freelance rejects 9.9. 07:03: Upwork WordPress Plugin Update & Maintenance Expert 10 USD fixed/Expert, AI Blog Post VA 30 USD za 120 článkov, viac nízkorozpočtových WordPress/WooCommerce development rolí a VA rolí s country/English/cold-call mismatchom.
+- Fresh Profesia reject 9.9. 08:42: **Tatra Supercompute — IT Service Desk špecialista/špecialistka pre AI dátové centrum**, Bratislava, od 1 800 EUR/mes., L1 support, vhodné aj pre absolventa. Bez LIVE promotion pre explicitnú AJ B2, požiadavku na anglické CV a prezenčnú 24/7 trojzmennú prevádzku.
+- Fresh freelance rejects 9.9. 08:42: Upwork Elementor/PHP 15 USD fixed, Expert plugin maintenance 10 USD fixed, WooCommerce full build 70 USD Expert a ďalšie low-budget/strong-English/country-restricted VA výsledky; bez promotion.
 
-## Source audit — 9. 9. 2026 07:03
+## Source audit — 9. 9. 2026 08:42
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam/ÚPSVR, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
-- Profesia: `ok`; 1 relevantný hit, **0 LIVE promotion** — ČSOB IT Service Desk je už LIVE, preto duplicate enrichment.
+- Profesia: `ok`; 1 relevantný hit, **0 LIVE promotion** — Tatra Supercompute L1 Service Desk je lokálne vhodný, ale AJ B2 + 24/7 onsite trojzmennosť sú výrazný mismatch.
 - Priame company careers: `checked`; 0 novej canonical promotion-grade delty.
-- LinkedIn Jobs: `ok`; 2 relevantné/adjacent hity — ČSOB duplicate enrichment a Wolt B2/student/shift reject; 0 promotion.
-- Worki: `ok`; 1 relevantný rediscovery hit — HEATING PRO už LIVE; 0 promotion.
-- Kariera/Zoznam/ÚPSVR: `checked`; 0 novej public unique promotion-grade delty.
-- Brigada.sk: `checked`; 0 novej vhodnej public delty.
-- Pretlak/StartupJobs/WordPress Jobs: `ok`; 1 adjacent hit — Elasticr L2 Havlíčkův Brod, `locationEligibility: unknown` pre nepreukázaný remote zo Slovenska + vyšší technický scope; 0 promotion.
-- Upwork/freelance: `ok`; 5 relevantných/adjacent hitov. Výsledky boli low fixed-price, hard-development/Expert, country-restricted, strong-English/cold-calling alebo vysoko konkurenčné; 0 promotion.
+- LinkedIn Jobs: `checked`; verejný index pre BA support/e-commerce/admin prehľadaný, 0 novej konkrétnej promotion-grade delty.
+- Worki: `checked`; 0 novej unique promotion-grade delty.
+- Kariera/Zoznam/ÚPSVR: `ok`; viac BA/Senec support/admin výsledkov, no Telekom položky sú už známe, Dotypos ostáva language-risk a ďalšie hity sú slabšie; 0 promotion.
+- Brigada.sk: `ok`; 1 lokálny admin hit v Starom Meste, ale aktívna AJ + 6 EUR/h; 0 promotion.
+- Pretlak/StartupJobs/WordPress Jobs: `checked`; 0 novej vhodnej promotion-grade delty.
+- Upwork/freelance: `ok`; 7 relevantných/adjacent hitov. Výsledky boli low fixed-price, hard-development/Expert, country-restricted, strong-English/cold-calling alebo vysoko konkurenčné; 0 promotion.
 - Reddit/komunity: `limited`; fresh výsledky boli FOR HIRE poskytovatelia, nie konkrétne hiring dopyty; 0 verified vhodných hiring hits.
 - Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog.
 
-### Audit počty 07:03
+### Audit počty 08:42
 - source families checked: **10**
 - nové LIVE promotions: **0**
 - LIVE feed delta: **0**, zostáva **51**
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **49,0 %**, non-Profesia **51,0 %**
-- čerstvý duplicate enrichment: **ČSOB Operátor IT Service Desk-u**; bez nového ID
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 07:03.
-- `source-audit.json`: aktualizovaný na 07:03.
+- `job-sources.json`: aktualizovaný na 08:42.
+- `source-audit.json`: aktualizovaný na 08:42.
 - `jobs-data.json`: bez zmeny; nebol nový promotion-grade unique hit.
 
 ## Rozvojový backlog
@@ -260,3 +261,5 @@ Aktualizované: 9. 9. 2026 07:03 CEST
 - **Primary-contact freshness SLA** — pri TOP ponukách viesť samostatný timestamp posledného overenia kontaktného mena, e-mailu a telefónu; pred reakciou znovu overiť kontakt, ak je starší než definovaný limit, aby sa neposielala kvalitná reakcia na neaktuálny kontakt.
 - **Repost-age reset guard** — pri čerstvom LinkedIn/company repost-e už známej ponuky uchovať pôvodný `publishedAt`/first-seen canonical dátum a samostatne evidovať `repostedAt`; zabrániť tomu, aby repost umelo dostal prioritu `<24h` ako úplne nová ponuka.
 - **Duplicate enrichment merge ledger** — keď nový zdroj nájde už LIVE title+company, nezakladať nový job, ale uložiť ktoré nové fakty boli potvrdené alebo zmenené (HO, jazyk, mzda, kontakt, seniorita) a zvýšiť verification confidence iba pri skutočnom dôkazovom prínose.
+- **Shift-pattern hard-burden classifier** — pri technickom supporte odlíšiť bežné pracovné zmeny od nepretržitej 24/7 trojzmennej prevádzky a zaviesť samostatnú výraznú penalizáciu ešte pred manuálnym review; šetrí čas pri roliach, ktoré sú technicky zaujímavé, ale režimovo nevhodné.
+- **Search-to-zero evidence receipt** — pre každú source family s nulovým hitom uložiť hash/query-set + timestamp posledného reálneho vyhľadania; Source Radar tak vie rozlíšiť pravdivé „checked, 0“ od zdroja, ktorý sa v behu vôbec nekontroloval.
