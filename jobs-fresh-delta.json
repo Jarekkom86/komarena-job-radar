@@ -1,7 +1,8 @@
 {
-  "schemaVersion": 2,
-  "updatedAt": "2026-09-08T10:04:00+02:00",
-  "verificationScope": "Real public-source refresh on 2026-09-08 for Bratislava/BA region and suitable remote roles. Only offers verified as currently available are promoted here; known English/physical blockers are scored down or excluded.",
+  "schemaVersion": 3,
+  "updatedAt": "2026-09-09T08:10:00+02:00",
+  "sourceVerificationAt": "2026-09-09T08:10:00+02:00",
+  "verificationScope": "Real public-source refresh on 2026-09-09 for Bratislava/BA region and suitable remote roles. Existing records keep their own verifiedAt unless re-opened or otherwise re-confirmed. New promotion requires active public evidence, profile eligibility and no known hard language/physical blocker.",
   "jobs": [
     {
       "id": "kariera-telekom-support-1561503",
@@ -9,29 +10,65 @@
       "company": "Slovak Telekom",
       "location": "Bajkalská 28, Bratislava",
       "origin": "ponuka",
-      "score": 94,
+      "score": 95,
       "scoreConfidence": 99,
       "source": "Slovak Telekom / Kariera.sk",
       "sourceType": "company",
       "sourceTrust": 100,
-      "form": "TPP / plný úväzok / back office",
-      "pay": "od 1 300 €/mes. brutto",
+      "form": "TPP / plný úväzok / back office / možný home office po dohode",
+      "pay": "1 300 €/mes. brutto + 23 % VZM",
       "payMonth": 1300,
-      "start": "ASAP / podľa dohody",
+      "start": "dohodou / ASAP",
       "english": "ok",
-      "engLabel": "vyššia AJ nie je v aktuálne overenom detaile uvedená ako hard podmienka",
+      "engLabel": "cudzí jazyk nie je v aktuálne otvorenom detaile uvedený ako podmienka",
       "track": "admin",
       "priority": "today",
       "status": "active",
-      "publishedAt": "2026-09-07T00:00:00+02:00",
-      "verifiedAt": "2026-09-08T10:04:00+02:00",
+      "publishedAt": "2026-09-09T00:00:00+02:00",
+      "verifiedAt": "2026-09-09T08:10:00+02:00",
       "expiresAt": null,
       "contact": "Kristýna Štěpánková • recruiter",
       "locationEligibility": "ba-area",
       "locationReason": "Bajkalská 28, Bratislava; lokálna BA pozícia.",
       "physicalBurden": "low",
-      "desc": "Dnes znovu potvrdená B2B zákaznícka/back-office podpora: objednávky, produkty a služby, spracovanie požiadaviek, monitoring E2E riešenia, telefonická a e-mailová komunikácia a práca v interných systémoch. Veľmi silný prienik s administratívou, reklamáciami a zákazníckou podporou.",
+      "promotionEligible": true,
+      "linkStatus": "active",
+      "linkCheckedAt": "2026-09-09T08:10:00+02:00",
+      "desc": "Dnes priamo znovu otvorená a potvrdená B2B zákaznícka/back-office podpora. Náplň: objednávky, produkty a služby, spracovanie požiadaviek, E2E monitoring riešenia, telefón/e-mail a interné systémy. Detail uvádza MS Office, zaškolenie a možnosť home office po dohode; bez cudzojazyčného hard gate.",
       "url": "https://kariera.zoznam.sk/pracovna-ponuka/1561503/specialista-specialistka-podpory-zakaznikov"
+    },
+    {
+      "id": "profesia-ikea-contact-center-5354960",
+      "title": "Pracovník*čka kontaktného centra IKEA – popredajný servis",
+      "company": "IKEA Bratislava, s.r.o.",
+      "location": "Bratislava / čiastočne z domu",
+      "origin": "ponuka",
+      "score": 93,
+      "scoreConfidence": 99,
+      "source": "IKEA / Profesia",
+      "sourceType": "company",
+      "sourceTrust": 100,
+      "form": "TPP / zmeny / možná čiastočná práca z domu",
+      "pay": "od 1 260 €/mes. brutto",
+      "payMonth": 1260,
+      "start": "dohodou",
+      "english": "ok",
+      "engLabel": "angličtina je iba výhodou, nie podmienkou",
+      "track": "admin",
+      "priority": "today",
+      "status": "active",
+      "publishedAt": "2026-09-08T00:00:00+02:00",
+      "verifiedAt": "2026-09-09T08:10:00+02:00",
+      "expiresAt": null,
+      "contact": "Mgr. Silvia Novorková",
+      "locationEligibility": "ba-area",
+      "locationReason": "Bratislava; ponuka výslovne umožňuje čiastočnú prácu z domu.",
+      "physicalBurden": "low",
+      "promotionEligible": true,
+      "linkStatus": "active",
+      "linkCheckedAt": "2026-09-09T08:10:00+02:00",
+      "desc": "Nová silná zhoda na popredajný servis a zákaznícku podporu: telefón, e-mail, chat a sociálne siete, riešenie otázok k výrobkom a službám, práca na počítači a učenie nových systémov. Prax nie je nutná, pozícia je vhodná aj pre absolventov a angličtina je len výhodou.",
+      "url": "https://www.profesia.sk/praca/ikea-bratislava/O5354960"
     },
     {
       "id": "kariera-lidl-junior-facility-1562133",
@@ -60,7 +97,7 @@
       "locationEligibility": "ba-area",
       "locationReason": "Bratislava.",
       "physicalBurden": "low-to-medium",
-      "desc": "Dnes potvrdená junior facility rola: technická správa centrály, evidencia spotrieb, reporting, koordinácia nápravných opatrení a dohľad nad SBS/EPS/EZS. Silná technicko-administratívna zhoda; pred reakciou treba overiť jazyk a presné kvalifikačné podmienky.",
+      "desc": "Junior facility rola: technická správa centrály, evidencia spotrieb, reporting, koordinácia nápravných opatrení a dohľad nad SBS/EPS/EZS. Silná technicko-administratívna zhoda; pred reakciou treba overiť jazyk a presné kvalifikačné podmienky.",
       "url": "https://kariera.zoznam.sk/pracovna-ponuka/1562133/junior-konzultant-oddelenia-facility-manazment-m-z-"
     },
     {
@@ -90,7 +127,7 @@
       "locationEligibility": "ba-area",
       "locationReason": "Senec je v preferovanom BA okolí.",
       "physicalBurden": "medium-verify",
-      "desc": "Dnes potvrdená rola priamo v reklamáciách: spracovanie reklamácií na výpredaj, práca s tovarom a zlepšovanie procesov. Odborne veľmi silná zhoda s reklamačnou praxou. Pred reakciou treba preveriť hmotnosť a rozsah manipulácie s tovarom.",
+      "desc": "Rola priamo v reklamáciách: spracovanie reklamácií na výpredaj, práca s tovarom a zlepšovanie procesov. Odborne veľmi silná zhoda s reklamačnou praxou. Pred reakciou treba preveriť hmotnosť a rozsah manipulácie s tovarom.",
       "url": "https://kariera.zoznam.sk/pracovna-ponuka/1546979/hladame-noveho-novu-reklamacneho-cnu-technika-cku-do-nay-centralneho-skladu-v-senci-nevahaj-pridaj-sa-k-nam-a-zarabaj-1200"
     },
     {
@@ -100,7 +137,7 @@
       "location": "Za kasárňou, Bratislava",
       "origin": "ponuka",
       "score": 84,
-      "scoreConfidence": 98,
+      "scoreConfidence": 99,
       "source": "Profesia",
       "sourceType": "jobboard",
       "sourceTrust": 98,
@@ -109,18 +146,21 @@
       "payMonth": 1300,
       "start": "ihneď",
       "english": "ok",
-      "engLabel": "cudzí jazyk nie je v aktuálnom detaile uvedený ako požiadavka",
+      "engLabel": "cudzí jazyk nie je v aktuálne otvorenom detaile uvedený ako požiadavka",
       "track": "admin",
       "priority": "today",
       "status": "active",
       "publishedAt": "2026-09-07T00:00:00+02:00",
-      "verifiedAt": "2026-09-08T10:04:00+02:00",
+      "verifiedAt": "2026-09-09T08:10:00+02:00",
       "expiresAt": null,
       "contact": "Kristína Pénzesová",
       "locationEligibility": "ba-area",
       "locationReason": "Bratislava.",
       "physicalBurden": "low",
-      "desc": "Čerstvá administratívna rola vhodná aj pre absolventa: telefonáty, návštevy, faktúry, kancelárske nákupy a administratívna podpora. Nástup ihneď a bez uvedenej cudzojazyčnej podmienky.",
+      "promotionEligible": true,
+      "linkStatus": "active",
+      "linkCheckedAt": "2026-09-09T08:10:00+02:00",
+      "desc": "Dnes priamo znovu otvorená a potvrdená administratívna rola vhodná aj pre absolventa: telefonáty, návštevy, drobné nákupy, faktúry a administratívna výpomoc. Nástup ihneď a bez cudzojazyčnej podmienky.",
       "url": "https://www.profesia.sk/praca/finby-trust-pay/O5354572"
     },
     {
@@ -139,7 +179,7 @@
       "payMonth": 1250,
       "start": "dohodou",
       "english": "ok",
-      "engLabel": "vyššia AJ nie je v aktuálnom detaile uvedená",
+      "engLabel": "vyššia AJ nie je v overenom detaile uvedená",
       "track": "admin",
       "priority": "today",
       "status": "active",
@@ -150,7 +190,7 @@
       "locationEligibility": "ba-area",
       "locationReason": "Rača, Bratislava.",
       "physicalBurden": "medium-verify",
-      "desc": "Dnes potvrdená kombinácia administratívy, digitalizácie a skladu: triedenie a archivácia spisov, príprava na skenovanie, skenovanie a komunikácia so zákazníckym servisom. Súčasťou je aj manipulácia s archívnymi krabicami/paletami, preto treba pred reakciou overiť reálnu fyzickú záťaž.",
+      "desc": "Kombinácia administratívy, digitalizácie a skladu: triedenie a archivácia spisov, príprava na skenovanie, skenovanie a komunikácia so zákazníckym servisom. Súčasťou je aj manipulácia s archívnymi krabicami/paletami, preto treba pred reakciou overiť reálnu fyzickú záťaž.",
       "url": "https://www.profesia.sk/praca/index-noslus/O5354555"
     },
     {
@@ -180,7 +220,7 @@
       "locationEligibility": "remote-ok",
       "locationReason": "Telepráca / práca z domu.",
       "physicalBurden": "low",
-      "desc": "Čerstvo potvrdená telepráca: prichádzajúce hovory zákazníkov Vodafone, riešenie požiadaviek a práca s počítačom. Je tam aj predaj/úprava služieb počas hovoru a výkonová zložka mzdy, preto nejde o čistý back office.",
+      "desc": "Telepráca: prichádzajúce hovory zákazníkov Vodafone, riešenie požiadaviek a práca s počítačom. Je tam aj predaj/úprava služieb počas hovoru a výkonová zložka mzdy, preto nejde o čistý back office.",
       "url": "https://www.profesia.sk/praca/proveon-slovakia/O5354093"
     },
     {
@@ -199,7 +239,7 @@
       "payMonth": 1200,
       "start": "ASAP",
       "english": "ok",
-      "engLabel": "vyššia AJ nie je v aktuálnom detaile uvedená",
+      "engLabel": "vyššia AJ nie je v overenom detaile uvedená",
       "track": "admin",
       "priority": "normal",
       "status": "active",
@@ -210,7 +250,7 @@
       "locationEligibility": "remote-ok",
       "locationReason": "100 % práca z domu.",
       "physicalBurden": "low",
-      "desc": "Dnes potvrdená remote ponuka na živnosť: telefonický kontakt, overenie záujmu, plánovanie bezplatných stretnutí a evidencia údajov do systému. Nie je to priamy predaj, ale práca je výrazne telefonická a odmena výkonová.",
+      "desc": "Remote ponuka na živnosť: telefonický kontakt, overenie záujmu, plánovanie bezplatných stretnutí a evidencia údajov do systému. Nie je to priamy predaj, ale práca je výrazne telefonická a odmena výkonová.",
       "url": "https://www.profesia.sk/praca/a-a-telepartners/O5287120"
     },
     {
@@ -240,25 +280,35 @@
       "locationEligibility": "ba-area",
       "locationReason": "Bratislava s občasným home office.",
       "physicalBurden": "low",
-      "desc": "Dnes potvrdená application-support rola: Planview podpora, access requesty, nastavenia, troubleshooting, incidenty, testovanie a KPI. Technicky relevantná, ale kvôli pravdepodobne vyššej pracovnej angličtine je zámerne skórovaná nižšie a nie je v TOP priorite.",
+      "desc": "Application-support rola: Planview podpora, access requesty, nastavenia, troubleshooting, incidenty, testovanie a KPI. Technicky relevantná, ale kvôli pravdepodobne vyššej pracovnej angličtine je zámerne skórovaná nižšie a nie je v TOP priorite.",
       "url": "https://www.profesia.sk/praca/henkel-slovensko/O5354105"
     }
   ],
   "excludedFresh": [
     {
-      "title": "Digital Account Manager",
-      "company": "Riešenia, spol. s r.o.",
-      "reason": "Aktuálny detail vyžaduje angličtinu B2 a minimálne 2 roky account/marketing praxe; nepovažujem ju preto za promotion-grade zhodu pre LIVE prioritu."
+      "title": "Špecialista/ka online zákazníckej podpory (B2B, SaaS)",
+      "company": "Bookio. s.r.o.",
+      "reason": "Veľmi dobrý technický/customer-support fit a živnosť, ale aktuálny detail vyžaduje angličtinu minimálne B2; hard language gate je nad používateľovým profilom."
     },
     {
-      "title": "Vodič/vodička, skladník/skladníčka a montér/montérka",
-      "company": "Krásne Vianoce.SK s.r.o.",
-      "reason": "Aktuálna ponuka je čerstvá, ale kombinuje rozvoz, nakládku/vykládku, sklad a montáž; fyzická záťaž je príliš neistá na automatickú LIVE prioritu."
+      "title": "Supportový parťák/parťáčka",
+      "company": "SuperFaktura, s.r.o.",
+      "reason": "Obsahovo veľmi silná zhoda na e-shop/support, no aktuálna ponuka uvádza angličtinu a verejný agregovaný detail ju klasifikuje ako mierne pokročilú. Bez jasného potvrdenia, že A2 stačí, ju nepromujem ako high-confidence LIVE prioritu."
+    },
+    {
+      "title": "Hľadáme administratívnu podporu do transportného tímu - Pracujte 4 hodiny denne",
+      "company": "DHL Group",
+      "reason": "Silná zhoda na skenovanie/archiváciu a 4h režim, ale aktuálny detail uvádza angličtinu B1 ako podmienku."
+    },
+    {
+      "title": "Digital Account Manager",
+      "company": "Riešenia, spol. s r.o.",
+      "reason": "Aktuálny detail vyžaduje angličtinu B2 a minimálne 2 roky account/marketing praxe; nepovažujem ju preto za promotion-grade zhodu."
     },
     {
       "title": "Skladník/čka – Centrálny sklad NAY Senec",
       "company": "NAY a.s.",
-      "reason": "Čerstvá ponuka, ale výraznejšia fyzická manipulácia a sezónne nočné zmeny sú mimo preferovaného profilu."
+      "reason": "Výraznejšia fyzická manipulácia a sezónne nočné zmeny sú mimo preferovaného profilu."
     }
   ]
 }
