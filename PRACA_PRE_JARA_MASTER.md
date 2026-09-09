@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 9. 9. 2026 05:21 CEST
+Aktualizované: 9. 9. 2026 07:03 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -33,10 +33,11 @@ Aktualizované: 9. 9. 2026 05:21 CEST
 - Agregátor/repost nesmie prebiť priamy firemný zdroj.
 
 ## Aktuálny stav LIVE
-- Autoritatívny feed má **51 LIVE položiek**; tento beh pridal 1 promotion-grade unique položku.
+- Autoritatívny feed má **51 LIVE položiek**; tento beh nepridal novú promotion-grade unique položku.
 - LIVE mix: **Profesia 25/51 = 49,0 %**, mimo Profesia **26/51 = 51,0 %**.
-- `jobs-data.json.updatedAt`: **2026-09-09T05:21:40+02:00**.
-- **Nová persisted LIVE promotion: Techfun s. r. o. — Elektro-technický špecialista pre e-shop**, Kopčianska 92A, Petržalka, 1 800–2 200 EUR/mes., nástup ihneď, Po–Pi onsite. Kombinuje odborné poradenstvo, e-mailovú/telefonickú technickú podporu, testovanie a zaraďovanie produktov, Arduino/ESP/Raspberry, reklamácie, návody, blog a produktové popisy. Angličtina A2; vhodné aj pre absolventa; firma uvádza, že potrebné veci doučí. `locationEligibility: ba-area`. Riziko: základ C/C++ alebo Python a práca s datasheetmi.
+- `jobs-data.json.updatedAt`: **2026-09-09T05:21:40+02:00** — bez zápisu v tomto behu, pretože nevznikol nový promotion-grade unique hit.
+- Posledná persisted LIVE promotion zostáva **Techfun s. r. o. — Elektro-technický špecialista pre e-shop**, Kopčianska 92A, Petržalka, 1 800–2 200 EUR/mes., nástup ihneď, Po–Pi onsite. Kombinuje odborné poradenstvo, e-mailovú/telefonickú technickú podporu, testovanie a zaraďovanie produktov, Arduino/ESP/Raspberry, reklamácie, návody, blog a produktové popisy. Angličtina A2; vhodné aj pre absolventa; firma uvádza, že potrebné veci doučí. `locationEligibility: ba-area`. Riziko: základ C/C++ alebo Python a práca s datasheetmi.
+- **Fresh duplicate enrichment 9.9. 07:03:** ČSOB Operátor IT Service Desk-u sa objavil ako veľmi čerstvý LinkedIn company post, ale zhoduje sa s už existujúcou LIVE položkou `profesia-csob-it-service-desk-5350972`; nový záznam sa nevytvoril. LinkedIn detail potvrdil Bratislavu, občasný HO, entry-level/absolvent fit, Remote Desktop/ServiceNow/Windows/Android a mierne pokročilú AJ.
 - Predchádzajúca persisted LIVE promotion: **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94.
 - Silný promotion-ready kandidát: **ReMar Slovakia — Administratívny pracovník / pracovníčka e-shopu – objednávky a zákaznícky servis**, Panónska cesta 4, Petržalka, 1 200 EUR + 200 EUR variabilne po skúšobnej dobe, Po–Pi 9:30–18:00. `locationEligibility: ba-area`.
 - Promotion-ready: **NAY a.s. — Reklamačný/á technik/čka, Centrálny sklad Senec**; publ. 7. 9. 2026, ASAP, reklamácie + procesy + práca s tovarom, `locationEligibility: ba-area`.
@@ -65,31 +66,33 @@ Aktualizované: 9. 9. 2026 05:21 CEST
 - Fresh freelance verification 9.9. 05:21: **Upwork — Online Store Assistant**, Worldwide remote, flexible, WooCommerce je plus. Bez LIVE promotion: verejný detail neukázal kompenzáciu a listing už mal 50+ proposals.
 - Brigada reject 9.9. 05:21: **Alpha Turbo — Promoter, Bratislava**, 7 EUR/h; student-only/vekovo cielená brigádnická dohoda, preto eligibility reject.
 - Pretlak reject 9.9. 05:21: **Stretchfit — Creative Strategist**, 2 300–3 000 EUR; Mid/Senior creative-advertising scope mimo cieľového profilu.
+- Fresh tech/creative reject 9.9. 07:03: **Elasticr Technologie — IT Support Specialist L2**, Havlíčkův Brod, 42–52 tis. Kč, Remote/On-site/Hybrid. Bez LIVE promotion: verejný detail nepreukazuje, že remote možno vykonávať prevažne zo Slovenska bez pravidelného dochádzania; L2 incident/root-cause support je navyše nad preferovanou úrovňou.
+- Fresh freelance rejects 9.9. 07:03: Upwork WordPress Plugin Update & Maintenance Expert 10 USD fixed/Expert, AI Blog Post VA 30 USD za 120 článkov, viac nízkorozpočtových WordPress/WooCommerce development rolí a VA rolí s country/English/cold-call mismatchom.
 
-## Source audit — 9. 9. 2026 05:21
+## Source audit — 9. 9. 2026 07:03
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam/ÚPSVR, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
-- Profesia: `ok`; 1 relevantný hit, **1 LIVE promotion — Techfun**.
+- Profesia: `ok`; 1 relevantný hit, **0 LIVE promotion** — ČSOB IT Service Desk je už LIVE, preto duplicate enrichment.
 - Priame company careers: `checked`; 0 novej canonical promotion-grade delty.
-- LinkedIn Jobs: `limited`; 2 Foxelli remote Slovakia-eligible support/sales výsledky, ale low-pay/phone-sales/late-USA-shift burden; 0 promotion.
-- Worki: `checked`; 0 novej active unique promotion-grade delty.
+- LinkedIn Jobs: `ok`; 2 relevantné/adjacent hity — ČSOB duplicate enrichment a Wolt B2/student/shift reject; 0 promotion.
+- Worki: `ok`; 1 relevantný rediscovery hit — HEATING PRO už LIVE; 0 promotion.
 - Kariera/Zoznam/ÚPSVR: `checked`; 0 novej public unique promotion-grade delty.
-- Brigada.sk: `ok`; 1 hit, Alpha Turbo promoter = student-only eligibility reject; 0 promotion.
-- Pretlak/StartupJobs/WordPress Jobs: `ok`; 1 relevantný adjacent hit, Stretchfit Creative Strategist = Mid/Senior scope reject; 0 promotion.
-- Upwork/freelance: `ok`; 9 relevantných/adjacent hitov. Fresh Online Store Assistant bez viditeľného budgetu a s 50+ proposals; ďalšie výsledky prevažne 3–8 USD/h, low fixed-price alebo English/tool-heavy. 0 promotion.
-- Reddit/komunity: `limited`; fresh výsledky boli FOR HIRE poskytovatelia alebo jurisdiction/hard-dev mismatch; 0 verified vhodných hiring hits.
+- Brigada.sk: `checked`; 0 novej vhodnej public delty.
+- Pretlak/StartupJobs/WordPress Jobs: `ok`; 1 adjacent hit — Elasticr L2 Havlíčkův Brod, `locationEligibility: unknown` pre nepreukázaný remote zo Slovenska + vyšší technický scope; 0 promotion.
+- Upwork/freelance: `ok`; 5 relevantných/adjacent hitov. Výsledky boli low fixed-price, hard-development/Expert, country-restricted, strong-English/cold-calling alebo vysoko konkurenčné; 0 promotion.
+- Reddit/komunity: `limited`; fresh výsledky boli FOR HIRE poskytovatelia, nie konkrétne hiring dopyty; 0 verified vhodných hiring hits.
 - Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog.
 
-### Audit počty 05:21
+### Audit počty 07:03
 - source families checked: **10**
-- nové LIVE promotions: **1**
-- LIVE feed delta: **+1**, teraz **51**
+- nové LIVE promotions: **0**
+- LIVE feed delta: **0**, zostáva **51**
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **49,0 %**, non-Profesia **51,0 %**
-- nový LIVE TOP: **Techfun — Elektro-technický špecialista pre e-shop, score 96**
+- čerstvý duplicate enrichment: **ČSOB Operátor IT Service Desk-u**; bez nového ID
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 05:21.
-- `source-audit.json`: aktualizovaný na 05:21.
-- `jobs-data.json`: aktualizovaný na 05:21; +1 Techfun.
+- `job-sources.json`: aktualizovaný na 07:03.
+- `source-audit.json`: aktualizovaný na 07:03.
+- `jobs-data.json`: bez zmeny; nebol nový promotion-grade unique hit.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -255,3 +258,5 @@ Aktualizované: 9. 9. 2026 05:21 CEST
 - **Same-employer opportunity cluster prioritizer** — pri viacerých súčasne otvorených rolách jedného zamestnávateľa vytvoriť cluster a odporučiť iba najlepšiu 1–2 zhody, aby sa neplytvalo časom a neposielali sa nekoherentné paralelné reakcie.
 - **Stable-ID preservation precommit gate** — pred každým full-file zápisom porovnať množinu existujúcich aktívnych ID s navrhovanou verziou; neplánované odstránenie alebo prečíslovanie čo i len jedného ID automaticky zablokuje commit, pokiaľ neexistuje explicitný tombstone/dedupe dôvod.
 - **Primary-contact freshness SLA** — pri TOP ponukách viesť samostatný timestamp posledného overenia kontaktného mena, e-mailu a telefónu; pred reakciou znovu overiť kontakt, ak je starší než definovaný limit, aby sa neposielala kvalitná reakcia na neaktuálny kontakt.
+- **Repost-age reset guard** — pri čerstvom LinkedIn/company repost-e už známej ponuky uchovať pôvodný `publishedAt`/first-seen canonical dátum a samostatne evidovať `repostedAt`; zabrániť tomu, aby repost umelo dostal prioritu `<24h` ako úplne nová ponuka.
+- **Duplicate enrichment merge ledger** — keď nový zdroj nájde už LIVE title+company, nezakladať nový job, ale uložiť ktoré nové fakty boli potvrdené alebo zmenené (HO, jazyk, mzda, kontakt, seniorita) a zvýšiť verification confidence iba pri skutočnom dôkazovom prínose.
