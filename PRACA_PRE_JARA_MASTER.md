@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 9. 9. 2026 02:23 CEST
+Aktualizované: 9. 9. 2026 03:41 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -44,49 +44,50 @@ Aktualizované: 9. 9. 2026 02:23 CEST
 - Promotion-ready z predchádzajúcich behov: **BeiT Technologie — Administrativně-ekonomický specialista (Junior/Medior), 100 % remote** a **SAV — Asistent/ka riaditeľa**; pred LIVE zápisom vyžadujú fresh canonical recheck.
 - Silný verification kandidát: **NASES — Operátor/operátorka Ústredného kontaktného centra**, Bratislava, od 1 500 EUR, pružný režim 8–16/9–17, vhodné pre absolventa; `locationEligibility: ba-area`. Mínus: AJ B1 a vyššie Office nároky.
 - Verification kandidát: **Dotypos SK — Technický support**, Bratislava, 1 200 EUR, TPP na neurčito, vhodné pre absolventa, support + terénne inštalácie + pred/popo-predajný servis; `locationEligibility: ba-area`. Ponuka je aktívna do 30. 9. 2026. Mínus: explicitná AJ B1/B2 a požiadavky na Android/IT prehľad.
-- Verification kandidát: **LJ Stav s. r. o. — Administratívny/a pracovník/čka, obchodný/á referent/ka**, Stupava, 1 300 EUR/mes., vhodné aj pre absolventa, bez cudzieho jazyka v canonical detaile, objednávky + cenové ponuky + zákazníci + technické/logické myslenie. `locationEligibility: ba-area`. Nepromovaný pre vyšší osobný/predajný kontakt a nižšiu odmenu oproti silnejším LIVE admin rolám.
+- Verification kandidát: **LJ Stav s. r. o. — Administratívny/a pracovník/čka, obchodný/á referent/ka**, Stupava, 1 300 EUR/mes., vhodné aj pre absolventa, bez cudzieho jazyka v canonical detaile, objednávky + cenové ponuky + zákazníci + technické/logické myslenie. `locationEligibility: ba-area`.
 - Supplemental verification: **FEIM - SK — Obchodný špecialista pre e-shop a predaj svietidiel**, Malacky, 1 100–1 300 EUR/mes.; e-shop/order/customer-service fit, ale stredne pokročilá AJ a aktívny retail predaj znižujú ranking.
-- Verification kandidát: **Staffino — Technical Support Specialist / Project Coordinator (IT / SaaS)**, Bratislava Metropolitan Area, hybrid. Náplň je kvalitný prienik L1/L2 supportu, ticketingu, koordinácie a komunikácie so SaaS klientom; `locationEligibility: ba-area`. Bez promotion, pretože verejný listing je približne 7 mesiacov starý, požaduje 2–4 roky IT/SaaS support praxe a nebol nájdený dostatočný direct-company canonical detail na čerstvé potvrdenie aktivity.
-- **Verification kandidát 9.9. 00:32: 3MON, s.r.o. — Office Manager/ka & Executive Support pre CEO**, Bratislava, od 1 650 EUR/mes., Po–Pi 8:00–16:30 (piatok možný koniec 15:00), nástup 1.10.2026. Silný prienik administratívy, spracovania e-shop objednávok, pokladne/skladu, zákazníckej komunikácie a AI nástrojov ChatGPT/Copilot. `locationEligibility: ba-area`; firemná centrála je Kopčianska 94B. Canonical uvádza slovenčinu C2 **alebo** AJ B2 a textovo komunikatívnu AJ iba ako výhodu, takže jazyk nie je čistý hard reject. Bez LIVE promotion pre povinné 3 roky podobnej praxe a pokročilý Word/Excel.
-- Jazykový reject: **SOITRON — IT Support Specialist**, Bratislava, 1 600 EUR/mes.; explicitná AJ B2 + technickejší IT scope, bez promotion.
-- LinkedIn reject: **Wolt — Support Associate (Part Time)**, Bratislava; študentská part-time rola, zmeny aj večer/víkendy a AJ min. B2, bez promotion.
-- Direct-company verification/reject: **Volkswagen Group Services — Internal Tech. Agent/IT Specialist**, Bratislava, full-time, fixed-term, remote do 20 %, posted 22.8.2026; lokálne eligible, ale professional IT scope zahŕňa network/OS/cybersecurity/scripting a je nad preferovanou non-hard-dev úrovňou.
-- Freelance verification: **Upwork — AI Blog Post VA for WordPress**, Worldwide remote, entry level, WordPress + AI content, ale **120 článkov/mesiac za 30 USD fixed**. `locationEligibility: remote-ok`; tematicky silný fit, ekonomicky neakceptovateľný, preto bez LIVE promotion.
-- Freelance verification: **Upwork — Virtual Assistant | Content Management & Project Coordination**, Worldwide remote. Náplň: CMS Contentful, PDF/Word, screenshoty/bug reporting, SharePoint/Teams/Asana a koordinácia. Mínusy: povinná skúsenosť s headless CMS, good spoken/written English a Adobe/InDesign/Illustrator; bez promotion.
-- **Reject 9.9. 01:12: Upwork — WordPress Plugin Update & Maintenance Expert**, Worldwide remote, 10 USD fixed, Expert. `locationEligibility: remote-ok`; maintenance tematicky sedí, ale expert-level troubleshooting plugin konfliktov a extrémne nízky fixed budget neprešli skill/budget gateom.
-- **Direct-company reject 9.9. 01:12: Webikon — web developer**, Remote, 2 500–3 500 EUR na faktúru. Remote je geograficky vhodný, ale senior/hard-development scope obsahuje moderný PHP stack, frontend templating a testy; bez promotion.
-- Worki rediscovery: **Shield-Sk — Administrátor e-shopu / zákaznícka podpora**, Bratislava-Ružinov, bol obsahovo silný, ale canonical detail explicitne uvádza, že miesto už bolo obsadené alebo zrušené; `inactive`, nepridávať.
-- **Canonical recheck 9.9. 02:23: RM Biznis servis — Manažér servisu klientov**, Bratislava / väčšina práce online, občasná prítomnosť v BA, 10–15 EUR/h, pružný čas, bez požiadavky na prax a bez cudzieho jazyka. `locationEligibility: ba-area`. Ponuka bola aktualizovaná 2.9.2026 a je stále aktívna. Dôležité: položka už je v `jobs-data.json` (`worki-rm-biznis-servis-klienti-2060464`), takže nejde o nový prírastok ani duplicitu.
-- **Kariera verification/reject 9.9. 02:23: Grafton — Analytik zákazníckych sťažností**, Bratislava, 2 000 EUR, L1 technická podpora + HO po zaškolení. Mínusy: explicitná AJ B1, VŠ I. stupňa v technickom odbore a prax na podobnej pozícii; bez LIVE promotion.
-- **LinkedIn reject 9.9. 02:23: Marlink — Support Engineer**, Bratislava/flexible, ale explicitná AJ B2 a telekom/network background; bez promotion.
-- **Fresh freelance verification 9.9. 02:23: Upwork — WordPress Product Image Upload**, Worldwide remote, 10–20 USD/h, entry-level, WooCommerce. Scope sedí veľmi dobre, ale už 50+ proposals, preto bez promotion.
+- Verification kandidát: **Staffino — Technical Support Specialist / Project Coordinator (IT / SaaS)**, Bratislava Metropolitan Area, hybrid; silný support/ticketing/coordination prienik, ale 2–4 roky IT/SaaS support praxe a starší listing.
+- Verification kandidát: **3MON, s.r.o. — Office Manager/ka & Executive Support pre CEO**, Bratislava, od 1 650 EUR/mes., Po–Pi. Silný prienik administratívy, e-shop objednávok, zákazníckej komunikácie a AI nástrojov. `locationEligibility: ba-area`; bez LIVE promotion pre 3 roky podobnej praxe a pokročilý Word/Excel.
+- Jazykový reject: **SOITRON — IT Support Specialist**, Bratislava, 1 600 EUR/mes.; explicitná AJ B2 + technickejší IT scope.
+- LinkedIn reject: **Wolt — Support Associate (Part Time)**, Bratislava; student/shift režim + AJ min. B2.
+- Direct-company verification/reject: **Volkswagen Group Services — Internal Tech. Agent/IT Specialist**, Bratislava; lokálne eligible, ale network/OS/cybersecurity/scripting scope nad preferovanou úrovňou.
+- Freelance verification: **Upwork — AI Blog Post VA for WordPress**, Worldwide remote, entry level, ale 120 článkov/mesiac za 30 USD fixed; ekonomický reject.
+- Freelance verification: **Upwork — Virtual Assistant | Content Management & Project Coordination**, Worldwide remote; Contentful/SharePoint/Asana, ale headless CMS + angličtina + Adobe stack.
+- Reject: **Upwork — WordPress Plugin Update & Maintenance Expert**, Worldwide remote, 10 USD fixed, Expert; hard-skill + budget reject.
+- Direct-company reject: **Webikon — web developer**, Remote, 2 500–3 500 EUR na faktúru; senior/hard-development scope.
+- Worki rediscovery: **Shield-Sk — Administrátor e-shopu / zákaznícka podpora**, Bratislava-Ružinov; canonical uvádza obsadené alebo zrušené.
+- Canonical recheck: **RM Biznis servis — Manažér servisu klientov**, Bratislava / väčšina práce online, 10–15 EUR/h, bez praxe a cudzieho jazyka; už existuje v `jobs-data.json` (`worki-rm-biznis-servis-klienti-2060464`).
+- Kariera reject: **Grafton — Analytik zákazníckych sťažností**, Bratislava, 2 000 EUR; AJ B1 + VŠ technická + podobná prax.
+- LinkedIn reject: **Marlink — Support Engineer**, Bratislava/flexible; AJ B2 + networking/telecom.
+- Freelance verification: **Upwork — WordPress Product Image Upload**, Worldwide remote, 10–20 USD/h, entry-level, WooCommerce; 50+ proposals.
+- **Nový direct-company reject 9.9. 03:41: Slovak Telekom — Junior Business Analytik/Analytička**, Bajkalská 28, Bratislava, od 1 700 EUR/mes. + 15 % ročný bonus, vhodné pre absolventov. Silné plusy: reporty/KPI, Excel, AI (Claude a ďalšie nástroje), bez požiadavky na roky praxe, home-office podľa dohody. `locationEligibility: ba-area`. Bez promotion výlučne pre explicitnú požiadavku **AJ minimálne B2** a vyšší analytický Excel/reporting burden.
+- **Fresh freelance verification 9.9. 03:41: Upwork — Website & SEO Management 2026**, Worldwide remote, WooCommerce operations, 15–30 USD/h, <30 h/týždeň, 6+ mesiacov. Tematicky silný fit, ale listing je približne 2 týždne starý, má 20–50 proposals a vyžaduje širší toolset (Helium 10, Seller Central, GSC, Yoast/Rank Math) + onboarding call/Loom audit; bez promotion.
 
-## Source audit — 9. 9. 2026 02:23
+## Source audit — 9. 9. 2026 03:41
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam/ÚPSVR, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
-- Profesia: `ok`; 1 relevantný technický hit (Tatra Supercompute IT Service Desk), bez promotion pre technickejší scope / ďalšie skill overenie.
-- Priame company careers: `checked`; 0 novej konkrétnej promotion-grade unique ponuky.
-- LinkedIn Jobs: `limited`; Marlink Support Engineer = AJ B2 + networking/telecom; CPM výsledky = ďalšie cudzie jazyky. 0 promotion.
-- Worki: `ok`; RM Biznis servis bol canonical znovu overený ako aktívny a silný, ale **už je LIVE**, takže 0 nový prírastok. Shield-Sk e-shop admin je inactive.
-- Kariera/Zoznam/ÚPSVR: `ok`; Grafton Analytik zákazníckych sťažností BA 2 000 EUR = L1 support, ale AJ B1 + VŠ technická + podobná prax; 0 promotion.
+- Profesia: `checked`; 0 novej unique promotion-grade delty.
+- Priame company careers: `ok`; 2 relevantné hity. Telekom Junior Business Analytik = BA + graduate-friendly + AI, ale AJ B2; privátne cloudové riešenia = hard-skill mismatch. 0 promotion.
+- LinkedIn Jobs: `limited`; verejný index pre BA e-commerce/admin/support preverený, 0 novej unique promotion-grade delty.
+- Worki: `checked`; Shield-Sk inactive, RM Biznis servis už LIVE. 0 promotion.
+- Kariera/Zoznam/ÚPSVR: `ok`; 3 relevantné/adjacent výsledky, Dotypos už verification, nemecký technický support jazykový reject, ostatné bez lepšieho fitu. 0 promotion.
 - Brigada.sk: `checked`; 0 nových vhodných BA hitov.
-- Pretlak/StartupJobs/WordPress Jobs: `checked`; 0 novej overiteľnej non-hard-dev promotion-grade delty.
-- Upwork/freelance: `ok`; fresh Worldwide WordPress/WooCommerce hity overené. WordPress Product Image Upload 10–20 USD/h má 50+ proposals; WooCommerce upload 50 products = 50 USD fixed; AI Blog VA = 30 USD/120 článkov; bez promotion.
-- Reddit/komunity: `limited`; čerstvé výsledky boli for-hire ponuky dodávateľov, nie hiring dopyty; 0 verified hiring hits.
-- Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom.
+- Pretlak/StartupJobs/WordPress Jobs: `ok`; Staffino Product Manager je Senior/Expert a mimo preferovaného scope. 0 promotion.
+- Upwork/freelance: `ok`; 9 relevantných/adjacent hitov. Čerstvé Shopify/WooCommerce fixed-price ponuky 5–36 USD neprešli ekonomickým gateom; WooCommerce Website & SEO Management 15–30 USD/h je starší a má 20–50 proposals. 0 promotion.
+- Reddit/komunity: `limited`; čerstvé výsledky boli FOR HIRE ponuky dodávateľov, nie hiring dopyty; 0 verified hiring hits.
+- Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog.
 
-### Audit počty 02:23
+### Audit počty 03:41
 - source families checked: **10**
 - nové LIVE promotions: **0**
 - LIVE feed delta: **0**, zostáva **50**
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **48,0 %**, non-Profesia **52,0 %**
-- Worki canonical recheck: **RM Biznis servis — existujúca LIVE položka, bez duplicity**
-- nový Kariera reject: **Grafton Analytik zákazníckych sťažností — AJ B1 + VŠ technická + prax**
-- fresh Upwork candidate: **WordPress Product Image Upload — 10–20 USD/h, ale 50+ proposals**
+- nový direct-company near-miss: **Slovak Telekom Junior Business Analytik — AJ B2**
+- fresh Upwork verification: **Website & SEO Management 2026 — 15–30 USD/h, ale starší listing + širší toolset + 20–50 proposals**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 02:23.
-- `source-audit.json`: aktualizovaný na 02:23.
-- `jobs-data.json`: bez zmeny; RM Biznis servis už v LIVE existuje, nevznikla nová promotion-grade unique delta.
+- `job-sources.json`: aktualizovaný na 03:41.
+- `source-audit.json`: aktualizovaný na 03:41.
+- `jobs-data.json`: bez zmeny; nevznikla nová promotion-grade unique delta.
 
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
@@ -248,3 +249,5 @@ Aktualizované: 9. 9. 2026 02:23 CEST
 - **Direct-career seniority contamination guard** — pri firemných career searchoch oddeliť junior/support/admin roly od senior developer výsledkov už vo fáze discovery, aby hard-dev hity nezvyšovali falošnú coverage úspešnosť source family.
 - **Financial-services recruitment-model transparency gate** — pri administratívnych rolách vo finančnom/obchodnom prostredí pred odporúčaním overiť, či nejde o skrytý provízny predaj, nábor do siete alebo výkonovo podmienenú odmenu; uložiť dôkaz a reálny garantovaný základ.
 - **Contract-form eligibility resolver** — pri ponukách s viacerými formami spolupráce rozlíšiť študentskú brigádnickú dohodu od bežnej dohody/TPP/živnosti a potvrdiť, že aspoň jedna forma je pre uchádzača reálne použiteľná; zabrániť falošne vysokému matchu zo student-only ponuky.
+- **B2 near-miss ROI tracker** — pri inak silných rolách vyradených primárne pre AJ B2 evidovať počet, mzdu, track a stratenú príležitosť; mesačne vyhodnotiť, či cielené zlepšenie angličtiny prináša dostatočný pracovný a príjmový ROI.
+- **Same-employer opportunity cluster prioritizer** — pri viacerých súčasne otvorených rolách jedného zamestnávateľa vytvoriť cluster a odporučiť iba najlepšiu 1–2 zhody, aby sa neplytvalo časom a neposielali sa nekoherentné paralelné reakcie.
