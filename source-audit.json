@@ -1,17 +1,17 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-09T04:07:47+02:00",
+  "updatedAt": "2026-09-09T05:21:40+02:00",
   "runSummary": {
     "familiesChecked": 10,
-    "freshPromoted": 0,
+    "freshPromoted": 1,
     "freshnessWindowHours": 48,
-    "liveFeedCount": 50,
-    "liveProfesiaCount": 24,
+    "liveFeedCount": 51,
+    "liveProfesiaCount": 25,
     "liveNonProfesiaCount": 26,
-    "liveProfesiaPct": 48.0,
-    "liveNonProfesiaPct": 52.0,
+    "liveProfesiaPct": 49.0,
+    "liveNonProfesiaPct": 51.0,
     "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Full diversity sweep on 9.9.2026 04:07 CEST. Techfun Elektro-technický špecialista pre e-shop was freshly reverified on the canonical Profesia listing: Bratislava-Petržalka, immediate start, 1 800–2 200 EUR, basic English, Arduino/ESP/Raspberry, product testing, technical support, complaints and content. It remains promotion-ready but could not be appended to jobs-data.json safely because the connector returns the large file truncated while write is full-file replacement only; FAIL-CLOSED therefore preserved all 50 LIVE records. LinkedIn resurfaced Foxelli remote support but low pay/phone-sales/USA-shift burden keeps it out. Upwork hits were economically weak or skill/English-heavy. Facebook public index produced 0 verified hiring posts."
+    "note": "Full diversity sweep on 9.9.2026 05:21 CEST. Techfun Elektro-technický špecialista pre e-shop was canonical-reverified and successfully promoted to jobs-data.json: Bratislava-Petržalka, immediate start, 1 800–2 200 EUR, English A2, Arduino/ESP/Raspberry, product testing, technical support, complaints, manuals/blog/product content. LinkedIn returned Slovakia-eligible Foxelli remote support/sales but low pay and late/USA shifts reduce fit. Brigada.sk surfaced a student-only promoter role and Pretlak a mid/senior creative role, both rejected. Upwork produced several e-commerce/WordPress/Shopify candidates but budgets, English burden, competition or scope prevented promotion. Facebook public index produced 0 verified hiring posts."
   },
   "sources": [
     {
@@ -19,9 +19,9 @@
       "family": "profesia",
       "status": "ok",
       "hits": 1,
-      "added": 0,
+      "added": 1,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Techfun s. r. o. — Elektro-technický špecialista pre e-shop freshly canonical-reverified: Kopčianska 92A Bratislava-Petržalka, 1 800–2 200 EUR, immediate start, basic English, Arduino/ESP/Raspberry + technical support + product/content/reklamácie. locationEligibility=ba-area. Promotion-ready; not persisted only because lossless jobs-data.json replacement is unavailable from the truncated connector payload."
+      "note": "Techfun s. r. o. — Elektro-technický špecialista pre e-shop canonical-reverified and promoted: Kopčianska 92A Bratislava-Petržalka, 1 800–2 200 EUR, immediate start, English A2, Arduino/ESP/Raspberry, support, testing, reklamácie and content. locationEligibility=ba-area."
     },
     {
       "name": "Priame firemné career stránky",
@@ -30,16 +30,16 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Priame firemné career discovery reálne preverené; bez novej canonical promotion-grade delty v tomto behu. Existujúce známe Telekom/Hilti/Penta role neboli počítané ako nové hity."
+      "note": "Direct company-career discovery genuinely checked; no new canonical promotion-grade delta in this run. Existing known Telekom/Hilti/Penta roles were not counted as new hits."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
       "status": "limited",
-      "hits": 1,
+      "hits": 2,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "ranking": 1},
-      "note": "Verejný LinkedIn index reálne vyhľadaný. Foxelli Crochet Customer Support Agent je 100% remote a Slovakia-eligible, ale ide o rediscovery už evidovaného Foxelli remote support smeru; odmena do 800 EUR after taxes, phone/sales scope a zmenový USA režim znižujú ranking. Coverage limited verejnou indexáciou."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "ranking": 2},
+      "note": "Public LinkedIn index genuinely searched. Foxelli Customer Support / Crochet Support roles are 100% remote and Slovakia-eligible, but low compensation, phone/sales scope and late/USA-shift availability reduce ranking; one is a rediscovery. Coverage remains limited by public indexing."
     },
     {
       "name": "Worki.sk",
@@ -48,7 +48,7 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Bratislava e-shop/admin/support discovery reálne preverené; bez novej active unique promotion-grade delty."
+      "note": "Bratislava e-shop/admin/support discovery genuinely checked; no new active unique promotion-grade delta."
     },
     {
       "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
@@ -57,34 +57,34 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Bratislava administratíva/e-shop/technical-support discovery reálne preverené; bez novej verejne overiteľnej unique promotion-grade delty."
+      "note": "Bratislava administration/e-shop/technical-support discovery genuinely checked; no new publicly verifiable unique promotion-grade delta."
     },
     {
       "name": "Brigada.sk",
       "family": "brigada-sk",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Reálne vyhľadané Bratislava administratíva, e-shop, support, vodič a sklad; bez nového verejne overiteľného vhodného hitu."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 1, "eligibility": 1},
+      "note": "Bratislava brigades genuinely searched. Alpha Turbo promoter role was visible but student-only / age-targeted and therefore not eligible for the active feed."
     },
     {
       "name": "Pretlak / StartupJobs / WordPress Jobs",
       "family": "tech-creative",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Pretlak, StartupJobs a WordPress-oriented discovery boli reálne vyhľadané; bez novej remote-ok alebo BA non-hard-dev promotion-grade delty."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 1},
+      "note": "Pretlak, StartupJobs and WordPress-oriented discovery genuinely searched. Stretchfit Creative Strategist was visible at 2 300–3 000 EUR but Mid/Senior creative-advertising scope is outside the target profile. No suitable remote-ok/BA non-hard-dev promotion."
     },
     {
       "name": "Upwork / freelance",
       "family": "freelance",
       "status": "ok",
-      "hits": 5,
+      "hits": 9,
       "added": 0,
-      "rejected": {"language": 3, "inactive": 0, "duplicate": 1, "location": 0, "skill": 1, "budget": 4, "ranking": 3},
-      "note": "Worldwide WordPress/WooCommerce/Shopify/e-commerce VA discovery reálne vykonané. Relevantné verejne indexované hity zahŕňali WordPress+Shopify product posting za 7 USD fixed, AI Blog Post VA 30 USD fixed, WordPress+Shopify VA 100 USD fixed pri 8h denne/6 dní, e-commerce VA 3–5 USD/h a WordPress/Elementor support s výrazne technickejším scope. Bez promotion pre budget, English/skill burden, competition alebo freshness."
+      "rejected": {"language": 4, "inactive": 0, "duplicate": 0, "location": 0, "skill": 3, "budget": 6, "ranking": 7, "competition": 3},
+      "note": "Worldwide WordPress/WooCommerce/Shopify/e-commerce VA discovery genuinely executed. Results included a fresh Online Store Assistant with WooCommerce as a plus but no visible compensation and 50+ proposals, multiple 3–8 USD/h VA roles, 7/10/100 USD fixed-price jobs, and broader Shopify/content roles with stronger English/tool burdens. None cleared value + competition + skill gates."
     },
     {
       "name": "Reddit / WordPress / WooCommerce komunity",
@@ -93,7 +93,7 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1, "ranking": 0},
-      "note": "Verejne indexované komunity boli reálne vyhľadané. Viditeľné čerstvejšie WordPress výsledky boli FOR HIRE ponuky dodávateľov; hiring výsledok bol US-only alebo hard-development, teda nevhodný pre remote zo Slovenska. 0 verified vhodných hiring hits."
+      "note": "Publicly indexed communities genuinely searched. Visible fresher WordPress results were FOR HIRE provider posts or hiring restricted to another jurisdiction / hard-development. 0 verified suitable hiring hits."
     },
     {
       "name": "Facebook verejný index",
@@ -103,7 +103,7 @@
       "verifiedHits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "WordPress Slovensko, WooCommerce Komunita SK+CZ a Bratislava job/brigáda verejný index boli reálne vyhľadané. Žiadny konkrétny verejne overiteľný hiring post s priamym linkom; 0 verified hits. Autentizovaný Nexus/local ingestion ostáva backlog."
+      "note": "WordPress Slovensko, WooCommerce Komunita SK+CZ and Bratislava job/brigade public-index discovery genuinely searched. No concrete publicly verifiable hiring post with a direct link; 0 verified hits. Authenticated Nexus/local ingestion remains backlog."
     }
   ]
 }
