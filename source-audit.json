@@ -1,66 +1,119 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-09T08:10:00+02:00",
+  "updatedAt": "2026-09-09T08:42:41+02:00",
   "runSummary": {
-    "familiesChecked": 5,
-    "freshPromoted": 1,
-    "existingReverified": 2,
+    "familiesChecked": 10,
+    "freshPromoted": 0,
+    "existingReverified": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-09T08:10:00+02:00",
-    "sourceVerificationAt": "2026-09-09T08:10:00+02:00",
-    "stalePolicy": "LIVE eligibility requires a real verifiedAt within 48 hours. Source-audit age and content-change age are tracked separately; touching a file timestamp is not verification.",
-    "note": "Focused 9.9.2026 morning follow-up after the earlier diversity sweep. Public Profesia/Kariera results were searched again for Bratislava/BA-region customer support, administration, technical support, Senec logistics/admin and suitable remote roles. IKEA contact-center popredajný servis was newly promoted after direct public-detail verification. Slovak Telekom B2B back office and finby reception/admin were directly reopened and reverified. Bookio was rejected for English B2; DHL 4h transport admin for English B1; SuperFaktura remains language-risk/needs confirmation rather than high-confidence promotion."
+    "contentChangedAt": "2026-09-09T08:42:41+02:00",
+    "sourceVerificationAt": "2026-09-09T08:42:41+02:00",
+    "liveCount": 51,
+    "liveMix": {"profesia": 25, "nonProfesia": 26, "profesiaPct": 49.0, "nonProfesiaPct": 51.0},
+    "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing active items are never removed merely because a new sweep did not rediscover them.",
+    "note": "Full diversity sweep on 9.9.2026 08:42 across 10 independent source families, 9 outside Profesia. No new promotion-grade unique job was found. Tatra Supercompute L1 IT Service Desk in Bratislava was verified but rejected from LIVE because the canonical detail explicitly requires English B2 and 24/7 three-shift onsite work. Kariera surfaced existing/adjacent Bratislava support roles; Upwork produced fresh worldwide WordPress/WooCommerce jobs but they were low-budget, Expert/hard-development, strong-English or high-competition. Reddit results were FOR HIRE providers, not hiring demand. Facebook public indexing yielded 0 concrete verifiable hiring posts."
   },
   "sources": [
     {
-      "name": "Profesia – Bratislava customer support/admin",
+      "name": "Profesia",
       "family": "profesia",
       "status": "ok",
-      "hits": 8,
-      "added": 1,
-      "reverified": 1,
-      "rejected": {"language": 3, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 3},
-      "note": "Real search on 9.9.2026. Newly promoted IKEA contact-center popredajný servis (ID 5354960): Bratislava, partial home office, 1260 EUR+, no required English, no prior experience required. finby reception/admin (ID 5354572) was directly reopened and remains active with immediate start and no language requirement. Bookio was discovered fresh but requires English B2, therefore excluded."
-    },
-    {
-      "name": "Kariera.sk / company mirror",
-      "family": "kariera",
-      "status": "ok",
-      "hits": 3,
-      "added": 0,
-      "reverified": 1,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "ranking": 1},
-      "note": "Slovak Telekom B2B back-office support was directly reopened on 9.9.2026 and remains active at Bajkalská 28, 1300 EUR + 23% VZM, full-time, home office possible by manager agreement, without a foreign-language hard gate. Other surfaced customer-support roles with German or other language requirements were rejected."
-    },
-    {
-      "name": "Profesia – Senec / logistics administration",
-      "family": "profesia-senec",
-      "status": "ok",
-      "hits": 3,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 1, "ranking": 0},
-      "note": "DHL 4-hour transport administration is unusually relevant for scanning/archive/admin work, but the current public detail explicitly requires English B1, so it was not promoted. NAY warehouse roles remain physically heavier; existing NAY complaint-technician record was not timestamp-touched without a fresh direct-detail recheck."
-    },
-    {
-      "name": "Public job mirrors / aggregators",
-      "family": "aggregators",
-      "status": "checked",
-      "hits": 2,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language": 2, "inactive": 0, "duplicate": 2, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Práca za rohom/public mirrors were used only to inspect requirement detail where Profesia search surfaced a title. SuperFaktura support shows occasional English and an aggregated 'mierne pokročilá' language classification; Bookio clearly states minimum B2. Aggregator evidence is not used to override a stronger canonical source."
-    },
-    {
-      "name": "LinkedIn public index",
-      "family": "linkedin",
-      "status": "checked",
       "hits": 1,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "ranking": 0},
-      "note": "DHL Transport Billing Clerk public post mirrored the same Senec 4h administrative role and confirmed the B1 English requirement; treated as duplicate corroboration, not a new job."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Bratislava technical-support discovery checked. Tatra Supercompute IT Service Desk L1 is BA-area, 1 800 EUR+, but canonical detail requires English B2, English CV and 24/7 three-shift onsite operation; no LIVE promotion."
+    },
+    {
+      "name": "Direct company careers",
+      "family": "company-careers",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Direct-company career discovery was genuinely searched for Bratislava/Slovakia support and e-commerce roles; no new canonical promotion-grade public hit was returned in this sweep."
+    },
+    {
+      "name": "LinkedIn Jobs public index",
+      "family": "linkedin",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Public LinkedIn index was genuinely searched for Bratislava technical support/e-commerce/admin. No new concrete promotion-grade public listing was returned; public indexing remains partial."
+    },
+    {
+      "name": "Worki.sk",
+      "family": "worki",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Bratislava technical/admin/e-shop discovery was genuinely searched; no new unique suitable result surfaced."
+    },
+    {
+      "name": "Brigada.sk",
+      "family": "brigada-sk",
+      "status": "ok",
+      "hits": 1,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Public Bratislava brigades searched. Administrative support in Staré Mesto is local and 6 EUR/h but explicitly requires active English; not promoted."
+    },
+    {
+      "name": "Kariera.sk / Zoznam / ÚPSVR",
+      "family": "kariera",
+      "status": "ok",
+      "hits": 5,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 2, "inactive": 0, "duplicate": 2, "location": 0, "skill": 1, "ranking": 2},
+      "note": "Current Bratislava/Senec customer-support, IT-support and administration listings were searched. Telekom support and Eurovea roles are existing-known items; Dotypos remains language-risk; Grafton complaints analyst and other technical roles are weaker by language/skill. No new unique promotion."
+    },
+    {
+      "name": "Tech/creative boards",
+      "family": "tech-creative",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Pretlak, StartupJobs and WordPress-oriented public discovery were genuinely queried for BA or Slovakia-eligible remote roles; no new suitable promotion-grade public delta surfaced."
+    },
+    {
+      "name": "Freelance / Upwork",
+      "family": "freelance",
+      "status": "ok",
+      "hits": 7,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 2, "inactive": 0, "duplicate": 0, "location": 1, "skill": 3, "ranking": 5},
+      "note": "Fresh worldwide WordPress/WooCommerce/VA jobs checked. Visible examples included 15 USD fixed Elementor/PHP, 10 USD fixed Expert plugin maintenance, 70 USD Expert WooCommerce build, 30 USD for 120 AI WordPress articles, and English/cold-call or country-restricted VA work. No promotion."
+    },
+    {
+      "name": "Reddit / public WordPress communities",
+      "family": "communities",
+      "status": "limited",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 3},
+      "note": "Public r/wordpressjobs index was genuinely searched. Fresh visible posts were FOR HIRE provider advertisements rather than employers/clients hiring. 0 verified suitable hiring hits."
+    },
+    {
+      "name": "Facebook public groups/index",
+      "family": "facebook",
+      "status": "limited",
+      "hits": 0,
+      "verifiedHits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "WordPress Slovensko, WooCommerce SK/CZ and Bratislava jobs-group public indexing was searched. No concrete publicly verifiable hiring post with a direct link was returned: 0 verified hits. Authenticated Nexus/local-agent ingestion remains backlog only and was not started."
     }
   ]
 }
