@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 9. 9. 2026 08:42 CEST
+Aktualizované: 9. 9. 2026 10:53 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -50,7 +50,7 @@ Aktualizované: 9. 9. 2026 08:42 CEST
 - Verification kandidát: **Staffino — Technical Support Specialist / Project Coordinator (IT / SaaS)**, Bratislava Metropolitan Area, hybrid; silný support/ticketing/coordination prienik, ale 2–4 roky IT/SaaS support praxe a starší listing.
 - Verification kandidát: **3MON, s.r.o. — Office Manager/ka & Executive Support pre CEO**, Bratislava, od 1 650 EUR/mes., Po–Pi. Silný prienik administratívy, e-shop objednávok, zákazníckej komunikácie a AI nástrojov. `locationEligibility: ba-area`; bez LIVE promotion pre 3 roky podobnej praxe a pokročilý Word/Excel.
 - Jazykový reject: **SOITRON — IT Support Specialist**, Bratislava, 1 600 EUR/mes.; explicitná AJ B2 + technickejší IT scope.
-- LinkedIn reject: **Wolt — Support Associate (Part Time)**, Bratislava; student/shift režim + AJ min. B2.
+- LinkedIn reject: **Wolt — Support Associate (Part Time)**, Bratislava; student/shift režim a večery/víkendy.
 - Direct-company verification/reject: **Volkswagen Group Services — Internal Tech. Agent/IT Specialist**, Bratislava; lokálne eligible, ale network/OS/cybersecurity/scripting scope nad preferovanou úrovňou.
 - Freelance verification: **Upwork — AI Blog Post VA for WordPress**, Worldwide remote, entry level, ale 120 článkov/mesiac za 30 USD fixed; ekonomický reject.
 - Freelance verification: **Upwork — Virtual Assistant | Content Management & Project Coordination**, Worldwide remote; Contentful/SharePoint/Asana, ale headless CMS + angličtina + Adobe stack.
@@ -70,29 +70,31 @@ Aktualizované: 9. 9. 2026 08:42 CEST
 - Fresh freelance rejects 9.9. 07:03: Upwork WordPress Plugin Update & Maintenance Expert 10 USD fixed/Expert, AI Blog Post VA 30 USD za 120 článkov, viac nízkorozpočtových WordPress/WooCommerce development rolí a VA rolí s country/English/cold-call mismatchom.
 - Fresh Profesia reject 9.9. 08:42: **Tatra Supercompute — IT Service Desk špecialista/špecialistka pre AI dátové centrum**, Bratislava, od 1 800 EUR/mes., L1 support, vhodné aj pre absolventa. Bez LIVE promotion pre explicitnú AJ B2, požiadavku na anglické CV a prezenčnú 24/7 trojzmennú prevádzku.
 - Fresh freelance rejects 9.9. 08:42: Upwork Elementor/PHP 15 USD fixed, Expert plugin maintenance 10 USD fixed, WooCommerce full build 70 USD Expert a ďalšie low-budget/strong-English/country-restricted VA výsledky; bez promotion.
+- Fresh freelance verification 9.9. 10:53: **Upwork — E-Commerce Operations & Admin VA**, Worldwide remote, WooCommerce/product listings/data entry, 250 USD fixed, 15–20 proposals. Bez LIVE promotion pre pokročilý Excel/VLOOKUP/pivot burden a neistý efektívny hodinový výnos.
+- Fresh tech/creative rejects 9.9. 10:53: **Stretchfit — Creative Strategist**, Bratislava/remote/hybrid, 2 300–3 000 EUR, ale Mid/Senior creative-strategy scope; **Aukro — Account Manager HU**, remote/hybrid, ale maďarský trh a jazykovo-obchodný burden mimo profilu.
 
-## Source audit — 9. 9. 2026 08:42
+## Source audit — 9. 9. 2026 10:53
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam/ÚPSVR, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
-- Profesia: `ok`; 1 relevantný hit, **0 LIVE promotion** — Tatra Supercompute L1 Service Desk je lokálne vhodný, ale AJ B2 + 24/7 onsite trojzmennosť sú výrazný mismatch.
+- Profesia: `ok`; 1 relevantný rediscovery hit, **0 LIVE promotion** — Tatra Supercompute L1 Service Desk je lokálne vhodný, ale AJ B2 + anglické CV + 24/7 onsite trojzmennosť sú výrazný mismatch.
 - Priame company careers: `checked`; 0 novej canonical promotion-grade delty.
-- LinkedIn Jobs: `checked`; verejný index pre BA support/e-commerce/admin prehľadaný, 0 novej konkrétnej promotion-grade delty.
-- Worki: `checked`; 0 novej unique promotion-grade delty.
-- Kariera/Zoznam/ÚPSVR: `ok`; viac BA/Senec support/admin výsledkov, no Telekom položky sú už známe, Dotypos ostáva language-risk a ďalšie hity sú slabšie; 0 promotion.
-- Brigada.sk: `ok`; 1 lokálny admin hit v Starom Meste, ale aktívna AJ + 6 EUR/h; 0 promotion.
-- Pretlak/StartupJobs/WordPress Jobs: `checked`; 0 novej vhodnej promotion-grade delty.
-- Upwork/freelance: `ok`; 7 relevantných/adjacent hitov. Výsledky boli low fixed-price, hard-development/Expert, country-restricted, strong-English/cold-calling alebo vysoko konkurenčné; 0 promotion.
+- LinkedIn Jobs: `ok`; Wolt Support Associate Part Time resurfaced, ale student/shift-heavy support je pod preferovaným fitom; 0 promotion.
+- Worki: `ok`; Shield-Sk e-shop admin je canonical inactive a staršia STU part-time administratíva je low-value; 0 promotion.
+- Kariera/Zoznam/ÚPSVR: `ok`; 4 relevantné/adjacent BA support výsledky, ale známe mirrory alebo language/ranking mismatch; 0 promotion.
+- Brigada.sk: `checked`; 0 novej konkrétnej vhodnej verejne indexovanej ponuky.
+- Pretlak/StartupJobs/WordPress Jobs: `ok`; 2 adjacent hity, ale Creative Strategist je Mid/Senior mimo profilu a Aukro HU je jazykovo/obchodne mimo; 0 promotion.
+- Upwork/freelance: `ok`; 8 relevantných/adjacent hitov. Najlepší operational hit bol E-Commerce Operations & Admin VA za 250 USD fixed, no pokročilý Excel a neistý effective rate; ostatné výsledky boli microbudget alebo Expert/hard-development; 0 promotion.
 - Reddit/komunity: `limited`; fresh výsledky boli FOR HIRE poskytovatelia, nie konkrétne hiring dopyty; 0 verified vhodných hiring hits.
 - Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog.
 
-### Audit počty 08:42
+### Audit počty 10:53
 - source families checked: **10**
 - nové LIVE promotions: **0**
 - LIVE feed delta: **0**, zostáva **51**
 - Facebook verified hits: **0**
 - LIVE mix: Profesia **49,0 %**, non-Profesia **51,0 %**
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
-- `job-sources.json`: aktualizovaný na 08:42.
-- `source-audit.json`: aktualizovaný na 08:42.
+- `job-sources.json`: aktualizovaný na 10:53.
+- `source-audit.json`: aktualizovaný na 10:53.
 - `jobs-data.json`: bez zmeny; nebol nový promotion-grade unique hit.
 
 ## Rozvojový backlog
@@ -263,3 +265,5 @@ Aktualizované: 9. 9. 2026 08:42 CEST
 - **Duplicate enrichment merge ledger** — keď nový zdroj nájde už LIVE title+company, nezakladať nový job, ale uložiť ktoré nové fakty boli potvrdené alebo zmenené (HO, jazyk, mzda, kontakt, seniorita) a zvýšiť verification confidence iba pri skutočnom dôkazovom prínose.
 - **Shift-pattern hard-burden classifier** — pri technickom supporte odlíšiť bežné pracovné zmeny od nepretržitej 24/7 trojzmennej prevádzky a zaviesť samostatnú výraznú penalizáciu ešte pred manuálnym review; šetrí čas pri roliach, ktoré sú technicky zaujímavé, ale režimovo nevhodné.
 - **Search-to-zero evidence receipt** — pre každú source family s nulovým hitom uložiť hash/query-set + timestamp posledného reálneho vyhľadania; Source Radar tak vie rozlíšiť pravdivé „checked, 0“ od zdroja, ktorý sa v behu vôbec nekontroloval.
+- **Application-channel reachability monitor** — pri TOP rolách evidovať, či je reakcia možná cez priamy e-mail, firemný formulár, jobboard profil alebo iba login-wall; penalizovať nefunkčný/uzavretý response kanál a pred odoslaním znovu overiť jeho dostupnosť.
+- **Freelance client hire-rate normalization** — pri Upwork/freelance dopytoch kombinovať počet historických hires, aktívnych kontraktov, spend a pomer interview→hire; rozlíšiť reálne najímajúceho klienta od účtu, ktorý síce publikuje veľa jobov, ale má nízku konverziu do platených spoluprác.
