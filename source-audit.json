@@ -1,119 +1,28 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-09T08:42:41+02:00",
+  "updatedAt": "2026-09-09T09:33:40+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
     "existingReverified": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-09T08:42:41+02:00",
-    "sourceVerificationAt": "2026-09-09T08:42:41+02:00",
+    "contentChangedAt": "2026-09-09T09:33:40+02:00",
+    "sourceVerificationAt": "2026-09-09T09:33:40+02:00",
     "liveCount": 51,
     "liveMix": {"profesia": 25, "nonProfesia": 26, "profesiaPct": 49.0, "nonProfesiaPct": 51.0},
     "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing active items are never removed merely because a new sweep did not rediscover them.",
-    "note": "Full diversity sweep on 9.9.2026 08:42 across 10 independent source families, 9 outside Profesia. No new promotion-grade unique job was found. Tatra Supercompute L1 IT Service Desk in Bratislava was verified but rejected from LIVE because the canonical detail explicitly requires English B2 and 24/7 three-shift onsite work. Kariera surfaced existing/adjacent Bratislava support roles; Upwork produced fresh worldwide WordPress/WooCommerce jobs but they were low-budget, Expert/hard-development, strong-English or high-competition. Reddit results were FOR HIRE providers, not hiring demand. Facebook public indexing yielded 0 concrete verifiable hiring posts."
+    "note": "Full diversity sweep on 9.9.2026 09:33 across 10 independent source families, 9 outside Profesia. No new promotion-grade unique job was found. LinkedIn surfaced Eaton Technical Support in Bratislava (entry level, troubleshooting/warranty/Salesforce) but explicit English B1-B2 keeps it below LIVE threshold. Nexcess Technical Support Engineer is Bratislava/remote-from-Bratislava and English is only sufficient for email, but required Linux terminal/server/network infrastructure scope is materially above the preferred L1 profile. Upwork returned worldwide WordPress/WooCommerce/VA work, but visible candidates were low-paid, high-competition, Expert/hard-development or strong-English. Reddit fresh results were FOR HIRE providers rather than hiring demand. Facebook public indexing yielded 0 concrete verifiable hiring posts."
   },
   "sources": [
-    {
-      "name": "Profesia",
-      "family": "profesia",
-      "status": "ok",
-      "hits": 1,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Bratislava technical-support discovery checked. Tatra Supercompute IT Service Desk L1 is BA-area, 1 800 EUR+, but canonical detail requires English B2, English CV and 24/7 three-shift onsite operation; no LIVE promotion."
-    },
-    {
-      "name": "Direct company careers",
-      "family": "company-careers",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Direct-company career discovery was genuinely searched for Bratislava/Slovakia support and e-commerce roles; no new canonical promotion-grade public hit was returned in this sweep."
-    },
-    {
-      "name": "LinkedIn Jobs public index",
-      "family": "linkedin",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Public LinkedIn index was genuinely searched for Bratislava technical support/e-commerce/admin. No new concrete promotion-grade public listing was returned; public indexing remains partial."
-    },
-    {
-      "name": "Worki.sk",
-      "family": "worki",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Bratislava technical/admin/e-shop discovery was genuinely searched; no new unique suitable result surfaced."
-    },
-    {
-      "name": "Brigada.sk",
-      "family": "brigada-sk",
-      "status": "ok",
-      "hits": 1,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Public Bratislava brigades searched. Administrative support in Staré Mesto is local and 6 EUR/h but explicitly requires active English; not promoted."
-    },
-    {
-      "name": "Kariera.sk / Zoznam / ÚPSVR",
-      "family": "kariera",
-      "status": "ok",
-      "hits": 5,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language": 2, "inactive": 0, "duplicate": 2, "location": 0, "skill": 1, "ranking": 2},
-      "note": "Current Bratislava/Senec customer-support, IT-support and administration listings were searched. Telekom support and Eurovea roles are existing-known items; Dotypos remains language-risk; Grafton complaints analyst and other technical roles are weaker by language/skill. No new unique promotion."
-    },
-    {
-      "name": "Tech/creative boards",
-      "family": "tech-creative",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Pretlak, StartupJobs and WordPress-oriented public discovery were genuinely queried for BA or Slovakia-eligible remote roles; no new suitable promotion-grade public delta surfaced."
-    },
-    {
-      "name": "Freelance / Upwork",
-      "family": "freelance",
-      "status": "ok",
-      "hits": 7,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language": 2, "inactive": 0, "duplicate": 0, "location": 1, "skill": 3, "ranking": 5},
-      "note": "Fresh worldwide WordPress/WooCommerce/VA jobs checked. Visible examples included 15 USD fixed Elementor/PHP, 10 USD fixed Expert plugin maintenance, 70 USD Expert WooCommerce build, 30 USD for 120 AI WordPress articles, and English/cold-call or country-restricted VA work. No promotion."
-    },
-    {
-      "name": "Reddit / public WordPress communities",
-      "family": "communities",
-      "status": "limited",
-      "hits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 3},
-      "note": "Public r/wordpressjobs index was genuinely searched. Fresh visible posts were FOR HIRE provider advertisements rather than employers/clients hiring. 0 verified suitable hiring hits."
-    },
-    {
-      "name": "Facebook public groups/index",
-      "family": "facebook",
-      "status": "limited",
-      "hits": 0,
-      "verifiedHits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "WordPress Slovensko, WooCommerce SK/CZ and Bratislava jobs-group public indexing was searched. No concrete publicly verifiable hiring post with a direct link was returned: 0 verified hits. Authenticated Nexus/local-agent ingestion remains backlog only and was not started."
-    }
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"ranking":0},"note":"Bratislava WordPress/e-shop/support discovery genuinely searched in this run; no new concrete promotion-grade canonical hit surfaced."},
+    {"name":"Direct company careers","family":"company-careers","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"ranking":0},"note":"Direct-company career discovery genuinely searched for Bratislava/Slovakia support and e-commerce/admin roles; no new canonical promotion-grade direct-company delta surfaced."},
+    {"name":"LinkedIn Jobs public index","family":"linkedin","status":"ok","hits":2,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":0,"skill":1,"ranking":0},"note":"Eaton Technical Support, Bratislava: entry-level and relevant but explicit English B1-B2. Nexcess Technical Support Engineer: Bratislava/remote from Bratislava, email English acceptable, but required Linux terminal/server/network infrastructure scope is above preferred L1 profile. 0 LIVE promotions."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"ranking":0},"note":"Bratislava administration/technical/e-shop discovery genuinely searched; no new unique suitable result surfaced."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"ranking":0},"note":"Bratislava administrative/support brigades genuinely searched; no new concrete suitable publicly indexed vacancy surfaced."},
+    {"name":"Kariera.sk / Zoznam / ÚPSVR","family":"kariera","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"ranking":0},"note":"Bratislava administration, e-shop, complaints and technical-support discovery genuinely searched; no new unique promotion-grade delta surfaced in the public index."},
+    {"name":"Tech/creative boards","family":"tech-creative","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"ranking":0},"note":"Pretlak, StartupJobs and WordPress-oriented public discovery genuinely queried for BA or Slovakia-eligible remote roles; no new suitable promotion-grade public delta surfaced."},
+    {"name":"Freelance / Upwork","family":"freelance","status":"ok","hits":6,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":0,"skill":2,"ranking":5},"note":"Worldwide WordPress/WooCommerce/VA discovery checked. Visible results included 30 USD for 120 AI WordPress articles, e-commerce VA at 3-5 USD/h with heavy competition, WordPress/Shopify VA with good English plus 6-day schedule, 5 USD/blog formatting, and Expert WooCommerce/Elementor development. No promotion."},
+    {"name":"Reddit / public WordPress communities","family":"communities","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":1,"skill":0,"ranking":4},"note":"Public WordPress-related communities genuinely searched. Fresh visible posts were predominantly FOR HIRE provider advertisements; one hiring post was US-only. 0 verified suitable hiring hits."},
+    {"name":"Facebook public groups/index","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"ranking":0},"note":"WordPress Slovensko, WooCommerce SK/CZ and Bratislava jobs-group public indexing genuinely searched. No concrete publicly verifiable hiring post with a direct link was returned: 0 verified hits. Authenticated Nexus/local-agent ingestion remains backlog only and was not started."}
   ]
 }
