@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 9. 9. 2026 11:45 CEST
+Aktualizované: 9. 9. 2026 12:47 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -74,6 +74,8 @@ Aktualizované: 9. 9. 2026 11:45 CEST
 - Fresh tech/creative rejects 9.9. 10:53: **Stretchfit — Creative Strategist**, Bratislava/remote/hybrid, 2 300–3 000 EUR, ale Mid/Senior creative-strategy scope; **Aukro — Account Manager HU**, remote/hybrid, ale maďarský trh a jazykovo-obchodný burden mimo profilu.
 - Fresh duplicate 9.9. 11:45: **Slovak Telekom — Špecialista/Špecialistka podpory zákazníkov**, Bajkalská 28, Bratislava, sa objavil na Kariera.sk s dátumom 9. 9. 2026. Je to mirror existujúcej LIVE canonical firemnej ponuky, preto sa nový job nevytvoril a stabilné ID ostalo zachované.
 - Fresh freelance rejects 9.9. 11:45: Upwork **Expert WordPress Developer Needed for Custom WooCommerce E-Commerce Website**, 300 USD fixed, Expert/custom PHP+JS scope; a **WooCommerce Developer Needed to Improve Product Page Layout**, 60 USD fixed, development-heavy. Bez LIVE promotion.
+- Fresh direct-company reject 9.9. 12:47: **Alza.sk — HR Specialist pre logistiku**, Bernolákovo, od 1 700 EUR/mes., plný úväzok. Lokalita spĺňa `ba-area`, no canonical detail explicitne vyžaduje dennú komunikáciu v angličtine a tlmočenie zahraničným zamestnancom na úradoch; bez LIVE promotion pre jazykový burden.
+- Fresh Brigada.sk rejects 9.9. 12:47: **Toyota Financial Services Slovakia — Administratívna pomoc na účtovnom oddelení**, Bratislava, 7 EUR/h, je explicitne student-only. **ea1 — Junior účtovník**, Bratislava, povoľuje viac foriem spolupráce, ale vyžaduje študenta alebo ukončenú OA/EU a verejný detail neuvádza numerickú odmenu; bez LIVE promotion.
 
 ## Source audit — 9. 9. 2026 11:45
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam/ÚPSVR, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
@@ -97,6 +99,30 @@ Aktualizované: 9. 9. 2026 11:45 CEST
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
 - `job-sources.json`: aktualizovaný na 11:45.
 - `source-audit.json`: aktualizovaný na 11:45.
+- `jobs-data.json`: bez zmeny; nebol nový promotion-grade unique hit.
+
+## Source audit — 9. 9. 2026 12:47
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam/ÚPSVR, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
+- Profesia: `checked`; 0 nových unique promotion-grade výsledkov.
+- Priame company careers: `ok`; 1 relevantný canonical hit — Alza HR Specialist pre logistiku, Bernolákovo, od 1 700 EUR — vyradený z LIVE pre explicitnú dennú AJ a tlmočenie.
+- LinkedIn Jobs: `ok`; 1 adjacent hit — Wolt Support Associate Part Time; student/shift burden, 0 promotion.
+- Worki: `checked`; 0 nových vhodných konkrétnych hitov.
+- Brigada.sk: `ok`; 2 relevantné BA administratívne hity, 0 promotion: Toyota student-only; ea1 Junior účtovník s qualification ambiguity a chýbajúcou numerickou odmenou.
+- Kariera/Zoznam/ÚPSVR: `ok`; 3 adjacent výsledky, z toho 2 Telekom mirrory existujúceho LIVE direct-company canonicalu a 1 nižší fit Grafton; 0 unique promotion.
+- Pretlak/StartupJobs/WordPress Jobs: `ok`; Stretchfit je Mid/Senior creative mismatch; Elasticr L2 nemá dôkaz remote-from-Slovakia a je vzdialený/L2; WordPress Jobs bez vhodnej delty.
+- Upwork/freelance: `checked`; discovery reálne vykonané, 0 nových verejne overených promotion-grade hitov.
+- Reddit/komunity: `limited`; 0 vhodných konkrétnych hiring leadov.
+- Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog.
+
+### Audit počty 12:47
+- source families checked: **10**
+- nové LIVE promotions: **0**
+- LIVE feed delta: **0**, zostáva **51**
+- Facebook verified hits: **0**
+- LIVE mix: Profesia **49,0 %**, non-Profesia **51,0 %**
+- zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
+- `job-sources.json`: aktualizovaný na 12:47; pridaný samostatný registry entry pre Alza.sk Kariéra.
+- `source-audit.json`: aktualizovaný na 12:47.
 - `jobs-data.json`: bez zmeny; nebol nový promotion-grade unique hit.
 
 ## Rozvojový backlog
@@ -271,3 +297,5 @@ Aktualizované: 9. 9. 2026 11:45 CEST
 - **Freelance client hire-rate normalization** — pri Upwork/freelance dopytoch kombinovať počet historických hires, aktívnych kontraktov, spend a pomer interview→hire; rozlíšiť reálne najímajúceho klienta od účtu, ktorý síce publikuje veľa jobov, ale má nízku konverziu do platených spoluprác.
 - **Canonical-mirror publication-date conflict resolver** — ak mirror/jobboard zverejní rovnakú pozíciu s novším dátumom než canonical firemná stránka, uložiť mirror dátum iba ako rediscovery/repost signál a nezvyšovať freshness prioritu bez zmeny canonical obsahu.
 - **Search-result-to-LIVE duplicate confidence gate** — pred pridaním kandidáta porovnať normalizovaný title+company+workplace s LIVE feedom a pri pravdepodobnom mirrore vyžadovať nový materiálny fakt; šetrí čas a chráni stabilné ID pred paralelnými záznamami.
+- **Qualification OR-branch evidence resolver** — pri formuláciách typu „študent, prípadne ukončená OA/EU“ rozložiť každú alternatívnu kvalifikačnú vetvu osobitne a kandidáta vyradiť až vtedy, keď zlyhajú všetky prípustné vetvy; zároveň uložiť presný dôkaz, ktorá vetva bola alebo nebola splnená.
+- **Missing-compensation verification hold** — pri inak relevantnej brigáde alebo zákazke, ktorej canonical detail neobsahuje numerickú odmenu, nevytvoriť LIVE promotion iba podľa názvu/útržku; zaradiť ju do krátkej verification queue a vyžiadať/overiť odmenu skôr, než sa minie čas na reakciu.
