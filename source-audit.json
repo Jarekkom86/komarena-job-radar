@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-09T05:21:40+02:00",
+  "updatedAt": "2026-09-09T06:35:10+02:00",
   "runSummary": {
     "familiesChecked": 10,
-    "freshPromoted": 1,
+    "freshPromoted": 0,
     "freshnessWindowHours": 48,
     "liveFeedCount": 51,
     "liveProfesiaCount": 25,
@@ -11,17 +11,17 @@
     "liveProfesiaPct": 49.0,
     "liveNonProfesiaPct": 51.0,
     "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Full diversity sweep on 9.9.2026 05:21 CEST. Techfun Elektro-technický špecialista pre e-shop was canonical-reverified and successfully promoted to jobs-data.json: Bratislava-Petržalka, immediate start, 1 800–2 200 EUR, English A2, Arduino/ESP/Raspberry, product testing, technical support, complaints, manuals/blog/product content. LinkedIn returned Slovakia-eligible Foxelli remote support/sales but low pay and late/USA shifts reduce fit. Brigada.sk surfaced a student-only promoter role and Pretlak a mid/senior creative role, both rejected. Upwork produced several e-commerce/WordPress/Shopify candidates but budgets, English burden, competition or scope prevented promotion. Facebook public index produced 0 verified hiring posts."
+    "note": "Full diversity sweep on 9.9.2026 06:35 CEST. No new promotion-grade unique offer cleared the BA/remote hard gate plus ranking/value gates. Profesia, direct-company careers, LinkedIn public index, Worki, Kariera/Zoznam, Brigada.sk, tech/creative sources, freelance sources, public communities and Facebook public index were genuinely searched. Upwork surfaced fresh WordPress/WooCommerce work, but the newest items were low fixed-price or expert/hard-development scope. Facebook yielded 0 verified hiring posts. Existing LIVE feed remains fail-closed at 51 items."
   },
   "sources": [
     {
       "name": "Profesia",
       "family": "profesia",
-      "status": "ok",
-      "hits": 1,
-      "added": 1,
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Techfun s. r. o. — Elektro-technický špecialista pre e-shop canonical-reverified and promoted: Kopčianska 92A Bratislava-Petržalka, 1 800–2 200 EUR, immediate start, English A2, Arduino/ESP/Raspberry, support, testing, reklamácie and content. locationEligibility=ba-area."
+      "note": "Bratislava/okolie WordPress, e-shop, administration and technical-support discovery genuinely searched; no new unique promotion-grade delta beyond already-LIVE Techfun."
     },
     {
       "name": "Priame firemné career stránky",
@@ -30,16 +30,16 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Direct company-career discovery genuinely checked; no new canonical promotion-grade delta in this run. Existing known Telekom/Hilti/Penta roles were not counted as new hits."
+      "note": "Direct company-career discovery genuinely searched for Bratislava technical/customer support and related roles; no new canonical promotion-grade delta."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
       "status": "limited",
-      "hits": 2,
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "ranking": 2},
-      "note": "Public LinkedIn index genuinely searched. Foxelli Customer Support / Crochet Support roles are 100% remote and Slovakia-eligible, but low compensation, phone/sales scope and late/USA-shift availability reduce ranking; one is a rediscovery. Coverage remains limited by public indexing."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Public LinkedIn index genuinely searched for Bratislava WordPress/WooCommerce/technical-support roles. No new publicly verifiable suitable hit; public-index coverage remains limited."
     },
     {
       "name": "Worki.sk",
@@ -48,7 +48,7 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Bratislava e-shop/admin/support discovery genuinely checked; no new active unique promotion-grade delta."
+      "note": "Bratislava e-shop/admin/support/driver/logistics discovery genuinely searched; no new active unique promotion-grade delta."
     },
     {
       "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
@@ -57,34 +57,34 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Bratislava administration/e-shop/technical-support discovery genuinely checked; no new publicly verifiable unique promotion-grade delta."
+      "note": "Bratislava e-shop/admin/technical-support discovery genuinely searched; no new publicly verifiable unique promotion-grade delta."
     },
     {
       "name": "Brigada.sk",
       "family": "brigada-sk",
-      "status": "ok",
-      "hits": 1,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 1, "eligibility": 1},
-      "note": "Bratislava brigades genuinely searched. Alpha Turbo promoter role was visible but student-only / age-targeted and therefore not eligible for the active feed."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Bratislava administration/warehouse/driver brigades genuinely searched; no new suitable publicly verifiable hit."
     },
     {
       "name": "Pretlak / StartupJobs / WordPress Jobs",
       "family": "tech-creative",
-      "status": "ok",
-      "hits": 1,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 1},
-      "note": "Pretlak, StartupJobs and WordPress-oriented discovery genuinely searched. Stretchfit Creative Strategist was visible at 2 300–3 000 EUR but Mid/Senior creative-advertising scope is outside the target profile. No suitable remote-ok/BA non-hard-dev promotion."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Pretlak, StartupJobs and WordPress-oriented discovery genuinely searched for BA/remote non-hard-dev work; no new suitable promotion-grade result."
     },
     {
       "name": "Upwork / freelance",
       "family": "freelance",
       "status": "ok",
-      "hits": 9,
+      "hits": 5,
       "added": 0,
-      "rejected": {"language": 4, "inactive": 0, "duplicate": 0, "location": 0, "skill": 3, "budget": 6, "ranking": 7, "competition": 3},
-      "note": "Worldwide WordPress/WooCommerce/Shopify/e-commerce VA discovery genuinely executed. Results included a fresh Online Store Assistant with WooCommerce as a plus but no visible compensation and 50+ proposals, multiple 3–8 USD/h VA roles, 7/10/100 USD fixed-price jobs, and broader Shopify/content roles with stronger English/tool burdens. None cleared value + competition + skill gates."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 3, "budget": 5, "ranking": 5, "competition": 3},
+      "note": "Worldwide WordPress/WooCommerce/VA discovery genuinely executed. Fresh examples included WordPress Plugin Update & Maintenance Expert at 10 USD fixed (expert/hard-skill), WooCommerce Website Creation at 70 USD fixed (expert scope), AI Blog Post VA at 30 USD for 120 articles, and low-value WordPress/WooCommerce fixed-price development. None cleared value + skill + competition gates."
     },
     {
       "name": "Reddit / WordPress / WooCommerce komunity",
@@ -93,7 +93,7 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1, "ranking": 0},
-      "note": "Publicly indexed communities genuinely searched. Visible fresher WordPress results were FOR HIRE provider posts or hiring restricted to another jurisdiction / hard-development. 0 verified suitable hiring hits."
+      "note": "Publicly indexed communities genuinely searched. Visible fresh WordPress results were FOR HIRE provider posts; a hiring post was US-only and hard-development. 0 verified suitable hiring hits."
     },
     {
       "name": "Facebook verejný index",
