@@ -1,109 +1,66 @@
 {
-  "schemaVersion": 2,
-  "updatedAt": "2026-09-09T07:03:40+02:00",
+  "schemaVersion": 3,
+  "updatedAt": "2026-09-09T08:10:00+02:00",
   "runSummary": {
-    "familiesChecked": 10,
-    "freshPromoted": 0,
+    "familiesChecked": 5,
+    "freshPromoted": 1,
+    "existingReverified": 2,
     "freshnessWindowHours": 48,
-    "liveFeedCount": 51,
-    "liveProfesiaCount": 25,
-    "liveNonProfesiaCount": 26,
-    "liveProfesiaPct": 49.0,
-    "liveNonProfesiaPct": 51.0,
-    "stalePolicy": "Existing active items are fail-closed and are not removed merely because a new sweep does not rediscover them.",
-    "note": "Full diversity sweep on 9.9.2026 07:03 CEST. No new promotion-grade unique offer cleared the BA/remote hard gate plus ranking/value gates. Profesia, direct-company careers, LinkedIn public index, Worki, Kariera/Zoznam, Brigada.sk, tech/creative sources, freelance sources, public communities and Facebook public index were genuinely searched. ČSOB IT Service Desk was freshly resurfaced on LinkedIn but is already LIVE under the canonical Profesia ID, so it was treated as a duplicate enrichment rather than a new item. StartupJobs surfaced Elasticr L2 support in Havlíčkův Brod, but the listing does not prove Slovakia-home remote eligibility and is technically above preferred scope. Upwork produced fresh worldwide WordPress/VA jobs, but they were low fixed-price, expert/hard-development, strong-English, country-restricted or high-competition. Facebook yielded 0 verified hiring posts. Existing LIVE feed remains fail-closed at 51 items."
+    "contentChangedAt": "2026-09-09T08:10:00+02:00",
+    "sourceVerificationAt": "2026-09-09T08:10:00+02:00",
+    "stalePolicy": "LIVE eligibility requires a real verifiedAt within 48 hours. Source-audit age and content-change age are tracked separately; touching a file timestamp is not verification.",
+    "note": "Focused 9.9.2026 morning follow-up after the earlier diversity sweep. Public Profesia/Kariera results were searched again for Bratislava/BA-region customer support, administration, technical support, Senec logistics/admin and suitable remote roles. IKEA contact-center popredajný servis was newly promoted after direct public-detail verification. Slovak Telekom B2B back office and finby reception/admin were directly reopened and reverified. Bookio was rejected for English B2; DHL 4h transport admin for English B1; SuperFaktura remains language-risk/needs confirmation rather than high-confidence promotion."
   },
   "sources": [
     {
-      "name": "Profesia",
+      "name": "Profesia – Bratislava customer support/admin",
       "family": "profesia",
       "status": "ok",
-      "hits": 1,
-      "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Bratislava/okolie WordPress, e-shop, administration and technical-support discovery genuinely searched. ČSOB IT Service Desk remained publicly active but is already present in LIVE as profesia-csob-it-service-desk-5350972; no new unique promotion-grade delta."
+      "hits": 8,
+      "added": 1,
+      "reverified": 1,
+      "rejected": {"language": 3, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 3},
+      "note": "Real search on 9.9.2026. Newly promoted IKEA contact-center popredajný servis (ID 5354960): Bratislava, partial home office, 1260 EUR+, no required English, no prior experience required. finby reception/admin (ID 5354572) was directly reopened and remains active with immediate start and no language requirement. Bookio was discovered fresh but requires English B2, therefore excluded."
     },
     {
-      "name": "Priame firemné career stránky",
-      "family": "company-careers",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Direct company-career discovery genuinely searched for Bratislava technical/customer support and e-commerce/admin roles; no new canonical promotion-grade delta."
-    },
-    {
-      "name": "LinkedIn Jobs",
-      "family": "linkedin",
+      "name": "Kariera.sk / company mirror",
+      "family": "kariera",
       "status": "ok",
+      "hits": 3,
+      "added": 0,
+      "reverified": 1,
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "ranking": 1},
+      "note": "Slovak Telekom B2B back-office support was directly reopened on 9.9.2026 and remains active at Bajkalská 28, 1300 EUR + 23% VZM, full-time, home office possible by manager agreement, without a foreign-language hard gate. Other surfaced customer-support roles with German or other language requirements were rejected."
+    },
+    {
+      "name": "Profesia – Senec / logistics administration",
+      "family": "profesia-senec",
+      "status": "ok",
+      "hits": 3,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 1, "ranking": 0},
+      "note": "DHL 4-hour transport administration is unusually relevant for scanning/archive/admin work, but the current public detail explicitly requires English B1, so it was not promoted. NAY warehouse roles remain physically heavier; existing NAY complaint-technician record was not timestamp-touched without a fresh direct-detail recheck."
+    },
+    {
+      "name": "Public job mirrors / aggregators",
+      "family": "aggregators",
+      "status": "checked",
       "hits": 2,
       "added": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "ranking": 1},
-      "note": "Public LinkedIn index genuinely searched. ČSOB IT Service Desk resurfaced as a very fresh LinkedIn company post but duplicates the canonical LIVE Profesia item. Wolt Support Associate Bratislava was also visible but requires English B2 and student/shift availability, so no promotion."
+      "reverified": 0,
+      "rejected": {"language": 2, "inactive": 0, "duplicate": 2, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Práca za rohom/public mirrors were used only to inspect requirement detail where Profesia search surfaced a title. SuperFaktura support shows occasional English and an aggregated 'mierne pokročilá' language classification; Bookio clearly states minimum B2. Aggregator evidence is not used to override a stronger canonical source."
     },
     {
-      "name": "Worki.sk",
-      "family": "worki",
-      "status": "ok",
+      "name": "LinkedIn public index",
+      "family": "linkedin",
+      "status": "checked",
       "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Bratislava admin/support/driver/logistics discovery genuinely searched. HEATING PRO technical warehouse/driver role resurfaced and is already LIVE; no new unique promotion-grade delta."
-    },
-    {
-      "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
-      "family": "kariera",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Bratislava e-shop/admin/technical-support discovery genuinely searched; no new publicly verifiable unique promotion-grade delta."
-    },
-    {
-      "name": "Brigada.sk",
-      "family": "brigada-sk",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Bratislava administration/e-shop/support/driver brigades genuinely searched; no new suitable publicly verifiable hit."
-    },
-    {
-      "name": "Pretlak / StartupJobs / WordPress Jobs",
-      "family": "tech-creative",
-      "status": "ok",
-      "hits": 1,
-      "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1, "ranking": 1},
-      "note": "Tech/creative discovery genuinely searched. StartupJobs surfaced Elasticr IT Support Specialist L2, 42–52k CZK, Havlíčkův Brod with Remote/On-site/Hybrid label. Because the public detail does not prove that the role can be performed predominantly from Slovakia without regular Czech commuting, locationEligibility is unknown/reject for active promotion; L2 incident-analysis scope is also above preferred level."
-    },
-    {
-      "name": "Upwork / freelance",
-      "family": "freelance",
-      "status": "ok",
-      "hits": 5,
-      "added": 0,
-      "rejected": {"language": 2, "inactive": 0, "duplicate": 0, "location": 1, "skill": 3, "budget": 4, "ranking": 5, "competition": 3},
-      "note": "Worldwide WordPress/WooCommerce/VA discovery genuinely executed. Fresh WordPress Plugin Update & Maintenance Expert was 10 USD fixed and Expert; AI Blog Post VA was 30 USD for 120 articles; WordPress/WooCommerce developer jobs were very low fixed-price/hard-development; VA jobs were Spanish/USA-restricted or required excellent English/cold calling. None cleared value + skill + language + location gates."
-    },
-    {
-      "name": "Reddit / WordPress / WooCommerce komunity",
-      "family": "community",
-      "status": "limited",
-      "hits": 0,
-      "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 0},
-      "note": "Publicly indexed communities genuinely searched. Fresh visible WordPress/WooCommerce posts were FOR HIRE provider advertisements rather than hiring demand; 0 verified suitable hiring hits."
-    },
-    {
-      "name": "Facebook verejný index",
-      "family": "facebook",
-      "status": "limited",
-      "hits": 0,
-      "verifiedHits": 0,
-      "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "WordPress Slovensko, WooCommerce Komunita SK+CZ and Bratislava job/brigade public-index discovery genuinely searched. No concrete publicly verifiable hiring post with a direct link; 0 verified hits. Authenticated Nexus/local ingestion remains backlog and was not started automatically."
+      "reverified": 0,
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "ranking": 0},
+      "note": "DHL Transport Billing Clerk public post mirrored the same Senec 4h administrative role and confirmed the B1 English requirement; treated as duplicate corroboration, not a new job."
     }
   ]
 }
