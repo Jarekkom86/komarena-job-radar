@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-09T01:12:12+02:00",
+  "updatedAt": "2026-09-09T02:23:35+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
@@ -11,53 +11,53 @@
     "liveProfesiaPct": 48.0,
     "liveNonProfesiaPct": 52.0,
     "stalePolicy": "Only offers verified within the last 48 hours are eligible for LIVE display.",
-    "note": "Full diversity sweep on 9.9.2026 01:12 CEST. No new unique promotion-grade item passed ranking, locality, language, skill and economic-value gates, so the 50-item LIVE feed is preserved fail-closed. Fresh Upwork public-index hits included a Worldwide WordPress plugin maintenance task posted about 1 hour before discovery, but it is expert-level and only 10 USD fixed; other fresh VA/e-commerce hits were rejected for USA-only/Spanish eligibility, excellent English plus cold calling, extreme schedule burden, low fixed-price economics or hard-development scope. Direct-company discovery found Webikon remote web development, but the role requires a modern PHP stack and is senior/hard-development. Reddit public hiring remains US-only/stale hard-dev. Facebook public index produced 0 verified hiring posts."
+    "note": "Full diversity sweep on 9.9.2026 02:23 CEST. A strong new Worki candidate (RM Biznis servis — manažer servisu klientov, Bratislava/mostly online, 10–15 EUR/h, no experience requirement, no foreign-language requirement) passed locality and ranking discovery gates but was not persisted to jobs-data.json because the connector exposes the large feed only through full-file replacement and a lossless reconstruction was not completed in this run. Existing 50-item LIVE feed was preserved fail-closed. Facebook public index produced 0 verified hiring posts."
   },
   "sources": [
     {
       "name": "Profesia",
       "family": "profesia",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Reálne vyhľadané 9.9.2026 01:12 pre BA/okolie a remote prioritné tracky; tento sweep nepriniesol nový unique promotion-grade canonical hit nad existujúci verification/LIVE inventár."
-    },
-    {
-      "name": "Priame firemné career stránky",
-      "family": "company-careers",
       "status": "ok",
       "hits": 1,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 0},
-      "note": "Direct-company discovery reálne preverené. Webikon ponúka Remote web developer 2 500–3 500 EUR na faktúru, ale ide o senior/hard-development rolu s moderným PHP stackom, frontend templatingom a testami; reject skill podľa profilu."
+      "note": "Reálne vyhľadané 9.9.2026 02:23 pre BA/okolie a remote prioritné tracky. Tatra Supercompute IT Service Desk pre AI dátové centrum je lokálne relevantný, ale technickejší scope vyžaduje ďalšie skill overenie; bez LIVE promotion."
+    },
+    {
+      "name": "Priame firemné career stránky",
+      "family": "company-careers",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Priame firemné careers boli reálne prehľadané pre BA/remote IT support, e-commerce a administratívu; bez novej konkrétnej promotion-grade unique ponuky."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
       "status": "limited",
-      "hits": 0,
+      "hits": 2,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
-      "note": "Verejný LinkedIn index bol reálne vyhľadaný pre Bratislava/remote support, e-commerce a WordPress; v tomto sweep-e sa nepotvrdil nový konkrétny promotion-grade unique hit. Coverage zostáva limited kvôli verejnej indexácii."
+      "rejected": {"language": 2, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 0},
+      "note": "Verejný LinkedIn index bol reálne vyhľadaný. Marlink Support Engineer vyžaduje AJ B2 a networking/telecom background; CPM customer-service výsledky vyžadujú ďalšie cudzie jazyky. Coverage limited verejnou indexáciou."
     },
     {
       "name": "Worki.sk",
       "family": "worki",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 2,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne vyhľadané BA/remote e-shop, administratíva, technická podpora, vodič a sklad; bez nového vhodného unique hitu."
+      "rejected": {"language": 0, "inactive": 1, "duplicate": 0, "location": 0, "skill": 0, "ranking": 0},
+      "note": "Nový silný kandidát RM Biznis servis — manažer servisu klientov, Bratislava, väčšina práce online, občasná prítomnosť v BA, 10–15 EUR/h, pružný čas, bez praxe a bez cudzieho jazyka. locationEligibility=ba-area. Shield-Sk e-shop admin je canonical inactive. Kandidát RM Biznis servis nebol zapísaný do LIVE pre persistence debt, nie pre ranking gate."
     },
     {
       "name": "Kariera.sk / Zoznam / ÚPSVR mirror",
       "family": "kariera",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne vyhľadané Bratislava/okolie e-shop, administratíva, technická podpora a logistika; bez novej canonical promotion-grade delty."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "ranking": 0},
+      "note": "Analytik zákazníckych sťažností, Bratislava, 2 000 EUR: L1 technická podpora a HO po zaškolení, ale explicitná AJ B1, VŠ I. stupňa v technickom odbore a prax na podobnej pozícii; bez promotion."
     },
     {
       "name": "Brigada.sk",
@@ -66,7 +66,7 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Reálne vyhľadané Bratislava administratívne, e-shop, support, vodičské a skladové brigády; bez nového vhodného verejne overiteľného unique hitu."
+      "note": "Reálne vyhľadané Bratislava administratíva, e-shop, support, vodič a sklad; bez nového verejne overiteľného vhodného hitu."
     },
     {
       "name": "Pretlak / StartupJobs / WordPress Jobs",
@@ -75,7 +75,7 @@
       "hits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "Pretlak, StartupJobs a WordPress Jobs boli reálne vyhľadané pre WordPress/WooCommerce/content/support a remote; bez novej overiteľnej non-hard-dev promotion-grade delty."
+      "note": "Pretlak, StartupJobs a WordPress Jobs boli reálne vyhľadané pre WordPress/WooCommerce/content/support a remote; bez novej non-hard-dev promotion-grade delty."
     },
     {
       "name": "Upwork / freelance",
@@ -83,17 +83,17 @@
       "status": "ok",
       "hits": 7,
       "added": 0,
-      "rejected": {"language": 2, "inactive": 0, "duplicate": 1, "location": 2, "skill": 2, "budget": 5, "ranking": 1},
-      "note": "Fresh public discovery reálne vykonané. WordPress Plugin Update & Maintenance Expert: Worldwide, posted ~1h, ale expert scope a 10 USD fixed = reject skill/budget. WooCommerce Website Creation 70 USD fixed = hard-dev + low budget. Full-Time VA Operations 600 USD fixed vyžaduje 12 h/deň, 6 dní/týždeň a strong written English. Website-sales VA vyžaduje excellent spoken/written English + denný cold calling v US hours. USA-only a Spanish-only VA hity reject eligibility/location. AI Blog Post VA 30 USD/120 článkov je už evidovaný verification low-pay hit, nie nový unique promotion."
+      "rejected": {"language": 2, "inactive": 0, "duplicate": 1, "location": 0, "skill": 1, "budget": 5, "ranking": 1},
+      "note": "Worldwide WooCommerce/WordPress discovery reálne vykonané. Fresh WordPress product-image upload je 10–20 USD/h, ale už 50+ proposals. WooCommerce 50 products je 50 USD fixed; AI blog VA 30 USD/120 článkov a ďalšie VA listingy majú nízky budget alebo vysokú konkurenciu. Bez promotion."
     },
     {
       "name": "Reddit / WordPress / WooCommerce komunity",
       "family": "community",
       "status": "limited",
-      "hits": 1,
+      "hits": 0,
       "added": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1},
-      "note": "Verejne indexované komunity reálne vyhľadané. Konkrétny r/wordpressjobs hiring výsledok je US-only, starší a hard-dev (PHP/JS/API); reject-distance + skill. Iné čerstvé výsledky boli for-hire ponuky, nie hiring dopyty."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
+      "note": "Verejne indexované komunity boli reálne vyhľadané. Čerstvé výsledky boli for-hire ponuky dodávateľov, nie konkrétne hiring dopyty; 0 verified hiring hits."
     },
     {
       "name": "Facebook verejný index",
@@ -103,7 +103,7 @@
       "verifiedHits": 0,
       "added": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0},
-      "note": "WordPress Slovensko, WooCommerce Komunita SK+CZ a Bratislava job/brigáda skupiny boli verejne vyhľadané. Žiadny konkrétny verejne overiteľný hiring post s priamym linkom; 0 verified hits. Autentizovaný Nexus/local ingestion ostáva backlog."
+      "note": "WordPress Slovensko, WooCommerce Komunita SK+CZ a Bratislava job/brigáda verejný index boli reálne vyhľadané. Žiadny konkrétny verejne overiteľný hiring post s priamym linkom; 0 verified hits. Autentizovaný Nexus/local ingestion ostáva backlog."
     }
   ]
 }
