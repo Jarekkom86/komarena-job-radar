@@ -1,0 +1,29 @@
+{
+  "policyVersion": 1,
+  "name": "compensation-comparability",
+  "purpose": "Normalize compensation evidence for prioritization without inventing net pay or overwriting source data.",
+  "hardPrerequisite": {
+    "locationEligibility": ["ba-area", "remote-ok"],
+    "unknownOrRejectedLocationMayNotBeRanked": true
+  },
+  "preserve": ["stableId", "canonicalUrl", "sourceTrust", "verifiedAt", "scoreConfidence", "locationEligibility", "locationReason", "crm", "userEdits", "rawCompensation"],
+  "rules": {
+    "keepRawSourceCompensationImmutable": true,
+    "normalizedDimensions": ["amountMin", "amountMax", "currency", "period", "employmentType", "hoursPerWeek", "variableComponent", "expenseBurden", "confidence"],
+    "allowedPeriods": ["hour", "day", "month", "project"],
+    "employmentTypes": ["TPP", "dohoda", "SZCO", "freelance", "unknown"],
+    "doNotInferNetFromGross": true,
+    "doNotInferHoursWhenMissing": true,
+    "variablePayMustRemainSeparateUnlessGuaranteed": true,
+    "projectFeeWithoutReliableHours": "not-comparable",
+    "missingCriticalCompensationEvidence": "unknown",
+    "ranking": {
+      "compareOnlyWhenConfidenceAtLeast": 0.75,
+      "unknownCompensationCannotOutrankKnownCompensationOnPayAlone": true,
+      "compensationNeverOverridesLocationGate": true,
+      "preferRangeFloorForConservativeComparison": true
+    }
+  },
+  "failClosed": true,
+  "uiChanges": false
+}
