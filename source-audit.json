@@ -1,38 +1,48 @@
 {
   "schemaVersion": 4,
-  "updatedAt": "2026-09-10T08:56:00+02:00",
+  "updatedAt": "2026-09-10T09:11:47+02:00",
   "runSummary": {
-    "familiesChecked": 8,
-    "freshPromoted": 2,
-    "existingReverified": 4,
-    "existingReverifiedEligible": 3,
-    "existingQuarantined": 1,
+    "familiesChecked": 11,
+    "freshPromoted": 0,
+    "existingReverified": 2,
+    "existingReverifiedEligible": 2,
+    "existingQuarantined": 0,
     "freshnessWindowHours": 48,
     "contentChangedAt": "2026-09-10T08:56:00+02:00",
-    "sourceVerificationAt": "2026-09-10T08:56:00+02:00",
+    "sourceVerificationAt": "2026-09-10T09:11:47+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing records keep their own verifiedAt unless their public detail was actually reopened or otherwise reconfirmed.",
-    "note": "Real morning sweep on 10.9.2026 across Profesia, direct/company/Kariera sources, Worki, Brigada.sk, public LinkedIn/tech-creative discovery, Upwork and public communities. Two new active high-confidence eligible roles were promoted through a dated delta: SUPTel dispatcher administration and FINAL-CD OPEL service assistant. IKEA contact-centre aftersales, Slovak Telekom B2B support and finby admin were directly reopened and reverified. INDEX NOSLUS archive was also reopened but is now deliberately quarantined because the current detail explicitly requires physical fitness and includes pallet/loading work. Grafton complaint analyst was not promoted because the current detail requires English B1 plus technical degree/experience. No timestamp-only freshness was used."
+    "note": "Fresh 10.9.2026 09:11 sweep genuinely searched Profesia, direct company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera.sk/Praca za rohom, Pretlak, StartupJobs, Upwork, Reddit/public WordPress communities and public Facebook indexing. No new unique promotion-grade hit was found. SUPTel dispatcher administration was re-opened and remains a strong BA-area match but was already promoted by the immediately preceding morning run, so it was not duplicated. Slovak Telekom customer support was directly re-opened and remains eligible. Danucem/Premac process administrator was reviewed but its selection deadline was 6.9.2026, so it was not promoted. Facebook produced 0 concrete publicly verifiable hiring posts; coverage remains limited."
   },
   "sources": [
     {
       "name": "Profesia",
       "family": "profesia",
       "status": "ok",
-      "hits": 8,
-      "added": 2,
-      "reverified": 3,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 1, "physical": 1, "ranking": 2},
-      "note": "Current Bratislava admin/customer-support/service/technical listings were genuinely searched and selected details were opened. Added SUPTel Administrativny pracovnik/pracovnicka dispecingu and FINAL-CD OPEL service assistant. Reverified IKEA, finby and INDEX. INDEX is now quarantined for explicit physical-fitness/pallet/loading duties; Grafton complaint analyst was rejected for B1 English plus technical-degree/experience requirements."
+      "hits": 1,
+      "added": 0,
+      "reverified": 1,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Bratislava admin/support discovery was genuinely searched. SUPTel dispatcher administration remains a strong eligible hit, but it had already been promoted in the immediately preceding morning run; no duplicate record was created."
     },
     {
-      "name": "Kariera.sk / direct company offers",
+      "name": "Direct company careers",
       "family": "company-careers",
       "status": "ok",
       "hits": 2,
       "added": 0,
       "reverified": 1,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Slovak Telekom B2B customer-support/back-office offer was directly reopened and remains active; no foreign-language hard gate is shown. It was reverified, not re-added as a duplicate."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 1, "skill": 1, "physical": 0, "ranking": 0},
+      "note": "Slovak Telekom direct careers were genuinely searched. Existing Bratislava customer-support role remains eligible and was re-opened. Junior DevOps/cloud roles were rejected as hard-development/skill mismatch; Nitra B2B network role is outside the BA-area hard gate."
+    },
+    {
+      "name": "LinkedIn Jobs",
+      "family": "linkedin",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Public LinkedIn discovery for Bratislava/Slovakia WordPress, e-commerce, support and admin roles returned no new directly verifiable promotion-grade unique result."
     },
     {
       "name": "Worki.sk",
@@ -42,37 +52,47 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Bratislava and remote admin/support/technical/e-commerce discovery was checked; no new promotion-grade unique result stronger than the current feed was verified."
+      "note": "Bratislava admin/support/technical/driver discovery genuinely searched; no new unique promotion-grade candidate was verified."
     },
     {
       "name": "Brigada.sk",
       "family": "brigada",
-      "status": "checked",
-      "hits": 2,
+      "status": "ok",
+      "hits": 3,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 2},
-      "note": "Current Bratislava brigade listings were searched. Visible results were weaker for the target profile, including student/promoter-style work or less suitable conditions, so none were promoted."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 1, "ranking": 2},
+      "note": "Current Bratislava listings were genuinely searched. Reception requires communicative English; manipulative stage work is physically demanding; other visible roles were weak ranking fits. None was promoted."
     },
     {
-      "name": "LinkedIn Jobs / public tech-creative discovery",
-      "family": "linkedin-tech",
+      "name": "Kariera.sk / Praca za rohom",
+      "family": "sk-jobboards",
+      "status": "ok",
+      "hits": 4,
+      "added": 0,
+      "reverified": 1,
+      "rejected": {"language": 1, "inactive": 1, "duplicate": 1, "location": 0, "skill": 1, "physical": 0, "ranking": 0},
+      "note": "SUPTel was re-opened on Praca za rohom and remains eligible but already promoted. Grafton complaint analyst requires English B1 plus technical degree/experience. Danucem/Premac process administrator is a good profile fit but its stated selection deadline was 6.9.2026, so it was not promoted."
+    },
+    {
+      "name": "Pretlak / StartupJobs",
+      "family": "tech-creative",
       "status": "checked",
       "hits": 0,
       "added": 0,
       "reverified": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Public Bratislava/Slovakia WordPress, e-commerce, support and technical discovery returned no new directly verifiable promotion-grade role for this sweep."
+      "note": "Tech/creative discovery was genuinely searched. Indexed Pretlak results were freelancer profiles rather than concrete client vacancies; StartupJobs returned no new Slovakia-home eligible non-hard-dev hit."
     },
     {
       "name": "Upwork",
       "family": "freelance",
-      "status": "ok",
-      "hits": 2,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "physical": 0, "ranking": 2},
-      "note": "Current WordPress/WooCommerce results were checked. Visible offers included a very low-value bulk-content task and a more development-heavy WooCommerce job; neither met the promotion threshold."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Worldwide WooCommerce/WordPress/VA discovery genuinely searched; no fresh public result cleared the promotion threshold in this run."
     },
     {
       "name": "Reddit / public WordPress communities",
@@ -82,7 +102,7 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Public community discovery mostly surfaced FOR HIRE provider posts rather than current concrete client demand, so no item was promoted."
+      "note": "Public community discovery was genuinely searched; no current concrete client demand suitable for active feed was verified."
     },
     {
       "name": "Facebook public groups/index",
@@ -93,7 +113,17 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "No concrete publicly verifiable hiring post with a direct accessible link was returned in this sweep. Public-index coverage remains limited and is not treated as verified LIVE evidence."
+      "note": "0 verified hits. No concrete publicly accessible hiring post with a direct verifiable link surfaced. Public-index coverage remains partial; authenticated Nexus/local ingestion remains backlog only and was not started."
+    },
+    {
+      "name": "Služby zamestnanosti / Slovak public-job discovery",
+      "family": "government-public",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Public Slovak job discovery was included in the sweep; no new unique promotion-grade BA-area or verified Slovakia-home remote result surfaced."
     }
   ]
 }
