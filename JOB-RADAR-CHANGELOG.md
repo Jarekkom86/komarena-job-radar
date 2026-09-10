@@ -1,5 +1,51 @@
 # KomArena Job Radar — CHANGELOG
 
+## 2026-09-10 — real source refresh + promotion reliability hardening
+
+### 1. Reálny ranný source audit + promotion-grade delta
+- Reálne prehľadané zdroje pre Bratislavu/BA okolie a vhodné remote roly: Profesia, priame firemné/Kariera ponuky, Worki, Brigada.sk, verejný LinkedIn/tech discovery, Upwork a verejné komunity.
+- Nové promotion-grade LIVE položky boli pridané iba po otvorení aktívneho detailu: `Administratívny pracovník/pracovníčka dispečingu` — SUPTel (Bratislava, občasný home office, TPP/skrátený úväzok, 1 250 € + 13. plat, nástup ihneď, bez cudzojazyčného hard gate) a `Asistent/ka autorizovaného servisu OPEL` — FINAL-CD plus (Ružinov, od 1 400 €, servisná administratíva, zákaznícka komunikácia, fakturácia).
+- IKEA kontaktné centrum, Slovak Telekom B2B support a finby administratíva boli priamo znovu otvorené a re-verifikované; ich nový `verifiedAt` vznikol iba na základe skutočnej kontroly detailu.
+- INDEX NOSLUŠ archív bol takisto znovu otvorený, ale po zistení explicitnej fyzickej zdatnosti, práce s paletami a asistencie pri nakládke/vykládke bol nastavený `promotionEligible=false` a karantenizovaný.
+- Grafton complaint analyst nebol promovaný: aktuálny detail vyžaduje B1 angličtinu plus technické vzdelanie/prax.
+
+### 2. Dátové delty bez deštruktívneho prepisu hlavného feedu
+- Pridaný `jobs-fresh-delta-20260910.json`, takže nový overený obsah možno bezpečne doplniť bez nutnosti rekonštruovať a prepisovať celý 65 kB `jobs-data.json`.
+- `job-radar-feed-merge-v1.js` teraz načítava základné feedy aj dátované fresh delty a deduplikuje ich podľa URL a firma+názov.
+- Pri konflikte vyhrá novšie reálne `verifiedAt`; pri rovnosti následne vyššia `scoreConfidence` a až potom autorita zdroja.
+
+### 3. High-confidence + link-check promotion gate
+- Promotion položka s `promotionEligible=true` a `scoreConfidence < 80` sa už nedostane do LIVE.
+- Promotion položka bez `linkStatus` alebo bez `linkCheckedAt` sa karantenizuje ako `link-unverified`.
+- Link-check starší než 48 hodín sa karantenizuje ako `link-stale`; známe 404/410/inactive/expired ostávajú fail-closed.
+- Health diagnostika teraz samostatne počíta `low-confidence`, `link-unverified` a `link-stale` dôvody karantény.
+
+### 4. Pravdivá trojitá čerstvosť v source health
+- `job-radar-source-layer-v1.js` už nezobrazuje iba vek obsahu a auditu. Samostatne sleduje `LIVE obsah`, `ponuky overené` a `zdroje`.
+- Chýbajúce alebo viac než 48 h staré overenie LIVE ponúk vyvolá warning nezávisle od času zápisu feed súboru.
+- Source health preberá aj nové quarantine signály z feedu, takže nedostatočne overené promotion položky nie sú skryté za zeleným stavom.
+
+### 5. Dôkazový source audit
+- `source-audit.json` bol obnovený na základe reálneho sweepu z 10.9.2026 08:56, nie iba zmenou timestampu.
+- Audit eviduje `freshPromoted=2`, `existingReverified=4`, z toho 3 naďalej eligible a 1 vedome karantenizovanú.
+- Verejné Facebook/community výsledky bez konkrétneho prístupného hiring detailu ostávajú `limited/checked`, nie „overené“.
+
+### Kontroly / regresia
+- Finálny `job-radar-feed-merge-v1.js` bol po zápise znovu načítaný; počas implementácie zachytená strict-mode deklarácia `deltas` bola opravená pred dokončením. Finálny blob SHA: `12e6d42c641a2407d0080b8f2edd13af87539ae1`.
+- `job-radar-source-layer-v1.js` bol po zápise znovu načítaný; finálny blob SHA: `a62c410e7be33b63d63efa3f2d48797f73147b8d`.
+- `jobs-fresh-delta-20260910.json` je uložený ako samostatná dátová vrstva; `source-audit.json` bol následne obnovený reálnym výsledkom auditu.
+- CRM/localStorage kľúče, stav používateľa, poznámky a existujúce dátové rozhranie `jobs` neboli zmenené. Fallback live → cache → baseline zostal zachovaný.
+- Zamknuté vizuálne súbory neboli editované.
+
+### MASTER DESIGN LOCK — overenie hashov
+- `komarena-job-radar-v6.5.html`: `18fd009f1f9f041a207b067c5dcc0661f1647199` — zhodný s lockom.
+- `job-radar-v6.css`: `5157753d3525a99191e78374f7a074315bf7809a` — zhodný s lockom.
+- `job-radar-v6.5-enhance.js`: `fbb56af1213723b68deb9dc6ffc9e4c9de7fd80d` — zhodný s lockom.
+- `komarena-job-radar-jr-master.webp`: `ded775849800577277c4581ee5c30db6e43bba54` — zhodný s lockom.
+- MASTER dizajn bol zachovaný presne; fingerprint sa nezmenil.
+
+---
+
 ## 2026-09-09 — morning source verification + feed hardening
 
 ### 1. Reálny source audit a nová promotion-grade ponuka
