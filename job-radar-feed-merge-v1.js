@@ -57,7 +57,7 @@ window.fetch=async(input,init)=>{
   const url=typeof input==='string'?input:(input&&input.url)||'';
   if(!url.includes('jobs-data.json'))return nativeFetch(input,init);
   try{
-    let main,extra,usedBaseline=false;
+    let main,extra,deltas=[],usedBaseline=false;
     try{main=await getJson('jobs-data.json',true)}catch{main=await baseline();usedBaseline=true}
     [extra,...deltas]=await Promise.all([getJson('jobs-data-nonprof.json',false),...DELTA_FILES.map(f=>getJson(f,false))]);
     const allParts=[main,extra,...deltas];
