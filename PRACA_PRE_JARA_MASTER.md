@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 9. 9. 2026 22:06 CEST
+Aktualizované: 10. 9. 2026 05:16 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -152,6 +152,31 @@ Aktualizované: 9. 9. 2026 22:06 CEST
 - `source-audit.json`: aktualizovaný na 22:06.
 - `jobs-data.json`: bez zmeny; nebol nový promotion-grade unique hit.
 
+## Source audit — 10. 9. 2026 05:16
+- Reálne preverených **12 source families**, minimálne 11 mimo Profesia: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam/ÚPSVR, ďalšie slovenské job-board discovery, Brigada.sk, Služby zamestnanosti, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/WordPress komunity a Facebook public index.
+- Profesia: `checked`; 0 nových unique promotion-grade výsledkov.
+- Priame company careers: `checked`; 0 novej vhodnej canonical promotion-grade delty.
+- LinkedIn Jobs: `ok`; SupportYourApp vyžaduje fluent English/advanced scope, KLARSTEIN Italy support je inactive a jazykovo mimo; 0 promotion.
+- Worki: `ok`; Shield-Sk Administrátor e-shopu / zákaznícka podpora bol rediscovered, ale canonical ho označuje ako obsadený/zrušený.
+- Kariera/Zoznam/ÚPSVR: `ok`; Grafton Analytik zákazníckych sťažností, Bratislava, 2 000 EUR je obsahovo blízky L1 supportu, ale vyžaduje VŠ I. stupňa v technickom obore, podobnú prax a AJ B1; AI/LLM sales a C/C+E doprava sú hard mismatch. 0 promotion.
+- Brigada.sk: `checked`; 0 nových vhodných konkrétnych public-index hitov.
+- Služby zamestnanosti: `checked`; 0 novej promotion-grade delty v BA-area admin/driver/warehouse/support discovery.
+- Pretlak/StartupJobs/WordPress Jobs: `ok`; Elasticr IT Support Specialist L2, Havlíčkův Brod, má iba všeobecné Remote/On-site/Hybrid označenie bez dôkazu, že sa dá dlhodobo vykonávať zo Slovenska, navyše ide o L2/root-cause scope. 0 promotion.
+- Upwork/freelance: `ok`; viac Worldwide WordPress/WooCommerce/e-commerce/VA výsledkov, ale low-budget, development-heavy alebo s výrazným English/tool burden; 0 promotion.
+- Reddit/komunity: `limited`; aktuálne indexované výsledky boli supply-side „for hire“ príspevky freelancerov, nie konkrétne hiring dopyty.
+- Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion ostáva backlog a nebol spustený.
+
+### Audit počty 05:16
+- source families checked: **12**
+- nové LIVE promotions: **0**
+- LIVE feed delta: **0**, zostáva **51**
+- Facebook verified hits: **0**
+- LIVE mix: Profesia **49,0 %**, non-Profesia **51,0 %**
+- zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
+- `job-sources.json`: aktualizovaný na 05:16.
+- `source-audit.json`: aktualizovaný na 05:16.
+- `jobs-data.json`: bez zmeny; nebol nový promotion-grade unique hit.
+
 ## Rozvojový backlog
 - Source-family zero-result anomaly detector.
 - Verification-to-LIVE transaction ledger.
@@ -247,3 +272,5 @@ Aktualizované: 9. 9. 2026 22:06 CEST
 - Search-result provenance counter.
 - Recruiter-channel actionability score: hodnotiť priamy kontakt na recruitera, dostupnosť e-mailu/telefónu a počet krokov apply flow; pri rovnakej kvalite posunúť vyššie ponuky, na ktoré sa dá reagovať rýchlo a priamo.
 - Morning-route compatibility classifier: z pracovného času, lokality a typu dochádzania odhadnúť, či rola reálne podporuje režim „ráno vyraziť – poobede doma“; použiť ako sekundárne poradie až po hard lokalitnom gate.
+- Requirement-stack knockout precheck: ešte pred detailným scoringom automaticky vyhodnotiť kombináciu povinného vzdelania, praxe, jazyka a špecializovaných skillov; drahšie overovanie robiť iba pri kandidátoch, ktorí nemajú jasný knockout. Zníži opakované spracovanie rolí typu Grafton L1 support s VŠ + praxou + AJ B1.
+- Hiring-demand vs freelancer-supply community classifier: pri Reddit/WordPress/Facebook discovery rozlíšiť „hľadám človeka“ od „ponúkam svoje služby“ ešte pred započítaním hitu; zamedzí falošnému coverage pri supply-side postoch a zvýši dôveryhodnosť community auditu.
