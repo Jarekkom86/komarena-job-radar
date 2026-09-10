@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 10. 9. 2026 06:50 CEST
+Aktualizované: 10. 9. 2026 21:53 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -303,6 +303,8 @@ Aktualizované: 10. 9. 2026 06:50 CEST
 - Hiring-demand vs freelancer-supply community classifier: pri Reddit/WordPress/Facebook discovery rozlíšiť „hľadám človeka“ od „ponúkam svoje služby“ ešte pred započítaním hitu; zamedzí falošnému coverage pri supply-side postoch a zvýši dôveryhodnosť community auditu.
 - Guaranteed-pay floor normalizer: pri TPP/živnosti rozlíšiť garantovaný základ od variabilnej zložky, bonusov a provízií; ranking a ekonomické porovnanie primárne stavať na garantovanej odmene, aby „až X EUR“ neprebíjalo stabilnejšie ponuky.
 - Commute-cost-adjusted compensation: pri `ba-area` rolách odhadnúť čas a priame náklady pravidelného dochádzania a dopočítať efektívnu hodnotu odmeny po cestovaní; používať iba ako sekundárny ekonomický ranking po splnení hard lokalitného gate.
+- Search-to-detail promotion debt queue: kandidát z výsledkovej stránky, ktorý vyzerá relevantne, ale v tom istom behu sa nepodarilo získať kompletný canonical detail, dostať do explicitnej verification queue s TTL; pri ďalšom behu ho overiť skôr než opakovať široké discovery. Rieši stratu kandidátov typu CLOSER web admin/Shoroh support.
+- English-demand evidence scale: pri neurčitých frázach typu „active English communication“ rozlišovať explicitnú CEFR úroveň, dennú telefonickú komunikáciu, písomný kontakt a iba občasné čítanie dokumentácie; zabráni binárnemu rejectu pri nepresne formulovanom jazykovom požiadavku a umožní konzistentný A2/B1/B2 ranking.
 
 ## Source audit — 10. 9. 2026 10:39
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera.sk, Pretlak/StartupJobs, Upwork, Reddit/WordPress komunity a Facebook public index.
@@ -331,3 +333,32 @@ Aktualizované: 10. 9. 2026 06:50 CEST
 ### Rozvoj pridaný 10:39
 - Detail-verification freshness lock: kandidát z result-page feedu nesmie dostať LIVE promotion, kým v tom istom behu nebol otvorený canonical detail a overené aspoň lokalita, jazyk, forma spolupráce a povinné požiadavky; eliminuje false-positive z krátkych listingov typu RFA/AUTO-Prestige.
 - Eligibility-reason rejection codebook: pri každom vyradenom kandidátovi ukladať jeden primárny reject code (`language`/`skill`/`student`/`inactive`/`location`/`economics`) a supporting evidence URL; umožní presné source-success analytics bez dvojitého započítavania jedného kandidáta do viacerých reject kategórií.
+
+## Source audit — 10. 9. 2026 21:53
+- Reálne preverených **11 source families**, z toho **10 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, Služby zamestnanosti, Pretlak/StartupJobs, Upwork, Reddit/WordPress komunity a Facebook public index.
+- Profesia: `checked`; 0 nových unique promotion-grade výsledkov.
+- Priame company careers: `checked`; 0 novej canonical promotion-grade delty.
+- LinkedIn Jobs: `checked`; 0 nového konkrétneho promotion-grade kandidáta v public-index discovery.
+- Worki: `checked`; 0 novej vhodnej unique delty.
+- Brigada.sk: `checked`; 0 nových vhodných konkrétnych hitov.
+- Kariera/Zoznam: `ok`; 4 relevantné/adjacent výsledky. **Grafton Office Manager**, Bratislava, 1 750–2 000 EUR, je obsahovo silná administratíva, ale canonical detail vyžaduje aktívnu komunikáciu v angličtine; bez promotion. CLOSER web admin a Shoroh IKT support zostávajú bez promotion pre nedostatočný same-run detail evidence. SOCIUMS IT Architect je hard reject: AJ C1/C2 + Java/CATIA + B+E.
+- Služby zamestnanosti: `ok`; staršie Servers.com Support Engineer varianty v Bratislave sú Linux/server/network heavy a mimo preferovaného L1/support scope; 0 promotion.
+- Pretlak/StartupJobs: `ok`; Aukro Account Manager HU je remote/hybrid, ale maďarský trh/jazyk a sales burden sú mismatch; 0 promotion.
+- Upwork: `ok`; 8 relevantných/adjacent WordPress/WooCommerce/VA výsledkov. Najbližší je **Junior Digital Marketing & WordPress Assistant**, Worldwide remote, 8–10 USD/h, 6+ mesiacov, ale má 20–50 proposals, 7 interviewing a English-facing apply/communication; bez promotion. Ďalšie výsledky boli low-budget, strong-English, evidence-heavy alebo development-heavy.
+- Reddit/komunity: `checked`; 0 konkrétnych vhodných hiring dopytov.
+- Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Nexus/local authenticated ingestion nebol spustený.
+
+### Audit počty 21:53
+- source families checked: **11**
+- nové LIVE promotions: **0**
+- LIVE feed delta: **0**, zostáva **51**
+- Facebook verified hits: **0**
+- LIVE mix: Profesia **49,0 %**, non-Profesia **51,0 %**
+- zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
+- `job-sources.json`: aktualizovaný na 21:53.
+- `source-audit.json`: aktualizovaný na 21:53.
+- `jobs-data.json`: bez zmeny; nevznikol nový promotion-grade unique hit.
+
+### Rozvoj pridaný 21:53
+- Search-to-detail promotion debt queue: result-page kandidáta s dobrým fitom, ktorého canonical detail nebol v rovnakom behu kompletne získaný, zaradiť do prioritnej verification queue s TTL a overiť ho v nasledujúcom behu pred širokým discovery; znižuje opakované strácanie kandidátov cez neúplnú verejnú indexáciu.
+- English-demand evidence scale: rozlíšiť explicitnú CEFR úroveň, aktívne hovorenie, telefonovanie, písomnú komunikáciu a iba čítanie technickej dokumentácie; scoring potom penalizuje reálny jazykový burden namiesto nepresného binárneho English rejectu.
