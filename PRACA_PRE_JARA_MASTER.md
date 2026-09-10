@@ -303,3 +303,31 @@ Aktualizované: 10. 9. 2026 06:50 CEST
 - Hiring-demand vs freelancer-supply community classifier: pri Reddit/WordPress/Facebook discovery rozlíšiť „hľadám človeka“ od „ponúkam svoje služby“ ešte pred započítaním hitu; zamedzí falošnému coverage pri supply-side postoch a zvýši dôveryhodnosť community auditu.
 - Guaranteed-pay floor normalizer: pri TPP/živnosti rozlíšiť garantovaný základ od variabilnej zložky, bonusov a provízií; ranking a ekonomické porovnanie primárne stavať na garantovanej odmene, aby „až X EUR“ neprebíjalo stabilnejšie ponuky.
 - Commute-cost-adjusted compensation: pri `ba-area` rolách odhadnúť čas a priame náklady pravidelného dochádzania a dopočítať efektívnu hodnotu odmeny po cestovaní; používať iba ako sekundárny ekonomický ranking po splnení hard lokalitného gate.
+
+## Source audit — 10. 9. 2026 10:39
+- Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera.sk, Pretlak/StartupJobs, Upwork, Reddit/WordPress komunity a Facebook public index.
+- Profesia: `ok`; viac fresh BA admin/support výsledkov, 0 promotion. FINAL-CD Opel servisná administratíva je `ba-area`, ale B1 AJ + 2 roky podobnej praxe + advanced Office/accounting stack ju držia pod promotion prahom. Persea a Kanadevia majú ešte vyšší jazykovo-praxový burden. SUPTel je duplicate/existing candidate. RFA/AUTO-Prestige ostali bez promotion, kým nie je same-run canonical detail kompletne overený.
+- Priame company careers: `ok`; Slovak Telekom DevOps/Network Security boli lokálne BA, ale hard-skill mismatch.
+- LinkedIn Jobs: `ok`; 5 adjacent hitov, 0 promotion. Rhythm&Ridge WordPress/WooCommerce remote je student-only; HireOn/TalentPop/CloudTalk/Concentrix majú silný jazykový alebo shift burden.
+- Worki: `checked`; 0 nových vhodných unique hitov.
+- Brigada.sk: `checked`; 0 nových vhodných konkrétnych hitov.
+- Kariera.sk: `ok`; Caspian BA admin 950 EUR je ekonomicky slabý, DENIMA multilingual phone role jazykovo nevhodná, CPM indexed home-work listing inactive.
+- Pretlak/StartupJobs: `ok`; Stretchfit ostáva Mid/Senior creative mismatch; bez vhodnej non-hard-dev delty.
+- Upwork: `ok`; 8 relevantných/adjacent WordPress/WooCommerce/e-commerce/VA výsledkov, ale prevažne 5–100 USD fixed, Expert/custom development alebo explicitná silná AJ; 0 promotion.
+- Reddit/komunity: `checked`; 0 konkrétnych vhodných hiring dopytov.
+- Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Nexus/local authenticated ingestion nebol spustený.
+
+### Audit počty 10:39
+- source families checked: **10**
+- nové LIVE promotions: **0**
+- LIVE feed delta: **0**, zostáva **51**
+- Facebook verified hits: **0**
+- LIVE mix: Profesia **49,0 %**, non-Profesia **51,0 %**
+- zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
+- `job-sources.json`: aktualizovaný na 10:39.
+- `source-audit.json`: aktualizovaný na 10:39.
+- `jobs-data.json`: bez zmeny; nevznikol nový promotion-grade unique hit.
+
+### Rozvoj pridaný 10:39
+- Detail-verification freshness lock: kandidát z result-page feedu nesmie dostať LIVE promotion, kým v tom istom behu nebol otvorený canonical detail a overené aspoň lokalita, jazyk, forma spolupráce a povinné požiadavky; eliminuje false-positive z krátkych listingov typu RFA/AUTO-Prestige.
+- Eligibility-reason rejection codebook: pri každom vyradenom kandidátovi ukladať jeden primárny reject code (`language`/`skill`/`student`/`inactive`/`location`/`economics`) a supporting evidence URL; umožní presné source-success analytics bez dvojitého započítavania jedného kandidáta do viacerých reject kategórií.
