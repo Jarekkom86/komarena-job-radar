@@ -1,30 +1,99 @@
 {
-  "schemaVersion": 3,
-  "updatedAt": "2026-09-10T08:05:10+02:00",
+  "schemaVersion": 4,
+  "updatedAt": "2026-09-10T08:56:00+02:00",
   "runSummary": {
-    "familiesChecked": 12,
-    "freshPromoted": 0,
-    "existingReverified": 2,
+    "familiesChecked": 8,
+    "freshPromoted": 2,
+    "existingReverified": 4,
+    "existingReverifiedEligible": 3,
+    "existingQuarantined": 1,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-10T08:05:10+02:00",
-    "sourceVerificationAt": "2026-09-10T08:05:10+02:00",
-    "liveCount": 51,
-    "liveMix": {"profesia": 25, "nonProfesia": 26, "profesiaPct": 49.0, "nonProfesiaPct": 51.0},
-    "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing active items are never removed merely because a new sweep did not rediscover them.",
-    "note": "Fresh sweep 10.9.2026 08:05 across 12 source families. Profesia surfaced SUPTel Administrativny pracovnik/pracovnicka dispecingu in Bratislava, published 9.9.2026, immediate start, full/part-time, occasional HO, no foreign-language requirement; this is a strong admin/telecom-process candidate but jobs-data.json was not rewritten because the available GitHub connector requires complete file replacement and the current 51-item payload cannot be retrieved losslessly in one response. Bookio B2B SaaS support was reverified but requires English B2 and 2 years experience, so remains penalized. CINEMAX Junior IT support was checked and is already closed; it also requires B2 and substantial Linux/server/network skills. Direct Slovak Telekom surfaced Junior Business Analyst in Bratislava, but explicit English B2 keeps it below promotion. Upwork public index surfaced Worldwide WooCommerce/e-commerce VA roles, but visible candidates were low-budget, strong-English, high-competition or development-heavy. Public Reddit/Facebook indexing produced no verified Slovakia-eligible hiring hit; Facebook remains 0 verified hits and limited."
+    "contentChangedAt": "2026-09-10T08:56:00+02:00",
+    "sourceVerificationAt": "2026-09-10T08:56:00+02:00",
+    "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing records keep their own verifiedAt unless their public detail was actually reopened or otherwise reconfirmed.",
+    "note": "Real morning sweep on 10.9.2026 across Profesia, direct/company/Kariera sources, Worki, Brigada.sk, public LinkedIn/tech-creative discovery, Upwork and public communities. Two new active high-confidence eligible roles were promoted through a dated delta: SUPTel dispatcher administration and FINAL-CD OPEL service assistant. IKEA contact-centre aftersales, Slovak Telekom B2B support and finby admin were directly reopened and reverified. INDEX NOSLUS archive was also reopened but is now deliberately quarantined because the current detail explicitly requires physical fitness and includes pallet/loading work. Grafton complaint analyst was not promoted because the current detail requires English B1 plus technical degree/experience. No timestamp-only freshness was used."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":4,"added":0,"reverified":2,"rejected":{"language":2,"inactive":1,"duplicate":1,"location":0,"skill":1,"ranking":0},"note":"Genuinely searched current Bratislava admin/customer-support/IT-support/technical/driver listings. Strong new SUPTel dispatcher-admin candidate verified; not persisted only because jobs-data full-file replacement cannot currently be reconstructed losslessly. Bookio reverified with B2 + 2 years; CINEMAX detail is closed and hard-skill heavy."},
-    {"name":"Direct company careers","family":"company-careers","status":"ok","hits":2,"added":0,"reverified":1,"rejected":{"language":1,"inactive":0,"duplicate":1,"location":0,"skill":0,"ranking":1},"note":"Slovak Telekom direct careers genuinely searched. Existing customer-support role remains valid. New Junior Business Analyst is Bratislava and graduate-friendly but explicitly requires English B2; no promotion."},
-    {"name":"LinkedIn Jobs public index","family":"linkedin","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"ranking":0},"note":"Public LinkedIn Jobs genuinely searched for Bratislava/Slovakia WordPress, e-commerce, support and admin roles; no new verified delta stronger than current feed."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"ranking":0},"note":"Bratislava e-shop/admin/technical-support/driver/logistics discovery genuinely searched; no new suitable unique delta surfaced."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"ranking":0},"note":"Bratislava admin/e-shop/courier/support discovery genuinely searched; no new suitable concrete hit."},
-    {"name":"Kariera.sk / Slovak boards","family":"slovak-boards","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"ranking":0},"note":"Kariera/Slovak-board discovery genuinely searched for Bratislava admin/support/technical roles; no new independent promotion-grade hit."},
-    {"name":"Služby zamestnanosti","family":"sluzby-zamestnanosti","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"ranking":0},"note":"Government-source Bratislava admin/driver/warehouse/support discovery genuinely searched; no suitable delta surfaced."},
-    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":1,"skill":1,"ranking":1},"note":"Tech/creative discovery genuinely searched. StartupJobs surfaced Elasticr IT Support Specialist L2 in Havlickuv Brod with remote/hybrid wording, but location/regular-presence terms are not verified as Slovakia-home remote and the role is L2; not eligible for active feed."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":7,"added":0,"reverified":0,"rejected":{"language":2,"inactive":0,"duplicate":0,"location":0,"skill":3,"ranking":7},"note":"Worldwide WordPress/WooCommerce/e-commerce/VA discovery genuinely searched. Visible roles were low-budget (including $7 fixed and $3-6/h), strong-English, high-competition or development/CRO heavy. No promotion."},
-    {"name":"Freelance secondary sources","family":"freelancer","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"ranking":0},"note":"Freelancer/Twine/Freelancermap/Useme/Contra family discovery genuinely searched; no new verified candidate suitable for active feed."},
-    {"name":"Reddit / public WordPress communities","family":"communities","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"ranking":0},"note":"Public Reddit/WordPress/WooCommerce hiring discovery genuinely searched; results were old for-hire posts, not current concrete client demand."},
-    {"name":"Facebook public groups/index","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"ranking":0},"note":"WordPress Slovensko, WooCommerce SK/CZ and Bratislava jobs-group public indexing genuinely searched. No concrete publicly verifiable hiring post with a direct link returned: 0 verified hits. Authenticated Nexus/local-agent ingestion remains backlog only and was not started."}
+    {
+      "name": "Profesia",
+      "family": "profesia",
+      "status": "ok",
+      "hits": 8,
+      "added": 2,
+      "reverified": 3,
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 1, "physical": 1, "ranking": 2},
+      "note": "Current Bratislava admin/customer-support/service/technical listings were genuinely searched and selected details were opened. Added SUPTel Administrativny pracovnik/pracovnicka dispecingu and FINAL-CD OPEL service assistant. Reverified IKEA, finby and INDEX. INDEX is now quarantined for explicit physical-fitness/pallet/loading duties; Grafton complaint analyst was rejected for B1 English plus technical-degree/experience requirements."
+    },
+    {
+      "name": "Kariera.sk / direct company offers",
+      "family": "company-careers",
+      "status": "ok",
+      "hits": 2,
+      "added": 0,
+      "reverified": 1,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Slovak Telekom B2B customer-support/back-office offer was directly reopened and remains active; no foreign-language hard gate is shown. It was reverified, not re-added as a duplicate."
+    },
+    {
+      "name": "Worki.sk",
+      "family": "worki",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Bratislava and remote admin/support/technical/e-commerce discovery was checked; no new promotion-grade unique result stronger than the current feed was verified."
+    },
+    {
+      "name": "Brigada.sk",
+      "family": "brigada",
+      "status": "checked",
+      "hits": 2,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 2},
+      "note": "Current Bratislava brigade listings were searched. Visible results were weaker for the target profile, including student/promoter-style work or less suitable conditions, so none were promoted."
+    },
+    {
+      "name": "LinkedIn Jobs / public tech-creative discovery",
+      "family": "linkedin-tech",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Public Bratislava/Slovakia WordPress, e-commerce, support and technical discovery returned no new directly verifiable promotion-grade role for this sweep."
+    },
+    {
+      "name": "Upwork",
+      "family": "freelance",
+      "status": "ok",
+      "hits": 2,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 1, "physical": 0, "ranking": 2},
+      "note": "Current WordPress/WooCommerce results were checked. Visible offers included a very low-value bulk-content task and a more development-heavy WooCommerce job; neither met the promotion threshold."
+    },
+    {
+      "name": "Reddit / public WordPress communities",
+      "family": "communities",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Public community discovery mostly surfaced FOR HIRE provider posts rather than current concrete client demand, so no item was promoted."
+    },
+    {
+      "name": "Facebook public groups/index",
+      "family": "facebook",
+      "status": "limited",
+      "hits": 0,
+      "verifiedHits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "No concrete publicly verifiable hiring post with a direct accessible link was returned in this sweep. Public-index coverage remains limited and is not treated as verified LIVE evidence."
+    }
   ]
 }
