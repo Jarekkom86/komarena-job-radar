@@ -1,0 +1,30 @@
+{
+  "policyVersion": 1,
+  "name": "source-yield-allocation",
+  "purpose": "Spend sourcing effort on source families that produce fresh eligible unique jobs while preserving exploration and non-Profesia diversity.",
+  "hardLocationGate": {
+    "eligible": ["ba-area", "remote-ok"],
+    "unknownCountsAsYield": false,
+    "rejectDistanceCountsAsYield": false,
+    "distantHybridMayNotBePromoted": true
+  },
+  "protectedSourceFamilies": ["company-careers", "linkedin", "worki", "brigada-sk", "pretlak", "freelance-platforms", "public-wordpress-woocommerce-communities", "public-indexed-facebook", "other-slovak-job-boards"],
+  "truthfulness": {
+    "facebookBlockedOrLimitedMustRemainBlockedOrLimited": true,
+    "neverCountUnverifiedFacebookOffer": true,
+    "mirrorDoesNotCountAsIndependentYield": true
+  },
+  "yieldWindowDays": 14,
+  "metrics": ["eligibleUniqueHits", "promotionReadyHits", "duplicateRate", "staleRate", "verificationCost", "medianFreshnessHours", "sourceTrust"],
+  "allocation": {
+    "minimumExplorationSharePerProtectedFamily": 0.05,
+    "maximumSharePerSingleFamily": 0.35,
+    "profesiaMayNotConsumeDiversityReserve": true,
+    "increaseEffortWhen": ["eligibleUniqueHits rising", "promotionReadyHits rising", "freshness improving"],
+    "decreaseEffortWhen": ["duplicateRate high", "staleRate high", "repeated zero eligible yield"],
+    "zeroYieldNeverDisablesFamily": true
+  },
+  "preserve": ["stableId", "canonicalDedupe", "sourceTrust", "verifiedAt", "scoreConfidence", "locationEligibility", "locationReason", "crm", "userEdits"],
+  "failClosed": true,
+  "uiChanges": false
+}
