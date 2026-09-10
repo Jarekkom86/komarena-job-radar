@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 10. 9. 2026 05:16 CEST
+Aktualizované: 10. 9. 2026 06:50 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -79,6 +79,7 @@ Aktualizované: 10. 9. 2026 05:16 CEST
 - Fresh duplicate 9.9. 22:06: **Slovak Telekom — Špecialista/Špecialistka podpory zákazníkov**, Bajkalská 28, Bratislava, sa znovu objavil ako same-day Kariera mirror. Priama T-Mobile kariéra potvrdzuje canonical; stabilné LIVE ID sa nemení a mirror sa nepridáva.
 - Fresh LinkedIn rejects 9.9. 22:06: **SupportYourApp — Technical Support Consultant** vyžaduje C1/fluent English; **Marlink — Support Engineer** vyžaduje B2 English a telecom/networking background. Bez promotion.
 - Fresh freelance rejects 9.9. 22:06: Upwork **Expert WordPress Developer Needed for Custom WooCommerce E-Commerce Website** 300 USD fixed/Expert, **WordPress & WooCommerce Mobile UX, Speed and Checkout Optimization** 20 USD fixed a **WooCommerce Website Development** 70 USD fixed/Expert. Všetky sú development-heavy alebo ekonomicky slabé.
+- Fresh freelance verification 10.9. 06:50: **Upwork — WordPress-/WooCommerce-Spezialist – langfristige Unterstützung**, Worldwide remote, 8–15 USD/h, WooCommerce produkty/kategórie/import-export/úpravy webu a troubleshooting. Bez LIVE promotion: listing je približne 4 týždne starý, má 20–50 proposals a nemecký kontext bez jasne uvedenej jazykovej požiadavky; ponechané na verification.
 
 ## Source audit — 9. 9. 2026 11:45
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Kariera/Zoznam/ÚPSVR, Brigada.sk, Pretlak/StartupJobs/WordPress Jobs, freelance/Upwork, Reddit/komunity a Facebook public index.
@@ -175,6 +176,32 @@ Aktualizované: 10. 9. 2026 05:16 CEST
 - zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
 - `job-sources.json`: aktualizovaný na 05:16.
 - `source-audit.json`: aktualizovaný na 05:16.
+- `jobs-data.json`: bez zmeny; nebol nový promotion-grade unique hit.
+
+## Source audit — 10. 9. 2026 06:50
+- Reálne preverených **12 source families**, z toho **11 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Práca za rohom, Služby zamestnanosti, Pretlak/StartupJobs/WordPress Jobs, Upwork, Freelancer, Reddit/WordPress komunity a Facebook public index.
+- Profesia: `checked`; 0 nových suitable unique promotion-grade výsledkov.
+- Priame company careers: `checked`; 0 novej vhodnej canonical delty.
+- LinkedIn Jobs: `checked`; public-index discovery prebehlo, 0 nového vhodného konkrétneho hitu.
+- Worki: `checked`; 0 novej vhodnej unique delty.
+- Brigada.sk: `checked`; 0 nových vhodných konkrétnych hitov.
+- Práca za rohom: `checked`; 0 nového nezávislého promotion-grade hitu.
+- Služby zamestnanosti: `checked`; 0 vhodnej BA-area delty.
+- Pretlak/StartupJobs/WordPress Jobs: `checked`; 0 nového vhodného non-hard-dev promotion-grade výsledku.
+- Upwork: `ok`; 8 relevantných/adjacent Worldwide výsledkov. Najbližšie profilu je WordPress-/WooCommerce-Spezialist – langfristige Unterstützung, 8–15 USD/h, ale približne 4-týždňový listing, 20–50 proposals a nejasný jazykový burden ho držia vo verification. Ďalšie výsledky boli low-budget, development-heavy, strong-English alebo workload-heavy.
+- Freelancer: `checked`; 0 nového vhodného konkrétneho public-index hitu.
+- Reddit/komunity: `ok`; 1 konkrétny hiring hit bol US-only + developer-heavy + strong-English, ostatné viditeľné výsledky boli freelancer supply-side.
+- Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Nexus/local authenticated ingestion nebol spustený.
+
+### Audit počty 06:50
+- source families checked: **12**
+- nové LIVE promotions: **0**
+- LIVE feed delta: **0**, zostáva **51**
+- Facebook verified hits: **0**
+- LIVE mix: Profesia **49,0 %**, non-Profesia **51,0 %**
+- zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
+- `job-sources.json`: aktualizovaný na 06:50.
+- `source-audit.json`: aktualizovaný na 06:50.
 - `jobs-data.json`: bez zmeny; nebol nový promotion-grade unique hit.
 
 ## Rozvojový backlog
@@ -274,3 +301,5 @@ Aktualizované: 10. 9. 2026 05:16 CEST
 - Morning-route compatibility classifier: z pracovného času, lokality a typu dochádzania odhadnúť, či rola reálne podporuje režim „ráno vyraziť – poobede doma“; použiť ako sekundárne poradie až po hard lokalitnom gate.
 - Requirement-stack knockout precheck: ešte pred detailným scoringom automaticky vyhodnotiť kombináciu povinného vzdelania, praxe, jazyka a špecializovaných skillov; drahšie overovanie robiť iba pri kandidátoch, ktorí nemajú jasný knockout. Zníži opakované spracovanie rolí typu Grafton L1 support s VŠ + praxou + AJ B1.
 - Hiring-demand vs freelancer-supply community classifier: pri Reddit/WordPress/Facebook discovery rozlíšiť „hľadám človeka“ od „ponúkam svoje služby“ ešte pred započítaním hitu; zamedzí falošnému coverage pri supply-side postoch a zvýši dôveryhodnosť community auditu.
+- Guaranteed-pay floor normalizer: pri TPP/živnosti rozlíšiť garantovaný základ od variabilnej zložky, bonusov a provízií; ranking a ekonomické porovnanie primárne stavať na garantovanej odmene, aby „až X EUR“ neprebíjalo stabilnejšie ponuky.
+- Commute-cost-adjusted compensation: pri `ba-area` rolách odhadnúť čas a priame náklady pravidelného dochádzania a dopočítať efektívnu hodnotu odmeny po cestovaní; používať iba ako sekundárny ekonomický ranking po splnení hard lokalitného gate.
