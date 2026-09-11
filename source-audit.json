@@ -1,37 +1,35 @@
 {
-  "schemaVersion": 4,
-  "updatedAt": "2026-09-11T07:23:48+02:00",
+  "schemaVersion": 5,
+  "updatedAt": "2026-09-11T08:07:00+02:00",
   "runSummary": {
-    "familiesChecked": 11,
-    "freshPromoted": 0,
-    "freshCandidates": 9,
-    "existingReverified": 0,
-    "existingReverifiedEligible": 0,
+    "familiesChecked": 8,
+    "freshPromoted": 1,
+    "freshCandidates": 8,
+    "existingReverified": 3,
+    "existingReverifiedEligible": 3,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-11T07:23:48+02:00",
-    "sourceVerificationAt": "2026-09-11T07:23:48+02:00",
+    "contentChangedAt": "2026-09-11T08:07:00+02:00",
+    "sourceVerificationAt": "2026-09-11T08:07:00+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing records keep their own verifiedAt unless their public detail was actually reopened or otherwise reconfirmed.",
-    "note": "Fresh 11.9.2026 07:23 sweep genuinely searched Profesia, direct-company career indexes, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, Práca za rohom, Pretlak/StartupJobs/WordPress-oriented discovery, Upwork freelance discovery, Reddit/public WordPress communities and public Facebook indexing. No new promotion-grade unique hit passed ranking plus language/skill gates. Wolt Support Associate is Bratislava-local but requires minimum B2 English; Nexcess Technical Support Engineer is Bratislava/remote-friendly but requires Linux terminal knowledge and deeper networking; Sharp Brains L1 desktop support is Bratislava onsite B2B/freelance but does not clearly beat existing LIVE support roles. SPP Administrátor lokálneho centra údržby is a strong BA admin/technical candidate at 1400-1800 EUR with SAP, documentation and driver-B fit, but asks minimum 2 years similar experience, so it remains below automatic promotion threshold. Upwork surfaced Worldwide WordPress roles, but visible fresh jobs were low-budget, development-heavy, portfolio-heavy or geographically restricted. Facebook yielded 0 concrete publicly verifiable hiring posts with direct links."
+    "note": "Fresh 11.9.2026 08:07 sweep searched current Profesia Bratislava administration/customer-support indexes, Kariera/Zoznam customer support, Práca za rohom details, official IKEA careers and current BA technical/support discovery. PORT System Slovakia customer support is a new promotion-grade match: Petržalka, 1750-2000 EUR, Po-Pi, low physical burden, basic English only and internal training. Slovak Telekom B2B support, IKEA after-sales contact centre and SUPTel dispatch administration were genuinely reopened/reconfirmed. SuperFaktura was not auto-promoted because its current detail asks mildly advanced English; RFA asks intermediate English; FINAL-CD OPEL assistant also shows mildly advanced English plus similar-practice/accounting expectations."
   },
   "liveMix": {
-    "total": 51,
-    "profesia": 25,
-    "profesiaPct": 49.0,
-    "nonProfesia": 26,
-    "nonProfesiaPct": 51.0
+    "total": 4,
+    "profesia": 0,
+    "profesiaPct": 0,
+    "nonProfesia": 4,
+    "nonProfesiaPct": 100,
+    "note": "Counts here describe the newly verified 11.9 delta, not the full merged historical feed."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava WordPress/WooCommerce, e-commerce, technical-support, admin, driver and warehouse discovery was searched. No new unique promotion-grade result surfaced in the public index during this run."},
-    {"name":"Direct company careers","family":"company-careers","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh public company-career discovery was searched for Bratislava technical support, customer support, e-commerce and admin roles. No new canonical promotion-grade delta surfaced."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":4,"added":0,"reverified":0,"rejected":{"language":2,"inactive":0,"duplicate":0,"location":0,"skill":2,"physical":0,"ranking":4},"note":"Public LinkedIn discovery found Wolt Support Associate FT/PT, Sharp Brains L1 desktop support and Nexcess Technical Support Engineer. Wolt requires minimum B2 English; Nexcess requires Linux terminal/network depth; Sharp Brains is onsite B2B/freelance and does not beat current LIVE support options. 0 promoted."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh BA-area technical/admin/driver discovery searched; no suitable new unique promotion-grade result surfaced."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava brigáda/admin/driver discovery searched. No new suitable non-student promotion-grade hit surfaced in the public index."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/customer-support/technical discovery searched; no new unique promotion-grade result surfaced."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":3,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0,"skill":1,"physical":0,"ranking":3},"note":"Fresh Bratislava admin/technical discovery checked. SPP Administrátor lokálneho centra údržby is a strong BA candidate (1400-1800 EUR, SAP, documentation, driver B) but asks minimum 2 years similar experience; Magistrát IT technik is an existing verification candidate. 0 promoted."},
-    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"ok","hits":2,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":1,"skill":2,"physical":0,"ranking":2},"note":"StartupJobs surfaced Elasticr L2 support in Havlíčkův Brod with remote/hybrid wording but unclear Slovakia-from-home eligibility and stronger L2 expectations, plus other roles outside language/profile fit. No promotion."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":7,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":1,"skill":5,"physical":0,"ranking":7},"note":"Worldwide remote WordPress/WooCommerce/VA discovery searched. Fresh visible jobs included Elementor/WordPress maintenance and WooCommerce work, but were mostly very low fixed-price, expert/development-heavy, portfolio-heavy or country-restricted. 0 promoted."},
-    {"name":"Reddit / public WordPress communities","family":"communities","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh public Reddit/WordPress/WooCommerce hiring discovery searched; no current concrete promotion-grade demand post surfaced."},
-    {"name":"Facebook public groups/index","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"0 verified hits. Public indexing returned no concrete accessible hiring post with a direct verifiable link. Coverage remains partial; authenticated Nexus/local ingestion remains backlog-only and was not started."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":5,"added":1,"reverified":0,"rejected":{"language":3,"inactive":0,"duplicate":1,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Current Bratislava admin/customer-support indexes showed PORT System as newly listed at 1750-2000 EUR. SuperFaktura, RFA and FINAL-CD were checked but not promoted because current language/experience requirements exceed the preferred automatic gate."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":2,"added":0,"reverified":1,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Slovak Telekom B2B support detail is active and dated 10.9.2026; existing LIVE record was genuinely reverified."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":4,"added":1,"reverified":1,"rejected":{"language":3,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Opened concrete current details for PORT System, SUPTel, SuperFaktura, RFA and FINAL-CD. PORT is promotion-grade; SUPTel was reverified; the others remain below automatic language/experience gate."},
+    {"name":"Official company careers","family":"company-careers","status":"ok","hits":1,"added":0,"reverified":1,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Official IKEA careers still exposes the Bratislava after-sales contact-centre application. English remains an advantage only and prior experience is not required."},
+    {"name":"Bratislava technical/support discovery","family":"technical-support","status":"checked","hits":3,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":0,"skill":2,"physical":0,"ranking":0},"note":"Fresh support discovery also surfaced higher-skill or B2+ roles; these were not promoted automatically."},
+    {"name":"Senec / BA-area technical discovery","family":"ba-area","status":"checked","hits":3,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":2,"ranking":0},"note":"Fresh Senec technical results were mainly production/electrical roles with qualification or physical-load mismatch, so none were promoted."},
+    {"name":"Remote / home-office discovery","family":"remote","status":"checked","hits":4,"added":0,"reverified":0,"rejected":{"language":4,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh remote admin/support results were mostly German/Italian/English-language service-centre roles and failed the language gate."},
+    {"name":"Public community / freelance discovery","family":"community-freelance","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"No new publicly verifiable promotion-grade community/freelance hit was found in this focused run; authenticated/private coverage remains outside public verification."}
   ]
 }
