@@ -5,7 +5,9 @@ const CACHE='komarenaJobRadarFeed:v7:';
 const FRESH_MS=48*60*60*1000;
 const FUTURE_TOLERANCE_MS=10*60*1000;
 const PROMOTION_CONFIDENCE_MIN=80;
-const DELTA_FILES=['jobs-fresh-delta.json','jobs-fresh-delta-20260910.json'];
+const DELTA_INDEX='jobs-delta-index.json';
+const DELTA_FALLBACK=['jobs-fresh-delta.json','jobs-fresh-delta-20260910.json','jobs-fresh-delta-20260911.json'];
+const DELTA_NAME_RE=/^jobs-fresh-delta(?:-\d{8})?\.json$/;
 const nativeFetch=window.fetch.bind(window);
 const canon=u=>{try{const x=new URL(u,location.href);['utm_source','utm_medium','utm_campaign','search_id','ref','trk'].forEach(k=>x.searchParams.delete(k));x.hash='';return x.origin+x.pathname+(x.searchParams.toString()?'?'+x.searchParams.toString():'')}catch{return String(u||'').split('#')[0].split('?')[0]}};
 const norm=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
@@ -15,10 +17,12 @@ const pref=j=>({company:600,government:550,linkedin:500,profesia:400,other:300,f
 const ts=j=>Date.parse(j?.verifiedAt||'')||0;
 const publishedTs=j=>Date.parse(j?.publishedAt||'')||0;
 const checkedTs=j=>Date.parse(j?.linkCheckedAt||'')||0;
+const expiresTs=j=>Date.parse(j?.expiresAt||'')||0;
 const better=(next,old)=>{if(!old)return true;const nt=ts(next),ot=ts(old);if(nt!==ot)return nt>ot;const nc=Number(next?.scoreConfidence)||0,oc=Number(old?.scoreConfidence)||0;if(nc!==oc)return nc>oc;return pref(next)>pref(old)};
 function eligibilityReason(j){
   if(!j)return'empty';
   if(j.status==='inactive'||j.status==='expired')return'status';
+  if(expiresTs(j)&&Date.now()>expiresTs(j))return'expired-at';
   if(j.promotionEligible===false)return'ineligible';
   const link=String(j.linkStatus||'').toLowerCase();
   if(['broken','inactive','expired','404','410'].includes(link))return'link';
@@ -45,13 +49,19 @@ async function baseline(){
   try{const r=await nativeFetch(BASE+'baseline-jobs.json?t='+Date.now(),{cache:'no-store',headers:{Accept:'application/json'}});if(!r.ok)throw new Error('baseline '+r.status);const data=await r.json();writeCache('baseline-jobs.json',data);return {name:'baseline-jobs.json',data,mode:'baseline'}}
   catch(err){const cached=readCache('baseline-jobs.json');if(cached&&cached.data)return {name:'baseline-jobs.json',data:cached.data,mode:'baseline-cache',savedAt:cached.savedAt,error:String(err&&err.message||err)};throw err}
 }
-function quarantineStats(raw){const out={stale:0,ineligible:0,link:0,'link-unverified':0,'link-stale':0,'low-confidence':0,unverified:0,status:0,'future-verification':0,other:0};raw.forEach(j=>{const r=eligibilityReason(j);if(r)out[r]!==undefined?out[r]++:out.other++});return out}
+function sanitizeDeltaNames(list){return [...new Set((Array.isArray(list)?list:[]).filter(x=>typeof x==='string'&&DELTA_NAME_RE.test(x)))].slice(-14)}
+async function resolveDeltaFiles(){
+  const idx=await getJson(DELTA_INDEX,false);
+  const files=sanitizeDeltaNames(idx.data?.files);
+  return {files:files.length?files:DELTA_FALLBACK,indexMode:files.length?idx.mode:'fallback',indexError:files.length?null:(idx.error||'empty-or-invalid-index')};
+}
+function quarantineStats(raw){const out={stale:0,ineligible:0,link:0,'link-unverified':0,'link-stale':0,'low-confidence':0,unverified:0,status:0,'expired-at':0,'future-verification':0,other:0};raw.forEach(j=>{const r=eligibilityReason(j);if(r)out[r]!==undefined?out[r]++:out.other++});return out}
 function latestVerified(jobs){return jobs.reduce((m,j)=>Math.max(m,ts(j)),0)}
 function latestPublished(jobs){return jobs.reduce((m,j)=>Math.max(m,publishedTs(j)),0)}
 function latestField(parts,key){return parts.map(x=>x?.data?.[key]).filter(Boolean).sort().pop()||null}
-function health(main,extra,deltas,usedBaseline,jobs,raw){
+function health(main,extra,deltas,deltaMeta,usedBaseline,jobs,raw){
   const q=quarantineStats(raw),lv=latestVerified(jobs),lp=latestPublished(jobs),parts=[main,extra,...deltas];
-  window.JobRadarFeedHealth={checkedAt:new Date().toISOString(),freshnessWindowHours:48,promotionConfidenceMin:PROMOTION_CONFIDENCE_MIN,mainMode:main.mode,extraMode:extra.mode,deltaModes:Object.fromEntries(deltas.map(x=>[x.name,x.mode])),fallback:usedBaseline?'baseline':(parts.some(x=>x.mode==='cache')?'cache':'none'),jobs:jobs.length,rawJobs:raw.length,quarantined:q,latestJobVerifiedAt:lv?new Date(lv).toISOString():null,latestJobPublishedAt:lp?new Date(lp).toISOString():null,latestContentUpdatedAt:latestField(parts,'updatedAt'),latestSourceVerificationAt:latestField(parts,'sourceVerificationAt')};
+  window.JobRadarFeedHealth={checkedAt:new Date().toISOString(),freshnessWindowHours:48,promotionConfidenceMin:PROMOTION_CONFIDENCE_MIN,mainMode:main.mode,extraMode:extra.mode,deltaIndexMode:deltaMeta.indexMode,deltaIndexError:deltaMeta.indexError,deltaFiles:deltaMeta.files,deltaModes:Object.fromEntries(deltas.map(x=>[x.name,x.mode])),fallback:usedBaseline?'baseline':(parts.some(x=>x.mode==='cache')?'cache':'none'),jobs:jobs.length,rawJobs:raw.length,quarantined:q,latestJobVerifiedAt:lv?new Date(lv).toISOString():null,latestJobPublishedAt:lp?new Date(lp).toISOString():null,latestContentUpdatedAt:latestField(parts,'updatedAt'),latestSourceVerificationAt:latestField(parts,'sourceVerificationAt')};
 }
 window.fetch=async(input,init)=>{
   const url=typeof input==='string'?input:(input&&input.url)||'';
@@ -59,11 +69,12 @@ window.fetch=async(input,init)=>{
   try{
     let main,extra,deltas=[],usedBaseline=false;
     try{main=await getJson('jobs-data.json',true)}catch{main=await baseline();usedBaseline=true}
-    [extra,...deltas]=await Promise.all([getJson('jobs-data-nonprof.json',false),...DELTA_FILES.map(f=>getJson(f,false))]);
+    const deltaMeta=await resolveDeltaFiles();
+    [extra,...deltas]=await Promise.all([getJson('jobs-data-nonprof.json',false),...deltaMeta.files.map(f=>getJson(f,false))]);
     const allParts=[main,extra,...deltas];
     const raw=mergeJobs(...allParts.map(x=>x.data.jobs||[]));
     const jobs=raw.filter(eligible);
-    health(main,extra,deltas,usedBaseline,jobs,raw);
+    health(main,extra,deltas,deltaMeta,usedBaseline,jobs,raw);
     const contentUpdatedAt=latestField(allParts,'updatedAt');
     const verificationUpdatedAt=window.JobRadarFeedHealth.latestJobVerifiedAt;
     const sourceVerificationAt=window.JobRadarFeedHealth.latestSourceVerificationAt;
