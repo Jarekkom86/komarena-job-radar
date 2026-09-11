@@ -1,29 +1,29 @@
 {
   "schemaVersion": 5,
-  "updatedAt": "2026-09-11T23:22:47+02:00",
+  "updatedAt": "2026-09-12T00:49:26+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "freshPromoted": 0,
-    "freshCandidates": 8,
+    "freshCandidates": 2,
     "existingReverified": 0,
     "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-11T23:22:47+02:00",
-    "sourceVerificationAt": "2026-09-11T23:22:47+02:00",
+    "contentChangedAt": "2026-09-12T00:49:26+02:00",
+    "sourceVerificationAt": "2026-09-12T00:49:26+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing records keep their own verifiedAt unless their public detail was actually reopened or otherwise reconfirmed.",
-    "note": "Fresh 11.9.2026 23:22 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Kariera/Zoznam, Praca za rohom, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and Facebook public indexing. No new promotion-grade unique hit cleared location, language, qualification, skill, economics and trust gates. Upwork produced fresh Worldwide VA/WordPress/e-commerce candidates, but visible examples were low-value fixed-price, mass-invite, already-hired, high-competition, strong-English, or expert-development scoped. Reddit returned current supply-side FOR HIRE posts rather than hiring demand. Facebook public indexing produced 0 concrete verifiable hiring posts."
+    "note": "Fresh 12.9.2026 00:49 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Kariera/Zoznam, Praca za rohom, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and Facebook public indexing. No new promotion-grade unique hit cleared location, language, qualification, skill, economics and trust gates. LinkedIn surfaced a minutes-old NATEK Salesforce CRM Support Manager remote Bratislava role, but its Salesforce platform ownership/manager scope is materially above target. Upwork surfaced a current Worldwide Content Management & Project Coordination VA, but required headless CMS experience, Adobe stack and good spoken/written English. Facebook public indexing again produced 0 concrete verifiable hiring posts."
   },
   "developmentBacklogAdded": [
     {
-      "id": "freelance-mass-invite-risk-signal",
-      "title": "Freelance mass-invite risk signal",
-      "reason": "Track invites sent, unanswered invites, hires and proposal count on freelance listings. Penalize listings with broad mass-invite behaviour or disproportionate unanswered invites before spending application time; this catches low-intent or spam-like opportunities even when headline pay looks attractive."
+      "id": "remote-travel-burden-normalizer",
+      "title": "Remote travel-burden normalizer",
+      "reason": "Distinguish true remote roles from remote roles with occasional mandatory travel. Record travel frequency, destination, duration and whether travel costs/time are compensated, then apply a proportional burden rather than incorrectly treating quarterly travel as regular commuting or ignoring it completely."
     },
     {
-      "id": "hire-before-audit-suppressor",
-      "title": "Already-hired listing suppression gate",
-      "reason": "If a freelance listing already shows one or more hires, reduce priority sharply unless the client explicitly needs multiple freelancers and remaining demand is clear. This avoids wasting application effort on technically open listings whose practical hiring window has already closed."
+      "id": "platform-ownership-scope-gate",
+      "title": "Platform ownership scope gate",
+      "reason": "Detect roles whose title sounds like support but whose real scope includes platform administration, governance, configuration ownership or managerial accountability for systems such as Salesforce. Penalize these before ranking so support-manager or platform-owner jobs do not outrank realistic L1/L2 support roles."
     }
   ],
   "liveMix": {
@@ -35,115 +35,16 @@
     "note": "Persisted authoritative LIVE feed; no persisted LIVE delta in this run because no new promotion-grade unique hit was confirmed."
   },
   "sources": [
-    {
-      "name": "Profesia",
-      "family": "profesia",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh Bratislava WordPress/WooCommerce/admin/support/driver discovery was searched; no new concrete unique promotion-grade public-index result surfaced."
-    },
-    {
-      "name": "Official company careers",
-      "family": "company-careers",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh direct-company Bratislava technical-support/admin/e-commerce discovery was searched; no new canonical promotion-grade delta was confirmed."
-    },
-    {
-      "name": "LinkedIn Jobs",
-      "family": "linkedin",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Public-index discovery was searched for Bratislava and Slovakia-remote support/admin/WordPress roles; no new promotion-grade concrete delta surfaced in this run."
-    },
-    {
-      "name": "Worki.sk",
-      "family": "worki",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh Bratislava administration/technical/driver search was performed; no new suitable BA-area promotion-grade result surfaced."
-    },
-    {
-      "name": "Brigada.sk",
-      "family": "brigada-sk",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh Bratislava administrative/e-shop/technical/driver brigade discovery was searched; no new concrete suitable public-index hit surfaced."
-    },
-    {
-      "name": "Kariera.sk / Zoznam",
-      "family": "kariera",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh Bratislava admin/e-shop/support/driver discovery was searched; no new unique promotion-grade result surfaced in the public index."
-    },
-    {
-      "name": "Práca za rohom",
-      "family": "pracazarohom",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh Bratislava admin/support/WordPress/driver discovery was searched; no independent promotion-grade public-index result surfaced and mirrors were not counted independently."
-    },
-    {
-      "name": "Pretlak / StartupJobs / WordPress Jobs",
-      "family": "tech-creative",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh WordPress/WooCommerce/support/remote discovery searched across Pretlak, StartupJobs and WordPress Jobs; no new suitable non-hard-dev Slovakia-from-home delta surfaced."
-    },
-    {
-      "name": "Upwork",
-      "family": "freelance",
-      "status": "ok",
-      "hits": 8,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language":2,"inactive":2,"duplicate":0,"location":0,"skill":2,"physical":0,"ranking":8},
-      "note": "Fresh Worldwide results included store/data-entry VA at 36 USD fixed with 20 mass invites, generic VA at 1800 USD fixed from a very new client, WordPress plugin maintenance at 10 USD fixed/Expert, research VA at 10 USD fixed and several older VA/WordPress listings already showing hires or high competition. No result cleared economics, trust, skill and application-ROI gates."
-    },
-    {
-      "name": "Reddit / WordPress communities",
-      "family": "community",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Current public discovery returned supply-side FOR HIRE WordPress/WooCommerce developer posts rather than concrete hiring demand. These were not counted as hiring hits."
-    },
-    {
-      "name": "Facebook public index",
-      "family": "facebook",
-      "status": "limited",
-      "hits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "0 verified hits. Priority WordPress Slovensko, WooCommerce SK/CZ and Bratislava jobs public-index searches returned no concrete publicly verifiable hiring post with a direct link. Coverage remains partial; authenticated Nexus/local ingestion remains backlog only and was not started."
-    }
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava WordPress/WooCommerce/admin/support/driver discovery was searched; no new concrete unique promotion-grade public-index result surfaced."},
+    {"name":"Official company careers","family":"company-careers","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh direct-company Bratislava technical-support/admin/e-commerce discovery was searched; no new canonical promotion-grade delta was confirmed."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":1},"note":"Fresh public-index discovery surfaced NATEK Salesforce CRM Support Manager | Remote | Bratislava, posted minutes before audit. Location is compatible with remote-from-Slovakia plus quarterly Bratislava/Prague travel, but Salesforce installation/configuration/maintenance, governance and manager-level ownership are above target profile, so no promotion."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administration/technical/driver search was performed; no new suitable BA-area promotion-grade result surfaced."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administrative/e-shop/technical/driver brigade discovery was searched; no new concrete suitable public-index hit surfaced."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/e-shop/support/driver discovery was searched; no new unique promotion-grade result surfaced in the public index."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/support/WordPress/driver discovery was searched; no independent promotion-grade public-index result surfaced and mirrors were not counted independently."},
+    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh WordPress/WooCommerce/support/remote discovery searched across Pretlak, StartupJobs and WordPress Jobs; no new suitable non-hard-dev Slovakia-from-home delta surfaced."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":1},"note":"Current Worldwide result Virtual Assistant | Content Management & Project Coordination is truly remote and strong on content/admin coordination, but requires headless CMS experience plus Adobe Acrobat/InDesign/Illustrator and good spoken/written English. Other indexed WordPress/VA results were older, already hired, low-value fixed-price, high-competition or expert-development scoped. No promotion."},
+    {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Current public discovery returned supply-side FOR HIRE WordPress/WooCommerce developer posts rather than concrete hiring demand. These were not counted as hiring hits."},
+    {"name":"Facebook public index","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"0 verified hits. Priority WordPress Slovensko, WooCommerce SK/CZ and Bratislava jobs public-index searches returned no concrete publicly verifiable hiring post with a direct link. Coverage remains partial; authenticated Nexus/local ingestion remains backlog only and was not started."}
   ]
 }
