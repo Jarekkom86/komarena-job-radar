@@ -1,29 +1,29 @@
 {
   "schemaVersion": 5,
-  "updatedAt": "2026-09-12T00:49:26+02:00",
+  "updatedAt": "2026-09-12T01:39:04+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "freshPromoted": 0,
-    "freshCandidates": 2,
+    "freshCandidates": 4,
     "existingReverified": 0,
     "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-12T00:49:26+02:00",
-    "sourceVerificationAt": "2026-09-12T00:49:26+02:00",
+    "contentChangedAt": "2026-09-12T01:39:04+02:00",
+    "sourceVerificationAt": "2026-09-12T01:39:04+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing records keep their own verifiedAt unless their public detail was actually reopened or otherwise reconfirmed.",
-    "note": "Fresh 12.9.2026 00:49 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Kariera/Zoznam, Praca za rohom, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and Facebook public indexing. No new promotion-grade unique hit cleared location, language, qualification, skill, economics and trust gates. LinkedIn surfaced a minutes-old NATEK Salesforce CRM Support Manager remote Bratislava role, but its Salesforce platform ownership/manager scope is materially above target. Upwork surfaced a current Worldwide Content Management & Project Coordination VA, but required headless CMS experience, Adobe stack and good spoken/written English. Facebook public indexing again produced 0 concrete verifiable hiring posts."
+    "note": "Fresh 12.9.2026 01:39 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Kariera/Zoznam, Praca za rohom, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and Facebook public indexing. No new promotion-grade unique hit cleared location, language, qualification, economics, freshness and trust gates. LinkedIn resurfaced the already-seen NATEK Salesforce CRM Support Manager and therefore counted as duplicate, not a new independent candidate. Upwork surfaced Worldwide entry-level social publishing at 5 USD/h and e-commerce VA at 7-8 USD/h; both clear the remote gate but are economically weak for priority promotion. Reddit public indexing surfaced a strong WordPress/WooCommerce content assistant post from 19.7.2026 with a 50 USD paid trial and potential ongoing work, but it is nearly two months old and current availability could not be reconfirmed from the canonical Reddit page, so it remains non-LIVE pending freshness verification. Facebook again produced 0 concrete verifiable hiring posts."
   },
   "developmentBacklogAdded": [
     {
-      "id": "remote-travel-burden-normalizer",
-      "title": "Remote travel-burden normalizer",
-      "reason": "Distinguish true remote roles from remote roles with occasional mandatory travel. Record travel frequency, destination, duration and whether travel costs/time are compensated, then apply a proportional burden rather than incorrectly treating quarterly travel as regular commuting or ignoring it completely."
+      "id": "compensation-floor-after-fees",
+      "title": "Compensation floor after platform fees",
+      "reason": "Normalize freelance hourly/fixed offers into estimated net effective hourly pay after platform fees, unpaid onboarding, proposal time and likely non-billable coordination. Automatically demote offers whose net economics fall below a configurable floor even when the task fit is otherwise high."
     },
     {
-      "id": "platform-ownership-scope-gate",
-      "title": "Platform ownership scope gate",
-      "reason": "Detect roles whose title sounds like support but whose real scope includes platform administration, governance, configuration ownership or managerial accountability for systems such as Salesforce. Penalize these before ranking so support-manager or platform-owner jobs do not outrank realistic L1/L2 support roles."
+      "id": "community-post-freshness-recheck",
+      "title": "Community-post freshness recheck",
+      "reason": "For Reddit/Facebook/community hiring posts older than a configurable age, require a successful canonical-page recheck or explicit recent activity before LIVE promotion. This prevents attractive but stale open-ended posts from being treated as current opportunities when search indexing remains available after hiring has ended."
     }
   ],
   "liveMix": {
@@ -37,14 +37,14 @@
   "sources": [
     {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava WordPress/WooCommerce/admin/support/driver discovery was searched; no new concrete unique promotion-grade public-index result surfaced."},
     {"name":"Official company careers","family":"company-careers","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh direct-company Bratislava technical-support/admin/e-commerce discovery was searched; no new canonical promotion-grade delta was confirmed."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":1},"note":"Fresh public-index discovery surfaced NATEK Salesforce CRM Support Manager | Remote | Bratislava, posted minutes before audit. Location is compatible with remote-from-Slovakia plus quarterly Bratislava/Prague travel, but Salesforce installation/configuration/maintenance, governance and manager-level ownership are above target profile, so no promotion."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public index resurfaced NATEK Salesforce CRM Support Manager | Remote | Bratislava. It was already evaluated in the preceding audit and remains above target due Salesforce platform ownership/manager scope; counted as duplicate, not as new promotion."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administration/technical/driver search was performed; no new suitable BA-area promotion-grade result surfaced."},
     {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administrative/e-shop/technical/driver brigade discovery was searched; no new concrete suitable public-index hit surfaced."},
     {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/e-shop/support/driver discovery was searched; no new unique promotion-grade result surfaced in the public index."},
     {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/support/WordPress/driver discovery was searched; no independent promotion-grade public-index result surfaced and mirrors were not counted independently."},
     {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh WordPress/WooCommerce/support/remote discovery searched across Pretlak, StartupJobs and WordPress Jobs; no new suitable non-hard-dev Slovakia-from-home delta surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":1},"note":"Current Worldwide result Virtual Assistant | Content Management & Project Coordination is truly remote and strong on content/admin coordination, but requires headless CMS experience plus Adobe Acrobat/InDesign/Illustrator and good spoken/written English. Other indexed WordPress/VA results were older, already hired, low-value fixed-price, high-competition or expert-development scoped. No promotion."},
-    {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Current public discovery returned supply-side FOR HIRE WordPress/WooCommerce developer posts rather than concrete hiring demand. These were not counted as hiring hits."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":2,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":2},"note":"Worldwide Social Media Publishing Assistant is entry-level and requires no prior marketing experience but pays only 5 USD/h with 20-50 proposals. Worldwide E-commerce VA covers product listings, WooCommerce/Shopify, customer support and inventory but pays 7-8 USD/h and already has 20-50 proposals plus a hire. Both clear remote eligibility but are economically weak versus priority targets, so no LIVE promotion."},
+    {"name":"Reddit / WordPress communities","family":"community","status":"limited","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":1,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public index surfaced Remote WordPress/WooCommerce Content Assistant: UK e-commerce maintenance, product updates and blog edits, 50 USD paid trial, remote and strong scope fit. Post date 19.7.2026 is nearly two months old and canonical Reddit page could not be re-opened in this run, so current availability is unverified; fail-closed from LIVE pending freshness confirmation."},
     {"name":"Facebook public index","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"0 verified hits. Priority WordPress Slovensko, WooCommerce SK/CZ and Bratislava jobs public-index searches returned no concrete publicly verifiable hiring post with a direct link. Coverage remains partial; authenticated Nexus/local ingestion remains backlog only and was not started."}
   ]
 }
