@@ -1,35 +1,37 @@
 {
   "schemaVersion": 5,
-  "updatedAt": "2026-09-11T08:07:00+02:00",
+  "updatedAt": "2026-09-11T08:54:37+02:00",
   "runSummary": {
-    "familiesChecked": 8,
-    "freshPromoted": 1,
-    "freshCandidates": 8,
-    "existingReverified": 3,
-    "existingReverifiedEligible": 3,
+    "familiesChecked": 10,
+    "freshPromoted": 0,
+    "freshCandidates": 11,
+    "existingReverified": 0,
+    "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-11T08:07:00+02:00",
-    "sourceVerificationAt": "2026-09-11T08:07:00+02:00",
+    "contentChangedAt": "2026-09-11T08:54:37+02:00",
+    "sourceVerificationAt": "2026-09-11T08:54:37+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing records keep their own verifiedAt unless their public detail was actually reopened or otherwise reconfirmed.",
-    "note": "Fresh 11.9.2026 08:07 sweep searched current Profesia Bratislava administration/customer-support indexes, Kariera/Zoznam customer support, Práca za rohom details, official IKEA careers and current BA technical/support discovery. PORT System Slovakia customer support is a new promotion-grade match: Petržalka, 1750-2000 EUR, Po-Pi, low physical burden, basic English only and internal training. Slovak Telekom B2B support, IKEA after-sales contact centre and SUPTel dispatch administration were genuinely reopened/reconfirmed. SuperFaktura was not auto-promoted because its current detail asks mildly advanced English; RFA asks intermediate English; FINAL-CD OPEL assistant also shows mildly advanced English plus similar-practice/accounting expectations."
+    "note": "Fresh 11.9.2026 08:54 sweep searched Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/StartupJobs, Upwork, Reddit/WordPress communities and public Facebook indexing. No new unique promotion-grade candidate passed the full location/language/skill/economics gate. Profesia's live Bratislava administration page changed during the run; previously indexed PORT System was no longer present in the freshly opened page, so it was not blindly promoted. Current Profesia hits were mostly language-heavy, student-only, senior/skill-heavy or otherwise below the automatic gate. Upwork exposed fresh Worldwide WooCommerce work, but the best new listing was Expert level with 50+ proposals; other results were hard-development or low-value. Facebook produced 0 verified public hiring posts with direct links."
   },
   "liveMix": {
-    "total": 4,
-    "profesia": 0,
-    "profesiaPct": 0,
-    "nonProfesia": 4,
-    "nonProfesiaPct": 100,
-    "note": "Counts here describe the newly verified 11.9 delta, not the full merged historical feed."
+    "total": 51,
+    "profesia": 25,
+    "profesiaPct": 49.0,
+    "nonProfesia": 26,
+    "nonProfesiaPct": 51.0,
+    "note": "Full historical LIVE feed mix from the persisted authoritatative feed/MASTER; no LIVE delta in this run."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":5,"added":1,"reverified":0,"rejected":{"language":3,"inactive":0,"duplicate":1,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Current Bratislava admin/customer-support indexes showed PORT System as newly listed at 1750-2000 EUR. SuperFaktura, RFA and FINAL-CD were checked but not promoted because current language/experience requirements exceed the preferred automatic gate."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":2,"added":0,"reverified":1,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Slovak Telekom B2B support detail is active and dated 10.9.2026; existing LIVE record was genuinely reverified."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":4,"added":1,"reverified":1,"rejected":{"language":3,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Opened concrete current details for PORT System, SUPTel, SuperFaktura, RFA and FINAL-CD. PORT is promotion-grade; SUPTel was reverified; the others remain below automatic language/experience gate."},
-    {"name":"Official company careers","family":"company-careers","status":"ok","hits":1,"added":0,"reverified":1,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Official IKEA careers still exposes the Bratislava after-sales contact-centre application. English remains an advantage only and prior experience is not required."},
-    {"name":"Bratislava technical/support discovery","family":"technical-support","status":"checked","hits":3,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":0,"skill":2,"physical":0,"ranking":0},"note":"Fresh support discovery also surfaced higher-skill or B2+ roles; these were not promoted automatically."},
-    {"name":"Senec / BA-area technical discovery","family":"ba-area","status":"checked","hits":3,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":2,"ranking":0},"note":"Fresh Senec technical results were mainly production/electrical roles with qualification or physical-load mismatch, so none were promoted."},
-    {"name":"Remote / home-office discovery","family":"remote","status":"checked","hits":4,"added":0,"reverified":0,"rejected":{"language":4,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh remote admin/support results were mostly German/Italian/English-language service-centre roles and failed the language gate."},
-    {"name":"Public community / freelance discovery","family":"community-freelance","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"No new publicly verifiable promotion-grade community/freelance hit was found in this focused run; authenticated/private coverage remains outside public verification."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":7,"added":0,"reverified":0,"rejected":{"language":4,"inactive":0,"duplicate":0,"location":0,"skill":2,"physical":0,"ranking":1},"note":"Fresh Bratislava administration page was opened. Visible results included KONE Italian, Henkel Spanish/international assistant, Electrolux Professional support, AGEL administrative-technical support and other BA roles. None passed the full profile gate in this run. PORT System was present in an earlier index snapshot but absent from the freshly opened page, so no blind promotion was performed."},
+    {"name":"Official company careers","family":"company-careers","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Direct-company career discovery was searched; no new canonical promotion-grade BA/remote delta was confirmed in this run."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public-index LinkedIn discovery was searched, but no concrete new listing with enough same-run public detail to promote was returned."},
+    {"name":"Worki.sk","family":"worki","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":1,"ranking":0},"note":"Current Worki inventory was opened. A fresh Bratislava construction-helper TOP listing was visible but is a physical-work mismatch; no suitable unique admin/support/driver promotion was found."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/driver/warehouse discovery searched; no suitable concrete non-student promotion-grade hit surfaced in public indexing."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administrative/technical/e-shop discovery searched; no new unique candidate with sufficient same-run evidence was promoted."},
+    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh tech/creative WordPress/e-commerce discovery searched; no suitable non-hard-development delta surfaced."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":3,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":2,"physical":0,"ranking":1},"note":"Fresh Worldwide WordPress/WooCommerce discovery found an Expert WooCommerce setup role at 20-25 USD/h but already 50+ proposals, plus hard-development and low-value listings. 0 promotion under current skill/economics gate."},
+    {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public hiring-demand discovery searched; no concrete current promotion-grade request surfaced."},
+    {"name":"Facebook public index","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"0 verified hits. Public indexing did not yield a concrete publicly verifiable hiring post with direct link. Authenticated Nexus/local ingestion remains backlog only and was not started."}
   ]
 }
