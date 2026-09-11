@@ -1,0 +1,18 @@
+{
+  "policyVersion": 1,
+  "name": "requirement-provenance-contradiction-guard",
+  "purpose": "Prevent ranking and rejection errors when mirrors, snippets, or stale copies disagree about hard requirements, location, remote policy, language, schedule, or compensation.",
+  "protectedFields": ["locationEligibility", "locationReason", "sourceTrust", "verifiedAt", "scoreConfidence", "stableId", "canonicalDedupe", "crmUserData"],
+  "criticalRequirements": ["work location", "remote/hybrid frequency", "required language level", "driver licence/category", "tachograph", "mandatory qualification", "shift/weekend requirement", "employment form", "compensation"],
+  "provenanceOrder": ["active employer/canonical detail", "active primary job-board detail", "verified recruiter statement tied to the exact role", "mirror detail", "public search/index snippet"],
+  "rules": [
+    "Store source URL, observedAt, source class, and exact normalized value for every critical requirement used in eligibility or ranking.",
+    "A lower-trust source may enrich a missing field but may not silently overwrite a conflicting higher-trust canonical value.",
+    "Any contradiction affecting location or remote eligibility sets locationEligibility to unknown until the exact role is reverified; distant onsite/hybrid evidence remains reject-distance.",
+    "Any contradiction affecting a hard qualification, language, schedule, driver/tachograph requirement, or employment form blocks APPLY-FIRST until resolved.",
+    "Compensation contradictions mark compensationComparable false until resolved; never average conflicting values.",
+    "Mirrors and snippets are discovery evidence only when canonical evidence is absent; never invent Facebook coverage or treat an inaccessible Facebook result as verified.",
+    "Resolution must preserve stable IDs, canonical dedupe, sourceTrust history, verifiedAt history, scoreConfidence, CRM/edit data, and fail-closed feed behavior."
+  ],
+  "output": ["requirementEvidence", "requirementConflicts", "eligibilityConflict", "conflictResolutionNeeded"]
+}
