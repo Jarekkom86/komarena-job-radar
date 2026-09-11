@@ -1,29 +1,29 @@
 {
   "schemaVersion": 5,
-  "updatedAt": "2026-09-11T21:18:49+02:00",
+  "updatedAt": "2026-09-11T22:42:00+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "freshPromoted": 0,
-    "freshCandidates": 12,
+    "freshCandidates": 14,
     "existingReverified": 0,
     "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-11T21:18:49+02:00",
-    "sourceVerificationAt": "2026-09-11T21:18:49+02:00",
+    "contentChangedAt": "2026-09-11T22:42:00+02:00",
+    "sourceVerificationAt": "2026-09-11T22:42:00+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing records keep their own verifiedAt unless their public detail was actually reopened or otherwise reconfirmed.",
-    "note": "Fresh 11.9.2026 21:18 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Kariera/Zoznam, Praca za rohom, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and Facebook public indexing. No new promotion-grade unique hit cleared location, language, qualification, skill and ranking gates. Strongest fresh BA candidates were PPA CONTROLL IT specialist (direct company, 1700 EUR, Bratislava; AJ B1 plus server/network/infrastructure scope), PRIMA RE GROUP IT Support Specialist (1700 EUR, Bratislava; intermediate English, VŠ II, VPN/CCTV/security scope and travel to accommodation sites), Grafton Office Manager (1750-2000 EUR, Bratislava; active English required) and Lidl Junior Facility Management Consultant (2000 EUR, Bratislava; fluent English or German plus technical/project experience). Facebook public indexing produced 0 concrete verifiable hiring posts."
+    "note": "Fresh 11.9.2026 22:42 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Kariera/Zoznam, Praca za rohom, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and Facebook public indexing. No new promotion-grade unique hit cleared location, language, qualification, skill, economics and ranking gates. Fresh Kariera BA results included KCCKB grant administration (1500 EUR; VŠ II hard qualification), EPF VZV warehouse in DNV (from 1750 EUR gross incl. extras; VZV/physical/3-shift burden), EPF warehouse manipulator (1273 EUR base; physical/shift burden), and SEPS BTS/OPP technician (2000 EUR; statutory specialist qualification). LinkedIn public index showed current technical-support inventory but dominant results require C1 English or stronger infrastructure depth. Upwork produced Worldwide e-commerce/WordPress/VA leads, but fresh examples were either economically weak fixed-price, high-competition, development-heavy, strong-language, or suspiciously generic/new-client. Facebook public indexing produced 0 concrete verifiable hiring posts."
   },
   "developmentBacklogAdded": [
     {
-      "id": "education-level-equivalency-gate",
-      "title": "Education-level equivalency gate",
-      "reason": "Extract mandatory education level and compare it against the candidate's evidenced qualification before ranking or alerting. Distinguish VŠ I, VŠ II, maturita and optional education so attractive technical roles such as PRIMA RE do not consume application time when a formal degree gate is not met."
+      "id": "statutory-license-gate-extractor",
+      "title": "Statutory licence and certificate gate extractor",
+      "reason": "Detect mandatory regulated licences/certificates such as VZV, BOZP/PO technician status, electrical decrees or tachograph requirements before detailed scoring. This avoids spending verification time on otherwise attractive BA roles that are legally inaccessible without a required credential."
     },
     {
-      "id": "agency-client-transparency-confidence",
-      "title": "Agency client transparency confidence",
-      "reason": "For agency listings where the actual employer or industry is hidden, reduce fit confidence until client context is known. This prevents over-ranking generic office/support roles where language intensity, workplace culture or technical environment cannot be verified before application."
+      "id": "base-pay-vs-all-in-pay-normalizer",
+      "title": "Base pay versus all-in pay normalizer",
+      "reason": "Store guaranteed base salary separately from attendance bonuses, shift premiums, performance bonuses and advertised 'from' totals. Rank economic value primarily on guaranteed pay and show the variable upside separately, preventing shift-heavy warehouse listings from appearing stronger than stable office/support roles."
     }
   ],
   "liveMix": {
@@ -38,32 +38,32 @@
     {
       "name": "Profesia",
       "family": "profesia",
-      "status": "ok",
-      "hits": 3,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":3,"inactive":0,"duplicate":0,"location":0,"skill":3,"physical":0,"ranking":3},
-      "note": "Fresh Bratislava IT-support discovery surfaced PPA CONTROLL IT specialist, PRIMA RE GROUP IT Support Specialist and Power Automate & IT Support Specialist. All failed current profile gates due to language and/or infrastructure/automation/qualification burden; no LIVE promotion."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh BA WordPress/e-shop/admin/support/driver discovery was searched. No new concrete unique promotion-grade public-index result surfaced in this run."
     },
     {
       "name": "Official company careers",
       "family": "company-careers",
-      "status": "ok",
-      "hits": 2,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":2,"inactive":0,"duplicate":0,"location":0,"skill":2,"physical":0,"ranking":2},
-      "note": "Direct canonical pages were opened for PPA CONTROLL IT specialist and Lidl Junior Facility Management Consultant. PPA requires AJ B1 and broad server/network infrastructure administration; Lidl requires fluent English or German plus technical/project experience. Direct sources remain preferred over mirrors."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh direct-company Bratislava technical-support/admin/e-commerce discovery was searched; no new canonical promotion-grade delta was confirmed."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
       "status": "ok",
-      "hits": 2,
+      "hits": 4,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":2,"inactive":0,"duplicate":0,"location":0,"skill":2,"physical":0,"ranking":2},
-      "note": "Public index surfaced current SupportYourApp remote technical-support inventory. Roles require fluent English and technical infrastructure/support depth above the target profile; no promotion."
+      "rejected": {"language":3,"inactive":1,"duplicate":0,"location":0,"skill":3,"physical":0,"ranking":4},
+      "note": "Public index showed SupportYourApp technical/customer support and broader Slovak support inventory. Current visible SupportYourApp technical role requires at least C1 English plus 2-3 years support and networking fundamentals; another listing was no longer accepting applications. No promotion."
     },
     {
       "name": "Worki.sk",
@@ -73,7 +73,7 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh Bratislava technical/admin/driver discovery was searched; no new concrete promotion-grade result surfaced in the public index."
+      "note": "Fresh Bratislava technical/admin/driver search was performed. Public index mainly resurfaced an old Martin technical-admin role, which fails location/freshness; no BA-area promotion-grade delta."
     },
     {
       "name": "Brigada.sk",
@@ -83,7 +83,7 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh Bratislava administrative/e-shop/technical/driver brigade discovery was searched; no new concrete promotion-grade result surfaced."
+      "note": "Fresh Bratislava administrative/e-shop/technical/driver brigade discovery was searched; no new concrete suitable public-index hit surfaced."
     },
     {
       "name": "Kariera.sk / Zoznam",
@@ -92,8 +92,8 @@
       "hits": 6,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":3,"inactive":0,"duplicate":1,"location":0,"skill":1,"physical":1,"ranking":4},
-      "note": "Fresh BA results included Grafton Office Manager 1750-2000 EUR, Lidl Facility Management 2000 EUR, Bratislava warehouse work and lower-value generic administration. Office Manager requires active English; Lidl requires fluent English or German and technical/project experience; warehouse result is lower-ranked and physical. No promotion-grade unique hit."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":1,"skill":3,"physical":2,"ranking":5},
+      "note": "Fresh 11.9 BA results included KCCKB grant administration 1500 EUR (VŠ II required), EPF DNV VZV warehouse advertised 1750 EUR all-in (VZV/physical/3-shift), EPF warehouse manipulator 1273 EUR base (physical/shift), SEPS BTS/OPP technician 2000 EUR (regulated specialist scope), plus lower-paid generic administration. Lidl Nemšová facility role was rejected-distance because onsite workplace is outside reasonable BA commute. No promotion-grade unique hit."
     },
     {
       "name": "Pretlak / StartupJobs / WordPress Jobs",
@@ -109,21 +109,21 @@
       "name": "Upwork",
       "family": "freelance",
       "status": "ok",
-      "hits": 3,
+      "hits": 6,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":2,"inactive":1,"duplicate":0,"location":0,"skill":2,"physical":0,"ranking":3},
-      "note": "Public index returned Website Design & Development VA at 10-15 USD/h with 2+ years experience, strong written English and portfolio/reference requirements; E-Commerce VA/Project Coordinator at 3-5 USD/h with high competition; and an older WordPress/Shopify VA with poor fixed-price economics. No promotion."
+      "rejected": {"language":2,"inactive":0,"duplicate":0,"location":0,"skill":3,"physical":0,"ranking":6},
+      "note": "Worldwide results included ecommerce store management VA (20 USD fixed, 20-50 proposals, already hired), beginner generic VA 1500 USD fixed from a brand-new client account, AI WordPress blog VA 30 USD/120 articles, senior Elementor WordPress 5 USD fixed, expert custom WooCommerce 300 USD and plugin maintenance 10 USD fixed. No result cleared trust/economics/skill gates."
     },
     {
       "name": "Reddit / WordPress communities",
       "family": "community",
-      "status": "ok",
-      "hits": 1,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":1,"inactive":1,"duplicate":0,"location":1,"skill":1,"physical":0,"ranking":1},
-      "note": "Public WordPress community discovery surfaced hiring/supply posts, but the concrete hiring result was US-only and development-heavy; a WordPress/WooCommerce content-assistant post was older rather than a same-run fresh lead. No current promotion-grade hiring hit."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Public discovery returned current supply-side FOR HIRE WordPress/e-commerce developer posts rather than concrete hiring demand. These were not counted as hiring hits."
     },
     {
       "name": "Facebook public index",
@@ -133,17 +133,17 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "0 verified hits. Priority WordPress Slovensko, WooCommerce SK/CZ and Bratislava jobs public-index searches returned no concrete publicly verifiable hiring post with a direct link. Public coverage remains partial; authenticated Nexus/local ingestion remains backlog only and was not started."
+      "note": "0 verified hits. Priority WordPress Slovensko, WooCommerce SK/CZ and Bratislava jobs public-index searches returned no concrete publicly verifiable hiring post with a direct link. Coverage remains partial; authenticated Nexus/local ingestion remains backlog only and was not started."
     },
     {
       "name": "Práca za rohom / supplementary Slovak board search",
       "family": "pracazarohom",
-      "status": "ok",
-      "hits": 3,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":3,"inactive":0,"duplicate":3,"location":0,"skill":3,"physical":0,"ranking":3},
-      "note": "Public index surfaced mirrors of PPA CONTROLL IT specialist, PRIMA RE GROUP IT Support Specialist and Lidl Facility Management. These were treated as supplementary evidence only; canonical/direct sources remain preferred and no duplicate LIVE records were created."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh Bratislava admin/support/WordPress/driver discovery was searched; no independent promotion-grade public-index result surfaced. Mirrors are not counted as independent hits."
     }
   ]
 }
