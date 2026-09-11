@@ -1,29 +1,29 @@
 {
   "schemaVersion": 5,
-  "updatedAt": "2026-09-11T17:40:05+02:00",
+  "updatedAt": "2026-09-11T18:18:39+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "freshPromoted": 0,
-    "freshCandidates": 18,
-    "existingReverified": 0,
-    "existingReverifiedEligible": 0,
+    "freshCandidates": 21,
+    "existingReverified": 1,
+    "existingReverifiedEligible": 1,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-11T17:40:05+02:00",
-    "sourceVerificationAt": "2026-09-11T17:40:05+02:00",
+    "contentChangedAt": "2026-09-11T18:18:39+02:00",
+    "sourceVerificationAt": "2026-09-11T18:18:39+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing records keep their own verifiedAt unless their public detail was actually reopened or otherwise reconfirmed.",
-    "note": "Fresh 11.9.2026 17:40 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Praca za rohom, Kariera/Zoznam, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and public Facebook indexing. No new promotion-grade unique hit was confirmed. Grafton Office Manager in Bratislava (from 1750 EUR/month) is a good administrative fit but explicitly requires active English communication, so it remains below promotion threshold. Kariera surfaced several BA-area adjacent results; importantly, the apparently current KAROVIC Referent/-ka obchodnej pripravy vyroby result was opened canonically and is explicitly inactive, so it was rejected as stale rather than promoted. Upwork produced multiple Worldwide VA/WordPress candidates, but the closest results failed on client trust, effective economics, strong-English/phone burden, country restriction, hard-development requirements or extreme workload. Facebook public indexing produced 0 concrete verifiable hiring posts."
+    "note": "Fresh 11.9.2026 18:18 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and public Facebook indexing. No new promotion-grade unique hit cleared location, language, skill and trust gates. Kariera surfaced same-day Bratislava technical inventory including Slovak Telekom fixed-network work at 1770 EUR and Metrohm IT Support at 1800 EUR, but Telekom requires at least electrical qualification §21 and Metrohm remains burdened by B1/B2 English plus degree/practice requirements. LinkedIn surfaced Nexcess Technical Support Engineer in Bratislava/remote-from-Bratislava at 1300-2000 EUR, but Linux-terminal/network knowledge is mandatory, and Sharp Brains L1 desktop support is onsite B2B with incomplete pay/language evidence. The CLOSER web-admin listing remains a stale-index trap: current result pages surface it, while the canonical government record ended 31.8.2026. Upwork produced Worldwide WordPress/VA candidates, but closest results were low-budget, expert/development-heavy, strong-English/phone-heavy or geographically restricted. Facebook public indexing produced 0 concrete verifiable hiring posts."
   },
   "developmentBacklogAdded": [
     {
-      "id": "front-desk-speaking-intensity-classifier",
-      "title": "Front-desk speaking intensity classifier",
-      "reason": "Separate back-office administration from reception-heavy roles by extracting daily phone, visitor, supplier and meeting-contact intensity. This makes English A2/B1 risk and role fit more realistic for Office Manager and customer-facing admin jobs instead of treating all administration as equivalent."
+      "id": "cross-source-expiry-conflict-detector",
+      "title": "Cross-source expiry conflict detector",
+      "reason": "When a current result page republishes or refreshes an older vacancy but an authoritative canonical source has an explicit closing date in the past, automatically flag a source-date conflict and block promotion until the canonical status is reconciled. This prevents false freshness such as CLOSER web admin appearing current on Kariera while the government record ended 31.8.2026."
     },
     {
-      "id": "role-fragmentation-focus-cost-score",
-      "title": "Role fragmentation / focus-cost score",
-      "reason": "Estimate how fragmented a role is across reception, calls, travel booking, office operations, HR support, reports and ad-hoc tasks. Use it as a secondary ranking signal so focused web/admin/support roles rank above highly interrupt-driven generalist roles when compensation and eligibility are otherwise similar."
+      "id": "qualification-gate-extractor",
+      "title": "Mandatory qualification gate extractor",
+      "reason": "Extract legally or professionally mandatory certificates such as §21/§22, tachograph card, VZV licence or vendor certification before detailed scoring. Treat mandatory certificates as explicit knockout evidence rather than merely lowering fit, saving review time on otherwise attractive technical roles like Telekom fixed-network service."
     }
   ],
   "liveMix": {
@@ -39,41 +39,41 @@
       "name": "Profesia",
       "family": "profesia",
       "status": "ok",
-      "hits": 1,
+      "hits": 3,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 1},
-      "note": "Fresh Bratislava admin/support/e-shop/driver discovery searched. Grafton Office Manager, Bratislava, from 1750 EUR/month, is a strong admin match but the public detail explicitly requires active English communication; no LIVE promotion."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 1, "skill": 2, "physical": 0, "ranking": 3},
+      "note": "Fresh telecommunications/technical discovery searched. Slovak Telekom fixed-network roles were visible, but regional mirrors outside BA fail location and the role family requires §21 plus telecom experience. No unique LIVE promotion."
     },
     {
       "name": "Official company careers",
       "family": "company-careers",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 2,
       "added": 0,
-      "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Fresh direct-company discovery searched including Alza and Slovak Telekom public careers; no new promotion-grade unique canonical delta surfaced."
+      "reverified": 1,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 0, "skill": 1, "physical": 0, "ranking": 1},
+      "note": "Fresh direct-company discovery searched, including Slovak Telekom. Existing direct Telekom support inventory remains canonical-preferred. Fixed-network specialist family requires at least §21 and telecom/communications experience; no new promotion."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 3,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Fresh public-index Bratislava IT-support/admin/e-commerce/WordPress discovery searched; no newly verifiable promotion-grade unique hit surfaced."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 3, "physical": 0, "ranking": 3},
+      "note": "Fresh Bratislava support discovery surfaced Nexcess Technical Support Engineer (1300-2000 EUR; remote from Bratislava but mandatory Linux terminal/network knowledge), Sharp Brains onsite L1 desktop support B2B with incomplete pay/language evidence, and Marlink Support Engineer with B2 English/telecom. No promotion-grade fit."
     },
     {
       "name": "Worki.sk",
       "family": "worki",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 1,
       "added": 0,
-      "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Fresh Bratislava admin/technical/driver discovery searched; no new suitable unique candidate surfaced."
+      "reverified": 1,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Fresh search reverified HEATING PRO technical worker / warehouse / delivery in Bratislava at 1600-2500 EUR. It is already present in LIVE, so stable ID and existing record are retained."
     },
     {
       "name": "Brigada.sk",
@@ -83,37 +83,27 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Fresh Bratislava administrative/e-shop/technical brigades searched; public indexing yielded no new promotion-grade unique result."
-    },
-    {
-      "name": "Práca za rohom",
-      "family": "pracazarohom",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Fresh Bratislava technical-support/admin/driver discovery searched; no new promotion-grade unique candidate surfaced."
+      "note": "Fresh Bratislava administrative/e-shop/technical/driver brigades searched; public indexing yielded no new concrete promotion-grade result."
     },
     {
       "name": "Kariera.sk / Zoznam",
       "family": "kariera",
       "status": "ok",
-      "hits": 5,
+      "hits": 8,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 1, "inactive": 1, "duplicate": 1, "location": 0, "skill": 1, "physical": 1, "ranking": 5},
-      "note": "Fresh Bratislava/BA-area discovery surfaced Grafton Office Manager as a mirror/alternate listing plus same-day warehouse/admin-adjacent results. Grafton requires active English communication; EPF warehouse is physically demanding and lower priority. KAROVIC Referent/-ka obchodnej pripravy vyroby looked attractive in result pages (Malacky/Lozorno, 1500-1800 EUR) but its canonical detail explicitly says the offer is inactive, so it is a stale-index reject. No unique promotion."
+      "rejected": {"language": 2, "inactive": 1, "duplicate": 1, "location": 0, "skill": 4, "physical": 1, "ranking": 8},
+      "note": "Fresh Bratislava/BA-area discovery surfaced same-day Metrohm IT Support 1800 EUR, Slovak Telekom fixed networks 1770 EUR, Pezinok maintenance 1500 EUR and other adjacent technical roles. Metrohm remains verification-only for B1/B2 English plus degree/practice requirements; Telekom requires §21. CLOSER web admin appeared current in result pages but authoritative government detail ended 31.8.2026, so it is an inactive/stale-index reject."
     },
     {
       "name": "Pretlak / StartupJobs / WordPress Jobs",
       "family": "tech-creative",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 2,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Fresh WordPress/WooCommerce/e-commerce remote discovery searched across Pretlak, StartupJobs and WordPress Jobs; no suitable non-hard-development Slovakia-from-home delta surfaced."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 2, "physical": 0, "ranking": 2},
+      "note": "Fresh remote/Bratislava tech-creative discovery searched. Datacop Technical Marketing Specialist is Mid/Senior/Expert and English/e-commerce technical-marketing heavy; CloseRocket customer-success/UX is onsite and broader client-facing SaaS work. No suitable non-hard-dev delta."
     },
     {
       "name": "Upwork",
@@ -122,8 +112,8 @@
       "hits": 12,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 4, "inactive": 0, "duplicate": 0, "location": 1, "skill": 3, "physical": 0, "ranking": 12},
-      "note": "Fresh public candidates included a Worldwide beginner VA advertised at 1500 USD fixed from a brand-new client with unclear scope and 20-50 proposals; AI WordPress content at 30 USD for 120 articles; low-budget e-commerce/WordPress VA work; phone-heavy strong-English support; extreme-workload operations; and an Italy-only travel VA. No candidate cleared trust, effective economics, English, location and skill gates together."
+      "rejected": {"language": 3, "inactive": 0, "duplicate": 0, "location": 1, "skill": 5, "physical": 0, "ranking": 12},
+      "note": "Fresh Worldwide candidates included beginner VA at 1500 USD fixed from a brand-new client, Elementor/WordPress roles at 5-100 USD fixed, expert plugin maintenance at 10 USD fixed, WooCommerce build at 70 USD Expert and phone-heavy VA requiring excellent English. No candidate cleared trust, economics, English and skill gates together."
     },
     {
       "name": "Reddit / WordPress communities",
@@ -132,8 +122,8 @@
       "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1, "physical": 0, "ranking": 0},
-      "note": "Fresh public search produced supply-side FOR HIRE posts and an older US-only development-heavy hiring post; 0 suitable concrete client hiring-demand hits for Slovakia."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Fresh public WordPress/WooCommerce hiring-demand discovery searched; no concrete suitable client hiring post verified for Slovakia-from-home. Supply-side posts are not counted as hits."
     },
     {
       "name": "Facebook public index",
@@ -143,7 +133,17 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "0 verified hits. Priority WordPress Slovensko and WooCommerce SK/CZ public-index searches returned no concrete publicly verifiable hiring post with a direct link. Public coverage remains partial; authenticated Nexus/local ingestion remains backlog only and was not started."
+      "note": "0 verified hits. Priority WordPress Slovensko, WooCommerce SK/CZ and Bratislava jobs public-index searches returned no concrete publicly verifiable hiring post with a direct link. Public coverage remains partial; authenticated Nexus/local ingestion remains backlog only and was not started."
+    },
+    {
+      "name": "Práca za rohom / supplementary Slovak board search",
+      "family": "pracazarohom",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Fresh BA admin/support/driver search performed as the second Slovak-board family alongside Worki/Kariera; no new promotion-grade unique candidate surfaced."
     }
   ]
 }
