@@ -1,22 +1,30 @@
 {
   "schemaVersion": 5,
-  "updatedAt": "2026-09-11T16:36:19+02:00",
+  "updatedAt": "2026-09-11T17:40:05+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "freshPromoted": 0,
-    "freshCandidates": 18,
+    "freshCandidates": 17,
     "existingReverified": 0,
     "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-11T16:36:19+02:00",
-    "sourceVerificationAt": "2026-09-11T16:36:19+02:00",
+    "contentChangedAt": "2026-09-11T17:40:05+02:00",
+    "sourceVerificationAt": "2026-09-11T17:40:05+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing records keep their own verifiedAt unless their public detail was actually reopened or otherwise reconfirmed.",
-    "note": "Fresh 11.9.2026 16:36 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Praca za rohom, Kariera/Zoznam, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and public Facebook indexing. No new promotion-grade unique hit was confirmed. Upwork produced several fresh Worldwide VA/WordPress candidates but they failed on client trust, scope economics, hard-development requirements, English burden or weak effective pay. Kariera produced fresh Bratislava administration/support results, but the closest candidates failed on low pay, language or qualification burden. Facebook public indexing produced 0 concrete verifiable hiring posts."
+    "note": "Fresh 11.9.2026 17:40 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Praca za rohom, Kariera/Zoznam, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and public Facebook indexing. No new promotion-grade unique hit was confirmed. Grafton Office Manager in Bratislava (from 1750 EUR/month) is a good administrative fit but explicitly requires active English communication, so it remains below promotion threshold. Kariera also surfaced same-day Bratislava warehouse/administrative-adjacent results, but they were low-fit, physically demanding, low-pay or skill/language mismatches. Upwork produced multiple Worldwide VA/WordPress candidates, but the closest results failed on client trust, effective economics, strong-English/phone burden, country restriction, hard-development requirements or extreme workload. Facebook public indexing produced 0 concrete verifiable hiring posts."
   },
   "developmentBacklogAdded": [
-    {"id":"new-client-trust-confidence-layer","title":"New-client trust confidence layer","reason":"Penalize freelance listings from brand-new or near-empty client accounts until payment history, verified spend or concrete hiring history is visible. This reduces false-positive ranking of superficially attractive high fixed-price VA jobs with weak trust evidence."},
-    {"id":"search-reproducibility-snapshot","title":"Search reproducibility snapshot","reason":"Persist the exact query family, search timestamp and result-count fingerprint for each source family so future runs can distinguish a genuinely unchanged market from a failed or partial index response without touching UI/renderers."}
+    {
+      "id": "front-desk-speaking-intensity-classifier",
+      "title": "Front-desk speaking intensity classifier",
+      "reason": "Separate back-office administration from reception-heavy roles by extracting daily phone, visitor, supplier and meeting-contact intensity. This makes English A2/B1 risk and role fit more realistic for Office Manager and customer-facing admin jobs instead of treating all administration as equivalent."
+    },
+    {
+      "id": "role-fragmentation-focus-cost-score",
+      "title": "Role fragmentation / focus-cost score",
+      "reason": "Estimate how fragmented a role is across reception, calls, travel booking, office operations, HR support, reports and ad-hoc tasks. Use it as a secondary ranking signal so focused web/admin/support roles rank above highly interrupt-driven generalist roles when compensation and eligibility are otherwise similar."
+    }
   ],
   "liveMix": {
     "total": 51,
@@ -27,16 +35,115 @@
     "note": "Persisted authoritative LIVE feed; no persisted LIVE delta in this run because no new promotion-grade unique hit was confirmed."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava WordPress/WooCommerce/admin/technical-support/driver discovery searched; no new unique promotion-grade hit surfaced in the public result set."},
-    {"name":"Official company careers","family":"company-careers","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh direct-company discovery searched including Alza and Slovak Telekom public careers; no newly verified promotion-grade unique delta surfaced."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh public-index Bratislava IT-support/admin/e-commerce/WordPress discovery searched; no new uniquely verifiable promotion-grade hit surfaced."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/technical/driver discovery searched; no new suitable unique candidate surfaced."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administrative/e-shop/technical brigades searched; no new promotion-grade unique result surfaced."},
-    {"name":"Práca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava technical-support/admin discovery searched; no new promotion-grade unique candidate surfaced."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":6,"added":0,"reverified":0,"rejected":{"language":3,"inactive":2,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":6},"note":"Fresh Bratislava results included Caspian general admin at 950 EUR, DENIMA admin at 970 EUR with multiple foreign-language requirements, inactive German-support listings and Grafton L1 complaints analyst at 2000 EUR. None cleared promotion threshold because of low pay, language, inactivity or qualification burden."},
-    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh WordPress/WooCommerce/e-commerce remote discovery searched across Pretlak, StartupJobs and WordPress Jobs; no suitable non-hard-development Slovakia-from-home delta surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":12,"added":0,"reverified":0,"rejected":{"language":2,"inactive":0,"duplicate":0,"location":0,"skill":5,"physical":0,"ranking":12},"note":"Fresh public candidates included a beginner Worldwide VA advertised at 1500 USD fixed but from a brand-new client with unclear scope and 20-50 proposals; a 36 USD store-setup/data-entry job; 30 USD for 120 AI WordPress articles; 1000 USD/month Expert backend WordPress hard-development; and multiple low-budget VA/WordPress roles. No candidate cleared trust, economics, English and skill gates together."},
-    {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":2,"duplicate":0,"location":1,"skill":1,"physical":0,"ranking":0},"note":"Fresh public search produced mainly FOR HIRE/Open to Work posts; the concrete hiring demand surfaced was US-only and development-heavy, so 0 suitable client hiring-demand hits for Slovakia."},
-    {"name":"Facebook public index","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"0 verified hits. Priority WordPress Slovensko and WooCommerce SK/CZ public-index searches returned no concrete publicly verifiable hiring post with a direct link. Public coverage remains partial; authenticated Nexus/local ingestion remains backlog only and was not started."}
+    {
+      "name": "Profesia",
+      "family": "profesia",
+      "status": "ok",
+      "hits": 1,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 1},
+      "note": "Fresh Bratislava admin/support/e-shop/driver discovery searched. Grafton Office Manager, Bratislava, from 1750 EUR/month, is a strong admin match but the public detail explicitly requires active English communication; no LIVE promotion."
+    },
+    {
+      "name": "Official company careers",
+      "family": "company-careers",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Fresh direct-company discovery searched including Alza and Slovak Telekom public careers; no new promotion-grade unique canonical delta surfaced."
+    },
+    {
+      "name": "LinkedIn Jobs",
+      "family": "linkedin",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Fresh public-index Bratislava IT-support/admin/e-commerce/WordPress discovery searched; no newly verifiable promotion-grade unique hit surfaced."
+    },
+    {
+      "name": "Worki.sk",
+      "family": "worki",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Fresh Bratislava admin/technical/driver discovery searched; no new suitable unique candidate surfaced."
+    },
+    {
+      "name": "Brigada.sk",
+      "family": "brigada-sk",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Fresh Bratislava administrative/e-shop/technical brigades searched; public indexing yielded no new promotion-grade unique result."
+    },
+    {
+      "name": "Práca za rohom",
+      "family": "pracazarohom",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Fresh Bratislava technical-support/admin/driver discovery searched; no new promotion-grade unique candidate surfaced."
+    },
+    {
+      "name": "Kariera.sk / Zoznam",
+      "family": "kariera",
+      "status": "ok",
+      "hits": 4,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 1, "physical": 1, "ranking": 4},
+      "note": "Fresh Bratislava/BA-area discovery surfaced Grafton Office Manager as a mirror/alternate listing plus same-day warehouse and adjacent admin results. Grafton requires active English communication; EPF warehouse is physically demanding and lower priority; other adjacent results had qualification/scope mismatch. No unique promotion."
+    },
+    {
+      "name": "Pretlak / StartupJobs / WordPress Jobs",
+      "family": "tech-creative",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Fresh WordPress/WooCommerce/e-commerce remote discovery searched across Pretlak, StartupJobs and WordPress Jobs; no suitable non-hard-development Slovakia-from-home delta surfaced."
+    },
+    {
+      "name": "Upwork",
+      "family": "freelance",
+      "status": "ok",
+      "hits": 12,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 4, "inactive": 0, "duplicate": 0, "location": 1, "skill": 3, "physical": 0, "ranking": 12},
+      "note": "Fresh public candidates included a Worldwide beginner VA advertised at 1500 USD fixed from a brand-new client with unclear scope and 20-50 proposals; AI WordPress content at 30 USD for 120 articles; low-budget e-commerce/WordPress VA work; phone-heavy strong-English support; extreme-workload operations; and an Italy-only travel VA. No candidate cleared trust, effective economics, English, location and skill gates together."
+    },
+    {
+      "name": "Reddit / WordPress communities",
+      "family": "community",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1, "physical": 0, "ranking": 0},
+      "note": "Fresh public search produced supply-side FOR HIRE posts and an older US-only development-heavy hiring post; 0 suitable concrete client hiring-demand hits for Slovakia."
+    },
+    {
+      "name": "Facebook public index",
+      "family": "facebook",
+      "status": "limited",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "0 verified hits. Priority WordPress Slovensko and WooCommerce SK/CZ public-index searches returned no concrete publicly verifiable hiring post with a direct link. Public coverage remains partial; authenticated Nexus/local ingestion remains backlog only and was not started."
+    }
   ]
 }
