@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 10. 9. 2026 21:53 CEST
+Aktualizované: 11. 9. 2026 11:20 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -362,3 +362,32 @@ Aktualizované: 10. 9. 2026 21:53 CEST
 ### Rozvoj pridaný 21:53
 - Search-to-detail promotion debt queue: result-page kandidáta s dobrým fitom, ktorého canonical detail nebol v rovnakom behu kompletne získaný, zaradiť do prioritnej verification queue s TTL a overiť ho v nasledujúcom behu pred širokým discovery; znižuje opakované strácanie kandidátov cez neúplnú verejnú indexáciu.
 - English-demand evidence scale: rozlíšiť explicitnú CEFR úroveň, aktívne hovorenie, telefonovanie, písomnú komunikáciu a iba čítanie technickej dokumentácie; scoring potom penalizuje reálny jazykový burden namiesto nepresného binárneho English rejectu.
+
+## Source audit — 11. 9. 2026 11:20
+- Reálne preverených **11 source families**, z toho **10 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, Služby zamestnanosti/ÚPSVR, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress komunity a Facebook public index.
+- Profesia: `checked`; 0 nových unique promotion-grade výsledkov.
+- Priame company careers: `ok`; msg life Slovakia verejný inventory bol dostupný, ale viditeľné IT roly mali B2/C1 alebo hard DevOps/integration/development burden; 0 promotion.
+- LinkedIn Jobs: `ok`; Marlink Support Engineer = AJ B2 + telecom/networking, TalentPop remote = nemčina + angličtina, SupportYourApp = fluent English; 0 promotion.
+- Worki: `checked`; 0 novej vhodnej unique delty.
+- Brigada.sk: `checked`; 0 nových vhodných konkrétnych hitov.
+- Kariera/Zoznam: `checked`; 0 novej vhodnej unique promotion-grade delty.
+- Služby zamestnanosti/ÚPSVR: `ok`; **Metrohm Research Slovakia — IT Support Specialist**, Einsteinova 33, Bratislava-Petržalka, 1 800 EUR/mes., TPP na neurčito, nástup 1.10.2026, ponuka do 11.10.2026. Veľmi dobrý troubleshooting/support prienik a `ba-area`, ale canonical detail uvádza AJ B1 aj B2, minimálne 1 rok praxe a VŠ I. stupňa; ponechané ako silný verification kandidát, nie automatická LIVE promotion.
+- Pretlak/StartupJobs/WordPress Jobs: `checked`; 0 vhodnej non-hard-dev Slovakia-from-home delty.
+- Upwork: `ok`; fresh WordPress/VA hity boli prevažne low-budget fixed-price, Expert/development-heavy, USA/Spanish-restricted alebo so silnou angličtinou/slabou ekonomikou; 0 promotion.
+- Reddit/WordPress komunity: `checked`; výsledky boli supply-side `FOR HIRE`, nie konkrétne hiring dopyty; 0 verified hiring hits.
+- Facebook public index: `limited`; **0 verified hits**, bez konkrétneho verejne overiteľného postu a priameho linku. Autentizovaný Nexus/local ingestion ostáva backlog a nebol spustený.
+
+### Audit počty 11:20
+- source families checked: **11**
+- nové LIVE promotions: **0**
+- LIVE feed delta: **0**, zostáva **51**
+- Facebook verified hits: **0**
+- LIVE mix: Profesia **49,0 %**, non-Profesia **51,0 %**
+- zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
+- `job-sources.json`: aktualizovaný na 11:20.
+- `source-audit.json`: aktualizovaný na 11:20.
+- `jobs-data.json`: bez zmeny; Metrohm zostáva verification-only pre jazykovo/kvalifikačný burden.
+
+### Rozvoj pridaný 11:20
+- Ambiguous multi-value requirement semantics resolver: pri canonical detailoch, ktoré uvádzajú viac hodnôt toho istého požiadavku (napr. AJ B1 aj B2), automaticky rozlíšiť minimum, preferovaný cieľ, rozsah alebo chybnú duplicitu; kým význam nie je jednoznačný, nezvyšovať jazykový hard-gate nad úroveň priamo dokazateľnú zdrojom. Rieši false reject/promotion pri štruktúrovaných štátnych ponukách typu Metrohm.
+- Targeted clarification queue for high-fit candidates: ak silný `ba-area`/`remote-ok` kandidát neprejde iba pre jednu nejasnú požiadavku, uložiť presnú otázku na overenie, verejný kontakt a TTL; ďalší verification krok potom cielene zisťuje konkrétnu nejasnosť namiesto opakovania celého discovery. Autentizované kontaktovanie sa nespúšťa automaticky.
