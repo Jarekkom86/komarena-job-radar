@@ -14,6 +14,10 @@
     "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing records keep their own verifiedAt unless their public detail was actually reopened or otherwise reconfirmed.",
     "note": "Fresh 11.9.2026 13:10 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Praca za rohom, Kariera/Zoznam, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and public Facebook indexing. Strongest new discovery is Welo Data / Welocalize Generative AI Analyst - Slovak: Remote Slovakia, freelance, 4 weeks, 12.10 USD/hour, no coding, native Slovak, but strong written English plus prior annotation/content-review/QA/data-operations experience is requested. It is a high-priority verification candidate, not persisted LIVE in this run because jobs-data.json can only be written as a full-file replacement and the connector did not expose a safe patch/append path. Existing AlzaBox Specialist was re-opened on the direct Alza career page and remains current. Facebook public indexing produced 0 concrete verifiable hiring posts."
   },
+  "developmentBacklogAdded": [
+    {"id":"adjacent-evidence-bridge-ai-data","title":"Adjacent-experience evidence bridge for AI/data roles","reason":"Map prior troubleshooting, content QA, web administration and AI-assisted workflow evidence to annotation/content-review/data-operations requirements, while explicitly listing unsupported gaps. This reduces false rejects for non-coding AI roles without inventing experience."},
+    {"id":"short-project-roi-prioritizer","title":"Short-project ROI prioritizer","reason":"For 2–8 week freelance projects, estimate total attainable earnings, application effort, expected onboarding cost and continuation probability so short remote opportunities are ranked by realistic net value rather than hourly rate alone."}
+  ],
   "liveMix": {
     "total": 51,
     "profesia": 25,
