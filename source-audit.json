@@ -1,29 +1,29 @@
 {
   "schemaVersion": 5,
-  "updatedAt": "2026-09-11T18:18:39+02:00",
+  "updatedAt": "2026-09-11T19:33:15+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "freshPromoted": 0,
-    "freshCandidates": 21,
-    "existingReverified": 1,
-    "existingReverifiedEligible": 1,
+    "freshCandidates": 18,
+    "existingReverified": 0,
+    "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-11T18:18:39+02:00",
-    "sourceVerificationAt": "2026-09-11T18:18:39+02:00",
+    "contentChangedAt": "2026-09-11T19:33:15+02:00",
+    "sourceVerificationAt": "2026-09-11T19:33:15+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing records keep their own verifiedAt unless their public detail was actually reopened or otherwise reconfirmed.",
-    "note": "Fresh 11.9.2026 18:18 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and public Facebook indexing. No new promotion-grade unique hit cleared location, language, skill and trust gates. Kariera surfaced same-day Bratislava technical inventory including Slovak Telekom fixed-network work at 1770 EUR and Metrohm IT Support at 1800 EUR, but Telekom requires at least electrical qualification §21 and Metrohm remains burdened by B1/B2 English plus degree/practice requirements. LinkedIn surfaced Nexcess Technical Support Engineer in Bratislava/remote-from-Bratislava at 1300-2000 EUR, but Linux-terminal/network knowledge is mandatory, and Sharp Brains L1 desktop support is onsite B2B with incomplete pay/language evidence. The CLOSER web-admin listing remains a stale-index trap: current result pages surface it, while the canonical government record ended 31.8.2026. Upwork produced Worldwide WordPress/VA candidates, but closest results were low-budget, expert/development-heavy, strong-English/phone-heavy or geographically restricted. Facebook public indexing produced 0 concrete verifiable hiring posts."
+    "note": "Fresh 11.9.2026 19:33 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and public Facebook indexing. No new promotion-grade unique hit cleared location, language, skill, economics and trust gates. Kariera's current Bratislava administration inventory includes Office Manager 1750-2000 EUR and Executive Support Specialist 1500-1600 EUR, but detailed language/skill evidence was not strong enough for promotion in this run. LinkedIn returned mostly stale or language-heavy customer-support listings. StartupJobs surfaced Elasticr IT Support Specialist L2 (42-52k CZK, Havlickuv Brod, remote/on-site/hybrid), but Slovakia-from-home eligibility is not proven and the role is L2. Upwork produced one notably close Worldwide candidate: Virtual Assistant - Email, Social & Content Build (Mailchimp, Canva, WordPress), 8-15 USD/h, 4-6 h/week, less than 5 proposals, active client with 53k USD spend; it remains verification-only because hands-on Mailchimp, HTML email editing, Squarespace/Canva/social-creative evidence and English communication burden are not yet demonstrated strongly enough. Facebook public indexing produced 0 concrete verifiable hiring posts."
   },
   "developmentBacklogAdded": [
     {
-      "id": "cross-source-expiry-conflict-detector",
-      "title": "Cross-source expiry conflict detector",
-      "reason": "When a current result page republishes or refreshes an older vacancy but an authoritative canonical source has an explicit closing date in the past, automatically flag a source-date conflict and block promotion until the canonical status is reconciled. This prevents false freshness such as CLOSER web admin appearing current on Kariera while the government record ended 31.8.2026."
+      "id": "application-friction-score",
+      "title": "Application friction score",
+      "reason": "Estimate the practical effort needed to apply before ranking equal-fit opportunities: portfolio samples, custom homework, mandatory video, English-written application, platform credits/connects and long questionnaires. This avoids wasting time on marginal opportunities whose application overhead is disproportionate to expected value."
     },
     {
-      "id": "qualification-gate-extractor",
-      "title": "Mandatory qualification gate extractor",
-      "reason": "Extract legally or professionally mandatory certificates such as §21/§22, tachograph card, VZV licence or vendor certification before detailed scoring. Treat mandatory certificates as explicit knockout evidence rather than merely lowering fit, saving review time on otherwise attractive technical roles like Telekom fixed-network service."
+      "id": "client-responsiveness-recency-signal",
+      "title": "Client responsiveness recency signal",
+      "reason": "For freelance sources, capture last-viewed recency, interviewing count, hires and client spend alongside proposal count. Prefer jobs recently viewed by established clients and deprioritize abandoned listings, improving reply probability without changing the core skill/location gates."
     }
   ],
   "liveMix": {
@@ -38,42 +38,42 @@
     {
       "name": "Profesia",
       "family": "profesia",
-      "status": "ok",
-      "hits": 3,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 1, "skill": 2, "physical": 0, "ranking": 3},
-      "note": "Fresh telecommunications/technical discovery searched. Slovak Telekom fixed-network roles were visible, but regional mirrors outside BA fail location and the role family requires §21 plus telecom experience. No unique LIVE promotion."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Fresh Bratislava WordPress/e-shop/admin/technical-support/driver discovery was searched. No new concrete promotion-grade result was returned by public search in this run."
     },
     {
       "name": "Official company careers",
       "family": "company-careers",
-      "status": "ok",
-      "hits": 2,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "reverified": 1,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 0, "skill": 1, "physical": 0, "ranking": 1},
-      "note": "Fresh direct-company discovery searched, including Slovak Telekom. Existing direct Telekom support inventory remains canonical-preferred. Fixed-network specialist family requires at least §21 and telecom/communications experience; no new promotion."
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Direct-company career discovery including Slovak Telekom was searched; no new unique promotion-grade canonical delta was confirmed."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
       "status": "ok",
-      "hits": 3,
+      "hits": 5,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 3, "physical": 0, "ranking": 3},
-      "note": "Fresh Bratislava support discovery surfaced Nexcess Technical Support Engineer (1300-2000 EUR; remote from Bratislava but mandatory Linux terminal/network knowledge), Sharp Brains onsite L1 desktop support B2B with incomplete pay/language evidence, and Marlink Support Engineer with B2 English/telecom. No promotion-grade fit."
+      "rejected": {"language": 4, "inactive": 3, "duplicate": 0, "location": 0, "skill": 2, "physical": 0, "ranking": 5},
+      "note": "Public index surfaced CloudTalk and SupportYourApp support roles plus TalentPop German/English roles. CloudTalk hits were around two years old, several listings explicitly no longer accept applications, and current TalentPop requires professional German plus English. No promotion."
     },
     {
       "name": "Worki.sk",
       "family": "worki",
-      "status": "ok",
-      "hits": 1,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "reverified": 1,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 1, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Fresh search reverified HEATING PRO technical worker / warehouse / delivery in Bratislava at 1600-2500 EUR. It is already present in LIVE, so stable ID and existing record are retained."
+      "reverified": 0,
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "note": "Fresh Bratislava technical/admin/driver search performed; no new concrete suitable hit surfaced."
     },
     {
       "name": "Brigada.sk",
@@ -83,17 +83,17 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Fresh Bratislava administrative/e-shop/technical/driver brigades searched; public indexing yielded no new concrete promotion-grade result."
+      "note": "Fresh Bratislava administrative/e-shop/technical/driver brigade discovery searched; no new concrete promotion-grade result surfaced."
     },
     {
       "name": "Kariera.sk / Zoznam",
       "family": "kariera",
       "status": "ok",
-      "hits": 8,
+      "hits": 6,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 2, "inactive": 1, "duplicate": 1, "location": 0, "skill": 4, "physical": 1, "ranking": 8},
-      "note": "Fresh Bratislava/BA-area discovery surfaced same-day Metrohm IT Support 1800 EUR, Slovak Telekom fixed networks 1770 EUR, Pezinok maintenance 1500 EUR and other adjacent technical roles. Metrohm remains verification-only for B1/B2 English plus degree/practice requirements; Telekom requires §21. CLOSER web admin appeared current in result pages but authoritative government detail ended 31.8.2026, so it is an inactive/stale-index reject."
+      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 3, "physical": 0, "ranking": 6},
+      "note": "Fresh Bratislava administration inventory was accessible: Office Manager 1750-2000 EUR, Executive Support Specialist 1500-1600 EUR and lower-paid general administration among current listings. Without sufficient canonical evidence on language/requirements, no item was promoted blindly."
     },
     {
       "name": "Pretlak / StartupJobs / WordPress Jobs",
@@ -102,18 +102,18 @@
       "hits": 2,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 2, "physical": 0, "ranking": 2},
-      "note": "Fresh remote/Bratislava tech-creative discovery searched. Datacop Technical Marketing Specialist is Mid/Senior/Expert and English/e-commerce technical-marketing heavy; CloseRocket customer-success/UX is onsite and broader client-facing SaaS work. No suitable non-hard-dev delta."
+      "rejected": {"language": 0, "inactive": 1, "duplicate": 0, "location": 1, "skill": 1, "physical": 0, "ranking": 2},
+      "note": "StartupJobs current search surfaced Elasticr IT Support Specialist L2, 42-52k CZK, Havlickuv Brod, remote/on-site/hybrid, updated 4.9.2026. It remains reject/verification because Slovakia-from-home eligibility is not proven and L2 incident/root-cause scope is above preference. Another 100% remote customer-support result was explicitly expired. WordPress Jobs/Pretlak search produced no stronger fresh suitable delta."
     },
     {
       "name": "Upwork",
       "family": "freelance",
       "status": "ok",
-      "hits": 12,
+      "hits": 5,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 3, "inactive": 0, "duplicate": 0, "location": 1, "skill": 5, "physical": 0, "ranking": 12},
-      "note": "Fresh Worldwide candidates included beginner VA at 1500 USD fixed from a brand-new client, Elementor/WordPress roles at 5-100 USD fixed, expert plugin maintenance at 10 USD fixed, WooCommerce build at 70 USD Expert and phone-heavy VA requiring excellent English. No candidate cleared trust, economics, English and skill gates together."
+      "rejected": {"language": 2, "inactive": 0, "duplicate": 0, "location": 0, "skill": 3, "physical": 0, "ranking": 5},
+      "note": "Best current candidate: Worldwide Virtual Assistant - Email, Social & Content Build (Mailchimp, Canva, WordPress), 8-15 USD/h, 4-6 h/week initially, 3-6 months, less than 5 proposals, client last viewed 3 hours ago and has 53k USD spend. Very relevant WordPress/content scope, but mandatory Mailchimp/email-template HTML plus Squarespace/Canva/social-creative evidence and English communication remain a skill burden, so verification-only. Other Worldwide jobs were low-pay, expert-level or weak economics."
     },
     {
       "name": "Reddit / WordPress communities",
@@ -122,8 +122,8 @@
       "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Fresh public WordPress/WooCommerce hiring-demand discovery searched; no concrete suitable client hiring post verified for Slovakia-from-home. Supply-side posts are not counted as hits."
+      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1, "physical": 0, "ranking": 0},
+      "note": "Public WordPress/WooCommerce community hiring search found no suitable current client demand. A visible hiring post was US-only and hard-development heavy; supply-side FOR HIRE posts were not counted as hits."
     },
     {
       "name": "Facebook public index",
@@ -143,7 +143,7 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Fresh BA admin/support/driver search performed as the second Slovak-board family alongside Worki/Kariera; no new promotion-grade unique candidate surfaced."
+      "note": "Supplementary BA admin/support/driver discovery was performed alongside Worki, Brigada and Kariera; no new promotion-grade unique candidate surfaced."
     }
   ]
 }
