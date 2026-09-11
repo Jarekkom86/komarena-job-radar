@@ -4,7 +4,7 @@
   "runSummary": {
     "familiesChecked": 11,
     "freshPromoted": 0,
-    "freshCandidates": 17,
+    "freshCandidates": 18,
     "existingReverified": 0,
     "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
@@ -12,7 +12,7 @@
     "contentChangedAt": "2026-09-11T17:40:05+02:00",
     "sourceVerificationAt": "2026-09-11T17:40:05+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing records keep their own verifiedAt unless their public detail was actually reopened or otherwise reconfirmed.",
-    "note": "Fresh 11.9.2026 17:40 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Praca za rohom, Kariera/Zoznam, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and public Facebook indexing. No new promotion-grade unique hit was confirmed. Grafton Office Manager in Bratislava (from 1750 EUR/month) is a good administrative fit but explicitly requires active English communication, so it remains below promotion threshold. Kariera also surfaced same-day Bratislava warehouse/administrative-adjacent results, but they were low-fit, physically demanding, low-pay or skill/language mismatches. Upwork produced multiple Worldwide VA/WordPress candidates, but the closest results failed on client trust, effective economics, strong-English/phone burden, country restriction, hard-development requirements or extreme workload. Facebook public indexing produced 0 concrete verifiable hiring posts."
+    "note": "Fresh 11.9.2026 17:40 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Praca za rohom, Kariera/Zoznam, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and public Facebook indexing. No new promotion-grade unique hit was confirmed. Grafton Office Manager in Bratislava (from 1750 EUR/month) is a good administrative fit but explicitly requires active English communication, so it remains below promotion threshold. Kariera surfaced several BA-area adjacent results; importantly, the apparently current KAROVIC Referent/-ka obchodnej pripravy vyroby result was opened canonically and is explicitly inactive, so it was rejected as stale rather than promoted. Upwork produced multiple Worldwide VA/WordPress candidates, but the closest results failed on client trust, effective economics, strong-English/phone burden, country restriction, hard-development requirements or extreme workload. Facebook public indexing produced 0 concrete verifiable hiring posts."
   },
   "developmentBacklogAdded": [
     {
@@ -99,11 +99,11 @@
       "name": "Kariera.sk / Zoznam",
       "family": "kariera",
       "status": "ok",
-      "hits": 4,
+      "hits": 5,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 1, "location": 0, "skill": 1, "physical": 1, "ranking": 4},
-      "note": "Fresh Bratislava/BA-area discovery surfaced Grafton Office Manager as a mirror/alternate listing plus same-day warehouse and adjacent admin results. Grafton requires active English communication; EPF warehouse is physically demanding and lower priority; other adjacent results had qualification/scope mismatch. No unique promotion."
+      "rejected": {"language": 1, "inactive": 1, "duplicate": 1, "location": 0, "skill": 1, "physical": 1, "ranking": 5},
+      "note": "Fresh Bratislava/BA-area discovery surfaced Grafton Office Manager as a mirror/alternate listing plus same-day warehouse/admin-adjacent results. Grafton requires active English communication; EPF warehouse is physically demanding and lower priority. KAROVIC Referent/-ka obchodnej pripravy vyroby looked attractive in result pages (Malacky/Lozorno, 1500-1800 EUR) but its canonical detail explicitly says the offer is inactive, so it is a stale-index reject. No unique promotion."
     },
     {
       "name": "Pretlak / StartupJobs / WordPress Jobs",
