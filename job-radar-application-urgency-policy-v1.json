@@ -1,0 +1,29 @@
+{
+  "policyVersion": 1,
+  "name": "application-urgency",
+  "purpose": "Prioritize already-eligible opportunities by evidence-based closing risk and freshness without weakening location or fit gates.",
+  "hardPreconditions": {
+    "locationEligibility": ["ba-area", "remote-ok"],
+    "activeCanonicalRequired": true,
+    "scoreConfidenceRequired": true
+  },
+  "evidence": {
+    "accepted": ["explicit application deadline", "explicit closing-soon statement", "canonical publication timestamp", "canonical active-until date"],
+    "neverInfer": ["deadline from search snippet age", "scarcity from proposal count alone", "urgency from salary", "urgency from employer brand"]
+  },
+  "urgencyBands": {
+    "apply-now": "explicit deadline <= 48h or canonical explicitly says closing soon",
+    "today": "explicit deadline <= 5 days",
+    "soon": "explicit deadline <= 10 days or fresh canonical listing <= 72h old",
+    "normal": "active listing without stronger urgency evidence",
+    "unknown": "insufficient canonical timing evidence"
+  },
+  "rules": [
+    "Urgency may reorder only jobs that already passed hard location and qualification gates.",
+    "Urgency must never promote reject-distance, locationEligibility unknown, inactive, or hard-mismatch jobs.",
+    "Keep original publication/deadline values unchanged and attach evidence timestamp separately.",
+    "If deadline evidence expires or canonical becomes unavailable, fail closed to unknown; do not delete an existing LIVE record solely for a transient fetch failure.",
+    "Do not modify stable IDs, canonical dedupe keys, CRM fields, sourceTrust, verifiedAt, scoreConfidence, locationEligibility, or locationReason."
+  ],
+  "output": ["applicationUrgency", "applicationUrgencyReason", "applicationUrgencyVerifiedAt"]
+}
