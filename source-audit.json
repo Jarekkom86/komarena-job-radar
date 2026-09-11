@@ -1,18 +1,18 @@
 {
   "schemaVersion": 5,
-  "updatedAt": "2026-09-11T10:49:57+02:00",
+  "updatedAt": "2026-09-11T11:20:32+02:00",
   "runSummary": {
-    "familiesChecked": 10,
+    "familiesChecked": 11,
     "freshPromoted": 0,
-    "freshCandidates": 5,
+    "freshCandidates": 7,
     "existingReverified": 0,
     "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-11T10:49:57+02:00",
-    "sourceVerificationAt": "2026-09-11T10:49:57+02:00",
+    "contentChangedAt": "2026-09-11T11:20:32+02:00",
+    "sourceVerificationAt": "2026-09-11T11:20:32+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing records keep their own verifiedAt unless their public detail was actually reopened or otherwise reconfirmed.",
-    "note": "Fresh 11.9.2026 10:49 sweep searched Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/StartupJobs, Upwork, Reddit/WordPress communities and public Facebook indexing. No new unique promotion-grade candidate passed the full location/language/skill/economics gate. Upwork exposed fresh Worldwide WordPress/WooCommerce/VA work, but current hits were low-budget, Expert/development-heavy, strong-English/country-restricted, or had poor effective economics. Reddit public results were FOR HIRE posts rather than concrete hiring demand. Facebook produced 0 verified public hiring posts with direct links."
+    "note": "Fresh 11.9.2026 11:20 sweep searched Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Kariera/Zoznam, Slovak employment services, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and public Facebook indexing. Metrohm Research Slovakia IT Support Specialist in Bratislava-Petrzalka is a strong new verification candidate: 1800 EUR, indefinite employment, troubleshooting/local support, but English is explicitly B1-B2 and at least one year of experience plus bachelor-level education are requested, so it was not auto-promoted. Other fresh Upwork hits were low-budget, Expert/development-heavy, country-restricted or strong-English/economically weak. Facebook produced 0 verified public hiring posts with direct links."
   },
   "liveMix": {
     "total": 51,
@@ -23,15 +23,16 @@
     "note": "Persisted authoritative LIVE feed; no LIVE delta in this run."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava WordPress/e-shop/admin/technical-support/driver discovery searched; no new unique promotion-grade public hit surfaced."},
-    {"name":"Official company careers","family":"company-careers","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh direct-company career discovery searched across public ATS/career indexes; no new canonical promotion-grade BA/remote delta confirmed."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava IT support/admin/WordPress discovery searched through public LinkedIn indexing; no new unique promotion-grade result surfaced in this run."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava WordPress/e-shop/admin/technical-support/driver discovery searched; no new unique promotion-grade public-index hit surfaced."},
+    {"name":"Official company careers","family":"company-careers","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh direct-company/official-career discovery searched. msg life Slovakia exposed current Bratislava/Home Office IT inventory, but visible roles require B2/C1 foreign languages and/or hard DevOps/integration/development skills; 0 promotion."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":3,"added":0,"reverified":0,"rejected":{"language":3,"inactive":0,"duplicate":0,"location":0,"skill":2,"physical":0,"ranking":0},"note":"Fresh Bratislava support discovery found Marlink Support Engineer (B2 English + telecom/networking), TalentPop remote German+English, and SupportYourApp fluent-English roles. All fail language and/or skill fit; 0 promotion."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/technical/driver discovery searched; no new suitable unique candidate surfaced."},
     {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administrative/technical brigades searched; no new promotion-grade unique result surfaced."},
     {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/support/driver discovery searched; no new unique promotion-grade result surfaced."},
+    {"name":"Služby zamestnanosti / ÚPSVR","family":"employment-services","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Verified Metrohm Research Slovakia IT Support Specialist, Einsteinova 33 Bratislava-Petrzalka, 1800 EUR/month, indefinite contract, start 1.10.2026, offer end 11.10.2026. Strong technical-support/troubleshooting fit and ba-area location, but explicit English B1-B2, at least 1 year practice and bachelor-level education keep it verification-only rather than automatic LIVE promotion."},
     {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh WordPress/e-commerce/remote discovery searched; no suitable non-hard-development Slovakia-from-home delta surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":1,"skill":2,"physical":0,"ranking":1},"note":"Fresh Worldwide results included AI Blog Post VA for WordPress at 30 USD fixed for 120 articles, WooCommerce full-site development at 70 USD fixed/Expert, WordPress plugin maintenance at 10 USD fixed/Expert, plus VA roles restricted by geography or excellent spoken English. No promotion under economics/language/skill gate."},
-    {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public search returned current FOR HIRE WordPress/WooCommerce developer advertisements, not concrete hiring/client-demand posts suitable for ingestion. 0 verified hiring hits."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":4,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":1,"skill":2,"physical":0,"ranking":3},"note":"Fresh public results included AI Blog Post VA for WordPress at 30 USD fixed for 120 articles, Senior Elementor Expert at 5 USD fixed, WordPress plugin maintenance at 10 USD fixed/Expert, and VA roles with USA/Spanish/strong-English or poor economics constraints. No promotion."},
+    {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public search returned fresh FOR HIRE WordPress/WooCommerce developer advertisements, not concrete client hiring-demand posts suitable for ingestion. 0 verified hiring hits."},
     {"name":"Facebook public index","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"0 verified hits. Public indexing did not yield a concrete publicly verifiable hiring post with direct link. Authenticated Nexus/local ingestion remains backlog only and was not started."}
   ]
 }
