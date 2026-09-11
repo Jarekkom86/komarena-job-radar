@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "updatedAt": "2026-09-11T02:17:19+02:00",
+  "updatedAt": "2026-09-11T03:34:41+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
@@ -8,10 +8,10 @@
     "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-11T02:17:19+02:00",
-    "sourceVerificationAt": "2026-09-11T02:17:19+02:00",
+    "contentChangedAt": "2026-09-11T03:34:41+02:00",
+    "sourceVerificationAt": "2026-09-11T03:34:41+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing records keep their own verifiedAt unless their public detail was actually reopened or otherwise reconfirmed.",
-    "note": "Fresh 11.9.2026 02:17 sweep genuinely searched Profesia, direct-company career discovery, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/StartupJobs, Upwork, Reddit/public WordPress communities and public Facebook indexing. No new unique candidate cleared the hard location, language, skill, economics and activity gates. Upwork surfaced several WordPress/VA roles, but the strongest accessible results were older, low-pay, high-competition, English-heavy or development-heavy. SupportYourApp public LinkedIn results remained fluent-English/B2+ mismatches. Facebook yielded 0 concrete publicly verifiable hiring posts."
+    "note": "Fresh 11.9.2026 03:34 sweep genuinely searched Profesia, direct-company career discovery, LinkedIn Jobs, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/public WordPress communities and public Facebook indexing. No new unique candidate cleared the hard location, language, skill, economics and activity gates. LinkedIn surfaced current public technical-support inventory but the strongest visible SupportYourApp roles still require fluent/C1 English; Staffino is an older support/project-coordination listing. Upwork surfaced several Worldwide WordPress/VA/content roles, but the accessible options were older, low-pay, high-competition, English-heavy, portfolio-heavy or hard-development biased. Facebook yielded 0 concrete publicly verifiable hiring posts."
   },
   "liveMix": {
     "total": 51,
@@ -21,14 +21,14 @@
     "nonProfesiaPct": 51.0
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava/BA-area target-role discovery searched; no new unique promotion-grade public-index hit surfaced."},
-    {"name":"Direct company careers","family":"company-careers","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Direct-company career discovery searched; no new canonical company-career promotion-grade delta surfaced."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":3,"added":0,"reverified":0,"rejected":{"language":2,"inactive":1,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":2},"note":"Public LinkedIn discovery searched. SupportYourApp technical/customer-support results remain fluent-English/B2+ mismatches; one older Czech/English role is no longer accepting applications. No new LIVE promotion."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava-area admin/technical discovery searched; no new suitable unique result surfaced."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava/BA-area WordPress, admin, technical-support, driver and logistics discovery searched; no new unique promotion-grade public-index hit surfaced."},
+    {"name":"Direct company careers","family":"company-careers","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh direct-company career discovery searched for Bratislava/BA-area technical support, customer care and web/e-commerce work; no new canonical company-career promotion-grade delta surfaced."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":4,"added":0,"reverified":0,"rejected":{"language":3,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":3},"note":"Public LinkedIn discovery searched. SupportYourApp technical/customer-support roles still require fluent/C1 English and deeper technical-support experience. Staffino support/project-coordination remains an older 2–4 years experience listing. No new LIVE promotion."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava-area admin, technical, driver and warehouse discovery searched; no new suitable unique result surfaced."},
     {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/driver/warehouse discovery searched; no suitable concrete fresh public-index hit surfaced."},
     {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava customer-support/admin/technical discovery searched; no new unique promotion-grade result surfaced."},
     {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Tech/creative and WordPress-oriented discovery searched; no fresh Slovakia-eligible non-hard-dev promotion-grade delta surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":8,"added":0,"reverified":0,"rejected":{"language":3,"inactive":0,"duplicate":0,"location":0,"skill":4,"physical":0,"ranking":7},"note":"Worldwide WordPress/WooCommerce/VA discovery searched. Junior Digital Marketing & WordPress Assistant remains 8–10 USD/h with 20–50 proposals and 7 interviewing. Website Design & Development VA requires excellent written English, 2+ years and portfolio. Other accessible roles were low-pay, older, high-competition or development-heavy. No fresh LIVE promotion."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":11,"added":0,"reverified":0,"rejected":{"language":5,"inactive":0,"duplicate":0,"location":1,"skill":6,"physical":0,"ranking":10},"note":"Worldwide WordPress/WooCommerce/VA discovery searched. Website Design & Development VA is 10–15 USD/h but requires excellent written English, 2+ years and portfolio. Content-management/project-coordination VA requires good English, headless CMS and Adobe stack. Several other roles are low-pay, older, high-competition, location-restricted or development-heavy. No fresh LIVE promotion."},
     {"name":"Reddit / public WordPress communities","family":"communities","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public Reddit/WordPress community discovery searched. No concrete fresh hiring-demand post cleared verification and fit gates."},
     {"name":"Facebook public groups/index","family":"facebook","status":"limited","hits":0,"verifiedHits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"0 verified hits. Fresh public-index searches returned no concrete accessible hiring post with a direct verifiable link. Coverage remains partial; authenticated Nexus/local ingestion stays backlog-only and was not started."}
   ]
