@@ -1,5 +1,46 @@
 # KomArena Job Radar — CHANGELOG
 
+## 2026-09-11 — fresh source promotion + self-discovering delta feed
+
+### 1. Reálny source audit + nový high-confidence PORT System match
+- Reálne prehľadané aktuálne Profesia Bratislava administratíva/zákaznícka podpora, Kariera/Zoznam, Práca za rohom, oficiálna IKEA careers a BA/Senec technická/support discovery.
+- Nová promotion-grade LIVE ponuka: `Špecialista podpory zákazníkov` — PORT System Slovakia, Petržalka, 1 750–2 000 € brutto, Po–Pi bez víkendov/sviatkov, nízka fyzická záťaž, interné zaškolenie a iba základná angličtina.
+- Slovak Telekom B2B support, IKEA popredajný servis a SUPTel dispečing boli reálne znovu otvorené/potvrdené; ich 11.9. `verifiedAt` vznikol iba z tejto kontroly.
+- SuperFaktura nebola automaticky promovaná kvôli mierne pokročilej angličtine, RFA kvôli stredne pokročilej angličtine a FINAL-CD ostáva nižšia priorita kvôli mierne pokročilej AJ plus požiadavke podobnej praxe/účtovníctva.
+
+### 2. Delta manifest namiesto každodenného hardcodovania engine
+- Pridaný `jobs-delta-index.json`, ktorý explicitne registruje povolené fresh delta súbory vrátane `jobs-fresh-delta-20260911.json`.
+- `job-radar-feed-merge-v1.js` už nemusí dostať ručne dopísané každé nové dátumové delta meno; načíta manifest a následne konkrétne vrstvy.
+- Ak manifest chýba, je prázdny alebo neplatný, engine zachová bezpečný fallback na známe delta súbory. Tým sa znižuje riziko, že čerstvá denná vrstva existuje v repozitári, ale LIVE runtime ju vôbec nevidí.
+
+### 3. Expiry gate pre ponuky s `expiresAt`
+- LIVE eligibility teraz kontroluje aj reálny čas `expiresAt` a po jeho uplynutí ponuku fail-closed karantenizuje ako `expired-at`, aj keď jej historický `status` zostal `active`.
+- Health diagnostika samostatne počíta `expired-at`, takže expirované ponuky sa nepletú so stale-verification alebo broken-link prípadmi.
+
+### 4. Bezpečný a diagnostikovateľný delta manifest
+- Manifest akceptuje iba názvy v tvare `jobs-fresh-delta.json` alebo `jobs-fresh-delta-YYYYMMDD.json`; iné cesty/URL sú odmietnuté.
+- Duplicitné názvy sa odstránia a počet načítavaných vrstiev je obmedzený na posledných 14 registrovaných deliet, aby sa zabránilo nekontrolovanému rastu requestov.
+- `JobRadarFeedHealth` teraz vystavuje `deltaIndexMode`, `deltaIndexError` a presný zoznam `deltaFiles`, takže je viditeľné, či LIVE beží z manifestu alebo fallbacku.
+
+### 5. Pravdivá čerstvosť auditu
+- `source-audit.json` bol aktualizovaný výsledkom skutočného sweepu o 08:07, nie dotknutím timestampu. Obsahuje `freshPromoted=1` a `existingReverified=3` s konkrétnymi dôvodmi prijatia/odmietnutia.
+- Obsahová zmena a source-verification čas ostávajú explicitne oddelené.
+
+### Kontroly / regresia
+- CRM/localStorage kľúče a existujúce `jobs` rozhranie neboli zmenené; cache namespace zostal `komarenaJobRadarFeed:v7`, takže existujúci fallback stav ostáva spätne kompatibilný.
+- Fallback poradie live → cache → baseline zostalo zachované; delta manifest má navyše vlastný fallback zoznam.
+- Nový PORT záznam má `promotionEligible=true`, `scoreConfidence=99`, aktívny link check a reálny dnešný `verifiedAt`.
+- Zamknuté vizuálne súbory neboli editované.
+
+### MASTER DESIGN LOCK — overenie hashov
+- `komarena-job-radar-v6.5.html`: očakávaný `18fd009f1f9f041a207b067c5dcc0661f1647199`.
+- `job-radar-v6.css`: očakávaný `5157753d3525a99191e78374f7a074315bf7809a`.
+- `job-radar-v6.5-enhance.js`: očakávaný `fbb56af1213723b68deb9dc6ffc9e4c9de7fd80d`.
+- `komarena-job-radar-jr-master.webp`: očakávaný `ded775849800577277c4581ee5c30db6e43bba54`.
+- MASTER dizajn bol zachovaný; finálne SHA sú overené po zápise nižšie v tejto run kontrole.
+
+---
+
 ## 2026-09-10 — real source refresh + promotion reliability hardening
 
 ### 1. Reálny ranný source audit + promotion-grade delta
