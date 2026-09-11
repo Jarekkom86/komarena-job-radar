@@ -1,29 +1,29 @@
 {
   "schemaVersion": 5,
-  "updatedAt": "2026-09-11T19:33:15+02:00",
+  "updatedAt": "2026-09-11T20:20:34+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "freshPromoted": 0,
-    "freshCandidates": 18,
+    "freshCandidates": 5,
     "existingReverified": 0,
     "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-11T19:33:15+02:00",
-    "sourceVerificationAt": "2026-09-11T19:33:15+02:00",
+    "contentChangedAt": "2026-09-11T20:20:34+02:00",
+    "sourceVerificationAt": "2026-09-11T20:20:34+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing records keep their own verifiedAt unless their public detail was actually reopened or otherwise reconfirmed.",
-    "note": "Fresh 11.9.2026 19:33 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities and public Facebook indexing. No new promotion-grade unique hit cleared location, language, skill, economics and trust gates. Kariera's current Bratislava administration inventory includes Office Manager 1750-2000 EUR and Executive Support Specialist 1500-1600 EUR, but detailed language/skill evidence was not strong enough for promotion in this run. LinkedIn returned mostly stale or language-heavy customer-support listings. StartupJobs surfaced Elasticr IT Support Specialist L2 (42-52k CZK, Havlickuv Brod, remote/on-site/hybrid), but Slovakia-from-home eligibility is not proven and the role is L2. Upwork produced one notably close Worldwide candidate: Virtual Assistant - Email, Social & Content Build (Mailchimp, Canva, WordPress), 8-15 USD/h, 4-6 h/week, less than 5 proposals, active client with 53k USD spend; it remains verification-only because hands-on Mailchimp, HTML email editing, Squarespace/Canva/social-creative evidence and English communication burden are not yet demonstrated strongly enough. Facebook public indexing produced 0 concrete verifiable hiring posts."
+    "note": "Fresh 11.9.2026 20:20 sweep actually searched 11 source families: Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/StartupJobs/WordPress Jobs, Upwork, Reddit/WordPress communities, Facebook public indexing and Praca za rohom supplementary discovery. No new promotion-grade unique hit cleared location, language, skill, economics and trust gates. The closest fresh non-Profesia candidate was Upwork Beginning-friendly Remote Task - Virtual Assistant Needed: Worldwide, 1500 USD fixed, entry level, Slovak listed among accepted language pairs, posted about 5 hours before verification. It remains verification-only because the client account was created 10.9.2026, has no visible spend/hire history, 20-50 proposals and the scope/payment structure is unusually generic. LinkedIn produced current Bratislava/remote support inventory, but SupportYourApp requires fluent/C1 English and technical infrastructure/VPS scope, while Wolt requires English B2 and shifts. Facebook public indexing produced 0 concrete verifiable hiring posts."
   },
   "developmentBacklogAdded": [
     {
-      "id": "application-friction-score",
-      "title": "Application friction score",
-      "reason": "Estimate the practical effort needed to apply before ranking equal-fit opportunities: portfolio samples, custom homework, mandatory video, English-written application, platform credits/connects and long questionnaires. This avoids wasting time on marginal opportunities whose application overhead is disproportionate to expected value."
+      "id": "freelance-account-age-trust-floor",
+      "title": "Freelance account-age trust floor",
+      "reason": "Before promoting unusually attractive remote freelance offers, combine client account age, verified spend, prior hires, payment history and proposal activity into a trust floor. New accounts with no history should remain verification-only even when pay and location look strong; this reduces scam/abandonment risk without suppressing established clients."
     },
     {
-      "id": "client-responsiveness-recency-signal",
-      "title": "Client responsiveness recency signal",
-      "reason": "For freelance sources, capture last-viewed recency, interviewing count, hires and client spend alongside proposal count. Prefer jobs recently viewed by established clients and deprioritize abandoned listings, improving reply probability without changing the core skill/location gates."
+      "id": "generic-scope-payment-anomaly-detector",
+      "title": "Generic-scope payment anomaly detector",
+      "reason": "Flag listings whose compensation is high relative to a vague beginner-level scope such as simple data entry/basic admin. Require stronger client-history and deliverable evidence before promotion. This saves application time and improves trust calibration for freelance discovery."
     }
   ],
   "liveMix": {
@@ -42,8 +42,8 @@
       "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Fresh Bratislava WordPress/e-shop/admin/technical-support/driver discovery was searched. No new concrete promotion-grade result was returned by public search in this run."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh Bratislava WordPress/e-shop/admin/technical-support/driver discovery was searched; no new concrete suitable canonical hit surfaced in public search."
     },
     {
       "name": "Official company careers",
@@ -52,18 +52,18 @@
       "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
       "note": "Direct-company career discovery including Slovak Telekom was searched; no new unique promotion-grade canonical delta was confirmed."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
       "status": "ok",
-      "hits": 5,
+      "hits": 4,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 4, "inactive": 3, "duplicate": 0, "location": 0, "skill": 2, "physical": 0, "ranking": 5},
-      "note": "Public index surfaced CloudTalk and SupportYourApp support roles plus TalentPop German/English roles. CloudTalk hits were around two years old, several listings explicitly no longer accept applications, and current TalentPop requires professional German plus English. No promotion."
+      "rejected": {"language":4,"inactive":0,"duplicate":0,"location":0,"skill":3,"physical":0,"ranking":4},
+      "note": "Public index surfaced SupportYourApp technical-support roles and Wolt Support Associate in Bratislava. SupportYourApp listings require fluent/C1 English and technical infrastructure/VPS scope; Wolt requires minimum English B2 plus morning/evening/weekend shifts. No promotion."
     },
     {
       "name": "Worki.sk",
@@ -72,8 +72,8 @@
       "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Fresh Bratislava technical/admin/driver search performed; no new concrete suitable hit surfaced."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh Bratislava technical/admin/driver discovery searched; no new concrete promotion-grade result surfaced."
     },
     {
       "name": "Brigada.sk",
@@ -82,38 +82,38 @@
       "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
       "note": "Fresh Bratislava administrative/e-shop/technical/driver brigade discovery searched; no new concrete promotion-grade result surfaced."
     },
     {
       "name": "Kariera.sk / Zoznam",
       "family": "kariera",
-      "status": "ok",
-      "hits": 6,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 1, "inactive": 0, "duplicate": 0, "location": 0, "skill": 3, "physical": 0, "ranking": 6},
-      "note": "Fresh Bratislava administration inventory was accessible: Office Manager 1750-2000 EUR, Executive Support Specialist 1500-1600 EUR and lower-paid general administration among current listings. Without sufficient canonical evidence on language/requirements, no item was promoted blindly."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh Bratislava administration/e-shop/support discovery searched; no new same-run canonical result strong enough for promotion surfaced."
     },
     {
       "name": "Pretlak / StartupJobs / WordPress Jobs",
       "family": "tech-creative",
-      "status": "ok",
-      "hits": 2,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 0, "inactive": 1, "duplicate": 0, "location": 1, "skill": 1, "physical": 0, "ranking": 2},
-      "note": "StartupJobs current search surfaced Elasticr IT Support Specialist L2, 42-52k CZK, Havlickuv Brod, remote/on-site/hybrid, updated 4.9.2026. It remains reject/verification because Slovakia-from-home eligibility is not proven and L2 incident/root-cause scope is above preference. Another 100% remote customer-support result was explicitly expired. WordPress Jobs/Pretlak search produced no stronger fresh suitable delta."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh WordPress/support/remote discovery searched; no new suitable non-hard-dev Slovakia-from-home delta surfaced."
     },
     {
       "name": "Upwork",
       "family": "freelance",
       "status": "ok",
-      "hits": 5,
+      "hits": 3,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 2, "inactive": 0, "duplicate": 0, "location": 0, "skill": 3, "physical": 0, "ranking": 5},
-      "note": "Best current candidate: Worldwide Virtual Assistant - Email, Social & Content Build (Mailchimp, Canva, WordPress), 8-15 USD/h, 4-6 h/week initially, 3-6 months, less than 5 proposals, client last viewed 3 hours ago and has 53k USD spend. Very relevant WordPress/content scope, but mandatory Mailchimp/email-template HTML plus Squarespace/Canva/social-creative evidence and English communication remain a skill burden, so verification-only. Other Worldwide jobs were low-pay, expert-level or weak economics."
+      "rejected": {"language":1,"inactive":1,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":3},
+      "note": "Closest fresh candidate: Beginning-friendly Remote Task - Virtual Assistant Needed, Worldwide, 1500 USD fixed, entry level, Slovak accepted, posted about 5 hours before verification. Verification-only because the client account is brand new with no visible spend/hire history, the task description is generic, and competition is already 20-50 proposals. Older WordPress/Shopify product-posting and AI/SEO operations listings were either stale/low-value or required stronger English/tool evidence."
     },
     {
       "name": "Reddit / WordPress communities",
@@ -122,8 +122,8 @@
       "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 1, "skill": 1, "physical": 0, "ranking": 0},
-      "note": "Public WordPress/WooCommerce community hiring search found no suitable current client demand. A visible hiring post was US-only and hard-development heavy; supply-side FOR HIRE posts were not counted as hits."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Public WordPress/community search returned supply-side FOR HIRE posts and general job tooling rather than a concrete suitable current client hiring request; 0 verified hiring hits."
     },
     {
       "name": "Facebook public index",
@@ -132,7 +132,7 @@
       "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
       "note": "0 verified hits. Priority WordPress Slovensko, WooCommerce SK/CZ and Bratislava jobs public-index searches returned no concrete publicly verifiable hiring post with a direct link. Public coverage remains partial; authenticated Nexus/local ingestion remains backlog only and was not started."
     },
     {
@@ -142,8 +142,8 @@
       "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language": 0, "inactive": 0, "duplicate": 0, "location": 0, "skill": 0, "physical": 0, "ranking": 0},
-      "note": "Supplementary BA admin/support/driver discovery was performed alongside Worki, Brigada and Kariera; no new promotion-grade unique candidate surfaced."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Supplementary Bratislava support/admin/driver discovery was performed; no new promotion-grade unique candidate surfaced."
     }
   ]
 }
