@@ -1,18 +1,18 @@
 {
   "schemaVersion": 5,
-  "updatedAt": "2026-09-11T08:59:53+02:00",
+  "updatedAt": "2026-09-11T10:49:57+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
-    "freshCandidates": 10,
+    "freshCandidates": 5,
     "existingReverified": 0,
     "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-11T08:59:53+02:00",
-    "sourceVerificationAt": "2026-09-11T08:59:53+02:00",
+    "contentChangedAt": "2026-09-11T10:49:57+02:00",
+    "sourceVerificationAt": "2026-09-11T10:49:57+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification; touching timestamps is not verification. Existing records keep their own verifiedAt unless their public detail was actually reopened or otherwise reconfirmed.",
-    "note": "Fresh 11.9.2026 08:59 sweep searched Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/StartupJobs, Upwork, Reddit/WordPress communities and public Facebook indexing. No new unique promotion-grade candidate passed the full location/language/skill/economics gate. LinkedIn exposed Sharp Brains DSS L1 in Bratislava: location passes, but 1-3 years desktop support, Active Directory/networking requirements and about 50 applicants keep it below automatic promotion. Brigada.sk exposed a Bratislava reception role but it is primarily student-oriented and requires communicative English. Upwork returned Worldwide WordPress/VA work, but current hits were low-budget, hard-development, country-restricted or English/cold-call mismatches. Facebook produced 0 verified public hiring posts with direct links."
+    "note": "Fresh 11.9.2026 10:49 sweep searched Profesia, direct-company careers, LinkedIn Jobs public index, Worki, Brigada.sk, Kariera/Zoznam, Pretlak/StartupJobs, Upwork, Reddit/WordPress communities and public Facebook indexing. No new unique promotion-grade candidate passed the full location/language/skill/economics gate. Upwork exposed fresh Worldwide WordPress/WooCommerce/VA work, but current hits were low-budget, Expert/development-heavy, strong-English/country-restricted, or had poor effective economics. Reddit public results were FOR HIRE posts rather than concrete hiring demand. Facebook produced 0 verified public hiring posts with direct links."
   },
   "liveMix": {
     "total": 51,
@@ -23,15 +23,15 @@
     "note": "Persisted authoritative LIVE feed; no LIVE delta in this run."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/technical-support/driver discovery was searched. No new unique promotion-grade public hit was confirmed in this run."},
-    {"name":"Official company careers","family":"company-careers","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh direct-company career discovery searched; no new canonical promotion-grade BA/remote delta confirmed."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":2,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":0},"note":"Sharp Brains DSS L1 / IT Support Engineer is Bratislava onsite and technically relevant, but asks 1-3 years desktop support plus AD/network basics and had about 50 applicants. Wolt Support Associate remains B2-English/shift mismatch. 0 promoted."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava WordPress/e-shop/admin/technical-support/driver discovery searched; no new unique promotion-grade public hit surfaced."},
+    {"name":"Official company careers","family":"company-careers","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh direct-company career discovery searched across public ATS/career indexes; no new canonical promotion-grade BA/remote delta confirmed."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava IT support/admin/WordPress discovery searched through public LinkedIn indexing; no new unique promotion-grade result surfaced in this run."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/technical/driver discovery searched; no new suitable unique candidate surfaced."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Recepčná/ý v administratívnej budove, Bratislava-Mlynské Nivy, 6 EUR/h: local but primarily student-oriented and communicative English is mandatory. Not promoted."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":2,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":1,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Current customer-support inventory includes existing Slovak Telekom mirrors and language-heavy support roles. No unique promotion."},
-    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh WordPress/e-commerce/remote discovery searched; no suitable non-hard-development delta surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":1,"skill":2,"physical":0,"ranking":1},"note":"Fresh Worldwide WordPress/VA discovery found plugin maintenance and small WordPress updates at only 10 USD fixed, AI blog VA at 30 USD for 120 posts, a USA-only VA, and cold-call VA requiring excellent English. No promotion under skill/economics/language gate."},
-    {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public hiring-demand discovery searched; no concrete current promotion-grade request surfaced."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administrative/technical brigades searched; no new promotion-grade unique result surfaced."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/support/driver discovery searched; no new unique promotion-grade result surfaced."},
+    {"name":"Pretlak / StartupJobs / WordPress Jobs","family":"tech-creative","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh WordPress/e-commerce/remote discovery searched; no suitable non-hard-development Slovakia-from-home delta surfaced."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":1,"skill":2,"physical":0,"ranking":1},"note":"Fresh Worldwide results included AI Blog Post VA for WordPress at 30 USD fixed for 120 articles, WooCommerce full-site development at 70 USD fixed/Expert, WordPress plugin maintenance at 10 USD fixed/Expert, plus VA roles restricted by geography or excellent spoken English. No promotion under economics/language/skill gate."},
+    {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public search returned current FOR HIRE WordPress/WooCommerce developer advertisements, not concrete hiring/client-demand posts suitable for ingestion. 0 verified hiring hits."},
     {"name":"Facebook public index","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"0 verified hits. Public indexing did not yield a concrete publicly verifiable hiring post with direct link. Authenticated Nexus/local ingestion remains backlog only and was not started."}
   ]
 }
