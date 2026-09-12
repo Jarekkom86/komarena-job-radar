@@ -1,32 +1,32 @@
 {
   "schemaVersion": 6,
-  "updatedAt": "2026-09-12T14:27:17+02:00",
+  "updatedAt": "2026-09-12T15:14:25+02:00",
   "runSummary": {
     "familiesChecked": 13,
     "freshPromoted": 0,
-    "freshCandidates": 14,
+    "freshCandidates": 8,
     "existingReverified": 0,
     "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-12T14:27:17+02:00",
-    "sourceVerificationAt": "2026-09-12T14:27:17+02:00",
+    "contentChangedAt": "2026-09-12T15:14:25+02:00",
+    "sourceVerificationAt": "2026-09-12T15:14:25+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification and link evidence. Content age and source-verification age are separate; touching updatedAt alone never makes a job fresh.",
     "liveFeedCount": 51,
     "liveMix": {"profesia":25,"profesiaPct":49.0,"nonProfesia":26,"nonProfesiaPct":51.0},
     "facebookVerifiedHits": 0,
-    "note": "Fresh 12.9.2026 14:27 sweep across 13 actually searched source families. No new unique promotion-grade LIVE item was added. Upwork surfaced multiple Worldwide VA/WordPress candidates, but the close fits were blocked by weak client trust, implausible or low fixed-price economics, language/country restrictions, competition, or hard-development requirements. Direct-company ATS discovery surfaced Bratislava-capable employer indexes including cargo-partner and Ajax Systems, but no same-run role detail cleared fit and evidence gates. Reddit results were supply-side FOR HIRE or US-only employer demand. Facebook public indexing yielded 0 concrete verifiable hiring posts with direct links."
+    "note": "Fresh 12.9.2026 15:14 sweep across 13 actually searched source families. No new unique promotion-grade LIVE item was added. Upwork surfaced a close WooCommerce/admin VA: Worldwide remote, 10–15 h/week, $6–12/h, ongoing, but it requires clear English plus WooCommerce, QuickBooks Online and Etsy experience and the client account is brand-new with no visible spend/history; kept out of LIVE. Other Upwork results were low-budget, hard-development, strong-English or country-restricted. Public Reddit results were supply-side/stale. Facebook public indexing yielded 0 concrete verifiable hiring posts with direct links."
   },
   "developmentChanges": [
     {
-      "id": "compensation-plausibility-confidence",
-      "title": "Compensation plausibility confidence",
-      "reason": "Score freelance fixed-price offers against stated scope, task volume and client history before promotion. Flag unusually high beginner payouts from brand-new/no-spend clients and extremely low fixed budgets for substantial WordPress work as trust/economics anomalies instead of treating headline pay as reliable."
+      "id": "client-trust-floor-new-account",
+      "title": "Client trust floor for brand-new freelance accounts",
+      "reason": "For Upwork/freelance promotion, separate role fit from client trust. Brand-new clients with no visible spend, hires or payment history should require stronger compensation, clearer scope and lower competition before LIVE promotion; otherwise keep as verification-only even when the task fit is strong."
     },
     {
-      "id": "source-query-yield-decay",
-      "title": "Source query yield decay tracker",
-      "reason": "Track which source-family query patterns repeatedly return zero relevant deltas and rotate keywords, role synonyms and direct-company ATS targets on later runs. This reduces repetitive searches and increases coverage without weakening the ranking gate."
+      "id": "adjacent-tool-debt-score",
+      "title": "Adjacent-tool learning debt score",
+      "reason": "Quantify extra mandatory tools around an otherwise strong core fit (for example WooCommerce plus QuickBooks Online plus Etsy). Penalize cumulative onboarding debt so a role is not overrated merely because one preferred keyword matches."
     }
   ],
   "sources": [
@@ -43,12 +43,12 @@
     {
       "name": "Direct company careers",
       "family": "direct-company",
-      "status": "ok",
-      "hits": 3,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":1,"inactive":0,"duplicate":0,"location":0,"skill":2,"physical":0,"ranking":2},
-      "note": "Direct ATS/company discovery actually searched. cargo-partner and Ajax Systems indexes expose Bratislava locations, but no same-run role detail cleared the target-role/evidence gates; generic SmartRecruiters results were irrelevant or wrong-location."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh direct-company/ATS Bratislava technical-support/admin/WordPress discovery actually searched; no new role detail cleared target-role and evidence gates in this run."
     },
     {
       "name": "LinkedIn Jobs",
@@ -134,11 +134,11 @@
       "name": "Upwork",
       "family": "upwork",
       "status": "ok",
-      "hits": 11,
+      "hits": 8,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":4,"inactive":0,"duplicate":0,"location":2,"skill":4,"physical":0,"ranking":10},
-      "note": "Worldwide VA/WordPress/WooCommerce discovery actually searched. New close hits included beginner VA offers and Elementor/WooCommerce work, but promotion was blocked by brand-new/no-spend client trust, Spanish/USA restrictions, cold-calling/strong-English burden, hard-development requirements, high competition or implausible/low fixed-price economics."
+      "rejected": {"language":4,"inactive":0,"duplicate":0,"location":1,"skill":4,"physical":0,"ranking":7},
+      "note": "Worldwide WordPress/WooCommerce/VA discovery actually searched. Strongest close hit: Virtual Assistant for E-Commerce Business – WooCommerce, QuickBooks & Customer Orders, Worldwide remote, 10–15 h/week, $6–12/h, 6+ months, 15–20 proposals. Not promoted because clear English plus QuickBooks Online/Etsy experience are required and the client joined 8.9.2026 with no visible spend/history. Other results were low-budget, strong-English, hard-development, stale or country-restricted."
     },
     {
       "name": "Reddit / WordPress communities",
@@ -147,8 +147,8 @@
       "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":2,"skill":0,"physical":0,"ranking":0},
-      "note": "Public WordPress community discovery actually searched. Fresh visible posts were supply-side FOR HIRE; employer-demand examples were older and US-only. 0 verified suitable employer-demand hits."
+      "rejected": {"language":0,"inactive":2,"duplicate":0,"location":1,"skill":0,"physical":0,"ranking":0},
+      "note": "Public WordPress community discovery actually searched. Visible results were supply-side FOR HIRE or stale/closed employer demand; 0 suitable current employer-demand hits."
     },
     {
       "name": "Facebook public groups",
@@ -158,7 +158,7 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "WordPress/WooCommerce/Bratislava jobs public-index discovery was actually searched. 0 verified hiring hits; no concrete publicly verifiable post with direct link surfaced. Authenticated Nexus/local ingestion remains backlog only and was not started."
+      "note": "WordPress Slovensko, WooCommerce SK/CZ and Bratislava jobs public-index discovery was actually searched. 0 verified hiring hits; no concrete publicly verifiable post with direct link surfaced. Authenticated Nexus/local ingestion remains backlog only and was not started."
     }
   ]
 }
