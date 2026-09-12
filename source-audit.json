@@ -1,39 +1,32 @@
 {
   "schemaVersion": 6,
-  "updatedAt": "2026-09-12T08:35:00+02:00",
+  "updatedAt": "2026-09-12T09:54:14+02:00",
   "runSummary": {
-    "familiesChecked": 6,
-    "freshPromoted": 2,
-    "freshCandidates": 10,
-    "existingReverified": 3,
-    "existingReverifiedEligible": 3,
+    "familiesChecked": 12,
+    "freshPromoted": 0,
+    "freshCandidates": 16,
+    "existingReverified": 0,
+    "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-12T08:35:00+02:00",
-    "sourceVerificationAt": "2026-09-12T08:35:00+02:00",
+    "contentChangedAt": "2026-09-12T09:54:14+02:00",
+    "sourceVerificationAt": "2026-09-12T09:54:14+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification and link evidence. Content age and source-verification age are separate; touching updatedAt alone never makes a job fresh.",
-    "note": "Focused real 12.9.2026 sweep across Profesia, Praca za rohom, Kariera/Zoznam, IKEA Careers, direct-company pages and cross-board public indexes found two new promotion-grade matches. CREATIVE sites Customer Success Specialist (E-commerce) is a direct e-commerce/support fit with English only as an advantage. ANASOFT L1 software support is explicitly suitable for graduates/without practice and has no English hard gate. Slovak Telekom B2B support, IKEA contact-centre after-sales and SUPTel dispatch administration were directly rechecked and remain active. PORT System was not given a synthetic new verifiedAt in this run because its exact original detail could not be directly reopened; it remains within the prior 48h verification window and was only corroborated through a current public index result."
+    "liveFeedCount": 51,
+    "liveMix": {"profesia":25,"profesiaPct":49.0,"nonProfesia":26,"nonProfesiaPct":51.0},
+    "facebookVerifiedHits": 0,
+    "note": "Fresh 12.9.2026 09:54 sweep across 12 source families. No promotion-grade unique LIVE item was added. The strongest fresh local delta was PROPLUSCO Back Office Asistent/ka, Bratislava, 4-hour part-time, 700 EUR gross: direct company detail confirms broad back-office/personnel administration and no explicit foreign-language requirement, but compensation is supplementary rather than main-income level, so it remains a verification/stacking candidate instead of an automatic LIVE promotion. Henkel International Team Assistant is BA-local but requires C1 English and 2+ years executive-assistant experience. Facebook public indexing yielded 0 verifiable hiring posts."
   },
   "developmentChanges": [
     {
-      "id": "payload-cache-validation",
-      "title": "Fail-closed JSON/cache validation",
-      "reason": "Malformed live JSON or a malformed cached response can no longer poison the feed. jobs payloads must contain a jobs array and the delta manifest must contain a files array before they are cached or reused."
+      "id": "stackable-parttime-effective-day-value",
+      "title": "Stackable part-time effective-day value",
+      "reason": "For 4-hour/part-time BA roles, calculate guaranteed monthly pay, commute cost and occupied day-window together so a low nominal salary is not rejected if it can be efficiently stacked with another job, and weak half-day roles do not crowd out better full-time options."
     },
     {
-      "id": "dedupe-evidence-guard",
-      "title": "Evidence-aware duplicate selection",
-      "reason": "A future-dated or incomplete newer duplicate can no longer hide an older valid verified record. Explicit newer negative evidence such as inactive/expired/broken/ineligible still suppresses an older active record."
-    },
-    {
-      "id": "dedupe-observability",
-      "title": "Dedupe collision diagnostics",
-      "reason": "Feed health now reports URL collisions, identity collisions and replacements so silent duplicate churn can be diagnosed without touching visual files."
-    },
-    {
-      "id": "delta-order-hardening",
-      "title": "Deterministic delta retention",
-      "reason": "Dated delta files are sorted by YYYYMMDD before the 14-layer cap is applied, so an accidentally unsorted manifest cannot discard a newer delta while retaining an older one."
+      "id": "mirror-to-primary-source-upgrade-queue",
+      "title": "Mirror-to-primary source upgrade queue",
+      "reason": "When Profesia or Práca za rohom exposes a fresh role and a direct employer detail also exists, automatically queue the direct source for canonical verification and keep only one stable job identity. This improves source trust and prevents mirrors from inflating diversity counts."
     }
   ],
   "sources": [
@@ -41,61 +34,121 @@
       "name": "Profesia",
       "family": "profesia",
       "status": "ok",
-      "hits": 5,
-      "added": 1,
+      "hits": 6,
+      "added": 0,
       "reverified": 0,
-      "rejected": {"language":1,"inactive":0,"duplicate":1,"location":0,"skill":0,"physical":0,"ranking":1},
-      "note": "Current BA admin/support discovery surfaced ANASOFT L1 support, CREATIVE sites e-commerce support/company listing, ENGIE reception/admin and Eric SK e-shop support. ANASOFT graduate L1 detail was opened directly and promoted; ENGIE was rejected for intermediate English."
+      "rejected": {"language":3,"inactive":0,"duplicate":1,"location":0,"skill":0,"physical":0,"ranking":2},
+      "note": "Fresh BA assistant/admin discovery actually searched. Visible current results included PROPLUSCO Back Office Asistent/ka 4h/700 EUR, Henkel International Team Assistant 1500-1950 EUR, Barger Prekop Receptionist/Assistant 1500 EUR and JTRE reception brigada. PROPLUSCO is a valid stacking candidate but not promoted automatically due supplementary pay; Henkel/Barger are B2-C1 language rejects."
+    },
+    {
+      "name": "Direct company careers",
+      "family": "direct-company",
+      "status": "ok",
+      "hits": 2,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language":1,"inactive":0,"duplicate":1,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "PROPLUSCO canonical detail directly confirmed Bratislava, shortened contract and back-office scope; Henkel canonical Bratislava detail requires English C1 and minimum 2 years executive-assistant experience."
+    },
+    {
+      "name": "LinkedIn Jobs",
+      "family": "linkedin",
+      "status": "ok",
+      "hits": 3,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language":3,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh public LinkedIn discovery actually searched. Foxelli remote e-commerce customer support and SupportYourApp remote technical/customer-support roles surfaced; available details carry strong/fluent English or unfavorable schedule/technical burden. Netzon Dutch support is no longer accepting applications."
+    },
+    {
+      "name": "Worki.sk",
+      "family": "worki",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh Bratislava admin/technical-support discovery actually searched; no new concrete promotion-grade public result surfaced in this sweep."
     },
     {
       "name": "Práca za rohom",
       "family": "pracazarohom",
       "status": "ok",
-      "hits": 5,
-      "added": 1,
-      "reverified": 1,
-      "rejected": {"language":0,"inactive":0,"duplicate":2,"location":0,"skill":0,"physical":0,"ranking":1},
-      "note": "CREATIVE sites Customer Success detail was opened directly and promoted; SUPTel dispatch detail was directly reopened and remains answerable. Current category pages also corroborate active BA office/support opportunities. Eric SK e-shop office support remains a lower-paid seasonal supplement, not main promotion."
+      "hits": 1,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language":0,"inactive":0,"duplicate":1,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Directly indexed PROPLUSCO Back Office Asistent/ka, Bratislava, 700 EUR, shortened contract. Counted as a mirror/corroboration of the direct PROPLUSCO canonical page, not an independent source-family promotion."
     },
     {
-      "name": "Kariera.sk / Zoznam",
+      "name": "Kariera.sk / Zoznam / ÚPSVR mirrors",
       "family": "kariera",
       "status": "ok",
-      "hits": 3,
+      "hits": 5,
       "added": 0,
-      "reverified": 1,
-      "rejected": {"language":1,"inactive":0,"duplicate":1,"location":0,"skill":0,"physical":0,"ranking":1},
-      "note": "Slovak Telekom B2B support on Bajkalska 28 was directly reopened and remains active with home-office flexibility. Other fresh support results were lower fit or language-gated."
+      "reverified": 0,
+      "rejected": {"language":2,"inactive":2,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":1},
+      "note": "Fresh BA admin/customer-support search actually run. New 20h assistant at 600 EUR requires English C1/C2; DENIMA generic admin requires multilingual phone communication. Grafton German/Swedish support mirrors are explicitly inactive."
     },
     {
-      "name": "IKEA Careers",
-      "family": "company-careers",
-      "status": "ok",
-      "hits": 1,
+      "name": "Pretlak",
+      "family": "pretlak",
+      "status": "checked",
+      "hits": 0,
       "added": 0,
-      "reverified": 1,
+      "reverified": 0,
       "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Official IKEA Bratislava search currently lists 5 active jobs and still includes the contact-centre after-sales role; public detail confirms English only as an advantage and no required prior practice."
+      "note": "Fresh Bratislava/remote WordPress, e-commerce and support discovery actually searched; no suitable new non-hard-dev delta surfaced."
     },
     {
-      "name": "Direct company careers",
-      "family": "direct-company",
+      "name": "StartupJobs",
+      "family": "startupjobs",
       "status": "checked",
+      "hits": 2,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language":0,"inactive":2,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Remote Customer Support Representative and Customer Support Guru surfaced in public index, but both canonical pages explicitly state that the offers are no longer current."
+    },
+    {
+      "name": "WordPress Jobs",
+      "family": "wordpress-jobs",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Remote WordPress/WooCommerce support/admin discovery actually searched; no fresh suitable non-hard-dev hiring delta surfaced."
+    },
+    {
+      "name": "Upwork",
+      "family": "upwork",
+      "status": "ok",
+      "hits": 7,
+      "added": 0,
+      "reverified": 0,
+      "rejected": {"language":3,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":3},
+      "note": "Worldwide remote WordPress/VA/e-commerce discovery actually searched. Relevant visible jobs were mostly older 2-3 week listings, 3-8 USD/h or 3-5 USD/h, strong-English/calling roles, or development-heavy. Mailchimp/Canva/WordPress content-build role remains skill-stack heavy. No new promotion-grade delta."
+    },
+    {
+      "name": "Reddit / WordPress communities",
+      "family": "community",
+      "status": "limited",
       "hits": 1,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":1,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":1},
-      "note": "DTSE Bratislava end-user IT support was checked as a technically relevant alternative but the official detail requires English B2, so it was not promoted."
+      "rejected": {"language":1,"inactive":0,"duplicate":0,"location":1,"skill":1,"physical":0,"ranking":0},
+      "note": "Public WordPress hiring discovery actually searched. One concrete hiring post was US-only, developer-heavy and strong-English; other visible posts were freelancer supply-side FOR HIRE posts, not employer demand."
     },
     {
-      "name": "Cross-board public indexes",
-      "family": "aggregators",
-      "status": "checked",
-      "hits": 6,
+      "name": "Facebook public groups",
+      "family": "facebook",
+      "status": "limited",
+      "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":1,"inactive":0,"duplicate":5,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "8h/current public indexes were used only as corroboration/discovery, not as sole promotion evidence. They currently surface ANASOFT, CREATIVE sites, IKEA, Slovak Telekom and PORT System in the BA/support scope. PORT was not timestamp-refreshed because its exact original detail was not directly reopened in this run."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "WordPress Slovensko, WooCommerce SK+CZ and Bratislava jobs public-index discovery was actually searched. 0 verified hiring hits; no concrete publicly verifiable post with direct link surfaced. Authenticated Nexus/local ingestion remains backlog only and was not started."
     }
   ]
 }
