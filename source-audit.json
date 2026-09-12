@@ -1,64 +1,64 @@
 {
   "schemaVersion": 6,
-  "updatedAt": "2026-09-12T09:54:14+02:00",
+  "updatedAt": "2026-09-12T10:27:57+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "freshPromoted": 0,
-    "freshCandidates": 16,
+    "freshCandidates": 17,
     "existingReverified": 0,
     "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-12T09:54:14+02:00",
-    "sourceVerificationAt": "2026-09-12T09:54:14+02:00",
+    "contentChangedAt": "2026-09-12T10:27:57+02:00",
+    "sourceVerificationAt": "2026-09-12T10:27:57+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification and link evidence. Content age and source-verification age are separate; touching updatedAt alone never makes a job fresh.",
     "liveFeedCount": 51,
     "liveMix": {"profesia":25,"profesiaPct":49.0,"nonProfesia":26,"nonProfesiaPct":51.0},
     "facebookVerifiedHits": 0,
-    "note": "Fresh 12.9.2026 09:54 sweep across 12 source families. No promotion-grade unique LIVE item was added. The strongest fresh local delta was PROPLUSCO Back Office Asistent/ka, Bratislava, 4-hour part-time, 700 EUR gross: direct company detail confirms broad back-office/personnel administration and no explicit foreign-language requirement, but compensation is supplementary rather than main-income level, so it remains a verification/stacking candidate instead of an automatic LIVE promotion. Henkel International Team Assistant is BA-local but requires C1 English and 2+ years executive-assistant experience. Facebook public indexing yielded 0 verifiable hiring posts."
+    "note": "Fresh 12.9.2026 10:27 sweep across 12 actually searched source families. No promotion-grade unique LIVE item was added. ESET Customer Support Specialist is BA-local and entry-level but asks for ideally B2 English. Kariera/UPSVR surfaced several BA driver/admin roles, but the useful-looking ones were weakened by foreign-language requirements, C/C+E, international routes, low pay or other mismatch. Upwork produced fresh Worldwide WordPress/VA hits, but visible candidates were low-budget, development-heavy, strong-English/calling, country-restricted, or trust-risky. Facebook public indexing yielded 0 verifiable hiring posts."
   },
   "developmentChanges": [
     {
-      "id": "stackable-parttime-effective-day-value",
-      "title": "Stackable part-time effective-day value",
-      "reason": "For 4-hour/part-time BA roles, calculate guaranteed monthly pay, commute cost and occupied day-window together so a low nominal salary is not rejected if it can be efficiently stacked with another job, and weak half-day roles do not crowd out better full-time options."
+      "id": "remote-budget-trust-triangle",
+      "title": "Remote budget + client-trust triangle",
+      "reason": "For freelance remote candidates, combine effective budget, client account age/spend/hire history and scope clarity into one promotion gate. This prevents suspicious high fixed-price beginner listings and uneconomic micro-budgets from entering LIVE while preserving credible remote work."
     },
     {
-      "id": "mirror-to-primary-source-upgrade-queue",
-      "title": "Mirror-to-primary source upgrade queue",
-      "reason": "When Profesia or Práca za rohom exposes a fresh role and a direct employer detail also exists, automatically queue the direct source for canonical verification and keep only one stable job identity. This improves source trust and prevents mirrors from inflating diversity counts."
+      "id": "driver-route-burden-classifier",
+      "title": "Driver route-burden classifier",
+      "reason": "Classify driver roles into local fixed-route, city/regional, nationwide and international/overnight before ranking. This saves review time and automatically penalizes roles that technically start in Bratislava but conflict with the preferred same-day-home, no-tachograph work pattern."
     }
   ],
   "sources": [
     {
       "name": "Profesia",
       "family": "profesia",
-      "status": "ok",
-      "hits": 6,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":3,"inactive":0,"duplicate":1,"location":0,"skill":0,"physical":0,"ranking":2},
-      "note": "Fresh BA assistant/admin discovery actually searched. Visible current results included PROPLUSCO Back Office Asistent/ka 4h/700 EUR, Henkel International Team Assistant 1500-1950 EUR, Barger Prekop Receptionist/Assistant 1500 EUR and JTRE reception brigada. PROPLUSCO is a valid stacking candidate but not promoted automatically due supplementary pay; Henkel/Barger are B2-C1 language rejects."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh Bratislava WordPress/admin/technical-support/driver discovery was actually searched. No new concrete promotion-grade result surfaced in the public index during this sweep."
     },
     {
       "name": "Direct company careers",
       "family": "direct-company",
-      "status": "ok",
-      "hits": 2,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":1,"inactive":0,"duplicate":1,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "PROPLUSCO canonical detail directly confirmed Bratislava, shortened contract and back-office scope; Henkel canonical Bratislava detail requires English C1 and minimum 2 years executive-assistant experience."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh Bratislava company-career discovery was actually searched. No new canonical direct-company promotion-grade delta was confirmed in this sweep."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
       "status": "ok",
-      "hits": 3,
+      "hits": 2,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":3,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh public LinkedIn discovery actually searched. Foxelli remote e-commerce customer support and SupportYourApp remote technical/customer-support roles surfaced; available details carry strong/fluent English or unfavorable schedule/technical burden. Netzon Dutch support is no longer accepting applications."
+      "rejected": {"language":2,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh public LinkedIn discovery actually searched. ESET Customer Support Specialist in Bratislava is entry-level/basic technical support but asks for ideally B2 English. Netzon Order Management/Technical Support requires fluent Dutch and English. No promotion."
     },
     {
       "name": "Worki.sk",
@@ -68,27 +68,27 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh Bratislava admin/technical-support discovery actually searched; no new concrete promotion-grade public result surfaced in this sweep."
+      "note": "Fresh Bratislava administration, technical-support and driver discovery actually searched; no new suitable public-index delta surfaced."
     },
     {
       "name": "Práca za rohom",
       "family": "pracazarohom",
-      "status": "ok",
-      "hits": 1,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":0,"inactive":0,"duplicate":1,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Directly indexed PROPLUSCO Back Office Asistent/ka, Bratislava, 700 EUR, shortened contract. Counted as a mirror/corroboration of the direct PROPLUSCO canonical page, not an independent source-family promotion."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh Bratislava back-office/admin/customer-support discovery actually searched; no new unique promotion-grade result surfaced."
     },
     {
-      "name": "Kariera.sk / Zoznam / ÚPSVR mirrors",
+      "name": "Kariera.sk / Zoznam / UPSVR mirrors",
       "family": "kariera",
       "status": "ok",
-      "hits": 5,
+      "hits": 8,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":2,"inactive":2,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":1},
-      "note": "Fresh BA admin/customer-support search actually run. New 20h assistant at 600 EUR requires English C1/C2; DENIMA generic admin requires multilingual phone communication. Grafton German/Swedish support mirrors are explicitly inactive."
+      "rejected": {"language":3,"inactive":0,"duplicate":0,"location":2,"skill":1,"physical":0,"ranking":2},
+      "note": "Fresh BA admin/driver search actually run. DENIMA admin requires multiple foreign languages. V&G fresh driver requires English B1/B2 plus Malayalam B1/B2. GTPost requires B+C and night work; M&I requires Serbian C1/C2; international delivery/MKD roles conflict with same-day-home preference. CONTY TRANS is BA-local B-only but asks 3 years experience and offers 1031 EUR, below stronger existing LIVE options."
     },
     {
       "name": "Pretlak",
@@ -104,11 +104,11 @@
       "name": "StartupJobs",
       "family": "startupjobs",
       "status": "checked",
-      "hits": 2,
+      "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":0,"inactive":2,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Remote Customer Support Representative and Customer Support Guru surfaced in public index, but both canonical pages explicitly state that the offers are no longer current."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh remote support/e-commerce/WordPress discovery actually searched; no new suitable Slovakia-executable public result was confirmed."
     },
     {
       "name": "WordPress Jobs",
@@ -124,11 +124,11 @@
       "name": "Upwork",
       "family": "upwork",
       "status": "ok",
-      "hits": 7,
+      "hits": 6,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":3,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":3},
-      "note": "Worldwide remote WordPress/VA/e-commerce discovery actually searched. Relevant visible jobs were mostly older 2-3 week listings, 3-8 USD/h or 3-5 USD/h, strong-English/calling roles, or development-heavy. Mailchimp/Canva/WordPress content-build role remains skill-stack heavy. No new promotion-grade delta."
+      "rejected": {"language":2,"inactive":0,"duplicate":0,"location":1,"skill":2,"physical":0,"ranking":4},
+      "note": "Worldwide remote WordPress/VA discovery actually searched. AI Blog Post VA is 30 USD fixed for 120 articles; Elementor/PHP and WooCommerce builds are development-heavy and low-budget; WordPress automation/QA requires good written English plus automation/API familiarity; beginner VA listings with 700-1500 USD fixed have very new/unproven client accounts or country/language mismatch. No promotion-grade delta."
     },
     {
       "name": "Reddit / WordPress communities",
@@ -138,7 +138,7 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language":1,"inactive":0,"duplicate":0,"location":1,"skill":1,"physical":0,"ranking":0},
-      "note": "Public WordPress hiring discovery actually searched. One concrete hiring post was US-only, developer-heavy and strong-English; other visible posts were freelancer supply-side FOR HIRE posts, not employer demand."
+      "note": "Public WordPress community discovery actually searched. Concrete hiring result remains US-only, developer-heavy and strong-English; fresh visible posts were mostly FOR HIRE supply-side posts, not employer demand."
     },
     {
       "name": "Facebook public groups",
