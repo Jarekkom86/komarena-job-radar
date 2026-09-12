@@ -1,32 +1,32 @@
 {
   "schemaVersion": 6,
-  "updatedAt": "2026-09-12T10:27:57+02:00",
+  "updatedAt": "2026-09-12T11:28:12+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "freshPromoted": 0,
-    "freshCandidates": 17,
+    "freshCandidates": 16,
     "existingReverified": 0,
     "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-12T10:27:57+02:00",
-    "sourceVerificationAt": "2026-09-12T10:27:57+02:00",
+    "contentChangedAt": "2026-09-12T11:28:12+02:00",
+    "sourceVerificationAt": "2026-09-12T11:28:12+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification and link evidence. Content age and source-verification age are separate; touching updatedAt alone never makes a job fresh.",
     "liveFeedCount": 51,
     "liveMix": {"profesia":25,"profesiaPct":49.0,"nonProfesia":26,"nonProfesiaPct":51.0},
     "facebookVerifiedHits": 0,
-    "note": "Fresh 12.9.2026 10:27 sweep across 12 actually searched source families. No promotion-grade unique LIVE item was added. ESET Customer Support Specialist is BA-local and entry-level but asks for ideally B2 English. Kariera/UPSVR surfaced several BA driver/admin roles, but the useful-looking ones were weakened by foreign-language requirements, C/C+E, international routes, low pay or other mismatch. Upwork produced fresh Worldwide WordPress/VA hits, but visible candidates were low-budget, development-heavy, strong-English/calling, country-restricted, or trust-risky. Facebook public indexing yielded 0 verifiable hiring posts."
+    "note": "Fresh 12.9.2026 11:28 sweep across 12 actually searched source families. No promotion-grade unique LIVE item was added. Direct Foxelli remote support is Slovakia-eligible but requires fluent/near-native spoken English and phone-based support/upsell experience. Kariera surfaced a new Bratislava 20 h/week assistant role, but the canonical detail requires English C1-C2 and high Excel/Word, so it was rejected. Upwork produced several Worldwide WordPress/e-commerce/VA hits, but visible candidates were stale, severely underbudgeted, country-restricted, excessive-hours, strong-English or development-heavy. Facebook public indexing yielded 0 verifiable hiring posts."
   },
   "developmentChanges": [
     {
-      "id": "remote-budget-trust-triangle",
-      "title": "Remote budget + client-trust triangle",
-      "reason": "For freelance remote candidates, combine effective budget, client account age/spend/hire history and scope clarity into one promotion gate. This prevents suspicious high fixed-price beginner listings and uneconomic micro-budgets from entering LIVE while preserving credible remote work."
+      "id": "canonical-language-depth-check",
+      "title": "Canonical language-depth check before promotion",
+      "reason": "Search snippets often hide decisive language requirements. Require canonical-detail extraction of language level before ranking admin/support roles so attractive part-time or remote posts are rejected early when C1/C2 or fluent spoken English is mandatory."
     },
     {
-      "id": "driver-route-burden-classifier",
-      "title": "Driver route-burden classifier",
-      "reason": "Classify driver roles into local fixed-route, city/regional, nationwide and international/overnight before ranking. This saves review time and automatically penalizes roles that technically start in Bratislava but conflict with the preferred same-day-home, no-tachograph work pattern."
+      "id": "effective-hourly-floor-freelance",
+      "title": "Effective hourly floor for fixed-price freelance work",
+      "reason": "Estimate realistic hours from scope and convert fixed budgets into an effective hourly rate before promotion. This automatically suppresses misleading WordPress/e-commerce jobs such as 120 monthly articles for 30 USD or full e-commerce builds for tens of dollars."
     }
   ],
   "sources": [
@@ -38,27 +38,27 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh Bratislava WordPress/admin/technical-support/driver discovery was actually searched. No new concrete promotion-grade result surfaced in the public index during this sweep."
+      "note": "Fresh Bratislava WordPress/WooCommerce/admin/technical-support/driver discovery was actually searched. No new concrete promotion-grade public-index result surfaced in this sweep."
     },
     {
       "name": "Direct company careers",
       "family": "direct-company",
-      "status": "checked",
-      "hits": 0,
+      "status": "ok",
+      "hits": 2,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh Bratislava company-career discovery was actually searched. No new canonical direct-company promotion-grade delta was confirmed in this sweep."
+      "rejected": {"language":2,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":0},
+      "note": "Foxelli direct careers was actually checked. Customer Support & Sales Agent and Churn Specialist are 100% remote and Slovakia-eligible, but visible support role requires fluent/near-native spoken English plus phone support/upsell experience; no promotion."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
       "status": "ok",
-      "hits": 2,
+      "hits": 1,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":2,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh public LinkedIn discovery actually searched. ESET Customer Support Specialist in Bratislava is entry-level/basic technical support but asks for ideally B2 English. Netzon Order Management/Technical Support requires fluent Dutch and English. No promotion."
+      "rejected": {"language":1,"inactive":0,"duplicate":1,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh public LinkedIn discovery actually searched. Foxelli Customer Support & Sales Agent surfaced, then canonical direct-company detail was preferred; fluent/near-native English makes it unsuitable."
     },
     {
       "name": "Worki.sk",
@@ -84,11 +84,11 @@
       "name": "Kariera.sk / Zoznam / UPSVR mirrors",
       "family": "kariera",
       "status": "ok",
-      "hits": 8,
+      "hits": 5,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":3,"inactive":0,"duplicate":0,"location":2,"skill":1,"physical":0,"ranking":2},
-      "note": "Fresh BA admin/driver search actually run. DENIMA admin requires multiple foreign languages. V&G fresh driver requires English B1/B2 plus Malayalam B1/B2. GTPost requires B+C and night work; M&I requires Serbian C1/C2; international delivery/MKD roles conflict with same-day-home preference. CONTY TRANS is BA-local B-only but asks 3 years experience and offers 1031 EUR, below stronger existing LIVE options."
+      "rejected": {"language":2,"inactive":1,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":2},
+      "note": "Fresh BA admin discovery actually run. New 20 h/week ASISTENT/KA in Bratislava looks stackable at 600 EUR/month, but canonical UPSVR detail requires English C1-C2 plus high Excel/Word and 6 months practice. KAROVIC referent in Lozorno appeared in category results but canonical detail is inactive. Other visible BA admin offers were low-pay, language-heavy or previously reviewed."
     },
     {
       "name": "Pretlak",
@@ -124,11 +124,11 @@
       "name": "Upwork",
       "family": "upwork",
       "status": "ok",
-      "hits": 6,
+      "hits": 7,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":2,"inactive":0,"duplicate":0,"location":1,"skill":2,"physical":0,"ranking":4},
-      "note": "Worldwide remote WordPress/VA discovery actually searched. AI Blog Post VA is 30 USD fixed for 120 articles; Elementor/PHP and WooCommerce builds are development-heavy and low-budget; WordPress automation/QA requires good written English plus automation/API familiarity; beginner VA listings with 700-1500 USD fixed have very new/unproven client accounts or country/language mismatch. No promotion-grade delta."
+      "rejected": {"language":2,"inactive":2,"duplicate":0,"location":1,"skill":2,"physical":0,"ranking":6},
+      "note": "Worldwide WordPress/e-commerce/VA discovery actually searched. Visible WordPress+Shopify product posting fit the task profile but is only 7 USD fixed and 3 weeks old. AI blog VA is 30 USD for 120 articles/month. WooCommerce builds are development-heavy and 20-70 USD fixed. Full-time operations VA asks 12 hours/day, 6 days/week. USA-only VA fails location. No promotion-grade delta."
     },
     {
       "name": "Reddit / WordPress communities",
@@ -138,7 +138,7 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language":1,"inactive":0,"duplicate":0,"location":1,"skill":1,"physical":0,"ranking":0},
-      "note": "Public WordPress community discovery actually searched. Concrete hiring result remains US-only, developer-heavy and strong-English; fresh visible posts were mostly FOR HIRE supply-side posts, not employer demand."
+      "note": "Public WordPress community discovery actually searched. Concrete HIRING result remains US-only, developer-heavy and strong-English; visible fresh posts were mainly FOR HIRE supply-side posts, not employer demand."
     },
     {
       "name": "Facebook public groups",
