@@ -1,32 +1,32 @@
 {
   "schemaVersion": 6,
-  "updatedAt": "2026-09-12T13:29:47+02:00",
+  "updatedAt": "2026-09-12T14:27:17+02:00",
   "runSummary": {
     "familiesChecked": 13,
     "freshPromoted": 0,
-    "freshCandidates": 15,
-    "existingReverified": 1,
-    "existingReverifiedEligible": 1,
+    "freshCandidates": 14,
+    "existingReverified": 0,
+    "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-12T13:29:47+02:00",
-    "sourceVerificationAt": "2026-09-12T13:29:47+02:00",
+    "contentChangedAt": "2026-09-12T14:27:17+02:00",
+    "sourceVerificationAt": "2026-09-12T14:27:17+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification and link evidence. Content age and source-verification age are separate; touching updatedAt alone never makes a job fresh.",
     "liveFeedCount": 51,
     "liveMix": {"profesia":25,"profesiaPct":49.0,"nonProfesia":26,"nonProfesiaPct":51.0},
     "facebookVerifiedHits": 0,
-    "note": "Fresh 12.9.2026 13:29 sweep across 13 actually searched source families. No new unique promotion-grade LIVE item was added. Existing Hilti Implementation & Service Specialist was reverified on the direct company career page and remains eligible: Bratislava, 1,800 EUR base plus annual bonuses, SŠ with maturita, English only an advantage. LinkedIn surfaced a newly indexed Bratislava city IT Technician, but same-run public evidence is insufficient to safely distinguish a genuinely fresh open requisition from older near-identical/stale postings, so it was not promoted. Kanadevia IT ServiceDesk requires at least two years of similar experience and good English; Wolt requires B2 English. Foxelli is Slovakia-eligible remote but current support role requires fluent/near-native English plus sewing specialization. Umbrel generic Remote still lacks explicit Slovakia hiring entitlement. Upwork discovery produced several Worldwide WordPress/VA items, but the freshest close fits were either ambiguous/low fixed-price, strong-English or stale/high-competition. Facebook public indexing yielded 0 verifiable hiring posts."
+    "note": "Fresh 12.9.2026 14:27 sweep across 13 actually searched source families. No new unique promotion-grade LIVE item was added. Upwork surfaced multiple Worldwide VA/WordPress candidates, but the close fits were blocked by weak client trust, implausible or low fixed-price economics, language/country restrictions, competition, or hard-development requirements. Direct-company ATS discovery surfaced Bratislava-capable employer indexes including cargo-partner and Ajax Systems, but no same-run role detail cleared fit and evidence gates. Reddit results were supply-side FOR HIRE or US-only employer demand. Facebook public indexing yielded 0 concrete verifiable hiring posts with direct links."
   },
   "developmentChanges": [
     {
-      "id": "stale-listing-resurrection-guard",
-      "title": "Stale-listing resurrection guard",
-      "reason": "When search results label a role as newly posted but another canonical/job-ID variant is old, closed or near-identical, compare job IDs, apply-state and canonical detail before counting it as fresh. Prevents stale LinkedIn/aggregator listings from being resurrected into LIVE merely because the index timestamp changed."
+      "id": "compensation-plausibility-confidence",
+      "title": "Compensation plausibility confidence",
+      "reason": "Score freelance fixed-price offers against stated scope, task volume and client history before promotion. Flag unusually high beginner payouts from brand-new/no-spend clients and extremely low fixed budgets for substantial WordPress work as trust/economics anomalies instead of treating headline pay as reliable."
     },
     {
-      "id": "verified-existing-recheck-budget",
-      "title": "Verified-existing direct-source recheck budget",
-      "reason": "Reserve part of each run for rechecking the oldest high-fit LIVE direct-company records and store a separate reverified timestamp without deleting them when discovery misses them. Improves trust in LIVE freshness while preserving fail-closed behavior."
+      "id": "source-query-yield-decay",
+      "title": "Source query yield decay tracker",
+      "reason": "Track which source-family query patterns repeatedly return zero relevant deltas and rotate keywords, role synonyms and direct-company ATS targets on later runs. This reduces repetitive searches and increases coverage without weakening the ranking gate."
     }
   ],
   "sources": [
@@ -38,27 +38,27 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh Bratislava WordPress/WooCommerce/admin/technical-support/driver discovery actually searched; no new concrete promotion-grade public-index result surfaced in this run."
+      "note": "Fresh Bratislava WordPress/WooCommerce/admin/technical-support/driver public discovery actually searched; no new concrete promotion-grade result surfaced."
     },
     {
       "name": "Direct company careers",
       "family": "direct-company",
       "status": "ok",
-      "hits": 5,
+      "hits": 3,
       "added": 0,
-      "reverified": 1,
-      "rejected": {"language":3,"inactive":0,"duplicate":1,"location":1,"skill":3,"physical":0,"ranking":3},
-      "note": "Direct ATS/company discovery actually searched. Hilti Implementation & Service Specialist was reverified and is already LIVE under its stable ID, so no duplicate was created. Foxelli Slovakia-eligible remote roles remain language/specialist-heavy. Umbrel non-technical support remains generic Remote without proof of Slovakia hiring entitlement."
+      "reverified": 0,
+      "rejected": {"language":1,"inactive":0,"duplicate":0,"location":0,"skill":2,"physical":0,"ranking":2},
+      "note": "Direct ATS/company discovery actually searched. cargo-partner and Ajax Systems indexes expose Bratislava locations, but no same-run role detail cleared the target-role/evidence gates; generic SmartRecruiters results were irrelevant or wrong-location."
     },
     {
       "name": "LinkedIn Jobs",
       "family": "linkedin",
-      "status": "ok",
-      "hits": 7,
+      "status": "checked",
+      "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":4,"inactive":1,"duplicate":1,"location":0,"skill":4,"physical":0,"ranking":4},
-      "note": "Public LinkedIn discovery actually searched. A newly indexed Bratislava city IT Technician is potentially relevant, but same-run evidence is not strong enough to distinguish a fresh open requisition from older near-identical/stale listings, so it remains verification-only. Kanadevia requires 2+ years ServiceDesk and good English; Wolt B2; Lenovo German plus fluent English; Staffino result is old/no longer accepting."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
+      "note": "Fresh public LinkedIn Bratislava WordPress/WooCommerce/support/admin/driver discovery actually searched; no new verifiable promotion-grade delta surfaced."
     },
     {
       "name": "Worki.sk",
@@ -68,7 +68,7 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh Bratislava administration, technical-support and driver discovery actually searched; no new suitable public-index delta surfaced."
+      "note": "Fresh Bratislava admin/technical-support/driver discovery actually searched; no new suitable public-index delta surfaced."
     },
     {
       "name": "Práca za rohom",
@@ -78,7 +78,7 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh Bratislava back-office/admin/customer-support discovery actually searched; no new unique promotion-grade result surfaced."
+      "note": "Fresh Bratislava administration/support discovery actually searched; no new unique promotion-grade result surfaced."
     },
     {
       "name": "Kariera.sk / Zoznam / UPSVR mirrors",
@@ -98,7 +98,7 @@
       "added": 0,
       "reverified": 0,
       "rejected": {"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},
-      "note": "Fresh Bratislava administration/home-office brigade discovery actually searched; no suitable concrete public-index delta surfaced."
+      "note": "Fresh Bratislava admin/home-office brigade discovery actually searched; no suitable concrete public-index delta surfaced."
     },
     {
       "name": "Pretlak",
@@ -134,11 +134,11 @@
       "name": "Upwork",
       "family": "upwork",
       "status": "ok",
-      "hits": 8,
+      "hits": 11,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":3,"inactive":2,"duplicate":0,"location":1,"skill":2,"physical":0,"ranking":7},
-      "note": "Worldwide WordPress/e-commerce/VA discovery actually searched. Fresh/close items included a beginner global VA and WordPress Content Automation & Blog QA VA, but trust/economics, strong written English, ambiguous low fixed budgets, stale age or competition blocked promotion. Existing Website & SEO Management 2026 remains broader-toolset/high-competition rather than a fresh promotion."
+      "rejected": {"language":4,"inactive":0,"duplicate":0,"location":2,"skill":4,"physical":0,"ranking":10},
+      "note": "Worldwide VA/WordPress/WooCommerce discovery actually searched. New close hits included beginner VA offers and Elementor/WooCommerce work, but promotion was blocked by brand-new/no-spend client trust, Spanish/USA restrictions, cold-calling/strong-English burden, hard-development requirements, high competition or implausible/low fixed-price economics."
     },
     {
       "name": "Reddit / WordPress communities",
@@ -147,8 +147,8 @@
       "hits": 0,
       "added": 0,
       "reverified": 0,
-      "rejected": {"language":0,"inactive":1,"duplicate":0,"location":1,"skill":0,"physical":0,"ranking":0},
-      "note": "Public WordPress community discovery actually searched. Fresh visible posts were supply-side FOR HIRE/Open to Work, while employer hiring examples were stale or location-restricted; 0 verified suitable employer-demand hits."
+      "rejected": {"language":0,"inactive":0,"duplicate":0,"location":2,"skill":0,"physical":0,"ranking":0},
+      "note": "Public WordPress community discovery actually searched. Fresh visible posts were supply-side FOR HIRE; employer-demand examples were older and US-only. 0 verified suitable employer-demand hits."
     },
     {
       "name": "Facebook public groups",
