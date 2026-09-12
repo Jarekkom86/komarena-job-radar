@@ -1,46 +1,46 @@
 {
   "schemaVersion": 6,
-  "updatedAt": "2026-09-12T17:55:26+02:00",
+  "updatedAt": "2026-09-12T18:54:25+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "freshPromoted": 0,
-    "freshCandidates": 4,
+    "freshCandidates": 9,
     "existingReverified": 0,
     "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-12T17:55:26+02:00",
-    "sourceVerificationAt": "2026-09-12T17:55:26+02:00",
+    "contentChangedAt": "2026-09-12T18:54:25+02:00",
+    "sourceVerificationAt": "2026-09-12T18:54:25+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification and link evidence. Content age and source-verification age are separate; touching updatedAt alone never makes a job fresh.",
     "liveFeedCount": 51,
     "liveMix": {"profesia":25,"profesiaPct":49.0,"nonProfesia":26,"nonProfesiaPct":51.0},
     "facebookVerifiedHits": 0,
-    "note": "Fresh 12.9.2026 17:55 sweep across 12 actually searched source families. No new unique promotion-grade LIVE item was added. LinkedIn again surfaced NATEK Salesforce CRM Support Manager, rejected for senior Salesforce ownership, and SupportYourApp technical support, rejected for C1/fluent English and higher infrastructure scope. Upwork surfaced a new Worldwide beginner VA/admin listing with Slovak among accepted languages and a 1,500 USD fixed price, but the client account was created the same day and has no established hiring/spend history, so it was not promoted. Reddit/WordPress community results were supply-side or US-only. Facebook public indexing yielded 0 concrete verifiable hiring posts with direct links."
+    "note": "Fresh 12.9.2026 18:54 public-web sweep across 12 actually searched source families. No new unique promotion-grade LIVE item was added. LinkedIn surfaced CloudTalk Customer Support Representative (100% remote/Europe) but fluent English is mandatory, and TalentPop requires German plus English. Direct Slovak Telekom discovery surfaced Junior DevOps in Bratislava but the Linux/cloud/CI-CD scope is above the target profile. Upwork produced several WordPress/VA candidates, but they were rejected for hard development, strong written English/automation ownership, unsustainable workload or implausibly low fixed-price economics. Reddit yielded no suitable employer-demand hit. Facebook public indexing yielded 0 concrete verifiable hiring posts with direct links."
   },
   "developmentChanges": [
     {
-      "id": "source-query-result-observability-ledger",
-      "title": "Source query-to-result observability ledger",
-      "reason": "For every source family persist the actual query count, concrete result count and canonical-detail opens. This separates a genuine zero-result market from search-index starvation or a blocked parser, improves audit truthfulness and prevents a source being marked healthy merely because a query was issued."
+      "id": "candidate-rejection-evidence-fingerprint",
+      "title": "Candidate rejection evidence fingerprint",
+      "reason": "Persist a compact hash of the decisive rejection evidence (language, location, skill or economics) together with the canonical URL. On later runs, unchanged rejected listings can be skipped cheaply while any changed requirement forces a fresh review. This reduces repeated work without hiding materially updated vacancies."
     },
     {
-      "id": "application-channel-liveness-verifier",
-      "title": "Application-channel liveness verifier",
-      "reason": "Before a high-ranked job is promoted or re-notified, verify in the same run that its apply route, public contact or application form is still reachable. A live-looking listing with a dead apply path should remain verification-only, saving time on stale vacancies and improving reaction success."
+      "id": "freelance-budget-workload-sanity-gate",
+      "title": "Freelance budget-to-workload sanity gate",
+      "reason": "Before ranking freelance work, compare stated fixed budget against required deliverables, hours, availability and ownership burden. Flag impossible combinations such as 120 WordPress articles for 30 USD or 12-hour six-day schedules for 600 USD, preventing attractive keywords from masking economically unusable work."
     }
   ],
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh BA WordPress/WooCommerce/admin/technical-support/driver discovery actually searched; no new promotion-grade public delta surfaced."},
-    {"name":"Direct company careers","family":"direct-company","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Slovak Telekom and Alza career domains were actually searched; no new target-role delta cleared evidence and fit gates."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":3,"added":0,"reverified":0,"rejected":{"language":2,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":3},"note":"NATEK Salesforce CRM Support Manager is fresh but above target scope; SupportYourApp results require C1/fluent English and/or advanced infrastructure/VPS scope."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/driver/support discovery actually searched; no suitable concrete public hit surfaced in this pass."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administration/technical-support/driver discovery actually searched; no new suitable unique public delta surfaced."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava WordPress/WooCommerce/admin/support/driver discovery was actually searched; no new promotion-grade public delta surfaced."},
+    {"name":"Direct company careers","family":"direct-company","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":1},"note":"Slovak Telekom and Alza career domains were actually searched. Telekom Junior DevOps is Bratislava/partial HO but requires DevOps/cloud/Linux/automation foundations above the target non-hard-development profile."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":2,"added":0,"reverified":0,"rejected":{"language":2,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":2},"note":"CloudTalk Customer Support Representative is 100% remote from Europe but explicitly requires fluent English plus Slovak/Czech; TalentPop remote support requires German and English. Both fail the A2 language profile."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/driver/support discovery was actually searched; no suitable concrete public hit surfaced."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administration/technical-support/driver discovery was actually searched; no suitable unique delta surfaced."},
     {"name":"Služby zamestnanosti","family":"sluzby-zamestnanosti","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Government employment source was actually searched for Bratislava admin/support/driver roles; no suitable unique public delta surfaced."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Bratislava/remote WordPress, e-commerce and support discovery actually searched; no suitable new non-hard-dev result surfaced."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Remote-from-Slovakia customer support/e-commerce discovery actually searched; no new listing with sufficient Slovakia-executable evidence and target fit surfaced."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public WordPress Jobs remote support/content discovery actually searched; no suitable non-hard-dev hiring delta surfaced."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":1},"note":"Fresh Worldwide beginner VA/admin listing posted 10.9. surfaced with Slovak among accepted languages and 1,500 USD fixed price, but client membership began the same day and no established spend/hire history is visible; withheld from LIVE under client-risk/evidence gate."},
-    {"name":"Reddit / WordPress communities","family":"community","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":1,"duplicate":0,"location":1,"skill":1,"physical":0,"ranking":0},"note":"Public community discovery actually searched. Current results were mainly FOR HIRE supply-side posts; a concrete hiring post was US-only and developer-heavy, so 0 suitable verified hiring hits."},
-    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"WordPress Slovensko / WooCommerce SK+CZ / Bratislava jobs public-index discovery was actually searched. 0 verified hiring hits and no concrete publicly verifiable post with a direct link. Authenticated Nexus/local ingestion remains backlog only and was not started."}
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Bratislava/remote WordPress, e-commerce and support discovery was actually searched; no suitable new non-hard-dev result surfaced."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Remote-from-Slovakia support/e-commerce discovery was actually searched; no target-fit result with clear Slovakia-executable evidence surfaced."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Remote WordPress support/content discovery was actually searched; no suitable non-hard-development hiring delta surfaced."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":0,"reverified":0,"rejected":{"language":2,"inactive":0,"duplicate":1,"location":0,"skill":2,"physical":0,"ranking":6},"note":"Worldwide WordPress/VA discovery surfaced multiple candidates. Rejected: Senior Elementor developer 5 USD fixed (hard dev + economics), AI Blog VA 120 posts/30 USD (economics), WordPress Content Automation VA (strong written English + automation/API ownership, displayed 6 USD fixed inconsistency), full-time operations VA 12h/day 6d/week for 600 USD (sustainability/economics), and existing same-day beginner VA client-risk listing. No promotion."},
+    {"name":"Reddit / WordPress communities","family":"community","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public employer-demand discovery was actually searched; no suitable concrete hiring request with Slovakia-compatible scope surfaced."},
+    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"WordPress Slovensko / WooCommerce SK+CZ public-index discovery was actually searched. 0 verified hiring hits and no concrete publicly verifiable post with a direct link. Authenticated Nexus/local ingestion remains backlog only and was not started."}
   ]
 }
