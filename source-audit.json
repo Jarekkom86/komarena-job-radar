@@ -1,48 +1,47 @@
 {
   "schemaVersion": 6,
-  "updatedAt": "2026-09-12T22:58:46+02:00",
+  "updatedAt": "2026-09-13T00:38:57+02:00",
   "runSummary": {
-    "familiesChecked": 14,
-    "freshPromoted": 1,
-    "freshCandidates": 12,
-    "existingReverified": 1,
-    "existingReverifiedEligible": 1,
+    "familiesChecked": 13,
+    "freshPromoted": 0,
+    "freshCandidates": 13,
+    "existingReverified": 0,
+    "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
     "contentChangedAt": "2026-09-12T22:58:46+02:00",
-    "sourceVerificationAt": "2026-09-12T22:58:46+02:00",
+    "sourceVerificationAt": "2026-09-13T00:38:57+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification and link evidence. Content age and source-verification age are separate; touching updatedAt alone never makes a job fresh.",
     "liveFeedCount": 52,
     "liveMix": {"profesia":25,"profesiaPct":48.1,"nonProfesia":27,"nonProfesiaPct":51.9},
     "facebookVerifiedHits": 0,
-    "note": "Fresh 12.9.2026 22:58 public-web sweep across 14 actually searched source families. Ovečkárna seasonal CZ/SK customer-support brigade was reverified on the direct employer page and promoted to jobs-data.json: IČO/DPP, October 2026-January 2027, Mon-Fri 08:00-12:00, email support, simple order administration, CZ/SK customer line, no experience required, training and explicit work-from-anywhere wording; Prace.cz confirms 160 CZK/h. locationEligibility=remote-ok. A newly surfaced TELOMAR e-shop support brigade pays 170-250 CZK/h but requires a two-week combined onboarding in Jinočany and thereafter combines home office with office work, so it is reject-distance. LinkedIn public inventory again surfaced SupportYourApp fluent-English support. Upwork produced multiple WordPress/e-commerce/VA results, but visible candidates were rejected for strong English, low effective rate, senior/development scope or high competition. Facebook public indexing yielded 0 concrete verifiable hiring posts with direct links."
+    "note": "Fresh 13.9.2026 00:38 public-web sweep across 13 actually searched source families. No new promotion-grade unique job passed ranking and evidence gates, so jobs-data.json remains fail-closed at 52 LIVE items. Profesia surfaced a minutes-old partner Telekom customer-care role and Henkel Coordinator Digital Marketing, but the former is primarily sales-oriented and the latter requires fluent English. Direct Henkel canonical verification also found International Team Assistant in Bratislava at 1,500-1,950 EUR, but it explicitly requires English C1 and at least two years of executive/management-assistant experience. LinkedIn surfaced KLARSTEIN Italian-language customer support, Foxelli remote support with fluent/near-native English and crochet specialization, and SupportYourApp fluent-English support; none passed. Upwork surfaced WordPress/e-commerce/VA work, but visible candidates were rejected for C1/excellent English, low 3-8 USD/h economics, fixed-price underpayment, expert/development scope or high competition. Facebook public indexing yielded 0 concrete verifiable hiring posts with direct links."
   },
   "developmentChanges": [
     {
-      "id": "support-channel-mix-score",
-      "title": "Support channel mix score",
-      "reason": "Extract whether customer-support work is primarily e-mail, chat, phone, video or in-person and rank the interaction burden separately from language requirements. This distinguishes calm e-mail/order administration such as Ovečkárna from call-heavy or sales-heavy support roles that look identical under a generic customer-care label."
+      "id": "relative-publish-time-rollover-guard",
+      "title": "Relative publish-time rollover guard",
+      "reason": "Capture the exact audit timestamp and convert labels such as '4 minutes ago', 'yesterday' or '1 day ago' into an absolute publishedAt with source timezone evidence. This prevents midnight/date-rollover errors that can incorrectly boost or demote <24h priority jobs."
     },
     {
-      "id": "mandatory-training-travel-cost-ledger",
-      "title": "Mandatory training travel cost ledger",
-      "reason": "Record mandatory onboarding/training location, number of days, travel/accommodation cost and whether that time is paid. Use recurring distant attendance as a hard locality reject and one-off travel as application-ROI cost, preventing misleading remote labels such as roles that first require multi-day training far from Bratislava."
+      "id": "fresh-role-competition-density-signal",
+      "title": "Fresh-role competition density signal",
+      "reason": "For sources exposing applicant/proposal counts, persist competition at first discovery and recheck it on subsequent runs. Rank equally strong roles higher when they are both fresh and still lightly contested, improving response probability without weakening skill or locality gates."
     }
   ],
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava WordPress/WooCommerce/admin/support/driver discovery actually searched; no new unique promotion-grade public delta surfaced."},
-    {"name":"Direct company careers","family":"direct-company","status":"ok","hits":1,"added":1,"reverified":1,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Ovečkárna direct career page reverified at 22:58. Seasonal CZ/SK support explicitly offers work from anywhere, IČO/DPP, Mon-Fri 08:00-12:00, email/order administration and CZ/SK customer-line help, no experience required and training. Promoted to LIVE as remote-ok using the direct employer page as canonical source."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":2,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":1},"note":"Fresh Slovakia/Bratislava technical/customer-support discovery actually searched. SupportYourApp public role requires fluent English; other visible support inventory ranked below stronger existing matches. No promotion."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/driver/support discovery actually searched; no suitable concrete public hit surfaced."},
-    {"name":"Práca za rohom / Prace.cz","family":"pracazarohom","status":"ok","hits":2,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":1,"location":1,"skill":0,"physical":0,"ranking":0},"note":"Actually searched. Ovečkárna mirror confirms 160 CZK/h and was deduped in favor of direct employer canonical. TELOMAR e-shop support 170-250 CZK/h requires two-week combined training in Jinočany and continued office/home combination, therefore reject-distance under the hard location gate."},
+    {"name":"Profesia","family":"profesia","status":"ok","hits":2,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":1},"note":"Actually searched fresh Bratislava administration/support inventory. Minutes-old Partner Telekom customer-care role is sales-oriented; Henkel Coordinator Digital Marketing was traced to direct canonical and rejected for fluent English. No promotion."},
+    {"name":"Direct company careers","family":"direct-company","status":"ok","hits":2,"added":0,"reverified":0,"rejected":{"language":2,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":0},"note":"Henkel canonical careers actually checked. Coordinator Digital Marketing requires fluent English. International Team Assistant is Bratislava, 1,500-1,950 EUR, but requires C1 English, 2+ years executive/management-assistant experience and advanced Microsoft 365. No promotion."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":3,"added":0,"reverified":0,"rejected":{"language":3,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":0},"note":"Actually searched Slovakia/Bratislava remote support inventory. KLARSTEIN requires Italian customer support, Foxelli requires fluent/near-native English plus crochet specialization, SupportYourApp requires fluent English. No promotion."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administration/customer-support/driver discovery actually searched; no concrete suitable public hit surfaced."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administration/technical-support/driver discovery actually searched; no suitable unique delta surfaced."},
     {"name":"Služby zamestnanosti","family":"sluzby-zamestnanosti","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Government employment source actually searched for Bratislava admin/support/driver roles; no suitable unique public delta surfaced."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administration/e-shop/support/driver discovery actually searched; no new unique promotion-grade delta surfaced."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administration/e-shop/support/driver discovery actually searched; no new unique promotion-grade result surfaced."},
     {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Bratislava/remote WordPress, e-commerce and support discovery actually searched; no suitable new non-hard-dev result surfaced."},
     {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Remote-from-Slovakia support/e-commerce discovery actually searched; no target-fit result with clear Slovakia-executable evidence surfaced."},
     {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Remote WordPress support/content discovery actually searched; no suitable non-hard-development hiring delta surfaced."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":7,"added":0,"reverified":0,"rejected":{"language":4,"inactive":0,"duplicate":0,"location":0,"skill":2,"physical":0,"ranking":6},"note":"Fresh public-index WordPress/VA/e-commerce support discovery actually searched. Visible results included website VA at 10-15 USD/h with excellent written English and portfolio requirement, e-commerce support at 8-9 USD/h with 50+ proposals, several Shopify/e-commerce VAs at 3-7 USD/h, and stronger English or development-heavy roles. No promotion."},
-    {"name":"Reddit / WordPress communities","family":"community","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public community discovery actually searched; no concrete current employer-demand post matching Slovakia-executable target scope surfaced. Public indexing remains partial."},
-    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"WordPress Slovensko / WooCommerce SK+CZ / BA jobs public-index discovery actually searched. 0 verified hiring hits and no concrete publicly verifiable post with a direct link. Authenticated Nexus/local ingestion remains backlog only and was not started."}
+    {"name":"Upwork","family":"upwork","status":"ok","hits":8,"added":0,"reverified":0,"rejected":{"language":3,"inactive":1,"duplicate":0,"location":0,"skill":2,"physical":0,"ranking":7},"note":"Fresh public-index WordPress/VA/e-commerce support discovery actually searched. New Operations Assistant requires C1 written English at 3-4.5 USD/h; e-commerce VA results were typically 3-8 USD/h with high competition; WordPress/Shopify product posting is only 7 USD fixed; technical WooCommerce roles are expert/development-heavy. No promotion."},
+    {"name":"Reddit / WordPress communities","family":"community","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public community employer-demand discovery actually searched; no concrete current Slovakia-executable target-scope hiring post surfaced. Public indexing remains partial."},
+    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"WordPress Slovensko / WooCommerce SK+CZ / Bratislava jobs public-index discovery actually searched. 0 verified hiring hits and no concrete publicly verifiable post with a direct link. Authenticated Nexus/local ingestion remains backlog only and was not started."}
   ]
 }
