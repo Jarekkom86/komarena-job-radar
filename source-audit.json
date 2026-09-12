@@ -1,47 +1,48 @@
 {
   "schemaVersion": 6,
-  "updatedAt": "2026-09-12T20:50:11+02:00",
+  "updatedAt": "2026-09-12T21:29:15+02:00",
   "runSummary": {
-    "familiesChecked": 13,
+    "familiesChecked": 14,
     "freshPromoted": 0,
-    "freshCandidates": 4,
+    "freshCandidates": 5,
     "existingReverified": 0,
     "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-12T20:50:11+02:00",
-    "sourceVerificationAt": "2026-09-12T20:50:11+02:00",
+    "contentChangedAt": "2026-09-12T21:29:15+02:00",
+    "sourceVerificationAt": "2026-09-12T21:29:15+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification and link evidence. Content age and source-verification age are separate; touching updatedAt alone never makes a job fresh.",
     "liveFeedCount": 51,
     "liveMix": {"profesia":25,"profesiaPct":49.0,"nonProfesia":26,"nonProfesiaPct":51.0},
     "facebookVerifiedHits": 0,
-    "note": "Fresh 12.9.2026 20:50 public-web sweep across 13 actually searched source families. No new unique promotion-grade LIVE item was added. Direct Telekom careers surfaced B2B digital-services Business Consultant in Bratislava (2,000 EUR + 15% annual bonus) but it requires at least two years of relevant B2B/product/process experience and English B2, so it is rejected. Telekom Avion sales/customer role in Bratislava (1,750 EUR typical entry compensation) is locally eligible but sales-heavy and weaker than existing LIVE technology/customer roles, so not promoted. A Trainee DBA result disappeared on canonical open and is treated as inactive/unverified, not promoted. Reddit showed US-only/developer-heavy WordPress hiring; Facebook public indexing yielded 0 concrete verifiable hiring posts with direct links."
+    "note": "Fresh 12.9.2026 21:29 public-web sweep across 14 actually searched source families. Strongest new candidate is Ovečkárna seasonal CZ/SK customer-support brigade: direct company career page confirms work from anywhere, IČO/DPP, Mon-Fri 08:00-12:00, email/customer-line support, simple order administration, no experience required and training provided; Práca za rohom/Prace.cz show 160 CZK/h and 1.10.2026-31.1.2027. It is remote-ok in substance, but jobs-data.json could not be safely full-replaced in this run without risking unrelated LIVE data, so it remains promotion-ready rather than persisted. Bratislavské kultúrne a informačné stredisko surfaced a same-day technical-support section assistant at Vajnorská 135, Bratislava, from 1,400 EUR with Slovak only; retained as a high-value verification candidate. Práca za rohom also surfaced an autoprevádzka/vodič referent in Bratislava and Orange fleet-admin role, but the latter needs intermediate English. LinkedIn surfaced current Slovakia support inventory but most concrete roles had foreign-language or specialist requirements. Upwork fresh public hits were rejected for hard-development scope, strong written English, suspicious economics or weak client trust. Facebook public indexing yielded 0 concrete verifiable hiring posts with direct links."
   },
   "developmentChanges": [
     {
-      "id": "role-similarity-saturation-control",
-      "title": "Role-similarity saturation control",
-      "reason": "Before promoting another near-duplicate role from the same employer and track, compare it against the best existing LIVE role on fit, pay, location and requirements. This prevents weaker same-company variants such as another retail sales role from crowding the feed while still allowing a genuinely better variant to replace or outrank the existing one."
+      "id": "remote-contract-legality-gate",
+      "title": "Remote contract legality gate",
+      "reason": "For foreign remote jobs that say work from anywhere, record whether the offered contract form can actually be used from Slovakia (for example IČO/B2B vs local-only DPP). This prevents a good remote job from being promoted on geography alone when the legal engagement model may not work cross-border."
     },
     {
-      "id": "transient-listing-disappearance-recheck",
-      "title": "Transient listing disappearance recheck",
-      "reason": "When a result was indexed as fresh but its canonical detail immediately returns 404 or disappears, record it as transient/inactive and schedule a later source recheck instead of treating the indexed snippet as an active offer. This reduces stale promotions caused by search-index lag."
+      "id": "part-time-stackability-score",
+      "title": "Part-time stackability score",
+      "reason": "Score short fixed daily windows by how well they can be combined with another job or KomArena work. A predictable Mon-Fri 08:00-12:00 remote block should rank differently from an equally paid role with rotating or fragmented shifts, improving total monthly-income planning."
     }
   ],
   "sources": [
     {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava WordPress/WooCommerce/admin/support/driver discovery actually searched; no new unique promotion-grade public delta surfaced."},
-    {"name":"Direct company careers","family":"direct-company","status":"ok","hits":3,"added":0,"reverified":0,"rejected":{"language":1,"inactive":1,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":2},"note":"Slovak Telekom and Alza direct-career discovery actually searched. B2B digital-services Business Consultant is Bratislava-eligible but requires min. 2 years relevant experience and English B2. Avion seller/customer role is locally eligible but sales-heavy and weaker than existing LIVE technology/customer roles. Trainee DBA canonical detail returned 404 and is treated as inactive/unverified."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava/remote support, e-commerce and WordPress discovery actually searched; no suitable unique public-index delta surfaced."},
+    {"name":"Direct company careers","family":"direct-company","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Ovečkárna direct career page actually checked and confirms seasonal CZ/SK customer support, work from anywhere, IČO/DPP, Mon-Fri 08:00-12:00, simple order admin, no experience required and training. Strong promotion-ready candidate pending safe jobs-data persistence and cross-border contract-form sanity check."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":2,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":1},"note":"Fresh Slovakia support/admin/e-commerce discovery actually searched. Public index surfaced active support inventory including ESET, NATEK, Allegro and Foxelli; concrete matches were weaker due foreign-language, specialist CRM/support scope, age or fit."},
     {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/driver/support discovery actually searched; no suitable concrete public hit surfaced."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":4,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":1,"location":0,"skill":0,"physical":0,"ranking":1},"note":"Actually searched. Strongest hit is Ovečkárna CZ/SK customer-support brigade, mirrored from direct company source and therefore deduped in favor of canonical career page. Same-day BKIS Asistent/Asistentka sekcie Technickej podpory podujatí at Vajnorská 135, Bratislava, from 1,400 EUR, SŠ and Slovak, is a strong verification candidate. Autoprevádzka/vodič referent in Bratislava is locally eligible; Orange fleet admin needs intermediate English."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administration/technical-support/driver discovery actually searched; no suitable unique delta surfaced."},
     {"name":"Služby zamestnanosti","family":"sluzby-zamestnanosti","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Government employment source actually searched for Bratislava admin/support/driver roles; no suitable unique public delta surfaced."},
     {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administration/e-shop/support/driver discovery actually searched; no new unique promotion-grade delta surfaced."},
     {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Bratislava/remote WordPress, e-commerce and support discovery actually searched; no suitable new non-hard-dev result surfaced."},
     {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Remote-from-Slovakia support/e-commerce discovery actually searched; no target-fit result with clear Slovakia-executable evidence surfaced."},
     {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Remote WordPress support/content discovery actually searched; no suitable non-hard-development hiring delta surfaced."},
-    {"name":"Upwork","family":"upwork","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh public-index WordPress/VA/support discovery actually searched; no new candidate with sufficient current public evidence and better fit than existing LIVE freelance inventory surfaced."},
-    {"name":"Reddit / WordPress communities","family":"community","status":"limited","hits":1,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":1,"skill":1,"physical":0,"ranking":1},"note":"Public employer-demand discovery actually searched. Visible WordPress hiring was US-only and developer-heavy with strong English/client-call requirements; no Slovakia-compatible hiring hit."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":0,"reverified":0,"rejected":{"language":2,"inactive":0,"duplicate":0,"location":0,"skill":3,"physical":0,"ranking":5},"note":"Fresh public-index WordPress/VA/support discovery actually searched. Visible jobs included WordPress content automation/QA, senior Elementor, backend WordPress, plugin maintenance and beginner VA. No promotion: hard-dev/expert scope, strong written English, implausible fixed-price economics or brand-new/weak client trust."},
+    {"name":"Reddit / WordPress communities","family":"community","status":"limited","hits":2,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":1,"skill":1,"physical":0,"ranking":2},"note":"Public community discovery actually searched. Fresh posts were primarily people offering services rather than employers; visible hiring remained US-only/developer-heavy with strong English/client-call requirements. No Slovakia-compatible employer-demand hit."},
     {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"WordPress Slovensko / WooCommerce SK+CZ / BA jobs public-index discovery actually searched. 0 verified hiring hits and no concrete publicly verifiable post with a direct link. Authenticated Nexus/local ingestion remains backlog only and was not started."}
   ]
 }
