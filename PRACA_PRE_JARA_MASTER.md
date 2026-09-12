@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 12. 9. 2026 12:05 CEST
+Aktualizované: 12. 9. 2026 17:55 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -307,6 +307,8 @@ Aktualizované: 12. 9. 2026 12:05 CEST
 - English-demand evidence scale: pri neurčitých frázach typu „active English communication“ rozlišovať explicitnú CEFR úroveň, dennú telefonickú komunikáciu, písomný kontakt a iba občasné čítanie dokumentácie; zabráni binárnemu rejectu pri nepresne formulovanom jazykovom požiadavku a umožní konzistentný A2/B1/B2 ranking.
 - Application assessment effort cost: odhadnúť neplatený čas na test task, AI/video interview, portfólio a viacstupňový výber; znížiť application ROI pri rolách, kde náročnosť výberu nezodpovedá reálnej odmene a fitu.
 - ATS location-entitlement proof: pri všeobecnom `Remote` označení vyžadovať explicitný zoznam podporovaných krajín alebo inú canonical evidenciu, že možno pracovať zo Slovenska; bez toho ponechať `locationEligibility: unknown`.
+- Source query-to-result observability ledger: pre každú source family ukladať počet reálne spustených query, počet konkrétnych výsledkov a počet otvorených canonical detailov; odlíši skutočne nulový trh od zlyhania indexácie alebo parsera a zvýši pravdivosť `checked`/`limited` stavov.
+- Application-channel liveness verifier: pred promotion/re-notification overiť, že apply link, verejný kontakt alebo formulár je v tom istom behu ešte dosiahnuteľný; listing s mŕtvym apply flow ponechať verification-only, aby sa nestrácal čas na fakticky uzavreté pozície.
 
 ## Source audit — 10. 9. 2026 10:39
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera.sk, Pretlak/StartupJobs, Upwork, Reddit/WordPress komunity a Facebook public index.
@@ -423,3 +425,34 @@ Aktualizované: 12. 9. 2026 12:05 CEST
 ### Rozvoj pridaný 12:05
 - Application assessment effort cost: pri každej role odhadnúť neplatený čas na test task, video/AI interview, portfólio a viacstupňový výber a zahrnúť ho do application ROI. Pomôže nestrácať čas na nízko platených rolách s disproporčne náročným náborom.
 - ATS location-entitlement proof: pri všeobecnom `Remote` označení z ATS vyžadovať explicitný hiring-country list alebo inú canonical evidenciu, že kontrakt možno uzavrieť zo Slovenska. Bez dôkazu ponechať `locationEligibility: unknown` a nepromovať do LIVE.
+
+## Source audit — 12. 9. 2026 17:55
+- Reálne preverených **12 source families**, z toho **11 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Brigada.sk, Worki, Služby zamestnanosti, Pretlak, StartupJobs, WordPress Jobs, Upwork, Reddit/WordPress komunity a Facebook public index.
+- Profesia: `checked`; 0 nových promotion-grade unique výsledkov.
+- Priame company careers: `checked`; Slovak Telekom/Alza discovery reálne vykonané, 0 novej canonical target-role delty.
+- LinkedIn Jobs: `ok`; NATEK Salesforce CRM Support Manager je síce full remote/Bratislava, ale vyžaduje senior Salesforce platform ownership/governance a excellent English. SupportYourApp technické roly vyžadujú minimálne C1/fluent English a vyšší infra/VPS scope. 0 promotion.
+- Brigada.sk: `checked`; BA admin/driver/support discovery reálne vykonané, 0 vhodného konkrétneho hitu.
+- Worki: `checked`; BA admin/technical-support/driver discovery reálne vykonané, 0 vhodnej unique delty.
+- Služby zamestnanosti: `checked`; BA admin/support/driver discovery reálne vykonané, 0 vhodnej unique delty.
+- Pretlak: `checked`; BA/remote WordPress/e-commerce/support discovery reálne vykonané, 0 vhodného non-hard-dev hitu.
+- StartupJobs: `checked`; remote-from-Slovakia support/e-commerce discovery reálne vykonané, 0 kandidáta s dostatočným Slovakia-executable evidence + fitom.
+- WordPress Jobs: `checked`; remote support/content discovery reálne vykonané, 0 vhodnej non-hard-dev hiring delty.
+- Upwork: `ok`; čerstvý Worldwide beginner VA/admin listing za 1 500 USD fixed obsahuje slovenčinu medzi akceptovanými jazykmi a vyzerá obsahovo ako jednoduchý data-entry/admin remote. Bez LIVE promotion: klientský účet vznikol 10. 9. 2026, rovnaký deň ako listing, bez overenej dlhšej spend/hire histórie; risk/evidence gate má prednosť pred nominálnou odmenou.
+- Reddit/WordPress komunity: `limited`; aktuálne výsledky sú prevažne `FOR HIRE` supply-side. Konkrétny employer-demand WordPress post bol US-only a developer-heavy; 0 vhodných verified hiring hitov.
+- Facebook public index: `limited`; **0 verified hits**, bez konkrétneho verejne overiteľného hiring postu a priameho linku. Autentizovaný Nexus/local ingestion ostáva backlog a nebol spustený.
+
+### Audit počty 17:55
+- source families checked: **12**
+- nové LIVE promotions: **0**
+- fresh/adjacent candidates assessed: **4**
+- LIVE feed delta: **0**, zostáva **51**
+- Facebook verified hits: **0**
+- LIVE mix: Profesia **49,0 %**, non-Profesia **51,0 %**
+- zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
+- `job-sources.json`: aktualizovaný na 17:55.
+- `source-audit.json`: aktualizovaný na 17:55.
+- `jobs-data.json`: bez zmeny; fail-closed, nevznikol nový promotion-grade unique hit.
+
+### Rozvoj pridaný 17:55
+- Source query-to-result observability ledger: pre každú source family ukladať počet skutočne spustených query, počet konkrétnych výsledkov a počet otvorených canonical detailov. Pomôže rozlíšiť reálne nulový trh od indexačného/parser výpadku a zabráni nepravdivému označeniu zdroja ako zdravo prehľadaného.
+- Application-channel liveness verifier: pred LIVE promotion alebo opakovaným upozornením v rovnakom behu overiť, že apply URL, verejný kontakt alebo aplikačný formulár stále funguje. Mŕtvy apply flow držať verification-only, aby Job Radar neposielal používateľa na fakticky uzavretú ponuku.
