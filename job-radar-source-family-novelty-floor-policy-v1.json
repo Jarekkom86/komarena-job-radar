@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "policy": "source-family-novelty-floor",
+  "purpose": "Prevent high-yield portals from crowding out independent sourcing while keeping Bratislava/nearby and verified Slovakia-remote eligibility fail-closed.",
+  "hardLocationGate": {
+    "allow": ["ba-area", "remote-ok"],
+    "quarantine": ["unknown"],
+    "reject": ["reject-distance"],
+    "remoteRequirement": "Primary work must be performable from Slovakia without regular commuting to a distant city."
+  },
+  "protectedFamilies": [
+    "company-careers-and-public-ATS",
+    "LinkedIn",
+    "Worki",
+    "Brigada.sk",
+    "Pretlak",
+    "freelance-platforms",
+    "public-indexed-WordPress-WooCommerce-communities",
+    "public-indexed-Facebook",
+    "other-Slovak-job-boards"
+  ],
+  "rules": {
+    "minimumIndependentFamilyChecksPerFullCycle": 6,
+    "profesiaCannotSatisfyIndependentFamilyFloor": true,
+    "mirrorDoesNotCountAsIndependentFamily": true,
+    "facebookBlockedOrLimitedMustRemainTruthful": true,
+    "facebookZeroVerifiedHitsMustRemainZero": true,
+    "verifiedHitRequiresCanonicalOrPubliclyVerifiableDetail": true,
+    "preserveStableIds": true,
+    "canonicalDedupeRequired": true,
+    "preserveSourceTrustAndVerifiedAt": true,
+    "preserveScoreConfidence": true,
+    "preserveCrmAndUserEdits": true
+  },
+  "measurement": {
+    "countOnlyLocationEligibleUniqueHits": true,
+    "reportAttemptedFamiliesSeparatelyFromVerifiedHits": true,
+    "doNotClaimCoverageForBlockedSources": true
+  },
+  "expectedBenefit": "Maintains discovery breadth even when Profesia or another portal dominates yield, increasing chances of finding direct-company, community, freelance and smaller-board opportunities without admitting distant onsite/hybrid noise."
+}
