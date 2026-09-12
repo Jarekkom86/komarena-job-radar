@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "policy": "freshness-revalidation-budget",
+  "purpose": "Spend verification time first on LIVE and promotion-ready jobs whose decision-critical evidence is most likely to have changed.",
+  "eligibilityPrecondition": ["ba-area", "remote-ok"],
+  "neverPromote": ["unknown", "reject-distance"],
+  "priorityOrder": [
+    "application deadline within 5 days",
+    "promotion-ready candidate awaiting canonical recheck",
+    "LIVE job with stale apply-path or active-state evidence",
+    "remote-ok job with remote-policy evidence nearing expiry",
+    "high-score job with stale compensation or hard-requirement evidence"
+  ],
+  "rules": {
+    "canonicalFirst": true,
+    "doNotRefreshStableId": true,
+    "preserveCrmAndUserEdits": true,
+    "preserveSourceTrust": true,
+    "preserveScoreConfidence": true,
+    "failClosedOnLocationOrRemoteUncertainty": true,
+    "noFeedMutationOnTransientNetworkFailure": true,
+    "noPromotionFromSearchSnippetOnly": true
+  },
+  "budget": {
+    "reservePercentForNewDiscovery": 60,
+    "maxPercentForRevalidation": 40,
+    "note": "Revalidation must not starve non-Profesia discovery. Unused revalidation budget returns to discovery."
+  },
+  "expectedBenefit": "Reduces wasted canonical checks while catching expiring, closed, or materially changed high-value jobs before application time is lost."
+}
