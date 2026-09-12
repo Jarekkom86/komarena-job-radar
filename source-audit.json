@@ -1,6 +1,6 @@
 {
   "schemaVersion": 6,
-  "updatedAt": "2026-09-12T19:27:40+02:00",
+  "updatedAt": "2026-09-12T19:31:00+02:00",
   "runSummary": {
     "familiesChecked": 13,
     "freshPromoted": 0,
@@ -9,19 +9,19 @@
     "existingReverifiedEligible": 2,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-12T19:27:40+02:00",
-    "sourceVerificationAt": "2026-09-12T19:27:40+02:00",
+    "contentChangedAt": "2026-09-12T19:31:00+02:00",
+    "sourceVerificationAt": "2026-09-12T19:31:00+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification and link evidence. Content age and source-verification age are separate; touching updatedAt alone never makes a job fresh.",
     "liveFeedCount": 51,
     "liveMix": {"profesia":25,"profesiaPct":49.0,"nonProfesia":26,"nonProfesiaPct":51.0},
     "facebookVerifiedHits": 0,
-    "note": "Fresh 12.9.2026 19:27 public-web sweep across 13 actually searched source families. No new unique promotion-grade LIVE item was added. Kariera surfaced fresh Bratislava admin/customer-service inventory, including Grafton Receptionist / Office Assistant 1,300–1,400 EUR and same-day Grafton Office Manager 1,750–2,000 EUR, but the receptionist canonical detail fetch failed with a cache miss and the Office Manager remains language-burdened from prior verification; both remain verification-only. Same-day Kariera Telekom Magenta Experience Center is a mirror of an existing direct-company LIVE record. Upwork surfaced worldwide VA/support/WordPress work, but visible candidates were rejected for client-risk, strong English, hard development, low fixed-price economics or unclear workload. Reddit yielded no suitable employer-demand hit. Facebook public indexing yielded 0 concrete verifiable hiring posts with direct links."
+    "note": "Fresh 12.9.2026 19:31 public-web sweep across 13 actually searched source families. No new unique promotion-grade LIVE item was added. Kariera surfaced same-day Bratislava administration inventory. Grafton Receptionist / Office Assistant (1,300–1,400 EUR) initially failed result-page click with a cache miss, then canonical recovery by exact job ID/title succeeded; it is rejected from LIVE because active spoken/written English and advanced Excel/Outlook are explicit requirements. Same-day Telekom Magenta Experience Center is a mirror of an existing direct-company LIVE record. Upwork worldwide VA/support/WordPress candidates were rejected for client-risk, strong English, hard development, low fixed-price economics or unclear workload. Reddit yielded no suitable employer-demand hit. Facebook public indexing yielded 0 concrete verifiable hiring posts with direct links."
   },
   "developmentChanges": [
     {
       "id": "canonical-detail-recovery-ladder",
       "title": "Canonical detail recovery ladder",
-      "reason": "When a promising result-page hit fails to open because of cache/index/redirect errors, automatically retry by exact job ID/title, direct employer ATS and canonical URL discovery before classifying it as inaccessible. This prevents strong candidates such as a same-day BA office role from being lost to a transient result-to-detail failure while still keeping them out of LIVE until canonical evidence is obtained."
+      "reason": "When a promising result-page hit fails to open because of cache/index/redirect errors, automatically retry by exact job ID/title, direct employer ATS and canonical URL discovery before classifying it as inaccessible. This run proved the value: the Grafton receptionist result-page click failed, but exact-ID recovery found the canonical detail and exposed active English plus advanced Excel/Outlook, preventing a false promotion."
     },
     {
       "id": "source-family-evidence-age-sla",
@@ -36,7 +36,7 @@
     {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/driver/support discovery was actually searched; no suitable concrete public hit surfaced."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administration/technical-support/driver discovery was actually searched; no suitable unique delta surfaced."},
     {"name":"Služby zamestnanosti","family":"sluzby-zamestnanosti","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Government employment source was actually searched for Bratislava admin/support/driver roles; no suitable unique public delta surfaced."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":5,"added":0,"reverified":0,"rejected":{"language":2,"inactive":0,"duplicate":1,"location":1,"skill":0,"physical":0,"ranking":4},"note":"Fresh BA administration/customer-service discovery surfaced same-day Grafton Receptionist/Office Assistant 1,300–1,400 EUR and Office Manager 1,750–2,000 EUR, plus Telekom Magenta mirror and lower-fit multilingual/low-pay roles. Receptionist canonical fetch returned cache miss, so remains verification-only; Telekom is duplicate of existing direct-company LIVE record; Poprad e-shop admin fails location gate."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":5,"added":0,"reverified":0,"rejected":{"language":3,"inactive":0,"duplicate":1,"location":1,"skill":0,"physical":0,"ranking":5},"note":"Fresh BA administration/customer-service discovery actually searched. Same-day Grafton Receptionist/Office Assistant 1,300–1,400 EUR was canonical-recovered after an initial cache miss, then rejected for active spoken/written English plus advanced Excel/Outlook. Office Manager remains language-burdened from prior verification. Telekom Magenta is a mirror of existing direct-company LIVE canonical. Poprad e-shop admin fails the location gate."},
     {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Bratislava/remote WordPress, e-commerce and support discovery was actually searched; no suitable new non-hard-dev result surfaced."},
     {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Remote-from-Slovakia support/e-commerce discovery was actually searched; no target-fit result with clear Slovakia-executable evidence surfaced."},
     {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Remote WordPress support/content discovery was actually searched; no suitable non-hard-development hiring delta surfaced."},
