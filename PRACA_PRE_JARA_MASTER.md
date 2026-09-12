@@ -309,6 +309,8 @@ Aktualizované: 12. 9. 2026 17:55 CEST
 - ATS location-entitlement proof: pri všeobecnom `Remote` označení vyžadovať explicitný zoznam podporovaných krajín alebo inú canonical evidenciu, že možno pracovať zo Slovenska; bez toho ponechať `locationEligibility: unknown`.
 - Source query-to-result observability ledger: pre každú source family ukladať počet reálne spustených query, počet konkrétnych výsledkov a počet otvorených canonical detailov; odlíši skutočne nulový trh od zlyhania indexácie alebo parsera a zvýši pravdivosť `checked`/`limited` stavov.
 - Application-channel liveness verifier: pred promotion/re-notification overiť, že apply link, verejný kontakt alebo formulár je v tom istom behu ešte dosiahnuteľný; listing s mŕtvym apply flow ponechať verification-only, aby sa nestrácal čas na fakticky uzavreté pozície.
+- Support channel mix score: extrahovať, či podpora prebieha prevažne e-mailom, chatom, telefonicky, videom alebo osobne a hodnotiť komunikačnú záťaž oddelene od jazykovej úrovne. Umožní zvýhodniť e-mail/order-admin roly pred call-heavy alebo sales-heavy podporou.
+- Mandatory training travel cost ledger: evidovať miesto, počet dní, cestovné/ubytovanie a platenosť povinného onboardingu. Opakovaná vzdialená dochádzka je hard lokalitný reject; jednorazové školenie vstupuje do application ROI.
 
 ## Source audit — 10. 9. 2026 10:39
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera.sk, Pretlak/StartupJobs, Upwork, Reddit/WordPress komunity a Facebook public index.
@@ -456,3 +458,36 @@ Aktualizované: 12. 9. 2026 17:55 CEST
 ### Rozvoj pridaný 17:55
 - Source query-to-result observability ledger: pre každú source family ukladať počet skutočne spustených query, počet konkrétnych výsledkov a počet otvorených canonical detailov. Pomôže rozlíšiť reálne nulový trh od indexačného/parser výpadku a zabráni nepravdivému označeniu zdroja ako zdravo prehľadaného.
 - Application-channel liveness verifier: pred LIVE promotion alebo opakovaným upozornením v rovnakom behu overiť, že apply URL, verejný kontakt alebo aplikačný formulár stále funguje. Mŕtvy apply flow držať verification-only, aby Job Radar neposielal používateľa na fakticky uzavretú ponuku.
+
+## Source audit — 12. 9. 2026 22:58
+- Reálne preverených **14 source families**, z toho **13 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Brigada.sk, Práca za rohom/Prace.cz, Worki, Služby zamestnanosti, Kariera/Zoznam, Pretlak, StartupJobs, WordPress Jobs, Upwork, Reddit/WordPress komunity a Facebook public index.
+- **1 nová LIVE promotion:** **Ovečkárna — Brigáda – zákaznícka podpora CZ/SK**, remote zo Slovenska / práca odkiaľkoľvek, IČO alebo DPP, Po–Pi 08:00–12:00, október 2026 – január 2027. Priamy firemný zdroj potvrdzuje e-mailovú podporu, jednoduchú administratívu objednávok, CZ/SK zákaznícku linku, zaučenie a nulovú požiadavku na prax; Prace.cz mirror potvrdzuje 160 Kč/h. `locationEligibility: remote-ok`.
+- Profesia: `checked`; 0 nových unique promotion-grade výsledkov.
+- Priame company careers: `ok`; Ovečkárna reverified a promoted cez canonical employer page.
+- LinkedIn Jobs: `ok`; SupportYourApp vyžaduje fluent English; ďalšie viditeľné support výsledky neprebili existujúce LIVE možnosti.
+- Brigada.sk: `checked`; 0 nových vhodných konkrétnych public hitov.
+- Práca za rohom/Prace.cz: `ok`; Ovečkárna mirror bol deduped v prospech priameho zdroja. TELOMAR e-shop support 170–250 Kč/h bol `reject-distance`: povinný dvojtýždňový onboarding v Jinočanoch a následne kombinácia home office + kancelária.
+- Worki: `checked`; 0 novej vhodnej unique delty.
+- Služby zamestnanosti: `checked`; 0 novej vhodnej BA-area delty.
+- Kariera/Zoznam: `checked`; 0 novej unique promotion-grade delty.
+- Pretlak: `checked`; 0 vhodnej non-hard-dev delty.
+- StartupJobs: `checked`; 0 kandidáta s dostatočným Slovakia-executable evidence + fitom.
+- WordPress Jobs: `checked`; 0 vhodnej non-hard-dev hiring delty.
+- Upwork: `ok`; viac WordPress/e-commerce/VA výsledkov, ale viditeľné kandidáty padli na strong English, nízku efektívnu sadzbu 3–9 USD/h, development/seniority alebo vysokú konkurenciu; 0 promotion.
+- Reddit/WordPress komunity: `limited`; 0 vhodných konkrétnych employer-demand hiring hitov.
+- Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Nexus/local authenticated ingestion nebol spustený.
+
+### Audit počty 22:58
+- source families checked: **14**
+- nové LIVE promotions: **1**
+- LIVE feed delta: **+1**, spolu **52**
+- Facebook verified hits: **0**
+- LIVE mix: Profesia **25/52 = 48,1 %**, non-Profesia **27/52 = 51,9 %**
+- zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
+- `jobs-data.json`: Ovečkárna pridaná so stabilným ID `oveckarna-czsk-customer-support-202610`.
+- `job-sources.json`: aktualizovaný source registry a fresh audit poznámky.
+- `source-audit.json`: aktualizovaný pravdivý audit 14 source families.
+
+### Rozvoj pridaný 22:58
+- Support channel mix score: extrahovať, či zákaznícka podpora je prevažne e-mail/chat/telefón/video/osobne a hodnotiť komunikačnú záťaž oddelene od jazykovej úrovne. Pomôže zvýhodniť pokojnejšie e-mail/order-admin roly pred call-heavy alebo sales-heavy supportom.
+- Mandatory training travel cost ledger: evidovať miesto, počet dní, cestovné/ubytovanie a platenosť povinného onboardingu. Opakovaná vzdialená dochádzka ostáva hard lokalitný reject; jednorazové školenie sa započíta do application ROI.
