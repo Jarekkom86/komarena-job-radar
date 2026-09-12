@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 11. 9. 2026 11:20 CEST
+Aktualizované: 12. 9. 2026 12:05 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -305,6 +305,8 @@ Aktualizované: 11. 9. 2026 11:20 CEST
 - Commute-cost-adjusted compensation: pri `ba-area` rolách odhadnúť čas a priame náklady pravidelného dochádzania a dopočítať efektívnu hodnotu odmeny po cestovaní; používať iba ako sekundárny ekonomický ranking po splnení hard lokalitného gate.
 - Search-to-detail promotion debt queue: kandidát z výsledkovej stránky, ktorý vyzerá relevantne, ale v tom istom behu sa nepodarilo získať kompletný canonical detail, dostať do explicitnej verification queue s TTL; pri ďalšom behu ho overiť skôr než opakovať široké discovery. Rieši stratu kandidátov typu CLOSER web admin/Shoroh support.
 - English-demand evidence scale: pri neurčitých frázach typu „active English communication“ rozlišovať explicitnú CEFR úroveň, dennú telefonickú komunikáciu, písomný kontakt a iba občasné čítanie dokumentácie; zabráni binárnemu rejectu pri nepresne formulovanom jazykovom požiadavku a umožní konzistentný A2/B1/B2 ranking.
+- Application assessment effort cost: odhadnúť neplatený čas na test task, AI/video interview, portfólio a viacstupňový výber; znížiť application ROI pri rolách, kde náročnosť výberu nezodpovedá reálnej odmene a fitu.
+- ATS location-entitlement proof: pri všeobecnom `Remote` označení vyžadovať explicitný zoznam podporovaných krajín alebo inú canonical evidenciu, že možno pracovať zo Slovenska; bez toho ponechať `locationEligibility: unknown`.
 
 ## Source audit — 10. 9. 2026 10:39
 - Reálne preverených **10 source families**, z toho **9 mimo Profesia**: Profesia, priame company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera.sk, Pretlak/StartupJobs, Upwork, Reddit/WordPress komunity a Facebook public index.
@@ -391,3 +393,33 @@ Aktualizované: 11. 9. 2026 11:20 CEST
 ### Rozvoj pridaný 11:20
 - Ambiguous multi-value requirement semantics resolver: pri canonical detailoch, ktoré uvádzajú viac hodnôt toho istého požiadavku (napr. AJ B1 aj B2), automaticky rozlíšiť minimum, preferovaný cieľ, rozsah alebo chybnú duplicitu; kým význam nie je jednoznačný, nezvyšovať jazykový hard-gate nad úroveň priamo dokazateľnú zdrojom. Rieši false reject/promotion pri štruktúrovaných štátnych ponukách typu Metrohm.
 - Targeted clarification queue for high-fit candidates: ak silný `ba-area`/`remote-ok` kandidát neprejde iba pre jednu nejasnú požiadavku, uložiť presnú otázku na overenie, verejný kontakt a TTL; ďalší verification krok potom cielene zisťuje konkrétnu nejasnosť namiesto opakovania celého discovery. Autentizované kontaktovanie sa nespúšťa automaticky.
+
+## Source audit — 12. 9. 2026 12:05
+- Reálne preverených **12 source families**, z toho **11 mimo Profesia**: Profesia, priame company/ATS careers, LinkedIn Jobs, Worki, Práca za rohom, Kariera/Zoznam/ÚPSVR, Pretlak, StartupJobs, WordPress Jobs, Upwork, Reddit/WordPress komunity a Facebook public index.
+- Profesia: `checked`; 0 nových unique promotion-grade výsledkov.
+- Priame company/ATS careers: `ok`; **Umbrel — Customer Support (non-technical)** je obsahovo zaujímavý remote support/logistics/orders fit, ale canonical verejne uvádza iba `Remote` bez dôkazu, že pracovný/kontraktačný vzťah je dostupný zo Slovenska. Preto `locationEligibility: unknown`, bez LIVE promotion. **OnHires — Customer Support Technician** je Europe-remote, ale VPS/networking/sysadmin-heavy. Foxelli má explicitnú Slovakia eligibility, no support/marketing roly padajú na fluent/near-native English, specialist experience alebo sales/marketing scope.
+- LinkedIn Jobs: `ok`; **NATEK — Salesforce CRM Support Manager**, Remote/Bratislava, je platform-owner/governance/Salesforce-heavy a nad preferovaným support scope.
+- Worki: `checked`; 0 novej vhodnej unique delty.
+- Práca za rohom: `checked`; 0 novej vhodnej unique delty.
+- Kariera/Zoznam/ÚPSVR: `ok`; čerstvé BA admin výsledky zahŕňajú INTERNATIONAL CONSTRUCTION AB od 850 EUR/mes. a ďalšie generic admin roly; DENIMA canonical vyžaduje viacjazyčnú telefonickú komunikáciu. Bez promotion pre ekonomiku/jazyk/fit.
+- Pretlak: `checked`; 0 vhodnej non-hard-dev delty.
+- StartupJobs: `checked`; 0 novej Slovakia-executable suitable delty.
+- WordPress Jobs: `checked`; 0 novej vhodnej non-hard-dev hiring delty.
+- Upwork: `ok`; **WordPress Content Automation & Blog QA VA**, publikované 10. 9. 2026, Worldwide remote, part-time/ongoing, školenie na interný systém poskytujú, 5–10 proposals. Veľmi dobrý WordPress + AI/content automation prienik, ale požaduje strong written English a verejný budget je uvedený ako iba 6 USD fixed-price, takže bez promotion do LIVE. Ďalšie e-commerce/VA hity boli low-pay, staršie alebo tool/English-heavy.
+- Reddit/WordPress komunity: `limited`; 0 vhodných current hiring dopytov, prevažne FOR HIRE supply-side alebo stale/closed employer posts.
+- Facebook public index: `limited`; **0 verified hits**, žiadny konkrétny verejne overiteľný hiring post s priamym linkom. Autentizovaný Nexus/local ingestion nebol spustený.
+
+### Audit počty 12:05
+- source families checked: **12**
+- nové LIVE promotions: **0**
+- LIVE feed delta: **0**, zostáva **51**
+- Facebook verified hits: **0**
+- LIVE mix: Profesia **49,0 %**, non-Profesia **51,0 %**
+- zamknuté UI/renderery/baseline/bootstrap: **bez zmeny**
+- `job-sources.json`: aktualizovaný na 12:05.
+- `source-audit.json`: aktualizovaný na 12:05.
+- `jobs-data.json`: bez zmeny; nevznikol nový promotion-grade unique hit.
+
+### Rozvoj pridaný 12:05
+- Application assessment effort cost: pri každej role odhadnúť neplatený čas na test task, video/AI interview, portfólio a viacstupňový výber a zahrnúť ho do application ROI. Pomôže nestrácať čas na nízko platených rolách s disproporčne náročným náborom.
+- ATS location-entitlement proof: pri všeobecnom `Remote` označení z ATS vyžadovať explicitný hiring-country list alebo inú canonical evidenciu, že kontrakt možno uzavrieť zo Slovenska. Bez dôkazu ponechať `locationEligibility: unknown` a nepromovať do LIVE.
