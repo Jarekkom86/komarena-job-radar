@@ -1,5 +1,56 @@
 # KomArena Job Radar — CHANGELOG
 
+## 2026-09-12 — promotion-grade e-commerce/L1 support + feed integrity hardening
+
+### 1. Reálny source audit + 2 nové high-confidence LIVE ponuky
+- Reálne preverené aktuálne Bratislava/BA zdroje: Profesia, Práca za rohom, Kariera/Zoznam, IKEA Careers, priame firemné kariérne stránky a verejné cross-board indexy použité iba na discovery/corroboration.
+- Nová promotion-grade ponuka: `Customer Success Specialist (E-commerce)` — CREATIVE sites, Bratislava/Eurovea + občasný home office, od 1 600 € brutto + variabilná zložka. Náplň je veľmi blízka cieľovému profilu: e-shop support, bugy/admin, ERP integrácie, importy, automatizácie a koordinácia menších webových úloh. Angličtina je výhoda, nie podmienka.
+- Nová promotion-grade ponuka: `Špecialista/špecialistka softvérovej podpory (L1)` — ANASOFT, Bratislava/Karlova Ves + občasný home office, 1 500 € brutto. Rola je explicitne vhodná pre absolventa/bez praxe a pokrýva tickety, incidenty, troubleshooting, dokumentáciu a eskalácie; angličtina nie je hard gate.
+- Slovak Telekom B2B support, IKEA popredajný servis a SUPTel dispečing boli v tomto rune priamo znovu otvorené a re-verifikované; iba preto dostali nový 12.9. `verifiedAt`/`linkCheckedAt`.
+- PORT System nebol umelo timestampovo obnovený. Jeho 11.9. overenie zostáva v 48 h okne a dnešný verejný index ho iba corroboroval; presný pôvodný detail sa nepodarilo priamo znovu otvoriť.
+- ENGIE recepcia nebola promovaná pre stredne pokročilú AJ, DTSE IT support pre B2 AJ a Eric SK e-shop administratíva ostáva iba doplnková/sezónna možnosť pri 7 €/h.
+
+### 2. Fail-closed validácia live JSON a cache
+- `job-radar-feed-merge-v1.js` teraz pred cacheovaním a použitím validuje payloady: job feed musí obsahovať `jobs` pole a delta manifest `files` pole.
+- Neplatný cached payload sa odstráni namiesto toho, aby ďalej kontaminoval fallback.
+- Feed cache namespace je zámerne posunutý na `komarenaJobRadarFeed:v8`, aby sa po zavedení stricter validácie nepoužívali potenciálne nevalidné legacy cache dáta. CRM/localStorage stav používateľa sa nemení.
+
+### 3. Evidence-aware deduplikácia
+- Novší chybný/future-dated/incomplete záznam už nemôže automaticky prekryť starší validný reálne overený záznam tej istej ponuky.
+- Explicitné novšie negatívne dôkazy (`inactive`, `expired`, `promotionEligible=false`, broken link) naďalej fail-closed potlačia staršiu aktívnu verziu; následná reálna novšia re-verifikácia môže ponuku znovu aktivovať.
+- Tým sa znižuje riziko, že agregátor alebo chybný import vyradí dobrú ponuku, alebo naopak že starší pozitívny snapshot prežije reálne ukončenie inzercie.
+
+### 4. Dedupe observability + load diagnostics
+- `JobRadarFeedHealth` a `feedParts` teraz vystavujú počty vstupných záznamov, URL kolízií, identity kolízií, náhrad a výsledný deduplikovaný počet.
+- Health vrstva eviduje aj `loadErrors` a `deltaIndexUpdatedAt`, takže výpadok alebo nevalidný konkrétny feed/delta súbor je diagnostikovateľný bez zmeny MASTER UI.
+
+### 5. Deterministická retencia delta manifestu
+- Dátované `jobs-fresh-delta-YYYYMMDD.json` sa pred 14-vrstvovým limitom zoradia podľa dátumu; neusporiadaný manifest už nemôže omylom zahodiť novšiu deltu a ponechať staršiu.
+- Nedátovaný `jobs-fresh-delta.json` sa zachová ako základná vrstva a manifest stále akceptuje iba bezpečný rovnakorepozitárový názov podľa whitelist regexu.
+- Pridaný a zaregistrovaný `jobs-fresh-delta-20260912.json`; obsahová čerstvosť (`updatedAt`) a source-verification čerstvosť (`sourceVerificationAt` / `verifiedAt`) ostávajú oddelené.
+
+### 6. Pravdivý source audit
+- `source-audit.json` bol prepísaný výsledkom skutočnej kontroly z 12.9.2026 08:35, nie zmenou timestampu bez dôkazu.
+- Audit eviduje `freshPromoted=2`, `existingReverified=3` a explicitne zaznamenáva, že PORT System nebol timestampovo obnovený bez priameho reopen dôkazu.
+- Rejected kandidáti majú konkrétne dôvody a cross-board indexy sa používajú iba na discovery/corroboration, nie ako jediný dôkaz pre promotion.
+
+### Kontroly / regresia
+- Finálny `job-radar-feed-merge-v1.js` bol po zápise znovu načítaný z GitHubu; blob SHA `38358a3cd06d5a8d6384504686bed5bfcb55ba2a`.
+- Uložený JavaScript prešiel `node --check` bez syntaktickej chyby.
+- `jobs-fresh-delta-20260912.json` bol po zápise znovu načítaný; blob SHA `d345b1b66d5b45d5cdc69f246aabdacc77a8c464`.
+- CRM/localStorage kľúče ani používateľské workflow stavy neboli zmenené. Zmena `v7` → `v8` sa týka iba internej feed-cache vrstvy.
+- Fallback live → validovaná cache → baseline zostal zachovaný.
+- Žiadny zamknutý vizuálny súbor nebol editovaný.
+
+### MASTER DESIGN LOCK — overenie
+- `komarena-job-radar-v6.5.html`: `18fd009f1f9f041a207b067c5dcc0661f1647199`.
+- `job-radar-v6.css`: `5157753d3525a99191e78374f7a074315bf7809a`.
+- `job-radar-v6.5-enhance.js`: `fbb56af1213723b68deb9dc6ffc9e4c9de7fd80d`.
+- `komarena-job-radar-jr-master.webp`: `ded775849800577277c4581ee5c30db6e43bba54`.
+- MASTER dizajn zostal presne zachovaný; finálne hashe boli po zápisoch znovu porovnané s `JOB-RADAR-DESIGN-LOCK.json`.
+
+---
+
 ## 2026-09-11 — fresh source promotion + self-discovering delta feed
 
 ### 1. Reálny source audit + nový high-confidence PORT System match
@@ -122,7 +173,7 @@
 ### MASTER DESIGN LOCK — overenie hashov
 - `komarena-job-radar-v6.5.html`: `18fd009f1f9f041a207b067c5dcc0661f1647199` — zhodný s lockom.
 - `job-radar-v6.css`: `5157753d3525a99191e78374f7a074315bf7809a` — zhodný s lockom.
-- `job-radar-v6.5-enhance.js`: `fbb56af1213723b68deb9dc6ffc9e4c9de7fd80d` — zhodný s lockom.
+- `job-radar-v6.5-enhance.js`: `fbb56af121372368deb9dc6ffc9e4c9de7fd80d` — zhodný s lockom.
 - `komarena-job-radar-jr-master.webp`: `ded775849800577277c4581ee5c30db6e43bba54` — zhodný s lockom.
 - MASTER dizajn bol zachovaný bez zmeny fingerprintu.
 
