@@ -1,47 +1,54 @@
 {
-  "schemaVersion": 6,
-  "updatedAt": "2026-09-13T07:34:19+02:00",
+  "schemaVersion": 7,
+  "updatedAt": "2026-09-13T08:09:00+02:00",
   "runSummary": {
     "familiesChecked": 13,
-    "freshPromoted": 0,
-    "freshCandidates": 5,
-    "existingReverified": 0,
-    "existingReverifiedEligible": 0,
-    "existingQuarantined": 0,
+    "freshPromoted": 3,
+    "freshCandidates": 10,
+    "existingReverified": 2,
+    "existingReverifiedEligible": 2,
+    "existingQuarantined": 1,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-12T22:58:46+02:00",
-    "sourceVerificationAt": "2026-09-13T07:34:19+02:00",
+    "contentChangedAt": "2026-09-13T08:09:00+02:00",
+    "sourceVerificationAt": "2026-09-13T08:09:00+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification and link evidence. Content age and source-verification age are separate; touching updatedAt alone never makes a job fresh.",
-    "liveFeedCount": 52,
-    "liveMix": {"profesia":25,"profesiaPct":48.1,"nonProfesia":27,"nonProfesiaPct":51.9},
-    "facebookVerifiedHits": 0,
-    "note": "Fresh 13.9.2026 07:34 public-web sweep across 13 actually searched source families. No new unique promotion-grade role passed ranking, language, trust/economics, competition and locality gates, so jobs-data.json remains fail-closed at 52 LIVE items. Upwork surfaced two relevant worldwide e-commerce/customer-support VA roles: 8-9 USD/h with 50+ proposals and a client showing 226 hires but only 4.3k USD total spend, plus a 7-8 USD/h role with 20-50 proposals and a client showing 292 hires but only 6.2k USD total spend. Both fit tasks well but have weak spend-per-hire economics and heavy competition, so they were not promoted. A longer-term WooCommerce-favorable project-coordinator role pays only 3-5 USD/h and already has 14 interviews. LinkedIn re-exposed SupportYourApp remote technical support requiring English C1. Reddit public results were stale or supply-side; Facebook public indexing yielded 0 concrete verified hiring posts with direct links."
+    "note": "Fresh 13.9.2026 public-web sweep across 13 actually searched source families. Three new high-confidence eligible Bratislava roles were promoted: PSS client-service call centre (1,500–1,700 EUR, home-office option, no English hard gate), PROPLUSCO 4-hour Back Office Assistant (700 EUR, no language gate), and INSIA network/system support (1,500 EUR, home office, technical CRM/process support, no language gate). CREATIVE sites and SUPTel were directly re-opened/reverified. Slovak Telekom B2B support was directly opened and now explicitly says the offer is inactive and cannot be answered, so a newer negative record quarantines it. Upwork/LinkedIn candidates with weak economics or B2/C1 language gates remain rejected."
   },
   "developmentChanges": [
     {
-      "id": "freelance-client-spend-per-hire-quality-gate",
-      "title": "Freelance client spend-per-hire quality gate",
-      "reason": "For Upwork/Freelancer-style clients, calculate total historical spend divided by hires and flag extreme low-spend/high-hire accounts before promotion. This catches apparently active clients whose hiring history suggests microtasks, churn or systematically low realized earnings even when the advertised hourly rate looks acceptable."
+      "id": "stable-source-job-id-dedupe",
+      "title": "Stable source-job-ID deduplication",
+      "reason": "The feed now extracts stable job identifiers from Profesia, Kariera, Práca za rohom, LinkedIn and Upwork URLs (or explicit sourceJobId) and deduplicates by that evidence before fuzzy company+title identity. This prevents localized/alternate URLs of the same listing from appearing twice while preserving evidence-aware conflict resolution."
     },
     {
-      "id": "remote-hourly-floor-after-fees-fx",
-      "title": "Remote hourly floor after fees and FX",
-      "reason": "Normalize freelance hourly offers to estimated EUR after platform fee, FX friction and realistic unpaid admin/application time. Use the effective hourly floor as a promotion signal so low-value remote gigs do not consume time merely because they match WordPress, e-commerce or customer-support keywords."
+      "id": "dynamic-recent-delta-fallback",
+      "title": "Dynamic recent-delta fallback",
+      "reason": "If jobs-delta-index.json is missing, invalid or stale, the runtime now derives a bounded same-repository fallback covering the base delta plus the last seven calendar days. A stale cached manifest can no longer silently hide the newest verified daily delta."
+    },
+    {
+      "id": "manifest-staleness-observability",
+      "title": "Manifest staleness diagnostics",
+      "reason": "JobRadarFeedHealth now exposes deltaIndexStale and a distinct stale-index+dynamic-fallback mode, separating manifest freshness problems from job-content age and source-verification age."
+    },
+    {
+      "id": "normalized-identity-dedupe",
+      "title": "Safer normalized identity dedupe",
+      "reason": "Company legal-form noise and common title boilerplate are normalized before the final identity dedupe, reducing duplicate cards caused by s.r.o./a.s. formatting or gender/graduate title variants without changing CRM/localStorage keys."
     }
   ],
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava WordPress/e-shop/admin/support/driver discovery actually searched; no new unique promotion-grade indexed hit surfaced."},
-    {"name":"Direct company careers","family":"direct-company","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Direct Slovak Telekom/company-career discovery actually searched; no new target-scope promotion-grade delta surfaced in public indexing."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":0},"note":"Fresh Slovakia/remote support discovery actually searched. SupportYourApp remote Technical Support Consultant is visible but explicitly requires English C1 and a VPS/trading technical-support scope, therefore rejected."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/e-shop/support/driver discovery actually searched; no concrete suitable public hit surfaced."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administration/e-shop/technical-support/driver discovery actually searched; no new promotion-grade indexed result surfaced."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administration/e-shop/WordPress/customer-support discovery actually searched; no new unique promotion-grade indexed result surfaced."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Current WordPress/WooCommerce/e-commerce/remote discovery actually searched; no new target-scope employer-demand hit surfaced."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Slovakia-executable remote customer-support/e-commerce/WordPress discovery actually searched; no new promotion-grade result surfaced."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":3,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":3},"note":"Three relevant worldwide remote e-commerce/VA results were inspected. 8-9 USD/h customer support + CRM had 50+ proposals and client 226 hires/4.3k USD spend; 7-8 USD/h store support had 20-50 proposals and client 292 hires/6.2k USD spend; long-term WooCommerce-favorable coordinator role pays 3-5 USD/h and already has 14 interviews. Strong task fit, but economics/competition failed promotion."},
-    {"name":"Other freelance platforms","family":"freelance-other","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Freelancer current WordPress/WooCommerce/VA/customer-support discovery actually searched; no promotion-grade indexed hit surfaced."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Official WordPress Jobs remote support/content discovery actually searched; no fresh suitable non-hard-development hiring delta surfaced."},
-    {"name":"Reddit / WordPress communities","family":"community","status":"limited","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":1,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":1},"note":"Public community discovery actually searched. A July remote WordPress/WooCommerce content-assistant hiring post remained indexed but is stale and saturated; newer visible results were mostly FOR HIRE supply-side or US-only developer demand. Public indexing remains partial."},
-    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"WordPress Slovensko, WooCommerce SK+CZ and Bratislava jobs public-index discovery actually searched. 0 verified hiring hits and no concrete publicly verifiable hiring post with a direct link. Authenticated Nexus/local ingestion remains backlog only and was not started."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":6,"added":1,"reverified":1,"rejected":{"language":3,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":1},"note":"Fresh Bratislava admin/support/technical discovery actually searched. INSIA was opened on Profesia and promoted; SUPTel was directly reconfirmed. ESET and PROPLUSCO 1700 back-office were rejected for B2 language requirements; Bory document role requires nursing qualification/registration."},
+    {"name":"Direct company careers","family":"direct-company","status":"ok","hits":3,"added":2,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":1},"note":"Official PSS and PROPLUSCO career pages were opened. PSS client-service and PROPLUSCO 4-hour back office were promoted; PROPLUSCO 1700 full-time role rejected for daily B1-B2 English plus two-month duration."},
+    {"name":"Práca za rohom","family":"praca-za-rohom","status":"ok","hits":7,"added":0,"reverified":1,"rejected":{"language":2,"inactive":0,"duplicate":2,"location":0,"skill":1,"physical":0,"ranking":2},"note":"Current Bratislava admin/support listings actually searched. CREATIVE sites was directly re-opened and remains active; several roles were duplicates/corroborations of Profesia or failed language/qualification gates."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":1,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Slovak Telekom B2B support was directly opened; the page explicitly states the offer is inactive and cannot be answered. It is quarantined with newer negative evidence."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":6,"added":0,"reverified":0,"rejected":{"language":5,"inactive":1,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh customer-support discovery actually searched. SupportYourApp results continue to require B2/C1 or other languages; no promotion-grade delta."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":1,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Current e-shop/customer-support discovery actually searched; visible Shield-Sk e-shop role is explicitly filled/cancelled."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/e-shop/support/driver discovery actually searched; no stronger publicly verifiable promotion-grade hit surfaced."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Current WordPress/WooCommerce/e-commerce/remote discovery actually searched; no new eligible employer-demand result surfaced."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Slovakia-executable remote support/e-commerce discovery actually searched; no promotion-grade result surfaced."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":6},"note":"Worldwide e-commerce/VA/support roles were inspected. A fresh customer-service VA pays only 3–5 USD/h with 50+ proposals; other WooCommerce/e-commerce roles show similarly weak rates, fixed micro-budgets or extreme client hire/spend economics. None passed economic/competition gates."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Official WordPress Jobs remote support/content discovery actually searched; no fresh suitable non-hard-development demand surfaced."},
+    {"name":"Reddit / WordPress communities","family":"community","status":"limited","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":1},"note":"Public discovery actually searched. Fresh visible result was FOR HIRE supply-side, not employer demand; no promotion."},
+    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public-index search for Bratislava/WordPress/e-shop hiring produced no concrete verifiable direct hiring post. Authenticated/private group coverage remains unavailable to public-web audit."}
   ]
 }
