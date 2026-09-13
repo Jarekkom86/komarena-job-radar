@@ -1,46 +1,46 @@
 {
   "schemaVersion": 6,
-  "updatedAt": "2026-09-13T03:38:38+02:00",
+  "updatedAt": "2026-09-13T04:12:16+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "freshPromoted": 0,
-    "freshCandidates": 11,
+    "freshCandidates": 12,
     "existingReverified": 0,
     "existingReverifiedEligible": 0,
     "existingQuarantined": 0,
     "freshnessWindowHours": 48,
     "contentChangedAt": "2026-09-12T22:58:46+02:00",
-    "sourceVerificationAt": "2026-09-13T03:38:38+02:00",
+    "sourceVerificationAt": "2026-09-13T04:12:16+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification and link evidence. Content age and source-verification age are separate; touching updatedAt alone never makes a job fresh.",
     "liveFeedCount": 52,
     "liveMix": {"profesia":25,"profesiaPct":48.1,"nonProfesia":27,"nonProfesiaPct":51.9},
     "facebookVerifiedHits": 0,
-    "note": "Fresh 13.9.2026 03:38 public-web sweep across 12 actually searched source families. No new unique promotion-grade job passed ranking, language, skill and locality gates; jobs-data.json therefore stays fail-closed at 52 LIVE items. LinkedIn surfaced multiple SupportYourApp remote roles but they require C1/fluent English, additional German/Swedish, or T3/infrastructure skills. NATEK Salesforce CRM Support Manager is remote with only quarterly Bratislava/Prague travel, but is senior Salesforce operational ownership and therefore outside target scope. Worki surfaced current Bratislava/Devínska Nová Ves VZV/warehouse roles, but they are physical three-shift warehouse work and rank below current inventory. StartupJobs surfaced MAGU Customer Care in Prague and a remote Marketing & Product Specialist, but indexed evidence did not establish a Slovakia-executable target-role promotion. Facebook public indexing yielded 0 concrete verifiable hiring posts with direct links."
+    "note": "Fresh 13.9.2026 04:12 public-web sweep across 12 actually searched source families. No new unique promotion-grade job passed ranking, language, trust/economics and locality gates; jobs-data.json therefore stays fail-closed at 52 LIVE items. The strongest fresh freelance result was Upwork Customer Support and Virtual Assistant at 15–25 USD/h, worldwide remote and part-time, but the client account was created 2.9.2026 with no established spend/hire history visible and the role has mandatory email/customer communication, so it remains verification-only rather than LIVE. Upwork WordPress Content Automation & Blog QA VA is remote and training is offered, but explicitly requires strong written English; Shopify/VA and several support listings had implausibly low fixed budgets. Reddit public results were dominated by FOR HIRE self-promotion or US-only hiring. Facebook public indexing yielded 0 concrete verifiable hiring posts with direct links."
   },
   "developmentChanges": [
     {
-      "id": "timezone-shift-burden-score",
-      "title": "Timezone and shift burden score",
-      "reason": "For remote roles, explicitly score working-hour alignment with Slovakia and penalize night/APAC/US shifts even when location eligibility is remote-ok. This prevents technically remote jobs from ranking highly when their schedule is impractical."
+      "id": "freelance-application-window-decay",
+      "title": "Freelance application-window decay score",
+      "reason": "For freelance gigs, rank freshness using posted age together with proposal count, last-viewed activity, interviewing and hires. A technically good listing should fall quickly when it is already saturated or stale, while a newly posted low-competition gig gets reaction priority."
     },
     {
-      "id": "remote-travel-frequency-ledger",
-      "title": "Remote travel-frequency ledger",
-      "reason": "Store mandatory travel frequency, destinations, duration and whether travel cost/time is compensated. A role can remain remote-ok when travel is genuinely occasional, while ranking reflects the real burden and avoids treating quarterly travel the same as weekly hybrid attendance."
+      "id": "language-evidence-confidence",
+      "title": "Language evidence confidence",
+      "reason": "Store whether an English requirement is explicit, inferred from channel duties, or unknown. Explicit B2/C1 remains a strong penalty, while unproven language assumptions lower confidence instead of causing a false hard reject; this improves recall without hiding the A2 risk."
     }
   ],
   "sources": [
     {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava WordPress/e-shop/admin/support/driver discovery actually searched; no new unique promotion-grade indexed hit surfaced."},
     {"name":"Direct company careers","family":"direct-company","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Direct Alza and Slovak Telekom career discovery actually searched in this run; no new target-role public delta surfaced."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":8,"added":0,"reverified":0,"rejected":{"language":5,"inactive":1,"duplicate":0,"location":0,"skill":3,"physical":0,"ranking":2},"note":"Actually searched fresh Bratislava/Slovakia remote support inventory. SupportYourApp roles require C1/fluent English, extra languages or stronger T3/infrastructure skills. NATEK Salesforce CRM Support Manager is remote with quarterly travel but senior Salesforce scope; no promotion."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava/Slovakia remote customer-support, WordPress and administrator discovery actually searched; no new public-index result met promotion threshold in this run."},
     {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/e-shop/support/driver discovery actually searched; no concrete suitable indexed hit surfaced."},
-    {"name":"Worki.sk","family":"worki","status":"ok","hits":2,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":2,"ranking":2},"note":"Actually searched. Current Bratislava/Devínska Nová Ves results were VZV/warehouse roles with physical handling and three-shift operation; locality passes but fit ranks below current LIVE inventory."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administration/e-shop/support discovery actually searched; no new unique promotion-grade indexed result surfaced."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Actually searched current WordPress/e-commerce/content/remote inventory; no new target-scope employer-demand hit surfaced."},
-    {"name":"StartupJobs","family":"startupjobs","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":1,"skill":0,"physical":0,"ranking":1},"note":"Actually searched remote e-commerce/customer-support inventory. MAGU current inventory includes Prague Customer Care and remote Marketing & Product Specialist, but indexed evidence did not prove a promotion-grade Slovakia-executable target-role match."},
-    {"name":"Upwork","family":"upwork","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh WordPress/WooCommerce/VA/customer-support discovery actually searched; no new concrete promotion-grade public indexed hit surfaced in this run."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administration/e-shop/technical-support/driver discovery actually searched; no new promotion-grade indexed result surfaced."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava administration/e-shop/WordPress/customer-support discovery actually searched; no new unique promotion-grade indexed result surfaced."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Actually searched current WordPress/WooCommerce/e-commerce/remote inventory; no new target-scope employer-demand hit surfaced."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Actually searched remote customer-support/e-commerce/WordPress inventory; no new promotion-grade Slovakia-executable hit surfaced."},
+    {"name":"Upwork","family":"upwork","status":"ok","hits":11,"added":0,"reverified":0,"rejected":{"language":2,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":9},"note":"Fresh worldwide WordPress/WooCommerce/VA/customer-support discovery actually searched. Best result: Customer Support and Virtual Assistant, 15–25 USD/h, part-time, 6+ months; kept verification-only because client account is new with no visible track record and role has mandatory email/customer communication. WordPress Content Automation & Blog QA requires strong written English. Several Shopify/VA/support listings had very low fixed budgets or weak client confidence."},
     {"name":"Other freelance platforms","family":"freelance-other","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Freelancer discovery actually searched for current WordPress/WooCommerce/VA/customer-support work; no promotion-grade indexed hit surfaced."},
-    {"name":"Reddit / WordPress communities","family":"community","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public WordPress/WooCommerce remote-job community discovery actually searched; no concrete Slovakia-compatible employer/client demand post surfaced. Public indexing remains partial."},
-    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"WordPress/WooCommerce/Bratislava jobs public-index discovery actually searched. 0 verified hiring hits and no concrete publicly verifiable hiring post with a direct link. Authenticated Nexus/local ingestion remains backlog only and was not started."}
+    {"name":"Reddit / WordPress communities","family":"community","status":"limited","hits":1,"added":0,"reverified":0,"rejected":{"language":1,"inactive":0,"duplicate":0,"location":1,"skill":1,"physical":0,"ranking":1},"note":"Public WordPress-job discovery actually searched. Employer-demand result found was US-only and development-heavy; current public results otherwise skewed toward FOR HIRE self-promotion. No Slovakia-compatible employer/client demand promotion. Public indexing remains partial."},
+    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"WordPress Slovensko, WooCommerce SK+CZ and Bratislava jobs public-index discovery actually searched. 0 verified hiring hits and no concrete publicly verifiable hiring post with a direct link. Authenticated Nexus/local ingestion remains backlog only and was not started."}
   ]
 }
