@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "policy": "location-evidence-normalization",
+  "purpose": "Strengthen the Bratislava-area hard gate by normalizing locality evidence before ranking or promotion.",
+  "safety": {
+    "preserveStableIds": true,
+    "preserveCanonicalDedupe": true,
+    "preserveLocationEligibility": true,
+    "preserveLocationReason": true,
+    "failClosed": true,
+    "noAutomaticExpansionOfCommutingArea": true
+  },
+  "evidencePriority": [
+    "canonical-job-detail-explicit-workplace",
+    "official-company-career-detail",
+    "verified-job-board-detail",
+    "public-index-snippet"
+  ],
+  "normalization": {
+    "storeRawLocationText": true,
+    "deriveNormalizedMunicipalityOnlyWhenUnambiguous": true,
+    "remoteRequiresExplicitSlovakia-compatibleEvidence": true,
+    "hybridRequiresRegularWorkplaceLocation": true,
+    "districtOnlyOrRegionOnly": "manual-verification",
+    "conflictingLocationEvidence": "unknown"
+  },
+  "hardGate": {
+    "allow": ["ba-area", "remote-ok"],
+    "reject": ["reject-distance"],
+    "quarantine": ["unknown"],
+    "rankingCannotOverride": true,
+    "salaryCannotOverride": true,
+    "sourceTrustCannotOverride": true
+  },
+  "remoteRules": {
+    "remoteWordAloneIsInsufficient": true,
+    "distantCityPlusHybrid": "reject-distance",
+    "distantCityPlusUnclearRemote": "unknown",
+    "countryRestrictedOutsideSlovakia": "reject-distance"
+  },
+  "auditFields": [
+    "rawLocationText",
+    "normalizedMunicipality",
+    "locationEvidenceSource",
+    "locationEvidenceVerifiedAt",
+    "locationEligibility",
+    "locationReason"
+  ]
+}
