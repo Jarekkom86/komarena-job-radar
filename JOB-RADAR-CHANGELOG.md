@@ -1,5 +1,52 @@
 # KomArena Job Radar — CHANGELOG
 
+## 2026-09-13 — 3 fresh promotions + inactive-link cleanup + resilient delta discovery
+
+### 1. Reálny source audit + 3 nové high-confidence LIVE ponuky
+- Reálne prehľadaných 13 zdrojových rodín pre Bratislavu/BA okolie a vhodné remote roly; audit nebol vytvorený iba zmenou timestampu.
+- Nová promotion-grade ponuka: `Spracovateľ/Spracovateľka služieb pre klientov – Call centrum` — Prvá stavebná sporiteľňa, Bratislava, 1 500–1 700 € brutto, flexibilný pracovný čas a možnosť práce doma. Náplň: telefón/e-mail/chat, bankové systémy, spracovanie požiadaviek a administratívy; angličtina nie je hard gate.
+- Nová promotion-grade ponuka: `Back Office Asistent/ka (4-hodinový úväzok)` — PROPLUSCO, Bratislava, 700 € brutto, skrátený úväzok. Administratíva, dochádzka, cestovné podklady, archivácia, Excel/Outlook a interné systémy; bez cudzojazyčnej podmienky.
+- Nová promotion-grade ponuka: `Školiteľ/ka a podpora siete – INSIA Slovensko` — Bratislava-Nové Mesto + občasný home office, 1 500 € brutto. Prvý kontakt pre používateľov systému Yeti, technická/prevádzková podpora, testovanie funkcionalít, školenia a interné projekty; bez angličtiny ako hard gate.
+- CREATIVE sites a SUPTel boli priamo znovu otvorené a re-verifikované; iba preto dostali nový `verifiedAt`/`linkCheckedAt` z 13.9.
+- Slovak Telekom B2B support bol priamo otvorený a Kariera.sk dnes explicitne uvádza, že ponuka je neaktívna a nedá sa na ňu reagovať. Novší negatívny záznam preto fail-closed potláča staršiu aktívnu verziu.
+
+### 2. Stabilné source-job ID deduplikovanie
+- `job-radar-feed-merge-v1.js` teraz pred fuzzy firma+názov dedupe rozpoznáva stabilný identifikátor ponuky z URL/zdroja pre Profesia, Kariera.sk, Práca za rohom, LinkedIn a Upwork; podporuje aj explicitné `sourceJobId`.
+- Alternatívna alebo lokalizovaná URL tej istej inzercie už má menšiu šancu vytvoriť duplicitnú kartu.
+- Konflikty stále rešpektujú evidence-aware pravidlo: novší reálny negatívny dôkaz môže potlačiť starší pozitívny snapshot a novšia skutočná re-verifikácia ho môže neskôr znovu aktivovať.
+
+### 3. Dynamický fallback pre čerstvé denné delty
+- Ak `jobs-delta-index.json` chýba, je neplatný alebo starší než 48 hodín, runtime už nie je odkázaný na ručne hardcodovaný starý fallback.
+- Vygeneruje bounded fallback pre základný `jobs-fresh-delta.json` plus posledných 7 kalendárnych denných delta súborov a spojí ho s tým, čo ešte vie z manifestu.
+- Tým sa znižuje riziko, že existuje dnešná overená delta, ale LIVE ju neuvidí iba preto, že manifest/cache ostal zastaraný.
+
+### 4. Manifest freshness observability + bezpečnejšia identity normalizácia
+- `JobRadarFeedHealth` teraz vystavuje `deltaIndexStale` a rozlišuje režimy `stale-index+dynamic-fallback` / `dynamic-fallback` od normálneho live manifestu.
+- Finálna identity deduplikácia normalizuje bežný šum právnej formy firmy (`s.r.o.`, `a.s.` a pod.) a boilerplate v názvoch pracovných pozícií, aby sa znížili duplicitné karty spôsobené iba formátovaním.
+- CRM/localStorage kľúče, poznámky, hviezdičky, prečítané stavy a workflow statusy neboli zmenené.
+
+### 5. Pravdivý audit a oddelená čerstvosť
+- `source-audit.json` bol obnovený na základe skutočnej kontroly z 13.9.2026 08:09 a eviduje `freshPromoted=3`, `existingReverified=2` a `existingQuarantined=1`.
+- `contentChangedAt` a `sourceVerificationAt` ostávajú samostatné; nový timestamp súboru bez dôkazu na zdroji nemení ponuku na „čerstvú“.
+- Slabé kandidáty boli explicitne odmietnuté: PROPLUSCO 1 700 € back office kvôli B1–B2 AJ + krátkemu projektu, WEM Advisory kvôli stredne pokročilej AJ/finance scope, ESET kvôli B2 AJ, Bory dokumentárny pracovník kvôli zdravotníckej kvalifikácii a Upwork customer-support VA kvôli 3–5 USD/h + 50+ proposals.
+
+### Kontroly / regresia
+- Finálny `job-radar-feed-merge-v1.js` bol po zápise znovu načítaný z GitHubu; blob SHA `95c86186734ed6d5069a23a86a7b36fb6a6ba379`.
+- Lokálna presná kópia uloženého JS prešla `node --check` bez syntaktickej chyby.
+- Cielený Node test potvrdil: novší neaktívny Telekom záznam prepisuje starší aktívny snapshot, Kariera ID sa extrahuje ako `kariera:1561503` a 7-dňový dynamický fallback zahŕňa `jobs-fresh-delta-20260913.json`.
+- `jobs-fresh-delta-20260913.json` bol po zápise znovu načítaný z GitHubu; blob SHA `ad04a24aacd18c0eb2e0a9a46fac47ba9247db6d`.
+- Fallback live → validovaná cache → baseline zostal zachovaný; feed cache namespace sa posunul iba na interné `v9`, CRM/localStorage stav používateľa sa nemení.
+- Žiadny zamknutý vizuálny súbor nebol editovaný.
+
+### MASTER DESIGN LOCK — finálne overenie
+- `komarena-job-radar-v6.5.html`: `18fd009f1f9f041a207b067c5dcc0661f1647199` — zhodný s lockom.
+- `job-radar-v6.css`: `5157753d3525a99191e78374f7a074315bf7809a` — zhodný s lockom.
+- `job-radar-v6.5-enhance.js`: `fbb56af1213723b68deb9dc6ffc9e4c9de7fd80d` — zhodný s lockom.
+- `komarena-job-radar-jr-master.webp`: `ded775849800577277c4581ee5c30db6e43bba54` — zhodný s lockom.
+- MASTER DESIGN LOCK zostal presne zachovaný.
+
+---
+
 ## 2026-09-12 — promotion-grade e-commerce/L1 support + feed integrity hardening
 
 ### 1. Reálny source audit + 2 nové high-confidence LIVE ponuky
@@ -173,7 +220,7 @@
 ### MASTER DESIGN LOCK — overenie hashov
 - `komarena-job-radar-v6.5.html`: `18fd009f1f9f041a207b067c5dcc0661f1647199` — zhodný s lockom.
 - `job-radar-v6.css`: `5157753d3525a99191e78374f7a074315bf7809a` — zhodný s lockom.
-- `job-radar-v6.5-enhance.js`: `fbb56af121372368deb9dc6ffc9e4c9de7fd80d` — zhodný s lockom.
+- `job-radar-v6.5-enhance.js`: `fbb56af1213723b68deb9dc6ffc9e4c9de7fd80d` — zhodný s lockom.
 - `komarena-job-radar-jr-master.webp`: `ded775849800577277c4581ee5c30db6e43bba54` — zhodný s lockom.
 - MASTER dizajn bol zachovaný bez zmeny fingerprintu.
 
