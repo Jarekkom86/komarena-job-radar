@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 14. 9. 2026 00:28 CEST
+Aktualizované: 14. 9. 2026 01:55 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -74,17 +74,24 @@ Aktualizované: 14. 9. 2026 00:28 CEST
 - Direct-company reject: **Alza.sk — HR Specialist pre logistiku**, Bernolákovo; denná komunikácia v angličtine a tlmočenie zahraničným zamestnancom.
 - Brigada.sk reject: **Toyota Financial Services Slovakia — Administratívna pomoc na účtovnom oddelení**, Bratislava, 7 EUR/h, explicitne student-only.
 - LinkedIn reject: **SupportYourApp — Technical Support Consultant**, remote; C1/fluent English. **Marlink — Support Engineer**, Bratislava/flexible; AJ B2 + networking/telecom.
+- Fresh reject 14.9. 01:55: **ESET — Customer Support Specialist**, Bratislava, entry-level, od 1 250 EUR + bonus; ideálne AJ B2, preto výrazný jazykový mínus a bez LIVE promotion.
+- Fresh reject 14.9. 01:55: **Wolt — Support Associate (Full Time)**, Ružinov, 1 340–1 410 EUR, možný HO po 2 týždňoch; minimum AJ B2 + zmeny ráno/večer/víkendy do 01:00, preto bez LIVE promotion.
+- Fresh freelance reject 14.9. 01:55: **Upwork — Data Entry Specialist for WooCommerce**, Worldwide, 35 USD fixed, 20–50 proposals; skill fit je dobrý, ale value/conversion gate neprešiel.
 
-## Source audit — 14. 9. 2026 00:28 CEST
-- Reálne prehľadaných **12 source families**: Profesia; priame firemné career stránky; LinkedIn Jobs; Worki; Práca za rohom; Brigada.sk; Kariera.sk/Zoznam; Pretlak; StartupJobs; Upwork; verejne indexované Reddit/WordPress komunity; verejne indexované Facebook skupiny.
-- Fresh kandidáti: **6**; LIVE promotions: **0**.
-- LinkedIn: SupportYourApp remote support výsledky boli odmietnuté pre fluent/C1 English a pri T3 variante aj vyšší technický scope. KLARSTEIN customer support je síce Bratislava alebo remote zo Slovenska, ale ide o podporu pre španielsky hovoriaci trh, preto jazykový hard reject.
+## Source audit — 14. 9. 2026 01:55 CEST
+- Reálne prehľadaných **11 source families**: Profesia; priame firemné career stránky; LinkedIn Jobs; Worki; Brigada.sk; Kariera.sk/Zoznam; Pretlak; StartupJobs; Upwork; verejne indexované Reddit/WordPress komunity; verejne indexované Facebook skupiny.
+- Fresh kandidáti: **12**; LIVE promotions: **0**.
+- LinkedIn: ESET Customer Support a Wolt Support Associate sú lokálne BA roly, ale obe vyžadujú minimálne/ideálne B2 English; SupportYourApp ostáva fluent/C1 English reject.
+- Kariera.sk: lokálna part-time asistent/ka za 600 EUR/mes. je relevantná, ale pod promotion threshold; ďalšie admin výsledky boli neaktívne alebo vyžadovali viac cudzích jazykov.
+- Upwork: WooCommerce/product-listing výsledky boli odmietnuté pre nízky fixed budget, 20–50 proposals, existujúci hire alebo hard-development scope.
 - Reddit/WordPress komunity: verejné výsledky boli prevažne `for hire`/ponuky dodávateľov, nie konkrétny dopyt po pracovníkovi; **0 verified hiring hits**.
 - Facebook verejné skupiny: **0 verified hits**, stav `limited`; bez konkrétneho verejne overiteľného postu a priameho linku sa nič nepridáva. Authenticated Nexus/local ingestion ostáva backlog a nebol spustený.
-- Počty vyradenia v tomto behu: jazyk **5**, skill/seniority **1**, lokalita **0**, duplicita **0**, neaktivita **0** medzi čerstvými kandidátmi.
+- Počty vyradenia v tomto behu: jazyk **6**, skill/seniority **2**, ranking/value **4**, lokalita **0**, duplicita **0**, neaktivita **1** v rámci preverených čerstvých/adjacent kandidátov.
 - LIVE feed zostáva **52**; Profesia **25 = 48,1 %**, non-Profesia **27 = 51,9 %**. Fail-closed: nič sa nemaže len preto, že to aktuálny sweep nenašiel.
 
 ## Backlog rozvoja
+- **Application deadline confidence and urgency queue** — extrahovať explicitné closing dates oddelene od odhadovaného expiry; high-fit ponuky s potvrdeným blízkym deadline posúvať dopredu bez falošnej urgencie z mirrorov.
+- **Application channel friction score** — evidovať náklady reakcie: povinný účet, dlhý formulár, test, portfolio, platform fee alebo extra onboarding; obmedzený čas smerovať najprv na high-fit roly s realistickou conversion path.
 - **Source result saturation detector** — sledovať, keď hodinové behy opakovane vracajú rovnakých nezmenených kandidátov; v ďalšom behu automaticky rotovať query vocabulary a source subcategories, aby sa zvyšovalo coverage bez znižovania kvality.
 - **Market-language role splitter** — už pri discovery oddeliť všeobecný customer support od trhovo špecifických rolí (Spain/Sweden/Hungary atď.), aby vzdialene atraktívna remote ponuka zbytočne nešla do hlbokého rankingu, ak je cieľový jazyk povinný.
 - Autentizovaný Facebook ingestion cez Nexus/local agent — backlog; automat ho sám nespúšťa.
