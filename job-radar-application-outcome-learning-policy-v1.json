@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "policy": "application-outcome-learning",
+  "purpose": "Improve prioritization and application success using observed CRM outcomes without mutating user CRM data or stable job records.",
+  "safety": {
+    "crmAccess": "read-only",
+    "preserveStableIds": true,
+    "preserveCanonicalDedupe": true,
+    "preserveUserEdits": true,
+    "neverInferMissingOutcome": true,
+    "neverAutoRejectFromOutcomeHistory": true,
+    "locationGateRunsFirst": true,
+    "eligibleLocations": ["ba-area", "remote-ok"],
+    "blockedLocations": ["reject-distance", "unknown"]
+  },
+  "outcomes": ["applied", "reply-positive", "reply-negative", "interview", "offer", "withdrawn", "no-response-14d"],
+  "features": [
+    "roleFamily",
+    "sourceFamily",
+    "employmentType",
+    "compensationBand",
+    "languageBurden",
+    "hardRequirementBurden",
+    "applicationChannelType",
+    "locationEligibility"
+  ],
+  "minimumEvidence": {
+    "applicationsBeforeAdjustment": 8,
+    "sameFeatureObservations": 3
+  },
+  "ranking": {
+    "mode": "small-evidence-bounded-adjustment",
+    "maxPositiveAdjustment": 5,
+    "maxNegativeAdjustment": -5,
+    "neverOverrideHardGates": true,
+    "neverOverrideScoreConfidence": true,
+    "reasonRequired": true
+  },
+  "reporting": {
+    "track": ["replyRate", "interviewRate", "offerRate"],
+    "groupBy": ["roleFamily", "sourceFamily", "applicationChannelType"],
+    "excludeUnknownOutcomes": true
+  }
+}
