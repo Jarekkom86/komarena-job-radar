@@ -1,54 +1,64 @@
 {
   "schemaVersion": 7,
-  "updatedAt": "2026-09-13T08:09:00+02:00",
+  "updatedAt": "2026-09-13T08:37:44+02:00",
   "runSummary": {
     "familiesChecked": 13,
-    "freshPromoted": 3,
-    "freshCandidates": 10,
-    "existingReverified": 2,
-    "existingReverifiedEligible": 2,
-    "existingQuarantined": 1,
+    "freshPromoted": 0,
+    "freshCandidates": 9,
+    "existingReverified": 1,
+    "existingReverifiedEligible": 1,
+    "existingQuarantined": 0,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-13T08:09:00+02:00",
-    "sourceVerificationAt": "2026-09-13T08:09:00+02:00",
+    "contentChangedAt": "2026-09-13T08:37:44+02:00",
+    "sourceVerificationAt": "2026-09-13T08:37:44+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification and link evidence. Content age and source-verification age are separate; touching updatedAt alone never makes a job fresh.",
-    "note": "Fresh 13.9.2026 public-web sweep across 13 actually searched source families. Three new high-confidence eligible Bratislava roles were promoted: PSS client-service call centre (1,500–1,700 EUR, home-office option, no English hard gate), PROPLUSCO 4-hour Back Office Assistant (700 EUR, no language gate), and INSIA network/system support (1,500 EUR, home office, technical CRM/process support, no language gate). CREATIVE sites and SUPTel were directly re-opened/reverified. Slovak Telekom B2B support was directly opened and now explicitly says the offer is inactive and cannot be answered, so a newer negative record quarantines it. Upwork/LinkedIn candidates with weak economics or B2/C1 language gates remain rejected."
+    "note": "Fresh 13.9.2026 08:37 public-web sweep across 13 actually searched source families. No new candidate beat the existing LIVE set after location, language, skill and ranking gates. IZY VAPE e-commerce/back-office was directly re-opened and remains an excellent existing LIVE fit: mostly home office from anywhere in Slovakia, occasional planned Bratislava meetings, WooCommerce/e-shop operations and AI/process work; English is described in detail as an advantage for routine written communication despite the structured B1 label. New WEM Advisory back office was rejected for mandatory financial-sector experience, advanced Excel and B2 English. Eric SK/Fusakle seasonal e-shop office support is eligible in Bratislava-Dubravka but ranked below stronger existing e-commerce roles because it is temporary and pays from 7 EUR/h. AUTO-Prestige admin/CRM is locally eligible but not strong enough to displace current higher-ranked admin roles. Facebook public indexing produced 0 verified direct hiring posts."
   },
   "developmentChanges": [
     {
       "id": "stable-source-job-id-dedupe",
       "title": "Stable source-job-ID deduplication",
-      "reason": "The feed now extracts stable job identifiers from Profesia, Kariera, Práca za rohom, LinkedIn and Upwork URLs (or explicit sourceJobId) and deduplicates by that evidence before fuzzy company+title identity. This prevents localized/alternate URLs of the same listing from appearing twice while preserving evidence-aware conflict resolution."
+      "reason": "Extract stable source job identifiers before fuzzy company+title identity so alternate/localized URLs cannot create duplicate LIVE cards."
     },
     {
       "id": "dynamic-recent-delta-fallback",
       "title": "Dynamic recent-delta fallback",
-      "reason": "If jobs-delta-index.json is missing, invalid or stale, the runtime now derives a bounded same-repository fallback covering the base delta plus the last seven calendar days. A stale cached manifest can no longer silently hide the newest verified daily delta."
+      "reason": "If a recent-delta manifest is stale or unavailable, derive a bounded fallback rather than silently hiding newly verified records."
     },
     {
       "id": "manifest-staleness-observability",
       "title": "Manifest staleness diagnostics",
-      "reason": "JobRadarFeedHealth now exposes deltaIndexStale and a distinct stale-index+dynamic-fallback mode, separating manifest freshness problems from job-content age and source-verification age."
+      "reason": "Separate source-verification age, content age and manifest age so an apparently fresh timestamp cannot hide stale evidence."
     },
     {
       "id": "normalized-identity-dedupe",
       "title": "Safer normalized identity dedupe",
-      "reason": "Company legal-form noise and common title boilerplate are normalized before the final identity dedupe, reducing duplicate cards caused by s.r.o./a.s. formatting or gender/graduate title variants without changing CRM/localStorage keys."
+      "reason": "Normalize common legal-form and title boilerplate before final identity comparison while keeping stable IDs intact."
+    },
+    {
+      "id": "structured-vs-detail-language-reconciliation",
+      "title": "Structured vs detail language reconciliation",
+      "reason": "When a job board structured field says B1/B2 but the detailed text says the language is only an advantage or routine written communication, store both pieces of evidence and rank from the stricter verified reality instead of blindly trusting one field. This reduces false negatives such as e-commerce roles where the narrative requirement is materially softer than the metadata label."
+    },
+    {
+      "id": "temporary-role-value-density-score",
+      "title": "Temporary-role value-density score",
+      "reason": "Score seasonal/short-term roles by hourly pay, schedule compatibility, transferable target skills and application effort so low-paid temporary listings do not crowd out stronger permanent e-commerce/admin opportunities while still surfacing genuinely useful stackable work."
     }
   ],
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":6,"added":1,"reverified":1,"rejected":{"language":3,"inactive":0,"duplicate":0,"location":0,"skill":1,"physical":0,"ranking":1},"note":"Fresh Bratislava admin/support/technical discovery actually searched. INSIA was opened on Profesia and promoted; SUPTel was directly reconfirmed. ESET and PROPLUSCO 1700 back-office were rejected for B2 language requirements; Bory document role requires nursing qualification/registration."},
-    {"name":"Direct company careers","family":"direct-company","status":"ok","hits":3,"added":2,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":1},"note":"Official PSS and PROPLUSCO career pages were opened. PSS client-service and PROPLUSCO 4-hour back office were promoted; PROPLUSCO 1700 full-time role rejected for daily B1-B2 English plus two-month duration."},
-    {"name":"Práca za rohom","family":"praca-za-rohom","status":"ok","hits":7,"added":0,"reverified":1,"rejected":{"language":2,"inactive":0,"duplicate":2,"location":0,"skill":1,"physical":0,"ranking":2},"note":"Current Bratislava admin/support listings actually searched. CREATIVE sites was directly re-opened and remains active; several roles were duplicates/corroborations of Profesia or failed language/qualification gates."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":1,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Slovak Telekom B2B support was directly opened; the page explicitly states the offer is inactive and cannot be answered. It is quarantined with newer negative evidence."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":6,"added":0,"reverified":0,"rejected":{"language":5,"inactive":1,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh customer-support discovery actually searched. SupportYourApp results continue to require B2/C1 or other languages; no promotion-grade delta."},
-    {"name":"Worki.sk","family":"worki","status":"checked","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":1,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Current e-shop/customer-support discovery actually searched; visible Shield-Sk e-shop role is explicitly filled/cancelled."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/e-shop/support/driver discovery actually searched; no stronger publicly verifiable promotion-grade hit surfaced."},
-    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Current WordPress/WooCommerce/e-commerce/remote discovery actually searched; no new eligible employer-demand result surfaced."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Slovakia-executable remote support/e-commerce discovery actually searched; no promotion-grade result surfaced."},
-    {"name":"Upwork","family":"upwork","status":"ok","hits":6,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":6},"note":"Worldwide e-commerce/VA/support roles were inspected. A fresh customer-service VA pays only 3–5 USD/h with 50+ proposals; other WooCommerce/e-commerce roles show similarly weak rates, fixed micro-budgets or extreme client hire/spend economics. None passed economic/competition gates."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Official WordPress Jobs remote support/content discovery actually searched; no fresh suitable non-hard-development demand surfaced."},
-    {"name":"Reddit / WordPress communities","family":"community","status":"limited","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":1},"note":"Public discovery actually searched. Fresh visible result was FOR HIRE supply-side, not employer demand; no promotion."},
-    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public-index search for Bratislava/WordPress/e-shop hiring produced no concrete verifiable direct hiring post. Authenticated/private group coverage remains unavailable to public-web audit."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":9,"added":0,"reverified":1,"rejected":{"language":2,"inactive":0,"duplicate":2,"location":0,"skill":2,"physical":0,"ranking":2},"note":"Fresh BA admin/e-shop/support discovery actually searched. Existing IZY VAPE O5348749 was directly re-opened and remains eligible. WEM Advisory rejected for mandatory financial-sector experience, advanced Excel and B2 English. Eric SK/Fusakle and AUTO-Prestige are locally eligible but rank below stronger existing LIVE roles."},
+    {"name":"Direct company careers","family":"direct-company","status":"ok","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":1},"note":"Direct company-career discovery actually searched. AGEM Bratislava IT distribution role is current but sales-led and asks at least B1 English, so no promotion."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":6,"added":0,"reverified":0,"rejected":{"language":4,"inactive":2,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava/Slovakia support discovery searched. Wolt part-time support is student-targeted shift work; SupportYourApp/TalentPop candidates require C1/fluent foreign languages or are inactive."},
+    {"name":"Práca za rohom","family":"praca-za-rohom","status":"ok","hits":8,"added":0,"reverified":1,"rejected":{"language":0,"inactive":0,"duplicate":5,"location":1,"skill":0,"physical":0,"ranking":2},"note":"Current Bratislava admin/e-shop listings searched. IZY VAPE corroborated as active; TELOMAR rejected by distance/onboarding pattern; visible Eric SK/AUTO-Prestige are lower-ranked than current LIVE inventory."},
+    {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/e-shop/technical-support discovery searched; no new promotion-grade public hit surfaced."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/support/e-shop discovery searched; no new unique promotion-grade indexed hit surfaced."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Fresh Bratislava admin/e-shop/support/driver discovery searched; no stronger publicly verifiable hit surfaced."},
+    {"name":"Pretlak","family":"pretlak","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Current WordPress/WooCommerce/e-commerce/remote discovery searched; no fresh suitable employer-demand delta surfaced."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":1,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":1,"skill":0,"physical":0,"ranking":0},"note":"Fresh remote/e-commerce discovery searched. MAGU customer-care inventory is Prague based; no clear Slovakia-executable remote evidence sufficient for promotion."},
+    {"name":"Upwork","family":"upwork","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Worldwide WooCommerce/VA/customer-support discovery searched; no fresh public-index result with economics and competition strong enough to promote in this run."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Official WordPress Jobs support/content discovery searched; no fresh suitable non-hard-development demand surfaced."},
+    {"name":"Reddit / WordPress communities","family":"community","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public-index community discovery searched; no concrete fresh employer demand suitable for Slovakia surfaced. Public indexing remains partial."},
+    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"reverified":0,"rejected":{"language":0,"inactive":0,"duplicate":0,"location":0,"skill":0,"physical":0,"ranking":0},"note":"Public-index searches for Bratislava jobs and WordPress/WooCommerce hiring produced 0 verified direct hiring posts. Authenticated/private group coverage remains unavailable; Nexus/local ingestion remains backlog only and was not started."}
   ]
 }
