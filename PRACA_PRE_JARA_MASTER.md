@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 14. 9. 2026 12:10 CEST
+Aktualizované: 14. 9. 2026 13:24 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,39 +35,43 @@ Aktualizované: 14. 9. 2026 12:10 CEST
 ## Aktuálny stav LIVE
 - Autoritatívny feed má **56 LIVE položiek**.
 - LIVE mix: **Profesia-lineage 28/56 = 50,0 %**, mimo Profesia **28/56 = 50,0 %**.
-- `jobs-data.json.updatedAt`: **2026-09-14T06:18:46+02:00** — v tomto behu bez zmeny; existujúce položky neboli mazané ani znižované iba preto, že ich fresh discovery nevrátil.
+- `jobs-data.json.updatedAt`: **2026-09-14T06:18:46+02:00** — v tomto behu zatiaľ bez zmeny; existujúce položky neboli mazané ani znižované iba preto, že ich fresh discovery nevrátil.
 - **Techfun s. r. o. — Elektro-technický špecialista pre e-shop**, Kopčianska 92A, Petržalka, 1 800–2 200 EUR/mes., ostáva veľmi silný technicko-e-shop fit. Angličtina A2; vhodné aj pre absolventa; `locationEligibility: ba-area`.
 - **SCR interactive — Executive Assistant & Sales Support**, Šustekova 51, Petržalka, od 1 500 EUR/mes. + provízny systém, živnosť, flexibilný čas, po skúšobnej dobe HO 5 dní mesačne. Silný prienik administratívy, CRM/sales supportu, digitálneho marketingu, klientov, fakturačných podkladov a procesov. Cudzí jazyk nie je canonical požiadavka. `locationEligibility: ba-area`.
-- **AGEL Lab — Administratívno-technická podpora pre laboratórium**, Údernícka 9, Petržalka, plný úväzok, 1 350 EUR/mes., nástup 1.10.2026/dohodou. Priama AGEL kariéra bola znovu overená ako aktívna; bez verejne uvedeného cudzieho jazyka. `locationEligibility: ba-area`.
-- **BKIS — Asistent/Asistentka sekcie Technickej podpory podujatí**, Vajnorská 135, Bratislava, od 1 400 EUR/mes., plný úväzok. Administratívna podpora technickej sekcie, dodávatelia, rozpočty, objednávky/faktúry, kalendár, dochádzka, logistika a vodičák B; jazyk iba slovenčina. `locationEligibility: ba-area`.
-- **ORLEN — Asistent/Asistentka nákupu na Oddelení Shop & Gastro**, TOWER 5, Kalinčiakova, Bratislava, od 1 700 EUR/mes. + kvartálny bonus 20 %, 1 deň HO týždenne. Vhodné aj pre absolventa; B1 angličtina je mierny/stredný mínus, nie hard gate. `locationEligibility: ba-area`.
+- **AGEL Lab — Administratívno-technická podpora pre laboratórium**, Údernícka 9, Petržalka, plný úväzok, 1 350 EUR/mes., nástup 1.10.2026/dohodou. `locationEligibility: ba-area`.
+- **BKIS — Asistent/Asistentka sekcie Technickej podpory podujatí**, Vajnorská 135, Bratislava, od 1 400 EUR/mes., plný úväzok. `locationEligibility: ba-area`.
+- **ORLEN — Asistent/Asistentka nákupu na Oddelení Shop & Gastro**, Bratislava, od 1 700 EUR/mes. + kvartálny bonus 20 %, 1 deň HO týždenne. B1 angličtina je mierny/stredný mínus. `locationEligibility: ba-area`.
 - **ČSOB Operátor IT Service Desk-u** ostáva silný entry-level technický support v Bratislave; mierne pokročilá AJ a on-call po zaučení sú mínus, nie lokalitný blocker.
-- **Trenujeme — Predajca na predajni a e-commerce asistent**, Račianska 31, Bratislava, ostáva v LIVE pod stabilným ID. Novší verejný inzerát O5349827 bol 14. 9. reverified: part-time/živnosť, 60–120 h mesačne, e-shop objednávky, sklad, reklamácie a zákaznícky servis. Rovnaký title+company sa preto nepridáva druhýkrát.
+- **Trenujeme — Predajca na predajni a e-commerce asistent**, Račianska 31, Bratislava, ostáva pod stabilným LIVE ID. Novší verejný inzerát **O5349827** bol 14. 9. 2026 znovu overený: e-shop objednávky, produkty/popisy, sklad, reklamácie a zákaznícky servis, AJ A2. Rovnaký title+company sa nepridáva druhýkrát; pri najbližšom bezpečnom LIVE zápise sa má obnoviť evidence URL/verifiedAt pod existujúcim stabilným ID.
 
 ### Promotion-ready mimo LIVE zápisu
-- **IKEA — Pracovník/čka kontaktného centra IKEA, popredajný servis**, Bratislava, job ID **355434**. Aktuálny IKEA Bratislava vacancy list ho 14. 9. 2026 stále uvádza medzi otvorenými Customer Relations pozíciami. Profesia mirror potvrdzuje zverejnenie 8. 9. 2026, full-time, od 1 260 EUR brutto, občasný/čiastočný home office, bez povinnej praxe a angličtinu iba ako výhodu. `locationEligibility: ba-area`.
-- **Hemmersbach — Onsite Technician L1 Bratislava**, canonical Job-Id **19971**, full-time Bratislava. Canonical detail bol 14. 9. 2026 znovu otvorený a stále obsahuje aktívne `Apply now`; lokálna/remote desktop podpora, inbound support, HW/SW/aplikácie a ticketing. Požiadavka: 18 mesiacov IT praxe alebo ekvivalent; canonical detail neuvádza povinný cudzí jazyk. `locationEligibility: ba-area`.
-- Starší IKEA job ID **354106 – Služby zákazníkom** sa nepovažuje za promotion-ready bez aktuálneho list-membership/active signálu.
+- **ATALIAN SK — Facility koordinátor / Administratívna podpora FM**, Einsteinova, Petržalka, **1 540 EUR základ + 200 EUR variabilná zložka**, nástup 1.10.2026. Veľmi dobrý mix administratívy a technického troubleshooting/koordinácie: CAFM Chastia, servisné zásahy, technická dokumentácia, dodávatelia, preventívna údržba. Vhodné aj pre absolventa; §21/22 a facility prax sú iba výhodou; bez verejne uvedeného cudzieho jazyka. `locationEligibility: ba-area`.
+- **DHL Group — Administratívna podpora transportného tímu, 4 hodiny denne**, Diaľničná cesta, Senec, **804,50 EUR/mes. + 10 % mesačný bonus**, skrátený úväzok. Skenovanie faktúr, archivácia, supplier onboarding dokumenty, zakladanie dodávateľov do systému, pošta a kompletizácia prepravných dokumentov. `locationEligibility: ba-area`.
+- **Hemmersbach — Onsite Technician L1 Bratislava**, canonical Job-Id **19971**, full-time Bratislava. Canonical detail je stále aktívny s `Apply now`; lokálna/remote desktop podpora, inbound support, HW/SW/aplikácie a ticketing. Požiadavka: 18 mesiacov IT praxe alebo ekvivalent; canonical detail neuvádza povinný cudzí jazyk. `locationEligibility: ba-area`.
+- **Upwork — Website & SEO Management 2026 – WooCommerce**, worldwide remote, **15–30 USD/h**, <30 h/týždeň, 6+ mesiacov. WooCommerce store/product management, plugin maintenance, on-page SEO a reporting; nejde o hard-development. Mínusy: 20–50 proposals, pravidelný reporting/komunikácia a vyšší application friction. `locationEligibility: remote-ok`.
+- **IKEA — Pracovník/čka kontaktného centra IKEA, popredajný servis**, Bratislava. Verejný employer/job-board signál ostáva aktívny: full-time, od 1 260 EUR brutto, čiastočný home office, bez povinnej praxe, angličtina iba výhoda. Priamy employer detail nebol v tomto behu spoľahlivo znovu získaný, preto ostáva promotion-ready a nie je prezentovaný ako nový canonical-confirmed LIVE zápis. `locationEligibility: ba-area`.
 
-## Source audit — 14. 9. 2026 12:10 CEST
+## Source audit — 14. 9. 2026 13:24 CEST
 - Reálne prehľadaných **12 source families**: Profesia; priame firemné career/public ATS; LinkedIn Jobs; Worki; Kariera.sk/Zoznam; Brigada.sk; Pretlak; StartupJobs; WordPress Jobs; Upwork; verejne indexované Reddit/WordPress komunity; verejne indexované Facebook skupiny.
-- Fresh/adjacent kandidáti: **15**; persisted LIVE promotions: **0**; existujúce/high-fit kandidáty reverified: **2**; promotion-ready mimo LIVE zápisu: **2**.
-- **Profesia:** IKEA O5354960 ostáva čerstvá a aktívna, ale pri rovnakom jobe má prednosť aktuálny priamy IKEA vacancy list. Žiadna ďalšia distinct nová Profesia rola neprekonala existujúce LIVE kandidáty.
-- **Direct company careers / ATS:** IKEA 355434 potvrdená v aktuálnom zozname Bratislava jobs; Hemmersbach 19971 je aktívny canonical kandidát s Apply now.
-- **LinkedIn:** fresh Bratislava support/e-commerce indexing vykonaný; bez nového distinct promotion-grade hitu.
-- **Worki:** fresh BA admin/technical/e-shop query vykonaný; bez nového promotion-grade hitu.
-- **Kariera/Zoznam:** fresh BA admin/customer-support/e-shop query vykonaný; bez nového promotion-grade hitu.
-- **Brigada.sk:** fresh BA admin/customer-support/e-shop query vykonaný; 0 vhodných konkrétnych fresh hitov.
-- **Pretlak:** fresh Bratislava/remote WordPress/WooCommerce/e-commerce/support query vykonaný; 0 promotion-grade hitov.
-- **StartupJobs:** Elasticr IT Support Specialist L2 sa objavil ako Remote/On-site/Hybrid s pracoviskom Havlíčkův Brod. Ponuka explicitne nepotvrdzuje vykonávanie zo Slovenska bez pravidelnej dochádzky a scope je L2/root-cause support, preto `reject-distance`/hard-skill hold, nie LIVE.
+- Fresh/adjacent kandidáti: **18**; persisted LIVE promotions: **0**; existujúce/high-fit kandidáty reverified: **3**; promotion-ready mimo LIVE: **5**.
+- **Profesia:** nové silné promotion-ready výsledky sú ATALIAN O5356964 a DHL O5353400. Trenujeme O5349827 je refresh existujúceho title+company, nie nezávislá nová ponuka. IKEA ostáva aktuálna cez employer/job-board evidence.
+- **Direct company careers / ATS:** Hemmersbach Job-Id 19971 potvrdený canonical detailom a aktívnym Apply now. IKEA canonical detail sa v tomto behu nepodarilo spoľahlivo získať cez verejnú indexáciu; coverage sa nepredstiera.
+- **LinkedIn:** Wolt Support Associate part-time sa objavil, ale je student-oriented a má večerné/víkendové neskoré zmeny; bez promotion.
+- **Worki:** fresh BA admin/technical/e-shop query vykonaný; bez nového distinct promotion-grade hitu.
+- **Kariera/Zoznam:** fresh BA admin/customer-support/e-shop query vykonaný; bez nového distinct promotion-grade hitu.
+- **Brigada.sk:** AgroCopter remote sales-assistant/drone-services má minimum B1 AJ a sales-heavy scope; ďalší reception/admin hit vyžaduje komunikatívnu AJ/student profil. Bez promotion.
+- **Pretlak:** fresh Bratislava/remote WordPress/WooCommerce/e-commerce/support query vykonaný; bez nového distinct promotion-grade hitu.
+- **StartupJobs:** fresh support/e-commerce query vykonaný; bez nového overeného BA/Slovakia-remote kandidáta.
 - **WordPress Jobs:** fresh WordPress/WooCommerce support/content query vykonaný; bez vhodného non-hard-development kandidáta.
-- **Upwork:** 8 relevantných/adjacent e-commerce/WooCommerce výsledkov; 0 promoted. Funkčne presné roly padajú na nízkej efektívnej odmene, existujúcich hires/interviews, proposal saturation, silnej angličtine/francúzštine alebo country-targetingu. Existujúci WooCommerce Product Listing kandidát ostáva aktívny, ale je už saturovaný.
+- **Upwork:** 9 relevantných/adjacent výsledkov; **Website & SEO Management 2026** je promotion-ready. Ostatné výsledky padajú na nízkej efektívnej odmene, existujúcich hires/interviews, 50+ proposals, silnom jazykovom gate alebo hard-development scope.
 - **Reddit/WordPress komunity:** verejné výsledky sú prevažne FOR HIRE/self-promotion alebo US-only hard-development hiring; bez vhodného klientského dopytu pre Slovensko.
 - **Facebook verejné skupiny:** **0 verified hits**, stav `limited`; bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nepridáva. Authenticated Nexus/local ingestion ostáva backlog a nebol spustený.
-- Fail-closed: `jobs-data.json` zostal na **56 LIVE položkách**, bez poklesu feedu alebo category loss.
-- LIVE mix zostáva **Profesia-lineage 50,0 % / non-Profesia 50,0 %**.
+- Fail-closed: existujúcich **56 LIVE** položiek ostáva nedotknutých; žiadny feed drop ani category loss.
+- LIVE mix zostáva **Profesia-lineage 50,0 % / non-Profesia 50,0 %**. Navrhovaná najbližšia promotion batch je 2 Profesia-lineage + 2 non-Profesia, aby sa mix nezhoršil.
 
 ## Backlog rozvoja
+- **Candidate state ledger** — per kandidát persistovať stable ID, stav `seen/verified/promotion-ready/live/rejected`, `lastSeenAt`, rejection reason a `nextRecheckAt`; tým sa zníži opakované hodinové prehodnocovanie rovnakých kandidátov a sibling duplicity.
+- **Effective hourly value normalizer with commute/application friction** — mesačné, part-time, hodinové a fixed-price ponuky prepočítať na porovnateľnú efektívnu hodinovú hodnotu podľa pracovných hodín, dojazdu a nákladov reakcie/platformy. Pomôže reálne porovnať napr. 4-hodinový DHL, full-time onsite a remote freelance.
 - **Promotion write-size preflight** — pred promotion do veľkého canonical feedu overiť, že connector dokáže round-tripnúť kompletný aktuálny súbor a zachovať count/hash; ak nie, kandidáta držať promotion-ready namiesto riskantného replacementu.
 - **Canonical list-membership auto-promotion queue** — ak high-fit kandidát zostáva po viac behov súčasne na employer vacancy liste aj na aktívnom detail/apply surface, zaradiť ho do prioritnej fronty na LIVE zápis.
 - **Same-title/company refresh dedupe** — keď firma republikuje tú istú rolu pod novým job-board ID, zachovať existujúce stabilné LIVE ID a obnoviť evidence/verifiedAt/publishedAt namiesto vytvorenia duplicity.
