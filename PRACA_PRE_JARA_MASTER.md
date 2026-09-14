@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 14. 9. 2026 06:18 CEST
+Aktualizované: 14. 9. 2026 07:40 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,35 +35,36 @@ Aktualizované: 14. 9. 2026 06:18 CEST
 ## Aktuálny stav LIVE
 - Autoritatívny feed má **56 LIVE položiek**.
 - LIVE mix: **Profesia-lineage 28/56 = 50,0 %**, mimo Profesia **28/56 = 50,0 %**.
-- `jobs-data.json.updatedAt`: **2026-09-14T06:18:46+02:00**.
+- `jobs-data.json.updatedAt`: **2026-09-14T06:18:46+02:00** — v tomto behu bez zmeny, pretože nevznikol nový kandidát s dostatočným canonical dôkazom na promotion.
 - **Techfun s. r. o. — Elektro-technický špecialista pre e-shop**, Kopčianska 92A, Petržalka, 1 800–2 200 EUR/mes., ostáva veľmi silný technicko-e-shop fit. Angličtina A2; vhodné aj pre absolventa; `locationEligibility: ba-area`.
-- **SCR interactive — Executive Assistant & Sales Support**, Šustekova 51, Petržalka, od 1 500 EUR/mes. + provízny systém, živnosť, flexibilný čas, po skúšobnej dobe HO 5 dní mesačne. Silný prienik administratívy, CRM/sales supportu, digitálneho marketingu, klientov, fakturačných podkladov a procesov. Cudzí jazyk nie je canonical požiadavka. `locationEligibility: ba-area`. **Nová LIVE TOP administratívno-digitálna zhoda.**
-- **AGEL Lab — Administratívno-technická podpora pre laboratórium**, Údernícka 9, Petržalka, plný úväzok, 1 350 EUR/mes., nástup 1.10.2026/dohodou. Priama AGEL kariéra čerstvo potvrdila administratívu, LIS, reporty, dokumentáciu, e-mail/telefón a objednávanie materiálu; bez verejne uvedeného cudzieho jazyka. `locationEligibility: ba-area`. **Promoted LIVE.**
-- **BKIS — Asistent/Asistentka sekcie Technickej podpory podujatí**, Vajnorská 135, Bratislava, od 1 400 EUR/mes., plný úväzok. Administratívna podpora technickej sekcie, dodávatelia, rozpočty, objednávky/faktúry, kalendár, dochádzka, logistika a vodičák B; jazyk iba slovenčina. `locationEligibility: ba-area`. **Promoted LIVE.**
-- **ORLEN — Asistent/Asistentka nákupu na Oddelení Shop & Gastro**, TOWER 5, Kalinčiakova, Bratislava, od 1 700 EUR/mes. + kvartálny bonus 20 %, 1 deň HO týždenne. Vhodné aj pre absolventa; B1 angličtina je mierny/stredný mínus, nie hard gate. `locationEligibility: ba-area`. **Promoted LIVE.**
+- **SCR interactive — Executive Assistant & Sales Support**, Šustekova 51, Petržalka, od 1 500 EUR/mes. + provízny systém, živnosť, flexibilný čas, po skúšobnej dobe HO 5 dní mesačne. Silný prienik administratívy, CRM/sales supportu, digitálneho marketingu, klientov, fakturačných podkladov a procesov. Cudzí jazyk nie je canonical požiadavka. `locationEligibility: ba-area`.
+- **AGEL Lab — Administratívno-technická podpora pre laboratórium**, Údernícka 9, Petržalka, plný úväzok, 1 350 EUR/mes., nástup 1.10.2026/dohodou. Priama AGEL kariéra potvrdzuje administratívu, LIS, reporty, dokumentáciu, e-mail/telefón a objednávanie materiálu; bez verejne uvedeného cudzieho jazyka. `locationEligibility: ba-area`.
+- **BKIS — Asistent/Asistentka sekcie Technickej podpory podujatí**, Vajnorská 135, Bratislava, od 1 400 EUR/mes., plný úväzok. Administratívna podpora technickej sekcie, dodávatelia, rozpočty, objednávky/faktúry, kalendár, dochádzka, logistika a vodičák B; jazyk iba slovenčina. `locationEligibility: ba-area`.
+- **ORLEN — Asistent/Asistentka nákupu na Oddelení Shop & Gastro**, TOWER 5, Kalinčiakova, Bratislava, od 1 700 EUR/mes. + kvartálny bonus 20 %, 1 deň HO týždenne. Vhodné aj pre absolventa; B1 angličtina je mierny/stredný mínus, nie hard gate. `locationEligibility: ba-area`.
 - **ČSOB Operátor IT Service Desk-u** ostáva silný entry-level technický support v Bratislave; mierne pokročilá AJ a on-call po zaučení sú mínus, nie lokalitný blocker.
-- **Upwork** naďalej prináša presné WooCommerce/product-listing zhody, ale aktuálne výsledky padajú na nízkej ekonomike, vysokej konkurencii, existujúcich hires/interviews alebo expert/dev scope.
+- **Upwork** naďalej prináša presné WooCommerce/product-listing zhody, ale aktuálne výsledky padajú na nízkej ekonomike, vysokej konkurencii, existujúcich hires/interviews alebo hard-development scope.
 
-## Source audit — 14. 9. 2026 06:18 CEST
+## Source audit — 14. 9. 2026 07:40 CEST
 - Reálne prehľadaných **14 source families**: Profesia; priame firemné career/public ATS; LinkedIn Jobs; Brigada.sk; Worki; Práca za rohom; Kariera.sk/Zoznam; Pretlak; StartupJobs; WordPress Jobs; Upwork; Freelancer; verejne indexované Reddit/WordPress komunity; verejne indexované Facebook skupiny.
-- Relevantní/adjacent kandidáti: **12**; persisted LIVE promotions v tomto zápise: **4**.
-- Pridané: **AGEL Lab** (direct company), **BKIS** (Profesia-lineage mirror), **ORLEN Shop & Gastro** (Profesia-lineage mirror), **SCR interactive Executive Assistant & Sales Support** (canonical Profesia).
-- Profesia: SCR canonical detail je mimoriadne dobrý admin/digital fit; BKIS a ORLEN sú zároveň viditeľné v Profesia lineage. Mirrors sa nepočítajú ako nezávislé zdroje.
-- Direct company/public ATS: AGEL canonical bol čerstvo reverified a povýšený z promotion-ready do LIVE.
-- LinkedIn: KLARSTEIN padá na španielčine; SupportYourApp na fluent/C1 English alebo silnejšom technical scope.
-- Brigada.sk: recepčná/admin brigáda mala student-targeted podmienku a povinnú angličtinu; bez promotion.
-- Worki, Kariera/Zoznam, Pretlak, StartupJobs, WordPress Jobs a Freelancer boli skutočne vyhľadané; bez nového kandidáta, ktorý by prešiel celý gate.
-- Upwork: čerstvý WooCommerce/Elementor setup má 50+ proposals a expert/dev scope; WooCommerce data-entry je iba 35 USD fixed pri 20–50 proposals; existujúci product-listing hit už má hire/interviews. Bez nového promotion.
-- Reddit/WordPress komunity: aktuálny HIRING výsledok je US-only, hard-development a strong-English scope; ostatné surfaced posty sú FOR HIRE alebo staré.
+- Relevantní/adjacent kandidáti: **11**; persisted LIVE promotions v tomto zápise: **0**.
+- Profesia: čerstvé BA admin/support výsledky zahŕňali Tatra Leasing Middle Officer, partnerské Telekom customer care, Brightpick remote warehouse technician a ďalšie lokálne support/admin roly. Bez promotion, pretože najsilnejšie nové výsledky mali v tomto behu iba category/snippet dôkaz alebo chýbalo canonical overenie hard požiadaviek.
+- Direct company/public ATS: AGEL Bratislava ostáva dostupný; DRG administratíva vyžaduje zdravotnícky background a AGEL Kechnec technická rola padá na distance gate.
+- LinkedIn: SupportYourApp naďalej padá na fluent/C1 English alebo silnejšom T3/infra scope. Marlink Support Engineer je 24/7 trojzmenný a vyžaduje CV v angličtine; deadline 18.9.2026.
+- Brigada.sk, Worki, Práca za rohom, Kariera/Zoznam, Pretlak, WordPress Jobs a Freelancer boli skutočne vyhľadané; bez nového kandidáta, ktorý by prešiel celý gate.
+- StartupJobs: DAITABLE Senior Sales pre český trh je remote/BA-linked, ale ide o senior B2B sales scope, preto bez promotion.
+- Upwork: WooCommerce Data Entry Specialist je veľmi blízky skill fit, ale iba 35 USD fixed a už 20–50 proposals. Fresh WooCommerce gifting-store má menej než 5 proposals, no vyžaduje reálny web-development scope; ďalšie výsledky vyžadujú PHP/JS/API/custom development alebo už majú hires.
+- Reddit/WordPress komunity: bez nového konkrétneho verejného hiring postu, ktorý by splnil lokalitu/jazyk/skill gate.
 - Facebook verejné skupiny: **0 verified hits**, stav `limited`; bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nepridáva. Authenticated Nexus/local ingestion ostáva backlog a nebol spustený.
-- LIVE feed narástol **52 → 56 (+7,7 %)** bez jediného automatického mazania a bez straty kategórie; fail-closed gate prešiel.
-- LIVE mix po prírastkoch: **Profesia-lineage 50,0 % / non-Profesia 50,0 %**.
+- Fail-closed: `jobs-data.json` zostal na **56 LIVE položkách**, bez mazania alebo category loss.
+- LIVE mix zostáva **Profesia-lineage 50,0 % / non-Profesia 50,0 %**.
 
 ## Backlog rozvoja
-- **Post-write promotion round-trip verification** — po každom zápise promotion okamžite znovu načítať canonical `jobs-data.json` a overiť validné JSON, očakávaný count delta, prítomnosť všetkých nových stable ID a neprítomnosť zmien zamknutých súborov. Rieši riziko poškodenia feedu pri full-file replacementoch.
-- **Salary source-conflict resolver** — pri rozdielnej mzde medzi canonical detailom, mirrorom a category/index výsledkom držať autoritatívnu full-detail hodnotu, uložiť konflikt a naplánovať recheck. Zvyšuje dôveryhodnosť cien a zabraňuje výberu atraktívnejšej, ale nespoľahlivej sumy.
-- **Evidence surface quality score** — pri každom discovery hite evidovať, či ide o canonical detail, plný job-board detail, indexed snippet alebo category-only dôkaz. Ranking/freshness nesmie dôverovať tenkému snippet dôkazu rovnako ako canonical detailu.
-- **Transactional promotion staging manifest** — promotion-ready kandidáta pred zápisom do `jobs-data.json` uložiť so stable ID, canonical URL a checksumom required fields do staging manifestu; ďalší bezpečný atomický write ho vie povýšiť bez rediscovery alebo partial replacementu.
+- **Effective compensation normalizer** — mesačnú mzdu, hodinové brigády a IČO/freelance budget prepočítať na porovnateľnú efektívnu hodinovú hodnotu po známych fixných hodinách, platform fee a základnom commute burden. Rieši skreslenie rankingu medzi rôznymi zmluvnými formami.
+- **Company contact route enrichment** — pri high-fit ponuke zachytiť najrýchlejší overený spôsob reakcie: recruiter, hiring e-mail, priamy ATS formulár alebo firemný kontakt. Znižuje čas od discovery po reakciu bez oslabovania evidence gate.
+- **Post-write promotion round-trip verification** — po každom zápise promotion okamžite znovu načítať canonical `jobs-data.json` a overiť validné JSON, očakávaný count delta, prítomnosť všetkých nových stable ID a neprítomnosť zmien zamknutých súborov.
+- **Salary source-conflict resolver** — pri rozdielnej mzde medzi canonical detailom, mirrorom a category/index výsledkom držať autoritatívnu full-detail hodnotu, uložiť konflikt a naplánovať recheck.
+- **Evidence surface quality score** — pri každom discovery hite evidovať, či ide o canonical detail, plný job-board detail, indexed snippet alebo category-only dôkaz.
+- **Transactional promotion staging manifest** — promotion-ready kandidáta pred zápisom do `jobs-data.json` uložiť so stable ID, canonical URL a checksumom required fields do staging manifestu.
 - **Promotion-ready aging alert** — pri high-fit kandidátovi evidovať počet po sebe idúcich behov, počas ktorých zostáva promotion-ready, ale nie LIVE; po limite vynútiť promote alebo explicitný blocker.
 - **Primary-source escalation queue** — ak high-fit kandidát príde cez mirror/job board, okamžite ho zaradiť do fronty na dohľadanie canonical employer zdroja ešte v tom istom behu.
 - **Remote-country allowlist extractor** — z remote ponúk extrahovať skutočný country/region allowlist a oddeliť ho od marketingového štítku `Remote`.
@@ -73,6 +74,6 @@ Aktualizované: 14. 9. 2026 06:18 CEST
 - **Application deadline confidence and urgency queue** — explicitné closing dates oddeliť od inferovaného expiry a high-fit ponuky s blízkym deadline posúvať dopredu.
 - **Application channel friction score** — evidovať náklady reakcie: účet, dlhý formulár, test, portfolio, platform fee alebo extra onboarding.
 - **Source result saturation detector** — pri opakovaní rovnakých výsledkov rotovať query vocabulary/source subcategories bez znižovania gateov.
-- **Market-language role splitter** — oddeliť všeobecný support od Spain/Sweden/Hungary a podobných market-specific rolí už pri discovery.
+- **Market-language role splitter** — oddeliť všeobecný support od market-specific rolí už pri discovery.
 - Autentizovaný Facebook ingestion cez Nexus/local agent — backlog; automat ho sám nespúšťa.
 - Import CRM backupu, source-success analytics, publishedAt/<24h priority, commute/distance, deadline alerts, company contact enrichment, duplicate cluster report, reply probability, GitHub Actions polling a cross-device sync zostávajú platné ďalšie smery.
