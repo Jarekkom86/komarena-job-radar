@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 14. 9. 2026 01:55 CEST
+Aktualizované: 14. 9. 2026 02:07 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -46,7 +46,7 @@ Aktualizované: 14. 9. 2026 01:55 CEST
 - Promotion-ready z predchádzajúcich behov: **BeiT Technologie — Administrativně-ekonomický specialista (Junior/Medior), 100 % remote** a **SAV — Asistent/ka riaditeľa**; pred LIVE zápisom vyžadujú fresh canonical recheck.
 - Silný verification kandidát: **NASES — Operátor/operátorka Ústredného kontaktného centra**, Bratislava, od 1 500 EUR, pružný režim 8–16/9–17, vhodné pre absolventa; `locationEligibility: ba-area`. Mínus: AJ B1 a vyššie Office nároky.
 - Verification kandidát: **Dotypos SK — Technický support**, Bratislava, 1 200 EUR, vhodné pre absolventa, support + terénne inštalácie + servis; `locationEligibility: ba-area`. Mínus: AJ B1/B2.
-- Verification kandidát: **LJ Stav s. r. o. — Administratívny/a pracovník/čka, obchodný/á referent/ka**, Stupava, 1 300 EUR/mes., vhodné aj pre absolventa, bez cudzieho jazyka v canonical detaile. `locationEligibility: ba-area`.
+- Verification kandidát: **LJ Stav s. r.o. — Administratívny/a pracovník/čka, obchodný/á referent/ka**, Stupava, 1 300 EUR/mes., vhodné aj pre absolventa, bez cudzieho jazyka v canonical detaile. `locationEligibility: ba-area`.
 - Supplemental verification: **FEIM - SK — Obchodný špecialista pre e-shop a predaj svietidiel**, Malacky, 1 100–1 300 EUR/mes.; stredne pokročilá AJ a aktívny retail predaj znižujú ranking.
 - Verification kandidát: **Staffino — Technical Support Specialist / Project Coordinator (IT / SaaS)**, Bratislava Metropolitan Area, hybrid; 2–4 roky IT/SaaS support praxe znižujú fit.
 - Verification kandidát: **3MON, s. r.o. — Office Manager/ka & Executive Support pre CEO**, Bratislava, od 1 650 EUR/mes.; 3 roky podobnej praxe a pokročilý Word/Excel znižujú fit.
@@ -77,19 +77,22 @@ Aktualizované: 14. 9. 2026 01:55 CEST
 - Fresh reject 14.9. 01:55: **ESET — Customer Support Specialist**, Bratislava, entry-level, od 1 250 EUR + bonus; ideálne AJ B2, preto výrazný jazykový mínus a bez LIVE promotion.
 - Fresh reject 14.9. 01:55: **Wolt — Support Associate (Full Time)**, Ružinov, 1 340–1 410 EUR, možný HO po 2 týždňoch; minimum AJ B2 + zmeny ráno/večer/víkendy do 01:00, preto bez LIVE promotion.
 - Fresh freelance reject 14.9. 01:55: **Upwork — Data Entry Specialist for WooCommerce**, Worldwide, 35 USD fixed, 20–50 proposals; skill fit je dobrý, ale value/conversion gate neprešiel.
+- Fresh reject 14.9. 02:07: **Tatra Supercompute — IT Service Desk špecialista/špecialistka pre AI dátové centrum**, Bratislava, od 1 800 EUR/mes., nástup 1.11.2026; canonical detail explicitne vyžaduje AJ B2, anglické CV a prezenčný režim 24/7 v trojzmennej prevádzke, preto bez LIVE promotion.
 
-## Source audit — 14. 9. 2026 01:55 CEST
-- Reálne prehľadaných **11 source families**: Profesia; priame firemné career stránky; LinkedIn Jobs; Worki; Brigada.sk; Kariera.sk/Zoznam; Pretlak; StartupJobs; Upwork; verejne indexované Reddit/WordPress komunity; verejne indexované Facebook skupiny.
-- Fresh kandidáti: **12**; LIVE promotions: **0**.
-- LinkedIn: ESET Customer Support a Wolt Support Associate sú lokálne BA roly, ale obe vyžadujú minimálne/ideálne B2 English; SupportYourApp ostáva fluent/C1 English reject.
-- Kariera.sk: lokálna part-time asistent/ka za 600 EUR/mes. je relevantná, ale pod promotion threshold; ďalšie admin výsledky boli neaktívne alebo vyžadovali viac cudzích jazykov.
-- Upwork: WooCommerce/product-listing výsledky boli odmietnuté pre nízky fixed budget, 20–50 proposals, existujúci hire alebo hard-development scope.
-- Reddit/WordPress komunity: verejné výsledky boli prevažne `for hire`/ponuky dodávateľov, nie konkrétny dopyt po pracovníkovi; **0 verified hiring hits**.
+## Source audit — 14. 9. 2026 02:07 CEST
+- Reálne prehľadaných **11 source families**: Profesia; priame firemné career/public ATS; LinkedIn Jobs; Worki; Brigada.sk; Kariera.sk/Zoznam; Pretlak; StartupJobs; Upwork; verejne indexované Reddit/WordPress komunity; verejne indexované Facebook skupiny.
+- Fresh/adjacent kandidáti: **8**; LIVE promotions: **0**.
+- Profesia: Tatra Supercompute L1 Service Desk je technicky relevantný a lokálne BA, ale failuje na **B2 English + English CV + 24/7 trojzmennej onsite prevádzke**.
+- LinkedIn: Wolt Support Associate zostáva lokálny, ale minimum AJ B2 + zmeny; part-time varianta je student-targeted. Ďalšie market-support výsledky vyžadujú cudzie jazyky.
+- Worki: starší STU 50 % admin hit nie je fresh a ekonomicky je slabší; bez promotion.
+- Upwork: WooCommerce/data-entry výsledky mali nízky fixed budget, 20–50 proposals, existujúci hire, portfolio/hard-development burden alebo nízky očakávaný conversion rate.
+- Reddit/WordPress komunity: **0 verified hiring hits** vhodných na promotion.
 - Facebook verejné skupiny: **0 verified hits**, stav `limited`; bez konkrétneho verejne overiteľného postu a priameho linku sa nič nepridáva. Authenticated Nexus/local ingestion ostáva backlog a nebol spustený.
-- Počty vyradenia v tomto behu: jazyk **6**, skill/seniority **2**, ranking/value **4**, lokalita **0**, duplicita **0**, neaktivita **1** v rámci preverených čerstvých/adjacent kandidátov.
 - LIVE feed zostáva **52**; Profesia **25 = 48,1 %**, non-Profesia **27 = 51,9 %**. Fail-closed: nič sa nemaže len preto, že to aktuálny sweep nenašiel.
 
 ## Backlog rozvoja
+- **Compound shift-burden score** — spojiť 24/7 prevádzku, trojzmennosť, nočné, víkendy a povinnú onsite prítomnosť do jedného burden signálu, aby technicky atraktívna support rola neprebila udržateľnejšiu dennú prácu.
+- **English application-artifact gate** — samostatne zachytiť požiadavku na CV, cover letter alebo výberové konanie v angličtine; pri A2 profile je to ďalšia conversion friction nad rámec samotného skill fitu.
 - **Application deadline confidence and urgency queue** — extrahovať explicitné closing dates oddelene od odhadovaného expiry; high-fit ponuky s potvrdeným blízkym deadline posúvať dopredu bez falošnej urgencie z mirrorov.
 - **Application channel friction score** — evidovať náklady reakcie: povinný účet, dlhý formulár, test, portfolio, platform fee alebo extra onboarding; obmedzený čas smerovať najprv na high-fit roly s realistickou conversion path.
 - **Source result saturation detector** — sledovať, keď hodinové behy opakovane vracajú rovnakých nezmenených kandidátov; v ďalšom behu automaticky rotovať query vocabulary a source subcategories, aby sa zvyšovalo coverage bez znižovania kvality.
