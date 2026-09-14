@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 14. 9. 2026 18:49 CEST
+Aktualizované: 14. 9. 2026 21:49 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -45,6 +45,7 @@ Aktualizované: 14. 9. 2026 18:49 CEST
 - **Trenujeme — Predajca na predajni a e-commerce asistent**, Račianska 31, Bratislava, ostáva pod stabilným LIVE ID. Novší verejný inzerát **O5349827** bol 14. 9. 2026 znovu overený: e-shop objednávky, produkty/popisy, sklad, reklamácie a zákaznícky servis, AJ A2. Rovnaký title+company sa nepridáva druhýkrát; pri najbližšom bezpečnom LIVE zápise sa má obnoviť evidence URL/verifiedAt pod existujúcim stabilným ID.
 
 ### Promotion-ready mimo LIVE zápisu
+- **ALUFIX SLOVAKIA — Administratívny pracovník/čka, Analytik/čka**, Leškova, Bratislava, **od 1 900 EUR/mes.**, nástup 1.10.2026 alebo dohodou, občasný home office. Silný overlap s administratívou, Odoo, produktovým katalógom, online marketingom a procesnými zlepšeniami; pozícia je vhodná aj pre absolventa. Výrazné mínus: explicitná **angličtina B2** a požiadavka na CV + krátky sprievodný text v angličtine. `locationEligibility: ba-area`.
 - **ATALIAN SK — Facility koordinátor / Administratívna podpora FM**, Einsteinova, Petržalka, **1 540 EUR základ + 200 EUR variabilná zložka**, nástup 1.10.2026. Veľmi dobrý mix administratívy a technického troubleshooting/koordinácie: CAFM Chastia, servisné zásahy, technická dokumentácia, dodávatelia, preventívna údržba. Vhodné aj pre absolventa; §21/22 a facility prax sú iba výhodou; bez verejne uvedeného cudzieho jazyka. `locationEligibility: ba-area`.
 - **DHL Group — Administratívna podpora transportného tímu, 4 hodiny denne**, Diaľničná cesta, Senec, **804,50 EUR/mes. + 10 % mesačný bonus**, skrátený úväzok. Skenovanie faktúr, archivácia, supplier onboarding dokumenty, zakladanie dodávateľov do systému, pošta a kompletizácia prepravných dokumentov. `locationEligibility: ba-area`.
 - **Hemmersbach — Onsite Technician L1 Bratislava**, canonical Job-Id **19971**, full-time Bratislava. Predchádzajúce canonical overenie potvrdilo aktívny detail s Apply now; v tomto behu sa čerstvo indexovala iba hlavná Hemmersbach career surface, preto sa nepredstiera nové job-detail overenie. `locationEligibility: ba-area`.
@@ -52,23 +53,26 @@ Aktualizované: 14. 9. 2026 18:49 CEST
 - **IKEA — Pracovník/čka kontaktného centra IKEA, popredajný servis**, Bratislava. Kandidát zostáva zachovaný z predchádzajúceho evidence setu. `locationEligibility: ba-area`.
 - **IKEA — Pracovník/čka na oddelení Služby zákazníkom**, Bratislava, canonical job **354106**, zverejnené **21.8.2026**. Existujúci canonical evidence set zostáva zachovaný; v tomto behu sa nepredstiera nové job-detail overenie. `locationEligibility: ba-area`.
 
-## Source audit — 14. 9. 2026 18:49 CEST
-- Reálne prehľadaných **12 source families**: Profesia; priame firemné career/public ATS; LinkedIn Jobs; Worki; Kariera.sk/Zoznam; Brigada.sk; Pretlak/StartupJobs; Upwork; verejne indexované Reddit/WordPress komunity; verejne indexované Facebook skupiny; WordPress/WooCommerce public community index; employer cross-check.
-- Fresh/adjacent kandidáti: **9**; persisted LIVE promotions: **0**; existujúce/high-fit kandidáty reverified: **2**; promotion-ready mimo LIVE: **7**.
-- **Profesia:** fresh BA WordPress/WooCommerce/admin/IT-support/courier discovery vykonaný; bez nového distinct promotion-grade hitu.
-- **Direct company careers / ATS:** IKEA/DHL-oriented employer discovery prebehol; bez nového distinct canonical kandidáta, ktorý by prebil existujúci promotion-ready set.
-- **LinkedIn:** Wolt Support Associate full-time aj part-time Bratislava sú stále verejne indexované. Obidve roly vyžadujú profesionálnu angličtinu minimálne B2; part-time je navyše študentská rola. Bez promotion.
-- **Worki:** aktualizovaný montážnik v energetike v Bratislave 1 500–1 650 EUR je lokálne prípustný, ale ide o manuálnu výrobnú rolu mimo preferovaných trackov. Bez promotion.
-- **Kariera/Zoznam:** fresh BA admin/support discovery vykonaný; bez nového distinct kandidáta, ktorý by prešiel profilom a lokalitou.
+## Source audit — 14. 9. 2026 21:49 CEST
+- Reálne prehľadaných **12 source families**: Profesia; priame firemné career/public ATS; LinkedIn Jobs; Worki; Kariera.sk/Zoznam; Brigada.sk; Služby zamestnanosti; Pretlak/StartupJobs/WordPress Jobs; Upwork/Freelancermap; verejne indexované Reddit/WordPress komunity; WordPress public community index; verejne indexované Facebook skupiny.
+- Fresh/adjacent kandidáti: **10**; persisted LIVE promotions: **0**; existujúce/high-fit kandidáty reverified: **1**; promotion-ready mimo LIVE: **9**.
+- **Profesia:** najlepší nový adjacent kandidát je ALUFIX SLOVAKIA — Administratívny pracovník/čka, Analytik/čka, Bratislava, 1 900 EUR/mes. Funkčne silný, ale B2 AJ + anglické CV/sprievodný text sú výrazný mínus, preto bez top promotion.
+- **Direct company careers / ATS:** IKEA/Alza/Boels/ESET-oriented employer discovery prebehol; bez nového distinct canonical kandidáta silnejšieho než existujúci set.
+- **LinkedIn:** ESET Customer Support Specialist Bratislava je aktívny a entry-level, ale požaduje dobrú písomnú a hovorenú angličtinu ideálne B2; základ od 1 250 EUR. Bez promotion.
+- **Worki:** fresh BA admin/technical/driver discovery vykonaný; bez nového promotion-grade hitu.
+- **Kariera/Zoznam:** fresh BA admin/support discovery vykonaný; bez nového distinct kandidáta, ktorý by prešiel rankingom.
 - **Brigada.sk:** fresh BA admin/e-shop/customer-support discovery vykonaný; bez nového overeného promotion-grade hitu.
-- **Pretlak/StartupJobs:** fresh WordPress/WooCommerce/remote discovery vykonaný; bez nového distinct promotion-grade hitu.
-- **Upwork:** sedem čerstvých WooCommerce/e-commerce výsledkov bolo skontrolovaných. Marketplace operations za 30 USD fixed je expert-scoped; WooCommerce optimization za 20 USD fixed vyžaduje PHP/JS/CSS; e-commerce VA za 15 USD a data-entry za 35 USD fixed padajú na ekonomike/saturácii; WordPress maintenance za 100 USD má 20–50 proposals a 2 interviews; WordPress management za 10 USD už má hire; backend WordPress za 1 000 USD/mes. vyžaduje deep PHP/MySQL/API. Bez promotion.
-- **Reddit/WordPress komunity:** verejná indexácia nevrátila konkrétny current hiring/client dopyt vhodný na zaradenie.
+- **Služby zamestnanosti:** overená BA administratívna ponuka Vean Slovakian, ale uvedený základ 400 EUR/mes. je materiálne pod prahom radaru.
+- **Pretlak/StartupJobs/WordPress Jobs:** fresh WordPress/WooCommerce/remote discovery vykonaný; bez nového distinct promotion-grade hitu.
+- **Upwork/Freelancermap:** fresh WooCommerce/product-listing remote discovery vykonaný; bez nového kandidáta, ktorý by prebil existujúci promotion-ready freelance set.
+- **Reddit/WordPress komunity:** aktuálny WordPress hiring post bol remote iba pre USA, preto `reject-distance`; ďalšie výsledky boli prevažne `FOR HIRE`, nie klientsky dopyt.
 - **Facebook verejné skupiny:** **0 verified hits**, stav `limited`; bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nepridáva. Authenticated Nexus/local ingestion ostáva backlog a nebol spustený.
 - Fail-closed: existujúcich **56 LIVE** položiek ostáva nedotknutých; žiadny feed drop ani category loss.
 - LIVE mix zostáva **Profesia-lineage 50,0 % / non-Profesia 50,0 %**.
 
 ## Backlog rozvoja
+- **Source-family evidence TTL** — nastaviť rozdielny freshness TTL podľa source family a evidence surface; rýchlo meniace sa job boardy/freelance marketplace recheckovať skôr než stabilné employer pages, aby discovery neplytvalo časom a zároveň nevznikali stale activity claims.
+- **Rejected-candidate recheck expiry** — rejection reason ukladať spolu s expiráciou. Stabilné hard mismatchy (napr. C1 jazyk) ochladiť dlhšie, ale mutable dôvody ako proposal saturation, mzda či remote policy recheckovať skôr.
 - **Multi-constraint disqualifier extractor** — pri ponuke, ktorá kombinuje viac hard/near-hard mismatchov (napr. B2/C1 jazyk + anglické CV + 24/7 smeny + nadmerná požadovaná prax), persistovať kombinovaný rejection reason a ďalšie behy ju zbytočne nehodnotiť od nuly.
 - **Category-page to detail verification queue** — sľubný titul/mzdu z category/index stránky automaticky zaradiť do fronty na full-detail verification požiadaviek pred promotion; eliminuje false positives typu CCI, kde atraktívny listing skrýva C1/C2 multilingual a 6+ rokov praxe.
 - **Canonical age vs activity split** — evidovať vek publikácie oddelene od aktuálneho `active/apply` dôkazu, aby starší, ale stále otvorený canonical detail nebol nesprávne označený ako stale a neaktívny mirror sa naopak vyradil okamžite.
