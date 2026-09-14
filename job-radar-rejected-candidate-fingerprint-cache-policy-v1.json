@@ -1,0 +1,63 @@
+{
+  "policyVersion": 1,
+  "name": "Rejected Candidate Fingerprint TTL Cache",
+  "status": "active-policy",
+  "goal": "Stop wasting verification time on the same already-disqualified role resurfacing through mirrors, search indexes or repeated source scans while allowing fast reconsideration when material evidence changes.",
+  "fingerprint": {
+    "preferredKeys": ["canonicalUrl", "sourceJobId"],
+    "fallbackKeys": ["employerIdentity", "normalizedTitle", "normalizedLocationText"],
+    "neverUseEmployerNameAlone": true,
+    "canonicalDedupeRequired": true
+  },
+  "cacheableVerifiedRejectionReasons": {
+    "reject-distance": {"ttlHours": 720, "recheckOn": ["location-change", "remote-policy-change", "new-canonical-job-id"]},
+    "hard-qualification": {"ttlHours": 720, "recheckOn": ["requirements-change", "new-canonical-job-id"]},
+    "language-hard-gate": {"ttlHours": 720, "recheckOn": ["requirements-change", "new-canonical-job-id"]},
+    "driver-license-or-tachograph-mismatch": {"ttlHours": 720, "recheckOn": ["requirements-change", "new-canonical-job-id"]},
+    "hard-development-mismatch": {"ttlHours": 720, "recheckOn": ["requirements-change", "new-canonical-job-id"]},
+    "inactive-or-expired": {"ttlHours": 168, "recheckOn": ["reactivated", "new-published-date", "new-canonical-job-id"]},
+    "duplicate-canonical": {"ttlHours": 720, "recheckOn": ["canonical-identity-change", "material-role-change"]},
+    "remote-eligibility-unknown": {"ttlHours": 24, "recheckOn": ["remote-policy-change", "location-change", "new-primary-evidence"]},
+    "insufficient-primary-evidence": {"ttlHours": 24, "recheckOn": ["new-primary-evidence", "canonical-detail-available"]}
+  },
+  "hardLocationGate": {
+    "distanceRejectionRemainsHard": true,
+    "unknownRemoteNeverBecomesEligibleFromCache": true,
+    "allowOnly": ["ba-area", "remote-ok"],
+    "remoteRule": "Remote must be explicitly compatible with working primarily from Slovakia without regular commuting to a distant city."
+  },
+  "behavior": {
+    "skipDeepReverificationWhileFingerprintIsFresh": true,
+    "stillRecordSourceEncounter": true,
+    "stillCountSourceAttemptTruthfully": true,
+    "doNotCountSuppressedMirrorAsNewHit": true,
+    "neverSuppressEntireSourceFamily": true,
+    "neverSuppressMateriallyChangedCandidate": true,
+    "neverSuppressExistingLiveJob": true,
+    "neverMutateUserCrmState": true,
+    "facebookRule": "A blocked/limited Facebook surface is access evidence only; no candidate fingerprint may be created without a concrete public/indexed hiring item."
+  },
+  "outputs": [
+    "candidateFingerprint",
+    "canonicalUrl",
+    "rejectionReason",
+    "verifiedAt",
+    "expiresAt",
+    "recheckTriggers",
+    "suppressedEncounterCount",
+    "lastSuppressedAt"
+  ],
+  "safety": {
+    "touchLockedUi": false,
+    "touchCrm": false,
+    "touchBaseline": false,
+    "touchBootstrap": false,
+    "rewriteExistingJobs": false,
+    "preserveStableIds": true,
+    "preserveSourceTrust": true,
+    "preserveScoreConfidence": true,
+    "preserveLocationEligibilityAndReason": true,
+    "preserveFailClosedFeed": true
+  },
+  "expectedBenefit": "Cuts repeated verification work caused by the same rejected role appearing on multiple mirrors or in repeated searches, while short TTLs for unclear remote/evidence cases prevent valid BA/Slovakia-remote opportunities from being hidden for long."
+}
