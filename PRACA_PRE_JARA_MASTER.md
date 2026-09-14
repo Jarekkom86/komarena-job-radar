@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 14. 9. 2026 13:24 CEST
+Aktualizované: 14. 9. 2026 14:17 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -35,7 +35,7 @@ Aktualizované: 14. 9. 2026 13:24 CEST
 ## Aktuálny stav LIVE
 - Autoritatívny feed má **56 LIVE položiek**.
 - LIVE mix: **Profesia-lineage 28/56 = 50,0 %**, mimo Profesia **28/56 = 50,0 %**.
-- `jobs-data.json.updatedAt`: **2026-09-14T06:18:46+02:00** — v tomto behu zatiaľ bez zmeny; existujúce položky neboli mazané ani znižované iba preto, že ich fresh discovery nevrátil.
+- `jobs-data.json.updatedAt`: **2026-09-14T06:18:46+02:00** — v tomto behu bez zmeny; existujúce položky neboli mazané ani znižované iba preto, že ich fresh discovery nevrátil.
 - **Techfun s. r. o. — Elektro-technický špecialista pre e-shop**, Kopčianska 92A, Petržalka, 1 800–2 200 EUR/mes., ostáva veľmi silný technicko-e-shop fit. Angličtina A2; vhodné aj pre absolventa; `locationEligibility: ba-area`.
 - **SCR interactive — Executive Assistant & Sales Support**, Šustekova 51, Petržalka, od 1 500 EUR/mes. + provízny systém, živnosť, flexibilný čas, po skúšobnej dobe HO 5 dní mesačne. Silný prienik administratívy, CRM/sales supportu, digitálneho marketingu, klientov, fakturačných podkladov a procesov. Cudzí jazyk nie je canonical požiadavka. `locationEligibility: ba-area`.
 - **AGEL Lab — Administratívno-technická podpora pre laboratórium**, Údernícka 9, Petržalka, plný úväzok, 1 350 EUR/mes., nástup 1.10.2026/dohodou. `locationEligibility: ba-area`.
@@ -47,29 +47,32 @@ Aktualizované: 14. 9. 2026 13:24 CEST
 ### Promotion-ready mimo LIVE zápisu
 - **ATALIAN SK — Facility koordinátor / Administratívna podpora FM**, Einsteinova, Petržalka, **1 540 EUR základ + 200 EUR variabilná zložka**, nástup 1.10.2026. Veľmi dobrý mix administratívy a technického troubleshooting/koordinácie: CAFM Chastia, servisné zásahy, technická dokumentácia, dodávatelia, preventívna údržba. Vhodné aj pre absolventa; §21/22 a facility prax sú iba výhodou; bez verejne uvedeného cudzieho jazyka. `locationEligibility: ba-area`.
 - **DHL Group — Administratívna podpora transportného tímu, 4 hodiny denne**, Diaľničná cesta, Senec, **804,50 EUR/mes. + 10 % mesačný bonus**, skrátený úväzok. Skenovanie faktúr, archivácia, supplier onboarding dokumenty, zakladanie dodávateľov do systému, pošta a kompletizácia prepravných dokumentov. `locationEligibility: ba-area`.
-- **Hemmersbach — Onsite Technician L1 Bratislava**, canonical Job-Id **19971**, full-time Bratislava. Canonical detail je stále aktívny s `Apply now`; lokálna/remote desktop podpora, inbound support, HW/SW/aplikácie a ticketing. Požiadavka: 18 mesiacov IT praxe alebo ekvivalent; canonical detail neuvádza povinný cudzí jazyk. `locationEligibility: ba-area`.
-- **Upwork — Website & SEO Management 2026 – WooCommerce**, worldwide remote, **15–30 USD/h**, <30 h/týždeň, 6+ mesiacov. WooCommerce store/product management, plugin maintenance, on-page SEO a reporting; nejde o hard-development. Mínusy: 20–50 proposals, pravidelný reporting/komunikácia a vyšší application friction. `locationEligibility: remote-ok`.
-- **IKEA — Pracovník/čka kontaktného centra IKEA, popredajný servis**, Bratislava. Verejný employer/job-board signál ostáva aktívny: full-time, od 1 260 EUR brutto, čiastočný home office, bez povinnej praxe, angličtina iba výhoda. Priamy employer detail nebol v tomto behu spoľahlivo znovu získaný, preto ostáva promotion-ready a nie je prezentovaný ako nový canonical-confirmed LIVE zápis. `locationEligibility: ba-area`.
+- **Hemmersbach — Onsite Technician L1 Bratislava**, canonical Job-Id **19971**, full-time Bratislava. Predchádzajúce canonical overenie potvrdilo aktívny detail s Apply now; v tomto behu sa čerstvo indexovala iba hlavná Hemmersbach career surface, preto sa nepredstiera nové job-detail overenie. `locationEligibility: ba-area`.
+- **Upwork — Website & SEO Management 2026 – WooCommerce**, worldwide remote, **15–30 USD/h**, <30 h/týždeň, 6+ mesiacov. WooCommerce store/product management, plugin maintenance, on-page SEO a reporting; nejde o hard-development. V tomto behu znovu overené cez verejný Upwork detail. Mínusy: 20–50 proposals, pravidelný reporting/komunikácia a vyšší application friction. `locationEligibility: remote-ok`.
+- **IKEA — Pracovník/čka kontaktného centra IKEA, popredajný servis**, Bratislava. Kandidát zostáva zachovaný z predchádzajúceho evidence setu; tento beh znovu overil iné aktuálne IKEA Bratislava customer-service roly, nie presne tento contact-centre detail. `locationEligibility: ba-area`.
+- **IKEA — Pracovník/čka na oddelení Služby zákazníkom**, Bratislava, canonical job **354106**, zverejnené **21.8.2026**, aktívne `Apply`. Riešenie potrieb zákazníkov, poskytovanie informácií o službách a produktoch, práca s počítačom; v overenom canonical detaile nie je uvedená povinná angličtina ani iný cudzí jazyk. Retail/shift charakter ju drží pod čistým back-office, ale je to silný lokálny customer-care fallback. `locationEligibility: ba-area`.
 
-## Source audit — 14. 9. 2026 13:24 CEST
+## Source audit — 14. 9. 2026 14:17 CEST
 - Reálne prehľadaných **12 source families**: Profesia; priame firemné career/public ATS; LinkedIn Jobs; Worki; Kariera.sk/Zoznam; Brigada.sk; Pretlak; StartupJobs; WordPress Jobs; Upwork; verejne indexované Reddit/WordPress komunity; verejne indexované Facebook skupiny.
-- Fresh/adjacent kandidáti: **18**; persisted LIVE promotions: **0**; existujúce/high-fit kandidáty reverified: **3**; promotion-ready mimo LIVE: **5**.
-- **Profesia:** nové silné promotion-ready výsledky sú ATALIAN O5356964 a DHL O5353400. Trenujeme O5349827 je refresh existujúceho title+company, nie nezávislá nová ponuka. IKEA ostáva aktuálna cez employer/job-board evidence.
-- **Direct company careers / ATS:** Hemmersbach Job-Id 19971 potvrdený canonical detailom a aktívnym Apply now. IKEA canonical detail sa v tomto behu nepodarilo spoľahlivo získať cez verejnú indexáciu; coverage sa nepredstiera.
-- **LinkedIn:** Wolt Support Associate part-time sa objavil, ale je student-oriented a má večerné/víkendové neskoré zmeny; bez promotion.
+- Fresh/adjacent kandidáti: **16**; persisted LIVE promotions: **0**; existujúce/high-fit kandidáty reverified: **2**; promotion-ready mimo LIVE: **6**.
+- **Profesia:** fresh BA admin/support/e-commerce query vykonaný; bez nového distinct promotion-grade hitu. Existujúce promotion-ready ATALIAN/DHL ostávajú zachované.
+- **Direct company careers / ATS:** nový silný canonical IKEA hit — Služby zákazníkom, job 354106, Bratislava, aktívne Apply, bez viditeľného cudzieho jazyka. Hemmersbach main career surface je dostupná, ale Job-Id 19971 sa v tomto behu čerstvo neindexoval ako detail.
+- **LinkedIn:** ESET Customer Support Specialist v Bratislave je graduate-friendly/basic technical support, ale výslovne vyžaduje aktívnu angličtinu. Netzon vyžaduje fluent German+English; SupportYourApp fluent/C1 English alebo ďalší jazyk. Viaceré CloudTalk/Staffino/SupportYourApp stránky sú už `No longer accepting applications`.
 - **Worki:** fresh BA admin/technical/e-shop query vykonaný; bez nového distinct promotion-grade hitu.
 - **Kariera/Zoznam:** fresh BA admin/customer-support/e-shop query vykonaný; bez nového distinct promotion-grade hitu.
-- **Brigada.sk:** AgroCopter remote sales-assistant/drone-services má minimum B1 AJ a sales-heavy scope; ďalší reception/admin hit vyžaduje komunikatívnu AJ/student profil. Bez promotion.
+- **Brigada.sk:** fresh BA admin/technical/e-shop query vykonaný; bez nového overeného promotion-grade hitu.
 - **Pretlak:** fresh Bratislava/remote WordPress/WooCommerce/e-commerce/support query vykonaný; bez nového distinct promotion-grade hitu.
-- **StartupJobs:** fresh support/e-commerce query vykonaný; bez nového overeného BA/Slovakia-remote kandidáta.
+- **StartupJobs:** **Medevio BDR SK** je 100 % remote a 34–56 tis. Kč, ale je to najmä outbound telefónny predaj/meeting-setting; bez promotion.
 - **WordPress Jobs:** fresh WordPress/WooCommerce support/content query vykonaný; bez vhodného non-hard-development kandidáta.
-- **Upwork:** 9 relevantných/adjacent výsledkov; **Website & SEO Management 2026** je promotion-ready. Ostatné výsledky padajú na nízkej efektívnej odmene, existujúcich hires/interviews, 50+ proposals, silnom jazykovom gate alebo hard-development scope.
-- **Reddit/WordPress komunity:** verejné výsledky sú prevažne FOR HIRE/self-promotion alebo US-only hard-development hiring; bez vhodného klientského dopytu pre Slovensko.
+- **Upwork:** 10 relevantných/adjacent výsledkov. **Website & SEO Management 2026** bolo znovu overené a ostáva promotion-ready. Nové e-commerce VA/listing výsledky padajú na 3–8 USD/h odmene, 20–50 proposals, existujúcich hires/interviews, fluent English alebo hard-development scope.
+- **Reddit/WordPress komunity:** verejná indexácia prehľadaná; bez konkrétneho aktuálneho Slovakia-eligible klientského dopytu vhodného na promotion.
 - **Facebook verejné skupiny:** **0 verified hits**, stav `limited`; bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nepridáva. Authenticated Nexus/local ingestion ostáva backlog a nebol spustený.
 - Fail-closed: existujúcich **56 LIVE** položiek ostáva nedotknutých; žiadny feed drop ani category loss.
-- LIVE mix zostáva **Profesia-lineage 50,0 % / non-Profesia 50,0 %**. Navrhovaná najbližšia promotion batch je 2 Profesia-lineage + 2 non-Profesia, aby sa mix nezhoršil.
+- LIVE mix zostáva **Profesia-lineage 50,0 % / non-Profesia 50,0 %**.
 
 ## Backlog rozvoja
+- **Canonical age vs activity split** — evidovať vek publikácie oddelene od aktuálneho `active/apply` dôkazu, aby starší, ale stále otvorený canonical detail nebol nesprávne označený ako stale a neaktívny mirror sa naopak vyradil okamžite.
+- **Language requirement evidence confidence** — pri každej jazykovej požiadavke evidovať, či je explicitne mandatory, iba preferred, inferovaná z application artifacts alebo úplne absent. Zníži to falošné penalizácie zo snippetov.
 - **Candidate state ledger** — per kandidát persistovať stable ID, stav `seen/verified/promotion-ready/live/rejected`, `lastSeenAt`, rejection reason a `nextRecheckAt`; tým sa zníži opakované hodinové prehodnocovanie rovnakých kandidátov a sibling duplicity.
 - **Effective hourly value normalizer with commute/application friction** — mesačné, part-time, hodinové a fixed-price ponuky prepočítať na porovnateľnú efektívnu hodinovú hodnotu podľa pracovných hodín, dojazdu a nákladov reakcie/platformy. Pomôže reálne porovnať napr. 4-hodinový DHL, full-time onsite a remote freelance.
 - **Promotion write-size preflight** — pred promotion do veľkého canonical feedu overiť, že connector dokáže round-tripnúť kompletný aktuálny súbor a zachovať count/hash; ak nie, kandidáta držať promotion-ready namiesto riskantného replacementu.
