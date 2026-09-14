@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 14. 9. 2026 11:40 CEST
+Aktualizované: 14. 9. 2026 12:10 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -45,29 +45,31 @@ Aktualizované: 14. 9. 2026 11:40 CEST
 - **Trenujeme — Predajca na predajni a e-commerce asistent**, Račianska 31, Bratislava, ostáva v LIVE pod stabilným ID. Novší verejný inzerát O5349827 bol 14. 9. reverified: part-time/živnosť, 60–120 h mesačne, e-shop objednávky, sklad, reklamácie a zákaznícky servis. Rovnaký title+company sa preto nepridáva druhýkrát.
 
 ### Promotion-ready mimo LIVE zápisu
-- **IKEA — Pracovník/čka kontaktného centra IKEA, popredajný servis**, Bratislava, job ID **355434**. Canonical detail zostáva verejne dostupný a ponúka full-time, zmluvu na dobu neurčitú, po zaučení čiastočný home office, od 1 260 EUR brutto + víkendové príplatky. Náplň: telefón/e-mail, servisní partneri, reklamácie a sťažnosti, informácie o produktoch/službách, hľadanie riešení a zlepšovanie procesov. Prax nie je nutná; angličtina je iba výhodou. `locationEligibility: ba-area`.
-- **Hemmersbach — Onsite Technician L1 Bratislava**, canonical Job-Id **19971**, full-time Bratislava. Aktívny `Apply now`; lokálna/remote desktop podpora, inbound support, HW/SW/aplikácie a ticketing. Požiadavka: 18 mesiacov IT praxe alebo ekvivalent; canonical detail neuvádza povinný cudzí jazyk. `locationEligibility: ba-area`.
+- **IKEA — Pracovník/čka kontaktného centra IKEA, popredajný servis**, Bratislava, job ID **355434**. Aktuálny IKEA Bratislava vacancy list ho 14. 9. 2026 stále uvádza medzi otvorenými Customer Relations pozíciami. Profesia mirror potvrdzuje zverejnenie 8. 9. 2026, full-time, od 1 260 EUR brutto, občasný/čiastočný home office, bez povinnej praxe a angličtinu iba ako výhodu. `locationEligibility: ba-area`.
+- **Hemmersbach — Onsite Technician L1 Bratislava**, canonical Job-Id **19971**, full-time Bratislava. Canonical detail bol 14. 9. 2026 znovu otvorený a stále obsahuje aktívne `Apply now`; lokálna/remote desktop podpora, inbound support, HW/SW/aplikácie a ticketing. Požiadavka: 18 mesiacov IT praxe alebo ekvivalent; canonical detail neuvádza povinný cudzí jazyk. `locationEligibility: ba-area`.
 - Starší IKEA job ID **354106 – Služby zákazníkom** sa nepovažuje za promotion-ready bez aktuálneho list-membership/active signálu.
 
-## Source audit — 14. 9. 2026 11:40 CEST
+## Source audit — 14. 9. 2026 12:10 CEST
 - Reálne prehľadaných **12 source families**: Profesia; priame firemné career/public ATS; LinkedIn Jobs; Worki; Kariera.sk/Zoznam; Brigada.sk; Pretlak; StartupJobs; WordPress Jobs; Upwork; verejne indexované Reddit/WordPress komunity; verejne indexované Facebook skupiny.
-- Fresh/adjacent kandidáti: **11**; persisted LIVE promotions: **0**; existujúci LIVE reverified: **1**; promotion-ready mimo LIVE zápisu: **2**.
-- **Profesia:** 3 relevantné/adjacent výsledky. Trenujeme O5349827 je nový board ID pre rovnaký title+company už v LIVE, preto reverified bez duplicity. ABB technická podpora predaja padá na B2 AJ a elektrotechnicko/power požiadavkách.
-- **Direct company careers / ATS:** Hemmersbach 19971 je aktívny canonical kandidát s Apply now; IKEA 355434 ostáva aktívny canonical customer-support kandidát.
-- **LinkedIn:** fresh Bratislava support/e-commerce indexing vykonaný; Hemmersbach canonical potvrdený, ABB penalizované pre B2/technické requirements.
+- Fresh/adjacent kandidáti: **15**; persisted LIVE promotions: **0**; existujúce/high-fit kandidáty reverified: **2**; promotion-ready mimo LIVE zápisu: **2**.
+- **Profesia:** IKEA O5354960 ostáva čerstvá a aktívna, ale pri rovnakom jobe má prednosť aktuálny priamy IKEA vacancy list. Žiadna ďalšia distinct nová Profesia rola neprekonala existujúce LIVE kandidáty.
+- **Direct company careers / ATS:** IKEA 355434 potvrdená v aktuálnom zozname Bratislava jobs; Hemmersbach 19971 je aktívny canonical kandidát s Apply now.
+- **LinkedIn:** fresh Bratislava support/e-commerce indexing vykonaný; bez nového distinct promotion-grade hitu.
 - **Worki:** fresh BA admin/technical/e-shop query vykonaný; bez nového promotion-grade hitu.
 - **Kariera/Zoznam:** fresh BA admin/customer-support/e-shop query vykonaný; bez nového promotion-grade hitu.
 - **Brigada.sk:** fresh BA admin/customer-support/e-shop query vykonaný; 0 vhodných konkrétnych fresh hitov.
 - **Pretlak:** fresh Bratislava/remote WordPress/WooCommerce/e-commerce/support query vykonaný; 0 promotion-grade hitov.
-- **StartupJobs:** fresh remote e-commerce/customer-support/WordPress query vykonaný; bez jasne Slovakia-executable promotion-grade výsledku.
+- **StartupJobs:** Elasticr IT Support Specialist L2 sa objavil ako Remote/On-site/Hybrid s pracoviskom Havlíčkův Brod. Ponuka explicitne nepotvrdzuje vykonávanie zo Slovenska bez pravidelnej dochádzky a scope je L2/root-cause support, preto `reject-distance`/hard-skill hold, nie LIVE.
 - **WordPress Jobs:** fresh WordPress/WooCommerce support/content query vykonaný; bez vhodného non-hard-development kandidáta.
-- **Upwork:** 7 relevantných/adjacent e-commerce VA/product-listing výsledkov; 0 promoted. Hlavné rejecty: príliš nízky fixed budget, existing hire/interview, proposal saturation alebo silná written/spoken English záťaž.
-- **Reddit/WordPress komunity:** fresh verejné výsledky sú prevažne FOR HIRE/open-to-work self-promotion, nie konkrétny hiring dopyt.
+- **Upwork:** 8 relevantných/adjacent e-commerce/WooCommerce výsledkov; 0 promoted. Funkčne presné roly padajú na nízkej efektívnej odmene, existujúcich hires/interviews, proposal saturation, silnej angličtine/francúzštine alebo country-targetingu. Existujúci WooCommerce Product Listing kandidát ostáva aktívny, ale je už saturovaný.
+- **Reddit/WordPress komunity:** verejné výsledky sú prevažne FOR HIRE/self-promotion alebo US-only hard-development hiring; bez vhodného klientského dopytu pre Slovensko.
 - **Facebook verejné skupiny:** **0 verified hits**, stav `limited`; bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nepridáva. Authenticated Nexus/local ingestion ostáva backlog a nebol spustený.
 - Fail-closed: `jobs-data.json` zostal na **56 LIVE položkách**, bez poklesu feedu alebo category loss.
 - LIVE mix zostáva **Profesia-lineage 50,0 % / non-Profesia 50,0 %**.
 
 ## Backlog rozvoja
+- **Promotion write-size preflight** — pred promotion do veľkého canonical feedu overiť, že connector dokáže round-tripnúť kompletný aktuálny súbor a zachovať count/hash; ak nie, kandidáta držať promotion-ready namiesto riskantného replacementu.
+- **Canonical list-membership auto-promotion queue** — ak high-fit kandidát zostáva po viac behov súčasne na employer vacancy liste aj na aktívnom detail/apply surface, zaradiť ho do prioritnej fronty na LIVE zápis.
 - **Same-title/company refresh dedupe** — keď firma republikuje tú istú rolu pod novým job-board ID, zachovať existujúce stabilné LIVE ID a obnoviť evidence/verifiedAt/publishedAt namiesto vytvorenia duplicity.
 - **Freelance effective-pay floor** — pri remote zákazkách prepočítať fixed budget na realistickú hodinovku po odhade hodín, platform fee a komunikačnom overhead; funkčne silné, ale ekonomicky slabé zákazky automaticky prudko penalizovať.
 - **Canonical vacancy-list membership gate** — pred promotion overiť, či individuálny ATS detail stále patrí do aktuálneho employer/location job listu alebo má iný explicitný active/apply signál.
