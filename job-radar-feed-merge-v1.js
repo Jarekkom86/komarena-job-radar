@@ -1,9 +1,10 @@
 (()=>{
 'use strict';
 const BASE='https://raw.githubusercontent.com/Jarekkom86/komarena-job-radar/main/';
-const CACHE='komarenaJobRadarFeed:v9:';
+const CACHE='komarenaJobRadarFeed:v10:';
 const FRESH_MS=48*60*60*1000;
 const FUTURE_TOLERANCE_MS=10*60*1000;
+const EVIDENCE_DRIFT_MS=60*60*1000;
 const PROMOTION_CONFIDENCE_MIN=80;
 const DELTA_INDEX='jobs-delta-index.json';
 const DELTA_NAME_RE=/^jobs-fresh-delta(?:-(\d{8}))?\.json$/;
@@ -21,6 +22,8 @@ function sourceJobKey(j){
   m=u.match(/pracazarohom\.sk\/dl\/jd\/([A-Za-z0-9-]+)/i);if(m)return'pzr:'+m[1].toLowerCase();
   m=u.match(/linkedin\.com\/jobs\/view\/[^?#]*?(\d{8,})(?:\/|$|\?)/i);if(m)return'linkedin:'+m[1];
   m=u.match(/upwork\.com\/freelance-jobs\/apply\/[^?#]*?_(~?\d+)/i);if(m)return'upwork:'+m[1].replace(/^~/,'');
+  m=u.match(/jobs\.ikea\.com\/[^?#]*\/24107\/(\d+)/i);if(m)return'ikea:'+m[1];
+  m=u.match(/nalgoo-jobs\.com\/jobs\/(\d+)/i);if(m)return'nalgoo:'+m[1];
   return'';
 }
 const family=j=>{const s=(String(j.source||'')+' '+String(j.url||'')).toLowerCase();if(j.sourceType==='company')return'company';if(s.includes('linkedin'))return'linkedin';if(s.includes('profesia'))return'profesia';if(j.sourceType==='government')return'government';if(j.sourceType==='community'||j.sourceType==='facebook')return'community';if(j.sourceType==='freelance')return'freelance';return'other'};
@@ -42,12 +45,15 @@ function eligibilityReason(j){
   if(['broken','inactive','expired','404','410'].includes(link))return'link';
   if(j.promotionEligible===true&&Number(j.scoreConfidence||0)<PROMOTION_CONFIDENCE_MIN)return'low-confidence';
   if(j.promotionEligible===true&&(!j.linkStatus||!checkedTs(j)))return'link-unverified';
+  const pt=publishedTs(j);if(isFutureTs(pt))return'future-publication';
   const t=ts(j);
   if(!t)return'unverified';
   const age=Date.now()-t;
   if(age<-FUTURE_TOLERANCE_MS)return'future-verification';
   if(age>FRESH_MS)return'stale';
-  if(checkedTs(j)&&Date.now()-checkedTs(j)>FRESH_MS)return'link-stale';
+  const ct=checkedTs(j);
+  if(ct&&Date.now()-ct>FRESH_MS)return'link-stale';
+  if(j.promotionEligible===true&&ct&&t-ct>EVIDENCE_DRIFT_MS)return'evidence-drift';
   return null;
 }
 const eligible=j=>!eligibilityReason(j);
@@ -71,9 +77,10 @@ function reduceBy(list,keyFn,collisionKey,stats){
   return [...map.values()];
 }
 function mergeJobsDetailed(...lists){
-  const input=lists.flat().filter(Boolean),stats={input:input.length,urlCollisions:0,sourceKeyCollisions:0,identityCollisions:0,replacements:0};
+  const input=lists.flat().filter(Boolean),stats={input:input.length,urlCollisions:0,sourceKeyCollisions:0,identityCollisions:0,replacements:0,stableSourceKeys:0};
   let jobs=reduceBy(input,(j,i)=>canon(j.url)||j.id||'u'+i,'urlCollisions',stats);
   const withStable=[],withoutStable=[];jobs.forEach(j=>(sourceJobKey(j)?withStable:withoutStable).push(j));
+  stats.stableSourceKeys=withStable.length;
   jobs=[...reduceBy(withStable,sourceJobKey,'sourceKeyCollisions',stats),...withoutStable];
   jobs=reduceBy(jobs,(j,i)=>identity(j)||canon(j.url)||j.id||'i'+i,'identityCollisions',stats);
   stats.output=jobs.length;return {jobs,stats};
@@ -106,13 +113,14 @@ async function resolveDeltaFiles(){
   const files=useFallback?sanitizeDeltaNames([...indexed,...fallback]):indexed;
   return {files,indexMode:useFallback?(indexed.length?'stale-index+dynamic-fallback':'dynamic-fallback'):idx.mode,indexError:indexed.length?null:(idx.error||'empty-or-invalid-index'),indexUpdatedAt:idx.data?.updatedAt||null,indexStale};
 }
-function quarantineStats(raw){const out={stale:0,ineligible:0,link:0,'link-unverified':0,'link-stale':0,'low-confidence':0,unverified:0,status:0,'expired-at':0,'future-verification':0,other:0};raw.forEach(j=>{const r=eligibilityReason(j);if(r)out[r]!==undefined?out[r]++:out.other++});return out}
+function quarantineStats(raw){const out={stale:0,ineligible:0,link:0,'link-unverified':0,'link-stale':0,'low-confidence':0,unverified:0,status:0,'expired-at':0,'future-verification':0,'future-publication':0,'evidence-drift':0,other:0};raw.forEach(j=>{const r=eligibilityReason(j);if(r)out[r]!==undefined?out[r]++:out.other++});return out}
 function latestVerified(jobs){return jobs.reduce((m,j)=>Math.max(m,ts(j)),0)}
 function latestPublished(jobs){return jobs.reduce((m,j)=>Math.max(m,publishedTs(j)),0)}
 function latestField(parts,key){return parts.map(x=>x?.data?.[key]).filter(Boolean).sort().pop()||null}
+function evidenceSurfaceStats(jobs){const out={};jobs.forEach(j=>{const k=String(j?.evidenceSurface||'unspecified');out[k]=(out[k]||0)+1});return out}
 function health(main,extra,deltas,deltaMeta,usedBaseline,jobs,raw,dedupe){
   const q=quarantineStats(raw),lv=latestVerified(jobs),lp=latestPublished(jobs),parts=[main,extra,...deltas],loadErrors=Object.fromEntries(parts.filter(x=>x.error).map(x=>[x.name,x.error]));
-  window.JobRadarFeedHealth={checkedAt:new Date().toISOString(),freshnessWindowHours:48,promotionConfidenceMin:PROMOTION_CONFIDENCE_MIN,mainMode:main.mode,extraMode:extra.mode,deltaIndexMode:deltaMeta.indexMode,deltaIndexError:deltaMeta.indexError,deltaIndexUpdatedAt:deltaMeta.indexUpdatedAt,deltaIndexStale:deltaMeta.indexStale,deltaFiles:deltaMeta.files,deltaModes:Object.fromEntries(deltas.map(x=>[x.name,x.mode])),fallback:usedBaseline?'baseline':(parts.some(x=>x.mode==='cache')?'cache':'none'),jobs:jobs.length,rawJobs:raw.length,quarantined:q,dedupe,loadErrors,latestJobVerifiedAt:lv?new Date(lv).toISOString():null,latestJobPublishedAt:lp?new Date(lp).toISOString():null,latestContentUpdatedAt:latestField(parts,'updatedAt'),latestSourceVerificationAt:latestField(parts,'sourceVerificationAt')};
+  window.JobRadarFeedHealth={checkedAt:new Date().toISOString(),freshnessWindowHours:48,promotionConfidenceMin:PROMOTION_CONFIDENCE_MIN,evidenceDriftToleranceMinutes:EVIDENCE_DRIFT_MS/60000,mainMode:main.mode,extraMode:extra.mode,deltaIndexMode:deltaMeta.indexMode,deltaIndexError:deltaMeta.indexError,deltaIndexUpdatedAt:deltaMeta.indexUpdatedAt,deltaIndexStale:deltaMeta.indexStale,deltaFiles:deltaMeta.files,deltaModes:Object.fromEntries(deltas.map(x=>[x.name,x.mode])),fallback:usedBaseline?'baseline':(parts.some(x=>x.mode==='cache')?'cache':'none'),jobs:jobs.length,rawJobs:raw.length,quarantined:q,dedupe,evidenceSurfaces:evidenceSurfaceStats(jobs),loadErrors,latestJobVerifiedAt:lv?new Date(lv).toISOString():null,latestJobPublishedAt:lp?new Date(lp).toISOString():null,latestContentUpdatedAt:latestField(parts,'updatedAt'),latestSourceVerificationAt:latestField(parts,'sourceVerificationAt')};
 }
 window.fetch=async(input,init)=>{
   const url=typeof input==='string'?input:(input&&input.url)||'';
