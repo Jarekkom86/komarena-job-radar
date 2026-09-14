@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 14. 9. 2026 09:56 CEST
+Aktualizované: 14. 9. 2026 11:40 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -42,42 +42,46 @@ Aktualizované: 14. 9. 2026 09:56 CEST
 - **BKIS — Asistent/Asistentka sekcie Technickej podpory podujatí**, Vajnorská 135, Bratislava, od 1 400 EUR/mes., plný úväzok. Administratívna podpora technickej sekcie, dodávatelia, rozpočty, objednávky/faktúry, kalendár, dochádzka, logistika a vodičák B; jazyk iba slovenčina. `locationEligibility: ba-area`.
 - **ORLEN — Asistent/Asistentka nákupu na Oddelení Shop & Gastro**, TOWER 5, Kalinčiakova, Bratislava, od 1 700 EUR/mes. + kvartálny bonus 20 %, 1 deň HO týždenne. Vhodné aj pre absolventa; B1 angličtina je mierny/stredný mínus, nie hard gate. `locationEligibility: ba-area`.
 - **ČSOB Operátor IT Service Desk-u** ostáva silný entry-level technický support v Bratislave; mierne pokročilá AJ a on-call po zaučení sú mínus, nie lokalitný blocker.
+- **Trenujeme — Predajca na predajni a e-commerce asistent**, Račianska 31, Bratislava, ostáva v LIVE pod stabilným ID. Novší verejný inzerát O5349827 bol 14. 9. reverified: part-time/živnosť, 60–120 h mesačne, e-shop objednávky, sklad, reklamácie a zákaznícky servis. Rovnaký title+company sa preto nepridáva druhýkrát.
 
 ### Promotion-ready mimo LIVE zápisu
-- **IKEA — Pracovník/čka kontaktného centra IKEA, popredajný servis**, Bratislava, job ID **355434**. Aktuálna IKEA Bratislava location stránka ho uvádza medzi súčasnými ponukami. Full-time, po zaučení možný čiastočný home office, zmluva na dobu neurčitú, od 1 260 EUR brutto + nadštandardné víkendové príplatky. Náplň: telefón/e-mail, servisní partneri, reklamácie a sťažnosti, informácie o produktoch/službách, hľadanie riešení a zlepšovanie procesov. Prax nie je nutná, pozícia je vhodná aj pre absolventov; angličtina je iba výhodou. `locationEligibility: ba-area`. **Promotion-ready, ale v tomto behu nebol zapísaný do jobs-data.json**, pretože dostupný GitHub writer podporuje iba kompletný replacement a bezpečný transakčný append bez rekonštrukcie celého 56-record feedu nebol dostupný.
-- Starší IKEA job ID **354106 – Služby zákazníkom** má stále dostupné lokalizované detail stránky, ale aktuálny IKEA Bratislava zoznam ho medzi 5 otvorenými pozíciami neuvádza. Preto sa považuje za stale/ambiguous a nepromuje sa len na základe prežívajúceho detail URL.
+- **IKEA — Pracovník/čka kontaktného centra IKEA, popredajný servis**, Bratislava, job ID **355434**. Canonical detail zostáva verejne dostupný a ponúka full-time, zmluvu na dobu neurčitú, po zaučení čiastočný home office, od 1 260 EUR brutto + víkendové príplatky. Náplň: telefón/e-mail, servisní partneri, reklamácie a sťažnosti, informácie o produktoch/službách, hľadanie riešení a zlepšovanie procesov. Prax nie je nutná; angličtina je iba výhodou. `locationEligibility: ba-area`.
+- **Hemmersbach — Onsite Technician L1 Bratislava**, canonical Job-Id **19971**, full-time Bratislava. Aktívny `Apply now`; lokálna/remote desktop podpora, inbound support, HW/SW/aplikácie a ticketing. Požiadavka: 18 mesiacov IT praxe alebo ekvivalent; canonical detail neuvádza povinný cudzí jazyk. `locationEligibility: ba-area`.
+- Starší IKEA job ID **354106 – Služby zákazníkom** sa nepovažuje za promotion-ready bez aktuálneho list-membership/active signálu.
 
-## Source audit — 14. 9. 2026 09:56 CEST
+## Source audit — 14. 9. 2026 11:40 CEST
 - Reálne prehľadaných **12 source families**: Profesia; priame firemné career/public ATS; LinkedIn Jobs; Worki; Kariera.sk/Zoznam; Brigada.sk; Pretlak; StartupJobs; WordPress Jobs; Upwork; verejne indexované Reddit/WordPress komunity; verejne indexované Facebook skupiny.
-- Relevantní/adjacent kandidáti: **8**; persisted LIVE promotions: **0**; promotion-ready mimo LIVE zápisu: **1**.
-- **Profesia:** 2 konkrétne fresh indexované výsledky, 0 pridaných; oba padli na lokalite/špecializovanej kvalifikácii mimo cieľového profilu.
-- **Direct company careers / ATS:** 4 relevantné/adjacent výsledky; 1 promotion-ready (IKEA 355434), 1 existujúci LIVE kandidát reverified (AGEL Lab), 1 stale/ambiguous IKEA detail vyradený z promotion cesty. Canonical list membership má prednosť pred samotnou dostupnosťou starej localized detail URL.
-- **LinkedIn:** verejná indexácia `limited`; fresh query vykonaný, bez nového promotion-grade full-detail hitu.
-- **Worki:** fresh query vykonaný; konkrétny C-driver výsledok je mimo vodič-B profilu, bez promotion.
-- **Kariera/Zoznam:** fresh query vykonaný; full-remote Hungarian-market administratíva je explicitne neaktívna a zároveň jazykovo nevhodná.
+- Fresh/adjacent kandidáti: **11**; persisted LIVE promotions: **0**; existujúci LIVE reverified: **1**; promotion-ready mimo LIVE zápisu: **2**.
+- **Profesia:** 3 relevantné/adjacent výsledky. Trenujeme O5349827 je nový board ID pre rovnaký title+company už v LIVE, preto reverified bez duplicity. ABB technická podpora predaja padá na B2 AJ a elektrotechnicko/power požiadavkách.
+- **Direct company careers / ATS:** Hemmersbach 19971 je aktívny canonical kandidát s Apply now; IKEA 355434 ostáva aktívny canonical customer-support kandidát.
+- **LinkedIn:** fresh Bratislava support/e-commerce indexing vykonaný; Hemmersbach canonical potvrdený, ABB penalizované pre B2/technické requirements.
+- **Worki:** fresh BA admin/technical/e-shop query vykonaný; bez nového promotion-grade hitu.
+- **Kariera/Zoznam:** fresh BA admin/customer-support/e-shop query vykonaný; bez nového promotion-grade hitu.
 - **Brigada.sk:** fresh BA admin/customer-support/e-shop query vykonaný; 0 vhodných konkrétnych fresh hitov.
-- **Pretlak:** fresh Bratislava/remote WordPress/e-commerce/content/support query vykonaný; 0 promotion-grade hitov.
-- **StartupJobs:** fresh remote e-commerce/customer-support query vykonaný; bez jasne Slovakia-executable promotion-grade výsledku.
-- **WordPress Jobs:** fresh WordPress/WooCommerce support/product-admin query vykonaný; bez vhodného non-hard-development kandidáta.
-- **Upwork:** fresh WooCommerce product-listing/e-commerce VA query vykonaný; bez nového výsledku silnejšieho než už evidované kandidáty.
-- **Reddit/WordPress komunity:** 2 relevantné staršie hiring/adjacent výsledky. Júlový WooCommerce content-assistant post je funkčne silný, ale bez nového potvrdenia hiring aktivity je príliš starý na fresh promotion; developer-heavy role padajú na hard-development/region gate.
+- **Pretlak:** fresh Bratislava/remote WordPress/WooCommerce/e-commerce/support query vykonaný; 0 promotion-grade hitov.
+- **StartupJobs:** fresh remote e-commerce/customer-support/WordPress query vykonaný; bez jasne Slovakia-executable promotion-grade výsledku.
+- **WordPress Jobs:** fresh WordPress/WooCommerce support/content query vykonaný; bez vhodného non-hard-development kandidáta.
+- **Upwork:** 7 relevantných/adjacent e-commerce VA/product-listing výsledkov; 0 promoted. Hlavné rejecty: príliš nízky fixed budget, existing hire/interview, proposal saturation alebo silná written/spoken English záťaž.
+- **Reddit/WordPress komunity:** fresh verejné výsledky sú prevažne FOR HIRE/open-to-work self-promotion, nie konkrétny hiring dopyt.
 - **Facebook verejné skupiny:** **0 verified hits**, stav `limited`; bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nepridáva. Authenticated Nexus/local ingestion ostáva backlog a nebol spustený.
 - Fail-closed: `jobs-data.json` zostal na **56 LIVE položkách**, bez poklesu feedu alebo category loss.
 - LIVE mix zostáva **Profesia-lineage 50,0 % / non-Profesia 50,0 %**.
 
 ## Backlog rozvoja
-- **Canonical vacancy-list membership gate** — pred promotion overiť, či individuálny ATS detail stále patrí do aktuálneho employer/location job listu alebo má iný explicitný active/apply signál. Rieši stale localized detail stránky, ktoré ostanú dostupné po vyradení vacancy zo zoznamu.
-- **Same-employer sibling role pivot** — keď high-fit rola vyzerá stale/inactive/ambiguous, okamžite prehľadať aktuálne sibling roly toho istého zamestnávateľa v rovnakej funkčnej family. V tomto behu tak bol namiesto opakovaného stale checku IKEA 354106 nájdený aktuálny a silnejší IKEA 355434.
-- **Canonical detail recheck budget allocator** — rezervovať pevnú časť každého behu na otvorenie full canonical detailov najsilnejších category/snippet hitov, aby atraktívne lokálne roly nezostávali opakovane iba „neoverené“, kým celý čas spotrebuje broad discovery.
-- **Application response-window decay tracker** — odhadovať, ako rýchlo sa zatvára reálne okno na reakciu podľa veku inzerátu, recruiter/client aktivity, proposal/interview countov a explicitných deadline; fresh high-fit ponuky tak dostať dopredu ešte pred saturáciou.
-- **Effective compensation normalizer** — mesačnú mzdu, hodinové brigády a IČO/freelance budget prepočítať na porovnateľnú efektívnu hodinovú hodnotu po známych fixných hodinách, platform fee a základnom commute burden.
+- **Same-title/company refresh dedupe** — keď firma republikuje tú istú rolu pod novým job-board ID, zachovať existujúce stabilné LIVE ID a obnoviť evidence/verifiedAt/publishedAt namiesto vytvorenia duplicity.
+- **Freelance effective-pay floor** — pri remote zákazkách prepočítať fixed budget na realistickú hodinovku po odhade hodín, platform fee a komunikačnom overhead; funkčne silné, ale ekonomicky slabé zákazky automaticky prudko penalizovať.
+- **Canonical vacancy-list membership gate** — pred promotion overiť, či individuálny ATS detail stále patrí do aktuálneho employer/location job listu alebo má iný explicitný active/apply signál.
+- **Same-employer sibling role pivot** — keď high-fit rola vyzerá stale/inactive/ambiguous, okamžite prehľadať aktuálne sibling roly toho istého zamestnávateľa v rovnakej funkčnej family.
+- **Canonical detail recheck budget allocator** — rezervovať pevnú časť každého behu na otvorenie full canonical detailov najsilnejších category/snippet hitov.
+- **Application response-window decay tracker** — odhadovať, ako rýchlo sa zatvára reálne okno na reakciu podľa veku inzerátu, recruiter/client aktivity, proposal/interview countov a deadline.
+- **Effective compensation normalizer** — mesačnú mzdu, hodinové brigády a IČO/freelance budget prepočítať na porovnateľnú efektívnu hodinovú hodnotu.
 - **Company contact route enrichment** — pri high-fit ponuke zachytiť najrýchlejší overený spôsob reakcie: recruiter, hiring e-mail, priamy ATS formulár alebo firemný kontakt.
-- **Post-write promotion round-trip verification** — po každom zápise promotion okamžite znovu načítať canonical `jobs-data.json` a overiť validné JSON, očakávaný count delta, prítomnosť všetkých nových stable ID a neprítomnosť zmien zamknutých súborov.
-- **Salary source-conflict resolver** — pri rozdielnej mzde medzi canonical detailom, mirrorom a category/index výsledkom držať autoritatívnu full-detail hodnotu, uložiť konflikt a naplánovať recheck.
-- **Evidence surface quality score** — pri každom discovery hite evidovať, či ide o canonical detail, plný job-board detail, indexed snippet alebo category-only dôkaz.
-- **Transactional promotion staging manifest** — promotion-ready kandidáta pred zápisom do `jobs-data.json` uložiť so stable ID, canonical URL a checksumom required fields do staging manifestu.
-- **Promotion-ready aging alert** — pri high-fit kandidátovi evidovať počet po sebe idúcich behov, počas ktorých zostáva promotion-ready, ale nie LIVE; po limite vynútiť promote alebo explicitný blocker.
-- **Primary-source escalation queue** — ak high-fit kandidát príde cez mirror/job board, okamžite ho zaradiť do fronty na dohľadanie canonical employer zdroja ešte v tom istom behu.
+- **Post-write promotion round-trip verification** — po každom zápise promotion znovu načítať canonical `jobs-data.json` a overiť validné JSON, count delta a stable ID.
+- **Salary source-conflict resolver** — pri rozdielnej mzde medzi canonical detailom, mirrorom a category/index výsledkom držať autoritatívnu full-detail hodnotu a naplánovať recheck.
+- **Evidence surface quality score** — evidovať, či ide o canonical detail, plný job-board detail, indexed snippet alebo category-only dôkaz.
+- **Transactional promotion staging manifest** — promotion-ready kandidáta pred zápisom uložiť so stable ID, canonical URL a checksumom required fields.
+- **Promotion-ready aging alert** — pri high-fit kandidátovi evidovať počet po sebe idúcich behov, počas ktorých zostáva promotion-ready, ale nie LIVE.
+- **Primary-source escalation queue** — ak high-fit kandidát príde cez mirror/job board, okamžite dohľadať canonical employer zdroj.
 - **Remote-country allowlist extractor** — z remote ponúk extrahovať skutočný country/region allowlist a oddeliť ho od marketingového štítku `Remote`.
 - **Cross-border contract feasibility gate** — pri zahraničných remote rolách overiť, či pracovný/DPP/B2B model možno prakticky uzavrieť s pracovníkom zo Slovenska.
 - **Compound shift-burden score** — spojiť 24/7 prevádzku, trojzmennosť, nočné, víkendy a povinný onsite do jedného burden signálu.
