@@ -1,77 +1,78 @@
 {
   "schemaVersion": 8,
-  "updatedAt": "2026-09-14T08:58:00+02:00",
+  "updatedAt": "2026-09-14T09:56:14+02:00",
   "runSummary": {
-    "familiesChecked": 7,
-    "freshPromoted": 1,
-    "freshCandidates": 9,
-    "existingReverified": 2,
-    "existingReverifiedEligible": 2,
+    "familiesChecked": 12,
+    "freshPromoted": 0,
+    "promotionReady": 1,
+    "freshCandidates": 8,
+    "existingReverified": 1,
+    "existingReverifiedEligible": 1,
     "existingQuarantined": 1,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-14T08:58:00+02:00",
-    "sourceVerificationAt": "2026-09-14T08:58:00+02:00",
+    "contentChangedAt": "2026-09-14T09:56:14+02:00",
+    "sourceVerificationAt": "2026-09-14T09:56:14+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification and link evidence. Content age and source-verification age are separate; touching updatedAt alone never makes a job fresh.",
-    "note": "Real 14.9.2026 08:58 sweep across Profesia/Práca za rohom, direct company careers, IKEA careers, Worki, Kariera/Zoznam, LinkedIn public indexing and Bratislava local mirrors. One new candidate cleared the full promotion gate: IKEA Bratislava customer relations (official active detail, no foreign-language hard gate, strong complaints/customer-service fit). PSS Call centrum and SUPTel dispatch administration were re-opened and confirmed active. Brightpick Remote technik was explicitly found inactive on Kariera despite fresh resurfacing on other mirrors and remains fail-closed. ÚNMS network specialist was rejected for intermediate English and scope mismatch; IKEA Picker was rejected for physical burden."
+    "note": "Real 14.9.2026 09:56 sweep across 12 source families: Profesia, direct company careers/public ATS, LinkedIn public jobs indexing, Worki, Kariera/Zoznam, Brigada.sk, Pretlak, StartupJobs, WordPress Jobs, Upwork, Reddit/WordPress communities and publicly indexed Facebook groups. Strongest new verified candidate is IKEA Bratislava contact centre / after-sales service (job ID 355434): active on IKEA Bratislava location listing, full-time, partial home office after onboarding, no experience required, English only an advantage, customer support/reklamacie scope. It is promotion-ready but was not persisted into jobs-data.json in this run because the available writer only supports complete-file replacement and the safe canonical feed could not be transformed transactionally without reconstructing all 56 records. Existing AGEL Lab admin-tech support remains active on canonical AGEL careers. IKEA job 354106 still has live localized detail pages but is absent from the current Bratislava location job list, so it is treated as stale/ambiguous and not promoted. Facebook produced 0 verified direct-post hits."
   },
   "developmentChanges": [
     {
-      "id": "ats-source-id-expansion",
-      "title": "Stable source-job IDs for IKEA and Nalgoo ATS",
-      "reason": "Multilingual IKEA URLs and alternate Nalgoo/company URLs can represent the same vacancy. Stable source keys now deduplicate those variants before fuzzy company/title matching."
+      "id": "canonical-list-membership-gate",
+      "title": "Canonical vacancy-list membership gate",
+      "reason": "An individual ATS detail can remain publicly reachable after a vacancy drops from the employer's current location/job listing. Promotion now requires either current list membership or another explicit active/Apply signal; this prevents stale localized detail pages from being treated as fresh vacancies."
     },
     {
-      "id": "future-publication-quarantine",
-      "title": "Future publication timestamp quarantine",
-      "reason": "A job with a publication timestamp materially in the future is now fail-closed instead of being allowed to influence freshness or ranking."
-    },
-    {
-      "id": "verification-link-evidence-drift-gate",
-      "title": "Verification vs link-evidence drift gate",
-      "reason": "Promotion-grade records are quarantined when verifiedAt is advanced more than 60 minutes beyond the last real link check, preventing freshness from being fabricated by touching only the verification timestamp."
-    },
-    {
-      "id": "evidence-surface-observability",
-      "title": "Evidence-surface health diagnostics",
-      "reason": "Feed health now reports whether eligible jobs come from canonical company details, full job-board details or unspecified evidence, making source quality measurable."
+      "id": "same-employer-sibling-role-pivot",
+      "title": "Same-employer sibling role pivot",
+      "reason": "When a promising role is stale, inactive or ambiguous, immediately scan the same employer's currently listed sibling roles in the same functional family. This surfaced IKEA job 355434, a stronger current customer-support fit, instead of repeatedly rechecking stale job 354106."
     }
   ],
   "sources": [
     {
-      "name": "Profesia / Práca za rohom",
-      "family": "profesia-pzr",
-      "status": "ok",
-      "hits": 5,
+      "name": "Profesia",
+      "family": "profesia",
+      "status": "checked",
+      "hits": 2,
       "added": 0,
-      "reverified": 1,
-      "note": "Fresh Bratislava IT/admin/support categories checked. SUPTel full detail still offers response and was reverified. ÚNMS is fresh but requires intermediate English; Brightpick appears fresh on a mirror but conflicts with explicit inactive status on Kariera."
+      "reverified": 0,
+      "rejectedLanguage": 0,
+      "rejectedInactive": 0,
+      "rejectedDuplicate": 0,
+      "rejectedLocation": 2,
+      "note": "Fresh public-index search was executed for Bratislava admin/support/IT. Returned concrete indexed examples were outside the BA-area gate or required specialized qualification; no new promotion-grade BA/remote candidate was added."
     },
     {
       "name": "Direct company careers / public ATS",
       "family": "direct-company",
       "status": "ok",
-      "hits": 3,
-      "added": 1,
+      "hits": 4,
+      "added": 0,
+      "promotionReady": 1,
       "reverified": 1,
-      "note": "PSS canonical careers confirms Call centrum active with home-office option. IKEA official careers confirms customer-relations role active and accepting applications; promoted as a new high-confidence match."
+      "rejectedLanguage": 0,
+      "rejectedInactive": 1,
+      "rejectedDuplicate": 0,
+      "rejectedLocation": 0,
+      "note": "IKEA Bratislava current location listing shows job 355434 Contact Centre / after-sales service as active; detail confirms partial home office after onboarding, no required prior practice and English only as an advantage. Existing AGEL Lab admin-tech role was reverified active. IKEA job 354106 detail remains reachable in localized variants but is absent from the current Bratislava job list and is therefore treated as stale/ambiguous rather than promoted."
     },
     {
-      "name": "IKEA Careers",
-      "family": "ikea",
-      "status": "ok",
-      "hits": 3,
-      "added": 1,
+      "name": "LinkedIn Jobs public indexing",
+      "family": "linkedin",
+      "status": "limited",
+      "hits": 0,
+      "added": 0,
       "reverified": 0,
-      "note": "Customer Relations role 354106 is active on official IKEA careers and fits complaints/customer support. Picker role is active but rejected for manual handling/pallet/loading burden."
+      "note": "Fresh Bratislava e-commerce/support/admin query executed; public indexing returned no stronger promotion-grade full-detail hit in this run."
     },
     {
       "name": "Worki.sk",
       "family": "worki",
       "status": "checked",
-      "hits": 4,
+      "hits": 1,
       "added": 0,
       "reverified": 0,
-      "note": "Fresh Bratislava results were dominated by financial-sales/manager offers with weak guaranteed-pay clarity or poor profile alignment; none promoted."
+      "rejectedLocation": 0,
+      "note": "Fresh Bratislava admin/technical/e-shop search executed. Indexed concrete result was a C-driver role and therefore outside the target B-driver profile; no promotion."
     },
     {
       "name": "Kariera.sk / Zoznam",
@@ -80,25 +81,82 @@
       "hits": 2,
       "added": 0,
       "reverified": 0,
-      "note": "Brightpick canonical mirror explicitly says the offer is inactive; negative canonical status overrides fresh resurfacing elsewhere."
+      "rejectedInactive": 1,
+      "rejectedLanguage": 1,
+      "note": "Fresh admin/customer-support search executed. A full-remote Hungarian-market assistant was explicitly inactive and also market-language mismatched; category results produced no stronger verified candidate."
     },
     {
-      "name": "LinkedIn public indexing",
-      "family": "linkedin",
-      "status": "limited",
-      "hits": 1,
+      "name": "Brigada.sk",
+      "family": "brigada-sk",
+      "status": "checked",
+      "hits": 0,
       "added": 0,
       "reverified": 0,
-      "note": "Public indexing surfaced no stronger new promotion-grade Bratislava admin/e-commerce/support vacancy in this run."
+      "note": "Fresh Bratislava admin/customer-support/e-shop brigade query executed; no concrete promotion-grade public result surfaced."
     },
     {
-      "name": "Local public mirrors",
-      "family": "local-mirrors",
+      "name": "Pretlak",
+      "family": "pretlak",
       "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "note": "Fresh Bratislava/remote WordPress/e-commerce/content/support query executed; no new non-hard-development promotion-grade hit surfaced."
+    },
+    {
+      "name": "StartupJobs",
+      "family": "startupjobs",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "note": "Fresh remote e-commerce/customer-support query executed; no clearly Slovakia-executable promotion-grade result surfaced."
+    },
+    {
+      "name": "WordPress Jobs",
+      "family": "wordpress-jobs",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "note": "Fresh WordPress/WooCommerce support/product-admin query executed; no suitable non-hard-development vacancy surfaced."
+    },
+    {
+      "name": "Upwork",
+      "family": "upwork",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "reverified": 0,
+      "note": "Fresh WooCommerce product-listing / e-commerce VA query executed; no new public-index result stronger than the already tracked Upwork candidates was verified."
+    },
+    {
+      "name": "Reddit / WordPress communities",
+      "family": "reddit-wordpress",
+      "status": "limited",
       "hits": 2,
       "added": 0,
       "reverified": 0,
-      "note": "Used only as secondary status evidence. Mirror freshness never overrides a canonical inactive result or hard-language/physical gate."
+      "rejectedInactive": 2,
+      "note": "Public search surfaced an older July WordPress/WooCommerce content-assistant hiring thread and older developer-heavy posts. The content-assistant thread is strong functionally but too old to treat as a fresh active vacancy without new hiring confirmation, so it was not promoted."
+    },
+    {
+      "name": "Publicly indexed Facebook groups",
+      "family": "facebook-public",
+      "status": "limited",
+      "hits": 0,
+      "verifiedHits": 0,
+      "added": 0,
+      "reverified": 0,
+      "note": "0 verified hits. Public indexing did not expose a concrete current hiring post with a direct verifiable Facebook URL. Authenticated Nexus/local ingestion remains backlog only and was not started."
     }
-  ]
+  ],
+  "liveMix": {
+    "total": 56,
+    "profesiaLineage": 28,
+    "profesiaLineagePct": 50.0,
+    "nonProfesia": 28,
+    "nonProfesiaPct": 50.0,
+    "note": "No LIVE deletion was performed. Mix retained from the canonical 56-item feed because no safe jobs-data write was executed in this run."
+  }
 }
