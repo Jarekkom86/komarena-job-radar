@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 14. 9. 2026 22:40 CEST
+Aktualizované: 15. 9. 2026 00:11 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -52,29 +52,34 @@ Aktualizované: 14. 9. 2026 22:40 CEST
 - **Hemmersbach — Onsite Technician L1 Bratislava**, canonical Job-Id **19971**, full-time Bratislava. Predchádzajúce canonical overenie potvrdilo aktívny detail s Apply now. `locationEligibility: ba-area`.
 - **Upwork — Website & SEO Management 2026 – WooCommerce**, worldwide remote, **15–30 USD/h**, <30 h/týždeň, 6+ mesiacov. WooCommerce store/product management, plugin maintenance, on-page SEO a reporting; nejde o hard-development. 20–50 proposals ostáva výrazná pravdepodobnostná penalizácia. `locationEligibility: remote-ok`.
 - **IKEA — Pracovník/čka kontaktného centra IKEA, popredajný servis**, Bratislava. Kandidát zostáva zachovaný z predchádzajúceho evidence setu. `locationEligibility: ba-area`.
-- **IKEA — Pracovník/čka na oddelení Služby zákazníkom**, Bratislava, canonical job **354106**, zverejnené **21.8.2026**. Canonical detail bol v tomto behu znovu verejne čitateľný s aktívnym Apply signálom. `locationEligibility: ba-area`.
+- **IKEA — Pracovník/čka na oddelení Služby zákazníkom**, Bratislava, canonical job **354106**, zverejnené **21.8.2026**. Kandidát zostáva zachovaný z predchádzajúceho canonical evidence setu. `locationEligibility: ba-area`.
 
 ### Verification-needed mimo LIVE
-- **Dotypos SK — Pracovník kontaktného centra (zákazníckeho servisu)**, Bratislava, Kariera index uvádza **od 1 500 EUR/mes.** Funkčne relevantné, ale v tomto behu bol dostupný iba category/index dôkaz; pred promotion treba full detailom overiť jazyky, požiadavky a aktuálnu aktivitu.
+- **Dotypos SK — Pracovník kontaktného centra (zákazníckeho servisu)**, Bratislava, Kariera index uvádza **od 1 500 EUR/mes.** Funkčne relevantné, ale dostupný bol iba category/index dôkaz; pred promotion treba full detailom overiť jazyky, požiadavky a aktuálnu aktivitu.
+- **Siemens Healthineers — ServiceNow Sense Support Agent (m/f/d) - Hybrid - Bratislava/Žilina/Košice** — čerstvý LinkedIn index hit približne 20 hodín starý. Bratislava spĺňa lokalitný gate, ale bez full detailu nie je overená požadovaná angličtina, presný hybrid režim ani technická náročnosť; preto `verification-needed`, nie LIVE.
 
-## Source audit — 14. 9. 2026 22:40 CEST
-- Reálne prehľadaných **12 source families**: Profesia; priame firemné career/public ATS; LinkedIn Jobs; Worki; Kariera.sk/Zoznam; Brigada.sk; Služby zamestnanosti; Pretlak/StartupJobs/WordPress Jobs; Upwork/Freelancermap; verejne indexované Reddit/WordPress komunity; WordPress public community index; verejne indexované Facebook skupiny.
-- Fresh/adjacent kandidáti: **9**; persisted LIVE promotions: **0**; existujúce/high-fit kandidáty reverified: **2**; promotion-ready mimo LIVE: **10**.
+## Source audit — 15. 9. 2026 00:11 CEST
+- Reálne prehľadaných **13 source families**: Profesia; priame firemné career/public ATS; LinkedIn Jobs; Worki; Kariera.sk/Zoznam; Brigada.sk; Pretlak; StartupJobs; Upwork; Freelancermap; WordPress public jobs/index; verejne indexované Reddit/WordPress komunity; verejne indexované Facebook skupiny.
+- Fresh/adjacent kandidáti: **5**; persisted LIVE promotions: **0**; existujúce/high-fit kandidáty reverified: **1**; promotion-ready mimo LIVE: **10**.
 - **Profesia:** fresh BA WordPress/WooCommerce/admin/IT-support/customer-care discovery vykonaný; bez nového distinct promotion-grade výsledku.
-- **Direct company careers / ATS:** IKEA job 354106 bol znovu verejne čitateľný a aktívny; bez silnejšieho nového distinct kandidáta.
-- **LinkedIn:** Wolt Support Associate full-time aj part-time v Bratislave sú aktuálne indexované, ale obe vyžadujú minimálne B2 angličtinu; bez promotion.
-- **Worki:** fresh BA admin/technical discovery vykonaný; verejné admin výsledky boli stale/filled alebo slabé.
-- **Kariera/Zoznam:** Dotypos SK kontaktné centrum Bratislava od 1 500 EUR/mes. je verification-needed; iba category-level evidence, nie LIVE.
-- **Brigada.sk:** fresh BA admin/e-shop/customer-support discovery vykonaný; bez nového overeného promotion-grade hitu.
-- **Služby zamestnanosti:** aktuálny BA hit bol mimo rankingového profilu; bez promotion.
-- **Pretlak/StartupJobs/WordPress Jobs:** fresh WordPress/WooCommerce/remote discovery vykonaný; bez distinct promotion-grade hitu.
-- **Upwork/Freelancermap:** najsilnejší nový hit je **Test new WordPress plugin with live shop**, 50 USD fixed, worldwide remote, presná zhoda na existujúci živý KomArena WooCommerce shop; kvôli saturácii zostáva promotion-ready.
-- **Reddit/WordPress komunity:** bez konkrétneho vhodného klientského dopytu pre remote zo Slovenska.
+- **Direct company careers / ATS:** fresh BA support/e-commerce discovery vykonaný; bez nového canonical detailu, ktorý by prekonal aktuálne TOP položky.
+- **LinkedIn:** Wolt Support Associate full-time aj part-time v Bratislave ostávajú aktuálne, ale vyžadujú minimálne B2 angličtinu. Fresh Siemens Healthineers ServiceNow support hit je iba index-level a zostáva verification-needed.
+- **Worki:** fresh BA admin/technical/e-shop discovery vykonaný; bez nového overeného promotion-grade hitu.
+- **Kariera/Zoznam:** Dotypos SK kontaktné centrum Bratislava od 1 500 EUR/mes. zostáva verification-needed; iba category/index evidence.
+- **Brigada.sk:** fresh BA admin/customer-support discovery vykonaný; bez nového overeného promotion-grade hitu.
+- **Pretlak:** fresh BA/remote WordPress/e-commerce/support discovery vykonaný; bez distinct vhodného výsledku.
+- **StartupJobs:** Sloneek Senior/Lead Backend Engineer, remote-first, 4 500–6 000 EUR, bol vyradený ako senior hard-development/AI backend mismatch.
+- **Upwork:** WooCommerce Data Entry Specialist je stále verejne čitateľný, worldwide remote, 35 USD fixed, 20–50 proposals. Keyword fit je dobrý, ale ekonomika a saturácia sú slabé; bez promotion.
+- **Freelancermap:** verejný výsledok bol profil freelancera, nie klientsky dopyt; 0 verified hiring hits.
+- **WordPress public jobs/index:** bez nového vhodného aktuálneho dopytu.
+- **Reddit/WordPress komunity:** aktuálne výsledky boli self-promo freelancerov, nie konkrétne klientské dopyty.
 - **Facebook verejné skupiny:** **0 verified hits**, stav `limited`; bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nepridáva. Authenticated Nexus/local ingestion ostáva backlog a nebol spustený.
 - Fail-closed: existujúcich **56 LIVE** položiek ostáva nedotknutých; žiadny feed drop ani category loss.
 - LIVE mix zostáva **Profesia-lineage 50,0 % / non-Profesia 50,0 %**.
 
 ## Backlog rozvoja
+- **Index-only candidate evidence cap** — kandidát zo search/category indexu nesmie dostať vysokú confidence ani promotion, kým full canonical detail nepotvrdí jazyk, lokalitu, pracovný režim a aktívny application signál.
+- **Low-budget freelance auto-suppress** — pri fixed-price freelance ponukách spojiť budget, proposal count a odhad rozsahu do automatického low-value filtra, aby WooCommerce keyword match nezahlcoval review slabými zákazkami.
 - **Prerequisite asset-match score** — porovnávať neobvyklé podmienky ponuky s aktívami, ktoré už kandidát reálne má alebo prevádzkuje (živý WooCommerce shop, WordPress admin, Home Assistant lab, vozidlo). Takto sa zvýraznia nízko-frikčné príležitosti, ktoré čisté keyword skóre prehliadne.
 - **Category-index detail escalation SLA** — category/snippet-only kandidáta ukladať ako `verification-needed` s krátkym recheck SLA; promotion povoliť až po full detaile, ktorý potvrdí jazyk, požiadavky, aktivitu a lokalitu.
 - **Source-family evidence TTL** — nastaviť rozdielny freshness TTL podľa source family a evidence surface; rýchlo meniace sa job boardy/freelance marketplace recheckovať skôr než stabilné employer pages.
