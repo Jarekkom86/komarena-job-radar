@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 14. 9. 2026 16:36 CEST
+Aktualizované: 14. 9. 2026 18:49 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -48,23 +48,22 @@ Aktualizované: 14. 9. 2026 16:36 CEST
 - **ATALIAN SK — Facility koordinátor / Administratívna podpora FM**, Einsteinova, Petržalka, **1 540 EUR základ + 200 EUR variabilná zložka**, nástup 1.10.2026. Veľmi dobrý mix administratívy a technického troubleshooting/koordinácie: CAFM Chastia, servisné zásahy, technická dokumentácia, dodávatelia, preventívna údržba. Vhodné aj pre absolventa; §21/22 a facility prax sú iba výhodou; bez verejne uvedeného cudzieho jazyka. `locationEligibility: ba-area`.
 - **DHL Group — Administratívna podpora transportného tímu, 4 hodiny denne**, Diaľničná cesta, Senec, **804,50 EUR/mes. + 10 % mesačný bonus**, skrátený úväzok. Skenovanie faktúr, archivácia, supplier onboarding dokumenty, zakladanie dodávateľov do systému, pošta a kompletizácia prepravných dokumentov. `locationEligibility: ba-area`.
 - **Hemmersbach — Onsite Technician L1 Bratislava**, canonical Job-Id **19971**, full-time Bratislava. Predchádzajúce canonical overenie potvrdilo aktívny detail s Apply now; v tomto behu sa čerstvo indexovala iba hlavná Hemmersbach career surface, preto sa nepredstiera nové job-detail overenie. `locationEligibility: ba-area`.
-- **Upwork — Website & SEO Management 2026 – WooCommerce**, worldwide remote, **15–30 USD/h**, <30 h/týždeň, 6+ mesiacov. WooCommerce store/product management, plugin maintenance, on-page SEO a reporting; nejde o hard-development. Existujúce evidence ostáva zachované; v tomto behu sa čerstvo neoveroval tento konkrétny detail. `locationEligibility: remote-ok`.
+- **Upwork — Website & SEO Management 2026 – WooCommerce**, worldwide remote, **15–30 USD/h**, <30 h/týždeň, 6+ mesiacov. WooCommerce store/product management, plugin maintenance, on-page SEO a reporting; nejde o hard-development. Fresh discovery ho znovu našlo, ale 20–50 proposals ostáva výrazná pravdepodobnostná penalizácia. `locationEligibility: remote-ok`.
 - **IKEA — Pracovník/čka kontaktného centra IKEA, popredajný servis**, Bratislava. Kandidát zostáva zachovaný z predchádzajúceho evidence setu. `locationEligibility: ba-area`.
-- **IKEA — Pracovník/čka na oddelení Služby zákazníkom**, Bratislava, canonical job **354106**, zverejnené **21.8.2026**, v tomto behu znovu overené ako aktívne `Apply`. Riešenie potrieb zákazníkov, poskytovanie informácií o službách a produktoch, práca s počítačom; v overenom canonical detaile nie je uvedená povinná angličtina ani iný cudzí jazyk. Retail/shift charakter ju drží pod čistým back-office, ale je to silný lokálny customer-care fallback. `locationEligibility: ba-area`.
+- **IKEA — Pracovník/čka na oddelení Služby zákazníkom**, Bratislava, canonical job **354106**, zverejnené **21.8.2026**. Existujúci canonical evidence set zostáva zachovaný; v tomto behu sa nepredstiera nové job-detail overenie. `locationEligibility: ba-area`.
 
-## Source audit — 14. 9. 2026 16:36 CEST
-- Reálne prehľadaných **13 source families**: Profesia; priame firemné career/public ATS; LinkedIn Jobs; Worki; Kariera.sk/Zoznam; Práca za rohom; Brigada.sk; Pretlak/StartupJobs; Upwork/Freelancer/Twine; verejne indexované Reddit/WordPress komunity; verejne indexované Facebook skupiny; IKEA direct; government cross-check.
-- Fresh/adjacent kandidáti: **14**; persisted LIVE promotions: **0**; existujúce/high-fit kandidáty reverified: **2**; promotion-ready mimo LIVE: **6**.
-- **Profesia:** Tatra Supercompute — L1 Service Desk pre AI dátové centrum, Bratislava, od 1 800 EUR. Funkčne veľmi zaujímavé, ale canonical detail výslovne vyžaduje B2 aktívnu angličtinu, profesionálne CV v angličtine a prácu v 24/7 trojzmennej prevádzke. Bez promotion.
-- **Direct company careers / ATS:** IKEA job 354106 Služby zákazníkom, Bratislava, znovu potvrdené ako aktívne `Apply`, bez viditeľnej požiadavky na cudzí jazyk.
-- **LinkedIn:** Wolt Support Associate full-time aj part-time Bratislava a SupportYourApp remote Slovakia vyžadujú minimálne B2 angličtinu; part-time Wolt je navyše študentská rola. Bez promotion.
-- **Worki:** fresh BA admin/technical/e-shop query vykonaný; bez nového distinct promotion-grade hitu.
-- **Kariera/Zoznam:** CCI Slovakia zákaznícke centrum vyzerá titulom a mzdou použiteľne, ale full detail vyžaduje C1/C2 angličtinu, ukrajinčinu, ruštinu aj slovenčinu a 6+ rokov praxe — reject. Naturzon e-shop administratíva je funkčne silná, ale onsite Poprad bez overeného remote režimu — `reject-distance`.
-- **Práca za rohom:** čerstvý BA technický/support list prehľadaný. Tatra Supercompute je tam stále označená ako hľadajúca, ale canonical požiadavky ju držia mimo promotion. Ďalšie technické roly vyžadujú špecializovanejšiu kvalifikáciu.
-- **Brigada.sk:** fresh BA admin/technical/e-shop discovery vykonaný; bez nového overeného promotion-grade hitu.
-- **Pretlak/StartupJobs:** Tipli Product Manager je full remote, ale senior/product-strategy heavy. Medevio BDR je 100 % remote, ale primárne outbound telefonický predaj. Bez promotion.
-- **Upwork/Freelancer/Twine:** WooCommerce data-entry za 35 USD fixed má 20–50 proposals; e-commerce VA za 15 USD fixed je pod ekonomickým floorom; WooCommerce product-page task už má hire/interviews a vyžaduje CSS/HTML. Bez promotion.
-- **Reddit/WordPress komunity:** verejná indexácia priniesla freelancer self-promotion, nie konkrétny hiring/client dopyt vhodný na zaradenie.
+## Source audit — 14. 9. 2026 18:49 CEST
+- Reálne prehľadaných **12 source families**: Profesia; priame firemné career/public ATS; LinkedIn Jobs; Worki; Kariera.sk/Zoznam; Brigada.sk; Pretlak/StartupJobs; Upwork; verejne indexované Reddit/WordPress komunity; verejne indexované Facebook skupiny; WordPress/WooCommerce public community index; employer cross-check.
+- Fresh/adjacent kandidáti: **9**; persisted LIVE promotions: **0**; existujúce/high-fit kandidáty reverified: **2**; promotion-ready mimo LIVE: **7**.
+- **Profesia:** fresh BA WordPress/WooCommerce/admin/IT-support/courier discovery vykonaný; bez nového distinct promotion-grade hitu.
+- **Direct company careers / ATS:** IKEA/DHL-oriented employer discovery prebehol; bez nového distinct canonical kandidáta, ktorý by prebil existujúci promotion-ready set.
+- **LinkedIn:** Wolt Support Associate full-time aj part-time Bratislava sú stále verejne indexované. Obidve roly vyžadujú profesionálnu angličtinu minimálne B2; part-time je navyše študentská rola. Bez promotion.
+- **Worki:** aktualizovaný montážnik v energetike v Bratislave 1 500–1 650 EUR je lokálne prípustný, ale ide o manuálnu výrobnú rolu mimo preferovaných trackov. Bez promotion.
+- **Kariera/Zoznam:** fresh BA admin/support discovery vykonaný; bez nového distinct kandidáta, ktorý by prešiel profilom a lokalitou.
+- **Brigada.sk:** fresh BA admin/e-shop/customer-support discovery vykonaný; bez nového overeného promotion-grade hitu.
+- **Pretlak/StartupJobs:** fresh WordPress/WooCommerce/remote discovery vykonaný; bez nového distinct promotion-grade hitu.
+- **Upwork:** sedem čerstvých WooCommerce/e-commerce výsledkov bolo skontrolovaných. Marketplace operations za 30 USD fixed je expert-scoped; WooCommerce optimization za 20 USD fixed vyžaduje PHP/JS/CSS; e-commerce VA za 15 USD a data-entry za 35 USD fixed padajú na ekonomike/saturácii; WordPress maintenance za 100 USD má 20–50 proposals a 2 interviews; WordPress management za 10 USD už má hire; backend WordPress za 1 000 USD/mes. vyžaduje deep PHP/MySQL/API. Bez promotion.
+- **Reddit/WordPress komunity:** verejná indexácia nevrátila konkrétny current hiring/client dopyt vhodný na zaradenie.
 - **Facebook verejné skupiny:** **0 verified hits**, stav `limited`; bez konkrétneho verejne overiteľného hiring postu a priameho linku sa nič nepridáva. Authenticated Nexus/local ingestion ostáva backlog a nebol spustený.
 - Fail-closed: existujúcich **56 LIVE** položiek ostáva nedotknutých; žiadny feed drop ani category loss.
 - LIVE mix zostáva **Profesia-lineage 50,0 % / non-Profesia 50,0 %**.
@@ -100,5 +99,7 @@ Aktualizované: 14. 9. 2026 16:36 CEST
 - **Application channel friction score** — evidovať náklady reakcie: účet, dlhý formulár, test, portfolio, platform fee alebo extra onboarding.
 - **Source result saturation detector** — pri opakovaní rovnakých výsledkov rotovať query vocabulary/source subcategories bez znižovania gateov.
 - **Market-language role splitter** — oddeliť všeobecný support od market-specific rolí už pri discovery.
+- **Source-query yield decay tracker** — trackovať opakované zero-yield query patterny per source family a po niekoľkých neproduktívnych behoch rotovať wording/kategórie bez znižovania kvalitatívnych gateov.
+- **Freelance client-friction score** — pri remote zákazkách spájať client history, active hires, proposal saturation, interview count a fixed-price scope do jedného win-probability signálu, aby keyword-perfect WooCommerce zákazky s nízkou praktickou šancou neprebíjali lepšie príležitosti.
 - Autentizovaný Facebook ingestion cez Nexus/local agent — backlog; automat ho sám nespúšťa.
 - Import CRM backupu, source-success analytics, publishedAt/<24h priority, commute/distance, deadline alerts, company contact enrichment, duplicate cluster report, reply probability, GitHub Actions polling a cross-device sync zostávajú platné ďalšie smery.
