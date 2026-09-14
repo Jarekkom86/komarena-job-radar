@@ -1,0 +1,79 @@
+{
+  "policyVersion": 1,
+  "name": "Role-Source Coverage Matrix",
+  "status": "active-policy",
+  "goal": "Prevent false sourcing coverage where many source families are technically checked but the highest-value role families are not actually searched across enough independent non-Profesia surfaces.",
+  "hardLocationGate": {
+    "allow": ["ba-area", "remote-ok"],
+    "reject": ["reject-distance"],
+    "quarantine": ["unknown"],
+    "remoteRule": "Count a remote result as eligible only when the role is evidenced as primarily performable from Slovakia without regular commuting to a distant city.",
+    "neverUseLocationAsRankingBonusInsteadOfGate": true
+  },
+  "roleFamilies": [
+    {
+      "id": "ecommerce-cms",
+      "examples": ["WordPress", "WooCommerce", "web admin", "e-shop admin", "product/content admin", "Shoptet", "Shopify", "Upgates"],
+      "minimumIndependentNonProfesiaFamiliesPerFullRun": 4
+    },
+    {
+      "id": "tech-support-iot",
+      "examples": ["IT support", "technical support", "smart home", "IoT", "Home Assistant", "troubleshooting", "reklamacie"],
+      "minimumIndependentNonProfesiaFamiliesPerFullRun": 4
+    },
+    {
+      "id": "admin-operations",
+      "examples": ["administrativa", "back office", "customer care", "operations", "sales support"],
+      "minimumIndependentNonProfesiaFamiliesPerFullRun": 5
+    },
+    {
+      "id": "driver-b",
+      "examples": ["vodic B", "kurier baliky", "rozvoz tovaru", "bez tachografu"],
+      "minimumIndependentNonProfesiaFamiliesPerFullRun": 3
+    },
+    {
+      "id": "warehouse-logistics",
+      "examples": ["sklad", "logistika", "expedicia", "prijem vydaj tovaru"],
+      "minimumIndependentNonProfesiaFamiliesPerFullRun": 3
+    }
+  ],
+  "preferredSourceFamilies": [
+    "official-company-careers-public-ats",
+    "LinkedIn Jobs",
+    "Worki",
+    "Brigada.sk",
+    "Pretlak",
+    "other Slovak job boards",
+    "freelance platforms",
+    "public/indexed WordPress-WooCommerce communities",
+    "public/indexed Facebook groups"
+  ],
+  "coverageRules": {
+    "oneGenericQueryDoesNotCoverMultipleRoleFamilies": true,
+    "mirrorOrRepostDoesNotCountAsIndependentFamily": true,
+    "blockedOrLimitedAccessCountsAsAttemptNotAsVerifiedHit": true,
+    "facebookRule": "Never invent Facebook coverage or offers. Public/indexed Facebook may be recorded as limited/blocked with zero verified hits when no public hiring post can be verified.",
+    "onlyEligibleUniqueCandidatesCountTowardYield": true,
+    "canonicalDedupeBeforeYieldCounting": true,
+    "preserveExplorationAcrossFamilies": true
+  },
+  "runOutput": {
+    "required": ["roleFamily", "sourceFamily", "attemptedAt", "queryFingerprint", "accessState", "rawHits", "uniqueEligibleHits", "verifiedHits"],
+    "reportUncoveredCells": true,
+    "doNotClaimFullCoverageWhenMinimumCellsAreMissing": true
+  },
+  "safety": {
+    "touchLockedUi": false,
+    "touchCrm": false,
+    "touchBaseline": false,
+    "touchBootstrap": false,
+    "rewriteExistingJobs": false,
+    "preserveStableIds": true,
+    "preserveSourceTrust": true,
+    "preserveVerifiedAt": true,
+    "preserveScoreConfidence": true,
+    "preserveLocationEligibilityAndReason": true,
+    "failClosed": true
+  },
+  "expectedBenefit": "More systematic discovery of high-fit non-Profesia roles across independent sources, especially WordPress/WooCommerce and technical-support opportunities, without expanding into distant onsite or unclear hybrid roles."
+}
