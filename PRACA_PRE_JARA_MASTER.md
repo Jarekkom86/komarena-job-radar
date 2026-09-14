@@ -1,6 +1,6 @@
 # KomArena.sk Job Radar / Práca pre Jara — MASTER
 
-Aktualizované: 14. 9. 2026 02:07 CEST
+Aktualizované: 14. 9. 2026 03:28 CEST
 
 ## Architektúra a ochrana UI
 - Aktuálny používateľský MASTER: `komarena-job-radar-v6.4.html`.
@@ -38,8 +38,13 @@ Aktualizované: 14. 9. 2026 02:07 CEST
 - `jobs-data.json.updatedAt`: **2026-09-12T22:58:46+02:00** — bez zápisu v tomto behu, pretože nevznikol nový promotion-grade unique hit.
 - Posledná persisted LIVE promotion je **Ovečkárna — Brigáda zákaznícka podpora CZ/SK**, remote zo Slovenska/práca odkiaľkoľvek, 160 Kč/h podľa Prace.cz mirroru, Po–Pi 08:00–12:00; `locationEligibility: remote-ok`.
 - **Techfun s. r. o. — Elektro-technický špecialista pre e-shop**, Kopčianska 92A, Petržalka, 1 800–2 200 EUR/mes., ostáva veľmi silný technicko-e-shop fit. Angličtina A2; vhodné aj pre absolventa; firma uvádza doučenie potrebných vecí. `locationEligibility: ba-area`.
-- **Fresh duplicate enrichment 9.9. 07:03:** ČSOB Operátor IT Service Desk-u sa objavil ako veľmi čerstvý LinkedIn company post, ale zhoduje sa s už existujúcou LIVE položkou `profesia-csob-it-service-desk-5350972`; nový záznam sa nevytvoril.
-- **MamaTataJojo, s.r.o. — Administratívny pracovník, Malacky**, score 94, zostáva LIVE.
+- **ČSOB Operátor IT Service Desk-u** bol 14. 9. 2026 03:28 znovu verejne overený cez aktuálny LinkedIn detail. Je už v LIVE ako `profesia-csob-it-service-desk-5350972`; preto nevznikol duplicitný záznam. Entry-level L1 support, Bratislava, mierne pokročilá AJ, 8 dní HO mesačne a po zaučení on-call približne 1 týždeň mesačne.
+- **TP Poland — [Remote] Technical Support with Czech & Slovak** je nový silný verification kandidát: junior support, CZ+SK C1, AJ B1, 40 PLN/h, Po–Pi 9:00–18:00, online onboarding, štart 12. 10. 2026. Napriek označeniu fully remote structured location evidence uvádza poľské vojvodstvá/Katowice a explicitne nepotvrdzuje výkon zo Slovenska; preto `locationEligibility: unknown` a bez LIVE promotion.
+- **Roche — Technical Support Specialist (Slovak & Czech language)**, Bratislava/hybrid 2 dni kancelária, je lokálne vhodný, ale scope je technicky špecializovanejší a vyžaduje angličtinu použiteľnú na medzinárodné tréningy/fóra; bez promotion.
+- **Wolt Support Associate (Part Time)** ostáva student-targeted a vyžaduje večery/víkendy; bez promotion.
+- **SupportYourApp remote support** zostáva mimo ranking kvôli C1/fluent English a pri technickej variante aj VPS/Windows Server/trading-platform scope.
+- **Upwork — Ecommerce VA / bulk product upload Shopify/Etsy/WooCommerce** má dobrý skill fit, ale 15 USD fixed, Expert level a konverznú neistotu; bez promotion.
+- **Upwork — WordPress/WooCommerce Mobile UX, Speed and Checkout Optimization** je hard-development/optimization scope (CSS/PHP/JS) za 20 USD fixed; reject.
 - Silný promotion-ready kandidát: **ReMar Slovakia — Administratívny pracovník / pracovníčka e-shopu – objednávky a zákaznícky servis**, Panónska cesta 4, Petržalka, 1 200 EUR + 200 EUR variabilne po skúšobnej dobe, Po–Pi 9:30–18:00. `locationEligibility: ba-area`.
 - Promotion-ready: **NAY a.s. — Reklamačný/á technik/čka, Centrálny sklad Senec**; reklamácie + procesy + práca s tovarom, `locationEligibility: ba-area`.
 - Silný flexibilný kandidát: **DHL Group — administratívna podpora transportného tímu, Senec**, 4 h denne, 804,50 EUR + 10 % mesačný bonus; `locationEligibility: ba-area`.
@@ -79,18 +84,22 @@ Aktualizované: 14. 9. 2026 02:07 CEST
 - Fresh freelance reject 14.9. 01:55: **Upwork — Data Entry Specialist for WooCommerce**, Worldwide, 35 USD fixed, 20–50 proposals; skill fit je dobrý, ale value/conversion gate neprešiel.
 - Fresh reject 14.9. 02:07: **Tatra Supercompute — IT Service Desk špecialista/špecialistka pre AI dátové centrum**, Bratislava, od 1 800 EUR/mes., nástup 1.11.2026; canonical detail explicitne vyžaduje AJ B2, anglické CV a prezenčný režim 24/7 v trojzmennej prevádzke, preto bez LIVE promotion.
 
-## Source audit — 14. 9. 2026 02:07 CEST
+## Source audit — 14. 9. 2026 03:28 CEST
 - Reálne prehľadaných **11 source families**: Profesia; priame firemné career/public ATS; LinkedIn Jobs; Worki; Brigada.sk; Kariera.sk/Zoznam; Pretlak; StartupJobs; Upwork; verejne indexované Reddit/WordPress komunity; verejne indexované Facebook skupiny.
-- Fresh/adjacent kandidáti: **8**; LIVE promotions: **0**.
-- Profesia: Tatra Supercompute L1 Service Desk je technicky relevantný a lokálne BA, ale failuje na **B2 English + English CV + 24/7 trojzmennej onsite prevádzke**.
-- LinkedIn: Wolt Support Associate zostáva lokálny, ale minimum AJ B2 + zmeny; part-time varianta je student-targeted. Ďalšie market-support výsledky vyžadujú cudzie jazyky.
-- Worki: starší STU 50 % admin hit nie je fresh a ekonomicky je slabší; bez promotion.
-- Upwork: WooCommerce/data-entry výsledky mali nízky fixed budget, 20–50 proposals, existujúci hire, portfolio/hard-development burden alebo nízky očakávaný conversion rate.
+- Fresh/adjacent kandidáti: **8**; LIVE promotions: **0**; existujúce LIVE položky fresh reverified: **1**.
+- LinkedIn/direct-company: **ČSOB IT Service Desk** bol znovu overený ako aktívny a zostáva LIVE pod existujúcim stabilným ID; nevytvára sa duplicate.
+- Nový cezhraničný remote kandidát **TP Poland — Technical Support CZ/SK**: 40 PLN/h, AJ B1, junior, Po–Pi 9–18, fully remote label. Structured remote regions však pokrývajú Poľsko a nepotvrdzujú právne/prevádzkovo výkon zo Slovenska; preto `locationEligibility: unknown`, bez promotion.
+- Roche Technical Support Bratislava/hybrid: lokálne vhodné, ale silnejšia AJ na zahraničné tréningy a špecializovanejší diagnostický scope.
+- Wolt part-time: student-targeted + večery/víkendy; bez promotion.
+- SupportYourApp: C1/fluent English; bez promotion.
+- Upwork: 2 relevantné výsledky, ale low fixed budget/Expert alebo hard-development scope; bez promotion.
 - Reddit/WordPress komunity: **0 verified hiring hits** vhodných na promotion.
 - Facebook verejné skupiny: **0 verified hits**, stav `limited`; bez konkrétneho verejne overiteľného postu a priameho linku sa nič nepridáva. Authenticated Nexus/local ingestion ostáva backlog a nebol spustený.
 - LIVE feed zostáva **52**; Profesia **25 = 48,1 %**, non-Profesia **27 = 51,9 %**. Fail-closed: nič sa nemaže len preto, že to aktuálny sweep nenašiel.
 
 ## Backlog rozvoja
+- **Remote-country allowlist extractor** — z remote ponúk extrahovať skutočný country/region allowlist a oddeliť ho od marketingového štítku „Remote“; ak structured locations uvádzajú iba cudziu krajinu, ponechať `locationEligibility: unknown`, kým nie je výslovne potvrdený výkon zo Slovenska.
+- **Cross-border contract feasibility gate** — pri zahraničných remote rolách overiť, či ponúkaný pracovný/mandátny/DPP/B2B model možno legálne a prakticky uzavrieť s pracovníkom zo Slovenska ešte pred `remote-ok` promotion.
 - **Compound shift-burden score** — spojiť 24/7 prevádzku, trojzmennosť, nočné, víkendy a povinnú onsite prítomnosť do jedného burden signálu, aby technicky atraktívna support rola neprebila udržateľnejšiu dennú prácu.
 - **English application-artifact gate** — samostatne zachytiť požiadavku na CV, cover letter alebo výberové konanie v angličtine; pri A2 profile je to ďalšia conversion friction nad rámec samotného skill fitu.
 - **Application deadline confidence and urgency queue** — extrahovať explicitné closing dates oddelene od odhadovaného expiry; high-fit ponuky s potvrdeným blízkym deadline posúvať dopredu bez falošnej urgencie z mirrorov.
