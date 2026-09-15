@@ -1,38 +1,38 @@
 {
   "schemaVersion": 10,
-  "updatedAt": "2026-09-15T09:33:41+02:00",
+  "updatedAt": "2026-09-15T10:56:51+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
-    "existingReverified": 0,
+    "existingReverified": 1,
     "freshCandidates": 4,
-    "contentChangedAt": "2026-09-15T09:33:41+02:00",
-    "sourceVerificationAt": "2026-09-15T09:33:41+02:00",
+    "contentChangedAt": "2026-09-15T10:56:51+02:00",
+    "sourceVerificationAt": "2026-09-15T10:56:51+02:00",
     "freshnessWindowHours": 48,
     "stalePolicy": "Discovery age is not verification age. LIVE requires fresh full-detail/link evidence; list/search resurfacing cannot set verifiedAt.",
-    "note": "09:33 diversified sweep covered Profesia, direct-company discovery, LinkedIn, Worki, Kariera, Praca za rohom, Pretlak, Upwork, Reddit/WordPress communities and public Facebook indexing. No new candidate cleared profile/economic/activity and evidence gates, so jobs-data.json remained fail-closed and unchanged."
+    "note": "10:56 diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Pretlak, Upwork, WordPress/Reddit communities and public Facebook indexing. No new candidate cleared profile/economic/activity gates. Existing IKEA Bratislava customer-service canonical detail was reverified. jobs-data.json remained fail-closed and unchanged."
   },
   "developmentChanges": [
-    {"id":"source-query-yield-memory","title":"Source query yield memory","reason":"Persist which query patterns actually produce promotion-grade hits per source family, then rotate away from repeatedly zero-yield searches to improve hourly coverage without adding weak results."},
-    {"id":"freelance-client-spend-trust-gate","title":"Freelance client spend/trust gate","reason":"Combine client lifetime spend, hire history, active contracts and recent viewing into a trust/economic score so apparently relevant gigs from low-spend or inactive clients are deprioritized before manual review."}
+    {"id":"marketplace-hire-state-decay","title":"Marketplace hire-state decay","reason":"Automatically reduce priority when a freelance listing already shows a hire and the client has not viewed it recently; this prevents stale keyword-perfect gigs from repeatedly consuming review time."},
+    {"id":"canonical-reverification-budget","title":"Canonical reverification budget","reason":"Reserve part of each run for rechecking the strongest promotion-ready canonical links, so high-fit candidates gain fresh activity evidence instead of discovery repeatedly producing only new low-quality snippets."}
   ],
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/WooCommerce/e-shop/admin/technical-support discovery executed; no distinct promotion-grade result surfaced."},
-    {"name":"Direct company careers / public ATS","family":"direct-company","status":"ok","hits":1,"added":0,"note":"Fresh Bratislava IT-support discovery surfaced an active Erste Digital SRE/Oracle role, but it requires specialist Oracle/platform reliability engineering and is a hard-development mismatch; rejected."},
-    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-commerce/support/WordPress discovery executed; no full-detail promotion-grade result surfaced."},
-    {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-support discovery executed; no suitable verified hit surfaced."},
-    {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-support discovery executed; no new full-detail promotion-grade hit surfaced."},
-    {"name":"Praca za rohom","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support discovery executed; no new suitable hit beyond previously reviewed candidates."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/WooCommerce/technical-support/admin discovery executed; no distinct promotion-grade result surfaced."},
+    {"name":"Direct company careers / public ATS","family":"direct-company","status":"ok","hits":1,"added":0,"note":"IKEA Bratislava customer-service canonical detail job 354106 remains publicly readable with application action; existing promotion-ready candidate reverified, no duplicate added."},
+    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava IT-support/e-commerce/customer-support discovery executed; no new full-detail promotion-grade result surfaced."},
+    {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-support/e-commerce discovery executed; no suitable verified hit surfaced."},
+    {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-support/e-commerce discovery executed; no new full-detail promotion-grade hit surfaced."},
+    {"name":"Brigada.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/e-shop/IT-support brigade discovery executed; no suitable verified hit surfaced."},
     {"name":"Pretlak","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce/support discovery executed; no suitable current hit surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":3,"added":0,"note":"Worldwide remote WooCommerce/product-listing results were readable. Electronics-store VA remains strong task fit but only 3-6 USD/h; WordPress+Shopify product posting is only 7 USD fixed and client last viewed four weeks ago; French product-listing role requires persuasive French and pays 3-5 USD/h. No promotion."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":4,"added":0,"note":"Worldwide remote WooCommerce results were readable. Website & SEO Management 2026 remains the best economics at 15-30 USD/h but is three weeks old with 20-50 proposals. A newer WooCommerce setup role is 20-25 USD/h but expert-level, 50+ proposals and already hired. Other product-listing gigs were low-budget or already hired. No new promotion."},
     {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring search executed; no concrete client demand suitable for promotion surfaced."},
     {"name":"Facebook public group indexing","family":"facebook","status":"limited","hits":0,"added":0,"note":"0 verified hits. No concrete publicly verifiable hiring post with direct link surfaced; authenticated Nexus/local ingestion remains backlog only and was not started."}
   ],
   "verificationNeededCandidates": [],
   "rejectedCandidates": [
-    {"title":"Virtual Assistant - Ongoing - Product Listing/ Ecommerce Management","company":"Upwork client","reason":"Excellent electronics/e-commerce/WooCommerce overlap and worldwide remote, but only 3-6 USD/h with 20-50 proposals; client has only 134 USD lifetime spend. Rejected on effective economics/trust."},
-    {"title":"WordPress & Shopify E-Commerce Product Posting & SEO Management Virtual Assistant","company":"Upwork client","reason":"Excellent product-listing/SEO fit and only 5-10 proposals, but budget is 7 USD fixed and client last viewed four weeks ago; rejected on economics/activity."},
-    {"title":"Product listing woocomerce","company":"Upwork client","reason":"WooCommerce/product-page fit, but requires natural persuasive French, expert level and pays only 3-5 USD/h; rejected on language/economics."},
-    {"title":"Site Reliability Engineer (SRE) - Oracle Database Platform","company":"Erste Digital","reason":"Bratislava and active direct-company role, but specialist Oracle DBA/platform reliability/automation requirements are a hard-development mismatch."}
+    {"title":"WooCommerce installation & Setup Specialist Needed – WordPress Elementor","company":"Upwork client","reason":"Worldwide remote and 20-25 USD/h, but expert-level, 50+ proposals, PHP/development-tagged and already has a hire; poor reply probability for this profile."},
+    {"title":"eCommerce Virtual Assistant & Admin Support, Shopify and WooCommerce","company":"Upwork client","reason":"Excellent task fit but only 10 USD fixed, 20-50 proposals, already hired and client last viewed three weeks ago; rejected on economics/activity."},
+    {"title":"Data Entry Specialist for WooCommerce","company":"Upwork client","reason":"Good WooCommerce/CSV fit but only 35 USD fixed with 20-50 proposals; weak effective economics versus stronger opportunities."},
+    {"title":"Ecommerce Support and Market Research","company":"Upwork client","reason":"Worldwide label but description explicitly targets someone based in the Philippines; does not satisfy remote-from-Slovakia eligibility despite keyword fit."}
   ]
 }
