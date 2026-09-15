@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-15T08:52:00+02:00",
+  "sourceVerificationAt": "2026-09-15T08:52:00+02:00",
+  "verificationScope": "Real public-source verification on 15.9.2026 for Bratislava/BA-area and suitable remote roles. This delta contains only jobs actually reverified in this run; discovery candidates without full-detail evidence are not promoted.",
+  "jobs": [
+    {
+      "id": "pss-call-center-91926",
+      "sourceJobId": "91926",
+      "title": "Spracovateľ/Spracovateľka služieb pre klientov – Call centrum",
+      "company": "Prvá stavebná sporiteľňa, a.s.",
+      "location": "Bratislava / možnosť práce z domu",
+      "origin": "ponuka",
+      "score": 95,
+      "scoreConfidence": 100,
+      "source": "Prvá stavebná sporiteľňa / oficiálna kariéra",
+      "sourceType": "company",
+      "sourceTrust": 100,
+      "form": "TPP / plný úväzok / flexibilný pracovný čas / možný home office",
+      "pay": "1 500–1 700 €/mes. brutto + možné ročné odmeny",
+      "payMonth": 1600,
+      "start": "ASAP / aktuálny nábor",
+      "english": "ok",
+      "engLabel": "angličtina nie je v aktuálnom oficiálnom detaile uvedená ako podmienka",
+      "track": "admin",
+      "priority": "today",
+      "status": "active",
+      "publishedAt": "2026-09-01T00:00:00+02:00",
+      "verifiedAt": "2026-09-15T08:52:00+02:00",
+      "expiresAt": null,
+      "contact": "Martina Čiháková",
+      "locationEligibility": "ba-area",
+      "locationReason": "Bratislava; canonical PSS detail and career listing both still expose the vacancy and application action on 15.9.2026.",
+      "physicalBurden": "low",
+      "promotionEligible": true,
+      "linkStatus": "active",
+      "linkCheckedAt": "2026-09-15T08:52:00+02:00",
+      "evidenceSurface": "canonical-company-detail",
+      "desc": "15.9. reálne znovu potvrdená na oficiálnej kariére PSS: telefonická, e-mailová a chatová komunikácia, navigácia v bankových systémoch, spracovanie požiadaviek a agenda leadov/korešpondencie. Flexibilný čas a možnosť práce doma zostávajú uvedené; skúsenosť zo zákazníckeho servisu je výhodou, nie podmienkou.",
+      "url": "https://www.pss.sk/pracovna-pozicia/spracovatel-spracovatelka-sluzieb-pre-klientov-call-centrum/"
+    }
+  ],
+  "discoveryOnly": [
+    {
+      "title": "Technical Support Specialist / Project Coordinator (IT / SaaS)",
+      "company": "Staffino",
+      "reason": "Fresh public index candidate, but full-detail requirements, language and compensation were not sufficiently verified in this run; fail-closed, not promoted."
+    },
+    {
+      "title": "Administratívny pracovník/čka, Analytik/čka",
+      "company": "ALUFIX SLOVAKIA, s.r.o.",
+      "reason": "Current public index still surfaces the Bratislava role, but previously established B2 English remains a material profile penalty; no promotion."
+    }
+  ]
+}
