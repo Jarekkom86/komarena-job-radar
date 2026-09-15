@@ -1,37 +1,39 @@
 {
   "schemaVersion": 10,
-  "updatedAt": "2026-09-15T14:37:13+02:00",
+  "updatedAt": "2026-09-15T15:52:54+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
     "existingReverified": 0,
-    "freshCandidates": 3,
+    "freshCandidates": 5,
     "contentChangedAt": "2026-09-15T12:10:37+02:00",
-    "sourceVerificationAt": "2026-09-15T14:37:13+02:00",
+    "sourceVerificationAt": "2026-09-15T15:52:54+02:00",
     "freshnessWindowHours": 48,
     "stalePolicy": "Discovery age is not verification age. LIVE requires fresh full-detail/link evidence; list/search resurfacing cannot set verifiedAt.",
-    "note": "14:37 diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Pretlak/StartupJobs, Upwork, WordPress/Reddit communities and public Facebook indexing. No new candidate cleared profile/economic/activity gates. jobs-data.json remained fail-closed and unchanged."
+    "note": "15:52 diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Pretlak/StartupJobs, Upwork, WordPress/Reddit communities and public Facebook indexing. No new candidate cleared all profile/economic/activity gates. jobs-data.json remained fail-closed and unchanged."
   },
   "developmentChanges": [
-    {"id":"proposal-competition-adjusted-value","title":"Proposal competition-adjusted value","reason":"For freelance jobs, combine hourly/fixed economics with proposal count, hires and interviewing count so apparently good budgets do not outrank opportunities with materially better win probability."},
-    {"id":"client-view-recency-decay","title":"Client view recency decay","reason":"Apply a continuous recency penalty from the client's last-view timestamp rather than only a binary stale flag, prioritizing jobs where the buyer is demonstrably active now."}
+    {"id":"deadline-validity-hard-check","title":"Deadline validity hard check","reason":"Reject or quarantine freelance/job listings whose explicit delivery/application deadline is already past even when the marketplace still exposes the page as active; prevents stale marketplace pages from entering review."},
+    {"id":"hire-saturation-opportunity-score","title":"Hire saturation opportunity score","reason":"For freelance listings, combine proposal count with hires/interviews already recorded and client last-view recency; heavily penalize jobs where the buyer has effectively filled the role even if the page remains public."}
   ],
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava IT-support/technical-support/e-shop discovery executed; no distinct promotion-grade result surfaced."},
-    {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava technical-support/e-commerce employer-career discovery executed; no new canonical vacancy strong enough to promote."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/technical-support/administration discovery executed; no distinct promotion-grade result surfaced."},
+    {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava IT-support/e-commerce employer-career discovery executed; no new canonical vacancy strong enough to promote."},
     {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava IT-support/e-commerce discovery executed; no new full-detail promotion-grade result surfaced."},
-    {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support/e-shop discovery executed; no suitable current full-detail hit surfaced."},
-    {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava technical-support/administration discovery executed; no promotion-grade hit surfaced."},
-    {"name":"Brigada.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/driver/warehouse discovery executed; no new promotion-grade result surfaced."},
+    {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":1,"added":0,"note":"Search surfaced Shield-Sk e-shop administrator/customer support in Ružinov, but canonical Worki page explicitly says the vacancy is filled/cancelled; rejected for inactivity."},
+    {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava technical-support/administration discovery executed; no promotion-grade full-detail hit surfaced."},
+    {"name":"Brigada.sk","family":"secondary-jobboard","status":"ok","hits":1,"added":0,"note":"Fresh Bratislava driver/admin/warehouse discovery found children's electric-train driver/cashier at AVION, 6 EUR/h net under student relief, B licence. Locality passes but economics/profile fit are weak, so no promotion."},
     {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce discovery executed; no suitable current hit surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":3,"added":0,"note":"Worldwide WooCommerce results readable. 50-75 product upload project offers 10-30 USD/h but has 20-50 proposals, one hire, four interviews and Dutch-content friction. WooCommerce setup role offers 20-25 USD/h but is expert/development-heavy with 50+ proposals and an existing hire. Website & SEO Management remains 15-30 USD/h but is older with 20-50 proposals. No promotion."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":3,"added":0,"note":"Fresh worldwide WooCommerce sweep found a 90 USD launch/SEO job posted yesterday with 5-10 proposals but already 8 interviews; a 20-40 USD/h e-commerce developer role is expert/hard-development; a 3-15 USD/h 500-product listing has an explicit 27 Aug 2026 deadline already past. No promotion."},
     {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring search executed; no concrete suitable client demand surfaced."},
     {"name":"Facebook public group indexing","family":"facebook","status":"limited","hits":0,"added":0,"note":"0 verified hits. No concrete publicly verifiable hiring post with direct link surfaced; authenticated Nexus/local ingestion remains backlog only and was not started."}
   ],
   "verificationNeededCandidates": [],
   "rejectedCandidates": [
-    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","reason":"Excellent 50-75 product WooCommerce catalog fit at 10-30 USD/h and remote worldwide, but 20-50 proposals, one hire/four interviews and Dutch-language content reduce win probability; client last viewed five days ago. Keep discovery-visible, not LIVE."},
-    {"title":"WooCommerce installation & Setup Specialist Needed – WordPress Elementor","company":"Upwork client","reason":"20-25 USD/h remote contract-to-hire, but expert/development-heavy scope, PHP tag, 50+ proposals and one existing hire make it a weak match."},
-    {"title":"Website & SEO Management 2026","company":"Upwork client","reason":"Strong WooCommerce operations fit at 15-30 USD/h and long-term remote, but listing is three weeks old with 20-50 proposals and requires Helium 10/Seller Central plus Loom audit; no new promotion."}
+    {"title":"WordPress/WooCommerce Expert – Ecommerce, SEO, Analytics & Launch","company":"Upwork client","reason":"Fresh worldwide remote listing posted 14 Sep 2026, 90 USD fixed and 5-10 proposals, but already 8 interviews and broad launch/payment/shipping/GA4/GSC requirements make win probability and effective economics weak."},
+    {"title":"WordPress Developer Needed for E-commerce Website","company":"Upwork client","reason":"Worldwide remote at 20-40 USD/h and client viewed four hours ago, but role is explicitly expert development with PHP/HTML/CSS/JavaScript, full build/integrations and 20-50 proposals; hard-development mismatch."},
+    {"title":"500 WooCommerce Electronic Products Creation","company":"Upwork client","reason":"Excellent electronics/catalog keyword fit, but explicit project deadline was 27 Aug 2026, already past; page persistence is not evidence of current availability."},
+    {"title":"Administrátor e-shopu / zakaznícka podpora","company":"Shield-Sk s. r. o.","reason":"Ružinov and functional fit pass, but Worki canonical page explicitly states the vacancy has been filled or cancelled."},
+    {"title":"Vodič detského vláčika","company":"Jana Petrovicova","reason":"Bratislava AVION and B licence pass locality/driver gate, but 6 EUR/h net is weak economics and the role is aimed mainly at students/active pensioners; not competitive with current LIVE driver options."}
   ]
 }
