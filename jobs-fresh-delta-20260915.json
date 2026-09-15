@@ -1,8 +1,8 @@
 {
-  "schemaVersion": 1,
-  "updatedAt": "2026-09-15T08:52:00+02:00",
-  "sourceVerificationAt": "2026-09-15T08:52:00+02:00",
-  "verificationScope": "Real public-source verification on 15.9.2026 for Bratislava/BA-area and suitable remote roles. This delta contains only jobs actually reverified in this run; discovery candidates without full-detail evidence are not promoted.",
+  "schemaVersion": 2,
+  "updatedAt": "2026-09-15T09:11:00+02:00",
+  "sourceVerificationAt": "2026-09-15T09:11:00+02:00",
+  "verificationScope": "Real public-source verification on 15.9.2026 for Bratislava/BA-area and suitable remote roles. LIVE jobs require full-detail evidence; discovery-only listings cannot set verifiedAt.",
   "jobs": [
     {
       "id": "pss-call-center-91926",
@@ -26,30 +26,27 @@
       "priority": "today",
       "status": "active",
       "publishedAt": "2026-09-01T00:00:00+02:00",
-      "verifiedAt": "2026-09-15T08:52:00+02:00",
+      "verifiedAt": "2026-09-15T09:11:00+02:00",
       "expiresAt": null,
       "contact": "Martina Čiháková",
       "locationEligibility": "ba-area",
-      "locationReason": "Bratislava; canonical PSS detail and career listing both still expose the vacancy and application action on 15.9.2026.",
+      "locationReason": "Bratislava; canonical PSS detail and company career list both still expose the vacancy and application action on 15.9.2026.",
       "physicalBurden": "low",
       "promotionEligible": true,
       "linkStatus": "active",
-      "linkCheckedAt": "2026-09-15T08:52:00+02:00",
+      "linkCheckedAt": "2026-09-15T09:11:00+02:00",
       "evidenceSurface": "canonical-company-detail",
-      "desc": "15.9. reálne znovu potvrdená na oficiálnej kariére PSS: telefonická, e-mailová a chatová komunikácia, navigácia v bankových systémoch, spracovanie požiadaviek a agenda leadov/korešpondencie. Flexibilný čas a možnosť práce doma zostávajú uvedené; skúsenosť zo zákazníckeho servisu je výhodou, nie podmienkou.",
+      "desc": "15.9. o 09:11 reálne znovu potvrdená na oficiálnej kariére PSS: telefonická, e-mailová a chatová komunikácia, bankové systémy a administratívne spracovanie požiadaviek. Flexibilný čas a možnosť práce doma zostávajú uvedené; skúsenosť zo zákazníckeho servisu je výhodou, nie podmienkou.",
       "url": "https://www.pss.sk/pracovna-pozicia/spracovatel-spracovatelka-sluzieb-pre-klientov-call-centrum/"
     }
   ],
   "discoveryOnly": [
-    {
-      "title": "Technical Support Specialist / Project Coordinator (IT / SaaS)",
-      "company": "Staffino",
-      "reason": "Fresh public index candidate, but full-detail requirements, language and compensation were not sufficiently verified in this run; fail-closed, not promoted."
-    },
-    {
-      "title": "Administratívny pracovník/čka, Analytik/čka",
-      "company": "ALUFIX SLOVAKIA, s.r.o.",
-      "reason": "Current public index still surfaces the Bratislava role, but previously established B2 English remains a material profile penalty; no promotion."
-    }
+    {"title":"Asistent/ka v kancelárií (aj pre študentov)","company":"Simplaq s.r.o","status":"verification-needed","reason":"Dnešný verejný index potvrdzuje Bratislavu a od 6 €/hod., ale nebol získaný plný canonical/detail s kompletnými požiadavkami; fail-closed, bez verifiedAt."},
+    {"title":"Asistent/Asistentka sekcie Technickej podpory podujatí","company":"Bratislavské kultúrne a informačné stredisko","status":"verification-needed","reason":"Aktuálny verejný index potvrdzuje Bratislavu a 1 400 €, no bez plného detailu požiadaviek sa nepromuje."},
+    {"title":"Middle officer pre Tatra Leasing (M/Ž) – tím digitálneho predaja","company":"Tatra banka, a.s.","status":"verification-needed","reason":"Čerstvý index potvrdzuje Bratislavu a 1 300 €, ale názov naznačuje predajnú zložku a full-detail gate nebol overený."},
+    {"title":"IT Support (Male/Female)","company":"DHL Group","status":"not-promoted-language-gate","reason":"Plný aktuálny detail je aktívny a ponúka 2 000–2 200 €, ale explicitne vyžaduje angličtinu B2; nepromované pre profilový hard gate."},
+    {"title":"Hľadáme administratívnu podporu do transportného tímu – 4 hodiny denne","company":"DHL Group","status":"verification-needed","reason":"Aktuálny index potvrdzuje Senec a 804,50 €/mes., ale bez dnešného plného detailu požiadaviek sa neobnovuje verifiedAt ani LIVE promotion."},
+    {"title":"Technical Support Specialist / Project Coordinator (IT / SaaS)","company":"Staffino","status":"verification-needed","reason":"Verejný index je sľubný, ale full-detail jazykové, mzdové a technické požiadavky stále nie sú dostatočne overené."},
+    {"title":"Administratívny pracovník/čka, Analytik/čka","company":"ALUFIX SLOVAKIA, s.r.o.","status":"not-promoted-language-gate","reason":"Aktuálny index rolu stále zobrazuje, ale explicitná angličtina B2 zostáva materiálny mismatch."}
   ]
 }
