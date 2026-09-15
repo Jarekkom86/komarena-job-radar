@@ -1,40 +1,45 @@
 {
   "schemaVersion": 10,
-  "updatedAt": "2026-09-15T22:29:35+02:00",
+  "updatedAt": "2026-09-15T22:59:38+02:00",
   "runSummary": {
-    "familiesChecked": 11,
+    "familiesChecked": 12,
     "freshPromoted": 0,
-    "existingReverified": 0,
-    "freshCandidates": 5,
-    "sourceVerificationAt": "2026-09-15T22:29:35+02:00",
+    "existingReverified": 1,
+    "freshCandidates": 6,
+    "sourceVerificationAt": "2026-09-15T22:59:38+02:00",
     "freshnessWindowHours": 48,
     "stalePolicy": "Discovery age is not verification age. LIVE requires fresh full-detail/link evidence; list/search resurfacing cannot set verifiedAt.",
-    "note": "Diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Pretlak/StartupJobs, Upwork, WordPress public jobs, Reddit/WordPress communities and public Facebook indexing. No new candidate cleared fit, locality/remote, language, economics and activity gates. Existing LIVE feed remains fail-closed and unchanged."
+    "note": "Diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Pretlak/StartupJobs, Upwork, WordPress public jobs, Reddit/WordPress communities and public Facebook indexing. A strong new worldwide-remote WooCommerce project surfaced on Upwork but was not promoted into LIVE because the canonical jobs-data round-trip remains unsafe. Existing LIVE feed remains fail-closed and unchanged."
   },
   "developmentChanges": [
-    {"id":"application-closure-memory","title":"Application closure memory","reason":"Persist canonical closed/no-longer-accepting signals so stale mirrors and search-index resurfacing cannot repeatedly re-enter candidate review."},
-    {"id":"freelance-client-recency-gate","title":"Freelance client recency gate","reason":"Combine client last-viewed age with proposal/interview/hire counts before promotion; stale client activity should outweigh a superficially strong WooCommerce keyword match."}
+    {"id":"proposal-velocity-priority","title":"Proposal velocity priority","reason":"Track proposal-count growth between runs for freelance jobs; prioritize low-competition opportunities before they cross saturation thresholds instead of ranking only by current proposal count."},
+    {"id":"client-hire-signal-confidence","title":"Client hire-signal confidence","reason":"Separate marketplace client credibility from role fit using prior hires, active hires, spend and recent viewing; this reduces time spent on attractive but low-conversion freelance listings."}
   ],
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/e-shop/admin/IT-support discovery executed 15 Sep 2026 22:29; no distinct promotion-grade result surfaced."},
-    {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava support/e-commerce company-career discovery executed; no new canonical employer detail strong enough to promote."},
-    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"ok","hits":1,"added":0,"note":"Top4Mobile e-shop administrator/customer support surfaced with strong task fit in Bratislava, but canonical LinkedIn detail explicitly says no longer accepting applications; rejected as inactive."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/WooCommerce/admin/IT-support discovery executed 15 Sep 2026 22:59; no distinct promotion-grade result surfaced."},
+    {"name":"Direct company careers / public ATS","family":"direct-company","status":"ok","hits":1,"added":0,"note":"IKEA Bratislava customer-services job 354106 was reverified on the canonical employer page and still exposes an application action; existing candidate, not a new LIVE item."},
+    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava IT-support/e-commerce public-index discovery executed; no distinct active promotion-grade result surfaced."},
     {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support/e-shop discovery executed; no suitable distinct active hit surfaced."},
     {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-shop/administration/IT-support discovery executed; no new full-detail promotion-grade result surfaced."},
     {"name":"Brigada.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/warehouse/courier brigade discovery executed; no verified suitable hit surfaced."},
-    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce discovery executed; no suitable current promotion-grade hit surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":4,"added":0,"note":"Fresh WooCommerce/WordPress sweep. WooCommerce Product Listing remains 10-30 USD/h and task-aligned but has 20-50 proposals, 4 interviews, 1 hire and client last viewed 6 days ago. Other results are hard-development, weak-budget or stale-client mismatches. No promotion."},
+    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"ok","hits":1,"added":0,"note":"StartupJobs surfaced Neuschl2 Medior Account Manager & project coordinator with WordPress/Webflow, 45-60k CZK and predominantly remote work, but it still requires occasional Prague meetings and prior agency/studio client ownership; not eligible for LIVE without Slovakia-remote confirmation."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"added":0,"note":"Fresh WordPress/WooCommerce sweep. Strongest new candidate: WooCommerce Developer Needed for Customized Gifting Store, worldwide remote, $100 fixed, intermediate, ongoing, fewer than 5 proposals, client has 1 hire/1 active. Other fresh results are hard-development or weak-budget/saturated mismatches."},
     {"name":"WordPress.org public jobs/ecosystem indexing","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce jobs search executed; no concrete suitable current client demand surfaced."},
     {"name":"Reddit public communities","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring search executed; no concrete suitable current client demand surfaced."},
-    {"name":"Facebook public group indexing","family":"facebook","status":"limited","hits":0,"added":0,"note":"0 verified hits. No concrete publicly verifiable hiring post with direct link surfaced. Authenticated Nexus/local ingestion remains backlog only and was not started."}
+    {"name":"Facebook public group indexing","family":"facebook","status":"limited","hits":0,"added":0,"note":"0 verified hits. No concrete publicly verifiable hiring post with direct link surfaced. Authenticated Nexus/local ingestion remains backlog only and was not started."},
+    {"name":"Kaufland direct career","family":"direct-company-secondary","status":"checked","hits":0,"added":0,"note":"Canonical career site was freshly checked; no new distinct support/e-commerce role beyond previously tracked candidates surfaced in this run."}
   ],
-  "verificationNeededCandidates": [],
-  "promotionReadyCandidates": [],
+  "verificationNeededCandidates": [
+    {"title":"Medior Account Manager & Projektový koordinátor – Jira, Webflow/WordPress","company":"Neuschl2 s.r.o.","source":"StartupJobs","locationEligibility":"unknown","locationReason":"Role is predominantly remote but canonical detail still mentions occasional meetings in Prague 5 or at clients; needs explicit confirmation that Slovakia-based remote work without regular Prague commuting is accepted.","reason":"Excellent WordPress/Webflow/project overlap, but prior agency/studio experience and remote-from-Slovakia eligibility are not yet cleared."}
+  ],
+  "promotionReadyCandidates": [
+    {"title":"WooCommerce Developer Needed for Customized Gifting Store","company":"Upwork client","source":"Upwork","locationEligibility":"remote-ok","locationReason":"Canonical Upwork detail explicitly marks the project as worldwide remote.","reason":"Strong WooCommerce/WordPress fit, $100 fixed, intermediate, ongoing project and fewer than 5 proposals. Scope includes payment gateways, product listings, performance and e-commerce SEO; portfolio requirement remains a moderate friction point."}
+  ],
   "rejectedCandidates": [
-    {"title":"Administrátor e-shopu / zákaznícka podpora","company":"Top4Mobile","reason":"Excellent Bratislava e-shop/customer-support fit and source detail is readable, but LinkedIn explicitly reports no longer accepting applications; inactive hard reject."},
-    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","reason":"Worldwide remote, 10-30 USD/h and strong WooCommerce/product-upload fit, but Dutch is preferred and competition is already 20-50 proposals, 4 interviews and 1 hire; client last viewed 6 days ago."},
-    {"title":"WordPress Developer to design, develop, and customize responsive websites","company":"Upwork client","reason":"Worldwide remote and posted yesterday, but Expert-level hard development with mandatory WordPress/CSS/Web Development plus explicit PHP/HTML/JavaScript requirements; profile mismatch."},
-    {"title":"WooCommerce Website Creation","company":"Upwork client","reason":"Worldwide remote but $70 fixed, Expert level, requires 2-3 live WooCommerce sites personally developed and full design/development/payment delivery; economics and evidence requirements are poor fit."},
-    {"title":"WooCommerce Product Review and Addition","company":"Upwork client","reason":"Task fit is good, but only 5-11 USD/h, 20-50 proposals and client last viewed 3 weeks ago; low economics and stale activity prevent promotion."}
+    {"title":"Custom WordPress & WooCommerce Developer (PHP, React & Laravel)","company":"Upwork client","reason":"Worldwide remote but expert hard-development requiring custom PHP, React, Laravel and REST API work; strong profile mismatch despite low proposal count."},
+    {"title":"WordPress & WooCommerce Mobile UX, Speed and Checkout Optimization","company":"Upwork client","reason":"Only $20 fixed and requires PHP/JavaScript/CSS plus performance optimization; economics and hard-development burden are poor."},
+    {"title":"Expert WordPress Developer Needed for Custom WooCommerce E-Commerce Website","company":"Upwork client","reason":"Expert-only full build requiring PHP/JavaScript/CSS, custom design, payment/shipping integration and 2-3 live portfolio stores; too development-heavy."},
+    {"title":"Ecommerce VA Needed: SEO & Bulk Product Upload Expert for Shopify, Etsy & WooCommerce","company":"Upwork client","reason":"Excellent task overlap but only $15 fixed, Expert level and requires good written English; economics are too weak."},
+    {"title":"WordPress Expert Needed for Website Redesign & Customization","company":"Upwork client","reason":"$85 fixed but already 15-20 proposals and 1 hire; requires strong Elementor/HTML/CSS/basic PHP and is less aligned than product/admin work."}
   ]
 }
