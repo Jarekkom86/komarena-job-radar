@@ -1,42 +1,39 @@
 {
   "schemaVersion": 10,
-  "updatedAt": "2026-09-15T19:22:59+02:00",
+  "updatedAt": "2026-09-15T20:53:23+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "freshPromoted": 0,
     "existingReverified": 0,
-    "freshCandidates": 5,
-    "sourceVerificationAt": "2026-09-15T19:22:59+02:00",
+    "freshCandidates": 4,
+    "sourceVerificationAt": "2026-09-15T20:53:23+02:00",
     "freshnessWindowHours": 48,
     "stalePolicy": "Discovery age is not verification age. LIVE requires fresh full-detail/link evidence; list/search resurfacing cannot set verifiedAt.",
     "note": "Diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Pretlak/StartupJobs, Upwork, WordPress public jobs, Reddit/WordPress communities and public Facebook indexing. No new candidate cleared fit, locality/remote, language, economics and activity gates. Existing LIVE feed remains fail-closed and unchanged."
   },
   "developmentChanges": [
-    {"id":"buyer-activity-verification-gate","title":"Buyer activity verification gate","reason":"Separate listing freshness from buyer freshness for freelance work; require recent client view/activity before high-priority promotion so stale public listings do not waste proposal time."},
-    {"id":"remote-country-eligibility-evidence","title":"Remote country eligibility evidence","reason":"Store explicit evidence that a remote role accepts applicants working from Slovakia; generic Europe/EMEA/Worldwide labels should not silently override unclear country restrictions."}
+    {"id":"proposal-competition-velocity","title":"Proposal competition velocity","reason":"Track proposal-count change between rechecks on freelance marketplaces so rapidly saturating jobs are automatically deprioritized even when their headline fit remains high."},
+    {"id":"mandatory-skill-surface-separation","title":"Mandatory-skill surface separation","reason":"Separate skills shown as marketplace mandatory tags from narrative nice-to-have text; avoid promoting content/admin WordPress work when PHP or hard development is structurally mandatory."}
   ],
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/e-shop/IT-support discovery executed 15 Sep 2026 19:22; no distinct promotion-grade result surfaced."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/e-shop/admin/IT-support discovery executed 15 Sep 2026 20:53; no distinct promotion-grade result surfaced."},
     {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava support/e-commerce company-career discovery executed; no new canonical employer detail strong enough to promote."},
-    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"ok","hits":2,"added":0,"note":"Action1 Technical Support Engineer Tier 1 - Europe remains fresh at list level, but full remote-from-Slovakia terms and language requirements were not verified. SupportYourApp C1 role remains a language mismatch."},
+    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava technical-support/e-commerce discovery executed; no new full-detail promotion-grade result surfaced in public indexing."},
     {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support/e-shop discovery executed; no suitable distinct active hit surfaced."},
     {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-shop/administration/IT-support discovery executed; no new full-detail promotion-grade result surfaced."},
     {"name":"Brigada.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/warehouse/courier brigade discovery executed; no verified suitable hit surfaced."},
     {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce discovery executed; no suitable current promotion-grade hit surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":4,"added":0,"note":"Fresh WooCommerce/WordPress sweep. WordPress Developer posted 14 Sep is active but Expert hard-development (PHP/HTML/CSS/JS). Product Listing Specialist is strong task fit but client last viewed two weeks ago; other WooCommerce roles are stale/overcompetitive or weak economics. No promotion."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":4,"added":0,"note":"Fresh WooCommerce/WordPress sweep. Content Writing and WordPress Expert is 15-35 USD/h, 6+ months and worldwide but PHP is a mandatory skill and client last viewed 5 days ago. WooCommerce Product Listing is strong task fit at 10-30 USD/h but prefers Dutch, has 20-50 proposals, 4 interviews and 1 hire. Other surfaced roles are stale, hard-development or weak economics. No promotion."},
     {"name":"WordPress.org public jobs/ecosystem indexing","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce jobs search executed; no concrete suitable current client demand surfaced."},
     {"name":"Reddit public communities","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring search executed; no concrete suitable current client demand surfaced."},
     {"name":"Facebook public group indexing","family":"facebook","status":"limited","hits":0,"added":0,"note":"0 verified hits. No concrete publicly verifiable hiring post with direct link surfaced. Authenticated Nexus/local ingestion remains backlog only and was not started."}
   ],
-  "verificationNeededCandidates": [
-    {"title":"Technical Support Engineer Tier 1 - Europe","company":"Action1","source":"LinkedIn public index","locationEligibility":"unknown","locationReason":"Slovakia list result is fresh, but full detail/remote-from-Slovakia eligibility and language requirements were not verified in this run."}
-  ],
+  "verificationNeededCandidates": [],
   "promotionReadyCandidates": [],
   "rejectedCandidates": [
-    {"title":"WordPress Developer to design, develop, and customize responsive websites","company":"Upwork client","reason":"Worldwide remote and posted 14 Sep 2026, but Expert-level hard development with mandatory PHP/HTML/CSS/JavaScript; 15-20 proposals and an interview already. Profile mismatch."},
-    {"title":"WordPress Product Listing Specialist","company":"Upwork client","reason":"Direct WordPress/product-listing/AI overlap and 8-15 USD per completed listing, but client last viewed two weeks ago and 20-50 proposals; buyer inactivity prevents promotion."},
-    {"title":"WordPress Contractor | Elementor, ACF, CPTs and WooCommerce","company":"Upwork client","reason":"20-40 USD/h and long-term remote are attractive, but Expert scope requires ACF/CPT architecture and fast production; 20-50 proposals, 5 interviews and client last viewed two weeks ago reduce win probability."},
-    {"title":"Full-Time WordPress & WooCommerce Developer","company":"Upwork client","reason":"Remote long-term contract-to-hire but 50+ proposals, 10 interviews, client last viewed two weeks ago and demanding development/QA/Arabic scope make it a poor fit."},
-    {"title":"(English C1) Technical Support Consultant, VPS & Trading (remote)","company":"SupportYourApp","reason":"Remote and technical-support fit, but explicit English C1 plus VPS/trading specialization is a hard language/skills mismatch."}
+    {"title":"Content Writing and WordPress Expert Needed","company":"Upwork client","reason":"Worldwide remote, 15-35 USD/h and 6+ months, but PHP is explicitly mandatory; client last viewed 5 days ago and 10-15 proposals. Hard-skill mismatch prevents promotion."},
+    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","reason":"Worldwide remote, 10-30 USD/h and strong WooCommerce/product-upload fit, but Dutch is preferred and competition is already 20-50 proposals, 4 interviews and 1 hire; client last viewed 6 days ago."},
+    {"title":"WordPress Developer to design, develop, and customize responsive websites","company":"Upwork client","reason":"Worldwide remote and freshly active, but Expert-level hard development with mandatory PHP/HTML/CSS/JavaScript; profile mismatch."},
+    {"title":"Computer Equipment And Peripheral's Product Listing Specialist","company":"Upwork client","reason":"Excellent electronics/product-listing/WooCommerce overlap and only 5-10 proposals, but strong written English is required and client last viewed two weeks ago; buyer inactivity and language risk prevent promotion."}
   ]
 }
