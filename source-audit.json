@@ -1,38 +1,38 @@
 {
   "schemaVersion": 8,
-  "updatedAt": "2026-09-15T04:16:12+02:00",
+  "updatedAt": "2026-09-15T05:27:41+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "freshPromoted": 0,
     "promotionReady": 11,
-    "freshCandidates": 1,
-    "existingReverified": 0,
+    "freshCandidates": 2,
+    "existingReverified": 1,
     "freshnessWindowHours": 48,
-    "contentChangedAt": "2026-09-15T04:16:12+02:00",
-    "sourceVerificationAt": "2026-09-15T04:16:12+02:00",
+    "contentChangedAt": "2026-09-15T05:27:41+02:00",
+    "sourceVerificationAt": "2026-09-15T05:27:41+02:00",
     "stalePolicy": "LIVE eligibility requires real source verification and link evidence. Existing LIVE items are never removed merely because a discovery run does not rediscover them.",
-    "note": "Real 15.9.2026 04:16 sweep across 12 source families. Fresh canonical Kaufland Bratislava IT Service/Support role verified and added to promotion-ready. Existing 56-item LIVE feed preserved fail-closed because jobs-data.json cannot be safely round-tripped through the available truncated reader. Facebook produced 0 verified hiring posts."
+    "note": "Real 15.9.2026 05:27 sweep across 12 source families. Wolt Bratislava remote Support Associate was freshly reverified in public LinkedIn indexing but remains penalized by the previously verified B2-English requirement. Staffino Technical Support Specialist / Project Coordinator surfaced as a fresh Bratislava index candidate and requires full-detail verification before promotion. Existing 56-item LIVE feed preserved fail-closed. Facebook produced 0 verified hiring posts."
   },
   "developmentChanges": [
-    {"id":"shift-burden-normalizer","title":"Shift burden normalizer","reason":"Separate technical fit from schedule burden by scoring evenings/weekends/on-call and weekend frequency explicitly; prevents otherwise strong support roles from ranking too high when family-time cost is material."},
-    {"id":"language-evidence-granularity","title":"Language evidence granularity","reason":"Store language wording as exact evidence class (active, conversational, B-level, advantage-only, unspecified) instead of inferring a CEFR level when the employer does not provide one; improves ranking honesty for A2 profile."}
+    {"id":"candidate-evidence-delta-log","title":"Candidate evidence delta log","reason":"Persist only what changed between rechecks (salary, language, remote policy, application state, proposal count) so recurring sweeps can detect material changes without repeatedly reviewing unchanged listings."},
+    {"id":"application-window-decay-score","title":"Application-window decay score","reason":"Combine published age, last-viewed activity, hires/interviews and canonical apply availability into a decay score; prioritizes still-actionable fresh opportunities and suppresses stale marketplace noise."}
   ],
   "sources": [
     {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"promotionReady":0,"note":"Fresh Bratislava WordPress/WooCommerce/e-shop/admin/IT-support/customer-care search executed; no new distinct promotion-grade result surfaced."},
-    {"name":"Direct company careers / public ATS","family":"direct-company","status":"ok","hits":1,"added":0,"promotionReady":1,"note":"Canonical Kaufland career detail verified for Technická podpora na IT odd./Service a Support in Bratislava; 1,710 EUR, hybrid, L1 retail systems support."},
-    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"ok","hits":1,"added":0,"promotionReady":0,"note":"Fresh Kaufland role surfaced about 1 hour old and was escalated to canonical employer page. Other support results were weaker or language/skill mismatches."},
+    {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"promotionReady":0,"note":"Fresh employer-career discovery executed. No new canonical employer detail cleared all evidence gates this run."},
+    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"ok","hits":2,"added":0,"promotionReady":0,"verificationNeeded":1,"note":"Wolt Support Associate full-time remote in Bratislava reverified as current for October 2026; prior evidence of minimum B2 English keeps it below promotion for A2 profile. Fresh Staffino Technical Support Specialist / Project Coordinator in Bratislava Metropolitan Area surfaced; full requirements need verification before promotion."},
     {"name":"Worki.sk","family":"worki","status":"checked","hits":0,"added":0,"promotionReady":0,"note":"Fresh Bratislava admin/technical/e-shop discovery executed; no new verified promotion-grade hit surfaced."},
     {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"promotionReady":0,"verificationNeeded":1,"note":"Fresh Bratislava customer-support/e-shop/IT-support discovery executed. Existing Dotypos candidate remains verification-needed."},
     {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"promotionReady":0,"note":"Fresh Bratislava admin/customer-support brigade discovery executed; no publicly verifiable promotion-grade hit surfaced."},
     {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"promotionReady":0,"note":"Fresh Bratislava/remote WordPress/WooCommerce/support discovery executed; no suitable current non-hard-development role surfaced."},
-    {"name":"Upwork","family":"freelance","status":"checked","hits":0,"added":0,"promotionReady":0,"note":"Fresh public WordPress/WooCommerce/product-listing remote discovery executed; no new concrete listing cleared fit, economics and evidence gates."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":3,"added":0,"promotionReady":0,"note":"Fresh worldwide WooCommerce discovery found current listings, but none beat existing promotion-ready candidates: product listing at $3-5/h is economically weak; 50-75 product upload at $10-30/h already has 1 hire/4 interviews/20-50 proposals; Elementor setup at $20-25/h has 50+ proposals and 1 hire."},
     {"name":"WordPress public jobs/index search","family":"wordpress-public","status":"checked","hits":0,"added":0,"note":"Public WordPress/WooCommerce jobs/index search checked; no distinct suitable current hiring demand surfaced."},
     {"name":"Reddit / WordPress communities","family":"reddit-wordpress","status":"checked","hits":0,"added":0,"promotionReady":0,"note":"Fresh public WordPress/WooCommerce hiring search executed; no concrete current client demand suitable for promotion surfaced."},
     {"name":"Publicly indexed Facebook groups","family":"facebook-public","status":"limited","hits":0,"verifiedHits":0,"added":0,"note":"0 verified hits. Public indexing did not expose a concrete current hiring post with a direct verifiable Facebook URL. Authenticated Nexus/local ingestion remains backlog only and was not started."},
     {"name":"Freelance secondary public indexes","family":"freelance-secondary","status":"checked","hits":0,"added":0,"promotionReady":0,"note":"Freelancermap/secondary public freelance discovery produced no additional verified promotion-grade client job."}
   ],
   "promotionReadyCandidates": [
-    {"id":"kaufland-it-service-support-bratislava-1436492733","title":"Technická podpora na IT odd./Service a Support (m/ž)","company":"Kaufland Slovenská republika v.o.s.","locationEligibility":"ba-area","status":"promotion-ready-new","reason":"Canonical Kaufland page: Bratislava, full-time indefinite, hybrid, from 1,710 EUR/month. Strong L1 technical-support fit: retail-system administration, hotline for POS/payment systems/scales/bottle-return machines, end-user support, basic business-app administration and project coordination. Penalties: employer requires active written/spoken English, shift work and 1-2 weekends/month; travel may occasionally be needed. Technical secondary education requested.","url":"https://jobs.kaufland.com/Slovensko/job/Bratislava-Technick%C3%A1-podpora-na-IT-odd_Service-a-Support-%28m%C5%BE%29-831-04/1436492733/"},
+    {"id":"kaufland-it-service-support-bratislava-1436492733","title":"Technická podpora na IT odd./Service a Support (m/ž)","company":"Kaufland Slovenská republika v.o.s.","locationEligibility":"ba-area","status":"promotion-ready-new","reason":"Canonical Kaufland page: Bratislava, full-time indefinite, hybrid, from 1,710 EUR/month. Strong L1 technical-support fit; penalties are active English, shifts and 1-2 weekends/month.","url":"https://jobs.kaufland.com/Slovensko/job/Bratislava-Technick%C3%A1-podpora-na-IT-odd_Service-a-Support-%28m%C5%BE%29-831-04/1436492733/"},
     {"id":"upwork-test-wordpress-plugin-live-shop-2098789417399166557","title":"Test new WordPress plugin with live shop","company":"Upwork client - Austria","locationEligibility":"remote-ok","status":"promotion-ready-existing","reason":"Worldwide remote; $50 fixed; entry level; explicit live WooCommerce-shop prerequisite is a strong KomArena asset match.","url":"https://www.upwork.com/freelance-jobs/apply/Test-new-WordPress-plugin-with-live-shop_~022098789417399166557/"},
     {"id":"profesia-alufix-admin-analyst-5357598","title":"Administratívny pracovník/čka, Analytik/čka","company":"ALUFIX SLOVAKIA, s.r.o.","locationEligibility":"ba-area","status":"promotion-ready-existing","reason":"Bratislava; strong functional overlap; explicit English B2 is a material penalty.","url":"https://www.profesia.sk/praca/alufix-slovakia/O5357598"},
     {"id":"profesia-3mon-office-manager-5351817","title":"Office Manager/ka & Executive Support pre CEO","company":"3MON, s.r.o.","locationEligibility":"ba-area","status":"promotion-ready-existing","reason":"Bratislava, 1,650 EUR/month; strong e-shop/admin/AI-tools fit.","url":"https://www.profesia.sk/praca/3mon/O5351817"},
@@ -45,6 +45,7 @@
     {"id":"upwork-computer-equipment-product-listing-2094865135244475807","title":"Computer Equipment And Peripheral's Product Listing Specialist","company":"Upwork client","locationEligibility":"remote-ok","status":"promotion-ready-existing","reason":"Worldwide remote product-listing fit; strong written English and unclear effective hourly value remain penalties.","url":"https://www.upwork.com/freelance-jobs/apply/Computer-Equipment-And-Peripheral-Product-Listing-Specialist_~022094865135244475807/"}
   ],
   "verificationNeededCandidates": [
+    {"id":"linkedin-staffino-tech-support-project-coordinator-4357703897","title":"Technical Support Specialist / Project Coordinator (IT / SaaS)","company":"Staffino","locationEligibility":"ba-area","status":"verification-needed","reason":"Fresh public LinkedIn index confirms Bratislava Metropolitan Area and support/project-coordination scope. Full detail must verify language, compensation, work mode and technical depth before LIVE.","url":"https://sk.linkedin.com/jobs/view/technical-support-specialist-project-coordinator-it-saas-at-staffino-4357703897"},
     {"id":"kariera-dotypos-contact-centre-20260914","title":"Pracovník kontaktného centra (zákazníckeho servisu)","company":"Dotypos SK s. r. o.","locationEligibility":"ba-area","status":"verification-needed","reason":"Index evidence only; verify language, requirements and activity before LIVE."},
     {"id":"linkedin-siemens-servicenow-support-20260915","title":"ServiceNow Sense Support Agent (m/f/d) - Hybrid - Bratislava/Žilina/Košice","company":"Siemens Healthineers","locationEligibility":"ba-area","status":"verification-needed","reason":"LinkedIn index includes Bratislava, but full requirements and hybrid expectations remain unverified."}
   ],
