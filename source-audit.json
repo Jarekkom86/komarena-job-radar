@@ -1,37 +1,37 @@
 {
   "schemaVersion": 10,
-  "updatedAt": "2026-09-15T13:05:35+02:00",
+  "updatedAt": "2026-09-15T14:37:13+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
     "existingReverified": 0,
     "freshCandidates": 3,
     "contentChangedAt": "2026-09-15T12:10:37+02:00",
-    "sourceVerificationAt": "2026-09-15T13:05:35+02:00",
+    "sourceVerificationAt": "2026-09-15T14:37:13+02:00",
     "freshnessWindowHours": 48,
     "stalePolicy": "Discovery age is not verification age. LIVE requires fresh full-detail/link evidence; list/search resurfacing cannot set verifiedAt.",
-    "note": "13:05 diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Pretlak/StartupJobs, Upwork, WordPress/Reddit communities and public Facebook indexing. No new candidate cleared profile/economic/activity gates. jobs-data.json remained fail-closed and unchanged."
+    "note": "14:37 diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Pretlak/StartupJobs, Upwork, WordPress/Reddit communities and public Facebook indexing. No new candidate cleared profile/economic/activity gates. jobs-data.json remained fail-closed and unchanged."
   },
   "developmentChanges": [
-    {"id":"client-last-view-hard-stale-gate","title":"Client last-view hard stale gate","reason":"For freelance listings, distinguish listing freshness from buyer activity and automatically demote jobs whose client has not viewed the post for multiple weeks even when the page remains indexed."},
-    {"id":"fixed-price-scope-sanity-gate","title":"Fixed-price scope sanity gate","reason":"Estimate whether a fixed-price freelance budget is plausible for the described deliverables and suppress obvious underpriced work before it consumes application time."}
+    {"id":"proposal-competition-adjusted-value","title":"Proposal competition-adjusted value","reason":"For freelance jobs, combine hourly/fixed economics with proposal count, hires and interviewing count so apparently good budgets do not outrank opportunities with materially better win probability."},
+    {"id":"client-view-recency-decay","title":"Client view recency decay","reason":"Apply a continuous recency penalty from the client's last-view timestamp rather than only a binary stale flag, prioritizing jobs where the buyer is demonstrably active now."}
   ],
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/WooCommerce/technical-support/admin discovery executed; no distinct promotion-grade result surfaced."},
-    {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava customer-service/IT-support/e-commerce employer-career discovery executed; no new canonical employer detail strong enough to promote."},
-    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava technical-support/e-commerce discovery executed; no new full-detail promotion-grade result surfaced."},
-    {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-support/e-commerce discovery executed; no new suitable full-detail hit surfaced."},
-    {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-support/e-commerce discovery executed; no new full-detail promotion-grade hit surfaced."},
-    {"name":"Brigada.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/e-shop/driver discovery executed; no new promotion-grade result surfaced in public indexing."},
-    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce/support discovery executed; no suitable current hit surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":3,"added":0,"note":"Worldwide remote WooCommerce/e-commerce results were readable. Product-listing specialist remains strong task fit but requires strong written English and client has not viewed it for two weeks. Other WooCommerce/VA results were severely underpriced, stale, already hired or development-heavy; no promotion."},
-    {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring search executed; no concrete client demand suitable for promotion surfaced."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava IT-support/technical-support/e-shop discovery executed; no distinct promotion-grade result surfaced."},
+    {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava technical-support/e-commerce employer-career discovery executed; no new canonical vacancy strong enough to promote."},
+    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava IT-support/e-commerce discovery executed; no new full-detail promotion-grade result surfaced."},
+    {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support/e-shop discovery executed; no suitable current full-detail hit surfaced."},
+    {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava technical-support/administration discovery executed; no promotion-grade hit surfaced."},
+    {"name":"Brigada.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/driver/warehouse discovery executed; no new promotion-grade result surfaced."},
+    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce discovery executed; no suitable current hit surfaced."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":3,"added":0,"note":"Worldwide WooCommerce results readable. 50-75 product upload project offers 10-30 USD/h but has 20-50 proposals, one hire, four interviews and Dutch-content friction. WooCommerce setup role offers 20-25 USD/h but is expert/development-heavy with 50+ proposals and an existing hire. Website & SEO Management remains 15-30 USD/h but is older with 20-50 proposals. No promotion."},
+    {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring search executed; no concrete suitable client demand surfaced."},
     {"name":"Facebook public group indexing","family":"facebook","status":"limited","hits":0,"added":0,"note":"0 verified hits. No concrete publicly verifiable hiring post with direct link surfaced; authenticated Nexus/local ingestion remains backlog only and was not started."}
   ],
   "verificationNeededCandidates": [],
   "rejectedCandidates": [
-    {"title":"Computer Equipment And Peripheral's Product Listing Specialist","company":"Upwork client","reason":"Excellent WooCommerce/product/SKU/image research fit and only 5-10 proposals, but strong written English is explicit and client last viewed the listing two weeks ago; not strong enough for LIVE promotion."},
-    {"title":"WordPress & Shopify E-Commerce Product Posting & SEO Management Virtual Assistant","company":"Upwork client","reason":"Very strong product-admin fit and only 5-10 proposals, but fixed budget is only 7 USD and client last viewed four weeks ago; rejected on economics/activity."},
-    {"title":"eCommerce Virtual Assistant & Admin Support, Shopify and WooCommerce","company":"Upwork client","reason":"Good admin/e-commerce fit but fixed budget is only 10 USD, 20-50 proposals, already hired and client last viewed three weeks ago; rejected."}
+    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","reason":"Excellent 50-75 product WooCommerce catalog fit at 10-30 USD/h and remote worldwide, but 20-50 proposals, one hire/four interviews and Dutch-language content reduce win probability; client last viewed five days ago. Keep discovery-visible, not LIVE."},
+    {"title":"WooCommerce installation & Setup Specialist Needed – WordPress Elementor","company":"Upwork client","reason":"20-25 USD/h remote contract-to-hire, but expert/development-heavy scope, PHP tag, 50+ proposals and one existing hire make it a weak match."},
+    {"title":"Website & SEO Management 2026","company":"Upwork client","reason":"Strong WooCommerce operations fit at 15-30 USD/h and long-term remote, but listing is three weeks old with 20-50 proposals and requires Helium 10/Seller Central plus Loom audit; no new promotion."}
   ]
 }
