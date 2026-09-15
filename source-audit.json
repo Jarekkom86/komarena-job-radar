@@ -1,37 +1,37 @@
 {
   "schemaVersion": 10,
-  "updatedAt": "2026-09-15T12:10:37+02:00",
+  "updatedAt": "2026-09-15T13:05:35+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
     "existingReverified": 0,
     "freshCandidates": 3,
     "contentChangedAt": "2026-09-15T12:10:37+02:00",
-    "sourceVerificationAt": "2026-09-15T12:10:37+02:00",
+    "sourceVerificationAt": "2026-09-15T13:05:35+02:00",
     "freshnessWindowHours": 48,
     "stalePolicy": "Discovery age is not verification age. LIVE requires fresh full-detail/link evidence; list/search resurfacing cannot set verifiedAt.",
-    "note": "12:10 diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Pretlak, Upwork, WordPress/Reddit communities and public Facebook indexing. No new candidate cleared profile/economic/activity gates. jobs-data.json remained fail-closed and unchanged."
+    "note": "13:05 diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Pretlak/StartupJobs, Upwork, WordPress/Reddit communities and public Facebook indexing. No new candidate cleared profile/economic/activity gates. jobs-data.json remained fail-closed and unchanged."
   },
   "developmentChanges": [
-    {"id":"proposal-competition-decay-curve","title":"Proposal competition decay curve","reason":"Model freelance reply probability using proposal count together with listing age and client last-view activity, so keyword-perfect but stale crowded gigs automatically fall behind fresh lower-competition work."},
-    {"id":"student-only-contract-gate","title":"Student-only contract gate","reason":"Detect brigades whose contract or eligibility is restricted to students and suppress them before manual review unless an alternative generally eligible contract is explicitly offered."}
+    {"id":"client-last-view-hard-stale-gate","title":"Client last-view hard stale gate","reason":"For freelance listings, distinguish listing freshness from buyer activity and automatically demote jobs whose client has not viewed the post for multiple weeks even when the page remains indexed."},
+    {"id":"fixed-price-scope-sanity-gate","title":"Fixed-price scope sanity gate","reason":"Estimate whether a fixed-price freelance budget is plausible for the described deliverables and suppress obvious underpriced work before it consumes application time."}
   ],
   "sources": [
     {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/WooCommerce/technical-support/admin discovery executed; no distinct promotion-grade result surfaced."},
     {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava customer-service/IT-support/e-commerce employer-career discovery executed; no new canonical employer detail strong enough to promote."},
-    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava IT-support/e-commerce/customer-support discovery executed; no new full-detail promotion-grade result surfaced."},
-    {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-support/e-commerce discovery executed. A surfaced STU administration role is explicitly already filled/cancelled, therefore rejected as inactive."},
+    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava technical-support/e-commerce discovery executed; no new full-detail promotion-grade result surfaced."},
+    {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-support/e-commerce discovery executed; no new suitable full-detail hit surfaced."},
     {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-support/e-commerce discovery executed; no new full-detail promotion-grade hit surfaced."},
-    {"name":"Brigada.sk","family":"secondary-jobboard","status":"ok","hits":1,"added":0,"note":"Public Bratislava reception brigade at Mlynske Nivy was readable at 6 EUR/h plus meal allowance, but requires communicative English and is primarily student-oriented; not promoted."},
-    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce/support discovery executed; no suitable current hit surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":2,"added":0,"note":"Worldwide remote WooCommerce/Product Listing results were readable. Best task-fit listing offered 8-15 USD per completed listing but is four weeks old, has 20-50 proposals and 3 hires. Other fresh-indexed WooCommerce gigs were low-budget, expert-development heavy, stale, or already hired; no promotion."},
+    {"name":"Brigada.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/e-shop/driver discovery executed; no new promotion-grade result surfaced in public indexing."},
+    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce/support discovery executed; no suitable current hit surfaced."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":3,"added":0,"note":"Worldwide remote WooCommerce/e-commerce results were readable. Product-listing specialist remains strong task fit but requires strong written English and client has not viewed it for two weeks. Other WooCommerce/VA results were severely underpriced, stale, already hired or development-heavy; no promotion."},
     {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring search executed; no concrete client demand suitable for promotion surfaced."},
     {"name":"Facebook public group indexing","family":"facebook","status":"limited","hits":0,"added":0,"note":"0 verified hits. No concrete publicly verifiable hiring post with direct link surfaced; authenticated Nexus/local ingestion remains backlog only and was not started."}
   ],
   "verificationNeededCandidates": [],
   "rejectedCandidates": [
-    {"title":"WordPress Product Listing Specialist","company":"Upwork client","reason":"Excellent WordPress/manual publishing/AI task fit and Europe preferred, but listing is four weeks old, has 20-50 proposals and 3 hires; reply probability is now too weak for LIVE promotion."},
-    {"title":"Recepčná/ý v administratívnej budove","company":"B.E.E. s.r.o","reason":"Bratislava and generally accessible via agreement, but only 6 EUR/h and communicative English is mandatory; lower priority than current opportunities."},
-    {"title":"Odborná administratívna pracovníčka FEI STU","company":"Slovenská technická univerzita v Bratislave","reason":"Worki canonical page explicitly states the vacancy has already been filled or cancelled; rejected as inactive."}
+    {"title":"Computer Equipment And Peripheral's Product Listing Specialist","company":"Upwork client","reason":"Excellent WooCommerce/product/SKU/image research fit and only 5-10 proposals, but strong written English is explicit and client last viewed the listing two weeks ago; not strong enough for LIVE promotion."},
+    {"title":"WordPress & Shopify E-Commerce Product Posting & SEO Management Virtual Assistant","company":"Upwork client","reason":"Very strong product-admin fit and only 5-10 proposals, but fixed budget is only 7 USD and client last viewed four weeks ago; rejected on economics/activity."},
+    {"title":"eCommerce Virtual Assistant & Admin Support, Shopify and WooCommerce","company":"Upwork client","reason":"Good admin/e-commerce fit but fixed budget is only 10 USD, 20-50 proposals, already hired and client last viewed three weeks ago; rejected."}
   ]
 }
