@@ -1,39 +1,41 @@
 {
   "schemaVersion": 10,
-  "updatedAt": "2026-09-15T15:52:54+02:00",
+  "updatedAt": "2026-09-15T16:41:16+02:00",
   "runSummary": {
     "familiesChecked": 10,
     "freshPromoted": 0,
     "existingReverified": 0,
-    "freshCandidates": 5,
-    "contentChangedAt": "2026-09-15T12:10:37+02:00",
-    "sourceVerificationAt": "2026-09-15T15:52:54+02:00",
+    "freshCandidates": 6,
+    "sourceVerificationAt": "2026-09-15T16:41:16+02:00",
     "freshnessWindowHours": 48,
     "stalePolicy": "Discovery age is not verification age. LIVE requires fresh full-detail/link evidence; list/search resurfacing cannot set verifiedAt.",
-    "note": "15:52 diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Pretlak/StartupJobs, Upwork, WordPress/Reddit communities and public Facebook indexing. No new candidate cleared all profile/economic/activity gates. jobs-data.json remained fail-closed and unchanged."
+    "note": "Diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Pretlak/StartupJobs, Upwork, WordPress/Reddit communities and public Facebook indexing. New direct-company AGEM Account Manager in Bratislava-Petrzalka is promotion-ready but jobs-data.json remains fail-closed because safe full round-trip replacement is unavailable from the truncated reader."
   },
   "developmentChanges": [
-    {"id":"deadline-validity-hard-check","title":"Deadline validity hard check","reason":"Reject or quarantine freelance/job listings whose explicit delivery/application deadline is already past even when the marketplace still exposes the page as active; prevents stale marketplace pages from entering review."},
-    {"id":"hire-saturation-opportunity-score","title":"Hire saturation opportunity score","reason":"For freelance listings, combine proposal count with hires/interviews already recorded and client last-view recency; heavily penalize jobs where the buyer has effectively filled the role even if the page remains public."}
+    {"id":"primary-source-promotion-queue","title":"Primary-source promotion queue","reason":"Persist verified direct-company candidates separately until jobs-data can be safely patched, preventing strong canonical discoveries from being lost between hourly runs."},
+    {"id":"sales-variable-pay-normalizer","title":"Sales variable-pay normalizer","reason":"Store fixed salary, typical variable earnings and upside separately so sales roles are ranked on guaranteed economics first and not inflated by best-case commissions."}
   ],
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/technical-support/administration discovery executed; no distinct promotion-grade result surfaced."},
-    {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava IT-support/e-commerce employer-career discovery executed; no new canonical vacancy strong enough to promote."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/e-shop/technical-support/administration discovery executed; no distinct promotion-grade result surfaced."},
+    {"name":"Direct company careers / public ATS","family":"direct-company","status":"ok","hits":2,"added":0,"note":"Fresh discovery verified AGEM Account Manager (IT distribution) in Bratislava-Petrzalka, 1600 EUR base plus commissions, B licence and B1 English; strong technical-sales candidate. DTSE IT end-user support in Bratislava at 1500 EUR was also verified but requires B2 English and is penalized."},
     {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava IT-support/e-commerce discovery executed; no new full-detail promotion-grade result surfaced."},
-    {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":1,"added":0,"note":"Search surfaced Shield-Sk e-shop administrator/customer support in Ružinov, but canonical Worki page explicitly says the vacancy is filled/cancelled; rejected for inactivity."},
-    {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava technical-support/administration discovery executed; no promotion-grade full-detail hit surfaced."},
-    {"name":"Brigada.sk","family":"secondary-jobboard","status":"ok","hits":1,"added":0,"note":"Fresh Bratislava driver/admin/warehouse discovery found children's electric-train driver/cashier at AVION, 6 EUR/h net under student relief, B licence. Locality passes but economics/profile fit are weak, so no promotion."},
-    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce discovery executed; no suitable current hit surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":3,"added":0,"note":"Fresh worldwide WooCommerce sweep found a 90 USD launch/SEO job posted yesterday with 5-10 proposals but already 8 interviews; a 20-40 USD/h e-commerce developer role is expert/hard-development; a 3-15 USD/h 500-product listing has an explicit 27 Aug 2026 deadline already past. No promotion."},
+    {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-shop/technical-support/administration discovery executed; no active distinct promotion-grade result surfaced."},
+    {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava support/e-shop/administration discovery executed; no new full-detail promotion-grade hit surfaced."},
+    {"name":"Brigada.sk","family":"secondary-jobboard","status":"ok","hits":1,"added":0,"note":"AVION children's electric-train driver/cashier remains current from 15 Sep, but 6 EUR/h net under student relief is weak economics/profile fit; no promotion."},
+    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/WooCommerce discovery executed; no suitable current hit surfaced."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":3,"added":0,"note":"Fresh worldwide WordPress/WooCommerce sweep found product-listing and content-management matches. Best catalog role is 105.30 USD fixed with 5-10 proposals but client last viewed two weeks ago and requires strong written English; other fresh roles skew hard-development or weak economics."},
     {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring search executed; no concrete suitable client demand surfaced."},
     {"name":"Facebook public group indexing","family":"facebook","status":"limited","hits":0,"added":0,"note":"0 verified hits. No concrete publicly verifiable hiring post with direct link surfaced; authenticated Nexus/local ingestion remains backlog only and was not started."}
   ],
   "verificationNeededCandidates": [],
+  "promotionReadyCandidates": [
+    {"title":"Account Manager (IT distribúcia) / Obchodný zástupca – B2B","company":"AGEM COMPUTERS, spol. s r. o.","source":"direct-company","location":"Bratislava – Petržalka (Panónska)","locationEligibility":"ba-area","locationReason":"Canonical AGEM career page explicitly states Bratislava-Petrzalka (Panonska).","pay":"od 1 600 EUR brutto + provízie; typicky 2 200–3 200 EUR po zaškolení","language":"English B1","reason":"Strong electronics/IT portfolio and e-commerce/reseller overlap; B1 is a moderate penalty, and role requires 1+ year active B2B sales or relevant sales experience. Direct employer source is canonical."}
+  ],
   "rejectedCandidates": [
-    {"title":"WordPress/WooCommerce Expert – Ecommerce, SEO, Analytics & Launch","company":"Upwork client","reason":"Fresh worldwide remote listing posted 14 Sep 2026, 90 USD fixed and 5-10 proposals, but already 8 interviews and broad launch/payment/shipping/GA4/GSC requirements make win probability and effective economics weak."},
-    {"title":"WordPress Developer Needed for E-commerce Website","company":"Upwork client","reason":"Worldwide remote at 20-40 USD/h and client viewed four hours ago, but role is explicitly expert development with PHP/HTML/CSS/JavaScript, full build/integrations and 20-50 proposals; hard-development mismatch."},
-    {"title":"500 WooCommerce Electronic Products Creation","company":"Upwork client","reason":"Excellent electronics/catalog keyword fit, but explicit project deadline was 27 Aug 2026, already past; page persistence is not evidence of current availability."},
-    {"title":"Administrátor e-shopu / zakaznícka podpora","company":"Shield-Sk s. r. o.","reason":"Ružinov and functional fit pass, but Worki canonical page explicitly states the vacancy has been filled or cancelled."},
-    {"title":"Vodič detského vláčika","company":"Jana Petrovicova","reason":"Bratislava AVION and B licence pass locality/driver gate, but 6 EUR/h net is weak economics and the role is aimed mainly at students/active pensioners; not competitive with current LIVE driver options."}
+    {"title":"IT Špecialista/špecialistka podpory koncových zákazníkov","company":"DTSE","reason":"Bratislava and technical-support fit pass, but canonical detail explicitly requires English B2; strong language penalty for current A2 profile."},
+    {"title":"Computer Equipment And Peripheral's Product Listing Specialist","company":"Upwork client","reason":"Excellent electronics/WooCommerce/catalog fit and 5-10 proposals, but strong written English is mandatory, client last viewed two weeks ago and fixed 105.30 USD scope is unclear; do not promote without renewed buyer activity/economic clarity."},
+    {"title":"WordPress Developer to design, develop, and customize responsive websites","company":"Upwork client","reason":"Fresh worldwide remote listing at 150 USD fixed, but explicitly expert hard-development requiring PHP/HTML/CSS/JavaScript and portfolio; profile mismatch."},
+    {"title":"Content Writing and WordPress Expert Needed","company":"Upwork client","reason":"15-35 USD/h remote and WordPress/content fit, but mandatory PHP plus English-heavy content creation and existing interviews/invites reduce fit/win probability."},
+    {"title":"Vodič detského vláčika","company":"Jana Petrovicova","reason":"Bratislava AVION and B licence pass locality/driver gate, but 6 EUR/h net is weak economics and role is aimed mainly at students/active pensioners."}
   ]
 }
