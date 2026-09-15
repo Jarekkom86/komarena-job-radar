@@ -1,36 +1,39 @@
 {
   "schemaVersion": 10,
-  "updatedAt": "2026-09-15T09:11:00+02:00",
+  "updatedAt": "2026-09-15T09:16:53+02:00",
   "runSummary": {
-    "familiesChecked": 6,
+    "familiesChecked": 10,
     "freshPromoted": 0,
-    "existingReverified": 1,
-    "freshCandidates": 7,
-    "contentChangedAt": "2026-09-15T09:11:00+02:00",
-    "sourceVerificationAt": "2026-09-15T09:11:00+02:00",
+    "existingReverified": 0,
+    "freshCandidates": 5,
+    "contentChangedAt": "2026-09-15T09:16:53+02:00",
+    "sourceVerificationAt": "2026-09-15T09:16:53+02:00",
     "freshnessWindowHours": 48,
     "stalePolicy": "Discovery age is not verification age. LIVE requires fresh full-detail/link evidence; list/search resurfacing cannot set verifiedAt.",
-    "note": "09:11 follow-up sweep expanded today's discovery. PSS was re-opened on its canonical company detail and vacancy list. New indexed Bratislava candidates were recorded as verification-needed, while DHL IT Support was rejected after full detail confirmed English B2. No new role was promoted without complete evidence."
+    "note": "09:16 diversified sweep covered Profesia, direct-company discovery, LinkedIn, Worki, Kariera, Praca za rohom, Pretlak, Upwork, Reddit/WordPress communities and public Facebook indexing. No new candidate cleared both profile/economic quality and evidence gates, so jobs-data.json remained fail-closed and unchanged."
   },
   "developmentChanges": [
-    {"id":"url-safety-check","title":"Promotion URL safety diagnostic","reason":"Feed quality helper now rejects malformed/non-http(s) promotion URLs instead of treating any string as usable evidence."},
-    {"id":"evidence-surface-strength","title":"Strong evidence-surface diagnostic","reason":"Promotion diagnostics now distinguish canonical/full job detail from weak or unspecified surfaces."},
-    {"id":"profile-hard-gate-diagnostics","title":"Language and physical hard-gate diagnostics","reason":"Promotion-quality checks now flag explicit high English and high/heavy physical burden before a candidate can be considered clean evidence."},
-    {"id":"three-age-summary","title":"Three-age freshness summary","reason":"Helper now reports content age, job-verification age and source-verification age separately in one deterministic summary."}
+    {"id":"budget-normalized-hourly-floor","title":"Budget-normalized freelance hourly floor","reason":"Estimate effective hourly value from fixed/hourly budget and likely scope before review so low-value keyword-perfect gigs are suppressed early."},
+    {"id":"client-activity-decay","title":"Freelance client activity decay","reason":"Use last-viewed age together with hires/interviews/proposals to lower priority of apparently open gigs whose client has stopped actively reviewing candidates."}
   ],
   "sources": [
-    {"name":"PSS official career / canonical detail","family":"direct-company","status":"ok","hits":1,"added":0,"reverified":1,"note":"09:11 canonical detail still exposes apply action, Bratislava, 1 500–1 700 €, flexible time and work-from-home option."},
-    {"name":"Profesia","family":"profesia","status":"checked","hits":5,"added":0,"note":"Fresh discovery includes Simplaq, Tatra Leasing, BKIS and DHL. DHL IT Support full detail was checked and rejected for explicit English B2; list-only candidates remain verification-needed."},
-    {"name":"Práca za rohom","family":"secondary-jobboard","status":"checked","hits":5,"added":0,"note":"Current Bratislava admin/referent indexes corroborate Simplaq, BKIS, Tatra Leasing and other recent roles; list pages are discovery evidence only."},
-    {"name":"DHL / Profesia full detail","family":"company-jobboard","status":"ok","hits":2,"added":0,"note":"IT Support is active at 2 000–2 200 € but requires English B2, so it is excluded. Four-hour Senec transport admin remains visible in current DHL listings but was not given a new verifiedAt without a fresh full-detail check."},
-    {"name":"LinkedIn public indexing","family":"linkedin","status":"checked","hits":1,"added":0,"note":"Staffino remains verification-needed; no full requirements evidence sufficient for promotion."},
-    {"name":"Remote / WordPress / WooCommerce discovery","family":"remote-web","status":"checked","hits":0,"added":0,"note":"No distinct new high-confidence remote WP/Woo opportunity cleared today's evidence and profile gates."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/WooCommerce/technical-support/admin discovery executed; no distinct promotion-grade result surfaced in public search."},
+    {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava IT-support/customer-support career discovery executed; no new canonical employer detail cleared profile gates."},
+    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava technical-support/e-commerce/WordPress discovery executed; no full-detail promotion-grade result surfaced."},
+    {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-support discovery executed; no suitable verified hit surfaced."},
+    {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-support discovery executed; no new full-detail promotion-grade hit surfaced."},
+    {"name":"Praca za rohom","family":"secondary-jobboard","status":"ok","hits":1,"added":0,"note":"Ayming 50% Innovation Support in Bratislava is publicly readable at 900 EUR, but English is moderately advanced and the role targets a narrower student/parent profile; not promoted."},
+    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce/support discovery executed; no suitable current hit surfaced."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":4,"added":0,"note":"Worldwide remote e-commerce/WooCommerce results were readable. Electronics-store VA has strong task fit but only 3-6 USD/h and 20-50 proposals; other WordPress results were hard-development or very low fixed-budget work. No promotion."},
+    {"name":"Reddit / WordPress communities","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public hiring search executed; no concrete client demand suitable for promotion surfaced."},
+    {"name":"Facebook public group indexing","family":"facebook","status":"limited","hits":0,"added":0,"note":"0 verified hits. No concrete publicly verifiable hiring post with direct link surfaced; authenticated Nexus/local ingestion remains backlog only and was not started."}
   ],
-  "verificationNeededCandidates": [
-    {"title":"Asistent/ka v kancelárií (aj pre študentov)","company":"Simplaq s.r.o","reason":"Fresh Bratislava index, but full requirements not verified."},
-    {"title":"Asistent/Asistentka sekcie Technickej podpory podujatí","company":"Bratislavské kultúrne a informačné stredisko","reason":"Good technical-admin fit from index; full detail still required."},
-    {"title":"Middle officer pre Tatra Leasing (M/Ž) – tím digitálneho predaja","company":"Tatra banka, a.s.","reason":"Fresh index; sales component and requirements require full-detail review."},
-    {"title":"Hľadáme administratívnu podporu do transportného tímu – 4 hodiny denne","company":"DHL Group","reason":"Current company listing confirms the role exists, but today's full requirements detail was not re-opened."},
-    {"title":"Technical Support Specialist / Project Coordinator (IT / SaaS)","company":"Staffino","reason":"Full requirements, language and compensation remain insufficiently verified."}
+  "verificationNeededCandidates": [],
+  "rejectedCandidates": [
+    {"title":"Virtual Assistant - Ongoing - Product Listing/ Ecommerce Management","company":"Upwork client","reason":"Excellent electronics/e-commerce/WooCommerce task overlap and worldwide remote, but only 3-6 USD/h with 20-50 proposals; rejected on effective economics."},
+    {"title":"Administrativna podpora pre Konzultantov pre inovacie - 50%","company":"Ayming Slovensko","reason":"Bratislava and 900 EUR for half-time, but moderately advanced English plus narrowly stated target profile reduce fit; not promoted."},
+    {"title":"Senior Front-End WordPress Webmaster","company":"Upwork client","reason":"Requires deep GeoDirectory/GenerateBlocks, REST API, JavaScript, PWA and expert ownership; hard-development mismatch."},
+    {"title":"Setting up Dropshipping/e-commerce","company":"Upwork client","reason":"WooCommerce fit but only 40 USD fixed and already hired; weak opportunity economics/activity."},
+    {"title":"Ecommerce VA Needed: SEO & Bulk Product Upload Expert","company":"Upwork client","reason":"Strong product-listing overlap but only 15 USD fixed plus good written English requirement; rejected as low-value."}
   ]
 }
