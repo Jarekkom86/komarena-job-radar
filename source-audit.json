@@ -1,43 +1,42 @@
 {
   "schemaVersion": 10,
-  "updatedAt": "2026-09-15T18:51:29+02:00",
+  "updatedAt": "2026-09-15T19:22:59+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "freshPromoted": 0,
     "existingReverified": 0,
-    "freshCandidates": 6,
-    "sourceVerificationAt": "2026-09-15T18:51:29+02:00",
+    "freshCandidates": 5,
+    "sourceVerificationAt": "2026-09-15T19:22:59+02:00",
     "freshnessWindowHours": 48,
     "stalePolicy": "Discovery age is not verification age. LIVE requires fresh full-detail/link evidence; list/search resurfacing cannot set verifiedAt.",
-    "note": "Diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Pretlak/StartupJobs, Upwork, WordPress public jobs, Reddit/WordPress communities and public Facebook indexing. No new candidate cleared the combined fit, locality/remote, language, economics and activity gates. Existing LIVE feed remains fail-closed and unchanged."
+    "note": "Diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Pretlak/StartupJobs, Upwork, WordPress public jobs, Reddit/WordPress communities and public Facebook indexing. No new candidate cleared fit, locality/remote, language, economics and activity gates. Existing LIVE feed remains fail-closed and unchanged."
   },
   "developmentChanges": [
-    {"id":"client-last-viewed-hard-decay","title":"Client last-viewed hard decay","reason":"Treat buyer inactivity as a separate decay signal: freelance listings not viewed by the client for 7+ days should sharply lose proposal priority even when the posting itself remains public."},
-    {"id":"fresh-hard-skill-gap-budget","title":"Fresh hard-skill gap budget","reason":"For newly posted WordPress roles, quantify how many mandatory hard-development skills are outside proven experience and suppress fresh-looking opportunities when PHP/JS/custom development dominates the scope."}
+    {"id":"buyer-activity-verification-gate","title":"Buyer activity verification gate","reason":"Separate listing freshness from buyer freshness for freelance work; require recent client view/activity before high-priority promotion so stale public listings do not waste proposal time."},
+    {"id":"remote-country-eligibility-evidence","title":"Remote country eligibility evidence","reason":"Store explicit evidence that a remote role accepts applicants working from Slovakia; generic Europe/EMEA/Worldwide labels should not silently override unclear country restrictions."}
   ],
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/e-shop/IT-support discovery executed on 15 Sep 2026; no distinct promotion-grade result surfaced."},
-    {"name":"Direct company careers / public ATS","family":"direct-company","status":"ok","hits":1,"added":0,"note":"Fresh public employer/ATS discovery surfaced Volkswagen Group Internal Tech Agent/IT Specialist in Bratislava via indexed canonical ATS mirror, but evidence indicates broader network/OS/cybersecurity scope and it was not promoted."},
-    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"ok","hits":3,"added":0,"note":"Fresh technical-support discovery executed. Action1 Tier 1 Europe surfaced only at list level; SupportYourApp C1/fluent-English roles are language mismatches; Netzon German+English role is inactive and language mismatch."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/e-shop/IT-support discovery executed 15 Sep 2026 19:22; no distinct promotion-grade result surfaced."},
+    {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava support/e-commerce company-career discovery executed; no new canonical employer detail strong enough to promote."},
+    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"ok","hits":2,"added":0,"note":"Action1 Technical Support Engineer Tier 1 - Europe remains fresh at list level, but full remote-from-Slovakia terms and language requirements were not verified. SupportYourApp C1 role remains a language mismatch."},
     {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support/e-shop discovery executed; no suitable distinct active hit surfaced."},
     {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-shop/administration/IT-support discovery executed; no new full-detail promotion-grade result surfaced."},
     {"name":"Brigada.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/warehouse/courier brigade discovery executed; no verified suitable hit surfaced."},
     {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce discovery executed; no suitable current promotion-grade hit surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"added":0,"note":"Fresh worldwide WooCommerce/WordPress sweep. Newest concrete listing is WordPress Developer posted 14 Sep 2026 at 150 USD fixed, but Expert level with mandatory PHP/HTML/CSS/JavaScript and development scope. Existing product-listing/e-commerce VA hits are stale by client activity or weak economics. No promotion."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":4,"added":0,"note":"Fresh WooCommerce/WordPress sweep. WordPress Developer posted 14 Sep is active but Expert hard-development (PHP/HTML/CSS/JS). Product Listing Specialist is strong task fit but client last viewed two weeks ago; other WooCommerce roles are stale/overcompetitive or weak economics. No promotion."},
     {"name":"WordPress.org public jobs/ecosystem indexing","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce jobs search executed; no concrete suitable current client demand surfaced."},
     {"name":"Reddit public communities","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring search executed; no concrete suitable current client demand surfaced."},
     {"name":"Facebook public group indexing","family":"facebook","status":"limited","hits":0,"added":0,"note":"0 verified hits. No concrete publicly verifiable hiring post with direct link surfaced. Authenticated Nexus/local ingestion remains backlog only and was not started."}
   ],
   "verificationNeededCandidates": [
-    {"title":"Technical Support Engineer Tier 1 - Europe","company":"Action1","source":"LinkedIn public index","locationEligibility":"unknown","locationReason":"Slovakia list result surfaced, but full detail/remote-from-Slovakia terms and language requirements were not verified in this run."}
+    {"title":"Technical Support Engineer Tier 1 - Europe","company":"Action1","source":"LinkedIn public index","locationEligibility":"unknown","locationReason":"Slovakia list result is fresh, but full detail/remote-from-Slovakia eligibility and language requirements were not verified in this run."}
   ],
   "promotionReadyCandidates": [],
   "rejectedCandidates": [
-    {"title":"WordPress Developer to design, develop, and customize responsive websites","company":"Upwork client","reason":"Worldwide remote and freshly posted 14 Sep 2026, but Expert-level hard development with mandatory PHP/HTML/CSS/JavaScript; 15-20 proposals and an interview already. Profile mismatch."},
-    {"title":"Computer Equipment And Peripheral's Product Listing Specialist","company":"Upwork client","reason":"Excellent WooCommerce/product-listing overlap and only 5-10 proposals, but client last viewed two weeks ago and strong written English is explicit; buyer inactivity and language friction prevent promotion."},
-    {"title":"E-commerce Virtual Assistant | Product Listings, Customer Support & Store Management","company":"Upwork client","reason":"Direct product/admin fit and worldwide remote, but only 7-8 USD/h, 20-50 proposals and client last viewed two weeks ago; weak economics and stale buyer activity."},
-    {"title":"WordPress Contractor | Elementor, ACF, CPTs and WooCommerce","company":"Upwork client","reason":"20-40 USD/h and long-term remote are attractive, but Expert scope requires ACF/CPT architecture, performance work and fast production; 20-50 proposals and 5 interviews reduce win probability."},
-    {"title":"(English C1) Technical Support Consultant, VPS & Trading (remote)","company":"SupportYourApp","reason":"Remote and technical-support fit, but explicit English C1 plus VPS/trading specialization is a hard language/skills mismatch."},
-    {"title":"Order Management, Sales & Technical Support Advisor - German Speaker","company":"Netzon Group","reason":"Bratislava role but LinkedIn says no longer accepting applications and requires fluent German and English."}
+    {"title":"WordPress Developer to design, develop, and customize responsive websites","company":"Upwork client","reason":"Worldwide remote and posted 14 Sep 2026, but Expert-level hard development with mandatory PHP/HTML/CSS/JavaScript; 15-20 proposals and an interview already. Profile mismatch."},
+    {"title":"WordPress Product Listing Specialist","company":"Upwork client","reason":"Direct WordPress/product-listing/AI overlap and 8-15 USD per completed listing, but client last viewed two weeks ago and 20-50 proposals; buyer inactivity prevents promotion."},
+    {"title":"WordPress Contractor | Elementor, ACF, CPTs and WooCommerce","company":"Upwork client","reason":"20-40 USD/h and long-term remote are attractive, but Expert scope requires ACF/CPT architecture and fast production; 20-50 proposals, 5 interviews and client last viewed two weeks ago reduce win probability."},
+    {"title":"Full-Time WordPress & WooCommerce Developer","company":"Upwork client","reason":"Remote long-term contract-to-hire but 50+ proposals, 10 interviews, client last viewed two weeks ago and demanding development/QA/Arabic scope make it a poor fit."},
+    {"title":"(English C1) Technical Support Consultant, VPS & Trading (remote)","company":"SupportYourApp","reason":"Remote and technical-support fit, but explicit English C1 plus VPS/trading specialization is a hard language/skills mismatch."}
   ]
 }
