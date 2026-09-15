@@ -1,29 +1,29 @@
 {
   "schemaVersion": 10,
-  "updatedAt": "2026-09-15T20:53:23+02:00",
+  "updatedAt": "2026-09-15T22:29:35+02:00",
   "runSummary": {
     "familiesChecked": 11,
     "freshPromoted": 0,
     "existingReverified": 0,
-    "freshCandidates": 4,
-    "sourceVerificationAt": "2026-09-15T20:53:23+02:00",
+    "freshCandidates": 5,
+    "sourceVerificationAt": "2026-09-15T22:29:35+02:00",
     "freshnessWindowHours": 48,
     "stalePolicy": "Discovery age is not verification age. LIVE requires fresh full-detail/link evidence; list/search resurfacing cannot set verifiedAt.",
     "note": "Diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Pretlak/StartupJobs, Upwork, WordPress public jobs, Reddit/WordPress communities and public Facebook indexing. No new candidate cleared fit, locality/remote, language, economics and activity gates. Existing LIVE feed remains fail-closed and unchanged."
   },
   "developmentChanges": [
-    {"id":"proposal-competition-velocity","title":"Proposal competition velocity","reason":"Track proposal-count change between rechecks on freelance marketplaces so rapidly saturating jobs are automatically deprioritized even when their headline fit remains high."},
-    {"id":"mandatory-skill-surface-separation","title":"Mandatory-skill surface separation","reason":"Separate skills shown as marketplace mandatory tags from narrative nice-to-have text; avoid promoting content/admin WordPress work when PHP or hard development is structurally mandatory."}
+    {"id":"application-closure-memory","title":"Application closure memory","reason":"Persist canonical closed/no-longer-accepting signals so stale mirrors and search-index resurfacing cannot repeatedly re-enter candidate review."},
+    {"id":"freelance-client-recency-gate","title":"Freelance client recency gate","reason":"Combine client last-viewed age with proposal/interview/hire counts before promotion; stale client activity should outweigh a superficially strong WooCommerce keyword match."}
   ],
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/e-shop/admin/IT-support discovery executed 15 Sep 2026 20:53; no distinct promotion-grade result surfaced."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/e-shop/admin/IT-support discovery executed 15 Sep 2026 22:29; no distinct promotion-grade result surfaced."},
     {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava support/e-commerce company-career discovery executed; no new canonical employer detail strong enough to promote."},
-    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava technical-support/e-commerce discovery executed; no new full-detail promotion-grade result surfaced in public indexing."},
+    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"ok","hits":1,"added":0,"note":"Top4Mobile e-shop administrator/customer support surfaced with strong task fit in Bratislava, but canonical LinkedIn detail explicitly says no longer accepting applications; rejected as inactive."},
     {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support/e-shop discovery executed; no suitable distinct active hit surfaced."},
     {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-shop/administration/IT-support discovery executed; no new full-detail promotion-grade result surfaced."},
     {"name":"Brigada.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/warehouse/courier brigade discovery executed; no verified suitable hit surfaced."},
     {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce discovery executed; no suitable current promotion-grade hit surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":4,"added":0,"note":"Fresh WooCommerce/WordPress sweep. Content Writing and WordPress Expert is 15-35 USD/h, 6+ months and worldwide but PHP is a mandatory skill and client last viewed 5 days ago. WooCommerce Product Listing is strong task fit at 10-30 USD/h but prefers Dutch, has 20-50 proposals, 4 interviews and 1 hire. Other surfaced roles are stale, hard-development or weak economics. No promotion."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":4,"added":0,"note":"Fresh WooCommerce/WordPress sweep. WooCommerce Product Listing remains 10-30 USD/h and task-aligned but has 20-50 proposals, 4 interviews, 1 hire and client last viewed 6 days ago. Other results are hard-development, weak-budget or stale-client mismatches. No promotion."},
     {"name":"WordPress.org public jobs/ecosystem indexing","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce jobs search executed; no concrete suitable current client demand surfaced."},
     {"name":"Reddit public communities","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring search executed; no concrete suitable current client demand surfaced."},
     {"name":"Facebook public group indexing","family":"facebook","status":"limited","hits":0,"added":0,"note":"0 verified hits. No concrete publicly verifiable hiring post with direct link surfaced. Authenticated Nexus/local ingestion remains backlog only and was not started."}
@@ -31,9 +31,10 @@
   "verificationNeededCandidates": [],
   "promotionReadyCandidates": [],
   "rejectedCandidates": [
-    {"title":"Content Writing and WordPress Expert Needed","company":"Upwork client","reason":"Worldwide remote, 15-35 USD/h and 6+ months, but PHP is explicitly mandatory; client last viewed 5 days ago and 10-15 proposals. Hard-skill mismatch prevents promotion."},
+    {"title":"Administrátor e-shopu / zákaznícka podpora","company":"Top4Mobile","reason":"Excellent Bratislava e-shop/customer-support fit and source detail is readable, but LinkedIn explicitly reports no longer accepting applications; inactive hard reject."},
     {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","reason":"Worldwide remote, 10-30 USD/h and strong WooCommerce/product-upload fit, but Dutch is preferred and competition is already 20-50 proposals, 4 interviews and 1 hire; client last viewed 6 days ago."},
-    {"title":"WordPress Developer to design, develop, and customize responsive websites","company":"Upwork client","reason":"Worldwide remote and freshly active, but Expert-level hard development with mandatory PHP/HTML/CSS/JavaScript; profile mismatch."},
-    {"title":"Computer Equipment And Peripheral's Product Listing Specialist","company":"Upwork client","reason":"Excellent electronics/product-listing/WooCommerce overlap and only 5-10 proposals, but strong written English is required and client last viewed two weeks ago; buyer inactivity and language risk prevent promotion."}
+    {"title":"WordPress Developer to design, develop, and customize responsive websites","company":"Upwork client","reason":"Worldwide remote and posted yesterday, but Expert-level hard development with mandatory WordPress/CSS/Web Development plus explicit PHP/HTML/JavaScript requirements; profile mismatch."},
+    {"title":"WooCommerce Website Creation","company":"Upwork client","reason":"Worldwide remote but $70 fixed, Expert level, requires 2-3 live WooCommerce sites personally developed and full design/development/payment delivery; economics and evidence requirements are poor fit."},
+    {"title":"WooCommerce Product Review and Addition","company":"Upwork client","reason":"Task fit is good, but only 5-11 USD/h, 20-50 proposals and client last viewed 3 weeks ago; low economics and stale activity prevent promotion."}
   ]
 }
