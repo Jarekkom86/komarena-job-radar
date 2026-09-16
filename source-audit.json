@@ -1,38 +1,39 @@
 {
   "schemaVersion": 12,
-  "updatedAt": "2026-09-16T11:55:00+02:00",
-  "sourceVerificationAt": "2026-09-16T11:55:00+02:00",
+  "updatedAt": "2026-09-16T12:14:00+02:00",
+  "sourceVerificationAt": "2026-09-16T12:14:00+02:00",
   "runSummary": {
-    "familiesChecked": 11,
+    "familiesChecked": 12,
     "freshPromoted": 0,
-    "existingReverified": 0,
-    "freshCandidates": 1,
-    "excludedAfterFullDetail": 6,
+    "existingReverified": 1,
+    "freshCandidates": 2,
+    "excludedAfterFullDetail": 7,
     "freshnessWindowHours": 48,
-    "note": "Real 16 Sep 11:55 sweep. Eleven independent source families were actually queried: Profesia, direct company/public career pages, LinkedIn Jobs, Worki, Kariera, Brigada.sk, Pretlak, Upwork, WordPress Jobs, Reddit/WordPress communities and public Facebook indexing. No new offer met fit, freshness and evidence threshold for safe LIVE promotion. Fresh Brigada.sk receptionist role in Bratislava was excluded because it requires communicative English and is primarily student-oriented. Upwork surfaced several WooCommerce operational roles, but the relevant ones were 2-4 weeks old, already hired/high-competition, underpriced, or demanded expert development/security skills. Facebook produced 0 concrete publicly verifiable posts."
+    "note": "Real 16 Sep 12:14 sweep. Twelve independent source families were actually queried: Profesia, direct company/public career pages, LinkedIn Jobs, Worki, Kariera, Brigada.sk, Pretlak/StartupJobs, Upwork, WordPress Jobs, Reddit/WordPress communities, public Facebook indexing and additional public company-career discovery. LinkedIn freshly reverified Kaufland Service & Support Bratislava as active; it is already known from the prior run and therefore not duplicated. A pharco Ecommerce Manager role in Bratislava was found but is a full-time on-site manager role and was not promoted without stronger evidence on requirements/pay. Upwork produced operational WooCommerce candidates, but the strongest listing/upload role is already three weeks old with 20-50 proposals, 1 hire and 4 interviews; newer roles skew toward expert PHP/development. Facebook produced 0 concrete publicly verifiable posts."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress, e-shop and IT-support query executed; no new verified promotion."},
-    {"name":"Direct company/public careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava company-career discovery query executed; no new canonical promotion-grade result surfaced."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-commerce/IT-support query executed; no new full-detail result strong enough for promotion."},
-    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support/e-commerce query executed; no suitable new public hit."},
-    {"name":"Kariera","family":"kariera","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support/e-commerce query executed; no suitable new full-detail hit."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":1,"added":0,"note":"Recepčná/ý v administratívnej budove, Mlynské Nivy Bratislava, 6 EUR net/hour. Location passes but communicative English is mandatory and role is aimed mainly at university students; excluded for fit/language."},
-    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce/support query executed; no concrete suitable new assignment surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":8,"added":0,"note":"Worldwide WooCommerce/WordPress results read. Product-upload/listing roles were 2-4 weeks old and already hired/high-competition or economically weak. Newer expert roles demanded PHP/server/security/development depth. No safe promotion."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-shop/WordPress/IT-support query executed; no new promotion-grade full-detail hit."},
+    {"name":"Direct company/public careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava company-career discovery executed; no new canonical promotion-grade offer beyond already tracked candidates."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":4,"added":0,"note":"Fresh Bratislava e-commerce/IT-support search returned pharco Ecommerce Manager, ESET Global eCommerce, Global Blue Application Support and a fresh Kaufland Service & Support listing. Kaufland is already known/reverified; others are manager/specialist or deeper technical roles and were not promoted."},
+    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical/e-commerce query executed; no suitable new public hit."},
+    {"name":"Kariera","family":"kariera","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/e-shop/IT-support query executed; no suitable new full-detail hit."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"note":"Fresh public query executed; no new suitable hit beyond the previously reviewed receptionist role."},
+    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce search executed; no concrete suitable new assignment surfaced."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":9,"added":0,"note":"Worldwide WooCommerce/WordPress results read. Strong operational product-upload role pays 10-30 USD/hour but is 3 weeks old with 20-50 proposals, 1 hire and 4 interviews. Newer jobs largely demand expert PHP/development or have weak economics; no safe promotion."},
     {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"note":"Fresh public WooCommerce remote query executed; no concrete current suitable hit surfaced."},
-    {"name":"Reddit / WordPress communities","family":"communities","status":"checked","hits":0,"added":0,"note":"Fresh publicly indexed hiring/community query executed; only stale/weak WooCommerce VA demand resurfaced, not promoted."},
-    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"verifiedHits":0,"note":"Fresh public indexing query for Bratislava jobs and WordPress/WooCommerce groups returned no concrete publicly verifiable post with a direct link. 0 verified hits; authenticated Nexus/local-agent ingestion remains backlog-only."}
+    {"name":"Reddit / WordPress communities","family":"communities","status":"checked","hits":0,"added":0,"note":"Fresh publicly indexed hiring/community query executed; no concrete current promotion-grade request surfaced."},
+    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"verifiedHits":0,"note":"Fresh public indexing query for Bratislava jobs and WordPress/WooCommerce groups returned no concrete publicly verifiable post with a direct link. 0 verified hits; authenticated Nexus/local-agent ingestion remains backlog-only."},
+    {"name":"Public company ATS discovery","family":"company-ats","status":"checked","hits":0,"added":0,"note":"Fresh SmartRecruiters/public ATS-style Bratislava support discovery query executed; no additional suitable full-detail result."}
   ],
   "candidateNotes": [
-    {"title":"Recepčná/ý v administratívnej budove","company":"B.E.E. s.r.o.","locationEligibility":"ba-area","locationReason":"Brigada.sk full detail explicitly lists Bratislava, Mlynské Nivy.","decision":"exclude-fit-language","reason":"6 EUR net/hour and flexible shifts are usable, but communicative English is mandatory and the role is targeted mainly at university students."},
-    {"title":"WooCommerce Product Upload Expert Needed – 50 Products","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide / Remote Job.","decision":"exclude-stale-competition","reason":"Strong operational WooCommerce fit but posted two weeks ago, 20-50 proposals and already hired; 50 USD fixed for 50 products is weak economics."},
-    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide / Remote Job.","decision":"exclude-competition","reason":"10-30 USD/hour and ChatGPT-assisted Dutch text are relevant, but role is three weeks old with 20-50 proposals, 1 hire and 4 interviews."}
+    {"title":"Technická podpora na IT odd./Service a Support (m/ž)","company":"Kaufland Slovenská republika v.o.s.","locationEligibility":"ba-area","locationReason":"LinkedIn currently lists Bratislava and the role is local Service & Support.","decision":"reverified-existing","reason":"Fresh LinkedIn listing is active and highly relevant L1 support, but it was already identified in a prior run; stable-ID dedupe prevents a duplicate promotion."},
+    {"title":"Ecommerce Manager","company":"pharco s.r.o.","locationEligibility":"ba-area","locationReason":"LinkedIn explicitly lists full-time on-site Bratislava.","decision":"hold-requirements","reason":"Strong e-commerce topical fit, but it is a full-time on-site manager role and current indexed detail does not provide enough evidence on salary, language and seniority requirements for a high-confidence promotion."},
+    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide / Remote Job.","decision":"exclude-competition","reason":"Excellent operational WooCommerce fit and 10-30 USD/hour, but listing is three weeks old with 20-50 proposals, 1 hire and 4 interviews."}
   ],
   "liveMix": {"note":"Not recomputed because jobs-data.json was not modified in this pass. Existing LIVE feed was preserved fail-closed."},
   "masterBacklogAdditions": [
-    {"id":"marketplace-hire-state-decay","title":"Marketplace hire-state decay","detail":"Reduce priority sharply when a freelance listing already has a hire plus multiple interviews, even if the listing remains technically open; this prevents wasting proposal time on effectively filled work."},
-    {"id":"student-contract-eligibility-gate","title":"Student-contract eligibility gate","detail":"Separate roles merely suitable for students from roles legally restricted to student agreements; suppress only the latter when the candidate cannot use that contract, avoiding false rejection of ordinary part-time work."}
+    {"id":"manager-title-evidence-gate","title":"Manager-title evidence gate","detail":"For manager/lead titles, require explicit evidence on hands-on scope, seniority, salary and language before promotion; prevents attractive e-commerce keywords from overpowering hidden seniority mismatch."},
+    {"id":"reverification-dedupe-ledger","title":"Reverification dedupe ledger","detail":"Record when an already-known candidate resurfaces freshly on another source and update evidence freshness without creating a new feed item; preserves stable IDs while improving confidence and source resilience."}
   ],
   "policy": {
     "contentAgeVsVerificationAge":"updatedAt/contentUpdatedAt describes data-content age; sourceVerificationAt describes when sources were actually checked; each job verifiedAt describes that job's evidence age.",
