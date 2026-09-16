@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "updatedAt": "2026-09-16T08:14:45+02:00",
+  "contentUpdatedAt": "2026-09-16T08:14:45+02:00",
+  "sourceVerificationAt": "2026-09-16T08:14:45+02:00",
+  "verificationScope": "Real public-source sweep on 2026-09-16 for Bratislava/BA region and user's admin, complaints, technical support/service scope. Promotion requires an active full detail, compatible language gate and high-confidence evidence.",
+  "jobs": [
+    {
+      "id": "profesia-5350092-hellmann-road-assistant",
+      "sourceJobId": "5350092",
+      "title": "Asistentka/asistent oddelenia cestnej prepravy",
+      "company": "Hellmann Worldwide Logistics s.r.o.",
+      "location": "Galvaniho 15, Ružinov, Bratislava",
+      "origin": "ponuka",
+      "score": 92,
+      "scoreConfidence": 99,
+      "source": "Profesia",
+      "sourceType": "jobboard",
+      "sourceTrust": 98,
+      "form": "TPP / plný úväzok",
+      "pay": "od 1 200 €/mes. brutto + kvartálne odmeny",
+      "payMonth": 1200,
+      "start": "dohodou",
+      "english": "ok",
+      "engLabel": "angličtina A2",
+      "track": "admin",
+      "priority": "today",
+      "status": "active",
+      "promotionEligible": true,
+      "publishedAt": "2026-08-31T00:00:00+02:00",
+      "verifiedAt": "2026-09-16T08:14:45+02:00",
+      "linkCheckedAt": "2026-09-16T08:14:45+02:00",
+      "linkStatus": "active",
+      "evidenceSurface": "full-jobboard-detail",
+      "expiresAt": null,
+      "contact": "Lukáš Hindák",
+      "locationEligibility": "ba-area",
+      "physicalBurden": "low",
+      "desc": "Veľmi silný administratívno-reklamačný fit: skenovanie, evidencia a archivácia dokumentov, objednávky, práca v informačnom systéme, faktúry, bežné reklamácie, podklady pre reklamácie a vyhodnocovanie zákazníckych služieb. Požadovaná angličtina je A2; prax 1 rok, skúsenosť v cestnej preprave je iba výhodou.",
+      "url": "https://www.profesia.sk/praca/hellmann-worldwide-logistics/O5350092"
+    }
+  ],
+  "reverified": [
+    {
+      "id": "profesia-5357088-zlate-zrnko-service",
+      "sourceJobId": "5357088",
+      "title": "Servisný technik kávovarov",
+      "company": "Zlaté Zrnko s. r. o",
+      "status": "active",
+      "promotionEligible": false,
+      "verifiedAt": "2026-09-16T08:14:45+02:00",
+      "linkCheckedAt": "2026-09-16T08:14:45+02:00",
+      "linkStatus": "active",
+      "evidenceSurface": "full-jobboard-detail",
+      "reason": "Aktívna a strategicky zaujímavá ponuka, ale detail explicitne požaduje 2 roky praxe a ochotu cestovať; preto sa nepromuje ako high-confidence eligible LIVE match.",
+      "url": "https://www.profesia.sk/praca/zlate-zrnko/O5357088"
+    }
+  ],
+  "discoveryOnly": [
+    {
+      "title": "Dokumentačný referent pre námornú prepravu",
+      "company": "Advanced AIRSEA s. r. o.",
+      "status": "active-but-gated",
+      "reason": "Full detail je aktívny a vhodný aj pre absolventa, ale uvádza angličtinu B1; nepromované do LIVE priority."
+    },
+    {
+      "title": "Reklamačný technik",
+      "company": "ITB Development",
+      "status": "active-but-ineligible",
+      "reason": "Canonical firemný detail je aktívny, no vyžaduje stavebný smer a minimálne 3 roky praxe v stavebníctve."
+    }
+  ]
+}
