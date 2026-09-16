@@ -1,64 +1,72 @@
 {
-  "schemaVersion": 11,
-  "updatedAt": "2026-09-16T08:14:45+02:00",
-  "sourceVerificationAt": "2026-09-16T08:14:45+02:00",
+  "schemaVersion": 12,
+  "updatedAt": "2026-09-16T08:42:00+02:00",
+  "sourceVerificationAt": "2026-09-16T08:42:00+02:00",
   "runSummary": {
-    "familiesChecked": 6,
-    "freshPromoted": 1,
-    "existingReverified": 1,
+    "familiesChecked": 7,
+    "freshPromoted": 0,
+    "existingReverified": 0,
     "freshCandidates": 5,
     "excludedAfterFullDetail": 2,
     "freshnessWindowHours": 48,
-    "note": "Real 16 Sep sweep across Profesia admin/support, complaints/service and direct-company discovery. Promotion required a current full detail plus compatible language/experience constraints. Content timestamps and source-verification time are recorded separately."
+    "note": "Real 16 Sep 08:42 follow-up sweep across Profesia Senec/admin/customer-support and Kariera IT/support. No new offer was promoted without a current eligible full detail. Hellmann remains the earlier verified promotion from today's first sweep; this follow-up does not touch its verification timestamp."
   },
   "sources": [
     {
-      "name": "Profesia – Bratislava administratíva",
+      "name": "Profesia – Senec administratíva",
       "family": "profesia",
       "status": "ok",
       "hits": 4,
-      "added": 1,
-      "note": "Current newest-first listing was checked and candidate full details were opened. Hellmann road-transport assistant passed full-detail eligibility: A2 English, admin, invoicing and complaints work. Advanced AIRSEA was excluded from promotion for B1 English."
+      "added": 0,
+      "note": "Newest-first listing surfaced GEBRÜDER WEISS customer service, Konecta remote back office and other candidates. GEBRÜDER WEISS full detail confirms orders, complaints, returns and customer communication, but language/other hard gates were not fully evidenced in this pass, so it remains discovery-only."
     },
     {
-      "name": "Profesia – servis/technika",
-      "family": "profesia-tech",
+      "name": "Profesia – remote customer support",
+      "family": "profesia-remote",
+      "status": "checked",
+      "hits": 3,
+      "added": 0,
+      "note": "Konecta Bratislava back-office role is freshly listed at 1,300–1,400 EUR and remote, but only list-level evidence was available; no LIVE promotion from an index/list surface."
+    },
+    {
+      "name": "Kariera – IT support Bratislava",
+      "family": "kariera-tech",
       "status": "checked",
       "hits": 1,
       "added": 0,
-      "note": "Zlaté Zrnko coffee-machine service technician remains active through 30 Sep selection window, but explicitly requests 2 years of practice and travel; reverified but not promoted."
+      "note": "Metrohm IT Support Specialist full detail is active through 11 Oct 2026 and pays 1,800 EUR, but explicitly requires English B1/B2 and at least one year of practice; excluded from promotion."
     },
     {
-      "name": "Direct company careers – ITB Development",
-      "family": "company-careers",
+      "name": "Kariera – complaints / L1 support",
+      "family": "kariera-support",
       "status": "checked",
       "hits": 1,
       "added": 0,
-      "note": "ITB complaint technician canonical page is active, but requires construction education plus at least 3 years construction practice; excluded as ineligible."
+      "note": "Grafton Analytik zákazníckych sťažností is active and highly relevant functionally, but full detail explicitly requires technical bachelor education, similar practice and English B1; excluded from promotion."
     },
     {
-      "name": "Profesia – general Bratislava admin discovery",
-      "family": "profesia-discovery",
+      "name": "Kariera – Bratislava administration",
+      "family": "kariera-admin",
       "status": "ok",
       "hits": 3,
       "added": 0,
-      "note": "Fresh listing also surfaced GreenChem supply-chain admin and other roles. They were not promoted without completing all hard-gate checks during this pass."
+      "note": "Fresh public administration results were reviewed. Low-pay or multilingual hard-gated roles were not promoted."
     },
     {
-      "name": "Public web – complaints/service discovery",
+      "name": "Profesia – Senec customer service",
+      "family": "profesia-customer",
+      "status": "checked",
+      "hits": 1,
+      "added": 0,
+      "note": "GEBRÜDER WEISS full detail is a promising complaints/admin match at 1,200 EUR in Senec; kept as candidate until all hard-gate requirements are confirmed."
+    },
+    {
+      "name": "Public web discovery",
       "family": "web-discovery",
       "status": "checked",
       "hits": 2,
       "added": 0,
-      "note": "Used for discovery only; no listing/index result was treated as full-detail verification evidence."
-    },
-    {
-      "name": "Other/remote discovery",
-      "family": "other",
-      "status": "checked",
-      "hits": 0,
-      "added": 0,
-      "note": "No additional promotion-grade match was verified strongly enough in this pass."
+      "note": "Search/list resurfacing was used only for discovery and corroboration, never as verification evidence or a reason to move verifiedAt."
     }
   ],
   "policy": {
