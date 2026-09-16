@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15T08:52:00+02:00",
+  "updatedAt": "2026-09-16T08:14:45+02:00",
   "files": [
     "jobs-fresh-delta.json",
     "jobs-fresh-delta-20260910.json",
@@ -8,7 +8,8 @@
     "jobs-fresh-delta-20260912.json",
     "jobs-fresh-delta-20260913.json",
     "jobs-fresh-delta-20260914.json",
-    "jobs-fresh-delta-20260915.json"
+    "jobs-fresh-delta-20260915.json",
+    "jobs-fresh-delta-20260916.json"
   ],
   "policy": "Only explicitly listed same-repository JSON delta files are loaded. File names must match jobs-fresh-delta*.json. If this manifest becomes stale or unavailable, the runtime derives a bounded 7-day same-repository fallback so recent verified deltas remain discoverable."
 }
