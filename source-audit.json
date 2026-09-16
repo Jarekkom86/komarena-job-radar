@@ -1,30 +1,31 @@
 {
   "schemaVersion": 10,
-  "updatedAt": "2026-09-16T07:24:14+02:00",
+  "updatedAt": "2026-09-16T08:13:25+02:00",
   "runSummary": {
-    "familiesChecked": 10,
+    "familiesChecked": 11,
     "freshPromoted": 0,
     "existingReverified": 0,
-    "freshCandidates": 1,
-    "sourceVerificationAt": "2026-09-16T07:24:14+02:00",
+    "freshCandidates": 3,
+    "sourceVerificationAt": "2026-09-16T08:13:25+02:00",
     "freshnessWindowHours": 48,
     "stalePolicy": "Discovery age is not verification age. LIVE requires fresh full-detail/link evidence; list/search resurfacing cannot set verifiedAt.",
-    "note": "Fresh locality-gated sweep actually searched Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Pretlak, Upwork, Reddit/WordPress communities and public Facebook indexing. One exact WooCommerce product-admin candidate was readable on Upwork but was posted three weeks ago, already has one hire/four interviews and 20-50 proposals, so it was not promoted. Facebook has 0 verified hits. Existing LIVE jobs remain fail-closed because safe complete jobs-data.json round-trip replacement cannot be guaranteed by the current repository read surface."
+    "note": "Fresh locality-gated sweep actually searched Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Praca za rohom, Pretlak, Upwork, Reddit/WordPress communities and public Facebook indexing. New readable candidates included Wolt Support Associate, Kariera part-time assistant and a fresh Upwork WordPress/WooCommerce technical role. None was promoted: Wolt requires minimum B2 English and shifts to 01:00, Kariera pays only 600 EUR for 20h/week, and the Upwork role is hard technical PHP/MySQL/server work with 50+ proposals. Facebook has 0 verified hits. Existing LIVE jobs remain fail-closed because safe complete jobs-data.json round-trip replacement cannot be guaranteed by the current repository read surface."
   },
   "developmentChanges": [
-    {"id":"candidate-saturation-decay","title":"Candidate saturation decay","reason":"Combine proposal count, interviews, hires and time since publication into a saturation score so otherwise strong freelance matches automatically lose priority once the realistic reply probability collapses."},
-    {"id":"search-zero-evidence-ledger","title":"Zero-result source evidence ledger","reason":"Persist the exact source family, query intent and timestamp even when a search returns no usable hit, preventing future audits from confusing genuinely checked sources with sources that were never queried."}
+    {"id":"late-shift-home-impact","title":"Late-shift household impact score","reason":"Track evening/weekend/after-midnight shift burden separately from generic shift work so customer-support roles ending around 01:00 are penalized realistically even when remote."},
+    {"id":"part-time-income-density","title":"Part-time income density score","reason":"Normalize part-time offers by weekly hours and gross hourly equivalent, then compare against commute and fixed household costs so superficially convenient 20h roles do not outrank economically stronger options."}
   ],
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/WooCommerce search executed; no distinct promotion-grade current detail surfaced."},
-    {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava customer-support/IT-support/e-commerce public ATS search executed; no new canonical employer detail strong enough to promote."},
-    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"ok","hits":3,"added":0,"note":"Public Bratislava IT-support results were readable, but Tesco and Touch4IT are no longer accepting applications and Sharp Brains is an old B2-English result. No promotion."},
-    {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-worker search executed; no distinct suitable new hit surfaced."},
-    {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-shop/admin/support search executed; no new promotion-grade candidate surfaced."},
-    {"name":"Brigada.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/courier/warehouse search executed; no verified promotion-grade hit surfaced."},
-    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce search executed; no distinct Slovakia-compatible promotion-grade result surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":6,"added":0,"note":"Concrete worldwide-remote WooCommerce details were readable. Best exact product-admin hit is 50-75 WooCommerce products at 10-30 USD/h, but it is three weeks old with 20-50 proposals, one hire and four interviews. Other hits were low-budget, expert/hard-development, stale or highly saturated. No promotion."},
-    {"name":"Reddit public communities","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WooCommerce/WordPress hiring search executed; no concrete suitable current client demand surfaced."},
+    {"name":"Profesia","family":"profesia","status":"ok","hits":1,"added":0,"note":"Fresh Bratislava IT-support search surfaced detect s.r.o. system administrator/IT support at 2,000 EUR, posted 14.9.2026, but role is complex system/network administration and materially above the target skill profile."},
+    {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava customer-support/e-commerce employer-career search executed; no new canonical employer detail strong enough to promote."},
+    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"ok","hits":1,"added":0,"note":"Wolt full-time remote Support Associate in Bratislava is current for October 2026, but requires minimum B2 English and morning/evening/weekend shifts between 07:00 and 01:00; rejected for language and shift burden."},
+    {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical/e-shop search executed; no distinct suitable new hit surfaced."},
+    {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"ok","hits":1,"added":0,"note":"Fresh Bratislava part-time assistant surfaced: 20h/week, 10:00-14:00, email/order processing, packing and admin support at 600 EUR/month. Locality and task fit pass, but economics are weak versus current LIVE options."},
+    {"name":"Brigada.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/e-shop brigade search executed; employer pages surfaced but no concrete verified promotion-grade vacancy."},
+    {"name":"Praca za rohom","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support search executed; no distinct promotion-grade public detail surfaced."},
+    {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce/support search executed; no suitable current promotion-grade result surfaced."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":8,"added":0,"note":"Worldwide-remote WooCommerce results were readable. Freshest role was WordPress/WooCommerce Technical Expert posted yesterday, but requires PHP/MySQL/server performance diagnosis and already has 50+ proposals. Better product-admin hits are older/saturated or low-paid; no promotion."},
+    {"name":"Reddit / WordPress public communities","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WooCommerce/WordPress hiring search executed; no concrete suitable current client demand surfaced."},
     {"name":"Facebook public group indexing","family":"facebook","status":"limited","hits":0,"added":0,"note":"0 verified hits. No concrete publicly verifiable hiring post with direct link surfaced. Authenticated Nexus/local ingestion remains backlog only and was not started."}
   ],
   "promotionReadyCandidates": [
@@ -35,8 +36,8 @@
     {"title":"Špecialista v oblasti predaja IKT","company":"Snooti s. r. o.","source":"Služby zamestnanosti","locationEligibility":"ba-area","locationReason":"Canonical public employment-service detail gives workplace Francúzskych partizánov 2A, Bratislava-Staré Mesto.","reason":"Preserved from prior run. Relevant admin/support overlap; deeper language/education requirements should be checked before LIVE promotion."}
   ],
   "rejectedCandidates": [
-    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","source":"Upwork","locationEligibility":"remote-ok","locationReason":"Canonical Upwork detail explicitly says Worldwide Remote Job.","reason":"Exact 50-75 product WooCommerce admin fit and 10-30 USD/h, with Dutch text allowed via ChatGPT, but posted three weeks ago and already saturated at 20-50 proposals, one hire and four interviews."},
-    {"title":"Product listing woocomerce","company":"Upwork client","source":"Upwork","locationEligibility":"remote-ok","locationReason":"Canonical Upwork detail explicitly says Worldwide Remote Job.","reason":"Strong task keyword fit but only 3-5 USD/h, expert level, French copywriting required and client last viewed four weeks ago."},
-    {"title":"WooCommerce installation & Setup Specialist Needed – WordPress Elementor","company":"Upwork client","source":"Upwork","locationEligibility":"remote-ok","locationReason":"Canonical Upwork detail explicitly says Worldwide Remote Job.","reason":"20-25 USD/h is attractive, but role is expert-level with PHP/development scope, 50+ proposals, three interviews and one hire; hard-development and competition penalties dominate."}
+    {"title":"Support Associate (Full Time-Remote)","company":"Wolt","source":"LinkedIn / Wolt","locationEligibility":"ba-area","locationReason":"Role belongs to Bratislava support team and allows home office after one training day in Bratislava.","reason":"Minimum B2 English is explicit and shifts include mornings, evenings and weekends with support coverage until 01:00; strong penalties for A2 profile and household-friendly schedule."},
+    {"title":"ASISTENT/KA (muž/žena)","company":"Tamunoibim Jude Tonye Brown","source":"Kariera.sk","locationEligibility":"ba-area","locationReason":"Canonical detail explicitly gives Bratislava workplace.","reason":"Good task fit and 10:00-14:00 schedule, but only 600 EUR/month for 20 hours weekly; weaker economics than current part-time/e-commerce alternatives."},
+    {"title":"WordPress/WooCommerce Technical Expert Needed","company":"Upwork client","source":"Upwork","locationEligibility":"remote-ok","locationReason":"Canonical Upwork detail explicitly says Worldwide Remote Job.","reason":"Posted yesterday but requires PHP, MySQL, hosting/server configuration, caching/CDN, logs and deep performance diagnosis; 50+ proposals. Hard-development mismatch dominates."}
   ]
 }
