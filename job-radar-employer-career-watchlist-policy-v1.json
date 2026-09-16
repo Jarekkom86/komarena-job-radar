@@ -1,0 +1,56 @@
+{
+  "policy": "job-radar-employer-career-watchlist-policy-v1",
+  "version": 1,
+  "purpose": "Increase non-Profesia sourcing yield by repeatedly checking official career/ATS surfaces of employers that have already produced high-fit Bratislava-area opportunities.",
+  "safety": {
+    "discoveryOnly": true,
+    "neverAutoPromote": true,
+    "locationGateRequiredBeforePromotion": true,
+    "remoteRequiresSlovakiaEvidence": true,
+    "preserveStableIds": true,
+    "canonicalDedupeRequired": true,
+    "sourceTrustRequired": true,
+    "verifiedAtRequired": true,
+    "preserveUserCrmEdits": true,
+    "noUiMutation": true,
+    "noExistingFeedMutation": true
+  },
+  "seedEligibility": {
+    "minimumSignals": 2,
+    "signals": [
+      "employer previously produced a high-fit ba-area or remote-ok candidate",
+      "official public careers or ATS surface exists",
+      "role families overlap Job Radar ranking profile",
+      "canonical source can be checked without relying on a mirror"
+    ],
+    "exclude": [
+      "employers known only through aggregator mirrors",
+      "employers whose relevant roles are routinely distant onsite/hybrid",
+      "blocked/private sources without verifiable public evidence"
+    ]
+  },
+  "cadence": {
+    "highYield": "daily",
+    "normal": "every 3 days",
+    "zeroYield": "weekly",
+    "neverDisableFamilyPermanently": true
+  },
+  "candidateRules": {
+    "officialCareerOrAtsPreferred": true,
+    "canonicalDetailRequiredForPromotion": true,
+    "locationEligibilityRequired": ["ba-area", "remote-ok"],
+    "unclearDistantHybrid": "unknown",
+    "distantOnsiteOrRegularHybrid": "reject-distance",
+    "mirrorDoesNotCreateNewOpportunity": true
+  },
+  "metrics": [
+    "uniqueEligibleCandidates",
+    "canonicalDetailHitRate",
+    "duplicateRate",
+    "verificationToPromotionRate"
+  ],
+  "facebook": {
+    "notPartOfEmployerWatchlistUnlessPublicVerifiableCareerPost": true,
+    "neverClaimCoverageFromBlockedOrLimitedAccess": true
+  }
+}
