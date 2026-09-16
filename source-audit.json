@@ -1,39 +1,40 @@
 {
   "schemaVersion": 12,
-  "updatedAt": "2026-09-16T22:43:34+02:00",
-  "sourceVerificationAt": "2026-09-16T22:43:34+02:00",
+  "updatedAt": "2026-09-16T23:06:07+02:00",
+  "sourceVerificationAt": "2026-09-16T23:06:07+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "freshPromoted": 0,
-    "existingReverified": 0,
-    "freshCandidates": 1,
-    "excludedAfterFullDetail": 8,
+    "existingReverified": 1,
+    "freshCandidates": 2,
+    "excludedAfterFullDetail": 9,
     "freshnessWindowHours": 48,
-    "note": "Real 16 Sep 22:43 sweep. Twelve independent source families were actually queried: Profesia, direct company/public careers, LinkedIn Jobs, Worki, Kariera, Brigada.sk, Praca za rohom, Pretlak/StartupJobs, Upwork, WordPress public jobs, Reddit/WordPress communities, and public Facebook indexing. No promotion-grade new job was found. LinkedIn surfaced Wolt part-time Bratislava support, but it requires student status context, minimum B2 English and evening/weekend shifts. Upwork surfaced a fresh WordPress/WooCommerce technical expert role posted yesterday, but it requires server-side PHP/MySQL/performance expertise and already has 50+ proposals. Facebook produced 0 concrete publicly verifiable posts."
+    "note": "Real 16 Sep 23:06 sweep. Twelve independent source families were actually queried: Profesia, direct company/public careers, LinkedIn Jobs, Worki, Kariera, Brigada.sk, Praca za rohom, Pretlak/StartupJobs, Upwork, WordPress public jobs, Reddit/WordPress communities, and public Facebook indexing. No promotion-grade new job was found. LinkedIn reverified Wolt part-time Bratislava support but B2 English, student framing and evening/weekend shifts remain material gates. A separate Wolt remote listing explicitly excludes candidates living in Bratislavsky and Trnavsky kraj, so it fails this user's eligibility despite being remote. Upwork surfaced a WordPress/WooCommerce shop-improvement job posted yesterday at $30 fixed with 5-10 proposals, but expert framing and low budget make it weak. Facebook produced 0 concrete publicly verifiable posts."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/e-shop/technical-support query executed; no new promotion-grade full-detail result surfaced."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/e-shop/technical-support/administration query executed; no new promotion-grade result surfaced."},
     {"name":"Direct company/public careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-commerce/customer-support/IT-support career discovery executed; no additional promotion-grade primary-source role surfaced."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":4,"added":0,"note":"Wolt part-time Bratislava support was read: EUR 7.70 gross/hour, possible HO after onboarding, but minimum B2 English plus evening/weekend shifts and student framing reduce fit. Other surfaced roles had B2/C1 or additional-language gates."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":4,"added":0,"note":"Wolt Bratislava part-time support reverified: EUR 7.70 gross/hour, possible HO after onboarding, but minimum B2 English, student framing and evenings/weekends. Wolt full-time remote listing explicitly applies to candidates outside Bratislavsky and Trnavsky kraj and is therefore not eligible for this user. Klarstein Italy support requires Italian; SupportYourApp requires English C1."},
     {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/customer-support/IT query executed; no new promotion-grade result surfaced."},
     {"name":"Kariera","family":"kariera","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/e-shop/support query executed; no new independently verified promotion-grade result surfaced."},
     {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-shop/administration/IT query executed; no suitable verified brigade surfaced."},
     {"name":"Praca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"note":"Fresh BA-area administration/support/driver query executed; no independent promotion-grade result surfaced."},
     {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh WordPress/e-commerce/remote query executed; no concrete current suitable non-hard-development hit surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":8,"added":0,"note":"Worldwide WooCommerce/WordPress results read. Freshest relevant technical role was posted yesterday but requires server-side PHP/MySQL, hosting, CDN, logs and performance diagnosis and already has 50+ proposals. Better operational product-upload work remains older and substantially competed."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":11,"added":0,"note":"Worldwide WooCommerce/WordPress results read. Fresh WordPress shop-improvement role posted yesterday is $30 fixed, expert level, 5-10 proposals and already interviewing 5; not promotion-grade. A fresh WordPress developer role posted 2 hours ago is $15-20/h but expert-level, asks custom development/HTML/CSS and already has 50+ proposals."},
     {"name":"WordPress public jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring query executed; no concrete current suitable hiring hit surfaced."},
     {"name":"Reddit / WordPress communities","family":"communities","status":"checked","hits":0,"added":0,"note":"Fresh public hiring query executed; no new current promotion-grade WooCommerce/WordPress request surfaced."},
     {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"verifiedHits":0,"note":"Fresh public indexing query for WordPress Slovensko, WooCommerce and Bratislava job groups returned no concrete publicly verifiable hiring post with a direct link. 0 verified hits; authenticated Nexus/local-agent ingestion remains backlog-only and was not started."}
   ],
   "candidateNotes": [
     {"title":"Support Associate (Part Time)","company":"Wolt","locationEligibility":"ba-area","locationReason":"LinkedIn full detail lists Bratislava and possible home office after office onboarding.","decision":"exclude-language-shift-status","reason":"EUR 7.70 gross/hour and customer-support fit are useful, but minimum B2 English, evenings/weekends and student-oriented part-time status materially reduce suitability."},
-    {"title":"WordPress/WooCommerce Technical Expert Needed","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide and Remote Job.","decision":"exclude-hard-development-competition","reason":"Posted yesterday and relevant domain, but requires server-side performance diagnosis, PHP, MySQL, hosting/CDN/log expertise and already has 50+ proposals."},
-    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide and Remote Job.","decision":"exclude-stale-competition","reason":"Excellent operational fit at $10-30/h, but three weeks old with 20-50 proposals, 1 hire and 4 interviews; client last viewed last week."}
+    {"title":"Support Associate (Full-Time Remote)","company":"Wolt","locationEligibility":"reject-distance","locationReason":"Although remote, the listing explicitly says it applies to candidates living outside Bratislavsky and Trnavsky kraj; the user's BA-area residence is therefore ineligible.","decision":"exclude-geographic-eligibility","reason":"Remote status does not override an explicit employer residence-region exclusion."},
+    {"title":"Ecommerce Specialist on Wordpress - Adding a shop","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide and Remote Job.","decision":"exclude-low-budget-expert-competition","reason":"Posted yesterday and domain-relevant, but only $30 fixed, Expert level, 5-10 proposals and already 5 interviews."},
+    {"title":"WordPress Developer | Custom Website Development","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide and Remote Job.","decision":"exclude-hard-development-competition","reason":"Posted 2 hours ago at $15-20/h, but Expert level, custom WordPress development plus HTML/CSS expectations and already 50+ proposals make it a weak target."}
   ],
   "liveMix": {"note":"Not recomputed because jobs-data.json was not modified in this pass. Existing LIVE feed is preserved fail-closed; no active item was removed merely because it was not rediscovered."},
   "masterBacklogAdditions": [
-    {"id":"eligibility-status-gate","title":"Employment-status eligibility gate","detail":"Extract student-only, disability-only, licence/certification-only and similar legal/status constraints into explicit hard or soft eligibility fields before ranking, preventing superficially good part-time jobs from being promoted when the employment status does not fit."},
-    {"id":"technical-scope-evidence-gap","title":"Technical scope evidence-gap score","detail":"For WordPress/WooCommerce roles, separate operational CMS competence from server/PHP/database engineering and score each required technical cluster against evidence in the candidate profile; demote roles where multiple mandatory clusters lack evidence even when keyword overlap is high."}
+    {"id":"remote-residency-constraint-parser","title":"Remote residency constraint parser","detail":"Parse employer clauses such as remote only outside/inside named regions or countries separately from workplace location. A remote label must never pass the hard location gate when the employer explicitly excludes the candidate's residence region."},
+    {"id":"interview-saturation-signal","title":"Freelance interview saturation signal","detail":"Track interviews relative to proposal count and demote small fixed-price jobs where the client is already interviewing a large share of the visible candidate pool; this avoids spending Connects and application time after the practical opportunity window has narrowed."}
   ],
   "policy": {
     "contentAgeVsVerificationAge":"updatedAt/contentUpdatedAt describes data-content age; sourceVerificationAt describes when sources were actually checked; each job verifiedAt describes that job's evidence age.",
