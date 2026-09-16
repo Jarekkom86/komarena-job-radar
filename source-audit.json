@@ -1,43 +1,69 @@
 {
-  "schemaVersion": 10,
-  "updatedAt": "2026-09-16T08:13:25+02:00",
+  "schemaVersion": 11,
+  "updatedAt": "2026-09-16T08:14:45+02:00",
+  "sourceVerificationAt": "2026-09-16T08:14:45+02:00",
   "runSummary": {
-    "familiesChecked": 11,
-    "freshPromoted": 0,
-    "existingReverified": 0,
-    "freshCandidates": 3,
-    "sourceVerificationAt": "2026-09-16T08:13:25+02:00",
+    "familiesChecked": 6,
+    "freshPromoted": 1,
+    "existingReverified": 1,
+    "freshCandidates": 5,
+    "excludedAfterFullDetail": 2,
     "freshnessWindowHours": 48,
-    "stalePolicy": "Discovery age is not verification age. LIVE requires fresh full-detail/link evidence; list/search resurfacing cannot set verifiedAt.",
-    "note": "Fresh locality-gated sweep actually searched Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Praca za rohom, Pretlak, Upwork, Reddit/WordPress communities and public Facebook indexing. New readable candidates included Wolt Support Associate, Kariera part-time assistant and a fresh Upwork WordPress/WooCommerce technical role. None was promoted: Wolt requires minimum B2 English and shifts to 01:00, Kariera pays only 600 EUR for 20h/week, and the Upwork role is hard technical PHP/MySQL/server work with 50+ proposals. Facebook has 0 verified hits. Existing LIVE jobs remain fail-closed because safe complete jobs-data.json round-trip replacement cannot be guaranteed by the current repository read surface."
+    "note": "Real 16 Sep sweep across Profesia admin/support, complaints/service and direct-company discovery. Promotion required a current full detail plus compatible language/experience constraints. Content timestamps and source-verification time are recorded separately."
   },
-  "developmentChanges": [
-    {"id":"late-shift-home-impact","title":"Late-shift household impact score","reason":"Track evening/weekend/after-midnight shift burden separately from generic shift work so customer-support roles ending around 01:00 are penalized realistically even when remote."},
-    {"id":"part-time-income-density","title":"Part-time income density score","reason":"Normalize part-time offers by weekly hours and gross hourly equivalent, then compare against commute and fixed household costs so superficially convenient 20h roles do not outrank economically stronger options."}
-  ],
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":1,"added":0,"note":"Fresh Bratislava IT-support search surfaced detect s.r.o. system administrator/IT support at 2,000 EUR, posted 14.9.2026, but role is complex system/network administration and materially above the target skill profile."},
-    {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava customer-support/e-commerce employer-career search executed; no new canonical employer detail strong enough to promote."},
-    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"ok","hits":1,"added":0,"note":"Wolt full-time remote Support Associate in Bratislava is current for October 2026, but requires minimum B2 English and morning/evening/weekend shifts between 07:00 and 01:00; rejected for language and shift burden."},
-    {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical/e-shop search executed; no distinct suitable new hit surfaced."},
-    {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"ok","hits":1,"added":0,"note":"Fresh Bratislava part-time assistant surfaced: 20h/week, 10:00-14:00, email/order processing, packing and admin support at 600 EUR/month. Locality and task fit pass, but economics are weak versus current LIVE options."},
-    {"name":"Brigada.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/e-shop brigade search executed; employer pages surfaced but no concrete verified promotion-grade vacancy."},
-    {"name":"Praca za rohom","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support search executed; no distinct promotion-grade public detail surfaced."},
-    {"name":"Pretlak / tech-creative","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce/support search executed; no suitable current promotion-grade result surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":8,"added":0,"note":"Worldwide-remote WooCommerce results were readable. Freshest role was WordPress/WooCommerce Technical Expert posted yesterday, but requires PHP/MySQL/server performance diagnosis and already has 50+ proposals. Better product-admin hits are older/saturated or low-paid; no promotion."},
-    {"name":"Reddit / WordPress public communities","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WooCommerce/WordPress hiring search executed; no concrete suitable current client demand surfaced."},
-    {"name":"Facebook public group indexing","family":"facebook","status":"limited","hits":0,"added":0,"note":"0 verified hits. No concrete publicly verifiable hiring post with direct link surfaced. Authenticated Nexus/local ingestion remains backlog only and was not started."}
+    {
+      "name": "Profesia – Bratislava administratíva",
+      "family": "profesia",
+      "status": "ok",
+      "hits": 4,
+      "added": 1,
+      "note": "Current newest-first listing was checked and candidate full details were opened. Hellmann road-transport assistant passed full-detail eligibility: A2 English, admin, invoicing and complaints work. Advanced AIRSEA was excluded from promotion for B1 English."
+    },
+    {
+      "name": "Profesia – servis/technika",
+      "family": "profesia-tech",
+      "status": "checked",
+      "hits": 1,
+      "added": 0,
+      "note": "Zlaté Zrnko coffee-machine service technician remains active through 30 Sep selection window, but explicitly requests 2 years of practice and travel; reverified but not promoted."
+    },
+    {
+      "name": "Direct company careers – ITB Development",
+      "family": "company-careers",
+      "status": "checked",
+      "hits": 1,
+      "added": 0,
+      "note": "ITB complaint technician canonical page is active, but requires construction education plus at least 3 years construction practice; excluded as ineligible."
+    },
+    {
+      "name": "Profesia – general Bratislava admin discovery",
+      "family": "profesia-discovery",
+      "status": "ok",
+      "hits": 3,
+      "added": 0,
+      "note": "Fresh listing also surfaced GreenChem supply-chain admin and other roles. They were not promoted without completing all hard-gate checks during this pass."
+    },
+    {
+      "name": "Public web – complaints/service discovery",
+      "family": "web-discovery",
+      "status": "checked",
+      "hits": 2,
+      "added": 0,
+      "note": "Used for discovery only; no listing/index result was treated as full-detail verification evidence."
+    },
+    {
+      "name": "Other/remote discovery",
+      "family": "other",
+      "status": "checked",
+      "hits": 0,
+      "added": 0,
+      "note": "No additional promotion-grade match was verified strongly enough in this pass."
+    }
   ],
-  "promotionReadyCandidates": [
-    {"title":"ECommerce Operations Assistant - skrátený úväzok 20h/týždeň","company":"Pandora Jewelry Slovakia s.r.o.","source":"Pandora Careers","locationEligibility":"ba-area","locationReason":"Canonical employer detail and current public board evidence place the role at Turbínová, Bratislava; onsite Bratislava passes the hard locality gate.","reason":"Preserved from prior run. Excellent e-commerce operations fit: online orders, stock, returns, shipping documentation and basic PC work. Part-time 20h/week, 625 EUR/month, A2 English, suitable for graduates; e-commerce experience is an advantage rather than a hard requirement."},
-    {"title":"WooCommerce Developer Needed for Customized Gifting Store","company":"Upwork client","source":"Upwork","locationEligibility":"remote-ok","locationReason":"Previously verified canonical Upwork detail explicitly marked the project worldwide remote.","reason":"Preserved from prior run; strong WooCommerce/WordPress fit but not promoted because LIVE round-trip remains unsafe."}
-  ],
-  "verificationNeededCandidates": [
-    {"title":"Špecialista v oblasti predaja IKT","company":"Snooti s. r. o.","source":"Služby zamestnanosti","locationEligibility":"ba-area","locationReason":"Canonical public employment-service detail gives workplace Francúzskych partizánov 2A, Bratislava-Staré Mesto.","reason":"Preserved from prior run. Relevant admin/support overlap; deeper language/education requirements should be checked before LIVE promotion."}
-  ],
-  "rejectedCandidates": [
-    {"title":"Support Associate (Full Time-Remote)","company":"Wolt","source":"LinkedIn / Wolt","locationEligibility":"ba-area","locationReason":"Role belongs to Bratislava support team and allows home office after one training day in Bratislava.","reason":"Minimum B2 English is explicit and shifts include mornings, evenings and weekends with support coverage until 01:00; strong penalties for A2 profile and household-friendly schedule."},
-    {"title":"ASISTENT/KA (muž/žena)","company":"Tamunoibim Jude Tonye Brown","source":"Kariera.sk","locationEligibility":"ba-area","locationReason":"Canonical detail explicitly gives Bratislava workplace.","reason":"Good task fit and 10:00-14:00 schedule, but only 600 EUR/month for 20 hours weekly; weaker economics than current part-time/e-commerce alternatives."},
-    {"title":"WordPress/WooCommerce Technical Expert Needed","company":"Upwork client","source":"Upwork","locationEligibility":"remote-ok","locationReason":"Canonical Upwork detail explicitly says Worldwide Remote Job.","reason":"Posted yesterday but requires PHP, MySQL, hosting/server configuration, caching/CDN, logs and deep performance diagnosis; 50+ proposals. Hard-development mismatch dominates."}
-  ]
+  "policy": {
+    "contentAgeVsVerificationAge": "updatedAt/contentUpdatedAt describes data-content age; sourceVerificationAt describes when sources were actually checked; each job verifiedAt describes that job's evidence age.",
+    "promotion": "No timestamp-only freshness. New LIVE promotion requires active full-detail evidence, link check, confidence >= 80 and no known hard eligibility gate.",
+    "discovery": "List/search resurfacing can create a candidate but never verifiedAt or LIVE promotion by itself."
+  }
 }
