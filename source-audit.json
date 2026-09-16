@@ -1,30 +1,31 @@
 {
   "schemaVersion": 10,
-  "updatedAt": "2026-09-16T01:52:47+02:00",
+  "updatedAt": "2026-09-16T02:56:37+02:00",
   "runSummary": {
-    "familiesChecked": 12,
+    "familiesChecked": 13,
     "freshPromoted": 0,
     "existingReverified": 0,
-    "freshCandidates": 1,
-    "sourceVerificationAt": "2026-09-16T01:52:47+02:00",
+    "freshCandidates": 3,
+    "sourceVerificationAt": "2026-09-16T02:56:37+02:00",
     "freshnessWindowHours": 48,
     "stalePolicy": "Discovery age is not verification age. LIVE requires fresh full-detail/link evidence; list/search resurfacing cannot set verifiedAt.",
-    "note": "Diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Praca za rohom, Pretlak/StartupJobs, Upwork, WordPress public jobs, Reddit/WordPress communities and public Facebook indexing. No promotion-grade new LIVE candidate was found. A fresh worldwide Upwork WordPress/WooCommerce technical role was verified but rejected as too server/PHP/MySQL-heavy and already 50+ proposals. LinkedIn NTU IT Support was rejected by hard locality gate because the actual workplace is Warsaw, Poland, despite Bratislava indexing. LIVE jobs-data remains fail-closed because safe complete round-trip replacement is unavailable."
+    "note": "Diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Praca za rohom, Sluzby zamestnanosti, Pretlak/StartupJobs, Upwork, WordPress public jobs, Reddit/WordPress communities and public Facebook indexing. No new candidate cleared promotion quality. Wolt Support Associate is genuinely fresh and Bratislava/remote but requires English B2 and rotating mornings/evenings/weekends for 1270 EUR, so it is not a priority fit. Snooti IKT sales support is local and administratively relevant but only 1150 EUR and needs deeper requirement verification. Fresh Upwork Shopify support is remote but only $5/h with 50+ proposals. LIVE jobs-data remains fail-closed because safe complete round-trip replacement is unavailable."
   },
   "developmentChanges": [
-    {"id":"indexed-location-vs-actual-workplace-guard","title":"Indexed location vs actual workplace guard","reason":"Parse the actual workplace from the full job detail and override search-result/indexed city when they conflict. This prevents false Bratislava hits such as roles indexed under Bratislava whose real workplace is Warsaw or another distant city."},
-    {"id":"proposal-saturation-decay","title":"Proposal saturation decay","reason":"Apply a rapidly increasing ranking penalty to freelance jobs after 20, 50 and 100 proposals, with a smaller penalty when the client is actively interviewing. This saves application time on technically suitable but already saturated jobs."}
+    {"id":"fresh-role-application-window","title":"Fresh-role application window","reason":"Track first-seen time separately from publishedAt and boost verified roles during the first 6/12/24 hours, especially when applicant counts are still low. This focuses reaction effort where timing can materially improve interview probability."},
+    {"id":"shift-pay-friction-index","title":"Shift/pay friction index","reason":"Normalize salary against evenings, weekends, night coverage and rotating schedules so superficially relevant support roles are automatically deprioritized when schedule burden is high relative to compensation."}
   ],
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-commerce/admin/IT-support discovery executed; no distinct new promotion-grade full-detail result surfaced."},
-    {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-commerce, customer-care and IT-support employer-career discovery executed; no distinct new canonical candidate stronger than the existing queue surfaced."},
-    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"ok","hits":1,"added":0,"note":"NTU International IT Support surfaced under Bratislava indexing, but full detail states the role is Warsaw-based, Poland, with only possible hybrid and B2+ English. Rejected by hard locality gate and language mismatch."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/e-commerce/admin/IT-support discovery executed; no distinct promotion-grade full-detail result surfaced."},
+    {"name":"Direct company careers / public ATS","family":"direct-company","status":"ok","hits":1,"added":0,"note":"Fresh employer-career discovery found Wolt Support Associate in Bratislava/remote. Full detail confirms October 2026 start, 1270 EUR, remote after one office training day, but B2 English and 7-day rotating shifts materially reduce fit."},
+    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"ok","hits":2,"added":0,"note":"Fresh public LinkedIn discovery verified Wolt Support Associate (6 hours old) and CoolPeople IT Support Specialist. Wolt is penalized for B2 English and shift burden; CoolPeople requires deeper skills/contract verification before promotion."},
     {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support/e-shop discovery executed; no distinct suitable hit surfaced."},
     {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/e-shop/IT-support discovery executed; no new promotion-grade candidate surfaced."},
-    {"name":"Brigada.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/warehouse/courier brigade discovery executed; no verified strong hit surfaced."},
-    {"name":"Práca za rohom","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-commerce/IT-support/admin discovery executed; no distinct promotion-grade result surfaced."},
+    {"name":"Brigada.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/e-shop/courier brigade discovery executed; no verified strong hit surfaced."},
+    {"name":"Práca za rohom","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support/warehouse discovery executed; no distinct promotion-grade result surfaced."},
+    {"name":"Služby zamestnanosti","family":"secondary-jobboard","status":"ok","hits":2,"added":0,"note":"Fresh Bratislava admin/IKT-support discovery executed. Snooti IKT sales-support role at 1150 EUR is locally eligible and relevant but not strong enough without deeper requirements verification; other admin hits were low-pay or stale."},
     {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh WordPress/e-commerce/remote discovery executed; no distinct Slovakia-compatible promotion-grade result surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"added":0,"note":"Fresh WooCommerce/WordPress sweep executed. A role posted yesterday is worldwide remote but requires server-side performance, PHP/MySQL, hosting, CDN and deep diagnostics and already has 50+ proposals; rejected as too hard-development/infrastructure-heavy. Older product-listing roles remain weaker due language, stale client activity, low pay or proposal saturation."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":4,"added":0,"note":"Fresh WooCommerce/WordPress/e-commerce sweep executed. New Shopify product-listing/customer-support role is worldwide remote but only $5/h and already 50+ proposals. Other surfaced roles were older, low-pay, stale-client or language-heavy."},
     {"name":"WordPress.org public jobs/ecosystem indexing","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce jobs search executed; no concrete suitable current client demand surfaced."},
     {"name":"Reddit public communities","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring search executed; no concrete suitable current client demand surfaced."},
     {"name":"Facebook public group indexing","family":"facebook","status":"limited","hits":0,"added":0,"note":"0 verified hits. No concrete publicly verifiable hiring post with direct link surfaced. Authenticated Nexus/local ingestion remains backlog only and was not started."}
@@ -33,11 +34,11 @@
     {"title":"ECommerce Operations Assistant - skrátený úväzok 20h/týždeň","company":"Pandora Jewelry Slovakia s.r.o.","source":"Pandora Careers","locationEligibility":"ba-area","locationReason":"Canonical employer detail and current public board evidence place the role at Turbínová, Bratislava; onsite Bratislava passes the hard locality gate.","reason":"Preserved from prior run. Excellent e-commerce operations fit: online orders, stock, returns, shipping documentation and basic PC work. Part-time 20h/week, 625 EUR/month, A2 English, suitable for graduates; e-commerce experience is an advantage rather than a hard requirement."},
     {"title":"WooCommerce Developer Needed for Customized Gifting Store","company":"Upwork client","source":"Upwork","locationEligibility":"remote-ok","locationReason":"Previously verified canonical Upwork detail explicitly marked the project worldwide remote.","reason":"Preserved from prior run; strong WooCommerce/WordPress fit but not promoted because LIVE round-trip remains unsafe."}
   ],
-  "verificationNeededCandidates": [],
+  "verificationNeededCandidates": [
+    {"title":"Špecialista v oblasti predaja IKT","company":"Snooti s. r. o.","source":"Služby zamestnanosti","locationEligibility":"ba-area","locationReason":"Canonical public employment-service detail gives workplace Francúzskych partizánov 2A, Bratislava-Staré Mesto.","reason":"Relevant admin/support overlap: customer requests, quotations, orders, product information and reports. Salary 1150 EUR; deeper language/education requirements should be checked before LIVE promotion."}
+  ],
   "rejectedCandidates": [
-    {"title":"IT Support","company":"NTU International A/S","locationEligibility":"reject-distance","locationReason":"Full LinkedIn detail states Warsaw, Poland as the actual workplace; hybrid may be possible but does not establish remote-from-Slovakia eligibility.","reason":"Hard locality reject. Also requires English B2+ and at least two years relevant experience."},
-    {"title":"WordPress/WooCommerce Technical Expert Needed","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Canonical Upwork detail says Worldwide / Remote Job.","reason":"Fresh role but requires server configuration, PHP/MySQL, CDN/caching, logs, security and deep performance diagnostics; 50+ proposals already. Too infrastructure/development-heavy for current profile evidence."},
-    {"title":"Product listing woocomerce","company":"Upwork client","reason":"Good WooCommerce product overlap but $3-$5/h, expert level, persuasive French required and client last viewed four weeks ago; weak economics and language mismatch."},
-    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","reason":"Good product-admin overlap and $10-$30/h, but 20-50 proposals, client last viewed six days ago and Dutch preference; lower priority than existing promotion queue."}
+    {"title":"Support Associate (Full Time-Remote)","company":"Wolt","locationEligibility":"ba-area","locationReason":"Bratislava support team; remote after one day of office training in Bratislava.","reason":"Fresh role and customer-support fit, but requires professional English minimum B2 and rotating mornings/evenings/weekends covering 07:00-01:00 for 1270 EUR/month. Significant language and shift mismatch."},
+    {"title":"Shopify product listing & customer support assistant","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Canonical Upwork detail says Worldwide / Remote Job.","reason":"Posted yesterday and task fit is good, but only $5/h and already 50+ proposals; weak economics and saturation."}
   ]
 }
