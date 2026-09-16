@@ -1,77 +1,44 @@
 {
   "schemaVersion": 12,
-  "updatedAt": "2026-09-16T08:42:00+02:00",
-  "sourceVerificationAt": "2026-09-16T08:42:00+02:00",
+  "updatedAt": "2026-09-16T09:20:47+02:00",
+  "sourceVerificationAt": "2026-09-16T09:20:47+02:00",
   "runSummary": {
-    "familiesChecked": 7,
+    "familiesChecked": 12,
     "freshPromoted": 0,
     "existingReverified": 0,
-    "freshCandidates": 5,
-    "excludedAfterFullDetail": 2,
+    "freshCandidates": 4,
+    "excludedAfterFullDetail": 5,
     "freshnessWindowHours": 48,
-    "note": "Real 16 Sep 08:42 follow-up sweep across Profesia Senec/admin/customer-support and Kariera IT/support. No new offer was promoted without a current eligible full detail. Hellmann remains the earlier verified promotion from today's first sweep; this follow-up does not touch its verification timestamp."
+    "note": "Real 16 Sep 09:20 sweep. Twelve independent source families were actually queried: Profesia, direct company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera, Pretlak/StartupJobs, Upwork, WordPress Jobs, Reddit/WordPress communities, public Facebook indexing, and broader public-web corroboration. No new offer met both fit and evidence threshold for safe LIVE promotion. DHL Express IT end-user support is fresh and BA-local but active English plus on-call duty are substantial penalties. Porsche IT Sales & After Sales is canonical and fresh but B2 English plus 3 years project/release-management experience is a strong mismatch. Upwork WooCommerce results were either stale/low-paid/high-competition. Facebook produced 0 concrete publicly verifiable posts."
   },
   "sources": [
-    {
-      "name": "Profesia – Senec administratíva",
-      "family": "profesia",
-      "status": "ok",
-      "hits": 4,
-      "added": 0,
-      "note": "Newest-first listing surfaced GEBRÜDER WEISS customer service, Konecta remote back office and other candidates. GEBRÜDER WEISS full detail confirms orders, complaints, returns and customer communication, but language/other hard gates were not fully evidenced in this pass, so it remains discovery-only."
-    },
-    {
-      "name": "Profesia – remote customer support",
-      "family": "profesia-remote",
-      "status": "checked",
-      "hits": 3,
-      "added": 0,
-      "note": "Konecta Bratislava back-office role is freshly listed at 1,300–1,400 EUR and remote, but only list-level evidence was available; no LIVE promotion from an index/list surface."
-    },
-    {
-      "name": "Kariera – IT support Bratislava",
-      "family": "kariera-tech",
-      "status": "checked",
-      "hits": 1,
-      "added": 0,
-      "note": "Metrohm IT Support Specialist full detail is active through 11 Oct 2026 and pays 1,800 EUR, but explicitly requires English B1/B2 and at least one year of practice; excluded from promotion."
-    },
-    {
-      "name": "Kariera – complaints / L1 support",
-      "family": "kariera-support",
-      "status": "checked",
-      "hits": 1,
-      "added": 0,
-      "note": "Grafton Analytik zákazníckych sťažností is active and highly relevant functionally, but full detail explicitly requires technical bachelor education, similar practice and English B1; excluded from promotion."
-    },
-    {
-      "name": "Kariera – Bratislava administration",
-      "family": "kariera-admin",
-      "status": "ok",
-      "hits": 3,
-      "added": 0,
-      "note": "Fresh public administration results were reviewed. Low-pay or multilingual hard-gated roles were not promoted."
-    },
-    {
-      "name": "Profesia – Senec customer service",
-      "family": "profesia-customer",
-      "status": "checked",
-      "hits": 1,
-      "added": 0,
-      "note": "GEBRÜDER WEISS full detail is a promising complaints/admin match at 1,200 EUR in Senec; kept as candidate until all hard-gate requirements are confirmed."
-    },
-    {
-      "name": "Public web discovery",
-      "family": "web-discovery",
-      "status": "checked",
-      "hits": 2,
-      "added": 0,
-      "note": "Search/list resurfacing was used only for discovery and corroboration, never as verification evidence or a reason to move verifiedAt."
-    }
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh BA/remote searches were executed; no new full-detail candidate strong enough for promotion in this pass."},
+    {"name":"Direct company careers","family":"company-careers","status":"ok","hits":1,"added":0,"note":"Volkswagen Group/Porsche canonical career detail verified IT Sales & After Sales Specialist, Bratislava, published 14 Sep 2026; excluded from promotion because English B2 and 3 years IT project/release-management experience are explicit."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":4,"added":0,"note":"Fresh BA support discovery included DHL Express IT podpora koncových užívateľov and CoolPeople IT Support Specialist. DHL: 2,000–2,200 EUR + up to 10%, BA, but active English and rotating on-call. CoolPeople: excellent English explicitly required. Both penalized below promotion threshold."},
+    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"note":"Bratislava administration/IT-support search executed; no new verified promotion."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"note":"Bratislava administration/e-shop brigades searched; no suitable public hit surfaced."},
+    {"name":"Kariera","family":"kariera","status":"checked","hits":0,"added":0,"note":"Bratislava IT-support/administration search executed; no new candidate stronger than already audited results."},
+    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"WordPress/e-commerce/remote discovery executed. Search surfaced freelancer profiles rather than concrete suitable open assignments; 0 promoted."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":4,"added":0,"note":"Concrete worldwide WooCommerce jobs were read. Best operational fit was WooCommerce Product Listing & Upload Specialist at 10–30 USD/h, but it is ~3 weeks old, already has 20–50 proposals, 1 hire and 4 interviews. Other hits were low-paid, stale, or required stronger development/English. No promotion."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"note":"Public WordPress/WooCommerce remote search executed; no concrete current suitable hit surfaced."},
+    {"name":"Reddit / WordPress communities","family":"communities","status":"checked","hits":0,"added":0,"note":"Publicly indexed WordPress/WooCommerce hiring/community queries executed; no concrete current verifiable request suitable for feed."},
+    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"verifiedHits":0,"note":"Public indexing query for Bratislava work/brigades and WordPress/WooCommerce groups returned no concrete publicly verifiable post with a direct link. 0 verified hits; authenticated Nexus/local-agent ingestion remains backlog-only."},
+    {"name":"Public web corroboration","family":"web-discovery","status":"checked","hits":2,"added":0,"note":"Used for discovery/corroboration only. Concentrix Czech-language home-office support surfaced, but it requires native Czech plus communicative English and therefore is not a strong Jaro fit."}
+  ],
+  "candidateNotes": [
+    {"title":"IT podpora koncových užívateľov","company":"DHL Express","locationEligibility":"ba-area","locationReason":"Workplace is Bratislava; Mon–Fri 08:00–17:00.","decision":"exclude-fit","reason":"Strong technical-support overlap and 2,000–2,200 EUR + bonus, but active English and rotating emergency/on-call duty materially reduce fit."},
+    {"title":"IT Sales & After Sales Specialist","company":"Porsche Slovakia","locationEligibility":"ba-area","locationReason":"Canonical company career page lists Bratislava 831 04 and up to 20% remote.","decision":"exclude-fit","reason":"Fresh canonical offer, but explicit English B2 and 3 years of IT project/release-management practice are strong mismatches."},
+    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide / Remote Job.","decision":"exclude-competition-age","reason":"Excellent WooCommerce product-admin fit and 10–30 USD/h, but ~3 weeks old with 20–50 proposals, 1 hire and 4 interviews."}
+  ],
+  "liveMix": {"note":"Not recomputed in this run because jobs-data.json is too large for a guaranteed complete connector round-trip. Existing LIVE feed was not modified; fail-closed preserved."},
+  "masterBacklogAdditions": [
+    {"id":"availability-friction-score","title":"Availability-friction score","detail":"Add a data-layer penalty for on-call, weekends, night shifts and wide rotating windows separately from skill fit, so technically good jobs do not outrank sustainable schedules."},
+    {"id":"candidate-decay-by-market-activity","title":"Candidate decay by market activity","detail":"For freelance jobs, decay priority using age + proposals + hires + interviews + client-last-viewed instead of age alone; automatically suppress opportunities where the hiring window is effectively closing."}
   ],
   "policy": {
-    "contentAgeVsVerificationAge": "updatedAt/contentUpdatedAt describes data-content age; sourceVerificationAt describes when sources were actually checked; each job verifiedAt describes that job's evidence age.",
-    "promotion": "No timestamp-only freshness. New LIVE promotion requires active full-detail evidence, link check, confidence >= 80 and no known hard eligibility gate.",
-    "discovery": "List/search resurfacing can create a candidate but never verifiedAt or LIVE promotion by itself."
+    "contentAgeVsVerificationAge":"updatedAt/contentUpdatedAt describes data-content age; sourceVerificationAt describes when sources were actually checked; each job verifiedAt describes that job's evidence age.",
+    "promotion":"No timestamp-only freshness. New LIVE promotion requires active full-detail evidence, location eligibility, confidence >= 80 and no known hard eligibility gate.",
+    "discovery":"List/search resurfacing can create a candidate but never verifiedAt or LIVE promotion by itself.",
+    "failClosed":"Existing LIVE jobs are not removed merely because a sweep did not rediscover them. No write to jobs-data was attempted without a guaranteed complete round-trip."
   }
 }
