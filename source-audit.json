@@ -1,37 +1,39 @@
 {
   "schemaVersion": 12,
-  "updatedAt": "2026-09-16T13:57:00+02:00",
-  "sourceVerificationAt": "2026-09-16T13:57:00+02:00",
+  "updatedAt": "2026-09-16T14:40:40+02:00",
+  "sourceVerificationAt": "2026-09-16T14:40:40+02:00",
   "runSummary": {
-    "familiesChecked": 11,
+    "familiesChecked": 12,
     "freshPromoted": 0,
     "existingReverified": 0,
-    "freshCandidates": 2,
-    "excludedAfterFullDetail": 8,
+    "freshCandidates": 3,
+    "excludedAfterFullDetail": 9,
     "freshnessWindowHours": 48,
-    "note": "Real 16 Sep 13:57 sweep. Eleven independent source families were actually queried: Profesia, direct company/public careers, LinkedIn Jobs, Worki, Kariera, Pretlak, Upwork, WordPress public jobs, Reddit/WordPress communities, public Facebook indexing and broad public company-career discovery. Profesia surfaced detect s.r.o. System Administrator in Bratislava at 2,000 EUR/month, but it is a senior/system-administration mismatch and was rejected. Upwork surfaced a WooCommerce Product Listing & Upload Specialist at 10-30 USD/hour, worldwide remote, but it is three weeks old with 20-50 proposals, 1 hire and 4 interviews; it remains below promotion threshold. Facebook produced 0 concrete publicly verifiable posts."
+    "note": "Real 16 Sep 14:40 sweep. Twelve independent source families were actually queried: Profesia, direct company/public careers, LinkedIn Jobs, Worki, Kariera, Brigada.sk, Pretlak, Upwork, WordPress public jobs, Reddit/WordPress communities, public Facebook indexing and broad public company-career discovery. LinkedIn surfaced Wolt full-time remote Support Associate in Bratislava at 1,200-1,270 EUR/month, but minimum B2 English plus morning/evening/weekend shifts materially reduce fit, so it was not promoted. Brigada.sk surfaced a Bratislava Mlynske Nivy reception brigade at 6 EUR net/hour plus meal allowance, but student orientation and communicative English requirement make it a weak fit. Upwork surfaced current WooCommerce work, but the strongest operational listing remains three weeks old with 20-50 proposals and an existing hire. Facebook produced 0 concrete publicly verifiable posts."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":1,"added":0,"note":"Fresh Bratislava IT-support/admin query executed. detect s.r.o. System Administrator, posted 14.9.2026 at 2,000 EUR/month, was read in full detail and rejected as a senior/system-administration mismatch."},
-    {"name":"Direct company/public careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava company-career discovery executed; no new canonical promotion-grade offer surfaced."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-commerce/support search executed; no distinct new full-detail promotion-grade result surfaced in this pass."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-shop and IT-support search executed; no new promotion-grade result surfaced in this pass."},
+    {"name":"Direct company/public careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava support/e-commerce company-career discovery executed; no new canonical promotion-grade offer surfaced."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":4,"added":0,"note":"Fresh Bratislava support/e-commerce search executed. Wolt full-time remote Support Associate is current at 1,200-1,270 EUR/month but requires minimum B2 English and 7-day shift flexibility. Other surfaced roles were stronger language/seniority mismatches."},
     {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical/e-commerce query executed; no suitable new public hit."},
     {"name":"Kariera","family":"kariera","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/e-shop/IT-support query executed; no suitable new full-detail hit."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":1,"added":0,"note":"Fresh Bratislava brigade search surfaced reception at Mlynske Nivy for 6 EUR net/hour plus meal allowance; student orientation and communicative English requirement keep it below promotion threshold."},
     {"name":"Pretlak","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce search executed; no concrete suitable new assignment surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":8,"added":0,"note":"Worldwide WooCommerce/WordPress results read. Operational Product Listing & Upload Specialist pays 10-30 USD/hour but is 3 weeks old with 20-50 proposals, 1 hire and 4 interviews. Other results were expert development, weak budget or stale; no promotion."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":9,"added":0,"note":"Worldwide WooCommerce/WordPress results read. Product Listing & Upload Specialist remains 10-30 USD/hour but is three weeks old with 20-50 proposals, 1 hire and 4 interviews. Other current results were expert development, weak budget or stale; no promotion."},
     {"name":"WordPress public jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"note":"Fresh public WooCommerce/remote query executed; no concrete current suitable hiring hit surfaced."},
     {"name":"Reddit / WordPress communities","family":"communities","status":"checked","hits":0,"added":0,"note":"Fresh publicly indexed hiring/community query executed; no concrete current promotion-grade request surfaced."},
     {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"verifiedHits":0,"note":"Fresh public indexing query for Bratislava jobs and WordPress/WooCommerce groups returned no concrete publicly verifiable hiring post with a direct link. 0 verified hits; authenticated Nexus/local-agent ingestion remains backlog-only."},
     {"name":"Broad public company-career discovery","family":"company-ats","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava support/e-commerce company-career discovery executed; no additional suitable full-detail result."}
   ],
   "candidateNotes": [
-    {"title":"Systémový administrátor","company":"detect s. r. o.","locationEligibility":"ba-area","locationReason":"Canonical Profesia detail lists Bratislava.","decision":"reject-skill-seniority","reason":"2,000 EUR/month and local, but the role covers complex systems/network administration and mentoring less-experienced colleagues; it is materially beyond the target light IT-support/troubleshooting profile."},
-    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide / Remote Job.","decision":"exclude-competition-age","reason":"Excellent operational WooCommerce fit and 10-30 USD/hour, but listing is three weeks old with 20-50 proposals, 1 hire and 4 interviews; expected response probability is now too low for LIVE promotion."}
+    {"title":"Support Associate (Full Time-Remote)","company":"Wolt","locationEligibility":"ba-area","locationReason":"LinkedIn detail lists Bratislava and remote after one day of training in Bratislava.","decision":"exclude-language-shifts","reason":"Entry-level customer-support fit and remote-friendly, but minimum B2 English plus mornings/evenings/weekends across a 7:00-01:00 support window is a material mismatch; base pay is only 1,200-1,270 EUR/month."},
+    {"title":"Recepcna/y v administrativnej budove","company":"B.E.E. s.r.o.","locationEligibility":"ba-area","locationReason":"Brigada.sk detail lists Bratislava - Mlynske Nivy.","decision":"exclude-weak-fit","reason":"6 EUR net/hour plus meal allowance is acceptable for a fallback brigade, but the role is aimed mainly at university students and requires communicative English; not strong enough for LIVE promotion."},
+    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide / Remote Job.","decision":"exclude-competition-age","reason":"Excellent operational WooCommerce fit and 10-30 USD/hour, but listing is three weeks old with 20-50 proposals, 1 hire and 4 interviews; expected response probability remains too low for LIVE promotion."}
   ],
   "liveMix": {"note":"Not recomputed because jobs-data.json was not modified in this pass. Existing LIVE feed was preserved fail-closed at the prior 56-item state and 50/50 Profesia-lineage vs non-Profesia mix."},
   "masterBacklogAdditions": [
-    {"id":"marketplace-response-probability-decay","title":"Marketplace response-probability decay","detail":"For freelance listings, combine listing age, proposals, hires, interviews and client last-viewed recency into a response-probability decay score; suppress jobs where good skill fit is outweighed by near-zero practical reply odds."},
-    {"id":"support-vs-sysadmin-scope-classifier","title":"Support vs sysadmin scope classifier","detail":"Classify IT roles by actual operational scope rather than title keywords: L1 endpoint/user support stays eligible, while server/network ownership, complex infrastructure administration and mentoring responsibilities trigger a strong seniority/skills penalty."}
+    {"id":"shift-window-fit-score","title":"Shift-window fit score","detail":"Normalize customer-support and operations roles by actual service window, weekend frequency and required shift flexibility so apparently remote roles do not outrank better daytime jobs when their schedule burden is materially worse."},
+    {"id":"student-contract-eligibility-gate","title":"Student-contract eligibility gate","detail":"Detect when a brigade is student-only versus merely student-friendly, and suppress or penalize offers whose legal contract form is unavailable to the candidate before spending time on application preparation."}
   ],
   "policy": {
     "contentAgeVsVerificationAge":"updatedAt/contentUpdatedAt describes data-content age; sourceVerificationAt describes when sources were actually checked; each job verifiedAt describes that job's evidence age.",
