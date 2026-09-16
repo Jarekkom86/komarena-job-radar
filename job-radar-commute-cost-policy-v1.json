@@ -1,0 +1,44 @@
+{
+  "policy": "job-radar-commute-cost-policy-v1",
+  "version": 1,
+  "purpose": "Prioritize already location-eligible Bratislava-area jobs by practical commute burden without weakening the hard location gate.",
+  "safety": {
+    "runsAfterLocationEligibilityGate": true,
+    "allowedEligibility": ["ba-area"],
+    "remoteOkUnchanged": true,
+    "unknownNeverRanked": true,
+    "rejectDistanceNeverRanked": true,
+    "preserveStableIds": true,
+    "preserveCanonicalDedupe": true,
+    "preserveUserCrmEdits": true,
+    "noUiMutation": true,
+    "noFeedMutationRequired": true
+  },
+  "evidence": {
+    "origin": "Miloslavov",
+    "destination": "canonical workplace location",
+    "requireCanonicalWorkplace": true,
+    "ifWorkplaceAmbiguous": "commute-unknown",
+    "neverInferFromCompanyHq": true
+  },
+  "outputs": {
+    "commuteBand": ["low", "medium", "high", "unknown"],
+    "commuteReason": "human-readable evidence-backed explanation",
+    "commuteMinutesEstimate": "optional; only when routing evidence is available",
+    "commuteKmEstimate": "optional; only when routing evidence is available"
+  },
+  "ranking": {
+    "low": 2,
+    "medium": 0,
+    "high": -3,
+    "unknown": 0,
+    "maxAbsoluteAdjustment": 3,
+    "cannotOverrideHardRequirements": true,
+    "cannotChangeLocationEligibility": true
+  },
+  "failClosed": {
+    "noRoutingEvidence": "keep eligible job; do not invent minutes or distance",
+    "conflictingWorkplaceEvidence": "commute-unknown",
+    "distantHybridDetected": "return to location validation; never treat as commute penalty"
+  }
+}
