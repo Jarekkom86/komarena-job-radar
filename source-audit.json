@@ -1,34 +1,33 @@
 {
   "schemaVersion": 10,
-  "updatedAt": "2026-09-16T03:01:07+02:00",
+  "updatedAt": "2026-09-16T04:29:54+02:00",
   "runSummary": {
-    "familiesChecked": 13,
+    "familiesChecked": 12,
     "freshPromoted": 0,
     "existingReverified": 0,
     "freshCandidates": 0,
-    "sourceVerificationAt": "2026-09-16T03:01:07+02:00",
+    "sourceVerificationAt": "2026-09-16T04:29:54+02:00",
     "freshnessWindowHours": 48,
     "stalePolicy": "Discovery age is not verification age. LIVE requires fresh full-detail/link evidence; list/search resurfacing cannot set verifiedAt.",
-    "note": "Diversified public-index sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Brigada.sk, Praca za rohom, Sluzby zamestnanosti, Pretlak/StartupJobs, Upwork, WordPress public jobs, Reddit/WordPress communities and public Facebook indexing. No new promotion-grade candidate surfaced in this run. Search indexing was sparse, so sources without concrete current detail evidence are recorded as checked/limited rather than credited with hits. Facebook has 0 verified hits. Existing LIVE jobs remain fail-closed because the GitHub connector truncates jobs-data.json and safe complete round-trip replacement is unavailable."
+    "note": "Fresh diversified sweep covered Profesia, direct-company/public ATS, LinkedIn, Worki, Kariera, Praca za rohom, Pretlak, Upwork, WordPress public ecosystem, Reddit/WordPress communities and public Facebook indexing. Upwork exposed several WooCommerce results, but none cleared the combined freshness, economics, competition and skill-fit bar for LIVE promotion. A fresh WordPress developer role posted yesterday requires native English, US business hours and stronger hard-development skills, so it was rejected for profile mismatch. Facebook has 0 verified hits. Existing LIVE jobs remain fail-closed because jobs-data.json is truncated by the repository reader and complete round-trip replacement cannot be guaranteed."
   },
   "developmentChanges": [
-    {"id":"search-result-evidence-floor","title":"Search-result evidence floor","reason":"Require a concrete current job-detail result before a source receives a hit; generic articles, category pages and stale snippets must not inflate coverage or source-success analytics."},
-    {"id":"connector-roundtrip-health","title":"Connector round-trip health check","reason":"Before mutating large feed files, verify that the repository connector can return the complete current blob. If it truncates content, automatically fail closed and record the write blocker instead of risking destructive replacement."}
+    {"id":"remote-timezone-compatibility-gate","title":"Remote timezone compatibility gate","reason":"Treat mandatory foreign business-hour overlap as a separate remote feasibility signal. Remote roles that technically allow Slovakia but require sustained US/night hours should be downgraded or rejected before application time is spent."},
+    {"id":"freelance-client-recency-score","title":"Freelance client recency score","reason":"Combine last client view, interviewing count, hires and proposal volume so stale or already-filled freelance posts stop outranking actively reviewed opportunities."}
   ],
   "sources": [
     {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/e-commerce/admin/IT-support discovery executed; no distinct current promotion-grade detail surfaced."},
-    {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava support/e-commerce company-career discovery executed; no new canonical employer detail strong enough to promote."},
-    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"limited","hits":0,"added":0,"note":"Fresh public LinkedIn discovery executed; indexing did not expose a new concrete full-detail candidate suitable for promotion in this run."},
+    {"name":"Direct company careers / public ATS","family":"direct-company","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava support/e-commerce employer/ATS discovery executed; no new canonical employer detail strong enough to promote."},
+    {"name":"LinkedIn Jobs public indexing","family":"linkedin","status":"limited","hits":0,"added":0,"note":"Fresh public Bratislava IT-support discovery executed. Results exposed stale/no-longer-accepting roles, so no hit credited."},
     {"name":"Worki.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support/e-shop discovery executed; no distinct suitable hit surfaced."},
     {"name":"Kariera.sk / Zoznam","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/e-shop/IT-support discovery executed; no new promotion-grade candidate surfaced."},
-    {"name":"Brigada.sk","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/e-shop/courier brigade discovery executed; no verified strong hit surfaced."},
-    {"name":"Práca za rohom","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support/warehouse discovery executed; no distinct promotion-grade result surfaced."},
-    {"name":"Služby zamestnanosti","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava admin/IKT-support discovery executed; no new full-detail candidate cleared the quality and locality gates."},
+    {"name":"Práca za rohom","family":"secondary-jobboard","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support discovery executed; no distinct promotion-grade result surfaced."},
     {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh WordPress/e-commerce/remote discovery executed; no distinct Slovakia-compatible promotion-grade result surfaced."},
-    {"name":"Upwork","family":"freelance","status":"limited","hits":0,"added":0,"note":"Fresh WooCommerce/WordPress/e-commerce sweep executed; public indexing did not expose a new concrete project strong enough for promotion."},
-    {"name":"WordPress.org public jobs/ecosystem indexing","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce jobs search executed; no concrete suitable current client demand surfaced."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":6,"added":0,"note":"Fresh WooCommerce/WordPress sweep returned concrete public job details. Best economics among resurfaced roles were 10-30 USD/h WooCommerce product upload and 15-30 USD/h website/SEO management, but both are weeks old with material competition/activity decay. A role posted yesterday pays 30-60 USD/h but requires native English, US business hours and hard-development skills; rejected for profile mismatch."},
+    {"name":"WordPress.org public jobs/ecosystem indexing","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce search executed; results were ecosystem/plugin content rather than concrete suitable client demand."},
     {"name":"Reddit public communities","family":"community","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring search executed; no concrete suitable current client demand surfaced."},
-    {"name":"Facebook public group indexing","family":"facebook","status":"limited","hits":0,"added":0,"note":"0 verified hits. No concrete publicly verifiable hiring post with direct link surfaced. Authenticated Nexus/local ingestion remains backlog only and was not started."}
+    {"name":"Facebook public group indexing","family":"facebook","status":"limited","hits":0,"added":0,"note":"0 verified hits. No concrete publicly verifiable hiring post with direct link surfaced. Authenticated Nexus/local ingestion remains backlog only and was not started."},
+    {"name":"Additional public job-board/company search","family":"secondary-discovery","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava locality-gated discovery executed across public indexed results; no additional promotion-grade detail surfaced."}
   ],
   "promotionReadyCandidates": [
     {"title":"ECommerce Operations Assistant - skrátený úväzok 20h/týždeň","company":"Pandora Jewelry Slovakia s.r.o.","source":"Pandora Careers","locationEligibility":"ba-area","locationReason":"Canonical employer detail and current public board evidence place the role at Turbínová, Bratislava; onsite Bratislava passes the hard locality gate.","reason":"Preserved from prior run. Excellent e-commerce operations fit: online orders, stock, returns, shipping documentation and basic PC work. Part-time 20h/week, 625 EUR/month, A2 English, suitable for graduates; e-commerce experience is an advantage rather than a hard requirement."},
@@ -37,5 +36,7 @@
   "verificationNeededCandidates": [
     {"title":"Špecialista v oblasti predaja IKT","company":"Snooti s. r. o.","source":"Služby zamestnanosti","locationEligibility":"ba-area","locationReason":"Canonical public employment-service detail gives workplace Francúzskych partizánov 2A, Bratislava-Staré Mesto.","reason":"Preserved from prior run. Relevant admin/support overlap; deeper language/education requirements should be checked before LIVE promotion."}
   ],
-  "rejectedCandidates": []
+  "rejectedCandidates": [
+    {"title":"Experienced WordPress Developer Needed","company":"Upwork client","source":"Upwork","locationEligibility":"remote-ok","locationReason":"Worldwide remote is explicit, but mandatory US business hours materially reduce practical compatibility from Slovakia.","reason":"Posted yesterday and 30-60 USD/h, but requires native English, client-facing communication, US business hours and PHP/HTML hard-development capability. Strong freshness/economics but clear profile mismatch."}
+  ]
 }
