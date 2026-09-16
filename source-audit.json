@@ -1,44 +1,45 @@
 {
   "schemaVersion": 12,
-  "updatedAt": "2026-09-16T14:40:40+02:00",
-  "sourceVerificationAt": "2026-09-16T14:40:40+02:00",
+  "updatedAt": "2026-09-16T15:46:10+02:00",
+  "sourceVerificationAt": "2026-09-16T15:46:10+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "freshPromoted": 0,
     "existingReverified": 0,
-    "freshCandidates": 3,
-    "excludedAfterFullDetail": 9,
+    "freshCandidates": 4,
+    "excludedAfterFullDetail": 10,
     "freshnessWindowHours": 48,
-    "note": "Real 16 Sep 14:40 sweep. Twelve independent source families were actually queried: Profesia, direct company/public careers, LinkedIn Jobs, Worki, Kariera, Brigada.sk, Pretlak, Upwork, WordPress public jobs, Reddit/WordPress communities, public Facebook indexing and broad public company-career discovery. LinkedIn surfaced Wolt full-time remote Support Associate in Bratislava at 1,200-1,270 EUR/month, but minimum B2 English plus morning/evening/weekend shifts materially reduce fit, so it was not promoted. Brigada.sk surfaced a Bratislava Mlynske Nivy reception brigade at 6 EUR net/hour plus meal allowance, but student orientation and communicative English requirement make it a weak fit. Upwork surfaced current WooCommerce work, but the strongest operational listing remains three weeks old with 20-50 proposals and an existing hire. Facebook produced 0 concrete publicly verifiable posts."
+    "note": "Real 16 Sep 15:46 sweep. Twelve independent source families were actually queried: Profesia, direct company/public careers, LinkedIn Jobs, Worki, Kariera, Brigada.sk, Praca za rohom, Pretlak, Upwork, WordPress public jobs, Reddit/WordPress communities and public Facebook indexing. No new promotion-grade result passed the combined location, language, skill and response-probability gates. Upwork surfaced a worldwide WooCommerce Product Listing & Upload Specialist at 10-30 USD/hour, but it is three weeks old with 20-50 proposals, 1 hire and 4 interviews. Allegro/Mall surfaced a 100% home-office Bratislava partner-support role, but fluent Hungarian and Slovak are explicit requirements. Facebook produced 0 concrete publicly verifiable posts."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-shop and IT-support search executed; no new promotion-grade result surfaced in this pass."},
-    {"name":"Direct company/public careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava support/e-commerce company-career discovery executed; no new canonical promotion-grade offer surfaced."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":4,"added":0,"note":"Fresh Bratislava support/e-commerce search executed. Wolt full-time remote Support Associate is current at 1,200-1,270 EUR/month but requires minimum B2 English and 7-day shift flexibility. Other surfaced roles were stronger language/seniority mismatches."},
-    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical/e-commerce query executed; no suitable new public hit."},
-    {"name":"Kariera","family":"kariera","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/e-shop/IT-support query executed; no suitable new full-detail hit."},
-    {"name":"Brigada.sk","family":"brigada-sk","status":"ok","hits":1,"added":0,"note":"Fresh Bratislava brigade search surfaced reception at Mlynske Nivy for 6 EUR net/hour plus meal allowance; student orientation and communicative English requirement keep it below promotion threshold."},
-    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce search executed; no concrete suitable new assignment surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":9,"added":0,"note":"Worldwide WooCommerce/WordPress results read. Product Listing & Upload Specialist remains 10-30 USD/hour but is three weeks old with 20-50 proposals, 1 hire and 4 interviews. Other current results were expert development, weak budget or stale; no promotion."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/WooCommerce/e-shop/admin/IT-support search executed; no new promotion-grade result surfaced."},
+    {"name":"Direct company/public careers","family":"company-careers","status":"ok","hits":1,"added":0,"note":"Fresh company-career discovery surfaced Allegro/Mall Junior specialist partner support in Bratislava with 100% home office, but fluent Hungarian plus Slovak is a hard language mismatch."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-commerce/support search executed; no distinct promotion-grade result beyond already known/mismatched roles."},
+    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava technical/admin/e-commerce query executed; no suitable new public hit."},
+    {"name":"Kariera","family":"kariera","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/e-shop/support query executed; no suitable new full-detail hit."},
+    {"name":"Brigada.sk","family":"brigada-sk","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/e-shop brigade search executed; no promotion-grade hit surfaced."},
+    {"name":"Praca za rohom","family":"pracazarohom","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-support query executed; no suitable new verifiable hit."},
+    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh WordPress/e-commerce remote discovery executed; no concrete suitable new assignment surfaced."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":7,"added":0,"note":"Worldwide WooCommerce/WordPress results read. Product Listing & Upload Specialist is 10-30 USD/hour but three weeks old with 20-50 proposals, 1 hire and 4 interviews. Other results were expert development, very low budget, stale or heavily saturated; no promotion."},
     {"name":"WordPress public jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"note":"Fresh public WooCommerce/remote query executed; no concrete current suitable hiring hit surfaced."},
-    {"name":"Reddit / WordPress communities","family":"communities","status":"checked","hits":0,"added":0,"note":"Fresh publicly indexed hiring/community query executed; no concrete current promotion-grade request surfaced."},
-    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"verifiedHits":0,"note":"Fresh public indexing query for Bratislava jobs and WordPress/WooCommerce groups returned no concrete publicly verifiable hiring post with a direct link. 0 verified hits; authenticated Nexus/local-agent ingestion remains backlog-only."},
-    {"name":"Broad public company-career discovery","family":"company-ats","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava support/e-commerce company-career discovery executed; no additional suitable full-detail result."}
+    {"name":"Reddit / WordPress communities","family":"communities","status":"checked","hits":0,"added":0,"note":"Fresh publicly indexed WooCommerce/WordPress hiring query executed; no concrete current client demand suitable for promotion."},
+    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"verifiedHits":0,"note":"Fresh public indexing query for Bratislava jobs and WordPress/WooCommerce groups returned no concrete publicly verifiable hiring post with a direct link. 0 verified hits; authenticated Nexus/local-agent ingestion remains backlog-only and was not started."}
   ],
   "candidateNotes": [
-    {"title":"Support Associate (Full Time-Remote)","company":"Wolt","locationEligibility":"ba-area","locationReason":"LinkedIn detail lists Bratislava and remote after one day of training in Bratislava.","decision":"exclude-language-shifts","reason":"Entry-level customer-support fit and remote-friendly, but minimum B2 English plus mornings/evenings/weekends across a 7:00-01:00 support window is a material mismatch; base pay is only 1,200-1,270 EUR/month."},
-    {"title":"Recepcna/y v administrativnej budove","company":"B.E.E. s.r.o.","locationEligibility":"ba-area","locationReason":"Brigada.sk detail lists Bratislava - Mlynske Nivy.","decision":"exclude-weak-fit","reason":"6 EUR net/hour plus meal allowance is acceptable for a fallback brigade, but the role is aimed mainly at university students and requires communicative English; not strong enough for LIVE promotion."},
-    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide / Remote Job.","decision":"exclude-competition-age","reason":"Excellent operational WooCommerce fit and 10-30 USD/hour, but listing is three weeks old with 20-50 proposals, 1 hire and 4 interviews; expected response probability remains too low for LIVE promotion."}
+    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide / Remote Job.","decision":"exclude-competition-age","reason":"Very strong operational WooCommerce fit and 10-30 USD/hour, but listing is three weeks old with 20-50 proposals, 1 hire and 4 interviews; response probability is too low for LIVE promotion."},
+    {"title":"Junior špecialista podpory partnerov","company":"Mall.sk / Allegro","locationEligibility":"ba-area","locationReason":"Canonical Allegro careers detail lists Bratislava and explicitly says 100% Home Office.","decision":"exclude-language","reason":"Excellent seller-support/e-commerce operational fit, but fluent Hungarian and Slovak are explicit requirements; Hungarian is a hard mismatch."},
+    {"title":"WooCommerce installation & Setup Specialist Needed – WordPress Elementor","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide / Remote Job.","decision":"exclude-competition-harddev","reason":"20-25 USD/hour and long-term potential are attractive, but expert level, PHP tag and 50+ proposals make it a weak probability-adjusted fit."},
+    {"title":"WordPress WooCommerce E-Commerce Developer","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide / Remote Job.","decision":"exclude-harddev-budget","reason":"Only 5-10 proposals but the project asks to build a complete modern e-commerce site for 83.87 USD fixed; effective economics and development scope are poor."}
   ],
   "liveMix": {"note":"Not recomputed because jobs-data.json was not modified in this pass. Existing LIVE feed was preserved fail-closed at the prior 56-item state and 50/50 Profesia-lineage vs non-Profesia mix."},
   "masterBacklogAdditions": [
-    {"id":"shift-window-fit-score","title":"Shift-window fit score","detail":"Normalize customer-support and operations roles by actual service window, weekend frequency and required shift flexibility so apparently remote roles do not outrank better daytime jobs when their schedule burden is materially worse."},
-    {"id":"student-contract-eligibility-gate","title":"Student-contract eligibility gate","detail":"Detect when a brigade is student-only versus merely student-friendly, and suppress or penalize offers whose legal contract form is unavailable to the candidate before spending time on application preparation."}
+    {"id":"foreign-language-hard-gate-matrix","title":"Foreign-language hard-gate matrix","detail":"Maintain a structured language capability matrix and automatically distinguish optional/translation-assisted language mentions from genuinely fluent mandatory languages such as Hungarian, preventing attractive remote e-commerce roles from wasting application time."},
+    {"id":"freelance-scope-budget-ratio","title":"Freelance scope-to-budget ratio","detail":"Estimate project breadth from task verbs and deliverables, then divide fixed budget by estimated effort band. Suppress superficially attractive WooCommerce matches where a full-site build or hard development scope implies an unrealistically low effective hourly return."}
   ],
   "policy": {
     "contentAgeVsVerificationAge":"updatedAt/contentUpdatedAt describes data-content age; sourceVerificationAt describes when sources were actually checked; each job verifiedAt describes that job's evidence age.",
     "promotion":"No timestamp-only freshness. New LIVE promotion requires active full-detail evidence, location eligibility, confidence >= 80 and no known hard eligibility gate.",
     "discovery":"List/search resurfacing can create a candidate but never verifiedAt or LIVE promotion by itself.",
-    "failClosed":"Existing LIVE jobs are not removed merely because a sweep did not rediscover them. No unsafe write to jobs-data was attempted."
+    "failClosed":"Existing LIVE jobs are not removed merely because a sweep did not rediscover them. No unsafe write to jobs-data, job-sources or MASTER was attempted where full round-trip content could not be guaranteed."
   }
 }
