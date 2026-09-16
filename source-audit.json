@@ -1,44 +1,43 @@
 {
   "schemaVersion": 12,
-  "updatedAt": "2026-09-16T09:20:47+02:00",
-  "sourceVerificationAt": "2026-09-16T09:20:47+02:00",
+  "updatedAt": "2026-09-16T10:53:21+02:00",
+  "sourceVerificationAt": "2026-09-16T10:53:21+02:00",
   "runSummary": {
-    "familiesChecked": 12,
+    "familiesChecked": 10,
     "freshPromoted": 0,
-    "existingReverified": 0,
-    "freshCandidates": 4,
-    "excludedAfterFullDetail": 5,
+    "existingReverified": 1,
+    "freshCandidates": 3,
+    "excludedAfterFullDetail": 4,
     "freshnessWindowHours": 48,
-    "note": "Real 16 Sep 09:20 sweep. Twelve independent source families were actually queried: Profesia, direct company careers, LinkedIn Jobs, Worki, Brigada.sk, Kariera, Pretlak/StartupJobs, Upwork, WordPress Jobs, Reddit/WordPress communities, public Facebook indexing, and broader public-web corroboration. No new offer met both fit and evidence threshold for safe LIVE promotion. DHL Express IT end-user support is fresh and BA-local but active English plus on-call duty are substantial penalties. Porsche IT Sales & After Sales is canonical and fresh but B2 English plus 3 years project/release-management experience is a strong mismatch. Upwork WooCommerce results were either stale/low-paid/high-competition. Facebook produced 0 concrete publicly verifiable posts."
+    "note": "Real 16 Sep 10:53 sweep. Ten independent source families were actually queried: Profesia, direct company/public career pages, LinkedIn Jobs, Worki, Kariera, Pretlak, Upwork, WordPress Jobs, Reddit/WordPress communities and public Facebook indexing. No new offer met both fit and evidence threshold for safe LIVE promotion. Kaufland Bratislava IT Service & Support was reverified as active via a fresh public listing. Allegro/Mall.sk Junior partner support is 100% home office but requires fluent Hungarian and Slovak, so it is not a fit. DTSE Bratislava end-user IT support requires English B2. Fresh Upwork WordPress/WooCommerce technical jobs were remote but demanded PHP/server/database/performance expertise or native English/US-hours. Facebook produced 0 concrete publicly verifiable posts."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh BA/remote searches were executed; no new full-detail candidate strong enough for promotion in this pass."},
-    {"name":"Direct company careers","family":"company-careers","status":"ok","hits":1,"added":0,"note":"Volkswagen Group/Porsche canonical career detail verified IT Sales & After Sales Specialist, Bratislava, published 14 Sep 2026; excluded from promotion because English B2 and 3 years IT project/release-management experience are explicit."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":4,"added":0,"note":"Fresh BA support discovery included DHL Express IT podpora koncových užívateľov and CoolPeople IT Support Specialist. DHL: 2,000–2,200 EUR + up to 10%, BA, but active English and rotating on-call. CoolPeople: excellent English explicitly required. Both penalized below promotion threshold."},
-    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"note":"Bratislava administration/IT-support search executed; no new verified promotion."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"note":"Bratislava administration/e-shop brigades searched; no suitable public hit surfaced."},
-    {"name":"Kariera","family":"kariera","status":"checked","hits":0,"added":0,"note":"Bratislava IT-support/administration search executed; no new candidate stronger than already audited results."},
-    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"WordPress/e-commerce/remote discovery executed. Search surfaced freelancer profiles rather than concrete suitable open assignments; 0 promoted."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":4,"added":0,"note":"Concrete worldwide WooCommerce jobs were read. Best operational fit was WooCommerce Product Listing & Upload Specialist at 10–30 USD/h, but it is ~3 weeks old, already has 20–50 proposals, 1 hire and 4 interviews. Other hits were low-paid, stale, or required stronger development/English. No promotion."},
-    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"note":"Public WordPress/WooCommerce remote search executed; no concrete current suitable hit surfaced."},
-    {"name":"Reddit / WordPress communities","family":"communities","status":"checked","hits":0,"added":0,"note":"Publicly indexed WordPress/WooCommerce hiring/community queries executed; no concrete current verifiable request suitable for feed."},
-    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"verifiedHits":0,"note":"Public indexing query for Bratislava work/brigades and WordPress/WooCommerce groups returned no concrete publicly verifiable post with a direct link. 0 verified hits; authenticated Nexus/local-agent ingestion remains backlog-only."},
-    {"name":"Public web corroboration","family":"web-discovery","status":"checked","hits":2,"added":0,"note":"Used for discovery/corroboration only. Concentrix Czech-language home-office support surfaced, but it requires native Czech plus communicative English and therefore is not a strong Jaro fit."}
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress, e-shop and IT-support query executed; no new verified promotion."},
+    {"name":"Direct company/public careers","family":"company-careers","status":"ok","hits":3,"added":0,"note":"Fresh public details read for Allegro/Mall.sk Junior partner support (100% HO but fluent Hungarian+Slovak required), DTSE end-user IT support Bratislava (English B2), and Kaufland IT Service & Support Bratislava (existing candidate reverified)."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-commerce/IT-support query executed; no new full-detail result strong enough for promotion."},
+    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support/e-commerce query executed; no suitable new public hit."},
+    {"name":"Kariera","family":"kariera","status":"ok","hits":1,"added":0,"note":"Fresh Bratislava administration/IT-support query surfaced DENIMA administration at 970 EUR, but it requires communication in English, Ukrainian, Russian and Turkish; excluded for language/fit."},
+    {"name":"Pretlak","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/remote WordPress/e-commerce/support query executed; no concrete suitable new assignment surfaced."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":6,"added":0,"note":"Worldwide WooCommerce/WordPress jobs were read. Freshest jobs posted yesterday required server/PHP/MySQL/performance expertise or native English and US-hours. Operational product-upload jobs were older, already hired/high-competition, low-paid, or otherwise below promotion threshold."},
+    {"name":"WordPress Jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"note":"Fresh public WooCommerce remote query executed; no concrete current suitable hit surfaced."},
+    {"name":"Reddit / WordPress communities","family":"communities","status":"checked","hits":0,"added":0,"note":"Fresh publicly indexed hiring/community query executed. A WooCommerce VA post resurfaced from February 2026 at 2–4 USD/h; stale and economically weak, not promoted."},
+    {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"verifiedHits":0,"note":"Fresh public indexing query for Bratislava jobs and WordPress/WooCommerce groups returned no concrete publicly verifiable post with a direct link. 0 verified hits; authenticated Nexus/local-agent ingestion remains backlog-only."}
   ],
   "candidateNotes": [
-    {"title":"IT podpora koncových užívateľov","company":"DHL Express","locationEligibility":"ba-area","locationReason":"Workplace is Bratislava; Mon–Fri 08:00–17:00.","decision":"exclude-fit","reason":"Strong technical-support overlap and 2,000–2,200 EUR + bonus, but active English and rotating emergency/on-call duty materially reduce fit."},
-    {"title":"IT Sales & After Sales Specialist","company":"Porsche Slovakia","locationEligibility":"ba-area","locationReason":"Canonical company career page lists Bratislava 831 04 and up to 20% remote.","decision":"exclude-fit","reason":"Fresh canonical offer, but explicit English B2 and 3 years of IT project/release-management practice are strong mismatches."},
-    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide / Remote Job.","decision":"exclude-competition-age","reason":"Excellent WooCommerce product-admin fit and 10–30 USD/h, but ~3 weeks old with 20–50 proposals, 1 hire and 4 interviews."}
+    {"title":"Junior špecialista podpory partnerov","company":"Mall.sk / Allegro","locationEligibility":"remote-ok","locationReason":"Canonical Allegro career detail explicitly states 100% Home Office and Bratislava, SK.","decision":"reject-language","reason":"Role explicitly requires fluent Hungarian and Slovak; translation tools only cover occasional other-language communication."},
+    {"title":"IT Špecialista/špecialistka podpory koncových zákazníkov","company":"DTSE","locationEligibility":"ba-area","locationReason":"Canonical DTSE detail explicitly lists Bratislava and onsite support.","decision":"exclude-fit","reason":"Good hardware/end-user support overlap but English B2 is explicit and therefore a major ranking penalty."},
+    {"title":"WordPress/WooCommerce Technical Expert Needed","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide / Remote Job.","decision":"exclude-hard-skills","reason":"Posted yesterday but requires server-side performance, PHP, MySQL, caching/CDN, logs, database optimisation and security; beyond the non-hard-development target."},
+    {"title":"Technická podpora na IT odd./Service a Support","company":"Kaufland","locationEligibility":"ba-area","locationReason":"Fresh public listing dated 14 Sep 2026 lists Bratislava and Home Office option.","decision":"existing-reverified","reason":"Existing strong technical-support candidate remains active; 1,710 EUR+, L1 retail systems support, with active-English/shift burden still penalized."}
   ],
-  "liveMix": {"note":"Not recomputed in this run because jobs-data.json is too large for a guaranteed complete connector round-trip. Existing LIVE feed was not modified; fail-closed preserved."},
+  "liveMix": {"note":"Not recomputed because jobs-data.json was not modified in this pass. Existing LIVE feed was preserved fail-closed."},
   "masterBacklogAdditions": [
-    {"id":"availability-friction-score","title":"Availability-friction score","detail":"Add a data-layer penalty for on-call, weekends, night shifts and wide rotating windows separately from skill fit, so technically good jobs do not outrank sustainable schedules."},
-    {"id":"candidate-decay-by-market-activity","title":"Candidate decay by market activity","detail":"For freelance jobs, decay priority using age + proposals + hires + interviews + client-last-viewed instead of age alone; automatically suppress opportunities where the hiring window is effectively closing."}
+    {"id":"hard-skill-evidence-matrix","title":"Hard-skill evidence matrix","detail":"Track each specialist requirement as proven / adjacent / unproven and automatically suppress roles where multiple mandatory hard skills are unproven, while preserving adjacent troubleshooting roles."},
+    {"id":"language-combination-gate","title":"Language combination gate","detail":"Parse multi-language requirements as AND/OR combinations so roles requiring several fluent languages are rejected immediately, while optional translation-assisted languages do not create false penalties."}
   ],
   "policy": {
     "contentAgeVsVerificationAge":"updatedAt/contentUpdatedAt describes data-content age; sourceVerificationAt describes when sources were actually checked; each job verifiedAt describes that job's evidence age.",
     "promotion":"No timestamp-only freshness. New LIVE promotion requires active full-detail evidence, location eligibility, confidence >= 80 and no known hard eligibility gate.",
     "discovery":"List/search resurfacing can create a candidate but never verifiedAt or LIVE promotion by itself.",
-    "failClosed":"Existing LIVE jobs are not removed merely because a sweep did not rediscover them. No write to jobs-data was attempted without a guaranteed complete round-trip."
+    "failClosed":"Existing LIVE jobs are not removed merely because a sweep did not rediscover them. No unsafe write to jobs-data was attempted."
   }
 }
