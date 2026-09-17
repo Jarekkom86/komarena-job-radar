@@ -1,36 +1,40 @@
 {
   "schemaVersion": 16,
-  "updatedAt": "2026-09-17T17:00:51+02:00",
-  "sourceVerificationAt": "2026-09-17T17:00:51+02:00",
+  "updatedAt": "2026-09-17T18:17:02+02:00",
+  "sourceVerificationAt": "2026-09-17T18:17:02+02:00",
   "runSummary": {
-    "familiesChecked": 12,
-    "nonProfesiaFamiliesChecked": 11,
+    "familiesChecked": 13,
+    "nonProfesiaFamiliesChecked": 12,
     "freshPromoted": 0,
-    "freshCandidates": 5,
-    "excludedAfterFullDetail": 5,
+    "freshCandidates": 8,
+    "excludedAfterFullDetail": 8,
     "freshnessWindowHours": 48,
-    "note": "17 Sep 17:00 audit. Twelve genuinely searched source families, eleven outside Profesia. No new candidate cleared all ranking and eligibility gates. Wolt remote support was escalated to the direct employer page and explicitly excludes candidates living in Bratislavsky and Trnavsky kraj, so it is not promoted for Jaro. Existing LIVE feed is preserved fail-closed."
+    "note": "17 Sep 18:17 audit. Thirteen genuinely searched source families, twelve outside Profesia. No new candidate cleared all ranking and eligibility gates. Fresh Profesia IT roles were hard-infrastructure/development mismatches; LinkedIn ESET eCommerce is senior/business-analysis heavy; Upwork produced fresh remote admin/WordPress candidates but they were either economically weak, English-heavy, over-competitive, or hard-development. Existing LIVE feed preserved fail-closed."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh latest-job and Bratislava-targeted discovery performed. No new promotion-grade full-detail result beyond candidates already tracked in prior runs."},
-    {"name":"Direct company careers / public ATS","family":"company-careers","status":"ok","hits":2,"added":0,"rejected":2,"note":"Wolt direct careers was checked. Full-Time Remote and Part-Time Remote Support Associate vacancies are active for October 2026, but the employer explicitly states the remote arrangement applies to candidates living outside Bratislavsky & Trnavsky kraj. Bratislava-market/store roles also surfaced but do not outrank current targets."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh public-indexed Bratislava e-commerce, WordPress and support discovery performed; no stronger concrete active candidate surfaced."},
-    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava administration, technical support and e-shop discovery performed; no new suitable verified hit."},
+    {"name":"Profesia","family":"profesia","status":"ok","hits":3,"added":0,"rejected":3,"note":"Fresh 17 Sep Bratislava IT/support discovery found MOVYS IT Infrastructure Tech Lead, MOVYS Linux administrator and Indra Avitech Senior IT specialist. All are hard infrastructure/Linux/DevOps-level mismatches for the target profile."},
+    {"name":"Direct company careers / public ATS","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh public employer-career discovery for Bratislava customer support/e-commerce performed; no new stronger eligible direct-source candidate surfaced."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":1,"added":0,"rejected":1,"note":"ESET Global eCommerce Business Analyst in Bratislava surfaced, but the role is senior business-analysis/project-scope work and does not fit the light e-commerce/admin target."},
+    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava administration, IT support and e-shop discovery performed; no new suitable verified hit."},
     {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava administration/support/e-commerce discovery performed; no new promotion-grade full-detail hit."},
     {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava e-shop/admin/driver brigade discovery performed; no new high-value verified hit."},
-    {"name":"Práca za rohom / Slovak local boards","family":"pracazarohom","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh local-board discovery performed for Bratislava and commute-area support/admin/logistics roles; no new candidate stronger than already tracked options."},
-    {"name":"Pretlak / creative-tech","family":"pretlak-tech","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava/remote WordPress and e-commerce discovery performed across public indexing; no concrete suitable verified hiring hit."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh remote e-commerce/support discovery performed; no verified Slovakia-remote vacancy with acceptable language/skills burden."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":4,"added":0,"rejected":4,"note":"Fresh worldwide WordPress/WooCommerce/VA discovery found several task-fit roles. Best fresh technical role was WordPress+WooCommerce developer at $12-27/h but requires PHP/front-end/back-end development and has 20-50 proposals. German-speaking WordPress support is a task fit but requires very good German. Other VA/e-commerce roles are stale or economically weak."},
+    {"name":"Práca za rohom / Slovak local boards","family":"pracazarohom","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh local-board discovery for Bratislava and commute-area support/admin/logistics roles; no new suitable verified candidate."},
+    {"name":"Pretlak / creative-tech","family":"pretlak-tech","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava/remote WordPress and e-commerce discovery across public indexing; no concrete suitable verified hiring hit."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh remote WordPress/e-commerce/support discovery performed; no verified Slovakia-remote vacancy with acceptable language/skills burden."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":4,"added":0,"rejected":4,"note":"Fresh worldwide remote discovery found a $500/month part-time customer-service/data-entry VA with 50+ proposals; a $50 admin/customer-support VA requiring strong spoken/written English and 20-50 proposals; a $10 WordPress/VA one-off with 50+ proposals; and low-value/stale WordPress tasks. None clears the economic/language/competition threshold."},
     {"name":"Freelancermap / public freelance indexing","family":"freelancermap","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh remote WordPress/WooCommerce freelance discovery performed; no concrete promotion-grade client demand surfaced."},
-    {"name":"Reddit / public WordPress-WooCommerce communities + Facebook public indexed groups","family":"public-communities","status":"limited","hits":1,"verifiedHits":1,"added":0,"rejected":1,"note":"Reddit produced a concrete public WordPress remote hiring post dated 16 Sep, but it is a web developer/server-manager role requiring WordPress, Elementor, WooCommerce, HTML/CSS/JavaScript and PHP troubleshooting, beyond the target light-development profile. Facebook public indexed group search produced 0 verified direct-post hits; authenticated Nexus/local ingestion remains backlog and was not started."}
+    {"name":"Reddit / public WordPress-WooCommerce communities","family":"reddit-communities","status":"checked","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"Fresh public-indexed WordPress/WooCommerce hiring search performed; no new concrete promotion-grade post beyond previously audited community items."},
+    {"name":"Facebook public indexed groups","family":"facebook-public","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"Public indexed search for Bratislava work/brigade and WordPress/e-shop groups produced 0 concrete publicly verifiable direct-post hits. Authenticated Nexus/local ingestion remains backlog and was not started."}
   ],
   "candidateNotes": [
-    {"title":"Support Associate (Full-Time Remote)","company":"Wolt","locationEligibility":"reject-distance","decision":"reject-location-policy","reason":"Direct Wolt careers confirms remote support starting October 2026 but explicitly says the remote arrangement applies to candidates living outside Bratislavsky & Trnavsky kraj. It also requires minimum B2 English and morning/evening/weekend shifts. Not eligible for active recommendation under the location gate."},
-    {"title":"Support Associate (Part-Time Remote)","company":"Wolt","locationEligibility":"reject-distance","decision":"reject-location-policy-student","reason":"Direct Wolt careers states this is for part-time Support Associates (students) and applies to candidates living outside Bratislavsky & Trnavsky kraj; B2 English and evening/weekend shifts are also required."},
-    {"title":"WordPress and WooCommerce Developer","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-hard-development-competition","reason":"Worldwide, posted two days ago, $12-27/hour and 6+ months, but requires PHP plus front-end/back-end development and already has 20-50 proposals."},
-    {"title":"Deutschsprachiger Virtual Assistant | Kundenservice & WordPress","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-language","reason":"Excellent light WordPress/support task fit and worldwide remote, but very good spoken and written German is mandatory; 20-50 proposals."},
-    {"title":"Part-Time Web Developer for Tropical Tourism / WordPress & Server Manager","company":"Reddit hiring post","locationEligibility":"remote-ok","decision":"reject-hard-development","reason":"Publicly verifiable post dated 16 Sep and remote, but requires broad web/server stack including HTML/CSS/JavaScript and PHP troubleshooting, beyond target profile."}
+    {"title":"IT Infrastructure TECH LEAD","company":"MOVYS, a.s.","locationEligibility":"ba-area","decision":"reject-hard-infrastructure","reason":"Bratislava and fresh 17 Sep, but the role is senior IT infrastructure/security/system engineering at 3500 EUR and materially exceeds the target skill profile."},
+    {"title":"LINUX systémový administrátor","company":"MOVYS, a.s.","locationEligibility":"ba-area","decision":"reject-hard-linux","reason":"Bratislava and fresh 17 Sep, but mandatory Linux systems administration is a hard mismatch."},
+    {"title":"Senior IT špecialista","company":"Indra Avitech, s. r. o.","locationEligibility":"ba-area","decision":"reject-hard-devops","reason":"Bratislava and fresh 17 Sep, but the role clusters database administration, DevOps and systems engineering beyond target support scope."},
+    {"title":"Global eCommerce Business Analyst","company":"ESET","locationEligibility":"ba-area","decision":"reject-seniority-scope","reason":"Bratislava e-commerce relevance is strong, but the role focuses on complex business needs, project scope definition and global e-commerce analysis rather than operational e-shop administration."},
+    {"title":"Part-Time Virtual Assistant Needed","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-competition-value","reason":"Worldwide remote, flexible 2-4 days/week and $500/month, but already 50+ proposals and no interview activity; not strong enough for promotion."},
+    {"title":"Virtual Assistant – Administrative & Customer Support","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-language-competition","reason":"Worldwide remote and good admin fit, but requires strong written and spoken English plus 2+ years experience; 20-50 proposals."},
+    {"title":"Virtual Assistant","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-low-value-competition","reason":"Worldwide remote and WordPress is a plus, but only $10 fixed with 50+ proposals; poor effective value."},
+    {"title":"AI Blog Post VA for WordPress","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-economics","reason":"Worldwide WordPress/content fit but $30 fixed for a recurring 120-article monthly workflow is economically unacceptable."}
   ],
   "liveMix": {
     "liveCount": 56,
@@ -41,8 +45,8 @@
     "note":"No LIVE additions/removals this run; existing feed preserved fail-closed."
   },
   "developmentBacklogAdded": [
-    {"name":"Remote geo-exclusion parser","problem":"Remote labels can be misleading when the employer excludes the candidate's home region or limits remote eligibility to specific regions, creating false-positive remote recommendations.","improvement":"Parse positive and negative geography clauses from full-detail employer pages and require explicit candidate-region compatibility before assigning remote-ok."},
-    {"name":"Fresh-post skill-gap budget","problem":"Very fresh jobs can deserve fast review, but hard-skill gaps such as PHP/server management can still make them poor applications; freshness alone can over-rank them.","improvement":"Compute a bounded skill-gap budget that allows only one trainable adjacent gap for <24h opportunities while hard mandatory stacks remain disqualifying, reducing wasted applications without missing learnable roles."}
+    {"name":"Effective workload floor for fixed-price gigs","problem":"Fixed-price freelance listings can look attractive while hiding an uneconomic workload, especially bulk content and recurring admin tasks.","improvement":"Estimate implied hourly rate from stated volume/frequency and reject or heavily penalize listings whose conservative effective rate falls below a configurable floor before they consume review time."},
+    {"name":"Competition-to-client-activity ratio","problem":"Proposal count alone over-penalizes active clients and under-penalizes dead listings; 50+ proposals with no interviews differs materially from 20-50 proposals with active hiring.","improvement":"Score freelance urgency using proposals together with last-viewed time, interviewing, hires, invites and client spend so the radar prioritizes opportunities where the client is demonstrably active."}
   ],
   "masterBacklogWrite": {
     "status":"deferred-fail-closed",
@@ -52,7 +56,7 @@
     "jobsData":"unchanged-no-promotion",
     "jobSources":"unchanged-no-source-change",
     "sourceAudit":"updated",
-    "reason":"No new candidate cleared all eligibility and ranking gates. Existing LIVE feed and source configuration were therefore preserved. No locked file was touched."
+    "reason":"No new candidate cleared all eligibility and ranking gates. Existing LIVE feed and source configuration were preserved. No locked file was touched."
   },
   "policy": {
     "promotion":"New LIVE promotion requires active full-detail evidence, location eligibility, confidence >= 80 and no known hard eligibility gate.",
