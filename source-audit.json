@@ -1,39 +1,37 @@
 {
   "schemaVersion": 16,
-  "updatedAt": "2026-09-17T15:33:33+02:00",
-  "sourceVerificationAt": "2026-09-17T15:33:33+02:00",
+  "updatedAt": "2026-09-17T16:14:11+02:00",
+  "sourceVerificationAt": "2026-09-17T16:14:11+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "nonProfesiaFamiliesChecked": 11,
     "freshPromoted": 0,
-    "freshCandidates": 8,
-    "excludedAfterFullDetail": 8,
+    "freshCandidates": 6,
+    "excludedAfterFullDetail": 5,
     "freshnessWindowHours": 48,
-    "note": "17 Sep 15:33 audit. Twelve genuinely searched source families, eleven outside Profesia. No new candidate passed full fit/value/language/location promotion gate. Existing LIVE feed preserved fail-closed."
+    "note": "17 Sep 16:14 audit. Twelve genuinely searched source families, eleven outside Profesia. Websupport Customer Success Advisor is a strong new direct-company candidate but jobs-data round-trip remains unsafe because the connector truncates the large file, so LIVE feed is preserved fail-closed rather than risking destructive replacement."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":1,"added":0,"rejected":1,"note":"DHL IT Support at Bratislava airport surfaced at EUR 2000-2200 + bonus; local gate passes, but role includes emergency support outside working hours and broader ICT requirements, so no alert/promotion this run."},
-    {"name":"Direct company careers / public ATS","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava IT support/e-commerce/admin employer discovery performed; no new direct-company promotion-grade full-detail result surfaced."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":1,"added":0,"rejected":1,"note":"SupportYourApp remote technical support surfaced, but listing is no longer accepting applications and requires English C1; rejected language/inactive."},
-    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava administration/technical/e-commerce discovery performed; no new suitable active full-detail hit surfaced."},
+    {"name":"Profesia","family":"profesia","status":"ok","hits":3,"added":0,"rejected":2,"note":"Fresh Bratislava customer-support/helpdesk search found Websupport, Packeta and Slovak Parcel Service. Websupport was escalated to its direct company career page. SPS is local and valid but B1 English plus EUR1250 makes it lower priority; Packeta is lower-value customer care."},
+    {"name":"Direct company careers / public ATS","family":"company-careers","status":"ok","hits":2,"added":0,"rejected":1,"note":"Websupport direct career page confirms Customer Success Advisor in Bratislava at EUR1260 + variable component, IT/customer communication focus, website knowledge as a plus and explicit opportunity to grow into WordPress. team.blue global careers independently confirms the Slovakia vacancy. Soitron was also checked; no suitable light-support role surfaced."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava e-commerce/support/admin discovery performed through public indexing; no stronger concrete active full-detail candidate surfaced."},
+    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava administration/technical/e-commerce discovery performed; no new promotion-grade full-detail hit surfaced."},
     {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava administration/support/e-commerce discovery performed; no new suitable full-detail hit surfaced."},
-    {"name":"Brigada.sk","family":"brigada","status":"ok","hits":1,"added":0,"rejected":1,"note":"Child-train driver/cashier in Avion Bratislava is active from 17 Sep but only EUR6/hour and primarily student-oriented; rejected low value."},
-    {"name":"Pretlak / StartupJobs / creative-tech","family":"pretlak-tech","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava/remote WordPress and e-commerce discovery performed across public indexing; no concrete suitable verified hiring hit."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"added":0,"rejected":5,"note":"Worldwide WooCommerce/WordPress results reviewed. Freshest role was posted ~2 hours ago at $15-20/h but is Expert hard-development with 50+ proposals. Other product-listing/operations roles were older, already hired, low-value, or highly competitive."},
-    {"name":"Freelancermap","family":"freelancermap","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh remote WordPress/WooCommerce freelance discovery performed; no concrete promotion-grade client demand surfaced."},
-    {"name":"Reddit / public WordPress-WooCommerce communities","family":"reddit-community","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh public indexed hiring search performed; no concrete verified client request suitable for promotion."},
-    {"name":"Facebook public indexed groups","family":"facebook-public","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"Fresh public indexed Facebook group search performed. No concrete publicly verifiable hiring post with direct link. 0 verified hits; authenticated Nexus/local ingestion remains backlog and was not started."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh remote/Slovakia e-commerce and support discovery performed; no suitable non-hard-development verified candidate surfaced."}
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava driver/admin/e-shop brigade discovery performed; no new high-value verified hit surfaced."},
+    {"name":"Práca za rohom","family":"pracazarohom","status":"ok","hits":2,"added":0,"rejected":2,"note":"Fresh local search confirmed Slovak Parcel Service customer service in Ivanka pri Dunaji at EUR1250 with 60% home office after training and B1 English; also surfaced local Senec-area roles, but none outranked Websupport for current profile."},
+    {"name":"Pretlak / creative-tech","family":"pretlak-tech","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava/remote WordPress and e-commerce discovery performed across public indexing; no concrete suitable verified hiring hit."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh remote e-commerce/support discovery performed. FAVI company page surfaced but no concrete suitable Slovakia-remote vacancy with low language burden was verified."},
+    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":4,"added":0,"rejected":4,"note":"WooCommerce Product Creation Specialist is a strong task-content match using spreadsheet data and AI to create WooCommerce listings, worldwide remote, $4-15/h, 6+ months, but already 20-50 proposals and client last viewed two days ago. Other WooCommerce roles were stale, low-value, already hired, or hard-development heavy."},
+    {"name":"Freelancermap / public freelance indexing","family":"freelancermap","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh remote WordPress/WooCommerce freelance discovery performed; no concrete promotion-grade client demand surfaced."},
+    {"name":"Reddit / public WordPress-WooCommerce communities + Facebook public indexed groups","family":"public-communities","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"Fresh public indexed Reddit/WordPress/WooCommerce and Facebook group searches performed. No concrete publicly verifiable hiring post with direct link. Facebook: 0 verified hits; authenticated Nexus/local ingestion remains backlog and was not started."}
   ],
   "candidateNotes": [
-    {"title":"IT Support (Male/Female)","company":"DHL Group","locationEligibility":"ba-area","decision":"reject-fit-burden","reason":"Bratislava airport, EUR2000-2200 plus bonus; however emergency incident support outside working hours and broader ICT responsibility reduce fit versus lighter support roles."},
-    {"title":"Technical Support Consultant, VPS & Trading (remote)","company":"SupportYourApp","locationEligibility":"remote-ok","decision":"reject-language-inactive","reason":"Remote is genuine, but English C1 is mandatory and LinkedIn marks the role no longer accepting applications."},
-    {"title":"Vodič detského vláčika","company":"Jana Petrovicova","locationEligibility":"ba-area","decision":"reject-low-value","reason":"Active Bratislava Avion brigade from 17 Sep, B licence fits, but EUR6/hour is below useful priority."},
-    {"title":"WordPress Developer | Custom Website Development","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-hard-development-competition","reason":"Worldwide and posted about 2 hours ago at $15-20/hour, but Expert-level custom development/HTML/CSS with 50+ proposals."},
-    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-stale-competition","reason":"Strong product-admin overlap at $10-30/hour but posted three weeks ago, 20-50 proposals and client last viewed last week."},
-    {"title":"WooCommerce installation & Setup Specialist Needed – WordPress Elementor","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-hard-development-competition","reason":"$20-25/hour and contract-to-hire, but Expert-level PHP/customization, 50+ proposals and already hired/interviewing."},
-    {"title":"Website & SEO Management 2026","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-requirement-gap-competition","reason":"Long-term WooCommerce operations at $15-30/hour, but requires Helium 10, Seller Central, Search Console and SEO reporting; 20-50 proposals."},
-    {"title":"Ecommerce Specialist on Wordpress - Adding a shop","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-low-value-competition","reason":"Fresh-ish worldwide WordPress/WooCommerce role but only $30 fixed, Expert level, 5-10 proposals and already five interviews."}
+    {"title":"Customer Success Advisor - Tvoj vstup do sveta IT a biznisu","company":"Websupport, s.r.o.","locationEligibility":"ba-area","decision":"promotion-ready-write-blocked","reason":"Direct Websupport career page confirms Bratislava, EUR1260/month + variable component, TPP, IT/customer communication, websites/online marketing as a plus and explicit WordPress growth path. No mandatory foreign-language level is stated in the requirements. Strong profile fit; LIVE write deferred only because jobs-data connector read is truncated and full replacement would be unsafe."},
+    {"title":"Operátor/ka zákazníckeho servisu","company":"Slovak Parcel Service s.r.o.","locationEligibility":"ba-area","decision":"reject-lower-priority","reason":"Ivanka pri Dunaji, EUR1250, 08:00-16:30 and 60% home office after training are attractive, but B1 English is required and compensation is lower than stronger support options."},
+    {"title":"WooCommerce Product Creation Specialist","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-competition-rate","reason":"Worldwide, 6+ months, less than 30h/week, product creation from spreadsheet data using AI in WooCommerce is an excellent task fit, but $4-15/hour with 20-50 proposals and client last viewed two days ago is not alert-grade."},
+    {"title":"WordPress Developer | Custom Website Development","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-hard-development-competition","reason":"Worldwide and fresh, $15-20/hour, but Expert-level custom development/HTML/CSS and 50+ proposals."},
+    {"title":"Ecommerce Specialist on Wordpress - Adding a shop","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-low-value-competition","reason":"Worldwide, $30 fixed and 5-10 proposals, but Expert level with five interviews already active."},
+    {"title":"IT jobs","company":"msg life Slovakia","locationEligibility":"remote-ok","decision":"reject-language-hard-skills","reason":"Direct careers offers remote/home-office roles, but current positions require B2/C1 English/German and/or Docker/Kubernetes/integration/Java skills beyond target profile."}
   ],
   "liveMix": {
     "liveCount": 56,
@@ -41,21 +39,21 @@
     "profesiaPercent": 50.0,
     "nonProfesia": 28,
     "nonProfesiaPercent": 50.0,
-    "note":"No LIVE additions/removals this run; existing feed preserved fail-closed."
+    "note":"No LIVE additions/removals because jobs-data safe round-trip is unavailable; existing feed preserved fail-closed."
   },
   "developmentBacklogAdded": [
-    {"name":"Emergency/on-call burden extractor","problem":"Support roles can look excellent on title/pay while hiding emergency support or out-of-hours obligations that materially worsen fit.","improvement":"Extract on-call, emergency, after-hours and weekend obligations into structured burden fields and penalize before alerting or ranking."},
-    {"name":"Freelance client-view recency decay","problem":"Public freelance jobs can remain indexed despite the client not viewing them for days or weeks, wasting proposal effort.","improvement":"Track lastViewedByClient and sharply decay priority when client activity is stale, while boosting fresh jobs with recent client activity and low proposal counts."}
+    {"name":"Direct-company escalation cache","problem":"A job-board hit can be stronger and fresher on the employer career page, but repeatedly rediscovering the primary source wastes time and risks duplicate lineage.","improvement":"Persist a title+company to canonical-career URL cache with last verified timestamp so every matching board hit automatically escalates to the direct source before scoring/dedupe."},
+    {"name":"Growth-path fit extractor","problem":"Entry support roles may be strategically valuable when the employer explicitly offers progression into WordPress, web operations or technical ownership, but current ranking mainly scores immediate duties.","improvement":"Extract explicit training/progression paths and add a bounded strategic-fit bonus only when the next-step skill matches target tracks such as WordPress/WooCommerce, IT support or e-commerce operations."}
   ],
   "masterBacklogWrite": {
     "status":"deferred-fail-closed",
     "reason":"PRACA_PRE_JARA_MASTER.md remains unsafe for complete replacement when a full round-trip read is not guaranteed. New backlog items are preserved in this audit for later safe merge."
   },
   "dataWrites": {
-    "jobsData":"unchanged-no-promotion",
-    "jobSources":"unchanged-no-promotion",
+    "jobsData":"unchanged-write-blocked-fail-closed",
+    "jobSources":"unchanged-write-blocked-fail-closed",
     "sourceAudit":"updated",
-    "reason":"No new candidate justified LIVE addition. Existing feed was preserved and no locked file was touched."
+    "reason":"Websupport is promotion-ready, but jobs-data.json is returned truncated by the connector and update_file requires complete replacement. Existing feed was preserved rather than risking data loss. No locked file was touched."
   },
   "policy": {
     "promotion":"New LIVE promotion requires active full-detail evidence, location eligibility, confidence >= 80 and no known hard eligibility gate.",
