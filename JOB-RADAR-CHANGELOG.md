@@ -1,5 +1,20 @@
 # KomArena Job Radar — CHANGELOG
 
+## 2026-09-17 08:54 — follow-up audit + evidence scoring / negative-cache hardening
+
+- Reálny follow-up sweep preveril aktuálne Bratislava/BA okolie pre IT support, administratívu, zákaznícku podporu a reklamačno-servisné roly. Žiadna nová promotion-grade ponuka neprešla všetkými gate-mi; LIVE feed preto nebol umelo doplnený ani timestampovo omladený.
+- DHL Group `IT Support (Male/Female)` zostáva aktuálne verejne dostupný na Profesia (Bratislava Airport, 2 000–2 200 €), ale full detail má explicitnú angličtinu B2, preto ostáva vyradený.
+- `source-audit.json` schema v13 zaznamenáva nový source-verification čas samostatne od content/job verification age.
+- `job-radar-feed-quality-v1.js` dostal 4 funkčné zlepšenia: (1) deterministický `listingFingerprint()` odstraňujúci bežné tracking parametre, (2) `negativeCacheRecord()` pre krátkodobé potlačenie explicitne zatvorených/neaktívnych listingov, (3) číselný `evidenceScore()` 0–100 s penalizáciou stale/weak/negative evidence, (4) nový coherence gate `publication-after-verification`, ktorý odhalí časovo nemožnú evidenciu. `auditJobs()` teraz sumarizuje priemerné/minimálne evidence score a pripravuje negative-cache záznamy.
+
+### Kontroly / regresia
+- Žiadny CRM/localStorage kľúč ani používateľský workflow nebol zmenený.
+- Žiadny locked vizuálny súbor nebol zapisovaný.
+- Finálne SHA presne sedia s DESIGN LOCK: HTML `18fd009f1f9f041a207b067c5dcc0661f1647199`, CSS `5157753d3525a99191e78374f7a074315bf7809a`, enhance JS `fbb56af1213723b68deb9dc6ffc9e4c9de7fd80d`, MASTER WebP `ded775849800577277c4581ee5c30db6e43bba54`.
+- MASTER DESIGN LOCK zachovaný presne.
+
+---
+
 ## 2026-09-16 08:42 — follow-up audit + evidence reliability hardening
 
 - Reálny sweep: Profesia Senec/admin/customer-support a Kariera Bratislava IT/support. GEBRÜDER WEISS customer service (Senec, 1 200 €, objednávky/reklamácie/vratky) a Konecta remote back office (1 300–1 400 €) ostávajú discovery-only, pretože neboli kompletne potvrdené všetky hard gates z promotion-grade detailu.
@@ -59,15 +74,3 @@
 
 ### MASTER DESIGN LOCK
 - MASTER DESIGN LOCK zachovaný presne; žiadny locked visual file nebol modifikovaný.
-
----
-
-## 2026-09-14 — verified IKEA customer-service promotion + evidence freshness hardening
-
-- Nová promotion-grade ponuka: IKEA Bratislava `Pracovník*čka na oddelení Služby zákazníkom`; oficiálna kariéra umožňovala prihlásenie, bez cudzojazyčného hard gate.
-- PSS Call centrum a SUPTel dispečing boli reálne znovu potvrdené aktívne.
-- Brightpick nebol promovaný pre canonical neaktívny status; ÚNMS pre jazykový/technický gate; IKEA Picker pre fyzickú záťaž.
-- Stable source-job ID dedupe rozšírené o IKEA a Nalgoo.
-- Pridaná `future-publication` karanténa, verification↔link evidence drift gate a evidence-surface observability.
-- CRM/localStorage kompatibilita a fallback live → cache → baseline zostali zachované.
-- MASTER design bol zachovaný podľa `JOB-RADAR-DESIGN-LOCK.json`.
