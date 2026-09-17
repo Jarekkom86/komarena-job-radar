@@ -1,37 +1,39 @@
 {
   "schemaVersion": 16,
-  "updatedAt": "2026-09-17T14:01:36+02:00",
-  "sourceVerificationAt": "2026-09-17T14:01:36+02:00",
+  "updatedAt": "2026-09-17T15:33:33+02:00",
+  "sourceVerificationAt": "2026-09-17T15:33:33+02:00",
   "runSummary": {
-    "familiesChecked": 10,
-    "nonProfesiaFamiliesChecked": 9,
+    "familiesChecked": 12,
+    "nonProfesiaFamiliesChecked": 11,
     "freshPromoted": 0,
-    "freshCandidates": 9,
-    "excludedAfterFullDetail": 9,
+    "freshCandidates": 8,
+    "excludedAfterFullDetail": 8,
     "freshnessWindowHours": 48,
-    "note": "17 Sep 14:01 audit. Ten genuinely searched source families, nine outside Profesia. No new candidate passed full fit/value/language/location promotion gate. Existing LIVE feed preserved fail-closed."
+    "note": "17 Sep 15:33 audit. Twelve genuinely searched source families, eleven outside Profesia. No new candidate passed full fit/value/language/location promotion gate. Existing LIVE feed preserved fail-closed."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":1,"added":0,"rejected":1,"note":"Fresh Bratislava search found MOVYS Linux system administrator published 17 Sep at EUR 2800, but hard Linux/system administration specialization is outside target profile."},
-    {"name":"Direct company careers / public ATS","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh broad Bratislava e-commerce/support/admin employer discovery performed; no new direct-company promotion-grade full-detail result surfaced."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava e-commerce/support/WordPress discovery performed in public index; no independently verified promotion-grade result surfaced."},
-    {"name":"Worki","family":"worki","status":"checked","hits":1,"added":0,"rejected":1,"note":"Shield-Sk e-shop administrator/customer support in Bratislava-Ruzinov matched profile but detail explicitly says the vacancy has already been filled or cancelled."},
+    {"name":"Profesia","family":"profesia","status":"ok","hits":1,"added":0,"rejected":1,"note":"DHL IT Support at Bratislava airport surfaced at EUR 2000-2200 + bonus; local gate passes, but role includes emergency support outside working hours and broader ICT requirements, so no alert/promotion this run."},
+    {"name":"Direct company careers / public ATS","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava IT support/e-commerce/admin employer discovery performed; no new direct-company promotion-grade full-detail result surfaced."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":1,"added":0,"rejected":1,"note":"SupportYourApp remote technical support surfaced, but listing is no longer accepting applications and requires English C1; rejected language/inactive."},
+    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava administration/technical/e-commerce discovery performed; no new suitable active full-detail hit surfaced."},
     {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava administration/support/e-commerce discovery performed; no new suitable full-detail hit surfaced."},
-    {"name":"Brigada.sk","family":"brigada","status":"ok","hits":3,"added":0,"rejected":3,"note":"Fresh Bratislava results reviewed: reception EUR6/h requires communicative English; child-train driver EUR6/h is low value; theatre handling EUR8/h is physically demanding and evening/weekend oriented."},
-    {"name":"Pretlak / creative-tech","family":"pretlak-tech","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava/remote WordPress and e-commerce discovery performed; no concrete suitable verified hiring hit."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"added":0,"rejected":5,"note":"Worldwide WooCommerce/WordPress results reviewed. The strongest fresh operations-style role was $30 fixed with 5-10 proposals and five interviews; other roles were stale/competitive, already hired, or required hard development. No promotion."},
+    {"name":"Brigada.sk","family":"brigada","status":"ok","hits":1,"added":0,"rejected":1,"note":"Child-train driver/cashier in Avion Bratislava is active from 17 Sep but only EUR6/hour and primarily student-oriented; rejected low value."},
+    {"name":"Pretlak / StartupJobs / creative-tech","family":"pretlak-tech","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava/remote WordPress and e-commerce discovery performed across public indexing; no concrete suitable verified hiring hit."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"added":0,"rejected":5,"note":"Worldwide WooCommerce/WordPress results reviewed. Freshest role was posted ~2 hours ago at $15-20/h but is Expert hard-development with 50+ proposals. Other product-listing/operations roles were older, already hired, low-value, or highly competitive."},
+    {"name":"Freelancermap","family":"freelancermap","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh remote WordPress/WooCommerce freelance discovery performed; no concrete promotion-grade client demand surfaced."},
     {"name":"Reddit / public WordPress-WooCommerce communities","family":"reddit-community","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh public indexed hiring search performed; no concrete verified client request suitable for promotion."},
-    {"name":"Facebook public indexed groups","family":"facebook-public","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"Fresh public indexed Facebook search performed. No concrete publicly verifiable hiring post with direct link. 0 verified hits; authenticated Nexus/local ingestion remains backlog and was not started."}
+    {"name":"Facebook public indexed groups","family":"facebook-public","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"Fresh public indexed Facebook group search performed. No concrete publicly verifiable hiring post with direct link. 0 verified hits; authenticated Nexus/local ingestion remains backlog and was not started."},
+    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh remote/Slovakia e-commerce and support discovery performed; no suitable non-hard-development verified candidate surfaced."}
   ],
   "candidateNotes": [
-    {"title":"LINUX system administrator","company":"MOVYS, a.s.","locationEligibility":"ba-area","decision":"reject-hard-development","reason":"Published 17 Sep 2026 in Bratislava at EUR 2800, but Linux/system administration specialization is a hard skills mismatch."},
-    {"title":"Administrátor e-shopu / zákaznícka podpora","company":"Shield-Sk s. r. o.","locationEligibility":"ba-area","decision":"reject-inactive","reason":"Excellent e-shop/customer-support overlap in Bratislava-Ruzinov, but Worki explicitly marks the vacancy as filled or cancelled."},
-    {"title":"Ecommerce Specialist on Wordpress - Adding a shop","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-value-competition","reason":"Worldwide remote and fresh, but only $30 fixed, Expert level, already 5 interviews and 5-10 proposals; expected value is too low."},
-    {"title":"WordPress/WooCommerce Expert – Ecommerce, SEO, Analytics & Launch","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-competition-requirements","reason":"Worldwide remote, but broad GA4/Search Console/payment/shipping/technical SEO scope with 8 interviews and $90 fixed is not attractive enough."},
-    {"title":"WooCommerce Developer Needed for Customized Gifting Store","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-stale-existing","reason":"Strong WooCommerce overlap and <5 proposals, but this candidate was already discovered in earlier runs and is not a new alert."},
-    {"title":"Recepčná/ý v administratívnej budove","company":"B.E.E. s.r.o.","locationEligibility":"ba-area","decision":"reject-language-value","reason":"Bratislava location passes, but communicative English is mandatory and EUR6 net/hour is weak."},
-    {"title":"Vodič detského vláčika","company":"Jana Petrovicova","locationEligibility":"ba-area","decision":"reject-low-value","reason":"Bratislava and B licence fit, but EUR6/hour is below useful priority."},
-    {"title":"Manipulačný pracovník","company":"Divadlo P.O. Hviezdoslava","locationEligibility":"ba-area","decision":"reject-physical-burden","reason":"EUR8/hour but repeated lifting, scene handling, evenings and weekends conflict with preferred lighter work."}
+    {"title":"IT Support (Male/Female)","company":"DHL Group","locationEligibility":"ba-area","decision":"reject-fit-burden","reason":"Bratislava airport, EUR2000-2200 plus bonus; however emergency incident support outside working hours and broader ICT responsibility reduce fit versus lighter support roles."},
+    {"title":"Technical Support Consultant, VPS & Trading (remote)","company":"SupportYourApp","locationEligibility":"remote-ok","decision":"reject-language-inactive","reason":"Remote is genuine, but English C1 is mandatory and LinkedIn marks the role no longer accepting applications."},
+    {"title":"Vodič detského vláčika","company":"Jana Petrovicova","locationEligibility":"ba-area","decision":"reject-low-value","reason":"Active Bratislava Avion brigade from 17 Sep, B licence fits, but EUR6/hour is below useful priority."},
+    {"title":"WordPress Developer | Custom Website Development","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-hard-development-competition","reason":"Worldwide and posted about 2 hours ago at $15-20/hour, but Expert-level custom development/HTML/CSS with 50+ proposals."},
+    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-stale-competition","reason":"Strong product-admin overlap at $10-30/hour but posted three weeks ago, 20-50 proposals and client last viewed last week."},
+    {"title":"WooCommerce installation & Setup Specialist Needed – WordPress Elementor","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-hard-development-competition","reason":"$20-25/hour and contract-to-hire, but Expert-level PHP/customization, 50+ proposals and already hired/interviewing."},
+    {"title":"Website & SEO Management 2026","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-requirement-gap-competition","reason":"Long-term WooCommerce operations at $15-30/hour, but requires Helium 10, Seller Central, Search Console and SEO reporting; 20-50 proposals."},
+    {"title":"Ecommerce Specialist on Wordpress - Adding a shop","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-low-value-competition","reason":"Fresh-ish worldwide WordPress/WooCommerce role but only $30 fixed, Expert level, 5-10 proposals and already five interviews."}
   ],
   "liveMix": {
     "liveCount": 56,
@@ -42,8 +44,8 @@
     "note":"No LIVE additions/removals this run; existing feed preserved fail-closed."
   },
   "developmentBacklogAdded": [
-    {"name":"Inactive-detail tombstone cache","problem":"Search engines repeatedly surface already filled/cancelled jobs, wasting verification time on the same dead detail pages.","improvement":"Store a tombstone with source URL, inactive reason and checkedAt; suppress rediscovery for 14-30 days unless the source publication/update timestamp changes."},
-    {"name":"Physical-burden gate for side jobs","problem":"Generic logistics/brigade discovery can rank jobs with lifting, scene handling or repetitive heavy work despite otherwise acceptable location and pay.","improvement":"Extract lifting/manual-load/evening-weekend burden into structured fields and apply a strong penalty or exclusion before alerting, while keeping lighter driver/admin work eligible."}
+    {"name":"Emergency/on-call burden extractor","problem":"Support roles can look excellent on title/pay while hiding emergency support or out-of-hours obligations that materially worsen fit.","improvement":"Extract on-call, emergency, after-hours and weekend obligations into structured burden fields and penalize before alerting or ranking."},
+    {"name":"Freelance client-view recency decay","problem":"Public freelance jobs can remain indexed despite the client not viewing them for days or weeks, wasting proposal effort.","improvement":"Track lastViewedByClient and sharply decay priority when client activity is stale, while boosting fresh jobs with recent client activity and low proposal counts."}
   ],
   "masterBacklogWrite": {
     "status":"deferred-fail-closed",
