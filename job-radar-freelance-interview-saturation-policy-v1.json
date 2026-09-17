@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "policyId": "freelance-interview-saturation-v1",
+  "purpose": "Reduce wasted application effort on freelance listings where visible hiring activity shows the client is already deep into interviews, without changing eligibility or source evidence.",
+  "scope": ["freelance-marketplace"],
+  "prerequisites": {
+    "locationEligibility": "remote-ok",
+    "remoteEvidenceRequired": true,
+    "canonicalDetailRequired": true
+  },
+  "inputs": ["proposalCountMin", "proposalCountMax", "interviewingCount", "invitesSent", "postedAt", "verifiedAt", "sourceTrust", "scoreConfidence"],
+  "rules": [
+    {
+      "when": "interviewingCount is known AND proposalCountMin is known AND proposalCountMin > 0",
+      "derive": "interviewSaturationRatio = interviewingCount / proposalCountMin"
+    },
+    {
+      "when": "interviewSaturationRatio >= 0.50",
+      "action": "priority-penalty-high",
+      "reason": "At least half of the minimum visible proposal pool is already interviewing."
+    },
+    {
+      "when": "interviewSaturationRatio >= 0.25 AND interviewSaturationRatio < 0.50",
+      "action": "priority-penalty-medium"
+    },
+    {
+      "when": "interviewingCount is unknown OR proposalCountMin is unknown",
+      "action": "no-saturation-adjustment",
+      "reason": "Never infer missing marketplace activity data."
+    }
+  ],
+  "guards": {
+    "neverChangesLocationEligibility": true,
+    "neverOverridesHardMismatch": true,
+    "neverInventsProposalCounts": true,
+    "neverMutatesCRM": true,
+    "preserveStableIds": true,
+    "preserveCanonicalDedupe": true,
+    "preserveSourceTrust": true,
+    "preserveVerifiedAt": true,
+    "preserveScoreConfidence": true,
+    "failClosedOnRemoteAmbiguity": true
+  },
+  "deployment": "isolated-policy; no UI/feed/CRM/baseline mutation"
+}
