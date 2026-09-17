@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "policyId": "closed-listing-negative-cache-v1",
+  "purpose": "Avoid repeatedly reverifying listings that canonical evidence explicitly marks closed or no longer accepting applications, while allowing materially changed or reopened roles through immediately.",
+  "scope": ["discovery", "verification"],
+  "cacheKey": ["canonicalUrl", "stableId", "companyTitleLocationFingerprint"],
+  "entryRequirements": {
+    "canonicalEvidenceRequired": true,
+    "acceptedSignals": ["no-longer-accepting-applications", "applications-closed", "job-closed", "job-expired"],
+    "searchSnippetAloneInsufficient": true
+  },
+  "ttlHours": 72,
+  "behavior": {
+    "onMatchingMirrorOrIndexHit": "skip-full-reverification-and-record-negative-cache-hit",
+    "onCanonicalReopenSignal": "bypass-cache-and-reverify-immediately",
+    "onMaterialChange": "bypass-cache-and-reverify-immediately",
+    "materialChangeFields": ["canonicalUrl", "jobId", "location", "remotePolicy", "employmentType", "applicationStatus"]
+  },
+  "locationGate": {
+    "requiredBeforeAnyPromotion": true,
+    "allowed": ["ba-area", "remote-ok"],
+    "unknown": "verification-needed",
+    "reject-distance": "reject"
+  },
+  "guards": {
+    "neverDeletesExistingLiveItem": true,
+    "neverMutatesCRM": true,
+    "preserveStableIds": true,
+    "preserveCanonicalDedupe": true,
+    "preserveSourceTrust": true,
+    "preserveVerifiedAt": true,
+    "preserveScoreConfidence": true,
+    "failClosed": true,
+    "facebookLimitedNeverCountsAsVerified": true
+  },
+  "deployment": "isolated-policy; no UI/feed/CRM/baseline/source-audit mutation"
+}
