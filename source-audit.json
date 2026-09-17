@@ -1,37 +1,38 @@
 {
   "schemaVersion": 12,
-  "updatedAt": "2026-09-17T07:50:31+02:00",
-  "sourceVerificationAt": "2026-09-17T07:50:31+02:00",
+  "updatedAt": "2026-09-17T08:38:06+02:00",
+  "sourceVerificationAt": "2026-09-17T08:38:06+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "freshPromoted": 0,
-    "freshCandidates": 2,
-    "excludedAfterFullDetail": 2,
+    "freshCandidates": 3,
+    "excludedAfterFullDetail": 3,
     "freshnessWindowHours": 48,
-    "note": "Real 17 Sep 07:50 sweep. Twelve independent source families were actually queried: Profesia, direct company/public careers, LinkedIn Jobs, Worki, Kariera, Brigada.sk, Praca za rohom, Pretlak/StartupJobs, Upwork, WordPress public jobs, Reddit/WordPress communities, and public Facebook indexing. No promotion-grade new job was found. Upwork surfaced a worldwide remote WooCommerce product-listing assignment at $10-30/h for 50-75 products, but it was posted three weeks ago, already has 20-50 proposals, and Dutch copy is preferred. A current Brigada.sk Bratislava reception role pays 6 EUR/h net and requires conversational English; it is below target economics and language fit. Facebook produced 0 concrete publicly verifiable posts."
+    "note": "Real 17 Sep 08:38 sweep. Twelve independent source families were actually queried: Profesia, direct company/public careers, LinkedIn Jobs, Worki, Kariera, Brigada.sk, Praca za rohom, Pretlak/StartupJobs, Upwork, WordPress public jobs, Reddit/WordPress communities, and public Facebook indexing. No promotion-grade new job was found. A fresh Upwork WordPress/WooCommerce shop task is worldwide remote and only one day old, but budget is just $30 fixed and the client is already interviewing 5 candidates. Allegro/Mall.sk has a Bratislava 100% HO partner-support role, but fluent Hungarian and Slovak are explicit hard requirements. LinkedIn surfaced a Top4Mobile e-shop/customer-support role in Bratislava, but it is four months old and no longer accepting applications. Facebook produced 0 concrete publicly verifiable posts."
   },
   "sources": [
     {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/e-shop/technical-support discovery executed; no new promotion-grade hit surfaced."},
-    {"name":"Direct company/public careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-commerce/support/administration company-career discovery executed; no new promotion-grade direct-career hit surfaced."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh public Bratislava e-commerce/support/admin discovery executed; no distinct promotion-grade current hit surfaced."},
+    {"name":"Direct company/public careers","family":"company-careers","status":"ok","hits":2,"added":0,"note":"Fresh direct-career discovery found Allegro/Mall.sk 100% HO partner support and current Alza Bernolakovo roles. Allegro requires fluent Hungarian; Alza results were lower-ranked logistics/retail fallback rather than a new priority fit."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":2,"added":0,"note":"Public Bratislava e-commerce discovery found Top4Mobile e-shop/customer support but it is no longer accepting applications, plus ESET Global eCommerce Business Analyst which is substantially above target specialization."},
     {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-support/e-shop query executed; no suitable current hit surfaced."},
     {"name":"Kariera","family":"kariera","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support/e-shop query executed; no new promotion-grade hit surfaced."},
-    {"name":"Brigada.sk","family":"brigada","status":"ok","hits":1,"added":0,"note":"Current Bratislava Mlynske Nivy reception role found at 6 EUR/h net plus meal allowance. Conversational English is mandatory and economics are weak, so not promoted."},
+    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/e-shop/driver query executed; no stronger current fit than previously audited low-pay reception work surfaced."},
     {"name":"Praca za rohom","family":"praca-za-rohom","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-support/driver discovery executed; no concrete promotion-grade current hit surfaced."},
     {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh WordPress/WooCommerce/e-commerce/support remote/Slovakia discovery executed; no suitable non-hard-development hit surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":9,"added":0,"note":"Worldwide WordPress/WooCommerce results were read. Best profile-fit result was WooCommerce Product Listing & Upload Specialist at $10-30/h, but it is three weeks old, has 20-50 proposals and prefers Dutch copy. Other results were saturated, low-budget, stale or hard-development weighted."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":9,"added":0,"note":"Worldwide WordPress/WooCommerce results were read. Freshest plausible task was Ecommerce Specialist on Wordpress - Adding a shop, posted yesterday, worldwide remote, $30 fixed, 5-10 proposals, but already 5 interviewing and 6 invites; budget is too weak for promotion. A fresh technical WooCommerce optimization role had 50+ proposals and server/PHP/MySQL requirements beyond target."},
     {"name":"WordPress public jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring query executed; no concrete current suitable non-hard-development hiring hit surfaced."},
     {"name":"Reddit / WordPress communities","family":"communities","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring query executed; no current promotion-grade community demand surfaced."},
     {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"verifiedHits":0,"note":"Fresh public indexing query for Bratislava jobs and WordPress/WooCommerce groups returned no concrete publicly verifiable hiring post with a direct link. 0 verified hits; authenticated Nexus/local-agent ingestion remains backlog-only and was not started."}
   ],
   "candidateNotes": [
-    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide and Remote Job.","decision":"exclude-age-competition-language","reason":"Strong task fit: 50-75 WooCommerce products, images, variations, categories and supplier-based descriptions at $10-30/h. However it was posted three weeks ago, has 20-50 proposals, client last viewed last week, and Dutch is preferred."},
-    {"title":"Recepcna/y v administrativnej budove","company":"B.E.E. s.r.o.","locationEligibility":"ba-area","locationReason":"Workplace is Bratislava - Mlynske Nivy.","decision":"exclude-economics-language","reason":"Current local administration/reception role, but 6 EUR/h net is weak and conversational English is mandatory."}
+    {"title":"Ecommerce Specialist on Wordpress - Adding a shop","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide and Remote Job.","decision":"exclude-economics-competition","reason":"Very fresh and relevant WordPress/WooCommerce task, but only $30 fixed and already 5 interviewing from 5-10 proposals, with 6 invites sent."},
+    {"title":"Junior specialista podpory partnerov","company":"Mall.sk / Allegro","locationEligibility":"remote-ok","locationReason":"Direct career page explicitly states 100% Home Office and Bratislava location.","decision":"exclude-language","reason":"Excellent support/e-commerce structure but fluent Hungarian and Slovak are explicit requirements."},
+    {"title":"Administrator e-shopu / zakaznicka podpora","company":"Top4Mobile","locationEligibility":"ba-area","locationReason":"LinkedIn lists Bratislava workplace.","decision":"exclude-inactive","reason":"Strong task fit and shorter working time, but listing is four months old and explicitly no longer accepting applications."}
   ],
   "liveMix": {"note":"Not recomputed because jobs-data.json was not modified in this pass. Existing LIVE feed is preserved fail-closed; no active item was removed merely because it was not rediscovered."},
   "masterBacklogAdditions": [
-    {"id":"client-last-viewed-decay","title":"Client last-viewed decay","detail":"Use marketplace client last-viewed age as a separate activity signal. Down-rank otherwise attractive freelance listings when the client has not viewed them for several days or weeks."},
-    {"id":"language-preference-vs-requirement","title":"Language preference vs requirement classifier","detail":"Distinguish preferred language from mandatory language in freelance briefs so optional Dutch/German/etc. reduces score without incorrectly hard-rejecting an otherwise executable remote task."}
+    {"id":"interview-saturation-ratio","title":"Interview saturation ratio","detail":"For freelance marketplaces, calculate interviewing/proposals ratio separately from raw proposal count. A fresh listing with most visible candidates already interviewing should decay sharply even when proposal count still looks low."},
+    {"id":"closed-listing-negative-cache","title":"Closed-listing negative cache","detail":"Persist a short-lived fingerprint for listings explicitly marked no longer accepting applications, so mirrors and stale search indexes do not repeatedly consume verification time in subsequent sweeps."}
   ],
   "policy": {
     "promotion":"No timestamp-only freshness. New LIVE promotion requires active full-detail evidence, location eligibility, confidence >= 80 and no known hard eligibility gate.",
