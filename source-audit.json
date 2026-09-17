@@ -1,43 +1,40 @@
 {
   "schemaVersion": 12,
-  "updatedAt": "2026-09-17T05:43:36+02:00",
-  "sourceVerificationAt": "2026-09-17T05:43:36+02:00",
+  "updatedAt": "2026-09-17T06:53:17+02:00",
+  "sourceVerificationAt": "2026-09-17T06:53:17+02:00",
   "runSummary": {
     "familiesChecked": 12,
     "freshPromoted": 0,
-    "existingReverified": 1,
-    "freshCandidates": 1,
-    "excludedAfterFullDetail": 1,
+    "freshCandidates": 2,
+    "excludedAfterFullDetail": 2,
     "freshnessWindowHours": 48,
-    "note": "Real 17 Sep 05:43 sweep. Twelve independent source families were actually queried: Profesia, direct company/public careers, LinkedIn Jobs, Worki, Kariera, Brigada.sk, Praca za rohom, Pretlak/StartupJobs, Upwork, WordPress public jobs, Reddit/WordPress communities, and public Facebook indexing. No promotion-grade new job was found. Upwork surfaced a fresh worldwide WordPress/WooCommerce shop-improvement contract posted 15 Sep at $30 fixed with 5-10 proposals, but it is marked Expert and already has 5 interviews/6 invites, so it was not promoted. The older WooCommerce Product Listing & Upload Specialist remains verifiable but is three weeks old with 20-50 proposals and one hire. Facebook produced 0 concrete publicly verifiable posts."
+    "note": "Real 17 Sep 06:53 sweep. Twelve independent source families were actually queried: Profesia, direct company/public careers, LinkedIn Jobs, Worki, Kariera, Brigada.sk, Praca za rohom, Pretlak/StartupJobs, Upwork, WordPress public jobs, Reddit/WordPress communities, and public Facebook indexing. No promotion-grade new job was found. A fresh Upwork WordPress developer role posted about 2 hours before the sweep is worldwide remote at $15-20/h, but it is Expert-level, already has 50+ proposals and expects development depth beyond the preferred profile. Brigada.sk surfaced a current Bratislava driver/cashier role at Avion for 6 EUR/h net, but it is materially below the target economics. Facebook produced 0 concrete publicly verifiable posts."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/e-shop/technical-support discovery executed; no new promotion-grade hit surfaced in this sweep."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava WordPress/e-shop/technical-support discovery executed; no new promotion-grade hit surfaced."},
     {"name":"Direct company/public careers","family":"company-careers","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava e-commerce/support/administration company-career discovery executed; no new promotion-grade direct-career hit surfaced."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava technical-support/e-commerce/administration discovery executed; no new promotion-grade hit surfaced."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":2,"added":0,"note":"Fresh public LinkedIn discovery executed. Top4Mobile e-shop administrator is no longer accepting applications; SupportYourApp remote technical support requires English C1. Neither was promoted."},
     {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-support/e-shop query executed; no suitable current hit surfaced."},
     {"name":"Kariera","family":"kariera","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/IT-support/e-shop query executed; no new promotion-grade hit surfaced."},
-    {"name":"Brigada.sk","family":"brigada","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/driver/IT query executed; no concrete suitable current hit surfaced."},
+    {"name":"Brigada.sk","family":"brigada","status":"ok","hits":1,"added":0,"note":"Current Bratislava driver/cashier children's electric train role at Avion found, starting 16 Sep, 6 EUR/h net. Location and B-license fit, but economics are too weak for promotion."},
     {"name":"Praca za rohom","family":"praca-za-rohom","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava administration/technical-support/driver query executed; no concrete promotion-grade current hit surfaced."},
-    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh WordPress/WooCommerce/e-commerce/support remote/Slovakia discovery executed; no concrete suitable non-hard-development hit surfaced."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":9,"added":0,"note":"Worldwide WordPress/WooCommerce results were read. Freshest plausible item is Ecommerce Specialist on Wordpress - Adding a shop, posted 15 Sep, $30 fixed, worldwide remote, 5-10 proposals, but Expert level and already 5 interviews/6 invites make it weak for promotion. Older product-listing role remains functionally strong at $10-30/h but is three weeks old with 20-50 proposals and one hire."},
+    {"name":"Pretlak / StartupJobs","family":"tech-creative","status":"checked","hits":0,"added":0,"note":"Fresh WordPress/WooCommerce/e-commerce/support remote/Slovakia discovery executed; no suitable non-hard-development hit surfaced."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":10,"added":0,"note":"Worldwide WordPress/WooCommerce results were read. Fresh WordPress Developer role posted about 2 hours ago pays $15-20/h and is remote, but Expert level, 50+ proposals, and deeper development requirements make it non-promotion-grade. Other WooCommerce listings were older, saturated, low-budget, or hard-development weighted."},
     {"name":"WordPress public jobs","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring query executed; no concrete current suitable non-hard-development hiring hit surfaced."},
     {"name":"Reddit / WordPress communities","family":"communities","status":"checked","hits":0,"added":0,"note":"Fresh public WordPress/WooCommerce hiring query executed; no current promotion-grade community demand surfaced."},
     {"name":"Facebook public groups","family":"facebook","status":"limited","hits":0,"added":0,"verifiedHits":0,"note":"Fresh public indexing query for Bratislava jobs and WordPress/WooCommerce groups returned no concrete publicly verifiable hiring post with a direct link. 0 verified hits; authenticated Nexus/local-agent ingestion remains backlog-only and was not started."}
   ],
   "candidateNotes": [
-    {"title":"Ecommerce Specialist on Wordpress - Adding a shop","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide and Remote Job.","decision":"exclude-low-budget-competition","reason":"Fresh and functionally relevant, but only $30 fixed, Expert level, with 5 interviews and 6 invites already active."},
-    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide and Remote Job.","decision":"exclude-aged-competition","reason":"Excellent functional fit at $10-30/h and ChatGPT-assisted Dutch text is acceptable, but listing is three weeks old, already has one hire and four active interviews with 20-50 proposals."}
+    {"title":"WordPress Developer | Custom Website Development","company":"Upwork client","locationEligibility":"remote-ok","locationReason":"Upwork explicitly lists Worldwide and Remote Job.","decision":"exclude-skill-competition","reason":"Fresh at about 2 hours and $15-20/h, but Expert level, 50+ proposals, strong HTML/CSS and custom WordPress development expectations exceed preferred non-hard-development profile."},
+    {"title":"Vodič detského vláčika","company":"Jana Petrovicova","locationEligibility":"ba-area","locationReason":"Workplace is AVION Shopping Park Bratislava.","decision":"exclude-economics","reason":"Current flexible Bratislava B-license role, but 6 EUR/h net is materially below target economics."}
   ],
   "liveMix": {"note":"Not recomputed because jobs-data.json was not modified in this pass. Existing LIVE feed is preserved fail-closed; no active item was removed merely because it was not rediscovered."},
   "masterBacklogAdditions": [
-    {"id":"interview-saturation-decay","title":"Interview saturation decay","detail":"Down-rank freelance jobs when the client already has a large active interview set relative to proposal count. A fresh 5-10 proposal listing with 5 interviews is materially less actionable than raw proposal count suggests."},
-    {"id":"fixed-budget-scope-risk","title":"Fixed-budget scope-risk detector","detail":"Estimate scope ambiguity for fixed-price WordPress/WooCommerce jobs and penalize low fixed budgets when the description bundles speed, design, shop setup and ongoing monitoring without clear deliverables."}
+    {"id":"proposal-surge-velocity","title":"Proposal surge velocity","detail":"Track proposal-count growth between hourly sweeps, not only the current bucket. A role moving to 50+ proposals within its first hours should be aggressively down-ranked even when fresh."},
+    {"id":"economic-floor-by-work-type","title":"Economic floor by work type","detail":"Maintain separate minimum effective-pay thresholds for TPP, part-time, local brigades and freelance work so low-value local hits are rejected consistently before manual review."}
   ],
   "policy": {
-    "contentAgeVsVerificationAge":"updatedAt/contentUpdatedAt describes data-content age; sourceVerificationAt describes when sources were actually checked; each job verifiedAt describes that job's evidence age.",
     "promotion":"No timestamp-only freshness. New LIVE promotion requires active full-detail evidence, location eligibility, confidence >= 80 and no known hard eligibility gate.",
-    "discovery":"List/search resurfacing can create a candidate but never verifiedAt or LIVE promotion by itself.",
     "failClosed":"Existing LIVE jobs are not removed merely because a sweep did not rediscover them. No unsafe write to jobs-data, job-sources or MASTER is attempted where full round-trip content cannot be guaranteed."
   }
 }
