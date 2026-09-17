@@ -1,34 +1,38 @@
 {
-  "schemaVersion": 14,
-  "updatedAt": "2026-09-17T10:26:51+02:00",
-  "sourceVerificationAt": "2026-09-17T10:26:51+02:00",
+  "schemaVersion": 15,
+  "updatedAt": "2026-09-17T11:35:52+02:00",
+  "sourceVerificationAt": "2026-09-17T11:35:52+02:00",
   "runSummary": {
-    "familiesChecked": 10,
-    "nonProfesiaFamiliesChecked": 9,
+    "familiesChecked": 12,
+    "nonProfesiaFamiliesChecked": 11,
     "freshPromoted": 0,
-    "freshCandidates": 5,
-    "excludedAfterFullDetail": 5,
+    "freshCandidates": 7,
+    "excludedAfterFullDetail": 7,
     "freshnessWindowHours": 48,
-    "note": "17 Sep 10:26 audit. Minimum diversity requirement satisfied with 10 genuinely searched families, 9 outside Profesia. No promotion-grade opportunity passed fit, language/skills, value and location gates. Existing LIVE feed was left untouched fail-closed."
+    "note": "17 Sep 11:35 audit. Twelve genuinely searched source families, eleven outside Profesia. No new candidate passed full fit/value/language/location promotion gate. Existing LIVE feed preserved fail-closed."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":2,"added":0,"rejected":2,"note":"Fresh BA IT/support discovery surfaced detect system administrator (2,000 EUR) and Orange Business Systems (2,500 EUR); both are materially more technical than target profile, so no promotion."},
-    {"name":"Direct company careers / public ATS","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava e-commerce/support company-career discovery performed; no new canonical promotion-grade detail found."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":3,"added":0,"rejected":3,"note":"Fresh Bratislava/customer-support index surfaced NATEK Salesforce CRM Support Manager, Danfoss Order Processing Administrator and other indexed roles; available evidence did not establish a stronger full-detail A2-compatible promotion."},
-    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA administration/IT/e-shop search performed; no distinct promotion-grade result."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA administration/IT/e-shop search performed; no new full-detail candidate strong enough to promote."},
-    {"name":"Pretlak / creative-tech discovery","family":"pretlak-tech","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava/remote WordPress and e-commerce search performed; no suitable verified hiring hit."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"added":0,"rejected":5,"note":"Worldwide remote results reviewed. $1,500 beginner VA requires English plus another language and comes from a brand-new client with 20-50 proposals; not promoted on trust/value evidence. $500/month part-time VA has 50+ proposals. WordPress developer results require hard PHP/React/Laravel or expert development. WordPress AI content QA has good task overlap but explicitly requires strong written English and automation/API experience. US-only operations assistant fails remote-from-Slovakia gate."},
-    {"name":"WordPress public jobs/index","family":"wordpress-community","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh public WordPress/WooCommerce hiring search performed; results were plugin/directory material rather than concrete suitable hiring posts."},
+    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA e-shop, technical support and administration discovery performed; no distinct new promotion-grade full-detail hit."},
+    {"name":"Direct company careers / public ATS","family":"company-careers","status":"ok","hits":1,"added":0,"rejected":1,"note":"Foxelli direct Ashby career detail verified as 100% remote and Slovakia-eligible, but role requires fluent/near-native English plus hands-on sewing expertise and is rejected."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":3,"added":0,"rejected":3,"note":"Fresh indexed Bratislava support/admin results included Foxelli, NATEK and Danfoss. No A2-compatible stronger promotion-grade candidate verified."},
+    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava administration/e-shop/IT support search performed; no distinct suitable verified hit."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"ok","hits":1,"added":0,"rejected":1,"note":"Metrohm IT Support Specialist verified at 1,800 EUR in Bratislava, but B1-B2 English is explicit; kept below promotion threshold."},
+    {"name":"Brigada.sk","family":"brigada","status":"ok","hits":1,"added":0,"rejected":1,"note":"Fresh Avion Bratislava children's train driver/cashier at 6 EUR/h verified; location passes but economics are too weak for promotion."},
+    {"name":"Služby zamestnanosti","family":"sluzby-zamestnanosti","status":"ok","hits":1,"added":0,"rejected":1,"note":"Metrohm IT Support Specialist, Einsteinova Bratislava-Petržalka, 1,800 EUR, indefinite contract, deadline 11 Oct 2026; B1-B2 English requirement materially penalizes fit."},
+    {"name":"Pretlak / creative-tech discovery","family":"pretlak-tech","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava/remote WordPress and e-commerce discovery performed; no concrete suitable verified hiring hit."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":7,"added":0,"rejected":7,"note":"Worldwide WordPress/WooCommerce/admin jobs reviewed. Best task overlap either paid only $3-8/h or $5-10 fixed/post, required excellent English, had high proposal saturation, or required expert development/portfolio evidence. No promotion."},
+    {"name":"WordPress public jobs/index","family":"wordpress-community","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh public WordPress/WooCommerce hiring search performed; no suitable concrete current hiring post surfaced."},
     {"name":"Reddit / public WordPress-WooCommerce communities","family":"reddit-community","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh public indexed community search performed; no concrete verified client hiring request suitable for promotion."},
-    {"name":"Facebook public indexed groups","family":"facebook-public","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"Public indexed Facebook group search performed. No concrete publicly verifiable hiring post with direct link was available. 0 verified hits. Authenticated Nexus/local ingestion remains backlog and was not started."}
+    {"name":"Facebook public indexed groups","family":"facebook-public","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"Fresh public indexed Facebook group search performed. No concrete publicly verifiable hiring post with direct link. 0 verified hits; authenticated Nexus/local ingestion remains backlog and was not started."}
   ],
   "candidateNotes": [
-    {"title":"Beginning friendly Remote Task - Virtual Assistant Needed","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-confidence","reason":"Worldwide remote and Slovak supported, but English is required, client account is brand new, 20-50 proposals, and evidence is insufficient for a high-confidence $1,500 fixed promotion."},
-    {"title":"WordPress Content Automation & Blog QA Virtual Assistant","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-language-skills","reason":"Strong WordPress/AI-content overlap, but strong written English is essential and automation/API experience is explicitly expected."},
-    {"title":"Long-Term Remote Operations Assistant – Business Systems Support","company":"Upwork client","locationEligibility":"reject-distance","decision":"reject-location","reason":"Listing explicitly restricts applicants to U.S.-located freelancers."},
-    {"title":"Systémový administrátor","company":"detect s. r. o.","locationEligibility":"ba-area","decision":"reject-hard-skills","reason":"Bratislava and 2,000 EUR, but role is system/network administration and materially exceeds target technical profile."},
-    {"title":"Business Systems & Support","company":"Orange Slovensko","locationEligibility":"ba-area","decision":"reject-hard-skills","reason":"Bratislava and 2,500 EUR, but indexed classification and role scope are substantially more advanced than preferred non-hard-development support."}
+    {"title":"IT Support Specialist (muž/žena)","company":"Metrohm Research Slovakia s. r. o.","locationEligibility":"ba-area","decision":"reject-language","reason":"Bratislava-Petržalka, 1,800 EUR and relevant user support/troubleshooting, but official vacancy explicitly requires English B1-B2; target profile is A2."},
+    {"title":"Customer Support & Sales Agent (Sewing Specialist)","company":"Foxelli Group","locationEligibility":"remote-ok","decision":"reject-language-skills","reason":"Direct ATS explicitly permits Slovakia and is 100% remote, but requires fluent/near-native spoken English and hands-on sewing expertise."},
+    {"title":"Vodič detského vláčika","company":"Jana Petrovicova / AVION","locationEligibility":"ba-area","decision":"reject-value","reason":"Bratislava and B licence fit, but 6 EUR/h is too weak versus target earnings and other available work."},
+    {"title":"E-Commerce Virtual Assistant / Project Coordinator – Long-Term","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-value-competition","reason":"Excellent WooCommerce/inventory task overlap, but only $3-5/h with 20-50 proposals and 14 interviewing."},
+    {"title":"WordPress & Shopify E-Commerce Product Posting & SEO Management VA","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-value-language","reason":"Strong product-listing overlap but only $7 fixed and excellent English is explicit."},
+    {"title":"Virtual Assistant, UX QA + Content Support","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-value-language","reason":"Useful QA/content overlap and flexible 5-15 h/week, but $4-8/h, clear written English and 20-50 proposals weaken fit."},
+    {"title":"WordPress / Elementor Web Designer & Support Specialist","company":"Upwork client","locationEligibility":"reject-distance","decision":"reject-location","reason":"Listing restricts full-time remote role to Philippines or United Kingdom, so Slovakia fails jurisdiction gate."}
   ],
   "liveMix": {
     "liveCount": 56,
@@ -36,15 +40,15 @@
     "profesiaPercent": 50.0,
     "nonProfesia": 28,
     "nonProfesiaPercent": 50.0,
-    "note":"No LIVE additions/removals in this run; existing feed preserved fail-closed."
+    "note":"No LIVE additions/removals this run; existing feed preserved fail-closed."
   },
   "developmentBacklogAdded": [
-    {"name":"Marketplace client trust gate","problem":"High-budget freelance listings from brand-new clients can outrank safer work on keyword/budget alone.","improvement":"Score client age, verified spend/hire history, proposal saturation and budget plausibility before promotion; require stronger evidence for new-client fixed-price offers."},
-    {"name":"Remote jurisdiction eligibility parser","problem":"Remote labels can hide country/region restrictions such as U.S.-only applicants.","improvement":"Extract applicant geography separately from workplace mode and force reject-distance when Slovakia is not an eligible freelancer/employee jurisdiction."}
+    {"name":"Effective freelance value floor","problem":"Excellent keyword/task matches can dominate discovery even when fixed-price or hourly compensation is economically unusable.","improvement":"Calculate a conservative effective hourly range from stated workload, unit price and expected application overhead; auto-demote offers below a configurable minimum before ranking."},
+    {"name":"Cross-board canonical vacancy cluster","problem":"The same vacancy can appear on government portals, Kariera, LinkedIn and aggregators and inflate source hit counts.","improvement":"Cluster title+company+location matches across boards, retain each access audit but count one canonical vacancy for candidate/mix analytics and prefer employer/government primary evidence."}
   ],
   "masterBacklogWrite": {
     "status":"deferred-fail-closed",
-    "reason":"PRACA_PRE_JARA_MASTER.md is returned truncated by the connector as a large single content payload; complete replacement cannot be guaranteed without risking loss. The two new backlog items are preserved here for later safe merge."
+    "reason":"PRACA_PRE_JARA_MASTER.md cannot be safely complete-replaced from a truncated large-file read. New backlog items are preserved in this audit for later safe merge."
   },
   "policy": {
     "promotion":"New LIVE promotion requires active full-detail evidence, location eligibility, confidence >= 80 and no known hard eligibility gate.",
