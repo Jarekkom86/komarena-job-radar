@@ -1,24 +1,53 @@
 {
-  "schemaVersion": 13,
-  "updatedAt": "2026-09-17T08:54:00+02:00",
-  "sourceVerificationAt": "2026-09-17T08:54:00+02:00",
+  "schemaVersion": 14,
+  "updatedAt": "2026-09-17T10:26:51+02:00",
+  "sourceVerificationAt": "2026-09-17T10:26:51+02:00",
   "runSummary": {
-    "familiesChecked": 4,
+    "familiesChecked": 10,
+    "nonProfesiaFamiliesChecked": 9,
     "freshPromoted": 0,
-    "freshCandidates": 1,
-    "excludedAfterFullDetail": 1,
+    "freshCandidates": 5,
+    "excludedAfterFullDetail": 5,
     "freshnessWindowHours": 48,
-    "note": "17 Sep 08:54 follow-up audit. Fresh public searches covered Profesia IT support, Bratislava administration/customer support, complaints/service roles and general Bratislava support discovery. No new promotion-grade job was found. DHL IT Support remains current in public indexing but full detail requires English B2 and is therefore excluded. No existing LIVE verifiedAt was touched merely because a listing resurfaced. Content age, job-verification age and source-verification age remain separate signals."
+    "note": "17 Sep 10:26 audit. Minimum diversity requirement satisfied with 10 genuinely searched families, 9 outside Profesia. No promotion-grade opportunity passed fit, language/skills, value and location gates. Existing LIVE feed was left untouched fail-closed."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"ok","hits":1,"added":0,"note":"DHL Group IT Support at Bratislava Airport remains publicly indexed/current; full detail confirms 2,000-2,200 EUR but B2 English is a hard gate, so it is not promoted."},
-    {"name":"Bratislava administration/customer support discovery","family":"general-web","status":"checked","hits":0,"added":0,"note":"Fresh 17 Sep query produced no new high-confidence eligible full-detail opportunity."},
-    {"name":"Complaints/service technical discovery","family":"service","status":"checked","hits":0,"added":0,"note":"Fresh Bratislava/Senec complaints and service-role query produced no new promotion-grade job."},
-    {"name":"Direct/public support discovery","family":"company-careers","status":"checked","hits":0,"added":0,"note":"No new direct-career result strong enough for promotion in this follow-up pass."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":2,"added":0,"rejected":2,"note":"Fresh BA IT/support discovery surfaced detect system administrator (2,000 EUR) and Orange Business Systems (2,500 EUR); both are materially more technical than target profile, so no promotion."},
+    {"name":"Direct company careers / public ATS","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava e-commerce/support company-career discovery performed; no new canonical promotion-grade detail found."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"ok","hits":3,"added":0,"rejected":3,"note":"Fresh Bratislava/customer-support index surfaced NATEK Salesforce CRM Support Manager, Danfoss Order Processing Administrator and other indexed roles; available evidence did not establish a stronger full-detail A2-compatible promotion."},
+    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA administration/IT/e-shop search performed; no distinct promotion-grade result."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh BA administration/IT/e-shop search performed; no new full-detail candidate strong enough to promote."},
+    {"name":"Pretlak / creative-tech discovery","family":"pretlak-tech","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava/remote WordPress and e-commerce search performed; no suitable verified hiring hit."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"added":0,"rejected":5,"note":"Worldwide remote results reviewed. $1,500 beginner VA requires English plus another language and comes from a brand-new client with 20-50 proposals; not promoted on trust/value evidence. $500/month part-time VA has 50+ proposals. WordPress developer results require hard PHP/React/Laravel or expert development. WordPress AI content QA has good task overlap but explicitly requires strong written English and automation/API experience. US-only operations assistant fails remote-from-Slovakia gate."},
+    {"name":"WordPress public jobs/index","family":"wordpress-community","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh public WordPress/WooCommerce hiring search performed; results were plugin/directory material rather than concrete suitable hiring posts."},
+    {"name":"Reddit / public WordPress-WooCommerce communities","family":"reddit-community","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh public indexed community search performed; no concrete verified client hiring request suitable for promotion."},
+    {"name":"Facebook public indexed groups","family":"facebook-public","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"Public indexed Facebook group search performed. No concrete publicly verifiable hiring post with direct link was available. 0 verified hits. Authenticated Nexus/local ingestion remains backlog and was not started."}
   ],
   "candidateNotes": [
-    {"title":"IT Support (Male/Female)","company":"DHL Group","locationEligibility":"ba-area","decision":"exclude-language","reason":"Current full detail at Profesia shows Bratislava Airport and 2,000-2,200 EUR/month, but English B2 is required."}
+    {"title":"Beginning friendly Remote Task - Virtual Assistant Needed","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-confidence","reason":"Worldwide remote and Slovak supported, but English is required, client account is brand new, 20-50 proposals, and evidence is insufficient for a high-confidence $1,500 fixed promotion."},
+    {"title":"WordPress Content Automation & Blog QA Virtual Assistant","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-language-skills","reason":"Strong WordPress/AI-content overlap, but strong written English is essential and automation/API experience is explicitly expected."},
+    {"title":"Long-Term Remote Operations Assistant – Business Systems Support","company":"Upwork client","locationEligibility":"reject-distance","decision":"reject-location","reason":"Listing explicitly restricts applicants to U.S.-located freelancers."},
+    {"title":"Systémový administrátor","company":"detect s. r. o.","locationEligibility":"ba-area","decision":"reject-hard-skills","reason":"Bratislava and 2,000 EUR, but role is system/network administration and materially exceeds target technical profile."},
+    {"title":"Business Systems & Support","company":"Orange Slovensko","locationEligibility":"ba-area","decision":"reject-hard-skills","reason":"Bratislava and 2,500 EUR, but indexed classification and role scope are substantially more advanced than preferred non-hard-development support."}
   ],
-  "liveMix":{"note":"No LIVE job was promoted or timestamp-refreshed in this follow-up because no new active eligible full-detail evidence met the promotion policy."},
-  "policy":{"promotion":"No timestamp-only freshness. New LIVE promotion requires active full-detail evidence, location eligibility, confidence >= 80 and no known hard eligibility gate.","failClosed":"Discovery resurfacing does not advance verifiedAt. Negative/full-detail evidence outranks stale positive indexing."}
+  "liveMix": {
+    "liveCount": 56,
+    "profesiaLineage": 28,
+    "profesiaPercent": 50.0,
+    "nonProfesia": 28,
+    "nonProfesiaPercent": 50.0,
+    "note":"No LIVE additions/removals in this run; existing feed preserved fail-closed."
+  },
+  "developmentBacklogAdded": [
+    {"name":"Marketplace client trust gate","problem":"High-budget freelance listings from brand-new clients can outrank safer work on keyword/budget alone.","improvement":"Score client age, verified spend/hire history, proposal saturation and budget plausibility before promotion; require stronger evidence for new-client fixed-price offers."},
+    {"name":"Remote jurisdiction eligibility parser","problem":"Remote labels can hide country/region restrictions such as U.S.-only applicants.","improvement":"Extract applicant geography separately from workplace mode and force reject-distance when Slovakia is not an eligible freelancer/employee jurisdiction."}
+  ],
+  "masterBacklogWrite": {
+    "status":"deferred-fail-closed",
+    "reason":"PRACA_PRE_JARA_MASTER.md is returned truncated by the connector as a large single content payload; complete replacement cannot be guaranteed without risking loss. The two new backlog items are preserved here for later safe merge."
+  },
+  "policy": {
+    "promotion":"New LIVE promotion requires active full-detail evidence, location eligibility, confidence >= 80 and no known hard eligibility gate.",
+    "failClosed":"Existing active jobs are not removed merely because discovery does not resurface them; no feed drop or category loss was introduced."
+  }
 }
