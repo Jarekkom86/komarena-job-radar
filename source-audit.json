@@ -1,38 +1,37 @@
 {
   "schemaVersion": 16,
-  "updatedAt": "2026-09-17T13:40:54+02:00",
-  "sourceVerificationAt": "2026-09-17T13:40:54+02:00",
+  "updatedAt": "2026-09-17T14:01:36+02:00",
+  "sourceVerificationAt": "2026-09-17T14:01:36+02:00",
   "runSummary": {
-    "familiesChecked": 11,
-    "nonProfesiaFamiliesChecked": 10,
+    "familiesChecked": 10,
+    "nonProfesiaFamiliesChecked": 9,
     "freshPromoted": 0,
-    "freshCandidates": 10,
-    "excludedAfterFullDetail": 10,
+    "freshCandidates": 9,
+    "excludedAfterFullDetail": 9,
     "freshnessWindowHours": 48,
-    "note": "17 Sep 13:40 audit. Eleven genuinely searched source families, ten outside Profesia. No new candidate passed full fit/value/language/location promotion gate. Existing LIVE feed preserved fail-closed."
+    "note": "17 Sep 14:01 audit. Ten genuinely searched source families, nine outside Profesia. No new candidate passed full fit/value/language/location promotion gate. Existing LIVE feed preserved fail-closed."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava IT support, administration, e-shop and WordPress discovery performed; no distinct promotion-grade full-detail hit surfaced."},
-    {"name":"Direct company careers / public ATS","family":"company-careers","status":"ok","hits":2,"added":0,"rejected":2,"note":"Fresh company-career discovery included msg life Slovakia and Soitron. Current visible roles skew to development, senior security or specialist IT and do not improve target fit."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava e-commerce/support/admin discovery performed; no new independently verified promotion-grade result surfaced in public index."},
-    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava IT support, administration and e-shop discovery performed; no distinct suitable verified hit."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava IT support, administration and e-shop discovery performed; no new suitable full-detail hit surfaced."},
-    {"name":"Pretlak / StartupJobs creative-tech discovery","family":"pretlak-tech","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava/remote WordPress and e-commerce discovery performed across creative-tech sources; no concrete suitable verified hiring hit."},
-    {"name":"Upwork","family":"freelance","status":"ok","hits":8,"added":0,"rejected":8,"note":"Worldwide WordPress/WooCommerce results reviewed. Product-upload role at $10-30/h overlaps strongly but is three weeks old with 20-50 proposals. Fresh technical roles require PHP/server expertise or native English/US hours. No promotion."},
-    {"name":"WordPress public jobs/index","family":"wordpress-community","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh public WordPress/WooCommerce hiring search performed; results were job-board plugins rather than concrete suitable hiring posts."},
-    {"name":"Reddit / public WordPress-WooCommerce communities","family":"reddit-community","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh public indexed community search performed; no concrete verified client hiring request suitable for promotion."},
-    {"name":"Facebook public indexed groups","family":"facebook-public","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"Fresh public indexed Facebook search performed. No concrete publicly verifiable hiring post with direct link. 0 verified hits; authenticated Nexus/local ingestion remains backlog and was not started."},
-    {"name":"Public search cross-source discovery","family":"cross-source-web","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh broad BA/remote support, e-commerce and WordPress discovery used to detect direct employers and source gaps; no additional promotion-grade candidate."}
+    {"name":"Profesia","family":"profesia","status":"ok","hits":1,"added":0,"rejected":1,"note":"Fresh Bratislava search found MOVYS Linux system administrator published 17 Sep at EUR 2800, but hard Linux/system administration specialization is outside target profile."},
+    {"name":"Direct company careers / public ATS","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh broad Bratislava e-commerce/support/admin employer discovery performed; no new direct-company promotion-grade full-detail result surfaced."},
+    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava e-commerce/support/WordPress discovery performed in public index; no independently verified promotion-grade result surfaced."},
+    {"name":"Worki","family":"worki","status":"checked","hits":1,"added":0,"rejected":1,"note":"Shield-Sk e-shop administrator/customer support in Bratislava-Ruzinov matched profile but detail explicitly says the vacancy has already been filled or cancelled."},
+    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava administration/support/e-commerce discovery performed; no new suitable full-detail hit surfaced."},
+    {"name":"Brigada.sk","family":"brigada","status":"ok","hits":3,"added":0,"rejected":3,"note":"Fresh Bratislava results reviewed: reception EUR6/h requires communicative English; child-train driver EUR6/h is low value; theatre handling EUR8/h is physically demanding and evening/weekend oriented."},
+    {"name":"Pretlak / creative-tech","family":"pretlak-tech","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava/remote WordPress and e-commerce discovery performed; no concrete suitable verified hiring hit."},
+    {"name":"Upwork","family":"freelance","status":"ok","hits":5,"added":0,"rejected":5,"note":"Worldwide WooCommerce/WordPress results reviewed. The strongest fresh operations-style role was $30 fixed with 5-10 proposals and five interviews; other roles were stale/competitive, already hired, or required hard development. No promotion."},
+    {"name":"Reddit / public WordPress-WooCommerce communities","family":"reddit-community","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh public indexed hiring search performed; no concrete verified client request suitable for promotion."},
+    {"name":"Facebook public indexed groups","family":"facebook-public","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"Fresh public indexed Facebook search performed. No concrete publicly verifiable hiring post with direct link. 0 verified hits; authenticated Nexus/local ingestion remains backlog and was not started."}
   ],
   "candidateNotes": [
-    {"title":"WooCommerce Product Listing & Upload Specialist","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-stale-competition","reason":"Worldwide remote, $10-30/h and excellent product-admin overlap, but posted three weeks ago with 20-50 proposals and client last viewed last week; application value no longer strong enough for alert/promotion."},
-    {"title":"Product listing woocomerce","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-language-value","reason":"Worldwide remote but requires natural persuasive French and pays only $3-5/h; unsuitable despite WooCommerce overlap."},
-    {"title":"WooCommerce installation & Setup Specialist Needed – WordPress Elementor","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-competition-level","reason":"$20-25/h and useful WooCommerce setup overlap, but Expert level, 50+ proposals and an existing hire materially reduce expected success."},
-    {"title":"Experienced WordPress Developer Needed","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-language-hours","reason":"$30-60/h worldwide remote but requires native English, client-facing communication and US business hours; hard mismatch with target language profile."},
-    {"title":"WordPress/WooCommerce Technical Expert Needed","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-hard-development","reason":"Fresh worldwide remote role requires server configuration, PHP/MySQL, caching/CDN, logs and advanced diagnostics; outside target non-hard-development profile."},
-    {"title":"Website & SEO Management 2026","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-requirement-breadth","reason":"$15-30/h ongoing WooCommerce operations is attractive, but requires Helium 10, Seller Central, Search Console, weekly reporting, interview call and a Loom audit; application burden and evidence gaps are too high for promotion."},
-    {"title":"DevOps developer (Kubernetes)","company":"Soitron","locationEligibility":"ba-area","decision":"reject-hard-development","reason":"Bratislava passes location gate but Kubernetes/DevOps specialization is outside target skills."},
-    {"title":"Senior Security Engineer – Fortinet","company":"Soitron","locationEligibility":"unknown","decision":"reject-specialization","reason":"Senior specialist security role is outside target profile regardless of hybrid availability."}
+    {"title":"LINUX system administrator","company":"MOVYS, a.s.","locationEligibility":"ba-area","decision":"reject-hard-development","reason":"Published 17 Sep 2026 in Bratislava at EUR 2800, but Linux/system administration specialization is a hard skills mismatch."},
+    {"title":"Administrátor e-shopu / zákaznícka podpora","company":"Shield-Sk s. r. o.","locationEligibility":"ba-area","decision":"reject-inactive","reason":"Excellent e-shop/customer-support overlap in Bratislava-Ruzinov, but Worki explicitly marks the vacancy as filled or cancelled."},
+    {"title":"Ecommerce Specialist on Wordpress - Adding a shop","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-value-competition","reason":"Worldwide remote and fresh, but only $30 fixed, Expert level, already 5 interviews and 5-10 proposals; expected value is too low."},
+    {"title":"WordPress/WooCommerce Expert – Ecommerce, SEO, Analytics & Launch","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-competition-requirements","reason":"Worldwide remote, but broad GA4/Search Console/payment/shipping/technical SEO scope with 8 interviews and $90 fixed is not attractive enough."},
+    {"title":"WooCommerce Developer Needed for Customized Gifting Store","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-stale-existing","reason":"Strong WooCommerce overlap and <5 proposals, but this candidate was already discovered in earlier runs and is not a new alert."},
+    {"title":"Recepčná/ý v administratívnej budove","company":"B.E.E. s.r.o.","locationEligibility":"ba-area","decision":"reject-language-value","reason":"Bratislava location passes, but communicative English is mandatory and EUR6 net/hour is weak."},
+    {"title":"Vodič detského vláčika","company":"Jana Petrovicova","locationEligibility":"ba-area","decision":"reject-low-value","reason":"Bratislava and B licence fit, but EUR6/hour is below useful priority."},
+    {"title":"Manipulačný pracovník","company":"Divadlo P.O. Hviezdoslava","locationEligibility":"ba-area","decision":"reject-physical-burden","reason":"EUR8/hour but repeated lifting, scene handling, evenings and weekends conflict with preferred lighter work."}
   ],
   "liveMix": {
     "liveCount": 56,
@@ -43,18 +42,18 @@
     "note":"No LIVE additions/removals this run; existing feed preserved fail-closed."
   },
   "developmentBacklogAdded": [
-    {"name":"Client-last-viewed freshness gate","problem":"Freelance posts can remain technically open while the client has stopped reviewing applicants, wasting application time.","improvement":"Track client last-viewed age separately from publication age and sharply reduce priority when client activity is stale even if the listing remains open."},
-    {"name":"Application evidence-gap counter","problem":"Some otherwise good WooCommerce jobs require several tools, audit videos or portfolio proofs not already available, creating hidden application cost.","improvement":"Count missing required evidence/assets before ranking and surface a readiness score so ready-to-send applications outrank roles needing substantial preparation."}
+    {"name":"Inactive-detail tombstone cache","problem":"Search engines repeatedly surface already filled/cancelled jobs, wasting verification time on the same dead detail pages.","improvement":"Store a tombstone with source URL, inactive reason and checkedAt; suppress rediscovery for 14-30 days unless the source publication/update timestamp changes."},
+    {"name":"Physical-burden gate for side jobs","problem":"Generic logistics/brigade discovery can rank jobs with lifting, scene handling or repetitive heavy work despite otherwise acceptable location and pay.","improvement":"Extract lifting/manual-load/evening-weekend burden into structured fields and apply a strong penalty or exclusion before alerting, while keeping lighter driver/admin work eligible."}
   ],
   "masterBacklogWrite": {
     "status":"deferred-fail-closed",
-    "reason":"PRACA_PRE_JARA_MASTER.md cannot be safely complete-replaced from a truncated large-file read. New backlog items are preserved in this audit for later safe merge."
+    "reason":"PRACA_PRE_JARA_MASTER.md remains unsafe for complete replacement when a full round-trip read is not guaranteed. New backlog items are preserved in this audit for later safe merge."
   },
   "dataWrites": {
-    "jobsData":"unchanged-fail-closed",
-    "jobSources":"unchanged-fail-closed",
+    "jobsData":"unchanged-no-promotion",
+    "jobSources":"unchanged-no-promotion",
     "sourceAudit":"updated",
-    "reason":"No candidate justified LIVE addition. Large jobs-data/job-sources reads remain unsafe for complete replacement; existing feed was preserved."
+    "reason":"No new candidate justified LIVE addition. Existing feed was preserved and no locked file was touched."
   },
   "policy": {
     "promotion":"New LIVE promotion requires active full-detail evidence, location eligibility, confidence >= 80 and no known hard eligibility gate.",
