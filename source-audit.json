@@ -1,65 +1,80 @@
 {
-  "schemaVersion": 16,
-  "updatedAt": "2026-09-17T19:38:28+02:00",
-  "sourceVerificationAt": "2026-09-17T19:38:28+02:00",
+  "schemaVersion": 17,
+  "updatedAt": "2026-09-18T13:22:00+02:00",
+  "sourceVerificationAt": "2026-09-18T13:22:00+02:00",
   "runSummary": {
-    "familiesChecked": 12,
-    "nonProfesiaFamiliesChecked": 11,
-    "freshPromoted": 0,
-    "freshCandidates": 9,
-    "excludedAfterFullDetail": 9,
+    "familiesChecked": 3,
+    "nonProfesiaFamiliesChecked": 2,
+    "freshPromoted": 1,
+    "freshRevalidated": 1,
+    "freshCandidates": 2,
+    "excludedAfterFullDetail": 0,
     "freshnessWindowHours": 48,
-    "note": "17 Sep 19:38 audit. Twelve genuinely searched source families, eleven outside Profesia. No new candidate cleared all ranking, language, economics and skill gates. Upwork produced several current worldwide-remote candidates, but strongest admin options were English-heavy/over-competitive and WordPress options were either hard-development or economically weak. Existing LIVE feed preserved fail-closed."
+    "freshnessStatus": "fresh-live-delta",
+    "note": "18 Sep fresh repair audit. NAY complaints dispatcher verified on current full-detail Kariera page and promoted. Existing AlzaBox Specialist independently revalidated on the current official Alza career page. Older feed records are intentionally not re-dated and remain subject to the 48h quarantine gate."
   },
   "sources": [
-    {"name":"Profesia","family":"profesia","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava WordPress/e-commerce/IT support/admin discovery performed; no new promotion-grade full-detail candidate surfaced in this run."},
-    {"name":"Direct company careers / public ATS","family":"company-careers","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava support/e-commerce career discovery performed; no new stronger eligible direct-source vacancy surfaced."},
-    {"name":"LinkedIn Jobs","family":"linkedin","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava WordPress/e-commerce/support discovery performed; no new suitable verified candidate beyond already audited roles."},
-    {"name":"Worki","family":"worki","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava administration, IT support and e-shop discovery performed; no new suitable verified hit."},
-    {"name":"Kariera.sk / Zoznam","family":"kariera","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava administration/support/e-commerce discovery performed; no new promotion-grade hit."},
-    {"name":"Pretlak / creative-tech","family":"pretlak-tech","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Bratislava/remote WordPress and e-commerce discovery across public indexing; no concrete suitable verified hiring hit."},
-    {"name":"StartupJobs","family":"startupjobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh Slovakia-remote WordPress/e-commerce/support discovery performed; no verified candidate clearing language/skills gates."},
-    {"name":"Upwork / freelance","family":"freelance","status":"ok","hits":8,"added":0,"rejected":8,"note":"Current worldwide-remote results included $1500 beginner VA (20-50 proposals; generic and low-confidence new client), $500/month part-time customer-service/data-entry VA (50+ proposals), $50 admin/customer-support VA requiring strong spoken/written English, $150 expert WordPress developer requiring PHP/CSS/JS, $100 WordPress maintenance with 20-50 proposals, $6 fixed WordPress content automation/QA despite substantial recurring scope, and hard-development WordPress roles. None clears the combined fit/economics/language/competition threshold."},
-    {"name":"WordPress Jobs / public WP ecosystem","family":"wordpress-jobs","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh public WordPress/WooCommerce job discovery performed; no new suitable operational/admin-grade remote vacancy surfaced."},
-    {"name":"Freelancermap / public freelance indexing","family":"freelancermap","status":"checked","hits":0,"added":0,"rejected":0,"note":"Fresh remote WordPress/WooCommerce freelance discovery performed; no promotion-grade demand surfaced."},
-    {"name":"Reddit / public WordPress-WooCommerce communities","family":"reddit-communities","status":"checked","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"Fresh public-indexed WordPress/WooCommerce hiring search performed; no new concrete promotion-grade post."},
-    {"name":"Facebook public indexed groups","family":"facebook-public","status":"limited","hits":0,"verifiedHits":0,"added":0,"rejected":0,"note":"Public indexed search for Bratislava work/brigade and WordPress Slovensko groups produced 0 concrete publicly verifiable direct-post hits. Authenticated Nexus/local ingestion remains backlog and was not started."}
+    {
+      "name": "Kariera.sk – NAY complaints detail",
+      "family": "kariera",
+      "status": "ok",
+      "hits": 1,
+      "added": 1,
+      "note": "Current full detail verified 18.9.2026: Bratislava, full-time, complaints/admin scope, 1 200 € gross, no foreign-language requirement shown, selection closes 17.10.2026."
+    },
+    {
+      "name": "Alza.sk – official careers",
+      "family": "company-careers",
+      "status": "ok",
+      "hits": 1,
+      "added": 0,
+      "revalidated": 1,
+      "note": "Official Alza career detail is active and currently lists AlzaBox Specialist in Bratislava, 1 430 € fixed + up to 610 € variable, flexible Mon–Fri and partial home office."
+    },
+    {
+      "name": "Profesia – NAY mirror",
+      "family": "profesia",
+      "status": "checked",
+      "hits": 1,
+      "added": 0,
+      "note": "Current Profesia mirror confirms the NAY complaints vacancy, Bratislava and posting ID 5360323 / posting date 17.9.2026. Canonical promotion uses the full Kariera detail."
+    }
   ],
   "candidateNotes": [
-    {"title":"Beginning friendly Remote Task - Virtual Assistant Needed","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-confidence-competition","reason":"Worldwide remote and $1500 fixed looks attractive, but the client account is brand new, task scope is unusually generic, and the listing already has 20-50 proposals. Insufficient confidence for promotion."},
-    {"title":"Part-Time Virtual Assistant Needed","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-competition","reason":"Worldwide remote, flexible 2-4 days/week and $500/month, but already 50+ proposals with no interview activity."},
-    {"title":"Virtual Assistant – Administrative & Customer Support","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-language-competition","reason":"Good admin/customer-support fit, but explicitly requires strong written and spoken English and has 20-50 proposals."},
-    {"title":"WordPress Developer to design, develop, and customize responsive websites","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-hard-development","reason":"Worldwide remote and $150 fixed, but expert-level PHP, HTML, CSS and JavaScript are core requirements."},
-    {"title":"WordPress Site Management and Maintenance","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-competition-seniority","reason":"Operational WordPress/WooCommerce maintenance fit is relevant, but listing is Expert level with 20-50 proposals and active interviews/invites; not strong enough for promotion."},
-    {"title":"WordPress Content Automation & Blog QA Virtual Assistant","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-economics-language","reason":"Excellent thematic fit around WordPress, AI content QA and automation, but $6 fixed is incompatible with the substantial recurring scope and strong written English is essential."},
-    {"title":"AI Blog Post VA for WordPress","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-economics","reason":"Worldwide WordPress/content fit but $30 fixed for a recurring 120-article monthly workflow is economically unacceptable."},
-    {"title":"Custom WordPress & WooCommerce Developer (PHP, React & Laravel)","company":"Upwork client","locationEligibility":"remote-ok","decision":"reject-hard-development","reason":"Requires custom PHP, WooCommerce, React, Laravel and REST API development; outside target skill scope despite low proposal count."},
-    {"title":"Field Support Specialist","company":"Deutsche Telekom IT Solutions Slovakia","locationEligibility":"reject-distance","decision":"reject-distance-skills","reason":"Onsite Košice role, plus 3-5 years IT support, Linux/network/security and fluent English. Fails location hard gate and skill/language profile."}
+    {
+      "title": "Dispečer/ka reklamácií – reklamačné oddelenie",
+      "company": "NAY a.s.",
+      "locationEligibility": "ba-area",
+      "decision": "promote",
+      "reason": "Current full-detail evidence, direct fit to complaints/admin workflow, no foreign-language hard gate, basic PC knowledge only, BA location."
+    },
+    {
+      "title": "AlzaBox Špecialista",
+      "company": "Alza.sk s. r. o.",
+      "locationEligibility": "ba-area",
+      "decision": "revalidate",
+      "reason": "Current official company-career detail remains active; no hard language gate; existing stable ID is reused rather than duplicated."
+    }
   ],
   "liveMix": {
-    "liveCount": 56,
-    "profesiaLineage": 28,
-    "profesiaPercent": 50.0,
-    "nonProfesia": 28,
-    "nonProfesiaPercent": 50.0,
-    "note":"No LIVE additions/removals this run; existing feed preserved fail-closed."
+    "note": "Runtime feed merge enforces 48h verifiedAt and link freshness. Historical records were not rewritten; only independently reverified records receive today's timestamp."
   },
-  "developmentBacklogAdded": [
-    {"name":"Freelance client trust gate","problem":"High headline budgets from brand-new clients with generic task descriptions can consume connects/time while carrying elevated scam, cancellation or low-conversion risk.","improvement":"Add a trust score combining account age, verified spend/hire history, specificity of scope, client activity and budget plausibility; require a minimum trust threshold before high-budget freelance listings receive priority alerts."},
-    {"name":"Recurring-scope fixed-price anomaly detector","problem":"Listings can advertise a tiny fixed price while describing ongoing weekly/monthly ownership, making the displayed budget misleading.","improvement":"Detect recurring language such as ongoing, monthly, weekly, manage/monitor and training, compare it with fixed-price budget, and automatically flag or suppress severe scope-to-budget anomalies before manual review."}
-  ],
-  "masterBacklogWrite": {
-    "status":"deferred-fail-closed",
-    "reason":"PRACA_PRE_JARA_MASTER.md complete round-trip is not guaranteed by the connector. New backlog items are preserved in this audit for later safe merge rather than risking truncation."
+  "storage": {
+    "currentFile": "source-audit.json",
+    "compactCurrent": true,
+    "priorAuditArchive": "source-audit-history/source-audit-20260917-1938.json",
+    "uiSelection": "newest-updatedAt-wins",
+    "dataLoss": false
   },
   "dataWrites": {
-    "jobsData":"unchanged-no-promotion",
-    "jobSources":"unchanged-no-source-change",
-    "sourceAudit":"updated",
-    "reason":"No new candidate cleared all eligibility and ranking gates. Existing LIVE feed and source configuration were preserved. No locked file was touched."
+    "jobsData": "unchanged",
+    "freshDelta": "jobs-fresh-delta-20260918.json",
+    "deltaIndex": "updated",
+    "sourceAudit": "updated",
+    "sourceAuditLive": "synchronized"
   },
   "policy": {
-    "promotion":"New LIVE promotion requires active full-detail evidence, location eligibility, confidence >= 80 and no known hard eligibility gate.",
-    "failClosed":"Existing active jobs are not removed merely because discovery does not resurface them; no feed drop or category loss was introduced."
+    "promotion": "Active full-detail evidence + BA/remote eligibility + confidence >=80 + current link verification + no known hard gate.",
+    "failClosed": "Old jobs are not given a new verifiedAt without fresh evidence; the runtime quarantines records older than 48 hours."
   }
 }
