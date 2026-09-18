@@ -31,19 +31,25 @@ function renderAudit(d,mode='live',savedAt=null){
   publishState(d,mode,savedAt);
 }
 async function fetchAudit(){
-  let lastError=null;
-  for(const name of ['source-audit-live.json','source-audit.json']){
+  const names=['source-audit-live.json','source-audit.json'];
+  const loaded=await Promise.all(names.map(async name=>{
     try{
       const r=await fetch(name+'?t='+Date.now(),{cache:'no-store'});
       if(!r.ok)throw new Error(name+' '+r.status);
-      const d=await r.json();
-      saveCache(d);
-      return {data:d,mode:name==='source-audit-live.json'?'live-fresh':'live-legacy'};
-    }catch(e){lastError=e}
+      const data=await r.json();
+      const t=Date.parse(data?.updatedAt||data?.sourceVerificationAt||'')||0;
+      return {name,data,t};
+    }catch(error){return {name,error}}
+  }));
+  const valid=loaded.filter(x=>x.data).sort((a,b)=>b.t-a.t);
+  if(valid.length){
+    const newest=valid[0];
+    saveCache(newest.data);
+    return {data:newest.data,mode:newest.name==='source-audit-live.json'?'live-fresh':'live-canonical'};
   }
   const cached=readCache();
   if(cached?.data)return {data:cached.data,mode:'cache',savedAt:cached.savedAt||null};
-  throw lastError||new Error('audit unavailable');
+  throw loaded.find(x=>x.error)?.error||new Error('audit unavailable');
 }
 async function loadAudit(){
   const box=$('sourceAuditRows');
