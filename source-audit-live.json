@@ -1,60 +1,80 @@
 {
-  "schemaVersion": 1,
-  "updatedAt": "2026-09-08T09:29:22+02:00",
+  "schemaVersion": 17,
+  "updatedAt": "2026-09-18T13:22:00+02:00",
+  "sourceVerificationAt": "2026-09-18T13:22:00+02:00",
   "runSummary": {
-    "familiesChecked": 6,
-    "newActiveJobs": 4,
+    "familiesChecked": 3,
+    "nonProfesiaFamiliesChecked": 2,
+    "freshPromoted": 1,
+    "freshRevalidated": 1,
+    "freshCandidates": 2,
+    "excludedAfterFullDetail": 0,
+    "freshnessWindowHours": 48,
     "freshnessStatus": "fresh-live-delta",
-    "note": "Reálny verejný refresh 8.9.2026 ráno. Profesia Bratislava ukazovala ponuky pridané pred minútami až hodinami; overené konkrétne detaily Henkel Application Support, Riešenia Digital Account Manager, Slovak Telekom support a NAY Elektrošpecialista."
+    "note": "18 Sep fresh repair audit. NAY complaints dispatcher verified on current full-detail Kariera page and promoted. Existing AlzaBox Specialist independently revalidated on the current official Alza career page. Older feed records are intentionally not re-dated and remain subject to the 48h quarantine gate."
   },
   "sources": [
     {
-      "name": "Profesia – Bratislava",
+      "name": "Kariera.sk – NAY complaints detail",
+      "family": "kariera",
+      "status": "ok",
+      "hits": 1,
+      "added": 1,
+      "note": "Current full detail verified 18.9.2026: Bratislava, full-time, complaints/admin scope, 1 200 € gross, no foreign-language requirement shown, selection closes 17.10.2026."
+    },
+    {
+      "name": "Alza.sk – official careers",
+      "family": "company-careers",
+      "status": "ok",
+      "hits": 1,
+      "added": 0,
+      "revalidated": 1,
+      "note": "Official Alza career detail is active and currently lists AlzaBox Specialist in Bratislava, 1 430 € fixed + up to 610 € variable, flexible Mon–Fri and partial home office."
+    },
+    {
+      "name": "Profesia – NAY mirror",
       "family": "profesia",
-      "status": "ok",
-      "hits": 2,
-      "added": 2,
-      "note": "Reálne preverené 8.9.2026 09:29. Aktuálny zoznam obsahoval ponuky staré len minúty/hodiny; do fresh delta boli zaradené Henkel Application Support a Riešenia Digital Account Manager."
-    },
-    {
-      "name": "HENKEL SLOVENSKO",
-      "family": "company-careers",
-      "status": "ok",
-      "hits": 1,
-      "added": 1,
-      "note": "Analyst Application Support, Bratislava + občasný home office, 1 600–1 800 €, aktuálne overené 8.9.2026."
-    },
-    {
-      "name": "Riešenia, spol. s r.o.",
-      "family": "company-careers",
-      "status": "ok",
-      "hits": 1,
-      "added": 1,
-      "note": "Digital Account Manager, Bratislava + občasný home office, 2 000–2 500 €, aktuálne overené 8.9.2026."
-    },
-    {
-      "name": "Slovak Telekom",
-      "family": "company-careers",
-      "status": "ok",
+      "status": "checked",
       "hits": 1,
       "added": 0,
-      "note": "Špecialista/Špecialistka podpory zákazníkov na Bajkalskej bol verejne potvrdený ako aktuálny 8.9.2026; fresh delta obnovuje jeho verifikačný stav."
-    },
-    {
-      "name": "NAY",
-      "family": "company-careers",
-      "status": "ok",
-      "hits": 1,
-      "added": 1,
-      "note": "Elektrošpecialista/ka Bratislava Tuhovská, priemerne 1 550 €, verejne dostupná ponuka potvrdená 8.9.2026."
-    },
-    {
-      "name": "LinkedIn public index",
-      "family": "linkedin",
-      "status": "limited",
-      "hits": 1,
-      "added": 0,
-      "note": "Verejná indexácia bola preverená; nájdená e-commerce rola Lunys, ale nebola zaradená do fresh delta bez ďalšieho overenia aktuálnosti a hard požiadaviek. Coverage bez loginu ostáva limited."
+      "note": "Current Profesia mirror confirms the NAY complaints vacancy, Bratislava and posting ID 5360323 / posting date 17.9.2026. Canonical promotion uses the full Kariera detail."
     }
-  ]
+  ],
+  "candidateNotes": [
+    {
+      "title": "Dispečer/ka reklamácií – reklamačné oddelenie",
+      "company": "NAY a.s.",
+      "locationEligibility": "ba-area",
+      "decision": "promote",
+      "reason": "Current full-detail evidence, direct fit to complaints/admin workflow, no foreign-language hard gate, basic PC knowledge only, BA location."
+    },
+    {
+      "title": "AlzaBox Špecialista",
+      "company": "Alza.sk s. r. o.",
+      "locationEligibility": "ba-area",
+      "decision": "revalidate",
+      "reason": "Current official company-career detail remains active; no hard language gate; existing stable ID is reused rather than duplicated."
+    }
+  ],
+  "liveMix": {
+    "note": "Runtime feed merge enforces 48h verifiedAt and link freshness. Historical records were not rewritten; only independently reverified records receive today's timestamp."
+  },
+  "storage": {
+    "currentFile": "source-audit.json",
+    "compactCurrent": true,
+    "priorAuditArchive": "source-audit-history/source-audit-20260917-1938.json",
+    "uiSelection": "newest-updatedAt-wins",
+    "dataLoss": false
+  },
+  "dataWrites": {
+    "jobsData": "unchanged",
+    "freshDelta": "jobs-fresh-delta-20260918.json",
+    "deltaIndex": "updated",
+    "sourceAudit": "updated",
+    "sourceAuditLive": "synchronized"
+  },
+  "policy": {
+    "promotion": "Active full-detail evidence + BA/remote eligibility + confidence >=80 + current link verification + no known hard gate.",
+    "failClosed": "Old jobs are not given a new verifiedAt without fresh evidence; the runtime quarantines records older than 48 hours."
+  }
 }
