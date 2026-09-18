@@ -1,5 +1,24 @@
 # KomArena Job Radar — CHANGELOG
 
+## 2026-09-18 13:30 — freshness/storage repair + verified live delta
+
+- Posledný pred opravou úspešný Pages deployment bol #1553 na SHA `97e7b581...` z 17.9.2026 19:39 CEST; zdrojový audit potom prestal prinášať dnešný LIVE obsah.
+- Potvrdený runtime freshness limit 48 h. Regresná kontrola po oprave: 104 vstupných záznamov, z toho 95 `stale`, 4 `expired-at`, 2 `status`, 1 `ineligible` a presne 2 aktuálne eligible záznamy.
+- Opravený audit loader: `job-radar-source-audit-v1.js` už nepreferuje slepo starý `source-audit-live.json`; načíta obe audit vrstvy a vyberie novšiu podľa `updatedAt/sourceVerificationAt`.
+- Cache-bust audit skriptu zvýšený na `?v=2`, aby sa oprava prejavila aj v už otvorených prehliadačoch.
+- Predchádzajúci plný audit bol bezpečne archivovaný do `source-audit-history/source-audit-20260917-1938.json`; aktuálny `source-audit.json` zostáva kompaktný. Pôvodný audit mal iba ~9,2k znakov, takže problém nebol GitHub large-file limit.
+- Pridaná `jobs-fresh-delta-20260918.json` s dvoma reálne znovu overenými položkami: nový NAY Dispečer/ka reklamácií a revalidovaný AlzaBox Špecialista. Starým záznamom sa `verifiedAt` neposúval bez dôkazu.
+- `jobs-delta-index.json`, `source-audit.json` a `source-audit-live.json` sú synchronizované na 18.9.2026 13:22 CEST.
+- Pages build #1560 pre finálny cache-bust commit prešiel úspešne vrátane deploy jobu.
+
+### Kontroly / regresia
+- MASTER dizajn nemeníme; upravená bola iba dátová/audit logika a cache verzia JS assetu.
+- História auditu zachovaná bez straty.
+- 48h karanténa zostáva fail-closed.
+- Aktuálne LIVE eligible: NAY Dispečer/ka reklamácií + AlzaBox Špecialista.
+
+---
+
 ## 2026-09-17 08:54 — follow-up audit + evidence scoring / negative-cache hardening
 
 - Reálny follow-up sweep preveril aktuálne Bratislava/BA okolie pre IT support, administratívu, zákaznícku podporu a reklamačno-servisné roly. Žiadna nová promotion-grade ponuka neprešla všetkými gate-mi; LIVE feed preto nebol umelo doplnený ani timestampovo omladený.
